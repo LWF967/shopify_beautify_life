@@ -24,5 +24,6 @@
     ]
    }
  },
- "order": ["main"]
+ "order": ["main"],
+ "orders": ["main"]
 }
