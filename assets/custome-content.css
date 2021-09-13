@@ -1,4 +1,73 @@
-
+:root {
+    --color-text: var(--shopify-editor-setting-color_text);
+    --color-text-rgb: 58, 58, 58;
+    --color-body-text: var(--shopify-editor-setting-color_body_text);
+    --color-sale-text: var(--shopify-editor-setting-color_sale_text);
+    --color-small-button-text-border: var(--shopify-editor-setting-color_small_button_text_border);
+    --color-text-field: var(--shopify-editor-setting-color_text_field);
+    --color-text-field-text: var(--shopify-editor-setting-color_text_field_text);
+    --color-text-field-text-rgb: 0, 0, 0;
+    --color-btn-primary: var(--shopify-editor-setting-color_button);
+    --color-btn-primary-darker: #212121;
+    --color-btn-primary-text: var(--shopify-editor-setting-color_button_text);
+    --color-blankstate: rgba(51, 50, 50, 0.35);
+    --color-blankstate-border: rgba(51, 50, 50, 0.2);
+    --color-blankstate-background: rgba(51, 50, 50, 0.1);
+    --color-text-focus: #606060;
+    --color-overlay-text-focus: #e6e6e6;
+    --color-btn-primary-focus: #606060;
+    --color-btn-social-focus: #d2d2d2;
+    --color-small-button-text-border-focus: #606060;
+    --predictive-search-focus: #f2f2f2;
+    --color-body: var(--shopify-editor-setting-color_body_bg);
+    --color-bg: var(--shopify-editor-setting-color_body_bg);
+    --color-bg-rgb: 255, 255, 255;
+    --color-bg-alt: rgba(51, 50, 50, 0.05);
+    --color-bg-currency-selector: rgba(51, 50, 50, 0.2);
+    --color-overlay-title-text: var(--shopify-editor-setting-color_image_overlay_text);
+    --color-image-overlay: var(--shopify-editor-setting-color_image_overlay);
+    --color-image-overlay-rgb: 104, 88, 88;
+    --opacity-image-overlay: 0.4;
+    --hover-overlay-opacity: 0.8;
+    --color-border: var(--shopify-editor-setting-color_borders);
+    --color-border-form: var(--shopify-editor-setting-color_text_field_border);
+    --color-border-form-darker: #b3b3b3;
+    --svg-select-icon: url(//acker-beautify-life.myshopify.com/services/assets/126875697318/editor_asset/ico-select.svg);
+    --slick-img-url: url(//cdn.shopify.com/s/files/1/0594/0972/7654/t/9/assets/ajax-loader.gif?v=4135686330247201572);
+    --font-weight-body--bold: 700;
+    --font-weight-body--bolder: 700;
+    --font-stack-header: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    --font-style-header: normal;
+    --font-weight-header: 700;
+    --font-stack-body: Helvetica, 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
+    --font-style-body: normal;
+    --font-weight-body: 400;
+    --font-size-header: 26;
+    --font-size-base: 15;
+    --font-h1-desktop: 35;
+    --font-h1-mobile: 32;
+    --font-h2-desktop: 20;
+    --font-h2-mobile: 18;
+    --font-h3-mobile: 20;
+Show All Properties (12 more)
+}
+  
+ :root {
+    --shopify-editor-setting-color_text: #3a3a3a;
+    --shopify-editor-setting-color_body_text: #333232;
+    --shopify-editor-setting-color_sale_text: #EA0606;
+    --shopify-editor-setting-color_small_button_text_border: #3a3a3a;
+    --shopify-editor-setting-color_text_field: #ffffff;
+    --shopify-editor-setting-color_text_field_text: #000000;
+    --shopify-editor-setting-color_button: #3a3a3a;
+    --shopify-editor-setting-color_button_text: #ffffff;
+    --shopify-editor-setting-color_image_overlay_text: #ffffff;
+    --shopify-editor-setting-color_borders: #ebebeb;
+    --shopify-editor-setting-color_body_bg: #ffffff;
+    --shopify-editor-setting-color_image_overlay: #685858;
+    --shopify-editor-setting-color_text_field_border: #cccccc;
+} 
+  
 
 .placeholder-svg {
   display: block;
