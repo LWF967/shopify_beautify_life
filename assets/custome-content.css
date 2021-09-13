@@ -1,0 +1,95 @@
+
+.custom-content {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  -o-align-items: stretch;
+  align-items: stretch;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: auto;
+  margin-bottom: -30px;
+  margin-left: -30px; }
+  @media only screen and (max-width: 749px) {
+    .custom-content {
+      margin-bottom: -22px;
+      margin-left: -22px; } }
+
+.custom__item {
+  -webkit-flex: 0 0 auto;
+  -moz-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  max-width: 100%; }
+  @media only screen and (max-width: 749px) {
+    .custom__item {
+      -webkit-flex: 0 0 auto;
+      -moz-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      padding-left: 22px;
+      margin-bottom: 22px; }
+      .custom__item.small--one-half {
+        -webkit-flex: 1 0 50%;
+        -moz-flex: 1 0 50%;
+        -ms-flex: 1 0 50%;
+        flex: 1 0 50%;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto; } }
+  .custom__item .collection-grid-item {
+    margin-bottom: 0; }
+
+.custom__item-inner {
+  position: relative;
+  display: block;
+  text-align: left;
+  max-width: 100%; }
+
+.custom__item-inner--video,
+.custom__item-inner--collection,
+.custom__item-inner--html {
+  display: block; }
+
+.custom__item-inner--image {
+  position: relative;
+  margin: 0 auto; }
+
+.custom__image {
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0; }
+
+/*================ Linklist ================*/
+@media only screen and (max-width: 749px) {
+  .custom__item.custom__item--link_list {
+    flex: 1 0 100%;
+    max-width: none; } }
+
+.custom__linklist {
+  margin-left: -15px;
+  margin-right: -15px; }
+  @media only screen and (min-width: 750px) {
+    .custom__linklist {
+      margin-left: -12px;
+      margin-right: -12px; } }
+
+.custom__linklist-link {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px 0; }
+  @media only screen and (min-width: 750px) {
+    .custom__linklist-link {
+      padding: 3px 12px;
+      margin-top: 0;
+      margin-bottom: 0; } }
