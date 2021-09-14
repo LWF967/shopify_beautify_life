@@ -99,15 +99,15 @@
            		<div class="video-section">
              
              
-                  <deferred-media class="video-section__media deferred-media no-js-hidden" data-media-id="{{ section.settings.video_url.id }}"
-                    {% if section.settings.cover_image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
+                  <deferred-media class="video-section__media deferred-media no-js-hidden" data-media-id="{{ block.settings.video_url.id }}"
+                    {% if block.settings.cover_image != blank %} style="padding-bottom: {{ 1 | divided_by: block.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
                   >
                     <button
-                      id="Deferred-Poster-Modal-{{ section.settings.video_url.id }}"
+                      id="Deferred-Poster-Modal-{{ block.settings.video_url.id }}"
                       class="video-section__poster media deferred-media__poster media--landscape"
                       type="button"
                     >
-                   {%- if section.settings.cover_image != blank -%}
+                   {%- if block.settings.cover_image != blank -%}
                       <img
                         srcset="{%- if block.settings.cover_image.width >= 375 -%}{{ block.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
                           {%- if block.settings.cover_image.width >= 750 -%}{{ block.settings.cover_image | img_url: '750x' }} 750w,{%- endif -%}
