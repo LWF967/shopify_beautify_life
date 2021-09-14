@@ -209,7 +209,22 @@ Show All Properties (12 more)
 }
    
    
-   
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  height: auto;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}   
    
   .text-center {
     text-align: center !important;
