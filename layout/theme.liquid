@@ -10,6 +10,7 @@
     
 {{'custome-content.css'| asset_url |stylesheet_tag}}
     
+ {{ 'theme.scss.css' | asset_url | stylesheet_tag }}       
     
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
@@ -166,18 +167,7 @@
     </script>
     
     
-     <script>
-    var theme = {
-      stylesheet: "{{ 'theme.scss.css' | asset_url }}"
-     
-    };
-
-    {% if request.page_type contains 'customers/' %}
-      theme.countryOptionTags = {{ all_country_option_tags | json}};
-    {% endif %}
-
-    document.documentElement.className = document.documentElement.className.replace('supports-no-js', '');
-  </script>
+    
     
     
     
