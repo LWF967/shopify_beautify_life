@@ -230,9 +230,20 @@ Show All Properties (12 more)
     text-align: center !important;
 } 
    
+   .one-whole{
+   width:100%;
+   } 
+   .one-half{
+   width:50%;
+   }
+   .one-third{
    
+   width:33.33333%;
+   }
    
-   
+   .two-thirds {
+    width: 66.66667%;
+   }
    
    @media only screen and (min-width: 750px) {
   /** Whole */
