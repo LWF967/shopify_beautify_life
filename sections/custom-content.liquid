@@ -97,34 +97,7 @@
           
            		<div class="video-section{% unless section.settings.full_width %} page-width{% endunless %}">
              
-                  <noscript>
-                    <div class="video-section__media"
-                      {% if section.settings.cover_image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
-                    >
-                      <a href="{{ section.settings.video_url }}" class="video-section__poster media media--transparent media--landscape{% if section.settings.cover_image == blank %} video-section__placeholder{% endif %}">
-                        {%- if section.settings.cover_image != blank -%}
-                          <img
-                            srcset="{%- if section.settings.cover_image.width >= 375 -%}{{ section.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
-                              {%- if section.settings.cover_image.width >= 750 -%}{{ section.settings.cover_image | img_url: '750x' }} 750w,{%- endif -%}
-                              {%- if section.settings.cover_image.width >= 1100 -%}{{ section.settings.cover_image | img_url: '1100x' }} 1100w,{%- endif -%}
-                              {%- if section.settings.cover_image.width >= 1500 -%}{{ section.settings.cover_image | img_url: '1500x' }} 1500w,{%- endif -%}
-                              {%- if section.settings.cover_image.width >= 1780 -%}{{ section.settings.cover_image | img_url: '1780x' }} 1780w,{%- endif -%}
-                              {%- if section.settings.cover_image.width >= 2000 -%}{{ section.settings.cover_image | img_url: '2000x' }} 2000w,{%- endif -%}
-                              {%- if section.settings.cover_image.width >= 3000 -%}{{ section.settings.cover_image | img_url: '3000x' }} 3000w,{%- endif -%}
-                              {%- if section.settings.cover_image.width >= 3840 -%}{{ section.settings.cover_image | img_url: '3840x' }} 3840w,{%- endif -%}"
-                            src="{{ section.settings.cover_image | img_url: '1920x' }}"
-                            sizes="{% if section.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}"
-                            alt="{{ 'sections.video.load_video' | t: description: section.settings.description | escape }}"
-                            loading="lazy"
-                            width="{{ section.settings.cover_image.width }}"
-                            height="{{ section.settings.cover_image.height }}"
-                          >
-                        {%- else -%}
-                          {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                        {%- endif -%}
-                      </a>
-                    </div>
-                  </noscript>
+             
                   <deferred-media class="video-section__media deferred-media no-js-hidden" data-media-id="{{ section.settings.video_url.id }}"
                     {% if section.settings.cover_image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
                   >
@@ -2264,27 +2237,8 @@
             {
               "value": "bottom-right",
               "label": {
-                "cs": "Dole doprava",
-                "da": "Nederst til højre",
-                "de": "Unten rechts",
-                "en": "Bottom right",
-                "es": "Inferior derecha",
-                "fi": "Alhaalla oikealla",
-                "fr": "En bas à droite",
-                "it": "In basso a destra",
-                "ja": "右下",
-                "ko": "오른쪽 아래",
-                "nb": "Nederst til høyre",
-                "nl": "Rechtsonder",
-                "pl": "Na dole po prawej",
-                "pt-BR": "Inferior direito",
-                "pt-PT": "Canto inferior direito",
-                "sv": "Nere till höger",
-                "th": "ขวาล่าง",
-                "tr": "Alt sağ",
-                "vi": "Dưới cùng bên phải",
-                "zh-CN": "右下方",
-                "zh-TW": "右下角"
+
+                "en": "Bottom right"
               }
             }
           ]
@@ -2294,135 +2248,40 @@
     {
       "type": "blog",
       "name": {
-        "cs": "Blog",
-        "da": "Blog",
-        "de": "Blog",
-        "en": "Blog",
-        "es": "Blog",
-        "fi": "Blogi",
-        "fr": "Blog",
-        "it": "Blog",
-        "ja": "ブログ",
-        "ko": "블로그",
-        "nb": "Blogg",
-        "nl": "Blog",
-        "pl": "Blog",
-        "pt-BR": "Blog",
-        "pt-PT": "Blogue",
-        "sv": "Blogg",
-        "th": "บล็อก",
-        "tr": "Blog",
-        "vi": "Blog",
-        "zh-CN": "博客",
-        "zh-TW": "網誌"
+
+        "es": "Blog"
       },
       "settings": [
         {
           "type": "blog",
           "id": "blog",
           "label": {
-            "cs": "Blog",
-            "da": "Blog",
-            "de": "Blog",
-            "en": "Blog",
-            "es": "Blog",
-            "fi": "Blogi",
-            "fr": "Blog",
-            "it": "Blog",
-            "ja": "ブログ",
-            "ko": "블로그",
-            "nb": "Blogg",
-            "nl": "Blog",
-            "pl": "Blog",
-            "pt-BR": "Blog",
-            "pt-PT": "Blogue",
-            "sv": "Blogg",
-            "th": "บล็อก",
-            "tr": "Blog",
-            "vi": "Blog",
-            "zh-CN": "博客",
-            "zh-TW": "網誌"
+
+            "en": "Blog"
           }
         },
         {
           "type": "image_picker",
           "id": "cover_image",
           "label": {
-            "cs": "Titulní obrázek",
-            "da": "Coverbillede",
-            "de": "Titelbild",
-            "en": "Cover image",
-            "es": "Imagen de portada",
-            "fi": "Kansikuva",
-            "fr": "Image de couverture",
-            "it": "Immagine di copertina",
-            "ja": "表紙画像",
-            "ko": "커버 이미지",
-            "nb": "Forsidebilde",
-            "nl": "Coverafbeelding",
-            "pl": "Obraz w tle",
-            "pt-BR": "Imagem de capa",
-            "pt-PT": "Imagem de capa",
-            "sv": "Omslagsbild",
-            "th": "รูปภาพหน้าปก",
-            "tr": "Kapak görseli",
-            "vi": "Ảnh bìa",
-            "zh-CN": "封面图片",
-            "zh-TW": "封面圖片"
+
+            "en": "Cover image"
           }
         },
         {
           "type": "select",
           "id": "image_size",
           "label": {
-            "cs": "Velikost obrázku",
-            "da": "Billedets størrelse",
-            "de": "Foto-Größe",
-            "en": "Image size",
-            "es": "Tamaño de la imagen",
-            "fi": "Kuvan koko",
-            "fr": "Taille des images",
-            "it": "Dimensione immagine",
-            "ja": "画像サイズ",
-            "ko": "이미지 크기",
-            "nb": "Bildestørrelse",
-            "nl": "Afbeeldingsformaat",
-            "pl": "Rozmiar obrazu",
-            "pt-BR": "Tamanho da imagem",
-            "pt-PT": "Tamanho da imagem",
-            "sv": "Bildstorlek",
-            "th": "ขนาดรูปภาพ",
-            "tr": "Görsel boyutu",
-            "vi": "Kích cỡ hình ảnh",
-            "zh-CN": "图片尺寸",
-            "zh-TW": "圖片尺寸"
+
+            "en": "Image size"
           },
           "default": "medium",
           "options": [
             {
               "value": "small",
               "label": {
-                "cs": "Malá",
-                "da": "Lille",
-                "de": "Klein",
-                "en": "Small",
-                "es": "Pequeño",
-                "fi": "Pieni",
-                "fr": "Petit",
-                "it": "Piccolo",
-                "ja": "スモール",
-                "ko": "스몰",
-                "nb": "Liten",
-                "nl": "Klein",
-                "pl": "Mały",
-                "pt-BR": "Pequeno",
-                "pt-PT": "Pequeno",
-                "sv": "Liten",
-                "th": "เล็ก",
-                "tr": "Küçük",
-                "vi": "Nhỏ",
-                "zh-CN": "小",
-                "zh-TW": "小型"
+  
+                "en": "Small"
               }
             },
             {
