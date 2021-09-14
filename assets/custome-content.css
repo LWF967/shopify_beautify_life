@@ -357,22 +357,170 @@ Show All Properties (12 more)
     text-align: center !important;
 } 
    
-   .one-whole{
-   width:100%;
-   } 
-   .one-half{
-   width:50%;
-   }
-   .one-third{
    
-   width:33.33333%;
-   }
+   /*============================================================================
+  Grid Columns
+    - Create width classes, prepended by the breakpoint name.
+==============================================================================*/
+/*================ Grid push classes ================*/
+/*================ Clearfix helper on uniform grids ================*/
+/*================ Build Base Grid Classes ================*/
+/* Whole */
+.one-whole {
+  width: 100%; }
+
+/* Halves */
+.one-half {
+  width: 50%; }
+
+/* Thirds */
+.one-third {
+  width: 33.33333%; }
+
+.two-thirds {
+  width: 66.66667%; }
+
+/* Quarters */
+.one-quarter {
+  width: 25%; }
+
+.two-quarters {
+  width: 50%; }
+
+.three-quarters {
+  width: 75%; }
+
+/* Fifths */
+.one-fifth {
+  width: 20%; }
+
+.two-fifths {
+  width: 40%; }
+
+.three-fifths {
+  width: 60%; }
+
+.four-fifths {
+  width: 80%; }
+
+/* Sixths */
+.one-sixth {
+  width: 16.66667%; }
+
+.two-sixths {
+  width: 33.33333%; }
+
+.three-sixths {
+  width: 50%; }
+
+.four-sixths {
+  width: 66.66667%; }
+
+.five-sixths {
+  width: 83.33333%; }
+
+/* Eighths */
+.one-eighth {
+  width: 12.5%; }
+
+.two-eighths {
+  width: 25%; }
+
+.three-eighths {
+  width: 37.5%; }
+
+.four-eighths {
+  width: 50%; }
+
+.five-eighths {
+  width: 62.5%; }
+
+.six-eighths {
+  width: 75%; }
+
+.seven-eighths {
+  width: 87.5%; }
+
+/* Tenths */
+.one-tenth {
+  width: 10%; }
+
+.two-tenths {
+  width: 20%; }
+
+.three-tenths {
+  width: 30%; }
+
+.four-tenths {
+  width: 40%; }
+
+.five-tenths {
+  width: 50%; }
+
+.six-tenths {
+  width: 60%; }
+
+.seven-tenths {
+  width: 70%; }
+
+.eight-tenths {
+  width: 80%; }
+
+.nine-tenths {
+  width: 90%; }
+
+/* Twelfths */
+.one-twelfth {
+  width: 8.33333%; }
+
+.two-twelfths {
+  width: 16.66667%; }
+
+.three-twelfths {
+  width: 25%; }
+
+.four-twelfths {
+  width: 33.33333%; }
+
+.five-twelfths {
+  width: 41.66667%; }
+
+.six-twelfths {
+  width: 50%; }
+
+.seven-twelfths {
+  width: 58.33333%; }
+
+.eight-twelfths {
+  width: 66.66667%; }
+
+.nine-twelfths {
+  width: 75%; }
+
+.ten-twelfths {
+  width: 83.33333%; }
+
+.eleven-twelfths {
+  width: 91.66667%; }
+
+.show {
+  display: block !important; }
+
+.hide {
+  display: none !important; }
+
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.text-center {
+  text-align: center !important; }
    
-   .two-thirds {
-    width: 66.66667%;
-   }
-   .three-quarters {
-    width: 75%; }
+   
+   
+  
    @media only screen and (min-width: 750px) {
   /** Whole */
   .medium-up--one-whole {
