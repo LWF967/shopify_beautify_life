@@ -199,7 +199,14 @@ Show All Properties (12 more)
    
    
    
-   
+   .video-wrapper {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    height: auto;
+}
    
    
    
