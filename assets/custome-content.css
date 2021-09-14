@@ -52,7 +52,9 @@
 Show All Properties (12 more)
 }
   
- :root {
+
+  
+  :root {
     --shopify-editor-setting-color_text: #3a3a3a;
     --shopify-editor-setting-color_body_text: #333232;
     --shopify-editor-setting-color_sale_text: #EA0606;
@@ -66,7 +68,9 @@ Show All Properties (12 more)
     --shopify-editor-setting-color_body_bg: #ffffff;
     --shopify-editor-setting-color_image_overlay: #685858;
     --shopify-editor-setting-color_text_field_border: #cccccc;
-} 
+}
+  
+  
   
 
 .placeholder-svg {
