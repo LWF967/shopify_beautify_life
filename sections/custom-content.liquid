@@ -86,10 +86,10 @@
                   <iframe src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
                 {% else %}
                   {% if block.settings.video_url.type == "youtube" %}
-                    <iframe src="//www.youtube.com/embed/{{ block.settings.video_url.id }}?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="//www.youtube.com/embed/{{ block.settings.video_url.id }}?rel=0&showinfo=0&vq=720"  class="js-youtube" width="850" height="480" frameborder="0" allowfullscreen></iframe>
                   {% endif %}
                   {% if block.settings.video_url.type == "vimeo" %}
-                    <iframe src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?byline=0&portrait=0&badge=0"  class="js-vimeo" width="850" height="480" frameborder="0" allowfullscreen></iframe>
                   {% endif %}
                 {% endif %}
               </div> 
