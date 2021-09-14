@@ -165,6 +165,59 @@
       }
     </script>
     
+    
+     <script>
+    var theme = {
+      stylesheet: "{{ 'theme.scss.css' | asset_url }}",
+      modelViewerUiSprite: "{{ 'model-viewer-ui-sprite.svg' | asset_url }}",
+      plyrSprite: "{{ 'plyr-sprite.svg' | asset_url }}",
+      strings: {
+        addToCart: {{ 'products.product.add_to_cart' | t | json }},
+        soldOut: {{ 'products.product.sold_out' | t | json }},
+        unavailable: {{ 'products.product.unavailable' | t | json }},
+        addItemSuccess: {{ 'products.product.item_added_to_cart' | t | json }},
+        viewCart: {{ 'products.product.view_cart' | t | json }},
+        external: {{ 'general.accessibility.link_messages.external' | t | json }},
+        newWindow: {{ 'general.accessibility.link_messages.new_window' | t | json }},
+        newWindowExternal: {{ 'general.accessibility.link_messages.new_window_and_external' | t | json }},
+        cartError: {{ 'cart.general.cart_error' | t | json }},
+        cartQuantityError: {{ 'cart.general.cart_quantity_error_html' | t: quantity: "[quantity]", title: "[title]" | json }},
+        regularPrice: {{ 'products.product.regular_price' | t | json }},
+        salePrice: {{ 'products.product.sale_price' | t | json }},
+        unitPrice: {{ 'products.product.unit_price' | t | json }},
+        unitPriceSeparator: {{ 'general.accessibility.unit_price_separator' | t | json }},
+        newsletter: {
+          blankError: {{ 'general.newsletter_form.blank_error' | t | json }},
+          invalidError: {{ 'general.newsletter_form.invalid_error' | t | json }}
+        },
+        map: {
+          zeroResults: {{ 'sections.map.address_no_results' | t | json }},
+          overQueryLimit: {{ 'sections.map.address_query_limit_html' | t | json }},
+          authError: {{ 'sections.map.auth_error_html' | t | json }},
+          addressError: {{ 'sections.map.address_error' | t | json }}
+        },
+        slideshow: {
+          loadSlideA11yString: {{ 'sections.slider.load_slide' | t: slide_number: '[slide_number]' | json }},
+          activeSlideA11yString: {{ 'sections.slider.active_slide' | t: slide_number: '[slide_number]' | json }}
+        }
+      },
+      isOnline: true,
+      moneyFormat: {{ shop.money_format | json }},
+      mediaQuerySmall: 750,
+      mediaQueryMedium: 990
+    };
+
+    {% if request.page_type contains 'customers/' %}
+      theme.countryOptionTags = {{ all_country_option_tags | json}};
+    {% endif %}
+
+    document.documentElement.className = document.documentElement.className.replace('supports-no-js', '');
+  </script>
+    
+    
+    
+    
+    
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
