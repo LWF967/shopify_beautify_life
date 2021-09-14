@@ -204,7 +204,9 @@ Show All Properties (12 more)
    
    
    
-   
+  .text-center {
+    text-align: center !important;
+} 
    
    
    
