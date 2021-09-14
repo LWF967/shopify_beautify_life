@@ -196,14 +196,32 @@
             "width": "50%",
             "alignment": "center"
           }
+        },
+        "dcf8e505-65d2-4df2-a87a-6b10491cf547": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
         }
       },
       "block_order": [
         "1631527747272e8c4a-0",
-        "1631527747272e8c4a-1"
+        "1631527747272e8c4a-1",
+        "dcf8e505-65d2-4df2-a87a-6b10491cf547"
       ],
       "settings": {
         "title": "Custom content"
+      }
+    },
+    "1631598037253c5913": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false
       }
     }
   },
@@ -214,6 +232,7 @@
     "collage",
     "video",
     "multi_column",
-    "1631527747272e8c4a"
+    "1631527747272e8c4a",
+    "1631598037253c5913"
   ]
 }
