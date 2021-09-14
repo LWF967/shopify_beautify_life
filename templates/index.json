@@ -202,8 +202,7 @@
           "settings": {
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "width": "100%",
-            "alignment": "top-middle",
-            "cover_image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg"
+            "alignment": "top-middle"
           }
         }
       },
