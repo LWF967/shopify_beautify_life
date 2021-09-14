@@ -519,7 +519,7 @@ Show All Properties (12 more)
   text-align: center !important; }
    
    
-   
+/*================ Build Responsive Grid Classes ================*/
   
    @media only screen and (min-width: 750px) {
   /** Whole */
