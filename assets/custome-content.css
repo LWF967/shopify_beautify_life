@@ -119,6 +119,7 @@
 .list--inline>li a {
    touch-action: manipulation;
    text-decoration: none;
+   color: rgba(var(--color-foreground),.75);
 }    
     
    
