@@ -328,6 +328,10 @@ text-decoration:none;
     border-color: transparent;
     border-bottom-color: currentColor; }
 
+.article__meta-buttons li:first-child {
+    margin-right: 1.5rem;
+}
+
 
 /*================ Linklist ================*/
 @media only screen and (max-width: 749px) {
