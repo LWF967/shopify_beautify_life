@@ -269,6 +269,15 @@ text-decoration:none;
     border-color: rgba(var(--color-foreground), 0.75); }
    
 
+
+/*================ artice ================*/
+
+.article__title+h3 {
+	font-size:28px;
+  	font-weight:bold;
+}
+
+
 /*================ Linklist ================*/
 @media only screen and (max-width: 749px) {
   .custom__item.custom__item--link_list {
