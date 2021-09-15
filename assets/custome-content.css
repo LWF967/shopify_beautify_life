@@ -320,6 +320,14 @@ text-decoration:none;
   	font-weight:bold !important;
 }
 
+.article__comment-count {
+  border-color: transparent;
+  border-bottom-color: currentColor;
+  padding: 0 0 3px 0; }
+  .article__comment-count:not([disabled]):hover, .article__comment-count:focus {
+    border-color: transparent;
+    border-bottom-color: currentColor; }
+
 
 /*================ Linklist ================*/
 @media only screen and (max-width: 749px) {
