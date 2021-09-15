@@ -186,6 +186,7 @@ Show All Properties (12 more)
     
 .list--inline>li a {
    touch-action: manipulation;
+   text-decoration: none;
 }    
     
    
