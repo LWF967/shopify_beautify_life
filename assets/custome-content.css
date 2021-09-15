@@ -183,6 +183,11 @@ Show All Properties (12 more)
     margin-bottom: 0;
     vertical-align: middle;
 }
+    
+.list--inline>li a {
+   touch-action: manipulation;
+}    
+    
    
    
    
