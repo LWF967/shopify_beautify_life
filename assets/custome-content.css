@@ -300,6 +300,17 @@ text-decoration:none;
    
 
 
+/*================ blog ================*/
+
+.blog-card__comment-count {
+  border-color: transparent;
+  border-bottom-color: currentColor;
+  padding: 0 0 3px 0; }
+  .blog-card__comment-count:not([disabled]):hover, .blog-card__comment-count:focus {
+    border-color: transparent;
+    border-bottom-color: currentColor; }
+
+
 /*================ artice ================*/
 
 
