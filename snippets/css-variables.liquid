@@ -13,6 +13,10 @@
 
   :root {
 
+    --color-blankstate: {{ settings.color_body_text | color_modify: 'alpha', 0.35 }};
+    --color-blankstate-border: {{ settings.color_body_text | color_modify: 'alpha', 0.2 }};
+    --color-blankstate-background: {{ settings.color_body_text | color_modify: 'alpha', 0.1 }};
+
 
     --color-overlay-title-text: {{ settings.color_image_overlay_text }};
     --color-image-overlay: {{ settings.color_image_overlay }};
