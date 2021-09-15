@@ -141,10 +141,11 @@ text-decoration:none;
 
 .grid-view-item__title {
   margin-bottom: 0;
-  color: var(--color-text); }
+  color: rgba(var(--color-foreground), 0.75);}
 
 .grid-view-item__meta {
-  margin-top: 8px; }
+  margin-top: 8px; 
+ color: rgba(var(--color-foreground), 0.35);}
 
 @media only screen and (max-width: 749px) {
   .grid-view-item__title,
