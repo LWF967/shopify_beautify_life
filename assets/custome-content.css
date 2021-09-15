@@ -251,7 +251,9 @@ text-decoration:none;
    
 
 /*================ button ================*/   
- 
+
+
+
 
 .btn, .shopify-payment-button .shopify-payment-button__button--unbranded {
   -moz-user-select: none;
@@ -270,11 +272,11 @@ text-decoration:none;
   border: 1px solid transparent;
   border-radius: 2px;
   padding: 8px 15px;
-  background-color: var(--color-btn-primary);
-  color: var(--color-btn-primary-text);
-  font-family: var(--font-stack-header);
-  font-style: var(--font-style-header);
-  font-weight: var(--font-weight-header);
+  background-color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.75);
+  font-family: var(--font-body-family);
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
   text-transform: uppercase;
   letter-spacing: 0.08em;
   white-space: normal;
