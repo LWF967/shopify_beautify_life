@@ -227,6 +227,17 @@
             "width": "25%",
             "alignment": "center"
           }
+        },
+        "402d8ef2-ec58-41b7-8bd3-57ab01f5a05d": {
+          "type": "blog",
+          "settings": {
+            "blog": "",
+            "image_size": "medium",
+            "description": "<p>Description of your blog.<\/p>",
+            "show_number_articles": true,
+            "width": "25%",
+            "alignment": "center"
+          }
         }
       },
       "block_order": [
@@ -235,7 +246,8 @@
         "dcf8e505-65d2-4df2-a87a-6b10491cf547",
         "085d98c5-d275-4a71-8e25-efa41e0932b5",
         "14284e34-aead-40b6-a78a-f5afd379147f",
-        "c7878b02-e510-43c8-8b26-54356e986d56"
+        "c7878b02-e510-43c8-8b26-54356e986d56",
+        "402d8ef2-ec58-41b7-8bd3-57ab01f5a05d"
       ],
       "settings": {
         "title": "Custom content"
