@@ -272,6 +272,13 @@ text-decoration:none;
 
 /*================ artice ================*/
 
+
+.article a{
+
+text-decoration:none;
+}
+
+
 .article__title  {
 	font-size:28px !important;
   	font-weight:bold !important;
