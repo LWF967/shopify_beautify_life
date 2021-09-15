@@ -249,8 +249,24 @@ text-decoration:none;
    
    
    
-   
-   
+
+/*================ blog ================*/   
+ 
+
+.btn--small {
+  padding: 8px 10px;
+  font-size: calc(((12) / (var(--font-size-base))) * 1em);
+  line-height: 1; }
+
+.btn--tertiary {
+  background-color: transparent;
+  color: rgba(var(--color-foreground), 0.75);
+  border-color:rgba(var(--color-foreground), 0.75);}
+
+  .btn--tertiary:not([disabled]):hover, .btn--tertiary:focus {
+    background-color: transparent;
+    color: rgba(var(--color-foreground), 0.75);
+    border-color: rgba(var(--color-foreground), 0.75); }
    
 
 /*================ Linklist ================*/
