@@ -250,8 +250,36 @@ text-decoration:none;
    
    
 
-/*================ blog ================*/   
+/*================ button ================*/   
  
+
+.btn, .shopify-payment-button .shopify-payment-button__button--unbranded {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  padding: 8px 15px;
+  background-color: var(--color-btn-primary);
+  color: var(--color-btn-primary-text);
+  font-family: var(--font-stack-header);
+  font-style: var(--font-style-header);
+  font-weight: var(--font-weight-header);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: normal;
+  font-size: calc(((var(--font-size-base) - 2) / (var(--font-size-base))) * 1em); }
+
 
 .btn--small {
   padding: 8px 10px;
