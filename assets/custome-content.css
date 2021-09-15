@@ -308,6 +308,12 @@ text-decoration:none;
 text-decoration:none;
 }
 
+.artice ul{
+
+  padding:0;
+ 
+}
+
 
 .article__title  {
 	font-size:28px !important;
