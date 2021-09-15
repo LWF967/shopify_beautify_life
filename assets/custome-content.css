@@ -567,7 +567,141 @@ text-decoration:none;
 
 .text-center {
   text-align: center !important; }
-   
+ 
+
+
+
+
+
+
+
+/*================ Build Responsive Grid Classes ================*/
+@media only screen and (max-width: 749px) {
+  /* Whole */
+  .small--one-whole {
+    width: 100%; }
+  /* Halves */
+  .small--one-half {
+    width: 50%; }
+  /* Thirds */
+  .small--one-third {
+    width: 33.33333%; }
+  .small--two-thirds {
+    width: 66.66667%; }
+  /* Quarters */
+  .small--one-quarter {
+    width: 25%; }
+  .small--two-quarters {
+    width: 50%; }
+  .small--three-quarters {
+    width: 75%; }
+  /* Fifths */
+  .small--one-fifth {
+    width: 20%; }
+  .small--two-fifths {
+    width: 40%; }
+  .small--three-fifths {
+    width: 60%; }
+  .small--four-fifths {
+    width: 80%; }
+  /* Sixths */
+  .small--one-sixth {
+    width: 16.66667%; }
+  .small--two-sixths {
+    width: 33.33333%; }
+  .small--three-sixths {
+    width: 50%; }
+  .small--four-sixths {
+    width: 66.66667%; }
+  .small--five-sixths {
+    width: 83.33333%; }
+  /* Eighths */
+  .small--one-eighth {
+    width: 12.5%; }
+  .small--two-eighths {
+    width: 25%; }
+  .small--three-eighths {
+    width: 37.5%; }
+  .small--four-eighths {
+    width: 50%; }
+  .small--five-eighths {
+    width: 62.5%; }
+  .small--six-eighths {
+    width: 75%; }
+  .small--seven-eighths {
+    width: 87.5%; }
+  /* Tenths */
+  .small--one-tenth {
+    width: 10%; }
+  .small--two-tenths {
+    width: 20%; }
+  .small--three-tenths {
+    width: 30%; }
+  .small--four-tenths {
+    width: 40%; }
+  .small--five-tenths {
+    width: 50%; }
+  .small--six-tenths {
+    width: 60%; }
+  .small--seven-tenths {
+    width: 70%; }
+  .small--eight-tenths {
+    width: 80%; }
+  .small--nine-tenths {
+    width: 90%; }
+  /* Twelfths */
+  .small--one-twelfth {
+    width: 8.33333%; }
+  .small--two-twelfths {
+    width: 16.66667%; }
+  .small--three-twelfths {
+    width: 25%; }
+  .small--four-twelfths {
+    width: 33.33333%; }
+  .small--five-twelfths {
+    width: 41.66667%; }
+  .small--six-twelfths {
+    width: 50%; }
+  .small--seven-twelfths {
+    width: 58.33333%; }
+  .small--eight-twelfths {
+    width: 66.66667%; }
+  .small--nine-twelfths {
+    width: 75%; }
+  .small--ten-twelfths {
+    width: 83.33333%; }
+  .small--eleven-twelfths {
+    width: 91.66667%; }
+  .grid--uniform .small--one-half:nth-child(2n+1),
+  .grid--uniform .small--one-third:nth-child(3n+1),
+  .grid--uniform .small--one-quarter:nth-child(4n+1),
+  .grid--uniform .small--one-fifth:nth-child(5n+1),
+  .grid--uniform .small--one-sixth:nth-child(6n+1),
+  .grid--uniform .small--two-sixths:nth-child(3n+1),
+  .grid--uniform .small--three-sixths:nth-child(2n+1),
+  .grid--uniform .small--one-eighth:nth-child(8n+1),
+  .grid--uniform .small--two-eighths:nth-child(4n+1),
+  .grid--uniform .small--four-eighths:nth-child(2n+1),
+  .grid--uniform .small--five-tenths:nth-child(2n+1),
+  .grid--uniform .small--one-twelfth:nth-child(12n+1),
+  .grid--uniform .small--two-twelfths:nth-child(6n+1),
+  .grid--uniform .small--three-twelfths:nth-child(4n+1),
+  .grid--uniform .small--four-twelfths:nth-child(3n+1),
+  .grid--uniform .small--six-twelfths:nth-child(2n+1) {
+    clear: both; }
+  .small--show {
+    display: block !important; }
+  .small--hide {
+    display: none !important; }
+  .small--text-left {
+    text-align: left !important; }
+  .small--text-right {
+    text-align: right !important; }
+  .small--text-center {
+    text-align: center !important; } }
+
+
+
    
 /*================ Build Responsive Grid Classes ================*/
   
@@ -877,3 +1011,7 @@ text-decoration:none;
 
   .medium-up--push-eleven-twelfths {
     left: 91.66667%; } }
+
+
+
+
