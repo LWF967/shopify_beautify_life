@@ -302,6 +302,11 @@ text-decoration:none;
 
 /*================ blog ================*/
 
+
+.blog-card__excerpt {
+    margin-bottom: 1.5rem;
+}
+
 .blog-card__comment-count {
   border-color: transparent;
   border-bottom-color: currentColor;
