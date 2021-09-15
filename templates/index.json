@@ -238,6 +238,24 @@
             "width": "25%",
             "alignment": "center"
           }
+        },
+        "51bd05a9-caa6-42bf-a1eb-372f8bed0ae7": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "width": "50%",
+            "alignment": "center",
+            "cover_image": "large",
+            "show_author": false,
+            "show_date": true
+          }
+        },
+        "a26ce2e1-6454-4b35-a432-a58d646a4c75": {
+          "type": "html",
+          "settings": {
+            "code": "",
+            "width": "50%"
+          }
         }
       },
       "block_order": [
@@ -247,7 +265,9 @@
         "085d98c5-d275-4a71-8e25-efa41e0932b5",
         "14284e34-aead-40b6-a78a-f5afd379147f",
         "c7878b02-e510-43c8-8b26-54356e986d56",
-        "402d8ef2-ec58-41b7-8bd3-57ab01f5a05d"
+        "402d8ef2-ec58-41b7-8bd3-57ab01f5a05d",
+        "51bd05a9-caa6-42bf-a1eb-372f8bed0ae7",
+        "a26ce2e1-6454-4b35-a432-a58d646a4c75"
       ],
       "settings": {
         "title": "Custom content"
