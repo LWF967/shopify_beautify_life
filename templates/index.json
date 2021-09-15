@@ -219,6 +219,14 @@
             "collection": "",
             "width": "50%"
           }
+        },
+        "c7878b02-e510-43c8-8b26-54356e986d56": {
+          "type": "link_list",
+          "settings": {
+            "menu": "main-menu",
+            "width": "25%",
+            "alignment": "center"
+          }
         }
       },
       "block_order": [
@@ -226,7 +234,8 @@
         "1631527747272e8c4a-1",
         "dcf8e505-65d2-4df2-a87a-6b10491cf547",
         "085d98c5-d275-4a71-8e25-efa41e0932b5",
-        "14284e34-aead-40b6-a78a-f5afd379147f"
+        "14284e34-aead-40b6-a78a-f5afd379147f",
+        "c7878b02-e510-43c8-8b26-54356e986d56"
       ],
       "settings": {
         "title": "Custom content"

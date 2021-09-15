@@ -176,8 +176,13 @@ Show All Properties (12 more)
   position: absolute;
   top: 0; }
    
-   
-   
+
+/*================ mean-li ================*/     
+.list--inline>li {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
    
    
    
