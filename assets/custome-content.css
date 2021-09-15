@@ -128,7 +128,12 @@
 
 /*================ product-grid ================*/    
    
-   
+.grid-view-item a{
+
+text-decoration:none;
+}
+
+
 .grid-view-item {
   margin: 0 auto 35px; }
   .custom__item .grid-view-item {
