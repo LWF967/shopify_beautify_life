@@ -7,7 +7,7 @@
 /*============collection-list-beautify================*/
 
 
-.collection-grid-item__title , .h3{
+.collection-grid-item__title + .h3{
 font-size:50px;
 }
 
