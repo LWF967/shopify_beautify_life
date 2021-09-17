@@ -573,7 +573,7 @@ text-decoration:none;
 .grid__item__beautify {
   padding-left: 0.5rem;
   padding-bottom: 0.5rem;
-  max-width: 50%;
+
   flex-grow: 1;
   flex-shrink: 0;
 }
@@ -582,7 +582,7 @@ text-decoration:none;
   .grid__item__beautify {
     padding-left: 1rem;
     padding-bottom: 1rem;
-    max-width: 50%;
+
   }
 }
 
