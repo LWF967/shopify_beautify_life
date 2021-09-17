@@ -281,6 +281,80 @@
         "description": "",
         "full_width": false
       }
+    },
+    "16318454908c8c79fb": {
+      "type": "collection-list-Beautify",
+      "blocks": {
+        "16318454908c8c79fb-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16318454908c8c79fb-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16318454908c8c79fb-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "63788a5e-26e4-4178-b7a3-2066084a2ed6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "32736898-fdb0-4c44-ba80-1b6e6b09d910": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "773f8e81-b510-4c76-9c71-94977ca35e38": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "8f7baece-c1e9-42dc-8764-8e5f6f973984": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "d8302ee4-2041-4c15-934d-1fe9f3d5274b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1f96bd2e-0b86-41a0-9349-45a143ce66c1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "16318454908c8c79fb-0",
+        "16318454908c8c79fb-1",
+        "16318454908c8c79fb-2",
+        "63788a5e-26e4-4178-b7a3-2066084a2ed6",
+        "32736898-fdb0-4c44-ba80-1b6e6b09d910",
+        "773f8e81-b510-4c76-9c71-94977ca35e38",
+        "8f7baece-c1e9-42dc-8764-8e5f6f973984",
+        "d8302ee4-2041-4c15-934d-1fe9f3d5274b",
+        "1f96bd2e-0b86-41a0-9349-45a143ce66c1"
+      ],
+      "settings": {
+        "title": "Collection list",
+        "grid": 4
+      }
     }
   },
   "order": [
@@ -291,6 +365,7 @@
     "video",
     "multi_column",
     "1631527747272e8c4a",
-    "1631598037253c5913"
+    "1631598037253c5913",
+    "16318454908c8c79fb"
   ]
 }
