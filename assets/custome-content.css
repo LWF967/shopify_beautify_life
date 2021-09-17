@@ -877,139 +877,98 @@ text-decoration:none;
   .medium-up--text-center {
     text-align: center !important; } }
 /*================ Build Grid Push Classes ================*/
-@media only screen and (min-width: 750px) {
+@media only screen and (max-width: 749px) {
   /* Halves */
-  .medium-up--push-one-half {
+  .small--push-one-half {
     left: 50%; }
-
   /* Thirds */
-  .medium-up--push-one-third {
+  .small--push-one-third {
     left: 33.33333%; }
-
-  .medium-up--push-two-thirds {
+  .small--push-two-thirds {
     left: 66.66667%; }
-
   /* Quarters */
-  .medium-up--push-one-quarter {
+  .small--push-one-quarter {
     left: 25%; }
-
-  .medium-up--push-two-quarters {
+  .small--push-two-quarters {
     left: 50%; }
-
-  .medium-up--push-three-quarters {
+  .small--push-three-quarters {
     left: 75%; }
-
   /* Fifths */
-  .medium-up--push-one-fifth {
+  .small--push-one-fifth {
     left: 20%; }
-
-  .medium-up--push-two-fifths {
+  .small--push-two-fifths {
     left: 40%; }
-
-  .medium-up--push-three-fifths {
+  .small--push-three-fifths {
     left: 60%; }
-
-  .medium-up--push-four-fifths {
+  .small--push-four-fifths {
     left: 80%; }
-
   /* Sixths */
-  .medium-up--push-one-sixth {
+  .small--push-one-sixth {
     left: 16.66667%; }
-
-  .medium-up--push-two-sixths {
+  .small--push-two-sixths {
     left: 33.33333%; }
-
-  .medium-up--push-three-sixths {
+  .small--push-three-sixths {
     left: 50%; }
-
-  .medium-up--push-four-sixths {
+  .small--push-four-sixths {
     left: 66.66667%; }
-
-  .medium-up--push-five-sixths {
+  .small--push-five-sixths {
     left: 83.33333%; }
-
   /* Eighths */
-  .medium-up--push-one-eighth {
+  .small--push-one-eighth {
     left: 12.5%; }
-
-  .medium-up--push-two-eighths {
+  .small--push-two-eighths {
     left: 25%; }
-
-  .medium-up--push-three-eighths {
+  .small--push-three-eighths {
     left: 37.5%; }
-
-  .medium-up--push-four-eighths {
+  .small--push-four-eighths {
     left: 50%; }
-
-  .medium-up--push-five-eighths {
+  .small--push-five-eighths {
     left: 62.5%; }
-
-  .medium-up--push-six-eighths {
+  .small--push-six-eighths {
     left: 75%; }
-
-  .medium-up--push-seven-eighths {
+  .small--push-seven-eighths {
     left: 87.5%; }
-
   /* Tenths */
-  .medium-up--push-one-tenth {
+  .small--push-one-tenth {
     left: 10%; }
-
-  .medium-up--push-two-tenths {
+  .small--push-two-tenths {
     left: 20%; }
-
-  .medium-up--push-three-tenths {
+  .small--push-three-tenths {
     left: 30%; }
-
-  .medium-up--push-four-tenths {
+  .small--push-four-tenths {
     left: 40%; }
-
-  .medium-up--push-five-tenths {
+  .small--push-five-tenths {
     left: 50%; }
-
-  .medium-up--push-six-tenths {
+  .small--push-six-tenths {
     left: 60%; }
-
-  .medium-up--push-seven-tenths {
+  .small--push-seven-tenths {
     left: 70%; }
-
-  .medium-up--push-eight-tenths {
+  .small--push-eight-tenths {
     left: 80%; }
-
-  .medium-up--push-nine-tenths {
+  .small--push-nine-tenths {
     left: 90%; }
-
   /* Twelfths */
-  .medium-up--push-one-twelfth {
+  .small--push-one-twelfth {
     left: 8.33333%; }
-
-  .medium-up--push-two-twelfths {
+  .small--push-two-twelfths {
     left: 16.66667%; }
-
-  .medium-up--push-three-twelfths {
+  .small--push-three-twelfths {
     left: 25%; }
-
-  .medium-up--push-four-twelfths {
+  .small--push-four-twelfths {
     left: 33.33333%; }
-
-  .medium-up--push-five-twelfths {
+  .small--push-five-twelfths {
     left: 41.66667%; }
-
-  .medium-up--push-six-twelfths {
+  .small--push-six-twelfths {
     left: 50%; }
-
-  .medium-up--push-seven-twelfths {
+  .small--push-seven-twelfths {
     left: 58.33333%; }
-
-  .medium-up--push-eight-twelfths {
+  .small--push-eight-twelfths {
     left: 66.66667%; }
-
-  .medium-up--push-nine-twelfths {
+  .small--push-nine-twelfths {
     left: 75%; }
-
-  .medium-up--push-ten-twelfths {
+  .small--push-ten-twelfths {
     left: 83.33333%; }
-
-  .medium-up--push-eleven-twelfths {
+  .small--push-eleven-twelfths {
     left: 91.66667%; } }
 
 @media only screen and (min-width: 750px) {
@@ -1105,6 +1064,3 @@ text-decoration:none;
     left: 83.33333%; }
   .medium-up--push-eleven-twelfths {
     left: 91.66667%; } }
-
-
-
