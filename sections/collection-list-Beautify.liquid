@@ -2,6 +2,7 @@
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
       <h2>{{ section.settings.title | escape }}</h2>
+      <p> {{ section.settings.sub_title | escape }} </p>
     </div>
   {% endif %}
 
@@ -49,6 +50,18 @@
     {
       "type": "text",
       "id": "title",
+      "label": {
+   
+        "en": "Heading"
+      },
+      "default": {
+
+        "en": "Collection list"
+      }
+    },
+ 	{
+      "type": "text",
+      "id": "sub_title",
       "label": {
    
         "en": "Heading"
