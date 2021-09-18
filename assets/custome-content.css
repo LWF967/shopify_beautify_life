@@ -736,14 +736,12 @@ text-decoration:none;
   .small--text-center {
     text-align: center !important; } }
 
-.grid__item__featured{
-  
- padding-left: 0.5rem;
+.grid__item__beautify {
+  padding-left: 0.5rem;
   padding-bottom: 0.5rem;
-  max-width: 100%;
+  max-width: 50%;
   flex-grow: 1;
   flex-shrink: 0;
-
 }
 
    
