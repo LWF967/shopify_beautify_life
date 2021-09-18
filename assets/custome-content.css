@@ -594,11 +594,11 @@ text-decoration:none;
   flex-shrink: 0;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (min-width: 750px) {
   .grid__item__beautify {
     padding-left: 1rem;
     padding-bottom: 1rem;
-    width: 100%;
+    max-width: 50%;
   }
 }
 
