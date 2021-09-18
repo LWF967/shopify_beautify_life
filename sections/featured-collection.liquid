@@ -34,7 +34,7 @@
     
     
     
-    {% if section.settings.grid_mobile == 2 %}
+
     
     {% case section.settings.grid %}
     
@@ -51,26 +51,9 @@
 
      {% endcase %}
     
-    {% endif %}
+ 
     
-    {% if section.settings.grid_mobile == 1 %}
-    
-    {% case section.settings.grid %}
-    
-    {% when 2 %}
-      {%- assign grid_item_width = 'medium-up--one-half' -%}
-    {% when 3 %}
-      {%- assign grid_item_width = 'small--one-whole medium-up--one-third' -%}
-    {% when 4 %}
-      {%- assign grid_item_width = 'small--one-whole medium-up--one-quarter' -%}
-    {% when 5 %}
-      {%- assign grid_item_width = 'small--one-whole medium-up--one-fifth' -%}
-  	{% when 6 %}
-      {%- assign grid_item_width = 'small--one-whole medium-up--one-sixth' -%}  
-    
-    {% endcase %}
-    
-    {% endif %}
+  
 
     
     
@@ -166,18 +149,7 @@
       "default": 3
     },
 
-	{
-      "type": "range",
-      "id": "grid_mobile",
-      "label": {
- 
-        "en": "Collections per row mobile"
-      },
-      "min": 1,
-      "max": 3,
-      "step": 1,
-      "default": 2
-    },
+
 
 
     {
