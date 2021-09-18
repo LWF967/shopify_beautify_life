@@ -609,6 +609,8 @@ text-decoration:none;
 
 /*================ Build Responsive Grid Classes ================*/
 @media only screen and (max-width: 749px) {
+  
+ 
   /* Whole */
   .small--one-whole {
     width: 100%; }
@@ -732,7 +734,13 @@ text-decoration:none;
   .small--text-center {
     text-align: center !important; } }
 
-
+.grid__item__beautify {
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  max-width: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
 
    
 /*================ Build Responsive Grid Classes ================*/
