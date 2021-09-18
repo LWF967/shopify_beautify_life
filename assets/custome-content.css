@@ -599,7 +599,7 @@ text-decoration:none;
 .grid__item__featured {
   padding-left: 0.5rem;
   padding-bottom: 0.5rem;
-  max-width: 50%;
+  width: 50%;
   flex-grow: 1;
   flex-shrink: 0;
 }
