@@ -589,16 +589,16 @@ text-decoration:none;
 
 
 .grid__item__beautify {
-  padding-left: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
   max-width: 50%;
   flex-grow: 1;
   flex-shrink: 0;
 }
 
 .grid__item__featured {
-  padding-left: 3rem;
-  padding-bottom: 3rem;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
   width: 50%;
   max-width:50%;
   flex-grow: 1;
@@ -746,8 +746,8 @@ text-decoration:none;
     text-align: center !important; } }
 
 .grid__item__beautify {
-  padding-left: 15rem;
-  padding-bottom: 15rem;
+  padding-left: .75rem;
+  padding-bottom: 0.75rem;
   max-width: 50%;
   flex-grow: 1;
   flex-shrink: 0;
