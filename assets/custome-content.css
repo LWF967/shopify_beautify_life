@@ -746,8 +746,8 @@ text-decoration:none;
     text-align: center !important; } }
 
 .grid__item__beautify {
-  padding-left: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-left: 15rem;
+  padding-bottom: 15rem;
   max-width: 50%;
   flex-grow: 1;
   flex-shrink: 0;
