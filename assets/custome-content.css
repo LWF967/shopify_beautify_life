@@ -750,6 +750,14 @@ text-decoration:none;
   flex-shrink: 0;
 }
 
+.grid__item__featured {
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  width: 50%;
+  max-width:50%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
 
 }
 
