@@ -599,8 +599,8 @@ text-decoration:none;
 .grid__item__featured {
   padding-left: 3rem;
   padding-bottom: 3rem;
-  width: 50%;
-  max-width:50%;
+  width: 100%;
+  max-width:100%;
   flex-grow: 1;
   flex-shrink: 0;
 }
