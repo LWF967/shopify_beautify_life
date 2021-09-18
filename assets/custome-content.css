@@ -596,6 +596,14 @@ text-decoration:none;
   flex-shrink: 0;
 }
 
+.grid__item__featured {
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  max-width: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
 @media screen and (min-width: 750px) {
   .grid__item__beautify {
     padding-left: 1rem;
