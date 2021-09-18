@@ -804,6 +804,7 @@ summary::-webkit-details-marker {
   gap: 1rem;
   margin: 4rem 0 3rem;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .title--primary {
