@@ -739,7 +739,8 @@ text-decoration:none;
   .small--text-right {
     text-align: right !important; }
   .small--text-center {
-    text-align: center !important; } }
+    text-align: center !important; } 
+
 
 .grid__item__beautify {
   padding-left: 1.5rem;
@@ -748,6 +749,11 @@ text-decoration:none;
   flex-grow: 1;
   flex-shrink: 0;
 }
+
+
+}
+
+
 
    
 /*================ Build Responsive Grid Classes ================*/
