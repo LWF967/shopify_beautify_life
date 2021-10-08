@@ -34,23 +34,25 @@
     {% include 'no-blocks' %}
   {% endif %}
   
-   {%- for block in section.blocks -%}
-        {%- case block.type -%}
-  
-          {%- when 'img_top' -%}
+   
   
   <div class="collection-grid">
     <ul class="grid grid--uniform">
+            
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+  
+          {%- when 'img_top' -%}
        <li class="grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
          123123
         </li>
+      
+      {%- endcase -%}
+  {%- endfor -%}
   	    </ul>
   </div>
- 
-  		  {%- when 'img_top' -%}
   
-  		{%- endcase -%}
-  {%- endfor -%}
+  		
    
 </div>
 
