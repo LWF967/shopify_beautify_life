@@ -43,7 +43,7 @@
         {%- case block.type -%}
   
           {%- when 'img_top' -%}
-       <li class="grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
+       <li class="grid__item__beautify {{ grid_item_width }}" >
          123123
         </li>
       
@@ -150,6 +150,7 @@
 
   ],
   "blocks": [
+
     {
       "type": "img_top",
       "name": {
@@ -157,14 +158,34 @@
         "en": "Img_Top"
       },
       "settings": [
-        {
-          "label": {
 
-            "en": "Collection"
+       {
+         "type": "image_picker",
+         "id": "image",
+         "label": "Image"
+       },
+       {
+        "label": "Link to (Optional)",
+        "id": "url",
+        "type": "url"
+      },
+      {
+        "type": "select",
+        "id": "open_link",
+        "options": [
+          {
+            "value": "_self",
+            "label": "Current window (_self)"
           },
-          "id": "collection",
-          "type": "collection"
-        }
+         {
+            "value": "_blank",
+            "label": "New window (_blank)"
+          }
+        ],
+        "label": "Open link in",
+        "default": "_blank"
+      }
+
       ]
     },
 
