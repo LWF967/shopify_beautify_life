@@ -371,6 +371,7 @@
         "163367412087ecd8ca-2": {
           "type": "img_top",
           "settings": {
+            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
             "header_top": "Head",
             "url": "",
             "open_link": "_blank"
