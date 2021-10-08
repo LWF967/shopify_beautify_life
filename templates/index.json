@@ -353,19 +353,27 @@
         "163367412087ecd8ca-0": {
           "type": "img_top",
           "settings": {
-            "collection": ""
+            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+            "header_top": "Head",
+            "url": "",
+            "open_link": "_blank"
           }
         },
         "163367412087ecd8ca-1": {
           "type": "img_top",
           "settings": {
-            "collection": ""
+            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+            "header_top": "Head",
+            "url": "",
+            "open_link": "_blank"
           }
         },
         "163367412087ecd8ca-2": {
           "type": "img_top",
           "settings": {
-            "collection": ""
+            "header_top": "Head",
+            "url": "",
+            "open_link": "_blank"
           }
         }
       },
@@ -378,7 +386,7 @@
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
         "font-grid": 30,
-        "color": "#fff",
+        "color": "#ffffff",
         "grid": 3,
         "show_view_all": false,
         "show_page_Dot": false
