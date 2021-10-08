@@ -346,6 +346,43 @@
         "show_view_all": false,
         "show_page_Dot": false
       }
+    },
+    "163367412087ecd8ca": {
+      "type": "banner-Beautify",
+      "blocks": {
+        "163367412087ecd8ca-0": {
+          "type": "img_top",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "163367412087ecd8ca-1": {
+          "type": "img_top",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "163367412087ecd8ca-2": {
+          "type": "img_top",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "163367412087ecd8ca-0",
+        "163367412087ecd8ca-1",
+        "163367412087ecd8ca-2"
+      ],
+      "settings": {
+        "title": "NEW RELEASES",
+        "sub_title": "New supply this week",
+        "font-grid": 30,
+        "color": "#fff",
+        "grid": 3,
+        "show_view_all": false,
+        "show_page_Dot": false
+      }
     }
   },
   "order": [
@@ -357,6 +394,7 @@
     "multi_column",
     "1631527747272e8c4a",
     "1631598037253c5913",
-    "16318454908c8c79fb"
+    "16318454908c8c79fb",
+    "163367412087ecd8ca"
   ]
 }
