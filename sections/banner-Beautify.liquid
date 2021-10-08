@@ -43,7 +43,7 @@
   <div class="collection-grid">
     <ul class="grid grid--uniform">
             
-      {%- for block in section.blocks -%} {%- assign image = block.settings.image -%}
+      {%- for block in section.blocks -%} {%- assign image = block.settings.image -%}{% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
         {%- case block.type -%}
   
           {%- when 'img_top' -%}
@@ -52,7 +52,7 @@
         <div class="banner_hzoom nt_promotion oh pr">
           {%- if image != blank -%}
           
-<!--             <div class="nt_bg_lz pr_lazy_img lazyload item__position {{block.settings.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div> -->
+<!--             <div class="nt_bg_lz pr_lazy_img lazyload item__position {{block.settings.img_align}}" data-bgset="{{ img_url }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div> -->
                        <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ image |img_url  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image.alt}}" style="max-width:{{image.width}}px">
 
           {%- else -%}
