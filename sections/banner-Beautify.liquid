@@ -34,13 +34,7 @@
     {% include 'no-blocks' %}
   {% endif %}
   
-    {% if section.settings.show_view_all %}
-  <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
-      <a href="{{ routes.collections_url }}" class="button">{{ 'sections.collection_list.view_all' | t }}</a>
-    </div>
-  
-    {% endif %}
-  
+
   
   
 </div>
@@ -96,21 +90,15 @@
 
 	{
       "type": "checkbox",
-      "id": "show_view_all",
-      "default": false,
-      "label": "t:sections.collection-list.settings.show_view_all.label"
-    },
-	{
-      "type": "checkbox",
       "id": "show_page_Dot",
       "default": false,
       "label": "Show Page Dot"
     }
 
   ],
-  "blocks": [
+  "blocks": [  
     {
-      "type": "featured_collection",
+      "type": "image",
       "name": {
 
         "en": "Collection"
@@ -129,23 +117,20 @@
   ],
   "presets": [
     {
-      "name": {
-
-        "en": "banner-Beautify"
-      },
+      "name":  "banner-Beautify",
       "category": {
 
         "en": "Collection"
       },
       "blocks": [
         {
-          "type": "featured_collection"
+          "type": "image"
         },
         {
-          "type": "featured_collection"
+          "type": "image"
         },
         {
-          "type": "featured_collection"
+          "type": "image"
         }
       ]
     }
