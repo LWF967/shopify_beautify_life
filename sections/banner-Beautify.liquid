@@ -34,12 +34,24 @@
     {% include 'no-blocks' %}
   {% endif %}
   
-    {% if section.settings.show_view_all %}
-  <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
-      <a href="{{ routes.collections_url }}" class="button">{{ 'sections.collection_list.view_all' | t }}</a>
-    </div>
+   {%- for block in section.blocks -%}
+        {%- case block.type -%}
   
-    {% endif %}
+          {%- when 'img_top' -%}
+  
+  <div class="collection-grid">
+    <ul class="grid grid--uniform">
+       <li class="grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
+         123123
+        </li>
+  	    </ul>
+  </div>
+ 
+  		  {%- when 'img_top' -%}
+  
+  		{%- endcase -%}
+  {%- endfor -%}
+   
 </div>
 
 
@@ -110,7 +122,7 @@
       "type": "img_top",
       "name": {
 
-        "en": "Collection"
+        "en": "Img_Top"
       },
       "settings": [
         {
