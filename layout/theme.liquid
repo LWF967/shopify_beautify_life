@@ -14,7 +14,7 @@
     
 
 {{ 'lazysizes.js' | asset_url | script_tag }}
-{{ 'lazysizes.min.js' | asset_url | script_tag }}
+
     
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
