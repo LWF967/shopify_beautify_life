@@ -39,12 +39,15 @@
   <div class="collection-grid">
     <ul class="grid grid--uniform">
             
-      {%- for block in section.blocks -%}
+      {%- for block in section.blocks -%} {%- assign image = block.settings.image -%}
         {%- case block.type -%}
   
           {%- when 'img_top' -%}
        <li class="grid__item__beautify {{ grid_item_width }}" >
-         123123
+         
+         
+         
+        
         </li>
       
       {%- endcase -%}
