@@ -44,9 +44,18 @@
   
           {%- when 'img_top' -%}
        <li class="grid__item__beautify {{ grid_item_width }}" >
-         
-         
-         
+               
+        <div class="banner_hzoom nt_promotion oh pr">
+          {%- if image != blank -%}
+            <div class="nt_bg_lz pr_lazy_img lazyload item__position {{block.settings.img_align}}" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto" data-parent-fit="cover"></div>
+          {%- else -%}
+            {%- capture cl -%}{% cycle 'a8dacc', '56cfe1' %}{%- endcapture -%}
+            <div class="nt_bg_lz pr_lazy_img lazyload item__position {{block.settings.img_align}}" data-bg="https://placehold.it/530x600.png/{{cl}}/{{cl}}?text=1" style="padding-top:52.63157894736842%"></div>
+          {%- endif -%}
+          <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class="pa t__0 l__0 r__0 b__0{% if block.settings.url == blank %} pe_none{% endif %}"></a>
+          <div class="nt_promotion_html pa t__0 l__0 {{block.settings.txt_align}} pe_none">{{block.settings.html}}</div>
+        </div>
+            
         
         </li>
       
