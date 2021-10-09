@@ -37,9 +37,9 @@
             {%- when 'text' -%}
               <div class="image-with-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
-              {%- if block.settings.button_label != blank -%}
+              {%- if block.settings.button_text != blank -%}
                 <a{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link == blank %} aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
-                  {{ block.settings.button_label | escape }}
+                  {{ block.settings.button_text | escape }}
                 </a>
               {%- endif -%}
           {%- endcase -%}
