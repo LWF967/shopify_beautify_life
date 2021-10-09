@@ -28,17 +28,19 @@
     {% include 'no-blocks' %}
   {% endif %}
   
-  
+    <div class="banner_third"> 
   {%- for block in section.blocks -%} 
         {%- case block.type -%}
   {%- when 'banner_third' -%}
-   <div class="banner_third">
+
      {%- when 'banner_third' -%}
      <div class="flex_center">text</div>
-  </div>
+
   
    {%- endcase -%}
   {%- endfor -%}
+      
+    </div>
   <div class="collection-grid">
     <ul class="grid grid--uniform">
             
