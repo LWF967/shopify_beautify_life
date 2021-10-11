@@ -37,10 +37,17 @@
     <div id="next" class="control">右</div>
 </div>
 <script type="text/javascript">
+  
     var img = document.getElementById("slider_box_img").getElementsByTagName("li");
+  
+  	var list_text = document.getElementById('list');
+  
     var list = document.getElementById("list").getElementsByTagName("li");
     var next = document.getElementById("next");
     var prev = document.getElementById("prev");
+  
+  
+  
     for (var i = 0; i < list.length; i++) {
         list[i].index = i;
         list[i].onclick = function(){
