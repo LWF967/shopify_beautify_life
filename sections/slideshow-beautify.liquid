@@ -6,12 +6,12 @@
     #slider_box_img{width:500px;height: 300px;position: relative;}
     #slider_box_img li{position: absolute;top:0;left:0;width:500px;height:300px;font-size: 40px;text-align: center;line-height: 300px;display: none;background:#f4f4f4;color:blue;}
     #slider_box_img li.show{display: block;}
-    #list {width:500px;height:30px;line-height: 30px;color:#333;position: absolute;bottom:0;left:0;}
-    #list li{float:left;;background:green;width:125px;height:30px;text-align: center;line-height: 30px;font-size: 20px;}
+    #list {width:500px;height:30px;line-height: 30px;color:#333;position: absolute;bottom:0;left:0; display: flex;justify-content: center;}
+    #list li{float:left;;background:green;width:30px;height:30px;text-align: center;line-height: 30px;font-size: 20px; border-radius: 50%;text-align: center;}
     #list li.active{background:blue;color:#fff;}
-    .control{position: absolute;top:125px;display: block;width:30px;height:50px;text-align: center;line-height: 50px;background:#666;color:#fff;}
+    .control{position: absolute;top:125px;display: block;width:30px;height:30px;text-align: center;line-height: 30px;background:#666;color:#fff;  border-radius: 50%;}
     #prev{left:0; 
-    border-radius: 50%;
+   
     padding: 0;
     background-color: transparent;
     cursor: pointer;
@@ -19,9 +19,7 @@
     #next{right:0;}
 </style>
  
-</head>
- 
-<body>
+
 <div id="slider_box">
     <ul id="slider_box_img">
         <li class="show">图1</li>
