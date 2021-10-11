@@ -103,7 +103,18 @@
 
 <script type="text/javascript">
   
-    var img = document.getElementById("slider_box_img").getElementsByTagName("li");
+    
+</script>
+
+
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+
+var img = document.getElementById("slider_box_img").getElementsByTagName("li");
   
   	var list_text = document.getElementById('list');
   
@@ -153,13 +164,5 @@
         list[index].className="active";
         img[index].className="show";
     }
-</script>
-
-
-
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
+                                          
 {% endjavascript %}

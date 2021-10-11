@@ -386,11 +386,41 @@
       "settings": {
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
-        "font-grid": 30,
-        "color": "#ffffff",
+        "font_top": 30,
+        "color_top": "#fff",
         "grid": 3,
         "show_view_all": false,
         "show_page_Dot": false
+      }
+    },
+    "163394493185d4b3dd": {
+      "type": "slideshow-beautify",
+      "blocks": {
+        "163394493185d4b3dd-0": {
+          "type": "slideshow_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg"
+          }
+        },
+        "163394493185d4b3dd-1": {
+          "type": "slideshow_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg"
+          }
+        },
+        "163394493185d4b3dd-2": {
+          "type": "slideshow_img",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "163394493185d4b3dd-0",
+        "163394493185d4b3dd-1",
+        "163394493185d4b3dd-2"
+      ],
+      "settings": {
       }
     }
   },
@@ -404,6 +434,7 @@
     "1631527747272e8c4a",
     "1631598037253c5913",
     "16318454908c8c79fb",
-    "163367412087ecd8ca"
+    "163367412087ecd8ca",
+    "163394493185d4b3dd"
   ]
 }
