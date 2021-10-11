@@ -23,9 +23,10 @@
 <div id="slider_box">
     <ul id="slider_box_img">
       
-       {%- for block in section.blocks -%} {%- assign image = block.settings.image -%}
+       {%- for block in section.blocks -%} 
       	
       {%- case block.type -%}
+      {%- when 'slideshow_img' -%} {%- assign image = block.settings.image -%}
       
       <li> 
         <div>
