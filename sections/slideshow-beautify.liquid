@@ -41,8 +41,25 @@
 
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Slideshow beautify",
+    "settings": [
+	],
+	"blocks":[
+		{
+	"type": "slideshow_img",
+    "name": "Image slide (Parent)",
+    "settings": [
+	 {
+         "type": "image_picker",
+         "id": "image",
+         "label": "Image",
+         "info": "1800 x 600px .jpg recommended"
+       }
+
+	]
+
+	}
+	]
   }
 {% endschema %}
 
