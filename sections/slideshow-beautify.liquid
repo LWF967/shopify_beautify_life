@@ -25,7 +25,7 @@
       
        {%- for block in section.blocks -%} {%- assign image = block.settings.image -%}
       	
-      
+      {%- case block.type -%}
       
       <li> 
         <div>
@@ -44,13 +44,10 @@
         
       </li>
       
+      {% endcase %}
+      {% endfor %}
       
-      {% endfor%}
-      
-        <li class="show">图1</li>
-        <li>图2</li>
-        <li>图3</li>
-        <li>图4</li>
+
     </ul>
     <ol id="list">
 
