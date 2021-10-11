@@ -68,18 +68,7 @@
 	"tag": "section",
 	"class":"slideshow_beautify",
     "settings": [
-	{
-      "type": "text",
-      "id": "title",
-      "label": {
-   
-        "en": "Heading"
-      },
-      "default": {
 
-        "en": "Slideshow beautify"
-      }
-    }
 	],
 	"blocks":[
 		{
@@ -96,7 +85,18 @@
 	]
 
 	}
-	]
+	],
+	"presets": [
+      {
+        "name": "6. Slideshow",
+        "category": "III. Image",
+        "blocks": [
+          { "type": "slideshow_img" },
+          { "type": "slideshow_img" },
+          { "type": "slideshow_img" }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
