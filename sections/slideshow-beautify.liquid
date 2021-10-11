@@ -1,3 +1,88 @@
+<style>
+    *{margin:0;padding:0;}
+    #slider_box{position: relative;width:500px;height:300px;margin:30px auto;}
+    #slider_box ul:after{content: "";display: block;clear:both;width:0;height: 0;}
+    li{list-style:none;}
+    #slider_box_img{width:500px;height: 300px;position: relative;}
+    #slider_box_img li{position: absolute;top:0;left:0;width:500px;height:300px;font-size: 40px;text-align: center;line-height: 300px;display: none;background:#f4f4f4;color:blue;}
+    #slider_box_img li.show{display: block;}
+    #list {width:500px;height:30px;line-height: 30px;color:#333;position: absolute;bottom:0;left:0;}
+    #list li{float:left;;background:green;width:125px;height:30px;text-align: center;line-height: 30px;font-size: 20px;}
+    #list li.active{background:blue;color:#fff;}
+    .control{position: absolute;top:125px;display: block;width:30px;height:50px;text-align: center;line-height: 50px;background:#666;color:#fff;}
+    #prev{left:0; 
+    border-radius: 50%;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #222;}
+    #next{right:0;}
+</style>
+ 
+</head>
+ 
+<body>
+<div id="slider_box">
+    <ul id="slider_box_img">
+        <li class="show">图1</li>
+        <li>图2</li>
+        <li>图3</li>
+        <li>图4</li>
+    </ul>
+    <ol id="list">
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ol>
+    <div id="prev" class="control">左</div>
+    <div id="next" class="control">右</div>
+</div>
+<script type="text/javascript">
+    var img = document.getElementById("slider_box_img").getElementsByTagName("li");
+    var list = document.getElementById("list").getElementsByTagName("li");
+    var next = document.getElementById("next");
+    var prev = document.getElementById("prev");
+    for (var i = 0; i < list.length; i++) {
+        list[i].index = i;
+        list[i].onclick = function(){
+            for(var j = 0;j<list.length;j++){
+                list[j].className="";
+                img[j].className="";
+            }
+            this.className="active";
+            img[this.index].className="show";
+        }
+    }
+    next.onclick = function(){
+        play(false);
+    }
+    prev.onclick = function(){
+        play(true);
+    }
+    function play(bool){
+        for(var i = 0;i<list.length;i++){
+            if(list[i].className=="active"){
+                var index = i;
+                break;
+            }
+        }
+        bool ?(index == 0? index= list.length-1:index--):(index == list.length-1? index= 0:index++);
+        for(var j = 0;j<list.length;j++){
+            list[j].className="";
+            img[j].className="";
+        }
+        list[index].className="active";
+        img[index].className="show";
+    }
+</script>
+
+
+
+
+
+
+
 {% schema %}
   {
     "name": "Section name",
