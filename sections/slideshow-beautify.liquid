@@ -47,6 +47,14 @@
     var prev = document.getElementById("prev");
   
   
+  	for (let i = 0; i < img.length; i++) {
+            img[i].index = i;
+            list_text.innerHTML += "<li></li>"
+            
+        }
+  
+  	list[0].className="active";
+  	img[0].clasName = "show";
   
     for (var i = 0; i < list.length; i++) {
         list[i].index = i;
