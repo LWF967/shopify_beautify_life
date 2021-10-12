@@ -27,11 +27,8 @@
       <div class="product-box">
       
     	{% for block in section.blocks %}
-         {%
-            render 'product-grid-item',
-            product: block.settings.featured_product,
-          %}
-<!-- 			 <div class="artworks-product_content">
+
+ 			 <div class="artworks-product_content">
               <a class="product_self-link" href="{{ block.settings.featured_product.url }}"></a>
               <div class="artworks-box" style="background-image: url({{ block.settings.featured_product | img_url: '190x' }});">
               </div>
@@ -48,7 +45,8 @@
               </div>
               
               <p class="artworks-price" style="margin-top:10px !important;font-weight:bold;">{{ block.settings.featured_product.price | money }}</p>
-         	</div> -->
+         	</div> 
+        
     	{% endfor %}   
        
       </div>
