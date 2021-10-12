@@ -31,7 +31,6 @@
     <div class="banner_third"> 
   {%- for block in section.blocks -%}  
         {%- case block.type -%}
-  {%- when 'banner_third' -%}
 
      {%- when 'banner_third' -%} {%- assign image = block.settings.image -%}
      <div class="flex_center" style="background-image:url({{ image |ima_url }})">
