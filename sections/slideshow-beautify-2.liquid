@@ -24,7 +24,7 @@
           	</svg>
         </p>
       </div>
-    <div class="big-box">
+    <div class="big-box" data-autoplay="{{section.settings.auto_play}}">
       <div class="product-box">
       
     	{% for block in section.blocks %}
@@ -492,7 +492,8 @@ var x = diff_box/itemLength;
         }
   
   }
-  
+ 
+  let autop = document.getElementsByClassName('big-box');
   
    function autoPlay(){
     
@@ -500,7 +501,8 @@ var x = diff_box/itemLength;
     
     }
   
-  setInterval(autoPlay, 2000)
+let  time =    
+  setInterval(autoPlay, time)
   
 
 
