@@ -363,12 +363,12 @@ var x = diff_box/itemLength;
         if(i >= 8){
             i =1;
             removeTransition();
-           contentbox.style.transform="translate(" + -itemlist[i].index*diff  + "px" + ")";
+           contentbox.style.transform="translate(" + itemlist[i].index*diff  + "px" + ")";
         }
        else if(i <= 0){
             i =8;
             removeTransition();
-            contentbox.style.transform="translate(" + itemlist[i].index*diff  + "px" + ")";
+            contentbox.style.transform="translate(" + -itemlist[i].index*diff  + "px" + ")";
         }
        
     });
