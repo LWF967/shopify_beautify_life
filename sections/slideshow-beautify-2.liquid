@@ -290,6 +290,7 @@ var mardiff=contentbox.clientWidth*0.02;;
  var diff=contentbox.clientWidth; 
   
 var itemlist=document.querySelectorAll(".slideshow_content");
+var itemLength  = itemlist.length;
   
   
 var btnbox=document.querySelectorAll(".productitem--actions");
@@ -302,7 +303,7 @@ var i=1;
 
   	  rightbtn.addEventListener("click",function(){
 
-        contentbox.style.transform="translate(" + -diff  + "px" + ")";
+        contentbox.style.transform="translate(" + -(diff_box/itemLength)  + "px" + ")";
         
         diff = diff;
         contentbox.style.transition="all 1.5s";
