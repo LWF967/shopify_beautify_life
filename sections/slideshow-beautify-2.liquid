@@ -39,7 +39,7 @@
 
           {%- else -%}
 
-          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+               <div style="max-height:400px"> {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}  </div>
           {%- endif -%} 
                
                <p>{{block.settings.slider_text}}</p>
