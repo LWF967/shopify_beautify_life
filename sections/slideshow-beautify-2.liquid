@@ -291,7 +291,12 @@ var i=1;
   
 
 
-  
+    for(let i=0;i<itemlist.length;i++){
+      
+  	var x = i*diff*-1;
+     itemlist[i].style.transform="translate(" + x  + "px" + ")"; 
+      console.log(diff);
+    }
   
 
   	  rightbtn.addEventListener("click",function(){
@@ -308,20 +313,7 @@ var i=1;
         contentbox.style.transition="all 1.5s";
     
   })
-//   for(let i=0;i<itemlist.length;i++){
-      
-//       	itemlist[i].addEventListener("mouseover",function(){
-//            btnbox[i].style.position="relative";
-//            btnbox[i].style.visibility="visible";
-//            btnbox[i].style.opacity="1";
-//       	})
-//         itemlist[i].addEventListener("mouseout",function(){
-//            btnbox[i].style.position="absolute";
-//            btnbox[i].style.visibility="hidden";
-//            btnbox[i].style.opacity="0";
-//       	})
-      
-//     }
+
   
   
 
