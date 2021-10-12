@@ -291,6 +291,7 @@ var i=1;
   
 var x = diff_box/itemLength;
 
+   contentbox.style.transition="all 1.5s";
 //     for(let i=0;i<itemlist.length;i++){
       
 //   	var x = i*diff*-1;
@@ -300,11 +301,13 @@ var x = diff_box/itemLength;
   
 
   	  rightbtn.addEventListener("click",function(){
+        if(){
         contentbox.style.transform="translate(" + -x  + "px" + ")";
          i++;
 		x = i*diff ;
         console.log(x);
-        contentbox.style.transition="all 1.5s";
+//         contentbox.style.transition="all 1.5s";
+        }
   })
       
   leftbtn.addEventListener("click",function(){
