@@ -301,10 +301,10 @@ var i=1;
   
 
   	  rightbtn.addEventListener("click",function(){
-	
+		i++
         contentbox.style.transform="translate(" + -diff  + "px" + ")";
        
-		diff += diff;
+		diff = i*diff;
         contentbox.style.transition="all 1.5s";
   })
       
