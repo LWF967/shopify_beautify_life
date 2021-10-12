@@ -327,6 +327,23 @@ var i=1;
   var list = list_text.getElementsByTagName("li");
   list[0].className="active";
   
+  
+  
+  
+  for (var i = 0; i < list.length; i++) {
+        list[i].index = i;
+        list[i].onclick = function(){
+            for(var j = 0;j<list.length;j++){
+                list[j].className="";
+                img[j].className="";
+            }
+            this.className="active";
+            img[this.index].className="show";
+        }
+    }
+  
+  
+  
 var x = diff_box/itemLength;
 
   function removeTransition(){
