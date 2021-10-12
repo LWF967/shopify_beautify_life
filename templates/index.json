@@ -478,6 +478,14 @@
       ],
       "settings": {
       }
+    },
+    "16340032987fd8fd82": {
+      "type": "slideshow-beautify-2",
+      "settings": {
+        "feature_title": "title name",
+        "link-name": "View all",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -492,6 +500,7 @@
     "16318454908c8c79fb",
     "163367412087ecd8ca",
     "163394493185d4b3dd",
-    "16339460105809af61"
+    "16339460105809af61",
+    "16340032987fd8fd82"
   ]
 }
