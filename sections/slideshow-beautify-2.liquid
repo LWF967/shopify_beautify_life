@@ -285,9 +285,13 @@ var leftbtn=document.querySelector(".leftbtn");
 var rightbtn=document.querySelector(".rightbtn");
 var mardiff=contentbox.clientWidth*0.02;;
 // var diff=contentbox.scrollWidth-contentbox.clientWidth;
-  
+ 
+ var diff_box = contentbox.scrollWidth; 
  var diff=contentbox.clientWidth; 
+  
 var itemlist=document.querySelectorAll(".slideshow_content");
+  
+  
 var btnbox=document.querySelectorAll(".productitem--actions");
 var i=1;
   
@@ -300,7 +304,7 @@ var i=1;
 
         contentbox.style.transform="translate(" + -diff  + "px" + ")";
         
-        diff
+        diff = diff;
         contentbox.style.transition="all 1.5s";
   })
       
