@@ -313,6 +313,18 @@ var itemLength  = itemlist.length;
 var btnbox=document.querySelectorAll(".productitem--actions");
 var i=1;
   
+//获取轮播点
+  
+ var list_text = document.getElementById('list'); 
+  
+  
+  for (let a = 0; a < itemLength; a++) {
+            img[i].index = i;
+            list_text.innerHTML += "<li></li>"
+            
+        }
+  
+  
 var x = diff_box/itemLength;
 
   function removeTransition(){
