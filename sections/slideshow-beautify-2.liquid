@@ -150,6 +150,24 @@
           }
         ]
       },
+	  {
+        "type": "checkbox",
+        "id": "overlay",
+        "label": "Show overlay",
+        "default": true
+      },
+	  {
+        "type": "checkbox",
+        "id": "loop",
+        "label": "Slide Loop",
+        "default": true
+      },
+	 {
+        "type": "checkbox",
+        "id": "auto_play",
+        "label": "Auto-rotate slides",
+        "default": true
+      },
 		
 		{
 			"type":"text",
@@ -449,25 +467,41 @@ var index=1;
   
 var x = diff_box/itemLength;
 
-  function removeTransition(){
+  function moveTransition(index){
     
-  contentbox.style.transition = 'none';
+  index =  list_text.querySelector('.active').index+1;
+       
+        if(index < itemLength){
+//           index =  list_text.querySelector('.active').index+1;
+        contentbox.style.transform="translate(" + -itemlist[index].index*diff  + "px" + ")";
+ 
+	
+         for(var j = 0;j<list.length;j++){
+            list[j].className="";
+        }
+        list[index].className="active";
+        } else if(index = itemLength){
+        index =  0;
+        contentbox.style.transform="translate(" + -itemlist[index].index*diff  + "px" + ")";
+ 
+	
+         for(var j = 0;j<list.length;j++){
+            list[j].className="";
+        }
+        list[index].className="active";
+        }
   
   }
   
-//  contentbox.addEventListener('transitionend', function(){
-//         if(index >= itemLength){
-//             index = 1;
-// //             removeTransition();
-//            contentbox.style.transform="translate(" + itemlist[index].index*diff  + "px" + ")";
-//         }
-//        else if(index <= 0){
-//             index = itemLength;
-// //             removeTransition();
-//             contentbox.style.transform="translate(" + -itemlist[index].index*diff  + "px" + ")";
-//         }
-       
-//     });
+  
+   function autoPlay(){
+    
+    moveTransition(index);
+    
+    }
+  
+  setInterval(autoPlay, 2000)
+  
 
 
 //由于左右边框border1，所以要+2来判断
@@ -498,6 +532,13 @@ var x = diff_box/itemLength;
         
 
   })
+    
+    
+   
+  
+  
+  
+    
       
   	leftbtn.addEventListener("click",function(){
  index = list_text.querySelector('.active').index;
