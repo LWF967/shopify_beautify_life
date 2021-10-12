@@ -304,12 +304,12 @@ var x = diff_box/itemLength;
         if(i >= 8){
             i =1;
             removeTransition();
-            setTranslateX(-index*width)
+           contentbox.style.transform="translate(" + -i*diff  + "px" + ")";
         }
        else if(i <= 0){
             i =8;
             removeTransition();
-            setTranslateX(-index*width)
+            contentbox.style.transform="translate(" + -i*diff  + "px" + ")";
         }
         setPotins();
     });
