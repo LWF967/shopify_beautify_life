@@ -289,7 +289,7 @@ var itemLength  = itemlist.length;
 var btnbox=document.querySelectorAll(".productitem--actions");
 var i=1;
   
-
+var x = diff;
 
 //     for(let i=0;i<itemlist.length;i++){
       
@@ -300,11 +300,10 @@ var i=1;
   
 
   	  rightbtn.addEventListener("click",function(){
-		
-        contentbox.style.transform="translate(" + -diff  + "px" + ")";
+        contentbox.style.transform="translate(" + -x  + "px" + ")";
          i++;
-		diff = i*diff ;
-        console.log(diff);
+		x = i*diff ;
+        console.log(x);
         contentbox.style.transition="all 1.5s";
   })
       
