@@ -291,19 +291,19 @@ var i=1;
   
 
 
-    for(let i=0;i<itemlist.length;i++){
+//     for(let i=0;i<itemlist.length;i++){
       
-  	var x = i*diff*-1;
-     itemlist[i].style.transform="translate(" + x  + "px" + ")"; 
-      console.log(diff);
-    }
+//   	var x = i*diff*-1;
+// //      itemlist[i].style.transform="translate(" + x  + "px" + ")"; 
+//       console.log(diff);
+//     }
   
 
   	  rightbtn.addEventListener("click",function(){
-		i++;
+		
         contentbox.style.transform="translate(" + -diff  + "px" + ")";
-       
-		diff = i*diff -diff;
+         i++;
+		diff = i*diff ;
         contentbox.style.transition="all 1.5s";
   })
       
