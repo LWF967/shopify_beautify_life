@@ -24,7 +24,7 @@
           	</svg>
         </p>
       </div>
-    <div class="big-box" data-autoplay="{{section.settings.auto_play}}">
+    <div class="big-box" data-autoplay="{{section.settings.auto_play}}" data-autotime="{{section.settings.auto_time}}">
       <div class="product-box">
       
     	{% for block in section.blocks %}
@@ -167,6 +167,16 @@
         "id": "auto_play",
         "label": "Auto-rotate slides",
         "default": true
+      },
+	{
+        "type": "range",
+        "id": "auto_time",
+        "min": 3,
+        "max": 9,
+        "step": 1,
+        "label": "Change slide every",
+        "unit": "sec",
+        "default": 3
       },
 		
 		{
@@ -504,7 +514,7 @@ var x = diff_box/itemLength;
     
     }
   
-let  time =   2000; 
+let  time =   document.getElementsByClassName('big-box')[0].dataset.autotime; 
   setInterval(autoPlay, time)
   
 
