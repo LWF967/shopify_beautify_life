@@ -376,12 +376,24 @@
             "url": "",
             "open_link": "_blank"
           }
+        },
+        "a6c0b116-ff4a-4884-a6e9-088658d97380": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo.png",
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3
+          }
         }
       },
       "block_order": [
         "163367412087ecd8ca-0",
         "163367412087ecd8ca-1",
-        "163367412087ecd8ca-2"
+        "163367412087ecd8ca-2",
+        "a6c0b116-ff4a-4884-a6e9-088658d97380"
       ],
       "settings": {
         "title": "NEW RELEASES",
