@@ -378,7 +378,7 @@ var x = diff_box/itemLength;
   
   	  rightbtn.addEventListener("click",function(){
         if(x+2<diff_box){
-        contentbox.style.transform="translate(" + -x  + "px" + ")";
+        contentbox.style.transform="translate(" + -itemlist[i].index*diff  + "px" + ")";
          i++;
 		x = i*diff ;
         console.log(x);
@@ -389,7 +389,7 @@ var x = diff_box/itemLength;
   leftbtn.addEventListener("click",function(){
   
     	if(x+2>diff){
-        contentbox.style.transform="translate(" + x  + "px" + ")";
+        contentbox.style.transform="translate(" + itemlist[i].index*diff  + "px" + ")";
          i--;
 		x = i*diff ;
         console.log(x);
