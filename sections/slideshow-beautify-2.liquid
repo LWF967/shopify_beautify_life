@@ -1,3 +1,4 @@
+
 {% assign customerId = customer.id %}
 
 
@@ -28,7 +29,7 @@
       
     	{% for block in section.blocks %}
 
- 			 <div class="artworks-product_content">
+ 			 <div class="slideshow_content">
               <a class="product_self-link" href="{{ block.settings.featured_product.url }}"></a>
               <div class="artworks-box" style="background-image: url({{ block.settings.featured_product | img_url: '190x' }});">
               </div>
