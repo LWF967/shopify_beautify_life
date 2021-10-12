@@ -34,7 +34,7 @@
 
      {%- when 'banner_third' -%} {%- assign image = block.settings.image -%}
      <div class="flex_center" style="background-image:url(
-                                     {{ image |img_url }}
+                                    
        {%- if image.width >= 375 -%}{{ image | img_url: '375x' }} {%- endif -%}
 {%- if image.width >= 750 -%}{{ image | img_url: '750x' }} {%- endif -%}
 {%- if image.width >= 1100 -%}{{ image | img_url: '1100x' }} {%- endif -%}
