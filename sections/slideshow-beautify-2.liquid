@@ -345,7 +345,7 @@ var index=1;
   
   
   
-  for (var c = 0; c < list.length; c++) {
+  for (var c = 1; c < list.length; c++) {
         list[c].index = c;
         list[c].onclick = function(){
             for(var j = 0;j<list.length;j++){
@@ -399,7 +399,7 @@ var x = diff_box/itemLength;
         }
         list[index].className="active";
         } else if(index = itemLength){
-        index =  0;
+        index =  1;
         contentbox.style.transform="translate(" + -itemlist[index].index*diff  + "px" + ")";
  
 	
