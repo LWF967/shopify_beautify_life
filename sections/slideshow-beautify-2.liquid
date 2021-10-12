@@ -417,6 +417,19 @@ var x = diff_box/itemLength;
         }
         list[index].className="active";
     
+    }else if(index = 0){
+    
+   	index = list.length;
+        contentbox.style.transform="translate(" + -itemlist[index].index*diff  + "px" + ")";
+      
+
+    
+
+    for(var j = 0;j<list.length;j++){
+            list[j].className="";
+        }
+        list[index].className="active";
+    
     }
   
    
