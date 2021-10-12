@@ -29,12 +29,12 @@
   {% endif %}
   
     <div class="banner_third"> 
-  {%- for block in section.blocks -%} 
+  {%- for block in section.blocks -%}  {%- assign image = block.settings.image -%}
         {%- case block.type -%}
   {%- when 'banner_third' -%}
 
      {%- when 'banner_third' -%}
-     <div class="flex_center" >text</div>
+     <div class="flex_center" style="background-image:url({{ image }})">text</div>
 
   
    {%- endcase -%}
