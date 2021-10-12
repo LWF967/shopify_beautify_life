@@ -523,6 +523,12 @@
           "settings": {
             "featured_product": ""
           }
+        },
+        "e4f5081c-de90-4b02-9e7b-9ddd8440486e": {
+          "type": "category",
+          "settings": {
+            "featured_product": ""
+          }
         }
       },
       "block_order": [
@@ -532,7 +538,8 @@
         "b907fb1f-429f-44e8-8a8d-06a199cbec56",
         "77b292dc-9474-4f1a-a47f-30a089e8726e",
         "57ddc6b8-8731-4b40-88bd-8f14fb092992",
-        "52daa6ce-cfd8-42fa-b169-ea7850bd91c4"
+        "52daa6ce-cfd8-42fa-b169-ea7850bd91c4",
+        "e4f5081c-de90-4b02-9e7b-9ddd8440486e"
       ],
       "settings": {
         "feature_title": "title name",
