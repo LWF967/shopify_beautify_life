@@ -383,7 +383,7 @@
             "image": "shopify:\/\/shop_images\/logo.png",
             "header_top": "Head",
             "url": "",
-            "color": "#fff",
+            "color": "#ffffff",
             "w": 140,
             "h": 3
           }
@@ -482,64 +482,36 @@
     "16340032987fd8fd82": {
       "type": "slideshow-beautify-2",
       "blocks": {
-        "49d79ef6-86f0-4983-8b69-e38af91efe2c": {
-          "type": "category",
+        "56d064e8-838e-4960-8f92-bec0c45e56d9": {
+          "type": "slideshow_img2",
           "settings": {
-            "featured_product": ""
+            "slider_text": "title name"
           }
         },
-        "45e935d3-e433-4fd5-a341-cfe1e8fa778c": {
-          "type": "category",
+        "938f42ff-3774-4c24-9c1f-3b971c42ae18": {
+          "type": "slideshow_img2",
           "settings": {
-            "featured_product": ""
+            "slider_text": "title name"
           }
         },
-        "d8c77166-2f06-4dee-b182-c7a6c9871736": {
-          "type": "category",
+        "cf520457-a362-42f7-a043-5e28a8ffc74d": {
+          "type": "slideshow_img2",
           "settings": {
-            "featured_product": ""
+            "slider_text": "title name"
           }
         },
-        "b907fb1f-429f-44e8-8a8d-06a199cbec56": {
-          "type": "category",
+        "d98aad89-0e6d-4788-95a8-22f4eb463027": {
+          "type": "slideshow_img2",
           "settings": {
-            "featured_product": ""
-          }
-        },
-        "77b292dc-9474-4f1a-a47f-30a089e8726e": {
-          "type": "category",
-          "settings": {
-            "featured_product": ""
-          }
-        },
-        "57ddc6b8-8731-4b40-88bd-8f14fb092992": {
-          "type": "category",
-          "settings": {
-            "featured_product": ""
-          }
-        },
-        "52daa6ce-cfd8-42fa-b169-ea7850bd91c4": {
-          "type": "category",
-          "settings": {
-            "featured_product": ""
-          }
-        },
-        "e4f5081c-de90-4b02-9e7b-9ddd8440486e": {
-          "type": "category",
-          "settings": {
-            "featured_product": ""
+            "slider_text": "title name"
           }
         }
       },
       "block_order": [
-        "49d79ef6-86f0-4983-8b69-e38af91efe2c",
-        "45e935d3-e433-4fd5-a341-cfe1e8fa778c",
-        "d8c77166-2f06-4dee-b182-c7a6c9871736",
-        "b907fb1f-429f-44e8-8a8d-06a199cbec56",
-        "77b292dc-9474-4f1a-a47f-30a089e8726e",
-        "57ddc6b8-8731-4b40-88bd-8f14fb092992",
-        "52daa6ce-cfd8-42fa-b169-ea7850bd91c4",
-        "e4f5081c-de90-4b02-9e7b-9ddd8440486e"
+        "56d064e8-838e-4960-8f92-bec0c45e56d9",
+        "938f42ff-3774-4c24-9c1f-3b971c42ae18",
+        "cf520457-a362-42f7-a043-5e28a8ffc74d",
+        "d98aad89-0e6d-4788-95a8-22f4eb463027"
       ],
       "settings": {
         "feature_title": "title name",
