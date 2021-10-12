@@ -132,13 +132,7 @@
     display: -webkit-box;
     position:relative;
   }
-  .productgrid--item{
-    width:100%;
-  	position:relative;
-    box-shadow: 0 1px 4px rgb(128 128 128 / 20%);
-    margin-right:2%;
-    border-radius:5px;
-  }
+
   .productitem--image-link{height:185px;position:relative;}
   .productitem--image{position:absolute;top:50%;transform:translateY(-50%);}
   .productitem--image img{max-height:185px}
@@ -304,7 +298,7 @@ var i=1;
 		
         contentbox.style.transform="translate(" + -diff  + "px" + ")";
        
-		diff = i*diff;
+		diff = i*diff -diff;
         contentbox.style.transition="all 1.5s";
   })
       
