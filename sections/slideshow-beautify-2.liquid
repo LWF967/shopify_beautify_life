@@ -315,8 +315,13 @@ var x = diff_box/itemLength;
       
   leftbtn.addEventListener("click",function(){
   
-    	contentbox.style.transform="translate(" + 0 + "px" + ")";
-        contentbox.style.transition="all 1.5s";
+    	if(x+2>diff){
+        contentbox.style.transform="translate(" + x  + "px" + ")";
+         i--;
+		x = i*diff ;
+        console.log(x);
+
+        }
     
   })
 
