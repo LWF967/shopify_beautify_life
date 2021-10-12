@@ -497,7 +497,9 @@ var x = diff_box/itemLength;
   
   
    function autoPlay(autop){
-     autop ? moveTransition(index): moveTransition(0);
+     if(autop){
+       autoPlay(index);
+     }
    
     
     }
