@@ -335,10 +335,10 @@ var i=1;
         list[i].onclick = function(){
             for(var j = 0;j<list.length;j++){
                 list[j].className="";
-                img[j].className="";
             }
             this.className="active";
-            img[this.index].className="show";
+           contentbox.style.transform="translate(" + -itemlist[this.index].index*diff  + "px" + ")";	
+          
         }
     }
   
