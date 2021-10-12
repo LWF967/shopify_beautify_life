@@ -30,22 +30,8 @@
     	{% for block in section.blocks %}
 
  			 <div class="slideshow_content">
-              <a class="product_self-link" href="{{ block.settings.featured_product.url }}"></a>
-              <div class="artworks-box" style="background-image: url({{ block.settings.featured_product | img_url: '190x' }});">
-              </div>
-              
-              <p class="artworks-title">{{ block.settings.featured_product.title | truncate: 25, '...' }}</p>
-              <p class="artworks-type" style="font-size:12px;font-weight:200;color:rgb(198,198,198)">{{ block.settings.featured_product.type | append: " by " | append: block.settings.featured_product.vendor }}</p>
-              
-              <div class="wk_like_btn" style="cursor:pointer; display:none; padding:5px; clear:both;">
-                   <a>
-                       <i class="fa fa-heart-o" id="wk_icon" data-like="" data-total_count="" aria-hidden="true"></i>
-                   </a>
-                   <input type="hidden" class="customerid" value="{{ customer.id }}">
-                   <input type="hidden" class="productid" value="{{ block.settings.featured_product.id }}" data-vid="">
-              </div>
-              
-              <p class="artworks-price" style="margin-top:10px !important;font-weight:bold;">{{ block.settings.featured_product.price | money }}</p>
+				             
+
          	</div> 
         
     	{% endfor %}   
@@ -85,17 +71,26 @@
 	],
 	"blocks": [
 		{
-            "type": "category",
-            "name": "Category",
-			
-            "settings": [
-			{
-                  "type": "product",
-                  "id": "featured_product",
-                  "label": "Featured product"
-            }
-          ]
-        }
+      "type": "slideshow_img",
+      "name": "Image slide (Parent)",
+      "settings": [
+       {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image",
+           "info": "1800 x 600px .jpg recommended"
+       },
+		
+      {
+			"type":"text",
+			"id":"slider_text",
+			"label":"slider_text",
+			"default":"title name"
+		}
+
+	]
+
+	}
        
 	],
 	"presets": [
