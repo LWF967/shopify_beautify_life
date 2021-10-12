@@ -360,13 +360,13 @@ var x = diff_box/itemLength;
   }
   
  contentbox.addEventListener('transitionend', function(){
-        if(i >= 8){
+        if(i >= itemLength){
             i =1;
             removeTransition();
            contentbox.style.transform="translate(" + itemlist[i].index*diff  + "px" + ")";
         }
        else if(i <= 0){
-            i =8;
+            i =itemLength;
             removeTransition();
             contentbox.style.transform="translate(" + -itemlist[i].index*diff  + "px" + ")";
         }
