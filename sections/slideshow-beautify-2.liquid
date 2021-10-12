@@ -367,19 +367,19 @@ var x = diff_box/itemLength;
   
   }
   
- contentbox.addEventListener('transitionend', function(){
-        if(index >= itemLength){
-            index = 1;
-//             removeTransition();
-           contentbox.style.transform="translate(" + itemlist[index].index*diff  + "px" + ")";
-        }
-       else if(index <= 0){
-            index = itemLength;
-//             removeTransition();
-            contentbox.style.transform="translate(" + -itemlist[index].index*diff  + "px" + ")";
-        }
+//  contentbox.addEventListener('transitionend', function(){
+//         if(index >= itemLength){
+//             index = 1;
+// //             removeTransition();
+//            contentbox.style.transform="translate(" + itemlist[index].index*diff  + "px" + ")";
+//         }
+//        else if(index <= 0){
+//             index = itemLength;
+// //             removeTransition();
+//             contentbox.style.transform="translate(" + -itemlist[index].index*diff  + "px" + ")";
+//         }
        
-    });
+//     });
 
 
 //由于左右边框border1，所以要+2来判断
@@ -389,7 +389,7 @@ var x = diff_box/itemLength;
       	
       index =  list_text.querySelector('.active').index+1;
        
-        
+        if(index < itemLength){
         contentbox.style.transform="translate(" + -itemlist[index].index*diff  + "px" + ")";
  
 	
@@ -397,12 +397,16 @@ var x = diff_box/itemLength;
             list[j].className="";
         }
         list[index].className="active";
+        } 
+        
 
   })
       
   leftbtn.addEventListener("click",function(){
-  
-    index = list_text.querySelector('.active').index-1;
+ 
+    if(index > 0){
+    
+     index = list_text.querySelector('.active').index-1;
         contentbox.style.transform="translate(" + itemlist[index].index*diff  + "px" + ")";
       
 
@@ -412,6 +416,10 @@ var x = diff_box/itemLength;
             list[j].className="";
         }
         list[index].className="active";
+    
+    }
+  
+   
     
   })
 
