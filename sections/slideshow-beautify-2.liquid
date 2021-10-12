@@ -384,6 +384,11 @@ var x = diff_box/itemLength;
         console.log(x);
 
         }
+         for(var j = 0;j<list.length;j++){
+            list[j].className="";
+        }
+        list[index].className="active";
+
   })
       
   leftbtn.addEventListener("click",function(){
@@ -394,7 +399,12 @@ var x = diff_box/itemLength;
 		x = i*diff ;
         console.log(x);
 
+          
         }
+    for(var j = 0;j<list.length;j++){
+            list[j].className="";
+        }
+        list[index].className="active";
     
   })
 
