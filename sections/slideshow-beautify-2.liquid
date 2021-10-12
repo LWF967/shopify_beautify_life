@@ -52,7 +52,10 @@
        
       </div>
     </div>
-  	
+    
+  	<ol id="list">
+
+    </ol>
   </div>
 </section>
 
@@ -239,6 +242,24 @@
     left:50%;
     transform:translate(-25%,-50%);
   }
+  
+  #list li{
+    float:left;
+    background:green;
+    width:30px;
+    height:30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    transition:all 1.5s;
+  }
+  
+    #list li.active{
+      background:blue;
+      color:#fff;
+    }
   
   @media screen and (max-width:1024px){
     .big-box{
