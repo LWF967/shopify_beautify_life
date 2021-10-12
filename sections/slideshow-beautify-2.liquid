@@ -294,13 +294,27 @@ var i=1;
   
 var x = diff_box/itemLength;
 
-//     for(let i=0;i<itemlist.length;i++){
-      
-//   	var x = i*diff*-1;
-// //      itemlist[i].style.transform="translate(" + x  + "px" + ")"; 
-//       console.log(diff);
-//     }
+  function removeTransition(){
+    
+  contentbox.style.transition = 'none';
   
+  }
+  
+ contentbox.addEventListener('transitionend', function(){
+        if(i >= 8){
+            i =1;
+            removeTransition();
+            setTranslateX(-index*width)
+        }
+       else if(i <= 0){
+            i =8;
+            removeTransition();
+            setTranslateX(-index*width)
+        }
+        setPotins();
+    });
+
+
 //由于左右边框border1，所以要+2来判断
   
   	  rightbtn.addEventListener("click",function(){
