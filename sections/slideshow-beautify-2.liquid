@@ -493,11 +493,12 @@ var x = diff_box/itemLength;
   
   }
  
-  let autop = document.getElementsByClassName('big-box');
+  let autop = document.getElementsByClassName('big-box')[0].dataset.autoplay;
   
-   function autoPlay(){
-    
-    moveTransition(index);
+  
+   function autoPlay(autop){
+     autop ? moveTransition(index): ;
+   
     
     }
   
