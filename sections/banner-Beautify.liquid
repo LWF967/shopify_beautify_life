@@ -33,7 +33,7 @@
         {%- case block.type -%}
 
      {%- when 'banner_third' -%} {%- assign image = block.settings.image -%}
-     <div class="flex_center" style="background-image:url(//cdn.shopify.com/s/{{ image |img_url }})">
+     <div class="flex_center" style="background-image:url({{ image |img_url }})">
        {{image}}
        {{ image |img_url }}
          <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class="pa t__0 l__0 r__0 b__0{% if block.settings.url == blank %} pe_none{% endif %}"></a>
