@@ -370,12 +370,12 @@ var x = diff_box/itemLength;
  contentbox.addEventListener('transitionend', function(){
         if(index >= itemLength){
             index = 1;
-            removeTransition();
+//             removeTransition();
            contentbox.style.transform="translate(" + itemlist[index].index*diff  + "px" + ")";
         }
        else if(index <= 0){
             index = itemLength;
-            removeTransition();
+//             removeTransition();
             contentbox.style.transform="translate(" + -itemlist[index].index*diff  + "px" + ")";
         }
        
