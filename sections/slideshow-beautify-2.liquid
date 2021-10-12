@@ -28,7 +28,9 @@
       <div class="product-box">
       
     	{% for block in section.blocks %}
-
+	
+      {%- case block.type -%}
+      {%- when 'slideshow_img2' -%} {%- assign image = block.settings.image -%}
  			 <div class="slideshow_content">
 				    
         {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
@@ -43,7 +45,7 @@
                <p>{{block.settings.slider_text}}</p>
 
          	</div> 
-        
+        {% endcase %}
     	{% endfor %}   
        
       </div>
@@ -81,7 +83,7 @@
 	],
 	"blocks": [
 		{
-      "type": "slideshow_img",
+      "type": "slideshow_img2",
       "name": "Image slide (Parent)",
       "settings": [
        {
