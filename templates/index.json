@@ -402,7 +402,7 @@
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
         "font_top": 30,
-        "color_top": "#ffffff",
+        "color_top": "#222",
         "grid": 3,
         "show_view_all": false,
         "show_page_Dot": false
