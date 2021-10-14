@@ -1,11 +1,35 @@
 /* Color custom properties */
 
+
+
+
+.color-beautify-overlay-1{
+	--color-foreground:white;;
+	--color-background:transparentp;
+	--color-background-color: transparent;
+    color: white;
+
+
+}
+
+.color-beautify-overlay-1{
+
+
+  --color-button: var(--color-foreground);
+  --color-button-text: var(--color-background);
+
+
+}
+
 :root,
 .color-background-1 {
   --color-foreground: var(--color-base-text);
   --color-background: var(--color-base-background-1);
   --gradient-background: var(--gradient-base-background-1);
 }
+  
+  
+  
 
 .color-background-2 {
   --color-background: var(--color-base-background-2);
