@@ -6,16 +6,15 @@
 .color-beautify-overlay-1{
 	--color-foreground:white;;
 	--color-background:transparent;
-
+      
     color: white;
-
 
 }
 
 .color-beautify-overlay-1{
 
 
-  --color-button: var(--color-foreground);
+  --color-button: black;
   --color-button-text: var(--color-background);
 
 
