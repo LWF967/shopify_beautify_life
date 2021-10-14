@@ -10,7 +10,13 @@
     color: white;
 
 }
-
+  
+  .color-beautify-overlay-1 .button{
+  
+  	opacity:1 !important;
+  
+  }
+  
 .color-beautify-overlay-1 button{
 
 
