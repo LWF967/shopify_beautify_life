@@ -402,7 +402,7 @@
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
         "font_top": 30,
-        "color_top": "#222",
+        "color_top": "#222222",
         "grid": 3,
         "show_view_all": false,
         "show_page_Dot": false
@@ -454,7 +454,7 @@
         "show_button_visible": "always",
         "show_button_style": "style1",
         "show_button_color": "white",
-        "show_button_hover_color": "#222",
+        "show_button_hover_color": "#222222",
         "feature_title": "title name",
         "link-name": "View all",
         "button_link": ""
@@ -481,10 +481,7 @@
           "settings": {
             "button_label_1": "Button label",
             "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_1": false
           }
         }
       },
