@@ -1,6 +1,12 @@
 /* Color custom properties */
 
 
+:root{
+
+	--font-size-base: 12px;
+
+}
+
 
 
 .color-beautify-overlay-1{
