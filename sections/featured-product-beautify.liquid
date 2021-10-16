@@ -113,43 +113,7 @@
                 </quantity-input>
               </div>
             {%- when 'share' -%}
-              <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
-              <share-button class="share-button" {{ block.shopify_attributes }}>
-                <button class="share-button__button hidden">
-                  {% render 'icon-share' %}
-                  {{ block.settings.share_label | escape }}
-                </button>
-                <details>
-                  <summary class="share-button__button">
-                    {% render 'icon-share' %}
-                    {{ block.settings.share_label | escape }}
-                  </summary>
-                  <div id="Product-share-{{ section.id }}" class="share-button__fallback motion-reduce">
-                    <div class="field">
-                      <span id="ShareMessage-{{ section.id }}" class="share-button__message hidden" role="status">
-                      </span>
-                      <input type="text"
-                            class="field__input"
-                            id="url"
-                            value="{{ shop.url | append: product.url }}"
-                            placeholder="{{ 'general.share.share_url' | t }}"
-                            onclick="this.select();"
-                            readonly
-                      >
-                      <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
-                    </div>
-                    <button class="share-button__close hidden no-js-hidden">
-                      {% render 'icon-close' %}
-                      <span class="visually-hidden">{{ 'general.share.close' | t }}</span>
-                    </button>
-                    <button class="share-button__copy no-js-hidden">
-                      {% render 'icon-clipboard' %}
-                      <span class="visually-hidden">{{ 'general.share.copy_to_clipboard' | t }}</span>
-                    </button>
-                  </div>
-                </details>
-              </share-button>
-          
+                       
           {% if section.settings.show_share_buttons %}
           {% include 'social-share-beautify'%}
           {% endif %}
@@ -554,12 +518,6 @@
       "name": "t:sections.featured-product.blocks.share.name",
       "limit": 1,
       "settings": [
-        {
-          "type": "text",
-          "id": "share_label",
-          "label": "t:sections.featured-product.blocks.share.settings.text.label",
-          "default": "Share"
-        },
         {
           "type": "paragraph",
           "content": "t:sections.featured-product.blocks.share.settings.featured_image_info.content"
