@@ -117,6 +117,7 @@
           {% if section.settings.show_share_buttons %}
           {% include 'social-share-beautify'%}
           {% endif %}
+          
             {%- when 'variant_picker' -%}
               {%- unless product.has_only_default_variant -%}
                 {%- if block.settings.picker_type == 'button' -%}
@@ -233,6 +234,14 @@
                   </div>
                 {%- endif -%}
               </div>
+          
+          	{%- when 'description' -%}
+            {%- if product.description != blank -%}
+              <div class="product__description rte">
+                {{ product.description }}
+              </div>
+            {%- endif -%}
+          
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'rating' -%}
@@ -527,6 +536,11 @@
           "content": "t:sections.featured-product.blocks.share.settings.title_info.content"
         }
       ]
+    },
+	{
+	  "type": "description",
+      "name": "t:sections.main-product.blocks.description.name",
+      "limit": 1
     },
     {
       "type": "custom_liquid",
