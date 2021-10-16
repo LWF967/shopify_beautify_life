@@ -11,10 +11,12 @@
 .featured-product .product__media-item {
   padding-left: 0;
   width: 100%;
+  flex:1;
 }
 
 .featured-product .product__media-item:not(:first-child) {
-  display: none;
+/*   display: none; */
+ 
 }
 
 .featured-product-section .background-secondary {
