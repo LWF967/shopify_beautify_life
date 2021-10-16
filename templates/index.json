@@ -500,71 +500,71 @@
         "show_text_below": true
       }
     },
-    "163436650549905bbb": {
+    "1634366794e88451f2": {
       "type": "featured-product-beautify",
       "blocks": {
-        "163436650549905bbb-0": {
+        "1634366794e88451f2-0": {
           "type": "text",
           "settings": {
             "text": "{{ section.settings.product.vendor }}",
             "text_style": "uppercase"
           }
         },
-        "163436650549905bbb-1": {
+        "1634366794e88451f2-1": {
           "type": "title",
           "settings": {
           }
         },
-        "163436650549905bbb-2": {
+        "1634366794e88451f2-2": {
           "type": "text",
           "settings": {
             "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
           }
         },
-        "163436650549905bbb-3": {
+        "1634366794e88451f2-3": {
           "type": "price",
           "settings": {
           }
         },
-        "163436650549905bbb-4": {
+        "1634366794e88451f2-4": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
           }
         },
-        "163436650549905bbb-5": {
+        "1634366794e88451f2-5": {
           "type": "quantity_selector",
           "settings": {
           }
         },
-        "163436650549905bbb-6": {
+        "1634366794e88451f2-6": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true
           }
         },
-        "163436650549905bbb-7": {
+        "1634366794e88451f2-7": {
           "type": "description",
           "settings": {
           }
         },
-        "163436650549905bbb-8": {
+        "1634366794e88451f2-8": {
           "type": "share",
           "settings": {
           }
         }
       },
       "block_order": [
-        "163436650549905bbb-0",
-        "163436650549905bbb-1",
-        "163436650549905bbb-2",
-        "163436650549905bbb-3",
-        "163436650549905bbb-4",
-        "163436650549905bbb-5",
-        "163436650549905bbb-6",
-        "163436650549905bbb-7",
-        "163436650549905bbb-8"
+        "1634366794e88451f2-0",
+        "1634366794e88451f2-1",
+        "1634366794e88451f2-2",
+        "1634366794e88451f2-3",
+        "1634366794e88451f2-4",
+        "1634366794e88451f2-5",
+        "1634366794e88451f2-6",
+        "1634366794e88451f2-7",
+        "1634366794e88451f2-8"
       ],
       "settings": {
         "product": "text4",
@@ -588,6 +588,6 @@
     "163367412087ecd8ca",
     "16340032987fd8fd82",
     "1634120630c0c2fc34",
-    "163436650549905bbb"
+    "1634366794e88451f2"
   ]
 }
