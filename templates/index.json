@@ -564,6 +564,7 @@
       "settings": {
         "product": "text4",
         "secondary_background": true,
+        "show_share_buttons": false,
         "hide_variants": false,
         "enable_video_looping": true
       }
