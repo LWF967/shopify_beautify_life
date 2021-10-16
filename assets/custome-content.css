@@ -288,7 +288,7 @@ font-weight:600;
   border: 1px solid transparent;
   border-radius: 2px;
   padding: 8px 15px;
-  background-color: rgba(var(--color-foreground),1);
+  background-color: rgba(var(--color-foreground),0.75);
   color: rgba(255,255,255,1);
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
