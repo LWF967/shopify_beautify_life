@@ -563,9 +563,9 @@
       ],
       "settings": {
         "product": "text4",
-        "secondary_background": false,
+        "secondary_background": true,
         "hide_variants": false,
-        "enable_video_looping": false
+        "enable_video_looping": true
       }
     }
   },
