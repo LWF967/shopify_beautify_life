@@ -4,6 +4,12 @@
   justify-content: flex-end;
 }
 
+.list-social_start {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
 @media only screen and (max-width: 749px) {
   .list-social {
     justify-content: center;
