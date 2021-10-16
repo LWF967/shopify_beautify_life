@@ -112,11 +112,6 @@
                   </button>
                 </quantity-input>
               </div>
-            {%- when 'share' -%}
-                       
-          {% if section.settings.show_share_buttons %}
-          {% include 'social-share-beautify'%}
-          {% endif %}
           
             {%- when 'variant_picker' -%}
               {%- unless product.has_only_default_variant -%}
@@ -241,6 +236,12 @@
                 {{ product.description }}
               </div>
             {%- endif -%}
+          
+            {%- when 'share' -%}
+
+            {% if section.settings.show_share_buttons %}
+            {% include 'social-share-beautify'%}
+            {% endif %}
           
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
