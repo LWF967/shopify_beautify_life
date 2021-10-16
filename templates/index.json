@@ -630,9 +630,9 @@
         "1634352167ccb81db0-7"
       ],
       "settings": {
-        "product": "",
-        "secondary_background": false,
-        "show_share_buttons": false,
+        "product": "text4",
+        "secondary_background": true,
+        "show_share_buttons": true,
         "hide_variants": false,
         "enable_video_looping": false
       }
