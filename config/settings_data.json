@@ -14,6 +14,15 @@
     "type_body_font": "assistant_n4",
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
+    "social_twitter_link": "1",
+    "social_facebook_link": "1",
+    "social_pinterest_link": "1",
+    "social_instagram_link": "1",
+    "social_tiktok_link": "1",
+    "social_tumblr_link": "1",
+    "social_snapchat_link": "1",
+    "social_youtube_link": "1",
+    "social_vimeo_link": "1",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -75,6 +84,19 @@
           "enable_country_selector": true,
           "enable_language_selector": true,
           "payment_enable": true
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "logo_max_width": 100,
+          "color_scheme": "background-1"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "background-1"
         }
       }
     },
