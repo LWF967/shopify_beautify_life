@@ -500,69 +500,75 @@
         "show_text_below": true
       }
     },
-    "1634352167ccb81db0": {
+    "163436650549905bbb": {
       "type": "featured-product-beautify",
       "blocks": {
-        "1634352167ccb81db0-0": {
+        "163436650549905bbb-0": {
           "type": "text",
           "settings": {
             "text": "{{ section.settings.product.vendor }}",
             "text_style": "uppercase"
           }
         },
-        "1634352167ccb81db0-1": {
+        "163436650549905bbb-1": {
           "type": "title",
           "settings": {
           }
         },
-        "1634352167ccb81db0-2": {
+        "163436650549905bbb-2": {
           "type": "text",
           "settings": {
             "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
           }
         },
-        "1634352167ccb81db0-3": {
+        "163436650549905bbb-3": {
           "type": "price",
           "settings": {
           }
         },
-        "1634352167ccb81db0-4": {
+        "163436650549905bbb-4": {
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
           }
         },
-        "1634352167ccb81db0-5": {
+        "163436650549905bbb-5": {
           "type": "quantity_selector",
           "settings": {
           }
         },
-        "1634352167ccb81db0-6": {
+        "163436650549905bbb-6": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true
           }
         },
-        "1634352167ccb81db0-7": {
+        "163436650549905bbb-7": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "163436650549905bbb-8": {
           "type": "share",
           "settings": {
           }
         }
       },
       "block_order": [
-        "1634352167ccb81db0-0",
-        "1634352167ccb81db0-1",
-        "1634352167ccb81db0-2",
-        "1634352167ccb81db0-3",
-        "1634352167ccb81db0-4",
-        "1634352167ccb81db0-5",
-        "1634352167ccb81db0-6",
-        "1634352167ccb81db0-7"
+        "163436650549905bbb-0",
+        "163436650549905bbb-1",
+        "163436650549905bbb-2",
+        "163436650549905bbb-3",
+        "163436650549905bbb-4",
+        "163436650549905bbb-5",
+        "163436650549905bbb-6",
+        "163436650549905bbb-7",
+        "163436650549905bbb-8"
       ],
       "settings": {
         "product": "text4",
-        "secondary_background": true,
+        "secondary_background": false,
         "show_share_buttons": true,
         "hide_variants": false,
         "enable_video_looping": false
@@ -582,6 +588,6 @@
     "163367412087ecd8ca",
     "16340032987fd8fd82",
     "1634120630c0c2fc34",
-    "1634352167ccb81db0"
+    "163436650549905bbb"
   ]
 }
