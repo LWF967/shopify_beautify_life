@@ -269,7 +269,12 @@ font-weight:600;
 /*================ button ================*/   
 
 
+.product-form__buttons{
 
+
+max-width:30rem;
+
+}
 
 .btn, .shopify-payment-button .shopify-payment-button__button--unbranded {
   -moz-user-select: none;
