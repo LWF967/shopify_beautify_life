@@ -1,4 +1,13 @@
-
+<div class="clock1">
+<span class="clock__digit">1</span>
+<span class="clock__digit">7</span>
+<span class="clock__digit">:</span>
+<span class="clock__digit">1</span>
+<span class="clock__digit">9</span>
+<span class="clock__digit">:</span>
+<span class="clock__digit">3</span>
+<span class="clock__digit">0</span>
+</div>
 
 <div style="text-align: center">
   <input type="text" id="timetext" value="00时00分00秒" readonly><br>
@@ -197,7 +206,7 @@ var hour,minute,second;//时 分 秒
 <script>
 
 window.addEventListener("DOMContentLoaded",() => {
-	const clock = new BouncyEmbossedClock(".clock");
+	const clock = new BouncyEmbossedClock(".clock1");
 });
 
 class BouncyEmbossedClock {
