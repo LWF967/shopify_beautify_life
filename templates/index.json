@@ -573,6 +573,11 @@
         "hide_variants": false,
         "enable_video_looping": false
       }
+    },
+    "163454604067313d0f": {
+      "type": "daily-deal-of-the-day",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -588,6 +593,7 @@
     "163367412087ecd8ca",
     "16340032987fd8fd82",
     "1634120630c0c2fc34",
-    "16343669695470e556"
+    "16343669695470e556",
+    "163454604067313d0f"
   ]
 }
