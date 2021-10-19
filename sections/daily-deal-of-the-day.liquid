@@ -41,6 +41,7 @@
 
 
 
+
 {% schema %}
   {
     "name": "daily-deal-of-the-day",
@@ -159,13 +160,16 @@
 </style>
 
 
-
+{{ 'time-count-time.js' | asset_url | script_tag }}
 <script>
 
 	
-  
+  import a form '../time-count-time.js'
+  setINterval(a.time,1000);
   
 </script>
+
+
 
 
 <script>
