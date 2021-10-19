@@ -1,5 +1,5 @@
 	
-export default function(){
+
 	var set_time_box = document.getElementsByClassName('timebox')[0];
   	var set_time_day = set_time.getElementsByClassName('day_time')[0];
     var set_time_minutes = set_time.getElementsByClassName('minutes_time')[0];
@@ -34,4 +34,4 @@ export default function(){
   }
         
         
-        }
+        
