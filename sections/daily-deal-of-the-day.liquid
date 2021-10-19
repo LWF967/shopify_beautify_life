@@ -208,12 +208,13 @@
       set_time_minutes.innerHTML = "杀";
       set_time_second.innerHTML = "结";
       set_time_millisecond.innerHTML = "束";
+      clearInterval(a);
       
     }else {
      	
       set_time_day.innerHTML = parseInt(count_time/(3600*24)); 
       (set_time_minutes.innerHTML == parseInt(count_time/3600%24) )? '':set_time_minutes.innerHTML = parseInt(count_time/3600%24);
-      set_time_second.innerHTML = parseInt(count_time/60%60);
+      set_time_second.innerHTML = parseInt(count_time/3600%60);
       set_time_millisecond.innerHTML = parseInt(count_time%60);
       
     }
@@ -226,7 +227,7 @@
         
   
   
-  setInterval(cctime,1000);
+  var a= setInterval(cctime,1000);
   
 </script>
 
