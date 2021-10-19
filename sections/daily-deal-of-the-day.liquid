@@ -173,7 +173,7 @@
   
   	var end_time = new Date("2022-10-19 22:00"); 	
   
-  function time(){
+ var count_time = function time(){
   
   	var now_time = new Date(); 
     var count_time = parseInt((end_time.getTime - now_time.getTime)/1000);
@@ -196,13 +196,13 @@
     
     
   
-  }
+  }();
         
         
         
   
   
-  setINterval(time,1000);
+  setINterval(count(),1000);
   
 </script>
 
