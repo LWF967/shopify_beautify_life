@@ -24,10 +24,10 @@
   
     
 <div class="timebox">
-  <div class="day_time"></div>
-  <div class="minutes_time"></div>
-  <div class="second_time"></div>
-  <div class="millisecond_time"></div>
+  <div class="day_time f1"></div>
+  <div class="minutes_time f1"></div>
+  <div class="second_time f1"></div>
+  <div class="millisecond_time f1"></div>
 
 
 </div>
@@ -81,7 +81,22 @@
             float: left;
             margin: 10px 5px;
             line-height: 150px;
+      		
         }
+  
+  .timebox{
+  
+  display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .f1{
+    flex:1;
+  
+  }
   
 
   .contatin{
