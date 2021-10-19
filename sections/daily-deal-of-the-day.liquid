@@ -173,7 +173,7 @@
   
   	var end_time = new Date("2022-10-19 22:00"); 	
   
- var count_time_fn = function cctime(){
+ function cctime(){
   
   	var now_time = new Date(); 
     var count_time = parseInt((end_time.getTime - now_time.getTime)/1000);
@@ -202,7 +202,7 @@
         
   
   
-  setInterval(count_time_fn,1000);
+  setInterval(cctime,1000);
   
 </script>
 
