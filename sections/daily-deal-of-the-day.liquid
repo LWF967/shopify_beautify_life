@@ -164,7 +164,7 @@
 <script>
 
 	
-  import a from './time-count-time.js'
+  import a from '{{ 'time-count-time.js' | asset_url | script_tag }}'
   setINterval(a.time,1000);
   
 </script>
