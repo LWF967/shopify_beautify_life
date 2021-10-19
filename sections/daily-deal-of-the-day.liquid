@@ -176,7 +176,7 @@
  function cctime(){
   
   	var now_time = new Date(); 
-    var count_time = parseInt((end_time.getTime - now_time.getTime)/1000);
+    var count_time = parseInt((end_time.getTime() - now_time.getTime())/1000);
     
     if( count_time<=0){
       
