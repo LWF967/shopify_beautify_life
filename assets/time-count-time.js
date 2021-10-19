@@ -1,10 +1,10 @@
 	
 
 	var set_time_box = document.getElementsByClassName('timebox')[0];
-  	var set_time_day = set_time.getElementsByClassName('day_time')[0];
-    var set_time_minutes = set_time.getElementsByClassName('minutes_time')[0];
-    var set_time_second = set_time.getElementsByClassName('second_time')[0];
-  	var set_time_millisecond = set_time.getElementsByClassName('millisecond_time')[0];
+  	var set_time_day = set_time_box.getElementsByClassName('day_time')[0];
+    var set_time_minutes = set_time_box.getElementsByClassName('minutes_time')[0];
+    var set_time_second = set_time_box.getElementsByClassName('second_time')[0];
+  	var set_time_millisecond = set_time_box.getElementsByClassName('millisecond_time')[0];
   
   	var end_time = new Date("2022-10-19 22:00"); 	
   
