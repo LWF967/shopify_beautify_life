@@ -15,9 +15,9 @@
       
       <div class="timebox">
         <div class="day_time f1"></div>
+        <div class="hour_time f1"></div>
         <div class="minutes_time f1"></div>
         <div class="second_time f1"></div>
-        <div class="millisecond_time f1"></div>
       </div>
       
     </div>
@@ -191,9 +191,9 @@
   
 	var set_time_box = document.getElementsByClassName('timebox')[0];
   	var set_time_day = set_time_box.getElementsByClassName('day_time')[0];
+    var set_time_hour = set_time_box.getElementsByClassName('hour_time')[0];
     var set_time_minutes = set_time_box.getElementsByClassName('minutes_time')[0];
-    var set_time_second = set_time_box.getElementsByClassName('second_time')[0];
-  	var set_time_millisecond = set_time_box.getElementsByClassName('millisecond_time')[0];
+  	var set_time_second = set_time_box.getElementsByClassName('second_time')[0];
   
   	var end_time = new Date("2021-10-19 18:47"); 	
   
@@ -205,17 +205,17 @@
     if( count_time<=0){
       
       set_time_day.innerHTML = "秒";
-      set_time_minutes.innerHTML = "杀";
-      set_time_second.innerHTML = "结";
-      set_time_millisecond.innerHTML = "束";
+      set_time_hour.innerHTML = "杀";
+      set_time_minutes.innerHTML = "结";
+      set_time_second.innerHTML = "束";
       clearInterval(a);
       
     }else {
      	
       set_time_day.innerHTML = parseInt(count_time/(3600*24)); 
-      (set_time_minutes.innerHTML == parseInt(count_time/3600%24) )? '':set_time_minutes.innerHTML = parseInt(count_time/3600%24);
-      set_time_second.innerHTML = parseInt(count_time/3600%60);
-      set_time_millisecond.innerHTML = parseInt(count_time%60);
+      (set_time_hour.innerHTML == parseInt(count_time/3600%24) )? '':set_time_minutes.innerHTML = parseInt(count_time/3600%24);
+      set_time_minutes.innerHTML = parseInt(count_time/3600%60);
+      set_time_second.innerHTML = parseInt(count_time%60);
       
     }
     
