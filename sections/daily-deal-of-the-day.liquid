@@ -213,8 +213,8 @@
     }else {
      	
       set_time_day.innerHTML = parseInt(count_time/(3600*24)); 
-      set_time_hour.innerHTML = parseInt(count_time/3600)
-      set_time_minutes.innerHTML = parseInt(count_time/60);
+      set_time_hour.innerHTML = parseInt(count_time/3600%24)
+      set_time_minutes.innerHTML = parseInt(count_time/60%60);
       set_time_second.innerHTML = parseInt(count_time%60);
       
     }
