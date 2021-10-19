@@ -24,7 +24,7 @@
      	
       set_time_day.innerHTML = (count_time/(3600*24));
       set_time_minutes.innerHTML = (count_time/3600%24);
-      set_time_second.innerHTML = (count_time/60%60);
+      set_time_second.innerHTML = parseInt(count_time/60%60);
       set_time_millisecond.innerHTML = (count_time%60);
       
     }
