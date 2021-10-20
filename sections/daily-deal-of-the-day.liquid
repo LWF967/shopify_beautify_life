@@ -74,11 +74,38 @@
 
 
 <style>
-  .tt1.ls-is-cached.lazyload{
+  .tt1.lazyload{
   
- transform: scale(1.5);
-            transition: 2s;
+     animation:mymove 3s infinite;
   }
+  
+  @keyframes mymove
+{
+  0%{transform: scale(0.5);
+ transition: 0.5s;}
+  
+  25%{
+  transform: scale(0.75);
+ transition: 0.5s;
+  }
+  
+  50%{
+  
+  transform: scale(1);
+ transition: 0.5s;
+  }
+  
+  75%{
+  transform: scale(1.25);
+ transition: 0.5s;
+  }
+  
+  100%{
+  transform: scale(1.5);
+ transition: 0.5s;
+  }
+}
+  
  
     .timebox{
             width: 100%;
