@@ -13,7 +13,7 @@
       <div class="clock"></div>
       <div class="clock"></div> -->
       
-      <div class="timebox">
+      <div class="timebox" data-endtime="{{setting.countdown_time}}">
         <div class="day_time f1 time-div"></div>
         <div class="hour_time f1 time-div"></div>
         <div class="minutes_time f1 time-div"></div>
@@ -95,7 +95,7 @@
      },
 	  {
        "type": "text",
-       "id": "countdown",
+       "id": "countdown_time",
        "label": "Data countdown",
        "default": "2020\/12\/20",
        "info": "Please use this exact format:yyyy/mm/dd hour/minute/second.Examle: 2021/5/01 10:00:00."
