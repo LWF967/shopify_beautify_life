@@ -1,5 +1,5 @@
 
-
+{%- assign  setting=section.settings-%}
 
 <div class="contatin">
   
@@ -36,7 +36,7 @@
 
   </div>
   <div class="right daily-right">
-    <div style="">
+    <div class="daily-product-box" style="background-color: {{setting.background_product_color}};">
       <img class="tt1 lazyload daily-product" 
           
            src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fa.300.cn%2Fanliku%2F180906%2F0008901603.jpg&refer=http%3A%2F%2Fa.300.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1637139827&t=a05c95f5466dbcfce1504784d73e4336">
@@ -145,10 +145,7 @@
 
 <style>
   
-  .daily-product{
-  max-height:390px;
   
-  }
   
   .tt1.ls-is-cached.lazyload{
   
@@ -262,6 +259,24 @@
   
   
   }
+  
+  
+  .daily-product-box{
+  
+  	transform: skew(323deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  
+  
+  }
+  
+  .daily-product{
+  max-height:390px;
+  
+  }
+  
   
   .left,.right{
   flex:1;
