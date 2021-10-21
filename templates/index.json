@@ -577,8 +577,7 @@
     "163454604067313d0f": {
       "type": "daily-deal-of-the-day",
       "settings": {
-        "product": "",
-        "log_image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
+        "product": "text4",
         "heading_text": "Daily Deal Of The Day",
         "heading_font_size": 32,
         "color_top": "#888888",
@@ -623,6 +622,56 @@
         "full_width": true,
         "content_full_width": true
       }
+    },
+    "16347949263264d17c": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false
+      }
+    },
+    "1634794981347e8c19": {
+      "type": "multicolumn",
+      "blocks": {
+        "1634794981347e8c19-0": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "1634794981347e8c19-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "1634794981347e8c19-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1634794981347e8c19-0",
+        "1634794981347e8c19-1",
+        "1634794981347e8c19-2"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
@@ -640,6 +689,8 @@
     "1634120630c0c2fc34",
     "16343669695470e556",
     "163454604067313d0f",
-    "1634788020c7a0b534"
+    "1634788020c7a0b534",
+    "16347949263264d17c",
+    "1634794981347e8c19"
   ]
 }
