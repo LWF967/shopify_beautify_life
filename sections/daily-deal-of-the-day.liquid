@@ -41,6 +41,31 @@
           
           
            data-src="{{setting.log_image}}">
+      {%assign product = setting.product %}
+      
+   		 <div class="product__media-list">
+          {%- if product.selected_or_first_available_variant.featured_media != null -%}
+            {%- assign media = product.selected_or_first_available_variant.featured_media -%}
+            <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
+              {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
+            </div>
+          {%- endif -%}
+          {%- liquid
+            assign media_to_render = product.featured_media.id
+            for variant in product.variants
+              assign media_to_render = media_to_render | append: variant.featured_media.id | append: ' '
+            endfor
+          -%}
+          {%- for media in product.media -%}
+            {%- if media_to_render contains media.id and media.id != product.selected_or_first_available_variant.featured_media.id -%}
+              <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
+                {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      
+      
     </div>
   </div>
 
