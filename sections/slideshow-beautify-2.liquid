@@ -641,12 +641,12 @@ let  time =   document.getElementsByClassName('big-box')[0].dataset.autotime;
 let time_gui =  setInterval(autoPlay, time*1000);
   
 	
-  $('.feature-artworks').addEventListener("mouseover",function(){
+  document.getElementsByClassName('feature-artworks')[0].addEventListener("mouseover",function(){
   	
     clearInterval(time_gui);
   	
   })
-  $('.feature-artworks').addEventListener("mouseout",function(){
+ document.getElementsByClassName('feature-artworks')[0].addEventListener("mouseout",function(){
   
   	 time_gui =  setInterval(autoPlay, time*1000);
   })
