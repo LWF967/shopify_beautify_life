@@ -640,7 +640,18 @@ let  time =   document.getElementsByClassName('big-box')[0].dataset.autotime;
   
 let time_gui =  setInterval(autoPlay, time*1000);
   
-
+	
+  $('.feature-artworks').addEventListener("mouseover",function(){
+  	
+    clearInterval(time_gui);
+  	
+  })
+  $('.feature-artworks').addEventListener("mouseout",function(){
+  
+  	 time_gui =  setInterval(autoPlay, time*1000);
+  })
+  
+  
 
 //由于左右边框border1，所以要+2来判断
   
