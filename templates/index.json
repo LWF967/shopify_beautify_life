@@ -578,6 +578,7 @@
       "type": "daily-deal-of-the-day",
       "settings": {
         "product": "",
+        "log_image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
         "heading_text": "Daily Deal Of The Day",
         "heading_font_size": 32,
         "color_top": "#888888",
