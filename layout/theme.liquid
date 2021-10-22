@@ -12,7 +12,14 @@
    
 {{'custome-content.css'| asset_url |stylesheet_tag}}
     
+   
+{{'swiper-bundle.min.css'| asset_url |stylesheet_tag}}
 
+   
+
+
+    
+    <script src="{{'swiper-bundle.min.js'| asset_url }} "></script>
     
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
