@@ -42,9 +42,17 @@
           
            data-src="{{setting.log_image}}"> -->
       
-      {%assign product = setting.product %}
+      {%- liquid
+          assign highest_ratio = 0
+      	  assign product = setting.product 
+            if product.aspect_ratio > highest_ratio
+              assign highest_ratio = product.aspect_ratio
+            endif          
+          
+        -%}
       
-   		 <div class="daily-product">
+      
+   		 <div class="daily-product" style="width:{{ 1 | divided_by: highest_ratio | times: 100 }}%">
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
             <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
@@ -321,7 +329,8 @@
   
   .daily-product{
 /*   max-height:390px; */
-  height:95%;  
+/*   height:95%;   */
+    
   transform: skew(37deg);
   }
   
