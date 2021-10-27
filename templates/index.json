@@ -684,7 +684,7 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "",
+        "button_label": "123",
         "button_link": "",
         "swipe_on_mobile": false
       }
