@@ -58,13 +58,14 @@
                 {%- if block.settings.title != blank -%}
                   <h3 class="add_title">{{ block.settings.title | escape }}</h3>
                 {%- endif -%}
-                <img />
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
-                <a class="button button--primary"{% if section.blocks.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.blocks.settings.button_link }}"{% endif %}>
-                  {{ "button" | capitalize }}
-                </a>
+                {%- if section.blocks.settings.button_label != blank -%}
+                  <a class="button button--primary"{% if section.blocks.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.blocks.settings.button_link }}"{% endif %}>
+                    {{ "button" | capitalize }}
+                  </a>
+                {%- endif-%}
               </div>            
             </div>
           </li>
