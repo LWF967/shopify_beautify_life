@@ -13,6 +13,7 @@
 {% else %}
   <h2 class="Text_columns_with_images_title">{{ section.settings.Text_columns_with_images_heading }}</h2>
 {% endif %}
+{{ section.settings.Text_columns_with_images_Text_alignment }}
 
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
