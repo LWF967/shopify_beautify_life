@@ -54,6 +54,15 @@
                   {%- if block.settings.text != blank -%}
                     <div class="rte" style="text-align: left;">{{ block.settings.text }}</div>
                   {%- endif -%}
+                  {% if block.settings.button_label == blank or block.settings.button_link == blank %}
+                    <a class="my_button hide_my_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                      {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
+                    </a>
+                    {% else %}
+                    <a class="my_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                       {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
+                    </a>
+                  {% endif %}
                 {% elsif section.settings.Text_columns_with_images_Text_alignment == "Centered" %}
                   {%- if block.settings.title != blank -%}
                     <h3 class="add_title" style="text-align: center;">{{ block.settings.title | escape }}</h3>
@@ -61,15 +70,6 @@
                   {%- if block.settings.text != blank -%}
                     <div class="rte" style="text-align: center;">{{ block.settings.text }}</div>
                   {%- endif -%}
-                {% endif %}
-                {% if block.settings.button_label == blank or block.settings.button_link == blank %}
-                <a class="my_button hide_my_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
-                  {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
-                </a>
-                {% else %}
-                <a class="my_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
-				   {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
-                </a>
                 {% endif %}
               </div>            
             </div>
@@ -120,6 +120,14 @@
   
   .hide_my_button {
   	display: none;
+  }
+  
+  .my_left {
+  	text-align: left;
+  }
+  
+  .my_center {
+  	text-align: center;
   }
 </style>
 
