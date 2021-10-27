@@ -61,11 +61,9 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
-                {%- if section.blocks.settings.button_label != blank -%}
-                  <a class="button button--primary"{% if section.blocks.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.blocks.settings.button_link }}"{% endif %}>
-                    <button>{{ "button" | capitalize }}</button>
-                  </a>
-                {%- endif-%}
+                <a class="button button--primary"{% if section.blocks.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.blocks.settings.button_link }}"{% endif %}>
+				  <button>{{ "button" | capitalize }}</button>
+                </a>
               </div>            
             </div>
           </li>
