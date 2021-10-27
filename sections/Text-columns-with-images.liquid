@@ -62,10 +62,8 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
-                <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} 
-                   class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
-                	{{ "button" | capitalize }}
-              	</a>
+                
+                <button>{{ "button" | capitalize }}</button>
               </div>            
             </div>
           </li>
