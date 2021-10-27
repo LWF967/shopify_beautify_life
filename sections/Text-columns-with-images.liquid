@@ -13,8 +13,11 @@
 {% else %}
   <h2 class="Text_columns_with_images_title">{{ section.settings.Text_columns_with_images_heading }}</h2>
 {% endif %}
-{{ section.settings.Text_columns_with_images_Text_alignment }}
-
+{% if section.settings.Text_columns_with_images_Text_alignment == "Left" %}
+	{{1}}
+{% elsif section.settings.Text_columns_with_images_Text_alignment == "Centered" %}
+	{{2}}
+{% endif %}
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
     <slider-component class="slider-mobile-gutter">
