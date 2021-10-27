@@ -71,9 +71,11 @@
                     <div class="rte my_center">{{ block.settings.text }}</div>
                   {%- endif -%}
                   {% if block.settings.button_label == blank or block.settings.button_link == blank %}
-                    <a class="my_button hide_my_button my_center"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
-                      {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
-                    </a>
+                    <div>
+                	  <a class="my_button hide_my_button my_center"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                       {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
+                      </a>
+                	</div>
                     {% else %}
                 	<div>
                 	  <a class="my_button my_center"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
