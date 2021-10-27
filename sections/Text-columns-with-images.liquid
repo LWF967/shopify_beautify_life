@@ -62,11 +62,11 @@
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {% if block.settings.button_label == blank or block.settings.button_link == blank %}
-                <a class="button myButton hide_myButton"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                <a class="myButton hide_myButton"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
 				   {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
                 </a>
                 {% else %}
-                <a class="button myButton"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                <a class="myButton"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
 				   {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
                 </a>
                 {% endif %}
@@ -107,6 +107,7 @@
   .myButton {
     height: 30px !important;
     line-height: 15px !important;
+    text-decoration: none;
   	color: #000;
     background: #fff;
   }
