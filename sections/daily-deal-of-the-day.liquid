@@ -45,13 +45,13 @@
       {%- liquid
           assign highest_ratio = 0
       	  assign product = setting.product 
-            if product.aspect_ratio > highest_ratio
-              assign highest_ratio = product.aspect_ratio
+            if product.images[0].aspect_ratio > highest_ratio
+              assign highest_ratio = product.images[0].aspect_ratio
             endif          
           
         -%}
       
-      {{highest_ratio}}---{{setting.product}}---{{product.images[0].aspect_ratio}}----{{product.images[0]}}
+      
       
    		 <div class="daily-product" style="width:{{ 1 | divided_by: highest_ratio | times: 100 }}%">
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
