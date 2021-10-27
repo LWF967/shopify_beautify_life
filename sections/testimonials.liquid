@@ -25,6 +25,7 @@
                  {% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
         id="Slider-{{ section.id }}"
         role="list"
+        style="flex-wrap: nowrap;"
       >
         {%- liquid
           assign highest_ratio = 0
