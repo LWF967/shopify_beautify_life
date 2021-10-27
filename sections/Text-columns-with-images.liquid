@@ -75,9 +75,11 @@
                       {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
                     </a>
                     {% else %}
-                    <a class="my_button my_center"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                	<div>
+                	  <a class="my_button my_center"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
                        {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
-                    </a>
+                      </a>
+                	</div>
                   {% endif %}
                 {% endif %}
               </div>            
