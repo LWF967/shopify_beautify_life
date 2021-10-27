@@ -64,7 +64,7 @@
                 {%- endif -%}
                 <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} 
                    class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
-                	<button class="myBtn">{{ "button" }}</button>
+                	<button class="myBtn">{{ "button" | capitalize }}</button>
               	</a>
               </div>            
             </div>
