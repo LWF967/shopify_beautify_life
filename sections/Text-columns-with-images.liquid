@@ -36,7 +36,9 @@
 
                 {%- if block.settings.image != blank -%}
 
-              	  <img src="{{ block.settings.image | img_url: '550x' }}" style="width: 30rem; padding: 25px; margin: 0 auto;">
+              	  <img src="{{ block.settings.image | img_url: '550x' }}" 
+                       style="width: 30rem; padding: 25px; margin: 0 auto;"
+                       loading="lazy">
                 {%- else -%}
 
                 {%- endif -%}
