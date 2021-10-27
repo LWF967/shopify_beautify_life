@@ -51,7 +51,7 @@
           
         -%}
       
-      {{highest_ratio}}---{{setting.product}}---{{product.aspect_ratio}}
+      {{highest_ratio}}---{{setting.product}}---{{product.aspect_ratio}}----{{product}}
       
    		 <div class="daily-product" style="width:{{ 1 | divided_by: highest_ratio | times: 100 }}%">
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
