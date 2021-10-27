@@ -35,8 +35,8 @@
               {% if block.settings.show_image == true %}
 
                 {%- if block.settings.image != blank -%}
-                  <div style="width: 100%; display: flex; align-items: center; justify-content: center;">
-                  	<img src="{{ block.settings.image | img_url: '550x' }}" style="padding: 30px; height: 30rem;" loading="lazy">
+                  <div class="my_image">
+                  	<img src="{{ block.settings.image | img_url: '550x' }}" loading="lazy">
                   </div>  
                 {%- else -%}
 
@@ -116,6 +116,18 @@
   	padding: 20px 0;
     font-size: 18px;
     font-weight: bold;
+  }
+  
+  .my_image {
+  	width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  
+  .my_image img {
+  	padding: 30px; 
+    height: 30rem;
   }
   
   .my_button {
