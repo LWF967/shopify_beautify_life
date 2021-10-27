@@ -62,12 +62,12 @@
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {% if block.settings.button_label == blank or block.settings.button_link == blank %}
-                <a class="my_link hide_my_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
-                  {% if block.settings.button_label == blank %} <button class="my_button">{{ "button" | capitalize }}</button> {% else %}  {{ block.settings.button_label }} {%- endif -%}
+                <a class="my_button hide_my_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                  {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
                 </a>
                 {% else %}
-                <a class="my_link"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
-				   {% if block.settings.button_label == blank %} <button class="my_button">{{ "button" | capitalize }}</button> {% else %}  {{ block.settings.button_label }} {%- endif -%}
+                <a class="my_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+				   {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
                 </a>
                 {% endif %}
               </div>            
