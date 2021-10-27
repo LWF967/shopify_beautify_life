@@ -61,7 +61,7 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
-                <button class="btn">{{ "button" | capitalize }}</button>
+                <button class="btn">{{ "button" }}</button>
               </div>            
             </div>
           </li>
@@ -102,6 +102,7 @@
     border: 1px solid black;
     background: #ffffff;
     color: #000;
+    text-transform: capitalize;
     text-align: center;
   }
 </style>
