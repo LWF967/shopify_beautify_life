@@ -8,7 +8,7 @@
 <script src="{{'swiper-bundle.min.js'| asset_url }} "></script>
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
-<h1 class=" Text columns with images title">Text columns with images</h1>
+<h1 class="Text_columns_with_images_title">Text columns with images</h1>
 
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
@@ -102,6 +102,12 @@
     </div>
   </div>
 </div>
+
+<style>
+  .Text_columns_with_images_title {
+  	
+  }
+</style>
 
 {% schema %}
 {
