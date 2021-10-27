@@ -30,7 +30,7 @@
         -%}
         {%- for block in section.blocks -%}
           <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
-            <div class="">
+            <div class="" style="border: 1px solid red">
               
               {% if block.settings.show_image == true %}
 
