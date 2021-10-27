@@ -8,7 +8,11 @@
 <script src="{{'swiper-bundle.min.js'| asset_url }} "></script>
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
+{% if section.blocks.settings.title == blank %}
 <h2 class="Text_columns_with_images_title">Text columns with images</h2>
+{% else %}
+<h2 class="Text_columns_with_images_title">{{ section.blocks.settings.title }}</h2>
+{% endif %}
 
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width">
