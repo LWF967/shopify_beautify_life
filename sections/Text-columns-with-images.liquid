@@ -102,6 +102,7 @@
     font-weight: bold;
   }
   .btn {
+    width
     height: 30px;
     line-height: 15px;
     margin-top: 20px;
@@ -179,6 +180,30 @@
           "id": "button_link",
           "default": "Paste a link or search",
           "label": "Button link"
+        }
+      ]
+    },
+	{
+      "type": "button",
+      "name": "t:sections.rich-text.blocks.button.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "t:sections.rich-text.blocks.button.settings.button_label.label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.rich-text.blocks.button.settings.button_link.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary",
+          "default": false,
+          "label": "t:sections.rich-text.blocks.button.settings.button_style_secondary.label"
         }
       ]
     }
