@@ -662,12 +662,21 @@
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "testimonials_author_text": "Author"
           }
+        },
+        "b7158d44-9236-45b3-b876-276c12a7313a": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
         }
       },
       "block_order": [
         "163488699162d893f0-0",
         "163488699162d893f0-1",
-        "163488699162d893f0-2"
+        "163488699162d893f0-2",
+        "b7158d44-9236-45b3-b876-276c12a7313a"
       ],
       "settings": {
         "title": "Multicolumn",
