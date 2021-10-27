@@ -63,7 +63,7 @@
                 {%- endif -%}
                 {%- if section.blocks.settings.button_label != blank -%}
                   <a class="button button--primary"{% if section.blocks.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.blocks.settings.button_link }}"{% endif %}>
-                    {{ "button" | capitalize }}
+                    <button>{{ "button" | capitalize }}</button>
                   </a>
                 {%- endif-%}
               </div>            
