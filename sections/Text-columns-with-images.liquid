@@ -33,17 +33,11 @@
             <div class="">
               
               {% if block.settings.show_image == true %}
-
                 {%- if block.settings.image != blank -%}
                   <div class="my_image">
                   	<img src="{{ block.settings.image | img_url: '550x' }}" loading="lazy">
-                  </div>  
-                {%- else -%}
-
+                  </div>
                 {%- endif -%}
-
-              {% else %}
-
               {% endif %}
 
               <div class="multicolumn-card__info">
@@ -71,13 +65,13 @@
                     <div class="rte my_center">{{ block.settings.text }}</div>
                   {%- endif -%}
                   {% if block.settings.button_label == blank or block.settings.button_link == blank %}
-                    <div>
+                    <div class="my_div">
                 	  <a class="my_button hide_my_button my_center"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
                        {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
                       </a>
                 	</div>
                     {% else %}
-                	<div>
+                	<div class="my_div">
                 	  <a class="my_button my_center"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
                        {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
                       </a>
