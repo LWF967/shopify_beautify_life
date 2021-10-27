@@ -64,7 +64,7 @@
                 {%- endif -%}
                 <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} 
                    class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
-                	<button class="myBtn">{{ "button" | capitalize }}</button>
+                	<button>{{ "button" | capitalize }}</button>
               	</a>
               </div>            
             </div>
@@ -98,16 +98,6 @@
     font-size: 18px;
     font-weight: bold;
   }
-/*   .myBtn {
-    width: 10rem;
-    height: 30px;
-    line-height: 15px;
-    margin-top: 20px;
-    border: 1px solid black;
-    background: #ffffff;
-    color: #000;
-    text-align: center;
-  } */
 </style>
 
 {% schema %}
