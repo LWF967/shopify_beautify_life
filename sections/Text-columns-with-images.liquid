@@ -62,7 +62,7 @@
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {% if block.settings.button_label == blank or block.settings.button_link == blank %}
-                <a class="button button--primary hide_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                <a class="button button--primary hide_myButton"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
 				   {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
                 </a>
                 {% else %}
@@ -97,12 +97,21 @@
   	text-align: center;
     font-weight: 700;
   }
+  
   .add_title {
   	padding: 20px 0;
     font-size: 18px;
     font-weight: bold;
   }
-  .hide_button {
+  
+  .myButton {
+  	color: #000;
+    height: 30px;
+    margin-top: 20px;
+    line-height: 15px;
+  }
+  
+  .hide_myButton {
   	display: none;
   }
 </style>
