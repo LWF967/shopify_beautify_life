@@ -83,7 +83,7 @@
           </li>
         {%- endfor -%}
       </ul>
-
+		{{section.blocks.size}}
  
         <div class="slider-buttons no-js-hidden medium-hide{% if section.blocks.size < 3 %} small-hide{% endif %}">
           <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
