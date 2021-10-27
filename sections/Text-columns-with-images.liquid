@@ -61,9 +61,15 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
+                {% if block.settings.button_label == blank and block.settings.button_link == blank %}
                 <a class="button button--primary"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
 				   {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
                 </a>
+                {% else %}
+                <a class="button button--primary"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+				   {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
+                </a>
+                {% endif %}
               </div>            
             </div>
           </li>
@@ -95,6 +101,9 @@
   	padding: 20px 0;
     font-size: 18px;
     font-weight: bold;
+  }
+  .hide_button {
+  	display: none;
   }
 </style>
 
