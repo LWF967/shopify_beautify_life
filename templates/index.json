@@ -642,7 +642,6 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
-            "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "testimonials_author_text": "Author"
           }
@@ -650,7 +649,6 @@
         "163488699162d893f0-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "testimonials_author_text": "Author"
           }
@@ -658,7 +656,6 @@
         "163488699162d893f0-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "testimonials_author_text": "Author"
           }
@@ -666,7 +663,6 @@
         "b7158d44-9236-45b3-b876-276c12a7313a": {
           "type": "column",
           "settings": {
-            "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "testimonials_author_text": "Author"
           }
@@ -680,13 +676,13 @@
       ],
       "settings": {
         "title": "Multicolumn",
+        "swipe": true,
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "123",
-        "button_link": "",
-        "swipe_on_mobile": false
+        "button_link": ""
       }
     },
     "163532208633dc77bc": {
