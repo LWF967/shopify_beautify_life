@@ -63,6 +63,13 @@
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
                 <button class="btn">{{ "button" }}</button>
+                <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} 
+                   class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
+
+                  style="{%- if section.settings.content_full_width -%} margin-top:3rem; {%- endif -%}"
+                   {{ block.shopify_attributes }}>
+                  {{ block.settings.button_label | escape }} {{ 123 }}
+                </a>
               </div>            
             </div>
           </li>
