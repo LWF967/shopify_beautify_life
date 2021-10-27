@@ -635,35 +635,39 @@
         "full_width": false
       }
     },
-    "1634794981347e8c19": {
-      "type": "multicolumn",
+    "163488699162d893f0": {
+      "type": "testimonials",
       "blocks": {
-        "1634794981347e8c19-0": {
+        "163488699162d893f0-0": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
           }
         },
-        "1634794981347e8c19-1": {
+        "163488699162d893f0-1": {
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
           }
         },
-        "1634794981347e8c19-2": {
+        "163488699162d893f0-2": {
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
           }
         }
       },
       "block_order": [
-        "1634794981347e8c19-0",
-        "1634794981347e8c19-1",
-        "1634794981347e8c19-2"
+        "163488699162d893f0-0",
+        "163488699162d893f0-1",
+        "163488699162d893f0-2"
       ],
       "settings": {
         "title": "Multicolumn",
@@ -694,6 +698,6 @@
     "163454604067313d0f",
     "1634788020c7a0b534",
     "16347949263264d17c",
-    "1634794981347e8c19"
+    "163488699162d893f0"
   ]
 }
