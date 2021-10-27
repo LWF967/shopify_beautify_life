@@ -84,17 +84,10 @@
         {%- endfor -%}
       </ul>
 		
- 
-        <div class="slider-buttons no-js-hidden medium-hide{% if section.blocks.size > 3 %} small-hide{% endif %}">
-          <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-          <div class="slider-counter caption">
-            <span class="slider-counter--current">1</span>
-            <span aria-hidden="true"> / </span>
-            <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
-            <span class="slider-counter--total">{{ section.blocks.size }}</span>
-          </div>
-          <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
-        </div>
+   	<ol id="slide_pog">
+
+    </ol>
+        
 
       
       
@@ -113,12 +106,83 @@
 </div>
 
 
+  
 
 
 
 
 
+<style>
 
+ #slide_pog{
+  
+  	width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10%;
+    z-index: 100;
+    cursor: pointer;
+  }
+  
+  
+  #slide_pog li{
+    float:left;
+    background:green;
+    width:11px;
+    height:11px;
+    text-align: center;
+    line-height: 11px;
+    font-size: 10px;
+    border-radius: 50%;
+    text-align: center;
+    transition:all 1.5s;
+    margin: 0 5px;
+    list-style-type: none;
+  }
+  
+    #slide_pog li.active{
+      background:blue;
+      color:#fff;
+    }
+
+</style>
+
+
+<script>
+
+//获取轮播点
+  
+ var list_text = document.getElementById('slide_pog'); 
+  
+  
+  for (let a = 0; a < itemLength; a++) {
+            itemlist[a].index = a;
+            list_text.innerHTML += "<li></li>"
+            
+        }
+  
+  var list = list_text.getElementsByTagName("li");
+  list[0].index= 0;
+  list[0].className="active";
+  
+  
+  
+  
+  for (var c = 0; c < list.length; c++) {
+        list[c].index = c;
+        list[c].onclick = function(){
+            for(var j = 0;j<list.length;j++){
+                list[j].className="";
+            }
+            this.className="active";
+           contentbox.style.transform="translate(" + -itemlist[this.index].index*diff  + "px" + ")";	
+          
+        }
+    }
+
+
+</script>
 
 {% schema %}
 {
