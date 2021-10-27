@@ -688,6 +688,50 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "163532208633dc77bc": {
+      "type": "Text-columns-with-images",
+      "blocks": {
+        "163532208633dc77bc-0": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "1212",
+            "button_link": ""
+          }
+        },
+        "163532208633dc77bc-1": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "163532208633dc77bc-2": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163532208633dc77bc-0",
+        "163532208633dc77bc-1",
+        "163532208633dc77bc-2"
+      ],
+      "settings": {
+        "Text_columns_with_images_heading": "Text column with images",
+        "Text_columns_with_images_Text_alignment": "Left"
+      }
     }
   },
   "order": [
@@ -707,6 +751,7 @@
     "163454604067313d0f",
     "1634788020c7a0b534",
     "16347949263264d17c",
-    "163488699162d893f0"
+    "163488699162d893f0",
+    "163532208633dc77bc"
   ]
 }
