@@ -98,16 +98,7 @@
       
       
       
-       <div class="slider-buttons no-js-hidden{% if section.blocks.size < 5 %} medium-hide{% endif %}{% if section.blocks.size < 2 %} small-hide{% endif %}">
-        <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-        <div class="slider-counter caption">
-          <span class="slider-counter--current">1</span>
-            <span aria-hidden="true"> / </span>
-            <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
-          <span class="slider-counter--total">{{ section.blocks.size }}</span>
-        </div>
-        <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
-      </div>
+ 
       
     </slider-component>
     <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
@@ -122,63 +113,9 @@
 
 
 
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-    </div>
-    <!-- 如果需要分页器 -->
-    <div class="swiper-pagination"></div>
-    
-    <!-- 如果需要导航按钮 -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    
-    <!-- 如果需要滚动条 -->
-    <div class="swiper-scrollbar"></div>
-</div>
-
-<style>
 
 
-.swiper-container {
-    width: 600px;
-    height: 300px;
-  	position:relative;
-  	overflow: hidden;
-}  
 
-
-</style>
-
-<script>        
-  var mySwiper = new Swiper ('.swiper-container', {
-    direction: 'vertical', // 垂直切换选项
-    loop: true, // 循环模式选项
-
-    // 如果需要分页器
-    pagination: {
-      el: '.swiper-pagination',
-    },
-    
-    // 如果需要前进后退按钮
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    
-    // 如果需要滚动条
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  })      
-  
-//   var abcc= {{block.settings.testimonials_author_text}};
-  
-  console.log('ttt1');
-  
-  </script>
 
 
 
