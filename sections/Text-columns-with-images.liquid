@@ -62,15 +62,10 @@
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
-                <button class="btn">{{ "button" }}</button>
-                {% if block.type == "button" %}
                 <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} 
                    class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
-
-                   {{ block.shopify_attributes }}>
-                  {{ block.settings.button_label | escape }} {{ 123 }}
-                </a>
-                {% endif %}
+                	<button class="btn">{{ "button" }}</button>
+              	</a>
               </div>            
             </div>
           </li>
