@@ -35,8 +35,8 @@
               {% if block.settings.show_image == true %}
 
                 {%- if block.settings.image != blank -%}
-                  <div style="display: flex; align-items:center; padding: 30px; height: 30rem;">
-                  	<img src="{{ block.settings.image | img_url: '550x' }}" loading="lazy">
+                  <div style="display: flex; align-items: center; padding: 30px; height: 30rem;">
+                  	<img src="{{ block.settings.image | img_url: '550x' }}" style="width: 100%" loading="lazy">
                   </div>  
                 {%- else -%}
 
