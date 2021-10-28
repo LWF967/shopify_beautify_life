@@ -159,50 +159,50 @@
 
 <script>
 
-//获取轮播点
-var abccc= 1;
- var testimonials_lunbo = function(){
+// //获取轮播点
+// var abccc= 1;
+//  var testimonials_lunbo = function(){
     
-   var contentbox = document.getElementById('Slider-template--15036995076262__163488699162d893f0'); 
- var list_text = document.getElementById('slide_pog2'); 
-   var diff=contentbox.clientWidth;
+//    var contentbox = document.getElementById('Slider-template--15036995076262__163488699162d893f0'); 
+//  var list_text = document.getElementById('slide_pog2'); 
+//    var diff=contentbox.clientWidth;
   
-  for (let a = 0; a < itemLength/3; a++) {
-            itemlist[a].index = a;
-            list_text.innerHTML += "<li></li>"
+//   for (let a = 0; a < itemLength/3; a++) {
+//             itemlist[a].index = a;
+//             list_text.innerHTML += "<li></li>"
             
-        }
+//         }
   
-  var list = list_text.getElementsByTagName("li");
-  list[0].index= 0;
-  list[0].className="active";
-  
-  
+//   var list = list_text.getElementsByTagName("li");
+//   list[0].index= 0;
+//   list[0].className="active";
   
   
-  for (var c = 0; c < list.length; c++) {
-        list[c].index = c;
-        list[c].onclick = function(){
-            for(var j = 0;j<list.length;j++){
-                list[j].className="";
-            }
-            this.className="active";
-          if(c>0){
-            contentbox.style.transform="translate(calc(" + -itemlist[this.index].index*diff  + "px" + "))";
+  
+  
+//   for (var c = 0; c < list.length; c++) {
+//         list[c].index = c;
+//         list[c].onclick = function(){
+//             for(var j = 0;j<list.length;j++){
+//                 list[j].className="";
+//             }
+//             this.className="active";
+//           if(c>0){
+//             contentbox.style.transform="translate(calc(" + -itemlist[this.index].index*diff  + "px" + "))";
        	
           
-          }else{
-//           contentbox.style.transform="translate(calc(" + -itemlist[this.index].index*diff  + "px" + "))";
-           contentbox.style.transform="translate(calc(" + -itemlist[this.index].index*diff  + "px +" + " 2.5rem))";
-          }
+//           }else{
+// //           contentbox.style.transform="translate(calc(" + -itemlist[this.index].index*diff  + "px" + "))";
+//            contentbox.style.transform="translate(calc(" + -itemlist[this.index].index*diff  + "px +" + " 2.5rem))";
+//           }
            
           
-        }
-    }
+//         }
+//     }
   
   
   
-  }();
+//   }();
 
 
 
