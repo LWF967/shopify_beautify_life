@@ -495,7 +495,7 @@ class DeferredMedia extends HTMLElement {
   }
   
 
-  loadContent() {
+  loadContent(true) {
     window.pauseAllMedia();
     if (!this.getAttribute('loaded')) {
       const content = document.createElement('div');
