@@ -44,6 +44,7 @@
     padding-left: 10px;
     margin-right: 2rem;
   	text-decoration: none;
+    transition: all .3s;
   }
   .my_a .i_left,
   .my_a .i_right {
@@ -71,6 +72,12 @@
   }
 
 </style>
+<script>
+  let close = document.getElementsByClassName('my_a');
+        close.onclick = function () {
+            close.style.height = '0px';
+        }
+</script>
 
 {%- schema -%}
   {
