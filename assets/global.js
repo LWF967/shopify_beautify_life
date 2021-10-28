@@ -490,7 +490,7 @@ class DeferredMedia extends HTMLElement {
     console.log('test1')
   }
   test(){
-    console.log('test2')
+    console.log(this)
   }
   
 
