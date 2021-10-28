@@ -1,4 +1,8 @@
-<div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}}" data-ver='{{section.settings.ver}}' data-date='{{section.settings.date}}'><div class="container">
+<div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}}"
+     id="hide_banner"
+     data-ver='{{section.settings.ver}}' 
+     data-date='{{section.settings.date}}'>
+<div class="container">
    <div class="row al_center">
       {%- capture cap_btn -%}
         {%- if section.settings.show_close -%}
@@ -37,6 +41,9 @@
 {%- endstyle -%}
 
 <style>
+  #hide_banner {
+  	transition: all .3s;
+  }
   .my_a {
     display: block;
     position: relative;
@@ -44,7 +51,6 @@
     padding-left: 10px;
     margin-right: 2rem;
   	text-decoration: none;
-    transition: all .3s;
   }
   .my_a .i_left,
   .my_a .i_right {
@@ -74,7 +80,8 @@
 </style>
 <script>
   let close = document.getElementsByClassName('my_a');
-  console.log(close);
+  let hide_banner = document.getElementById('hide_banner');
+  console.log(hide_banner);
   for(let i = 0; i < close.length; i++) {
     close[i].onclick = function () {
       this.style.height = '0px';
