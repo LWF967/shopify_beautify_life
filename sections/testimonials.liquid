@@ -36,7 +36,7 @@
           endfor
         -%}
         {%- for block in section.blocks -%}
-          <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
+          <li class="testimonials-li multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
             <div class="">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
@@ -165,7 +165,7 @@
     
    var contentbox = document.getElementById('Slider-template--15036995076262__163488699162d893f0'); 
  var list_text = document.getElementById('slide_pog2'); 
-   var itemlist=document.querySelectorAll(".multicolumn-list__item grid__item");
+   var itemlist=document.querySelectorAll(".testimonials-li");
    var itemLength  = itemlist.length;
    var diff=contentbox.clientWidth;
   
