@@ -85,7 +85,7 @@
   let hide_banner = document.getElementById('hide_banner');
   for(let i = 0; i < close.length; i++) {
     close[i].onclick = function () {
-      hide_banner.style.transform = 'translateY(-'+ hide_banner.dataset.mheight +')';
+      hide_banner.style.transform = 'translateY(-'+ hide_banner.dataset.mheight + 'px' +')';
       console.log(hide_banner.dataset.mheight);
     }
   }
