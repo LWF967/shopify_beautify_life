@@ -1,0 +1,127 @@
+<div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}}" data-ver='{{section.settings.ver}}' data-date='{{section.settings.date}}'><div class="container">
+   <div class="row al_center">
+      {%- capture cap_btn -%}{%- if section.settings.show_close -%}<div class="col-auto"><a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index">{{section.settings.txt_btn}}</a></div>{%- endif -%}{%- endcapture -%}
+      {{-cap_btn-}}
+      {%- capture cap_date %}<span id="hbanner_cd" data-date='{{section.settings.countdown}}'></span>{% endcapture -%}
+      {%- if section.settings.link != blank -%}<a href="{{section.settings.link}}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
+      <div class="col h_banner_wrap tc cw">{{section.settings.text | replace:'[countdown]',cap_date }}</div>
+      {{-cap_btn | replace:'z_index','z_100' -}}
+   </div>
+</div></div>
+{%- style -%}
+{%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}
+.h__banner { background-color: {{ section.settings.bg | color_modify: 'alpha', bg_op }};min-height:{{section.settings.height}}px;font-size:{{section.settings.fontsize}}px;}.h_banner_wrap {color:{{section.settings.cl}} }.h_banner_close,.h_banner_close:hover,.h_banner_close:focus {color:{{section.settings.cl_btn}} !important }.h_banner_close:after, .h_banner_close:before {background-color:{{section.settings.cl_btn}} }
+{%- endstyle -%}
+{%- schema -%}
+  {
+    "name": "Promo Bar",
+    "settings": [
+      {
+        "type": "url",
+        "id": "link",
+        "label": "Banner link"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Banner content",
+        "default": "Today deal sale off 70%. End in [countdown]. Hurry Up!!",
+        "info": "Place here text you want to see in the header banner. You can use shortocdes: [countdown]"
+      },
+      {
+        "type": "text",
+        "id": "countdown",
+        "label": "Data countdown",
+        "default": "2020\/12\/20",
+        "info": "Countdown to the end sale date will be shown.( 2020\/04\/19 )"
+      },
+      {
+        "type": "range",
+        "id": "height",
+        "label": "Min Height",
+        "default": 41,
+        "min": 20,
+        "max": 120,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "type": "range",
+        "id": "fontsize",
+        "label": "Font size",
+        "default": 12,
+        "min": 12,
+        "max": 18,
+        "step": 0.5,
+        "unit": "px"
+      },
+      {
+        "type": "color",
+        "id": "cl",
+        "label": "Text Color",
+        "default": "#fff"
+      },
+      {
+        "type": "color",
+        "id": "bg",
+        "label": "Background Color",
+        "default": "#e91e63"
+      },
+      {
+        "type": "range",
+        "id": "bg_op",
+        "label": "Background opacity",
+        "default": 100,
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "%"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_close",
+        "label": "Show close button?",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_icon",
+        "label": "Show only icon close?",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "txt_btn",
+        "label": "Button close Text",
+        "default": "close"
+      },
+      {
+        "type": "color",
+        "id": "cl_btn",
+        "label": "Button close Color",
+        "default": "#fff"
+      },
+      {
+        "type": "range",
+        "id": "ver",
+        "min": 1,
+        "max": 101,
+        "step": 1,
+        "label": "Header banner version",
+        "info": "If you change your header banner you can increase its version to show the header banner to all visitors again.",
+        "default": 1
+      },
+      {
+        "type": "range",
+        "id": "date",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "day",
+        "label": "Header banner expires",
+        "info": "You will be able to specify when to expire the cookie. Once you click the \"CLOSE\" button",
+        "default": 60
+      }
+    ]
+  }
+{% endschema %}
