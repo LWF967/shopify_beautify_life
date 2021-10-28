@@ -3,8 +3,9 @@
        data-ver='{{section.settings.ver}}' 
        data-date='{{section.settings.date}}'>
   <div class="container my_center">
-     <div class="row al_center" id="aaa">
-         {%- capture cap_btn -%}
+     <div class="row al_center">
+       <div class="my_blank">123</div>
+        {%- capture cap_btn -%}
           {%- if section.settings.show_close -%}
             {%- if section.settings.show_icon -%}
               <div class="col-auto">
@@ -91,12 +92,14 @@
     justify-content: center;
   }
   .my_title_div {
-  	padding: 0 150px;
+  	padding: 0 15px;
   }
 </style>
 <script>
 //   let close = document.getElementsByClassName('h_banner_close pr pl__10 cw z_index my_a');
-
+  console.log('1');
+  let close = document.getElementsByClassName('h_banner_close pr pl__10 cw z_index my_a');
+  console.log('123');
   let hide_banner = document.getElementById('hide_banner');
   for(let i = 0; i < close.length; i++) {
     close[i].onclick = function () {
