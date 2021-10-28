@@ -97,9 +97,8 @@
 </style>
 <script>
 //   let close = document.getElementsByClassName('h_banner_close pr pl__10 cw z_index my_a');
-  console.log('1');
   let close = document.getElementsByClassName('h_banner_close pr pl__10 cw z_index my_a');
-  console.log('123');
+
   let hide_banner = document.getElementById('hide_banner');
   for(let i = 0; i < close.length; i++) {
     close[i].onclick = function () {
@@ -107,6 +106,7 @@
       hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
     }
   }
+  console.log(hide_banner.dataset.mheight);
 </script>
 
 {%- schema -%}
