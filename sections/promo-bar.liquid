@@ -1,9 +1,9 @@
 <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}}" data-ver='{{section.settings.ver}}' data-date='{{section.settings.date}}'><div class="container">
-   <div class="row al_center my_position">
+   <div class="row al_center">
       {%- capture cap_btn -%}
         {%- if section.settings.show_close -%}
      	  <div class="col-auto">
-            <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a my_close">
+            <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
               {{section.settings.txt_btn}}
             </a>
           </div>
@@ -23,16 +23,8 @@
 {%- endstyle -%}
 
 <style>
-  .my_position {
-  	display: relative;
-  }
   .my_a {
   	text-decoration: none;
-  }
-  
-  .my_close {
-    display: absolute;
-    right: 0;
   }
 </style>
 
