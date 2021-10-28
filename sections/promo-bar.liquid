@@ -26,8 +26,13 @@
 <style>
   .my_a {
     display: block;
+    position: relative;
     float: right;
   	text-decoration: none;
+  }
+  .my_a::before {
+    content: "-";
+  	position: absolute;
   }
   .my_center {
     
