@@ -73,11 +73,13 @@
 
 </style>
 <script>
-  let close = document.getElementsByClassName('my_a');
-        close.onclick = function () {
-//             close.style.height = '0px';
-          console.log(1);
-        }
+  let close = document.getElementsByClassName('close');
+  console.log(close);
+  for(let i = 0; i < close.length; i++) {
+    close[i].onclick = function () {
+      this.style.height = '0px';
+    }
+  }
 </script>
 
 {%- schema -%}
