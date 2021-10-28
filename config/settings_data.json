@@ -111,7 +111,7 @@
           "bg": "#e91e63",
           "bg_op": 100,
           "show_close": true,
-          "show_icon": false,
+          "show_icon": true,
           "txt_btn": "close",
           "cl_btn": "#ffffff",
           "ver": 1,
