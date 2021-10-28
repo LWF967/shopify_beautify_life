@@ -2,13 +2,22 @@
    <div class="row al_center">
       {%- capture cap_btn -%}
         {%- if section.settings.show_close -%}
-     	  <div class="col-auto">
-            <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
-              <i class="i_left"></i>
-              <i class="i_right"></i>
-              {{section.settings.txt_btn}}
-            </a>
-          </div>
+     	  {%- if section.settings.show_icon -%}
+            <div class="col-auto">
+              <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
+                <i class="close_left"></i>
+                <i class="close_right"></i>
+              </a>
+            </div>
+          {%- else -%}
+     		<div class="col-auto">
+              <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
+                <i class="i_left"></i>
+                <i class="i_right"></i>
+                {{section.settings.txt_btn}}
+              </a>
+            </div>
+     	  {%- endif -%}
       {%- endif -%}
       {%- endcapture -%}
       {{-cap_btn-}}
@@ -44,6 +53,19 @@
     left: 0;
     top: 50%;
     border-bottom: 1px solid #fff;
+  }
+  .close_left,
+  .close_right{
+  	content: "";
+  	position: absolute;
+    display: inline-block;
+    width: 20px;
+    left: 0;
+    top: 50%;
+    border-bottom: 1px solid #fff;
+  }
+  .close_right {
+  	
   }
 </style>
 
