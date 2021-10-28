@@ -483,6 +483,7 @@ customElements.define('modal-opener', ModalOpener);
 class DeferredMedia extends HTMLElement {
   constructor() {
     super();// ES6 要求，子类的构造函数必须执行一次 super 函数，否则会报错。
+    
     const poster = this.querySelector('[id^="Deferred-Poster-"]');
     if (!poster) return;
     poster.addEventListener('click', this.loadContent.bind(this));
