@@ -1,10 +1,10 @@
 <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}}" data-ver='{{section.settings.ver}}' data-date='{{section.settings.date}}'><div class="container">
-   <div class="row al_center">
+   <div class="row al_center my_center">
       {%- capture cap_btn -%}{%- if section.settings.show_close -%}<div class="col-auto"><a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index">{{section.settings.txt_btn}}</a></div>{%- endif -%}{%- endcapture -%}
       {{-cap_btn-}}
       {%- capture cap_date %}<span id="hbanner_cd" data-date='{{section.settings.countdown}}'></span>{% endcapture -%}
       {%- if section.settings.link != blank -%}<a href="{{section.settings.link}}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
-      <div class="col h_banner_wrap tc cw my_center">{{section.settings.text | replace:'[countdown]',cap_date }}</div>
+      <div class="col h_banner_wrap tc cw">{{section.settings.text | replace:'[countdown]',cap_date }}</div>
       {{-cap_btn | replace:'z_index','z_100' -}}
    </div>
 </div></div>
