@@ -1,5 +1,6 @@
+<div  id="hide_banner">
 <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}}"
-     id="hide_banner"
+    
      data-ver='{{section.settings.ver}}' 
      data-date='{{section.settings.date}}'>
 <div class="container">
@@ -29,7 +30,9 @@
       {%- if section.settings.link != blank -%}<a href="{{section.settings.link}}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
       <div class="col h_banner_wrap tc cw">{{section.settings.text | replace:'[countdown]',cap_date }}</div>
    </div>
-</div></div>
+  </div></div>
+
+</div>
 
 {%- style -%}
 {%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}
