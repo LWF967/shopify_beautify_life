@@ -2,7 +2,7 @@
    <div class="row al_center">
       {%- capture cap_btn -%}
         {%- if section.settings.show_close -%}
-     	  <div class="col-auto test111">
+     	  <div class="col-auto">
             <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
               {{section.settings.txt_btn}}
             </a>
@@ -36,20 +36,6 @@
   	position: absolute;
     display: block;
     width: 5px;
-    border-bottom: 1px solid #fff;
-  }
-  .test111 {
-  	display: block;
-    position: relative;
-    float: right;
-  }
-  .test_111:: before {
-  	content: "";
-  	position: absolute;
-    display: block;
-    width: 5px;
-    right: 0;
-    top: 50%;   
     border-bottom: 1px solid #fff;
   }
   .my_center {
