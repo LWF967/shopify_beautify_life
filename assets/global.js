@@ -488,14 +488,11 @@ class DeferredMedia extends HTMLElement {
     if (!poster) return;
     poster.addEventListener('onload', this.loadContent.bind(this));
     this.test(this)
-    console.log('test1')
   }
-  test(a){
-    console.log(a)
-  }
+
   
 
-  loadContent(true) {
+  loadContent() {
     window.pauseAllMedia();
     if (!this.getAttribute('loaded')) {
       const content = document.createElement('div');
