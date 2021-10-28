@@ -3,7 +3,7 @@
        data-ver='{{section.settings.ver}}' 
        data-date='{{section.settings.date}}'>
   <div class="container my_center">
-     <div class="row al_center">
+     <div class="row al_center" id="aaa">
        <div class="my_blank">123</div>
         {%- capture cap_btn -%}
           {%- if section.settings.show_close -%}
@@ -105,7 +105,7 @@
 //       hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 //     }
 //   }
-  let num = document.getElementById('hide_banner').children;
+  let num = document.getElementById('aaa').children;
   console.log(num);
 </script>
 
