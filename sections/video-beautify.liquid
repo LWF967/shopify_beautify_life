@@ -68,8 +68,13 @@
         {%- render 'icon-play' -%}
       </span>
     </button>
-    <div style="
-    background-image: url(https://img2.baidu.com/it/u=3454146869,1322923034&fm=26&fmt=auto);
+    <div 
+     
+      data-bgset="{% include 'bgset', image: section.settings.cover_image %}"
+      data-sizes="auto"
+      data-parent-fit="contain"
+      style="background-position: {{ section.settings.image_alignment }};" 
+    style="
     border: none;
     cursor: pointer;
     margin: 0;
