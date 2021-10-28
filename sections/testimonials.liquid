@@ -167,8 +167,8 @@
  var list_text = document.getElementById('slide_pog2'); 
    var itemlist=document.querySelectorAll(".testimonials-li");
    var itemLength  = itemlist.length;
-   
-   var diff=document.getElementsByClassName('testimonials-box slider-mobile-gutter')[0].clientWidth;
+   var diff = contentbox.clientWidth;
+//    var diff=document.getElementsByClassName('testimonials-box slider-mobile-gutter')[0].clientWidth;
   
   for (let a = 0; a < itemLength/3; a++) {
             itemlist[a].index = a;
