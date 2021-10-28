@@ -1,4 +1,4 @@
-<div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}} my_center" data-ver='{{section.settings.ver}}' data-date='{{section.settings.date}}'><div class="container">
+<div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}}" data-ver='{{section.settings.ver}}' data-date='{{section.settings.date}}'><div class="container">
    <div class="row al_center">
       {%- capture cap_btn -%}
         {%- if section.settings.show_close -%}
@@ -23,7 +23,7 @@
       {{-cap_btn-}}
       {%- capture cap_date %}<span id="hbanner_cd" data-date='{{section.settings.countdown}}'></span>{% endcapture -%}
       {%- if section.settings.link != blank -%}<a href="{{section.settings.link}}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
-      <div class="col h_banner_wrap tc cw lzx">{{section.settings.text | replace:'[countdown]',cap_date }}</div>
+      <div class="col h_banner_wrap tc cw">{{section.settings.text | replace:'[countdown]',cap_date }}</div>
    </div>
 </div></div>
 
@@ -69,14 +69,7 @@
   .close_right {
   	transform: rotate(-45deg);
   }
-  .my_center {
-  	display: flex;
-  }
-  .lzx {
-    flex: 1;
-  	justify-content: center;
-    align-items: center;
-  }
+
 </style>
 
 {%- schema -%}
