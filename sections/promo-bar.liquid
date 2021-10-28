@@ -1,4 +1,4 @@
-<div id="hide_banner" style="height:auto;" data-min-height='{{ section.settings.height }}'>
+<div id="hide_banner" style="height:auto;" data-mheight='{{ section.settings.height }}'>
   <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}}"
        data-ver='{{section.settings.ver}}' 
        data-date='{{section.settings.date}}'>
@@ -85,7 +85,7 @@
   let hide_banner = document.getElementById('hide_banner');
   for(let i = 0; i < close.length; i++) {
     close[i].onclick = function () {
-      hide_banner.style.transform = 'translateY(-'+ hide_banner.data-min-height +')';
+      hide_banner.style.transform = 'translateY(-'+ hide_banner.dataset.mheight +')';
       console.log(hide_banner.style.height);
     }
   }
