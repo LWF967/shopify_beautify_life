@@ -21,8 +21,8 @@
 {%- style -%}
 {%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}
 .h__banner { background-color: {{ section.settings.bg | color_modify: 'alpha', bg_op }};min-height:{{section.settings.height}}px;font-size:{{section.settings.fontsize}}px;}.h_banner_wrap {color:{{section.settings.cl}} }.h_banner_close,.h_banner_close:hover,.h_banner_close:focus {color:{{section.settings.cl_btn}} !important }.h_banner_close:after, .h_banner_close:before {background-color:{{section.settings.cl_btn}} }
-.my_a:hover { color: {{ section.settings.bg | color_lighten: 30 }} !important; transition: all 3s; }
-.my_a:hover i { border-bottom: 1px solid {{ section.settings.bg | color_lighten: 30 }} !important; transition: all 3s; }
+.my_a:hover { color: {{ section.settings.bg | color_lighten: 30 }} !important; transition: all .3s; }
+.my_a:hover i { border-bottom: 1px solid {{ section.settings.bg | color_lighten: 30 }} !important; transition: all .3s; }
 {%- endstyle -%}
 
 <style>
