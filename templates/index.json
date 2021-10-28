@@ -708,6 +708,7 @@
     "163538928330f5460b": {
       "type": "video-beautify",
       "settings": {
+        "cover_image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
         "image_alignment": "Middle-center",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "show_overlay": true,
