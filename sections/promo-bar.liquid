@@ -42,7 +42,8 @@
   	flex: 1;
     text-align: center;
   }
-  .test01::after {
+  .test01::after,
+  .test01::before{
     position: absolute;
   	content: "";
     display: block;
@@ -53,13 +54,6 @@
     transform: rotate(45deg);
   }
   .test01::before {
-    position: absolute;
-  	content: "";
-    display: block;
-    width: 20px;
-    border: 1px solid white;
-    right: 0;
-    top: 0;
     transform: rotate(-45deg);
   }
 </style>
