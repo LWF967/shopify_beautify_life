@@ -98,6 +98,25 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "promo-bar": {
+        "type": "promo-bar",
+        "settings": {
+          "link": "",
+          "text": "Today deal sale off <strong>70%<\/strong>. End in [countdown]. Hurry Up <i class=\"las la-arrow-right\"><\/i>",
+          "countdown": "2020\/12\/20",
+          "height": 41,
+          "fontsize": 12,
+          "cl": "#fff",
+          "bg": "#e91e63",
+          "bg_op": 100,
+          "show_close": true,
+          "show_icon": false,
+          "txt_btn": "close",
+          "cl_btn": "#fff",
+          "ver": 1,
+          "date": 60
+        }
       }
     },
     "content_for_index": [
