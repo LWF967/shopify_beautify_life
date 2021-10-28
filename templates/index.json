@@ -710,8 +710,8 @@
       "settings": {
         "image_alignment": "Middle-center",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "show_overlay": false,
-        "style": "image_with_play",
+        "show_overlay": true,
+        "style": "background_video",
         "video_height": "medium",
         "heading": "Video",
         "text_size": "medium"
