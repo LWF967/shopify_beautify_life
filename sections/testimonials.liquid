@@ -187,13 +187,13 @@
                 list[j].className="";
             }
             this.className="active";
-          if(c>0){
-          
-          contentbox.style.transform="translate(calc(" + -itemlist[this.index].index*diff  + "px +" + " 2.5rem))";	
+          if(list[0]){
+            contentbox.style.transform="translate(calc(" + -itemlist[this.index].index*diff  + "px" + "))";
+       	
           
           }else{
           
-          contentbox.style.transform="translate(calc(" + -itemlist[this.index].index*diff  + "px" + "))";	
+           contentbox.style.transform="translate(calc(" + -itemlist[this.index].index*diff  + "px +" + " 2.5rem))";
           }
            
           
