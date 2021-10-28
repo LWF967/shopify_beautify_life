@@ -5,7 +5,8 @@
   <div class="container my_center">
      <div class="row al_center" id="aaa">
        <div class="my_blank">123</div>
-        {%- capture cap_btn -%}
+       <div class="my_content">
+         {%- capture cap_btn -%}
           {%- if section.settings.show_close -%}
             {%- if section.settings.show_icon -%}
               <div class="col-auto">
@@ -27,6 +28,7 @@
         {%- endif -%}
         {%- endcapture -%}
         {{-cap_btn-}}
+       </div>
         {%- capture cap_date %}<span id="hbanner_cd" data-date='{{section.settings.countdown}}'></span>{% endcapture -%}
         {%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
         <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.text | replace: '[countdown]',cap_date }}</div>
