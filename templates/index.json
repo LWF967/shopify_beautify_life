@@ -704,6 +704,18 @@
         "Text_columns_with_images_heading": "Text columns with images",
         "Text_columns_with_images_Text_alignment": "Left"
       }
+    },
+    "163538928330f5460b": {
+      "type": "video-beautify",
+      "settings": {
+        "image_alignment": "Middle-center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "show_overlay": false,
+        "style": "image_with_play",
+        "video_height": "medium",
+        "heading": "Video",
+        "text_size": "medium"
+      }
     }
   },
   "order": [
@@ -721,6 +733,7 @@
     "163454604067313d0f",
     "1634788020c7a0b534",
     "163488699162d893f0",
-    "163532208633dc77bc"
+    "163532208633dc77bc",
+    "163538928330f5460b"
   ]
 }
