@@ -96,17 +96,15 @@
   }
 </style>
 <script>
-//   let close = document.getElementsByClassName('h_banner_close pr pl__10 cw z_index my_a');
+  let close = document.getElementsByClassName('h_banner_close pr pl__10 cw z_index my_a');
 
-//   let close = document.getElementsByClassName('h_banner_close pr pl__10 cw z_index my_a');
-
-//   let hide_banner = document.getElementById('hide_banner');
-//   for(let i = 0; i < close.length; i++) {
-//     close[i].onclick = function () {
-// //    hide_banner.style.transform = 'translateY(-'+ hide_banner.dataset.mheight + 'px' +')';
-//       hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-//     }
-//   }
+  let hide_banner = document.getElementById('hide_banner');
+  for(let i = 0; i < close.length; i++) {
+    close[i].onclick = function () {
+//    hide_banner.style.transform = 'translateY(-'+ hide_banner.dataset.mheight + 'px' +')';
+      hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+    }
+  }
 </script>
 
 {%- schema -%}
