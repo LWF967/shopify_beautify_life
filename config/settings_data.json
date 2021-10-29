@@ -110,7 +110,7 @@
           "bg": "#e21f4a",
           "bg_op": 100,
           "show_close": true,
-          "show_icon": true,
+          "show_icon": false,
           "txt_btn": "close",
           "cl_btn": "#ffffff",
           "date": 40
