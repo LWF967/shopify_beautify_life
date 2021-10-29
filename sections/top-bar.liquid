@@ -22,9 +22,10 @@
             {%- elsif block.settings.social == '2' -%}{% if forloop.last %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_left' %}{% else %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_right' %}{% endif %}{%- render 'social-sharing',follow_social:true,class_tooltip:class_tooltip -%}{%- endif -%}
           {%- else -%}
      	  <div class="header-text">{{block.settings.text}}</div>
-          
-          
-          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list" style="display:flex;">
+        {%- endcase -%}
+      	</div>
+     
+        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list" style="display:flex;">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
@@ -41,9 +42,6 @@
           {%- endfor -%}
         </ul>
           
-          
-        {%- endcase -%}
-      	</div>
      {%- endfor -%}
     </div>
   </div>
