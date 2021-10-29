@@ -1,5 +1,5 @@
 <div id="hide_banner" style="height:auto;" data-mheight='{{ section.settings.promo_bar_height }}'>
-  <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}} ts1"
+  <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.promo_bar_show_icon}} ts1"
        data-date='{{section.settings.promo_bar_date}}'>
     {%- if section.settings.promo_bar_link != blank -%}<a href="{{ section.settings.promo_bar_link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>{%- endif -%}
     <div class="container" style="width: 100%">
@@ -18,7 +18,7 @@
           <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
             <i class="i_left"></i>
             <i class="i_right"></i>
-            {{ section.settings.txt_btn }}
+            {{ section.settings.promo_bar_txt_btn }}
           </a>
         </div>
         {%- endif -%}
@@ -35,13 +35,13 @@
 
 {%- style -%}
 {%- assign promo_bar_bg_op = section.settings.promo_bar_bg_op | divided_by: 100.0 -%}
-.h__banner { background-color: {{ section.settings.promo_bar_bg | color_modify: 'alpha', promo_bar_bg_op }};min-height:{{section.settings.promo_bar_height}}px;font-size:{{section.settings.promo_bar_fontsize}}px;}.h_banner_wrap {color:{{section.settings.promo_bar_cl}} }.h_banner_close,.h_banner_close:hover,.h_banner_close:focus {color:{{section.settings.cl_btn}} !important }.h_banner_close:after, .h_banner_close:before {background-color:{{section.settings.cl_btn}} }
-.my_a:hover { color: {{ section.settings.cl_btn | color_darken: 10 }} !important; transition: all .3s; }
-.my_a:hover .i_left { transform: rotate(45deg);border-bottom: 1px solid {{ section.settings.cl_btn | color_darken: 10 }} !important; transition: all .3s; } .my_a:hover .i_right { transform: rotate(-45deg);border-bottom: 1px solid {{ section.settings.cl_btn | color_darken: 10 }} !important; transition: all .3s; }
-.my_a:hover .close_left { border-bottom: 2px solid {{ section.settings.cl_btn | color_darken: 10 }} !important; transition: all .3s; } .my_a:hover .close_right { border-bottom: 2px solid {{ section.settings.cl_btn | color_darken: 10 }} !important; transition: all .3s; }
-.my_a { color: {{ section.settings.cl_btn }}; }
-.my_a .i_left { border-bottom: 1px solid {{ section.settings.cl_btn }};} .my_a .i_right { border-bottom: 1px solid {{ section.settings.cl_btn }};}
-.close_left { border-bottom: 2px solid {{ section.settings.cl_btn }}; } .close_right { border-bottom: 2px solid {{ section.settings.cl_btn }}; }
+.h__banner { background-color: {{ section.settings.promo_bar_bg | color_modify: 'alpha', promo_bar_bg_op }};min-height:{{section.settings.promo_bar_height}}px;font-size:{{section.settings.promo_bar_fontsize}}px;}.h_banner_wrap {color:{{section.settings.promo_bar_cl}} }.h_banner_close,.h_banner_close:hover,.h_banner_close:focus {color:{{section.settings.promo_bar_cl_btn}} !important }.h_banner_close:after, .h_banner_close:before {background-color:{{section.settings.promo_bar_cl_btn}} }
+.my_a:hover { color: {{ section.settings.promo_bar_cl_btn | color_darken: 10 }} !important; transition: all .3s; }
+.my_a:hover .i_left { transform: rotate(45deg);border-bottom: 1px solid {{ section.settings.promo_bar_cl_btn | color_darken: 10 }} !important; transition: all .3s; } .my_a:hover .i_right { transform: rotate(-45deg);border-bottom: 1px solid {{ section.settings.promo_bar_promo_bar_cl_btn | color_darken: 10 }} !important; transition: all .3s; }
+.my_a:hover .close_left { border-bottom: 2px solid {{ section.settings.promo_bar_cl_btn | color_darken: 10 }} !important; transition: all .3s; } .my_a:hover .close_right { border-bottom: 2px solid {{ section.settings.promo_bar_cl_btn | color_darken: 10 }} !important; transition: all .3s; }
+.my_a { color: {{ section.settings.promo_bar_cl_btn }}; }
+.my_a .i_left { border-bottom: 1px solid {{ section.settings.promo_bar_cl_btn }};} .my_a .i_right { border-bottom: 1px solid {{ section.settings.promo_bar_cl_btn }};}
+.close_left { border-bottom: 2px solid {{ section.settings.promo_bar_cl_btn }}; } .close_right { border-bottom: 2px solid {{ section.settings.promo_bar_cl_btn }}; }
 {%- endstyle -%}
 
 <style>
