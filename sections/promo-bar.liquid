@@ -1,13 +1,12 @@
 <div id="hide_banner" style="height:auto;" data-mheight='{{ section.settings.promo_bar_height }}'>
   <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}} ts1"
-       data-ver='{{section.settings.ver}}' 
-       data-date='{{section.settings.date}}'>
+       data-date='{{section.settings.promo_bar_date}}'>
     {%- if section.settings.promo_bar_link != blank -%}<a href="{{ section.settings.promo_bar_link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>{%- endif -%}
     <div class="container" style="width: 100%">
       <div class="row al_center my_center">
         {%- capture cap_btn -%}
-        {%- if section.settings.show_close -%}
-        {%- if section.settings.show_icon -%}
+        {%- if section.settings.promo_bar_show_close -%}
+        {%- if section.settings.promo_bar_show_icon -%}
         <div class="col-auto">
           <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
             <i class="close_left"></i>
@@ -35,8 +34,8 @@
 </div>
 
 {%- style -%}
-{%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}
-.h__banner { background-color: {{ section.settings.bg | color_modify: 'alpha', bg_op }};min-height:{{section.settings.promo_bar_height}}px;font-size:{{section.settings.fontsize}}px;}.h_banner_wrap {color:{{section.settings.cl}} }.h_banner_close,.h_banner_close:hover,.h_banner_close:focus {color:{{section.settings.cl_btn}} !important }.h_banner_close:after, .h_banner_close:before {background-color:{{section.settings.cl_btn}} }
+{%- assign promo_bar_bg_op = section.settings.promo_bar_bg_op | divided_by: 100.0 -%}
+.h__banner { background-color: {{ section.settings.promo_bar_bg | color_modify: 'alpha', promo_bar_bg_op }};min-height:{{section.settings.promo_bar_height}}px;font-size:{{section.settings.promo_bar_fontsize}}px;}.h_banner_wrap {color:{{section.settings.promo_bar_cl}} }.h_banner_close,.h_banner_close:hover,.h_banner_close:focus {color:{{section.settings.cl_btn}} !important }.h_banner_close:after, .h_banner_close:before {background-color:{{section.settings.cl_btn}} }
 .my_a:hover { color: {{ section.settings.cl_btn | color_darken: 10 }} !important; transition: all .3s; }
 .my_a:hover .i_left { transform: rotate(45deg);border-bottom: 1px solid {{ section.settings.cl_btn | color_darken: 10 }} !important; transition: all .3s; } .my_a:hover .i_right { transform: rotate(-45deg);border-bottom: 1px solid {{ section.settings.cl_btn | color_darken: 10 }} !important; transition: all .3s; }
 .my_a:hover .close_left { border-bottom: 2px solid {{ section.settings.cl_btn | color_darken: 10 }} !important; transition: all .3s; } .my_a:hover .close_right { border-bottom: 2px solid {{ section.settings.cl_btn | color_darken: 10 }} !important; transition: all .3s; }
@@ -162,7 +161,7 @@
       },
       {
         "type": "range",
-        "id": "fontsize",
+        "id": "promo_bar_fontsize",
         "label": "Font size",
         "default": 12,
         "min": 12,
@@ -172,19 +171,19 @@
       },
       {
         "type": "color",
-        "id": "cl",
+        "id": "promo_bar_cl",
         "label": "Text Color",
         "default": "#fff"
       },
       {
         "type": "color",
-        "id": "bg",
+        "id": "promo_bar_bg",
         "label": "Background Color",
         "default": "#E21F4A"
       },
       {
         "type": "range",
-        "id": "bg_op",
+        "id": "promo_bar_bg_op",
         "label": "Background opacity",
         "default": 100,
         "min": 0,
@@ -194,31 +193,31 @@
       },
       {
         "type": "checkbox",
-        "id": "show_close",
+        "id": "promo_bar_show_close",
         "label": "Show close button?",
         "default": false
       },
       {
         "type": "checkbox",
-        "id": "show_icon",
+        "id": "promo_bar_show_icon",
         "label": "Show only icon close?",
         "default": false
       },
       {
         "type": "text",
-        "id": "txt_btn",
+        "id": "promo_bar_txt_btn",
         "label": "Button close Text",
         "default": "close"
       },
       {
         "type": "color",
-        "id": "cl_btn",
+        "id": "promo_bar_cl_btn",
         "label": "Button close Color",
         "default": "#fff"
       },
       {
         "type": "range",
-        "id": "date",
+        "id": "promo_bar_date",
         "min": 0,
         "max": 100,
         "step": 1,
