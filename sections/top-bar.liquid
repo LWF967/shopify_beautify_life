@@ -24,8 +24,9 @@
      	  <div class="header-text">{{block.settings.text}}</div>
         {%- endcase -%}
       	</div>
-     {%- endfor -%}
-     <div class="my_svg">{%- render 'icon-twitter' -%}</div>
+      {%- endfor -%}
+      {%- render 'icon-twitter' -%}
+      <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
     </div>
   </div>
 </div>
