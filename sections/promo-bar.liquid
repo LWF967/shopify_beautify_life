@@ -1,5 +1,5 @@
 <div id="hide_banner" style="height:auto;" data-mheight='{{ section.settings.height }}'>
-  <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}}"
+  <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}} ts1"
        data-ver='{{section.settings.ver}}' 
        data-date='{{section.settings.date}}'>
   <div class="container">
@@ -46,6 +46,9 @@
 <style>
   #hide_banner {
   	transition: all 1s;
+  }
+  .ts1 {
+    display: flex; 
   }
   .my_center {
     position: relative;
