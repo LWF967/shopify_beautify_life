@@ -9,7 +9,7 @@
   endif -%}
   
 <div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center"><div class="container">
-   <div class="row al_center">
+   <div class="row al_center my_flex">
       {%- for block in section_blocks -%}<div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024">
         {%- case block.type -%}
           {%- when 'cur' -%}
@@ -31,6 +31,11 @@
   {%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}h__top,.h__top.bgbl { background-color: {{ section.settings.bg | color_modify: 'alpha', bg_op }};{% if section.settings.show_border %}border-bottom: 1px solid {{ section.settings.bd_cl }};{% endif %}color:{{section.settings.cl}} } .header-text >.cg,.h__top .nt_currency { color:{{section.settings.cl}}  } .h__top .cr { color:{{section.settings.cl_cr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{section.settings.cl_a}}  } 
   {%- endif -%}{%- endstyle -%}
 
+<style>
+  .my_flex {
+  	display: flex;
+  }
+</style>
 {%- schema -%}
   {
     "name": "Top Bar",
