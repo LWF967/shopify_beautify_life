@@ -105,15 +105,15 @@
           "promo_bar_link": "https:\/\/www.baidu.com",
           "promo_bar_textarea": "Today deal sale off <strong>70%<\/strong>. End in [countdown]. Hurry Up <i class=\"las la-arrow-right\"><\/i>",
           "promo_bar_height": 41,
-          "fontsize": 14,
-          "cl": "#ffffff",
-          "bg": "#e21f4a",
-          "bg_op": 100,
-          "show_close": true,
-          "show_icon": true,
-          "txt_btn": "close",
-          "cl_btn": "#ffffff",
-          "date": 40
+          "promo_bar_fontsize": 12,
+          "promo_bar_cl": "#fff",
+          "promo_bar_bg": "#E21F4A",
+          "promo_bar_bg_op": 100,
+          "promo_bar_show_close": true,
+          "promo_bar_show_icon": true,
+          "promo_bar_txt_btn": "close",
+          "promo_bar_cl_btn": "#fff",
+          "promo_bar_date": 60
         }
       },
       "top-bar": {
