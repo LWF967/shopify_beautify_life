@@ -26,6 +26,7 @@
         {%- endif -%}
         {%- endcapture -%}
         <div class="hide_close">{{-cap_btn-}}</div>
+        {%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>{%- endif -%}
         <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.text }}</div>
         <div class="show_close">{{-cap_btn-}}</div>
       </div>
@@ -108,6 +109,7 @@
   .my_link {
   	width: 100%;
     height: 100%;
+    border: 1px solid black;
   }
 /*   .la-arrow-right::after {
     content: "";
