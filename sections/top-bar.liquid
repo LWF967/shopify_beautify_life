@@ -26,7 +26,7 @@
       	</div>
       {%- endfor -%}
       
-      <ul class="list-social_start list-unstyled my_ul" role="list">
+      <ul class="list-social_start list-unstyled" role="list">
         {%- if settings.social_twitter_link != blank -%}
           <li class="list-social__item">
             <a href="{{ settings.social_twitter_link }}" class="link link--text list-social__link my_svg" aria-describedby="a11y-external-message">
@@ -94,9 +94,6 @@
   .my_svg {
 	padding: 0 9px !important;
     color: #797979;
-  }
-  .my_ul {
-  	margin-right: 2rem;
   }
 </style>
 {%- schema -%}
