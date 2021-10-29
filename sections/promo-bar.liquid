@@ -101,6 +101,7 @@
   let hide_banner = document.getElementById('hide_banner');
   
   let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+  console.log(count);
   if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
   	for(let i = 0; i < close.length; i++) {
       close[i].onclick = function () {
