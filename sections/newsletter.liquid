@@ -2,7 +2,7 @@
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 
 <div class="newsletter center{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}">
-  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient" style="background-color:{{ section.settings.newsletter_bk_color }}">
+  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient" {%- if section.settings.newsletter_bk_box-%} style="background-color:{{ section.settings.newsletter_bk_color }}" {%- endif -%}>
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
