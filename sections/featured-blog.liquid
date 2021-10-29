@@ -29,12 +29,20 @@
       endif
     -%}
     {%- if section.settings.blog != blank and section.settings.blog.articles_count > 0 -%}
+    
+    {%- liquid
+     if section.settings.show_view_all  
+     assign blog_number = 3  
+    else blog_number = section.settings.blog.articles limit: section.settings.post_limit    
+    endif   
+    -%}
+    
       <slider-component class="slider-mobile-gutter">
         <ul id="Slider-{{ section.id }}"
           class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--3-col-desktop slider slider--tablet{% if posts_exceed_limit %} blog__posts--{{ section.settings.post_limit }}-items{% else %} blog__posts--{{ section.settings.blog.articles_count }}-items{% endif %}"
           role="list"
         >
-          {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
+          {%- for article in blog_number -%}
             <li class="blog__post grid__item article slider__slide slider__slide--full-width">
               {% render 'article-card', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author %}
             </li>
