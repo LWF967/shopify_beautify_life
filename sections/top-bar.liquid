@@ -8,7 +8,8 @@
     assign class_2 = 'col-md-12 tr_lg'
   endif -%}
   
-<div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center"><div class="container">
+<div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center">
+  <div class="container">
    <div class="row al_center my_flex">
       {%- for block in section_blocks -%}<div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024">
         {%- case block.type -%}
@@ -21,8 +22,9 @@
           {%- else -%}<div class="header-text my_first">{{block.settings.text}}</div>
         {%- endcase -%}
       </div>{%- endfor -%}
-   </div>
-</div></div>
+    </div>
+  </div>
+</div>
 
   {%- style -%}.h__top {min-height:{{section.settings.height}}px;font-size:{{section.settings.fontsize}}px;}
   {%- if settings.h_transparent and settings.header_design != '7' and settings.h_tr_top and template.name == 'index' -%}
