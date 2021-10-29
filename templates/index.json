@@ -724,12 +724,12 @@
         "heading": "Blog posts",
         "head_text": "The most exciting news",
         "blog": "新闻",
-        "post_limit": 6,
+        "post_limit": 4,
         "show_image": true,
         "show_date": false,
         "show_author": true,
         "soft_background": false,
-        "show_view_all": false
+        "show_view_all": true
       }
     }
   },
