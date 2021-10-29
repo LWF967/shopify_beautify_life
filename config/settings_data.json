@@ -104,13 +104,13 @@
         "settings": {
           "link": "",
           "text": "Today deal sale off <strong>70%<\/strong>. End in [countdown]. Hurry Up <i class=\"las la-arrow-right\"><\/i>",
-          "height": 120,
-          "fontsize": 18,
+          "height": 40,
+          "fontsize": 14,
           "cl": "#ffffff",
           "bg": "#e21f4a",
           "bg_op": 100,
           "show_close": true,
-          "show_icon": false,
+          "show_icon": true,
           "txt_btn": "close",
           "cl_btn": "#ffffff",
           "date": 40
