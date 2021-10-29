@@ -1,8 +1,8 @@
 <div id="hide_banner" style="height:auto;" data-mheight='{{ section.settings.height }}'>
-  {%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">123</a>{%- endif -%}
   <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}} ts1"
        data-ver='{{section.settings.ver}}' 
        data-date='{{section.settings.date}}'>
+    {%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">123</a>{%- endif -%}
     <div class="container" style="width: 100%">
       <div class="row al_center my_center">
         {%- capture cap_btn -%}
@@ -107,7 +107,7 @@
   }
   .my_link {
   	width: 100%;
-    height: auto;
+    height: 100%;
     border: 1px solid black;
   }
 /*   .la-arrow-right::after {
