@@ -96,37 +96,21 @@
   }
 </style>
 <script>
-  
   let close = document.getElementsByClassName('h_banner_close pr pl__10 cw z_index my_a')[0];
   let my_center = document.getElementsByClassName('my_center')[0];
   let hide_banner = document.getElementById('hide_banner');
   
   let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
   
-//     	for(let i = 0; i < close.length; i++) {
-//       close[i].onclick = function () {
-//         hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-//       }
-//     }
   close.onclick = function () {
     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
   }
   
-//   if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
-//   	for(let i = 0; i < close.length; i++) {
-//       close[i].onclick = function () {
-//         hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-//       }
-//     }
-//   }
   if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
-//   	for(let i = 0; i < close.length; i++) {
-      close.onclick = function () {
-        hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-      }
-//     }
+    close.onclick = function () {
+      hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+    }
   }
-  
 </script>
 
 {%- schema -%}
