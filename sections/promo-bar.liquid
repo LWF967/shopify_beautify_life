@@ -24,7 +24,14 @@
             {%- endif -%}
         {%- endif -%}
         {%- endcapture -%}
-       	<div class="hide_close">{{-cap_btn-}}</div>
+		{% comment %}
+       	  <div class="hide_close">{{-cap_btn-}}</div>
+          {%- capture cap_date %}<span id="hbanner_cd" data-date='{{section.settings.countdown}}'></span>{% endcapture -%}
+          {%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
+          <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.text | replace: '[countdown]',cap_date }}</div>
+          <div class="show_close">{{-cap_btn-}}</div>
+        {% endcomment %}
+        <div class="hide_close">{{-cap_btn-}}</div>
         {%- capture cap_date %}<span id="hbanner_cd" data-date='{{section.settings.countdown}}'></span>{% endcapture -%}
         {%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
         <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.text | replace: '[countdown]',cap_date }}</div>
@@ -137,13 +144,6 @@
         "info": "Place here text you want to see in the header banner. You can use shortocdes: [countdown]"
       },
       {
-        "type": "text",
-        "id": "countdown",
-        "label": "Data countdown",
-        "default": "2020\/12\/20",
-        "info": "Countdown to the end sale date will be shown.( 2020\/04\/19 )"
-      },
-      {
         "type": "range",
         "id": "height",
         "label": "Min Height",
@@ -208,16 +208,6 @@
         "id": "cl_btn",
         "label": "Button close Color",
         "default": "#fff"
-      },
-      {
-        "type": "range",
-        "id": "ver",
-        "min": 1,
-        "max": 101,
-        "step": 1,
-        "label": "Header banner version",
-        "info": "If you change your header banner you can increase its version to show the header banner to all visitors again.",
-        "default": 1
       },
       {
         "type": "range",
