@@ -102,12 +102,16 @@
   console.log(my_center.children);
   console.log(my_center.dataset.showclose);
   console.log(my_center.dataset.showicon);
-
-    for(let i = 0; i < close.length; i++) {
+  
+  let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+  if() {
+  	for(let i = 0; i < close.length; i++) {
       close[i].onclick = function () {
         hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
       }
     }
+  }
+    
   
   my_center.dataset.showclose.addEventListener( 'change', function() {
   	console.log(1);
