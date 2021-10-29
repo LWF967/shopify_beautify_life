@@ -42,7 +42,7 @@
 .my_a:hover .i_right { transform: rotate(-45deg); }
 .my_a:hover i { border-bottom: 1px solid {{ section.settings.bg | color_lighten: 30 }} !important; transition: all .3s; }
 .my_a { color: {{ section.settings.cl_btn }}; }
-.my_a .i_left { background: {{ section.settings.cl_btn }};} .my_a .i_right { background: {{ section.settings.cl_btn }};}
+.my_a .i_left { border-bottom: {{ section.settings.cl_btn }};} .my_a .i_right { border-bottom: {{ section.settings.cl_btn }};}
 {%- endstyle -%}
 
 <style>
