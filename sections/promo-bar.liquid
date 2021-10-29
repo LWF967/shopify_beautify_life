@@ -99,7 +99,7 @@
   let close = document.getElementsByClassName('h_banner_close pr pl__10 cw z_index my_a');
   let my_center = document.getElementsByClassName('my_center')[0];
   let hide_banner = document.getElementById('hide_banner');
-  console.log(my_center);
+  console.log(my_center.children);
   for(let i = 0; i < close.length; i++) {
     close[i].onclick = function () {
       hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
