@@ -102,9 +102,6 @@
       "promo-bar": {
         "type": "promo-bar",
         "settings": {
-          "link": "",
-          "text": "Today deal sale off <strong>70%<\/strong>. End in [countdown]. Hurry Up <i class=\"las la-arrow-right\"><\/i>",
-          "height": 40,
           "fontsize": 14,
           "cl": "#ffffff",
           "bg": "#e21f4a",
@@ -114,6 +111,50 @@
           "txt_btn": "close",
           "cl_btn": "#ffffff",
           "date": 40
+        }
+      },
+      "top-bar": {
+        "type": "top-bar",
+        "blocks": {
+          "top-bar-0": {
+            "type": "text",
+            "settings": {
+              "text": "<i class=\"pegk pe-7s-call\"><\/i> +01 23456789 <i class=\"pegk pe-7s-mail ml__15\"><\/i> <a class=\"cg\" href=\"mailto:kalles@domain.com\">kalles@domain.com<\/a>",
+              "hide": false,
+              "col": "4"
+            }
+          },
+          "top-bar-1": {
+            "type": "text",
+            "settings": {
+              "text": "Summer sale discount off <span class=\"cr\">50%<\/span>! <a href=\"\/shop\">Shop Now<\/a>",
+              "hide": false,
+              "col": "4"
+            }
+          },
+          "top-bar-2": {
+            "type": "cur",
+            "settings": {
+              "hide": false,
+              "col": "4"
+            }
+          }
+        },
+        "block_order": [
+          "top-bar-0",
+          "top-bar-1",
+          "top-bar-2"
+        ],
+        "settings": {
+          "height": 20,
+          "fontsize": 12,
+          "cl": "#45c43b",
+          "cl_a": "#0052fa",
+          "cl_cr": "#ec0101",
+          "bg": "#cfc7c7",
+          "bg_op": 100,
+          "show_border": false,
+          "bd_cl": "#000"
         }
       }
     },
