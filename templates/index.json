@@ -729,7 +729,7 @@
         "show_date": false,
         "show_author": true,
         "soft_background": false,
-        "show_view_all": true
+        "show_view_all": false
       }
     }
   },
