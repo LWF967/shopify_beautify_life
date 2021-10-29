@@ -111,10 +111,12 @@
     }
   }
   
-  setTimeout(function(){
-	console.log(my_center.dataset.showclose);
-    console.log(my_center.dataset.showicon);
-  },1);
+  my_center.dataset.showclose.addEventListener( 'change', function() {
+  	console.log(1);
+  })
+  my_center.dataset.showicon.addEventListener( 'change', function() {
+  	console.log(2);
+  })
   
 </script>
 
