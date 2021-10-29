@@ -103,13 +103,11 @@
   console.log(my_center.dataset.showclose);
   console.log(my_center.dataset.showicon);
 
-  if(true) {
     for(let i = 0; i < close.length; i++) {
       close[i].onclick = function () {
         hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
       }
     }
-  }
   
   my_center.dataset.showclose.addEventListener( 'change', function() {
   	console.log(1);
