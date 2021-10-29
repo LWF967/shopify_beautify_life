@@ -1,47 +1,43 @@
 <div id="hide_banner" style="height:auto;" data-mheight='{{ section.settings.height }}'>
-  {% if section.settings.link != blank %}
-    <a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100">
-      <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}} ts1"
-           data-ver='{{section.settings.ver}}' 
-           data-date='{{section.settings.date}}'>
-      <div class="container" style="width: 100%">
-         <div class="row al_center my_center">
-             {%- capture cap_btn -%}
-              {%- if section.settings.show_close -%}
-                {%- if section.settings.show_icon -%}
-                  <div class="col-auto">
-                    <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
-                      <i class="close_left"></i>
-                      <i class="close_right"></i>
-                    </a>
-                  </div>
-                {%- else -%}
-                  <div class="col-auto">
-                    <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
-                      <i class="i_left"></i>
-                      <i class="i_right"></i>
-                      {{ section.settings.txt_btn }}
-                    </a>
-                  </div>
-                {%- endif -%}
-            {%- endif -%}
-            {%- endcapture -%}
-            {% comment %}
-              <div class="hide_close">{{-cap_btn-}}</div>
-              {%- capture cap_date %}<span id="hbanner_cd" data-date='{{section.settings.countdown}}'></span>{% endcapture -%}
-              {%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
-              <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.text | replace: '[countdown]',cap_date }}</div>
-              <div class="show_close">{{-cap_btn-}}</div>
-            {% endcomment %}
-            <div class="hide_close">{{-cap_btn-}}</div>
-            {%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
-            <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.text }}</div>
-            <div class="show_close">{{-cap_btn-}}</div>
-          </div>
+  <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.show_icon}} ts1"
+       data-ver='{{section.settings.ver}}' 
+       data-date='{{section.settings.date}}'>
+    <div class="container" style="width: 100%">
+      <div class="row al_center my_center">
+        {%- capture cap_btn -%}
+        {%- if section.settings.show_close -%}
+        {%- if section.settings.show_icon -%}
+        <div class="col-auto">
+          <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
+            <i class="close_left"></i>
+            <i class="close_right"></i>
+          </a>
         </div>
+        {%- else -%}
+        <div class="col-auto">
+          <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
+            <i class="i_left"></i>
+            <i class="i_right"></i>
+            {{ section.settings.txt_btn }}
+          </a>
+        </div>
+        {%- endif -%}
+        {%- endif -%}
+        {%- endcapture -%}
+        {% comment %}
+        <div class="hide_close">{{-cap_btn-}}</div>
+        {%- capture cap_date %}<span id="hbanner_cd" data-date='{{section.settings.countdown}}'></span>{% endcapture -%}
+        {%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
+        <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.text | replace: '[countdown]',cap_date }}</div>
+        <div class="show_close">{{-cap_btn-}}</div>
+        {% endcomment %}
+        <div class="hide_close">{{-cap_btn-}}</div>
+        {%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
+        <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.text }}</div>
+        <div class="show_close">{{-cap_btn-}}</div>
       </div>
-    </a>
-  {% endif %}
+    </div>
+  </div>
 </div>
 
 {%- style -%}
