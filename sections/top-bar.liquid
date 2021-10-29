@@ -21,7 +21,7 @@
             {%- if block.settings.social == '1' -%}{%- render 'social-sharing',class_tooltip:'ttip_nt tooltip_bottom_right' -%}
             {%- elsif block.settings.social == '2' -%}{% if forloop.last %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_left' %}{% else %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_right' %}{% endif %}{%- render 'social-sharing',follow_social:true,class_tooltip:class_tooltip -%}{%- endif -%}
           {%- else -%}
-     	  <div class="header-text">{{block.settings.text}}</div>
+     	  <div class="header-text my_icon">{{block.settings.text}}</div>
         {%- endcase -%}
       	</div>
      
@@ -57,6 +57,9 @@
   }
   .my_flex {
   	flex: 0 0 33.333333%;
+  }
+  .my_icon::before {
+  	content: "\e670";
   }
 </style>
 {%- schema -%}
