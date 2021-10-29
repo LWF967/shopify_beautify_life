@@ -73,7 +73,9 @@
       data-bgset="{% include 'bgset', image: section.settings.cover_image %}"
       data-sizes="auto"
       data-parent-fit="contain"
-      style="background-position: {{ section.settings.image_alignment }};" 
+      style="
+             background-image: {{section.settings.cover_image}};
+             background-position: {{ section.settings.image_alignment }};" 
     style="
     border: none;
     cursor: pointer;
