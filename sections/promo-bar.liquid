@@ -49,6 +49,7 @@
 .my_a { color: {{ section.settings.cl_btn }}; }
 .my_a .i_left { border-bottom: 1px solid {{ section.settings.cl_btn }};} .my_a .i_right { border-bottom: 1px solid {{ section.settings.cl_btn }};}
 .close_left { border-bottom: 2px solid {{ section.settings.cl_btn }}; } .close_right { border-bottom: 2px solid {{ section.settings.cl_btn }}; }
+.llla { width:20px;height:20px;background:blue; }
 {%- endstyle -%}
 
 <style>
@@ -139,7 +140,7 @@
         "type": "textarea",
         "id": "text",
         "label": "Banner content",
-        "default": "Today deal sale off <strong>70%</strong>. End in [countdown]. Hurry Up <i class='las la-arrow-right'></i>",
+        "default": "Today deal sale off <strong>70%</strong>. End in [countdown]. Hurry Up <i class='las la-arrow-right llla'></i>",
         "info": "Place here text you want to see in the header banner. You can use shortocdes: [countdown]"
       },
       {
