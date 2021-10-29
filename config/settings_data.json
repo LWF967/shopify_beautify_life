@@ -102,7 +102,7 @@
       "promo-bar": {
         "type": "promo-bar",
         "settings": {
-          "link": "https:\/\/www.baidu.com",
+          "link": "",
           "text": "Today deal sale off <strong>70%<\/strong>. End in [countdown]. Hurry Up <i class=\"las la-arrow-right\"><\/i>",
           "height": 40,
           "fontsize": 14,
