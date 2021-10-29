@@ -2,7 +2,7 @@
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 
 <div class="newsletter center{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}">
-  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient">
+  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient" style="background-color:{{ section.settings.newsletter_bk_color }}">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
@@ -107,7 +107,7 @@
     },
 	{
       "type": "color",
-      "id": "s_color",
+      "id": "newsletter_bk_color",
       "label": "Hover",
       "default": "#222"
      },
