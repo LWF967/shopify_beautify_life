@@ -37,6 +37,8 @@
      endif   
     -%}
     blog_number::{{blog_number}}
+    
+    
       <slider-component class="slider-mobile-gutter">
         <ul id="Slider-{{ section.id }}"
           class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--3-col-desktop slider slider--tablet{% if posts_exceed_limit %} blog__posts--{{ section.settings.post_limit }}-items{% else %} blog__posts--{{ section.settings.blog.articles_count }}-items{% endif %}"
@@ -46,7 +48,7 @@
           {%- case section.settings.show_view_all -%}
           {%- when true -%}
           
-          {%- for article in 3 -%}
+          {%- for article in section.settings.blog.articles limit: 3 -%}
             <li class="blog__post grid__item article slider__slide slider__slide--full-width">
               {% render 'article-card', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author %}
             </li>
@@ -61,7 +63,7 @@
             </li>
           {%- endfor -%}
           
-          {% endcase %}
+          {%- endcase -%}
           
         </ul>
         {%- if posts_exceed_limit -%}
