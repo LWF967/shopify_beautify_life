@@ -22,6 +22,7 @@
             {%- elsif block.settings.social == '2' -%}{% if forloop.last %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_left' %}{% else %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_right' %}{% endif %}{%- render 'social-sharing',follow_social:true,class_tooltip:class_tooltip -%}{%- endif -%}
           {%- else -%}
      	  <div class="header-text my_first">{{block.settings.text}}</div>
+          <div class="my_blank"></div>
         {%- endcase -%}
       	</div>
      {%- endfor -%}
@@ -48,6 +49,9 @@
     text-align: center;
   }
   .my_first {
+  	flex: 1;
+  }
+  .my_blank {
   	flex: 1;
   }
 </style>
