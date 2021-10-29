@@ -109,14 +109,15 @@
     user-select: none;
     cursor: default;
   }
-  .la-arrow-right {
+  .lll {
   	position: relative;
   }
-  .la-arrow-right::before {
+  .lll::before {
   	position: absolute;
     content: "";
     display: block;
     width: 20px;
+    height: 20px;
     border: 1px solid black;
   }
 </style>
@@ -149,7 +150,7 @@
         "type": "textarea",
         "id": "text",
         "label": "Banner content",
-        "default": "Today deal sale off <strong>70%</strong>. End in [countdown]. Hurry Up <i class='las la-arrow-right'></i>",
+        "default": "Today deal sale off <strong>70%</strong>. End in [countdown]. Hurry Up <i class='las la-arrow-right lll'></i>",
         "info": "Place here text you want to see in the header banner. You can use shortocdes: [countdown]"
       },
       {
