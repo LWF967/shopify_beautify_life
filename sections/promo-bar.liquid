@@ -24,7 +24,7 @@
             {%- endif -%}
         {%- endif -%}
         {%- endcapture -%}
-       	<div class="hide_close">{{-cap_btn-}}</div>
+       	<div class="hide_close">{{-cap_btn-}}12</div>
         {%- capture cap_date %}<span id="hbanner_cd" data-date='{{section.settings.countdown}}'></span>{% endcapture -%}
         {%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
         <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.text | replace: '[countdown]',cap_date }}</div>
