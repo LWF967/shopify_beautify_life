@@ -5,6 +5,9 @@
   <div class="container">
      <div class="row al_center my_center">
        <div class="blank"></div>
+        {%- capture cap_date %}<span id="hbanner_cd" data-date='{{section.settings.countdown}}'></span>{% endcapture -%}
+        {%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
+        <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.text | replace: '[countdown]',cap_date }}</div>
         {%- capture cap_btn -%}
           {%- if section.settings.show_close -%}
             {%- if section.settings.show_icon -%}
@@ -27,9 +30,6 @@
         {%- endif -%}
         {%- endcapture -%}
         {{-cap_btn-}}
-        {%- capture cap_date %}<span id="hbanner_cd" data-date='{{section.settings.countdown}}'></span>{% endcapture -%}
-        {%- if section.settings.link != blank -%}<a href="{{ section.settings.link }}" class="pa t__0 l__0 r__0 b__0 z_100"></a>{%- endif -%}
-        <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.text | replace: '[countdown]',cap_date }}</div>
       </div>
     </div>
   </div>
@@ -99,13 +99,16 @@
   let close = document.getElementsByClassName('h_banner_close pr pl__10 cw z_index my_a');
   let my_center = document.getElementsByClassName('my_center')[0];
   let hide_banner = document.getElementById('hide_banner');
-  
-  for(let i = 0; i < close.length; i++) {
-    close[i].onclick = function () {
-      hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-      console.log(my_center.children);
+  console.log(my_center.children);
+  if() {
+    for(let i = 0; i < close.length; i++) {
+      close[i].onclick = function () {
+        hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+        
+      }
     }
   }
+  
 </script>
 
 {%- schema -%}
