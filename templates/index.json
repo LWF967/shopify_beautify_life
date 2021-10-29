@@ -723,7 +723,7 @@
       "settings": {
         "heading": "Blog posts",
         "blog": "新闻",
-        "post_limit": 1,
+        "post_limit": 3,
         "show_image": true,
         "show_date": true,
         "show_author": false,
