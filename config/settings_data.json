@@ -104,7 +104,7 @@
         "settings": {
           "link": "https:\/\/www.baidu.com",
           "text": "Today deal sale off <strong>70%<\/strong>. End in [countdown]. Hurry Up <i class=\"las la-arrow-right\"><\/i>",
-          "height": 41,
+          "height": 40,
           "fontsize": 14,
           "cl": "#ffffff",
           "bg": "#e21f4a",
