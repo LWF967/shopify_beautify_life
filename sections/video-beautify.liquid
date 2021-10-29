@@ -74,7 +74,7 @@
       data-sizes="auto"
       data-parent-fit="contain"
       style="
-             background-image: {{section.settings.cover_image}};
+             background-image: {% include 'bgset', image: section.settings.cover_image %};
              background-position: {{ section.settings.image_alignment }};" 
     style="
     border: none;
