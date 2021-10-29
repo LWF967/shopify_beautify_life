@@ -11,7 +11,8 @@
 <div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center">
   <div class="container my_width">
    <div class="row al_center my_flex">
-      {%- for block in section_blocks -%}<div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024">
+      {%- for block in section_blocks -%}
+     	<div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024">
         {%- case block.type -%}
           {%- when 'cur' -%}
             {%- if settings.show_locale_selector and shop.published_locales.size > 1 %}{% render 'languages',class_2:'mr__15' %}{% endif -%}
@@ -20,9 +21,9 @@
             {%- if block.settings.social == '1' -%}{%- render 'social-sharing',class_tooltip:'ttip_nt tooltip_bottom_right' -%}
             {%- elsif block.settings.social == '2' -%}{% if forloop.last %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_left' %}{% else %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_right' %}{% endif %}{%- render 'social-sharing',follow_social:true,class_tooltip:class_tooltip -%}{%- endif -%}
           {%- else -%}
-     	<div class="header-text my_first">{{block.settings.text}}</div>
+     	  <div class="header-text my_first">{{block.settings.text}}</div>
         {%- endcase -%}
-      </div>
+      	</div>
      {%- endfor -%}
     </div>
   </div>
