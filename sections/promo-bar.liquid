@@ -109,6 +109,16 @@
     user-select: none;
     cursor: default;
   }
+  .la-arrow-right {
+  	position: relative;
+  }
+  .la-arrow-right::before {
+  	position: absolute;
+    content: "";
+    display: block;
+    width: 20px;
+    border: 1px solid black;
+  }
 </style>
 <script>
   let close = document.getElementsByClassName('show_close')[0];
