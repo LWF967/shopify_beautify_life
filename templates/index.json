@@ -731,6 +731,12 @@
         "soft_background": false,
         "show_view_all": true
       }
+    },
+    "1635497923083b4abb": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form"
+      }
     }
   },
   "order": [
@@ -750,6 +756,7 @@
     "163488699162d893f0",
     "163532208633dc77bc",
     "163538928330f5460b",
-    "1635416841669ad304"
+    "1635416841669ad304",
+    "1635497923083b4abb"
   ]
 }
