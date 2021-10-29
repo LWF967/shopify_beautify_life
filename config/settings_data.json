@@ -102,9 +102,8 @@
       "promo-bar": {
         "type": "promo-bar",
         "settings": {
-          "link": "",
+          "link": "https:\/\/www.baidu.com",
           "text": "Today deal sale off <strong>70%<\/strong>. End in [countdown]. Hurry Up <i class=\"las la-arrow-right\"><\/i>",
-          "countdown": "2020\/12\/20",
           "height": 120,
           "fontsize": 12,
           "cl": "#ffffff",
@@ -114,8 +113,7 @@
           "show_icon": true,
           "txt_btn": "close",
           "cl_btn": "#10f109",
-          "ver": 1,
-          "date": 60
+          "date": 40
         }
       }
     },
