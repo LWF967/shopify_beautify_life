@@ -99,9 +99,6 @@
   let close = document.getElementsByClassName('h_banner_close pr pl__10 cw z_index my_a');
   let my_center = document.getElementsByClassName('my_center')[0];
   let hide_banner = document.getElementById('hide_banner');
-  console.log(my_center.children);
-  console.log(my_center.dataset.showclose);
-  console.log(my_center.dataset.showicon);
   
   let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
   if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
@@ -110,14 +107,7 @@
         hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
       }
     }
-  } 
-  
-  my_center.dataset.showclose.addEventListener( 'change', function() {
-  	console.log(1);
-  })
-  my_center.dataset.showicon.addEventListener( 'change', function() {
-  	console.log(2);
-  })
+  }
   
 </script>
 
