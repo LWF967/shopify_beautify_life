@@ -12,50 +12,46 @@
   <div class="container my_container">
     <div class="row al_center my_layout">
       {%- for block in section_blocks -%}
-
-          <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex">
-            {%- case block.type -%}
-              {%- when 'cur' -%}
-                  <ul class="my_ul">
-            {%- if settings.social_twitter_link != blank -%}
+        <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex">
+          {%- case block.type -%}
+          {%- when 'cur' -%}
+            <ul class="my_ul">
+              {%- if settings.social_twitter_link != blank -%}
               <li class="list-social__item my_li">
                 <a href="{{ settings.social_twitter_link }}" class="link link--text list-social__link my_svg_style" aria-describedby="a11y-external-message">
                   {%- render 'icon-twitter' -%}
                   <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
                 </a>
               </li>
-            {%- endif -%}
-            {%- if settings.social_facebook_link != blank -%}
+              {%- endif -%}
+              {%- if settings.social_facebook_link != blank -%}
               <li class="list-social__item my_li">
                 <a href="{{ settings.social_facebook_link }}" class="link link--text list-social__link my_svg_style" aria-describedby="a11y-external-message">
                   {%- render 'icon-facebook' -%}
                   <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
                 </a>
               </li>
-            {%- endif -%}
-            {%- if settings.social_instagram_link != blank -%}
+              {%- endif -%}
+              {%- if settings.social_instagram_link != blank -%}
               <li class="list-social__item my_li">
                 <a href="{{ settings.social_instagram_link }}" class="link link--text list-social__link my_svg_style" aria-describedby="a11y-external-message">
                   {%- render 'icon-instagram' -%}
                   <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
                 </a>
               </li>
-            {%- endif -%}
-            {%- if settings.social_tumblr_link != blank -%}
+              {%- endif -%}
+              {%- if settings.social_tumblr_link != blank -%}
               <li class="list-social__item my_li">
                 <a href="{{ settings.social_tumblr_link }}" class="link link--text list-social__link my_svg_style" aria-describedby="a11y-external-message">
                   {%- render 'icon-tumblr' -%}
                   <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
                 </a>
               </li>
-            {%- endif -%}
-           </ul>
-            
-              {%- else -%}
-              <div class="header-text">{{block.settings.text}}</div>
-            {%- endcase -%}
-          </div>
-
+              {%- endif -%}
+            </ul>
+            <div class="header-text">{{block.settings.text}}</div>
+          {%- endcase -%}
+        </div>
       {%- endfor -%}
     </div>
   </div>
