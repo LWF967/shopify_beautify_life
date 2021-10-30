@@ -31,7 +31,7 @@
             {%- endcase -%}
           </div>
         {%- elsif block.type == 'cur' -%}
-          <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12  my_r' %} dn_{{block.settings.hide}}_1024 my_flex">
+          <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12  my_r' %} dn_{{block.settings.hide}}_1024 my_flex .icon_flex_r">
             <ul class="my_ul">
             {%- if settings.social_twitter_link != blank -%}
               <li class="list-social__item my_li">
