@@ -50,7 +50,7 @@
               {%- endif -%}
             </ul>
             {%- else -%}
-            <div class="header-text">{{block.settings.text}}</div>
+          <div class="header-text">{{block.settings.text}}<span class="ts">123</span></div>
           {%- endcase -%}
         </div>
       {%- endfor -%}
@@ -69,13 +69,17 @@
 {%- endstyle -%}
 
 <style>
+  @media screen and (min-width: 750px) {
+    .ts {
+      color: pink;
+    }
+  }
   @font-face {
   font-family: 'iconfont';  /* Project id 2903696 */
   src: url('//at.alicdn.com/t/font_2903696_8kpznmqcoej.woff2?t=1635582253888') format('woff2'),
        url('//at.alicdn.com/t/font_2903696_8kpznmqcoej.woff?t=1635582253888') format('woff'),
        url('//at.alicdn.com/t/font_2903696_8kpznmqcoej.ttf?t=1635582253888') format('truetype');
   }
-  
   .my_phone {
     padding-left: 15px;
   	font-family: "iconfont" !important;
@@ -86,7 +90,6 @@
     -moz-osx-font-smoothing: grayscale;
     cursor: default;
   }
-  
   .my_center {
     display: flex;
     justify-content: space-around;
