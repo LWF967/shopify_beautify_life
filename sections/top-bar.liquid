@@ -1,11 +1,11 @@
 {%- liquid
   assign section_blocks = section.blocks
   if section_blocks.size > 2
-    assign class_1 = 'tl_lg col-md-12 lzxl'
-    assign class_2 = 'col-md-12 lzxc'
+    assign class_1 = 'tl_lg col-md-12 my_l'
+    assign class_2 = 'col-md-12 my_c'
   else
-    assign class_1 = 'tl_lg col-md-12 lzxl'
-    assign class_2 = 'col-md-12 tr_lg lzxr'
+    assign class_1 = 'tl_lg col-md-12 my_l'
+    assign class_2 = 'col-md-12 tr_lg my_r'
   endif -%}
   
 <div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center my_center my_width">
@@ -13,7 +13,7 @@
     <div class="row al_center my_layout">
       {%- for block in section_blocks -%}
         {%- if block.type == 'text' -%}
-          <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024 my_flex">
+          <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg my_r' %} dn_{{block.settings.hide}}_1024 my_flex">
             {%- case block.type -%}
               {%- when 'cur' -%}
                 {%- if block.settings.social == '1' -%}
@@ -31,7 +31,7 @@
             {%- endcase -%}
           </div>
         {%- elsif block.type == 'cur' -%}
-          <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024 my_flex">
+          <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg my_r' %} dn_{{block.settings.hide}}_1024 my_flex">
           	<ul class="list-social_start list-unstyled my_ul_right" role="list">
               {%- if settings.social_twitter_link != blank -%}
                 <li class="list-social__item">
@@ -114,13 +114,13 @@
   .my_ul_right {
   	justify-content: flex-end !important;
   }
-  .lzxl {
+  .my_l {
   	text-align: left !important;
   }
-  .lzxc {
+  .my_c {
   	text-align: center !important;
   }
-  .lzxr {
+  .my_r {
   	text-align: right !important;
   }
 </style>
