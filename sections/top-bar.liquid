@@ -30,7 +30,7 @@
               <div class="header-text">{{block.settings.text}}</div>
             {%- endcase -%}
           </div>
-        {%- else -%}
+        {%- elsif section_blocks.size == 3 -%}
           <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024 my_flex">
             {%- case block.type -%}
               {%- when 'cur' -%}
