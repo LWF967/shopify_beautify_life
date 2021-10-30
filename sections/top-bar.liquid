@@ -1,11 +1,11 @@
 {%- liquid
   assign section_blocks = section.blocks
   if section_blocks.size > 2
-    assign class_1 = 'tl_lg col-md-12'
-    assign class_2 = 'col-md-12'
+    assign class_1 = 'tl_lg col-md-12 lzxl'
+    assign class_2 = 'col-md-12 lzxc'
   else
-    assign class_1 = 'tl_lg col-md-12'
-    assign class_2 = 'col-md-12 tr_lg'
+    assign class_1 = 'tl_lg col-md-12 '
+    assign class_2 = 'col-md-12 tr_lg '
   endif -%}
   
 <div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center my_center my_width">
@@ -113,6 +113,9 @@
   }
   .my_ul_right {
   	justify-content: flex-end !important;
+  }
+  .lzxl {
+  	text-align: left;
   }
 </style>
 {%- schema -%}
