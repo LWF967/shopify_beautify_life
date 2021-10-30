@@ -119,6 +119,14 @@
       "top-bar": {
         "type": "top-bar",
         "blocks": {
+          "top-bar-1": {
+            "type": "text",
+            "settings": {
+              "text": "Summer sale discount off <span class=\"cr\">50%<\/span>! <a href=\"\/shop\">Shop Now<\/a>",
+              "hide": false,
+              "col": "4"
+            }
+          },
           "top-bar-0": {
             "type": "text",
             "settings": {
@@ -127,27 +135,19 @@
               "col": "4"
             }
           },
-          "top-bar-2": {
+          "ed978789-b67d-4c71-88e6-9877087ecc0b": {
             "type": "cur",
             "settings": {
               "social_mode": "1",
               "hide": false,
               "col": "4"
             }
-          },
-          "top-bar-1": {
-            "type": "text",
-            "settings": {
-              "text": "Summer sale discount off <span class=\"cr\">50%<\/span>! <a href=\"\/shop\">Shop Now<\/a>",
-              "hide": false,
-              "col": "4"
-            }
           }
         },
         "block_order": [
+          "top-bar-1",
           "top-bar-0",
-          "top-bar-2",
-          "top-bar-1"
+          "ed978789-b67d-4c71-88e6-9877087ecc0b"
         ],
         "settings": {
           "height": 20,
