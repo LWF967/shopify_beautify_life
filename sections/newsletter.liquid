@@ -44,6 +44,11 @@
 <!--                     % render 'icon-arrow' % -->
                     subscribe
                   </button>
+                  
+                  
+                  <button type="submit" class="button">
+                      subscribe
+                  </button>
                 </div>
                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
