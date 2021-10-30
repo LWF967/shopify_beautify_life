@@ -26,9 +26,10 @@
   margin-bottom: 0;
 }
 
-.newsletter__wrapper > * + * {
+/* .newsletter__wrapper > * + * {
   margin-top: 2rem;
 }
+ */
 
 .newsletter__wrapper > * + .newsletter-form {
   margin-top: 3rem;
