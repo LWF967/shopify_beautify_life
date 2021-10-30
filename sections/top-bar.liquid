@@ -1,11 +1,21 @@
 {%- liquid
   assign section_blocks = section.blocks
-  if section_blocks.size > 2
-    assign class_1 = ' col-md-12 my_l'
-    assign class_2 = 'col-md-12 my_c'
-  else
-    assign class_1 = 'tl_lg col-md-12 my_l'
-    assign class_2 = 'col-md-12  my_r'
+  if block.type == 'text'
+    if section_blocks.size > 2
+      assign class_1 = 'col-md-12 my_l'
+      assign class_2 = 'col-md-12 my_c'
+    else 
+      assign class_1 = 'tl_lg col-md-12 my_l'
+      assign class_2 = 'col-md-12  my_r'
+    endif
+  elsif block.type == 'cur'
+    if section_blocks.size > 2
+      assign class_1 = 'col-md-12 icon_flex_l'
+      assign class_2 = 'col-md-12 icon_flex_c'
+    else 
+      assign class_1 = 'tl_lg col-md-12 icon_flex_l'
+      assign class_2 = 'col-md-12  icon_flex_r'
+    endif
   endif -%}
   
 <div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center my_center my_width">
@@ -31,7 +41,7 @@
             {%- endcase -%}
           </div>
         {%- elsif block.type == 'cur' -%}
-          <div class="my_flex icon_flex">
+          <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12  my_r' %} dn_{{block.settings.hide}}_1024 my_flex icon_flex">
             <ul class="my_ul">
             {%- if settings.social_twitter_link != blank -%}
               <li class="list-social__item my_li">
@@ -132,7 +142,15 @@
   }
   .icon_flex {
    	display: flex;
+  }
+  .icon_flex_l {
     justify-content: flex-start;
+  }
+  .icon_flex_c {
+    justify-content: center;
+  }
+  .icon_flex_r {
+    justify-content: flex-end;
   }
   .my_ul {
     width: auto;
