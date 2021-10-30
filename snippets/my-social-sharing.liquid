@@ -36,7 +36,7 @@
   endif -%}
 <div class="nt-social border_{{border_bl}} black_{{black_true}}">
   {%- render 'icon-facebook' -%}
-  {%- unless follow_social -%}  
+  {%- unless false -%}  
     {%- if settings.share_facebook -%}
      <a data-no-instant rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u={{ permalinkURL }}" target="{{target}}" class="facebook cb {{class_tooltip}}">
         <span class="tt_txt">{{ 'general.nt_tooltip.share_fb' | t }}</span>
