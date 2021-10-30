@@ -31,7 +31,14 @@
             {%- endcase -%}
           </div>
         {%- elsif block.type == 'cur' -%}
-		  1
+	      {%- if settings.social_twitter_link != blank -%}
+            <li class="list-social__item">
+              <a href="{{ settings.social_twitter_link }}" class="link link--text list-social__link my_svg_style" aria-describedby="a11y-external-message">
+                {%- render 'icon-twitter' -%}
+                <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+              </a>
+            </li>
+          {%- endif -%}
         {%- endif -%}
       {%- endfor -%}
     </div>
