@@ -290,8 +290,8 @@ max-width:30rem;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 2px;
+/*   border: 1px solid transparent;
+  border-radius: 2px; */
   padding: 8px 15px;
   background-color: rgba(var(--color-foreground),0.75);
   color: rgba(255,255,255,1);
