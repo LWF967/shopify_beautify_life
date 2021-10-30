@@ -31,7 +31,7 @@
             {%- endcase -%}
           </div>
         {%- elsif block.type == 'cur' -%}
-          <div class="my_flex">
+          <div class="my_flex icon_flex">
             <ul class="my_ul">
             {%- if settings.social_twitter_link != blank -%}
               <li class="list-social__item my_li">
@@ -129,6 +129,10 @@
   	list-style: none;
     float: left;
     text-align: center;
+  }
+  .icon_flex {
+   	display: flex;
+    justify-content: flex-end;
   }
   .my_ul {
     width: auto;
