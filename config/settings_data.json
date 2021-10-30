@@ -119,18 +119,18 @@
       "top-bar": {
         "type": "top-bar",
         "blocks": {
-          "top-bar-1": {
-            "type": "text",
-            "settings": {
-              "text": "Summer sale discount off <span class=\"cr\">50%<\/span>! <a href=\"\/shop\">Shop Now<\/a>",
-              "hide": false,
-              "col": "4"
-            }
-          },
           "top-bar-0": {
             "type": "text",
             "settings": {
               "text": "<i class=\"pegk pe-7s-call\"><\/i> +01 23456789 <i class=\"pegk pe-7s-mail ml__15\"><\/i> <a class=\"cg\" href=\"mailto:kalles@domain.com\">kalles@domain.com<\/a>",
+              "hide": false,
+              "col": "4"
+            }
+          },
+          "top-bar-1": {
+            "type": "text",
+            "settings": {
+              "text": "Summer sale discount off <span class=\"cr\">50%<\/span>! <a href=\"\/shop\">Shop Now<\/a>",
               "hide": false,
               "col": "4"
             }
@@ -145,8 +145,8 @@
           }
         },
         "block_order": [
-          "top-bar-1",
           "top-bar-0",
+          "top-bar-1",
           "ed978789-b67d-4c71-88e6-9877087ecc0b"
         ],
         "settings": {
