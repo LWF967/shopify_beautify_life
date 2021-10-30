@@ -13,7 +13,7 @@
     <div class="row al_center my_layout">
       {%- for block in section_blocks -%}
         {%- if block.type == 'text' -%}
-          <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024">
+          <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024 my_flex">
             {%- case block.type -%}
               {%- when 'cur' -%}
                 {%- if block.settings.social == '1' -%}
@@ -31,7 +31,7 @@
             {%- endcase -%}
           </div>
         {%- elsif block.type == 'cur' -%}
-          <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024 ">
+          <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024 my_flex">
           	<ul class="list-social_start list-unstyled" role="list">
               {%- if settings.social_twitter_link != blank -%}
                 <li class="list-social__item">
@@ -103,6 +103,10 @@
   .my_svg_style {
 	padding: 0 9px !important;
     color: #797979;
+  }
+  .my_flex {
+  	flex: 0 0 33.3333%;
+    max-width: 33.3333%;
   }
 </style>
 {%- schema -%}
