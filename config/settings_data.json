@@ -123,7 +123,7 @@
             "type": "text",
             "settings": {
               "text": "<i class=\"pegk pe-7s-call\"><\/i> +01 23456789 <i class=\"pegk pe-7s-mail ml__15\"><\/i> <a class=\"cg\" href=\"mailto:kalles@domain.com\">kalles@domain.com<\/a>",
-              "hide": false,
+              "hide": true,
               "col": "4"
             }
           },
@@ -138,6 +138,7 @@
           "top-bar-2": {
             "type": "cur",
             "settings": {
+              "social_mode": "1",
               "hide": false,
               "col": "4"
             }
