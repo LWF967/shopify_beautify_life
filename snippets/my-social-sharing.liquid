@@ -55,7 +55,7 @@
      <a data-no-instant rel="noopener noreferrer nofollow" href="mailto:?subject=Check this {{ permalinkURL }}" target="{{target}}" class="email cb {{class_tooltip}}">
 <!--         <span class="tt_txt"> 'general.nt_tooltip.share_em' | t }}</span> -->
 <!--         <i class="facl facl-mail-alt"></i> -->
-        <span class="ts_style">{%- render 'icon-instagram' -%}</span>
+        <span class="ts_style">{%- render 'icon-instagram' -%}</span> 
      </a>
 <!--      %- endif -%} -->
 <!--      %- if permaImage != blank -%} -->
@@ -91,7 +91,14 @@
   {%-else-%}
       {%- if social_icons -%}
         {%- for social_link in socials %}{% if settings[social_link] != blank -%}
-          <a data-no-instant rel="noopener noreferrer nofollow" href="{{ settings[social_link] | escape }}" target="{{target}}" class="{{socials_icon[forloop.index0] | remove:'-play'}} cb {{class_tooltip}}"><span class="tt_txt">{{socials_txt[forloop.index0] | t }}</span>{% if socials_icon[forloop.index0] == "tiktok" %}{% render 'icon_ticktock' %}{% else %}<i class="facl facl-{{socials_icon[forloop.index0]}}"></i>{% endif %}</a>
+          <a data-no-instant rel="noopener noreferrer nofollow" href="{{ settings[social_link] | escape }}" target="{{target}}" class="{{socials_icon[forloop.index0] | remove:'-play'}} cb {{class_tooltip}}">
+            <span class="tt_txt">{{socials_txt[forloop.index0] | t }}</span>
+            {% if socials_icon[forloop.index0] == "tiktok" %}
+            <span class="ts_style">{% render 'icon_ticktock' %}</span>
+            {% else %}
+            <i class="facl facl-{{socials_icon[forloop.index0]}}"></i>
+            {% endif %}
+          </a>
         {%- endif %}{% endfor -%}
       {%- endif -%}
   {%-endunless-%}
