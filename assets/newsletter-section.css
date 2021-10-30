@@ -31,6 +31,12 @@
 }
  */
 
+.newsletter__wrapper > .newsletter__subheading.rte{
+	margin-top: 2rem;
+    margin-bottom: 5.5rem;	
+
+}
+
 .newsletter__wrapper > * + .newsletter-form {
   margin-top: 3rem;
 }
