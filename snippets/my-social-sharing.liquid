@@ -37,10 +37,11 @@
 <div class="nt-social border_{{border_bl}} black_{{black_true}}">
   {%- unless follow_social -%}  
 <!--     %- if settings.share_facebook -% -->
-     <a data-no-instant rel="noopener noreferrer nofollow ts_style" href="https://www.facebook.com/sharer/sharer.php?u={{ permalinkURL }}" target="{{target}}" class="facebook cb {{class_tooltip}}">
+     <a data-no-instant rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u={{ permalinkURL }}" target="{{target}}" class="facebook cb {{class_tooltip}}">
         <span class="tt_txt">{{ 'general.nt_tooltip.share_fb' | t }}</span>
-        <i class="facl facl-facebook">123123</i>
-       {%- render 'icon-facebook' -%}
+        <i class="facl facl-facebook"></i>
+       <span class="ts_style">{%- render 'icon-facebook' -%}</span>
+       
      </a>
 <!--     %- endif -%} -->
 <!--     %- if settings.share_twitter -%} -->
