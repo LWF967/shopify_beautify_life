@@ -12,28 +12,11 @@
   <div class="container my_container">
     <div class="row al_center my_layout">
       {%- for block in section_blocks -%}
-        {%- if block.type == 'text' -%}
+
           <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex">
             {%- case block.type -%}
               {%- when 'cur' -%}
-                {%- if block.settings.social == '1' -%}
-                  {%- render 'my-social-sharing',class_tooltip:'ttip_nt tooltip_bottom_right' -%}
-                {%- elsif block.settings.social == '2' -%}
-                {% if forloop.last %}
-                  {% assign class_tooltip = 'ttip_nt tooltip_bottom_left' %}
-                {% else %}
-                  {% assign class_tooltip = 'ttip_nt tooltip_bottom_right' %}
-                {% endif %}
-                {%- render 'social-sharing',follow_social:true,class_tooltip:class_tooltip -%}
-              {%- endif -%}
-              {%- else -%}
-              <div class="header-text">{{block.settings.text}}</div>
-            {%- endcase -%}
-          </div>
-        {%- endif -%}
-        {%- if block.type == 'cur' -%}
-          <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex">
-            <ul class="my_ul">
+                  <ul class="my_ul">
             {%- if settings.social_twitter_link != blank -%}
               <li class="list-social__item my_li">
                 <a href="{{ settings.social_twitter_link }}" class="link link--text list-social__link my_svg_style" aria-describedby="a11y-external-message">
@@ -67,8 +50,12 @@
               </li>
             {%- endif -%}
            </ul>
+            
+              {%- else -%}
+              <div class="header-text">{{block.settings.text}}</div>
+            {%- endcase -%}
           </div>
-        {%- endif -%}
+
       {%- endfor -%}
     </div>
   </div>
