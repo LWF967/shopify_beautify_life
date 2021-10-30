@@ -38,7 +38,13 @@
   {%- render 'icon-facebook' -%}
   
   {{follow_social}}
-  {{   unless follow_social   }}
+  {%- unless follow_social -%} 
+  123
+    {%-endunless-%}
+  {%if follow_social %}
+  2222
+  {% endif%}
+  
   {%- unless follow_social -%}  
     {%- if settings.share_facebook -%}
      <a data-no-instant rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u={{ permalinkURL }}" target="{{target}}" class="facebook cb {{class_tooltip}}">
