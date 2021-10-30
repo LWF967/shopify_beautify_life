@@ -130,7 +130,7 @@
           "top-bar-1": {
             "type": "text",
             "settings": {
-              "text": "Summer sale discount off <span class=\"cr\">50%<\/span>! <a href=\"\/shop\">Shop Now<\/a>",
+              "text": "Free shipping over<span class=\"cr\">$59<\/span> <a href=\"\/collections\/trending\">Shop Now<\/a>",
               "hide": false,
               "col": "4"
             }
@@ -151,7 +151,7 @@
         ],
         "settings": {
           "height": 20,
-          "fontsize": 12,
+          "fontsize": 15,
           "cl": "#797979",
           "cl_a": "#ff0000",
           "cl_cr": "#797979",
