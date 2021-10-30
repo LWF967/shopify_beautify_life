@@ -60,6 +60,15 @@
 		
     </div>
   </div>
+  
+  
+  <div>
+  
+  {% for block in section.blocks %}
+  	type:{{block}}
+  {%- endfor -%}
+  </div>
+  
 </div>
 
   {%- style -%}.h__top {min-height:{{section.settings.height}}px;font-size:{{section.settings.fontsize}}px;}
