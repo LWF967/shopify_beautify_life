@@ -37,66 +37,60 @@
 <div class="nt-social border_{{border_bl}} black_{{black_true}}">
   {%- render 'icon-facebook' -%}
   
-  {{follow_social}}
-  {%- unless follow_social -%} 
-  123
-    {%-endunless-%}
-  {%if follow_social %}
-  2222
-  {% endif%}
+
   
   {%- unless follow_social -%}  
-    {%- if settings.share_facebook -%}
+<!--     %- if settings.share_facebook -% -->
      <a data-no-instant rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u={{ permalinkURL }}" target="{{target}}" class="facebook cb {{class_tooltip}}">
         <span class="tt_txt">{{ 'general.nt_tooltip.share_fb' | t }}</span>
         <i class="facl facl-facebook">123123</i>
        {%- render 'icon-facebook' -%}
      </a>
-    {%- endif -%}
-    {%- if settings.share_twitter -%}
+<!--     %- endif -%} -->
+<!--     %- if settings.share_twitter -%} -->
      <a data-no-instant rel="noopener noreferrer nofollow" href="http://twitter.com/share?text={{ permaTitle }}&amp;url={{ permalinkURL }}" target="{{target}}" class="twitter cb {{class_tooltip}}">
         <span class="tt_txt">{{ 'general.nt_tooltip.share_tw' | t }}</span>
 <!--         <i class="facl facl-twitter"></i> -->
        {%- render 'icon-twitter' -%}
      </a>
-     {%- endif -%}
-     {%- if settings.share_email -%}
+<!--      %- endif -%} -->
+<!--      %- if settings.share_email -%} -->
      <a data-no-instant rel="noopener noreferrer nofollow" href="mailto:?subject=Check this {{ permalinkURL }}" target="{{target}}" class="email cb {{class_tooltip}}">
         <span class="tt_txt">{{ 'general.nt_tooltip.share_em' | t }}</span>
 <!--         <i class="facl facl-mail-alt"></i> -->
         {%- render 'icon-twitter' -%}
      </a>
-     {%- endif -%}
-     {%- if permaImage != blank -%}
-        {%- if settings.share_pinterest -%}
+<!--      %- endif -%} -->
+<!--      %- if permaImage != blank -%} -->
+<!--         %- if settings.share_pinterest -%} -->
         <a data-no-instant rel="noopener noreferrer nofollow" href="http://pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media=http:{{permaImage}}&amp;description={{ permaTitle }}" target="{{target}}" class="pinterest cb {{class_tooltip}}">
           <span class="tt_txt">{{ 'general.nt_tooltip.share_pr' | t }}</span>
 <!--           <i class="facl facl-pinterest"></i> -->
            {%- render 'icon-twitter' -%}
         </a>
-        {%- endif -%}        
-        {%- if settings.share_tumblr -%}
+<!--         %- endif -%}         -->
+<!--         %- if settings.share_tumblr -%} -->
         <a data-no-instant rel="noopener noreferrer nofollow" data-content="http:{{permaImage}}" href="//tumblr.com/widgets/share/tool?canonicalUrl={{ permalinkURL }}" target="{{target}}" class="tumblr cb {{class_tooltip}}">
           <span class="tt_txt">{{ 'general.nt_tooltip.share_tu' | t }}</span>
 <!--           <i class="facl facl-tumblr"></i> -->
            {%- render 'icon-tumblr' -%}
         </a>
-        {%- endif -%}
-      {%- endif -%}
-      {%- if settings.share_telegram -%}
+<!--         %- endif -%} -->
+<!--       %- endif -%} -->
+<!--      %- if settings.share_telegram -% -->
       <a data-no-instant rel="nofollow" target="{{target}}" class="telegram cb {{class_tooltip}}" href="https://telegram.me/share/url?url={{ permalinkURL }}"> 
          <span class="tt_txt">{{ 'general.nt_tooltip.share_tl' | t }}</span>
 <!--          <i class="facl facl-telegram"></i> -->
          {%- render 'icon-twitter' -%}
       </a>
-      {%- endif -%}
-      {%- if settings.share_whatsapp -%}
+<!--       %- endif -% -->
+<!--       %- if settings.share_whatsapp -% -->
       <a data-no-instant rel="nofollow" target="{{target}}" class="whatsapp cb {{class_tooltip}}" href="https://wa.me/?text={{ permaTitle }}&#x20;{{ permalinkURL }}"> 
          <span class="tt_txt">{{ 'general.nt_tooltip.share_wa' | t }}</span>
 <!--          <i class="facl facl-whatsapp"></i> -->
          {%- render 'icon-twitter' -%}
       </a>
-      {%- endif -%}
+<!--       %- endif -% -->
   {%-else-%}
       {%- if social_icons -%}
         {%- for social_link in socials %}{% if settings[social_link] != blank -%}
