@@ -127,14 +127,6 @@
               "col": "4"
             }
           },
-          "top-bar-1": {
-            "type": "text",
-            "settings": {
-              "text": "Summer sale discount off <span class=\"cr\">50%<\/span>! <a href=\"\/shop\">Shop Now<\/a>",
-              "hide": false,
-              "col": "4"
-            }
-          },
           "top-bar-2": {
             "type": "cur",
             "settings": {
@@ -142,12 +134,20 @@
               "hide": false,
               "col": "4"
             }
+          },
+          "top-bar-1": {
+            "type": "text",
+            "settings": {
+              "text": "Summer sale discount off <span class=\"cr\">50%<\/span>! <a href=\"\/shop\">Shop Now<\/a>",
+              "hide": false,
+              "col": "4"
+            }
           }
         },
         "block_order": [
           "top-bar-0",
-          "top-bar-1",
-          "top-bar-2"
+          "top-bar-2",
+          "top-bar-1"
         ],
         "settings": {
           "height": 20,
