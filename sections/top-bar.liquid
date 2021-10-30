@@ -14,9 +14,7 @@
       {%- for block in section_blocks -%}
      	<div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024 my_flex">
         {%- case block.type -%}
-          {%- when 'cur' -%}
-            {%- if settings.show_locale_selector and shop.published_locales.size > 1 %}{% render 'languages',class_2:'mr__15' %}{% endif -%}
-            {%- if settings.show_multiple_currencies %}{% render 'currencies' %}{% endif -%}  
+
           {%- when 'social' -%}
             {%- if block.settings.social == '1' -%}{%- render 'social-sharing',class_tooltip:'ttip_nt tooltip_bottom_right' -%}
             {%- elsif block.settings.social == '2' -%}{% if forloop.last %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_left' %}{% else %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_right' %}{% endif %}{%- render 'social-sharing',follow_social:true,class_tooltip:class_tooltip -%}{%- endif -%}
