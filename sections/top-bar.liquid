@@ -1,25 +1,12 @@
 {%- liquid
   assign section_blocks = section.blocks
-  for block in section_blocks
-    if block.type == 'text'
-      if block.size > 2
-        assign class_1 = 'col-md-12 my_l'
-        assign class_2 = 'col-md-12 my_c'
-      else 
-        assign class_1 = 'tl_lg col-md-12 my_l'
-        assign class_2 = 'col-md-12 my_r'
-      endif
-    endif
-    if block.type == 'cur'
-      if block.size > 2
-        assign class_1 = 'col-md-12 icon_flex_l'
-        assign class_2 = 'col-md-12 icon_flex_c'
-      else 
-        assign class_1 = 'tl_lg col-md-12 icon_flex_l'
-        assign class_2 = 'col-md-12  icon_flex_r'
-      endif
-    endif
-  endfor-%}
+    if section_blocks.size > 2
+      assign class_1 = 'col-md-12 my_l'
+      assign class_2 = 'col-md-12 my_c'
+    else 
+      assign class_1 = 'tl_lg col-md-12 my_l'
+      assign class_2 = 'col-md-12  my_r'
+    endif-%}
   
 <div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center my_center my_width">
   <div class="container my_container">
