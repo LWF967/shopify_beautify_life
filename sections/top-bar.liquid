@@ -50,7 +50,7 @@
               {%- endif -%}
             </ul>
             {%- else -%}
-            <div class="header-text my_div">{{block.settings.text}}</div>
+            <div class="header-text">{{block.settings.text}}</div>
           {%- endcase -%}
         </div>
       {%- endfor -%}
@@ -74,7 +74,6 @@
   }
   
   .my_phone {
-    position: absolute;
   	font-family: "iconfont" !important;
     font-size: 16px;
     font-style: normal;
@@ -142,9 +141,6 @@
   	text-align: center;
     margin: 0 0;
     padding: 0 0;
-  }
-  .my_div {
-  	position: relative;
   }
 </style>
 {%- schema -%}
