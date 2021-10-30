@@ -227,7 +227,7 @@
         "402d8ef2-ec58-41b7-8bd3-57ab01f5a05d": {
           "type": "blog",
           "settings": {
-            "blog": "新闻",
+            "blog": "",
             "image_size": "medium",
             "description": "<p>Description of your blog.<\/p>",
             "show_number_articles": true,
