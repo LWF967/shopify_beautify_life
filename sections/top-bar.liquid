@@ -14,9 +14,6 @@
       {%- for block in section_blocks -%}
      	<div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024 my_flex">
         {%- case block.type -%}
-          {%- when 'cur' -%}
-            {%- if settings.show_locale_selector and shop.published_locales.size > 1 %}{% render 'my-languages',class_2:'mr__15' %}{% endif -%}
-            {%- if settings.show_multiple_currencies %}{% render 'my-cur' %}{% endif -%}  
           {%- when 'social' -%}
             {%- if block.settings.social == '1' -%}{%- render 'my-social-sharing',class_tooltip:'ttip_nt tooltip_bottom_right' -%}
             {%- elsif block.settings.social == '2' -%}{% if forloop.last %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_left' %}{% else %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_right' %}{% endif %}{%- render 'social-sharing',follow_social:true,class_tooltip:class_tooltip -%}{%- endif -%}
@@ -242,71 +239,6 @@
       },
       {
         "type": "cur",
-        "name": "Currency, Language",
-        "limit": 1,
-        "settings": [
-            {
-              "type": "checkbox",
-              "id": "hide",
-              "label": "Hide on tablet, mobile?",
-              "default": false
-            },
-            {
-              "type": "select",
-              "id": "col",
-              "default": "4",
-              "options": [
-              {
-                "value": "1",
-                "label": "1/12 (8.333333%)"
-              },
-              {
-                "value": "2",
-                "label": "2/12 (16.666667%)"
-              },
-              {
-                "value": "3",
-                "label": "3/12 (25%)"
-              },
-              {
-                "value": "4",
-                "label": "4/12 (33.333333%)"
-              },
-              {
-                "value": "6",
-                "label": "6/12 (50%)"
-              },
-              {
-                "value": "7",
-                "label": "7/12 (58.333333%)"
-              },
-              {
-                "value": "8",
-                "label": "8/12 (66.666667%)"
-              },
-              {
-                "value": "9",
-                "label": "9/12 (75%)"
-              },
-              {
-                "value": "10",
-                "label": "10/12 (83.333333%)"
-              },
-              {
-                "value": "11",
-                "label": "11/12 (91.666667%)"
-              },
-              {
-                "value": "12",
-                "label": "12/12 (100%)"
-              }
-            ],
-            "label": "Width col:"
-          }
-        ]
-      },
-      {
-        "type": "social",
         "name": "Social",
         "limit": 1,
         "settings": [
