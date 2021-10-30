@@ -18,12 +18,16 @@
             {%- if block.settings.social_mode == '1' -%}
      		  {%- render 'my-social-sharing',class_tooltip:'ttip_nt tooltip_bottom_right' -%}
             {%- elsif block.settings.social_mode == '2' -%}
-     		  {% if forloop.last %}
-                {% assign class_tooltip = 'ttip_nt tooltip_bottom_left' %}
-     		  {% else %}
-     			{% assign class_tooltip = 'ttip_nt tooltip_bottom_right' %}
-     		  {% endif %}
-     		  {%- render 'my-social-sharing',follow_social:true,class_tooltip:class_tooltip -%}
+              <ul class="my_ul">
+                <li class="list-social__item my_li">
+                  {% if forloop.last %}
+                    {% assign class_tooltip = 'ttip_nt tooltip_bottom_left' %}
+                  {% else %}
+                    {% assign class_tooltip = 'ttip_nt tooltip_bottom_right' %}
+                  {% endif %}
+                  {%- render 'my-social-sharing',follow_social:true,class_tooltip:class_tooltip -%}
+                </li>
+              </ul>
             {%- endif -%}
             {%- else -%}
            <div class="header-text">{{block.settings.text}}<span class="ts">123</span></div>
