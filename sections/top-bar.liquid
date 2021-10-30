@@ -12,7 +12,7 @@
   <div class="container my_container">
     <div class="row al_center my_layout">
       {%- for block in section_blocks -%}
-        {%- if block.type == 'text' -%}
+<!--         %- if block.type == 'text' -% -->
           <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12  my_r' %} dn_{{block.settings.hide}}_1024 my_flex">
             {%- case block.type -%}
               {%- when 'cur' -%}
@@ -30,7 +30,7 @@
               <div class="header-text">{{block.settings.text}}</div>
             {%- endcase -%}
           </div>
-        {%- elsif block.type == 'cur' -%}
+<!--         %- elsif block.type == 'cur' -% -->
           <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12  my_r' %} dn_{{block.settings.hide}}_1024 my_flex">
           	<ul class="list-social_start list-unstyled my_ul_right" role="list">
               {%- if settings.social_twitter_link != blank -%}
@@ -67,7 +67,7 @@
               {%- endif -%}
             </ul>
           </div>
-        {%- endif -%}
+<!--         %- endif -% -->
       {%- endfor -%}
     </div>
   </div>
