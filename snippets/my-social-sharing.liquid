@@ -54,7 +54,7 @@
      <a data-no-instant rel="noopener noreferrer nofollow" href="mailto:?subject=Check this {{ permalinkURL }}" target="{{target}}" class="email cb {{class_tooltip}}">
         <span class="tt_txt">{{ 'general.nt_tooltip.share_em' | t }}</span>
 <!--         <i class="facl facl-mail-alt"></i> -->
-        {%- render 'icon-twitter' -%}
+<!--         %- render 'icon-twitter' -%} -->
      </a>
 <!--      %- endif -%} -->
 <!--      %- if permaImage != blank -%} -->
@@ -62,7 +62,7 @@
         <a data-no-instant rel="noopener noreferrer nofollow" href="http://pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media=http:{{permaImage}}&amp;description={{ permaTitle }}" target="{{target}}" class="pinterest cb {{class_tooltip}}">
           <span class="tt_txt">{{ 'general.nt_tooltip.share_pr' | t }}</span>
 <!--           <i class="facl facl-pinterest"></i> -->
-           {%- render 'icon-twitter' -%}
+<!--            %- render 'icon-twitter' -%} -->
         </a>
 <!--         %- endif -%}         -->
 <!--         %- if settings.share_tumblr -%} -->
@@ -77,14 +77,14 @@
       <a data-no-instant rel="nofollow" target="{{target}}" class="telegram cb {{class_tooltip}}" href="https://telegram.me/share/url?url={{ permalinkURL }}"> 
          <span class="tt_txt">{{ 'general.nt_tooltip.share_tl' | t }}</span>
 <!--          <i class="facl facl-telegram"></i> -->
-         {%- render 'icon-twitter' -%}
+<!--          %- render 'icon-twitter' -%} -->
       </a>
 <!--       %- endif -% -->
 <!--       %- if settings.share_whatsapp -% -->
       <a data-no-instant rel="nofollow" target="{{target}}" class="whatsapp cb {{class_tooltip}}" href="https://wa.me/?text={{ permaTitle }}&#x20;{{ permalinkURL }}"> 
          <span class="tt_txt">{{ 'general.nt_tooltip.share_wa' | t }}</span>
 <!--          <i class="facl facl-whatsapp"></i> -->
-         {%- render 'icon-twitter' -%}
+<!--          %- render 'icon-twitter' -%} -->
       </a>
 <!--       %- endif -% -->
   {%-else-%}
