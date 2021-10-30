@@ -50,7 +50,7 @@
               {%- endif -%}
             </ul>
             {%- else -%}
-            <div class="header-text">{{block.settings.text}}</div>
+            <div class="header-text my_middle">{{block.settings.text}}</div>
           {%- endcase -%}
         </div>
       {%- endfor -%}
@@ -118,15 +118,6 @@
   .my_ul_right {
   	justify-content: flex-end !important;
   }
-/*   .my_l {
-  	text-align: left !important;
-  }
-  .my_c {
-  	text-align: center !important;
-  }
-  .my_r {
-  	text-align: right !important; 
-  } */
   .my_li {
   	list-style: none;
     float: left;
@@ -150,6 +141,9 @@
   	text-align: center;
     margin: 0 0;
     padding: 0 0;
+  }
+  .my_middle {
+  	vertical-align: middle;
   }
 </style>
 {%- schema -%}
