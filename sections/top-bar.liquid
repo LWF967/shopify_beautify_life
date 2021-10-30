@@ -31,7 +31,8 @@
             {%- endcase -%}
           </div>
         {%- elsif block.type == 'cur' -%}
-          <ul class="my_flex my_ul">
+          <div class="my_flex">
+            <ul class="my_ul">
             {%- if settings.social_twitter_link != blank -%}
               <li class="list-social__item my_li">
                 <a href="{{ settings.social_twitter_link }}" class="link link--text list-social__link my_svg_style" aria-describedby="a11y-external-message">
@@ -65,6 +66,7 @@
               </li>
             {%- endif -%}
            </ul>
+          </div>
         {%- endif -%}
       {%- endfor -%}
     </div>
