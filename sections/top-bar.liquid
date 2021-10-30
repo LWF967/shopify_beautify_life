@@ -9,7 +9,7 @@
   endif -%}
   
 <div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center my_center my_width">
-  <div class="container">
+  <div class="container my_container">
     <div class="row al_center my_layout">
       {%- for block in section_blocks -%}
         {%- if block.type == 'text' -%}
@@ -89,6 +89,10 @@
   .my_width {
   	width: 100%;
     padding: 10px 0;
+  }
+  .my_container {
+  	width: 100%;
+	padding: 0 15px;
   }
   .my_layout {
     display: flex;
