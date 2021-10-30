@@ -58,12 +58,15 @@
   </div>
 </div>
 
-{%- style -%}.h__top {min-height:{{section.settings.height}}px;font-size:{{section.settings.fontsize}}px;}
+{%- style -%}
+.h__top {min-height:{{section.settings.height}}px;font-size:{{section.settings.fontsize}}px;}
 {%- if settings.h_transparent and settings.header_design != '7' and settings.h_tr_top and template.name == 'index' -%}
 {%- assign bg_op = section.settings.bg_op_tr | divided_by: 100.0 -%}.h__top,.h__top.bgbl { background-color: {{ section.settings.bg_tr | color_modify: 'alpha', bg_op }};{% if section.settings.show_border_tr %}border-bottom: 1px solid {{ section.settings.bd_cl_tr }};{% endif %};color:{{section.settings.cl_tr}} } .header-text >.cg,.h__top .nt_currency { color:{{section.settings.cl_tr}}  } .h__top .cr { color:{{section.settings.cl_cr_tr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{section.settings.cl_a_tr}}  } 
 {%- else -%}
 {%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}h__top,.h__top.bgbl { background-color: {{ section.settings.bg | color_modify: 'alpha', bg_op }};{% if section.settings.show_border %}border-bottom: 1px solid {{ section.settings.bd_cl }};{% endif %}color:{{section.settings.cl}} } .header-text >.cg,.h__top .nt_currency { color:{{section.settings.cl}}  } .h__top .cr { color:{{section.settings.cl_cr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{section.settings.cl_a}}  } 
-{%- endif -%}{%- endstyle -%}
+{%- endif -%}
+.my_flex { flex: 0 0 {{ section.settings.blocks.col }};max-width: 33.333333%;}
+{%- endstyle -%}
 
 <style>
   @font-face {
@@ -95,7 +98,6 @@
   }
   .my_container {
   	width: 100%;
-/* 	padding: 0 15px; */
   }
   .my_layout {
     display: flex;
@@ -112,9 +114,7 @@
     color: #797979;
   }
   .my_flex {
-    flex: 0 0 33.333333%;
  	padding: 0 15px;
-    max-width: 33.333333%;
   }
   .my_ul_right {
   	justify-content: flex-end !important;
