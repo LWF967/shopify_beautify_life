@@ -92,7 +92,7 @@
       {%- if social_icons -%}
         {%- for social_link in socials %}{% if settings[social_link] != blank -%}
           <a data-no-instant rel="noopener noreferrer nofollow" href="{{ settings[social_link] | escape }}" target="{{target}}" class="{{socials_icon[forloop.index0] | remove:'-play'}} cb {{class_tooltip}}">
-            <span class="tt_txt">{{socials_txt[forloop.index0] | t }}</span>
+<!--             <span class="tt_txt">socials_txt[forloop.index0] | t }}</span> -->
             {% if socials_icon[forloop.index0] == "tiktok" %}
             <span class="ts_style">{% render 'icon_ticktock' %}</span>
             {% else %}
