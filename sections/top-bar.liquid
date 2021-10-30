@@ -32,60 +32,43 @@
           </div>
         {%- elsif block.type == 'cur' -%}
           <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 tr_lg' %} dn_{{block.settings.hide}}_1024 my_flex">
-            {%- case block.type -%}
-              {%- when 'cur' -%}
-                {%- if block.settings.social == '1' -%}
-                  {%- render 'my-social-sharing',class_tooltip:'ttip_nt tooltip_bottom_right' -%}
-                {%- elsif block.settings.social == '2' -%}
-                {% if forloop.last %}
-                  {% assign class_tooltip = 'ttip_nt tooltip_bottom_left' %}
-                {% else %}
-                  {% assign class_tooltip = 'ttip_nt tooltip_bottom_right' %}
-                {% endif %}
-                {%- render 'social-sharing',follow_social:true,class_tooltip:class_tooltip -%}
+          	<ul class="list-social_start list-unstyled" role="list">
+              {%- if settings.social_twitter_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_twitter_link }}" class="link link--text list-social__link my_svg" aria-describedby="a11y-external-message">
+                    {%- render 'icon-twitter' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+                  </a>
+                </li>
               {%- endif -%}
-              {%- else -%}
-              <div class="header-text">{{block.settings.text}}</div>
-            {%- endcase -%}
-          1111</div>
+              {%- if settings.social_facebook_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_facebook_link }}" class="link link--text list-social__link my_svg" aria-describedby="a11y-external-message">
+                    {%- render 'icon-facebook' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_instagram_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_instagram_link }}" class="link link--text list-social__link my_svg" aria-describedby="a11y-external-message">
+                    {%- render 'icon-instagram' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_tumblr_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_tumblr_link }}" class="link link--text list-social__link my_svg" aria-describedby="a11y-external-message">
+                    {%- render 'icon-tumblr' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+            </ul>
+          </div>
         {%- endif -%}
       {%- endfor -%}
-      
-      <ul class="list-social_start list-unstyled" role="list">
-        {%- if settings.social_twitter_link != blank -%}
-          <li class="list-social__item">
-            <a href="{{ settings.social_twitter_link }}" class="link link--text list-social__link my_svg" aria-describedby="a11y-external-message">
-              {%- render 'icon-twitter' -%}
-              <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if settings.social_facebook_link != blank -%}
-          <li class="list-social__item">
-            <a href="{{ settings.social_facebook_link }}" class="link link--text list-social__link my_svg" aria-describedby="a11y-external-message">
-              {%- render 'icon-facebook' -%}
-              <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if settings.social_instagram_link != blank -%}
-          <li class="list-social__item">
-            <a href="{{ settings.social_instagram_link }}" class="link link--text list-social__link my_svg" aria-describedby="a11y-external-message">
-              {%- render 'icon-instagram' -%}
-              <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
-            </a>
-          </li>
-        {%- endif -%}
-        {%- if settings.social_tumblr_link != blank -%}
-          <li class="list-social__item">
-            <a href="{{ settings.social_tumblr_link }}" class="link link--text list-social__link my_svg" aria-describedby="a11y-external-message">
-              {%- render 'icon-tumblr' -%}
-              <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
-            </a>
-          </li>
-        {%- endif -%}
-      </ul>
-		
     </div>
   </div>
 </div>
