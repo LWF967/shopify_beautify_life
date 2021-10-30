@@ -16,7 +16,9 @@
         {%- case block.type -%}
           {%- when 'cur' -%}
             {%- if settings.show_locale_selector and shop.published_locales.size > 1 %}{% render 'languages',class_2:'mr__15' %}{% endif -%}
-            {%- if settings.show_multiple_currencies %}{% render 'currencies' %}{% endif -%}
+            {%- if settings.show_multiple_currencies %}
+               <div>123</div>
+            {% endif -%} <!--   % render 'currencies' % -->
           {%- when 'social' -%}
             {%- if block.settings.social == '1' -%}{%- render 'social-sharing',class_tooltip:'ttip_nt tooltip_bottom_right' -%}
             {%- elsif block.settings.social == '2' -%}{% if forloop.last %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_left' %}{% else %}{% assign class_tooltip = 'ttip_nt tooltip_bottom_right' %}{% endif %}{%- render 'social-sharing',follow_social:true,class_tooltip:class_tooltip -%}{%- endif -%}
