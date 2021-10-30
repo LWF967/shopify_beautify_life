@@ -50,7 +50,7 @@
               {%- endif -%}
             </ul>
             {%- else -%}
-            <div class="header-text">{{block.settings.text}}{{ block.settings.col }}</div>
+            <div class="header-text">{{block.settings.text}}</div>
           {%- endcase -%}
         </div>
       {%- endfor -%}
@@ -65,7 +65,7 @@
 {%- else -%}
 {%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}h__top,.h__top.bgbl { background-color: {{ section.settings.bg | color_modify: 'alpha', bg_op }};{% if section.settings.show_border %}border-bottom: 1px solid {{ section.settings.bd_cl }};{% endif %}color:{{section.settings.cl}} } .header-text >.cg,.h__top .nt_currency { color:{{section.settings.cl}}  } .h__top .cr { color:{{section.settings.cl_cr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{section.settings.cl_a}}  } 
 {%- endif -%}
-.my_flex { flex: 0 0 {{ section.settings.blocks.settings.col }};max-width: {{ section.settings.blocks.col }}; padding: 0 15px;}
+<!-- .my_flex { flex: 0 0 { section.settings.blocks.settings.col };max-width: { section.settings.blocks.col }; padding: 0 15px;} -->
 {%- endstyle -%}
 
 <style>
@@ -113,10 +113,11 @@
 	padding: 0 9px !important;
     color: #797979;
   }
-/*   .my_flex {
-    
+  .my_flex {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
  	padding: 0 15px;
-  } */
+  }
   .my_ul_right {
   	justify-content: flex-end !important;
   }
