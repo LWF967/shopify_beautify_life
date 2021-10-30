@@ -130,7 +130,7 @@
           "top-bar-1": {
             "type": "text",
             "settings": {
-              "text": "Free shipping over<span class=\"cr\">$59<\/span> <a href=\"\/collections\/trending\">Shop Now<\/a>",
+              "text": "Free shopping over<span class=\"cr\">$59<\/span> <a href=\"\/collections\/trending\">Shop Now<\/a>",
               "hide": false,
               "col": "4"
             }
