@@ -84,6 +84,7 @@
         "grid": 6,
         "show_view_all": true,
         "swipe_on_mobile": false,
+        "image_ratio1": "ratio1_1",
         "image_ratio": "square",
         "show_secondary_image": false,
         "add_image_padding": false,
