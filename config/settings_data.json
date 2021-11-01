@@ -122,7 +122,7 @@
             "type": "text",
             "settings": {
               "text": "<i class=\"my_phone\"><\/i> +01 23456789 <i class=\"my_phone\"><\/i> <a class=\"cg\" href=\"mailto:kalles@domain.com\">Giraffly@domain.com<\/a>",
-              "hide": false,
+              "hide": true,
               "col": "4"
             }
           },
@@ -130,14 +130,23 @@
             "type": "text",
             "settings": {
               "text": "Free shopping over<span class=\"cr\">$59<\/span> <a href=\"\/collections\/trending\">Shop Now<\/a>",
-              "hide": false,
+              "hide": true,
+              "col": "4"
+            }
+          },
+          "3096ae6c-ac7e-4eb9-b788-fa29c18a3107": {
+            "type": "cur",
+            "settings": {
+              "social_mode": "1",
+              "hide": true,
               "col": "4"
             }
           }
         },
         "block_order": [
           "top-bar-0",
-          "top-bar-1"
+          "top-bar-1",
+          "3096ae6c-ac7e-4eb9-b788-fa29c18a3107"
         ],
         "settings": {
           "height": 20,
