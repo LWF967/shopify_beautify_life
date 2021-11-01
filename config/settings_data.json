@@ -14,7 +14,7 @@
     "type_body_font": "assistant_n4",
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
-    "social_twitter_link": "https:\/\/twitter.com\/shopify",
+    "social_twitter_link": "",
     "social_facebook_link": "https:\/\/facebook.com\/shopify",
     "social_pinterest_link": "1",
     "social_instagram_link": "http:\/\/instagram.com\/shopify",
@@ -138,7 +138,7 @@
           "ed978789-b67d-4c71-88e6-9877087ecc0b": {
             "type": "cur",
             "settings": {
-              "social_mode": "1",
+              "social_mode": "2",
               "hide": true,
               "col": "4"
             }
@@ -159,6 +159,47 @@
           "bg_op": 100,
           "show_border": false,
           "bd_cl": "#e43333"
+        }
+      },
+      "header-t1": {
+        "type": "header-t1",
+        "blocks": {
+          "header-t1-0": {
+            "type": "simple",
+            "settings": {
+              "title": "Heading 1",
+              "url": "#",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": ""
+            }
+          },
+          "header-t1-1": {
+            "type": "simple",
+            "settings": {
+              "title": "Heading 2",
+              "url": "#",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": ""
+            }
+          }
+        },
+        "block_order": [
+          "header-t1-0",
+          "header-t1-1"
+        ],
+        "settings": {
+          "height": 62,
+          "arrow": false,
+          "align": "tc",
+          "hover": "hover_side_up"
         }
       }
     },
