@@ -30,21 +30,13 @@
             "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
             "slider_text": "title name"
           }
-        },
-        "99e577bf-38b7-402f-8fc2-fffe9c82f189": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/01.png",
-            "slider_text": "title name"
-          }
         }
       },
       "block_order": [
         "56d064e8-838e-4960-8f92-bec0c45e56d9",
         "938f42ff-3774-4c24-9c1f-3b971c42ae18",
         "cf520457-a362-42f7-a043-5e28a8ffc74d",
-        "d98aad89-0e6d-4788-95a8-22f4eb463027",
-        "99e577bf-38b7-402f-8fc2-fffe9c82f189"
+        "d98aad89-0e6d-4788-95a8-22f4eb463027"
       ],
       "settings": {
         "se_height": "adapt",
