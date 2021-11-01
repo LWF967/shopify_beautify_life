@@ -50,73 +50,6 @@
 {%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}h__top,.h__top.bgbl { background-color: {{ section.settings.bg | color_modify: 'alpha', bg_op }};{% if section.settings.show_border %}border-bottom: 1px solid {{ section.settings.bd_cl }};{% endif %}color:{{section.settings.cl}} } .header-text >.cg,.h__top .nt_currency { color:{{section.settings.cl}}  } .h__top .cr { color:{{section.settings.cl_cr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{section.settings.cl_a}}  } 
 {%- endif -%}
 <!-- .my_flex { flex: 0 0 { section.settings.blocks.settings.col };max-width: { section.settings.blocks.settings.col }; padding: 0 15px;} -->
-{%- if section.blocks.settings.col == "1" -%}
-  .my_flex {
-    flex: 0 0 8.333333%;
-    max-width: 8.333333%;
- 	padding: 0 15px;
-  }
-{%- elsif section.blocks.settings.col == 2 -%}
-  .my_flex {
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
- 	padding: 0 15px;
-  }
-{%- elsif section.blocks.settings.col == "3" -%}
-  .my_flex {
-    flex: 0 0 33.333333%%;
-    max-width: 33.333333%%;
- 	padding: 0 15px;
-  }
-{%- elsif section.blocks.settings.col == 4 -%}
-  .my_flex {
-    flex: 0 0 25%;
-    max-width: 25%;
- 	padding: 0 15px;
-  }
-{%- elsif section.blocks.settings.col == 6 -%}
-  .my_flex {
-    flex: 0 0 50%;
-    max-width: 50%;
- 	padding: 0 15px;
-  }
-{%- elsif section.blocks.settings.col == 7 -%}
-  .my_flex {
-    flex: 0 0 58.333333%;
-    max-width: 58.333333%;
- 	padding: 0 15px;
-  }
-{%- elsif section.blocks.settings.col == 8 -%}
-  .my_flex {
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
- 	padding: 0 15px;
-  }
-{%- elsif section.blocks.settings.col == 9 -%}
-  .my_flex {
-    flex: 0 0 75%;
-    max-width: 75%;
- 	padding: 0 15px;
-  }
-{%- elsif section.blocks.settings.col == 10 -%}
-  .my_flex {
-    flex: 0 0 83.333333%;
-    max-width: 83.333333%;
- 	padding: 0 15px;
-  }
-{%- elsif section.blocks.settings.col == 11 -%}
-  .my_flex {
-    flex: 0 0 91.666667%;
-    max-width: 91.666667%;
- 	padding: 0 15px;
-  }
-{%- else -%}
-  .my_flex {
-    flex: 0 0 100%;
-    max-width: 100%;
- 	padding: 0 15px;
-  }
-{%- endif -%}
 {%- endstyle -%}
 
 <style>
@@ -162,11 +95,11 @@
 	padding: 0 9px !important;
     color: #797979;
   }
-/*   .my_flex {
-    flex: 0 0 33.333333%;
+  .my_flex {
+    flex: 0 0 33.333333%; /*33.333333*/
     max-width: 33.333333%;
  	padding: 0 15px;
-  } */
+  }
   .my_ul_right {
   	justify-content: flex-end !important;
   }
