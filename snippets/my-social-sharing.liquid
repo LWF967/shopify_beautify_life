@@ -122,15 +122,21 @@
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "snapchat" %}
               {% if settings.social_snapchat_link != blank %}
-                <span class="ts_style">{%- render 'icon-snapchat' -%}1</span>
+                <span class="ts_style">{%- render 'icon-snapchat' -%}</span>
+              {% else %}
+                <span>1</span>
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "youtube" %}
               {% if settings.social_youtube_link != blank %}
-                <span class="ts_style">{%- render 'icon-youtube' -%}2</span>
+                <span class="ts_style">{%- render 'icon-youtube' -%}</span>
+              {% else %}
+                <span>2</span>
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "vimeo" %}
               {% if settings.social_vimeo_link != blank %}
-                <span class="ts_style">{%- render 'icon-vimeo' -%}3</span>
+                <span class="ts_style">{%- render 'icon-vimeo' -%}</span>
+              {% else %}
+                <span>3</span>
               {% endif %}
             {% else %}
               <i class="facl facl-{{ socials_icon[forloop.index0] }}"></i>
