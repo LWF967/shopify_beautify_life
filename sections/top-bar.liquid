@@ -26,7 +26,7 @@
               {%- render 'my-social-sharing',follow_social:true,class_tooltip:class_tooltip -%}
             {%- endif -%}
             {%- else -%}
-           <div class="header-text">{{block.settings.text}}<span class="ts">123</span></div>
+           <div class="header-text my_m_width">{{block.settings.text}}<span class="ts">123</span></div>
           {%- endcase -%}
         </div>
       {%- endfor -%}
@@ -130,6 +130,9 @@
       width: 100%;
       padding: 0 15px;
       text-align: center;
+    }
+    .my_m_width {
+      width: 100%;
     }
   }
 </style>
