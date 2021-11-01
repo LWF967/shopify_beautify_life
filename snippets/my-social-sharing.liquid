@@ -25,12 +25,12 @@
     assign _share_image = share_image |default:product.featured_image |default:article.image |default:settings.share_image | default: page_image | default: settings.logo
     assign permaImage = _share_image | img_url: '1024x1024'
   else
-    if settings.social_tiktok_link != blank or settings.social_soundcloud_link != blank or settings.social_behance_link != blank or settings.social_youtube_link != blank or settings.social_tumblr_link != blank or settings.social_pinterest_link != blank or settings.social_linkedin_link != blank or settings.social_dribbble_link != blank or settings.social_instagram_link != blank or settings.social_twitter_link != blank or settings.social_facebook_link != blank
+    if settings.social_tiktok_link != blank or settings.social_soundcloud_link != blank or settings.social_behance_link != blank or settings.social_youtube_link != blank or settings.social_tumblr_link != blank or settings.social_pinterest_link != blank or settings.social_linkedin_link != blank or settings.social_dribbble_link != blank or settings.social_instagram_link != blank or settings.social_twitter_link != blank or settings.social_facebook_link != blank or settings.social_snapchat_link != blank or settings.social_vimeo_link != blank
       assign social_icons = true
     endif
   endunless
   if social_icons
-    assign socials = "social_facebook_link social_twitter_link social_instagram_link social_dribbble_link social_linkedin_link social_pinterest_link social_tumblr_link social_youtube_link social_behance_link social_soundcloud_link social_tiktok_link" | split: ' '
+    assign socials = "social_facebook_link social_twitter_link social_instagram_link social_dribbble_link social_linkedin_link social_pinterest_link social_tumblr_link social_youtube_link social_behance_link social_soundcloud_link social_tiktok_link social_snapchat_link social_vimeo_link" | split: ' '
     assign socials_icon = "facebook twitter instagram dribbble linkedin pinterest tumblr youtube-play behance soundcloud tiktok" | split: ' '
     assign socials_txt = "general.nt_tooltip.follow_fb;general.nt_tooltip.follow_tw;general.nt_tooltip.follow_it;general.nt_tooltip.follow_dr;general.nt_tooltip.follow_ld;general.nt_tooltip.follow_pr;general.nt_tooltip.follow_tu;general.nt_tooltip.follow_yt;general.nt_tooltip.follow_bh;general.nt_tooltip.follow_sc;general.nt_tooltip.follow_tt" | split: ';'  
   endif -%}
