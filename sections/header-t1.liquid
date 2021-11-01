@@ -10,7 +10,7 @@
   assign h__bgimg = settings.h__bgimg -%}
 
 {%- if template.suffix == "header" and template.name == 'search' -%}
-  {%- render 'header_menu_import',section:section -%}
+  {%- render 'header-menu-import',section:section -%}
 {%- else -%}
   <div class="header__mid{% if h__bgimg != blank %} lazyload h__lz_img" data-bgset="{{ h__bgimg | img_url: '1x1' }}" data-ratio="{{h__bgimg.aspect_ratio}}" data-sizes="auto"{% else %}"{% endif %}><div class="container">
      <div class="row al_center css_h_se">
