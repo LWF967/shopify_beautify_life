@@ -49,8 +49,8 @@
         "show_button": true,
         "show_button_visible": "always",
         "show_button_style": "style1",
-        "show_button_color": "white",
-        "show_button_hover_color": "#222222",
+        "show_button_color": "transparent",
+        "show_button_hover_color": "#fca2ce",
         "feature_title": "title name",
         "link-name": "View all",
         "button_link": ""

@@ -96,7 +96,7 @@
             {% if socials_icon[forloop.index0] == "facebook" %}
               <span class="ts_style">{%- render 'icon-facebook' -%}</span>
             {% elsif socials_icon[forloop.index0] == "twitter" %}
-              {% if social_twitter_link != blank %}
+              {% if settings.social_twitter_link != blank %}
                 <span class="ts_style">{%- render 'icon-twitter' -%}</span>
               {% else %}
                 123
