@@ -35,7 +35,7 @@
          {%- when 'simple' -%}{% if block.settings.url != blank %}<li id="item_{{block.id}}" class="menu-item type_simple" {{ block.shopify_attributes }}><a class="lh__1 flex al_center pr" href="{{block.settings.url}}" target="{{block.settings.open_link}}"{% if block.settings.cus_cl %} style="color:{{block.settings.cl}}"{% endif %}>{%- render 'header-title-menu',block:block -%}</a></li>{% endif %}
          {%- else -%}
             <li id="item_{{block.id}}" class="type_{{block.type}} menu_wid_{{block.settings.wid}} menu-item has-children menu_has_offsets menu_{{block.settings.pos}} pos_{{block.settings.pos}}" {{ block.shopify_attributes }}>
-               <a class="lh__1 flex al_center pr" href="{{block.settings.url}}" target="{{block.settings.open_link}}"{% if block.settings.cus_cl %} style="color:{{block.settings.cl}}"{% endif %}>{%- render 'header-titlemenu',block:block -%}</a>
+               <a class="lh__1 flex al_center pr" href="{{block.settings.url}}" target="{{block.settings.open_link}}"{% if block.settings.cus_cl %} style="color:{{block.settings.cl}}"{% endif %}>{%- render 'header-title-menu',block:block -%}</a>
                <div class="{{block.settings.wid}} sub-menu"><div class="container"{% if  block.settings.wid != 'full nav_t4cnt' %} style="width:{{block.settings.cus_wid}}px"{% endif %}>
                   {%- if block.settings.lazy_mn and admin_sp == false -%}
                     <div class="row lazy_menu lazyload lazy_menu_mega" data-include="{{search_url}}?q={{blockID}}&view=header" data-jspackery='{ "itemSelector": ".sub-column-item","gutter": 0,"percentPosition": true,"originLeft": {{ltr}} }'><div class="lds_bginfinity pr"></div></div>
