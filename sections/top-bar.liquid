@@ -26,7 +26,7 @@
               {%- render 'my-social-sharing',follow_social:true,class_tooltip:class_tooltip -%}
             {%- endif -%}
             {%- else -%}
-           <div class="header-text">{{block.settings.text}}</div>
+           <div class="header-text">{{block.settings.text}} {{ block.settings.hide }}</div>
           {%- endcase -%}
         </div>
       {%- endfor -%}
