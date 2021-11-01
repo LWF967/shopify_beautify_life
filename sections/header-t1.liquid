@@ -14,7 +14,7 @@
 {%- else -%}
   <div class="header__mid{% if h__bgimg != blank %} lazyload h__lz_img" data-bgset="{{ h__bgimg | img_url: '1x1' }}" data-ratio="{{h__bgimg.aspect_ratio}}" data-sizes="auto"{% else %}"{% endif %}><div class="container">
      <div class="row al_center css_h_se">
-        <div class="col-md-4 col-3 dn_lg">{%- render 'push_menu' -%}</div>
+        <div class="col-md-4 col-3 dn_lg">{%- render 'header-push-menu' -%}</div>
         <div class="col-lg-2 col-md-4 col-6 tc tl_lg">{%- render 'nt_logo' with 'div' -%}</div>
         <div class="col dn db_lg">{%- render 'menu_inc',admin_sp:admin_sp,se_blocks:se_blocks,tp_blocks:tp_blocks -%}</div>
         <div class="col-lg-auto col-md-4 col-3 tr col_group_btns">{%- render 'nt_group_btns' -%}</div>
