@@ -19,9 +19,9 @@
     "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
     "social_instagram_link": "http:\/\/instagram.com\/shopify",
     "social_tumblr_link": "http:\/\/tumblr.com\/shopify",
-    "social_snapchat_link": "http:\/\/snapchat.com\/shopify",
-    "social_youtube_link": "http:\/\/youtube.com\/shopify",
-    "social_vimeo_link": "http:\/\/vimeo.com\/shopify",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
