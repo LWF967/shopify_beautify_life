@@ -373,13 +373,37 @@
             "w": 140,
             "h": 3
           }
+        },
+        "d519067f-9152-4c60-b830-6a31e8f36bf6": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3
+          }
+        },
+        "5bc86742-a481-4d7c-ae23-85db9b7ea270": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/01.png",
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3
+          }
         }
       },
       "block_order": [
         "163367412087ecd8ca-0",
         "163367412087ecd8ca-1",
         "163367412087ecd8ca-2",
-        "a6c0b116-ff4a-4884-a6e9-088658d97380"
+        "a6c0b116-ff4a-4884-a6e9-088658d97380",
+        "d519067f-9152-4c60-b830-6a31e8f36bf6",
+        "5bc86742-a481-4d7c-ae23-85db9b7ea270"
       ],
       "settings": {
         "title": "NEW RELEASES",
