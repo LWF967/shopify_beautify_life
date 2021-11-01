@@ -38,7 +38,7 @@
               {%- render 'my-social-sharing',follow_social:true,class_tooltip:class_tooltip -%}
             {%- endif -%}
             {%- else -%}
-           <div class="header-text">{{block.settings.text}}{{block.settings.col}}</div>
+           <div class="header-text">{{block.settings.text}}</div>
           {%- endcase -%}
         </div>
       {%- endfor -%}
@@ -247,7 +247,7 @@
             {
               "type": "select",
               "id": "col",
-              "default": "12",
+              "default": "4",
               "options": [
               {
                 "value": "1",
