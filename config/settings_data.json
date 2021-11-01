@@ -124,7 +124,7 @@
             "settings": {
               "text": "<i class=\"my_phone\"><\/i> +01 23456789 <i class=\"my_phone\"><\/i> <a class=\"cg\" href=\"mailto:kalles@domain.com\">Giraffly@domain.com<\/a>",
               "hide": false,
-              "col": "4"
+              "col": "1"
             }
           },
           "top-bar-1": {
