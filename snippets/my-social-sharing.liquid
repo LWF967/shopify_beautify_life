@@ -93,11 +93,11 @@
         {%- for social_link in socials %}{% if settings[social_link] != blank -%}
           <a data-no-instant rel="noopener noreferrer nofollow" href="{{ settings[social_link] | escape }}" target="{{target}}" class="{{socials_icon[forloop.index0] | remove:'-play'}} cb {{class_tooltip}}">
 <!--             <span class="tt_txt">socials_txt[forloop.index0] | t }}</span> -->
-            {% if socials_icon[forloop.index0] == "facebook" %}
+            {% if socials_icon[forloop.index0] == "facebook" and true %}
               <span class="ts_style">{%- render 'icon-facebook' -%}</span>
-            {% elsif socials_icon[forloop.index0] == "twitter" %}
+            {% elsif socials_icon[forloop.index0] == "twitter" and true %}
               <span class="ts_style">{%- render 'icon-twitter' -%}</span>
-            {% elsif socials_icon[forloop.index0] == "tumblr" %}
+            {% elsif socials_icon[forloop.index0] == "tumblr" and true %}
               <span class="ts_style">{%- render 'icon-tumblr' -%}</span>
             {% else %}
               <i class="facl facl-{{socials_icon[forloop.index0]}}"></i>
