@@ -133,21 +133,11 @@
               "hide": false,
               "col": "4"
             }
-          },
-          "ed978789-b67d-4c71-88e6-9877087ecc0b": {
-            "type": "cur",
-            "disabled": true,
-            "settings": {
-              "social_mode": "1",
-              "hide": false,
-              "col": "4"
-            }
           }
         },
         "block_order": [
           "top-bar-0",
-          "top-bar-1",
-          "ed978789-b67d-4c71-88e6-9877087ecc0b"
+          "top-bar-1"
         ],
         "settings": {
           "height": 20,
