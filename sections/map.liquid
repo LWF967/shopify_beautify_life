@@ -40,7 +40,7 @@
         {% if section.settings.address != blank %}
           <div class="rte-setting">{{ section.settings.address }}</div>
           {% if section.settings.map_address != blank and section.settings.button_text != blank %}
-            <p>
+            <p style="margin:0;">
               <a href="https://maps.google.com?daddr={{ section.settings.map_address | escape }}"
                  class="btn btn--secondary btn--small map_section__directions-btn"
                  target="_blank"
