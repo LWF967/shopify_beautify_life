@@ -112,6 +112,10 @@
               {% if settings.social_instagram_link != blank %}
                 <span class="ts_style">{%- render 'icon-instagram' -%}</span>
               {% endif %}
+            {% elsif socials_icon[forloop.index0] == "tumblr" %}
+              {% if settings.social_tumblr_link != blank %}
+                <span class="ts_style">{%- render 'icon-tumblr' -%}</span>
+              {% endif %}
             
             {% elsif socials_icon[forloop.index0] == "tumblr" %}
               <span class="ts_style">{%- render 'icon-tumblr' -%}</span>
