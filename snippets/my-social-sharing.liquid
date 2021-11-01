@@ -31,7 +31,7 @@
   endunless
   if social_icons
     assign socials = "social_facebook_link social_twitter_link social_instagram_link social_dribbble_link social_linkedin_link social_pinterest_link social_tumblr_link social_youtube_link social_behance_link social_soundcloud_link social_tiktok_link social_snapchat_link social_vimeo_link" | split: ' '
-    assign socials_icon = "facebook twitter instagram dribbble linkedin pinterest tumblr youtube-play behance soundcloud tiktok" | split: ' '
+    assign socials_icon = "facebook twitter instagram dribbble linkedin pinterest tumblr youtube-play behance soundcloud tiktok snapchat vimeo" | split: ' '
     assign socials_txt = "general.nt_tooltip.follow_fb;general.nt_tooltip.follow_tw;general.nt_tooltip.follow_it;general.nt_tooltip.follow_dr;general.nt_tooltip.follow_ld;general.nt_tooltip.follow_pr;general.nt_tooltip.follow_tu;general.nt_tooltip.follow_yt;general.nt_tooltip.follow_bh;general.nt_tooltip.follow_sc;general.nt_tooltip.follow_tt" | split: ';'  
   endif -%}
 <div class="nt-social border_{{border_bl}} black_{{black_true}}" style="overflow-x: hidden;">
@@ -122,21 +122,15 @@
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "snapchat" %}
               {% if settings.social_snapchat_link != blank %}
-                <span class="ts_style">{%- render 'icon-snapchat' -%}3</span>
-              {% else %}
-                <span>1</span>
+                <span class="ts_style">{%- render 'icon-snapchat' -%}</span>
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "youtube" %}
               {% if settings.social_youtube_link != blank %}
-                <span class="ts_style">{%- render 'icon-youtube' -%}2</span>
-              {% else %}
-                <span>2</span>
+                <span class="ts_style">{%- render 'icon-youtube' -%}</span>
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "vimeo" %}
               {% if settings.social_vimeo_link != blank %}
-                <span class="ts_style">{%- render 'icon-vimeo' -%}1</span>
-              {% else %}
-                <span>3</span>
+                <span class="ts_style">{%- render 'icon-vimeo' -%}</span>
               {% endif %}
             {% else %}
               <i class="facl facl-{{ socials_icon[forloop.index0] }}"></i>
