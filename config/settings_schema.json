@@ -358,13 +358,13 @@
       },
       {
         "type": "checkbox",
-        "id": "Tweet on Twitter",
+        "id": "tweet_on_twitter",
         "default": true,
         "label": "Tweet on Twitter"
       },
       {
         "type": "checkbox",
-        "id": "Pin on Pinterest",
+        "id": "pin_on_pinterest",
         "default": true,
         "label": "Pin on Pinterest"
       },
