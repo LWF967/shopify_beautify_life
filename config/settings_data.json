@@ -14,12 +14,12 @@
     "type_body_font": "assistant_n4",
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
-    "social_twitter_link": "www.baidu.com",
-    "social_facebook_link": "www.baidu.com",
+    "social_twitter_link": "https:\/\/twitter.com\/shopify",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
     "social_pinterest_link": "1",
-    "social_instagram_link": "www.baidu.com",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
     "social_tiktok_link": "1",
-    "social_tumblr_link": "www.baidu.com",
+    "social_tumblr_link": "https:\/\/shopify.tumblr.com",
     "social_snapchat_link": "1",
     "social_youtube_link": "1",
     "social_vimeo_link": "1",
@@ -131,7 +131,7 @@
             "type": "text",
             "settings": {
               "text": "Free shopping over<span class=\"cr\">$59<\/span> <a href=\"\/collections\/trending\">Shop Now<\/a>",
-              "hide": true,
+              "hide": false,
               "col": "4"
             }
           },
