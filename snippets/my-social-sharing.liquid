@@ -98,6 +98,8 @@
             {% elsif socials_icon[forloop.index0] == "twitter" %}
               {% if social_twitter_link != blank %}
                 <span class="ts_style">{%- render 'icon-twitter' -%}</span>
+              {% else %}
+                123
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "instagram" %}
               <span class="ts_style">{%- render 'icon-instagram' -%}</span>
