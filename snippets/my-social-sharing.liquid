@@ -94,9 +94,9 @@
           <a data-no-instant rel="noopener noreferrer nofollow" href="{{ settings[social_link] | escape }}" target="{{target}}" class="{{socials_icon[forloop.index0] | remove:'-play'}} cb {{class_tooltip}}">
 <!--             <span class="tt_txt">socials_txt[forloop.index0] | t }}</span> -->
             {% if socials_icon[forloop.index0] == "tiktok" %}
-            <span class="ts_style">{% render 'icon_ticktock' %}</span>
+              <span class="ts_style">{% render 'icon_ticktock' %}</span>
             {% else %}
-            <i class="facl facl-{{socials_icon[forloop.index0]}}"></i>
+              <i class="facl facl-{{socials_icon[forloop.index0]}}"></i>
             {% endif %}
           </a>
         {%- endif %}{% endfor -%}
@@ -106,7 +106,7 @@
 
 <!-- <style>
   .ts_style svg {
-  	width: 20px;
+  	width: 20px;s
     height: 20px;
     color: #000;
     background: transparent;
