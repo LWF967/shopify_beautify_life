@@ -347,6 +347,12 @@
     "name": "t:settings_schema.social-media.name",
     "settings": [
       {
+        "type": "checkbox",
+        "id": "lzx",
+        "default": true,
+        "label": "lzx"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.social-media.settings.header.content"
       },
