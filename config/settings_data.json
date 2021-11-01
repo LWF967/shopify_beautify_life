@@ -139,7 +139,7 @@
             "type": "cur",
             "settings": {
               "social_mode": "1",
-              "hide": false,
+              "hide": true,
               "col": "4"
             }
           }
