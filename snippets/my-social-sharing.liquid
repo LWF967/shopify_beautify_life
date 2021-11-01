@@ -52,11 +52,11 @@
      </a>
 <!--      %- endif -%} -->
 <!--      %- if settings.share_email -%} -->
-     <a data-no-instant rel="noopener noreferrer nofollow" href="mailto:?subject=Check this {{ permalinkURL }}" target="{{target}}" class="email cb {{class_tooltip}}">
+<!--      <a data-no-instant rel="noopener noreferrer nofollow" href="mailto:?subject=Check this {{ permalinkURL }}" target="{{target}}" class="email cb {{class_tooltip}}"> -->
 <!--         <span class="tt_txt"> 'general.nt_tooltip.share_em' | t }}</span> -->
 <!--         <i class="facl facl-mail-alt"></i> -->
-        <span class="ts_style">{%- render 'icon-instagram' -%}</span> 
-     </a>
+<!--         <span class="ts_style">%- render 'icon-instagram' -%}</span>  -->
+<!--      </a> -->
 <!--      %- endif -%} -->
 <!--      %- if permaImage != blank -%} -->
 <!--         %- if settings.share_pinterest -%} -->
@@ -93,11 +93,13 @@
         {%- for social_link in socials %}{% if settings[social_link] != blank -%}
           <a data-no-instant rel="noopener noreferrer nofollow" href="{{ settings[social_link] | escape }}" target="{{target}}" class="{{socials_icon[forloop.index0] | remove:'-play'}} cb {{class_tooltip}}">
 <!--             <span class="tt_txt">socials_txt[forloop.index0] | t }}</span> -->
-            {% if socials_icon[forloop.index0] == "facebook" and true %}
+            {% if socials_icon[forloop.index0] == "facebook" %}
               <span class="ts_style">{%- render 'icon-facebook' -%}</span>
-            {% elsif socials_icon[forloop.index0] == "twitter" and true %}
+            {% elsif socials_icon[forloop.index0] == "twitter" %}
               <span class="ts_style">{%- render 'icon-twitter' -%}</span>
-            {% elsif socials_icon[forloop.index0] == "tumblr" and true %}
+            {% elsif socials_icon[forloop.index0] == "instagram" %}
+              <span class="ts_style">{%- render 'icon-instagram' -%}</span>
+            {% elsif socials_icon[forloop.index0] == "tumblr" %}
               <span class="ts_style">{%- render 'icon-tumblr' -%}</span>
             {% else %}
               <i class="facl facl-{{socials_icon[forloop.index0]}}"></i>
