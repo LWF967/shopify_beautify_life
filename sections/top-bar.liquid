@@ -43,8 +43,18 @@
 {%- endif -%}
 <!-- .my_flex { flex: 0 0 { section.settings.blocks.settings.col };max-width: { section.settings.blocks.settings.col }; padding: 0 15px;} -->
 {%- if section.blocks.settings.hide -%}
-  .my_flex {
-    display:  none; 
+  @media screen and (max-width: 750px) {
+    .my_layout {
+      display: block;
+	  width: 100%;
+    }
+    .my_flex {
+      flex: 0 0 100%;
+      max-width: 100%;
+      justify-content: center;
+ 	  padding: 0 15px;
+      display:  none; 
+    }
   }
 {%- endif -%}
 {%- endstyle -%}
