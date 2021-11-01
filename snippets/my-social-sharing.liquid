@@ -96,21 +96,23 @@
             {% if socials_icon[forloop.index0] == "facebook" %}
               {% if settings.social_twitter_link != blank %}
                 <span class="ts_style">{%- render 'icon-twitter' -%}</span>
-              {% else %}
-                <span>123</span>
               {% endif %}
+            
             {% elsif socials_icon[forloop.index0] == "twitter" %}
               {% if settings.social_facebook_link != blank %}
                 <span class="ts_style">{%- render 'icon-facebook' -%}</span>
-              {% else %}
-                <span>123</span>
               {% endif %}
+            
             {% elsif socials_icon[forloop.index0] == "pinterest" %}
               {% if settings.social_pinterest_link != blank %}
                 <span class="ts_style">{%- render 'icon-pinterest' -%}</span>
               {% endif %}
+            
             {% elsif socials_icon[forloop.index0] == "instagram" %}
-              <span class="ts_style">{%- render 'icon-instagram' -%}</span>
+              {% if settings.social_instagram_link != blank %}
+                <span class="ts_style">{%- render 'icon-instagram' -%}</span>
+              {% endif %}
+            
             {% elsif socials_icon[forloop.index0] == "tumblr" %}
               <span class="ts_style">{%- render 'icon-tumblr' -%}</span>
             {% else %}
