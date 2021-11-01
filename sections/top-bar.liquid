@@ -45,11 +45,6 @@
 {%- endstyle -%}
 
 <style>
-  @media screen and (max-width: 750px) {
-    .ts {
-      color: pink;
-    }
-  }
   @font-face {
   font-family: 'iconfont';  /* Project id 2903696 */
   src: url('//at.alicdn.com/t/font_2903696_8kpznmqcoej.woff2?t=1635582253888') format('woff2'),
@@ -125,6 +120,19 @@
   	text-align: center;
     margin: 0 0;
     padding: 0 0;
+  }
+  @media screen and (max-width: 750px) {
+    .my_layout {
+      display: block;
+      flex-wrap: wrap;
+      align-items: center; 
+      justify-content: flex-start;
+      text-align: left;
+    }
+    .my_flex {
+      width: 100%;
+      padding: 0 15px;
+    }
   }
 </style>
 {%- schema -%}
