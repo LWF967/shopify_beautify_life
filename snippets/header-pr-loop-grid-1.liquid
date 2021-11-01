@@ -42,8 +42,8 @@
       <div class="product-info mt__15">
          {%- if product.vendor.size > 0 and show_vendor -%}<div class="product-brand"><a class="cg chp" href="{{ product.vendor | url_for_vendor }}">{{ product.vendor }}</a></div>{%- endif -%}
          <h3 class="product-title pr fs__14 mg__0 fwm"><a class="cd chp" href="{{product.url | within: collection}}">{{product.title}}</a></h3>
-         <span class="price dib mb__5">{%- render 'product_price',product:product,inc_price:inc_price -%}</span>
-         {%- if use_rating -%}{%- render 'rating',product:product,inc_rating:inc_rating -%}{%- endif -%}
+         <span class="price dib mb__5">{%- render 'header-product-price',product:product,inc_price:inc_price -%}</span>
+         {%- if use_rating -%}{%- render 'header-rating',product:product,inc_rating:inc_rating -%}{%- endif -%}
          {%- if color_count > 0 -%}
          <div class="swatch__list_js swatch__list lh__1 nt_swatches_on_grid lazyload" data-colorCount="{{color_count}}" data-include="{{pr_url}}/?view=sw{{sett_equal}}"></div>
          {%- endif -%}
