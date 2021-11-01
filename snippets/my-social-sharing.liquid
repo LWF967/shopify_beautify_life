@@ -128,7 +128,7 @@
               {% if settings.social_youtube_link != blank %}
                 <span class="ts_style">{%- render 'icon-youtube' -%}</span>
               {% endif %}
-            {% elsif socials_icon[forloop.index0] == "vimeo" %}
+            {% elsif socials_icon[forloop.index0] == "vime" %}
               {% if settings.social_vimeo_link != blank %}
                 <span class="ts_style">{%- render 'icon-vimeo' -%}</span>
               {% endif %}
@@ -144,6 +144,6 @@
 
 {%- style -%}
 .ts_style { padding: 0 9px; }
-<!-- .facl { box-sizing: content-box; overflow: hidden;} -->
-.ts_style svg { width: 16px;height: 16px;color: #797979;background: transparent; box-sizing: content-box; overflow: hidden;}
+.facl { box-sizing: content-box; overflow: hidden;}
+.ts_style svg { width: 16px;height: 16px;color: #797979;background: transparent;}
 {%- endstyle -%}
