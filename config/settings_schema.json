@@ -352,7 +352,7 @@
       },
       {
         "type": "checkbox",
-        "id": "Share on Facebook",
+        "id": "share_on_facebook",
         "default": true,
         "label": "Share on Facebook"
       },
