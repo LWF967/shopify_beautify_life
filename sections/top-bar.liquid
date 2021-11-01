@@ -12,7 +12,7 @@
   <div class="container my_container">
     <div class="row al_center my_layout">
       {%- for block in section_blocks -%}
-        <div
+        <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex
              {%- if block.settings.col == '1' -%} class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex my_width_adadpt_1"
              {%- elsif block.settings.col == '2' -%} class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex my_width_adadpt_2"
              {%- elsif block.settings.col == '3' -%} class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex my_width_adadpt_3"
