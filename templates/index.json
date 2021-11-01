@@ -40,7 +40,6 @@
     },
     "rich_text": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -380,7 +379,7 @@
             "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
             "header_top": "Head",
             "url": "",
-            "color": "#fff",
+            "color": "#ffffff",
             "w": 140,
             "h": 3
           }
@@ -391,7 +390,7 @@
             "image": "shopify:\/\/shop_images\/01.png",
             "header_top": "Head",
             "url": "",
-            "color": "#fff",
+            "color": "#ffffff",
             "w": 140,
             "h": 3
           }
@@ -803,7 +802,6 @@
         "map_address": "301 Front St W, Toronto",
         "button_text": "Get directions",
         "show_pin": true,
-        "api_key": "",
         "background_image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
         "background_image_position": "center left"
       }
