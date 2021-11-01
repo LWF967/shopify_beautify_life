@@ -347,10 +347,26 @@
     "name": "t:settings_schema.social-media.name",
     "settings": [
       {
+        "type": "header",
+        "content": "Social share options"
+      },
+      {
         "type": "checkbox",
-        "id": "lzx",
+        "id": "Share on Facebook",
         "default": true,
-        "label": "lzx"
+        "label": "Share on Facebook"
+      },
+      {
+        "type": "checkbox",
+        "id": "Tweet on Twitter",
+        "default": true,
+        "label": "Tweet on Twitter"
+      },
+      {
+        "type": "checkbox",
+        "id": "Pin on Pinterest",
+        "default": true,
+        "label": "Pin on Pinterest"
       },
       {
         "type": "header",
