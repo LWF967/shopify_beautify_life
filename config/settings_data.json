@@ -131,7 +131,7 @@
             "type": "text",
             "settings": {
               "text": "Free shopping over<span class=\"cr\">$59<\/span> <a href=\"\/collections\/trending\">Shop Now<\/a>",
-              "hide": false,
+              "hide": true,
               "col": "4"
             }
           },
@@ -139,7 +139,7 @@
             "type": "cur",
             "settings": {
               "social_mode": "1",
-              "hide": false,
+              "hide": true,
               "col": "4"
             }
           }
