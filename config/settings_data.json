@@ -16,13 +16,13 @@
     "sold_out_badge_color_scheme": "inverse",
     "social_twitter_link": "https:\/\/twitter.com\/shopify",
     "social_facebook_link": "https:\/\/facebook.com\/shopify",
-    "social_pinterest_link": "1",
+    "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
     "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "social_tumblr_link": "http:\/\/tumblr.com\/shopify",
+    "social_snapchat_link": "http:\/\/snapchat.com\/shopify",
+    "social_youtube_link": "http:\/\/youtube.com\/shopify",
+    "social_vimeo_link": "http:\/\/vimeo.com\/shopify",
     "social_tiktok_link": "1",
-    "social_tumblr_link": "https:\/\/shopify.tumblr.com",
-    "social_snapchat_link": "1",
-    "social_youtube_link": "1",
-    "social_vimeo_link": "1",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
