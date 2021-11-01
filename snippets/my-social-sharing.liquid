@@ -34,7 +34,7 @@
     assign socials_icon = "facebook twitter instagram dribbble linkedin pinterest tumblr youtube-play behance soundcloud tiktok snapchat vimeo" | split: ' '
     assign socials_txt = "general.nt_tooltip.follow_fb;general.nt_tooltip.follow_tw;general.nt_tooltip.follow_it;general.nt_tooltip.follow_dr;general.nt_tooltip.follow_ld;general.nt_tooltip.follow_pr;general.nt_tooltip.follow_tu;general.nt_tooltip.follow_yt;general.nt_tooltip.follow_bh;general.nt_tooltip.follow_sc;general.nt_tooltip.follow_tt" | split: ';'  
   endif -%}
-<div class="nt-social border_{{border_bl}} black_{{black_true}}" style="overflow: hidden;">
+<div class="nt-social border_{{border_bl}} black_{{black_true}}" style="overflow-x: hidden;">
   {%- unless follow_social -%}  
 <!--     %- if settings.share_facebook -% -->
      <a data-no-instant rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u={{ permalinkURL }}" target="{{target}}" class="facebook cb {{class_tooltip}}">
