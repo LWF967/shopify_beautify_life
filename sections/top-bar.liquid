@@ -13,7 +13,7 @@
     <div class="row al_center my_layout">
       {%- for block in section_blocks -%}
         <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex"
-             {%- if block.settings.col == '1' -%}style=" flex: 0 0 8.333333%%; max-width: 8.333333%%; padding: 0 15px;"
+             {%- if block.settings.col == '1' -%}style=" flex: 0 0 8.333333%; max-width: 8.333333%; padding: 0 15px;"
              {%- elsif block.settings.col == '2' -%}style=" flex: 0 0 16.666667%; max-width: 16.666667%; padding: 0 15px;"
              {%- elsif block.settings.col == '3' -%}style=" flex: 0 0 25%; max-width: 25%; padding: 0 15px;"
              {%- elsif block.settings.col == '4' -%}style=" flex: 0 0 33.333333%; max-width: 33.333333%; padding: 0 15px;"
