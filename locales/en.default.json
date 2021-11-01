@@ -81,13 +81,6 @@
       "success_message": "Link copied to clipboard"
     }
   },
-  "map": {
-    "address_error": "Error looking up that address",
-    "address_no_results": "No results for that address",
-    "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>.",
-    "auth_error_html": "There was a problem authenticating your Google Maps account.",
-    "section_heading": "Location"
-  },
   "date_formats": {
     "month_year": "%B %Y"
   },
@@ -310,6 +303,13 @@
     },
     "video": {
       "load_video": "Load video: {{ description }}"
+    },
+    "map": {
+      "address_error": "Error looking up that address",
+      "address_no_results": "No results for that address",
+      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>.",
+      "auth_error_html": "There was a problem authenticating your Google Maps account.",
+      "section_heading": "Location"
     }
   },
   "localization": {
