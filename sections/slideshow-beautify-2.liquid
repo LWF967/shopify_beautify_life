@@ -726,11 +726,29 @@
       false
     )
 
-    //由于左右边框border1，所以要+2来判断
+  /**
+ * 防抖函数
+ * @param {*} func 回调函数  必传
+ * @param {*} wait 等待时长 默认500ms 可不传
+ */
+      function debounce(func, wait = 500) {
+        let timeOut
+        return function () {
+          let content = this
+          let arg = arguments
+          if (timeOut) {
+            clearTimeout(timeOut)
+          }
+          timeOut = setTimeout(() => {
+            func.apply(content, arg)
+          }, wait)
+        }
+      }
 
-    rightbtn.addEventListener('click', function () {
+    rightbtn.addEventListener('click', debounce（function () {
       index = list_text.querySelector('.active').index + 1;
-	    clearInterval(time_gui);
+//       清定时防止按
+	  clearInterval(time_gui);
       if (index < itemLength) {
         //           index =  list_text.querySelector('.active').index+1;
         contentbox.style.transform =
@@ -752,11 +770,13 @@
         }
         list[index].className = 'active'
       }
-    })
+    },1000))
 
     leftbtn.addEventListener('click', function () {
       index = list_text.querySelector('.active').index;
-       clearInterval(time_gui);
+      
+      clearInterval(time_gui);
+      
       if (index > 0) {
         index = list_text.querySelector('.active').index - 1
         contentbox.style.transform =
