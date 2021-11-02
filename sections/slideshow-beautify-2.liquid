@@ -609,11 +609,12 @@ var rightbtn=document.querySelector(".rightbtn");
 var mardiff=contentbox.clientWidth*0.02;
 // var diff=contentbox.scrollWidth-contentbox.clientWidth;
  
- var diff_box = contentbox.scrollWidth; 
+ var contentbox=document.querySelector(".product-box");
     
 //  var diff=contentbox.clientWidth ;
     
-    var diff=parseInt(contentbox.clientWidth);
+//     var diff=parseInt(contentbox.clientWidth);
+ 
 //     var diff = document.getElementsByClassName('feature-artworks')[0].clientWidth;
     
 //    var diff =  document.getElementsByClassName('big-box')[0].offsetWidth;
@@ -621,6 +622,8 @@ var mardiff=contentbox.clientWidth*0.02;
 var itemlist=document.querySelectorAll(".slideshow_content");
 var itemLength  = itemlist.length;
   
+var diff= parseInt(contentbox.acrollWidth/itemLength);    
+    
 var btnbox=document.querySelectorAll(".productitem--actions");
 var index=1;
   
