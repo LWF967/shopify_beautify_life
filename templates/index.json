@@ -58,6 +58,7 @@
     },
     "1634120630c0c2fc34": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "blocks": {
         "1634120630c0c2fc34-0": {
           "type": "heading",
@@ -98,6 +99,7 @@
     },
     "16343669695470e556": {
       "type": "featured-product-beautify",
+      "disabled": true,
       "blocks": {
         "16343669695470e556-0": {
           "type": "text",
@@ -172,6 +174,7 @@
     },
     "163454604067313d0f": {
       "type": "daily-deal-of-the-day",
+      "disabled": true,
       "settings": {
         "product": "text4",
         "heading_text": "Daily Deal Of The Day",
@@ -185,6 +188,7 @@
     },
     "1634788020c7a0b534": {
       "type": "rich-text-beautify",
+      "disabled": true,
       "blocks": {
         "1634788020c7a0b534-0": {
           "type": "heading",
@@ -221,6 +225,7 @@
     },
     "163488699162d893f0": {
       "type": "testimonials",
+      "disabled": true,
       "blocks": {
         "163488699162d893f0-0": {
           "type": "column",
@@ -271,6 +276,7 @@
     },
     "163532208633dc77bc": {
       "type": "Text-columns-with-images",
+      "disabled": true,
       "blocks": {
         "163532208633dc77bc-0": {
           "type": "column",
@@ -318,6 +324,7 @@
     },
     "163538928330f5460b": {
       "type": "video-beautify",
+      "disabled": true,
       "settings": {
         "cover_image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
         "image_alignment": "Middle-center",
@@ -329,56 +336,10 @@
         "text_size": "medium"
       }
     },
-    "1635416841669ad304": {
-      "type": "featured-blog",
-      "settings": {
-        "heading": "Blog posts",
-        "head_text": "The most exciting news",
-        "blog": "新闻",
-        "post_limit": 4,
-        "show_image": true,
-        "show_date": false,
-        "show_author": true,
-        "soft_background": false,
-        "show_view_all": true
-      }
-    },
     "1635497923083b4abb": {
       "type": "contact-form",
       "settings": {
         "heading": "Contact form"
-      }
-    },
-    "1635498005bbd60fef": {
-      "type": "newsletter",
-      "blocks": {
-        "1635498005bbd60fef-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "SUBSCRIBE TO OUR NEWSLETTER"
-          }
-        },
-        "1635498005bbd60fef-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Promotions, new products and sales. Directly to your inbox<\/p>"
-          }
-        },
-        "1635498005bbd60fef-2": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "1635498005bbd60fef-0",
-        "1635498005bbd60fef-1",
-        "1635498005bbd60fef-2"
-      ],
-      "settings": {
-        "newsletter_bk_color": "#f3f3f3",
-        "newsletter_bk_box": true,
-        "full_width": true
       }
     },
     "1635588039b8d0f08b": {
@@ -403,9 +364,7 @@
     "163488699162d893f0",
     "163532208633dc77bc",
     "163538928330f5460b",
-    "1635416841669ad304",
     "1635497923083b4abb",
-    "1635498005bbd60fef",
     "1635588039b8d0f08b"
   ]
 }
