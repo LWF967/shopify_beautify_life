@@ -332,6 +332,20 @@
 <style>
   
 
+  .slideshow-after-null::before {
+    display: none !important;
+  }
+  
+  .slideshow-after-null::after {
+  content: '';
+  position: absolute;
+  background: #000000;
+  opacity: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+  
 @media screen and (min-width: 750px) {
   .slideshow-after-null {
     min-height: 72rem;
