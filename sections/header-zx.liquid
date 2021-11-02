@@ -12,6 +12,10 @@
 <noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 
+{%- style -%}
+.my_header_heading_logo { width: {{ sections.settings.logo_width }} }
+{%- endstyle -%}
+
 <style>
   header-drawer {
     justify-self: start;
@@ -390,7 +394,7 @@
             <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
               src="{{ section.settings.logo | img_url: image_size }}"
               loading="lazy"
-              class="header__heading-logo"
+              class="header__heading-logo my_header_heading_logo"
               width="{{ section.settings.logo.width }}"
               height="{{ section.settings.logo.height }}"
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
