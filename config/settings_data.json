@@ -165,7 +165,7 @@
       "header-zx": {
         "type": "header-zx",
         "settings": {
-          "logo_aligment": "left",
+          "logo_aligment": "centered",
           "logo": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
           "logo_width": 100,
           "header_height": 75,
