@@ -89,7 +89,7 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
+  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %} my_header_padding">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
         <details class="menu-drawer-container">
@@ -329,9 +329,9 @@
 
     {%- if request.page_type == 'index' -%}
       {%- if section.settings.logo_position == 'top-center' -%}
-        <h1 class="header__heading text1 my_grid_style">
+        <h1 class="header__heading text1 my_grid_style my_header_img_align">
       {%- else -%}
-        <h1 class="header__heading text1">
+        <h1 class="header__heading text1 my_header_img_align">
       {%- endif -%}
     {%- endif -%}
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
