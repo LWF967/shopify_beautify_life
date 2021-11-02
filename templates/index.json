@@ -167,6 +167,41 @@
         "button_link": ""
       }
     },
+    "1635836350c3b72b9b": {
+      "type": "collection-list-Beautify",
+      "blocks": {
+        "1635836350c3b72b9b-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1635836350c3b72b9b-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1635836350c3b72b9b-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1635836350c3b72b9b-0",
+        "1635836350c3b72b9b-1",
+        "1635836350c3b72b9b-2"
+      ],
+      "settings": {
+        "title": "NEW RELEASES",
+        "sub_title": "New supply this week",
+        "grid": 3,
+        "show_view_all": false,
+        "show_page_Dot": true
+      }
+    },
     "163454604067313d0f": {
       "type": "daily-deal-of-the-day",
       "disabled": true,
@@ -374,6 +409,7 @@
     "16343669695470e556",
     "1634120630c0c2fc34",
     "16340032987fd8fd82",
+    "1635836350c3b72b9b",
     "163454604067313d0f",
     "1634788020c7a0b534",
     "163488699162d893f0",
