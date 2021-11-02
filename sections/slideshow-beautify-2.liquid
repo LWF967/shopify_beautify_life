@@ -10,8 +10,7 @@
 
   <div class="feature-artworks">
 
-    <div></div>
-    
+ 
     <!--    左箭头    -->
       <div class=" dn bk_{{section.settings.show_button_color}} {% if section.settings.show_button  %}icon-changebtn  {% endif%} leftbtn    button_{{ section.settings.show_button_style }}">
       	<p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
@@ -38,7 +37,8 @@
       {%- case block.type -%}
       {%- when 'slideshow_img2' -%} {%- assign image = block.settings.image -%}
  			 <div class="slideshow_content">
-				    
+			   <div class="">12371872638172638712</div>
+    	    
         {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
           
           <img 
