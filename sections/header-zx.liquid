@@ -261,7 +261,6 @@
       </header-drawer>
     {%- endif -%}
 
-<!--     %- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}logo_aligment -->
     {%- if section.settings.logo_aligment == 'left' or section.settings.menu == blank -%}
       <details-modal class="header__search" style="display: none;">
         <details>
@@ -338,10 +337,9 @@
     {%- endif -%}
 
     {%- if request.page_type == 'index' -%}
-<!--       %- if section.settings.logo_position == 'top-center' -%} -->
       {%- if section.settings.logo_aligment == 'left' -%}
         <h1 class="header__heading text1 my_grid_style my_header_img_align">
-      {%- elsif section.settings.logo_aligment == 'centered' -%} justify-self: center !important;
+      {%- elsif section.settings.logo_aligment == 'centered' -%}
         <h1 class="header__heading text1 my_header_img_align my_header_img_centered">
       {%- endif -%}
     {%- endif -%}
@@ -365,7 +363,6 @@
     {%- endif -%}
 
     {%- if section.settings.menu != blank -%}
-<!--       %- if section.settings.logo_position == 'top-center' -%} -->
       {%- if section.settings.logo_aligment == 'left' -%}
         <nav class="header__inline-menu my_grid_style">
       {%- else -%}
