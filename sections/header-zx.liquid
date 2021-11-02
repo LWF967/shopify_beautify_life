@@ -74,6 +74,9 @@
   .my_header_img_align {
     justify-self: start !important;
   }
+  .my_header_img_centered {
+  	justify-self: center !important;
+  }
   @media screen and (max-width: 1000px) {
     .my_header_img_align {
       justify-self: center !important;
@@ -338,8 +341,8 @@
 <!--       %- if section.settings.logo_position == 'top-center' -%} -->
       {%- if section.settings.logo_aligment == 'left' -%}
         <h1 class="header__heading text1 my_grid_style my_header_img_align">
-      {%- else -%}
-        <h1 class="header__heading text1 my_header_img_align">
+      {%- elsif section.settings.logo_aligment == 'centered' -%} justify-self: center !important;
+        <h1 class="header__heading text1 my_header_img_align my_header_img_centered">
       {%- endif -%}
     {%- endif -%}
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
