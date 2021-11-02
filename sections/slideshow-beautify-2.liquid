@@ -770,9 +770,9 @@
         }
         list[index].className = 'active'
       }
-    },500))
+    },300))
 
-    leftbtn.addEventListener('click', function () {
+    leftbtn.addEventListener('click',  debounce(function () {
       index = list_text.querySelector('.active').index;
       
       clearInterval(time_gui);
@@ -798,7 +798,7 @@
         }
         list[index].className = 'active'
       }
-    })
+    },300))
   })();
 
 
