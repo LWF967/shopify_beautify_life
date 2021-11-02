@@ -2,13 +2,11 @@
 {% assign customerId = customer.id %}
 
 
-<section style="overflow: hidden;">
+<section>
   <div class="feature-artworks">
 
-    show_button_color
-    
     <!--    左箭头    -->
-      <div class=" dn bk_{{section.settings.show_button_color}} {% if section.settings.show_button  %}icon-changebtn  {% endif%} leftbtn    button_{{ section.settings.show_button_style }}">
+      <div class=" {% if section.settings.show_button %}icon-changebtn {% endif%}leftbtn">
       	<p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
             <svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-chevron-down-left" d="M4 4.5L7 1.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
@@ -17,7 +15,7 @@
         </p>
       </div>
 <!--    右箭头    -->
-      <div class=" dn bk_{{section.settings.show_button_color}} {% if section.settings.show_button %}icon-changebtn  {% endif%} rightbtn   button_{{ section.settings.show_button_style }} ">
+      <div class="{% if section.settings.show_button %}icon-changebtn {% endif%} rightbtn">
       	<p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
           	<svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="icon-chevron-down-left" d="M4 4.5L1 7.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
@@ -36,21 +34,7 @@
 				    
         {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
           
-          <img 
-               srcset="{%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
-                       {%- if block.settings.image.width >= 720 -%}{{ block.settings.image | img_url: '720x' }} 720w,{%- endif -%}
-                       {%- if block.settings.image.width >= 990 -%}{{ block.settings.image | img_url: '990x' }} 990w,{%- endif -%}
-                       {%- if block.settings.image.width >= 1100 -%}{{ block.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}
-                       {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
-                       {%- if block.settings.image.width >= 2200 -%}{{ block.settings.image | img_url: '2200x' }} 2200w,{%- endif -%}
-                       {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | img_url: '3000x' }} 3000w,{%- endif -%}"
-               src="{{ block.settings.image | img_url: '300x' }}"
-               data-src="{{ img_url  }}" 
-               data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" 
-               data-sizes="auto" 
-               class="lazyload lz_op_ef w__100" 
-               alt="{{image.alt}}" 
-               style="max-width:{{image.width}}px">
+          <img src="{{ img_url }}" data-src="{{ img_url  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image.alt}}" style="max-width:{{image.width}}px">
 
           {%- else -%}
 
@@ -72,14 +56,7 @@
   </div>
 </section>
 
- {%- style -%}
 
- {% assign color_primary = section.settings.show_button_hover_color %}
-
- {% assign bk_btn=section.settings.show_button_color %}
-
-
-  {%- endstyle -%}
 
 {% schema %}
   {
@@ -266,12 +243,6 @@
           }
         ]
       },
-		{
-            "type": "color",
-            "id": "show_button_hover_color",
-            "label": "Hover",
-            "default": "#222"
-          },
 		
 		{
 			"type":"text",
@@ -331,7 +302,7 @@
 /*   	max-width: 73.225rem; */
     max-width: 100%;
     margin:0 auto;
-/*     padding: 20px .9375rem 40px; */
+    padding: 20px .9375rem 40px;
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
@@ -379,20 +350,14 @@
   }
   .slideshow_content{
     width:100%;
-    max-height:700px;
   	position:relative;
     box-shadow: 0px 0px 5px 1px #e3e3e3;
+/*     margin-right:2%; */
     box-sizing:border-box;
     padding:10px;
     border-radius:5px;
   }
   
-  .slideshow_content img{
-    object-position: center center;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   .product_self-link{
   	display:block;
     position:absolute;
@@ -426,34 +391,11 @@
     background-color:rgba(255,255,255,.5);
     color:rgb(183,183,183);
   }
-/*   .icon-changebtn:hover{
+  .icon-changebtn:hover{
     background-color:rgba(255,255,255,1);
   	box-shadow: 0px 0px 8px 1px #e3e3e3;
-    
-  } */
-  
-  
-    .icon-changebtn:hover{
-    background-color: {{color_primary}};
-  	box-shadow: 0px 0px 8px 1px #e3e3e3;
-    
+    color:rgb(35,35,35);
   }
-  
-  .bk_transparent{
-  background-color: {{bk_btn}};
-    color:black;
-  }
-  
-  .bk_white{
-    background-color: {{bk_btn}};
-    color:black;
-  }
-  
-  .bk_gray{
-    background-color: {{bk_btn}};
-    color:white;  
-  }
-  
   .button_style1{
 	border-radius:50%;
   }
@@ -462,53 +404,26 @@
 	border-radius:0;
   }
   .button_style3{
-    background-color: gray ;
-	border-radius:0;
-    transform: rotate(45deg) !important;
-  }
- 
-  
-   .button_style3 p svg:nth-child(1) {
- transform: translate(-62.5%,-50%) rotate(318deg) !important;
-  }
-   .rightbtn.button_style3 p svg:nth-child(1) {
- transform: translate(-27%,-78%) rotate(318deg) !important;
-  }
-
-  .button_style1:hover,.button_style2:hover,.button_style3:hover{
-  
-  color:rgb(255,255,255);
+	border-radius:50%;
   }
   
-  
-  
-  .dn{
-  
-    display:none;
-  }
   
   .leftbtn{
   	position:absolute;
     top:50%;
-    left:5px; 
+/*     left:5px; */
     transform:translateY(-50%);
     z-index:999;
-
+    border-radius:50%;
   }
   .rightbtn{
   	position:absolute;
     top:50%;
-    right:5px;
+    right:-5px;
     transform:translateY(-50%);
     z-index:999;    
-
+    border-radius:50%;
   }
-  .icon-changebtn {
-  
-  display:block;
-  
-  }
-  
   .icon-changebtn p{
   	margin:0;
     height:100% !important;
@@ -536,9 +451,6 @@
     bottom: 10%;
     z-index: 100;
     cursor: pointer;
-    padding: 0px;
-    margin: 0;
-
   }
   
   
@@ -554,7 +466,6 @@
     text-align: center;
     transition:all 1.5s;
     margin: 0 5px;
-    list-style-type: none;
   }
   
     #slide_pog li.active{
@@ -596,27 +507,17 @@
 {% endstylesheet %}
 <script>
 
-
-  let slideshow_beautify_lunbo1 = function(){
-  
-    
-    var contentbox=document.querySelector(".product-box");
+var contentbox=document.querySelector(".product-box");
   
     contentbox.style.transition="all 1.5s";
   
 var leftbtn=document.querySelector(".leftbtn");
 var rightbtn=document.querySelector(".rightbtn");
-var mardiff=contentbox.clientWidth*0.02;
+var mardiff=contentbox.clientWidth*0.02;;
 // var diff=contentbox.scrollWidth-contentbox.clientWidth;
  
  var diff_box = contentbox.scrollWidth; 
-    
-//  var diff=contentbox.clientWidth ;
-    
-    var diff=parseInt(contentbox.clientWidth);
-//     var diff = document.getElementsByClassName('feature-artworks')[0].clientWidth;
-    
-//    var diff =  document.getElementsByClassName('big-box')[0].offsetWidth;
+ var diff=contentbox.clientWidth; 
   
 var itemlist=document.querySelectorAll(".slideshow_content");
 var itemLength  = itemlist.length;
@@ -687,37 +588,18 @@ var x = diff_box/itemLength;
   let autop = document.getElementsByClassName('big-box')[0].dataset.autoplay;
   
   
-  
    function autoPlay(autop){
      if(autop = true){
-       
        moveTransition(index);
-       
-       
-       
      }
    
     
     }
   
-let  time =   document.getElementsByClassName('big-box')[0].dataset.autotime;
+let  time =   document.getElementsByClassName('big-box')[0].dataset.autotime; 
+  setInterval(autoPlay, time*1000);
   
-let time_gui =  setInterval(autoPlay, time*1000);
-  
-	
-  document.getElementsByClassName('feature-artworks')[0].addEventListener("mouseover",function(){
-  	
-    clearInterval(time_gui);
-//     console.log(time_gui,"ss")
-  	
-  },false)
- document.getElementsByClassName('feature-artworks')[0].addEventListener("mouseleave",function(){
-  
-  	 time_gui =  setInterval(autoPlay, time*1000);
-//        console.log(time_gui,"xx")
-  },false)
-  
-  
+
 
 //由于左右边框border1，所以要+2来判断
   
@@ -775,7 +657,7 @@ let time_gui =  setInterval(autoPlay, time*1000);
    	index = list.length-1;
         contentbox.style.transform="translate(" + -itemlist[index].index*diff  + "px" + ")";
       
-//   console.log('进来了');
+  console.log('进来了');
     
 
     for(var j = 0;j<list.length;j++){
@@ -790,13 +672,6 @@ let time_gui =  setInterval(autoPlay, time*1000);
   })
 
   
-    
-  
-  
-  }();
-  
-  
-
 
   
   
