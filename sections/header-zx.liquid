@@ -14,7 +14,8 @@
 
 {%- style -%}
 .my_header_heading_logo { width: {{sections.settings.logo_width }} }
-.my_header { padding: 10px 30px; max-width: 100%; padding-bottom: 10px !important; min-height: {{ sections.settings.header_height }} !important;}
+.my_header { padding: 10px 30px; max-width: 100%; padding-bottom: 10px !important; }
+.my_header_height { min-height: {{ sections.settings.header_height }} !important; }
 {%- endstyle -%}
 
 <style>
@@ -143,7 +144,7 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %} my_header">
+  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %} my_header my_header_height">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
         <details class="menu-drawer-container">
