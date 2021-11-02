@@ -13,7 +13,7 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-.my_header_heading_logo { width: {{ sections.settings.logo_width }} }
+.my_header_heading_logo { width: {{sections.settings.logo_width }} }
 {%- endstyle -%}
 
 <style>
@@ -725,6 +725,12 @@
         }
       ],
       "default": "left"
+    },
+    {
+      "type": "text",
+      "id": "logo_svg",
+      "label": "Logo SVG",
+      "info": "Place here text you want to see in the header banner. You can use shortocdes: [countdown]"
     },
     {
       "type": "image_picker",
