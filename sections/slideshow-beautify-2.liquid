@@ -37,7 +37,7 @@
       {%- case block.type -%}
       {%- when 'slideshow_img2' -%} {%- assign image = block.settings.image -%}
  			 <div class="slideshow_content">
-			   <div class="">12371872638172638712</div>
+			   <div class="">{{block.settings.slider_text}}</div>
     	    
         {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
           
@@ -314,7 +314,51 @@
 			"id":"slider_text",
 			"label":"slider_text",
 			"default":"title name"
-		}
+		},
+		{
+        "type": "select",
+        "id": "text_alignment",
+        "label": "Text alignment",
+        "default": "middle_center",
+        "options": [
+          {
+            "value": "top_left",
+            "label": "Top left"
+          },
+          {
+            "value": "top_center",
+            "label": "Top center"
+          },
+          {
+            "value": "top_right",
+            "label": "Top right"
+          },
+          {
+            "value": "middle_left",
+            "label": "Middle left"
+          },
+		 {
+            "value": "middle_center",
+            "label": "Middle center"
+          },
+		 {
+            "value": "middle_right",
+            "label": "Middle right"
+          },
+		 {
+            "value": "bottom_left",
+            "label": "Bottom left"
+          },
+		 {
+            "value": "bottom_center",
+            "label": "Bottom center"
+          },
+		 {
+            "value": "bottom_right",
+            "label": "Bottom right"
+          }
+        ]
+      }
 
 	]
 
