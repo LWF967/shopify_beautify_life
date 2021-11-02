@@ -1,79 +1,5 @@
 {
   "sections": {
-    "16343669695470e556": {
-      "type": "featured-product-beautify",
-      "blocks": {
-        "16343669695470e556-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "16343669695470e556-1": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "16343669695470e556-2": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "16343669695470e556-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "16343669695470e556-4": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "dropdown"
-          }
-        },
-        "16343669695470e556-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "16343669695470e556-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "16343669695470e556-7": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "16343669695470e556-8": {
-          "type": "share",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "16343669695470e556-0",
-        "16343669695470e556-1",
-        "16343669695470e556-2",
-        "16343669695470e556-3",
-        "16343669695470e556-4",
-        "16343669695470e556-5",
-        "16343669695470e556-6",
-        "16343669695470e556-7",
-        "16343669695470e556-8"
-      ],
-      "settings": {
-        "product": "text4",
-        "secondary_background": false,
-        "show_share_buttons": true,
-        "hide_variants": false,
-        "enable_video_looping": false
-      }
-    },
     "1634120630c0c2fc34": {
       "type": "image-with-text-overlay",
       "disabled": true,
@@ -412,7 +338,6 @@
     }
   },
   "order": [
-    "16343669695470e556",
     "1634120630c0c2fc34",
     "16340032987fd8fd82",
     "1635836350c3b72b9b",
