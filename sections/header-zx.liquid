@@ -569,7 +569,6 @@
             render 'icon-cart'
           endif
         -%}
-<!--         <i class="my_cart">&#xe66e;</i> -->
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
@@ -744,9 +743,9 @@
       "type": "range",
       "id": "logo_width",
       "min": 50,
-      "max": 250,
-      "step": 10,
-      "default": 100,
+      "max": 120,
+      "step": 1,
+      "default": 54,
       "unit": "t:sections.header.settings.logo_width.unit",
       "label": "t:sections.header.settings.logo_width.label"
     },
