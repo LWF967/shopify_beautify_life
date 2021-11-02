@@ -13,7 +13,7 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-.my_header_height { height: {{ section.settings.header_height }}; }
+.my_header_height { height: {{ section.settings.header_height }}px; }
 .my_header_heading_logo { width: {{section.settings.logo_width }}; }
 {%- endstyle -%}
 
@@ -758,8 +758,7 @@
       "max": 120,
       "step": 1,
       "default": 54,
-      "unit": "t:sections.header.settings.logo_width.unit",
-      "label": "t:sections.header.settings.logo_width.label"
+      "label": "Custom logo width"
     },
     {
       "type": "range",
@@ -768,7 +767,6 @@
       "max": 160,
       "step": 1,
       "default": 75,
-      "unit": "t:sections.header.settings.logo_width.unit",
       "label": "Custom header height"
     },
     {
@@ -778,7 +776,6 @@
       "max": 18,
       "step": 0.5,
       "default": 14,
-      "unit": "t:sections.header.settings.logo_width.unit",
       "label": "Header text font size"
     },
     {
