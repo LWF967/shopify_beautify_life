@@ -62,7 +62,8 @@
                <div style="max-height:400px"> {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}  </div>
           {%- endif -%} 
                
-            <div class="button {% if block.settings.slider_button_text != blank and block.settings.slider_button_link != blank %} banner__buttons--multiple{% endif %}" >
+            <div class="button {% if block.settings.slider_button_text != blank and block.settings.slider_button_link != blank %} banner__buttons--multiple{% endif %}" 
+                 style="position:absolute;top:50%;left:50%;">
               {%- if block.settings.slider_button_text != blank -%}
                 <a{% if block.settings.slider_button_link != blank %} href="{{ block.settings.slider_button_link }}"{% endif %} class="button  button--primary"{% if block.settings.slider_button_link == blank %} aria-disabled="true"{% endif %}>{{ block.settings.slider_button_text | escape }}</a>
               {%- endif -%}
