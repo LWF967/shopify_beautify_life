@@ -633,8 +633,9 @@ var mardiff=contentbox.clientWidth*0.02;
   
 var itemlist=document.querySelectorAll(".slideshow_content");
 var itemLength  = itemlist.length;
-  
-var diff= parseInt(contentbox.scrollWidth/itemLength);    
+    
+var  diffwidth = parseInt(contentbox.scrollWidth/itemLength); 
+    var diff= (diffwidth > 1903) ?  diffwidth-17 : diffwidth;
     console.log(diff,'diff');
     console.log(itemlist[0].clientWidth,'itemwidth');
     console.log(itemlist[0].offsetWidth,'off');
