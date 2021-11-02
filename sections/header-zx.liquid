@@ -14,7 +14,7 @@
 
 {%- style -%}
 .my_header_heading_logo { width: {{section.settings.logo_width }}; }
-.my_header_height { height: {{ section.settings.header_height }}; }
+.my_header_height { min-height: {{ section.settings.header_height }} !important; }
 {%- endstyle -%}
 
 <style>
