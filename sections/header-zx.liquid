@@ -343,12 +343,16 @@
             <span class="h2">{{ shop.name }}</span>
           {%- endif -%}
         </a>
-    {%- if request.page_type == 'index' -%}         
+    {%- if request.page_type == 'index' -%}
       </h1>
     {%- endif -%}
 
     {%- if section.settings.menu != blank -%}
-      <nav class="header__inline-menu">
+      {%- if section.settings.logo_position == 'top-center' -%}
+        <nav class="header__inline-menu my_grid_style">
+      {%- else -%}
+        <nav class="header__inline-menu ">
+      {%- endif -%}
         <ul class="list-menu list-menu--inline" role="list">
           {%- for link in section.settings.menu.links -%}
             <li>
