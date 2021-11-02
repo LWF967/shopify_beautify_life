@@ -624,7 +624,7 @@ var mardiff=contentbox.clientWidth*0.02;
 // var diff=contentbox.scrollWidth-contentbox.clientWidth;
 
     
-//  var diff=contentbox.clientWidth ;
+ var diff=contentbox.offsetWidth ;
     
 //     var diff=parseInt(contentbox.clientWidth);
  
@@ -635,7 +635,7 @@ var mardiff=contentbox.clientWidth*0.02;
 var itemlist=document.querySelectorAll(".slideshow_content");
 var itemLength  = itemlist.length;
   
-var diff= parseInt(contentbox.scrollWidth/itemLength);    
+// var diff= parseInt(contentbox.scrollWidth/itemLength);    
     console.log(diff,'diff');
     console.log(itemlist[0].clientWidth,'itemwidth');
     console.log(itemlist[0].offsetWidth,'off');
@@ -812,7 +812,7 @@ let time_gui =  setInterval(autoPlay, time*1000);
     
   
   
-  };
+  }();
   
  
 
