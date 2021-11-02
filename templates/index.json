@@ -5,7 +5,6 @@
       "blocks": {
         "56d064e8-838e-4960-8f92-bec0c45e56d9": {
           "type": "slideshow_img2",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
             "slider_text": "title name"
@@ -13,7 +12,6 @@
         },
         "cf520457-a362-42f7-a043-5e28a8ffc74d": {
           "type": "slideshow_img2",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
             "slider_text": "title name"
@@ -21,7 +19,6 @@
         },
         "d98aad89-0e6d-4788-95a8-22f4eb463027": {
           "type": "slideshow_img2",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
             "slider_text": "title name"
