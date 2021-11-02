@@ -667,7 +667,7 @@ var x = diff_box/itemLength;
         contentbox.style.transform="translate(" + -parseInt(itemlist[index].index*diff)  + "px" + ")";
  		
           
-		console.log( itemlist[index].index*diff ,'1');
+		console.log( itemlist[index].index*diff ,'1',diff,'s');
          for(var j = 0;j<list.length;j++){
             list[j].className="";
         }
@@ -730,7 +730,7 @@ let  time =   document.getElementsByClassName('big-box')[0].dataset.autotime;
 //           index =  list_text.querySelector('.active').index+1;
    contentbox.style.transform="translate(" + -itemlist[index].index*diff  + "px" + ")";
  
-	console.log( itemlist[index].index*diff ,'R1');
+// 	console.log( itemlist[index].index*diff ,'R1');
          for(var j = 0;j<list.length;j++){
             list[j].className="";
         }
@@ -739,7 +739,7 @@ let  time =   document.getElementsByClassName('big-box')[0].dataset.autotime;
         index =  0;
         contentbox.style.transform="translate(" + -itemlist[index].index*diff  + "px" + ")";
  
-	console.log( itemlist[index].index*diff ,'R2');
+// 	console.log( itemlist[index].index*diff ,'R2');
          for(var j = 0;j<list.length;j++){
             list[j].className="";
         }
