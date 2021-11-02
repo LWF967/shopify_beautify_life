@@ -13,7 +13,7 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-.my_header { padding: 10px 30px; max-width: 100%; padding-bottom: 10px !important; height: {{ section.settings.header_height }}; }
+.my_header_height { height: {{ section.settings.header_height }}; }
 .my_header_heading_logo { width: {{section.settings.logo_width }}; }
 {%- endstyle -%}
 
@@ -88,11 +88,11 @@
     text-align: center;
   }
   
-/*   .my_header {
+  .my_header {
     padding: 10px 30px;
     max-width: 100%;
     padding-bottom: 10px !important;
-  } */
+  }
   
   .my_header_img_align {
     justify-self: start !important;
@@ -143,7 +143,8 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %} my_header my_header_height">
+  <div class="my_header_height">
+  <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %} my_header">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
         <details class="menu-drawer-container">
@@ -585,6 +586,7 @@
       </a>
     </div>
   </header>
+  </div>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
 
 {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
