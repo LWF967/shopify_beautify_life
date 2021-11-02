@@ -165,12 +165,12 @@
       "header-zx": {
         "type": "header-zx",
         "settings": {
-          "logo_aligment": "left",
+          "logo_aligment": "centered",
           "logo_width": 100,
           "header_height": 75,
           "header_mobile_height": 75,
           "header_text_height": 14,
-          "logo_position": "middle-left",
+          "logo_position": "top-center",
           "menu": "main-menu"
         }
       }
