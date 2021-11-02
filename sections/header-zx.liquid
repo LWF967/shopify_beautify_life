@@ -80,6 +80,9 @@
   .my_header_li_padding {
   	padding: 0 17.5px;
   }
+  .my_header_margin_top {
+    margin-top: 0;
+  }
   @media screen and (max-width: 1000px) {
     .my_header_img_align {
       justify-self: center !important;
@@ -367,7 +370,7 @@
 
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.logo_aligment == 'left' -%}
-        <nav class="header__inline-menu my_grid_style">
+        <nav class="header__inline-menu my_grid_style my_header_margin_top">
       {%- else -%}
         <nav class="header__inline-menu ">
       {%- endif -%}
