@@ -317,7 +317,7 @@
     {%- endif -%}
 
     {%- if request.page_type == 'index' -%}
-      <h1 class="header__heading text1">
+      <h1 class="header__heading text1" style="grid-area: auto">
     {%- endif -%}
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
           {%- if section.settings.logo != blank -%}
@@ -339,7 +339,7 @@
     {%- endif -%}
 
     {%- if section.settings.menu != blank -%}
-      <nav class="header__inline-menu">
+      <nav class="header__inline-menu" style="grid-area: auto">
         <ul class="list-menu list-menu--inline" role="list">
           {%- for link in section.settings.menu.links -%}
             <li>
