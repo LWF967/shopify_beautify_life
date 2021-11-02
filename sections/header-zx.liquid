@@ -419,7 +419,7 @@
     {%- if true -%}
       </h1>
     {%- endif -%}
-{{ sections.settings.header_height }}
+
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.logo_aligment == 'left' -%}
         <nav class="header__inline-menu my_grid_style my_header_margin_top">
@@ -472,6 +472,7 @@
               {%- endif -%}
             </li>
           {%- endfor -%}
+                  {{ sections.settings.header_height }}--123123123123213
         </ul>
       </nav>
     {%- endif -%}
