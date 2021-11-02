@@ -381,7 +381,6 @@
       </details-modal>
     {%- endif -%}
 
-<!--               %- if request.page_type == 'index' -%} -->
     {%- if true -%}
       {%- if section.settings.logo_aligment == 'left' -%}
         <h1 class="header__heading text1 my_grid_style my_header_img_align">
@@ -416,11 +415,11 @@
             <span class="h2">{{ shop.name }}</span>
           {%- endif -%}
         </a>
-<!--     %- if request.page_type == 'index' -%} -->
+
     {%- if true -%}
       </h1>
     {%- endif -%}
-
+{{ sections.settings.header_height }}
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.logo_aligment == 'left' -%}
         <nav class="header__inline-menu my_grid_style my_header_margin_top">
