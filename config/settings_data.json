@@ -166,7 +166,6 @@
         "type": "header-zx",
         "settings": {
           "logo_aligment": "left",
-          "logo": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
           "logo_width": 100,
           "header_height": 75,
           "header_mobile_height": 75,
