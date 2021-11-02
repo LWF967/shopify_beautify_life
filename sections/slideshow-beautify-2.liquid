@@ -666,8 +666,8 @@ var x = diff_box/itemLength;
 //           index =  list_text.querySelector('.active').index+1;
         contentbox.style.transform="translate(" + -parseInt(itemlist[index].index*diff)  + "px" + ")";
  		
-          console.log( itemlist[index].index*diff ,'1');
-	
+          
+		console.log( itemlist[index].index*diff ,'1');
          for(var j = 0;j<list.length;j++){
             list[j].className="";
         }
@@ -675,7 +675,7 @@ var x = diff_box/itemLength;
         } else if(index = itemLength){
         index =  0;
         contentbox.style.transform="translate(" + -parseInt(itemlist[index].index*diff)  + "px" + ")";
- 
+ 		console.log( itemlist[index].index*diff ,'1');
 	
          for(var j = 0;j<list.length;j++){
             list[j].className="";
