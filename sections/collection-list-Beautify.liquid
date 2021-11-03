@@ -33,6 +33,8 @@
         </li>
       {% endfor %}
     </ul>
+ 
+    
   </div>
 	
   {% if section.blocks.size == 0 %}
@@ -41,7 +43,15 @@
   
     {% if section.settings.show_view_all %}
   <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
+    
+    {% if section.settings.show_page_Dot%}
+   		<ol id="slide_pog">
+
+    	</ol>
+    {% else %}
       <a href="{{ routes.collections_url }}" class="button">{{ 'sections.collection_list.view_all' | t }}</a>
+    {%endif%}
+    
     </div>
   
     {% endif %}
