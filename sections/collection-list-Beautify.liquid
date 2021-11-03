@@ -26,7 +26,7 @@
           {%- liquid 
              assign   collection_title = block.settings.title
              assign   collection = collections[block.settings.collection] 
-		     assign   collection_img = block.settings.img   		
+		     assign   collection_img = block.settings.image   		
           -%}
           
           {% include 'collection-grid-item', collection: collection , collection_title:collection_title,collection_img:collection_img %}
