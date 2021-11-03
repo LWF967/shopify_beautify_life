@@ -55,7 +55,9 @@
                data-sizes="auto" 
                class="lazyload lz_op_ef w__100" 
                alt="{{image.alt}}" 
-               style="max-width:{{image.width}}px">
+               style="max-width:{{image.width}}px"
+               onload="showSize(this)"
+               >
 
           {%- else -%}
 
@@ -100,7 +102,7 @@
 
 
 <script>
- var ccc = function(){
+ var ccc = function showSize(){
     
 
   for(var i=0;i<document.getElementsByClassName('slideshow_content').length;i++){
