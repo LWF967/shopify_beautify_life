@@ -483,7 +483,7 @@
           {% assign my_svg_height_left = section.settings.logo_width | divided_by: section.settings.logo_svg.aspect_ratio | ceil | plus: 30 %}
           {% assign my_svg_height_centered = section.settings.logo_width | divided_by: section.settings.logo_svg.aspect_ratio | ceil | plus: 103 %}
           {% assign my_header_height = section.settings.header_height %}
-          {% assign my_svg_url = section.settings.logo_svg | img_url %}
+          {% assign my_svg_url = section.settings.logo_svg | file_url %}
           {% if my_svg_height_left > my_header_height %}
           <span style="font-size: 9px;">{{ my_svg_height_left }}-{{ my_header_height }}-1+{{ my_svg_url }}</span>
           {% elsif my_svg_height_left == my_header_height %}
