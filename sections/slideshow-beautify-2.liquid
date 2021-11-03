@@ -98,6 +98,26 @@
 
   {%- endstyle -%}
 
+
+<script>
+ var ccc = function(){
+    
+
+  for(var i=0;i<document.getElementsByClassName('slideshow_content').length;i++){
+  
+    document.getElementsByClassName('slideshow_content')[i].querySelector('img').width
+let img=document.getElementsByClassName('slideshow_content')
+img.onload = function() {
+console.log(img.height,'',i);
+console.log(img.width,'',i);
+}
+  
+  
+  }
+      }();
+
+</script>
+
 {% schema %}
   {
     "name": "Slideshow Beautify2",
