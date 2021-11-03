@@ -155,7 +155,7 @@
                  {% if section.settings.menu != blank %}
                  header--has-menu
                  {% endif %} my_header my_header_height 
-                 {% if section.settings.logo_aligment == 'left' and section.settings.header_height %}
+                 {% if section.settings.logo_aligment == 'left' and lzx > section.settings.header_height %}
                  test_1
                  {% endif %}">
     {%- if section.settings.menu != blank -%}
@@ -431,7 +431,6 @@
         </a>
         <div>
           {{ section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil | plus: 30 }}
-          {{lzx}}
         </div>
     {%- if true -%}
       </h1>
