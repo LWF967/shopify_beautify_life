@@ -5,7 +5,7 @@
     - collection: {Object} Collection Liquid object (required)
 
     Usage:
-    {% include 'collection-grid-item', collection: collection %}
+    {% include 'collection-grid-item', collection: collection,collection_title:collection_title %}
 {% endcomment %}
 {% if collection.image %}
   {%- assign collection_image = collection.image -%}
