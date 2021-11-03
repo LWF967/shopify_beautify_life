@@ -109,10 +109,10 @@
   for(var i=0;i<document.getElementsByClassName('slideshow_content').length;i++){
   		a+=1;
       let img=document.getElementsByClassName('slideshow_content')[a].querySelector('img')
-      img.onload = function {
+      img.onload = {
         console.log(img.height,' ',a );
         console.log(img.width,'',a);
-      }.apply();
+      }
 
   
    }

@@ -431,8 +431,8 @@
           {{ section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil | plus: 30 }}
           {{ section.settings.header_height }}
           
-          {% assign a = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil | plus: 30%}
-          {% assign    b = section.settings.header_height %}
+          {% assign a = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil | plus: 30 %}
+          {% assign b = section.settings.header_height %}
           {% capture hheight %}{{section.settings.header_height}}{% endcapture %}
           
           {% if a >  b %}
