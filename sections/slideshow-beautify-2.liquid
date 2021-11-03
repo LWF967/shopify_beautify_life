@@ -109,8 +109,8 @@
   for(var i=0;i<document.getElementsByClassName('slideshow_content').length;i++){
   		a+=1;
       let img=document.getElementsByClassName('slideshow_content')[a].querySelector('img')
-      img.onload = function(a) {
-        console.log(img.height,'',a);
+      img.onload = function {
+        console.log(img.height,' ',a );
         console.log(img.width,'',a);
       }
 
