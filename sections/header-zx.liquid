@@ -482,7 +482,14 @@
         </a>
           {% assign my_svg_height_left = section.settings.logo_width | divided_by: section.settings.logo_svg.aspect_ratio | ceil | plus: 30 %}
           {% assign my_svg_height_centered = section.settings.logo_width | divided_by: section.settings.logo_svg.aspect_ratio | ceil | plus: 103 %}
-          <p>{{ my_svg_height_left }}</p>
+          {% assign my_header_height = section.settings.header_height %}
+          {% if my_svg_height_left > my_header_height %}
+          1
+          {% elsif my_svg_height_left == my_header_height %}
+          2
+          {% else %}
+          3
+          {% endif %}
     {%- if true -%}
       </h1>
     {%- endif -%}
