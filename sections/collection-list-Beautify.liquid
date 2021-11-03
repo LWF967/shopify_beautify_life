@@ -23,9 +23,13 @@
     <ul class="grid grid--uniform">
       {% for block in section.blocks limit: section.blocks.size %}
         <li class="grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
-          {%- assign collection = collections[block.settings.collection] -%}
-          {%- assign collection_title = block.settings.title -%}
-          {% include 'collection-grid-item', collection: collection , collection_title:collection_title%}
+          {%- liquid 
+             assign   collection_title = block.settings.title
+             assign   collection = collections[block.settings.collection] 
+		     assign   collection_img = block.settings.img   		
+          -%}
+          
+          {% include 'collection-grid-item', collection: collection , collection_title:collection_title,collection_img:collection_img %}
         </li>
       {% endfor %}
     </ul>
@@ -122,6 +126,11 @@
           "id": "collection",
           "type": "collection"
         },
+		{
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+      	 },
 		{
           "type": "text",
           "id": "title",
