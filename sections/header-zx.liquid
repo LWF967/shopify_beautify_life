@@ -400,6 +400,7 @@
                 width="{{ section.settings.logo_svg.width }}"
                 height="{{ section.settings.logo_svg.height }}"
                 alt="{{ section.settings.logo_svg.alt | default: shop.name | escape }}"
+                style="height: auto"
               >
             {%- else -%}
               {%- assign image_size = section.settings.logo_width | append: 'x' -%}
@@ -410,6 +411,7 @@
                 width="{{ section.settings.logo.width }}"
                 height="{{ section.settings.logo.height }}"
                 alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+                style="height: auto"
               >
             {%- endif -%}
           {%- else -%}
