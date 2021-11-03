@@ -11,13 +11,16 @@
  
    
 {{'custome-content.css'| asset_url |stylesheet_tag}}
-    
-<script src="{{ 'lazysizes.js' | asset_url }}" ></script>   
-<script src="{{ 'lazysizes.min.js' | asset_url }}" ></script>   
+    {{ 'lazysizes.js' | asset_url | script_tag }}
+{{ 'lazysizes.min.js' | asset_url | script_tag }}
+
 
     {%comment%}
 {{ 'lazysizes.js' | asset_url | script_tag }}
 {{ 'lazysizes.min.js' | asset_url | script_tag }}
+ 
+<script src="{{ 'lazysizes.js' | asset_url }}" ></script>   
+<script src="{{ 'lazysizes.min.js' | asset_url }}" ></script>   
     
     {%endcomment%}
     {%- if settings.favicon != blank -%}
