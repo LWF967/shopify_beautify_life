@@ -421,7 +421,10 @@
             <span class="h2">{{ shop.name }}</span>
           {%- endif -%}
         </a>
+        <div>
+          {{ section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil }}
 
+        </div>
     {%- if true -%}
       </h1>
     {%- endif -%}
@@ -468,9 +471,6 @@
                           {%- endif -%}
                         </li>
                       {%- endfor -%}
-                      <li><a href="/" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset my_header_li_padding my_header_font_size" aria-current="page">
-                  <span class="header__active-menu-item">{{ section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil }}</span>
-                </a></li>
                     </ul>
                   </details>
                 </details-disclosure>
