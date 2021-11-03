@@ -22,7 +22,7 @@ if you want set section_background image use this.
 {% endcomment %}
 <div class="collection-grid-item">
   <a href="{% if collection.products == empty %}#{% else %}{{ collection.url }}{% endif %}" class="collection-grid-item__link">
-    {% unless collection_image == blank %}
+    {% unless collection_img == blank %}
       <div class="collection-grid-item__overlay box ratio-container lazyload js"
         data-bgset="{% include 'bgset', image: collection_img %}"
         data-sizes="auto"
