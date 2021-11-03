@@ -1,49 +1,5 @@
 {
   "sections": {
-    "1634120630c0c2fc34": {
-      "type": "image-with-text-overlay",
-      "disabled": true,
-      "blocks": {
-        "1634120630c0c2fc34-0": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
-          }
-        },
-        "1634120630c0c2fc34-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
-          }
-        },
-        "1634120630c0c2fc34-2": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false
-          }
-        }
-      },
-      "block_order": [
-        "1634120630c0c2fc34-0",
-        "1634120630c0c2fc34-1",
-        "1634120630c0c2fc34-2"
-      ],
-      "settings": {
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "beautify-overlay-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "16340032987fd8fd82": {
       "type": "slideshow-beautify-2",
       "blocks": {
@@ -188,173 +144,10 @@
         "background_product_color": "#ffffff"
       }
     },
-    "1634788020c7a0b534": {
-      "type": "rich-text-beautify",
-      "disabled": true,
-      "blocks": {
-        "1634788020c7a0b534-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "1634788020c7a0b534-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "1634788020c7a0b534-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "1634788020c7a0b534-0",
-        "1634788020c7a0b534-1",
-        "1634788020c7a0b534-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "content_full_width": true
-      }
-    },
-    "163488699162d893f0": {
-      "type": "testimonials",
-      "disabled": true,
-      "blocks": {
-        "163488699162d893f0-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "testimonials_author_text": "Author"
-          }
-        },
-        "163488699162d893f0-1": {
-          "type": "column",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "testimonials_author_text": "Author"
-          }
-        },
-        "163488699162d893f0-2": {
-          "type": "column",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "testimonials_author_text": "Author"
-          }
-        },
-        "b7158d44-9236-45b3-b876-276c12a7313a": {
-          "type": "column",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "testimonials_author_text": "Author"
-          }
-        }
-      },
-      "block_order": [
-        "163488699162d893f0-0",
-        "163488699162d893f0-1",
-        "163488699162d893f0-2",
-        "b7158d44-9236-45b3-b876-276c12a7313a"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "swipe": true,
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "123",
-        "button_link": ""
-      }
-    },
-    "163532208633dc77bc": {
-      "type": "Text-columns-with-images",
-      "disabled": true,
-      "blocks": {
-        "163532208633dc77bc-0": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "image": "shopify:\/\/shop_images\/01.png",
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "1232",
-            "button_link": ""
-          }
-        },
-        "163532208633dc77bc-1": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "Button",
-            "button_link": ""
-          }
-        },
-        "163532208633dc77bc-2": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "Button",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "163532208633dc77bc-0",
-        "163532208633dc77bc-1",
-        "163532208633dc77bc-2"
-      ],
-      "settings": {
-        "Text_columns_with_images_heading": "Text columns with images",
-        "Text_columns_with_images_Text_alignment": "Left"
-      }
-    },
-    "163538928330f5460b": {
-      "type": "video-beautify",
-      "disabled": true,
-      "settings": {
-        "cover_image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
-        "image_alignment": "Middle-center",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "show_overlay": true,
-        "style": "background_video",
-        "video_height": "medium",
-        "heading": "Video",
-        "text_size": "medium"
-      }
-    },
     "1635497923083b4abb": {
       "type": "contact-form",
       "settings": {
         "heading": "Contact form"
-      }
-    },
-    "1635588039b8d0f08b": {
-      "type": "map",
-      "disabled": true,
-      "settings": {
-        "heading": "Our store",
-        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
-        "map_address": "301 Front St W, Toronto",
-        "button_text": "Get directions",
-        "show_pin": true,
-        "background_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-        "background_image_position": "center left"
       }
     },
     "1635832448db75c5e7": {
@@ -378,16 +171,10 @@
     }
   },
   "order": [
-    "1634120630c0c2fc34",
     "16340032987fd8fd82",
     "1635836350c3b72b9b",
     "163454604067313d0f",
-    "1634788020c7a0b534",
-    "163488699162d893f0",
-    "163532208633dc77bc",
-    "163538928330f5460b",
     "1635497923083b4abb",
-    "1635588039b8d0f08b",
     "1635832448db75c5e7"
   ]
 }
