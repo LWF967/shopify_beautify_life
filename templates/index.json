@@ -135,13 +135,37 @@
             "collection": "",
             "title": "New supply this week"
           }
+        },
+        "27647972-99f3-4c89-8813-30902cb683b2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "c260e375-4204-46a5-92c3-908126eb528f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "00f2f9a8-e301-4b06-976e-4bab8436e34c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
         }
       },
       "block_order": [
         "1635836350c3b72b9b-0",
         "1635836350c3b72b9b-1",
         "1635836350c3b72b9b-2",
-        "b47fcf84-0bd5-4408-8a75-0e35ec59dd74"
+        "b47fcf84-0bd5-4408-8a75-0e35ec59dd74",
+        "27647972-99f3-4c89-8813-30902cb683b2",
+        "c260e375-4204-46a5-92c3-908126eb528f",
+        "00f2f9a8-e301-4b06-976e-4bab8436e34c"
       ],
       "settings": {
         "title": "NEW RELEASES",

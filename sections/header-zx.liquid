@@ -138,11 +138,6 @@
     color: #797979;
   }
   
-  .my_header_icon {
-  	position: relative;
-    height: 4.4rem;
-  }
-  
   @font-face {
   font-family: 'iconfont';  /* Project id 2903696 */
   src: url('//at.alicdn.com/t/font_2903696_p8b4e67fhg.woff2?t=1635837134306') format('woff2'),
@@ -618,7 +613,7 @@
       {%- endif -%}
 
 <!--       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset my_icon_color" id="cart-icon-bubble"> -->
-      <a href="{{ routes.cart_url }}" class="my_header_icon link--text focus-inset my_icon_color" id="cart-icon-bubble">
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link--text focus-inset my_icon_color" id="cart-icon-bubble">
 <!--         %- liquid
           if cart == empty
             render 'icon-cart-empty'
