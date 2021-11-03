@@ -480,6 +480,9 @@
             <span class="h2">{{ shop.name }}</span>
           {%- endif -%}
         </a>
+          {% assign my_svg_height_left = section.settings.logo_width | divided_by: section.settings.logo_svg.aspect_ratio | ceil | plus: 30 %}
+          {% assign my_svg_height_centered = section.settings.logo_width | divided_by: section.settings.logo_svg.aspect_ratio | ceil | plus: 103 %}
+          <p>{{ my_svg_height_left }}</p>
     {%- if true -%}
       </h1>
     {%- endif -%}
