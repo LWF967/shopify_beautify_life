@@ -881,9 +881,11 @@
   
   
       let img=document.getElementsByClassName('header__heading-link link link--text focus-inset my_header_font_size')[0].querySelector('img')
+      let my_height = img.height + 30;
       img.onload = function(){
         console.log(img.height, ' ');
         console.log(img.width, ' ');
+        console.log(my_height);
         
       }
 
