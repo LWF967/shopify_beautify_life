@@ -165,12 +165,12 @@
       "header-zx": {
         "type": "header-zx",
         "settings": {
-          "logo_aligment": "centered",
+          "logo_aligment": "left",
           "logo_svg": "",
           "logo": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-          "logo_width": 120,
-          "header_height": 160,
-          "header_text_height_font_size": 14,
+          "logo_width": 50,
+          "header_height": 60,
+          "header_text_height_font_size": 12,
           "menu": "main-menu"
         }
       }
