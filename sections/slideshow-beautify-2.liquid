@@ -109,11 +109,12 @@
   for(var i=0;i<document.getElementsByClassName('slideshow_content').length;i++){
   		a+=1;
       let img=document.getElementsByClassName('slideshow_content')[a].querySelector('img')
-      img.onload = function(){
-        test();
-        console.log(img.height,' ',a );
-        console.log(img.width,'',a);
-      }
+      img.onload = test();
+//         function(){
+        
+//         console.log(img.height,' ',a );
+//         console.log(img.width,'',a);
+//       }
       function test(){
       	a++;
         console.log(a);
