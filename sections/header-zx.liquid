@@ -223,7 +223,9 @@
                         {%- endif -%}
                       </li>
                     {%- endfor -%}
-                    {{ section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil }}
+                    <li>
+                      <a><span>{{ section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil }}</span></a>
+                    </li>
                   </ul>
                 </nav>
                 <div class="menu-drawer__utility-links">
