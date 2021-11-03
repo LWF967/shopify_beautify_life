@@ -12,6 +12,10 @@
 <noscript>{{ 'component-menu-drawer.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 
+{%- liquid
+  assign my_header_height = section.settings.header_height
+-%}
+
 {%- style -%}
 .my_header_height { height: {{ section.settings.header_height }}px; }
 .my_header_heading_logo { width: {{ section.settings.logo_width }}px; }
@@ -89,11 +93,11 @@
     text-align: center;
   }
   
-  .my_header {
+/*   .my_header {
     padding: 10px 30px;
     max-width: 100%;
     padding-bottom: 10px !important;
-  }
+  } */
   
   .my_header_img_align {
     justify-self: start !important;
