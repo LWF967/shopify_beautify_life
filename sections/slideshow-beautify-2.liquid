@@ -102,13 +102,11 @@
 
 
 <script>
-function showSize(){
-    
 
+    
   for(var i=0;i<document.getElementsByClassName('slideshow_content').length;i++){
   
-    document.getElementsByClassName('slideshow_content')[i].querySelector('img').width
-let img=document.getElementsByClassName('slideshow_content')
+let img=document.getElementsByClassName('slideshow_content')[i].querySelector('img')
 img.onload = function() {
 console.log(img.height,'',i);
 console.log(img.width,'',i);
@@ -116,7 +114,7 @@ console.log(img.width,'',i);
   
   
   }
-      };
+
 
 </script>
 
