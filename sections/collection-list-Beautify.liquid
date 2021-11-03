@@ -45,7 +45,7 @@
   <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
     
     {% if section.settings.show_page_Dot %}
-   		<ol id="slide_pog">
+   		<ol id="collection_list_pog">
 
     	</ol>
     {% else %}
@@ -57,6 +57,37 @@
     {% endif %}
 </div>
 
+<script>
+
+  var collection_list_func = function(){
+//获取轮播点
+
+    var list_text = document.getElementById('collection_list_pog')
+
+    for (let a = 0; a < itemLength; a++) {
+      itemlist[a].index = a
+      list_text.innerHTML += '<li></li>'
+    }
+
+    var list = list_text.getElementsByTagName('li')
+    list[0].index = 0
+    list[0].className = 'active'
+
+    for (var c = 0; c < list.length; c++) {
+      list[c].index = c
+      list[c].onclick = function () {
+        for (var j = 0; j < list.length; j++) {
+          list[j].className = ''
+        }
+        this.className = 'active'
+        contentbox.style.transform =
+          'translate(' + -itemlist[this.index].index * diff + 'px' + ')'
+      }
+    }
+
+  }();
+  
+</script>
 
 
 {% schema %}
