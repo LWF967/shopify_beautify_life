@@ -437,9 +437,10 @@
         </a>
         <div>
           
-          {% assign a = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil | plus: 30 %}
+          {% assign a = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil | plus: 60 %}
           {% assign b = section.settings.header_height %}
-          {{ a }}
+          {{ a }} pic center height
+          {{ b }} header height
         </div>
     {%- if true -%}
       </h1>
