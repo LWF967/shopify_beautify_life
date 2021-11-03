@@ -184,17 +184,33 @@
               "menu": "footer"
             }
           },
-          "footer-top-1": {
-            "type": "text",
+          "4fd0827b-31b4-4fc2-9169-f7b732203e57": {
+            "type": "link_list",
             "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+              "heading": "Categories",
+              "menu": "footer"
+            }
+          },
+          "d1be58d0-6f1c-441b-a8af-db72c42a8f0c": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Support",
+              "menu": "footer"
+            }
+          },
+          "c9ea766c-20c9-4661-aef2-5b10b726d607": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
             }
           }
         },
         "block_order": [
           "footer-top-0",
-          "footer-top-1"
+          "4fd0827b-31b4-4fc2-9169-f7b732203e57",
+          "d1be58d0-6f1c-441b-a8af-db72c42a8f0c",
+          "c9ea766c-20c9-4661-aef2-5b10b726d607"
         ],
         "settings": {
           "color_scheme": "background-1",
