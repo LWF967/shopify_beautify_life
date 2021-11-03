@@ -51,21 +51,33 @@
           "type": "slideshow_img2",
           "settings": {
             "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
-            "slider_text": "title name"
+            "image_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
           }
         },
         "cf520457-a362-42f7-a043-5e28a8ffc74d": {
           "type": "slideshow_img2",
           "settings": {
             "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "slider_text": "title name"
+            "image_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
           }
         },
         "d98aad89-0e6d-4788-95a8-22f4eb463027": {
           "type": "slideshow_img2",
           "settings": {
             "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "slider_text": "title name"
+            "image_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
           }
         }
       },
@@ -98,7 +110,7 @@
         "1635836350c3b72b9b-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         },
         "1635836350c3b72b9b-1": {
@@ -136,7 +148,6 @@
     },
     "163454604067313d0f": {
       "type": "daily-deal-of-the-day",
-      "disabled": true,
       "settings": {
         "product": "text4",
         "heading_text": "Daily Deal Of The Day",
