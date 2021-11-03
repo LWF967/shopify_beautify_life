@@ -14,6 +14,7 @@
 
 {%- liquid
   assign my_header_height = section.settings.header_height
+  assign logo =  section.settings.logo
 -%}
 
 {%- style -%}
@@ -149,6 +150,7 @@
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %} my_header my_header_height">
+    {logo.height}
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
         <details class="menu-drawer-container">
