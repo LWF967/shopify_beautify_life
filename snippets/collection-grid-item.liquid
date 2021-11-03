@@ -28,7 +28,7 @@
         data-image-loading-animation>
       </div>
       <noscript>
-        <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_image | img_url: '1024x1024' }}')"></div>
+        <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_img | img_url: '1024x1024' }}')"></div>
       </noscript>
     {% else %}
       {% if collection == empty %}
@@ -37,7 +37,7 @@
           {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
         </div>
       {% else %}
-        <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_image | img_url: '1024x1024' }}')"></div>
+        <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_img | img_url: '1024x1024' }}')"></div>
       {% endif %}
     {% endunless %}
 
