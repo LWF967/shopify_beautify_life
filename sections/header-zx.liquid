@@ -159,6 +159,8 @@
                  {% endif %} my_header my_header_height 
                  {% if section.settings.logo_aligment == 'left' and my_img_height > my_header_height %}
                  test_1
+                 {% elsif section.settings.logo_aligment == 'centered' %}
+                 my_auto_height
                  {% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
