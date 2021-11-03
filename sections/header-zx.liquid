@@ -133,6 +133,10 @@
   	height: auto;
   }
   
+  .my_icon_color {
+    color: #f9f9f9;
+  }
+  
   @media screen and (max-width: 1000px) {
     .my_header_img_align {
       justify-self: center !important;
@@ -506,7 +510,7 @@
     <div class="header__icons" style="color: green">
       <details-modal class="header__search" style="display: block;">
         <details>
-          <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
+          <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle my_icon_color" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
             <span>
               <svg class="modal__toggle-open icon icon-search t1" aria-hidden="true" focusable="false" role="presentation">
                 <use href="#icon-search">
@@ -592,7 +596,7 @@
         </a>
       {%- endif -%}
 
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble">
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset my_icon_color" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
             render 'icon-cart-empty'
