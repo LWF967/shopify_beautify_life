@@ -146,6 +146,10 @@
     justify-content: center;
   }
   
+  .my_header_icon_search {
+    height: 4.4rem;
+  }
+  
   @font-face {
   font-family: 'iconfont';  /* Project id 2903696 */
   src: url('//at.alicdn.com/t/font_2903696_p8b4e67fhg.woff2?t=1635837134306') format('woff2'),
@@ -534,7 +538,7 @@
     <div class="header__icons">
       <details-modal class="header__search" style="display: block;">
         <details>
-          <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle my_icon_color" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
+          <summary class="my_header_icon_search header__icon--search header__icon--summary link link--text focus-inset modal__toggle my_icon_color" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
             <span>
               <svg class="modal__toggle-open icon-search my_header_icon_width16" aria-hidden="true" focusable="false" role="presentation">
                 <use href="#icon-search">
