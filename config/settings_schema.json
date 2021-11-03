@@ -8,6 +8,27 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
+    "name": "Dear customers!",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "[The4 Studio](https:\/\/the4.co\/) is an experienced web development team that love to deliver impressive and well-designed Shopify themes. All our themes are easy to install and customize, so you can start your own web-site just in a few minutes. Our dedicated support will provide you with fast useful answers if you have any questions concerning theme setup or configuration."
+      },
+      {
+        "type": "paragraph",
+        "content": "If you are facing a problem with installation, importing sample config or configuration our theme, please, don’t leave a bad review. Firstly, visit our [Document page](https:\/\/kalles-docs.the4.co\/) and try to find a solution. Or you can create a new ticket and we will help you as soon as possible: [support page](https:\/\/support.the4.co). You can ask your any kind of pre-sale question directly through the [contact email here](mailto:the4studio.net@gmail.com?subject=Kalles Theme Support). We would be glad if you help us to improve our theme, installation process or documentation. Thanks for buying my theme!"
+      },
+      {
+        "type": "paragraph",
+        "content": "As a team, our #1 priority is you, the end-user, and we confirm this by providing you with the most professional world-class theme support available anywhere. Start today and build a relationship with us."
+      },
+      {
+        "type": "paragraph",
+        "content": "[Free Course: Build a Shopify Store](https:\/\/webdesign.tutsplus.com\/courses\/how-to-create-an-online-store-with-shopify)"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.colors.name",
     "settings": [
       {
