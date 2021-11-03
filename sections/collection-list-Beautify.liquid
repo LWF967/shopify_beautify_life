@@ -24,7 +24,7 @@
       {% for block in section.blocks limit: section.blocks.size %}
         <li class="grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
           {%- assign collection = collections[block.settings.collection] -%}
-          {%- assign collection_title = collections[block.settings.title] -%}
+          {%- assign collection_title = block.settings.title -%}
           {% include 'collection-grid-item', collection: collection , collection_title:collection_title%}
         </li>
       {% endfor %}
