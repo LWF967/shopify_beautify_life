@@ -7,15 +7,17 @@
     Usage:
     {% include 'collection-grid-item', collection: collection,collection_title:collection_title %}
 {% endcomment %}
+{% comment %}
 
-<!-- {% if collection.image %}
+{% if collection.image %}
   {%- assign collection_image = collection.image -%}
 {% elsif collection.products.first and collection.products.first.media != empty %}
   {%- assign collection_image = collection.products.first.featured_media.preview_image -%}
 {% else %}
   {% assign collection_image = blank %}
-{% endif %} -->
+{% endif %}
 
+{% endcomment %}
 <div class="collection-grid-item">
   <a href="{% if collection.products == empty %}#{% else %}{{ collection.url }}{% endif %}" class="collection-grid-item__link">
     {% unless collection_image == blank %}
