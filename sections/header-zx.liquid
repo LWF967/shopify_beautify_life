@@ -613,7 +613,7 @@
       {%- endif -%}
 
 <!--       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset my_icon_color" id="cart-icon-bubble"> -->
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link" id="cart-icon-bubble">
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link--text focus-inset my_icon_color" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
             render 'icon-cart-empty'
