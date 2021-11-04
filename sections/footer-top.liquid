@@ -564,11 +564,35 @@
       "type": "text2",
       "name": "Newsletter",
       "settings": [
+		{
+          "type": "select",
+          "id": "newsletter_design",
+          "label": "Newsletter Design",
+          "default": "1",
+          "options": [
+            {
+              "value": "1",
+              "label": "Design 1"
+            },
+            {
+              "value": "2",
+              "label": "Design 2"
+            },
+            {
+              "value": "3",
+              "label": "Design 3"
+            },
+            {
+              "value": "4",
+              "label": "Design 4"
+            }
+          ]
+        },
         {
           "type": "text",
           "id": "heading",
-          "default": "Quick links",
-          "label": "t:sections.footer.blocks.link_list.settings.heading.label"
+          "default": "Newsletter",
+          "label": "Heading"
         },
         {
           "type": "link_list",
