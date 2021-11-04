@@ -14,9 +14,17 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
+<style>
+  .my_footer_top_padding {
+  	padding-bottom: 55px; 
+    padding-top: 55px;
+    display: block;
+  }
+</style>
+
 <footer class="footer color-{{ section.settings.color_scheme }} gradient">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
-    <div class="footer__content-top page-width">
+    <div class="my_footer_top_padding page-width">
       {%- if section.blocks.size > 0 -%}
         {%- liquid
           if section.blocks.size == 9
