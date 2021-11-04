@@ -603,7 +603,7 @@ text-decoration:none;
 li.grid__item__beautify:not(:nth-child(1)){
 
 
-margin-left:1rem;
+padding-left:1rem;
 }
 
 /* li.grid__item__beautify:nth-last-child(1){
