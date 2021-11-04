@@ -15,7 +15,7 @@
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-.my_footer_a_hover:hover { color: red; }
+.my_footer_a_hover { text-decoration: none } .my_footer_a_hover:hover { color: red; }
 {%- endstyle -%}
 
 <style>
@@ -56,7 +56,7 @@
                     <ul class="footer-block__details-content list-unstyled">
                       {%- for link in block.settings.menu.links -%}
                         <li>
-                          <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link my_footer_a_hover">
+                          <a href="{{ link.url }}" class="link link--text list-menu__item my_footer_a_hover">
                             {{ link.title }}
                           </a>
                         </li>
