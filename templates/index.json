@@ -164,6 +164,49 @@
         "show_rating": true
       }
     },
+    "1635993731cf3dc0c2": {
+      "type": "banner-Beautify",
+      "blocks": {
+        "1635993731cf3dc0c2-0": {
+          "type": "img_top",
+          "settings": {
+            "header_top": "Head",
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "1635993731cf3dc0c2-1": {
+          "type": "img_top",
+          "settings": {
+            "header_top": "Head",
+            "url": "",
+            "open_link": "_blank"
+          }
+        },
+        "1635993731cf3dc0c2-2": {
+          "type": "img_top",
+          "settings": {
+            "header_top": "Head",
+            "url": "",
+            "open_link": "_blank"
+          }
+        }
+      },
+      "block_order": [
+        "1635993731cf3dc0c2-0",
+        "1635993731cf3dc0c2-1",
+        "1635993731cf3dc0c2-2"
+      ],
+      "settings": {
+        "title": "BANNER",
+        "sub_title": "Popular this week",
+        "font_top": 30,
+        "color_top": "#888",
+        "grid": 3,
+        "show_view_all": false,
+        "show_page_Dot": false
+      }
+    },
     "1635497923083b4abb": {
       "type": "contact-form",
       "settings": {
@@ -251,6 +294,7 @@
     "1635836350c3b72b9b",
     "163454604067313d0f",
     "1635832448db75c5e7",
+    "1635993731cf3dc0c2",
     "1635497923083b4abb",
     "16359888646f646d27"
   ]
