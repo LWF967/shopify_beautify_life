@@ -194,6 +194,7 @@
         "89ccb0ff-9af5-40b2-b28b-dd6df8741490": {
           "type": "banner_third",
           "settings": {
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
             "header_top": "Head",
             "url": "",
             "color": "#fff",
