@@ -32,7 +32,7 @@
 
      {%- when 'banner_third' -%} {%- assign image = block.settings.image -%}
      <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class=" flex_center {% if block.settings.url == blank %} pe_none{% endif %}"> 
-      <div class="flex_center">
+      <div >
        {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
       		<img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" 
