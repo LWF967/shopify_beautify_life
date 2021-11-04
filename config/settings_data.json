@@ -180,33 +180,29 @@
           "05c7f090-5a2f-49b0-9106-c84dd9782e45": {
             "type": "text",
             "settings": {
-              "heading": "Get in touch",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
-              "container_width": "5"
+              "heading": "Heading",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
             }
           },
           "813890e0-2367-4953-b348-378adfebbfdf": {
             "type": "link_list",
             "settings": {
               "heading": "Categories",
-              "menu": "footer",
-              "container_width": "5"
+              "menu": "footer"
             }
           },
           "e8613138-c13d-4acc-bcbd-7b5c43c0b596": {
             "type": "link_list",
             "settings": {
               "heading": "Support",
-              "menu": "footer",
-              "container_width": "5"
+              "menu": "footer"
             }
           },
           "a5b028d2-75a1-40e1-b712-effde59bc32b": {
             "type": "text",
             "settings": {
-              "heading": "Newsletter",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
-              "container_width": "5"
+              "heading": "Heading",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
             }
           }
         },

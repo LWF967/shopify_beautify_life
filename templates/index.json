@@ -201,13 +201,37 @@
             "w": 140,
             "h": 3
           }
+        },
+        "99796de7-eedb-4185-8c5d-e76f793ef51c": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3
+          }
+        },
+        "d99f4c62-6f87-4446-b872-976c343e3a1b": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3
+          }
         }
       },
       "block_order": [
         "1635993731cf3dc0c2-0",
         "1635993731cf3dc0c2-1",
         "1635993731cf3dc0c2-2",
-        "89ccb0ff-9af5-40b2-b28b-dd6df8741490"
+        "89ccb0ff-9af5-40b2-b28b-dd6df8741490",
+        "99796de7-eedb-4185-8c5d-e76f793ef51c",
+        "d99f4c62-6f87-4446-b872-976c343e3a1b"
       ],
       "settings": {
         "title": "BANNER",
