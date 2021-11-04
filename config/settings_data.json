@@ -177,18 +177,6 @@
       "footer-top": {
         "type": "footer-top",
         "blocks": {
-          "c3b6a96c-e6eb-445a-8d1b-94983e8bccce": {
-            "type": "link_list",
-            "settings": {
-              "heading": "one"
-            }
-          },
-          "1369f08a-bbce-4031-8b36-5134abff32ac": {
-            "type": "link_list",
-            "settings": {
-              "heading": "two1"
-            }
-          },
           "05c7f090-5a2f-49b0-9106-c84dd9782e45": {
             "type": "text",
             "settings": {
@@ -199,8 +187,6 @@
           }
         },
         "block_order": [
-          "c3b6a96c-e6eb-445a-8d1b-94983e8bccce",
-          "1369f08a-bbce-4031-8b36-5134abff32ac",
           "05c7f090-5a2f-49b0-9106-c84dd9782e45"
         ],
         "settings": {
