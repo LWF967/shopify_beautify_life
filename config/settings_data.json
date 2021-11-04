@@ -177,6 +177,12 @@
       "footer-top": {
         "type": "footer-top",
         "blocks": {
+          "c3b6a96c-e6eb-445a-8d1b-94983e8bccce": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links"
+            }
+          },
           "footer-top-0": {
             "type": "link_list",
             "settings": {
@@ -238,9 +244,19 @@
               "menu": "footer",
               "container_width": "5"
             }
+          },
+          "e05276be-5274-4aef-9c5f-71087ed08c97": {
+            "type": "menu",
+            "disabled": true,
+            "settings": {
+              "text": "Categories",
+              "menu": "footer",
+              "container_width": "5"
+            }
           }
         },
         "block_order": [
+          "c3b6a96c-e6eb-445a-8d1b-94983e8bccce",
           "footer-top-0",
           "4fd0827b-31b4-4fc2-9169-f7b732203e57",
           "d1be58d0-6f1c-441b-a8af-db72c42a8f0c",
@@ -248,7 +264,8 @@
           "05c7f090-5a2f-49b0-9106-c84dd9782e45",
           "ed5169b9-b5c5-4394-826a-0ef041935f92",
           "09669585-a975-441a-b5f7-96475f409d32",
-          "176970bd-52e9-4925-aaa8-a1e0bce574ce"
+          "176970bd-52e9-4925-aaa8-a1e0bce574ce",
+          "e05276be-5274-4aef-9c5f-71087ed08c97"
         ],
         "settings": {
           "sticky_footer": false,

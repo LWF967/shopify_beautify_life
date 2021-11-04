@@ -190,24 +190,12 @@
             "url": "",
             "open_link": "_blank"
           }
-        },
-        "870d45d2-b723-4be6-83dc-cde5f49be816": {
-          "type": "banner_third",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "header_top": "Head",
-            "url": "",
-            "color": "#fff",
-            "w": 140,
-            "h": 3
-          }
         }
       },
       "block_order": [
         "1635993731cf3dc0c2-0",
         "1635993731cf3dc0c2-1",
-        "1635993731cf3dc0c2-2",
-        "870d45d2-b723-4be6-83dc-cde5f49be816"
+        "1635993731cf3dc0c2-2"
       ],
       "settings": {
         "title": "BANNER",
@@ -299,6 +287,50 @@
         "hide_variants": false,
         "enable_video_looping": false
       }
+    },
+    "1635996418e080b5d8": {
+      "type": "Text-columns-with-images",
+      "blocks": {
+        "1635996418e080b5d8-0": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        },
+        "1635996418e080b5d8-1": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        },
+        "1635996418e080b5d8-2": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1635996418e080b5d8-0",
+        "1635996418e080b5d8-1",
+        "1635996418e080b5d8-2"
+      ],
+      "settings": {
+        "Text_columns_with_images_heading": "Text column with images",
+        "Text_columns_with_images_Text_alignment": "Left"
+      }
     }
   },
   "order": [
@@ -308,6 +340,7 @@
     "1635832448db75c5e7",
     "1635993731cf3dc0c2",
     "1635497923083b4abb",
-    "16359888646f646d27"
+    "16359888646f646d27",
+    "1635996418e080b5d8"
   ]
 }
