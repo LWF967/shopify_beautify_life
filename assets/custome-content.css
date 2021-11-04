@@ -600,6 +600,12 @@ text-decoration:none;
   flex-shrink: 0;
 }
 
+li.grid__item__beautify:not(:nth-child(1)){
+
+
+padding-left:1rem;
+}
+
 .grid__item__featured {
   padding-left: 3rem;
   padding-bottom: 3rem;
@@ -747,8 +753,7 @@ text-decoration:none;
 
 
 .grid__item__beautify {
-  padding-left: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
   max-width: 50%;
   flex-grow: 1;
   flex-shrink: 0;
