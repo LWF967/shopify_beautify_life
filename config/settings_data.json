@@ -186,14 +186,13 @@
           "1369f08a-bbce-4031-8b36-5134abff32ac": {
             "type": "link_list",
             "settings": {
-              "heading": "two"
+              "heading": "two1"
             }
           },
           "05c7f090-5a2f-49b0-9106-c84dd9782e45": {
             "type": "text",
-            "disabled": true,
             "settings": {
-              "text_heading": "Text",
+              "text_heading": "Text1",
               "text_content": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
               "container_width": "5"
             }
