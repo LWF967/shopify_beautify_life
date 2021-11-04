@@ -131,6 +131,20 @@
         "show_page_Dot": true
       }
     },
+    "163454604067313d0f": {
+      "type": "daily-deal-of-the-day",
+      "settings": {
+        "product": "text4",
+        "log_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+        "heading_text": "Daily Deal Of The Day",
+        "heading_font_size": 32,
+        "color_top": "#888888",
+        "countdown_time": "2021\/11\/01",
+        "time_font_size": 32,
+        "background_color": "#f9f9f9",
+        "background_product_color": "#ffffff"
+      }
+    },
     "1635832448db75c5e7": {
       "type": "featured-collection",
       "settings": {
@@ -138,7 +152,7 @@
         "sub_title": "Popular this week",
         "collection": "frontpage",
         "products_to_show": 4,
-        "grid": 2,
+        "grid": 4,
         "show_view_all": true,
         "swipe_on_mobile": true,
         "image_ratio1": "ratio_nt",
@@ -154,20 +168,6 @@
       "type": "contact-form",
       "settings": {
         "heading": "Contact form"
-      }
-    },
-    "163454604067313d0f": {
-      "type": "daily-deal-of-the-day",
-      "settings": {
-        "product": "text4",
-        "log_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-        "heading_text": "Daily Deal Of The Day",
-        "heading_font_size": 32,
-        "color_top": "#888888",
-        "countdown_time": "2021\/11\/01",
-        "time_font_size": 32,
-        "background_color": "#f9f9f9",
-        "background_product_color": "#ffffff"
       }
     },
     "16359888646f646d27": {
@@ -249,9 +249,9 @@
   "order": [
     "16340032987fd8fd82",
     "1635836350c3b72b9b",
+    "163454604067313d0f",
     "1635832448db75c5e7",
     "1635497923083b4abb",
-    "163454604067313d0f",
     "16359888646f646d27"
   ]
 }
