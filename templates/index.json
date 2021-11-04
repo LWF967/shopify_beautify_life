@@ -190,12 +190,23 @@
             "url": "",
             "open_link": "_blank"
           }
+        },
+        "89ccb0ff-9af5-40b2-b28b-dd6df8741490": {
+          "type": "banner_third",
+          "settings": {
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3
+          }
         }
       },
       "block_order": [
         "1635993731cf3dc0c2-0",
         "1635993731cf3dc0c2-1",
-        "1635993731cf3dc0c2-2"
+        "1635993731cf3dc0c2-2",
+        "89ccb0ff-9af5-40b2-b28b-dd6df8741490"
       ],
       "settings": {
         "title": "BANNER",
