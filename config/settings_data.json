@@ -197,6 +197,12 @@
               "container_width": "5"
             }
           },
+          "c103553e-c6b3-4689-9e72-c41f46265130": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links"
+            }
+          },
           "ed5169b9-b5c5-4394-826a-0ef041935f92": {
             "type": "get-in-touch",
             "disabled": true,
@@ -240,6 +246,7 @@
           "c3b6a96c-e6eb-445a-8d1b-94983e8bccce",
           "1369f08a-bbce-4031-8b36-5134abff32ac",
           "05c7f090-5a2f-49b0-9106-c84dd9782e45",
+          "c103553e-c6b3-4689-9e72-c41f46265130",
           "ed5169b9-b5c5-4394-826a-0ef041935f92",
           "09669585-a975-441a-b5f7-96475f409d32",
           "176970bd-52e9-4925-aaa8-a1e0bce574ce",
