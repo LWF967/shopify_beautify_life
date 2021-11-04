@@ -18,6 +18,7 @@
 .my_footer_a_hover { text-decoration: none; display: inline-block; } .my_footer_a_hover:hover { color: {{ section.settings.hover_link_color }}; }
 .my_footer_bgcolor { background: {{ section.settings.background_color }}; }
 .my_footer_heading_color { color: {{ section.settings.heading_color }}; }
+.my_footer_item_width { flex: 0 0 section.blocks.settings.container_width; max-width: 25%; }
 {%- endstyle -%}
 
 <style>
@@ -28,8 +29,6 @@
   .my_footer_margin_top {
   	margin-top: 55px;
   }
-/*       flex: 0 0 25%;
-    max-width: 25%; */
 </style>
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient">
@@ -48,7 +47,7 @@
         -%}
         <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
-            <div class="footer-block grid__item{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+            <div class="footer-block grid__item my_footer_item_width {% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
                 <h2 class="footer-block__heading my_footer_heading_color">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
