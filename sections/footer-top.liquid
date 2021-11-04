@@ -44,14 +44,18 @@
   	padding-left: 30px;
   }
   
-  footer-block__details-content rte .my_footer_p p {
+  .footer-block__details-content rte .my_footer_p p {
   	margin-bottom: 20px
   }
   
-   footer-block__details-content rte .my_footer_p p:last-child {
+  .footer-block__details-content rte .my_footer_p p:last-child {
   	margin-bottom: 0;
   }
   
+  .my_footer_menu_item_margin_bottom li {
+  	margin-bottom: 20px;
+  }
+
   .my_footer_top_padding {
   	padding: 72px 0;
     display: block;
@@ -131,7 +135,7 @@
                   </div>
                 {%- when 'link_list' -%}
                   {%- if block.settings.menu != blank and block.settings.heading != blank -%}
-                    <ul class="footer-block__details-content list-unstyled">
+                    <ul class="footer-block__details-content list-unstyled my_footer_menu_item_margin_bottom">
                       {%- for link in block.settings.menu.links -%}
                         <li>
                           <a href="{{ link.url }}" class="link link--text list-menu__item my_footer_a_hover">
