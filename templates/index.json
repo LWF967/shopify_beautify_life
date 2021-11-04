@@ -190,18 +190,30 @@
             "url": "",
             "open_link": "_blank"
           }
+        },
+        "870d45d2-b723-4be6-83dc-cde5f49be816": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3
+          }
         }
       },
       "block_order": [
         "1635993731cf3dc0c2-0",
         "1635993731cf3dc0c2-1",
-        "1635993731cf3dc0c2-2"
+        "1635993731cf3dc0c2-2",
+        "870d45d2-b723-4be6-83dc-cde5f49be816"
       ],
       "settings": {
         "title": "BANNER",
         "sub_title": "Popular this week",
         "font_top": 30,
-        "color_top": "#888",
+        "color_top": "#888888",
         "grid": 3,
         "show_view_all": false,
         "show_page_Dot": false
