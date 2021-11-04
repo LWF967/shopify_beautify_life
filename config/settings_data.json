@@ -182,7 +182,7 @@
             "settings": {
               "custom_logo_width": 40,
               "heading": "Get in touch",
-              "textarea": "<p><i class=\"my_icon\"><\/i><span>184Main Rd E, St Albans <br> <span class=\"pl__30\">VIC3021, Australia<\/span><\/span><\/p><p><i class=\"my_icon\"><\/i><span> <a href=\"mailto:Giraffly@company.com\">contact@company.com<\/a><\/span><\/p><p><iclass> <span>+1 23456789<\/span><\/iclass><\/p>",
+              "textarea": "<p><i class=\"my_icon\"><\/i><span>184Main Rd E, St Albans <br> <span class=\"pl__30\">VIC3021, Australia<\/span><\/span><\/p><p><i class=\"my_icon\"><\/i><span> <a href=\"mailto:Giraffly@company.com\">contact@company.com<\/a><\/span><\/p><p><i class> <span>+1 23456789<\/span><\/i><\/p>",
               "container_width": "5"
             }
           },
@@ -222,15 +222,15 @@
           "sticky_footer": false,
           "accordions_options_on_mobile": true,
           "border_footer": false,
-          "background_color": "#F2F2F2",
+          "background_color": "#f2f2f2",
           "heading_color": "#333333",
           "text_color": "#797979",
-          "link_color": "#F2F2F2",
-          "hover_link_color": "#E21F4A",
+          "link_color": "#f2f2f2",
+          "hover_link_color": "#e21f4a",
           "newsletter_input_color": "#797979",
           "newsletter_border_color": "#797979",
           "newsletter_button_color": "#000000",
-          "newsletter_button_text_color": "#FFFFFF"
+          "newsletter_button_text_color": "#ffffff"
         }
       }
     },
