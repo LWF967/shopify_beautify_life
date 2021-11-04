@@ -170,6 +170,7 @@
         "1635993731cf3dc0c2-0": {
           "type": "img_top",
           "settings": {
+            "image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
             "header_top": "Head",
             "url": "shopify:\/\/products\/text4",
             "open_link": "_blank"
