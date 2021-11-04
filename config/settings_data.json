@@ -180,28 +180,46 @@
           "05c7f090-5a2f-49b0-9106-c84dd9782e45": {
             "type": "text",
             "settings": {
-              "text_heading": "Text1",
-              "text_content": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
-              "container_width": "5"
+              "heading": "Heading",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+            }
+          },
+          "813890e0-2367-4953-b348-378adfebbfdf": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "e8613138-c13d-4acc-bcbd-7b5c43c0b596": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "a5b028d2-75a1-40e1-b712-effde59bc32b": {
+            "type": "text",
+            "settings": {
+              "heading": "Heading",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
             }
           }
         },
         "block_order": [
-          "05c7f090-5a2f-49b0-9106-c84dd9782e45"
+          "05c7f090-5a2f-49b0-9106-c84dd9782e45",
+          "813890e0-2367-4953-b348-378adfebbfdf",
+          "e8613138-c13d-4acc-bcbd-7b5c43c0b596",
+          "a5b028d2-75a1-40e1-b712-effde59bc32b"
         ],
         "settings": {
-          "sticky_footer": false,
-          "accordions_options_on_mobile": true,
-          "border_footer": false,
-          "background": "#f2f2f2",
-          "heading": "#333333",
-          "text": "#797979",
-          "link": "#f2f2f2",
-          "hover_link": "#e21f4a",
-          "newsletter_input": "#797979",
-          "newsletter_border": "#797979",
-          "newsletter_button": "#000000",
-          "newsletter_button_text": "#ffffff"
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "Subscribe to our emails",
+          "show_social": false,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true
         }
       }
     },
