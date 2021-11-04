@@ -180,29 +180,25 @@
           "footer-top-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Get in touch",
-              "menu": "footer"
+              "heading": "Get in touch"
             }
           },
           "4fd0827b-31b4-4fc2-9169-f7b732203e57": {
             "type": "link_list",
             "settings": {
-              "heading": "Categories",
-              "menu": "footer"
+              "heading": "Categories"
             }
           },
           "d1be58d0-6f1c-441b-a8af-db72c42a8f0c": {
             "type": "link_list",
             "settings": {
-              "heading": "Support",
-              "menu": "footer"
+              "heading": "Support"
             }
           },
           "c9ea766c-20c9-4661-aef2-5b10b726d607": {
             "type": "link_list",
             "settings": {
-              "heading": "Newsletter",
-              "menu": "footer"
+              "heading": "Newsletter"
             }
           }
         },
@@ -213,13 +209,6 @@
           "c9ea766c-20c9-4661-aef2-5b10b726d607"
         ],
         "settings": {
-          "color_scheme": "background-1",
-          "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
-          "show_social": false,
-          "enable_country_selector": true,
-          "enable_language_selector": true,
-          "payment_enable": true
         }
       }
     },

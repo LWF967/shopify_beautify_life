@@ -131,25 +131,6 @@
         "show_page_Dot": true
       }
     },
-    "163454604067313d0f": {
-      "type": "daily-deal-of-the-day",
-      "settings": {
-        "product": "text4",
-        "heading_text": "Daily Deal Of The Day",
-        "heading_font_size": 32,
-        "color_top": "#888888",
-        "countdown_time": "2021\/11\/01",
-        "time_font_size": 32,
-        "background_color": "#f9f9f9",
-        "background_product_color": "#ffffff"
-      }
-    },
-    "1635497923083b4abb": {
-      "type": "contact-form",
-      "settings": {
-        "heading": "Contact form"
-      }
-    },
     "1635832448db75c5e7": {
       "type": "featured-collection",
       "settings": {
@@ -168,13 +149,108 @@
         "show_vendor": false,
         "show_rating": false
       }
+    },
+    "1635497923083b4abb": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form"
+      }
+    },
+    "163454604067313d0f": {
+      "type": "daily-deal-of-the-day",
+      "settings": {
+        "product": "",
+        "log_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+        "heading_text": "Daily Deal Of The Day",
+        "heading_font_size": 32,
+        "color_top": "#888888",
+        "countdown_time": "2021\/11\/01",
+        "time_font_size": 32,
+        "background_color": "#f9f9f9",
+        "background_product_color": "#ffffff"
+      }
+    },
+    "16359888646f646d27": {
+      "type": "featured-product-beautify",
+      "blocks": {
+        "16359888646f646d27-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "16359888646f646d27-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "16359888646f646d27-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "16359888646f646d27-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "16359888646f646d27-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "16359888646f646d27-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "16359888646f646d27-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "16359888646f646d27-7": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "16359888646f646d27-8": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16359888646f646d27-0",
+        "16359888646f646d27-1",
+        "16359888646f646d27-2",
+        "16359888646f646d27-3",
+        "16359888646f646d27-4",
+        "16359888646f646d27-5",
+        "16359888646f646d27-6",
+        "16359888646f646d27-7",
+        "16359888646f646d27-8"
+      ],
+      "settings": {
+        "product": "text4",
+        "secondary_background": false,
+        "show_share_buttons": false,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
     }
   },
   "order": [
     "16340032987fd8fd82",
     "1635836350c3b72b9b",
-    "163454604067313d0f",
+    "1635832448db75c5e7",
     "1635497923083b4abb",
-    "1635832448db75c5e7"
+    "163454604067313d0f",
+    "16359888646f646d27"
   ]
 }
