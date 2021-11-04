@@ -133,6 +133,10 @@
                   <div class="footer-block__details-content rte my_footer_p">
                     {{ block.settings.textarea }}
                   </div>
+                {%- when 'text2' -%}
+                  <div class="footer-block__details-content rte my_footer_p">
+                    {{ block.settings.sub_text }}
+                  </div>
                 {%- when 'link_list' -%}
                   {%- if block.settings.menu != blank and block.settings.heading != blank -%}
                     <ul class="footer-block__details-content list-unstyled my_footer_menu_item_margin_bottom">
