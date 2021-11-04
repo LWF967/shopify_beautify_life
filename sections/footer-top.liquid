@@ -30,6 +30,7 @@
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
+  <div class="my_footer_bgcolor">
     <div class="my_footer_top_padding page-width my_footer_bgcolor">
       {%- if section.blocks.size > 0 -%}
         {%- liquid
@@ -214,6 +215,7 @@
         {%- endif -%}
       </div>
     </div>
+  </div>
   {%- endif -%}
 
   <div class="footer__content-bottom">
