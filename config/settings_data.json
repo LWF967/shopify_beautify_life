@@ -180,31 +180,13 @@
           "c3b6a96c-e6eb-445a-8d1b-94983e8bccce": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links"
+              "heading": "one"
             }
           },
-          "footer-top-0": {
+          "1369f08a-bbce-4031-8b36-5134abff32ac": {
             "type": "link_list",
             "settings": {
-              "heading": "Get in touch"
-            }
-          },
-          "4fd0827b-31b4-4fc2-9169-f7b732203e57": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Categories"
-            }
-          },
-          "d1be58d0-6f1c-441b-a8af-db72c42a8f0c": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Support"
-            }
-          },
-          "c9ea766c-20c9-4661-aef2-5b10b726d607": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Newsletter"
+              "heading": "two"
             }
           },
           "05c7f090-5a2f-49b0-9106-c84dd9782e45": {
@@ -257,10 +239,7 @@
         },
         "block_order": [
           "c3b6a96c-e6eb-445a-8d1b-94983e8bccce",
-          "footer-top-0",
-          "4fd0827b-31b4-4fc2-9169-f7b732203e57",
-          "d1be58d0-6f1c-441b-a8af-db72c42a8f0c",
-          "c9ea766c-20c9-4661-aef2-5b10b726d607",
+          "1369f08a-bbce-4031-8b36-5134abff32ac",
           "05c7f090-5a2f-49b0-9106-c84dd9782e45",
           "ed5169b9-b5c5-4394-826a-0ef041935f92",
           "09669585-a975-441a-b5f7-96475f409d32",
