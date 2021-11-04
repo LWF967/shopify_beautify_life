@@ -213,13 +213,6 @@
           "a5b028d2-75a1-40e1-b712-effde59bc32b"
         ],
         "settings": {
-          "color_scheme": "background-1",
-          "newsletter_enable": true,
-          "newsletter_heading": "Subscribe to our emails",
-          "show_social": false,
-          "enable_country_selector": true,
-          "enable_language_selector": true,
-          "payment_enable": true
         }
       }
     },
