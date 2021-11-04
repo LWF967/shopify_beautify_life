@@ -48,9 +48,10 @@
                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
 
        {%- endif -%}
-        <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class="pa t__0 l__0 r__0 b__0{% if block.settings.url == blank %} pe_none{% endif %}"></a>
+        
         <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{block.settings.color}}">
-          {{block.settings.header_top}}  
+        
+          <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class="pa t__0 l__0 r__0 b__0{% if block.settings.url == blank %} pe_none{% endif %}">  {{block.settings.header_top}}</a>
         </div>
       
       </div>
