@@ -15,7 +15,7 @@
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-.my_footer_a_hover { text-decoration: none } .my_footer_a_hover:hover { color: red; }
+.my_footer_a_hover { text-decoration: none } .my_footer_a_hover:hover { color: {{ section.settings.hover_link_color }}; }
 {%- endstyle -%}
 
 <style>
@@ -531,93 +531,85 @@
     }
   ],
   "settings": [
-    {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "t:sections.footer.settings.color_scheme.options__1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.footer.settings.color_scheme.options__2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.footer.settings.color_scheme.options__3.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.footer.settings.color_scheme.options__4.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.footer.settings.color_scheme.options__5.label"
-        }
-      ],
-      "default": "background-1",
-      "label": "t:sections.footer.settings.color_scheme.label"
-    },
-    {
+     {
       "type": "header",
-      "content": "t:sections.footer.settings.header__1.content",
-      "info": "t:sections.footer.settings.header__1.info"
+      "content": "GENERAL SETTINGS"
     },
     {
       "type": "checkbox",
-      "id": "newsletter_enable",
-      "default": true,
-      "label": "t:sections.footer.settings.newsletter_enable.label"
-    },
-    {
-      "type": "text",
-      "id": "newsletter_heading",
-      "default": "Subscribe to our emails",
-      "label": "t:sections.footer.settings.newsletter_heading.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__2.content",
-      "info": "t:sections.footer.settings.header__2.info"
+      "id": "sticky_footer",
+      "label": "Sticky footer",
+      "default": false
     },
     {
       "type": "checkbox",
-      "id": "show_social",
-      "default": false,
-      "label": "t:sections.footer.settings.show_social.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__3.content",
-      "info": "t:sections.footer.settings.header__4.info"
+      "id": "accordions_options_on_mobile",
+      "label": "Accordions options on mobile",
+      "default": true
     },
     {
       "type": "checkbox",
-      "id": "enable_country_selector",
-      "default": true,
-      "label": "t:sections.footer.settings.enable_country_selector.label"
+      "id": "border_footer",
+      "label": "Border footer",
+      "default": false
     },
     {
       "type": "header",
-      "content": "t:sections.footer.settings.header__5.content",
-      "info": "t:sections.footer.settings.header__6.info"
+      "content": "COLOR"
     },
     {
-      "type": "checkbox",
-      "id": "enable_language_selector",
-      "default": true,
-      "label": "t:sections.footer.settings.enable_language_selector.label"
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#F2F2F2"
     },
     {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__7.content"
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "#333333"
     },
     {
-      "type": "checkbox",
-      "id": "payment_enable",
-      "default": true,
-      "label": "t:sections.footer.settings.payment_enable.label"
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#797979"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link",
+      "default": "#F2F2F2"
+    },
+    {
+      "type": "color",
+      "id": "hover_link_color",
+      "label": "Hover link",
+      "default": "#E21F4A"
+    },
+    {
+      "type": "color",
+      "id": "newsletter_input_color",
+      "label": "Newsletter input",
+      "default": "#797979"
+    },
+    {
+      "type": "color",
+      "id": "newsletter_border_color",
+      "label": "Newsletter border",
+      "default": "#797979"
+    },
+    {
+      "type": "color",
+      "id": "newsletter_button_color",
+      "label": "Newsletter button",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "newsletter_button_text_color",
+      "label": "Newsletter button text",
+      "default": "#FFFFFF"
     }
   ],
   "default": {
