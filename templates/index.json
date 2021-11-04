@@ -172,6 +172,7 @@
     },
     "16359888646f646d27": {
       "type": "featured-product-beautify",
+      "disabled": true,
       "blocks": {
         "16359888646f646d27-0": {
           "type": "text",
