@@ -28,6 +28,7 @@
          url('//at.alicdn.com/t/font_2903696_vrib6au3n8m.woff?t=1636012795082') format('woff'),
          url('//at.alicdn.com/t/font_2903696_vrib6au3n8m.ttf?t=1636012795082') format('truetype');
   }
+  
   .my_icon {
 	padding-right: 9px;
   	font-family: "iconfont" !important;
@@ -38,9 +39,19 @@
     -moz-osx-font-smoothing: grayscale;
     cursor: default;
   }
+  
   .pl__30 {
   	padding-left: 30px;
   }
+  
+  .my_footer_p>p {
+  	margin-bottom: 20px
+  }
+  
+  .my_footer_p>p:last-child {
+  	margin-bottom: 0;
+  }
+  
   .my_footer_top_padding {
   	padding: 72px 0;
     display: block;
@@ -111,11 +122,11 @@
 
               {%- case block.type -%}
                 {%- when 'text' -%}
-                  <div class="footer-block__details-content rte">
+                  <div class="footer-block__details-content rte my_footer_p">
                     {{ block.settings.subtext }}
                   </div>
                 {%- when 'text1' -%}
-                  <div class="footer-block__details-content rte">
+                  <div class="footer-block__details-content rte my_footer_p">
                     {{ block.settings.textarea }}
                   </div>
                 {%- when 'link_list' -%}
