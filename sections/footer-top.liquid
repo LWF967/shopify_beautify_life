@@ -15,7 +15,7 @@
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-.my_footer_a_hover { text-decoration: none } .my_footer_a_hover:hover { color: {{ section.settings.hover_link_color }}; }
+.my_footer_a_hover { text-decoration: none; display: inline-block; } .my_footer_a_hover:hover { color: {{ section.settings.hover_link_color }}; }
 {%- endstyle -%}
 
 <style>
