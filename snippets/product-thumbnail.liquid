@@ -17,6 +17,8 @@
     %}
 {% endcomment %}
 
+<link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
+
 <noscript>
   {%- if media.media_type == 'video' or media.media_type == 'external_video' -%}
     <span class="product__media-icon motion-reduce">{% render 'icon-play' %}</span>
