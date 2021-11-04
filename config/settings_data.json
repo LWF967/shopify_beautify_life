@@ -195,9 +195,10 @@
               "heading": "Support"
             }
           },
-          "3daf12e0-3268-46a3-9cc5-8d41e77aef84": {
-            "type": "newsletter",
+          "c9ea766c-20c9-4661-aef2-5b10b726d607": {
+            "type": "link_list",
             "settings": {
+              "heading": "Newsletter"
             }
           }
         },
@@ -205,21 +206,9 @@
           "footer-top-0",
           "4fd0827b-31b4-4fc2-9169-f7b732203e57",
           "d1be58d0-6f1c-441b-a8af-db72c42a8f0c",
-          "3daf12e0-3268-46a3-9cc5-8d41e77aef84"
+          "c9ea766c-20c9-4661-aef2-5b10b726d607"
         ],
         "settings": {
-          "sticky_footer": false,
-          "accordions_options_on_mobile": true,
-          "border_footer": false,
-          "background": "#F2F2F2",
-          "heading": "#333333",
-          "text": "#797979",
-          "link": "#F2F2F2",
-          "hover_link": "#E21F4A",
-          "newsletter_input": "#797979",
-          "newsletter_border": "#797979",
-          "newsletter_button": "#000000",
-          "newsletter_button_text": "#FFFFFF"
         }
       }
     },
