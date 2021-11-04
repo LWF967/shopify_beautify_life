@@ -70,7 +70,7 @@
   
         {%- when 'img_top' -%} {%- assign image = block.settings.image -%}
            <li class="grid__item__beautify {{ grid_item_width }}" >
-
+			<a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class="{% if block.settings.url == blank %} pe_none{% endif %}">
             <div class="banner_hzoom nt_promotion oh pr">
               {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
@@ -80,10 +80,10 @@
 
                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
               {%- endif -%}
-              <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class="pa t__0 l__0 r__0 b__0{% if block.settings.url == blank %} pe_none{% endif %}"></a>
+    
               <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top}}</div>
             </div>
-
+			 </a>
 
             </li>
       
