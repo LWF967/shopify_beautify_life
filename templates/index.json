@@ -207,7 +207,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
             "header_top": "Head2",
-            "url": "",
+            "url": "shopify:\/\/products\/text4",
             "color": "#fff",
             "w": 140,
             "h": 3
