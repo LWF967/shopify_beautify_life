@@ -31,7 +31,7 @@
      {%- case block.type -%}
 
      {%- when 'banner_third' -%} {%- assign image = block.settings.image -%}
-      <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class="pa t__0 l__0 r__0 b__0{% if block.settings.url == blank %} pe_none{% endif %}">
+      <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class="flex_center  pa t__0 l__0 r__0 b__0{% if block.settings.url == blank %} pe_none{% endif %}">
       <div class="flex_center">
        {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
