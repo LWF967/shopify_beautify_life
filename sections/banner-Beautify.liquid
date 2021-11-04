@@ -34,15 +34,7 @@
       
        {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
-      
-           <div class="flex_center" style="background-image:url( {{ image | img_url: '375x' }}  )">
-
-             <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class="pa t__0 l__0 r__0 b__0{% if block.settings.url == blank %} pe_none{% endif %}"></a>
-           <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{block.settings.color}}">
-             {{block.settings.header_top}}  
-           </div>
-          </div>
-     
+          <div>
       		<img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" 
                  data-src="{{ img_url  }}" 
                  data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" 
@@ -51,7 +43,12 @@
                  alt="{{image.alt}}" 
                  loading="lazy"
                  style="max-width:{{image.width}}px">
-
+      
+           <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class="pa t__0 l__0 r__0 b__0{% if block.settings.url == blank %} pe_none{% endif %}"></a>
+           <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{block.settings.color}}">
+             {{block.settings.header_top}}  
+           </div>
+      	 </div>
          {%- else -%}
 
                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
