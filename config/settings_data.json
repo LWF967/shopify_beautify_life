@@ -200,15 +200,59 @@
             "settings": {
               "heading": "Newsletter"
             }
+          },
+          "05c7f090-5a2f-49b0-9106-c84dd9782e45": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "text_heading": "Text",
+              "text_content": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
+              "container_width": "5"
+            }
+          },
+          "ed5169b9-b5c5-4394-826a-0ef041935f92": {
+            "type": "get-in-touch",
+            "disabled": true,
+            "settings": {
+              "custom_logo_width": 40,
+              "text": "Get in touch",
+              "textarea": "<p><i class=\"pegk pe-7s-map-marker\"> <\/i><span>184Main Rd E, St Albans <br> <span class=\"pl__30\">VIC3021, Australia<\/span><\/span><\/p><p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:Giraffly@company.com\">contact@company.com<\/a><\/span><\/p><p><iclass pe-7s-call> <span>+1 23456789<\/span><\/iclass><\/p>",
+              "container_width": "5"
+            }
+          },
+          "09669585-a975-441a-b5f7-96475f409d32": {
+            "type": "newsletter",
+            "disabled": true,
+            "settings": {
+              "newsletter_design": "1",
+              "newsletter_signup_text": "Newsletter Signup",
+              "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
+              "container_width": "5"
+            }
           }
         },
         "block_order": [
           "footer-top-0",
           "4fd0827b-31b4-4fc2-9169-f7b732203e57",
           "d1be58d0-6f1c-441b-a8af-db72c42a8f0c",
-          "c9ea766c-20c9-4661-aef2-5b10b726d607"
+          "c9ea766c-20c9-4661-aef2-5b10b726d607",
+          "05c7f090-5a2f-49b0-9106-c84dd9782e45",
+          "ed5169b9-b5c5-4394-826a-0ef041935f92",
+          "09669585-a975-441a-b5f7-96475f409d32"
         ],
         "settings": {
+          "sticky_footer": false,
+          "accordions_options_on_mobile": true,
+          "border_footer": false,
+          "background": "#F2F2F2",
+          "heading": "#333333",
+          "text": "#797979",
+          "link": "#F2F2F2",
+          "hover_link": "#E21F4A",
+          "newsletter_input": "#797979",
+          "newsletter_border": "#797979",
+          "newsletter_button": "#000000",
+          "newsletter_button_text": "#FFFFFF"
         }
       }
     },
