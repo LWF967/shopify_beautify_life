@@ -31,7 +31,7 @@
      {%- case block.type -%}
 
      {%- when 'banner_third' -%} {%- assign image = block.settings.image -%}
-
+     <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class="{% if block.settings.url == blank %} pe_none{% endif %}"> 
       <div class="flex_center">
        {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
@@ -51,15 +51,12 @@
        {%- endif -%}
        
         <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{block.settings.color}}">
-         <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class="{% if block.settings.url == blank %} pe_none{% endif %}"> 
            
           {{block.settings.header_top}}
-          
-          </a>
         </div>
       
       </div>
-
+	 </a>
    
     {%- endcase -%}
   {%- endfor -%}
