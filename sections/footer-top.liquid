@@ -18,7 +18,7 @@
 .my_footer_a_hover { text-decoration: none; display: inline-block; } .my_footer_a_hover:hover { color: {{ section.settings.hover_link_color }}; }
 .my_footer_bgcolor { background: {{ section.settings.background_color }}; }
 .my_footer_heading_color { color: {{ section.settings.heading_color }}; }
-.my_footer_item_width { flex: 0 0 section.blocks.settings.container_width; max-width: 25%; }
+.my_footer_item_width { flex: 0 0 {{ section.blocks.settings.container_width }}; max-width: {{ section.blocks.settings.container_width }}; }
 {%- endstyle -%}
 
 <style>
