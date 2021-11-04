@@ -29,7 +29,7 @@
         -%}
         <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
-            <div class="footer-block grid__item{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+            <div class="footer-block grid__item{% if block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
                 <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
@@ -39,18 +39,7 @@
                   <div class="footer-block__details-content rte">
                     {{ block.settings.subtext }}
                   </div>
-                {%- when 'link_list' -%}
-                  {%- if block.settings.menu != blank and block.settings.heading != blank -%}
-                    <ul class="footer-block__details-content list-unstyled">
-                      {%- for link in block.settings.menu.links -%}
-                        <li>
-                          <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
-                            {{ link.title }}
-                          </a>
-                        </li>
-                      {%- endfor -%}
-                    </ul>
-                  {%- endif -%}
+           
                 {%- when 'image' -%}
                   <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
                     {%- if block.settings.image != blank -%}
