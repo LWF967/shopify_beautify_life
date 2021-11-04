@@ -187,14 +187,14 @@
           "813890e0-2367-4953-b348-378adfebbfdf": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "Categories",
               "menu": "footer"
             }
           },
           "e8613138-c13d-4acc-bcbd-7b5c43c0b596": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "Support",
               "menu": "footer"
             }
           },
