@@ -35,18 +35,7 @@
        {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
       
-           <div class="flex_center" style="background-image:url(
-            {%- if image.width >= 105 -%}{{ image | img_url: '105x' }} {%- endif -%}                                        
-            {%- if image.width >= 175 -%}{{ image | img_url: '175x' }} {%- endif -%}                                    
-            {%- if image.width >= 375 -%}{{ image | img_url: '375x' }} {%- endif -%}
-            {%- if image.width >= 750 -%}{{ image | img_url: '750x' }} {%- endif -%}
-            {%- if image.width >= 1100 -%}{{ image | img_url: '1100x' }} {%- endif -%}
-            {%- if image.width >= 1500 -%}{{ image | img_url: '1500x' }} {%- endif -%}
-            {%- if image.width >= 1780 -%}{{ image | img_url: '1780x' }} {%- endif -%}
-            {%- if image.width >= 2000 -%}{{ image | img_url: '2000x' }} {%- endif -%}
-            {%- if image.width >= 3000 -%}{{ image | img_url: '3000x' }} {%- endif -%}
-            {%- if image.width >= 3840 -%}{{ image | img_url: '3840x' }} {%- endif -%}                            
-                                                 )">
+           <div class="flex_center" style="background-image:url( {{ image | img_url: '375x' }}  )">
 
              <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class="pa t__0 l__0 r__0 b__0{% if block.settings.url == blank %} pe_none{% endif %}"></a>
            <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{block.settings.color}}">
