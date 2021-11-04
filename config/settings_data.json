@@ -177,42 +177,60 @@
       "footer-top": {
         "type": "footer-top",
         "blocks": {
-          "05c7f090-5a2f-49b0-9106-c84dd9782e45": {
-            "type": "text",
+          "fb061cbe-47d4-403d-b87b-0319ffb5cd5a": {
+            "type": "text1",
             "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+              "custom_logo_width": 40,
+              "heading": "Get in touch",
+              "textarea": "<p><i class=\"pegk pe-7s-map-marker\"> <\/i><span>184Main Rd E, St Albans <br> <span class=\"pl__30\">VIC3021, Australia<\/span><\/span><\/p><p><i class=\"pegk pe-7s-mail\"><\/i><span> <a href=\"mailto:Giraffly@company.com\">contact@company.com<\/a><\/span><\/p><p><iclass pe-7s-call> <span>+1 23456789<\/span><\/iclass><\/p>",
+              "container_width": "5"
             }
           },
           "813890e0-2367-4953-b348-378adfebbfdf": {
             "type": "link_list",
             "settings": {
               "heading": "Categories",
-              "menu": "footer"
+              "menu": "footer",
+              "container_width": "5"
             }
           },
           "e8613138-c13d-4acc-bcbd-7b5c43c0b596": {
             "type": "link_list",
             "settings": {
               "heading": "Support",
-              "menu": "footer"
+              "menu": "footer",
+              "container_width": "5"
             }
           },
-          "a5b028d2-75a1-40e1-b712-effde59bc32b": {
-            "type": "text",
+          "bf9eb40b-b54b-4d98-90c8-0fadc2035313": {
+            "type": "text2",
             "settings": {
-              "heading": "Heading",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
+              "newsletter_design": "1",
+              "heading": "Newsletter",
+              "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
+              "container_width": "5"
             }
           }
         },
         "block_order": [
-          "05c7f090-5a2f-49b0-9106-c84dd9782e45",
+          "fb061cbe-47d4-403d-b87b-0319ffb5cd5a",
           "813890e0-2367-4953-b348-378adfebbfdf",
           "e8613138-c13d-4acc-bcbd-7b5c43c0b596",
-          "a5b028d2-75a1-40e1-b712-effde59bc32b"
+          "bf9eb40b-b54b-4d98-90c8-0fadc2035313"
         ],
         "settings": {
+          "sticky_footer": false,
+          "accordions_options_on_mobile": true,
+          "border_footer": false,
+          "background_color": "#F2F2F2",
+          "heading_color": "#333333",
+          "text_color": "#797979",
+          "link_color": "#F2F2F2",
+          "hover_link_color": "#E21F4A",
+          "newsletter_input_color": "#797979",
+          "newsletter_border_color": "#797979",
+          "newsletter_button_color": "#000000",
+          "newsletter_button_text_color": "#FFFFFF"
         }
       }
     },
