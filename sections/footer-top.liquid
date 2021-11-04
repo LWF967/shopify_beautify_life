@@ -820,6 +820,8 @@
 }
 {% endschema %}
 <script>
-  let alength = document.getElementsByClassName('my_footer_top_padding page-width my_footer_bgcolor')[0].querySelectorAll('a').length;
-  console.log(alength);
+  let my_link = document.getElementsByClassName('my_footer_top_padding page-width my_footer_bgcolor')[0].querySelectorAll('a').length;
+  for(let i = 0; i < my_link.length; i++) {
+  	my_link.classList.add('my_footer_link_color')；
+  }
 </script>
