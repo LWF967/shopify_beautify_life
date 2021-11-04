@@ -16,6 +16,7 @@
 
 {%- style -%}
 .my_footer_a_hover { text-decoration: none; display: inline-block; } .my_footer_a_hover:hover { color: {{ section.settings.hover_link_color }}; }
+.my_footer_bgcolor { background: {{ section.settings.background_color }}; }
 {%- endstyle -%}
 
 <style>
@@ -28,7 +29,7 @@
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
-    <div class="my_footer_top_padding page-width">
+    <div class="my_footer_top_padding page-width my_footer_bgcolor">
       {%- if section.blocks.size > 0 -%}
         {%- liquid
           if section.blocks.size == 9
