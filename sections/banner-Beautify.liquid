@@ -61,7 +61,7 @@
       {%- for block in section.blocks -%} 
         {%- case block.type -%}
   
-          {%- when 'img_top' -%} {%- assign image = block.settings.image -%}
+        {%- when 'img_top' -%} {%- assign image = block.settings.image -%}
        <li class="grid__item__beautify {{ grid_item_width }}" >
                
         <div class="banner_hzoom nt_promotion oh pr">
@@ -80,8 +80,8 @@
         
         </li>
       
-      {%- endcase -%}
-  {%- endfor -%}
+      	{%- endcase -%}
+  	 {%- endfor -%}
   	    </ul>
   </div>
   
