@@ -206,7 +206,7 @@
           "type": "banner_third",
           "settings": {
             "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "header_top": "Head",
+            "header_top": "Head2",
             "url": "",
             "color": "#fff",
             "w": 140,
@@ -217,7 +217,7 @@
           "type": "banner_third",
           "settings": {
             "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
-            "header_top": "Head",
+            "header_top": "Head3",
             "url": "",
             "color": "#fff",
             "w": 140,
