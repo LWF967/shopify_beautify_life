@@ -594,8 +594,7 @@ text-decoration:none;
 
 
 .grid__item__beautify {
-  padding-left: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 3rem;
   max-width: 50%;
   flex-grow: 1;
   flex-shrink: 0;
