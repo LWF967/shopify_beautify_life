@@ -234,8 +234,9 @@
             "type": "menu",
             "disabled": true,
             "settings": {
-              "text": "Menu",
-              "menu": "footer"
+              "text": "Support",
+              "menu": "footer",
+              "container_width": "5"
             }
           }
         },
