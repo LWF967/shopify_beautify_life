@@ -23,6 +23,11 @@
 .my_footer_p { color: {{ section.settings.text_color }}; }
 .my_footer_p a:hover { color: {{ section.settings.hover_link_color }} !important; }
 .my_footer_border { border-top: 1px solid {{ section.settings.border_color }};  border-bottom: 1px solid {{ section.settings.border_color }}; }
+
+.my_footer_email_search_flex { display: flex; border: 1px solid {{ section.settings.newsletter_border_color }}; overflow: hidden; height: 44px;}
+.my_footer_outemail { flex-grow: 1; max-width: 100%; }
+.my_footer_email {width: 100%; border: none; height: 100%; color: {{ section.settings.newsletter_input_color }}; background: #ffffff; text-align: left; padding-left: 10px;}
+.my_footer_button { border: none; background: {{ section.settings.newsletter_button_color }}; color: {{ section.settings.newsletter_button_text_color }}; width: auto; height: 40px; margin: 1px 2px 1px 0; }
 {%- endstyle -%}
 
 <style>
@@ -194,7 +199,20 @@
                   <div class="footer-block__details-content rte my_footer_p">
                     <p>{{ block.settings.sub_text }}</p>
                     {%- if  block.settings.newsletter_design == '1' -%}
-                      {%- render 'my_newsletter' -%}
+                      <form id="klaviyo_frm_{{section.id}}" class="js_mail_agree mc4wp-form klaviyo_sub_frm pr z_100{%- if settings.ajax_klaviyo and settings.klaviyo_list_id != blank %} nt_ajax_klsp{%- endif -%}" action="//manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET">
+                        <input type="hidden" name="g" value="{{settings.klaviyo_list_id}}">
+                            <div class="mc4wp-form-fields">
+                               <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex {{class}}">
+                                  <div class="{{class_email}} col_email my_footer_outemail"><input class="my_footer_email" type="email" name="email" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
+                                  <div class="{{class_btn}}"><button type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate klaviyo_btn{% if checkbox_mail %} mail_agree pr{% endif %} my_footer_button"><span>SUBSCRIBE</span></button></div>
+                               </div>
+                               {%- if checkbox_mail -%}{%- render 'conditions_mail',html:'p',margin:'mt__15',stt_link:settings.link_mail,sid:sid -%}{%- endif -%}
+                            </div>
+                           <div class="mc4wp-response klaviyo_messages">
+                             <div class="shopify-message success_message dn"><i class="las la-check"></i>{{ 'general.newsletter_form.confirmation' | t }}</div>
+                             <div class="shopify-error error_message dn"></div>
+                           </div>
+                      </form>
                     {%- elsif block.settings.newsletter_design == '2' -%}
                       {%- render 'my_newsletter' -%}
                     {%- elsif block.settings.newsletter_design == '3' -%}
