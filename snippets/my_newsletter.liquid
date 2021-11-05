@@ -57,7 +57,7 @@
 {%- endcase -%}
 
 {%- style -%}
-.my_footer_email_search_flex { display: flex; {% if section.settings.blocks.newsletter_design == '3' or section.settings.blocks.newsletter_design == '4' %}border-radius: 4px;{% endif %} border: 1px solid {{ section.settings.newsletter_border_color }}; overflow: hidden; height: 44px;}
+.my_footer_email_search_flex { display: flex; {% if section.settings.blocks.newsletter_design == 3 or section.settings.blocks.newsletter_design == 4 %}border-radius: 4px;{% endif %} border: 1px solid {{ section.settings.newsletter_border_color }}; overflow: hidden; height: 44px;}
 .my_footer_outemail { flex-grow: 1; max-width: 100%; }
 .my_footer_email {width: 100%; border: none; height: 100%; color: {{ section.settings.newsletter_input_color }}; background: #ffffff; text-align: left; padding-left: 10px;}
 .my_footer_button { border: none; background: {{ section.settings.newsletter_button_color }}; color: {{ section.settings.newsletter_button_text_color }}; width: auto; height: 100%; border-radius: 4px; margin-right: 2px; }
