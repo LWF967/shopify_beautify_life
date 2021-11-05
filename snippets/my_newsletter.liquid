@@ -16,7 +16,7 @@
         <input type="hidden" name="g" value="{{settings.klaviyo_list_id}}">
             <div class="mc4wp-form-fields">
                <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex {{class}}">
-                  <div class="{{class_email}} col_email my_footer_outemail"><input type="email" name="email" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
+                  <div class="{{class_email}} col_email my_footer_outemail"><input class="my_footer_email" type="email" name="email" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
                   <div class="{{class_btn}}"><button type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate klaviyo_btn{% if checkbox_mail %} mail_agree pr{% endif %}"><span>SUBSCRIBE</span></button></div>
                </div>
                {%- if checkbox_mail -%}{%- render 'conditions_mail',html:'p',margin:'mt__15',stt_link:settings.link_mail,sid:sid -%}{%- endif -%}
