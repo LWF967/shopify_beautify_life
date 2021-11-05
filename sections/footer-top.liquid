@@ -22,6 +22,7 @@
 .my_footer_bgcolor.my_footer_margin_top a { color: {{ section.settings.link_color }}; }
 .my_footer_p { color: {{ section.settings.text_color }}; }
 .my_footer_p a:hover { color: {{ section.settings.hover_link_color }} !important; }
+.my_footer_border { border: 1px solid {{ section.settings.border_color }}; }
 {%- endstyle -%}
 
 <style>
@@ -160,7 +161,7 @@
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient my_footer_sticky">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
-  <div class="my_footer_bgcolor my_footer_margin_top">
+  <div class="my_footer_bgcolor my_footer_margin_top {% if section.settings.border_footer %}my_footer_border{% endif %}">
     <div class="my_footer_top_padding page-width my_footer_bgcolor">
       {%- if section.blocks.size > 0 -%}
         {%- liquid
@@ -815,6 +816,12 @@
     {
       "type": "header",
       "content": "COLOR"
+    },
+	{
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#000000"
     },
     {
       "type": "color",
