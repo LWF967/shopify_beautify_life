@@ -199,7 +199,7 @@
           "settings": {
             "header_top": "Head",
             "url": "",
-            "color": "#fff",
+            "color": "#ffffff",
             "w": 140,
             "h": 3,
             "open_link": "_blank"
@@ -210,7 +210,7 @@
           "settings": {
             "header_top": "Head",
             "url": "",
-            "color": "#fff",
+            "color": "#ffffff",
             "w": 140,
             "h": 3,
             "open_link": "_blank"
@@ -221,7 +221,7 @@
           "settings": {
             "header_top": "Head",
             "url": "",
-            "color": "#fff",
+            "color": "#ffffff",
             "w": 140,
             "h": 3,
             "open_link": "_blank"
@@ -239,7 +239,7 @@
         "title": "BANNER",
         "sub_title": "Popular this week",
         "font_top": 30,
-        "color_top": "#888",
+        "color_top": "#888888",
         "grid": 3,
         "show_view_all": false,
         "show_page_Dot": false
@@ -375,7 +375,7 @@
       "settings": {
         "heading": "Blog posts",
         "head_text": "The most exciting news",
-        "blog": "",
+        "blog": "新闻",
         "post_limit": 3,
         "show_image": true,
         "show_date": true,
