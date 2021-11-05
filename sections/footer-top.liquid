@@ -192,7 +192,7 @@
                   </div>
                 {%- when 'text2' -%}
                   <div class="footer-block__details-content rte my_footer_p">
-                    {{ block.settings.sub_text }}
+                    <p>{{ block.settings.sub_text }}</p>
                     {%- render 'my_newsletter',newl_des:block.settings.newl_des,btn_icon:block.settings.btn_icon -%}
                   </div>
                 {%- when 'link_list' -%}
