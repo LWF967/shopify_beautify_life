@@ -68,7 +68,14 @@
       {%- for block in section.blocks -%} 
         {%- case block.type -%}
   
-        {%- when 'img_top' -%} {%- assign image = block.settings.image -%}
+        {%- when 'img_top' -%} 
+      
+      
+      {%- liquid 
+      		assign image1 = block.settings.image1
+      		assign image2 = block.settings.image2
+			assign image3 = block.settings.image3
+      -%}
            <li class="grid__item__beautify {{ grid_item_width }}" >
 
            
@@ -77,9 +84,9 @@
 
               <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1
+                    <div class="swiper-slide">
                   
-                     <a href="{{ block.settings.url }}111" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url == blank %} pe_none{% endif %}">
+                     <a href="{{ block.settings.url1 }}111" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url1 == blank %} pe_none{% endif %}">
 
                     <div style="display: flex;
                     flex-direction: row;
@@ -93,14 +100,14 @@
                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                     {%- endif -%}
                     </div>
-                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top}}</div>
+                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top1}}</div>
 
                      </a>   
                   
                   	</div>
-                    <div class="swiper-slide">Slide 2
+                    <div class="swiper-slide">
                   	 
-                     <a href="{{ block.settings.url }}111" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url == blank %} pe_none{% endif %}">
+                     <a href="{{ block.settings.url2 }}222" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url2 == blank %} pe_none{% endif %}">
 
                     <div style="display: flex;
                     flex-direction: row;
@@ -114,16 +121,16 @@
                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                     {%- endif -%}
                     </div>
-                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top}}</div>
+                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top2}}</div>
 
                      </a> 
                   
                   
                   
                   	</div>
-                    <div class="swiper-slide">Slide 3
+                    <div class="swiper-slide">
                   
-                  	 <a href="{{ block.settings.url }}111" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url == blank %} pe_none{% endif %}">
+                  	 <a href="{{ block.settings.url3 }}333" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url3 == blank %} pe_none{% endif %}">
 
                     <div style="display: flex;
                     flex-direction: row;
@@ -137,7 +144,7 @@
                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                     {%- endif -%}
                     </div>
-                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top}}</div>
+                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top3}}</div>
 
                      </a> 
                   	
