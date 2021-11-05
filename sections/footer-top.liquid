@@ -218,8 +218,8 @@
                          src="{{ block.settings.image | img_url: '400x' }}"
                          alt="{{ block.settings.image.alt | escape }}"
                          loading="lazy"
-                         width="{{ block.settings.image.width }}"
-                         height="{{ block.settings.image.height }}"
+                         width="{{ block.settings.custom_logo_width }}"
+                         height="{{ block.settings.custom_logo_width }}"
                          style="max-width: min(100%, {{ block.settings.image_width }}px);"
                          >
                     {%- else -%}
