@@ -221,7 +221,7 @@
                     <input type="text" value="123">
                     {%- if  block.settings.newsletter_design == '1' -%}
                       <form id="klaviyo_frm_{{section.id}}" class="js_mail_agree mc4wp-form klaviyo_sub_frm pr z_100{%- if settings.ajax_klaviyo and settings.klaviyo_list_id != blank %} nt_ajax_klsp{%- endif -%}" action="//manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET">
-                        <input type="hidden" name="g" value="{{settings.klaviyo_list_id}}">
+<!--                         <input type="hidden" name="g" value="settings.klaviyo_list_id}}"> -->
                             <div class="mc4wp-form-fields">
                                <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex {{class}}">
                                   <div class="{{class_email}} col_email my_footer_outemail"><input class="my_footer_email" type="email" name="email" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
@@ -236,7 +236,7 @@
                       </form>
                     {%- elsif block.settings.newsletter_design == '2' -%}
                       <form id="klaviyo_frm_{{section.id}}" class="js_mail_agree mc4wp-form klaviyo_sub_frm pr z_100{%- if settings.ajax_klaviyo and settings.klaviyo_list_id != blank %} nt_ajax_klsp{%- endif -%}" action="//manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET">
-                        <input type="hidden" name="g" value="{{settings.klaviyo_list_id}}">
+<!--                         <input type="hidden" name="g" value="settings.klaviyo_list_id}}"> -->
                             <div class="mc4wp-form-fields">
                                <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex {{class}}">
                                   <div class="{{class_email}} col_email my_footer_outemail"><input class="my_footer_email" type="email" name="email" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
@@ -251,7 +251,7 @@
                       </form>
                     {%- elsif block.settings.newsletter_design == '3' -%}
                       <form id="klaviyo_frm_{{section.id}}" class="js_mail_agree mc4wp-form klaviyo_sub_frm pr z_100{%- if settings.ajax_klaviyo and settings.klaviyo_list_id != blank %} nt_ajax_klsp{%- endif -%}" action="//manage.kmail-lists.com/subscriptions/subscribe" style="border-radius: 4px;" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET">
-                        <input type="hidden" name="g" value="{{settings.klaviyo_list_id}}">
+<!--                         <input type="hidden" name="g" value="settings.klaviyo_list_id}}"> -->
                             <div class="mc4wp-form-fields">
                                <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex my_footer_newsletter_design_3 {{class}}">
                                   <div class="{{class_email}} col_email my_footer_outemail"><input class="my_footer_email" type="email" name="email" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
@@ -266,7 +266,7 @@
                       </form>
                     {%- elsif block.settings.newsletter_design == '4' -%}
                       <form id="klaviyo_frm_{{section.id}}" class="js_mail_agree mc4wp-form klaviyo_sub_frm pr z_100{%- if settings.ajax_klaviyo and settings.klaviyo_list_id != blank %} nt_ajax_klsp{%- endif -%}" action="//manage.kmail-lists.com/subscriptions/subscribe" style="border-radius: 4px;" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET">
-                        <input type="hidden" name="g" value="{{settings.klaviyo_list_id}}">
+<!--                         <input type="hidden" name="g" value="settings.klaviyo_list_id}}"> -->
                             <div class="mc4wp-form-fields">
                                <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex my_footer_newsletter_design_4 {{class}}">
                                   <div class="{{class_email}} col_email my_footer_outemail"><input class="my_footer_email" type="email" name="email" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
