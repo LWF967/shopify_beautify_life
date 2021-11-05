@@ -19,7 +19,7 @@
 .my_footer_bgcolor { background: {{ section.settings.background_color }}; }
 .my_footer_heading { color: {{ section.settings.heading_color }}; font-size: 18px; margin-bottom: 30px; margin-top: 0; font-weight: 700; }
 .my_footer_item_width { flex: 0 0 {{ section.blocks.settings.container_width }}; max-width: {{ section.blocks.settings.container_width }}; }
-.my_footer_bgcolor.my_footer_margin_top a { color: red; }
+.my_footer_bgcolor.my_footer_margin_top a { color: {{ section.settings.link_color }}; }
 {%- endstyle -%}
 
 <style>
@@ -132,7 +132,7 @@
                   </div>
                 {%- when 'text1' -%}
                   <div class="footer-block__details-content rte my_footer_p">
-                    {{ block.settings.textarea }}-123{{ section.blocks.settings.link_color }}-
+                    {{ block.settings.textarea }}
                   </div>
                 {%- when 'text2' -%}
                   <div class="footer-block__details-content rte my_footer_p">
