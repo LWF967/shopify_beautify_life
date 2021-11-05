@@ -24,10 +24,8 @@
 .my_footer_p a:hover { color: {{ section.settings.hover_link_color }} !important; }
 .my_footer_border { border-top: 1px solid {{ section.settings.border_color }};  border-bottom: 1px solid {{ section.settings.border_color }}; }
 
-.my_footer_email_search_flex { display: flex; border: 1px solid {{ section.settings.newsletter_border_color }}; overflow: hidden; height: 44px;}
-.my_footer_outemail { flex-grow: 1; max-width: 100%; }
-.my_footer_email {width: 100%; border: none; height: 100%; color: {{ section.settings.newsletter_input_color }}; background: #ffffff; text-align: left; padding-left: 10px;}
-.my_footer_button { border: none; background: {{ section.settings.newsletter_button_color }}; color: {{ section.settings.newsletter_button_text_color }}; width: auto; height: 40px; margin: 1px 2px 1px 0; }
+.my_footer_input { height: 44px; color: {{ section.settings.newsletter_input_color }}; border: 1px solid {{ section.settings.newsletter_border_color }}; border-radius: 4px; }
+.my_footer_button { color: {{ section.settings.newsletter_button_text_color }}; background: {{ section.settings.newsletter_button_color }}; border-radius: 4px; height: 40px; margin: 2px 2px 1px 0; width: 30%; }
 {%- endstyle -%}
 
 <style>
@@ -227,7 +225,7 @@
                               id="NewsletterForm--{{ section.id }}"
                               type="email"
                               name="contact[email]"
-                              class="field__input"
+                              class="field__input my_footer_input"
                               value="{{ form.email }}"
                               aria-required="true"
                               autocorrect="off"
@@ -240,7 +238,7 @@
                               {% elsif form.posted_successfully? %}
                                 aria-describedby="ContactFooter-success"
                               {% endif %}
-                              placeholder="Email address"
+                              placeholder="{{ 'newsletter.label' | t }}"
                               required
                             >
                             <label class="field__label" for="NewsletterForm--{{ section.id }}">
@@ -280,7 +278,7 @@
                               {% elsif form.posted_successfully? %}
                                 aria-describedby="ContactFooter-success"
                               {% endif %}
-                              placeholder="Email address"
+                              placeholder="{{ 'newsletter.label' | t }}"
                               required
                             >
                             <label class="field__label" for="NewsletterForm--{{ section.id }}">
@@ -320,7 +318,7 @@
                               {% elsif form.posted_successfully? %}
                                 aria-describedby="ContactFooter-success"
                               {% endif %}
-                              placeholder="Email address"
+                              placeholder="{{ 'newsletter.label' | t }}"
                               required
                             >
                             <label class="field__label" for="NewsletterForm--{{ section.id }}">
@@ -360,7 +358,7 @@
                               {% elsif form.posted_successfully? %}
                                 aria-describedby="ContactFooter-success"
                               {% endif %}
-                              placeholder="Email address"
+                              placeholder="{{ 'newsletter.label' | t }}"
                               required
                             >
                             <label class="field__label" for="NewsletterForm--{{ section.id }}">
