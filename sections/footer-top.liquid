@@ -61,6 +61,10 @@
   	padding: 72px 0;
     display: block;
   }
+  
+  .my_footer_not_margin_bottom {
+    margin-bottom: 0;
+  }
   .my_footer_margin_top {
   	margin-top: 55px;
   }
@@ -108,7 +112,7 @@
             assign footer_grid_class = 'grid--3-col-tablet'
           endif
         -%}
-        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
+        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet my_footer_not_margin_bottom {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
             <div class="footer-block grid__item 
                         {% if block.settings.container_width == '1' %}my_footer_item_width_1
