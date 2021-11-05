@@ -218,6 +218,7 @@
                 {%- when 'text2' -%}
                   <div class="footer-block__details-content rte my_footer_p">
                     <p>{{ block.settings.sub_text }}</p>
+                    <input type="text" value="123">
                     {%- if  block.settings.newsletter_design == '1' -%}
                       <form id="klaviyo_frm_{{section.id}}" class="js_mail_agree mc4wp-form klaviyo_sub_frm pr z_100{%- if settings.ajax_klaviyo and settings.klaviyo_list_id != blank %} nt_ajax_klsp{%- endif -%}" action="//manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET">
                         <input type="hidden" name="g" value="{{settings.klaviyo_list_id}}">
