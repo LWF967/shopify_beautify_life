@@ -164,6 +164,100 @@
         "show_rating": true
       }
     },
+    "163608389212513e57": {
+      "type": "banner-Beautify",
+      "blocks": {
+        "163608389212513e57-0": {
+          "type": "img_top",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
+            "image2": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "image3": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "163608389212513e57-1": {
+          "type": "img_top",
+          "settings": {
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "163608389212513e57-2": {
+          "type": "img_top",
+          "settings": {
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "156f1a45-4a68-4f2f-9ae1-8593da6509d7": {
+          "type": "banner_third",
+          "settings": {
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
+        "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a": {
+          "type": "banner_third",
+          "settings": {
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
+        "9cffad93-dfc5-429d-883f-55d063daab64": {
+          "type": "banner_third",
+          "settings": {
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        }
+      },
+      "block_order": [
+        "163608389212513e57-0",
+        "163608389212513e57-1",
+        "163608389212513e57-2",
+        "156f1a45-4a68-4f2f-9ae1-8593da6509d7",
+        "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a",
+        "9cffad93-dfc5-429d-883f-55d063daab64"
+      ],
+      "settings": {
+        "title": "BANNER",
+        "sub_title": "Popular this week",
+        "font_top": 30,
+        "color_top": "#888",
+        "grid": 3,
+        "show_view_all": false,
+        "show_page_Dot": false
+      }
+    },
     "1635497923083b4abb": {
       "type": "contact-form",
       "settings": {
@@ -295,6 +389,7 @@
     "1635836350c3b72b9b",
     "163454604067313d0f",
     "1635832448db75c5e7",
+    "163608389212513e57",
     "1635497923083b4abb",
     "16359888646f646d27",
     "1635996418e080b5d8"
