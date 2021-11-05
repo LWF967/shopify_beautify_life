@@ -86,6 +86,26 @@
     z-index: -1;
   }
   
+  .my_footer_newsletter_design_2 {
+  	height: 100%; 
+    margin: 0;
+  }
+  
+  .my_footer_newsletter_design_3 {
+  	border-radius: 4px;
+  }
+  
+  .my_footer_newsletter_design_4 {
+  	border-radius: 4px;
+  }
+  
+  .my_footer_newsletter_design_4_button {
+  	border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    margin: 0;
+    height: 100%;
+  }
+  
   .my_footer_item_width_1 {
   	flex: 0 0 100%;
     max-width: 100%;
@@ -219,7 +239,7 @@
                             <div class="mc4wp-form-fields">
                                <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex {{class}}">
                                   <div class="{{class_email}} col_email my_footer_outemail"><input class="my_footer_email" type="email" name="email" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
-                                  <div class="{{class_btn}}"><button style="height: 100%; margin: 0;" type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate klaviyo_btn{% if checkbox_mail %} mail_agree pr{% endif %} my_footer_button"><span>SUBSCRIBE</span></button></div>
+                                  <div class="{{class_btn}}"><button type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate klaviyo_btn{% if checkbox_mail %} mail_agree pr{% endif %} my_footer_button my_footer_newsletter_design_2"><span>SUBSCRIBE</span></button></div>
                                </div>
                                {%- if checkbox_mail -%}{%- render 'conditions_mail',html:'p',margin:'mt__15',stt_link:settings.link_mail,sid:sid -%}{%- endif -%}
                             </div>
@@ -232,9 +252,9 @@
                       <form id="klaviyo_frm_{{section.id}}" class="js_mail_agree mc4wp-form klaviyo_sub_frm pr z_100{%- if settings.ajax_klaviyo and settings.klaviyo_list_id != blank %} nt_ajax_klsp{%- endif -%}" action="//manage.kmail-lists.com/subscriptions/subscribe" style="border-radius: 4px;" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET">
                         <input type="hidden" name="g" value="{{settings.klaviyo_list_id}}">
                             <div class="mc4wp-form-fields">
-                               <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex {{class}}" style="border-radius: 4px;">
+                               <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex my_footer_newsletter_design_3 {{class}}">
                                   <div class="{{class_email}} col_email my_footer_outemail"><input class="my_footer_email" type="email" name="email" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
-                                  <div class="{{class_btn}}"><button style="border-radius: 4px;" type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate klaviyo_btn{% if checkbox_mail %} mail_agree pr{% endif %} my_footer_button"><span>SUBSCRIBE</span></button></div>
+                                  <div class="{{class_btn}}"><button type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate klaviyo_btn{% if checkbox_mail %} mail_agree pr{% endif %} my_footer_button my_footer_newsletter_design_3"><span>SUBSCRIBE</span></button></div>
                                </div>
                                {%- if checkbox_mail -%}{%- render 'conditions_mail',html:'p',margin:'mt__15',stt_link:settings.link_mail,sid:sid -%}{%- endif -%}
                             </div>
@@ -247,9 +267,9 @@
                       <form id="klaviyo_frm_{{section.id}}" class="js_mail_agree mc4wp-form klaviyo_sub_frm pr z_100{%- if settings.ajax_klaviyo and settings.klaviyo_list_id != blank %} nt_ajax_klsp{%- endif -%}" action="//manage.kmail-lists.com/subscriptions/subscribe" style="border-radius: 4px;" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET">
                         <input type="hidden" name="g" value="{{settings.klaviyo_list_id}}">
                             <div class="mc4wp-form-fields">
-                               <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex {{class}}" style="border-radius: 4px;">
+                               <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex my_footer_newsletter_design_4 {{class}}">
                                   <div class="{{class_email}} col_email my_footer_outemail"><input class="my_footer_email" type="email" name="email" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
-                                  <div class="{{class_btn}}"><button style="border-top-left-radius: 4px; border-bottom-left-radius: 4px; margin: 0; height: 100%;" type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate klaviyo_btn{% if checkbox_mail %} mail_agree pr{% endif %} my_footer_button"><span>SUBSCRIBE</span></button></div>
+                                  <div class="{{class_btn}}"><button type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate klaviyo_btn{% if checkbox_mail %} mail_agree pr{% endif %} my_footer_button my_footer_newsletter_design_4_button"><span>SUBSCRIBE</span></button></div>
                                </div>
                                {%- if checkbox_mail -%}{%- render 'conditions_mail',html:'p',margin:'mt__15',stt_link:settings.link_mail,sid:sid -%}{%- endif -%}
                             </div>
