@@ -30,7 +30,7 @@
   {%- when '2' -%}
      <form id="mc4wp-form-{{section.id}}" role="form" action="{%- if settings.ajax_mailChimp -%}{{ settings.action_mailchimp | replace: '/post?u', '/post-json?u' }}{%- else -%}{{ settings.action_mailchimp }}{%- endif -%}" class="js_mail_agree pr z_100 mc4wp-form mc4wp-form-{{section.id}}{%- if settings.ajax_mailChimp and settings.action_mailchimp != blank %} nt_ajax_mcsp{%- endif -%}" method="post">
         <div class="mc4wp-form-fields">
-           <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex {{class}}">
+           <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex {{class}}" style="margin: 0;">
               <div class="{{class_email}} col_email my_footer_outemail"><input class="my_footer_email" type="email" name="EMAIL" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
               <div class="{{class_btn}}"><button type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate{% if checkbox_mail %} mail_agree pr{% endif %} my_footer_button"><span>SUBSCRIBE</span></button></div>
            </div>
