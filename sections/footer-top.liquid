@@ -214,7 +214,7 @@
                            </div>
                       </form>
                     {%- elsif block.settings.newsletter_design == '2' -%}
-                      <form id="klaviyo_frm_{{section.id}}" class="js_mail_agree mc4wp-form klaviyo_sub_frm pr z_100{%- if settings.ajax_klaviyo and settings.klaviyo_list_id != blank %} nt_ajax_klsp{%- endif -%}" action="//manage.kmail-lists.com/subscriptions/subscribe" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET">
+                      <form id="klaviyo_frm_{{section.id}}" class="js_mail_agree mc4wp-form klaviyo_sub_frm pr z_100{%- if settings.ajax_klaviyo and settings.klaviyo_list_id != blank %} nt_ajax_klsp{%- endif -%}" action="//manage.kmail-lists.com/subscriptions/subscribe" style="height: 100%; margin: 0;" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe" method="GET">
                         <input type="hidden" name="g" value="{{settings.klaviyo_list_id}}">
                             <div class="mc4wp-form-fields">
                                <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex {{class}}">
