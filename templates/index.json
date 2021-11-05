@@ -185,18 +185,8 @@
         "163608389212513e57-1": {
           "type": "img_top",
           "settings": {
-            "header_top1": "Head1",
-            "header_top2": "Head2",
-            "header_top3": "Head3",
-            "url1": "",
-            "url2": "",
-            "url3": "",
-            "open_link": "_blank"
-          }
-        },
-        "163608389212513e57-2": {
-          "type": "img_top",
-          "settings": {
+            "image1": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "image2": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
             "header_top1": "Head1",
             "header_top2": "Head2",
             "header_top3": "Head3",
@@ -243,7 +233,6 @@
       "block_order": [
         "163608389212513e57-0",
         "163608389212513e57-1",
-        "163608389212513e57-2",
         "156f1a45-4a68-4f2f-9ae1-8593da6509d7",
         "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a",
         "9cffad93-dfc5-429d-883f-55d063daab64"
