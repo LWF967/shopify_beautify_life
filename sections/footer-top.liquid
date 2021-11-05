@@ -220,7 +220,11 @@
                   </div>
                 {%- when 'text1' -%}
                   <div class="footer-block__details-content rte my_footer_p">
+                    {%- if block.settings.image != blank -%}
+                    123
+                    {%- else -%}
                     {{ block.settings.textarea }}
+                    {%- endif -%}
                   </div>
                 {%- when 'text2' -%}
                   <div class="footer-block__details-content rte my_footer_p">
