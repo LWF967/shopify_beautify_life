@@ -211,10 +211,19 @@
                         {% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
                 {%- if block.type == 'text1' -%}
-              	  {%- if block.settings.image != blank -%}
-                   123
-                  {%- else -%}
-                   <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
+                  {%- if block.settings.image != blank -%}
+                    {%- assign image_size = block.settings.image_width | append: 'x' -%}
+                    <img
+                         srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
+                         src="{{ block.settings.image | img_url: '400x' }}"
+                         alt="{{ block.settings.image.alt | escape }}"
+                         loading="lazy"
+                         width="{{ block.settings.image.width }}"
+                         height="{{ block.settings.image.height }}"
+                         style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                         >
+                    {%- else -%}
+                     <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
                   {%- endif -%}
                 {%- endif -%}
                 {%- else -%}
