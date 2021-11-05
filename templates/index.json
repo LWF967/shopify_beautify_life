@@ -164,89 +164,6 @@
         "show_rating": true
       }
     },
-    "1635993731cf3dc0c2": {
-      "type": "banner-Beautify",
-      "blocks": {
-        "1635993731cf3dc0c2-0": {
-          "type": "img_top",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
-            "header_top": "Head",
-            "url": "shopify:\/\/products\/text4",
-            "open_link": "_blank"
-          }
-        },
-        "1635993731cf3dc0c2-1": {
-          "type": "img_top",
-          "settings": {
-            "header_top": "Head",
-            "url": "",
-            "open_link": "_blank"
-          }
-        },
-        "1635993731cf3dc0c2-2": {
-          "type": "img_top",
-          "settings": {
-            "header_top": "Head",
-            "url": "",
-            "open_link": "_blank"
-          }
-        },
-        "1d523818-2f63-4785-90bb-9b6030286823": {
-          "type": "banner_third",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "header_top": "Head1",
-            "url": "",
-            "color": "#ffffff",
-            "w": 140,
-            "h": 3,
-            "open_link": "_blank"
-          }
-        },
-        "c96f98b5-ebdc-43b4-9327-ead4f3123c67": {
-          "type": "banner_third",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
-            "header_top": "Head2",
-            "url": "shopify:\/\/products\/text4",
-            "color": "#ffffff",
-            "w": 140,
-            "h": 3,
-            "open_link": "_blank"
-          }
-        },
-        "35aa3f0d-1b5c-4b47-b0cc-3a5cc2238a1d": {
-          "type": "banner_third",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "header_top": "Head3",
-            "url": "",
-            "color": "#ffffff",
-            "w": 140,
-            "h": 3,
-            "open_link": "_blank"
-          }
-        }
-      },
-      "block_order": [
-        "1635993731cf3dc0c2-0",
-        "1635993731cf3dc0c2-1",
-        "1635993731cf3dc0c2-2",
-        "1d523818-2f63-4785-90bb-9b6030286823",
-        "c96f98b5-ebdc-43b4-9327-ead4f3123c67",
-        "35aa3f0d-1b5c-4b47-b0cc-3a5cc2238a1d"
-      ],
-      "settings": {
-        "title": "BANNER",
-        "sub_title": "Popular this week",
-        "font_top": 30,
-        "color_top": "#888888",
-        "grid": 3,
-        "show_view_all": false,
-        "show_page_Dot": false
-      }
-    },
     "1635497923083b4abb": {
       "type": "contact-form",
       "settings": {
@@ -378,7 +295,6 @@
     "1635836350c3b72b9b",
     "163454604067313d0f",
     "1635832448db75c5e7",
-    "1635993731cf3dc0c2",
     "1635497923083b4abb",
     "16359888646f646d27",
     "1635996418e080b5d8"
