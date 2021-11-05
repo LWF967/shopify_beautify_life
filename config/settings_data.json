@@ -228,9 +228,10 @@
           "e77533cb-b0b0-4a13-89a5-41d7ee256153"
         ],
         "settings": {
-          "sticky_footer": false,
+          "sticky_footer": true,
           "accordions_options_on_mobile": true,
-          "border_footer": false,
+          "border_footer": true,
+          "border_color": "#8e6767",
           "background_color": "#f2f2f2",
           "heading_color": "#1149fa",
           "text_color": "#38c741",
