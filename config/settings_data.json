@@ -228,10 +228,10 @@
           "text_color": "#38c741",
           "link_color": "#d91616",
           "hover_link_color": "#e709f9",
-          "newsletter_input_color": "#797979",
-          "newsletter_border_color": "#797979",
-          "newsletter_button_color": "#000000",
-          "newsletter_button_text_color": "#ffffff"
+          "newsletter_input_color": "#5ac13f",
+          "newsletter_border_color": "#ea2626",
+          "newsletter_button_color": "#e61b1b",
+          "newsletter_button_text_color": "#564141"
         }
       }
     },
