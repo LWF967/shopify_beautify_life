@@ -92,8 +92,8 @@
                     flex-direction: row;
                     flex-wrap: nowrap;
                     overflow: hidden;">
-                    {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                         <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image.alt}}" style="max-width:{{image.width}}px">
+                    {%- if image1 != blank -%}  {% assign img_url1 = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                         <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image.alt}}" style="max-width:{{image.width}}px">
 
                       {%- else -%}
 
@@ -113,8 +113,8 @@
                     flex-direction: row;
                     flex-wrap: nowrap;
                     overflow: hidden;">
-                    {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                         <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image.alt}}" style="max-width:{{image.width}}px">
+                    {%- if image2 != blank -%}  {% assign img_url2 = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                         <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image2.width}}%20{{image2.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image.alt}}" style="max-width:{{image.width}}px">
 
                       {%- else -%}
 
@@ -136,8 +136,8 @@
                     flex-direction: row;
                     flex-wrap: nowrap;
                     overflow: hidden;">
-                    {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                         <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image.alt}}" style="max-width:{{image.width}}px">
+                    {%- if image3 != blank -%}  {% assign img_url3 = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                         <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image3.width}}%20{{image3.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image.alt}}" style="max-width:{{image.width}}px">
 
                       {%- else -%}
 
@@ -327,26 +327,72 @@
 
        {
          "type": "image_picker",
-         "id": "image",
+         "id": "image1",
+         "label": "Image"
+       },
+	   {
+         "type": "image_picker",
+         "id": "image2",
+         "label": "Image"
+       },
+	   {
+         "type": "image_picker",
+         "id": "image3",
          "label": "Image"
        },
 		
       {
         "type": "text",
-        "id": "header_top",
+        "id": "header_top1",
         "label": {
 
-        "en": "Header"
+        "en": "Header1"
       },
         "default": {
 
-        "en": "Head"
+        "en": "Head1"
+       }
+      },
+	  {
+        "type": "text",
+        "id": "header_top2",
+        "label": {
+
+        "en": "Header2"
+      },
+        "default": {
+
+        "en": "Head2"
        }
       },
 
+	 {
+        "type": "text",
+        "id": "header_top3",
+        "label": {
+
+        "en": "Header3"
+      },
+        "default": {
+
+        "en": "Head3"
+       }
+      },
+
+
        {
-        "label": "Image link ",
-        "id": "url",
+        "label": "Image link1 ",
+        "id": "url1",
+        "type": "url"
+      },
+	  {
+        "label": "Image link2 ",
+        "id": "url2",
+        "type": "url"
+      },
+	 {
+        "label": "Image link3 ",
+        "id": "url3",
         "type": "url"
       },
 
