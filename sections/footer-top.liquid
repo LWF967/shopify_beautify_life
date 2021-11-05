@@ -28,6 +28,7 @@
 .my_footer_input:hover { box-shadow: 0 0 0 0.1rem #797979; }
 .field__input:focus { outline: transparent; box-shadow: 0 0 0 0.1rem #797979; }
 .my_footer_button { color: {{ section.settings.newsletter_button_text_color }}; background: {{ section.settings.newsletter_button_color }}; border-radius: 4px; height: 40px; margin: 2px 2px 1px 0; width: 30%; }
+.my_footer_displaynone { display: none; }
 {%- endstyle -%}
 
 <style>
@@ -251,7 +252,7 @@
                             </button>
                           </div>
                           {%- if form.errors -%}
-                            <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+                            <small class="newsletter-form__message form__message my_footer_displaynone" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
                           {%- endif -%}
                         </div>
                         {%- if form.posted_successfully? -%}
@@ -291,7 +292,7 @@
                             </button>
                           </div>
                           {%- if form.errors -%}
-                            <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+                            <small class="newsletter-form__message form__message my_footer_displaynone" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
                           {%- endif -%}
                         </div>
                         {%- if form.posted_successfully? -%}
@@ -331,7 +332,7 @@
                             </button>
                           </div>
                           {%- if form.errors -%}
-                            <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+                            <small class="newsletter-form__message form__message my_footer_displaynone" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
                           {%- endif -%}
                         </div>
                         {%- if form.posted_successfully? -%}
@@ -371,7 +372,7 @@
                             </button>
                           </div>
                           {%- if form.errors -%}
-                            <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+                            <small class="newsletter-form__message form__message my_footer_displaynone" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
                           {%- endif -%}
                         </div>
                         {%- if form.posted_successfully? -%}
