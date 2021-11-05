@@ -210,7 +210,15 @@
             <div class="footer-block grid__item {% if block.settings.container_width == '1' %}my_footer_item_width_1{% elsif block.settings.container_width == '2' %}my_footer_item_width_2{% elsif block.settings.container_width == '3' %}my_footer_item_width_3{% elsif block.settings.container_width == '4' %}my_footer_item_width_4{% elsif block.settings.container_width == '5' %}my_footer_item_width_5                    {% elsif block.settings.container_width == '6' %}my_footer_item_width_6{% else %}my_footer_item_width_7{% endif %}
                         {% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}123</h2>
+                {%- if block.type == 'text1' -%}
+              	  {%- if block.settings.image != blank -%}
+                   123
+                  {%- else -%}
+                   <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
+                  {%- endif -%}
+                {%- endif -%}
+                {%- else -%}
+                <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
 
               {%- case block.type -%}
