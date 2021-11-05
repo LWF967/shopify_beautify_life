@@ -68,10 +68,18 @@
     margin-bottom: 0;
     padding: 0 50px;
   }
+  
   .my_footer_margin_top {
     box-sizing: border-box;
   	margin-top: 55px;
   }
+  
+  .my_footer_sticky {
+  	position: sticky;
+    bottom: 0;
+    z-index: -1;
+  }
+  
   .my_footer_item_width_1 {
   	flex: 0 0 100%;
     max-width: 100%;
@@ -150,7 +158,7 @@
   }
 </style>
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient">
+<footer class="footer color-{{ section.settings.color_scheme }} gradient my_footer_sticky">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
   <div class="my_footer_bgcolor my_footer_margin_top">
     <div class="my_footer_top_padding page-width my_footer_bgcolor">
