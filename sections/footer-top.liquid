@@ -220,7 +220,7 @@
                          loading="lazy"
                          width="{{ block.settings.custom_logo_width }}"
                          height="{{ block.settings.custom_logo_width }}"
-                         style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                         style="max-width: min(100%, {{ block.settings.image_width }}px); margin-bottom: 30px;"
                          >
                     {%- else -%}
                      <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
@@ -856,7 +856,7 @@
           "type": "range",
           "id": "custom_logo_width",
           "label": "Custom logo width",
-          "default": 40,
+          "default": 80,
           "min": 20,
           "max": 120,
           "step": 1
