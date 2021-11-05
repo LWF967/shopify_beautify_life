@@ -22,7 +22,7 @@
 .my_footer_bgcolor.my_footer_margin_top a { color: {{ section.settings.link_color }}; }
 .my_footer_p { color: {{ section.settings.text_color }}; }
 .my_footer_p a:hover { color: {{ section.settings.hover_link_color }} !important; }
-.my_footer_border { border: 1px solid {{ section.settings.border_color }}; }
+.my_footer_border { border-top: 1px solid {{ section.settings.border_color }};  border-bottom: 1px solid {{ section.settings.border_color }}; }
 {%- endstyle -%}
 
 <style>
