@@ -195,16 +195,16 @@
                     <p>{{ block.settings.sub_text }}</p>
                     {%- if  block.settings.newsletter_design == '1' -%}
                     1
-                      {%- render 'my_newsletter',newl_des:block.settings.newl_des,btn_icon:block.settings.btn_icon -%}
+                      {%- render 'my_newsletter' -%}
                     {%- elsif block.settings.newsletter_design == '2' -%}
                     2
-                      {%- render 'my_newsletter',newl_des:block.settings.newl_des,btn_icon:block.settings.btn_icon -%}
+                      {%- render 'my_newsletter' -%}
                     {%- elsif block.settings.newsletter_design == '3' -%}
                     3
-                      {%- render 'my_newsletter',newl_des:block.settings.newl_des,btn_icon:block.settings.btn_icon -%}
+                      {%- render 'my_newsletter' -%}
                     {%- elsif block.settings.newsletter_design == '4' -%}
                     4
-                      {%- render 'my_newsletter',newl_des:block.settings.newl_des,btn_icon:block.settings.btn_icon -%}
+                      {%- render 'my_newsletter' -%}
                     {%- endif -%}
                   </div>
                 {%- when 'link_list' -%}
