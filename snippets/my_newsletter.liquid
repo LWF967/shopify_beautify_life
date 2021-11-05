@@ -17,7 +17,7 @@
             <div class="mc4wp-form-fields">
                <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex {{class}}">
                   <div class="{{class_email}} col_email my_footer_outemail"><input class="my_footer_email" type="email" name="email" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
-                  <div class="{{class_btn}}"><button type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate klaviyo_btn{% if checkbox_mail %} mail_agree pr{% endif %}"><span>SUBSCRIBE</span></button></div>
+                  <div class="{{class_btn}}"><button type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate klaviyo_btn{% if checkbox_mail %} mail_agree pr{% endif %} my_footer_button"><span>SUBSCRIBE</span></button></div>
                </div>
                {%- if checkbox_mail -%}{%- render 'conditions_mail',html:'p',margin:'mt__15',stt_link:settings.link_mail,sid:sid -%}{%- endif -%}
             </div>
@@ -31,8 +31,8 @@
      <form id="mc4wp-form-{{section.id}}" role="form" action="{%- if settings.ajax_mailChimp -%}{{ settings.action_mailchimp | replace: '/post?u', '/post-json?u' }}{%- else -%}{{ settings.action_mailchimp }}{%- endif -%}" class="js_mail_agree pr z_100 mc4wp-form mc4wp-form-{{section.id}}{%- if settings.ajax_mailChimp and settings.action_mailchimp != blank %} nt_ajax_mcsp{%- endif -%}" method="post">
         <div class="mc4wp-form-fields">
            <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex {{class}}">
-              <div class="{{class_email}} col_email my_footer_outemail"><input type="email" name="EMAIL" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
-              <div class="{{class_btn}}"><button type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate{% if checkbox_mail %} mail_agree pr{% endif %}"><span>SUBSCRIBE</span></button></div>
+              <div class="{{class_email}} col_email my_footer_outemail"><input class="my_footer_email" type="email" name="EMAIL" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
+              <div class="{{class_btn}}"><button type="submit" class="css_add_ld btn_new_icon_{{btn_icon}} w__100 submit-btn truncate{% if checkbox_mail %} mail_agree pr{% endif %} my_footer_button"><span>SUBSCRIBE</span></button></div>
            </div>
              {%- if checkbox_mail -%}{%- render 'conditions_mail',html:'p',margin:'mt__15',stt_link:settings.link_mail,sid:sid -%}{%- endif -%}
         </div>
@@ -44,8 +44,8 @@
         <input type="hidden" name="contact[tags]" value="newsletter">
         <div class="mc4wp-form-fields">
            <div class="signup-newsletter-form row no-gutters pr oh my_footer_email_search_flex {{class}}">
-              <div class="{{class_email}} col_email my_footer_outemail"><input type="email" name="contact[email]" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
-              <div class="{{class_btn}}"><button type="submit" class="btn_new_icon_{{btn_icon}} w__100 submit-btn truncate{% if checkbox_mail %} mail_agree pr{% endif %}"><span>SUBSCRIBE</span></button></div>
+              <div class="{{class_email}} col_email my_footer_outemail"><input class="my_footer_email" type="email" name="contact[email]" placeholder="Email address"  value="{% if customer %}{{ customer.email }}{% endif %}" class="{{class_ip}} input-text" required="required"></div>
+              <div class="{{class_btn}}"><button type="submit" class="btn_new_icon_{{btn_icon}} w__100 submit-btn truncate{% if checkbox_mail %} mail_agree pr{% endif %} my_footer_button"><span>SUBSCRIBE</span></button></div>
            </div>
           {%- if checkbox_mail -%}{%- render 'conditions_mail',html:'p',margin:'mt__15',stt_link:settings.link_mail,sid:sid -%}{%- endif -%}
         </div>
@@ -60,4 +60,5 @@
 .my_footer_email_search_flex { display: flex; border-radius: 4px; background: {{ section.settings.newsletter_input_color }}; border: 1px solid red; overflow: hidden; height: 44px;}
 .my_footer_outemail { flex-grow: 1; max-width: 100%; }
 .my_footer_email {width: 100%; border: none; height: 100%; background: #ffffff; text-align: left; padding-left: 10px;}
+.my_footer_button { border: none; background: black; color: white; width: auto; height: 100%; border-radius: 4px; margin-right: 2px; }
 {%- endstyle -%}
