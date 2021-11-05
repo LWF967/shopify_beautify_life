@@ -122,7 +122,7 @@
                         {% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu
                         {% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
+                <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}{{ section.blocks.settings.link_color }}</h2>
               {%- endif -%}
 
               {%- case block.type -%}
