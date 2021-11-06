@@ -260,9 +260,9 @@
         "settings": {
           "copyrights_layouts": "Two columns",
           "background_color": "#ffffff",
-          "copyrights_text_color": "#797979",
-          "text_color": "#797979",
-          "link_color": "#f2f2f2"
+          "text_color": "#df3838",
+          "link_color": "#000000",
+          "link_hover_color": "#ff0000"
         }
       }
     },
