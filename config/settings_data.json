@@ -259,10 +259,10 @@
         ],
         "settings": {
           "copyrights_layouts": "Two columns",
-          "background_color": "#ffffff",
+          "background_color": "#e2d6d6",
           "text_color": "#df3838",
           "link_color": "#000000",
-          "link_hover_color": "#ff0000"
+          "link_hover_color": "#006bff"
         }
       }
     },
