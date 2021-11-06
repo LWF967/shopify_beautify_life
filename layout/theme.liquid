@@ -117,12 +117,6 @@
           font-size: 1.6rem;
         }
       }
-      <!-- lzx change -->
-      #MainContent {
-    	background: white;
-    	z-index: 999;
-    	margin-bottom: 584px !important;
-      }
     {% endstyle %}
     
 	{% include 'css-variables' %}
@@ -160,7 +154,7 @@
     {% section 'header-zx' %}
 
 
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1" style="background: white;z-index: 999;margin-bottom: 584px !important;">
       {{ content_for_layout }}
     </main>
 
