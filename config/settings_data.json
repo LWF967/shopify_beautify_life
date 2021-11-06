@@ -234,6 +234,16 @@
           "newsletter_button_color": "#000000",
           "newsletter_button_text_color": "#ffffff"
         }
+      },
+      "footer-bottom": {
+        "type": "footer-bottom",
+        "settings": {
+          "copyrights_layouts": "Two columns",
+          "background_color": "#FFFFFF",
+          "copyrights_text_color": "#797979",
+          "text_color": "#797979",
+          "link_color": "#F2F2F2"
+        }
       }
     },
     "content_for_index": [
