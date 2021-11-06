@@ -211,33 +211,13 @@
               "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
               "container_width": "5"
             }
-          },
-          "be46f126-11cc-40cb-a429-b703172a5a5b": {
-            "type": "text2",
-            "settings": {
-              "newsletter_design": "1",
-              "heading": "Newsletter",
-              "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
-              "container_width": "5"
-            }
-          },
-          "0f935540-75c2-41c1-8b28-3c7b3e68eb0b": {
-            "type": "text2",
-            "settings": {
-              "newsletter_design": "1",
-              "heading": "Newsletter",
-              "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
-              "container_width": "5"
-            }
           }
         },
         "block_order": [
           "6f145749-18fc-4c73-a255-f2b306f512ed",
           "813890e0-2367-4953-b348-378adfebbfdf",
           "e8613138-c13d-4acc-bcbd-7b5c43c0b596",
-          "0e03fff2-5f48-4c58-ab83-ce5e1b70e304",
-          "be46f126-11cc-40cb-a429-b703172a5a5b",
-          "0f935540-75c2-41c1-8b28-3c7b3e68eb0b"
+          "0e03fff2-5f48-4c58-ab83-ce5e1b70e304"
         ],
         "settings": {
           "sticky_footer": true,
@@ -245,14 +225,14 @@
           "border_footer": true,
           "border_color": "#8e6767",
           "background_color": "#f2f2f2",
-          "heading_color": "#1149fa",
-          "text_color": "#38c741",
-          "link_color": "#d91616",
-          "hover_link_color": "#e709f9",
-          "newsletter_input_color": "#5ac13f",
-          "newsletter_border_color": "#ea2626",
-          "newsletter_button_color": "#e61b1b",
-          "newsletter_button_text_color": "#564141"
+          "heading_color": "#000000",
+          "text_color": "#797979",
+          "link_color": "#797979",
+          "hover_link_color": "#8bffea",
+          "newsletter_input_color": "#000000",
+          "newsletter_border_color": "#000000",
+          "newsletter_button_color": "#000000",
+          "newsletter_button_text_color": "#000000"
         }
       }
     },
