@@ -117,9 +117,10 @@
           font-size: 1.6rem;
         }
       }
-      
+      <!-- lzx change -->
       #MainContent {
     	background: white;
+    	z-index: 999;
       }
     {% endstyle %}
     
@@ -140,7 +141,11 @@
     
     
     
-    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+      /*lzx change*/
+      console.log(document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight+1);
+    </script>
     
 
   </head>
