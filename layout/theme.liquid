@@ -167,13 +167,12 @@
     <script>
       let my_footer_height = document.getElementById('shopify-section-footer-top').scrollHeight-40+1;
       let main = document.getElementById('MainContent');
-      if({{ section.settings.sticky_footer }} == true) {
+      if({{ 'section.settings.sticky_footer' }} == true) {
         main.style.marginBottom = my_footer_height + "px";
       }
       else {
         main.style.marginBottom = 0 + "px";
       }
-      console.log({{ section.settings.sticky_footer }});
       console.log(my_footer_height);
     </script>
     <script>
