@@ -76,12 +76,12 @@
       </div>
       {%- if section.settings.copyrights_layouts == 'centered' -%}
       <div class="footer__column footer__column--info my_footer_bottom_flex my_footer_bottom_layout_center"> 
-        <div class="footer__copyright caption my_footer_copyright my_footer_bottom_item_flex">
+        <div class="footer__copyright caption my_footer_copyright my_footer_bottom_item_flex my_footer_bottom_item_centered">
           {%- for block in section.blocks -%}
           <small class="copyright__content">{{ block.settings.copyrights_text }}</small>
           {%- endfor -%}
         </div>
-        <div class="my_footer_bottom_item_flex my_footer_svg"> 
+        <div class="my_footer_bottom_item_flex my_footer_svg my_footer_bottom_item_centered"> 
           {%- for block in section.blocks -%}
             {%- assign image = block.settings.trust_image -%}
             {%- if block.settings.source_img == 'Image' and image -%}
