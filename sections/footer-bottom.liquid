@@ -15,9 +15,8 @@
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-a { text-decoration: none; cursor: pointer; }
-a:hover { text-decoration: none; }
-.copyright__content a { color: {{ section.settings.link_color }}; } .copyright__content a:hover { color: {{ section.settings.link_hover_color }}; }
+.copyright__content a { color: {{ section.settings.link_color }}; text-decoration: none; cursor: pointer; } 
+.copyright__content a:hover { color: {{ section.settings.link_hover_color }}; text-decoration: none; }
 {%- endstyle -%}
 
 <style>
