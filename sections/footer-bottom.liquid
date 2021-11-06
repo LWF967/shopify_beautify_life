@@ -31,21 +31,8 @@
   <div class="footer__content-bottom my_footer_bottom_padding">
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__column--info my_footer_bottom_flex">
-        {%- if section.settings.payment_enable -%}
-          <div class="footer__payment">
-            <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
-            <ul class="list list-payment" role="list">
-              {%- for type in shop.enabled_payment_types -%}
-                <li class="list-payment__item">
-                  {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
-                </li>
-              {%- endfor -%}
-            </ul>
-          </div>
-        {%- endif -%}
         <div class="footer__copyright caption my_footer_bottom_margin_top">
-          <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
-          <small class="copyright__content">{{ powered_by_link }}</small>
+          <small class="copyright__content">{{ section.blocks.settings.copyrights_text }}</small>
         </div>
       </div>
     </div>
@@ -116,7 +103,7 @@
         {
           "type": "html",
           "id": "copyrights_text",
-          "default": "© 2021, giraffly2 Powered by Shopify",
+          "default": "© 2021, giraffly2 Powered by Shopify <a>test</a>",
           "label": "Copyrights"
         }
       ]
