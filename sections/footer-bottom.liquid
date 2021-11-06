@@ -21,12 +21,16 @@
   .my_footer_bottom_padding {
   	padding: 16px 0;
   }
+  .my_footer_bottom_flex {
+  	flex-direction: row;
+    justify-content: space-between;
+  }
 </style>
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient">
   <div class="footer__content-bottom my_footer_bottom_padding">
     <div class="footer__content-bottom-wrapper page-width">
-      <div class="footer__column footer__column--info">
+      <div class="footer__column footer__column--info my_footer_bottom_flex">
         {%- if section.settings.payment_enable -%}
           <div class="footer__payment">
             <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
