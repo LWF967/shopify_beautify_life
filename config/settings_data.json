@@ -248,8 +248,8 @@
             "type": "payment",
             "settings": {
               "source_img": "SVG",
-              "svg_height": 40,
-              "svg_list": "amazon_payments"
+              "svg_height": 20,
+              "svg_list": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa"
             }
           }
         },
