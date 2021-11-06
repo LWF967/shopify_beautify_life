@@ -237,12 +237,30 @@
       },
       "footer-bottom": {
         "type": "footer-bottom",
+        "blocks": {
+          "ed055013-d46a-4d42-a26d-8ab6ad2e9c61": {
+            "type": "copyright",
+            "settings": {
+              "copyrights_text": "© 2021, giraffly2 Powered by Shopify"
+            }
+          },
+          "46b8ba71-433b-4b1d-af31-675da9061dac": {
+            "type": "payment",
+            "settings": {
+              "source_img": "Image"
+            }
+          }
+        },
+        "block_order": [
+          "ed055013-d46a-4d42-a26d-8ab6ad2e9c61",
+          "46b8ba71-433b-4b1d-af31-675da9061dac"
+        ],
         "settings": {
           "copyrights_layouts": "Two columns",
-          "background_color": "#FFFFFF",
+          "background_color": "#ffffff",
           "copyrights_text_color": "#797979",
           "text_color": "#797979",
-          "link_color": "#F2F2F2"
+          "link_color": "#f2f2f2"
         }
       }
     },
