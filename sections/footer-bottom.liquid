@@ -47,7 +47,6 @@
           {%- for block in section.blocks -%}
             {%- assign image = block.settings.trust_image -%}
             {%- if block.settings.source_img == 'Image' and image -%}
-          		{{ block.settings.svg_list }}
               <div class="dib"><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{image | img_url:'master'}}" alt="{{image.alt}}"></div>
             {%- elsif block.settings.source_img == 'SVG' and block.settings.svg_list -%}
             {%- assign arr = block.settings.svg_list | remove: ' ' | split: "," -%}
