@@ -15,7 +15,7 @@
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-.copyright__content a { color: red; }
+.copyright__content a { color: {{ section.settings.link_color }}; text-decoration: none; cursor: pointer; } .copyright__content a { color: {{ section.settings.link_color }}; }
 {%- endstyle -%}
 
 <style>
@@ -191,12 +191,6 @@
     },
 	{
       "type": "color",
-      "id": "copyrights_text_color",
-      "label": "Copyrights text",
-      "default": "#797979"
-    },
-	{
-      "type": "color",
       "id": "text_color",
       "label": "Text",
       "default": "#797979"
@@ -205,6 +199,12 @@
       "type": "color",
       "id": "link_color",
       "label": "Link",
+      "default": "#797979"
+    },
+	{
+      "type": "color",
+      "id": "link_hover_color",
+      "label": "Hover Link",
       "default": "#F2F2F2"
     }
   ]
