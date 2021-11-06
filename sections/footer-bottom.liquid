@@ -26,6 +26,10 @@
   	margin-top: 0;
     text-align: left;
     margin-bottom: auto;
+    text-align: left;
+  }
+  .my_footer_svg {
+  	text-align: right;
   }
   .my_footer_bottom_padding {
   	padding: 16px 0;
@@ -49,7 +53,7 @@
           <small class="copyright__content">{{ block.settings.copyrights_text }}</small>
           {%- endfor -%}
         </div>
-        <div class="my_footer_bottom_item_flex"> 
+        <div class="my_footer_bottom_item_flex my_footer_svg"> 
           {%- for block in section.blocks -%}
             {%- assign image = block.settings.trust_image -%}
             {%- if block.settings.source_img == 'Image' and image -%}
