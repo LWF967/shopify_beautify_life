@@ -42,9 +42,9 @@
   <div class="footer__content-bottom my_footer_bottom_padding">
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__column--info my_footer_bottom_flex">
-        <div class="footer__copyright caption my_footer_bottom_margin_top">
+        <div class="footer__copyright caption my_footer_bottom_margin_top my_footer_bottom_item_flex">
           {%- for block in section.blocks -%}
-          <small class="copyright__content my_footer_bottom_item_flex">{{ block.settings.copyrights_text }}</small>
+          <small class="copyright__content">{{ block.settings.copyrights_text }}</small>
           {%- endfor -%}
         </div>
         <div class="my_footer_bottom_item_flex"> 
