@@ -32,9 +32,9 @@
     <div class="footer__content-bottom-wrapper page-width">
       <div class="footer__column footer__column--info my_footer_bottom_flex">
         <div class="footer__copyright caption my_footer_bottom_margin_top">
-          {%- for block in section.blocks -%}
-          <small class="copyright__content">{{ block.settings.copyrights_text }}123</small>
-          {%- endfor -%}
+          {%- if section.blocks.settings.copyrights_text != blank -%}
+          <small class="copyright__content">{{ section.blocks.settings.copyrights_text }}</small>
+          {%- endif -%}
         </div>
       </div>
     </div>
