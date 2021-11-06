@@ -154,12 +154,12 @@
     {% section 'header-zx' %}
 
 <!-- lzx change style="background: white;z-index: 999;" -->
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1" style="background: white;z-index: 999;">
+    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
 <!--   	% section 'footer' %} -->
-    {% section 'footer-top' %}
+<!--     % section 'footer-top' %} -->
     {% section 'footer' %}
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
@@ -167,23 +167,23 @@
 
     <script>
       /*lzx change*/
-      let promo_bar = document.getElementById('shopify-section-promo-bar');
-      let top_bar = document.getElementById('shopify-section-top-bar');
-      let header_zx = document.getElementById('shopify-section-header-zx');
-//       let footer_top = document.getElementById('shopify-section-footer-top');
-      let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight-40+1;
-      let main = document.getElementById('MainContent');
-      let sticky = document.getElementsByClassName('my_footer_sticky');
-      if(sticky.length > 0) {
-        main.style.marginBottom = my_footer_sticky_height + "px";
-//         footer_top.style.height = my_footer_sticky_height + "px";
-  		promo_bar.style.zIndex = 999;
-        top_bar.style.zIndex = 999;
-  		header_zx.style.zIndex = 999;
-      }
-      else {
-        main.style.marginBottom = 0 + "px";
-      }
+//       let promo_bar = document.getElementById('shopify-section-promo-bar');
+//       let top_bar = document.getElementById('shopify-section-top-bar');
+//       let header_zx = document.getElementById('shopify-section-header-zx');
+// //       let footer_top = document.getElementById('shopify-section-footer-top');
+//       let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight-40+1;
+//       let main = document.getElementById('MainContent');
+//       let sticky = document.getElementsByClassName('my_footer_sticky');
+//       if(sticky.length > 0) {
+//         main.style.marginBottom = my_footer_sticky_height + "px";
+// //         footer_top.style.height = my_footer_sticky_height + "px";
+//   		promo_bar.style.zIndex = 999;
+//         top_bar.style.zIndex = 999;
+//   		header_zx.style.zIndex = 999;
+//       }
+//       else {
+//         main.style.marginBottom = 0 + "px";
+//       }
     </script>
     
     <script>
