@@ -198,6 +198,22 @@
       "type": "payment",
       "name": "Payment",
       "settings": [
+		{
+          "type": "select",
+          "id": "source_img",
+          "options": [
+			{
+              "value": "Image",
+              "label": "Image"
+            },
+            {
+              "value": "SVG",
+              "label": "SVG"
+            }
+          ],
+          "default": "Image",
+          "label": "Source IMG"
+        },
         {
           "type": "textarea",
           "id": "copyrights_text",
