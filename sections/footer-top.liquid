@@ -1094,6 +1094,7 @@
   
     for (let i = 0; i < footer_mobile_show.length; i++) {
         footer_mobile_show[i].onclick = function () {
+          footer_h2[i].nextElementSibling.style.display = "block";
             var con = footer_h2[i].nextElementSibling.scrollHeight;
           
 //             if (con.style.height) {
