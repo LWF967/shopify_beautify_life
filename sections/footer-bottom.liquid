@@ -50,6 +50,16 @@
     max-width: 100%;
     text-align: center;
   }
+  
+    @media screen and (max-width: 1024px) {
+    .my_footer_bottom_flex {
+      flex-direction: row;
+      justify-content: space-between;
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
 </style>
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient my_footer_bottom_color">
