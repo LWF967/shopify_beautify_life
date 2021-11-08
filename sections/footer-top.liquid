@@ -318,7 +318,7 @@
                     <i class="my_icon_row"></i>
                   </div>
                 </h2>
-              
+              {%- endif -%}
 
               {%- case block.type -%}
                 {%- when 'text' -%}
@@ -524,7 +524,6 @@
                     {%- endif -%}
                   </div>
                 {%- endcase -%}
-              {%- endif -%}
             </div>
           {%- endfor -%}
         </div>
