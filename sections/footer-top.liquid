@@ -1093,7 +1093,8 @@
 
     for (let i = 0; i < footer_mobile_show.length; i++) {
         footer_mobile_show[i].onclick = function () {
-//             var con = this.parentNode.nextElementSibling;
+            var con = document.getElementsByClassName('my_footer_heading my_fotter_mobile_heading')[i].nextElementSibling;
+          
 //             if (con.style.height) {
           var con1 = false;
             if (con1) {
@@ -1113,7 +1114,7 @@
           console.log(i);
 //           con.style.display = 'block';
 //           con.nextElementSibling.style.display = 'block';
-//           console.log(con);
+          console.log(con);
         }
     }
 </script>
