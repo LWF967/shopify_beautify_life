@@ -545,6 +545,15 @@
                     {%- endif -%}
                   </div>
                 {%- when 'link_list' -%}
+                  {%- if block.settings.heading != blank -%}
+              	    <h2 class="my_footer_heading my_fotter_mobile_heading">
+                      <span>{{- block.settings.heading | escape -}}</span>
+                      <div class="my_footer_mobile_show">
+                        <i class="my_icon_column"></i>
+                        <i class="my_icon_row"></i>
+                      </div>
+              		</h2>
+                  {%- endif -%}
                   {%- if block.settings.menu != blank and block.settings.heading != blank -%}
                     <ul class="footer-block__details-content list-unstyled my_footer_menu_item_margin_bottom">
                       {%- for link in block.settings.menu.links -%}
