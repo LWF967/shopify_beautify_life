@@ -51,7 +51,7 @@
         {%- endif -%}
       </header>
       {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-        <p class="article-card__excerpt rte-width"  data-blog-size=""
+        <p class="article-card__excerpt rte-width"  
           style="    
           text-overflow: ellipsis;
           white-space: break-spaces;
@@ -91,16 +91,3 @@
   }
 </style>
 
-
-<script>
-  
-  var blog_lengtg = document.getElementsByClassName('article-card__excerpt rte-width').length;
-  for(var i=0;i<blog_length;i++){
-  
-  	document.getElementsByClassName('article-card__excerpt rte-width')[0].innerText.length;
-
-  
-  }
-
-
-</script>
