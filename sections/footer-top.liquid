@@ -1072,21 +1072,21 @@
 {% endschema %}
 
 <script>
-    var my_close = document.getElementsByClassName('my_footer_mobile_show');
+    var footer_mobile_show = document.getElementsByClassName('my_footer_mobile_show');
 
-    for (var i = 0; i < my_close.length; i++) {
-        my_close[i].onclick = function () {
-//             var con = this.parentNode.nextElementSibling;
+    for (var i = 0; i < footer_mobile_show.length; i++) {
+        footer_mobile_show[i].onclick = function () {
+            var con = this.parentNode.nextElementSibling;
             if (con.style.height) {
                 this.children[0].style.transform = 'rotate(0deg)';
                 this.children[0].style.opacity = '1';
                 this.children[1].style.transform = 'rotate(90deg)';
-//                 con.style.height = null;
+                con.style.height = null;
             } else {
                 this.children[0].style.transform = 'rotate(180deg)';
                 this.children[0].style.opacity = '0';
                 this.children[1].style.transform = 'rotate(360deg)';
-//                 con.style.height = con.scrollHeight + "px";
+                con.style.height = con.scrollHeight + "px";
             }
         }
     }
