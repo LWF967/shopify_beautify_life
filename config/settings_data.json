@@ -219,14 +219,6 @@
               "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
               "container_width": "5"
             }
-          },
-          "59738577-46ac-455c-b6a9-0609e9a10ed7": {
-            "type": "text",
-            "settings": {
-              "heading": "Text",
-              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
-              "container_width": "5"
-            }
           }
         },
         "block_order": [
@@ -234,8 +226,7 @@
           "813890e0-2367-4953-b348-378adfebbfdf",
           "95516c21-286f-4cb0-804a-b154a39441dd",
           "e8613138-c13d-4acc-bcbd-7b5c43c0b596",
-          "0e03fff2-5f48-4c58-ab83-ce5e1b70e304",
-          "59738577-46ac-455c-b6a9-0609e9a10ed7"
+          "0e03fff2-5f48-4c58-ab83-ce5e1b70e304"
         ],
         "settings": {
           "sticky_footer": false,
