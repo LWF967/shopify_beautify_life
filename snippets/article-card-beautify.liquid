@@ -62,7 +62,7 @@
           max-height: 200px;"
           {%- endif -%} 
            >   
-          {{article.excerpt.size}};222
+          
           
           {%- if article.excerpt.size > 0 and show_short_content -%}
             {{ article.excerpt | strip_html | truncate: 30 }}
