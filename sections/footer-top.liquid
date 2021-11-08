@@ -179,6 +179,11 @@
 	  margin-bottom: 0;
       margin: 0 0;
     }
+    .my_fotter_mobile_heading {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
   }
   @media (min-width: 769px) and (max-width: 1024px) {
 	.my_footer_item_width_1 {
@@ -247,7 +252,7 @@
               {%- if block.settings.heading != blank -%}
                 {%- if block.type == 'text1' -%}
                   {%- if block.settings.image != blank -%}
-                     <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
+                     <h2 class="my_footer_heading my_fotter_mobile_heading">{{- block.settings.heading | escape -}}</h2>
                     {%- assign image_size = block.settings.image_width | append: 'x' -%}
                      <img
                          class="my_footer_img"
@@ -260,13 +265,13 @@
                          style="max-width: min(100%, {{ block.settings.image_width }}px); margin-bottom: 30px;"
                          >
                     {%- else -%}
-                     <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
+                     <h2 class="my_footer_heading my_fotter_mobile_heading">{{- block.settings.heading | escape -}}</h2>
                   {%- endif -%}
                   {%- else -%}
-                  <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
+                  <h2 class="my_footer_heading my_fotter_mobile_heading">{{- block.settings.heading | escape -}}</h2>
                 {%- endif -%}
                 {%- else -%}
-                <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
+                <h2 class="my_footer_heading my_fotter_mobile_heading">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
 
               {%- case block.type -%}
