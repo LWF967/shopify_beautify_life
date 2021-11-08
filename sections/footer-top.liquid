@@ -278,47 +278,47 @@
           {%- for block in section.blocks -%}
             <div class="footer-block grid__item my_footer_mobile_div {% if block.settings.container_width == '1' %}my_footer_item_width_1{% elsif block.settings.container_width == '2' %}my_footer_item_width_2{% elsif block.settings.container_width == '3' %}my_footer_item_width_3{% elsif block.settings.container_width == '4' %}my_footer_item_width_4{% elsif block.settings.container_width == '5' %}my_footer_item_width_5{% elsif block.settings.container_width == '6' %}my_footer_item_width_6{% else %}my_footer_item_width_7{% endif %}
                         {% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
-              {%- if block.settings.heading != blank -%}
-                {%- if block.type == 'text1' -%}
-                  {%- if block.settings.image != blank -%}
-                    {%- assign image_size = block.settings.image_width | append: 'x' -%}
+<!--               %- if block.settings.heading != blank -%}
+                %- if block.type == 'text1' -%}
+                  %- if block.settings.image != blank -%}
+                    %- assign image_size = block.settings.image_width | append: 'x' -%}
                      <img
                          class="my_footer_img"
-                         srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
-                         src="{{ block.settings.image | img_url: '400x' }}"
-                         alt="{{ block.settings.image.alt | escape }}"
+                         srcset= " block.settings.image | img_url: image_size }},  block.settings.image | img_url: image_size, scale: 2 }} 2x"
+                         src=" block.settings.image | img_url: '400x' }}"
+                         alt=" block.settings.image.alt | escape }}"
                          loading="lazy"
-                         width="{{ block.settings.custom_logo_width }}"
-                         height="{{ block.settings.custom_logo_width }}"
-                         style="max-width: min(100%, {{ block.settings.image_width }}px); margin-bottom: 30px;"
+                         width=" block.settings.custom_logo_width }}"
+                         height=" block.settings.custom_logo_width }}"
+                         style="max-width: min(100%,  block.settings.image_width }}px); margin-bottom: 30px;"
                          >
-                    {%- else -%}
+                    %- else -%}
                      <h2 class="my_footer_heading my_fotter_mobile_heading">
-                       <span>{{- block.settings.heading | escape -}}</span>
+                       <span>- block.settings.heading | escape -}}</span>
                        <div class="my_footer_mobile_show">
                          <i class="my_icon_column"></i>
                          <i class="my_icon_row"></i>
                        </div>
                      </h2>
-                  {%- endif -%}
-                  {%- else -%}
+                  %- endif -%}
+                  %- else -%}
                   <h2 class="my_footer_heading my_fotter_mobile_heading">
-                    <span>{{- block.settings.heading | escape -}}</span>
+                    <span>- block.settings.heading | escape -}}</span>
                     <div class="my_footer_mobile_show">
                       <i class="my_icon_column"></i>
                       <i class="my_icon_row"></i>
                     </div>
                   </h2>
-                {%- endif -%}
-                {%- else -%}
+                %- endif -%}
+                %- else -%}
                 <h2 class="my_footer_heading my_fotter_mobile_heading">
-                  <span>{{- block.settings.heading | escape -}}</span>
+                  <span>- block.settings.heading | escape -}}</span>
                   <div class="my_footer_mobile_show">
                     <i class="my_icon_column"></i>
                     <i class="my_icon_row"></i>
                   </div>
                 </h2>
-              {%- endif -%}
+              %- endif -%} -->
 
               {%- case block.type -%}
                 {%- when 'text' -%}
@@ -327,6 +327,39 @@
                   </div>
                 {%- when 'text1' -%}
                   <div class="footer-block__details-content rte my_footer_p">
+                    
+                      {%- if block.settings.heading != blank -%}
+                        {%- if block.settings.image != blank -%}
+                          {%- assign image_size = block.settings.image_width | append: 'x' -%}
+                           <img
+                               class="my_footer_img"
+                               srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
+                               src="{{ block.settings.image | img_url: '400x' }}"
+                               alt="{{ block.settings.image.alt | escape }}"
+                               loading="lazy"
+                               width="{{ block.settings.custom_logo_width }}"
+                               height="{{ block.settings.custom_logo_width }}"
+                               style="max-width: min(100%, {{ block.settings.image_width }}px); margin-bottom: 30px;"
+                               >
+                          {%- else -%}
+                           <h2 class="my_footer_heading my_fotter_mobile_heading">
+                             <span>{{- block.settings.heading | escape -}}</span>
+                             <div class="my_footer_mobile_show">
+                               <i class="my_icon_column"></i>
+                               <i class="my_icon_row"></i>
+                             </div>
+                           </h2>
+                        {%- endif -%}
+                      {%- else -%}
+                      <h2 class="my_footer_heading my_fotter_mobile_heading">
+                        <span>{{- block.settings.heading | escape -}}</span>
+                        <div class="my_footer_mobile_show">
+                          <i class="my_icon_column"></i>
+                          <i class="my_icon_row"></i>
+                        </div>
+                      </h2>
+                    {%- endif -%}
+                    
                     {{ block.settings.textarea }}
                   </div>
                 {%- when 'text2' -%}
