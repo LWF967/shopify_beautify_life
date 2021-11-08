@@ -66,7 +66,7 @@
           
           {%- if article.excerpt.size > 0 and show_short_content -%}
             {{ article.excerpt | strip_html | truncate: 30 }}
-          {%- elsif article.excerpt.size > 0 and show_short_content === false -%}
+          {%- elsif article.excerpt.size > 0 and show_short_content == false -%}
             {{ article.content | strip_html }}
           {%- else -%}
           	{{ article.content | strip_html | truncate: 30 }}
