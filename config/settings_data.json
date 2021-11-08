@@ -192,7 +192,15 @@
             "settings": {
               "heading": "Categories",
               "menu": "footer",
-              "container_width": "5"
+              "container_width": "7"
+            }
+          },
+          "95516c21-286f-4cb0-804a-b154a39441dd": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Menu",
+              "menu": "footer",
+              "container_width": "7"
             }
           },
           "e8613138-c13d-4acc-bcbd-7b5c43c0b596": {
@@ -200,7 +208,7 @@
             "settings": {
               "heading": "Support",
               "menu": "footer",
-              "container_width": "5"
+              "container_width": "7"
             }
           },
           "0e03fff2-5f48-4c58-ab83-ce5e1b70e304": {
@@ -216,6 +224,7 @@
         "block_order": [
           "6f145749-18fc-4c73-a255-f2b306f512ed",
           "813890e0-2367-4953-b348-378adfebbfdf",
+          "95516c21-286f-4cb0-804a-b154a39441dd",
           "e8613138-c13d-4acc-bcbd-7b5c43c0b596",
           "0e03fff2-5f48-4c58-ab83-ce5e1b70e304"
         ],
