@@ -161,7 +161,8 @@
       width: 100%;
     }
     .my_footer_p,
-    .my_footer_menu_item_margin_bottom {
+    .my_footer_menu_item_margin_bottom,
+    .my_footer_img{
       display: none;
     }
   }
@@ -235,6 +236,7 @@
                      <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
                     {%- assign image_size = block.settings.image_width | append: 'x' -%}
                      <img
+                         class="my_footer_img"
                          srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
                          src="{{ block.settings.image | img_url: '400x' }}"
                          alt="{{ block.settings.image.alt | escape }}"
