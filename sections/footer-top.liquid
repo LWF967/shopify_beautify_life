@@ -97,6 +97,10 @@
     max-width: 100% !important;
   }
   
+  .my_footer_hide_heading {
+  	display: none;
+  }
+  
   .my_footer_newsletter_design_2 {
   	height: 100%; 
     margin: 0 0;
@@ -212,6 +216,9 @@
     .my_footer_mobile_show {
       display: block;
     }
+    .my_footer_hide_heading {
+      display: block;
+    }
     
   }
   @media (min-width: 769px) and (max-width: 1024px) {
@@ -294,23 +301,13 @@
                   </div>
                 {%- when 'text1' -%}
               	  {%- if block.settings.heading != blank -%}
-              		{%- if block.settings.image != blank -%}
-                      <h2 class="my_footer_heading my_fotter_mobile_heading" style="display: none;">
-                        <span>{{- block.settings.heading | escape -}}</span>
-                        <div class="my_footer_mobile_show">
-                          <i class="my_icon_column"></i>
-                          <i class="my_icon_row"></i>
-                        </div>
-                      </h2>
-                     {%- else -%}
-              		   <h2 class="my_footer_heading my_fotter_mobile_heading">
-                        <span>{{- block.settings.heading | escape -}}</span>
-                        <div class="my_footer_mobile_show">
-                          <i class="my_icon_column"></i>
-                          <i class="my_icon_row"></i>
-                        </div>
-                       </h2>
-                     {%- endif -%}
+                    <h2 class="my_footer_heading my_fotter_mobile_heading {% if block.settings.image != blank %}my_footer_hide_heading{% endif %}">
+                      <span>{{- block.settings.heading | escape -}}</span>
+                      <div class="my_footer_mobile_show">
+                        <i class="my_icon_column"></i>
+                        <i class="my_icon_row"></i>
+                      </div>
+                    </h2>
                   {%- endif -%}
                   <div class="footer-block__details-content rte my_footer_p">
                         {%- if block.settings.image != blank -%}
