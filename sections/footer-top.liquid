@@ -295,6 +295,7 @@
                 {%- when 'text1' -%}
                   <div class="footer-block__details-content rte my_footer_p">
                       {%- if block.settings.heading != blank -%}
+                    1
                         {%- if block.settings.image != blank -%}
                           {%- assign image_size = block.settings.image_width | append: 'x' -%}
                            <img
@@ -316,6 +317,7 @@
                              </div>
                            </h2>
                         {%- endif -%}
+                    2
                       {%- endif -%}
                     
                     {{ block.settings.textarea }}
