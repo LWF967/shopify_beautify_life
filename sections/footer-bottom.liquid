@@ -55,7 +55,7 @@
 <footer class="footer color-{{ section.settings.color_scheme }} gradient my_footer_bottom_color">
   <div class="footer__content-bottom my_footer_bottom_padding">
     <div class="footer__content-bottom-wrapper page-width">
-      {%- if section.settings.copyrights_layouts == 'twocolumns' -%}
+      {%- if section.settings.copyrights_layouts != 'centered' -%}
       <div class="footer__column footer__column--info my_footer_bottom_flex"> 
         <div class="footer__copyright caption my_footer_copyright my_footer_bottom_item_flex">
           {%- for block in section.blocks -%}
@@ -231,11 +231,11 @@
           "label": "Centered"
         },
         {
-          "value": "twocolumns",
+          "value": "Two columns",
           "label": "Two columns"
         }
       ],
-      "default": "twocolumns",
+      "default": "Two columns",
       "label": "Copyrights layouts"
     },
 	{
