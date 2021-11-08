@@ -252,7 +252,10 @@
               {%- if block.settings.heading != blank -%}
                 {%- if block.type == 'text1' -%}
                   {%- if block.settings.image != blank -%}
-                     <h2 class="my_footer_heading my_fotter_mobile_heading">{{- block.settings.heading | escape -}}</h2>
+                     <h2 class="my_footer_heading my_fotter_mobile_heading">
+                       <span>{{- block.settings.heading | escape -}}</span>
+                       <span>+</span>
+                     </h2>
                     {%- assign image_size = block.settings.image_width | append: 'x' -%}
                      <img
                          class="my_footer_img"
@@ -265,13 +268,22 @@
                          style="max-width: min(100%, {{ block.settings.image_width }}px); margin-bottom: 30px;"
                          >
                     {%- else -%}
-                     <h2 class="my_footer_heading my_fotter_mobile_heading">{{- block.settings.heading | escape -}}</h2>
+                     <h2 class="my_footer_heading my_fotter_mobile_heading">
+                       <span>{{- block.settings.heading | escape -}}</span>
+                       <span>+</span>
+                     </h2>
                   {%- endif -%}
                   {%- else -%}
-                  <h2 class="my_footer_heading my_fotter_mobile_heading">{{- block.settings.heading | escape -}}</h2>
+                  <h2 class="my_footer_heading my_fotter_mobile_heading">
+                    <span>{{- block.settings.heading | escape -}}</span>
+                    <span>+</span>
+                  </h2>
                 {%- endif -%}
                 {%- else -%}
-                <h2 class="my_footer_heading my_fotter_mobile_heading">{{- block.settings.heading | escape -}}</h2>
+                <h2 class="my_footer_heading my_fotter_mobile_heading">
+                  <span>{{- block.settings.heading | escape -}}</span>
+                  <span>+</span>
+                </h2>
               {%- endif -%}
 
               {%- case block.type -%}
