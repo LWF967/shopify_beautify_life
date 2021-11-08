@@ -64,9 +64,11 @@
             {{ article.content | strip_html | truncatewords: 20 }}
           {%- endif -%}
           
-          {{blog.url}}
+  
 
-          
+          <a href=" {{blog.url}}" class="button" aria-label="View all products in the 主页 collection">
+     read more
+      </a>
    
         </p>
       {%- endif -%}
