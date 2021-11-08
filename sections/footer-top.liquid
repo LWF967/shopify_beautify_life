@@ -92,6 +92,10 @@
   	margin: 0 0;
   }
   
+  .my_footer_email_width {
+    max-width: 100%;
+  }
+  
   .my_footer_newsletter_design_2 {
   	height: 100%; 
     margin: 0 0;
@@ -255,7 +259,7 @@
                     {%- if  block.settings.newsletter_design == '1' -%}
                       {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form my_form_margin0' -%}
                         <input type="hidden" name="contact[tags]" value="newsletter">
-                        <div class="newsletter-form__field-wrapper">
+                        <div class="newsletter-form__field-wrapper my_footer_email_width">
                           <div class="field">
                             <input
                               id="NewsletterForm--{{ section.id }}"
@@ -295,7 +299,7 @@
                     {%- elsif block.settings.newsletter_design == '2' -%}
                       {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form my_form_margin0' -%}
                         <input type="hidden" name="contact[tags]" value="newsletter">
-                        <div class="newsletter-form__field-wrapper">
+                        <div class="newsletter-form__field-wrapper my_footer_email_width">
                           <div class="field">
                             <input
                               id="NewsletterForm--{{ section.id }}"
@@ -335,7 +339,7 @@
                     {%- elsif block.settings.newsletter_design == '3' -%}
                       {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form my_form_margin0' -%}
                         <input type="hidden" name="contact[tags]" value="newsletter">
-                        <div class="newsletter-form__field-wrapper">
+                        <div class="newsletter-form__field-wrapper my_footer_email_width">
                           <div class="field">
                             <input
                               id="NewsletterForm--{{ section.id }}"
@@ -375,7 +379,7 @@
                     {%- elsif block.settings.newsletter_design == '4' -%}
                       {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form my_form_margin0' -%}
                         <input type="hidden" name="contact[tags]" value="newsletter">
-                        <div class="newsletter-form__field-wrapper">
+                        <div class="newsletter-form__field-wrapper my_footer_email_width">
                           <div class="field">
                             <input
                               id="NewsletterForm--{{ section.id }}"
@@ -457,7 +461,7 @@
             {%- endif -%}
             {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form my_form_margin0' -%}
               <input type="hidden" name="contact[tags]" value="newsletter">
-              <div class="newsletter-form__field-wrapper">
+              <div class="newsletter-form__field-wrapper my_footer_email_width">
                 <div class="field">
                   <input
                     id="NewsletterForm--{{ section.id }}"
