@@ -51,7 +51,7 @@
         {%- endif -%}
       </header>
       {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-        <p class="article-card__excerpt rte-width" 
+        <p class="article-card__excerpt rte-width"  data-blog-size=""
           style="    
           text-overflow: ellipsis;
           white-space: break-spaces;
@@ -59,7 +59,7 @@
           max-height: 200px;">   
           
           {%- if article.excerpt.size > 0 -%}
-            {{ article.excerpt | strip_html | truncatewords: 20 }}
+            {{ article.excerpt | strip_html | truncate: 20 }}
           {%- else -%}
             {{ article.content | strip_html | truncatewords: 20 }}
           {%- endif -%}
@@ -90,3 +90,17 @@
   text-align:center;
   }
 </style>
+
+
+<script>
+  
+  var blog_lengtg = document.getElementsByClassName('article-card__excerpt rte-width').length;
+  for(var i=0;i<blog_length;i++){
+  
+  	document.getElementsByClassName('article-card__excerpt rte-width')[0].innerText.length;
+
+  
+  }
+
+
+</script>
