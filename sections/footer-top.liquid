@@ -1090,10 +1090,11 @@
 
 <script>
     var footer_mobile_show = document.getElementsByClassName('my_footer_mobile_show');
-
+	var footer_h2 = document.getElementsByClassName('my_footer_heading my_fotter_mobile_heading');
+  
     for (let i = 0; i < footer_mobile_show.length; i++) {
         footer_mobile_show[i].onclick = function () {
-            var con = document.getElementsByClassName('my_footer_heading my_fotter_mobile_heading')[i].nextElementSibling.scrollHeight;
+            var con = footer_h2[i].nextElementSibling.scrollHeight;
           
 //             if (con.style.height) {
           var con1 = false;
