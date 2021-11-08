@@ -171,6 +171,10 @@
       flex-wrap: wrap;
       padding-bottom: 72px;
     }
+    .my_footer_mobile_div {
+      flex: 0 0 100%;
+	  margin-bottom: 0;
+    }
   }
   @media (min-width: 769px) and (max-width: 1024px) {
 	.my_footer_item_width_1 {
@@ -234,7 +238,7 @@
         -%}
         <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet my_footer_padding_margin {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
-            <div class="footer-block grid__item {% if block.settings.container_width == '1' %}my_footer_item_width_1{% elsif block.settings.container_width == '2' %}my_footer_item_width_2{% elsif block.settings.container_width == '3' %}my_footer_item_width_3{% elsif block.settings.container_width == '4' %}my_footer_item_width_4{% elsif block.settings.container_width == '5' %}my_footer_item_width_5{% elsif block.settings.container_width == '6' %}my_footer_item_width_6{% else %}my_footer_item_width_7{% endif %}
+            <div class="footer-block grid__item my_footer_mobile_div {% if block.settings.container_width == '1' %}my_footer_item_width_1{% elsif block.settings.container_width == '2' %}my_footer_item_width_2{% elsif block.settings.container_width == '3' %}my_footer_item_width_3{% elsif block.settings.container_width == '4' %}my_footer_item_width_4{% elsif block.settings.container_width == '5' %}my_footer_item_width_5{% elsif block.settings.container_width == '6' %}my_footer_item_width_6{% else %}my_footer_item_width_7{% endif %}
                         {% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
                 {%- if block.type == 'text1' -%}
