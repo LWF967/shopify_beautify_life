@@ -58,6 +58,9 @@
             {{ article.content | strip_html | truncatewords: 30 }}
           {%- endif -%}
           
+          {{blog}}
+          {{article}}
+          {{show_image}}
           
           {% for blog in blogs %}
             {{ blog.title }}
