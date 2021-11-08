@@ -154,30 +154,29 @@
     padding-bottom: 72px;
   }
   
-  
-      .my_footer_mobile_show {
-      display: none;
-      position: relative;
-      width: 20px;
-      height: 20px;
-      text-align: center;
-      transition: all .5s;
-    }
-    .my_icon_column,
-    .my_icon_row {
-      position: absolute;
-      top: 10px;
-      left: 5px;
-      width: 10px;
-      border: 1px solid black;
-    }
-  	.my_icon_column {
-      transition: all .5s;
-    }
-    .my_icon_row {
-      transform: rotate(90deg);
-      transition: all .5s;
-    }
+  .my_footer_mobile_show {
+    display: none;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    transition: all .5s;
+  }
+  .my_icon_column,
+  .my_icon_row {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 10px;
+    border: 1px solid black;
+  }
+  .my_icon_column {
+    transition: all .5s;
+  }
+  .my_icon_row {
+    transform: rotate(90deg);
+    transition: all .5s;
+  }
   
   @media (min-width: 0px) and (max-width: 768px) {
     .my_footer_padding_margin {
@@ -1086,7 +1085,7 @@
 
     for (let i = 0; i < footer_mobile_show.length; i++) {
         footer_mobile_show[i].onclick = function () {
-//             var con = this.parentNode.nextElementSibling;
+            var con = this.parentNode.nextElementSibling;
 //             if (con.style.height) {
             if (true) {
                 this.children[0].style.transform = 'rotate(0deg)';
@@ -1102,6 +1101,7 @@
 //                 con.style.height = con.scrollHeight + "px";
             }
           console.log(i);
+          console.log(con);
         }
     }
 </script>
