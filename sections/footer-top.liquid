@@ -307,14 +307,6 @@
                          height="{{ block.settings.custom_logo_width }}"
                          style="max-width: min(100%, {{ block.settings.image_width }}px); margin-bottom: 30px;"
                          >
-                    {%- else -%}
-                     <h2 class="my_footer_heading my_fotter_mobile_heading">
-                       <span>{{- block.settings.heading | escape -}}</span>
-                       <div class="my_footer_mobile_show">
-                         <i class="my_icon_column"></i>
-                         <i class="my_icon_row"></i>
-                       </div>
-                     </h2>
                     {%- endif -%}
                     {{ block.settings.textarea }}
                   </div>
