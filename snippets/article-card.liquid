@@ -59,9 +59,9 @@
           max-height: 200px;">   
           
           {%- if article.excerpt.size > 0 -%}
-            {{ article.excerpt | strip_html | truncatewords: 30 }}
+            {{ article.excerpt | strip_html | truncatewords: 20 }}
           {%- else -%}
-            {{ article.content | strip_html | truncatewords: 30 }}
+            {{ article.content | strip_html | truncatewords: 20 }}
           {%- endif -%}
           
           {{blog.url}}
