@@ -232,8 +232,9 @@
               {%- if block.settings.heading != blank -%}
                 {%- if block.type == 'text1' -%}
                   {%- if block.settings.image != blank -%}
+                     <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
                     {%- assign image_size = block.settings.image_width | append: 'x' -%}
-                    <img
+                     <img
                          srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
                          src="{{ block.settings.image | img_url: '400x' }}"
                          alt="{{ block.settings.image.alt | escape }}"
@@ -242,7 +243,6 @@
                          height="{{ block.settings.custom_logo_width }}"
                          style="max-width: min(100%, {{ block.settings.image_width }}px); margin-bottom: 30px;"
                          >
-                    <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
                     {%- else -%}
                      <h2 class="my_footer_heading">{{- block.settings.heading | escape -}}</h2>
                   {%- endif -%}
