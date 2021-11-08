@@ -187,18 +187,19 @@
               "container_width": "5"
             }
           },
+          "87fd5e97-141d-488f-b1b2-2d718b641982": {
+            "type": "text1",
+            "settings": {
+              "custom_logo_width": 54,
+              "heading": "Get in touch",
+              "textarea": "<p><i class=\"my_icon\"><\/i><span>184Main Rd E, St Albans <br> <span class=\"pl__30\">VIC3021, Australia<\/span><\/span><\/p><p><i class=\"my_icon\"><\/i><span> <a href=\"mailto:Giraffly@company.com\">contact@company.com<\/a><\/span><\/p><p><i class=\"my_icon\"><\/i><span>+1 23456789<\/span><\/p>",
+              "container_width": "7"
+            }
+          },
           "813890e0-2367-4953-b348-378adfebbfdf": {
             "type": "link_list",
             "settings": {
               "heading": "Categories",
-              "menu": "footer",
-              "container_width": "7"
-            }
-          },
-          "95516c21-286f-4cb0-804a-b154a39441dd": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Menu",
               "menu": "footer",
               "container_width": "7"
             }
@@ -223,8 +224,8 @@
         },
         "block_order": [
           "6f145749-18fc-4c73-a255-f2b306f512ed",
+          "87fd5e97-141d-488f-b1b2-2d718b641982",
           "813890e0-2367-4953-b348-378adfebbfdf",
-          "95516c21-286f-4cb0-804a-b154a39441dd",
           "e8613138-c13d-4acc-bcbd-7b5c43c0b596",
           "0e03fff2-5f48-4c58-ab83-ce5e1b70e304"
         ],
