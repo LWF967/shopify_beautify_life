@@ -185,8 +185,25 @@
       justify-content: space-between;
     }
     .my_footer_mobile_show {
-      
-    } 
+      display: none;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      transition: all .5s;
+    }
+    .column,
+    .row {
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      width: 10px;
+      border: 1px solid black;
+      transition: all .5s;
+    }
+    .row {
+      transform: rotate(90deg);
+    }
   }
   @media (min-width: 769px) and (max-width: 1024px) {
 	.my_footer_item_width_1 {
