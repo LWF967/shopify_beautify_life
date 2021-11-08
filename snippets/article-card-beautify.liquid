@@ -9,7 +9,7 @@
     - show_author: {String} The setting either show the article author or not. If it's not included it will not show the author by default
 
     Usage:
-    {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
+    {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image,show_title: section.settings.show_title,show_short_content: section.settings.show_short_content, %}
 {% endcomment %}
 
 <article class="article-card{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
