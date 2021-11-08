@@ -1072,10 +1072,10 @@
 {% endschema %}
 
 <script>
-    var close = document.getElementsByClassName('my_footer_mobile_show');
+    var my_close = document.getElementsByClassName('my_footer_mobile_show');
 
-    for (var i = 0; i < close.length; i++) {
-        close[i].onclick = function () {
+    for (var i = 0; i < my_close.length; i++) {
+        my_close[i].onclick = function () {
 //             var con = this.parentNode.nextElementSibling;
             if (con.style.height) {
                 this.children[0].style.transform = 'rotate(0deg)';
