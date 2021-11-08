@@ -51,22 +51,23 @@
         {%- endif -%}
       </header>
       {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-        <p class="article-card__excerpt rte-width">
+        <p class="article-card__excerpt rte-width" 
+          style="    
+          text-overflow: ellipsis;
+          white-space: break-spaces;
+          overflow: hidden;
+          max-height: 200px;">   
+          
           {%- if article.excerpt.size > 0 -%}
             {{ article.excerpt | strip_html | truncatewords: 30 }}
           {%- else -%}
             {{ article.content | strip_html | truncatewords: 30 }}
           {%- endif -%}
           
-          {{blog}}
           {{blog.url}}
-          {{article}}
-          {{show_image}}
+
           
-          {% for blog in blogs %}
-            {{ blog.title }}
-          {% endfor %}
-          
+   
         </p>
       {%- endif -%}
       <div class="article-card__footer">
