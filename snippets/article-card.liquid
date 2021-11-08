@@ -57,6 +57,11 @@
           {%- else -%}
             {{ article.content | strip_html | truncatewords: 30 }}
           {%- endif -%}
+          
+          
+          {% for blogs in blog %}
+            {{ blogs.title }}
+          {% endfor %}
         </p>
       {%- endif -%}
       <div class="article-card__footer">
