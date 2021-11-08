@@ -192,8 +192,8 @@
       text-align: center;
       transition: all .5s;
     }
-    .column,
-    .row {
+    .my_icon_column,
+    .my_icon_row {
       position: absolute;
       top: 10px;
       left: 5px;
@@ -201,7 +201,7 @@
       border: 1px solid black;
       transition: all .5s;
     }
-    .row {
+    .my_icon_row {
       transform: rotate(90deg);
     }
   }
@@ -275,8 +275,8 @@
                      <h2 class="my_footer_heading my_fotter_mobile_heading">
                        <span>{{- block.settings.heading | escape -}}</span>
                        <div class="my_footer_mobile_show">
-                         <i class="column"></i>
-                         <i class="row"></i>
+                         <i class="my_icon_column"></i>
+                         <i class="my_icon_row"></i>
                        </div>
                      </h2>
                     {%- assign image_size = block.settings.image_width | append: 'x' -%}
@@ -294,8 +294,8 @@
                      <h2 class="my_footer_heading my_fotter_mobile_heading">
                        <span>{{- block.settings.heading | escape -}}</span>
                        <div class="my_footer_mobile_show">
-                         <i class="column"></i>
-                         <i class="row"></i>
+                         <i class="my_icon_column"></i>
+                         <i class="my_icon_row"></i>
                        </div>
                      </h2>
                   {%- endif -%}
@@ -303,8 +303,8 @@
                   <h2 class="my_footer_heading my_fotter_mobile_heading">
                     <span>{{- block.settings.heading | escape -}}</span>
                     <div class="my_footer_mobile_show">
-                      <i class="column"></i>
-                      <i class="row"></i>
+                      <i class="my_icon_column"></i>
+                      <i class="my_icon_row"></i>
                     </div>
                   </h2>
                 {%- endif -%}
@@ -312,8 +312,8 @@
                 <h2 class="my_footer_heading my_fotter_mobile_heading">
                   <span>{{- block.settings.heading | escape -}}</span>
                   <div class="my_footer_mobile_show">
-                    <i class="column"></i>
-                    <i class="row"></i>
+                    <i class="my_icon_column"></i>
+                    <i class="my_icon_row"></i>
                   </div>
                 </h2>
               {%- endif -%}
@@ -1079,8 +1079,6 @@
 //             var con = this.parentNode.nextElementSibling;
 //             if (con.style.height) {
             if (true) {
-              this.children[0].style.color = 'red';
-              
                 this.children[0].style.transform = 'rotate(0deg)';
                 this.children[0].style.opacity = '1';
                 this.children[1].style.transform = 'rotate(90deg)';
