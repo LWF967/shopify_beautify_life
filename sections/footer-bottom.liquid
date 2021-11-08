@@ -50,6 +50,10 @@
     max-width: 100%;
     text-align: center;
   }
+  .my_footer_bottom_item_padding {
+    padding-top: 4px;
+    padding-bottom: 20px;
+  }
   
   @media screen and (max-width: 1024px) {
     .my_footer_bottom_flex {
@@ -86,7 +90,7 @@
       </div>
       {%- elsif section.settings.copyrights_layouts == 'centered' -%}
       <div class="footer__column footer__column--info my_footer_bottom_flex my_footer_bottom_layout_center"> 
-        <div class="footer__copyright caption my_footer_copyright my_footer_bottom_item_flex my_footer_bottom_item_centered">
+        <div class="footer__copyright caption my_footer_copyright my_footer_bottom_item_flex my_footer_bottom_item_centered my_footer_bottom_item_padding">
           {%- for block in section.blocks -%}
           <small class="copyright__content">{{ block.settings.copyrights_text }}</small>
           {%- endfor -%}
