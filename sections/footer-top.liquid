@@ -313,7 +313,7 @@
                         {%- if block.settings.image != blank -%}
                           {%- assign image_size = block.settings.image_width | append: 'x' -%}
                            <img
-                               class="my_footer_img"
+                               class=""
                                srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
                                src="{{ block.settings.image | img_url: '400x' }}"
                                alt="{{ block.settings.image.alt | escape }}"
