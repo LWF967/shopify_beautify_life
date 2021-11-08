@@ -154,7 +154,7 @@
     {% section 'header-zx' %}
 
 <!-- lzx change style="background: white;z-index: 999;" -->
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1" style="background: white;z-index: 999;">
+    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
@@ -178,6 +178,8 @@
       let sticky = document.getElementsByClassName('my_footer_sticky');
       
       if(sticky.length > 0) {
+        main.style.background = '#ffffff';
+        main.style.zIndex = 999;
         main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
         my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
   		promo_bar.style.zIndex = 999;
