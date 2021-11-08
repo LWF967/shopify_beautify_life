@@ -153,6 +153,29 @@
     max-width: 16.666667%;
     padding-bottom: 72px;
   }
+  
+  
+      .my_footer_mobile_show {
+      display: none;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      transition: all .5s;
+    }
+    .my_icon_column,
+    .my_icon_row {
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      width: 10px;
+      border: 1px solid black;
+      transition: all .5s;
+    }
+    .my_icon_row {
+      transform: rotate(90deg);
+    }
+  
   @media (min-width: 0px) and (max-width: 768px) {
     .my_footer_padding_margin {
       display: block;
@@ -186,24 +209,8 @@
     }
     .my_footer_mobile_show {
       display: block;
-      position: relative;
-      width: 20px;
-      height: 20px;
-      text-align: center;
-      transition: all .5s;
     }
-    .my_icon_column,
-    .my_icon_row {
-      position: absolute;
-      top: 10px;
-      left: 5px;
-      width: 10px;
-      border: 1px solid black;
-      transition: all .5s;
-    }
-    .my_icon_row {
-      transform: rotate(90deg);
-    }
+    
   }
   @media (min-width: 769px) and (max-width: 1024px) {
 	.my_footer_item_width_1 {
