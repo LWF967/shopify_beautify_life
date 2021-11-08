@@ -1098,23 +1098,24 @@
                     console.log(yuansu.scrollHeight);
 
 //             if (con.style.height) {
-            if (yuansu.height) {
+            if (yuansu.scrollHeight) {
                 this.children[0].style.transform = 'rotate(0deg)';
                 this.children[0].style.opacity = '1';
                 this.children[1].style.transform = 'rotate(90deg)';
+              	footer_h2[i].nextElementSibling.style.display = "block";
                 footer_h2[i].nextElementSibling.style.height = null;
-                yuansu.height = null;
+                yuansu.scrollHeight = null;
             } else {
                 this.children[0].style.transform = 'rotate(180deg)';
                 this.children[0].style.opacity = '0';
                 this.children[1].style.transform = 'rotate(360deg)';
-                footer_h2[i].nextElementSibling.style.height = yuansu.height + "px";
-                yuansu.height = yuansu.height + "px";
+                footer_h2[i].nextElementSibling.style.height = yuansu.scrollHeight + "px";
+                yuansu.scrollHeight = yuansu.scrollHeight + "px";
             }
           console.log(i);
 //           con.style.display = 'block';
 //           con.nextElementSibling.style.display = 'block';
-          console.log(yuansu.height);
+          console.log(yuansu.scrollHeight);
         }
     }
 </script>
