@@ -334,6 +334,19 @@
                   </div>
                 {%- when 'text1' -%}
                   <div class="footer-block__details-content rte my_footer_p">
+                    {%- if block.settings.image != blank -%}
+                    {%- assign image_size = block.settings.image_width | append: 'x' -%}
+                     <img
+                         class="my_footer_img"
+                         srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
+                         src="{{ block.settings.image | img_url: '400x' }}"
+                         alt="{{ block.settings.image.alt | escape }}"
+                         loading="lazy"
+                         width="{{ block.settings.custom_logo_width }}"
+                         height="{{ block.settings.custom_logo_width }}"
+                         style="max-width: min(100%, {{ block.settings.image_width }}px); margin-bottom: 30px;"
+                         >
+                    {%- endif -%}
                     {{ block.settings.textarea }}
                   </div>
                 {%- when 'text2' -%}
