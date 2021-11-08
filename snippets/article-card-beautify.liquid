@@ -65,11 +65,13 @@
           {{article.excerpt.size}};222
           
           {%- if article.excerpt.size > 0 and show_short_content -%}
-            {{ article.excerpt | strip_html | truncate: 60 }}
+            {{ article.excerpt | strip_html | truncate: 30 }}
           {%- elsif article.excerpt.size > 0 and show_short_content == false -%}
-            {{ article.content | strip_html }}
-          {%- else -%}
-          	{{ article.content | strip_html | truncate: 30 }}
+            {{ article.excerpt | strip_html }}
+          {%- elsif article.excerpt.size <= 0 and show_short_content -%}
+          	{{ article.content | strip_html | truncate: 60 }}
+          {%- elsif article.excerpt.size <= 0 and show_short_content == false -%}
+      		{{ article.content | strip_html  }}
           {%- endif -%}
           
   
