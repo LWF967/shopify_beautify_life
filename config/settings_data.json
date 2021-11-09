@@ -180,6 +180,7 @@
           "6f145749-18fc-4c73-a255-f2b306f512ed": {
             "type": "text1",
             "settings": {
+              "image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
               "custom_logo_width": 120,
               "heading": "Get in touch",
               "textarea": "<p><i class=\"my_icon\"><\/i><span>184Main Rd E, St Albans <br> <span class=\"pl__30\">VIC3021, Australia<\/span><\/span><\/p><p><i class=\"my_icon\"><\/i><span> <a href=\"mailto:Giraffly@company.com\">contact@company.com<\/a><\/span><\/p><p><i class=\"my_icon\"><\/i><span>+1 23456789<\/span><\/p>",
