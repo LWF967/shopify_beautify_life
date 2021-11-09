@@ -8,6 +8,10 @@
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 
 <style>
+  .my_cart_margin {
+  	margin: 55px 0;
+    gap: 15px;
+  }
   .my_cart_empty_padding {
   	padding: 180px 0 125px 0;
   }
@@ -30,7 +34,7 @@
   }
 </style>
 <cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
-  <div class="title-wrapper-with-link">
+  <div class="title-wrapper-with-link my_cart_margin">
     <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
     <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
   </div>
