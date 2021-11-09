@@ -1095,7 +1095,6 @@
   
     for (let i = 0; i < footer_mobile_show.length; i++) {
         footer_mobile_show[i].onclick = function () {
-          footer_h2[i].nextElementSibling.style.display = "block";
             var yuansu = footer_h2[i].nextElementSibling;
                     console.log(yuansu.scrollHeight);
 
@@ -1104,21 +1103,19 @@
                 this.children[0].style.transform = 'rotate(0deg)';
                 this.children[0].style.opacity = '1';
                 this.children[1].style.transform = 'rotate(90deg)';
-              	footer_h2[i].nextElementSibling.style.display = "block";
-                footer_h2[i].nextElementSibling.style.height = null;
+//                 footer_h2[i].nextElementSibling.style.height = null;
                 yuansu.scrollHeight = null;
             } else {
                 this.children[0].style.transform = 'rotate(180deg)';
                 this.children[0].style.opacity = '0';
                 this.children[1].style.transform = 'rotate(360deg)';
-                footer_h2[i].nextElementSibling.style.display = "none";
-                footer_h2[i].nextElementSibling.style.height = yuansu.scrollHeight + "px";
+//                 footer_h2[i].nextElementSibling.style.height = yuansu.scrollHeight + "px";
                 yuansu.scrollHeight = yuansu.scrollHeight + "px";
             }
-          console.log(i);
+//           console.log(i);
 //           con.style.display = 'block';
 //           con.nextElementSibling.style.display = 'block';
-          console.log(yuansu.scrollHeight);
+//           console.log(yuansu.scrollHeight);
         }
     }
 </script>
