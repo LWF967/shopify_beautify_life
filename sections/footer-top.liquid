@@ -1095,21 +1095,21 @@
   
     for (let i = 0; i < footer_mobile_show.length; i++) {
         footer_mobile_show[i].onclick = function () {
-            var yuansu = this.footer_h2[i].nextElementSibling;
+            var yuansu = footer_h2[i].nextElementSibling;
                     
             if (yuansu.scrollHeight) {
                 this.children[0].style.transform = 'rotate(0deg)';
                 this.children[0].style.opacity = '1';
                 this.children[1].style.transform = 'rotate(90deg)';
                 yuansu.scrollHeight = 0;
-                        	console.log(yuansu.scrollHeight+'a');
+                        	console.log(yuansu+'a');
 
             } else {
                 this.children[0].style.transform = 'rotate(180deg)';
                 this.children[0].style.opacity = '0';
                 this.children[1].style.transform = 'rotate(360deg)';
                 yuansu.style.height = yuansu.scrollHeight + "px";
-                        	console.log(yuansu.scrollHeight+'b');
+                        	console.log(yuansu+'b');
 
             }
         }
