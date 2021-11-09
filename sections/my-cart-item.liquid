@@ -32,6 +32,9 @@
   .my_cart_arrow_margin {
   	margin-left: 16px;
   }
+  .my_cart_media_padding {
+    padding: 30px 0;
+  }
 </style>
 <cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
   <div class="title-wrapper-with-link my_cart_margin">
@@ -76,7 +79,7 @@
             <tbody>
               {%- for item in cart.items -%}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
-                  <td class="cart-item__media">
+                  <td class="cart-item__media my_cart_media_padding">
                     {% if item.image %}
                       <a href="{{ item.url }}">
                         <img class="cart-item__image"
