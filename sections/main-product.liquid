@@ -284,6 +284,9 @@
                     {%- endif -%}
                   </div>
                 {%- endform -%}
+                   <script type="application/json">
+                    {{ product.variants | json }}
+                  </script>
               </product-form>
 
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
