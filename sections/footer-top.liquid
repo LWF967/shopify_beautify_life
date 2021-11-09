@@ -1122,7 +1122,11 @@
               this.children[1].style.transform = 'rotate(360deg)';
               yuansu.style.height = yuansu.scrollHeight + "px";
               if(img.tagName == 'IMG') {
-                console.log(document.getElementsByClassName('footer-block__details-content rte my_footer_p')[i].firstElementChild.scrollHeight);
+                img.onload=function(){
+                   console.log('图片加载完成');
+                   console.log(document.getElementsByClassName('footer-block__details-content rte my_footer_p')[i].firstElementChild.scrollHeight);
+                }
+                
                 img.style.opacity = '1';
               }
             }
