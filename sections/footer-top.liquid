@@ -1096,7 +1096,7 @@
     for (let i = 0; i < footer_mobile_show.length; i++) {
         footer_mobile_show[i].onclick = function () {
             var yuansu = footer_h2[i].nextElementSibling;
-                    console.log(yuansu.style);
+                    
 
 //             if (con.style.height) {
             if (yuansu.style.height == 0) {
@@ -1112,6 +1112,7 @@
 //                 footer_h2[i].nextElementSibling.style.height = yuansu.scrollHeight + "px";
                 yuansu.style.height = yuansu.style.height + "px";
             }
+          	console.log(yuansu.style.height);
 //           console.log(i);
 //           con.style.display = 'block';
 //           con.nextElementSibling.style.display = 'block';
