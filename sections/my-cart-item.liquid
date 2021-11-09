@@ -11,7 +11,8 @@
   .my_cart_empty_padding {
   	padding: 180px 0 125px 0;
   }
-  .my_cart_empty_bold {
+  .my_cart_empty_font {
+    font-size: 36px;
     font-weight: 700;
   }
 </style>
@@ -23,7 +24,7 @@
 
   <div class="cart__warnings my_cart_empty_padding">
 <!--     <h1 class="cart__empty-text"> 'sections.cart.empty' | t }}</h1> -->
-    <h1 class="cart__empty-text my_cart_empty_bold">Your cart</h1>
+    <h1 class="cart__empty-text my_cart_empty_font">Your cart</h1>
     <a href="{{ routes.all_products_collection_url }}" class="button">
       {{ 'general.continue_shopping' | t }}
     </a>
