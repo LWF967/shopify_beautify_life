@@ -301,7 +301,7 @@ max-width:30rem;
   -moz-appearance: none;
   appearance: none;
   display: inline-block;
-  width: 30rem;
+/*   width: 30rem; */
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
