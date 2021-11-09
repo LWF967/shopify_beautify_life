@@ -2,20 +2,19 @@
   "sections": {
     "1636449903a90cf233": {
       "type": "my-cart-item",
+      "disabled": true,
       "settings": {
         "show_vendor": false
       }
     },
     "cart-items": {
       "type": "main-cart-items",
-      "disabled": true,
       "settings": {
         "show_vendor": false
       }
     },
     "cart-footer": {
       "type": "main-cart-footer",
-      "disabled": true,
       "blocks": {
         "subtotal": {
           "type": "subtotal",
@@ -38,7 +37,6 @@
     },
     "featured-products": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "title": "TRENDING",
         "sub_title": "Popular this week",
