@@ -174,7 +174,7 @@
       let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
       let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
       let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
-      let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight-40+1;
+//       let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight-40+1;
       let main = document.getElementById('MainContent');
       let sticky = document.getElementsByClassName('my_footer_sticky');
       
@@ -183,6 +183,7 @@
           main.style.marginBottom = 0 + "px";
         }
         else if(document.body.clientWidth >= 1024) {
+          let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight-40+1;
           main.style.background = '#ffffff';
           main.style.zIndex = 999;
           main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
