@@ -35,6 +35,9 @@
   .my_cart_media_padding {
     padding: 30px 0 !important;
   }
+  .my_cart_item_padding {
+    padding: 0 0;
+  }
 </style>
 <cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
   <div class="title-wrapper-with-link my_cart_margin">
@@ -63,7 +66,7 @@
   </div>
 
   <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
-    <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
+    <div class="cart__items my_cart_item_padding" id="main-cart-items" data-id="{{ section.id }}">
       <div class="js-contents">
         {%- if cart != empty -%}
           <table class="cart-items">
