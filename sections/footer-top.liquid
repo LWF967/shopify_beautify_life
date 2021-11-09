@@ -1118,12 +1118,8 @@
             } else {
              if (img.tagName == 'IMG') {
                 var firstload = document.getElementsByClassName('footer-block__details-content rte my_footer_p')[i].firstElementChild.scrollHeight;
-                console.log(firstload);
-                img.onload=function(){
-                   console.log('图片加载完成');
-                   console.log(document.getElementsByClassName('footer-block__details-content rte my_footer_p')[i].firstElementChild.scrollHeight);
-                  var chazhi = document.getElementsByClassName('footer-block__details-content rte my_footer_p')[i].firstElementChild.scrollHeight - firstload
-                  console.log(chazhi);
+				// 监听图片是否加载完成 解决第一次刷新高度显示有误
+                img.onload = function(){
                   yuansu.style.height = yuansu.scrollHeight + "px";
                 }
                 img.style.opacity = '1';
