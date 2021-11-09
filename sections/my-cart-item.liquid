@@ -8,8 +8,8 @@
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 
 <style>
-  .my_cart_empty_margin {
-  	margin: 180px 0 125px 0;
+  .my_cart_empty_padding {
+  	padding: 180px 0 125px 0;
   }
   .my_cart_empty_font {
     font-size: 36px;
@@ -26,7 +26,7 @@
     <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
   </div>
 
-  <div class="cart__warnings my_cart_empty_margin">
+  <div class="cart__warnings my_cart_empty_padding">
 <!--     <h1 class="cart__empty-text"> 'sections.cart.empty' | t }}</h1> -->
     <h1 class="cart__empty-text my_cart_empty_font">Your cart</h1>
     <p class="my_cart_empty_tip">Your cart is currently empty</p>
