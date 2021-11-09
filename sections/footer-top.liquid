@@ -1099,9 +1099,9 @@
     for (let i = 0; i < footer_mobile_show.length; i++) {
         footer_mobile_show[i].onclick = function () {
             var yuansu = footer_h2[i].nextElementSibling;
-			var img = footer_h2[i].nextElementSibling.firstElementChild;
-          if(img) {
-            console.log(img);
+			var img = footer_h2[i].nextElementSibling.firstElementChild.tagName;
+          if(img== 'IMG') {
+            console.log(1);
           }
           else {
           	console.log(2);
