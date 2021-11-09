@@ -11,6 +11,9 @@
   .my_cart_empty_padding {
   	padding: 180px 0 125px 0;
   }
+  .my_cart_empty_bold {
+    font-weight: 700;
+  }
 </style>
 <cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
   <div class="title-wrapper-with-link">
@@ -20,7 +23,7 @@
 
   <div class="cart__warnings my_cart_empty_padding">
 <!--     <h1 class="cart__empty-text"> 'sections.cart.empty' | t }}</h1> -->
-    <h1 class="cart__empty-text">Your cart</h1>
+    <h1 class="cart__empty-text my_cart_empty_bold">Your cart</h1>
     <a href="{{ routes.all_products_collection_url }}" class="button">
       {{ 'general.continue_shopping' | t }}
     </a>
