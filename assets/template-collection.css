@@ -258,7 +258,9 @@
   color: rgba(var(--color-foreground), 0.75);
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
-  padding: 0 1.75rem 0 0;
+/*   padding: 0 1.75rem 0 0; */
+  padding: 0 3rem 0 0;
+  
 }
 
 .facets__disclosure[open] .facets__summary,
