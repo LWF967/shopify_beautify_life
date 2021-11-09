@@ -385,6 +385,22 @@
         "soft_background": false,
         "show_view_all": true
       }
+    },
+    "163643981980c5abb3": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "head_text": "The most exciting news",
+        "blog": "新闻",
+        "post_limit": 3,
+        "show_image": true,
+        "show_title": true,
+        "show_short_content": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": true
+      }
     }
   },
   "order": [
@@ -396,6 +412,7 @@
     "1635497923083b4abb",
     "16359888646f646d27",
     "1635996418e080b5d8",
-    "1636093631994b741b"
+    "1636093631994b741b",
+    "163643981980c5abb3"
   ]
 }
