@@ -276,6 +276,22 @@ max-width:30rem;
 
 }
 
+@media only screen and (max-width: 749px) {
+.product-form__buttons{
+
+
+      max-width:100%;
+
+      }
+	}
+
+
+@media screen and (min-width: 750px) {
+
+}
+
+
+
 .btn, .shopify-payment-button .shopify-payment-button__button--unbranded {
   -moz-user-select: none;
   -ms-user-select: none;
