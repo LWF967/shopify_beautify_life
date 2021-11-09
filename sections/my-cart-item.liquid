@@ -8,13 +8,16 @@
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 
 <style>
-  .my_cart_empty_padding {
-  	padding: 180px 0 125px 0;
+  .my_cart_empty_margin {
+  	margin: 180px 0 125px 0;
   }
   .my_cart_empty_font {
     font-size: 36px;
     font-weight: 700;
     margin: 0 0;
+  }
+  .my_cart_empty_tip {
+  	margin: 15px 0 20px 0;
   }
 </style>
 <cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
@@ -23,10 +26,10 @@
     <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
   </div>
 
-  <div class="cart__warnings my_cart_empty_padding">
+  <div class="cart__warnings my_cart_empty_margin">
 <!--     <h1 class="cart__empty-text"> 'sections.cart.empty' | t }}</h1> -->
     <h1 class="cart__empty-text my_cart_empty_font">Your cart</h1>
-    <p class="">Your cart is currently empty</p>
+    <p class="my_cart_empty_tip">Your cart is currently empty</p>
     <a href="{{ routes.all_products_collection_url }}" class="button">
       {{ 'general.continue_shopping' | t }}
     </a>
