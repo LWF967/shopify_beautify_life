@@ -30,6 +30,49 @@
 .my_field__input:focus { outline: transparent; box-shadow: none; }
 .my_footer_button { color: {{ section.settings.newsletter_button_text_color }}; background: {{ section.settings.newsletter_button_color }}; height: 40px; margin: 2px 2px 1px 0; width: 30%; }
 .my_footer_displaynone { display: none; }
+
+  @media (min-width: 0px) and (max-width: 768px) {
+    .my_footer_padding_margin {
+      display: block;
+      margin-bottom: 0;
+      padding: 0 0;
+      width: 100%;
+    }
+    .my_footer_p,
+    .my_footer_menu_item_margin_bottom {
+      height: 0;
+      overflow: hidden;
+      transition: all .3s;
+    }
+    .my_footer_mobile_flex {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-bottom: 72px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+    }
+    .my_footer_mobile_div {
+      flex: 0 0 100%;
+	  margin-bottom: 0;
+      margin: 0 0;
+    }
+    .my_fotter_mobile_heading {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .my_footer_mobile_show {
+      display: block;
+    }
+    .my_footer_hide_heading {
+      display: flex;
+    }
+    .my_footer_sticky {
+      position: static;
+    }
+  }
 {%- endstyle -%}
 
 <style>
@@ -181,49 +224,6 @@
     transform: rotate(90deg);
     transition: all .5s;
   }
-  
-  @media (min-width: 0px) and (max-width: 768px) {
-    .my_footer_padding_margin {
-      display: block;
-      margin-bottom: 0;
-      padding: 0 0;
-      width: 100%;
-    }
-    .my_footer_p,
-    .my_footer_menu_item_margin_bottom {
-      height: 0;
-      overflow: hidden;
-      transition: all .3s;
-    }
-    .my_footer_mobile_flex {
-      display: flex;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      padding-bottom: 72px;
-      padding-left: 20px;
-      padding-right: 20px;
-
-    }
-    .my_footer_mobile_div {
-      flex: 0 0 100%;
-	  margin-bottom: 0;
-      margin: 0 0;
-    }
-    .my_fotter_mobile_heading {
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: space-between;
-    }
-    .my_footer_mobile_show {
-      display: block;
-    }
-    .my_footer_hide_heading {
-      display: flex;
-    }
-    .my_footer_sticky {
-      position: static;
-    }
-  }
 
   @media (min-width: 769px) and (max-width: 1024px) {
 	.my_footer_item_width_1 {
@@ -271,7 +271,7 @@
   }
 </style>
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient {% if section.settings.sticky_footer %}my_footer_sticky{% endif %}">
+<footer class="footer color-{{ section.settings.color_scheme }} gradient {% if section.settings.sticky_footer %}my_footer_sticky{% endif %} {% if section.settings.accordions_options_on_mobile %}@media (min-width: 0px) and (max-width: 768px){% endif %}">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
   <div class="my_footer_bgcolor my_footer_margin_top {% if section.settings.border_footer %}my_footer_border{% endif %}">
     <div class="my_footer_top_padding page-width my_footer_bgcolor my_footer_mobile_flex">
@@ -285,7 +285,7 @@
             assign footer_grid_class = 'grid--3-col-tablet'
           endif
         -%}
-        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet my_footer_padding_margin {% if section.settings.accordions_options_on_mobile %}@media (min-width: 0px) and (max-width: 768px){% endif %} {{ footer_grid_class }}">
+        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet my_footer_padding_margin {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
             <div class="footer-block grid__item my_footer_mobile_div {% if block.settings.container_width == '1' %}my_footer_item_width_1{% elsif block.settings.container_width == '2' %}my_footer_item_width_2{% elsif block.settings.container_width == '3' %}my_footer_item_width_3{% elsif block.settings.container_width == '4' %}my_footer_item_width_4{% elsif block.settings.container_width == '5' %}my_footer_item_width_5{% elsif block.settings.container_width == '6' %}my_footer_item_width_6{% else %}my_footer_item_width_7{% endif %}
                         {% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
