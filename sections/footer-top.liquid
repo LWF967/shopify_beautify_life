@@ -1116,22 +1116,24 @@
                 img.style.opacity = '0';
               }
             } else {
-              // 高度为0
-              this.children[0].style.transform = 'rotate(180deg)';
-              this.children[0].style.opacity = '0';
-              this.children[1].style.transform = 'rotate(360deg)';
-              yuansu.style.height = yuansu.scrollHeight + "px";
-              if(img.tagName == 'IMG') {
+             if (img.tagName == 'IMG') {
                 var firstload = document.getElementsByClassName('footer-block__details-content rte my_footer_p')[i].firstElementChild.scrollHeight;
                 console.log(firstload);
                 img.onload=function(){
                    console.log('图片加载完成');
                    console.log(document.getElementsByClassName('footer-block__details-content rte my_footer_p')[i].firstElementChild.scrollHeight);
-                  console.log(document.getElementsByClassName('footer-block__details-content rte my_footer_p')[i].firstElementChild.scrollHeight - firstload);
+                  var chazhi = document.getElementsByClassName('footer-block__details-content rte my_footer_p')[i].firstElementChild.scrollHeight - firstload
+                  console.log(chazhi);
                 }
-                
                 img.style.opacity = '1';
               }
+              console.log('outside' + chazhi);
+              // 高度为0
+              this.children[0].style.transform = 'rotate(180deg)';
+              this.children[0].style.opacity = '0';
+              this.children[1].style.transform = 'rotate(360deg)';
+              yuansu.style.height = yuansu.scrollHeight + "px";
+
             }
         }
     }
