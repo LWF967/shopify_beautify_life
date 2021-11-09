@@ -332,6 +332,7 @@
                                >
                         {%- endif -%}
                     {{ block.settings.textarea }}
+                    {%- render 'my-social-sharing',follow_social:true,class_tooltip:class_tooltip -%}
                     <div>{{ settings.social_twitter_link }}</div>
                     <div>{{ settings.social_facebook_link }}</div>
                     <div>{{ settings.social_pinterest_link }}</div>
