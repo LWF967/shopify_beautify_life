@@ -1099,7 +1099,13 @@
     for (let i = 0; i < footer_mobile_show.length; i++) {
         footer_mobile_show[i].onclick = function () {
             var yuansu = footer_h2[i].nextElementSibling;
-
+			var img = footer_h2[i].nextElementSibling.firstElementChild;
+          if(img) {
+            console.log(1);
+          }
+          else {
+          	console.log(2);
+          }
             if (yuansu.style.height) {
               // 高度有值
                 this.children[0].style.transform = 'rotate(0deg)';
