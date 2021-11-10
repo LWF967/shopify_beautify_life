@@ -163,7 +163,14 @@
                         </li>
                       {%- endfor -%}
                     </ul>
-
+					
+                    <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
+                      <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
+                        {% render 'icon-remove' %}
+                      </a>
+                    </cart-remove-button>
+                    
+                    
                     <p class="cart-item__error" id="Line-item-error-{{ item.index | plus: 1 }}">
                       <span class="cart-item__error-text"></span>
                       <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
