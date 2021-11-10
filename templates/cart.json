@@ -3,7 +3,7 @@
     "1636449903a90cf233": {
       "type": "my-cart-item",
       "settings": {
-        "cart_updates": true,
+        "cart_updates": false,
         "cart_notes": true
       }
     },
