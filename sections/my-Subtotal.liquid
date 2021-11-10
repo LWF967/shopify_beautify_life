@@ -7,6 +7,10 @@
   .my_subtotal_tip_margin {
     margin: 10px 0 35px 0;
   }
+  .my_subtotal_button {
+  	font-size: 13px;
+    font-weight: 700;
+  }
 </style>
 
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
@@ -65,7 +69,7 @@
                   </button>
                 </noscript>
 
-                <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                <button type="submit" id="checkout" class="cart__checkout-button button my_subtotal_button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
                   {{ 'sections.cart.checkout' | t }}
                 </button>
               </div>
