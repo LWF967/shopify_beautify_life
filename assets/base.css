@@ -281,6 +281,13 @@ body,
   background-color: rgb(var(--color-background));
 }
 
+  body{
+    
+  caret-color:transparent;
+    
+  }  
+  
+  
 .background-secondary {
   background-color: rgba(var(--color-foreground), 0.04);
   padding: 4rem 0 5rem;
@@ -1767,7 +1774,7 @@ input[type='checkbox'] {
   display: none;
 }
 
-/* .cart-count-bubble {
+.cart-count-bubble {
   position: absolute;
   background-color: rgb(var(--color-button));
   color: rgb(var(--color-button-text));
@@ -1780,22 +1787,6 @@ input[type='checkbox'] {
   font-size: 0.9rem;
   bottom: 0.8rem;
   left: 2.2rem;
-  line-height: 1.1;
-} */
-/* lzxchange */
-.cart-count-bubble {
-  position: absolute;
-  background-color: rgb(var(--color-button));
-  color: rgb(var(--color-button-text));
-  height: 1.5rem;
-  width: 1.5rem;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: .9rem;
-  bottom: 1.8rem;
-  left: 2.8rem;
   line-height: 1.1;
 }
 
