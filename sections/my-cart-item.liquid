@@ -391,18 +391,6 @@
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>
     <div class="cart__footer">
-<!--       %- if section.settings.cart_notes -%}
-        <cart-note class="cart__note field">
-          <label for="Cart-note"> 'sections.cart.note' | t }}</label>
-          <textarea class="text-area text-area--resize-vertical field__input" name="note" id="Cart-note" placeholder=" 'sections.cart.note' | t }}"> cart.note }}</textarea>
-        </cart-note>
-      %- endif -%} -->
-      
-<!--       <div class="my_subtotal_addnote">
-        <h3 class="totals__subtotal my_subtotal_font_size">Add a note to your order</h3>
-        <textarea class="my_subtotal_textarea"  placeholder="Input your order"></textarea>
-      </div> -->
-      
       {%- if section.settings.cart_notes -%}
         <cart-note class="cart__note field my_subtotal_addnote">
           <label for="Cart-note" class="my_subtotal_font_size">Add a note to your order</label>
