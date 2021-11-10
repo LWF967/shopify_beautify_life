@@ -4,6 +4,9 @@
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
 <style>
+  .my_subtotal_font_size {
+    font-size: calc(((var(--font-size-base) + 2) / (var(--font-size-base))) * 1em);
+  }
   .my_subtotal_tip_margin {
     margin: 10px 0 35px 0;
   }
@@ -44,7 +47,7 @@
             {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div class="totals">
-                  <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
+                  <h3 class="totals__subtotal my_subtotal_font_size">{{ 'sections.cart.subtotal' | t }}</h3>
                   <p class="totals__subtotal-value my_subtotal_subtotal_left">{{ cart.total_price | money_with_currency }}</p>
                 </div>
 
