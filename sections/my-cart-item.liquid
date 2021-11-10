@@ -73,7 +73,12 @@
   .my_cart_price_font_size {
   	font-size: calc(((var(--font-size-subtotal) - 1) / (var(--font-size-subtotal))) * 1em) !important;
   }
- 
+  .my_cart_text_align_center {
+    text-align: center;
+  }
+  .my_cart_text_align_right {
+    text-align: right;
+  }
     
 /*  subtotal    */
   .my_subtotal_addnote {
@@ -171,9 +176,9 @@
             <thead>
               <tr>
                 <th class="caption-with-letter-spacing" colspan="2" scope="col">{{ 'sections.cart.headings.product' | t }}</th>
-                <th class="cart-items__heading--wide caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.price' | t }}</th>
+                <th class="cart-items__heading--wide caption-with-letter-spacing my_cart_text_align_right" colspan="1" scope="col">{{ 'sections.cart.headings.price' | t }}</th>
                 <th class="medium-hide large-up-hide right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
-                <th class="cart-items__heading--wide small-hide caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.quantity' | t }}</th>
+                <th class="cart-items__heading--wide small-hide caption-with-letter-spacing my_cart_text_align_center" colspan="1" scope="col">{{ 'sections.cart.headings.quantity' | t }}</th>
                 <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
               </tr>
             </thead>
