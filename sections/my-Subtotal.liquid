@@ -21,11 +21,9 @@
     padding: 0 10px;
     border-radius: 4px;
   }
-/*   .my_subtotal_subtotal_right {
-  	width: 150px;
-    text-align: right;
-    margin-left: 0;
-  } */
+  .my_subtotal_subtotal_left {
+    margin-left: 55px;
+  }
 </style>
 
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
@@ -47,7 +45,7 @@
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div class="totals">
                   <h3 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
-                  <p class="totals__subtotal-value my_subtotal_subtotal_right">{{ cart.total_price | money_with_currency }}</p>
+                  <p class="totals__subtotal-value my_subtotal_subtotal_left">{{ cart.total_price | money_with_currency }}</p>
                 </div>
 
                 <div>
