@@ -319,7 +319,7 @@
                   {%- endif -%}
                   <div class="footer-block__details-content rte my_footer_p">
                         {%- if block.settings.image != blank -%}
-                          {%- assign image_size = block.settings.image_width | append: 'x' -%}
+                          {%- assign image_size = block.settings.custom_logo_width | append: 'x' -%}
                            <img
                                class="my_footer_img"
                                srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
@@ -328,7 +328,7 @@
                                loading="lazy"
                                width="{{ block.settings.custom_logo_width }}"
                                height="{{ block.settings.custom_logo_width }}"
-                               style="max-width: min(100%, {{ block.settings.image_width }}px); margin-bottom: 30px;"
+                               style="max-width: min(100%, {{ block.settings.custom_logo_width }}px); margin-bottom: 30px;"
                                >
                         {%- endif -%}
                     {{ block.settings.textarea }}
@@ -538,8 +538,8 @@
                         src="{{ block.settings.image | img_url: '400x' }}"
                         alt="{{ block.settings.image.alt | escape }}"
                         loading="lazy"
-                        width="{{ block.settings.image.width }}"
-                        height="{{ block.settings.image.height }}"
+                        width=""
+                        height=""
                         style="max-width: min(100%, {{ block.settings.image_width }}px);"
                       >
                     {%- else -%}
