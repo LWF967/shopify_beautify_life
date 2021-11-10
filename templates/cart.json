@@ -9,6 +9,7 @@
     },
     "1636506772a5709f28": {
       "type": "my-Subtotal",
+      "disabled": true,
       "blocks": {
         "1ce0d189-92b1-4eea-b1ea-b2d54251964c": {
           "type": "subtotal",
