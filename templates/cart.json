@@ -3,7 +3,8 @@
     "1636449903a90cf233": {
       "type": "my-cart-item",
       "settings": {
-        "show_vendor": false
+        "cart_updates": true,
+        "cart_notes": true
       }
     },
     "cart-items": {
@@ -15,7 +16,6 @@
     },
     "cart-footer": {
       "type": "main-cart-footer",
-      "disabled": true,
       "blocks": {
         "subtotal": {
           "type": "subtotal",
