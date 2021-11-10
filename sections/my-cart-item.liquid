@@ -61,7 +61,7 @@
     font-size: 13px;
   }
   .my_cart_price_font_size {
-  	font-size: calc(((var(--font-size-subtotal) - 1) / (var(--font-size-subtotal))) * 1em);
+  	font-size: calc(((var(--font-size-subtotal) - 1) / (var(--font-size-subtotal))) * 1em) !important;
   }
 </style>
 <cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
