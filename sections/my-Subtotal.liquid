@@ -41,7 +41,9 @@
           <textarea class="text-area text-area--resize-vertical field__input" name="note" id="Cart-note" placeholder="{{ 'sections.cart.note' | t }}">{{ cart.note }}</textarea>
         </cart-note>
       {%- endif -%}
-
+      
+      <div>123</div>
+      
       <div class="cart__blocks my_subtotal_cart_blocks_margin">
         {% for block in section.blocks %}
           {%- case block.type -%}
