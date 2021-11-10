@@ -7,6 +7,28 @@
         "cart_notes": true
       }
     },
+    "1636506772a5709f28": {
+      "type": "my-Subtotal",
+      "blocks": {
+        "1ce0d189-92b1-4eea-b1ea-b2d54251964c": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "52778091-375b-4603-a623-0253f3e6218e": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1ce0d189-92b1-4eea-b1ea-b2d54251964c",
+        "52778091-375b-4603-a623-0253f3e6218e"
+      ],
+      "settings": {
+        "show_cart_note": false
+      }
+    },
     "cart-items": {
       "type": "main-cart-items",
       "disabled": true,
@@ -16,6 +38,7 @@
     },
     "cart-footer": {
       "type": "main-cart-footer",
+      "disabled": true,
       "blocks": {
         "subtotal": {
           "type": "subtotal",
@@ -59,6 +82,7 @@
   },
   "order": [
     "1636449903a90cf233",
+    "1636506772a5709f28",
     "cart-items",
     "cart-footer",
     "featured-products"
