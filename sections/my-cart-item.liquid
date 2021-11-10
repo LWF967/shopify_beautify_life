@@ -5,6 +5,15 @@
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 
+<!-- subtotal -->
+
+{{ 'component-cart.css' | asset_url | stylesheet_tag }}
+{{ 'component-totals.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+
+<!-- subtotal -->
+
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 
 <style>
@@ -63,6 +72,65 @@
   .my_cart_price_font_size {
   	font-size: calc(((var(--font-size-subtotal) - 1) / (var(--font-size-subtotal))) * 1em) !important;
   }
+ 
+    
+/*  subtotal    */
+  .my_subtotal_addnote {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  
+  .my_subtotal_font_size {
+    font-size: calc(((var(--font-size-subtotal) + 2) / (var(--font-size-subtotal))) * 1em);
+  }
+  
+  .my_subtotal_cart_blocks_margin {
+    flex: 0 0 50%;
+    max-width: 50%;
+  	margin: 0 0;
+  }
+    
+  .my_subtotal_textarea {
+    width: 95%;
+    border: 1px solid rgba(var(--color-foreground),.08);
+    min-height: 100px;
+    padding: 8px 10px;
+  	resize: vertical;
+    transition: all .5s;
+  }
+  
+  .my_subtotal_textarea:focus-visible {
+    outline: none;
+    border: 1px solid #000;
+    outline-offset: 0;
+    box-shadow: none;
+  }
+    
+  .my_subtotal_tip_margin {
+    margin: 10px 0 35px 0;
+  }
+  
+  .my_subtotal_button {
+  	font-size: 13px;
+    font-weight: 700;
+  }
+  
+  .my_subtotal_btn_flex_style {
+  	justify-content: flex-end;
+  }
+  
+  .my_subtotal_btn_style {
+  	width: auto !important;
+    min-width: 0;
+    min-height: 37px;
+    padding: 0 10px;
+    border-radius: 4px;
+  }
+  
+  .my_subtotal_subtotal_left {
+    margin-left: 55px;
+  }
+/*   subtotal    */
 </style>
 <cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
   <div class="title-wrapper-with-link my_cart_margin">
