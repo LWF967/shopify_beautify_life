@@ -69,8 +69,11 @@
                   </button>
                 </noscript>
 
+<!--                 <button type="submit" id="checkout" class="cart__checkout-button button my_subtotal_button" name="checkout"% if cart == empty %} disabled% endif %} form="cart">
+                   'sections.cart.checkout' | t }}
+                </button> -->
                 <button type="submit" id="checkout" class="cart__checkout-button button my_subtotal_button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
-                  {{ 'sections.cart.checkout' | t }}
+                  CHECK OUT
                 </button>
               </div>
 
