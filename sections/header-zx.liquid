@@ -620,14 +620,15 @@
 
 <!--       <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset my_icon_color" id="cart-icon-bubble"> -->
       <a href="{{ routes.cart_url }}" class="header__icon--cart  my_header_icon   link--text focus-inset my_icon_color" id="cart-icon-bubble">
-        {%- liquid
+<!--         - liquid
           if cart == empty
             render 'icon-cart-empty'
           else
             render 'icon-cart'
           endif
-        -%}
-
+        -%} -->
+		<span class="my_cart">&#xe66e;</span>
+        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
             {%- if cart.item_count < 100 -%}
