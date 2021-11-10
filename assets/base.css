@@ -1794,7 +1794,7 @@ input[type='checkbox'] {
 /* zx change */
 .cart-count-bubble {
   position: absolute;
-  background-color: rgb(var(--color-button));
+  background-color: #797979;
   color: rgb(var(--color-button-text));
   height: 1.4rem;
   width: 1.4rem;
