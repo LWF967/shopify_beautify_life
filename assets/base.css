@@ -1775,7 +1775,7 @@ input[type='checkbox'] {
   display: none;
 }
 
-.cart-count-bubble {
+/* .cart-count-bubble {
   position: absolute;
   background-color: rgb(var(--color-button));
   color: rgb(var(--color-button-text));
@@ -1788,6 +1788,22 @@ input[type='checkbox'] {
   font-size: 0.9rem;
   bottom: 0.8rem;
   left: 2.2rem;
+  line-height: 1.1;
+} */
+  
+.cart-count-bubble {
+  position: absolute;
+  background-color: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .9rem;
+  bottom: 2.1rem;
+  left: 2.5rem;
   line-height: 1.1;
 }
 
