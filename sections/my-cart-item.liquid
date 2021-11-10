@@ -42,6 +42,9 @@
   	width: 100%;
     display: block;
   }
+  .my_subtotal_cart_item_details_padding {
+  	padding: 30px 0 0 48px;
+  }
 </style>
 <cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
   <div class="title-wrapper-with-link my_cart_margin">
@@ -100,7 +103,7 @@
                     {% endif %}
                   </td>
 
-                  <td class="cart-item__details">
+                  <td class="cart-item__details my_subtotal_cart_item_details_padding">
                     {%- if section.settings.show_vendor -%}
                       <p class="caption-with-letter-spacing light">{{ item.product.vendor }}</p>
                     {%- endif -%}
