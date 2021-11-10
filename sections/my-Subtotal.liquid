@@ -74,7 +74,7 @@
             {%- else -%}
               <div class="cart__ctas my_subtotal_btn_flex_style" {{ block.shopify_attributes }}>
                 <noscript>
-                  <button type="submit" class="cart__update-button button button--secondary my_subtotal_btn_style" form="cart">
+                  <button type="submit" class="cart__update-button button button--secondary" form="cart">
                     {{ 'sections.cart.update' | t }}
                   </button>
                 </noscript>
@@ -82,7 +82,7 @@
 <!--                 <button type="submit" id="checkout" class="cart__checkout-button button my_subtotal_button" name="checkout"% if cart == empty %} disabled% endif %} form="cart">
                    'sections.cart.checkout' | t }}
                 </button> -->
-                <button type="submit" id="checkout" class="cart__checkout-button button my_subtotal_button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                <button type="submit" id="checkout" class="cart__checkout-button button my_subtotal_button my_subtotal_btn_style" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
                   CHECK OUT
                 </button>
               </div>
