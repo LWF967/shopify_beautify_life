@@ -147,7 +147,7 @@
 <!--     <h1 class="cart__empty-text"> 'sections.cart.empty' | t }}</h1> -->
     <h1 class="cart__empty-text my_cart_empty_font">Your cart</h1>
     <p class="my_cart_empty_tip">Your cart is currently empty</p>
-<!--     <a href="{{ routes.all_products_collection_url }}" class="button">
+<!--     <a href=" routes.all_products_collection_url }}" class="button">
        'general.continue_shopping' | t }}
     </a> -->
     <a href="{{ routes.all_products_collection_url }}" class="button my_cart_button">
@@ -171,6 +171,7 @@
             <thead>
               <tr>
                 <th class="caption-with-letter-spacing" colspan="2" scope="col">{{ 'sections.cart.headings.product' | t }}</th>
+                <th class="cart-items__heading--wide caption-with-letter-spacing" colspan="1" scope="col">Price</th>
                 <th class="medium-hide large-up-hide right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
                 <th class="cart-items__heading--wide small-hide caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.quantity' | t }}</th>
                 <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
