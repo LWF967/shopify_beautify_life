@@ -463,19 +463,7 @@
             <p class="totals__subtotal-value my_subtotal_subtotal_left">{{ cart.total_price | money_with_currency }}</p>
           </div>
 
-          <div>
-            {%- if cart.cart_level_discount_applications.size > 0 -%}
-            <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
-              {%- for discount in cart.cart_level_discount_applications -%}
-              <li class="discounts__discount discounts__discount--end">
-                {%- render 'icon-discount' -%}
-                {{ discount.title }}
-                (-{{ discount.total_allocated_amount | money }})
-              </li>
-              {%- endfor -%}
-            </ul>
-            {%- endif -%}
-          </div>
+
 
           <small class="tax-note caption-large rte my_subtotal_tip_margin">
             {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
