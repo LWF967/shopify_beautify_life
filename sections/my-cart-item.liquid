@@ -83,6 +83,10 @@
   .my_subtotal_font_size {
     font-size: calc(((var(--font-size-subtotal) + 2) / (var(--font-size-subtotal))) * 1em);
   }
+    
+  .my_subtotal_margin_bottom {
+	margin-bottom: 15px;    
+  }
   
   .my_subtotal_cart_blocks_margin {
     flex: 0 0 50%;
@@ -392,7 +396,7 @@
     <div class="cart__footer">
       {%- if section.settings.cart_notes -%}
         <cart-note class="cart__note field my_subtotal_addnote">
-          <label for="Cart-note" class="my_subtotal_font_size">Add a note to your order</label>
+          <label for="Cart-note" class="my_subtotal_font_size my_subtotal_margin_bottom">Add a note to your order</label>
           <textarea class="my_subtotal_textarea"  placeholder="Input your order">{{ cart.note }}</textarea>
         </cart-note>
       {%- endif -%}
