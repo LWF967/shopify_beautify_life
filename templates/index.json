@@ -112,6 +112,14 @@
             "collection": "",
             "title": "New supply this week"
           }
+        },
+        "3664c841-28d4-4335-9ab7-8dcc37753f00": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "title": "New supply this week"
+          }
         }
       },
       "block_order": [
@@ -121,7 +129,8 @@
         "b47fcf84-0bd5-4408-8a75-0e35ec59dd74",
         "27647972-99f3-4c89-8813-30902cb683b2",
         "c260e375-4204-46a5-92c3-908126eb528f",
-        "00f2f9a8-e301-4b06-976e-4bab8436e34c"
+        "00f2f9a8-e301-4b06-976e-4bab8436e34c",
+        "3664c841-28d4-4335-9ab7-8dcc37753f00"
       ],
       "settings": {
         "title": "NEW RELEASES",
