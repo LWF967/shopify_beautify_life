@@ -3,17 +3,15 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "image_ratio": "square"
-      }
-    },
-    "select": {
-      "type": "collection-list-Beautify",
-      "settings": {
+        "title": "Collections",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "image_padding": false
       }
     }
   },
   "order": [
-    "main",
-    "select"
+    "main"
   ]
 }
