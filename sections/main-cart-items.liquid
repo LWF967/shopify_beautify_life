@@ -282,8 +282,8 @@
                       {{ 'products.product.quantity.label' | t }}
                     </label>
                     <quantity-input class="quantity">
-                      {%- if item.quantity == 1 and section.settings.cart_updates -%}
-                      <button class="quantity__button no-js-hidden" name="minus" type="button" style="disable: true;">
+                      {%- if item.quantity <= 1 and section.settings.cart_updates -%}
+                      <button class="quantity__button no-js-hidden" name="minus" type="button" style="background: red;">
                         <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
                         {% render 'icon-minus' %}
                       </button>
