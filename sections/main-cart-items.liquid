@@ -407,13 +407,8 @@
         let i_value = this.nextElementSibling.value-1;
         if(i_value > input_max) {
           over_info.innerHTML = "You can only add " + input_max + " of this item to your cart.";
-          console.log(over_info);
-          console.log(input_max);
         } else {
           over_info.innerHTML = '';
-          console.log(over_info);
-          console.log(input_max);
-          console.log(i_value);
         }
       }
 
@@ -421,13 +416,8 @@
         let i_value = this.previousElementSibling.value*1+1;
         if(i_value > input_max) {
           over_info.innerHTML = "You can only add " + input_max + " of this item to your cart.";
-          console.log(over_info);
-          console.log(input_max);
         } else {
           over_info.innerHTML = '';
-          console.log(over_info);
-          console.log(input_max);
-          console.log(i_value);
         }
       }
     }
