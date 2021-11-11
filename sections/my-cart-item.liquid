@@ -445,10 +445,10 @@
     <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
   </form>
 
-
+<!-- 
 <div class="{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
- <div>
-  <div class="cart__footer">
+ <div> -->
+  <div class="cart__footer" id="main-cart-footer">
     {%- if section.settings.cart_notes -%}
       <cart-note class="cart__note field my_subtotal_addnote">
         <label for="Cart-note" class="my_subtotal_font_size my_subtotal_margin_bottom">Add a note to your order</label>
@@ -511,8 +511,8 @@
       <div id="cart-errors"></div>
     </div>
   </div>
- </div>
-</div>
+<!--  </div>
+</div> -->
 </cart-items>
 
 {% javascript %}
