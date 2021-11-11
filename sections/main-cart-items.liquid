@@ -399,16 +399,16 @@
     let minus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[0];
     let plus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[1];
     
-    let tip_info = document.getElementsByClassName('cart-item__error-text')[i].innerHTML
+    let tip_info = document.getElementsByClassName('cart-item__error-text')[i].innerHTML;
 //     console.log(minus);
 //     console.log(plus);
     
     minus.onclick = function () {
       let i_value = this.nextElementSibling.value-1;
-      if(i_value == input_max) {
-        console.log(1);
-//         tip_info = input_max;
-      }
+//       if(i_value == input_max) {
+//         console.log(1);
+// //         tip_info = input_max;
+//       }
     }
     plus.onclick = function () {
       let i_value = this.previousElementSibling.value*1+1;
