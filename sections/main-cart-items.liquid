@@ -406,7 +406,7 @@
       minus.onclick = function () {
         let i_value = this.nextElementSibling.value-1;
         if(i_value >= input_max) {
-          over_info.innerHTML = "You can only add" + input_max + "of this item to your cart.";
+          over_info.innerHTML = "You can only add " + input_max + " of this item to your cart.";
           console.log(over_info);
           console.log(input_max);
         } else {
@@ -420,7 +420,7 @@
       plus.onclick = function () {
         let i_value = this.previousElementSibling.value*1+1;
         if(i_value >= input_max) {
-          over_info.innerHTML = "You can only add" + input_max + "of this item to your cart.";
+          over_info.innerHTML = "You can only add " + input_max + " of this item to your cart.";
           console.log(over_info);
           console.log(input_max);
         } else {
