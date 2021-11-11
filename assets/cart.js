@@ -71,10 +71,10 @@ class CartItems extends HTMLElement {
       })
       .then((state) => {
         const parsedState = JSON.parse(state);
-        this.classList.toggle('is-empty', parsedState.item_count === 1);
+        this.classList.toggle('is-empty', parsedState.item_count === 0);
         const cartFooter = document.getElementById('main-cart-footer');
 
-        if (cartFooter) cartFooter.classList.toggle('is-empty', parsedState.item_count === 1);
+        if (cartFooter) cartFooter.classList.toggle('is-empty', parsedState.item_count === 0);
 
         this.getSectionsToRender().forEach((section => {
           const elementToReplace =
