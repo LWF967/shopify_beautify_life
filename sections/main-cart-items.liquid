@@ -402,10 +402,16 @@
 //     console.log(plus);
     
     minus.onclick = function () {
-      console.log(this.nextElementSibling.value-1);
+      let i_value = this.nextElementSibling.value-1;
+      if(i_value == input_max) {
+        console.log(1);
+      }
     }
     plus.onclick = function () {
-      console.log(this.previousElementSibling.value*1+1);
+      let i_value = this.previousElementSibling.value*1+1;
+      if(i_value == input_max) {
+        console.log(1);
+      }
     }
 //     if(input_value == input_max) {
       console.log(input_value);
