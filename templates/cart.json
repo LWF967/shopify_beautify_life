@@ -34,7 +34,7 @@
         "buttons"
       ],
       "settings": {
-        "cart_updates": true,
+        "cart_updates": false,
         "show_cart_note": true
       }
     }
