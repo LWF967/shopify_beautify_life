@@ -9,9 +9,15 @@
         "color_scheme": "background-1",
         "image_padding": false
       }
+    },
+    "select": {
+      "type": "collection-list-Beautify",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "select"
   ]
 }
