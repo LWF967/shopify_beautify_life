@@ -409,7 +409,7 @@
 //         console.log(1);
 // //         tip_info = input_max;
 //       }
-      if(i_value == input_max) {
+      if(i_value >= input_max) {
         over_info.innerHTML = input_max;
         console.log(over_info);
         console.log(input_max);
@@ -423,7 +423,7 @@
     
     plus.onclick = function () {
       let i_value = this.previousElementSibling.value*1+1;
-      if(i_value == input_max) {
+      if(i_value >= input_max) {
         over_info.innerHTML = input_max;
         console.log(over_info);
         console.log(input_max);
