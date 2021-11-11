@@ -400,6 +400,13 @@
     var plus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[1];
     console.log(minus);
     console.log(plus);
+    
+    minus.onclick = function () {
+      console.log(1);
+    }
+    plus.onclick = function () {
+      console.log(1);
+    }
     if(input_value == input_max) {
       console.log(input_value);
       console.log(input_max);
