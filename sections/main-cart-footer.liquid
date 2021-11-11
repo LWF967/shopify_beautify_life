@@ -70,8 +70,7 @@
   }
 </style>
 
-<div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" {% if false %} data-id="{{ section.id }}" {% endif %}>
-  <p>{{ section.settings.cart_updates }} 123</p>
+<div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" {% if section.settings.cart_updates %} data-id="{{ section.id }}" {% endif %}>
   <div>
     <div class="cart__footer">
     {%- if section.settings.show_cart_note -%}
