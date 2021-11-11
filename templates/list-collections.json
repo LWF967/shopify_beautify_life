@@ -33,18 +33,26 @@
             "collection": "",
             "title": "New supply this week"
           }
+        },
+        "e516ea25-153b-4f42-895a-528bf36a40be": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
         }
       },
       "block_order": [
         "3aaf2dc0-30e6-4875-8ad4-dceceff4aaff",
         "54f785b9-7252-4393-b877-d024b9a08ef3",
-        "250a3f99-d07e-4c24-855c-f1cc470f6538"
+        "250a3f99-d07e-4c24-855c-f1cc470f6538",
+        "e516ea25-153b-4f42-895a-528bf36a40be"
       ],
       "settings": {
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
         "grid": 3,
-        "show_view_all": false,
+        "show_view_all": true,
         "show_page_Dot": true
       }
     }
