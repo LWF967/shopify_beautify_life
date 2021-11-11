@@ -399,7 +399,7 @@
     let minus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[0];
     let plus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[1];
     
-    let tip_info = document.getElementsByClassName('cart-item__error-text')[i].innerHTML;
+    let tip_info = document.getElementsByClassName('cart-item__error-text')[i];
 //     console.log(minus);
 //     console.log(plus);
     
@@ -416,7 +416,7 @@
         console.log("+");
         console.log(tip_info);
         console.log(input_max);
-        tip_info = input_max;
+        tip_info.innerHTML = 'input_max';
       }
     }
 //     if(input_value == input_max) {
