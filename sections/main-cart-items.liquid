@@ -282,17 +282,10 @@
                       {{ 'products.product.quantity.label' | t }}
                     </label>
                     <quantity-input class="quantity">
-                      {%- if item.quantity <= 1 -%}
-                      <button class="quantity__button no-js-hidden" name="minus" type="button" style="background: red;">
-                        <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
-                        {% render 'icon-minus' %}
-                      </button>
-                      {%- else -%}
                       <button class="quantity__button no-js-hidden" name="minus" type="button">
                         <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
                         {% render 'icon-minus' %}
                       </button>
-                      {%- endif -%}
                       <input class="quantity__input"
                         type="number"
                         name="updates[]"
