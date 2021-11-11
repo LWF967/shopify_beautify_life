@@ -11,8 +11,8 @@
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
-        "show_vendor": true,
-        "cart_updates": true
+        "cart_updates": false,
+        "show_vendor": true
       }
     },
     "cart-footer": {
