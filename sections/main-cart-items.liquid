@@ -291,7 +291,7 @@
                         name="updates[]"
                         value="{{ item.quantity }}"
                         min="0"
-                        max="{{ item.variant.inventory_quantity }}"
+
                         aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
                         id="Quantity-{{ item.index | plus: 1 }}"
                         data-index="{{ item.index | plus: 1 }}"
@@ -427,5 +427,5 @@
 //         console.log(i_value);
 //       }
 //     }
-//   }
+//   }You can only add 3 of this item to your cart.
 </script>
