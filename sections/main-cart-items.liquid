@@ -392,7 +392,6 @@
 {% endschema %}
 <script>
   var my_product = document.getElementsByClassName('cart-item');
-//   console.log(my_product.length);
   for (let i = 0; i < my_product.length; i++) {
     let input_value = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].value;
     let input_max = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].max;
@@ -400,15 +399,9 @@
     let plus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[1];
     
     let over_info = document.getElementsByClassName('cart-item__error-text')[i];
-//     console.log(minus);
-//     console.log(plus);
     
     minus.onclick = function () {
       let i_value = this.nextElementSibling.value-1;
-//       if(i_value == input_max) {
-//         console.log(1);
-// //         tip_info = input_max;
-//       }
       if(i_value >= input_max) {
         over_info.innerHTML = input_max;
         console.log(over_info);
@@ -434,9 +427,5 @@
         console.log(i_value);
       }
     }
-//     if(input_value == input_max) {
-      console.log(input_value);
-      console.log(input_max);
-//     }
   }
 </script>
