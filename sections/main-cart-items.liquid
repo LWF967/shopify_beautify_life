@@ -394,7 +394,7 @@
   var my_product = document.getElementsByClassName('cart-item');
   var my_cart_autoupdate = document.getElementsByClassName('my_cart_autoupdate');
   
-  if(my_cart_autoupdate > 0) {
+  if(my_cart_autoupdate.length > 0) {
   	for (let i = 0; i < my_product.length; i++) {
       let input_value = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].value;
       let input_max = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].max;
