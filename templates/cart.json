@@ -2,6 +2,7 @@
   "sections": {
     "1636449903a90cf233": {
       "type": "my-cart-item",
+      "disabled": true,
       "settings": {
         "cart_updates": true,
         "cart_notes": true
@@ -9,7 +10,6 @@
     },
     "cart-items": {
       "type": "main-cart-items",
-      "disabled": true,
       "settings": {
         "show_vendor": false
       }
