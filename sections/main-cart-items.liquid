@@ -414,10 +414,13 @@
     plus.onclick = function () {
       let i_value = this.previousElementSibling.value*1+1;
       if(i_value == input_max) {
-        console.log("+");
+        over_info.innerHTML = input_max;
         console.log(over_info);
         console.log(input_max);
-        over_info.innerHTML = input_max;
+      } else {
+        over_info.innerHTML = '';
+        console.log(over_info);
+        console.log(input_max);
       }
     }
 //     if(input_value == input_max) {
