@@ -33,6 +33,7 @@
         "buttons"
       ],
       "settings": {
+        "cart_updates": false,
         "show_cart_note": true
       }
     }
