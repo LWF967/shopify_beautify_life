@@ -391,41 +391,41 @@
 }
 {% endschema %}
 <script>
-  var my_product = document.getElementsByClassName('cart-item');
-  for (let i = 0; i < my_product.length; i++) {
-    let input_value = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].value;
-    let input_max = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].max;
-    let minus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[0];
-    let plus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[1];
+//   var my_product = document.getElementsByClassName('cart-item');
+//   for (let i = 0; i < my_product.length; i++) {
+//     let input_value = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].value;
+//     let input_max = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].max;
+//     let minus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[0];
+//     let plus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[1];
     
-    let over_info = document.getElementsByClassName('cart-item__error-text')[i];
+//     let over_info = document.getElementsByClassName('cart-item__error-text')[i];
     
-    minus.onclick = function () {
-      let i_value = this.nextElementSibling.value-1;
-      if(i_value >= input_max) {
-        over_info.innerHTML = input_max;
-        console.log(over_info);
-        console.log(input_max);
-      } else {
-        over_info.innerHTML = '';
-        console.log(over_info);
-        console.log(input_max);
-        console.log(i_value);
-      }
-    }
+//     minus.onclick = function () {
+//       let i_value = this.nextElementSibling.value-1;
+//       if(i_value >= input_max) {
+//         over_info.innerHTML = input_max;
+//         console.log(over_info);
+//         console.log(input_max);
+//       } else {
+//         over_info.innerHTML = '';
+//         console.log(over_info);
+//         console.log(input_max);
+//         console.log(i_value);
+//       }
+//     }
     
-    plus.onclick = function () {
-      let i_value = this.previousElementSibling.value*1+1;
-      if(i_value >= input_max) {
-        over_info.innerHTML = input_max;
-        console.log(over_info);
-        console.log(input_max);
-      } else {
-        over_info.innerHTML = '';
-        console.log(over_info);
-        console.log(input_max);
-        console.log(i_value);
-      }
-    }
-  }
+//     plus.onclick = function () {
+//       let i_value = this.previousElementSibling.value*1+1;
+//       if(i_value >= input_max) {
+//         over_info.innerHTML = input_max;
+//         console.log(over_info);
+//         console.log(input_max);
+//       } else {
+//         over_info.innerHTML = '';
+//         console.log(over_info);
+//         console.log(input_max);
+//         console.log(i_value);
+//       }
+//     }
+//   }
 </script>
