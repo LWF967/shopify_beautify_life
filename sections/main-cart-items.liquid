@@ -391,41 +391,45 @@
 }
 {% endschema %}
 <script>
-//   var my_product = document.getElementsByClassName('cart-item');
-//   for (let i = 0; i < my_product.length; i++) {
-//     let input_value = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].value;
-//     let input_max = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].max;
-//     let minus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[0];
-//     let plus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[1];
-    
-//     let over_info = document.getElementsByClassName('cart-item__error-text')[i];
-    
-//     minus.onclick = function () {
-//       let i_value = this.nextElementSibling.value-1;
-//       if(i_value >= input_max) {
-//         over_info.innerHTML = "You can only add + input_max + of this item to your cart.";
-//         console.log(over_info);
-//         console.log(input_max);
-//       } else {
-//         over_info.innerHTML = '';
-//         console.log(over_info);
-//         console.log(input_max);
-//         console.log(i_value);
-//       }
-//     }
-    
-//     plus.onclick = function () {
-//       let i_value = this.previousElementSibling.value*1+1;
-//       if(i_value >= input_max) {
-//         over_info.innerHTML = "You can only add + input_max + of this item to your cart.";
-//         console.log(over_info);
-//         console.log(input_max);
-//       } else {
-//         over_info.innerHTML = '';
-//         console.log(over_info);
-//         console.log(input_max);
-//         console.log(i_value);
-//       }
-//     }
-//   }my_cart_autoupdate
+  var my_product = document.getElementsByClassName('cart-item');
+  var my_cart_autoupdate = document.getElementsByClassName('my_cart_autoupdate');
+  
+  if(my_cart_autoupdate > 0) {
+  	for (let i = 0; i < my_product.length; i++) {
+      let input_value = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].value;
+      let input_max = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].max;
+      let minus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[0];
+      let plus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[1];
+
+      let over_info = document.getElementsByClassName('cart-item__error-text')[i];
+
+      minus.onclick = function () {
+        let i_value = this.nextElementSibling.value-1;
+        if(i_value >= input_max) {
+          over_info.innerHTML = "You can only add + input_max + of this item to your cart.";
+          console.log(over_info);
+          console.log(input_max);
+        } else {
+          over_info.innerHTML = '';
+          console.log(over_info);
+          console.log(input_max);
+          console.log(i_value);
+        }
+      }
+
+      plus.onclick = function () {
+        let i_value = this.previousElementSibling.value*1+1;
+        if(i_value >= input_max) {
+          over_info.innerHTML = "You can only add + input_max + of this item to your cart.";
+          console.log(over_info);
+          console.log(input_max);
+        } else {
+          over_info.innerHTML = '';
+          console.log(over_info);
+          console.log(input_max);
+          console.log(i_value);
+        }
+      }
+    }
+  }
 </script>
