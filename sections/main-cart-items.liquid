@@ -291,7 +291,7 @@
                         name="updates[]"
                         value="{{ item.quantity }}"
                         min="0"
-                        {% if section.settings.cart_updates == false %}max="{{ item.variant.inventory_quantity }}"{% endif %}
+                        {% if section.settings.cart_updates == false %}data-max="{{ item.variant.inventory_quantity }}"{% endif %}
                         aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
                         id="Quantity-{{ item.index | plus: 1 }}"
                         data-index="{{ item.index | plus: 1 }}"
@@ -397,7 +397,7 @@
   if(my_cart_autoupdate > 0) {
   	for (let i = 0; i < my_product.length; i++) {
       let input_value = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].value;
-      let input_max = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].max;
+      let input_max = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].dataset.max;
       let minus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[0];
       let plus = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__button no-js-hidden')[1];
 
