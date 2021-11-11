@@ -68,7 +68,7 @@
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>
     <div class="cart__footer">
-    {%- if section.settings.cart_notes -%}
+    {%- if section.settings.show_cart_note -%}
       <cart-note class="cart__note field my_subtotal_addnote">
         <label for="Cart-note" class="my_subtotal_font_size my_subtotal_margin_bottom">Add a note to your order</label>
         <textarea class="my_subtotal_textarea"  placeholder="Input your order">{{ cart.note }}</textarea>
