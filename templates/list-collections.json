@@ -3,57 +3,17 @@
     "main": {
       "type": "main-list-collections",
       "settings": {
-        "title": "Collections",
-        "sort": "alphabetical",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "image_padding": false
+        "image_ratio": "square"
       }
     },
-    "1636613058b7ab1201": {
+    "select": {
       "type": "collection-list-Beautify",
-      "disabled": true,
-      "blocks": {
-        "1636613058b7ab1201-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "orange",
-            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "title": "New supply this week"
-          }
-        },
-        "1636613058b7ab1201-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "pitaya",
-            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
-            "title": "New supply this week"
-          }
-        },
-        "1636613058b7ab1201-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "New supply this week"
-          }
-        }
-      },
-      "block_order": [
-        "1636613058b7ab1201-0",
-        "1636613058b7ab1201-1",
-        "1636613058b7ab1201-2"
-      ],
       "settings": {
-        "title": "NEW RELEASES",
-        "sub_title": "New supply this week",
-        "grid": 3,
-        "show_view_all": false,
-        "show_page_Dot": false
       }
     }
   },
   "order": [
     "main",
-    "1636613058b7ab1201"
+    "select"
   ]
 }
