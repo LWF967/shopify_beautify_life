@@ -12,7 +12,40 @@
     },
     "select": {
       "type": "collection-list-Beautify",
+      "blocks": {
+        "3aaf2dc0-30e6-4875-8ad4-dceceff4aaff": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "54f785b9-7252-4393-b877-d024b9a08ef3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "250a3f99-d07e-4c24-855c-f1cc470f6538": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        }
+      },
+      "block_order": [
+        "3aaf2dc0-30e6-4875-8ad4-dceceff4aaff",
+        "54f785b9-7252-4393-b877-d024b9a08ef3",
+        "250a3f99-d07e-4c24-855c-f1cc470f6538"
+      ],
       "settings": {
+        "title": "NEW RELEASES",
+        "sub_title": "New supply this week",
+        "grid": 3,
+        "show_view_all": false,
+        "show_page_Dot": false
       }
     }
   },
