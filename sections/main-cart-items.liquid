@@ -180,7 +180,7 @@
                     </ul>
                     
                     <p class="cart-item__error" id="Line-item-error-{{ item.index | plus: 1 }}">
-                      <span class="cart-item__error-text"></span>
+                      <span class="cart-item__error-text {% if section.settings.cart_updates == false %}my_cart_autoupdate{% endif %}"></span>
                       <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
                         <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
                         <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
@@ -246,19 +246,19 @@
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end my_cart_price_font_size">
-                              {{ item.original_line_price | money }}11
+                              {{ item.original_line_price | money }}
                             </s>
                           </dd>
                           <dt class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end my_cart_price_font_size">
-                            {{ item.final_line_price | money }}22
+                            {{ item.final_line_price | money }}
                           </dd>
                         </dl>
                       {%- else -%}
                         <span class="price price--end my_cart_price_font_size">
-                          {{ item.original_line_price | money }}33
+                          {{ item.original_line_price | money }}
                         </span>
                       {%- endif -%}
 
@@ -291,7 +291,7 @@
                         name="updates[]"
                         value="{{ item.quantity }}"
                         min="0"
-
+                        {% if section.settings.cart_updates == false %}max="{{ item.variant.inventory_quantity }}"{% endif %}
                         aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
                         id="Quantity-{{ item.index | plus: 1 }}"
                         data-index="{{ item.index | plus: 1 }}"
