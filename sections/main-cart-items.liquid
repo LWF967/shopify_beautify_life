@@ -391,8 +391,11 @@
 }
 {% endschema %}
 <script>
-  var input_value = document.getElementsByClassName('cart-item')[0].getElementsByClassName('quantity__input')[0].value;
-  var input_max = document.getElementsByClassName('cart-item')[0].getElementsByClassName('quantity__input')[0].max;
-  console.log(input_value);
-  console.log(input_max);
+  var my_product = document.getElementsByClassName('cart-item');
+  for (let i = 0; i < my_product.length; i++) {
+    var input_value = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[i].value;
+    var input_max = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[i].max;
+    console.log(input_value);
+    console.log(input_max);
+  }
 </script>
