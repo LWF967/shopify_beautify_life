@@ -393,7 +393,7 @@
 <script>
   var my_product = document.getElementsByClassName('cart-item');
   console.log(my_product.length);
-  for (let i = 0; i < my_product.length - 1; i++) {
+  for (let i = 0; i < my_product.length; i++) {
     var input_value = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[i].value;
     var input_max = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[i].max;
     console.log(input_value);
