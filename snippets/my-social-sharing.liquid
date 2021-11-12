@@ -67,7 +67,7 @@
         <a data-no-instant rel="noopener noreferrer nofollow" href="http://pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media=http:{{permaImage}}&amp;description={{ permaTitle }}" target="{{target}}" class="pinterest cb {{class_tooltip}}">
 <!--           <span class="tt_txt"> 'general.nt_tooltip.share_pr' | t }}</span> -->
 <!--           <i class="facl facl-pinterest"></i> -->
-          {% if settings.social_pinterest_link != false %}
+          {% if settings.pin_on_pinterest != false %}
             <span class="ts_style">{%- render 'icon-pinterest' -%}</span>
           {% endif %}
         </a>
