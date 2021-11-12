@@ -60,7 +60,7 @@
     transition: all .5s;
   }
   
-  .ts_style:hover { 
+  .ts_style:hover .ts_style svg { 
     transform: translateY(-5px);
   }
   
@@ -169,7 +169,6 @@
                   <span class="bubble">socials_txt[forloop.index0] | t }}</span>           
                   {%- render 'icon-twitter' -%}
                 </span>
-				 
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "facebook" %}
               {% if settings.social_facebook_link != blank %}
