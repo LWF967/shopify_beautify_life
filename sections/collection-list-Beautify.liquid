@@ -45,7 +45,7 @@
   <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
     
     {% if section.settings.show_page_Dot %}
-   		<ol id="collection_list_pog">
+   		<ol id="collection_list_pog-{{section.id}}">
 
     	</ol>
     {% else %}
@@ -57,12 +57,15 @@
     {% endif %}
 </div>
 
-<script>
+
+
+{% javascript %}
+
 
   var collection_list_func = function(){
 //获取轮播点
-	var contentbox = document.getElementById('grid-ul-beautify-box');
-    var list_text = document.getElementById('collection_list_pog');
+    var contentbox = document.getElementById('grid-ul-beautify-box-{{section.id}}');
+    var list_text = document.getElementById('collection_list_pog-{{section.id}}');
 	var itemLength = document.getElementsByClassName('grid__item__beautify small--one-half medium-up--one-quarter').length;
     for (let a = 0; a < itemLength; a++) {
 //       itemlist[a].index = a
@@ -89,26 +92,20 @@
   
   
   
-class VariantRadios extends VariantSelects {
+class text extends VariantSelects {
   constructor() {
     super();
   }
 
-  updateOptions() {
-    const fieldsets = Array.from(this.querySelectorAll('fieldset'));
-    this.options = fieldsets.map((fieldset) => {
-      return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
-    });
-  }
+
 }
 
-customElements.define('variant-radios', VariantRadios);
+customElements.define('text1', text);
   
   
   
   
-  
-</script>
+{% endjavascript %}
 
 <style>
 
