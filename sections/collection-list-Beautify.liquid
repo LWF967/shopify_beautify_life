@@ -23,7 +23,7 @@
     <ul id="grid-ul-beautify-box" class="grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
 
 
-          <div class="swiper-container">
+          <div class="swiper-container1">
         <div class="swiper-wrapper">
           
     
@@ -78,8 +78,35 @@
     {% endif %}
 </div>
 
+<script type="module">
 
+ // import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
 
+    import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+  
+  
+   const swiper1 = new Swiper ('.swiper-container1', {
+    direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+    loop: true, // 循环模式选项 
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+  /*  scrollbar: {
+      el: '.swiper-scrollbar',
+    }, */
+  })          
+    
+</script>
 <style>
 
   ol#collection_list_pog{
