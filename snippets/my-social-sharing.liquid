@@ -134,10 +134,7 @@
 <!--           <span class="tt_txt"> 'general.nt_tooltip.share_pr' | t }}</span> -->
 <!--           <i class="facl facl-pinterest"></i> -->
           {% if settings.pin_on_pinterest != false %}
-            <span class="ts_style">
-<!--               <span class="bubble"> 'general.nt_tooltip.share_pr' | t }}</span> -->
-              {%- render 'icon-pinterest' -%}
-          </span>
+            <span class="ts_style">{%- render 'icon-pinterest' -%}</span>
           {% endif %}
         </a>
 <!--         %- endif -%}         -->
@@ -171,10 +168,7 @@
 <!--             <span class="tt_txt">socials_txt[forloop.index0] | t }}</span> -->
             {% if socials_icon[forloop.index0] == "twitter" %}
               {% if settings.social_twitter_link != blank %}
-                <span class="ts_style">
-                  <span class="bubble">socials_txt[forloop.index0] | t }}</span>           
-                  {%- render 'icon-twitter' -%}
-                </span>
+                <span class="ts_style">{%- render 'icon-twitter' -%}</span>
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "facebook" %}
               {% if settings.social_facebook_link != blank %}
