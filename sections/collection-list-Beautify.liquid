@@ -19,12 +19,12 @@
       {%- assign grid_item_width = 'small--one-half medium-up--one-sixth' -%}
   {% endcase %}
 
-  <div class="" style="overflow: hidden;">
-    <ul id="grid-ul-beautify-box" class="grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
+  <div class="swiper-container1" style="overflow: hidden;">
+    <ul id="grid-ul-beautify-box" class="swiper-wrapper grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
 
 
-          <div class="swiper-container1">
-        <div class="swiper-wrapper">
+      
+   
           
     
   
@@ -42,8 +42,12 @@
       {% endfor %}
         
         
-          </div>
-               <!-- 如果需要分页器 -->
+
+
+
+    </ul>
+    
+        <!-- 如果需要分页器 -->
           <div class="swiper-pagination"></div>
 
           <!-- 如果需要导航按钮 -->
@@ -52,10 +56,6 @@
 
           <!-- 如果需要滚动条 -->
           <div class="swiper-scrollbar"></div>
-      </div> 
-
-    </ul>
- 
     
   </div>
 	
