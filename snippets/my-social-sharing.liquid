@@ -166,10 +166,10 @@
             {% if socials_icon[forloop.index0] == "twitter" %}
               {% if settings.social_twitter_link != blank %}
                 <span class="ts_style">
-                                 
+                  <span class="bubble">socials_txt[forloop.index0] | t }}</span>           
                   {%- render 'icon-twitter' -%}
                 </span>
-				 <span class="bubble12">1111111111111</span>
+				 
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "facebook" %}
               {% if settings.social_facebook_link != blank %}
@@ -208,28 +208,3 @@
       {%- endif -%}
   {%-endunless-%}
 </div>
-
-<script>
-  
-  var text3 =function(){
-  
-  let my_svg12 = document.getElementsByClassName('ts_style');
-  let my_bubble12 = document.getElementsByClassName('bubble12');
-  for (let i = 0; i < my_svg12.length; i++) {
-    my_svg12[i].onmouseover = function () {
-      this.style.transform = 'translateY(-5px)';
-      my_bubble12[i].style.transform = 'translateY(-5px)';
-      my_bubble12[i].style.opacity = 1;
-      console.log(1);
-    }
-    my_svg12[i].onmouseout = function () {
-      this.style.transform = 'translateY(0px)';
-      my_bubble12[i].style.transform = 'translateY(0px)';
-      my_bubble12[i].style.opacity = 0;
-      console.log(2);
-    }
-  }
-  
-  }();
-  
-</script>
