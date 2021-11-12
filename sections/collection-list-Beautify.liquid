@@ -20,7 +20,7 @@
   {% endcase %}
 
   <div style="overflow: hidden;">
-    <ul id="grid-ul-beautify-box-{{section.id}}"  class="grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
+    <ul id="grid-ul-beautify-box-{{section.id}}"  data-ulid="grid-ul-beautify-box-{{section.id}}" class="grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
       {% for block in section.blocks limit: section.blocks.size %}
         <li class="grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
           {%- liquid 
@@ -45,7 +45,7 @@
   <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
     
     {% if section.settings.show_page_Dot %}
-   		<ol id="collection_list_pog-{{section.id}}">
+   		<ol id="collection_list_pog" data-olid="collection_list_pog-{{section.id}}">
 
     	</ol>
     {% else %}
@@ -66,10 +66,10 @@
 
   var collection_list_func = function(){
 //获取轮播点
-    var contentbox = document.getElementById('grid-ul-beautify-box-{{section.id}}');
+    var contentbox = document.getElementById('grid-ul-beautify-box');
                                              
-    var list_text = document.getElementById('collection_list_pog-{{section.id}}');
-
+    var list_text = document.getElementById('collection_list_pog');
+	
 	console.log('this-',contentbox,'<===>',list_text);
 	var itemLength = document.getElementsByClassName('grid__item__beautify small--one-half medium-up--one-quarter').length;
     for (let a = 0; a < itemLength; a++) {
