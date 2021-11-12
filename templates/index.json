@@ -60,6 +60,65 @@
         "button_link": ""
       }
     },
+    "16366965204a8cb316": {
+      "type": "slideshow-beautify-2",
+      "blocks": {
+        "8f64082c-3285-44d3-89fb-a12006fa7cda": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
+            "image_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "f6d6b42e-2c43-47f7-a951-c5acebe942df": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "62521758-7c28-4198-ba39-ff193afabfae": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "8f64082c-3285-44d3-89fb-a12006fa7cda",
+        "f6d6b42e-2c43-47f7-a951-c5acebe942df",
+        "62521758-7c28-4198-ba39-ff193afabfae"
+      ],
+      "settings": {
+        "se_height": "adapt",
+        "text_size": "medium",
+        "text_alignment": "middle_center",
+        "overlay": true,
+        "loop": true,
+        "auto_play": true,
+        "auto_time": 3,
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "#222",
+        "feature_title": "title name",
+        "link-name": "View all",
+        "button_link": ""
+      }
+    },
     "1635836350c3b72b9b": {
       "type": "collection-list-Beautify",
       "blocks": {
@@ -420,6 +479,7 @@
   },
   "order": [
     "16340032987fd8fd82",
+    "16366965204a8cb316",
     "1635836350c3b72b9b",
     "16366804518eb2e044",
     "163454604067313d0f",
