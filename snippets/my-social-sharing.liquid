@@ -67,8 +67,8 @@
   
   .bubble {
     position: absolute;
-    top: -3px;
-    left: -7px;
+    top: -35px;
+    left: -72px;
     padding: 2px 5px;
     background: black;
     color: white;
@@ -165,7 +165,7 @@
                 <span class="ts_style">
                   {%- render 'icon-twitter' -%}
                 </span>
-                <span>{{ socials_txt[forloop.index0] | t }}</span>
+                <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "facebook" %}
               {% if settings.social_facebook_link != blank %}
