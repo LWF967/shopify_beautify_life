@@ -60,7 +60,7 @@
     transition: all .5s;
   }
   
-  .ts_style:hover { 
+  .ts_style svg:hover { 
     transform: translateY(-5px);
   }
   
@@ -100,7 +100,6 @@
 <!--         <i class="facl facl-facebook"></i> -->
        {% if settings.share_on_facebook != false %}
          <span class="ts_style">
-                    <span class="bubble">{{ 'general.nt_tooltip.share_fb' | t }}</span>
            {%- render 'icon-facebook' -%} 
          </span>
        {% endif %}
