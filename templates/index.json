@@ -205,7 +205,7 @@
         "16366804518eb2e044-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
+            "collection": "pitaya",
             "title": "New supply this week"
           }
         },
@@ -222,18 +222,26 @@
             "collection": "",
             "title": "New supply this week"
           }
+        },
+        "108496b1-c9fd-4cb3-b41d-beed0ae9d48e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pitaya",
+            "title": "New supply this week"
+          }
         }
       },
       "block_order": [
         "16366804518eb2e044-0",
         "16366804518eb2e044-1",
-        "16366804518eb2e044-2"
+        "16366804518eb2e044-2",
+        "108496b1-c9fd-4cb3-b41d-beed0ae9d48e"
       ],
       "settings": {
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
-        "grid": 3,
-        "show_view_all": false,
+        "grid": 4,
+        "show_view_all": true,
         "show_page_Dot": true
       }
     },
