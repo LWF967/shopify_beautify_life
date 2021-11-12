@@ -169,7 +169,7 @@
                                  
                   {%- render 'icon-twitter' -%}
                 </span>
-				 <span class="bubble">1111111111111</span>
+				 <span class="bubble12">1111111111111</span>
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "facebook" %}
               {% if settings.social_facebook_link != blank %}
@@ -214,7 +214,7 @@
   var text3 =function(){
   
   let my_svg12 = document.getElementsByClassName('ts_style');
-  let my_bubble12 = document.getElementsByClassName('bubble');
+  let my_bubble12 = document.getElementsByClassName('bubble12');
   for (let i = 0; i < my_svg12.length; i++) {
     my_svg12[i].onmouseover = function () {
       this.style.transform = 'translateY(-5px)';
