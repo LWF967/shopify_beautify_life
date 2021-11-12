@@ -22,13 +22,7 @@
   <div class="swiper-container1" style="overflow: hidden;">
     <ul id="grid-ul-beautify-box" class="swiper-wrapper grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
 
-
-      
-   
-          
-    
   
-      
       {% for block in section.blocks limit: section.blocks.size %}
         <li class="swiper-slide grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
           {%- liquid 
@@ -41,21 +35,19 @@
         </li>
       {% endfor %}
         
-        
-
 
 
     </ul>
     
         <!-- 如果需要分页器 -->
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination" style="position:absolute;"></div>
 
           <!-- 如果需要导航按钮 -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev" style="position:absolute;"></div>
+          <div class="swiper-button-next" style="position:absolute;"></div>
 
           <!-- 如果需要滚动条 -->
-          <div class="swiper-scrollbar"></div>
+          <div class="swiper-scrollbar" style="position:absolute;"></div>
     
   </div>
 	

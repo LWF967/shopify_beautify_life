@@ -98,9 +98,10 @@
 <!--         <span class="tt_txt"> 'general.nt_tooltip.share_fb' | t }}</span> -->
 <!--         <i class="facl facl-facebook"></i> -->
        {% if settings.share_on_facebook != false %}
-         <span class="tt_txt bubble">{{ 'general.nt_tooltip.share_fb' | t }}</span>
-         <span class="ts_style">{%- render 'icon-facebook' -%} 
-       </span>
+         <span class="ts_style">
+                    <span class="bubble">{{ 'general.nt_tooltip.share_fb' | t }}</span>
+           {%- render 'icon-facebook' -%} 
+         </span>
        {% endif %}
        
      </a>
