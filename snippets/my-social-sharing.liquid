@@ -207,19 +207,19 @@
 </div>
 
 <script>
-  let my_svg = document.getElementsByClassName('ts_style');
-  let my_bubble = document.getElementsByClassName('bubble');
-  for (let i = 0; i < my_svg.length; i++) {
-    my_svg[i].onmouseover = function () {
+  let my_svg12 = document.getElementsByClassName('ts_style');
+  let my_bubble12 = document.getElementsByClassName('bubble');
+  for (let i = 0; i < my_svg12.length; i++) {
+    my_svg12[i].onmouseover = function () {
       this.style.transform = 'translateY(-5px)';
-      my_bubble[i].style.transform = 'translateY(-5px)';
-      my_bubble[i].style.opacity = 1;
+      my_bubble12[i].style.transform = 'translateY(-5px)';
+      my_bubble12[i].style.opacity = 1;
       console.log(1);
     }
-    my_svg[i].onmouseout = function () {
+    my_svg12[i].onmouseout = function () {
       this.style.transform = 'translateY(0px)';
-      my_bubble[i].style.transform = 'translateY(0px)';
-      my_bubble[i].style.opacity = 0;
+      my_bubble12[i].style.transform = 'translateY(0px)';
+      my_bubble12[i].style.opacity = 0;
       console.log(2);
     }
   }
