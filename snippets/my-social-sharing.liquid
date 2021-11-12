@@ -208,3 +208,20 @@
 .ts_style svg { width: 14px;height: 14px;color: #797979;background: transparent; transition: all .5s; }
 .ts_style svg:hover { transform: translateY(-5px); } -->
 {%- endstyle -%}
+
+<script>
+  let svg = document.getElementsByClassName('ts_style');
+  let bubble = document.getElementsByClassName('bubble');
+  for (let i = 0; i < svg.length; i++) {
+    svg[i].onmouseover = function () {
+      this.style.transform = 'translateY(-5px)';
+      bubble[i].style.transform = 'translateY(-5px)';
+      bubble[i].style.opacity = 1;
+    }
+    svg[i].onmouseout = function () {
+      this.style.transform = 'translateY(0px)';
+      bubble[i].style.transform = 'translateY(0px)';
+      bubble[i].style.opacity = 0;
+    }
+  }
+</script>
