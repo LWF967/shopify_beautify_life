@@ -37,7 +37,7 @@
 <div class="nt-social border_{{border_bl}} black_{{black_true}} my_padding">
   {%- unless follow_social -%}  
 <!--     %- if settings.share_facebook -% -->
-     <a data-no-instant rel="noopener noreferrer nofollow my_svg_link" href="https://www.facebook.com/sharer/sharer.php?u={{ permalinkURL }}" target="{{target}}" class="facebook cb {{class_tooltip}}">
+     <a data-no-instant rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u={{ permalinkURL }}" target="{{target}}" class="facebook cb {{class_tooltip}}">
 <!--         <span class="tt_txt"> 'general.nt_tooltip.share_fb' | t }}</span> -->
 <!--         <i class="facl facl-facebook"></i> -->
        {% if settings.share_on_facebook != false %}
@@ -47,7 +47,7 @@
      </a>
 <!--     %- endif -%} -->
 <!--     %- if settings.share_twitter -%} -->
-     <a data-no-instant rel="noopener noreferrer nofollow my_svg_link" href="http://twitter.com/share?text={{ permaTitle }}&amp;url={{ permalinkURL }}" target="{{target}}" class="twitter cb {{class_tooltip}}">
+     <a data-no-instant rel="noopener noreferrer nofollow" href="http://twitter.com/share?text={{ permaTitle }}&amp;url={{ permalinkURL }}" target="{{target}}" class="twitter cb {{class_tooltip}}">
 <!--         <span class="tt_txt"> 'general.nt_tooltip.share_tw' | t }}</span> -->
 <!--         <i class="facl facl-twitter"></i> -->
        {% if settings.tweet_on_twitter != false %}
@@ -64,7 +64,7 @@
 <!--      %- endif -%} -->
 <!--      %- if permaImage != blank -%} -->
 <!--         %- if settings.share_pinterest -%} -->
-        <a data-no-instant rel="noopener noreferrer nofollow my_svg_link" href="http://pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media=http:{{permaImage}}&amp;description={{ permaTitle }}" target="{{target}}" class="pinterest cb {{class_tooltip}}">
+        <a data-no-instant rel="noopener noreferrer nofollow" href="http://pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media=http:{{permaImage}}&amp;description={{ permaTitle }}" target="{{target}}" class="pinterest cb {{class_tooltip}}">
 <!--           <span class="tt_txt"> 'general.nt_tooltip.share_pr' | t }}</span> -->
 <!--           <i class="facl facl-pinterest"></i> -->
           {% if settings.pin_on_pinterest != false %}
@@ -98,7 +98,7 @@
       {%- if social_icons -%}
         {%- for social_link in socials %}
         {% if settings[social_link] != blank -%}
-          <a data-no-instant rel="noopener noreferrer nofollow my_svg_link" href="{{ settings[social_link] | escape }}" target="{{target}}" class="{{socials_icon[forloop.index0] | remove:'-play'}} cb {{class_tooltip}}">
+          <a data-no-instant rel="noopener noreferrer nofollow" href="{{ settings[social_link] | escape }}" target="{{target}}" class="{{socials_icon[forloop.index0] | remove:'-play'}} cb {{class_tooltip}}">
 <!--             <span class="tt_txt">socials_txt[forloop.index0] | t }}</span> -->
             {% if socials_icon[forloop.index0] == "twitter" %}
               {% if settings.social_twitter_link != blank %}
@@ -147,5 +147,5 @@
 .ts_style { padding: 0 9px; }
 .facl { box-sizing: content-box; overflow: hidden;}
 .ts_style svg { width: 14px;height: 14px;color: #797979;background: transparent; transition: all .5s; }
-.my_svg_link:hover { transform: translateY(-5px); }
+.ts_style svg:hover { transform: translateY(-5px); }
 {%- endstyle -%}
