@@ -20,17 +20,17 @@
     list[0].index = 0
     list[0].className = 'active'
 
-    for (var c = 0; c < list.length; c++) {
-      list[c].index = c
-      list[c].onclick = function () {
-        for (var j = 0; j < list.length; j++) {
-          list[j].className = ''
-        }
-        this.className = 'active'
-        contentbox.style.transform =
-          'translate(' + -itemlist[this.index].index * diff + 'px' + ')'
-      }
-    }
+//     for (var c = 0; c < list.length; c++) {
+//       list[c].index = c
+//       list[c].onclick = function () {
+//         for (var j = 0; j < list.length; j++) {
+//           list[j].className = ''
+//         }
+//         this.className = 'active'
+//         contentbox.style.transform =
+//           'translate(' + -itemlist[this.index].index * diff + 'px' + ')'
+//       }
+//     }
 
   }();
   
