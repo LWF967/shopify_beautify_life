@@ -34,6 +34,62 @@
     assign socials_icon = "facebook twitter instagram dribbble linkedin pinterest tumblr youtube-play behance soundcloud tiktok snapchat vimeo" | split: ' '
     assign socials_txt = "general.nt_tooltip.follow_fb;general.nt_tooltip.follow_tw;general.nt_tooltip.follow_it;general.nt_tooltip.follow_dr;general.nt_tooltip.follow_ld;general.nt_tooltip.follow_pr;general.nt_tooltip.follow_tu;general.nt_tooltip.follow_yt;general.nt_tooltip.follow_bh;general.nt_tooltip.follow_sc;general.nt_tooltip.follow_tt" | split: ';'  
   endif -%}
+
+<style>
+  
+  .my_padding {
+    overflow-x: hidden; 
+    box-sizing: content-box;
+    padding-right: 6px
+  }
+  
+  .ts_style { 
+    padding: 0 9px; 
+  }
+  
+  .facl { 
+    box-sizing: content-box;
+    overflow: hidden;
+  }
+  
+  .ts_style svg { 
+    width: 14px;
+    height: 14px;
+    color: #797979;
+    background: transparent; 
+    transition: all .5s;
+  }
+  
+  .ts_style svg:hover { 
+    transform: translateY(-5px);
+  }
+  
+  .bubble {
+    position: absolute;
+    top: -35px;
+    left: -72px;
+    padding: 2px 5px;
+    background: black;
+    color: white;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all .5s;
+  }
+
+  .bubble:before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 25px;
+    left: 50%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+</style>
+
 <div class="nt-social border_{{border_bl}} black_{{black_true}} my_padding">
   {%- unless follow_social -%}  
 <!--     %- if settings.share_facebook -% -->
@@ -68,8 +124,10 @@
 <!--           <span class="tt_txt"> 'general.nt_tooltip.share_pr' | t }}</span> -->
 <!--           <i class="facl facl-pinterest"></i> -->
           {% if settings.pin_on_pinterest != false %}
-            <span class="ts_style">{%- render 'icon-pinterest' -%}</span>
-            <span class="bubble">{{ 'general.nt_tooltip.share_pr' | t }}</span>
+            <span class="ts_style">
+              <span class="bubble">{{ 'general.nt_tooltip.share_pr' | t }}</span>
+              {%- render 'icon-pinterest' -%}
+          </span>
           {% endif %}
         </a>
 <!--         %- endif -%}         -->
@@ -144,9 +202,9 @@
 </div>
 
 {%- style -%}
-.my_padding {overflow-x: hidden; box-sizing: content-box; padding-right: 6px}
+<!-- .my_padding {overflow-x: hidden; box-sizing: content-box; padding-right: 6px}
 .ts_style { padding: 0 9px; }
 .facl { box-sizing: content-box; overflow: hidden;}
 .ts_style svg { width: 14px;height: 14px;color: #797979;background: transparent; transition: all .5s; }
-.ts_style svg:hover { transform: translateY(-5px); }
+.ts_style svg:hover { transform: translateY(-5px); } -->
 {%- endstyle -%}
