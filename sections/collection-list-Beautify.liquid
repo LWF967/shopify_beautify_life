@@ -45,9 +45,8 @@
   <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
     
     {% if section.settings.show_page_Dot %}
-   		<ol id="collection_list_pog" class="collection_list_pog_class">
-
-    	</ol>
+   	
+    {%- render 'slider-pog'-%}
     {% else %}
       <a href="{{ routes.collections_url }}" class="button">{{ 'sections.collection_list.view_all' | t }}</a>
     {% endif %}
@@ -57,38 +56,7 @@
     {% endif %}
 </div>
 
-<script>
 
-  var collection_list_func = function(){
-//获取轮播点
-	var contentbox = document.getElementById('grid-ul-beautify-box');
-//     var list_text = document.getElementById('collection_list_pog');
-    var list_text = document.getElementsByClassName('collection_list_pog_class')[0];
-	var itemLength = document.getElementsByClassName('grid__item__beautify small--one-half medium-up--one-quarter').length;
-    for (let a = 0; a < itemLength; a++) {
-//       itemlist[a].index = a
-      list_text.innerHTML += '<li></li>'
-    }
-
-    var list = list_text.getElementsByTagName('li')
-    list[0].index = 0
-    list[0].className = 'active'
-
-    for (var c = 0; c < list.length; c++) {
-      list[c].index = c
-      list[c].onclick = function () {
-        for (var j = 0; j < list.length; j++) {
-          list[j].className = ''
-        }
-        this.className = 'active'
-        contentbox.style.transform =
-          'translate(' + -itemlist[this.index].index * diff + 'px' + ')'
-      }
-    }
-
-  }();
-  
-</script>
 
 <style>
 
