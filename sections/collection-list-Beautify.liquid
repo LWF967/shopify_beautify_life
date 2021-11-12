@@ -41,11 +41,11 @@
 
     </ul>
     {%endcomment%}
-    	  <ul id="grid-ul-beautify-box" class="swiper-wrapper grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
+    	  <div id="grid-ul-beautify-box" class="swiper-wrapper grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
 
   
       {% for block in section.blocks limit: section.blocks.size %}
-        <li class="swiper-slide grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
+        <div class="swiper-slide grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
           {%- liquid 
              assign   collection_title = block.settings.title
              assign   collection = collections[block.settings.collection] 
@@ -53,12 +53,12 @@
           -%}
           
           {% include 'collection-grid-item-beautify', collection: collection , collection_title:collection_title,collection_img:collection_img %}
-        </li>
+        </div>
       {% endfor %}
         
 
 
-    </ul>
+    </div>
     
     
         <!-- 如果需要分页器 -->
