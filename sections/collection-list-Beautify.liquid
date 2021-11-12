@@ -228,8 +228,9 @@
 {% endschema %}
 
 
-  {%- javascript -%}
-  
+{% javascript %}
+
+
     var collection_list_func = function(){
 //获取轮播点
       var contentbox = document.getElementById('grid-ul-beautify-box-{{section.id}}');
@@ -274,4 +275,4 @@
 // customElements.define('text1', text);
   
 
-{%- endjavascript -%}
+{% endjavascript %}
