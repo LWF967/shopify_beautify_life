@@ -165,7 +165,7 @@
                 <span class="ts_style">
                   {%- render 'icon-twitter' -%}
                 </span>
-                <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
+                <span>{{ socials_txt[forloop.index0] | t }}</span>
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "facebook" %}
               {% if settings.social_facebook_link != blank %}
