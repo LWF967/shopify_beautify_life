@@ -19,8 +19,8 @@
       {%- assign grid_item_width = 'small--one-half medium-up--one-sixth' -%}
   {% endcase %}
 
-  <div class="text-{{section.id}}" style="overflow: hidden;">
-    <ul id="grid-ul-beautify-box" class="grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
+  <div style="overflow: hidden;">
+    <ul id="grid-ul-beautify-box-{{section.id}}" class="grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
       {% for block in section.blocks limit: section.blocks.size %}
         <li class="grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
           {%- liquid 
