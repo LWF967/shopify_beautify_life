@@ -44,7 +44,7 @@
   }
   
   .ts_style { 
-/*     position: relative; */
+    position: relative;
     padding: 0 9px; 
   }
   
@@ -65,7 +65,7 @@
     transform: translateY(-5px);
   }
   
-/*   .bubble {
+  .bubble {
     position: absolute;
     top: -3px;
     left: -7px;
@@ -88,7 +88,7 @@
     border-width: 5px;
     border-style: solid;
     border-color: black transparent transparent transparent;
-  } */
+  }
 </style>
 
 <div class="nt-social border_{{border_bl}} black_{{black_true}} my_padding">
@@ -126,7 +126,7 @@
 <!--           <i class="facl facl-pinterest"></i> -->
           {% if settings.pin_on_pinterest != false %}
             <span class="ts_style">
-              <span class="bubble">{{ 'general.nt_tooltip.share_pr' | t }}</span>
+<!--               <span class="bubble"> 'general.nt_tooltip.share_pr' | t }}</span> -->
               {%- render 'icon-pinterest' -%}
           </span>
           {% endif %}
@@ -163,7 +163,7 @@
             {% if socials_icon[forloop.index0] == "twitter" %}
               {% if settings.social_twitter_link != blank %}
                 <span class="ts_style">
-                  <span class="tt_txt">{{ socials_txt[forloop.index0] | t }}</span>
+                  <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                   {%- render 'icon-twitter' -%}
                 </span>
               {% endif %} 
