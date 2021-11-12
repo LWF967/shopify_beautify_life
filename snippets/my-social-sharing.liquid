@@ -138,7 +138,10 @@
 <!--           <span class="tt_txt"> 'general.nt_tooltip.share_pr' | t }}</span> -->
 <!--           <i class="facl facl-pinterest"></i> -->
           {% if settings.pin_on_pinterest != false %}
-            <span class="ts_style">{%- render 'icon-pinterest' -%}</span>
+            <span class="ts_style">
+              {%- render 'icon-pinterest' -%}
+              <span class="bubble">{{ 'general.nt_tooltip.share_pr' | t }}</span>
+            </span>
           {% endif %}
         </a>
 <!--         %- endif -%}         -->
