@@ -19,8 +19,8 @@
       {%- assign grid_item_width = 'small--one-half medium-up--one-sixth' -%}
   {% endcase %}
 
-  <div style="overflow: hidden;">
-    <ul id="grid-ul-beautify-box-{{section.id}}"  class="grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
+  <div class="" style="overflow: hidden;">
+    <ul id="grid-ul-beautify-box" class="grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
       {% for block in section.blocks limit: section.blocks.size %}
         <li class="grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
           {%- liquid 
@@ -45,7 +45,7 @@
   <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
     
     {% if section.settings.show_page_Dot %}
-   		<ol id="collection_list_pog-{{section.id}}">
+   		<ol id="collection_list_pog">
 
     	</ol>
     {% else %}
@@ -57,13 +57,37 @@
     {% endif %}
 </div>
 
+<script>
 
+  var collection_list_func = function(){
+//获取轮播点
 
+    var list_text = document.getElementById('collection_list_pog')
+	var itemLength = document.getElementsByClassName('grid__item__beautify small--one-half medium-up--one-quarter').length;
+    for (let a = 0; a < itemLength; a++) {
+//       itemlist[a].index = a
+      list_text.innerHTML += '<li></li>'
+    }
 
+    var list = list_text.getElementsByTagName('li')
+    list[0].index = 0
+    list[0].className = 'active'
 
+    for (var c = 0; c < list.length; c++) {
+      list[c].index = c
+      list[c].onclick = function () {
+        for (var j = 0; j < list.length; j++) {
+          list[j].className = ''
+        }
+        this.className = 'active'
+        contentbox.style.transform =
+          'translate(' + -itemlist[this.index].index * diff + 'px' + ')'
+      }
+    }
 
-
-
+  }();
+  
+</script>
 
 <style>
 
@@ -226,53 +250,3 @@
   ]
 }
 {% endschema %}
-
-
-{% javascript %}
-
-
-    var collection_list_func = function(){
-//获取轮播点
-      var contentbox = document.getElementById('grid-ul-beautify-box-{{section.id}}');
-                                             
-      var list_text = document.getElementById('collection_list_pog-{{section.id}}');
-
-	console.log('this-',contentbox,'<===>',list_text);
-	var itemLength = document.getElementsByClassName('grid__item__beautify small--one-half medium-up--one-quarter').length;
-    for (let a = 0; a < itemLength; a++) {
-//       itemlist[a].index = a
-      list_text.innerHTML += '<li></li>'
-    }
-
-    var list = list_text.getElementsByTagName('li')
-    list[0].index = 0
-    list[0].className = 'active'
-
-    for (var c = 0; c < list.length; c++) {
-      list[c].index = c
-      list[c].onclick = function () {
-        for (var j = 0; j < list.length; j++) {
-          list[j].className = ''
-        }
-        this.className = 'active'
-        contentbox.style.transform =
-          'translate(' + -itemlist[this.index].index * diff + 'px' + ')'
-      }
-    }
-
-  }();
-  
-  
-  
-// class text extends VariantSelects {
-//   constructor() {
-//     super();
-//   }
-
-
-// }
-
-// customElements.define('text1', text);
-  
-
-{% endjavascript %}
