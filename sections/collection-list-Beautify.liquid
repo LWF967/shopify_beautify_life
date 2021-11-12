@@ -19,7 +19,7 @@
       {%- assign grid_item_width = 'small--one-half medium-up--one-sixth' -%}
   {% endcase %}
 
-  <div class="" style="overflow: hidden;">
+  <div class="text-{{section.id}}" style="overflow: hidden;">
     <ul id="grid-ul-beautify-box" class="grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
       {% for block in section.blocks limit: section.blocks.size %}
         <li class="grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
@@ -86,6 +86,27 @@
     }
 
   }();
+  
+  
+  
+class VariantRadios extends VariantSelects {
+  constructor() {
+    super();
+  }
+
+  updateOptions() {
+    const fieldsets = Array.from(this.querySelectorAll('fieldset'));
+    this.options = fieldsets.map((fieldset) => {
+      return Array.from(fieldset.querySelectorAll('input')).find((radio) => radio.checked).value;
+    });
+  }
+}
+
+customElements.define('variant-radios', VariantRadios);
+  
+  
+  
+  
   
 </script>
 
