@@ -250,16 +250,16 @@
 <!--      %- endif -%} -->
 <!--      %- if permaImage != blank -%} -->
 <!--         %- if settings.share_pinterest -%} -->
+    {% if settings.pin_on_pinterest %}
         <a data-no-instant rel="noopener noreferrer nofollow" href="http://pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media=http:{{permaImage}}&amp;description={{ permaTitle }}" target="{{target}}" class="pinterest cb {{class_tooltip}} my_a_padding">
 <!--           <span class="tt_txt"> 'general.nt_tooltip.share_pr' | t }}</span> -->
 <!--           <i class="facl facl-pinterest"></i> -->
-          {% if settings.pin_on_pinterest != false %}
             <span class="bubble">{{ 'general.nt_tooltip.share_pr' | t }}</span>
             <span class="ts_style">
               {%- render 'icon-pinterest' -%}
             </span>
-          {% endif %}
         </a>
+    {% endif %}
 <!--         %- endif -%}         -->
 <!--         %- if settings.share_tumblr -%} -->
 <!--         <a data-no-instant rel="noopener noreferrer nofollow" data-content="http:permaImage}}" href="//tumblr.com/widgets/share/tool?canonicalUrl= permalinkURL }}" target="target}}" class="tumblr cb class_tooltip}}"> -->
