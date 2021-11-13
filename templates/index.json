@@ -201,6 +201,7 @@
     },
     "16366804518eb2e044": {
       "type": "collection-list-Beautify",
+      "disabled": true,
       "blocks": {
         "16366804518eb2e044-0": {
           "type": "featured_collection",
