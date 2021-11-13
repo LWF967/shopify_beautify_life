@@ -113,7 +113,7 @@
         "show_button_visible": "always",
         "show_button_style": "style1",
         "show_button_color": "white",
-        "show_button_hover_color": "#222",
+        "show_button_hover_color": "#222222",
         "feature_title": "title name",
         "link-name": "View all",
         "button_link": ""
@@ -361,6 +361,7 @@
     },
     "1636695921ac455758": {
       "type": "banner-Beautify",
+      "disabled": true,
       "blocks": {
         "1636695921ac455758-0": {
           "type": "img_top",
@@ -411,7 +412,7 @@
         "title": "BANNER",
         "sub_title": "Popular this week",
         "font_top": 30,
-        "color_top": "#888",
+        "color_top": "#888888",
         "grid": 3,
         "show_view_all": false,
         "show_page_Dot": true
