@@ -32,7 +32,7 @@
   if social_icons
     assign socials = "social_facebook_link social_twitter_link social_instagram_link social_dribbble_link social_linkedin_link social_pinterest_link social_tumblr_link social_youtube_link social_behance_link social_soundcloud_link social_tiktok_link social_snapchat_link social_vimeo_link" | split: ' '
     assign socials_icon = "facebook twitter instagram dribbble linkedin pinterest tumblr youtube-play behance soundcloud tiktok snapchat vimeo" | split: ' '
-    assign socials_txt = "general.nt_tooltip.follow_fb;general.nt_tooltip.follow_tw;general.nt_tooltip.follow_it;general.nt_tooltip.follow_dr;general.nt_tooltip.follow_ld;general.nt_tooltip.follow_pr;general.nt_tooltip.follow_tu;general.nt_tooltip.follow_yt;general.nt_tooltip.follow_bh;general.nt_tooltip.follow_sc;general.nt_tooltip.follow_tt" | split: ';'  
+    assign socials_txt = "general.nt_tooltip.follow_fb;general.nt_tooltip.follow_tw;general.nt_tooltip.follow_it;general.nt_tooltip.follow_dr;general.nt_tooltip.follow_ld;general.nt_tooltip.follow_pr;general.nt_tooltip.follow_tu;general.nt_tooltip.follow_yt;general.nt_tooltip.follow_bh;general.nt_tooltip.follow_sc;general.nt_tooltip.follow_tt;general.nt_tooltip.follow_sn;general.nt_tooltip.follow_vi" | split: ';'  
   endif -%}
 
 <style>
@@ -42,10 +42,6 @@
   }
   
   .ts_style { 
-/*     position: relative; */
-/*     position: absolute; */
-/*     left: 50%; */
-/*     padding: 0 9px;  */
     padding: 0 0; 
   }
   
@@ -55,7 +51,6 @@
   }
   
   .ts_style svg {
-/*     position: relative; */
     display:inline-block;
     width: 14px;
     height: 14px;
@@ -63,15 +58,10 @@
     background: transparent; 
     transition: all .2s;
   }
-/*   
-  .ts_style svg:hover { 
-    transform: translateY(-5px);
-  } */
   
   .bubble {
     position: absolute;
     display: inline-block;
-/*     width: 200px; */
     top: -35px;
     left: -50px;
     padding: 2px 5px;
@@ -83,19 +73,6 @@
     z-index: 10;
     transition: all .2s;
   }
-
-/*   .bubble:before {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    width: 0;
-    height: 0;
-    top: 25px;
-    left: 50%;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #797979 transparent transparent transparent;
-  } */
   
   .my_a_padding {
     position: relative;
@@ -135,11 +112,6 @@
     transform: translateY(-5px);
     opacity: 1;
   }
-  
-/*   .ts_style:hover .bubble {
-    opacity: 1;
-    transform: translateY(-5px);
-  } */
 </style>
 
 <div class="nt-social border_{{border_bl}} black_{{black_true}} my_padding">
@@ -252,7 +224,7 @@
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "snapchat" %}
               {% if settings.social_snapchat_link != blank %}
-                <span class="bubble">{{ "Follow on Snapchat" }}</span>
+                <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
                   {%- render 'icon-snapchat' -%}
                 </span>
@@ -266,7 +238,7 @@
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "vimeo" %}
               {% if settings.social_vimeo_link != blank %}
-                <span class="bubble">{{ "Follow on Vimeo" }}</span>
+                <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
                   {%- render 'icon-vimeo' -%}
                 </span>
