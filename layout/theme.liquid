@@ -203,13 +203,13 @@
       let header = document.getElementsByClassName('header-wrapper')[0];
       let my_header_sticky = document.getElementsByClassName('my_header_sticky')[0];
       console.log(all_header_height);
-	  console.log(my_header_sticky);
+	  console.log(my_header_sticky.length);
       window.onscroll = function () {
 //         if(my_header_sticky.length > 0) {
           //获取距离页面顶部的距离
           let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 //           console.log(toTop);
-          if(toTop >= all_header_height && my_header_sticky.length > 0) {
+          if(toTop >= all_header_height) {
             header.style.position = 'fixed';
             header.style.width = '100%';
             header.style.top = 0;
