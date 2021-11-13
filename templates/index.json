@@ -243,7 +243,7 @@
       "settings": {
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
-        "grid": 3,
+        "grid": 4,
         "show_view_all": true,
         "show_page_Dot": true
       }
