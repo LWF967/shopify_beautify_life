@@ -201,9 +201,13 @@
       }
       let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight
       console.log(all_header_height);
-      let aasdsa = document.body.onscrollTop = function() {myFunction()};
-      function myFunction() {
-          console.log(aaasdsa);
+
+	  window.onscroll = function () {
+        //获取距离页面顶部的距离
+        let toTop = document.documentElement.scrollTop || document.body.scrollTop;
+        console.log(toTop);
+        //div距离顶部的距离
+        console.log(document.getElementById('test').offsetTop);
       }
     </script>
     
