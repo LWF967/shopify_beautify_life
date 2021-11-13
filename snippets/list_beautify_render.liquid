@@ -1,4 +1,4 @@
-<div class="swiper-container1" style="overflow: hidden;position:relative;">
+<div class="swiper-container-{{section.id}}" style="overflow: hidden;position:relative;">
     
     {% comment %}
     <ul id="grid-ul-beautify-box" class="swiper-wrapper grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
@@ -226,7 +226,7 @@
      wind_width = {{grid}} ;
     }
     
-   const swiper1 = new Swiper ('.swiper-container1', {
+   const swiper1 = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, // 循环模式选项 
     slidesPerView:wind_width,
