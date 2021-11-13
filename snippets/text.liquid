@@ -1,0 +1,53 @@
+<div class="swiper-container1" style="overflow: hidden;position:relative;">
+    
+    {% comment %}
+    <ul id="grid-ul-beautify-box" class="swiper-wrapper grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
+
+  
+      {% for block in section.blocks limit: section.blocks.size %}
+        <li class="swiper-slide grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
+          {%- liquid 
+             assign   collection_title = block.settings.title
+             assign   collection = collections[block.settings.collection] 
+		     assign   collection_img = block.settings.image   		
+          -%}
+          
+          {% include 'collection-grid-item-beautify', collection: collection , collection_title:collection_title,collection_img:collection_img %}
+        </li>
+      {% endfor %}
+        
+
+
+    </ul>
+    {%endcomment%}
+    	  <div id="grid-ul-beautify-box" class="swiper-wrapper " style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
+
+  
+      {% for block in section.blocks limit: section.blocks.size %}
+        <div class="swiper-slide  {{ grid_item_width }}" {{ block.shopify_attributes }}>
+          {%- liquid 
+             assign   collection_title = block.settings.title
+             assign   collection = collections[block.settings.collection] 
+		     assign   collection_img = block.settings.image   		
+          -%}
+          
+          {% include 'collection-grid-item-beautify', collection: collection , collection_title:collection_title,collection_img:collection_img %}
+        </div>
+      {% endfor %}
+        
+
+
+    </div>
+    
+    
+        <!-- 如果需要分页器 -->
+          <div class="swiper-pagination1"></div>
+
+          <!-- 如果需要导航按钮 -->
+          <div class="swiper-button-prev1"></div>
+          <div class="swiper-button-next1"></div>
+
+          <!-- 如果需要滚动条 -->
+          <div class="swiper-scrollbar1"></div>
+    
+  </div>
