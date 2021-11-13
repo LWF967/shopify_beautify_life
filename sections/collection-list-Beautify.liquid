@@ -31,6 +31,13 @@
     {% if section.settings.show_page_Dot %}
    	
 <!--     - render 'slider-pog'- -->
+    
+    <ol id="collection_list_pog-{{section.id}}" class="collection_list_pog_class">
+
+	</ol>
+
+    
+    
     {% else %}
       <a href="{{ routes.collections_url }}" class="button">{{ 'sections.collection_list.view_all' | t }}</a>
     {% endif %}
@@ -80,6 +87,11 @@
 
 <script>
 
+  
+  var list_text = document.getElementById('collection_list_pog-{{section.id}}');
+                                          
+  var itemLength = document.getElementById('grid__item__beautify-{{section.id}}').length;
+                                          console.log(list_text,'++++',itemLength);
 
  console.log( {{ section.settings.show_page_Dot}});
   if({{section.settings.show_page_Dot}}){
