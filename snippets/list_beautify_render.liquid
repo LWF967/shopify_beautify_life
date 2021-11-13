@@ -103,14 +103,14 @@
     
     	{%- if section.settings.show_page_Dot-%}
         <!-- 如果需要分页器 -->
-          <div class="swiper-pagination1"></div>
+          <div class="swiper-pagination-{{section.id}}"></div>
 		{%- endif -%}
           <!-- 如果需要导航按钮 -->
-          <div class="swiper-button-prev1"></div>
-          <div class="swiper-button-next1"></div>
+          <div class="swiper-button-prev-{{section.id}}"></div>
+          <div class="swiper-button-next-{{section.id}}"></div>
 
           <!-- 如果需要滚动条 -->
-          <div class="swiper-scrollbar1"></div>
+          <div class="swiper-scrollbar-{{section.id}}"></div>
     
   </div>
 
@@ -119,7 +119,7 @@
 
   
   
-   .swiper-pagination1 {
+   .swiper-pagination-{{section.id}} {
         position: absolute;
         text-align: center;
         transition: .3s opacity;
@@ -127,15 +127,15 @@
         z-index: 10
     }
 
-    .swiper-pagination1.swiper-pagination-hidden {
+    .swiper-pagination-{{section.id}}.swiper-pagination-hidden {
         opacity: 0
     }
   
   
   
   
-.swiper-button-next1,
-    .swiper-button-prev1 {
+.swiper-button-next-{{section.id}},
+    .swiper-button-prev-{{section.id}} {
         position: absolute;
         top: 50%;
         width: calc(var(--swiper-navigation-size)/ 44 * 27);
@@ -149,15 +149,15 @@
         color: var(--swiper-navigation-color, var(--swiper-theme-color))
     }
 
-    .swiper-button-next1.swiper-button-disabled,
-    .swiper-button-prev1.swiper-button-disabled {
+    .swiper-button-next-{{section.id}}.swiper-button-disabled,
+    .swiper-button-prev-{{section.id}}.swiper-button-disabled {
         opacity: .35;
         cursor: auto;
         pointer-events: none
     }
 
-    .swiper-button-next1:after,
-    .swiper-button-prev1:after {
+    .swiper-button-next-{{section.id}}:after,
+    .swiper-button-prev-{{section.id}}:after {
         font-family: swiper-icons;
         font-size: var(--swiper-navigation-size);
         text-transform: none !important;
@@ -167,25 +167,25 @@
         line-height: 1
     }
 
-    .swiper-button-prev1,
-    .swiper-rtl .swiper-button-next1 {
+    .swiper-button-prev-{{section.id}},
+    .swiper-rtl .swiper-button-next-{{section.id}} {
         left: 10px;
         right: auto
     }
 
-    .swiper-button-prev1:after,
-    .swiper-rtl .swiper-button-next1:after {
+    .swiper-button-prev-{{section.id}}:after,
+    .swiper-rtl .swiper-button-next-{{section.id}}:after {
         content: 'prev'
     }
 
-    .swiper-button-next1,
-    .swiper-rtl .swiper-button-prev1 {
+    .swiper-button-next-{{section.id}},
+    .swiper-rtl .swiper-button-prev-{{section.id}} {
         right: 10px;
         left: auto
     }
 
-    .swiper-button-next1:after,
-    .swiper-rtl .swiper-button-prev1:after {
+    .swiper-button-next-{{section.id}}:after,
+    .swiper-rtl .swiper-button-prev-{{section.id}}:after {
         content: 'next'
     }
 
@@ -234,20 +234,20 @@
     
     // 如果需要分页器
     pagination: {
-      el: '.swiper-pagination1',
+      el: '.swiper-pagination-{{section.id}}',
       clickable :true
     },
     
     // 如果需要前进后退按钮
     navigation: {
-      nextEl: '.swiper-button-next1',
-      prevEl: '.swiper-button-prev1',
+      nextEl: '.swiper-button-next-{{section.id}}',
+      prevEl: '.swiper-button-prev-{{section.id}}',
     },
     
     
     // 如果需要滚动条
   /*  scrollbar: {
-      el: '.swiper-scrollbar1',
+      el: '.swiper-scrollbar-{{section.id}}',
     }, */
   })          
     
