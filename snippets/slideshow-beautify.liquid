@@ -19,7 +19,7 @@
           	</svg>
         </p>
       </div>
-    <div class="big-box" data-autoplay="{{section.settings.auto_play}}" data-autotime="{{section.settings.auto_time}}">
+    <div class="big-box big-box-{{section.id}}" data-autoplay="{{section.settings.auto_play}}" data-autotime="{{section.settings.auto_time}}">
       <div class="product-box product-box-{{section.id}}">
       
     	{% for block in section.blocks %}
@@ -448,7 +448,7 @@
       }
     }
 
-    let autop = document.getElementsByClassName('big-box')[0].dataset.autoplay
+    let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
 
     function autoPlay (autop) {
       if ((autop = true)) {
@@ -456,7 +456,7 @@
       }
     }
 
-    let time = document.getElementsByClassName('big-box')[0].dataset.autotime
+    let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
 
     let time_gui = setInterval(autoPlay, time * 1000)
 
