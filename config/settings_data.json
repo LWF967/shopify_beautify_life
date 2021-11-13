@@ -1,10 +1,5 @@
 {
   "current": {
-    "promo_bar": true,
-    "promo_bar_home_page_only": false,
-    "top_bar": true,
-    "top_bar_home_page_only": false,
-    "full_width": true,
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
     "colors_accent_2": "#334FB4",
@@ -116,7 +111,7 @@
           "promo_bar_cl": "#ffffff",
           "promo_bar_bg": "#e21f4a",
           "promo_bar_bg_op": 100,
-          "promo_bar_show_close": true,
+          "promo_bar_show_close": false,
           "promo_bar_show_icon": false,
           "promo_bar_txt_btn": "close",
           "promo_bar_cl_btn": "#ffffff",

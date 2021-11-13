@@ -84,22 +84,11 @@
             "slider_button_text": "title name",
             "slider_button_link": ""
           }
-        },
-        "62521758-7c28-4198-ba39-ff193afabfae": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
         }
       },
       "block_order": [
         "8f64082c-3285-44d3-89fb-a12006fa7cda",
-        "f6d6b42e-2c43-47f7-a951-c5acebe942df",
-        "62521758-7c28-4198-ba39-ff193afabfae"
+        "f6d6b42e-2c43-47f7-a951-c5acebe942df"
       ],
       "settings": {
         "se_height": "adapt",
