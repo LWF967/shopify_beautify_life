@@ -97,7 +97,7 @@
         "overlay": true,
         "loop": true,
         "auto_play": true,
-        "auto_time": 3,
+        "auto_time": 4,
         "show_button": true,
         "show_button_visible": "always",
         "show_button_style": "style1",
