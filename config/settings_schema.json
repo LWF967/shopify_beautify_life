@@ -52,6 +52,35 @@
         "id": "top_bar_home_page_only",
         "default": true,
         "label": "Home page only"
+      },
+      {
+        "type": "header",
+        "content": "Header layout"
+      },
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "default": true,
+        "label": "Full width",
+        "info": "Make header full width"
+      },
+      {
+        "type": "checkbox",
+        "id": "sticky_header",
+        "default": true,
+        "label": "Sticky header"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_search_icon",
+        "default": true,
+        "label": "Show search icon"
+      },
+      {
+        "type": "checkbox",
+        "id": "Show_dropdown_arrow",
+        "default": true,
+        "label": "Show dropdown arrow"
       }
     ]
   },
