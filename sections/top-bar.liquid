@@ -193,7 +193,11 @@
   }
 </style>
 
-<div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center my_center my_width">
+<div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center my_center my_width"
+     {%- if settings.top_bar == false and settings.top_bar_home_page_only -%}style="display: none;"
+     {%- elsif settings.top_bar == false and settings.top_bar_home_page_only == false -%}style="display: none;"
+     {%- elsif settings.top_bar and settings.top_bar_home_page_only and request.page_type != 'index' -%}style="display: none;"
+     {%- endif -%}>
   <div class="container my_container">
     <div class="row al_center my_layout">
       {%- for block in section_blocks -%}
