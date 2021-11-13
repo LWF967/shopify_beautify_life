@@ -160,6 +160,10 @@
     text-underline-offset: 0.3rem;
   }
   
+  .my_header_icons_margin {
+    margin-right: 10px;
+  }
+  
   .my_header_account {
     margin: 0 0;
     width: 16px;
@@ -540,7 +544,7 @@
       </nav>
     {%- endif -%}
 
-    <div class="header__icons">
+    <div class="header__icons my_header_icons_margin">
       <details-modal class="header__search" style="display: block;">
         <details>
           <summary class="my_header_icon_search header__icon--search header__icon--summary link link--text focus-inset modal__toggle my_icon_color" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
