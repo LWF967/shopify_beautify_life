@@ -207,6 +207,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "pitaya",
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
             "title": "New supply this week"
           }
         },
@@ -214,6 +215,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
             "title": "New supply this week"
           }
         },
