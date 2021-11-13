@@ -5,7 +5,7 @@
 
   
       {% for block in section.blocks limit: section.blocks.size %}
-        <li class="swiper-slide grid__item__beautify {{ grid_item_width }}" {{ block.shopify_attributes }}>
+        <li class="swiper-slide grid__item__beautify " {{ block.shopify_attributes }}>
           {%- liquid 
              assign   collection_title = block.settings.title
              assign   collection = collections[block.settings.collection] 
@@ -24,7 +24,7 @@
 
   
       {% for block in section.blocks limit: section.blocks.size %}
-        <div class="swiper-slide  {{ grid_item_width }}" {{ block.shopify_attributes }}>
+        <div class="swiper-slide " {{ block.shopify_attributes }}>
           {%- liquid 
              assign   collection_title = block.settings.title
              assign   collection = collections[block.settings.collection] 
