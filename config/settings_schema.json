@@ -135,6 +135,18 @@
       {
         "type": "header",
         "content": "Count Color"
+      },
+      {
+        "type": "color",
+        "id": "header_count_color",
+        "default": "#99CCFF",
+        "label": "Background"
+      },
+      {
+        "type": "color",
+        "id": "header_count_text_color",
+        "default": "#FFFFFF",
+        "label": "Text"
       }
     ]
   },
