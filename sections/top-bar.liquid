@@ -7,44 +7,6 @@
       assign class_1 = 'tl_lg col-md-12 icon_flex icon_flex_l'
       assign class_2 = 'col-md-12 icon_flex icon_flex_r'
     endif-%}
-  
-<div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center my_center my_width">
-  <div class="container my_container">
-    <div class="row al_center my_layout">
-      {%- for block in section_blocks -%}
-        <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex 
-                    {% if block.settings.col == '1' %}my_pc_adadpt_1 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '2' %}my_pc_adadpt_2 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '3' %}my_pc_adadpt_3 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '4' %}my_pc_adadpt_4 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '6' %}my_pc_adadpt_6 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '7' %}my_pc_adadpt_7 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '8' %}my_pc_adadpt_8 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '9' %}my_pc_adadpt_9 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '10' %}my_pc_adadpt_10 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '11' %}my_pc_adadpt_11 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% else %}my_pc_adadpt_12 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% endif %}">
-          {%- case block.type -%}
-          {%- when 'cur' -%}
-            {%- if block.settings.social_mode == '1' -%}
-              {%- render 'my-social-sharing',class_tooltip:'ttip_nt tooltip_bottom_right' -%}
-            {%- elsif block.settings.social_mode == '2' -%}
-              {% if forloop.last %}
-                {% assign class_tooltip = 'ttip_nt tooltip_bottom_left' %}
-              {% else %}
-                {% assign class_tooltip = 'ttip_nt tooltip_bottom_right' %}
-              {% endif %}
-              {%- render 'my-social-sharing',follow_social:true,class_tooltip:class_tooltip -%}
-            {%- endif -%}
-            {%- else -%}
-           <div class="header-text">{{block.settings.text}}</div>
-          {%- endcase -%}
-        </div>
-      {%- endfor -%}
-    </div>
-  </div>
-</div>
 
 {%- style -%}
 .h__top {min-height:{{section.settings.height}}px;font-size:{{section.settings.fontsize}}px;}
@@ -211,6 +173,44 @@
     }
   }
 </style>
+
+<div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center my_center my_width">
+  <div class="container my_container">
+    <div class="row al_center my_layout">
+      {%- for block in section_blocks -%}
+        <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex 
+                    {% if block.settings.col == '1' %}my_pc_adadpt_1 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
+                    {% elsif block.settings.col == '2' %}my_pc_adadpt_2 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
+                    {% elsif block.settings.col == '3' %}my_pc_adadpt_3 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
+                    {% elsif block.settings.col == '4' %}my_pc_adadpt_4 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
+                    {% elsif block.settings.col == '6' %}my_pc_adadpt_6 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
+                    {% elsif block.settings.col == '7' %}my_pc_adadpt_7 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
+                    {% elsif block.settings.col == '8' %}my_pc_adadpt_8 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
+                    {% elsif block.settings.col == '9' %}my_pc_adadpt_9 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
+                    {% elsif block.settings.col == '10' %}my_pc_adadpt_10 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
+                    {% elsif block.settings.col == '11' %}my_pc_adadpt_11 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
+                    {% else %}my_pc_adadpt_12 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
+                    {% endif %}">
+          {%- case block.type -%}
+          {%- when 'cur' -%}
+            {%- if block.settings.social_mode == '1' -%}
+              {%- render 'my-social-sharing',class_tooltip:'ttip_nt tooltip_bottom_right' -%}
+            {%- elsif block.settings.social_mode == '2' -%}
+              {% if forloop.last %}
+                {% assign class_tooltip = 'ttip_nt tooltip_bottom_left' %}
+              {% else %}
+                {% assign class_tooltip = 'ttip_nt tooltip_bottom_right' %}
+              {% endif %}
+              {%- render 'my-social-sharing',follow_social:true,class_tooltip:class_tooltip -%}
+            {%- endif -%}
+            {%- else -%}
+           <div class="header-text">{{block.settings.text}}</div>
+          {%- endcase -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
 {%- schema -%}
   {
     "name": "Top Bar",
