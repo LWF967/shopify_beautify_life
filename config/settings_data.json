@@ -1,6 +1,7 @@
 {
   "current": {
     "promo_bar": true,
+    "promo_bar_home_page_only": false,
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
     "colors_accent_2": "#334FB4",
