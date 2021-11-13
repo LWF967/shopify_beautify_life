@@ -115,6 +115,71 @@
   </div>
 
 
+<style>
+
+.swiper-button-next1,
+    .swiper-button-prev1 {
+        position: absolute;
+        top: 50%;
+        width: calc(var(--swiper-navigation-size)/ 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color, var(--swiper-theme-color))
+    }
+
+    .swiper-button-next1.swiper-button-disabled,
+    .swiper-button-prev1.swiper-button-disabled {
+        opacity: .35;
+        cursor: auto;
+        pointer-events: none
+    }
+
+    .swiper-button-next1:after,
+    .swiper-button-prev1:after {
+        font-family: swiper-icons;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none !important;
+        letter-spacing: 0;
+        text-transform: none;
+        font-variant: initial;
+        line-height: 1
+    }
+
+    .swiper-button-prev1,
+    .swiper-rtl .swiper-button-next1 {
+        left: 10px;
+        right: auto
+    }
+
+    .swiper-button-prev1:after,
+    .swiper-rtl .swiper-button-next1:after {
+        content: 'prev'
+    }
+
+    .swiper-button-next1,
+    .swiper-rtl .swiper-button-prev1 {
+        right: 10px;
+        left: auto
+    }
+
+    .swiper-button-next1:after,
+    .swiper-rtl .swiper-button-prev1:after {
+        content: 'next'
+    }
+
+    .swiper-button-lock {
+        display: none
+    }
+
+
+
+</style>
+
 
 <script type="module">
 
