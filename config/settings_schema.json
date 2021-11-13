@@ -104,7 +104,7 @@
       {
         "type": "color",
         "id": "header_icon_and_text_color",
-        "default": "#FFFFFF",
+        "default": "#6B6B6B",
         "label": "Icon & text"
       },
       {
@@ -125,6 +125,12 @@
         "min": 0,
         "max": 100,
         "step": 1
+      },
+      {
+        "type": "color",
+        "id": "header_sticky_icon_and_text_color",
+        "default": "#6B6B6B",
+        "label": "Icon & text"
       }
     ]
   },
