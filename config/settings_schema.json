@@ -116,6 +116,15 @@
         "id": "header_sticky_background_color",
         "default": "#FFFFFF",
         "label": "Background"
+      },
+      {
+        "type": "range",
+        "id": "header_sticky_background_opacity",
+        "default": 100,
+        "label": "Background opacity",
+        "min": 0,
+        "max": 100,
+        "step": 1
       }
     ]
   },
