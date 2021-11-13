@@ -100,7 +100,13 @@
   }
   
   .my_a_padding {
+    position: relative;
     padding-right: 18px;
+  }
+  
+  .my_a_padding:before {
+    position: absolute;
+    content: "123";
   }
   
 /*   .my_a_padding:hvoer .ts_style svg {
