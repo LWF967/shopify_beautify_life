@@ -54,16 +54,8 @@
     overflow: hidden;
   }
   
-/*   .ts_style svg {
-    display:inline-block;
-    width: 14px;
-    height: 14px;
-    color: #797979;
-    background: transparent; 
-    transition: all .2s;
-  } */
-  /*new*/
-  .my_a_padding svg {
+  .ts_style svg {
+/*     position: relative; */
     display:inline-block;
     width: 14px;
     height: 14px;
@@ -71,10 +63,6 @@
     background: transparent; 
     transition: all .2s;
   }
-  
-  
-  
-  /*new*/
 /*   
   .ts_style svg:hover { 
     transform: translateY(-5px);
@@ -132,18 +120,18 @@
     padding-right: 0px;
   }
   
-/*   .my_a_padding:hover .ts_style svg { 
+  .my_a_padding:hover .ts_style svg { 
     transform: translateY(-5px);
   }
   
   .my_a_padding:hover:before {
     top: -15px;
     opacity: 1;
-  } */
+  }
   
   .ts_style:hover .bubble {
     opacity: 1;
-    transform: translateY(-5px); 
+    transform: translateY(-5px);
   }
 </style>
 
@@ -223,10 +211,9 @@
             {% if socials_icon[forloop.index0] == "twitter" %}
               {% if settings.social_twitter_link != blank %}
                 <span class="ts_style">
-                  
+                  {%- render 'icon-twitter' -%}
                   <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 </span>
-                {%- render 'icon-twitter' -%}
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "facebook" %}
               {% if settings.social_facebook_link != blank %}
