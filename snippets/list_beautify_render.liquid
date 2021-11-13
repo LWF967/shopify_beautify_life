@@ -204,11 +204,18 @@
 
     import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
-  
+  var windows_width = window.innerWidth;
    const swiper1 = new Swiper ('.swiper-container1', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, // 循环模式选项 
-    slidesPerView:4,
+    
+    if(windows_width<700){
+    slidesPerView:1
+    
+    }else{
+    
+    slidesPerView:4
+    }
     
     // 如果需要分页器
     pagination: {
