@@ -81,6 +81,25 @@
         "id": "Show_dropdown_arrow",
         "default": true,
         "label": "Show dropdown arrow"
+      },
+      {
+        "type": "header",
+        "content": "Header Color"
+      },
+      {
+        "type": "color",
+        "id": "header_background_color",
+        "default": "#FFFFFF",
+        "label": "Background"
+      },
+      {
+        "type": "range",
+        "id": "header_background_opacity",
+        "default": 100,
+        "label": "Background opacity",
+        "min": 0,
+        "max": 100,
+        "step": 1
       }
     ]
   },
