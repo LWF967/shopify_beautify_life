@@ -32,6 +32,7 @@
        url('//at.alicdn.com/t/font_2903696_8kpznmqcoej.woff?t=1635582253888') format('woff'),
        url('//at.alicdn.com/t/font_2903696_8kpznmqcoej.ttf?t=1635582253888') format('truetype');
   }
+  
   .my_phone {
     padding-left: 15px;
   	font-family: "iconfont" !important;
@@ -42,18 +43,22 @@
     -moz-osx-font-smoothing: grayscale;
     cursor: default;
   }
+  
   .my_center {
     display: flex;
     justify-content: space-around;
     align-items: center; 
   }
+  
   .my_width {
   	width: 100%;
     padding: 10px 0;
   }
+  
   .my_container {
   	width: 100%;
   }
+  
   .my_layout {
     display: flex;
     flex-wrap: wrap;
@@ -61,21 +66,26 @@
     justify-content: flex-start;
     text-align: left;
   }
+  
   .my_align_left {
   	text-align: left !important;
   }
+  
   .my_svg_style {
 	padding: 0 9px !important;
     color: #797979;
   }
+  
   .my_flex {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
  	padding: 0 15px;
   }
+  
   .my_ul_right {
   	justify-content: flex-end !important;
   }
+  
   .my_li {
   	list-style: none;
     float: left;
@@ -83,18 +93,23 @@
     width: 20px;
     height: auto;
   }
+  
   .icon_flex {
    	display: flex;
   }
+  
   .icon_flex_l {
     justify-content: flex-start;
   }
+  
   .icon_flex_c {
     justify-content: center;
   }
+  
   .icon_flex_r {
     justify-content: flex-end;
   }
+  
   .my_ul {
     width: auto;
     height: auto;
@@ -102,6 +117,7 @@
     margin: 0 0;
     padding: 0 0;
   }
+  
   .my_pc_adadpt_1 {
     flex: 0 0 8.333333%;
     max-width: 8.333333%;
@@ -158,94 +174,19 @@
     padding: 0 15px;
   }
   
-    .my_padding {
-    box-sizing: content-box;
-    padding-right: 6px
-  }
-  
-  .ts_style { 
-    padding: 0 0; 
-  }
-  
-  .facl { 
-    box-sizing: content-box;
-    overflow: hidden;
-  }
-  
-  .ts_style svg {
-    display:inline-block;
-    width: 14px;
-    height: 14px;
-    color: #797979;
-    background: transparent; 
-    transition: all .2s;
-  }
-  
-  .bubble {
-    position: absolute;
-    display: inline-block;
-    top: -35px;
-    left: -50px;
-    padding: 2px 5px;
-    background: #797979;
-    color: white;
-    white-space: nowrap;
-    font-size: 10px;
-    opacity: 0;
-    z-index: 10;
-    transition: all .2s;
-  }
-  
-  .my_a_padding {
-    position: relative;
-    width: auto;
-    padding-right: 18px;
-  }
-  
-  .my_a_padding:before {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    width: 0;
-    height: 0;
-    top: -10px;
-    left: 5%;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #797979 transparent transparent transparent;
-    opacity: 0;
-    transition: all .2s;
-  }
-  
-  .my_a_padding:last-child {
-    padding-right: 0px;
-  }
-  
-  .my_a_padding:hover .ts_style svg { 
-    transform: translateY(-5px);
-  }
-  
-  .my_a_padding:hover:before {
-    top: -15px;
-    opacity: 1;
-  }
-  
-  .my_a_padding:hover .bubble {
-    transform: translateY(-5px);
-    opacity: 1;
-  }
-  
   @media screen and (max-width: 1024px) {
     .my_layout {
       display: block;
 	  width: 100%;
     }
+    
     .my_flex {
       flex: 0 0 100%;
       max-width: 100%;
       justify-content: center;
  	  padding: 0 15px;
     }
+    
     .my_hide_tablet_mobile {
   	  display: none;
     }
