@@ -8,7 +8,7 @@
     "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
-    "name": "header",
+    "name": "dear customers",
     "settings": [
       {
         "type": "paragraph",
@@ -17,7 +17,7 @@
     ]
   },
   {
-    "name": "dear customers",
+    "name": "header",
     "settings": [
       {
         "type": "paragraph",
