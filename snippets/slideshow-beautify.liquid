@@ -1,4 +1,4 @@
-  <div class="feature-artworks">
+  <div class="feature-artworks feature-artworks-{{section.id}}">
 
  
     <!--    左箭头    -->
@@ -460,7 +460,7 @@
 
     let time_gui = setInterval(autoPlay, time * 1000)
 
-    document.getElementsByClassName('feature-artworks')[0].addEventListener(
+    document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseover',
       function () {
         clearInterval(time_gui)
@@ -468,7 +468,7 @@
       },
       false
     )
-    document.getElementsByClassName('feature-artworks')[0].addEventListener(
+    document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseleave',
       function () {
         time_gui = setInterval(autoPlay, time * 1000)
