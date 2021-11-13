@@ -131,6 +131,10 @@
         "id": "header_sticky_icon_and_text_color",
         "default": "#6B6B6B",
         "label": "Icon & text"
+      },
+      {
+        "type": "header",
+        "content": "Count Color"
       }
     ]
   },
