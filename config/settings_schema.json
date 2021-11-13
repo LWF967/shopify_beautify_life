@@ -29,6 +29,12 @@
         "default": true,
         "label": "Promo Bar",
         "info": "Enable\/disable Promo Bar"
+      },
+      {
+        "type": "checkbox",
+        "id": "home_page_only",
+        "default": true,
+        "label": "Home page only"
       }
     ]
   },
