@@ -54,18 +54,8 @@
     overflow: hidden;
   }
   
-/*   .ts_style svg {
-    position: relative;
-    display:inline-block;
-    width: 14px;
-    height: 14px;
-    color: #797979;
-    background: transparent; 
-    transition: all .2s;
-  } */
- 
-  .my_a_padding svg {
-    position: relative;
+  .ts_style svg {
+/*     position: relative; */
     display:inline-block;
     width: 14px;
     height: 14px;
@@ -73,7 +63,7 @@
     background: transparent; 
     transition: all .2s;
   }
-  
+/*   
   .ts_style svg:hover { 
     transform: translateY(-5px);
   } */
@@ -221,10 +211,9 @@
             {% if socials_icon[forloop.index0] == "twitter" %}
               {% if settings.social_twitter_link != blank %}
                 <span class="ts_style">
-                  
+                  {%- render 'icon-twitter' -%}
                   <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 </span>
-            {%- render 'icon-twitter' -%}
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "facebook" %}
               {% if settings.social_facebook_link != blank %}
