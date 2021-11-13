@@ -203,8 +203,9 @@
       let header = document.getElementsByClassName('header-wrapper')[0];
       let my_header_sticky = document.getElementsByClassName('my_header_sticky')[0].length;
       console.log(all_header_height);
-      if(my_header_sticky > 0) {
-       window.onscroll = function () {
+
+      window.onscroll = function () {
+        if(my_header_sticky > 0) {
           //获取距离页面顶部的距离
           let toTop = document.documentElement.scrollTop || document.body.scrollTop;
           console.log(toTop);
