@@ -24,8 +24,11 @@
         "content": "Promo bar"
       },
       {
-        "type": "paragraph",
-        "content": "If you are facing a problem with installation, importing sample config or configuration our theme, please, don’t leave a bad review. Firstly, visit our Document page and try to find a solution. Or you can create a new ticket and we will help you as soon as possible: support page. You can ask your any kind of pre-sale question directly through the contact email here. We would be glad if you help us to improve our theme, installation process or documentation. Thanks for buying my theme!"
+        "type": "checkbox",
+        "id": "promo_bar",
+        "default": true,
+        "label": "Promo Bar",
+        "info": "Enable\/disable Promo Bar"
       }
     ]
   },
