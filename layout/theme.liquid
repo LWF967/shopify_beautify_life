@@ -201,9 +201,9 @@
       }
       let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight
       let header = document.getElementsByClassName('header-wrapper')[0];
-      let my_header_sticky = document.getElementsByClassName('my_header_sticky')[0];
+      let my_header_sticky = document.getElementsByClassName('my_header_sticky');
       console.log(all_header_height);
-	  console.log(my_header_sticky);
+	  console.log(my_header_sticky.length);
       window.onscroll = function () {
 //         if(my_header_sticky.length > 0) {
           //获取距离页面顶部的距离
