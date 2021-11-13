@@ -4,6 +4,7 @@
     "promo_bar_home_page_only": false,
     "top_bar": true,
     "top_bar_home_page_only": false,
+    "full_width": false,
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
     "colors_accent_2": "#334FB4",
