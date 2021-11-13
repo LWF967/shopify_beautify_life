@@ -198,7 +198,7 @@
      {%- elsif settings.top_bar == false and settings.top_bar_home_page_only == false -%}style="display: none;"
      {%- elsif settings.top_bar and settings.top_bar_home_page_only and request.page_type != 'index' -%}style="display: none;"
      {%- endif -%}>
-  <div class="container my_container">
+  <div class="container my_container" {% if settings.full_width == false %} style="max-width: 1200px;"{% endif %}>
     <div class="row al_center my_layout">
       {%- for block in section_blocks -%}
         <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex 
