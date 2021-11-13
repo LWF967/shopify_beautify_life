@@ -19,7 +19,7 @@
       {%- assign grid_item_width = 'small--one-half medium-up--one-sixth' -%}
   {% endcase %}
 
-  {%render 'text',collection: collection , collection_title:collection_title,collection_img:collection_img%}
+  {%render 'list_beautify_render',collection: collection , collection_title:collection_title,collection_img:collection_img%}
 	
   {% if section.blocks.size == 0 %}
     {% include 'no-blocks' %}
