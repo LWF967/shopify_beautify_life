@@ -191,15 +191,37 @@
   }
   
   .my_a_padding:hover::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0;
     top: -15px;
+    left: 30%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
     opacity: 1;
     visibility: visible;
+    transition: opacity .2s;
   }
   
   .my_a_padding:hover .bubble {
-    transform: translateY(-5px);
+    
+    position: absolute;
+    display: inline-block;
+    top: -35px;
+    left: -50px;
+    padding: 2px 5px;
+    background: #797979;
+    color: white;
+    white-space: nowrap;
+    font-size: 10px;
     opacity: 1;
     visibility: visible;
+    transition: all .2s;
+    transform: translateY(-5px);
+
   }
 </style>
 
