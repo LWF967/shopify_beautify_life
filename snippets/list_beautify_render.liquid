@@ -1,4 +1,4 @@
-<div class="swiper-container" style="overflow: hidden;position:relative;">
+<div class="swiper-container1" style="overflow: hidden;position:relative;">
     
     {% comment %}
     <ul id="grid-ul-beautify-box" class="swiper-wrapper grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
@@ -103,14 +103,14 @@
     
     
         <!-- 如果需要分页器 -->
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination1"></div>
 
           <!-- 如果需要导航按钮 -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev1"></div>
+          <div class="swiper-button-next1"></div>
 
           <!-- 如果需要滚动条 -->
-          <div class="swiper-scrollbar"></div>
+          <div class="swiper-scrollbar1"></div>
     
   </div>
 
@@ -123,27 +123,27 @@
     import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
   
-   const swiper1 = new Swiper ('.swiper-container', {
+   const swiper1 = new Swiper ('.swiper-container1', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, // 循环模式选项 
     slidesPerView:4,
     
     // 如果需要分页器
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination1',
       clickable :true
     },
     
     // 如果需要前进后退按钮
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next1',
+      prevEl: '.swiper-button-prev1',
     },
     
     
     // 如果需要滚动条
   /*  scrollbar: {
-      el: '.swiper-scrollbar',
+      el: '.swiper-scrollbar1',
     }, */
   })          
     
