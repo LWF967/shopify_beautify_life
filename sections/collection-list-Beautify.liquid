@@ -32,11 +32,7 @@
    	
 <!--     - render 'slider-pog'- -->
     
-    <ol id="collection_list_pog-{{section.id}}" class="collection_list_pog_class">
-
-	</ol>
-
-    
+      
     
     {% else %}
       <a href="{{ routes.collections_url }}" class="button">{{ 'sections.collection_list.view_all' | t }}</a>
@@ -88,17 +84,17 @@
 <script>
 
   
-  var list_text = document.getElementById('collection_list_pog-{{section.id}}');
+//   var list_text = document.getElementById('collection_list_pog-{{section.id}}');
                                           
-  var itemLength = document.getElementById('list_beautify_render-{{section.id}}').length;
-                                          console.log(list_text,'++++',itemLength);
+//   var itemLength = document.getElementById('list_beautify_render-{{section.id}}').length;
+//                                           console.log(list_text,'++++',itemLength);
 
- console.log( {{ section.settings.show_page_Dot}});
-  if({{section.settings.show_page_Dot}}){
+//  console.log( {{ section.settings.show_page_Dot}});
+//   if({{section.settings.show_page_Dot}}){
   
-  console.log(222)
-  }
 //   console.log(222)
+//   }
+// //   console.log(222)
 
 </script>
 
