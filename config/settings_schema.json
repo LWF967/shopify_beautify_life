@@ -32,13 +32,26 @@
       },
       {
         "type": "checkbox",
-        "id": "home_page_only",
+        "id": "promo_bar_home_page_only",
         "default": true,
         "label": "Home page only"
       },
       {
         "type": "header",
         "content": "Top bar"
+      },
+      {
+        "type": "checkbox",
+        "id": "top_bar",
+        "default": true,
+        "label": "Top bar",
+        "info": "Enable\/disable Top bar"
+      },
+      {
+        "type": "checkbox",
+        "id": "top_bar_home_page_only",
+        "default": true,
+        "label": "Home page only"
       }
     ]
   },
