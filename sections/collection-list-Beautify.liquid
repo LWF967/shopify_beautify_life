@@ -19,7 +19,7 @@
       {%- assign grid_item_width = 'small--one-half medium-up--one-sixth' -%}
   {% endcase %}
 
-  <div class="swiper-container1" style="overflow: hidden;position:relative;">
+  <div class="swiper-container" style="overflow: hidden;position:relative;">
     
     {% comment %}
     <ul id="grid-ul-beautify-box" class="swiper-wrapper grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
@@ -99,7 +99,7 @@
     import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
   
-   const swiper1 = new Swiper ('.swiper-container1', {
+   const swiper1 = new Swiper ('.swiper-container', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, // 循环模式选项 
     slidesPerView:4,
