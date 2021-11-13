@@ -210,7 +210,7 @@
  // var div = document.getElementById("list_beautify_render-{{section.id}}");
  // var wind_width = div.dataset.grid;//获取data-appid的值
  
- var wind_width = {{grid}} ;
+ var wind_width;
   
    if(windows_width<800){
   	wind_width = 3;
@@ -221,6 +221,9 @@
     }else if(windows_width<400){
     
    	 wind_width = 1;
+    }else{
+    
+     wind_width = {{grid}} ;
     }
     
    const swiper1 = new Swiper ('.swiper-container1', {
