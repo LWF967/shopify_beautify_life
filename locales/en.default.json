@@ -41,7 +41,9 @@
       "follow_yt": "Follow on YouTube",
       "follow_bh": "Follow on Behance",
       "follow_sc": "Follow on Soundcloud",
-      "follow_tt": "Follow on Tiktok"
+      "follow_tt": "Follow on Tiktok",
+      "follow_sn": "Follow on Snapchat",
+      "follow_vi": "Follow on Vimeo"
     },
     "social": {
       "alt_text": {
