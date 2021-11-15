@@ -205,7 +205,7 @@
       let header = document.getElementsByClassName('header')[0];
       let content = document.getElementsByClassName('content')[0];
       let my_header_sticky = document.getElementsByClassName('my_header_sticky');
-      
+                  content.style.transition = 'all 1s';
 //       console.log(all_header_height);
       window.onscroll = function () {
         if(my_header_sticky.length > 0) {
@@ -241,6 +241,7 @@
 //             content.className = 'content my_header_background_color my_header_background_opacity my_header_sticky_settings';
             content.classList.add('my_header_sticky_settings');
             header.classList.add('my_header_sticky_settings');
+            
           } else {
 //             content.className = 'content my_header_background_color my_header_background_opacity';
             content.classList.remove('my_header_sticky_settings');
