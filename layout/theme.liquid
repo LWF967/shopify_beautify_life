@@ -226,11 +226,13 @@
 //             header.style.transition = 'all 1s';
 //             header.style.transform = 'translateY(' + (header.scrollHeight) + 'px)';
           }
-          if(header_wrapper.style.position == 'fixed') {
+          
+          let my_header = document.getElementsByClassName('my_header my_header_height');
+          if(header.style.position == 'fixed') {
 //             console.log(1);
-            my_header_sticky[0].className = 'header-wrapper color- gradient my_header_sticky my_header_background_color my_header_background_opacity my_header_sticky_settings';
+            my_header[0].className = 'my_header my_header_height my_header_sticky_settings';
           } else {
-            my_header_sticky[0].className = 'header-wrapper color- gradient my_header_sticky my_header_background_color my_header_background_opacity';
+            my_header[0].className = 'my_header my_header_height';
           }
         }
       }
