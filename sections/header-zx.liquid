@@ -26,6 +26,8 @@
 .my_header_background_opacity { background: {{ settings.header_background_color | color_modify: 'alpha', my_header_background_opacity }}; }
 .my_header_count_background { background: {{ settings.header_count_color }}; }
 .my_header_count { color: {{ settings.header_count_text_color }}; }
+.header-wrapper svg,
+.header-wrapper span{ color: {{ header_icon_and_text_color }} !important; }
 {%- endstyle -%}
 
 <style>
@@ -80,10 +82,6 @@
   }
   
   /*lzx_style*/
-  .header-wrapper svg,
-  .header-wrapper span{
-    color: red !important;
-  }
   @font-face {
   font-family: 'iconfont';  /* Project id 2903696 */
   src: url('//at.alicdn.com/t/font_2903696_p8b4e67fhg.woff2?t=1635837134306') format('woff2'),
