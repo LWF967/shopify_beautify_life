@@ -1,0 +1,12 @@
+{
+  "sections": {
+    "main-blog": {
+      "type": "blog-page-beautify",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main-blog"
+  ]
+}
