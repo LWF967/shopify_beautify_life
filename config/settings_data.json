@@ -4,7 +4,7 @@
     "sticky_header": true,
     "show_search_icon": true,
     "header_icon_and_text_color": "#ff0000",
-    "header_sticky_background_color": "#e2e2e2",
+    "header_sticky_background_color": "#fdffe1",
     "header_sticky_icon_and_text_color": "#038cfa",
     "header_count_color": "#00efba",
     "header_count_text_color": "#ea1919",
