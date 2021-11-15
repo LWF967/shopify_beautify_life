@@ -25,7 +25,7 @@
 .my_header_background_color { background: {{ settings.header_background_color }}; }
 .my_header_background_opacity { background: {{ settings.header_background_color | color_modify: 'alpha', my_header_background_opacity }}; }
 .my_header_count_background { background: {{ settings.header_count_color }}; }
-
+.my_header_count { color: {{ settings.header_count_text_color }}; }
 {%- endstyle -%}
 
 <style>
@@ -657,7 +657,7 @@
         {%- if cart != empty -%}
           <div class="cart-count-bubble my_header_count_background">
             {%- if cart.item_count < 100 -%}
-              <span aria-hidden="true">{{ cart.item_count }}</span>
+              <span aria-hidden="true my_header_count">{{ cart.item_count }}</span>
             {%- endif -%}
             <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>
