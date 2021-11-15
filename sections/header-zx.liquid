@@ -26,7 +26,7 @@
 .my_header_background_opacity { background: {{ settings.header_background_color | color_modify: 'alpha', my_header_background_opacity }}; }
 .my_header_count_background { background: {{ settings.header_count_color }}; }
 .my_header_count { color: {{ settings.header_count_text_color }}; }
-.my_header_icon_text_color{ color: {{ settings.header_icon_and_text_color }}; }
+.my_header_icon_text_color { color: {{ settings.header_icon_and_text_color }}; }
 {%- endstyle -%}
 
 <style>
@@ -492,7 +492,7 @@
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
           {%- else -%}
-            <span class="h2">{{ shop.name }}</span>
+            <span class="h2 my_header_icon_text_color">{{ shop.name }}</span>
           {%- endif -%}
         </a>
     {%- if true -%}
