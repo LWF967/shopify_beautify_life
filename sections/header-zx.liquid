@@ -508,7 +508,7 @@
         </a> -->
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset my_header_font_size">
           {%- if section.settings.logo != blank and section.settings.logo_svg != blank -%}
-          {{ section.settings.logo_width | divided_by: section.settings.logo_svg.aspect_ratio | ceil | plus: 29 }}
+          {{ section.settings.logo_svg | file_url }}
             <img srcset="{{ section.settings.logo_svg | file_url }} 1x, {{ section.settings.logo_svg | file_url }} 2x"
               src="{{ section.settings.logo_svg | file_url }}"
               loading="lazy"
