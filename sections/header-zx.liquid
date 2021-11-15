@@ -26,7 +26,7 @@
 .my_header_background_opacity { background: {{ settings.header_background_color | color_modify: 'alpha', my_header_background_opacity }}; }
 .my_header_count_background { background: {{ settings.header_count_color }}; }
 .my_header_count { color: {{ settings.header_count_text_color }}; }
-.my_header_icon_text_color { color: {{ settings.header_icon_and_text_color }} !important; }
+.my_header_icon_text_color, .my_header_icons_margin svg { color: {{ settings.header_icon_and_text_color }} !important; }
 {%- endstyle -%}
 
 <style>
@@ -560,7 +560,7 @@
         <details>
           <summary class="my_header_icon_search header__icon--search header__icon--summary link link--text focus-inset modal__toggle my_icon_color" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
             <span>
-              <svg class="modal__toggle-open icon-search my_header_icon_width16" aria-hidden="true" focusable="false" role="presentation">
+              <svg class="modal__toggle-open icon-search my_header_icon_width16 my_header_icon_text_color" aria-hidden="true" focusable="false" role="presentation">
                 <use href="#icon-search">
               </svg>
               <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
