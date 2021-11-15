@@ -510,9 +510,9 @@
           {%- if section.settings.logo != blank and section.settings.logo_svg != blank -%}
 			{%- assign image_size = section.settings.logo_width | append: 'x' -%}
 			{%- assign svg_size = section.settings.logo_svg | file_img_url: image_size -%}
-            {{ svg_sizes }}
+            {{ svg_size }}
           
-          {{ section.settings.logo_width | divided_by: section.settings.logo_svg.aspect_ratio | ceil | plus: 29 }}
+<!--           { section.settings.logo_width | divided_by: section.settings.logo_svg.aspect_ratio | ceil | plus: 29 }} -->
           
             <img srcset="{{ section.settings.logo_svg | file_img_url: image_size }}1x, {{ section.settings.logo_svg | file_img_url: image_size, scale: 2 }} 2x"
               src="{{ section.settings.logo_svg | file_img_url:image_size }}"
