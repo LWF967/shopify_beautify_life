@@ -1,7 +1,8 @@
 {
   "current": {
     "sticky_header": true,
-    "header_count_color": "#6B6B6B",
+    "header_icon_and_text_color": "#ff0000",
+    "header_count_color": "#00efba",
     "header_count_text_color": "#ea1919",
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
@@ -171,6 +172,7 @@
         "settings": {
           "logo_aligment": "left",
           "logo_svg": "",
+          "logo": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
           "logo_width": 50,
           "header_height": 60,
           "header_text_height_font_size": 14,
