@@ -199,7 +199,7 @@
       else {
         main.style.marginBottom = 0 + "px";
       }
-      let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight
+      let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
       let header = document.getElementsByClassName('header-wrapper')[0];
       let my_header_sticky = document.getElementsByClassName('my_header_sticky');
       console.log(all_header_height);
@@ -212,10 +212,9 @@
             header.style.position = 'fixed';
             header.style.width = '100%';
             header.style.top = 0;
-            console.log(1);
+            console.log(header_zx.scrollHeight);
           } else {
             header.style.position = 'relative';
-            console.log(2);
           }
         }
       }
