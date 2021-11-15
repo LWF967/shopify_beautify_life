@@ -460,7 +460,7 @@
     {%- endif -%}
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset my_header_font_size">
           {%- if section.settings.logo != blank and section.settings.logo_svg != blank -%}
-          {{settings.header_background_opacity | divided_by: 100.0}}
+          
             <img srcset="{{ section.settings.logo_svg | file_url }} 1x, {{ section.settings.logo_svg | file_url }} 2x"
               src="{{ section.settings.logo_svg | file_url }}"
               loading="lazy"
@@ -479,6 +479,7 @@
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
           {%- elsif section.settings.logo != blank and section.settings.logo_svg == blank -%}
+          {{settings.header_background_opacity | divided_by: 100.0}}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
             <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
               src="{{ section.settings.logo | img_url: image_size }}"
