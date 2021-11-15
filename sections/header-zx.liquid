@@ -518,9 +518,9 @@
               src="{{ section.settings.logo_svg | file_img_url:image_size }}"
               loading="lazy"
               class="header__heading-logo my_header_heading_logo"
-              width="{{ section.settings.logo.width }}"
-              height="{{ section.settings.logo.height }}"
-              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+              width="{{ section.settings.logo_svg.width }}"
+              height="{{ section.settings.logo_svg.height }}"
+              alt="{{ section.settings.logo_svg.alt | default: shop.name | escape }}"
             >          
           {%- elsif section.settings.logo == blank and section.settings.logo_svg != blank -%}
             {{  one | append: "x" }}1
