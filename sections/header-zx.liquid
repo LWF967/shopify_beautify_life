@@ -550,8 +550,8 @@
                   </details>
                 </details-disclosure>
               {%- else -%}
-                <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset my_header_li_padding my_header_font_size"{% if link.current %} aria-current="page"{% endif %}>
-                  <span {% if link.current %} class="header__active-menu-item-underlinenone my_header_icon_text_color"{% endif %}>{{ link.title | escape }}</span>
+                <a href="{{ link.url }}" class="header__menu-item header__menu-item list-menu__item link link--text focus-inset my_header_li_padding my_header_font_size my_header_icon_text_color"{% if link.current %} aria-current="page"{% endif %}>
+                  <span {% if link.current %} class="header__active-menu-item-underlinenone"{% endif %}>{{ link.title | escape }}</span>
                 </a>
               {%- endif -%}
             </li>
