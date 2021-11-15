@@ -243,12 +243,14 @@
             content.classList.add('my_header_sticky_settings');
             header.classList.add('my_header_sticky_settings');
             content.style.transition = 'transform 1s';
-                        content.style.top = -(content.scrollHeight) + 'px';
+            content.style.top = -(content.scrollHeight) + 'px';
             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
-          } else {
+          } else if(content.style.position == 'relative') {
 //             content.className = 'content my_header_background_color my_header_background_opacity';
             content.classList.remove('my_header_sticky_settings');
             header.classList.remove('my_header_sticky_settings');
+            content.style.top = 0 + 'px';
+            content.style.transform = 'translateY(' + (0) + 'px)';
 //             content.style.transform = 'translateY(0px)';
           }
         }
