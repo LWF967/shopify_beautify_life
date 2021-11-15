@@ -510,7 +510,7 @@
           {%- if section.settings.logo != blank and section.settings.logo_svg != blank -%}
 			{%- assign image_size = section.settings.logo_width | append: 'x' -%}
 			{%- assign svg_size = section.settings.logo_svg | file_img_url: image_size -%}
-          <p>{{ svg_size }}</p>
+<!--           <p>{ svg_size }}</p> -->
           <p>{{ section.settings.logo_svg.aspect_ratio }}</p>ratio
           <p> {{ section.settings.logo_width | divided_by: section.settings.logo_svg.aspect_ratio | ceil | plus: 29 }}</p>
           
