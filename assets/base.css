@@ -1855,7 +1855,7 @@ input[type='checkbox'] {
 }
 /* zx change */
 #shopify-section-header-zx {
-  z-index: 3;
+  z-index: 998;
 }
 
 .shopify-section-header-sticky {
