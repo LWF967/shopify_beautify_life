@@ -1,6 +1,8 @@
 {
   "current": {
     "sticky_header": true,
+    "header_count_color": "#6B6B6B",
+    "header_count_text_color": "#ea1919",
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
     "colors_accent_2": "#334FB4",
