@@ -3,6 +3,7 @@
     "full_width": false,
     "sticky_header": true,
     "show_search_icon": true,
+    "header_background_color": "#e2d4d4",
     "header_icon_and_text_color": "#ff0000",
     "header_sticky_background_color": "#eff2cf",
     "header_sticky_icon_and_text_color": "#275b84",
