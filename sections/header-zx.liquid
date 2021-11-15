@@ -15,6 +15,7 @@
 {% assign my_img_height_left = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil | plus: 30 %}
 {% assign my_img_height_centered = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil | plus: 103 %}
 {% assign my_header_height = section.settings.header_height %}
+{% assign my_header_background_opacity = settings.header_background_opacity | divided_by: 100.0 %}
 
 {%- style -%}
 .my_header_height { height: {{ section.settings.header_height }}px; }
@@ -22,7 +23,7 @@
 .my_header_font_size { font-size: {{ section.settings.header_text_height_font_size }}px; }
 .my_header_img_left { height: {{ section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil | plus: 29 }}px; }
 .my_header_background_color { background: {{ settings.header_background_color }}; }
-.my_header_background_opacity { background: {{ settings.header_background_color | color_modify: 'alpha', 1 }}; }
+.my_header_background_opacity { background: {{ settings.header_background_color | color_modify: 'alpha', my_header_background_opacity }}; }
 
 {%- endstyle -%}
 
@@ -479,7 +480,6 @@
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
           {%- elsif section.settings.logo != blank and section.settings.logo_svg == blank -%}
-          {{settings.header_background_opacity | divided_by: 100.0}}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
             <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
               src="{{ section.settings.logo | img_url: image_size }}"
