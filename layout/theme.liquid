@@ -241,7 +241,7 @@
 //             content.className = 'content my_header_background_color my_header_background_opacity my_header_sticky_settings';
             content.classList.add('my_header_sticky_settings');
             header.classList.add('my_header_sticky_settings');
-            
+            content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
           } else {
 //             content.className = 'content my_header_background_color my_header_background_opacity';
             content.classList.remove('my_header_sticky_settings');
