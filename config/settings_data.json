@@ -3,6 +3,7 @@
     "sticky_header": true,
     "header_icon_and_text_color": "#ff0000",
     "header_sticky_background_color": "#afea9b",
+    "header_sticky_icon_and_text_color": "#038cfa",
     "header_count_color": "#00efba",
     "header_count_text_color": "#ea1919",
     "colors_solid_button_labels": "#FFFFFF",
