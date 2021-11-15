@@ -1,6 +1,6 @@
 {
   "current": {
-    "full_width": true,
+    "full_width": false,
     "sticky_header": true,
     "show_search_icon": true,
     "header_background_color": "#e2d4d4",
