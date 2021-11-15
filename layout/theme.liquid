@@ -206,6 +206,7 @@
       let content = document.getElementsByClassName('content')[0];
       let my_header_sticky = document.getElementsByClassName('my_header_sticky');
                   content.style.transition = 'transform 1s';
+      console.log(content.scrollHeight);
 //       console.log(all_header_height);
       window.onscroll = function () {
         if(my_header_sticky.length > 0) {
