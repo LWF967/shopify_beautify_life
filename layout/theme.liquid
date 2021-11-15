@@ -203,6 +203,7 @@
       let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
       let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
       let header = document.getElementsByClassName('header')[0];
+      let m = document.getElementsByClassName('m')[0];
       let my_header_sticky = document.getElementsByClassName('my_header_sticky');
       
 //       console.log(all_header_height);
@@ -212,17 +213,22 @@
           let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 //           console.log(toTop);
           if(toTop >= all_header_height) {
-            header.style.position = 'fixed';
-            header.style.width = '100%';
-            header.style.top = -(header.scrollHeight) + 'px';
-            header.style.top = 0;
+//             header.style.position = 'fixed';
+//             header.style.width = '100%';
+//             header.style.top = -(header.scrollHeight) + 'px';
+//             header.style.top = 0;
+            m.style.position = 'fixed';
+            m.style.width = '100%';
+            m.style.top = -(m.scrollHeight) + 'px';
+            m.style.top = 0;
             header_wrapper.style.height = header_wrapper_height + 'px';
-//             console.log(header_wrapper_height);
+//             m.log(header_wrapper_height);
 //             header.style.transition = 'all 1s';
 //             header.style.transform = 'translateY(' + (header.scrollHeight) + 'px)';
 //             console.log(header.style.transfrom);
           } else {
-            header.style.position = 'relative';
+//             header.style.position = 'relative';
+            m.style.position = 'relative';
 //             header.style.transition = 'all 1s';
 //             header.style.transform = 'translateY(' + (header.scrollHeight) + 'px)';
           }
