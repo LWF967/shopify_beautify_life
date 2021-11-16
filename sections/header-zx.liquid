@@ -933,8 +933,9 @@
 //     console.log(img.width, ' ');
 //     console.log(my_height);
 //   }
-  var my_svg_height = document.getElementsByClassName('header')[0];
+  var my_set_svg_height = document.getElementsByClassName('header')[0];
+  var my_svg_height = document.getElementsByClassName('header__heading-logo my_header_heading_logo')[0];
   
-  my_svg_height.dataset.svgHeight = "20";
-  console.log(my_svg_height);
+  my_set_svg_height.dataset.svgHeight = my_svg_height.height;
+  console.log(my_set_svg_height);
 </script>
