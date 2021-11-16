@@ -897,10 +897,10 @@
   my_svg_height.onload = function(){
     my_set_svg_height.dataset.svgHeight = my_svg_height.height+35;
     
-    if(my_svg_height.height < my_set_svg_height.scrollHeight) {
-      console.log(1);
+    if(my_svg_height.height > my_set_svg_height.scrollHeight) {
+      my_set_svg_height.style.height = my_svg_height.height + 50 + 'px';
     } else {
-      console.log(2);
+      my_set_svg_height.style.height = my_svg_height.height + 'px';
     }
     
     console.log(my_set_svg_height);
