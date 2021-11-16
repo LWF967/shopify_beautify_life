@@ -1,8 +1,10 @@
 <style>
-  .my_header_search_title{
+  .my_header_search_product{
     font-size: 14px;
   }
-  .my_header_search_title_margin {
+  .my_header_search_title {
+    font-size: 14px;
+    font-weight: 700;
     margin: 0 0;
   }
   .my_header_search_vendor {
@@ -12,7 +14,7 @@
 {%- if predictive_search.performed -%}
   <div id="predictive-search-results">
     {%- if predictive_search.resources.products.size > 0 -%} 
-      <h2 id="predictive-search-products" class="predictive-search__heading my_header_search_title">
+      <h2 id="predictive-search-products" class="predictive-search__heading my_header_search_product">
         {{ 'templates.search.products' | t }}
 
         <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +35,7 @@
               >
             {%- endif -%}
             <div class="predictive-search__item-content{% unless settings.predictive_search_show_vendor or settings.predictive_search_show_price %} predictive-search__item-content--centered{% endunless %}">
-              <h3 class="predictive-search__item-heading h5 my_header_search_title_margin">{{ product.title }}</h3>
+              <h3 class="predictive-search__item-heading h5 my_header_search_title">{{ product.title }}</h3>
               {%- if settings.predictive_search_show_vendor -%} 
                 <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span><div class="predictive-search__item-vendor caption-with-letter-spacing my_header_search_vendor">{{ product.vendor }}</div>
               {%- endif -%}
