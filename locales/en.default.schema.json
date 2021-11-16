@@ -155,21 +155,20 @@
       }
     },
     "search_input": {
-      "name": "Search input",
+      "name": "Search",
       "settings": {
         "header": {
           "content": "Product suggestions"
         },
         "predictive_search_enabled": {
-          "label": "Enable product suggestions"
+          "label": "Enable product suggestions",
+          "info": "This will also affect the search bar on the search results page."
         },
         "predictive_search_show_vendor": {
-          "label": "Show vendor",
-          "info": "Visible when product suggestions enabled."
+          "label": "Show vendor"
         },
         "predictive_search_show_price": {
-          "label": "Show price",
-          "info": "Visible when product suggestions enabled."
+          "label": "Show price"
         }
       }
     },
