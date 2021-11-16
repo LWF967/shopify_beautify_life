@@ -287,7 +287,7 @@
           if(content.style.position == 'fixed') {
             content.classList.add('my_header_sticky_settings');
             header.classList.add('my_header_sticky_settings');
-            content.style.transition = 'transform 1s';
+            content.style.transition = 'transform .5s';
             content.style.top = -(content.scrollHeight) + 'px';
             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
           } else if(content.style.position == 'relative') {
