@@ -30,7 +30,7 @@
   </p>  
   
   
-<div>{{ article.content }}</div>
+<div>{{ article.content | strip_html | strip_newlines }}</div>
 
 
 {% endif %}
