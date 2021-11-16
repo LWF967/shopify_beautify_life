@@ -1,9 +1,16 @@
 
+{%assign sections = section.settings%}
+{%if sections.show_author %}
 <div>Post title</div>
+{% endif %}
+{% if sections.show_date %}
 <div>{{article.author}}</div>
+
 <div>{{ article.content }}</div>
 
+{% endif %}
 
+{% if sections.show_social%}
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <ul class="list-social_start list-unstyled" role="list">
     {%- if settings.social_twitter_link != blank -%}
@@ -80,7 +87,7 @@
     {%- endif -%}
   </ul>
 </div>
-
+{% endif %}
 
 
 
