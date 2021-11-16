@@ -904,16 +904,16 @@
   var my_header_height = document.getElementsByClassName('my_header_height')[0];
   
   
-  my_svg_height.onload = function(){
-//     my_set_svg_height.dataset.svgHeight = my_svg_height.height+35;
-    
+  my_svg_height.onload = function(){   
     if(my_svg_height.height < my_set_svg_height.scrollHeight) {
       let header_height_longer = my_svg_height.height * 1 + 35;
+      my_set_svg_height.dataset.svgHeight = header_height_longer;
       my_set_svg_height.style.height = header_height_longer + 'px';
       my_set_svg_height.classList.add('my_flash');
 //       console.log(my_svg_height.height);
     } else {
       let header_height = my_svg_height.height * 1;
+      my_set_svg_height.dataset.svgHeight = header_height;
       my_set_svg_height.style.height = header_height + 'px';
       my_set_svg_height.classList.add('my_flash');
 //       console.log(my_svg_height.height);
