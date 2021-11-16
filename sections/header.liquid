@@ -193,6 +193,14 @@
     padding-right: 0 !important;
   }
   
+  .my_header_search_label {
+    top: 0.8rem;
+  }
+  
+  .my_header_search_label:focus {
+    top: 0;
+  }
+  
   @media screen and (max-width: 989px) {
     .my_header_img_align {
       justify-self: center !important;
@@ -607,7 +615,7 @@
                         spellcheck="false" 
                       {%- endif -%}
                     >
-                    <label class="field__label" style="top: 0.8rem;" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
+                    <label class="field__label my_header_search_label" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
                     <input type="hidden" name="options[prefix]" value="last">
                     <button class="search__button field__button" style="height: 38px;" aria-label="{{ 'general.search.search' | t }}">
                       <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
