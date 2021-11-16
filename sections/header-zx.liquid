@@ -895,7 +895,7 @@
   var my_svg_height = document.getElementsByClassName('header__heading-logo my_header_heading_logo')[0];
   
   my_svg_height.onload = function(){
-    my_set_svg_height.dataset.svgHeight = my_svg_height.height;
+    my_set_svg_height.dataset.svgHeight = my_svg_height.height+35;
     
     if(my_svg_height.height < my_set_svg_height.scrollHeight) {
       console.log(1);
@@ -904,7 +904,7 @@
     }
     
     console.log("header:"+my_set_svg_height.scrollHeight);
-    console.log("svg:"+my_svg_height.height);
+    console.log("svg:"+my_svg_height.height+35);
   }
   
 
