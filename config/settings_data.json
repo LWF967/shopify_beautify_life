@@ -177,10 +177,10 @@
         "type": "header-zx",
         "settings": {
           "logo_aligment": "left",
-          "logo_svg": "green-and-white-marbled-coloring.jpg?",
+          "logo_svg": "woman-poses-in-dark-room.jpg",
           "logo": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
           "logo_width": 120,
-          "header_height": 60,
+          "header_height": 160,
           "header_text_height_font_size": 14,
           "menu": "main-menu"
         }
