@@ -897,6 +897,12 @@
   my_svg_height.onload = function(){
     my_set_svg_height.dataset.svgHeight = my_svg_height.height;
     
+    if(my_svg_height.height < my_set_svg_height.scrollHeight) {
+      console.log(1);
+    } else {
+      console.log(2);
+    }
+    
     console.log(my_set_svg_height.scrollHeight);
     console.log(my_svg_height.height);
   }
