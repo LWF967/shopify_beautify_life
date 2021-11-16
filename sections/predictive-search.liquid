@@ -2,8 +2,11 @@
   .my_header_search_title{
     font-size: 14px;
   }
-  .my_header_search_items_title_margin {
+  .my_header_search_title_margin {
     margin: 0 0;
+  }
+  .my_header_search_vendor {
+    margin-top: 0.5rem;
   }
 </style>
 {%- if predictive_search.performed -%}
@@ -30,9 +33,9 @@
               >
             {%- endif -%}
             <div class="predictive-search__item-content{% unless settings.predictive_search_show_vendor or settings.predictive_search_show_price %} predictive-search__item-content--centered{% endunless %}">
-              <h3 class="predictive-search__item-heading h5 my_header_search_items_title_margin">{{ product.title }}</h3>
+              <h3 class="predictive-search__item-heading h5 my_header_search_title_margin">{{ product.title }}</h3>
               {%- if settings.predictive_search_show_vendor -%} 
-                <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span><div class="predictive-search__item-vendor caption-with-letter-spacing">{{ product.vendor }}</div>
+                <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span><div class="predictive-search__item-vendor caption-with-letter-spacing my_header_search_vendor">{{ product.vendor }}</div>
               {%- endif -%}
               {%- if settings.predictive_search_show_price -%}
                 {% render 'price', product: product, use_variant: true, show_badges: false %} 
