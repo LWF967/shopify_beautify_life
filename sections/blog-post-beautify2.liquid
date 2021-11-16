@@ -5,11 +5,12 @@
 <h1 class="tc">Post title</h1>
 {% endif %}
 {% if sections.show_date %}
-<div>{{article.author}}</div>
+<div>
+  {{article.author}} 
+  {{ article.published_at | time_tag: format: 'date' }}
+</div>
   
   <p>
-  
-  {{article.user}}
   {{ article.published_at | time_tag: format: 'date' }}
   </p>  
     
