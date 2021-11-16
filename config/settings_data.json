@@ -62,8 +62,8 @@
         "settings": {
           "logo_aligment": "left",
           "logo_svg": "fall-vegetable-box.jpg",
-          "logo_width": 50,
-          "header_height": 75,
+          "logo_width": 120,
+          "header_height": 60,
           "header_text_height_font_size": 14,
           "menu": "main-menu"
         }
