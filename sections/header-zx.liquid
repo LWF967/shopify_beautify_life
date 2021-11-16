@@ -891,7 +891,7 @@
 //   }
   var my_set_svg_height = document.getElementsByClassName('header')[0];
   var my_svg_height = document.getElementsByClassName('header__heading-logo my_header_heading_logo my_svg')[0];
-  var my_flash = document.getElementsByClassName('my_flash')[0];
+//   var my_flash = document.getElementsByClassName('my_flash')[0];
   
   my_svg_height.onload = function(){
 //     my_set_svg_height.dataset.svgHeight = my_svg_height.height+35;
@@ -899,26 +899,26 @@
     if(my_svg_height.height < my_set_svg_height.scrollHeight) {
       let header_height_longer = my_svg_height.height * 1 + 35;
       my_set_svg_height.style.height = header_height_longer + 'px';
-      my_set_svg_height.classList.add('my_flash');
+//       my_set_svg_height.classList.add('my_flash');
       // 判断 类名是否存在 在执行刷新 
     } else {
       let header_height = my_svg_height.height * 1;
       my_set_svg_height.style.height = header_height + 'px';
-      my_set_svg_height.classList.add('my_flash');
+//       my_set_svg_height.classList.add('my_flash');
     }
     
-    if(my_flash) {
-      reloadPage();
-    }
+//     if(my_flash) {
+//       reloadPage();
+//     }
   }
   
   //自动刷新一次页面
-  function reloadPage() {
-    if(location.href.indexOf('#reloaded') == -1){ //判断是否有刷新标记
-      location.href=location.href+"#reloaded"; //没有添加标记
-      location.reload(); //刷新
-  }
-}
+//   function reloadPage() {
+//     if(location.href.indexOf('#reloaded') == -1){ //判断是否有刷新标记
+//       location.href=location.href+"#reloaded"; //没有添加标记
+//       location.reload(); //刷新
+//   }
+// }
   
 
 </script>
