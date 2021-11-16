@@ -193,6 +193,11 @@
     padding-right: 0 !important;
   }
   
+  .my_header_close_size svg {
+    width: 20px;
+    height: 20px;
+  }
+  
   @media screen and (max-width: 989px) {
     .my_header_img_align {
       justify-self: center !important;
@@ -630,7 +635,7 @@
               {%- if settings.predictive_search_enabled -%}
                 </predictive-search>
               {%- endif -%}
-              <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
+              <button type="button" class="search-modal__close-button modal__close-button link link--text focus-inset my_header_close_size" aria-label="{{ 'accessibility.close' | t }}">
                 <svg class="icon icon-close" aria-hidden="true" focusable="false" role="presentation">
                   <use href="#icon-close">
                 </svg>
