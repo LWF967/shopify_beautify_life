@@ -38,7 +38,7 @@ elsif shop_sidebar == 'left' or shop_sidebar == 'right'
 endif -%}
 
 {%- if blog.template_suffix != 'portfolio' -%}
-  {%- section 'article-heading' -%}
+
   <div class="container mt__60 mb__60">
     <div class="row nt_single_blog">
       {%- unless no_sidebar %}<div class="col-lg-{{class_sidebar}} col-xs-12 sidebar">{% section 'article-sidebar' %}</div>{% endunless -%}
