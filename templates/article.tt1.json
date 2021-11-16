@@ -1,7 +1,7 @@
 {
   "sections": {
     "posts": {
-      "type": "blog-page-beautify",
+      "type": "blog-post-beautify",
       "settings": {
       }
     }
