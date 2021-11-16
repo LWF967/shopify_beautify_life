@@ -177,7 +177,8 @@
         "type": "header-zx",
         "settings": {
           "logo_aligment": "left",
-          "logo_svg": "rainbow-hands-heart.jpg",
+          "logo_svg": "fall-vegetable-box.jpg",
+          "logo": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
           "logo_width": 120,
           "header_height": 60,
           "header_text_height_font_size": 14,
