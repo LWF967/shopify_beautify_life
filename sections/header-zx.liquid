@@ -898,14 +898,14 @@
     my_set_svg_height.dataset.svgHeight = my_svg_height.height+35;
     
     if(my_svg_height.height > my_set_svg_height.scrollHeight) {
-      my_set_svg_height.style.height = my_svg_height.height * 1 + 30 + 'px';
+      my_set_svg_height.style.height = my_svg_height.height * 1 + 35 + 'px';
     } else {
       my_set_svg_height.style.height = my_svg_height.height + 'px';
     }
     
     console.log(my_set_svg_height);
     console.log("headerheight:"+my_set_svg_height.scrollHeight);
-    console.log("svg:"+my_svg_height.height+35);
+    console.log("svg:"+my_svg_height.height);
   }
   
 
