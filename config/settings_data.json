@@ -35,6 +35,7 @@
     "social_snapchat_link": "1",
     "social_youtube_link": "1",
     "social_vimeo_link": "1",
+    "predictive_search_show_vendor": true,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
