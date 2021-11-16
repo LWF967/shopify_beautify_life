@@ -10,6 +10,7 @@
   <p>
   
   {{article.user}}
+  {{ article.published_at | time_tag: format: 'date' }}
   </p>  
     
   <p>
