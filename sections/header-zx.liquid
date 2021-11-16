@@ -493,7 +493,7 @@
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
           {%- elsif section.settings.logo != blank and section.settings.logo_svg == blank -%}
-            %- assign image_size = section.settings.logo_width | append: 'x' -%}
+            {%- assign image_size = section.settings.logo_width | append: 'x' -%}
             <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
               src="{{ section.settings.logo | img_url: image_size }}"
               loading="lazy"
