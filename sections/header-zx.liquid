@@ -520,7 +520,7 @@
               {%- if link.links != blank -%}
                 <details-disclosure>
                   <details>
-                    <summary class="header__menu-item list-menu__item link focus-inset my_header_li_padding my_header_icon_text_color {% if settings.Show_dropdown_arrow == false %}my_header_no_droparrow{% endif %}">
+                    <summary class="header__menu-item list-menu__item link focus-inset my_header_font_size my_header_li_padding my_header_icon_text_color {% if settings.Show_dropdown_arrow == false %}my_header_no_droparrow{% endif %}">
                       <span {% if link.child_active %} class="header__active-menu-item-underlinenone my_header_icon_text_color"{% endif %}>{{ link.title | escape }}</span>
                       {%- if settings.Show_dropdown_arrow -%}
                         {% render 'icon-caret' %}
