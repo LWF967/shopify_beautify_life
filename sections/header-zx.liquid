@@ -389,8 +389,8 @@
       </header-drawer>
     {%- endif -%}
 
-<!--     {%- if section.settings.logo_aligment == 'left' or section.settings.menu == blank -%} -->
-      <details-modal class="header__search" >
+    {%- if section.settings.logo_aligment == 'left' or section.settings.menu == blank -%}
+      <details-modal class="header__search" style="display: none;">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link link--text focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
             <span>
@@ -462,7 +462,7 @@
           </div>
         </details>
       </details-modal>
-<!--     {%- endif -%} -->
+    {%- endif -%}
 
     {%- if true -%}
       {%- if section.settings.logo_aligment == 'left' -%}
