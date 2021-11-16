@@ -41,7 +41,6 @@ endif -%}
 
   <div class="container mt__60 mb__60">
     <div class="row nt_single_blog">
-      {%- unless no_sidebar %}<div class="col-lg-{{class_sidebar}} col-xs-12 sidebar">{% section 'article-sidebar' %}</div>{% endunless -%}
       <div class="col-md-{{class_main}} col-xs-12">
       
         
@@ -854,12 +853,7 @@ endif -%}
          }
         ]
       }
-   ],
-    "default": {
-      "blocks": [
-        { "type": "content" },{ "type": "infos" },{ "type": "social" },{ "type": "nav" },{ "type": "related" }
-      ]
-    }
+   ]	
   }
 {% endschema %}
 
