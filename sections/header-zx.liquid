@@ -897,7 +897,7 @@
   my_svg_height.onload = function(){
     my_set_svg_height.dataset.svgHeight = my_svg_height.height+35;
     
-    if(my_svg_height.height > my_set_svg_height.scrollHeight) {
+    if(my_svg_height.height < my_set_svg_height.scrollHeight) {
       let header_height_longer = my_svg_height.height * 1 + 35;
       my_set_svg_height.style.height = header_height + 'px';
     } else {
