@@ -46,6 +46,26 @@
         ],
         "default": "Disable",
         "label": "Show Back To Top"
+      },
+      {
+        "type": "header",
+        "content": "Back To Top Style"
+      },
+      {
+        "type": "select",
+        "id": "back_to_top_style",
+        "options": [
+          {
+            "value": "Style 1",
+            "label": "Style 1"
+          },
+          {
+            "value": "Style 2",
+            "label": "Style 2"
+          }
+        ],
+        "default": "Style 2",
+        "label": "Back To Top Style"
       }
     ]
   },
