@@ -499,6 +499,7 @@
               alt="{ section.settings.logo.alt | default: shop.name | escape }}"
             >           -->
           {{ section.settings.logo_svg | file_url }}
+          {{ section.settings.logo | img_url }}
              <img class="header__heading-logo my_header_heading_logo my_svg"
                   src="{{ section.settings.logo_svg | file_url }}" 
                   alt="{{ section.settings.logo_svg.alt | default: shop.name }}" 
