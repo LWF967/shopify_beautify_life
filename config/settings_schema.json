@@ -92,6 +92,30 @@
         "default": false,
         "label": "Enable catalog mode",
         "info": "You can hide all 'Add to cart' buttons. This will allow you to showcase your products as an online catalog without ability to make a purchase."
+      },
+      {
+        "type": "header",
+        "content": "Aspect ratio custom settings"
+      },
+      {
+        "type": "image_picker",
+        "id": "ratio_custom_1",
+        "label": "Ratio Custom 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "ratio_custom_2",
+        "label": "Ratio Custom 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "ratio_custom_3",
+        "label": "Ratio Custom 3"
+      },
+      {
+        "type": "image_picker",
+        "id": "ratio_custom_4",
+        "label": "Ratio Custom 4"
       }
     ]
   },
