@@ -133,22 +133,6 @@
     {%- if settings.predictive_search_enabled -%}
       <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
     {%- endif -%} 
-    <style>
-      <!--  lzx css    -->
-      #my_backtop {
-        position: fixed;
-        display: block;
-        right: 35px;
-        bottom: 55px;
-    	width: 45px; 
-        height: 45px;
-        line-height: 45px;
-    	text-align: center;
-        background: white;  
-        border: 1px solid;
-    	cursor: pointer;
-      }
-    </style>
     
     
     
@@ -159,6 +143,23 @@
 
   </head>
 
+  <style>
+    <!--  lzx css    -->
+    #my_backtop {
+      position: fixed;
+      display: block;
+      right: 35px;
+      bottom: 55px;
+      width: 45px; 
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      background: white;  
+      border: 1px solid;
+      cursor: pointer;
+    }
+  </style>
+  
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
