@@ -215,20 +215,6 @@
         document.body.scrollTop = document.documentElement.scrollTop = 0;
       }
       
-      var totop = document.getElementbyId("totop");
-      var target = 0;
-      totop.onclick = function () {
-          clearInterval(timer);
-          var timer = setInterval(function () {
-              target = document.body.scrollTop;
-              target -= Math.ceil(target/10);//做减速运动
-              window.scrollTo(0, target);
-              if (target == 0) {
-                  clearInterval(timer);
-              }
-          }, 10);
-      };
-      
       window.onscroll = function () {
         if(my_header_sticky.length > 0) {
           //获取距离页面顶部的距离
