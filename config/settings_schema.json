@@ -78,6 +78,18 @@
         ],
         "default": "Default",
         "label": "Button style"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_prevent_copying",
+        "default": false,
+        "label": "Enable Prevent Copying"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_catalog_mode",
+        "default": false,
+        "label": "Enable catalog mode"
       }
     ]
   },
