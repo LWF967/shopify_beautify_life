@@ -485,6 +485,7 @@
           
             {%- assign logo_svg = "files/" | append: section.settings.logo_svg  -%}
             {{ logo_svg }}
+            {{ section.settings.logo }}
             <img srcset="{{ section.settings.logo_svg | file_img_url: image_size }} 1x, {{ section.settings.logo_svg | file_img_url: image_size, scale: 2 }} 2x"
               src="{{ section.settings.logo_svg | file_img_url: image_size }}"
               loading="lazy"
