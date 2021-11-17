@@ -486,7 +486,7 @@
         <h1 class="header__heading text1 my_header_img_align my_header_img_centered">
       {%- endif -%}
     {%- endif -%}
-          <span style="font-size: 9px">{{ section.settings.logo_svg | file_url }}</span>
+          <span style="font-size: 9px">{{ section.settings.logo_svg }}</span>
           <span style="font-size: 9px">{{ section.settings.logo }}</span>
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset my_header_font_size">
           {%- if section.settings.logo_svg != blank -%}
