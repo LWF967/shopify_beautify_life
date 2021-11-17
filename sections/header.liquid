@@ -500,11 +500,11 @@
               height="{ section.settings.logo.height }}"
               alt="{ section.settings.logo.alt | default: shop.name | escape }}"
             >           -->
-             <img class="header__heading-logo my_header_heading_logo my_svg"
-                  src="{{ section.settings.logo_svg | file_url }}" 
-                  alt="{{ section.settings.logo_svg.alt | default: shop.name }}" 
-                  style="width: {{ section.settings.logo_width }}px"
-                  width="{{ section.settings.logo.width }}">  
+<!--              <img class="header__heading-logo my_header_heading_logo my_svg"
+                  src="{ section.settings.logo_svg | file_url }}" 
+                  alt="{ section.settings.logo_svg.alt | default: shop.name }}" 
+                  style="width: { section.settings.logo_width }}px"
+                  width="{ section.settings.logo.width }}">   -->
           <p>svg---{{ section.settings.logo_svg }}+{{ str }}</p>
           <p>img---{{ section.settings.logo }}</p>
           {%- elsif section.settings.logo != blank -%}
