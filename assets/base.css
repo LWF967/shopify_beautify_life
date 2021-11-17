@@ -2400,6 +2400,6 @@ a{
   height: 10px;
   border-width: 2px;
   border-style: solid;
-  border-color: #999 #999 transparent transparent;
+  border-color: #eee #eee transparent transparent;
   transform: rotate(-45deg);
 }
