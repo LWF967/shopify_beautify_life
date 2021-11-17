@@ -18,6 +18,9 @@
 {% assign my_header_background_opacity = settings.header_background_opacity | divided_by: 100.0 %}
 {% assign my_header_sticky_background_opacity = settings.header_sticky_background_opacity | divided_by: 100.0 %}
 
+{% assign image_svg = images[section.settings.logo_svg] %}
+{% assign image_height = section.settings.logo_width | divided_by: image_svg.aspect_ratio | round: 2 %}
+
 {%- style -%}
 .my_header_height { height: {{ section.settings.header_height }}px; }
 .my_header_heading_logo { width: {{ section.settings.logo_width }}px; }
@@ -222,12 +225,7 @@
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}{% if settings.sticky_header %} my_header_sticky {% endif %}">
 <div class="content my_header_background_color my_header_background_opacity">
-  
-  
-    {% assign image_svg = images[section.settings.logo_svg] %}
-    {% assign image_height = section.settings.logo_width | divided_by: image_svg.aspect_ratio | round: 2 %}
-			
-          <p>这是取出来svg的高，用liquid对象取到的 {{ image_height }}</p> 
+  <p>这是取出来svg的高，用liquid对象取到的 {{ image_height }}</p> 
   
   
   <header data-svg-height="" data-header-height="{{ section.settings.header_height }}"
