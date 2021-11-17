@@ -442,6 +442,7 @@
       "remaining_html": "Remaining {{ balance }}",
       "add_to_apple_wallet": "Add to Apple Wallet",
       "qr_image_alt": "QR code — scan to redeem gift card",
+      "redeem_html": "Use this code at checkout to redeem your {{ value }} gift card",
       "copy_code": "Copy code",
       "expired": "Expired",
       "copy_code_success": "Code copied successfully",
