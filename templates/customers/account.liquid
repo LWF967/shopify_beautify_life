@@ -11,6 +11,13 @@
     </a>
   </div>
 
+       <div style="text-align:center;">
+        这是gift-card数据
+        <p>{{'gift_cards.issued.redeem_html' | t: value:gift_card_balance }}</p>
+        <p>初始: {{ gift_card.initial_value | money }}</p>
+        <p>剩余: {{ gift_card.balance | money}}</p>
+      </div>
+    
   <div>
     <div>
       <h2>{{ 'customer.orders.title' | t }}</h2>
