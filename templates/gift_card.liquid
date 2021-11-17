@@ -104,7 +104,12 @@
       <div class="gift-card__image-wrapper">
         <img src="{{ 'gift-card/card.svg' | shopify_asset_url }}" alt="" class="gift-card__image" height="{{ 570 | divided_by: 1.5 }}" width="570" loading="lazy">
       </div>
-      <div style="text-align:center;">{{'gift_cards.issued.redeem_html' | t: value: gift_card.balance | money }}</div>
+      <div style="text-align:center;">
+        
+        {{'gift_cards.issued.redeem_html' | t: value: gift_card.balance | money }}
+        <p>{{ gift_card_balance }}</p>
+        <p>{{'gift_cards.issued.redeem_html'}}</p>
+      </div>
       <div class="gift-card__qr-code" data-identifier="{{ gift_card.qr_identifier }}"></div>
       <div class="gift-card__information">
         <input
