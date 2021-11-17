@@ -17,6 +17,15 @@
     ]
   },
   {
+    "name": "general",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Shop settings"
+      }
+    ]
+  },
+  {
     "name": "header",
     "settings": [
       {
