@@ -479,8 +479,8 @@
       {%- endif -%}
     {%- endif -%}
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset my_header_font_size">
-          {%- if section.settings.logo != blank and section.settings.logo_svg != blank -%}
-            {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+          {%- if section.settings.logo_svg != blank -%}
+<!--             %- assign image_size = section.settings.logo_width | append: 'x' -%} -->
           
 <!--             <img srcset="{ section.settings.logo_svg | file_img_url: image_size }} 1x, { section.settings.logo_svg | file_img_url: image_size, scale: 2 }} 2x"
               src="{ section.settings.logo_svg | file_img_url: image_size }}"
@@ -496,17 +496,7 @@
                   alt="{{ section.settings.logo_svg.alt | default: shop.name }}" 
                   style="width: {{ section.settings.logo_width }}px">  
           
-          {%- elsif section.settings.logo == blank and section.settings.logo_svg != blank -%}
-            {%- assign image_size = section.settings.logo_width | append: 'x' -%}
-            <img srcset="{{ section.settings.logo_svg | file_img_url: image_size }} 1x, {{ section.settings.logo_svg | file_img_url: image_size, scale: 2 }} 2x"
-              src="{{ section.settings.logo_svg | file_img_url: image_size }}"
-              loading="lazy"
-              class="header__heading-logo my_header_heading_logo my_svg"
-              width="{{ section.settings.logo.width }}"
-              height="{{ section.settings.logo.height }}"
-              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-            >
-          {%- elsif section.settings.logo != blank and section.settings.logo_svg == blank -%}
+          {%- elsif section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
             <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
               src="{{ section.settings.logo | img_url: image_size }}"
