@@ -234,6 +234,12 @@
                    {% elsif section.settings.logo_aligment == 'centered' and my_img_height_centered > my_header_height %}
                    my_auto_height
                    {% endif %}
+                 {% elsif section.settings.logo_svg != blank %}
+                   {% if section.settings.logo_aligment == 'left' and my_img_height_left > my_header_height %}
+                   my_header_img_left
+                   {% elsif section.settings.logo_aligment == 'centered' and my_img_height_centered > my_header_height %}
+                   my_auto_height
+                   {% endif %}
                  {% endif %}my_header_background_color my_header_background_opacity"
                  {% if settings.full_width == false %} style="max-width: 1200px;"{% endif %}>
     {%- if section.settings.menu != blank -%}
