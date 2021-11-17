@@ -913,8 +913,9 @@
       my_set_svg_height.dataset.svgHeight = header_height_longer;
       my_set_svg_height.style.height = header_height_longer + 'px';
       my_set_svg_height.classList.add('my_flash');
-//       console.log(my_svg_height.height);
+
       a = my_set_svg_height.dataset.svgHeight;
+      console.log(a);
     } else {
       let header_height = my_svg_height.height * 1;
       my_set_svg_height.dataset.svgHeight = header_height;
@@ -922,8 +923,7 @@
       my_set_svg_height.classList.add('my_flash');
       
       a = my_set_svg_height.dataset.svgHeight;
-//       console.log(my_svg_height.height);
-//       console.log(1);
+      console.log(a);
     }
     console.log("----------");
     console.log(style.height);
