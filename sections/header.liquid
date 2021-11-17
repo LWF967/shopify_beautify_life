@@ -902,17 +902,17 @@
 //   var style = my_header_height.currentStyle || document.defaultView.getComputedStyle(my_header_height, '');
   
   my_svg_height.onload = function(){   
-    if(my_svg_height.height < my_set_svg_height.scrollHeight) {
-      let header_height_longer = my_svg_height.height * 1 + 35;
-      my_set_svg_height.dataset.svgHeight = header_height_longer;
-      my_set_svg_height.style.height = header_height_longer + 'px';
-//       my_set_svg_height.classList.add('my_flash');
-    } else {
-      let header_height = my_svg_height.height * 1;
-      my_set_svg_height.dataset.svgHeight = header_height;
-      my_set_svg_height.style.height = header_height + 'px';
-//       my_set_svg_height.classList.add('my_flash');
-    }
+//     if(my_svg_height.height < my_set_svg_height.scrollHeight) {
+//       let header_height_longer = my_svg_height.height * 1 + 35;
+//       my_set_svg_height.dataset.svgHeight = header_height_longer;
+//       my_set_svg_height.style.height = header_height_longer + 'px';
+// //       my_set_svg_height.classList.add('my_flash');
+//     } else {
+//       let header_height = my_svg_height.height * 1;
+//       my_set_svg_height.dataset.svgHeight = header_height;
+//       my_set_svg_height.style.height = header_height + 'px';
+// //       my_set_svg_height.classList.add('my_flash');
+//     }
     console.log(my_set_svg_height.dataset.headerHeight);
     console.log(my_set_svg_height.scrollHeight);
     console.log(my_svg_height.height);
@@ -920,6 +920,7 @@
     let my_img_and_padding = my_svg_height.height * 1 + 35;
     if(my_img_and_padding < my_set_svg_height.dataset.headerHeight) {
       console.log(1);
+      my_set_svg_height.style.height = my_set_svg_height.dataset.headerHeight + 'px';
     } else {
       console.log(2);
     }
