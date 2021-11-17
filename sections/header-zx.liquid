@@ -471,6 +471,12 @@
         <h1 class="header__heading text1 my_header_img_align my_header_img_centered">
       {%- endif -%}
     {%- endif -%}
+          
+          {% assign image_svg = images[section.settings.logo_svg] %}
+			
+          <p>李泽熙我要打爆你的头</p>
+          <p>这是取出来svg的高，用liquid对象取到的 {{image_svg.height}}</p>
+          
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset my_header_font_size">
           {%- if section.settings.logo != blank and section.settings.logo_svg != blank -%}
             <img srcset="{{ section.settings.logo_svg | file_url }} 1x, {{ section.settings.logo_svg | file_url }} 2x"
