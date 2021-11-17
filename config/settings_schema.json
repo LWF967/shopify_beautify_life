@@ -285,7 +285,7 @@
       {
         "type": "color",
         "id": "colors_primary_buttons",
-        "default": "#000",
+        "default": "#000000",
         "label": "Primary buttons"
       },
       {
