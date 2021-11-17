@@ -62,6 +62,22 @@
         ],
         "default": "Style 2",
         "label": "Back To Top Style"
+      },
+      {
+        "type": "select",
+        "id": "button_style",
+        "options": [
+          {
+            "value": "Default",
+            "label": "Default"
+          },
+          {
+            "value": "Round",
+            "label": "Round"
+          }
+        ],
+        "default": "Default",
+        "label": "Button style"
       }
     ]
   },
