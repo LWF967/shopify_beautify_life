@@ -2345,6 +2345,7 @@ a{
 #my-backtop {
   position: fixed;
   display: block;
+  box-sizing: border-box;
   right: 35px;
   bottom: 55px;
   width: 45px; 
