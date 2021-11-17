@@ -905,7 +905,7 @@
   
   var style = my_header_height.currentStyle || document.defaultView.getComputedStyle(my_header_height, '');
   
-  var a;
+//   var a;
   
   my_svg_height.onload = function(){   
     if(my_svg_height.height < my_set_svg_height.scrollHeight) {
@@ -914,8 +914,8 @@
       my_set_svg_height.style.height = header_height_longer + 'px';
       my_set_svg_height.classList.add('my_flash');
 
-      a = my_set_svg_height.dataset.svgHeight;
-      console.log("a1",a);
+//       a = my_set_svg_height.dataset.svgHeight;
+//       console.log("a1",a);
     } else {
       let header_height = my_svg_height.height * 1;
       my_set_svg_height.dataset.svgHeight = header_height;
@@ -923,27 +923,28 @@
       my_set_svg_height.classList.add('my_flash');
       
       a = my_set_svg_height.dataset.svgHeight;
-      console.log("a2",a);
+//       console.log("a2",a);
     }
-    console.log("----------");
-    console.log(style.height);
-    console.log(my_set_svg_height.dataset.svgHeight);
+//     console.log("----------");
+//     console.log(style.height);
+//     console.log(my_set_svg_height.dataset.svgHeight);
 
-    if(style.height > my_set_svg_height.dataset.svgHeight) {
-      console.log(1);
-    } else {
-      console.log(2);
-    }
-      console.log("a3",a);
+//     if(style.height > my_set_svg_height.dataset.svgHeight) {
+//       console.log(1);
+//     } else {
+//       console.log(2);
+//     }
+//       console.log("a3",a);
 
 //     console.log(my_header_height.style.height);
   }  
   /* 计算header 的高度 */
 
-  console.log(style.height);
-  var str = style.height.slice(0,-2);
-  console.log(str);
-  console.log(str*1);
+//   console.log(style.height);
+//   var str = style.height.slice(0,-2);
+//   console.log(str);
+//   console.log(str*1);
+  
 //   console.log("a3",a);
   /* 判断header的高度是否大于图片的高 */
   
