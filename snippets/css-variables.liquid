@@ -36,6 +36,9 @@
     {%- endif -%}
     --hover-overlay-opacity: {{ image_overlay_opacity_hover | at_most: 1 }};
 
+
+	--color-base-accent-1: {{ settings.colors_primary_buttons }};
+
     --color-border: {{ settings.color_borders }};
     --color-border-form: {{ settings.color_text_field_border }};
     --color-border-form-darker: {{ settings.color_text_field_border | color_darken: 10}};
