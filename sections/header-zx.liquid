@@ -213,6 +213,13 @@
     <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
   </symbol>
 </svg>
+  
+  
+  {% assign image_svg = images[section.settings.logo_svg] %}
+			
+          <p>李泽熙我要打爆你的头</p>
+          <p>这是取出来svg的高，用liquid对象取到的 {{image_svg.height}}</p> 
+  
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}{% if settings.sticky_header %} my_header_sticky {% endif %}">
 <div class="content my_header_background_color my_header_background_opacity">
   <header data-svg-height="" 
@@ -472,10 +479,7 @@
       {%- endif -%}
     {%- endif -%}
           
-          {% assign image_svg = images[section.settings.logo_svg] %}
-			
-          <p>李泽熙我要打爆你的头</p>
-          <p>这是取出来svg的高，用liquid对象取到的 {{image_svg.height}}</p>
+         
           
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset my_header_font_size">
           {%- if section.settings.logo != blank and section.settings.logo_svg != blank -%}
