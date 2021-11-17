@@ -225,8 +225,9 @@
   
   
     {% assign image_svg = images[section.settings.logo_svg] %}
+    {% assign image_height = section.settings.logo_width %}
 			
-          <p>这是取出来svg的高，用liquid对象取到的 {{ section.settings.logo_width  }}</p> 
+          <p>这是取出来svg的高，用liquid对象取到的 {{ image_height }}</p> 
   
   
   <header data-svg-height="" data-header-height="{{ section.settings.header_height }}"
