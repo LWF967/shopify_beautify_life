@@ -494,7 +494,7 @@
              <img class="header__heading-logo my_header_heading_logo my_svg"
                   src="{{ section.settings.logo_svg | file_url }}" 
                   alt="{{ section.settings.logo_svg.alt | default: shop.name }}" 
-                  style="width: {{ section.settings.logo_width }}px">  
+                  style="width: {{ section.settings.logo_width }}px; height: {{ section.settings.logo_svg.height }}">  
           
           {%- elsif section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
