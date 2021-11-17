@@ -486,6 +486,8 @@
         <h1 class="header__heading text1 my_header_img_align my_header_img_centered">
       {%- endif -%}
     {%- endif -%}
+                    {{ section.settings.logo_svg | file_url }}
+          {{ section.settings.logo | img_url }}
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset my_header_font_size">
           {%- if section.settings.logo_svg != blank -%}
 <!--             %- assign image_size = section.settings.logo_width | append: 'x' -%} -->
@@ -498,8 +500,6 @@
               height="{ section.settings.logo.height }}"
               alt="{ section.settings.logo.alt | default: shop.name | escape }}"
             >           -->
-          {{ section.settings.logo_svg | file_url }}
-          {{ section.settings.logo | img_url }}
              <img class="header__heading-logo my_header_heading_logo my_svg"
                   src="{{ section.settings.logo_svg | file_url }}" 
                   alt="{{ section.settings.logo_svg.alt | default: shop.name }}" 
