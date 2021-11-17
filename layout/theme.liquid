@@ -212,8 +212,7 @@
       let my_backtop = document.getElementById('my_backtop');
       
       my_backtop.onclick = function() {
-        let toTop = document.documentElement.scrollTop || document.body.scrollTop;
-        toTop = 0;
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
       }
       
       window.onscroll = function () {
