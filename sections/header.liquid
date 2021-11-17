@@ -905,6 +905,8 @@
   
   var style = my_header_height.currentStyle || document.defaultView.getComputedStyle(my_header_height, '');
   
+  var a;
+  
   my_svg_height.onload = function(){   
     if(my_svg_height.height < my_set_svg_height.scrollHeight) {
       let header_height_longer = my_svg_height.height * 1 + 35;
@@ -912,11 +914,14 @@
       my_set_svg_height.style.height = header_height_longer + 'px';
       my_set_svg_height.classList.add('my_flash');
 //       console.log(my_svg_height.height);
+      a = my_set_svg_height.dataset.svgHeight;
     } else {
       let header_height = my_svg_height.height * 1;
       my_set_svg_height.dataset.svgHeight = header_height;
       my_set_svg_height.style.height = header_height + 'px';
       my_set_svg_height.classList.add('my_flash');
+      
+      a = my_set_svg_height.dataset.svgHeight;
 //       console.log(my_svg_height.height);
 //       console.log(1);
     }
@@ -938,7 +943,7 @@
   var str = style.height.slice(0,-2);
   console.log(str);
   console.log(str*1);
-  console.log(my_set_svg_height.dataset.svgHeight);
+  console.log(a);
   /* 判断header的高度是否大于图片的高 */
   
 
