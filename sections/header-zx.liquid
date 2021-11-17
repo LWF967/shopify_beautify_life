@@ -220,10 +220,6 @@
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}{% if settings.sticky_header %} my_header_sticky {% endif %}">
 <div class="content my_header_background_color my_header_background_opacity">
   
-    {% assign image_svg = images[section.settings.logo_svg] %}
-			
-          <p>李泽熙我要打爆你的头</p>
-          <p>这是取出来svg的高，用liquid对象取到的 {{image_svg.height}}</p> 
   
   <header data-svg-height="" 
           class="header header--{{ section.settings.logo_position }} page-width                 
