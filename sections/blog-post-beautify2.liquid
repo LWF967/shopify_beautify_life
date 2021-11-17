@@ -11,7 +11,7 @@
 </div>
   
   <div class="pr mt__10">
-  <span>{{ 'blogs.article.in' | t }} <a href="{{ blog.url }}" rel="category tag">{{ blog.title }}</a> </span>
+  <span>{{ 'blogs.article.by_author' | t }} <a href="{{ blog.url }}" rel="category tag">{{ blog.title }}</a> </span>
   <span class="comment-number pr"><a href="{{ article.url }}{{cm_link}}">{{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}</a></span>
   </div>
 
