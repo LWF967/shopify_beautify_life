@@ -896,25 +896,27 @@
 {% endschema %}
 
 <script>  
-  var my_set_svg_height = document.getElementsByClassName('header')[0];
-  var my_svg_height = document.getElementsByClassName('header__heading-logo my_header_heading_logo my_svg')[0];
-  var my_header_height = document.getElementsByClassName('my_header_height')[0];
+//   var my_set_svg_height = document.getElementsByClassName('header')[0];
+//   var my_svg_height = document.getElementsByClassName('header__heading-logo my_header_heading_logo my_svg')[0];
+//   var my_header_height = document.getElementsByClassName('my_header_height')[0];
   
 //   var my_flash = document.getElementsByClassName('my_flash')[0];
 //   var style = my_header_height.currentStyle || document.defaultView.getComputedStyle(my_header_height, '');
   
-  my_svg_height.onload = function(){   
-    if(my_svg_height.height < my_set_svg_height.scrollHeight) {
-      let header_height_longer = my_svg_height.height * 1 + 35;
-      my_set_svg_height.dataset.svgHeight = header_height_longer;
-      my_set_svg_height.style.height = header_height_longer + 'px';
-      my_set_svg_height.classList.add('my_flash');
-    } else {
-      let header_height = my_svg_height.height * 1;
-      my_set_svg_height.dataset.svgHeight = header_height;
-      my_set_svg_height.style.height = header_height + 'px';
-      my_set_svg_height.classList.add('my_flash');
-    }
+//   my_svg_height.onload = function(){   
+//     if(my_svg_height.height < my_set_svg_height.scrollHeight) {
+//       let header_height_longer = my_svg_height.height * 1 + 35;
+//       my_set_svg_height.dataset.svgHeight = header_height_longer;
+//       my_set_svg_height.style.height = header_height_longer + 'px';
+//       my_set_svg_height.classList.add('my_flash');
+//     } else {
+//       let header_height = my_svg_height.height * 1;
+//       my_set_svg_height.dataset.svgHeight = header_height;
+//       my_set_svg_height.style.height = header_height + 'px';
+//       my_set_svg_height.classList.add('my_flash');
+//     }
+//   }
+  
 //     console.log("----------");
 //     console.log(style.height);
 //     console.log(my_set_svg_height.dataset.svgHeight);
@@ -926,7 +928,7 @@
 //     }
 
 //     console.log(my_header_height.style.height);
-  }  
+//   }  
   /* 计算header 的高度 */
 
 //   console.log(style.height);
