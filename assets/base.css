@@ -2342,7 +2342,7 @@ a{
   
 /* lzx backtop css */
 
-#my-backtop {
+#my_backtop {
   position: fixed;
   display: block;
   box-sizing: border-box;
@@ -2359,7 +2359,7 @@ a{
   cursor: pointer;
 }
   
-#my-backtop:before {
+#my_backtop:before {
   position: absolute;
   content: "";
   top: 17.5px;
