@@ -502,9 +502,7 @@
                   src="{{ section.settings.logo_svg | file_url }}" 
                   alt="{{ section.settings.logo_svg.alt | default: shop.name }}" 
                   style="width: {{ section.settings.logo_width }}px"
-                  width="{{ section.settings.logo.width }}"
-                  height="100">
-            {{ section.settings.logo_svg.aspect_ratio }}
+                  width="{{ section.settings.logo.width }}">
           {%- elsif section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
             <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
