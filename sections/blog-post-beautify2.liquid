@@ -16,17 +16,17 @@
     </div>
 
     <p>
-
       {{article.user.email}}
     </p>  
-<!-- 
 
-    <div>{{ article.content | strip_html | strip_newlines }}</div> -->
+
+  
 
 
     {% endif %}
   </div>
   
+  <div>{{ article.content | strip_html | strip_newlines }}</div>
 {% if sections.show_social%}
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <ul class="list-social_start list-unstyled" role="list">
