@@ -409,21 +409,8 @@ class HeaderDrawer extends MenuDrawer {
     super();
   }
 
-  openMenuDrawer(summaryElement) {
-    this.header = this.header || document.getElementById('shopify-section-header-zx');
-    this.borderOffset = this.borderOffset || this.closest('.header-wrapper').classList.contains('header-wrapper--border-bottom') ? 1 : 0;
-    document.documentElement.style.setProperty('--header-bottom-position', `${parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)}px`);
-
-    setTimeout(() => {
-      this.mainDetailsToggle.classList.add('menu-opening');
-    });
-
-    summaryElement.setAttribute('aria-expanded', true);
-    trapFocus(this.mainDetailsToggle, summaryElement);
-    document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
-  }
 //   openMenuDrawer(summaryElement) {
-//     this.header = this.header || document.getElementById('shopify-section-header');
+//     this.header = this.header || document.getElementById('shopify-section-header-zx');
 //     this.borderOffset = this.borderOffset || this.closest('.header-wrapper').classList.contains('header-wrapper--border-bottom') ? 1 : 0;
 //     document.documentElement.style.setProperty('--header-bottom-position', `${parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)}px`);
 
@@ -435,6 +422,19 @@ class HeaderDrawer extends MenuDrawer {
 //     trapFocus(this.mainDetailsToggle, summaryElement);
 //     document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
 //   }
+  openMenuDrawer(summaryElement) {
+    this.header = this.header || document.getElementById('shopify-section-header');
+    this.borderOffset = this.borderOffset || this.closest('.header-wrapper').classList.contains('header-wrapper--border-bottom') ? 1 : 0;
+    document.documentElement.style.setProperty('--header-bottom-position', `${parseInt(this.header.getBoundingClientRect().bottom - this.borderOffset)}px`);
+
+    setTimeout(() => {
+      this.mainDetailsToggle.classList.add('menu-opening');
+    });
+
+    summaryElement.setAttribute('aria-expanded', true);
+    trapFocus(this.mainDetailsToggle, summaryElement);
+    document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
+  }
 }
 
 customElements.define('header-drawer', HeaderDrawer);
