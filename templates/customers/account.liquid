@@ -1,5 +1,5 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
-
+  <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
 <div class="customer account">
   <div>
     <h1>{{ 'customer.account.title' | t }}</h1>
