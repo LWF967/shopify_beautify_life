@@ -1,5 +1,6 @@
 {
   "current": {
+    "back_to_top_style": "Style 1",
     "full_width": true,
     "sticky_header": true,
     "show_search_icon": true,
