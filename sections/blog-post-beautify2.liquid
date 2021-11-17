@@ -6,7 +6,6 @@
 {% endif %}
 {% if sections.show_date %}
 <div>
-  By {{article.author}} 
   {{ article.published_at | time_tag: format: 'date' }}
 </div>
   
