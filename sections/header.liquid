@@ -498,17 +498,14 @@
               height="{ section.settings.logo.height }}"
               alt="{ section.settings.logo.alt | default: shop.name | escape }}"
             >           -->
-          svg---{{ section.settings.logo_svg }}
-          img---{{ section.settings.logo }}
              <img class="header__heading-logo my_header_heading_logo my_svg"
                   src="{{ section.settings.logo_svg | file_url }}" 
                   alt="{{ section.settings.logo_svg.alt | default: shop.name }}" 
                   style="width: {{ section.settings.logo_width }}px"
                   width="{{ section.settings.logo.width }}">  
-          
-          {%- elsif section.settings.logo != blank -%}
           svg---{{ section.settings.logo_svg }}
           img---{{ section.settings.logo }}
+          {%- elsif section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
             <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
               src="{{ section.settings.logo | img_url: image_size }}"
@@ -518,6 +515,8 @@
               height="{{ section.settings.logo.height }}"
               alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
             >
+          svg---{{ section.settings.logo_svg }}
+          img---{{ section.settings.logo }}
           {%- else -%}
             <span class="h2 my_header_icon_text_color">{{ shop.name }}</span>
          {%- endif -%}
