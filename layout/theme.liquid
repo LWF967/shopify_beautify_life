@@ -164,7 +164,7 @@
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
     </ul>
     
-    <a id="my-backtop"></a>
+    <a id="my_backtop"></a>
 
     <script>
       /*lzx change*/
@@ -209,6 +209,7 @@
       let header = document.getElementsByClassName('header')[0];
       let content = document.getElementsByClassName('content')[0];
       let my_header_sticky = document.getElementsByClassName('my_header_sticky');
+      let my_backtop = document.getElementById('my_backtop');
       
       window.onscroll = function () {
         if(my_header_sticky.length > 0) {
@@ -218,8 +219,10 @@
             content.style.position = 'fixed';
             content.style.width = '100%';
             header_wrapper.style.height = header_wrapper_height + 'px';
+            my_backtop.style.opacity = 1;
           } else {
             content.style.position = 'relative';
+            my_backtop.style.opacity = 0;
           }
           if(content.style.position == 'fixed') {
             content.classList.add('my_header_sticky_settings');
