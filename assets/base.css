@@ -2387,6 +2387,7 @@ a{
   transition: opacity .5s;
   opacity: 0;
   cursor: pointer;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .2);
 }
   
 #my_backtop:before {
