@@ -109,7 +109,7 @@
            {{'gift_cards.issued.redeem_html' | t: value: gift_card.balance | money }}
         <p>{{ gift_card_balance }}</p>
         <p>{{'gift_cards.issued.redeem_html' | t }}</p>
-        <p>{{'gift_cards.issued.redeem_html' | t: value:100 }}</p>
+        <p>{{'gift_cards.issued.redeem_html' | t: value:gift_card.balance }}</p>
         <p>{{'gift_cards.issued.redeem_html' | t: 100  }}</p>
       </div>
       <div class="gift-card__qr-code" data-identifier="{{ gift_card.qr_identifier }}"></div>
