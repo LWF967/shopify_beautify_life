@@ -920,6 +920,17 @@
 //       console.log(1);
     }
     
+
+    var style = my_header_height.currentStyle || document.defaultView.getComputedStyle(my_header_height, '')
+    console.log(style.height);
+    console.log(my_set_svg_height.dataset.svgHeight);
+
+    if(style.height > my_set_svg_height.dataset.svgHeight) {
+      console.log(1);
+    } else {
+      console.log(2);
+    }
+    
 //     console.log(my_header_height.style.height);
   }  
 
@@ -935,15 +946,7 @@
 //   }
 // }
   
-  var style = my_header_height.currentStyle || document.defaultView.getComputedStyle(my_header_height, '')
-  console.log(style.height);
-  console.log(my_set_svg_height.dataset.svgHeight);
-  
-  if(style.height > my_set_svg_height.dataset.svgHeight) {
-    console.log(1);
-  } else {
-    console.log(2);
-  }
+
   
 
 </script>
