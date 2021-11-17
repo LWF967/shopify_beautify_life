@@ -113,19 +113,23 @@
   },
   "blogs": {
     "article": {
-      "view_all": "View all",
+      "view_all": "View more",
       "view_all_blogs": "View all blogs",
       "all_topics": "All topics",
-      "by_author": "by {{ author }}",
+      "by_author": "By {{ author }}",
       "posted_in": "Posted in",
-      "read_more": "Read more",
+      "read_more": "Continue Reading",
       "read_more_title": "Read more: {{ title }}",
       "back_to_blog": "Back to {{ title }}",
       "tags": "Tags",
       "article_with_count": {
         "one": "{{ count }} article",
         "other": "{{ count }} articles"
-      }
+      },
+      "by": "By",
+      "on": "on",
+      "in": "In",
+      "back_to": "Back to {{title}}"
     },
     "comments": {
       "title": "Leave a comment",
