@@ -505,7 +505,7 @@
                   alt="{{ section.settings.logo_svg.alt | default: shop.name }}" 
                   style="width: {{ section.settings.logo_width }}px; height: {{ section.settings.logo_svg.aspect_ratio }}"
                   width="{{ section.settings.logo.width }}">  
-          <p>svg---{{ str | img_url }}</p>
+          <p>svg---{{ str }}</p>
           <p>img---{{ section.settings.logo }}</p>
           {%- elsif section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
