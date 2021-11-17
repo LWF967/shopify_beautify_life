@@ -501,8 +501,7 @@
              <img class="header__heading-logo my_header_heading_logo my_svg"
                   src="{{ section.settings.logo_svg | file_url }}" 
                   alt="{{ section.settings.logo_svg.alt | default: shop.name }}" 
-                  style="width: {{ section.settings.logo_width }}px"
-                  width="{{ section.settings.logo.width }}">
+                  style="width: {{ section.settings.logo_width }}px">
           {%- elsif section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
             <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
@@ -894,52 +893,27 @@
 {% endschema %}
 
 <script>  
-  var my_set_svg_height = document.getElementsByClassName('header')[0];
-  var my_svg_height = document.getElementsByClassName('header__heading-logo my_header_heading_logo my_svg')[0];
-  var my_header_height = document.getElementsByClassName('my_header_height')[0];
+//   var my_set_svg_height = document.getElementsByClassName('header')[0];
+//   var my_svg_height = document.getElementsByClassName('header__heading-logo my_header_heading_logo my_svg')[0];
+//   var my_header_height = document.getElementsByClassName('my_header_height')[0];
   
-//   var my_flash = document.getElementsByClassName('my_flash')[0];
-//   var style = my_header_height.currentStyle || document.defaultView.getComputedStyle(my_header_height, '');
-  
-  my_svg_height.onload = function(){   
-//     if(my_svg_height.height < my_set_svg_height.scrollHeight) {
-//       let header_height_longer = my_svg_height.height * 1 + 35;
-//       my_set_svg_height.dataset.svgHeight = header_height_longer;
-//       my_set_svg_height.style.height = header_height_longer + 'px';
-// //       my_set_svg_height.classList.add('my_flash');
-//     } else {
-//       let header_height = my_svg_height.height * 1;
-//       my_set_svg_height.dataset.svgHeight = header_height;
-//       my_set_svg_height.style.height = header_height + 'px';
-// //       my_set_svg_height.classList.add('my_flash');
-//     }
-    console.log(my_set_svg_height.dataset.headerHeight);
-    console.log(my_set_svg_height.scrollHeight);
-    console.log(my_svg_height.height);
-    // 判断是否图片高度大于header的高
-    let my_img_and_padding = my_svg_height.height * 1 + 35;
-    if(my_img_and_padding < my_set_svg_height.dataset.headerHeight) {
-      console.log(1);
-      my_set_svg_height.style.height = my_set_svg_height.dataset.headerHeight + 'px';
-    } else {
-      my_set_svg_height.style.height = my_img_and_padding + 'px';
-      console.log(2);
-    }
-//   }
-  
-    console.log("----------");
-//     console.log(style.height);
-    console.log(my_set_svg_height.dataset.svgHeight);
-
-//     if(style.height > my_set_svg_height.dataset.svgHeight) {
+//   my_svg_height.onload = function(){   
+//     console.log(my_set_svg_height.dataset.headerHeight);
+//     console.log(my_set_svg_height.scrollHeight);
+//     console.log(my_svg_height.height);
+//     // 判断是否图片高度大于header的高
+//     let my_img_and_padding = my_svg_height.height * 1 + 35;
+//     if(my_img_and_padding < my_set_svg_height.dataset.headerHeight) {
 //       console.log(1);
+//       my_set_svg_height.style.height = my_set_svg_height.dataset.headerHeight + 'px';
 //     } else {
+//       my_set_svg_height.style.height = my_img_and_padding + 'px';
 //       console.log(2);
 //     }
+//     console.log(my_header_height.style.height);
+//   }  
 
-    console.log(my_header_height.style.height);
-  }  
-  /* 计算header 的高度 */
+/* 计算header 的高度 */
 
 //   console.log(style.height);
 //   var str = style.height.slice(0,-2);
@@ -960,8 +934,4 @@
 //       location.reload(); //刷新
 //   }
 // }
-  
-
-  
-
 </script>
