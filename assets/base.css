@@ -2336,7 +2336,21 @@ details-disclosure > details {
   background-attachment: fixed;
 }
 
-  a{
+a{
   text-decoration:none;
+}
   
-  }
+/* lzx backtop css */
+
+#my-backtop {
+  position: fixed;
+  display: block;
+  right: 35px;
+  bottom: 55px;
+  width: 45px; 
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: white;  
+  border: 1px solid;
+}
