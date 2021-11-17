@@ -165,7 +165,6 @@
   }
   
   .header__active-menu-item-underlinenone {
-/*     color: rgb(var(--color-foreground)); */
     text-decoration: none;
     text-underline-offset: 0.3rem;
   }
@@ -902,14 +901,11 @@
       my_set_svg_height.dataset.svgHeight = header_height_longer;
       my_set_svg_height.style.height = header_height_longer + 'px';
       my_set_svg_height.classList.add('my_flash');
-
     } else {
       let header_height = my_svg_height.height * 1;
       my_set_svg_height.dataset.svgHeight = header_height;
       my_set_svg_height.style.height = header_height + 'px';
       my_set_svg_height.classList.add('my_flash');
-      
-      a = my_set_svg_height.dataset.svgHeight;
     }
 //     console.log("----------");
 //     console.log(style.height);
