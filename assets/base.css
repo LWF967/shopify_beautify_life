@@ -2342,7 +2342,7 @@ a{
   
 /* lzx backtop css */
 /* style 1 */
-#my_backtop {
+/* #my_backtop {
   position: fixed;
   display: block;
   box-sizing: border-box;
@@ -2370,7 +2370,7 @@ a{
   border-style: solid;
   border-color: #000 #000 transparent transparent;
   transform: rotate(-45deg);
-}
+} */
   
 /* style 2 */
 #my_backtop {
