@@ -83,13 +83,15 @@
         "type": "checkbox",
         "id": "enable_prevent_copying",
         "default": false,
-        "label": "Enable Prevent Copying"
+        "label": "Enable Prevent Copying",
+        "info": "Prevent Image and Content Theft from Your Website"
       },
       {
         "type": "checkbox",
         "id": "enable_catalog_mode",
         "default": false,
-        "label": "Enable catalog mode"
+        "label": "Enable catalog mode",
+        "info": "You can hide all 'Add to cart' buttons. This will allow you to showcase your products as an online catalog without ability to make a purchase."
       }
     ]
   },
