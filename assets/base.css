@@ -2341,7 +2341,7 @@ a{
 }
   
 /* lzx backtop css */
-
+/* style 1 */
 #my_backtop {
   position: fixed;
   display: block;
@@ -2369,5 +2369,35 @@ a{
   border-width: 2px;
   border-style: solid;
   border-color: #000 #000 transparent transparent;
+  transform: rotate(-45deg);
+}
+  
+/* style 2 */
+#my_backtop {
+  position: fixed;
+  display: block;
+  box-sizing: border-box;
+  right: 35px;
+  bottom: 55px;
+  width: 45px; 
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: white;
+  transition: opacity .5s;
+  opacity: 0;
+  cursor: pointer;
+}
+  
+#my_backtop:before {
+  position: absolute;
+  content: "";
+  top: 17.5px;
+  left: 16px;
+  width: 10px;
+  height: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #f2f2f2 #f2f2f2 transparent transparent;
   transform: rotate(-45deg);
 }
