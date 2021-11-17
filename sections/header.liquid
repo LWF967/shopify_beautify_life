@@ -479,6 +479,8 @@
       </details-modal>
     {%- endif -%}
 
+               {%- assign str = "files/" | append: section.settings.logo_svg -%}
+              
     {%- if true -%}
       {%- if section.settings.logo_aligment == 'left' -%}
         <h1 class="header__heading text1 my_grid_style my_header_img_align">
@@ -503,7 +505,7 @@
                   alt="{{ section.settings.logo_svg.alt | default: shop.name }}" 
                   style="width: {{ section.settings.logo_width }}px"
                   width="{{ section.settings.logo.width }}">  
-          <p>svg---{{ section.settings.logo_svg }}</p>
+          <p>svg---{{ section.settings.logo_svg }}+{{ str }}</p>
           <p>img---{{ section.settings.logo }}</p>
           {%- elsif section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
