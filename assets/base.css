@@ -2384,6 +2384,7 @@ a{
   line-height: 45px;
   text-align: center;
   background: white;
+  border: 2px solid #fff;
   transition: opacity .5s;
   opacity: 0;
   cursor: pointer;
