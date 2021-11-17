@@ -2356,6 +2356,7 @@ a{
   transition: opacity .5s;
   opacity: 0;
   cursor: pointer;
+  z-index: 999;
 }
   
 #my_backtop:before {
