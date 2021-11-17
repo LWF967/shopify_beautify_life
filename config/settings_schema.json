@@ -258,6 +258,72 @@
     "settings": [
       {
         "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "color",
+        "id": "colors_sub_title_text",
+        "default": "#333",
+        "label": "Sub title text"
+      },
+      {
+        "type": "color",
+        "id": "colors_body_text",
+        "default": "#333",
+        "label": "Body text"
+      },
+      {
+        "type": "color",
+        "id": "colors_sale_price",
+        "default": "#EA0606",
+        "label": "Sale price"
+      },
+      {
+        "type": "header",
+        "content": "Buttons"
+      },
+      {
+        "type": "color",
+        "id": "colors_primary_buttons",
+        "default": "#000",
+        "label": "Primary buttons"
+      },
+      {
+        "type": "color",
+        "id": "colors_Primary_labels",
+        "default": "#FFFFFF",
+        "label": "Primary labels"
+      },
+      {
+        "type": "color",
+        "id": "colors_secondary_labels_and_borders",
+        "default": "#797979",
+        "label": "Secondary labels and borders"
+      },
+      {
+        "type": "header",
+        "content": "Form fileds"
+      },
+      {
+        "type": "color",
+        "id": "colors_fileds_text",
+        "default": "#797979",
+        "label": "Text"
+      },
+      {
+        "type": "color",
+        "id": "colors_fileds_borders",
+        "default": "#c9c9c9",
+        "label": "Borders"
+      },
+      {
+        "type": "color",
+        "id": "colors_background_color",
+        "default": "#FFFFFF",
+        "label": "Background"
+      },
+      {
+        "type": "header",
         "content": "t:settings_schema.colors.settings.header__1.content"
       },
       {
@@ -465,6 +531,22 @@
           "zh-TW": "%"
         },
         "default": 40
+      },
+      {
+        "type": "header",
+        "content": "Page"
+      },
+      {
+        "type": "color",
+        "id": "color_page_borders_and_lines",
+        "label": "Borders and lines",
+        "default": "#E4E4E4"
+      },
+      {
+        "type": "color",
+        "id": "color_page_background",
+        "label": "Background",
+        "default": "#FFFFFF"
       }
     ]
   },
