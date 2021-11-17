@@ -211,6 +211,10 @@
       let my_header_sticky = document.getElementsByClassName('my_header_sticky');
       let my_backtop = document.getElementById('my_backtop');
       
+      my_backtop.onclick = function() {
+        console.log(1);
+      }
+      
       window.onscroll = function () {
         if(my_header_sticky.length > 0) {
           //获取距离页面顶部的距离
