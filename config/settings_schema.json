@@ -48,10 +48,6 @@
         "label": "Show Back To Top"
       },
       {
-        "type": "header",
-        "content": "Back To Top Style"
-      },
-      {
         "type": "select",
         "id": "back_to_top_style",
         "options": [
