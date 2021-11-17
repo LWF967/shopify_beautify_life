@@ -2359,10 +2359,10 @@ a{
 #my-backtop:before {
   position: absolute;
   content: "";
-  top: 20px;
-  left: 20px;
-  width: 15px;
-  height: 15px;
+  top: 17.5px;
+  left: 17.5px;
+  width: 10px;
+  height: 10px;
   border-width: 2px;
   border-style: solid;
   border-color: #000 #000 transparent transparent;
