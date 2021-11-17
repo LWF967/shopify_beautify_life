@@ -938,5 +938,11 @@
   var style = my_header_height.currentStyle || document.defaultView.getComputedStyle(my_header_height, '')
   console.log(style.height);
   
+  if(style.height > my_set_svg_height.dataset.svgHeight) {
+    console.log(1);
+  } else {
+    console.log(2);
+  }
+  
 
 </script>
