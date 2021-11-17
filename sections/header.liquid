@@ -889,23 +889,12 @@
 {% endschema %}
 
 <script>  
-
-// 这是为了测试图片大小 ，后续轮播图切换 
-//   let img=document.getElementsByClassName('header__heading-link link link--text focus-inset my_header_font_size')[0].querySelector('img')
-
-//   img.onload = function(){
-//     console.log(img.height, ' ');
-//     console.log(img.width, ' ');
-//     console.log(my_height);
-//   }
   var my_set_svg_height = document.getElementsByClassName('header')[0];
   var my_svg_height = document.getElementsByClassName('header__heading-logo my_header_heading_logo my_svg')[0];
-//   var my_flash = document.getElementsByClassName('my_flash')[0];
   var my_header_height = document.getElementsByClassName('my_header_height')[0];
   
-  var style = my_header_height.currentStyle || document.defaultView.getComputedStyle(my_header_height, '');
-  
-//   var a;
+//   var my_flash = document.getElementsByClassName('my_flash')[0];
+//   var style = my_header_height.currentStyle || document.defaultView.getComputedStyle(my_header_height, '');
   
   my_svg_height.onload = function(){   
     if(my_svg_height.height < my_set_svg_height.scrollHeight) {
@@ -914,8 +903,6 @@
       my_set_svg_height.style.height = header_height_longer + 'px';
       my_set_svg_height.classList.add('my_flash');
 
-//       a = my_set_svg_height.dataset.svgHeight;
-//       console.log("a1",a);
     } else {
       let header_height = my_svg_height.height * 1;
       my_set_svg_height.dataset.svgHeight = header_height;
@@ -923,7 +910,6 @@
       my_set_svg_height.classList.add('my_flash');
       
       a = my_set_svg_height.dataset.svgHeight;
-//       console.log("a2",a);
     }
 //     console.log("----------");
 //     console.log(style.height);
@@ -934,7 +920,6 @@
 //     } else {
 //       console.log(2);
 //     }
-//       console.log("a3",a);
 
 //     console.log(my_header_height.style.height);
   }  
@@ -944,8 +929,7 @@
 //   var str = style.height.slice(0,-2);
 //   console.log(str);
 //   console.log(str*1);
-  
-//   console.log("a3",a);
+
   /* 判断header的高度是否大于图片的高 */
   
 
