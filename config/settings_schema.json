@@ -44,7 +44,7 @@
             "label": "Mobile"
           }
         ],
-        "default": "Disable",
+        "default": "Desktop+Mobile",
         "label": "Show Back To Top"
       },
       {
