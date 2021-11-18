@@ -450,15 +450,20 @@
 
     let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
 
-    function autoPlay (autop) {
+	let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
+
+    let time_gui = setInterval(autoPlay(autop), time * 1000)
+    
+    function autoPlay (autop) {    
       if ((autop == true)) {
         moveTransition(index)
       }
     }
 
-    let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
+ //   let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
 
-    let time_gui = setInterval(autoPlay, time * 1000)
+  //  let time_gui = setInterval(autoPlay, time * 1000)
+  
 
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseover',
