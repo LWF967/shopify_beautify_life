@@ -423,6 +423,7 @@
     // var x = diff_box/itemLength;
 
     function moveTransition (index) {
+    	console.log('看看运行没有');
       index = list_text.querySelector('.active').index + 1
 
       if (index < itemLength) {
@@ -450,7 +451,10 @@
 
     let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
 
-  
+	let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
+
+    let time_gui = setInterval(autoPlay(autop), time * 1000)
+    
     
     
     function autoPlay (autop) {    
@@ -465,9 +469,9 @@
       }
     }
 
-    let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
+ //   let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
 
-    let time_gui = setInterval(autoPlay, time * 1000)
+  //  let time_gui = setInterval(autoPlay, time * 1000)
   
 
 		document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
