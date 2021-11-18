@@ -461,7 +461,7 @@
 
     let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
 
-    let time_gui = (autop == 'true') ? setInterval(autoPlay, time * 1000) : '123';
+    let time_gui = (autop == 'true') ? setInterval(autoPlay, time * 1000) : '无效';
 
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseover',
@@ -474,7 +474,7 @@
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseleave',
       function () {
-        time_gui = setInterval(autoPlay, time * 1000)
+        time_gui =  (autop == 'true') ? setInterval(autoPlay, time * 1000) : '无效';
         //        console.log(time_gui,"xx")
       },
       false
