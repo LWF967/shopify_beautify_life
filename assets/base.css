@@ -2357,7 +2357,7 @@ a{
   opacity: 0;
   cursor: pointer;
   z-index: 999;
-  animation: mymove 1s;
+  animation: mymove 1s infinite;
 }
   
 #my_backtop:before {
