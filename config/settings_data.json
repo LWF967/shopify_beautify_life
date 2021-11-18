@@ -2,8 +2,8 @@
   "current": {
     "show_back_to_top": "Desktop+Mobile",
     "back_to_top_style": "Style 1",
-    "enable_prevent_copying": false,
-    "enable_catalog_mode": false,
+    "enable_prevent_copying": true,
+    "enable_catalog_mode": true,
     "full_width": true,
     "sticky_header": true,
     "show_search_icon": true,
