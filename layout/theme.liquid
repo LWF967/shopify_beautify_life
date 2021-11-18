@@ -155,9 +155,11 @@
         }
       }
     {% endif %}
-    * { 
-      user-select: none;
-    }
+    {% if settings.enable_prevent_copying %}
+      * { 
+        user-select: none;
+      }
+    {% endif %}
   {% endstyle %}
   
   <body class="gradient">
