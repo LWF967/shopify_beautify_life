@@ -47,7 +47,7 @@
         "text_size": "medium",
         "text_alignment": "top_left",
         "overlay": true,
-        "loop": true,
+        "loop": false,
         "auto_play": false,
         "auto_time": 3,
         "show_button": true,
