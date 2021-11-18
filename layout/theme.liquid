@@ -255,11 +255,11 @@
             content.style.width = '100%';
             header_wrapper.style.height = header_wrapper_height + 'px';
             my_backtop.style.opacity = 1;
-            my_backtop.style.display = 'block';
+            my_backtop.style.visibility = 'visible';
           } else {
             content.style.position = 'relative';
             my_backtop.style.opacity = 0;
-            my_backtop.style.display = 'none';
+            my_backtop.style.visibility = 'hidden';
           }
           if(content.style.position == 'fixed') {
             content.classList.add('my_header_sticky_settings');
