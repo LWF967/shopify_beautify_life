@@ -258,7 +258,7 @@
     top:50%;
     left:5px; 
     transform:translateY(-50%);
-    z-index:2;
+    z-index:10;
 
   }
   .rightbtn{
@@ -266,7 +266,7 @@
     top:50%;
     right:5px;
     transform:translateY(-50%);
-    z-index:2;    
+    z-index:10;    
 
   }
   .icon-changebtn {
@@ -300,7 +300,7 @@
     justify-content: center;
     position: absolute;
     bottom: 10%;
-    z-index: 2;
+    z-index: 10;
     cursor: pointer;
     padding: 0px;
     margin: 0;
@@ -423,7 +423,6 @@
     // var x = diff_box/itemLength;
 
     function moveTransition (index) {
-    	console.log('看看运行没有');
       index = list_text.querySelector('.active').index + 1
 
       if (index < itemLength) {
@@ -449,48 +448,61 @@
       }
     }
 
-    let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
+    var autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
 
-	let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
+  	
+    let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
 
-    let time_gui = setInterval(autoPlay(autop), time * 1000)
+    let time_gui = setInterval(autoPlay, time * 1000)
+
+
+
+	function box_mousover(){
     
+     clearInterval(time_gui);
+     
+    }
+
+	function box_mousleave(){
     
-    
-    function autoPlay (autop) {    
-      if ((autop == 'true')) {
+     time_gui = setInterval(autoPlay, time * 1000);
+ 
+    }
+
+
+    function autoPlay (autop) {
+      if (autop == 'true') {
         moveTransition(index)
-        
-        console.log('进来了')      
-        
-      }else{
+        console.log('记录 {{section.id}}','autop:'+autop);
+      }else if( autop == 'false' ){
       
-      	// clearInterval(time_gui)
+       console.log('2记录 {{section.id}}','autop:'+autop);
+     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].removeEventListener(
+        'mouseover',
+        box_mousover(),
+        false
+      );
+      document.getElementsByClassName('feature-artworks-{{section.id}}')[0].removeEventListener(
+        'mouseleave',
+        box_mousleave(),
+        false
+      );
+      
       }
     }
 
- //   let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
-
-  //  let time_gui = setInterval(autoPlay, time * 1000)
-  
-
-		document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
-            'mouseover',
-            function () {
-              clearInterval(time_gui)
-                  console.log(autop,"ss")
-            },
-            false
-          )
-          document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
-            'mouseleave',
-            debounce(function () {
-              time_gui = setInterval(autoPlay(autop), time * 1000)
-                     console.log(autop,"xx")
-            },500),
-            false
-          )
    
+
+    document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
+      'mouseover',
+      box_mousover(),
+      false
+    )
+    document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
+      'mouseleave',
+      box_mousleave(),
+      false
+    )
 
   /**
  * 防抖函数
@@ -515,7 +527,7 @@
     rightbtn.addEventListener('click', debounce(function () {
       index = list_text.querySelector('.active').index + 1;
 //       清定时防止按
-	 if( autop == 'true'){ clearInterval(time_gui);}
+	  clearInterval(time_gui);
       if (index < itemLength) {
         //           index =  list_text.querySelector('.active').index+1;
         contentbox.style.transform =
@@ -542,7 +554,7 @@
     leftbtn.addEventListener('click',  debounce(function () {
       index = list_text.querySelector('.active').index;
       
-       if( autop == 'true'){ clearInterval(time_gui);}
+      clearInterval(time_gui);
       
       if (index > 0) {
         index = list_text.querySelector('.active').index - 1
