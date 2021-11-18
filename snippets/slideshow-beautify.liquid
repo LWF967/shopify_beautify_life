@@ -459,14 +459,15 @@
 
 	function box_mousover(){
     
+    if(autop == 'true'){
      clearInterval(time_gui);
-     
+     }
     }
 
 	function box_mousleave(){
-    
+     if(autop == 'true'){
      time_gui = setInterval(autoPlay(autop), time * 1000);
- 
+ 		}
     }
 
 
