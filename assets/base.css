@@ -2355,7 +2355,7 @@ a{
   border: 2px solid #000;
   transition: opacity .5s, visibility .5s;
   opacity: 0;
-  cursor: pointer;
+/*   cursor: pointer; */
   z-index: 999;
 }
   
