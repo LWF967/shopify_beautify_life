@@ -13,6 +13,8 @@
 {{'custome-content.css'| asset_url |stylesheet_tag}}
     {{ 'lazysizes.js' | asset_url | script_tag }}
 {{ 'lazysizes.min.js' | asset_url | script_tag }}
+    
+{{ 'jquery-min.js' | asset_url | script_tag }}
 
 
     {% comment %}
@@ -231,7 +233,7 @@
 //       }
       function gotoTop() {
         // 定义点击返回顶部图标后向上滚动的动画
-        jquery("#my_backtop").click(
+        $("#my_backtop").click(
           function () {
             $('html,body').animate({ scrollTop: '0px' }, 'slow');
           })
