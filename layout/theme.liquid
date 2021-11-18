@@ -14,7 +14,7 @@
 {{ 'lazysizes.js' | asset_url | script_tag }}
 {{ 'lazysizes.min.js' | asset_url | script_tag }}
 
-    
+<!-- jquery -->
 {{ 'jquery.3.5.1.min.js' | asset_url | script_tag }}
 
     
@@ -232,7 +232,6 @@
       
       // backtop
       function gotoTop() {
-        
         $("#my_backtop").click(
           function () {
             $('html,body').animate({ scrollTop: '0px' }, 'slow');
@@ -240,7 +239,7 @@
       };
       gotoTop();
       
-      //js 原生 缺点会卡帧
+//       js 原生 缺点会卡帧
 //       function move(end) {
 //         var timer = null;
 //         timer = setInterval(function () {
