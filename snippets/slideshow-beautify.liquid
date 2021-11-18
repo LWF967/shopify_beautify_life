@@ -512,7 +512,7 @@
     rightbtn.addEventListener('click', debounce(function () {
       index = list_text.querySelector('.active').index + 1;
 //       清定时防止按
-	  clearInterval(time_gui);
+	 if( autop == 'true'){ clearInterval(time_gui);}
       if (index < itemLength) {
         //           index =  list_text.querySelector('.active').index+1;
         contentbox.style.transform =
@@ -539,7 +539,7 @@
     leftbtn.addEventListener('click',  debounce(function () {
       index = list_text.querySelector('.active').index;
       
-      clearInterval(time_gui);
+       if( autop == 'true'){ clearInterval(time_gui);}
       
       if (index > 0) {
         index = list_text.querySelector('.active').index - 1
