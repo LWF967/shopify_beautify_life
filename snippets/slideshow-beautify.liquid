@@ -453,7 +453,7 @@
   	
     let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime;
 
-    let time_gui = setInterval(autoPlay(autop), time * 1000);
+    let time_gui = setInterval(autoPlay, time * 1000);
 
 
 
@@ -467,7 +467,7 @@
 	function box_mousleave(){
     console.log('鼠标离开')
      if(autop == 'true'){
-     time_gui = setInterval(autoPlay(autop), time * 1000);
+     time_gui = setInterval(autoPlay, time * 1000);
  		}
     }
 
