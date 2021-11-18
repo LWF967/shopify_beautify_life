@@ -2343,11 +2343,11 @@ a{
 /* lzx backtop css */
   
 @keyframes mymove {
-  50% {height: 100px;}
+/*   50% {height: 100px;} */
 }
   
 @-webkit-keyframes mymove {
-  50% {height: 100px;}
+/*   50% {height: 100px;} */
 }
 #my_backtop {
   position: fixed;
