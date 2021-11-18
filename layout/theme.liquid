@@ -235,30 +235,31 @@
 // //         document.body.scrollTop = document.documentElement.scrollTop = 0;
 //       }
       
-//       function gotoTop() {
-//         // 定义点击返回顶部图标后向上滚动的动画
-//         $("#my_backtop").click(
-//           function () {
-//             $('html,body').animate({ scrollTop: '0px' }, 'slow');
-//           })
-//       };
-//       gotoTop();
+      function gotoTop() {
+        // 定义点击返回顶部图标后向上滚动的动画
+        $("#my_backtop").click(
+          function () {
+            $('html,body').animate({ scrollTop: '0px' }, 'slow');
+          })
+      };
+      gotoTop();
       
-      function move(end) {
-        var timer = null;
-        timer = setInterval(function () {
-          var speed = (end - document.documentElement.scrollTop) / 5;        //根据终点和offsetLeft取出运动的速度
-          speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);       //进位取整，小数位变为整位，
+      //js 原生 缺点会卡帧
+//       function move(end) {
+//         var timer = null;
+//         timer = setInterval(function () {
+//           var speed = (end - document.documentElement.scrollTop) / 5;        //根据终点和offsetLeft取出运动的速度
+//           speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);       //进位取整，小数位变为整位，
 
-          if (Math.abs(end - document.documentElement.scrollTop) <= speed) { //由于在停止的时候最后会出现小的缝隙，或者说没有完全的到达指定地点，所以要小于它的速度
-            clearInterval(timer);                       //当距离小于速度时，让计时器停止
-            document.documentElement.scrollTop = end;           //在停止后填充缝隙。
-          }
-          else {
-            document.documentElement.scrollTop = document.documentElement.scrollTop + speed;       //移动DIV
-          }
-        }, 30)
-      }
+//           if (Math.abs(end - document.documentElement.scrollTop) <= speed) { //由于在停止的时候最后会出现小的缝隙，或者说没有完全的到达指定地点，所以要小于它的速度
+//             clearInterval(timer);                       //当距离小于速度时，让计时器停止
+//             document.documentElement.scrollTop = end;           //在停止后填充缝隙。
+//           }
+//           else {
+//             document.documentElement.scrollTop = document.documentElement.scrollTop + speed;       //移动DIV
+//           }
+//         }, 30)
+//       }
       
       window.onscroll = function () {
 //         my_backtop.onclick = function() {
