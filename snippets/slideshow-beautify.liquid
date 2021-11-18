@@ -451,54 +451,29 @@
     let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
 
     function autoPlay (autop) {
-      if (autop == true) {
+      if ((autop = true)) {
         moveTransition(index)
-        console.log('记录 {{section.id}}','autop:'+autop);
-      }else if( autop == false ){
-      
-       console.log('2记录 {{section.id}}','autop:'+autop);
-     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].removeEventListener(
-        'mouseover',
-        box_mousover(),
-        false
-      );
-      document.getElementsByClassName('feature-artworks-{{section.id}}')[0].removeEventListener(
-        'mouseleave',
-        box_mousleave(),
-        false
-      );
-      
-      }else{
-      console.log('进来3了');
-       clearInterval(time_gui);
       }
     }
 
     let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
 
-    let time_gui = setInterval(autoPlay(autop), time * 1000)
-
-
-
-	function box_mousover(){
-    
-     clearInterval(time_gui);
-    }
-
-	function box_mousleave(){
-    
-     time_gui = setInterval(autoPlay, time * 1000);
- 
-    }
+    let time_gui = setInterval(autoPlay, time * 1000)
 
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseover',
-      box_mousover(),
+      function () {
+        clearInterval(time_gui)
+        //     console.log(time_gui,"ss")
+      },
       false
     )
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseleave',
-      box_mousleave(),
+      function () {
+        time_gui = setInterval(autoPlay, time * 1000)
+        //        console.log(time_gui,"xx")
+      },
       false
     )
 
