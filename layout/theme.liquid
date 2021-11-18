@@ -230,11 +230,6 @@
       let my_header_sticky = document.getElementsByClassName('my_header_sticky');
       let my_backtop = document.getElementById('my_backtop');
       
-//       my_backtop.onclick = function() {
-//         console.log(document.body.scrollTop);
-// //         document.body.scrollTop = document.documentElement.scrollTop = 0;
-//       }
-      
       function gotoTop() {
         // 定义点击返回顶部图标后向上滚动的动画
         $("#my_backtop").click(
@@ -262,16 +257,6 @@
 //       }
       
       window.onscroll = function () {
-//         my_backtop.onclick = function() {
-//           let toTop = document.documentElement.scrollTop;
-//           console.log("toTop",toTop);
-//           if(toTop > 0) {
-            
-//           }
-//           toTop = 0;
-//           console.log("toTop",toTop);
-//         }
-        
         if(my_header_sticky.length > 0) {
           //获取距离页面顶部的距离
           let toTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -343,13 +328,6 @@
         shareSuccess: `{{ 'general.share.success_message' | t }}`,
       }
     </script>
-    
-    
-    
-    
-    
-    
-    
     
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
