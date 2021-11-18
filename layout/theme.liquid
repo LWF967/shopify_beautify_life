@@ -243,9 +243,9 @@
       
       window.onscroll = function () {
         my_backtop.onclick = function() {
-          console.log("toTop",document.documentElement.scrollTop || document.body.scrollTop);
-          document.documentElement.scrollTop || document.body.scrollTop = 0;
-          console.log("toTop",document.documentElement.scrollTop || document.body.scrollTop);
+          console.log("toTop",document.documentElement.scrollTop, "|", document.body.scrollTop);
+          document.documentElement.scrollTop = document.body.scrollTop = 0;
+          console.log("toTop",document.documentElement.scrollTop, "|", document.body.scrollTop);
         }
         
         if(my_header_sticky.length > 0) {
