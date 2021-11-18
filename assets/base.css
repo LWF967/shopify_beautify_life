@@ -2342,13 +2342,13 @@ a{
   
 /* lzx backtop css */
   
-/* @keyframes mymove {
+@keyframes lzxmove {
   50% {height: 100px;}
 }
   
-@-webkit-keyframes mymove {
+@-webkit-keyframes lzxmove {
   50% {height: 100px;}
-} */
+}
 #my_backtop {
   position: fixed;
   display: block;
@@ -2365,7 +2365,7 @@ a{
   opacity: 0;
   cursor: pointer;
   z-index: 999;
-  animation: mymove 1s infinite;
+  animation: lzxmove 1s infinite;
 }
   
 #my_backtop:before {
