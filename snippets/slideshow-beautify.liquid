@@ -454,11 +454,27 @@
 
     let time_gui = setInterval(autoPlay(autop), time * 1000)
     
+    
+    
     function autoPlay (autop) {    
       if ((autop == 'true')) {
         moveTransition(index)
         
-         document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
+         
+        
+        
+      }else{
+      
+      	// clearInterval(time_gui)
+      }
+    }
+
+ //   let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
+
+  //  let time_gui = setInterval(autoPlay, time * 1000)
+  
+
+		document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
             'mouseover',
             function () {
               clearInterval(time_gui)
@@ -474,19 +490,6 @@
             },
             false
           )
-        
-        
-      }else{
-      
-      	clearInterval(time_gui)
-      }
-    }
-
- //   let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
-
-  //  let time_gui = setInterval(autoPlay, time * 1000)
-  
-
    
 
   /**
