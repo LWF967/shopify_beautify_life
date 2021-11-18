@@ -143,11 +143,12 @@
   </head>
   {% style %}
   {% if settings.show_back_to_top == 'Desktop' %}
-    @media screen and (min-width: 750px) {
+    @media screen and (min-width: 0px) and (max-width: 750px) {
       #my_backtop {
         background: red;
       }
     }
+	
   {% endif %}
   {% endstyle %}
   
