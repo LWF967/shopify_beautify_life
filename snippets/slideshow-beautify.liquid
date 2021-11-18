@@ -448,33 +448,13 @@
       }
     }
 
-    var autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
-
-  	
-    let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
-
-    let time_gui = setInterval(autoPlay(), time * 1000)
-
-
-
-	function box_mousover(){
-    
-     clearInterval(time_gui);
-     
-    }
-
-	function box_mousleave(){
-    
-     time_gui = setInterval(autoPlay(), time * 1000);
- 
-    }
-
+    let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
 
     function autoPlay (autop) {
-      if (autop == true) {
+      if (autop = true) {
         moveTransition(index)
         console.log('记录 {{section.id}}','autop:'+autop);
-      }else if( autop == false ){
+      }else if( autop = false ){
       
        console.log('2记录 {{section.id}}','autop:'+autop);
      document.getElementsByClassName('feature-artworks-{{section.id}}')[0].removeEventListener(
@@ -487,14 +467,26 @@
         box_mousleave(),
         false
       );
-      clearInterval(time_gui);
-      }else{
       
-      clearInterval(time_gui);
       }
     }
 
-   
+    let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
+
+    let time_gui = setInterval(autoPlay, time * 1000)
+
+
+
+	function box_mousover(){
+    
+     clearInterval(time_gui);
+    }
+
+	function box_mousleave(){
+    
+     time_gui = setInterval(autoPlay, time * 1000);
+ 
+    }
 
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseover',
