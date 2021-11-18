@@ -11,10 +11,13 @@
  
    
 {{'custome-content.css'| asset_url |stylesheet_tag}}
-    {{ 'lazysizes.js' | asset_url | script_tag }}
+{{ 'lazysizes.js' | asset_url | script_tag }}
 {{ 'lazysizes.min.js' | asset_url | script_tag }}
 
+    
+{{ 'jquery.3.5.1.min.js' | asset_url | script_tag }}
 
+    
     {% comment %}
 {{ 'lazysizes.js' | asset_url | script_tag }}
 {{ 'lazysizes.min.js' | asset_url | script_tag }}
@@ -232,20 +235,24 @@
 // //         document.body.scrollTop = document.documentElement.scrollTop = 0;
 //       }
       
-//       function gotoTop() {
-//         // 定义点击返回顶部图标后向上滚动的动画
-//         $("#my_backtop").click(
-//           function () {
-//             $('html,body').animate({ scrollTop: '0px' }, 'slow');
-//           })
-//       };
-//       gotoTop();
+      function gotoTop() {
+        // 定义点击返回顶部图标后向上滚动的动画
+        $("#my_backtop").click(
+          function () {
+            $('html,body').animate({ scrollTop: '0px' }, 'slow');
+          })
+      };
+      gotoTop();
       
       window.onscroll = function () {
         my_backtop.onclick = function() {
-          console.log("toTop",document.documentElement.scrollTop);
-          document.documentElement.scrollTop = 0;
-          console.log("toTop",document.documentElement.scrollTop);
+          let toTop = document.documentElement.scrollTop;
+          console.log("toTop",toTop);
+          if(toTop > 0) {
+            
+          }
+          toTop = 0;
+          console.log("toTop",toTop);
         }
         
         if(my_header_sticky.length > 0) {
