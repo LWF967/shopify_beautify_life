@@ -473,7 +473,7 @@
     function autoPlay (autop) {
       if (autop == 'true') {
       
-        setInterval(moveTransition(index), time * 1000);
+        moveTransition(index);
         console.log('记录 {{section.id}}','autop:'+autop);
       }else if( autop == 'false' ){
       
