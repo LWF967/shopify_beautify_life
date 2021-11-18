@@ -449,10 +449,19 @@
     }
 
     let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
-
+ 
+ 	
+	 	
     function autoPlay (autop) {
-     
-        moveTransition(index)
+     	var ifauto = autop;
+        
+        if(ifauto){  
+        moveTransition(index);
+        }else{
+        
+        
+        }
+        
       
     }
 
