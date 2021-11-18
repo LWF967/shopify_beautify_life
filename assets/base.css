@@ -2345,6 +2345,10 @@ a{
 @keyframes mymove {
   50% {height: 100px;}
 }
+  
+@-webkit-keyframes mymove {
+  50% {height: 100px;}
+}
 #my_backtop {
   position: fixed;
   display: block;
