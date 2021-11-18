@@ -471,10 +471,10 @@
 
 
     function autoPlay (autop) {
-      if (autop = true) {
+      if (autop == true) {
         moveTransition(index)
         console.log('记录 {{section.id}}','autop:'+autop);
-      }else if( autop = false ){
+      }else if( autop == false ){
       
        console.log('2记录 {{section.id}}','autop:'+autop);
      document.getElementsByClassName('feature-artworks-{{section.id}}')[0].removeEventListener(
