@@ -2372,3 +2372,8 @@ a{
   border-color: #000 #000 transparent transparent;
   transform: rotate(-45deg);
 }
+  
+@keyframes mymove {
+  from {background-color:red;}
+  to {background-color:blue;}
+}
