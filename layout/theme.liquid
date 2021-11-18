@@ -230,8 +230,9 @@
       let my_header_sticky = document.getElementsByClassName('my_header_sticky');
       let my_backtop = document.getElementById('my_backtop');
       
+      // backtop
       function gotoTop() {
-        // 定义点击返回顶部图标后向上滚动的动画
+        
         $("#my_backtop").click(
           function () {
             $('html,body').animate({ scrollTop: '0px' }, 'slow');
