@@ -2343,13 +2343,15 @@ a{
 /* lzx backtop css */
   
 @keyframes lzxmove {
-  from {right: 50px;}
-  to {right: 35px;}
+  0% {right: 35px;}
+  50% {right: 50px;}
+  100% {right: 35px;}
 }
   
 @-webkit-keyframes lzxmove {
-  from {right: 50px;}
-  to {right: 35px;}
+  0% {right: 35px;}
+  50% {right: 50px;}
+  100% {right: 35px;}
 }
 #my_backtop {
   position: fixed;
@@ -2367,8 +2369,7 @@ a{
   opacity: 0;
   cursor: pointer;
   z-index: 999;
-  animation: lzxmove 1s 1;
-  animation-fill-mode : backwords;
+  animation: lzxmove 1s infinite;
 }
   
 #my_backtop:before {
