@@ -258,7 +258,7 @@
     top:50%;
     left:5px; 
     transform:translateY(-50%);
-    z-index:10;
+    z-index:2;
 
   }
   .rightbtn{
@@ -266,7 +266,7 @@
     top:50%;
     right:5px;
     transform:translateY(-50%);
-    z-index:10;    
+    z-index:2;    
 
   }
   .icon-changebtn {
@@ -300,7 +300,7 @@
     justify-content: center;
     position: absolute;
     bottom: 10%;
-    z-index: 10;
+    z-index: 2;
     cursor: pointer;
     padding: 0px;
     margin: 0;
@@ -422,9 +422,8 @@
 
     // var x = diff_box/itemLength;
 
-	var bindex;
-    function moveTransition (bindex) {
-      bindex = list_text.querySelector('.active').index + 1
+    function moveTransition (index) {
+      index = list_text.querySelector('.active').index + 1
 
       if (index < itemLength) {
         //           index =  list_text.querySelector('.active').index+1;
@@ -451,19 +450,9 @@
 
     let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
 
-	let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
-
-    let time_gui = setInterval(autoPlay(autop), time * 1000)
-	
     function autoPlay (autop) {
-      if ((autop == true)) {
-      var a;
-       moveTransition(a);
-      }else if( autop ==false){
-       clearInterval(time_gui);
-      }else {
-      clearInterval(time_gui);
-      
+      if ((autop = true)) {
+        moveTransition(index)
       }
     }
 
