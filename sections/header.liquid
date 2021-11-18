@@ -20,6 +20,7 @@
 
 {% assign image_svg = images[section.settings.logo_svg] %}
 {% assign image_height = section.settings.logo_width | divided_by: image_svg.aspect_ratio | round: 2 | plus: 35 %}
+{% assign image_height_center = section.settings.logo_width | divided_by: image_svg.aspect_ratio | round: 2 | plus: 103 %}
 
 {%- style -%}
 .my_header_height { height: {{ section.settings.header_height }}px; }

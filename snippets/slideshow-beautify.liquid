@@ -458,13 +458,14 @@
 
 
 	function box_mousover(){
-    
+     console.log('鼠标进来')
     if(autop == 'true'){
      clearInterval(time_gui);
      }
     }
 
 	function box_mousleave(){
+    console.log('鼠标离开')
      if(autop == 'true'){
      time_gui = setInterval(autoPlay(autop), time * 1000);
  		}
