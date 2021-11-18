@@ -450,6 +450,26 @@
 
     var autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
 
+  	
+    let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
+
+    let time_gui = setInterval(autoPlay, time * 1000)
+
+
+
+	function box_mousover(){
+    
+     clearInterval(time_gui);
+     
+    }
+
+	function box_mousleave(){
+    
+     time_gui = setInterval(autoPlay, time * 1000);
+ 
+    }
+
+
     function autoPlay (autop) {
       if (autop = true) {
         moveTransition(index)
@@ -471,22 +491,7 @@
       }
     }
 
-    let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
-
-    let time_gui = setInterval(autoPlay, time * 1000)
-
-
-
-	function box_mousover(){
-    
-     clearInterval(time_gui);
-    }
-
-	function box_mousleave(){
-    
-     time_gui = setInterval(autoPlay, time * 1000);
- 
-    }
+   
 
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseover',
