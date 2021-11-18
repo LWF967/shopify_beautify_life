@@ -258,7 +258,7 @@
     top:50%;
     left:5px; 
     transform:translateY(-50%);
-    z-index:10;
+    z-index:2;
 
   }
   .rightbtn{
@@ -266,7 +266,7 @@
     top:50%;
     right:5px;
     transform:translateY(-50%);
-    z-index:10;    
+    z-index:2;    
 
   }
   .icon-changebtn {
@@ -300,7 +300,7 @@
     justify-content: center;
     position: absolute;
     bottom: 10%;
-    z-index: 10;
+    z-index: 100;
     cursor: pointer;
     padding: 0px;
     margin: 0;
@@ -448,61 +448,34 @@
       }
     }
 
-    var autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay;
+    let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
 
-  	
-    let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime;
-
-    let time_gui = setInterval(autoPlay(autop), time * 1000);
-
-
-
-	function box_mousover(){
-     console.log('鼠标进来')
-    if(autop == 'true'){
-     clearInterval(time_gui);
-     }
+    function autoPlay (autop) {
+      if ((autop = true)) {
+        moveTransition(index)
+      }
     }
 
-	function box_mousleave(){
-    console.log('鼠标离开')
-     if(autop == 'true'){
-     time_gui = setInterval(autoPlay(autop), time * 1000);
- 		}
-    }
+    let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
 
-
+    let time_gui = setInterval(autoPlay, time * 1000)
 
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseover',
-      box_mousover(),
+      function () {
+        clearInterval(time_gui)
+        //     console.log(time_gui,"ss")
+      },
       false
     )
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseleave',
-      box_mousleave(),
+      function () {
+        time_gui = setInterval(autoPlay, time * 1000)
+        //        console.log(time_gui,"xx")
+      },
       false
     )
-
-
-	
-
-  function autoPlay(go_to) {
-      if (go_to == 'true') {
-      
-        moveTransition(index);
-        
-        console.log('记录 {{section.id}}','autop:'+autop);
-      }else if( go_to == 'false' ){
-      
-       console.log('2记录 {{section.id}}','autop:'+autop);
-    
-      
-      }
-    }  
-
-   
-
 
   /**
  * 防抖函数
