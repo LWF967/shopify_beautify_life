@@ -111,10 +111,15 @@
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
     
-        transition: all 1s;
+    animation: mymove 5s infinite;
     
       }
 
+      @keyframes mymove {
+        from {background-color:red;}
+        to {background-color:blue;}
+      }
+    
       @media screen and (min-width: 750px) {
         body {
           font-size: 1.6rem;
