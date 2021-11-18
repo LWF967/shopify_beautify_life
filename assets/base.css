@@ -2369,7 +2369,7 @@ a{
   opacity: 0;
   cursor: pointer;
   z-index: 999;
-  animation: lzxmove 2s infinite;
+  animation: lzxmove 1s infinite;
 }
   
 #my_backtop:before {
