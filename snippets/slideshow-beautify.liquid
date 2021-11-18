@@ -461,7 +461,7 @@
 
     let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
 
-    let time_gui = setInterval(autoPlay, time * 1000)
+    let time_gui = (autop == 'true') ? setInterval(autoPlay, time * 1000) : '123';
 
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseover',
