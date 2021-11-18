@@ -2367,7 +2367,8 @@ a{
   opacity: 0;
   cursor: pointer;
   z-index: 999;
-  animation: lzxmove 1s infinite backwards;
+  animation: lzxmove 1s infinite;
+  animation-fill-mode : none;
 }
   
 #my_backtop:before {
