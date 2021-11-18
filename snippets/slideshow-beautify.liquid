@@ -457,6 +457,25 @@
     function autoPlay (autop) {    
       if ((autop == 'true')) {
         moveTransition(index)
+        
+         document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
+            'mouseover',
+            function () {
+              clearInterval(time_gui)
+                  console.log(autop,"ss")
+            },
+            false
+          )
+          document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
+            'mouseleave',
+            function () {
+              time_gui = setInterval(autoPlay(autop), time * 1000)
+                     console.log(autop,"xx")
+            },
+            false
+          )
+        
+        
       }else{
       
       	clearInterval(time_gui)
@@ -468,22 +487,7 @@
   //  let time_gui = setInterval(autoPlay, time * 1000)
   
 
-    document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
-      'mouseover',
-      function () {
-        clearInterval(time_gui)
-            console.log(autop,"ss")
-      },
-      false
-    )
-    document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
-      'mouseleave',
-      function () {
-        time_gui = setInterval(autoPlay(autop), time * 1000)
-               console.log(autop,"xx")
-      },
-      false
-    )
+   
 
   /**
  * 防抖函数
