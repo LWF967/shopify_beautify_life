@@ -2342,7 +2342,7 @@ a{
   
 /* lzx backtop css */
   
-@keyframes lzxmove {
+/* @keyframes lzxmove {
   0% {right: 35px;}
   50% {right: 50px;}
   100% {right: 35px;}
@@ -2352,7 +2352,7 @@ a{
   0% {right: 35px;}
   50% {right: 50px;}
   100% {right: 35px;}
-}
+} */
 #my_backtop {
   position: fixed;
   display: block;
@@ -2369,7 +2369,7 @@ a{
   opacity: 0;
   cursor: pointer;
   z-index: 999;
-  animation: lzxmove 1s infinite;
+/*   animation: lzxmove 1s infinite; */
 }
   
 #my_backtop:before {
