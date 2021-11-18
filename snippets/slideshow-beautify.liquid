@@ -455,7 +455,7 @@
     function autoPlay (autop) {
      	var ifauto = autop;
         
-        if(ifauto == 'true'){  
+        if( JSON.parse(ifauto) ){  
         setInterval(moveTransition(index), time *1000);
         
         }else{
