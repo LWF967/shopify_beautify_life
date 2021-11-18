@@ -245,6 +245,8 @@
         my_backtop.onclick = function() {
           let toTop = document.documentElement.scrollTop || document.body.scrollTop;
           console.log("toTop",toTop);
+          toTop = 0;
+          
         }
         
         if(my_header_sticky.length > 0) {
