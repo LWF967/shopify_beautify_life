@@ -453,6 +453,20 @@
     function autoPlay (autop) {
       if ((autop = true)) {
         moveTransition(index)
+      }else{
+      
+      
+     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].removeEventListener(
+        'mouseover',
+        box_mousover(),
+        false
+      );
+      document.getElementsByClassName('feature-artworks-{{section.id}}')[0].removeEventListener(
+        'mouseleave',
+        box_mousleave(),
+        false
+      );
+      
       }
     }
 
