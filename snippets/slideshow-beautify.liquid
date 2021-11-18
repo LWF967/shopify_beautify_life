@@ -460,20 +460,27 @@
 
     let time_gui = setInterval(autoPlay, time * 1000)
 
+
+
+	function box_mousover(){
+    
+     clearInterval(time_gui);
+    }
+
+	function box_mousleave(){
+    
+     time_gui = setInterval(autoPlay, time * 1000);
+ 
+    }
+
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseover',
-      function () {
-        clearInterval(time_gui)
-        //     console.log(time_gui,"ss")
-      },
+      box_mousover(),
       false
     )
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseleave',
-      function () {
-        time_gui = setInterval(autoPlay, time * 1000)
-        //        console.log(time_gui,"xx")
-      },
+      box_mousleave(),
       false
     )
 
