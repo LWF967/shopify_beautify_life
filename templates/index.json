@@ -84,11 +84,23 @@
             "slider_button_text": "title name",
             "slider_button_link": ""
           }
+        },
+        "27a0088d-ec9a-48b1-a000-9c983fcc2430": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
         }
       },
       "block_order": [
         "8f64082c-3285-44d3-89fb-a12006fa7cda",
-        "f6d6b42e-2c43-47f7-a951-c5acebe942df"
+        "f6d6b42e-2c43-47f7-a951-c5acebe942df",
+        "27a0088d-ec9a-48b1-a000-9c983fcc2430"
       ],
       "settings": {
         "se_height": "adapt",
