@@ -422,8 +422,8 @@
 
     // var x = diff_box/itemLength;
 
-    function moveTransition (index) {
-      index = list_text.querySelector('.active').index + 1
+    function moveTransition (bindex) {
+      bindex = list_text.querySelector('.active').index + 1
 
       if (index < itemLength) {
         //           index =  list_text.querySelector('.active').index+1;
@@ -451,8 +451,8 @@
     let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
 
     function autoPlay (autop) {
-      if ((autop = true)) {
-        moveTransition(index)
+      if ((autop == true)) {
+        moveTransition(bindex)
       }
     }
 
