@@ -16,7 +16,7 @@
 
 <style>
   @font-face {
-  font-family: 'iconfont';  /* Project id 2903696 */
+  font-family: 'iconfont';
     src: url('//at.alicdn.com/t/font_2903696_vrib6au3n8m.woff2?t=1636012795082') format('woff2'),
          url('//at.alicdn.com/t/font_2903696_vrib6au3n8m.woff?t=1636012795082') format('woff'),
          url('//at.alicdn.com/t/font_2903696_vrib6au3n8m.ttf?t=1636012795082') format('truetype');
@@ -1097,7 +1097,7 @@
 {% endschema %}
 
 <script>
-    /*footertop移动端手风琴*/
+    {% comment %} footertop移动端手风琴 {% endcomment %}
     var footer_mobile_show = document.getElementsByClassName('my_footer_mobile_show');
 	var footer_h2 = document.getElementsByClassName('my_footer_heading my_fotter_mobile_heading');
   
@@ -1107,7 +1107,7 @@
 			var img = footer_h2[i].nextElementSibling.firstElementChild;
             
             if (yuansu.style.height) {
-              // 高度有值
+              {% comment %} 高度有值 {% endcomment %}
               this.children[0].style.transform = 'rotate(0deg)';
               this.children[0].style.opacity = '1';
               this.children[1].style.transform = 'rotate(90deg)';
@@ -1118,13 +1118,13 @@
             } else {
              if (img.tagName == 'IMG') {
                 var firstload = document.getElementsByClassName('footer-block__details-content rte my_footer_p')[i].firstElementChild.scrollHeight;
-				// 监听图片是否加载完成 解决第一次刷新高度显示有误
-                img.onload = function(){
+				{% comment %} 监听图片是否加载完成 解决第一次刷新高度显示有误 {% endcomment %}
+                img.onload = function(){ 
                   yuansu.style.height = yuansu.scrollHeight + "px";
                 }
                 img.style.opacity = '1';
               }
-              // 高度为0
+              {% comment %} 高度为0 {% endcomment %}
               this.children[0].style.transform = 'rotate(180deg)';
               this.children[0].style.opacity = '0';
               this.children[1].style.transform = 'rotate(360deg)';
