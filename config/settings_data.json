@@ -183,18 +183,6 @@
           "bd_cl": "#e43333"
         }
       },
-      "header-zx": {
-        "type": "header-zx",
-        "settings": {
-          "logo_aligment": "left",
-          "logo_svg": "woman-poses-in-dark-room.jpg",
-          "logo": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-          "logo_width": 50,
-          "header_height": 160,
-          "header_text_height_font_size": 12,
-          "menu": "main-menu"
-        }
-      },
       "footer-top": {
         "type": "footer-top",
         "blocks": {
@@ -212,7 +200,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Categories",
-              "menu": "footer",
+              "menu": "text3",
               "container_width": "7"
             }
           },
