@@ -143,9 +143,11 @@
                 {{ 'sections.cart.update' | t }}
               </button>
             </noscript>
-      <!--             <button type="submit" id="checkout" class="cart__checkout-button button my_subtotal_button" name="checkout"% if cart == empty %} disabled% endif %} form="cart">
-                     'sections.cart.checkout' | t }}
-                  </button> -->
+            {% comment %}
+            <button type="submit" id="checkout" class="cart__checkout-button button my_subtotal_button" name="checkout"% if cart == empty %} disabled% endif %} form="cart">
+              {{ 'sections.cart.checkout' | t }}
+            </button>
+            {% endcomment %}
             <button type="submit" id="checkout" class="cart__checkout-button button my_subtotal_button my_subtotal_btn_style" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
               CHECK OUT
             </button>
