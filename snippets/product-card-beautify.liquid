@@ -33,7 +33,7 @@
 
           <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>
             <div class="media media--transparent  {{section.settings.image_ratio1}} media--{{ media_size }} media--hover-effect"
-              {% if media_size == 'adapt' and use_eq_height %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
+              {% if media_size == 'adapt' and use_eq_height != true %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
             >
               <img
                 srcset="{%- if product_card_product.featured_media.width >= 165 -%}{{ product_card_product.featured_media | img_url: '165x' }} 165w,{%- endif -%}
