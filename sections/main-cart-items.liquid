@@ -411,7 +411,7 @@
 <script>
   var my_product = document.getElementsByClassName('cart-item');
   var my_cart_autoupdate = document.getElementsByClassName('my_cart_autoupdate');
-  // 关闭自动更新 产品数量超过 则提示
+  {% comment %}// 关闭自动更新 产品数量超过 则提示{% endcomment %}
   if(my_cart_autoupdate.length > 0) {
   	for (let i = 0; i < my_product.length; i++) {
       let input_value = document.getElementsByClassName('cart-item')[i].getElementsByClassName('quantity__input')[0].value;
