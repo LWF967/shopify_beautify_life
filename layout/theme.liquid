@@ -159,6 +159,13 @@
             bottom: 55px;
         }
       }
+    {% elsif settings.show_back_to_top == 'Desktop+Mobile' %}
+      @media screen and (min-width: 0px) and (max-width: 750px) {
+        #my_backtop {
+            right: 10px;
+            bottom: 55px;
+        }
+      }
     {% endif %}
     {% if settings.enable_prevent_copying %}
       * { 
