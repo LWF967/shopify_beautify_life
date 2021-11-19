@@ -109,31 +109,37 @@
     max-width: 100%;
     padding-bottom: 72px;
   }
+  
   .my_footer_item_width_2 {
   	flex: 0 0 66.666667%;
     max-width: 66.666667%;
     padding-bottom: 72px;
   }
+  
   .my_footer_item_width_3 {
   	flex: 0 0 50%;
     max-width: 50%;
     padding-bottom: 72px;
   }
+  
   .my_footer_item_width_4 {
   	flex: 0 0 33.333333%;
     max-width: 33.333333%;
     padding-bottom: 72px;
   }
+  
   .my_footer_item_width_5 {
   	flex: 0 0 25%;
     max-width: 25%;
     padding-bottom: 72px;
   }
+  
   .my_footer_item_width_6 {
   	flex: 0 0 20%;
     max-width: 20%;
     padding-bottom: 72px;
   }
+  
   .my_footer_item_width_7 {
   	flex: 0 0 16.666667%;
     max-width: 16.666667%;
@@ -148,6 +154,7 @@
     text-align: center;
     transition: all .5s;
   }
+  
   .my_icon_column,
   .my_icon_row {
     position: absolute;
@@ -156,9 +163,11 @@
     width: 10px;
     border: 1px solid black;
   }
+  
   .my_icon_column {
     transition: all .5s;
   }
+  
   .my_icon_row {
     transform: rotate(90deg);
     transition: all .5s;
@@ -170,40 +179,48 @@
       max-width: 50%;
       padding-bottom: 72px;
     }
+    
     .my_footer_item_width_2 {
       flex: 0 0 50%;
       max-width: 50%;
       padding-bottom: 72px;
     }
+    
     .my_footer_item_width_3 {
       flex: 0 0 50%;
       max-width: 50%;
       padding-bottom: 72px;
     }
+    
     .my_footer_item_width_4 {
       flex: 0 0 50%;
       max-width: 50%;
       padding-bottom: 72px;
     }
+    
     .my_footer_item_width_5 {
       flex: 0 0 50%;
       max-width: 50%;
       padding-bottom: 72px;
     }
+    
     .my_footer_item_width_6 {
       flex: 0 0 50%;
       max-width: 50%;
       padding-bottom: 72px;
     }
+    
     .my_footer_item_width_7 {
       flex: 0 0 50%;
       max-width: 50%;
       padding-bottom: 72px;
-    }  
+    } 
+    
     .my_footer_top_padding {
       padding: 72px 0 0 0;
       display: block;
     }
+    
     .my_footer_sticky {
       position: static;
     }
@@ -234,16 +251,19 @@
       padding: 0 0;
       width: 100%;
     }
+
     .my_footer_p,
     .my_footer_menu_item_margin_bottom {
       height: 0;
       overflow: hidden;
       transition: all .3s;
     }
+
     .my_footer_img {
       opacity: 0;
       transition: all .5s;
     }
+
     .my_footer_mobile_flex {
       display: flex;
       align-items: flex-start;
@@ -252,22 +272,27 @@
       padding-left: 20px;
       padding-right: 20px;
     }
+
     .my_footer_mobile_div {
       flex: 0 0 100%;
       margin-bottom: 0;
       margin: 0 0;
     }
+
     .my_fotter_mobile_heading {
       margin-bottom: 20px;
       display: flex;
       justify-content: space-between;
     }
+
     .my_footer_mobile_show {
       display: block;
     }
+
     .my_footer_hide_heading {
       display: flex;
     }
+
     .my_footer_sticky {
       position: static;
     }
@@ -291,8 +316,7 @@
         -%}
         <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet my_footer_padding_margin {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
-            <div class="footer-block grid__item my_footer_mobile_div {% if block.settings.container_width == '1' %}my_footer_item_width_1{% elsif block.settings.container_width == '2' %}my_footer_item_width_2{% elsif block.settings.container_width == '3' %}my_footer_item_width_3{% elsif block.settings.container_width == '4' %}my_footer_item_width_4{% elsif block.settings.container_width == '5' %}my_footer_item_width_5{% elsif block.settings.container_width == '6' %}my_footer_item_width_6{% else %}my_footer_item_width_7{% endif %}
-                        {% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
+            <div class="footer-block grid__item my_footer_mobile_div {% if block.settings.container_width == '1' %}my_footer_item_width_1{% elsif block.settings.container_width == '2' %}my_footer_item_width_2{% elsif block.settings.container_width == '3' %}my_footer_item_width_3{% elsif block.settings.container_width == '4' %}my_footer_item_width_4{% elsif block.settings.container_width == '5' %}my_footer_item_width_5{% elsif block.settings.container_width == '6' %}my_footer_item_width_6{% else %}my_footer_item_width_7{% endif %}{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- case block.type -%}
                 {%- when 'text' -%}
                   {%- if block.settings.heading != blank -%}
