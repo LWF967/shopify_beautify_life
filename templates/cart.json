@@ -8,13 +8,6 @@
         "cart_notes": true
       }
     },
-    "cart-items": {
-      "type": "main-cart-items",
-      "settings": {
-        "cart_updates": true,
-        "show_vendor": true
-      }
-    },
     "1637303539036d915b": {
       "type": "my-Subtotal",
       "disabled": true,
@@ -36,6 +29,13 @@
       ],
       "settings": {
         "show_cart_note": false
+      }
+    },
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "cart_updates": true,
+        "show_vendor": true
       }
     },
     "cart-footer": {
@@ -63,8 +63,8 @@
   },
   "order": [
     "1636449903a90cf233",
-    "cart-items",
     "1637303539036d915b",
+    "cart-items",
     "cart-footer"
   ]
 }
