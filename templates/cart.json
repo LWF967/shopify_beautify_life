@@ -39,6 +39,7 @@
     },
     "cart-footer": {
       "type": "main-cart-footer",
+      "disabled": true,
       "blocks": {
         "subtotal": {
           "type": "subtotal",
