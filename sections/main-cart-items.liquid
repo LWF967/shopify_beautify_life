@@ -97,12 +97,12 @@
   </div>
 
   <div class="cart__warnings my_cart_empty_padding">
-<!--     <h1 class="cart__empty-text"> 'sections.cart.empty' | t }}</h1> -->
+    {% comment %}<h1 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h1>{% endcomment %}
     <h1 class="cart__empty-text my_cart_empty_font">Your cart main</h1>
     <p class="my_cart_empty_tip">Your cart is currently empty</p>
-<!--     <a href=" routes.all_products_collection_url }}" class="button">
-       'general.continue_shopping' | t }}
-    </a> -->
+    {% comment %}<a href=" routes.all_products_collection_url }}" class="button">
+      {{ 'general.continue_shopping' | t }}
+    </a>{% endcomment %}
     <a href="{{ routes.all_products_collection_url }}" class="button my_cart_button">
       <span>CONTINUE SHOPPING</span>
       <span class="my_cart_arrow_margin">→</span>
