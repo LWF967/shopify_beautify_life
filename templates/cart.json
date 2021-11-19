@@ -34,7 +34,7 @@
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
-        "cart_updates": true,
+        "cart_updates": false,
         "show_vendor": true
       }
     },
