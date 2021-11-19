@@ -1236,7 +1236,7 @@ deferred-media {
 .button:not([disabled]):hover,
 .shopify-challenge__button:hover,
 .customer button:hover {
-  box-shadow: 0 0 0 0.2rem var(--color-button);
+  box-shadow: 0 0 0 0.2rem rgb(var(--color-button));
 }
 
 /* Button - other */
