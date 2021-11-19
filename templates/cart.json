@@ -17,6 +17,7 @@
     },
     "1637303539036d915b": {
       "type": "my-Subtotal",
+      "disabled": true,
       "blocks": {
         "9b0ece21-93f0-41d5-bdbc-b54446b2046d": {
           "type": "subtotal",
@@ -39,7 +40,6 @@
     },
     "cart-footer": {
       "type": "main-cart-footer",
-      "disabled": true,
       "blocks": {
         "subtotal": {
           "type": "subtotal",
