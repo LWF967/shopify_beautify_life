@@ -31,9 +31,34 @@
             endif
           -%}
 
-          <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>
-            <div class="media media--transparent {% if use_eq_height %}  {{section.settings.image_ratio1}} {% endif %}media--{{ media_size }} media--hover-effect"
+          <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>{% assign image_ratio1 = section.settings.image_ratio1 %}
+            <div class="media media--transparent 
+                        {% if use_eq_height %}  
+                       	 
+                        {% if image_ratio1 == 'ratio_cus1'%}
+                        
+                        style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_1.aspect_ratio | times: 100 }}%;"
+                                                                                                                
+                        {% elsif image_ratio1 == 'ratio_cus2' %}
+                                                                                                                
+                        style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_2.aspect_ratio | times: 100 }}%;"
+                                                                                                                
+                        {% elsif image_ratio1 == 'ratio_cus3' %}
+                                                                                                                
+                        style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_3.aspect_ratio | times: 100 }}%;"                                                                                        
+                        
+                        {% elsif image_ratio1 == 'ratio_cus4' %}
+                                                                                                                
+                        style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_4.aspect_ratio | times: 100 }}%;"
+                                                                                                                
+                        {% else %}
+                        
+                     	{{image_ratio1}}
+                        {% endif %
+            
+                        media--{{ media_size }} media--hover-effect"
               {% if media_size == 'adapt' and use_eq_height != true %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
+              {% if section.settings.image_ratio1 and use_eq_height = true %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}   
             >
               <img
                 srcset="{%- if product_card_product.featured_media.width >= 165 -%}{{ product_card_product.featured_media | img_url: '165x' }} 165w,{%- endif -%}
