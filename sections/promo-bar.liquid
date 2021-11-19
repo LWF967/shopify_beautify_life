@@ -1,38 +1,3 @@
-<div id="hide_banner" style="height:auto;{%- if settings.promo_bar == false and settings.promo_bar_home_page_only -%}display: none;{%- elsif settings.promo_bar == false and settings.promo_bar_home_page_only == false -%}display: none;{%- elsif settings.promo_bar and settings.promo_bar_home_page_only and request.page_type != 'index' -%}display: none;{%- endif -%}" data-mheight='{{ section.settings.promo_bar_height }}'>
-  <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.promo_bar_show_icon}} my_promo_flex"
-       data-date='{{section.settings.promo_bar_date}}'>
-    {%- if section.settings.promo_bar_link != blank -%}<a href="{{ section.settings.promo_bar_link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>{%- endif -%}
-    <div class="container my_style" {% if settings.full_width == false %} style="max-width: 1200px;"{% endif %}>
-      <div class="row al_center my_center">
-        {%- capture cap_btn -%}
-        {%- if section.settings.promo_bar_show_close -%}
-        {%- if section.settings.promo_bar_show_icon -%}
-        <div class="col-auto">
-          <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
-            <i class="close_left"></i>
-            <i class="close_right"></i>
-          </a>
-        </div>
-        {%- else -%}
-        <div class="col-auto">
-          <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
-            <i class="i_left"></i>
-            <i class="i_right"></i>
-            {{ section.settings.promo_bar_txt_btn }}
-          </a>
-        </div>
-        {%- endif -%}
-        {%- endif -%}
-        {%- endcapture -%}
-        <div class="hide_close">{{-cap_btn-}}</div>
-        {%- if section.settings.promo_bar_link != blank -%}<a href="{{ section.settings.promo_bar_link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>{%- endif -%}
-        <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.promo_bar_textarea }}</div>
-        <div class="show_close">{{-cap_btn-}}</div>
-      </div>
-    </div>
-  </div>
-</div>
-
 {%- style -%}
 {%- assign promo_bar_bg_op = section.settings.promo_bar_bg_op | divided_by: 100.0 -%}
 .h__banner { background-color: {{ section.settings.promo_bar_bg | color_modify: 'alpha', promo_bar_bg_op }};min-height:{{section.settings.promo_bar_height}}px;font-size:{{section.settings.promo_bar_fontsize}}px;}.h_banner_wrap {color:{{section.settings.promo_bar_cl}} }.h_banner_close,.h_banner_close:hover,.h_banner_close:focus {color:{{section.settings.promo_bar_cl_btn}} !important }.h_banner_close:after, .h_banner_close:before {background-color:{{section.settings.promo_bar_cl_btn}} }
@@ -112,6 +77,42 @@
     height: 100%;
   }
 </style>
+
+<div id="hide_banner" style="height:auto;{%- if settings.promo_bar == false and settings.promo_bar_home_page_only -%}display: none;{%- elsif settings.promo_bar == false and settings.promo_bar_home_page_only == false -%}display: none;{%- elsif settings.promo_bar and settings.promo_bar_home_page_only and request.page_type != 'index' -%}display: none;{%- endif -%}" data-mheight='{{ section.settings.promo_bar_height }}'>
+  <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.promo_bar_show_icon}} my_promo_flex"
+       data-date='{{section.settings.promo_bar_date}}'>
+    {%- if section.settings.promo_bar_link != blank -%}<a href="{{ section.settings.promo_bar_link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>{%- endif -%}
+    <div class="container my_style" {% if settings.full_width == false %} style="max-width: 1200px;"{% endif %}>
+      <div class="row al_center my_center">
+        {%- capture cap_btn -%}
+        {%- if section.settings.promo_bar_show_close -%}
+        {%- if section.settings.promo_bar_show_icon -%}
+        <div class="col-auto">
+          <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
+            <i class="close_left"></i>
+            <i class="close_right"></i>
+          </a>
+        </div>
+        {%- else -%}
+        <div class="col-auto">
+          <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
+            <i class="i_left"></i>
+            <i class="i_right"></i>
+            {{ section.settings.promo_bar_txt_btn }}
+          </a>
+        </div>
+        {%- endif -%}
+        {%- endif -%}
+        {%- endcapture -%}
+        <div class="hide_close">{{-cap_btn-}}</div>
+        {%- if section.settings.promo_bar_link != blank -%}<a href="{{ section.settings.promo_bar_link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>{%- endif -%}
+        <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.promo_bar_textarea }}</div>
+        <div class="show_close">{{-cap_btn-}}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
   let close = document.getElementsByClassName('show_close')[0];
   let my_center = document.getElementsByClassName('my_center')[0];
