@@ -32,7 +32,7 @@
           -%}
 
           <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>{% assign image_ratio1 = section.settings.image_ratio1 %}
-            <div class="media media--transparent  media--{{ media_size }} media--hover-effect
+            <div class="media media--transparent  media--{{ media_size }} media--hover-effect "
                        {% if use_eq_height == true%}  
                        	 
                         {% case image_ratio1 %}
@@ -59,7 +59,7 @@
                           
                        {% endif %}
             
-                        "
+                        
               {% if media_size == 'adapt' and use_eq_height != true %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
   
             >
