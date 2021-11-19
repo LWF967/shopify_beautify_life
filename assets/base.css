@@ -38,7 +38,7 @@
 
 :root,
 .color-background-1 {
-  --color-foreground: var(--color-base-text);
+  --color-foreground: rgba(var(--color-base-text),0.7);
   --color-background: var(--color-base-background-1);
   --gradient-background: var(--gradient-base-background-1);
 }
@@ -53,7 +53,7 @@
 
 .color-inverse {
   --color-foreground: var(--color-base-background-1);
-  --color-background: var(--color-base-text);
+  --color-background:rgba(var(--color-base-text),0.7);
   --gradient-background: rgb(var(--color-base-text));
 }
 
@@ -159,7 +159,7 @@
 :root,
 .color-background-1,
 .color-background-2 {
-  --color-card-hover: var(--color-base-text);
+  --color-card-hover: rgba(var(--color-base-text),0.7);
 }
 
 .color-inverse {
@@ -1643,7 +1643,7 @@ input[type='checkbox'] {
 
 /* component-quantity */
 .quantity {
-  border: 0.1rem solid var(--color-base-text);
+  border: 0.1rem solid rgba(var(--color-base-text),0.7);
   position: relative;
   height: 4.5rem;
   width: 14rem;
