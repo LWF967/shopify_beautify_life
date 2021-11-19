@@ -31,7 +31,7 @@
 .my_header_background_color { background: {{ settings.header_background_color }}; }
 .my_header_background_opacity { background: {{ settings.header_background_color | color_modify: 'alpha', my_header_background_opacity }}; }
 .my_header_count_background { align-items: start; background: {{ settings.header_count_color }}; }
-.my_header_count { color: {{ settings.header_count_text_color }}; }
+.my_header_count { color: {{ settings.header_count_text_color }} !important; }
 .my_header_icon_text_color, .my_header_icons_margin svg, .my_header_icons_margin .my_cart { color: {{ settings.header_icon_and_text_color }} !important; }
 .my_header_sticky_settings { background: {{ settings.header_sticky_background_color | color_modify: 'alpha', my_header_sticky_background_opacity }}; }
 .my_header_sticky_settings .my_header_icon_text_color,.my_header_sticky_settings .my_header_icons_margin svg,.my_header_sticky_settings .my_header_icons_margin .my_cart { color: {{ settings.header_sticky_icon_and_text_color }} !important; }
