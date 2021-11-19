@@ -273,7 +273,7 @@
         "grid": 4,
         "show_view_all": true,
         "swipe_on_mobile": true,
-        "image_ratio1": "ratio_nt",
+        "image_ratio1": "ratio16_9",
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
