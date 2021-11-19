@@ -27,7 +27,7 @@
 
 <style>
   @font-face {
-  font-family: 'iconfont';  /* Project id 2903696 */
+  font-family: 'iconfont';
   src: url('//at.alicdn.com/t/font_2903696_8kpznmqcoej.woff2?t=1635582253888') format('woff2'),
        url('//at.alicdn.com/t/font_2903696_8kpznmqcoej.woff?t=1635582253888') format('woff'),
        url('//at.alicdn.com/t/font_2903696_8kpznmqcoej.ttf?t=1635582253888') format('truetype');
@@ -201,19 +201,7 @@
   <div class="container my_container" {% if settings.full_width == false %} style="max-width: 1200px;"{% endif %}>
     <div class="row al_center my_layout">
       {%- for block in section_blocks -%}
-        <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex 
-                    {% if block.settings.col == '1' %}my_pc_adadpt_1 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '2' %}my_pc_adadpt_2 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '3' %}my_pc_adadpt_3 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '4' %}my_pc_adadpt_4 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '6' %}my_pc_adadpt_6 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '7' %}my_pc_adadpt_7 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '8' %}my_pc_adadpt_8 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '9' %}my_pc_adadpt_9 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '10' %}my_pc_adadpt_10 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% elsif block.settings.col == '11' %}my_pc_adadpt_11 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% else %}my_pc_adadpt_12 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}
-                    {% endif %}">
+        <div class="col-lg-{{block.settings.col}} col-12 tc {% cycle class_1, class_2, 'col-md-12 icon_flex icon_flex_r' %} dn_{{block.settings.hide}}_1024 my_flex {% if block.settings.col == '1' %}my_pc_adadpt_1 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}{% elsif block.settings.col == '2' %}my_pc_adadpt_2 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}{% elsif block.settings.col == '3' %}my_pc_adadpt_3 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}{% elsif block.settings.col == '4' %}my_pc_adadpt_4 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}{% elsif block.settings.col == '6' %}my_pc_adadpt_6 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}{% elsif block.settings.col == '7' %}my_pc_adadpt_7 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}{% elsif block.settings.col == '8' %}my_pc_adadpt_8 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}{% elsif block.settings.col == '9' %}my_pc_adadpt_9 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}{% elsif block.settings.col == '10' %}my_pc_adadpt_10 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}{% elsif block.settings.col == '11' %}my_pc_adadpt_11 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}{% else %}my_pc_adadpt_12 {% if block.settings.hide %}my_hide_tablet_mobile{% endif %}{% endif %}">
           {%- case block.type -%}
           {%- when 'cur' -%}
             {%- if block.settings.social_mode == '1' -%}
