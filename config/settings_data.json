@@ -6,7 +6,7 @@
     "enable_prevent_copying": true,
     "enable_catalog_mode": false,
     "full_width": true,
-    "sticky_header": false,
+    "sticky_header": true,
     "show_search_icon": true,
     "Show_dropdown_arrow": true,
     "header_background_color": "#ffffff",
@@ -65,11 +65,11 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo_aligment": "centered",
+          "logo_aligment": "left",
           "logo_svg": "woman-poses-in-dark-room.jpg",
           "logo": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
-          "logo_width": 120,
-          "header_height": 160,
+          "logo_width": 50,
+          "header_height": 60,
           "header_text_height_font_size": 18,
           "menu": "main-menu"
         }
