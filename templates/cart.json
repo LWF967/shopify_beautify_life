@@ -8,15 +8,9 @@
         "cart_notes": true
       }
     },
-    "cart-items": {
-      "type": "main-cart-items",
-      "settings": {
-        "cart_updates": true,
-        "show_vendor": true
-      }
-    },
     "cart-footer": {
       "type": "main-cart-footer",
+      "disabled": true,
       "blocks": {
         "subtotal": {
           "type": "subtotal",
@@ -36,11 +30,41 @@
       "settings": {
         "show_cart_note": true
       }
+    },
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "cart_updates": true,
+        "show_vendor": true
+      }
+    },
+    "1637303539036d915b": {
+      "type": "my-Subtotal",
+      "blocks": {
+        "9b0ece21-93f0-41d5-bdbc-b54446b2046d": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "a47fbd3a-46f1-49cc-ab0e-59527b4393da": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "9b0ece21-93f0-41d5-bdbc-b54446b2046d",
+        "a47fbd3a-46f1-49cc-ab0e-59527b4393da"
+      ],
+      "settings": {
+        "show_cart_note": false
+      }
     }
   },
   "order": [
     "1636449903a90cf233",
+    "cart-footer",
     "cart-items",
-    "cart-footer"
+    "1637303539036d915b"
   ]
 }
