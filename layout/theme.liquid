@@ -14,7 +14,6 @@
 {{ 'lazysizes.js' | asset_url | script_tag }}
 {{ 'lazysizes.min.js' | asset_url | script_tag }}
 
-<!-- jquery -->
 {{ 'jquery.3.5.1.min.js' | asset_url | script_tag }}
 
     
@@ -167,16 +166,15 @@
       {{ "accessibility.skip_to_text" | t }}
     </a>
 	{% section 'promo-bar' %}
-<!--     % section 'announcement-bar' % -->
+    {% comment %} {% section 'announcement-bar' %} {% endcomment %}
     {% section 'top-bar' %}
     {% section 'header' %}
-<!--     % section 'header-zx' %} -->
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
-<!--   	% section 'footer' %} -->
+  	{% comment %} {% section 'footer' %} {% endcomment %}
     {% section 'footer-top' %}
     {% section 'footer-bottom' %}
     <ul hidden>
@@ -186,8 +184,10 @@
     <a id="my_backtop" style="{% if settings.show_back_to_top == 'Disable' %}display: none;{% endif %}{% if settings.back_to_top_style == 'Style 2' %}border: 2px solid #fff; box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .2);{% endif %} {% if settings.button_style == 'Round' %}border-radius: 4px;{% endif %}"></a>
 
     <script>
+      {% comment %}
       /*lzx change*/
       // footer sticky
+      {% endcomment %}
       let promo_bar = document.getElementById('shopify-section-promo-bar');
       let top_bar = document.getElementById('shopify-section-top-bar');
       let header_zx = document.getElementById('shopify-section-header');
@@ -221,7 +221,7 @@
         main.style.marginBottom = 0 + "px";
       }
       
-      // header fixed layout
+      {% comment %} // header fixed layout {% endcomment %}
       let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
       let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
       let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
@@ -230,7 +230,7 @@
       let my_header_sticky = document.getElementsByClassName('my_header_sticky');
       let my_backtop = document.getElementById('my_backtop');
       
-      // backtop
+      {% comment %} // backtop {% endcomment %}
       function gotoTop() {
         $("#my_backtop").click(
           function () {
@@ -238,7 +238,7 @@
           })
       };
       gotoTop();
-      
+      {% comment %}
 //       js 原生 缺点会卡帧
 //       onclick="move(0);"
 //       function move(end) {
@@ -256,10 +256,10 @@
 //           }
 //         }, 30)
 //       }
-      
+      {% endcomment %}
       window.onscroll = function () {
         
-        //获取距离页面顶部的距离
+        {% comment %} //获取距离页面顶部的距离 {% endcomment %}
         let toTop = document.documentElement.scrollTop || document.body.scrollTop;
         if(my_header_sticky.length > 0) {
           if(toTop >= all_header_height) {
@@ -284,7 +284,7 @@
           }
         }
         
-        // backtop
+        {% comment %} // backtop {% endcomment %}
         if(toTop >= all_header_height) {
           my_backtop.style.opacity = 1;
           my_backtop.style.visibility = 'visible';
@@ -299,18 +299,18 @@
     
     {% if settings.enable_prevent_copying %}
     <script>
-      // disable_right_click
+      {% comment %} // disable_right_click {% endcomment %}
       document.addEventListener("contextmenu", function(event) {var notInput = (event.target || event.srcElement).tagName.toLowerCase() !== "input" && (event.target || event.srcElement).tagName.toLowerCase() !== "textarea";if (notInput && (event.target || event.srcElement).innerText) {event.preventDefault();} });
-      // disable_right_click_img
+      {% comment %} // disable_right_click_img {% endcomment %}
       document.addEventListener("mousedown", function(event) { if ((event.target || event.srcElement).tagName.toLowerCase() === "img") {
-      // Middle-click to open in new tab
+      {% comment %} // Middle-click to open in new tab {% endcomment %}
           if (event.which == 2) { event.preventDefault(); } 
       } });
       document.addEventListener("contextmenu", function(event) { if ((event.target || event.srcElement).tagName.toLowerCase() === "img") { event.preventDefault(); } });
-      // Drag and drop <img> elements
+      {% comment %} // Drag and drop <img> elements {% endcomment %}
       const disableDragAndDrop = function(){document.body.setAttribute("ondragstart", "return false;");document.body.setAttribute("ondrop", "return false;");};
       if (document.readyState === "complete") {disableDragAndDrop();} else {document.addEventListener("DOMContentLoaded", disableDragAndDrop);}
-      // disable_right_click_bg_img
+      {% comment %} // disable_right_click_bg_img {% endcomment %}
       document.addEventListener("contextmenu", function(event) { if ((event.target || event.srcElement).style.backgroundImage) { event.preventDefault(); } });
     </script>
     {% endif %}
