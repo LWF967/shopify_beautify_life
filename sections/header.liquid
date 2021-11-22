@@ -216,7 +216,7 @@
     .my_cart_count_bubble::after {
       content: "{{ cart.item_count }}";
       display: inline-block;
-      color: red;
+      color: {{settings.header_count_text_color}};
     }            
   {%- endif -%}
 
