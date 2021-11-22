@@ -16,7 +16,7 @@
     {% comment %}
        {{ 'templates.404.subtext' | t }} {{ 'templates.404.title' | t }}
     {% endcomment %}
-    040 help me
+    040 help me{{ order.name }}
   </h1>
   <p>    {{ 'templates.404.info_text' | t }}</p>
   <a href="{{ routes.all_products_collection_url }}" class="button">
