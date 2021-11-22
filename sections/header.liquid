@@ -216,7 +216,7 @@
     .lzxbubble::after {
       content: "{{ cart.item_count }}";
       display: inline-block;
-      color: #fff;
+      color: {{settings.header_count_text_color}};
     }            
   {%- endif -%}
 
@@ -699,12 +699,14 @@
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="lzxbubble my_header_count_background">
+            
+            {% comment %}
             {%- if cart.item_count < 100 -%}
             <span aria-hidden="true" class="my_header_count"></span>
             {%- endif -%}
-            {% comment %}
             <span class="">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
             {% endcomment %}
+            
           </div>
         {%- endif -%}
       </a>
