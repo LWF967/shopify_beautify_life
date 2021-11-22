@@ -489,7 +489,6 @@
                   src="{{ section.settings.logo_svg | file_url }}" 
                   alt="{{ section.settings.logo_svg.alt | default: shop.name }}"
                   width="{{ section.settings.logo.width }}"
-                  height="{{ image_height }}"
                   style="width: {{ section.settings.logo_width }}px">
           {%- elsif section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
@@ -678,11 +677,11 @@
 		<span class="my_cart">&#xe66e;</span>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
-          <div class="cart-count-bubble my_header_count_background">
+          <div class="">
             {%- if cart.item_count < 100 -%}
-              <span aria-hidden="true" class="my_header_count">{{ cart.item_count }}</span>
+              <span aria-hidden="true" class="">{{ cart.item_count }}</span>
             {%- endif -%}
-            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+            <span class="">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
           </div>
         {%- endif -%}
       </a>
