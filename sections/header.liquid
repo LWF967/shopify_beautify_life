@@ -482,7 +482,7 @@
                   src="{{ section.settings.logo_svg | file_url }}" 
                   alt="{{ section.settings.logo_svg.alt | default: shop.name }}"
                   width="{{ section.settings.logo.width }}"
-                  style="width: {{ section.settings.logo_width }}px">
+                  style="width: {{ section.settings.logo_width }}px">123
           {%- elsif section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
             <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
@@ -568,9 +568,9 @@
                 <use href="#icon-search">
               </svg>
               {% comment %}
-<!--               <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
+              <svg class="modal__toggle-close icon icon-close" aria-hidden="true" focusable="false" role="presentation">
                 <use href="#icon-close">
-              </svg> -->
+              </svg>
               {% endcomment %}
             </span>
           </summary>
