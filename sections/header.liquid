@@ -212,12 +212,13 @@
     bottom: 20px;
     left: 10px;
   }
-  
-  .lzxbubble::after {
-    content: "{{ cart.item_count }}";
-    display: inline-block;
-    color: #fff;
-  }
+  {%- if cart.item_count < 100 -%}
+    .lzxbubble::after {
+      content: "{{ cart.item_count }}";
+      display: inline-block;
+      color: #fff;
+    }            
+  {%- endif -%}
 
   @media screen and (max-width: 989px) {
     .my_header_img_align {
