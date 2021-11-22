@@ -544,6 +544,11 @@
                   {%- endif -%}
                   {%- if block.settings.menu != blank and block.settings.heading != blank -%}
                     <ul class="footer-block__details-content list-unstyled my_footer_menu_item_margin_bottom">
+                      
+                      {% if block.settings.menu.links == blank %}
+                      blank
+                      {% endif %}
+                      
                       {%- for link in block.settings.menu.links -%}
                         <li>
                           <a href="{{ link.url }}" class="link link--text list-menu__item my_footer_a_hover">
