@@ -196,6 +196,7 @@
     
     <a id="my_backtop" style="{% if settings.show_back_to_top == 'Disable' %}display: none;{% endif %}{% if settings.back_to_top_style == 'Style 2' %}border: 2px solid #fff; box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .2);{% endif %} {% if settings.button_style == 'Round' %}border-radius: 4px;{% endif %}"></a>
 
+    {% comment %}
     <script>
       {% comment %}
       /*lzx change*/
@@ -327,6 +328,7 @@
       document.addEventListener("contextmenu", function(event) { if ((event.target || event.srcElement).style.backgroundImage) { event.preventDefault(); } });
     </script>
     {% endif %}
+    {% endcomment %}
     <script>
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
