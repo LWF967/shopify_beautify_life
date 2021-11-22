@@ -1772,7 +1772,7 @@ input[type='checkbox'] {
 
 /* component-cart-count-bubble */
 .cart-count-bubble:empty {
-  display: none;
+/*   display: none; */
 }
 
 /* .cart-count-bubble {
