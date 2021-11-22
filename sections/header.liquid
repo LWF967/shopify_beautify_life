@@ -214,6 +214,26 @@
   .my_header_search_margin {
     margin-right: 9px;
   }
+  
+  .lzxbubble {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: #000;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 100%;
+    font-size: 9px;
+    bottom: 20px;
+    left: 10px;
+  }
+  
+  .lzxbubble::after {
+    content: "{{ cart.item_count }}";
+    display: inline-block;
+    color: #fff;
+  }
+
   @media screen and (max-width: 989px) {
     .my_header_img_align {
       justify-self: center !important;
@@ -691,25 +711,7 @@
   </header>
 </div>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
-<style>
-  .lzxbubble {
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    background: #000;
-    text-align: center;
-    line-height: 15px;
-    border-radius: 100%;
-    font-size: 9px;
-    bottom: 20px;
-    left: 10px;
-  }
-  .lzxbubble::after {
-    content: "{{ cart.item_count }}";
-    display: inline-block;
-    color: #fff;
-  }
-</style>
+
 {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
 
 {% javascript %}
