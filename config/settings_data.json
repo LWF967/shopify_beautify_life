@@ -7,8 +7,8 @@
     "enable_catalog_mode": false,
     "ratio_custom_1": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
     "ratio_custom_2": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-    "promo_bar_home_page_only": false,
-    "top_bar_home_page_only": false,
+    "promo_bar_home_page_only": true,
+    "top_bar_home_page_only": true,
     "full_width": true,
     "sticky_header": true,
     "show_search_icon": true,
@@ -283,17 +283,6 @@
           "text_color": "#000000",
           "link_color": "#0031ff",
           "link_hover_color": "#a700ff"
-        }
-      },
-      "header-save": {
-        "type": "header-save",
-        "settings": {
-          "logo_aligment": "left",
-          "logo_svg": "",
-          "logo_width": 54,
-          "header_height": 75,
-          "header_text_height_font_size": 14,
-          "menu": "text3"
         }
       }
     },
