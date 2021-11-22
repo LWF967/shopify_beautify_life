@@ -211,6 +211,9 @@
   	margin-left: 9px;
   }
   
+  .my_header_search_margin {
+    margin-right: 9px;
+  }
   @media screen and (max-width: 989px) {
     .my_header_img_align {
       justify-self: center !important;
@@ -569,7 +572,7 @@
     {%- endif -%}
 
     <div class="header__icons my_header_icons_margin">
-      <details-modal class="header__search {% if settings.show_search_icon == false %} my_header_hide_search {% endif %}" style="display: block;">
+      <details-modal class="header__search {% if settings.show_search_icon == false %} my_header_hide_search {% endif %} my_header_search_margin" style="display: block;">
         <details>
           <summary class="my_header_icon_search header__icon--search header__icon--summary link link--text focus-inset modal__toggle my_icon_color" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
             <span>
