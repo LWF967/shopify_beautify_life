@@ -270,6 +270,7 @@
 //         }, 30)
 //       }
       {% endcomment %}
+      {% comment %}
       window.onscroll = function () {
         
         {% comment %} //获取距离页面顶部的距离 {% endcomment %}
@@ -308,6 +309,7 @@
           my_backtop.style.cursor = "default";
         }
       }
+      {% endcomment %}
     </script>
     
     {% if settings.enable_prevent_copying %}
