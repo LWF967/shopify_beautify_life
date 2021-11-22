@@ -519,9 +519,9 @@
           {% if section.settings.menu.links == blank %}
             blank
             {% if section.settings.menu.levels != blank %}
-            123
+            menu.levels is not blank
             {% else %}
-            321
+            menu.levels is blank
           	{% endif %}
           {% endif %}
           
