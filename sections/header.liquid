@@ -508,9 +508,11 @@
         <nav class="header__inline-menu my_header_style my_header_margin_top">
       {%- endif -%}
         <ul class="list-menu list-menu--inline" role="list">
+          
           {% if section.settings.menu.links == blank %}
             blank
           {% endif %}
+          
           {%- for link in section.settings.menu.links -%}
             <li>
               {%- if link.links != blank -%}
