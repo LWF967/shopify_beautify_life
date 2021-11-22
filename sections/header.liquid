@@ -509,7 +509,7 @@
       {%- endif -%}
         <ul class="list-menu list-menu--inline" role="list">
           {% if section.settings.menu.links == blank %}
-            blank
+            {{ section.settings.menu.links }}
           {% endif %}
           {%- for link in section.settings.menu.links -%}
             <li>
