@@ -518,9 +518,11 @@
           
           {% if section.settings.menu.links == blank %}
             blank
-            {% for l in section.settings.menu.levels %}
-              l
-            {% endfor %}
+            {% if section.settings.menu.levels != blank %}
+            123
+            {% else %}
+            321
+          	{% endif %}
           {% endif %}
           
           {%- for link in section.settings.menu.links -%}
