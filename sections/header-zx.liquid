@@ -1,6 +1,6 @@
 <ul class="site-nav list--inline{% if wrapper_class != blank %} {{ wrapper_class }}{% endif %}" id="SiteNav">
   123
-  {% for link in linklists[linklist].links %}
+  {% for link in section.settings.menu.links %}
     {%- assign child_list_handle = link.title | handleize -%}
 
     {% comment %}
