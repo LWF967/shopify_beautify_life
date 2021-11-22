@@ -677,17 +677,7 @@
 		<span class="my_cart">&#xe66e;</span>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
-          <div style="    position: absolute;
-    background-color: #797979;
-    color: #fff;
-    height: 15px;
-    width: 15px;
-    text-align: center;
-    line-height: 15px;
-    border-radius: 100%;
-    font-size: 9px;
-    bottom: 9px;
-    left: 15px;">
+          <div class="lzxbubble">
             <div>
               {%- if cart.item_count < 100 -%}
                 <span aria-hidden="true" class="my_header_count">{{ cart.item_count }}</span>
@@ -706,8 +696,6 @@
 <style>
   .lzxbubble {
     position: absolute;
-    background-color: #797979;
-    color: #fff;
     height: 15px;
     width: 15px;
     text-align: center;
