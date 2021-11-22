@@ -74,7 +74,21 @@
       </div>
     </div>
     
-  	<ol id="slide_pog-{{section.id}}" style="{% if section.settings.show_page_Dot %} z-index:-1; {% endif %} ">
+  	<ol id="slide_pog-{{section.id}}" style="{% if section.settings.show_page_Dot %} z-index:-1; {% endif %} 
+                                             
+                                             {% if section.settings.page_dot_style = 'style_1' and section.settings.page_dot_color = 'dark'%}
+                                             
+                                             {% elsif section.settings.page_dot_style = 'style_1' and section.settings.page_dot_color = 'light' %}
+                                             
+                                             {% elsif section.settings.page_dot_style = 'style_2' and section.settings.page_dot_color = 'dark' %}
+                                             
+                                             {% elsif section.settings.page_dot_style = 'style_2' and section.settings.page_dot_color = 'light'%}
+                                             
+                                    		 {% endif %}	
+                                             
+                                             
+                                             
+                                             ">
 
     </ol>
     
