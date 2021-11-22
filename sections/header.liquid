@@ -204,8 +204,7 @@
     position: absolute;
     height: 15px;
     width: 15px;
-/*     background:  settings.header_count_color }}; */
-    background: black;
+    background: {{ settings.header_count_color }};
     text-align: center;
     line-height: 15px;
     border-radius: 100%;
@@ -217,8 +216,7 @@
     .my_cart_count_bubble::after {
       content: "{{ cart.item_count }}";
       display: inline-block;
-/*       color:  settings.header_count_text_color }}; */
-      color: red;
+      color: {{ settings.header_count_text_color }};
     }            
   {%- endif -%}
 
