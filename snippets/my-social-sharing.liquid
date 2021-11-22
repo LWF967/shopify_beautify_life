@@ -215,43 +215,35 @@
             </span>
         </a>
     {% endif %}
-  
-    {% comment %}
-        {%- endif -%}        
-        {%- if settings.share_tumblr -%}
-        <a data-no-instant rel="noopener noreferrer nofollow" data-content="http:{{permaImage}}" href="//tumblr.com/widgets/share/tool?canonicalUrl={{ permalinkURL }}" target="{{target}}" class="tumblr cb {{class_tooltip}}">
-          <span class="tt_txt">{{ 'general.nt_tooltip.share_tu' | t }}</span>
-          <i class="facl facl-tumblr"></i>
-           <span class="ts_style">{%- render 'icon-tumblr' -%}</span>
-        </a>
-        {%- endif -%}
-      {%- endif -%}
-      {%- if settings.share_telegram -%}
-      <a data-no-instant rel="nofollow" target="{{target}}" class="telegram cb {{class_tooltip}}" href="https://telegram.me/share/url?url={{ permalinkURL }}"> 
-         <span class="tt_txt">{{ 'general.nt_tooltip.share_tl' | t }}</span>
-         <i class="facl facl-telegram"></i>
-         %- render 'icon-twitter' -%}
-      </a>
-      {%- endif -%}
-      {%- if settings.share_whatsapp -%}
-      <a data-no-instant rel="nofollow" target="{{target}}" class="whatsapp cb {{class_tooltip}}" href="https://wa.me/?text={{ permaTitle }}&#x20;{{ permalinkURL }}"> 
-         <span class="tt_txt">{{ 'general.nt_tooltip.share_wa' | t }}</span>
-         <i class="facl facl-whatsapp"></i>
-        {%- render 'icon-twitter' -%}
-      </a>
-      {%- endif -%}
-    {% endcomment %}
-  
+<!--         %- endif -%}         -->
+<!--         %- if settings.share_tumblr -%} -->
+<!--         <a data-no-instant rel="noopener noreferrer nofollow" data-content="http:permaImage}}" href="//tumblr.com/widgets/share/tool?canonicalUrl= permalinkURL }}" target="target}}" class="tumblr cb class_tooltip}}"> -->
+<!--           <span class="tt_txt"> 'general.nt_tooltip.share_tu' | t }}</span> -->
+<!--           <i class="facl facl-tumblr"></i> -->
+<!--            <span class="ts_style">%- render 'icon-tumblr' -%}</span> -->
+<!--         </a> -->
+<!--         %- endif -%} -->
+<!--       %- endif -%} -->
+<!--      %- if settings.share_telegram -% -->
+<!--       <a data-no-instant rel="nofollow" target="target}}" class="telegram cb class_tooltip}}" href="https://telegram.me/share/url?url= permalinkURL }}">  -->
+<!--          <span class="tt_txt"> 'general.nt_tooltip.share_tl' | t }}</span> -->
+<!--          <i class="facl facl-telegram"></i> -->
+<!--          %- render 'icon-twitter' -%} -->
+<!--       </a> -->
+<!--       %- endif -% -->
+<!--       %- if settings.share_whatsapp -% -->
+<!--       <a data-no-instant rel="nofollow" target="target}}" class="whatsapp cb class_tooltip}}" href="https://wa.me/?text= permaTitle }}&#x20; permalinkURL }}">  -->
+<!--          <span class="tt_txt"> 'general.nt_tooltip.share_wa' | t }}</span> -->
+<!--          <i class="facl facl-whatsapp"></i> -->
+<!--          %- render 'icon-twitter' -%} -->
+<!--       </a> -->
+<!--       %- endif -% -->
   {%-else-%}
       {%- if social_icons -%}
         {%- for social_link in socials %}
         {% if settings[social_link] != blank -%}
           <a data-no-instant rel="noopener noreferrer nofollow" href="{{ settings[social_link] | escape }}" target="{{target}}" class="{{socials_icon[forloop.index0] | remove:'-play'}} cb {{class_tooltip}} my_a_padding">
-			
-            {% comment %}
-            <span class="tt_txt">socials_txt[forloop.index0] | t }}</span>
-            {% endcomment %}
-            
+<!--             <span class="tt_txt">socials_txt[forloop.index0] | t }}</span> -->
             {% if socials_icon[forloop.index0] == "twitter" %}
               {% if settings.social_twitter_link != blank %}
                 <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
