@@ -517,7 +517,7 @@
         <ul class="list-menu list-menu--inline" role="list">
           
           {% if section.settings.menu.links == blank %}
-            blank{{ section.settings.menu }}
+            blank{{ section.settings.menu.levels }}
           {% endif %}
           
           {%- for link in section.settings.menu.links -%}
