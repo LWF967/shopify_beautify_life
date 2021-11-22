@@ -25,3 +25,76 @@
 
 
 <div>123123123</div>
+
+
+
+
+
+
+{% schema %}
+{
+  "name": "t:sections.header.name",
+  "settings": [
+    {
+      "type": "radio",
+      "id": "logo_aligment",
+      "label": "Logo alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "centered",
+          "label": "Centered"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "text",
+      "id": "logo_svg",
+      "label": "Logo SVG",
+      "info": "Use name svg upload files. Ex:logo-gecko.svg [Get name svg](https:\/\/acker-beautify-life.myshopify.com\/admin\/settings\/files)"   
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "t:sections.header.settings.logo.label"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 50,
+      "max": 120,
+      "step": 1,
+      "default": 54,
+      "label": "Custom logo width"
+    },
+    {
+      "type": "range",
+      "id": "header_height",
+      "min": 60,
+      "max": 160,
+      "step": 1,
+      "default": 75,
+      "label": "Custom header height"
+    },
+    {
+      "type": "range",
+      "id": "header_text_height_font_size",
+      "min": 12,
+      "max": 18,
+      "step": 0.5,
+      "default": 14,
+      "label": "Header text font size"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "default": "main-menu",
+      "label": "t:sections.header.settings.menu.label"
+    }
+  ]
+}
+{% endschema %}
