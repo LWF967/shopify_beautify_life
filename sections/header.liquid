@@ -489,6 +489,7 @@
                   src="{{ section.settings.logo_svg | file_url }}" 
                   alt="{{ section.settings.logo_svg.alt | default: shop.name }}"
                   width="{{ section.settings.logo.width }}"
+                  height="{{ image_height }}"
                   style="width: {{ section.settings.logo_width }}px">
           {%- elsif section.settings.logo != blank -%}
             {%- assign image_size = section.settings.logo_width | append: 'x' -%}
