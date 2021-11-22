@@ -200,7 +200,7 @@
     margin-right: 9px;
   }
   
-  .lzxbubble {
+  .my_cart_count_bubble {
     position: absolute;
     height: 15px;
     width: 15px;
@@ -213,7 +213,7 @@
     left: 10px;
   }
   {%- if cart.item_count < 100 -%}
-    .lzxbubble::after {
+    .my_cart_count_bubble::after {
       content: "{{ cart.item_count }}";
       display: inline-block;
       color: {{settings.header_count_text_color}};
@@ -698,7 +698,7 @@
 		<span class="my_cart">&#xe66e;</span>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
-          <div class="lzxbubble my_header_count_background">
+          <div class="my_cart_count_bubble my_header_count_background">
             
             {% comment %}
             {%- if cart.item_count < 100 -%}
