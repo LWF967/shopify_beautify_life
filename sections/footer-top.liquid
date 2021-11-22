@@ -547,6 +547,8 @@
                       
                       {% if block.settings.menu.links == blank %}
                       blank
+                      {% else %}
+                      {{block.settings.menu.links}}
                       {% endif %}
                       
                       {%- for link in block.settings.menu.links -%}
