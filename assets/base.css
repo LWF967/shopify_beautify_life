@@ -2300,7 +2300,7 @@ details-disclosure > details {
 
 .overflow-hidden-mobile,
 .overflow-hidden-tablet {
-  overflow: hidden;
+/*   overflow: hidden; */
 }
 
 @media screen and (min-width: 750px) {
@@ -2311,7 +2311,7 @@ details-disclosure > details {
 
 @media screen and (min-width: 990px) {
   .overflow-hidden-tablet {
-    overflow: auto;
+/*     overflow: auto; */
   }
 }
 
