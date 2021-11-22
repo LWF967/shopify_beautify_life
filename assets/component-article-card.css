@@ -41,7 +41,7 @@
 }
 
 .article-card__info {
-  padding: 3rem;
+  padding: 3rem 0rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
