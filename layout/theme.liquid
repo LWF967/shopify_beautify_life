@@ -7,7 +7,24 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    
+ 
+   
+{{'custome-content.css'| asset_url |stylesheet_tag}}
+{{ 'lazysizes.js' | asset_url | script_tag }}
+{{ 'lazysizes.min.js' | asset_url | script_tag }}
 
+{{ 'jquery.3.5.1.min.js' | asset_url | script_tag }}
+
+    
+    {% comment %}
+{{ 'lazysizes.js' | asset_url | script_tag }}
+{{ 'lazysizes.min.js' | asset_url | script_tag }}
+ 
+<script src="{{ 'lazysizes.js' | asset_url }}" ></script>   
+<script src="{{ 'lazysizes.min.js' | asset_url }}" ></script>   
+    
+    {% endcomment %}
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
     {%- endif -%}
@@ -54,9 +71,6 @@
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
 
-        --font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};
-        --font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};
-
         --color-base-text: {{ settings.colors_text.red }}, {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};
         --color-base-background-1: {{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};
         --color-base-background-2: {{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};
@@ -72,7 +86,6 @@
         --gradient-base-accent-2: {% if settings.gradient_accent_2 != blank %}{{ settings.gradient_accent_2 }}{% else %}{{ settings.colors_accent_2 }}{% endif %};
 
         --page-width: {{ settings.page_width | divided_by: 10 }}rem;
-        --page-width-margin: {% if settings.page_width == '1600' %}2{% else %}0{% endif %}rem;
       }
 
       *,
@@ -83,7 +96,7 @@
 
       html {
         box-sizing: border-box;
-        font-size: calc(var(--font-body-scale) * 62.5%);
+        font-size: 62.5%;
         height: 100%;
       }
 
@@ -95,19 +108,21 @@
         margin: 0;
         font-size: 1.5rem;
         letter-spacing: 0.06rem;
-        line-height: calc(1 + 0.8 / var(--font-body-scale));
+        line-height: 1.8;
         font-family: var(--font-body-family);
         font-style: var(--font-body-style);
         font-weight: var(--font-body-weight);
+    
       }
-
+    
       @media screen and (min-width: 750px) {
         body {
           font-size: 1.6rem;
         }
       }
     {% endstyle %}
-
+    
+	{% include 'css-variables' %}
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
@@ -119,30 +134,202 @@
 
     {%- if settings.predictive_search_enabled -%}
       <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
-    {%- endif -%}
-
-    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script>
+    {%- endif -%} 
+    
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    </script>
   </head>
-
+  {% style %}
+    {% if settings.show_back_to_top == 'Desktop' %}
+      @media screen and (min-width: 0px) and (max-width: 750px) {
+        #my_backtop {
+          display: none;
+        }
+      }
+    {% elsif settings.show_back_to_top == 'Mobile' %}
+      @media screen and (min-width: 750px) {
+        #my_backtop {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 0px) and (max-width: 750px) {
+        #my_backtop {
+            right: 10px;
+            bottom: 55px;
+        }
+      }
+    {% elsif settings.show_back_to_top == 'Desktop+Mobile' %}
+      @media screen and (min-width: 0px) and (max-width: 750px) {
+        #my_backtop {
+            right: 10px;
+            bottom: 55px;
+        }
+      }
+    {% endif %}
+    {% if settings.enable_prevent_copying %}
+      * { 
+        user-select: none;
+      }
+    {% endif %}
+  {% endstyle %}
+  
   <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
-
-    {% section 'announcement-bar' %}
+	{% section 'promo-bar' %}
+    {% comment %} {% section 'announcement-bar' %} {% endcomment %}
+    {% section 'top-bar' %}
     {% section 'header' %}
+
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
-    {% section 'footer' %}
-
+  	{% comment %} {% section 'footer' %} {% endcomment %}
+    {% section 'footer-top' %}
+    {% section 'footer-bottom' %}
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
     </ul>
+    
+    <a id="my_backtop" style="{% if settings.show_back_to_top == 'Disable' %}display: none;{% endif %}{% if settings.back_to_top_style == 'Style 2' %}border: 2px solid #fff; box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .2);{% endif %} {% if settings.button_style == 'Round' %}border-radius: 4px;{% endif %}"></a>
 
     <script>
-      window.shopUrl = '{{ shop.url }}';
+      {% comment %}
+      /*lzx change*/
+      // footer sticky
+      {% endcomment %}
+      let promo_bar = document.getElementById('shopify-section-promo-bar');
+      let top_bar = document.getElementById('shopify-section-top-bar');
+      let header_zx = document.getElementById('shopify-section-header');
+      let footer_top = document.getElementById('shopify-section-footer-top');
+      let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+      let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+      let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
+      let main = document.getElementById('MainContent');
+      let sticky = document.getElementsByClassName('my_footer_sticky');
+      
+      if(sticky.length > 0) {      
+        if(document.body.clientWidth < 1024) {
+          main.style.marginBottom = 0 + "px";
+        }
+        else if(document.body.clientWidth >= 1024) {
+          let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight-40+1;
+          main.style.background = '#ffffff';
+          main.style.zIndex = 999;
+          main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
+          my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
+          promo_bar.style.zIndex = 999;
+          top_bar.style.zIndex = 999;
+          header_zx.style.zIndex = 999;
+          footer_bottom.style.position = 'fixed';
+          footer_bottom.style.bottom = 0;
+          footer_bottom.style.width = '100%';
+          console.log(footer_bottom_height);
+        }
+      }
+      else {
+        main.style.marginBottom = 0 + "px";
+      }
+      
+      {% comment %} // header fixed layout {% endcomment %}
+      let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
+      let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
+      let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
+      let header = document.getElementsByClassName('header')[0];
+      let content = document.getElementsByClassName('content')[0];
+      let my_header_sticky = document.getElementsByClassName('my_header_sticky');
+      let my_backtop = document.getElementById('my_backtop');
+      
+      {% comment %} // backtop {% endcomment %}
+      function gotoTop() {
+        $("#my_backtop").click(
+          function () {
+            $('html,body').animate({ scrollTop: '0px' }, 'slow');
+          })
+      };
+      gotoTop();
+      {% comment %}
+//       js 原生 缺点会卡帧
+//       onclick="move(0);"
+//       function move(end) {
+//         var timer = null;
+//         timer = setInterval(function () {
+//           var speed = (end - document.documentElement.scrollTop) / 5;        //根据终点和offsetLeft取出运动的速度
+//           speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);       //进位取整，小数位变为整位，
+
+//           if (Math.abs(end - document.documentElement.scrollTop) <= speed) { //由于在停止的时候最后会出现小的缝隙，或者说没有完全的到达指定地点，所以要小于它的速度
+//             clearInterval(timer);                       //当距离小于速度时，让计时器停止
+//             document.documentElement.scrollTop = end;           //在停止后填充缝隙。
+//           }
+//           else {
+//             document.documentElement.scrollTop = document.documentElement.scrollTop + speed;       //移动DIV
+//           }
+//         }, 30)
+//       }
+      {% endcomment %}
+      window.onscroll = function () {
+        
+        {% comment %} //获取距离页面顶部的距离 {% endcomment %}
+        let toTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if(my_header_sticky.length > 0) {
+          if(toTop >= all_header_height) {
+            content.style.position = 'fixed';
+            content.style.width = '100%';
+            header_wrapper.style.height = header_wrapper_height + 'px';
+          } else {
+            content.style.position = 'relative';
+          }
+          if(content.style.position == 'fixed') {
+            content.classList.add('my_header_sticky_settings');
+            header.classList.add('my_header_sticky_settings');
+            content.style.transition = 'transform .3s';
+            content.style.top = -(content.scrollHeight) + 'px';
+//             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
+            content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
+            console.log(1);
+          } else if(content.style.position == 'relative') {
+            content.classList.remove('my_header_sticky_settings');
+            header.classList.remove('my_header_sticky_settings');
+            content.style.top = 0 + 'px';
+            content.style.transform = 'none';
+            content.style.transition = 'none';
+          }
+        }
+        
+        {% comment %} // backtop {% endcomment %}
+        if(toTop >= all_header_height) {
+          my_backtop.style.opacity = 1;
+          my_backtop.style.visibility = 'visible';
+          my_backtop.style.cursor = "pointer";
+        } else {
+          my_backtop.style.opacity = 0;
+          my_backtop.style.visibility = 'hidden';
+          my_backtop.style.cursor = "default";
+        }
+      }
+    </script>
+    
+    {% if settings.enable_prevent_copying %}
+    <script>
+      {% comment %} // disable_right_click {% endcomment %}
+      document.addEventListener("contextmenu", function(event) {var notInput = (event.target || event.srcElement).tagName.toLowerCase() !== "input" && (event.target || event.srcElement).tagName.toLowerCase() !== "textarea";if (notInput && (event.target || event.srcElement).innerText) {event.preventDefault();} });
+      {% comment %} // disable_right_click_img {% endcomment %}
+      document.addEventListener("mousedown", function(event) { if ((event.target || event.srcElement).tagName.toLowerCase() === "img") {
+      {% comment %} // Middle-click to open in new tab {% endcomment %}
+          if (event.which == 2) { event.preventDefault(); } 
+      } });
+      document.addEventListener("contextmenu", function(event) { if ((event.target || event.srcElement).tagName.toLowerCase() === "img") { event.preventDefault(); } });
+      {% comment %} // Drag and drop <img> elements {% endcomment %}
+      const disableDragAndDrop = function(){document.body.setAttribute("ondragstart", "return false;");document.body.setAttribute("ondrop", "return false;");};
+      if (document.readyState === "complete") {disableDragAndDrop();} else {document.addEventListener("DOMContentLoaded", disableDragAndDrop);}
+      {% comment %} // disable_right_click_bg_img {% endcomment %}
+      document.addEventListener("contextmenu", function(event) { if ((event.target || event.srcElement).style.backgroundImage) { event.preventDefault(); } });
+    </script>
+    {% endif %}
+    <script>
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',
@@ -152,7 +339,7 @@
 
       window.cartStrings = {
         error: `{{ 'sections.cart.cart_error' | t }}`,
-        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t: quantity: '[quantity]' }}`
+        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t }}`
       }
 
       window.variantStrings = {
@@ -165,7 +352,7 @@
         shareSuccess: `{{ 'general.share.success_message' | t }}`,
       }
     </script>
-
+    
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
