@@ -75,7 +75,7 @@
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
       </dt>
       <dd {% if show_badges == false %}class="price__last"{% endif %}>
-        <span class="price-item price-item--sale">
+        <span class="price-item price-item--sale" style="color:{{settings.colors_sale_price}}">
           {{ money_price }}
         </span>
       </dd>
