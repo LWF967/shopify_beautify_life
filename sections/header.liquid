@@ -219,6 +219,10 @@
       color: {{ settings.header_count_text_color }};
     }            
   {%- endif -%}
+  
+  .my_header_drawer_li_style li {
+    border-bottom: 1px solid;
+  }
 
   @media screen and (max-width: 990px) {
     .my_header_img_align {
@@ -283,7 +287,7 @@
             <div class="menu-drawer__inner-container">
               <div class="menu-drawer__navigation-container">
                 <nav class="menu-drawer__navigation">
-                  <ul class="menu-drawer__menu list-menu" role="list">
+                  <ul class="menu-drawer__menu list-menu my_header_drawer_li_style" role="list">
                     {%- for link in section.settings.menu.links -%}
                       <li>
                         {%- if link.links != blank -%}
