@@ -4,8 +4,14 @@
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
+<style>
+  .my_page_title_center {
+    text-align: center;
+  }
+</style>
+
 <div class="page-width page-width--narrow">
-  <h1 class="main-page-title page-title h0">
+  <h1 class="main-page-title page-title h0 my_page_title_center">
     {{ page.title | escape }}
   </h1>
   <div class="rte">
