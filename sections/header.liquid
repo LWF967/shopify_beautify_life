@@ -345,6 +345,7 @@
                     {%- endfor -%}
                   </ul>
                 </nav>
+                {% comment %}
                 <div class="menu-drawer__utility-links">
                   {%- if shop.customer_accounts_enabled -%}
                     <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account link link--text focus-inset my_header_li_padding my_header_font_size h5 my_header_account">
@@ -425,6 +426,7 @@
                     {%- endif -%}
                   </ul>
                 </div>
+                {% endcomment %}
               </div>
             </div>
           </div>
