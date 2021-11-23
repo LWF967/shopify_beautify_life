@@ -292,91 +292,7 @@
   	
   }
   
-  @media screen and (max-width: 750px) {
-    
-    .felx_box{
-    
-    
-    flex-direction: column;
-    }
-    
-      .contatin {
-   flex-direction: column-reverse;
-  }
-    
-    
-  .daily-product{
-/*   max-height:390px; */
-  transform: skew(0deg) !important;
-  } 
-    
-    
-  .daily-product-box{
-  
-  	transform:skew(0deg) !important;
-   
-  } 
-    .timebox{
-    
-    font-size: inherit;
-    }
-    .contatin{
-    
-    height:auto;
-    }
-    
-    
-    .daily-right{
 
-       width:100%;
-
-
-      }
-    .product__modal-opener:not(.product__modal-opener--image) {
-      
-    display: none;
-      
- 	 }
-    
-    
-     .daily-product{
-  
-      width:{{ 1 | divided_by: highest_ratio | times: 1000 }}%;
-
-      }
-    
-    
-  }
-
-@media screen and (max-width: 990px) {
-  
-   
-    .felx_box{
-    
-    
-    flex-direction: column;
-    }
-
-  
-  	    .contatin {
-   flex-direction: column-reverse;
-  }
-    
-  	.daily-right{
-
-       width:100%;
-
-
-      }
-  	
-  	.product__modal-opener:not(.product__modal-opener--image) {
-      
-    display: none;
-      
- 	 }
-  
-  
-  }
   
   .daily-product-box{
   
@@ -494,6 +410,94 @@
     transform: rotate(360deg);
   }
 }
+  
+  
+  @media screen and (max-width: 750px) {
+    
+    .felx_box{
+    
+    
+    flex-direction: column;
+    }
+    
+      .contatin {
+   flex-direction: column-reverse;
+  }
+    
+    
+  .daily-product{
+/*   max-height:390px; */
+  transform: skew(0deg) !important;
+  } 
+    
+    
+  .daily-product-box{
+  
+  	transform:skew(0deg) !important;
+   
+  } 
+    .timebox{
+    
+    font-size: inherit;
+    }
+    .contatin{
+    
+    height:auto;
+    }
+    
+    
+    .daily-right{
+
+       width:100%;
+
+
+      }
+    .product__modal-opener:not(.product__modal-opener--image) {
+      
+    display: none;
+      
+ 	 }
+    
+    
+     .daily-product{
+  
+      width:{{ 1 | divided_by: highest_ratio | times: 100 }}%;
+
+      }
+    
+    
+  }
+
+@media screen and (max-width: 990px) {
+  
+   
+    .felx_box{
+    
+    
+    flex-direction: column;
+    }
+
+  
+  	    .contatin {
+   flex-direction: column-reverse;
+  }
+    
+  	.daily-right{
+
+       width:100%;
+
+
+      }
+  	
+  	.product__modal-opener:not(.product__modal-opener--image) {
+      
+    display: none;
+      
+ 	 }
+  
+  
+  }  
+  
   
 </style>
 
