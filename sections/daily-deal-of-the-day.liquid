@@ -37,9 +37,9 @@
       <p>Sweety Sweety Sweety Sweety Sweety</p>
       <p>{{product.selected_or_first_available_variant.price  | money }}</p>
       
-      <p>{{ product.compare_at_price_varies }}</p>
+     {% render 'price', product: product, price_class: '' %}
       
-      <p>{{ product.compare_at_price_max }}</p>
+      
       <a class="mr_4"><button class="button ">shop now</button></a>
       <a class="t2"><button class="button white-button">Detail</button></a>
 		
