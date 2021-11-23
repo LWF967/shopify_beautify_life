@@ -1,6 +1,15 @@
 
 {%- assign  setting=section.settings-%}
 
+ {%- liquid
+          assign highest_ratio = 0
+      	  assign product = setting.product 
+            if product.images[0].aspect_ratio > highest_ratio
+              assign highest_ratio = product.images[0].aspect_ratio
+            endif          
+          
+        -%}
+
 <div class="contatin" style="background-color:{{setting.background_color}}">
   
   <div class="left ">
@@ -43,14 +52,7 @@
           
            data-src="{{setting.log_image}}"> -->
       
-      {%- liquid
-          assign highest_ratio = 0
-      	  assign product = setting.product 
-            if product.images[0].aspect_ratio > highest_ratio
-              assign highest_ratio = product.images[0].aspect_ratio
-            endif          
-          
-        -%}
+     
       
       
       
