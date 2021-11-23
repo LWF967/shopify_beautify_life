@@ -707,19 +707,18 @@
       {% comment %}<a href=" routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset my_icon_color" id="cart-icon-bubble">{% endcomment %}
       <a href="{{ routes.cart_url }}" class="header__icon--cart my_header_icon link--text focus-inset my_icon_color my_carticon_margin" id="cart-icon-bubble">
         {% comment %}
-<!--         %- liquid
-          if cart == empty
-            render 'icon-cart-empty'
-          else
-            render 'icon-cart'
-          endif
-        -%} -->
+          {%- liquid
+            if cart == empty
+              render 'icon-cart-empty'
+            else
+              render 'icon-cart'
+            endif
+          -%}
+          <span class="my_cart">&#xe66e;</span>
+          <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {% endcomment %}
-		<span class="my_cart">&#xe66e;</span>
-        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="my_cart_count_bubble">
-            
             {% comment %}
             {%- if cart.item_count < 100 -%}
             <span aria-hidden="true" class="my_header_count"></span>
