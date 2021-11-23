@@ -116,10 +116,6 @@
     transition: opacity .3s;
   }
   
-  .my_a_padding:last-child {
-    padding-left: 9px;
-  }
-  
   .my_a_padding::before {
     position: absolute;
     display: inline-block;
@@ -135,7 +131,6 @@
     transform: translateY(5px);
     pointer-events: none;
     transition: all .3s;
-    z-index: 1001;
   }
   
   .my_a_padding:hover .ts_style svg { 
@@ -170,6 +165,10 @@
     opacity: 1;
     visibility: visible;
     transform: translateY(-5px);
+  }
+  
+  .my_padding a:last-child {
+    padding-left: 9px;
   }
 </style>
 
