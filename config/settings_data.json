@@ -134,7 +134,7 @@
           "promo_bar_bg": "#e21f4a",
           "promo_bar_bg_op": 100,
           "promo_bar_show_close": true,
-          "promo_bar_show_icon": true,
+          "promo_bar_show_icon": false,
           "promo_bar_txt_btn": "close",
           "promo_bar_cl_btn": "#ffffff",
           "promo_bar_date": 60
@@ -278,7 +278,7 @@
           "46b8ba71-433b-4b1d-af31-675da9061dac"
         ],
         "settings": {
-          "copyrights_layouts": "Two columns",
+          "copyrights_layouts": "centered",
           "background_color": "#ffffff",
           "text_color": "#000000",
           "link_color": "#0031ff",

@@ -280,7 +280,7 @@
         "products_to_show": 4,
         "grid": 4,
         "show_view_all": true,
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "use_eq_height": true,
         "image_ratio1": "ratio_cus2",
         "image_ratio": "adapt",
@@ -448,29 +448,27 @@
             "title": "Add a title or tagline",
             "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
             "button_label": "Button",
-            "button_link": "shopify:\/\/collections\/frontpage"
+            "button_link": ""
           }
         },
         "1635996418e080b5d8-1": {
           "type": "column",
           "settings": {
             "show_image": true,
-            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
             "title": "Add a title or tagline",
             "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
             "button_label": "Button",
-            "button_link": "shopify:\/\/collections\/frontpage"
+            "button_link": ""
           }
         },
         "1635996418e080b5d8-2": {
           "type": "column",
           "settings": {
             "show_image": true,
-            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
             "title": "Add a title or tagline",
             "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
             "button_label": "Button",
-            "button_link": "shopify:\/\/collections\/frontpage"
+            "button_link": ""
           }
         }
       },
