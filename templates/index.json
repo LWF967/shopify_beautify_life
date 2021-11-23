@@ -375,65 +375,6 @@
         "show_page_Dot": true
       }
     },
-    "1636695921ac455758": {
-      "type": "banner-Beautify",
-      "disabled": true,
-      "blocks": {
-        "1636695921ac455758-0": {
-          "type": "img_top",
-          "settings": {
-            "image1": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
-            "image2": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "image3": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
-            "header_top1": "Head1",
-            "header_top2": "Head2",
-            "header_top3": "Head3",
-            "url1": "",
-            "url2": "",
-            "url3": "",
-            "open_link": "_blank"
-          }
-        },
-        "1636695921ac455758-1": {
-          "type": "img_top",
-          "settings": {
-            "header_top1": "Head1",
-            "header_top2": "Head2",
-            "header_top3": "Head3",
-            "url1": "",
-            "url2": "",
-            "url3": "",
-            "open_link": "_blank"
-          }
-        },
-        "1636695921ac455758-2": {
-          "type": "img_top",
-          "settings": {
-            "header_top1": "Head1",
-            "header_top2": "Head2",
-            "header_top3": "Head3",
-            "url1": "",
-            "url2": "",
-            "url3": "",
-            "open_link": "_blank"
-          }
-        }
-      },
-      "block_order": [
-        "1636695921ac455758-0",
-        "1636695921ac455758-1",
-        "1636695921ac455758-2"
-      ],
-      "settings": {
-        "title": "BANNER",
-        "sub_title": "Popular this week",
-        "font_top": 30,
-        "color_top": "#888888",
-        "grid": 3,
-        "show_view_all": false,
-        "show_page_Dot": true
-      }
-    },
     "1635497923083b4abb": {
       "type": "contact-form",
       "settings": {
@@ -510,7 +451,6 @@
     "163454604067313d0f",
     "1635832448db75c5e7",
     "163608389212513e57",
-    "1636695921ac455758",
     "1635497923083b4abb",
     "1635996418e080b5d8",
     "1636093631994b741b"
