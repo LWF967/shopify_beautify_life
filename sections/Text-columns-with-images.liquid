@@ -89,6 +89,10 @@
     .my_text_ul_li_margin li {
       margin-bottom: 0;
     }
+    
+    .my_text_content_margin_top {
+      margin-top: 20px;
+    }
   }
   
   @media screen and (max-width: 990px) {
@@ -156,7 +160,7 @@
                     <h3 class="add_title my_center">{{ block.settings.title | escape }}</h3>
                   {%- endif -%}
                   {%- if block.settings.text != blank -%}
-                    <div class="rte my_center">{{ block.settings.text }}</div>
+                    <div class="rte my_center my_text_content_margin_top">{{ block.settings.text }}</div>
                   {%- endif -%}
                   {% if block.settings.button_label == blank or block.settings.button_link == blank %}
                     <div class="my_div">
