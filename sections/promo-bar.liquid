@@ -128,9 +128,11 @@
   let close = document.getElementsByClassName('show_close')[0];
   let my_center = document.getElementsByClassName('my_center')[0];
   let hide_banner = document.getElementById('hide_banner');  
+  let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
   let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
   close.onclick = function () {
     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+    console.log(hide_banner_height);
   }
   
   if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
