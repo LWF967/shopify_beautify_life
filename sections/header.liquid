@@ -222,7 +222,6 @@
   
   .my_header_drawer_li_style li {
     border-bottom: 1px solid rgba(0,0,0,.1);
-    padding: 5px 0;
   }
 
   .my_header_drawer_li_style li:first-child {
@@ -297,7 +296,7 @@
                       <li>
                         {%- if link.links != blank -%}
                           <details>
-                            <summary class="menu-drawer__menu-item list-menu__item link link--text focus-inset my_header_li_padding {% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
+                            <summary class="menu-drawer__menu-item list-menu__item link link--text focus-inset {% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
                               {{ link.title | escape }}
                               {% render 'icon-arrow' %}
                               {% render 'icon-caret' %}
