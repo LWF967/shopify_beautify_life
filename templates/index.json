@@ -324,6 +324,7 @@
         "156f1a45-4a68-4f2f-9ae1-8593da6509d7": {
           "type": "banner_third",
           "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
             "header_top": "Head",
             "url": "",
             "color": "#ffffff",
@@ -335,6 +336,7 @@
         "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a": {
           "type": "banner_third",
           "settings": {
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
             "header_top": "Head",
             "url": "",
             "color": "#ffffff",
@@ -346,6 +348,7 @@
         "9cffad93-dfc5-429d-883f-55d063daab64": {
           "type": "banner_third",
           "settings": {
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
             "header_top": "Head",
             "url": "",
             "color": "#ffffff",
