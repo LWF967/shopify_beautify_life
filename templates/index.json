@@ -370,7 +370,7 @@
         "sub_title": "Popular this week",
         "font_top": 30,
         "color_top": "#888888",
-        "grid": 1,
+        "grid": 3,
         "show_view_all": false,
         "show_page_Dot": true
       }
