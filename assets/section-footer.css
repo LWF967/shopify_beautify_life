@@ -20,7 +20,8 @@
 
   .footer-block.grid__item {
     padding: 0;
-    margin: 4rem 0;
+/*     margin: 4rem 0; */
+    margin-bottom: 20px;
     width: 100%;
   }
 
@@ -404,7 +405,8 @@ noscript .localization-selector.link {
 }
 
 .footer-block__details-content {
-  margin-bottom: 4rem;
+/*   margin-bottom: 4rem; */
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 750px) {
