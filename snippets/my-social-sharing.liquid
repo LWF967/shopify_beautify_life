@@ -178,79 +178,35 @@
 
 <div class="nt-social border_{{border_bl}} black_{{black_true}} my_padding">
   {%- unless follow_social -%}  
-<!--     %- if settings.share_facebook -% -->
-   {% if settings.share_on_facebook %}
-     <a data-no-instant rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u={{ permalinkURL }}" target="{{target}}" class="facebook cb {{class_tooltip}} my_a_padding">
-<!--         <span class="tt_txt"> 'general.nt_tooltip.share_fb' | t }}</span> -->
-<!--         <i class="facl facl-facebook"></i> -->
-         <span class="bubble">{{ 'general.nt_tooltip.share_fb' | t }}</span>
-         <span class="ts_style">
-           {%- render 'icon-facebook' -%} 
-         </span>
-     </a>
+  {% if settings.share_on_facebook %}
+  <a data-no-instant rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u={{ permalinkURL }}" target="{{target}}" class="facebook cb {{class_tooltip}} my_a_padding">
+    <span class="bubble">{{ 'general.nt_tooltip.share_fb' | t }}</span>
+    <span class="ts_style">
+      {%- render 'icon-facebook' -%} 
+    </span>
+  </a>
   {% endif %}
-<!--     %- endif -%} -->
-<!--     %- if settings.share_twitter -%} -->
   {% if settings.tweet_on_twitter %}
-     <a data-no-instant rel="noopener noreferrer nofollow" href="http://twitter.com/share?text={{ permaTitle }}&amp;url={{ permalinkURL }}" target="{{target}}" class="twitter cb {{class_tooltip}} my_a_padding">
-<!--         <span class="tt_txt"> 'general.nt_tooltip.share_tw' | t }}</span> -->
-<!--         <i class="facl facl-twitter"></i> -->
-         <span class="bubble">{{ 'general.nt_tooltip.share_tw' | t }}</span>
-         <span class="ts_style">
-           {%- render 'icon-twitter' -%}
-<!--            <span class="bubble"> 'general.nt_tooltip.share_tw' | t }}</span> -->
-         </span>
-     </a>
+  <a data-no-instant rel="noopener noreferrer nofollow" href="http://twitter.com/share?text={{ permaTitle }}&amp;url={{ permalinkURL }}" target="{{target}}" class="twitter cb {{class_tooltip}} my_a_padding">
+    <span class="bubble">{{ 'general.nt_tooltip.share_tw' | t }}</span>
+    <span class="ts_style">
+      {%- render 'icon-twitter' -%}
+    </span>
+  </a>
   {% endif %}
-<!--      %- endif -%} -->
-<!--      %- if settings.share_email -%} -->
-<!--      <a data-no-instant rel="noopener noreferrer nofollow" href="mailto:?subject=Check this  permalinkURL }}" target="target}}" class="email cb class_tooltip}}"> -->
-<!--         <span class="tt_txt"> 'general.nt_tooltip.share_em' | t }}</span> -->
-<!--         <i class="facl facl-mail-alt"></i> -->
-<!--         <span class="ts_style">%- render 'icon-instagram' -%}</span>  -->
-<!--      </a> -->
-<!--      %- endif -%} -->
-<!--      %- if permaImage != blank -%} -->
-<!--         %- if settings.share_pinterest -%} -->
-    {% if settings.pin_on_pinterest %}
-        <a data-no-instant rel="noopener noreferrer nofollow" href="http://pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media=http:{{permaImage}}&amp;description={{ permaTitle }}" target="{{target}}" class="pinterest cb {{class_tooltip}} my_a_padding">
-<!--           <span class="tt_txt"> 'general.nt_tooltip.share_pr' | t }}</span> -->
-<!--           <i class="facl facl-pinterest"></i> -->
-            <span class="bubble">{{ 'general.nt_tooltip.share_pr' | t }}</span>
-            <span class="ts_style">
-              {%- render 'icon-pinterest' -%}
-            </span>
-        </a>
-    {% endif %}
-<!--         %- endif -%}         -->
-<!--         %- if settings.share_tumblr -%} -->
-<!--         <a data-no-instant rel="noopener noreferrer nofollow" data-content="http:permaImage}}" href="//tumblr.com/widgets/share/tool?canonicalUrl= permalinkURL }}" target="target}}" class="tumblr cb class_tooltip}}"> -->
-<!--           <span class="tt_txt"> 'general.nt_tooltip.share_tu' | t }}</span> -->
-<!--           <i class="facl facl-tumblr"></i> -->
-<!--            <span class="ts_style">%- render 'icon-tumblr' -%}</span> -->
-<!--         </a> -->
-<!--         %- endif -%} -->
-<!--       %- endif -%} -->
-<!--      %- if settings.share_telegram -% -->
-<!--       <a data-no-instant rel="nofollow" target="target}}" class="telegram cb class_tooltip}}" href="https://telegram.me/share/url?url= permalinkURL }}">  -->
-<!--          <span class="tt_txt"> 'general.nt_tooltip.share_tl' | t }}</span> -->
-<!--          <i class="facl facl-telegram"></i> -->
-<!--          %- render 'icon-twitter' -%} -->
-<!--       </a> -->
-<!--       %- endif -% -->
-<!--       %- if settings.share_whatsapp -% -->
-<!--       <a data-no-instant rel="nofollow" target="target}}" class="whatsapp cb class_tooltip}}" href="https://wa.me/?text= permaTitle }}&#x20; permalinkURL }}">  -->
-<!--          <span class="tt_txt"> 'general.nt_tooltip.share_wa' | t }}</span> -->
-<!--          <i class="facl facl-whatsapp"></i> -->
-<!--          %- render 'icon-twitter' -%} -->
-<!--       </a> -->
-<!--       %- endif -% -->
+  {% if settings.pin_on_pinterest %}
+  <a data-no-instant rel="noopener noreferrer nofollow" href="http://pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media=http:{{permaImage}}&amp;description={{ permaTitle }}" target="{{target}}" class="pinterest cb {{class_tooltip}} my_a_padding">
+    <span class="bubble">{{ 'general.nt_tooltip.share_pr' | t }}</span>
+    <span class="ts_style">
+      {%- render 'icon-pinterest' -%}
+    </span>
+  </a>
+  {% endif %}
   {%-else-%}
       {%- if social_icons -%}
         {%- for social_link in socials %}
         {% if settings[social_link] != blank -%}
           <a data-no-instant rel="noopener noreferrer nofollow" href="{{ settings[social_link] | escape }}" target="{{target}}" class="{{socials_icon[forloop.index0] | remove:'-play'}} cb {{class_tooltip}} my_a_padding">
-<!--             <span class="tt_txt">socials_txt[forloop.index0] | t }}</span> -->
             {% if socials_icon[forloop.index0] == "twitter" %}
               {% if settings.social_twitter_link != blank %}
                 <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
