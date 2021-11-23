@@ -134,7 +134,7 @@
           "promo_bar_bg": "#e21f4a",
           "promo_bar_bg_op": 100,
           "promo_bar_show_close": true,
-          "promo_bar_show_icon": false,
+          "promo_bar_show_icon": true,
           "promo_bar_txt_btn": "close",
           "promo_bar_cl_btn": "#ffffff",
           "promo_bar_date": 60
