@@ -53,7 +53,7 @@
       
       
       
-   		 <div class="daily-product" style="width:{{ 1 | divided_by: highest_ratio | times: 88 }}%">
+   		 <div class="daily-product" style="">
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
             <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
@@ -337,6 +337,15 @@
     display: none;
       
  	 }
+    
+    
+     .daily-product{
+  
+      width:{{ 1 | divided_by: highest_ratio | times: 100 }}%;
+
+      }
+    
+    
   }
 
 @media screen and (max-width: 990px) {
@@ -387,6 +396,11 @@
   transform: skew(37deg);
   }
   
+  .daily-product{
+  
+  width:{{ 1 | divided_by: highest_ratio | times: 88 }}%;
+  
+  }
   
   .left,.right{
   flex:1;
