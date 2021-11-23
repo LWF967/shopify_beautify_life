@@ -99,9 +99,10 @@
 
 
 
-
-
 <style>
+  
+  
+  
   
   
   
@@ -289,11 +290,41 @@
     z-index:2;    
 
   }
+  
+  
+  
+  
+
+  
+  
+  {% if section.settings.show_button_visible == 'always' %} 
+
+  
   .icon-changebtn {
   
   display:block;
   
   }
+  {% else %}
+  
+  .icon-changebtn {
+  
+  display:none;
+  
+  }
+  
+  .feature-artworks-{{section.id}}:hover  .icon-changebtn {
+  display:block;
+  
+  }
+  
+  {% endif %}
+  
+  
+  
+  
+  
+  
   
   .icon-changebtn p{
   	margin:0;
@@ -410,7 +441,9 @@
     .productitem--actions{
       display:none;
     }
-
+    .icon-changebtn{
+    	display:none;
+    }
   }
   @media screen and (min-width:541px) and (max-width:768px){
    
