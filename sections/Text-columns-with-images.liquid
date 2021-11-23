@@ -13,7 +13,7 @@
 {% else %}
   <h2 class="Text_columns_with_images_title">{{ section.settings.Text_columns_with_images_heading }}</h2>
 {% endif %}
-<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}" style="margin-top: 0;">
+<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %} my_text_columns_margin">
   <div class="page-width">
     <slider-component class="slider-mobile-gutter">
       <ul class="multicolumn-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
@@ -157,10 +157,6 @@
     justify-content: center;
   }
   
-  .my_text_columns_margin {
-    margin-top: 0;
-  }
-  
   @media screen and (max-width: 750px) {
     .Text_columns_with_images_title {
       margin: 0 0;
@@ -169,7 +165,7 @@
       font-size: 24px;
     }
     .my_text_columns_margin {
-      margin-top: 0;
+      margin-top: 0 !important;
     }
   }
   
@@ -181,7 +177,7 @@
       font-size: 24px;
     }
     .my_text_columns_margin {
-      margin-top: 0;
+      margin-top: 0 !important;
     }
   }
   
