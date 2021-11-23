@@ -8,6 +8,92 @@
 <script src="{{'swiper-bundle.min.js'| asset_url }} "></script>
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
+<style>
+  .Text_columns_with_images_title {
+    margin: 0 0;
+  	text-align: center;
+    font-weight: 700;
+  }
+  
+  .add_title {
+  	padding: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .my_image {
+  	width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  
+  .my_image img {
+  	padding: 30px; 
+    height: 30rem;
+  }
+  
+  .my_button {
+    display: inline-block;
+    width: 10rem;
+    height: 30px !important;
+    line-height: 30px !important;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid #000;
+  	color: #000;
+    background: #fff;
+    text-decoration: none;
+  }
+  
+  .hide_my_button {
+  	display: none;
+  }
+  
+  .my_left {
+  	text-align: left;
+  }
+  
+  .my_center {
+  	text-align: center;
+  }
+  
+  .my_div {
+  	width: 100%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .Text_columns_with_images_title {
+      margin: 0 0;
+      text-align: center;
+      font-weight: 700;
+      font-size: 24px;
+    }
+    
+    .my_text_columns_margin {
+      margin-top: 0 !important;
+    }
+    
+    .my_center {
+  	  text-align: center;
+      padding: 0 0;
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    .Text_columns_with_images_title {
+      margin: 0 0;
+      text-align: center;
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+  
+</style>
+
 {% if section.settings.Text_columns_with_images_heading == blank %}
   <h2 class="Text_columns_with_images_title">Text columns with images</h2>
 {% else %}
@@ -99,86 +185,6 @@
     </slider-component>
   </div>
 </div>
-
-<style>
-  .Text_columns_with_images_title {
-    margin: 0 0;
-  	text-align: center;
-    font-weight: 700;
-  }
-  
-  .add_title {
-  	padding: 20px 0;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .my_image {
-  	width: 100%; 
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-  }
-  
-  .my_image img {
-  	padding: 30px; 
-    height: 30rem;
-  }
-  
-  .my_button {
-    display: inline-block;
-    width: 10rem;
-    height: 30px !important;
-    line-height: 30px !important;
-    margin-top: 20px;
-    text-align: center;
-    border: 1px solid #000;
-  	color: #000;
-    background: #fff;
-    text-decoration: none;
-  }
-  
-  .hide_my_button {
-  	display: none;
-  }
-  
-  .my_left {
-  	text-align: left;
-  }
-  
-  .my_center {
-  	text-align: center;
-  }
-  
-  .my_div {
-  	width: 100%; 
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-  }
-  
-  @media screen and (max-width: 750px) {
-    .Text_columns_with_images_title {
-      margin: 0 0;
-      text-align: center;
-      font-weight: 700;
-      font-size: 24px;
-    }
-    .my_text_columns_margin {
-      margin-top: 0 !important;
-    }
-  }
-  
-  @media screen and (max-width: 990px) {
-    .Text_columns_with_images_title {
-      margin: 0 0;
-      text-align: center;
-      font-weight: 700;
-      font-size: 24px;
-    }
-  }
-  
-</style>
 
 {% schema %}
 {
