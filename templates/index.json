@@ -51,10 +51,13 @@
         "auto_play": false,
         "auto_time": 3,
         "show_button": true,
-        "show_button_visible": "always",
+        "show_button_visible": "only_hover",
         "show_button_style": "style3",
         "show_button_color": "transparent",
         "show_button_hover_color": "#fca2ce",
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
         "feature_title": "title name",
         "link-name": "View all",
         "button_link": ""
@@ -115,6 +118,9 @@
         "show_button_style": "style1",
         "show_button_color": "white",
         "show_button_hover_color": "#222222",
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
         "feature_title": "title name",
         "link-name": "View all",
         "button_link": ""
@@ -165,7 +171,8 @@
         "sub_title": "New supply this week",
         "grid": 4,
         "show_view_all": true,
-        "show_page_Dot": true
+        "show_page_Dot": true,
+        "page_dot_style": "style_1"
       }
     },
     "1635836350c3b72b9b": {
@@ -246,7 +253,8 @@
         "sub_title": "New supply this week",
         "grid": 5,
         "show_view_all": false,
-        "show_page_Dot": false
+        "show_page_Dot": false,
+        "page_dot_style": "style_1"
       }
     },
     "163454604067313d0f": {
