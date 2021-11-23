@@ -714,11 +714,12 @@
               render 'icon-cart'
             endif
           -%}
-          <span class="my_cart">&#xe66e;</span>
-          <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {% endcomment %}
+		<span class="my_cart">&#xe66e;</span>
+        <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="my_cart_count_bubble">
+            
             {% comment %}
             {%- if cart.item_count < 100 -%}
             <span aria-hidden="true" class="my_header_count"></span>
