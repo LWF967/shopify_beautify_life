@@ -131,11 +131,11 @@
   let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
   let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
   close.onclick = function () {
-    hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-    console.log(hide_banner_height);
     if(hide_banner_height > hide_banner.dataset.mheight) {
       hide_banner.dataset.mheight = hide_banner_height;
     }
+    console.log(hide_banner_height);
+    hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
   }
   
   if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
