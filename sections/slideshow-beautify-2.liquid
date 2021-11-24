@@ -31,7 +31,7 @@
 
         {%- if se_height == 'adapt_f' -%}
 
-           {%- assign block = se_blocks | where: "type", 'img' | first -%}
+           {%- assign block = se_blocks | where: "type", 'slideshow_img2' | first -%}
            {%- assign ratio = block.settings.image.aspect_ratio |default:1.7777777777777777 -%}
            {%- assign ratio_mb = block.settings.image_mb.aspect_ratio |default:ratio -%}
            .nt_se_{{sid}} .img_slider_block{padding-top:{{ 1 | divided_by: ratio_mb | times: 100 }}%}@media (min-width: 768px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ 1 | divided_by: ratio | times: 100 }}%} }
@@ -48,7 +48,7 @@
 
         {%- for block in se_blocks -%}{%- assign bid = block.id -%}{%- assign btype = block.type -%}
 
-            {%- if btype == 'img' -%}{%- assign image = block.settings.image -%}
+            {%- if btype == 'slideshow_img2' -%}{%- assign image = block.settings.image -%}
                #nt_{{bid}} .nt_img_txt>a:after{ background-color: {{block.settings.cl_overlay}};opacity: {{block.settings.cl_opacity | divided_by: 100.00}} }
                #nt_{{bid}} .pa_txts {
                  {%- assign cap_h_pos = block.settings.cap_h_pos_mb -%}
