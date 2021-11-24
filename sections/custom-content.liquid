@@ -132,6 +132,7 @@
                         {%- render 'icon-play' -%}
                       </span>
                     </button>
+                    
                     <template>
                       {% if block.settings.video_url == blank %}
                         <iframe src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
@@ -142,6 +143,24 @@
                         <iframe src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
                       {%- endif -%}
                     </template>
+                    
+                    
+                    <template>
+                      {%- case media.media_type -%}
+                      {%- when 'external_video' -%}
+                        {%- assign video_class = 'js-' | append: media.host -%}
+                        {%- if media.host == 'youtube' -%}
+                          {{ media | external_video_url: autoplay: true, loop: loop, playlist: media.external_id | external_video_tag: class: video_class, loading: "lazy" }}
+                        {%- else -%}
+                          {{ media | external_video_url: autoplay: true, loop: loop | external_video_tag: class: video_class, loading: "lazy" }}
+                        {%- endif -%}
+                      {%- when 'video' -%}
+                        {{ media | media_tag: image_size: "2048x", autoplay: true, loop: enable_video_looping, controls: true, preload: "none", autoplay: true }}
+                      {%- when 'model' -%}
+                        {{ media | media_tag: image_size: "2048x", toggleable: true }}
+                      {%- endcase -%}
+                    </template>
+                    
                   </deferred-media>
                 </div> 
           
