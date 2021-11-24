@@ -54,7 +54,7 @@
                <div style="max-height:400px"> {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}  </div>
           {%- endif -%} 
                
-             <div  class="slideshow_text_box  {{ section.blocks.settings.image_alignment }}"> 
+             <div  class="slideshow_text_box  {{ block.settings.image_alignment }}"> 
                <h1 style="padding:0;margin:0;color:white;">{{block.settings.slider_heading_text}}</h1>
                <p style="color:white;">{{block.settings.slider_sub_text}}</p>
             <div class="button {% if block.settings.slider_button_text != blank and block.settings.slider_button_link != blank %} banner__buttons--multiple{% endif %}" 
