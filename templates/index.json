@@ -561,7 +561,7 @@
           "type": "product",
           "settings": {
             "product": "",
-            "width": "100%",
+            "width": "50%",
             "alignment": "center"
           }
         }
