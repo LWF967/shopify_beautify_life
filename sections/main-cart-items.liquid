@@ -155,7 +155,7 @@
     <div class="cart__items my_cart_item_padding" id="main-cart-items" {% if section.settings.cart_updates %} data-id="{{ section.id }}" {% endif %}>
       <div class="js-contents">
         {%- if cart != empty -%}
-          <table class="cart-items">
+          <table class="cart-items" cellspacing="0">
             <thead>
               <tr>
                 <th class="caption-with-letter-spacing" colspan="2" scope="col">{{ 'sections.cart.headings.product' | t }}</th>
