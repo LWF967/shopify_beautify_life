@@ -80,7 +80,11 @@
                 {% endif %}
               </div>
             {% when 'video' %}
-         
+         	
+          
+          {{ 'video-section.css' | asset_url | stylesheet_tag }}
+		  {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}	
+          
 <!--                 <div class="video-section ">
                 {% if block.settings.video_url == blank %}
                   <iframe src="//www.youtube.com/embed/_9VUPq3SxOc?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
