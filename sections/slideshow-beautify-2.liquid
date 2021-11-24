@@ -35,8 +35,8 @@
              	{%- assign ratio = block.settings.image.aspect_ratio |default:1.7777777777777777 -%}
 				{%- assign img_h = block.settings.image.height | default:300 -%}				
 
-				.feature-artworks{ max-height:100%; }
-     			.slideshow_content{ max-height: 100%; }
+				.feature-artworks{ max-height:{{ 1 | divided_by: ratio | times: 77 }}%}
+     			.slideshow_content{ max-height: {{ 1 | divided_by: ratio | times: 77 }}%}
 
 				@media screen and (max-width: 750px) {  
 
