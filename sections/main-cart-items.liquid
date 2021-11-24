@@ -91,6 +91,15 @@
     justify-content: end;
   }
     
+  .my_cart_table {
+    border-collapse: collapse;
+  }
+    
+  .my_cart_table tr {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;    
+  }
+    
   @media screen and (min-width: 0px) and (max-width: 750px) {
     .my_cart_item__quantity {
       justify-content: start;
@@ -155,7 +164,7 @@
     <div class="cart__items my_cart_item_padding" id="main-cart-items" {% if section.settings.cart_updates %} data-id="{{ section.id }}" {% endif %}>
       <div class="js-contents">
         {%- if cart != empty -%}
-          <table class="cart-items">
+          <table class="cart-items my_cart_table">
             <thead>
               <tr>
                 <th class="caption-with-letter-spacing" colspan="2" scope="col">{{ 'sections.cart.headings.product' | t }}</th>
