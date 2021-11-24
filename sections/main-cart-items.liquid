@@ -100,7 +100,6 @@
   }
     
   .my_cart_table tbody tr:last-child {
-    padding-bottom: 30px;
     border-bottom: 1px solid #eee; 
   }
     
@@ -181,7 +180,7 @@
 
             <tbody>
               {%- for item in cart.items -%}
-                <tr class="cart-item my_cart_item_mobile_margin" id="CartItem-{{ item.index | plus: 1 }}">
+                <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
                   <td class="cart-item__media my_cart_media_padding">
                     {% if item.image %}
                       <a href="{{ item.url }}">
