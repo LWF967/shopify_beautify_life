@@ -2,13 +2,14 @@
 {{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
 
 <style>
-  .my_collections_title_margin {
-    margin: 35px 0;
+  .my_collections_title {
+    margin: -15px 0 35px;
+    text-align: center
   }
 </style>
 
 <div class="page-width">
-  <h1 class="title title--primary my_collections_title_margin">{{ section.settings.title | escape }}123</h1>
+  <h1 class="title title--primary my_collections_title">{{ section.settings.title | escape }}123</h1>
 
   {%- liquid
     case section.settings.sort
