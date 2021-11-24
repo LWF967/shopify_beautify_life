@@ -1,4 +1,4 @@
-  <div class="feature-artworks feature-artworks-{{section.id}}">
+  <div class="feature-artworks  feature_box_{{section.id}} feature-artworks-{{section.id}}">
 
  
     <!--    左箭头    -->
@@ -26,7 +26,7 @@
 	
       {%- case block.type -%}
       {%- when 'slideshow_img2' -%} {%- assign image = block.settings.image -%}
- 			 <div class="slideshow_content slideshow_content-{{section.id}}">
+ 			 <div class="slideshow_content slideshow_box_{{section.id}}  slideshow_content-{{section.id}}">
 			   <div class="">{{block.settings.slider_text}}</div>
     	    
         {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
