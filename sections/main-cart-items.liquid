@@ -103,6 +103,10 @@
     border-bottom: 1px solid #eee; 
   }
     
+  .my_cart_mobile_price {
+    display: none;
+  }
+    
   @media screen and (min-width: 0px) and (max-width: 750px) {
     .my_cart_item__quantity {
       justify-content: start;
@@ -120,6 +124,9 @@
     }
     .my_cart_table thead tr {
       margin-bottom: 10px !important;
+    }
+    .my_cart_mobile_price {
+      display: flex;
     }
   }
   @media screen and (max-width: 990px) {
@@ -205,7 +212,7 @@
 
                     <a href="{{ item.url }}" class="my_cart_link_style">{{ item.product.title | escape }}</a>
                     
-                    <span class="price my_cart_price_font_size">{{ item.original_line_price | divided_by: item.quantity | money }}</span>
+                    <span class="price my_cart_price_font_size my_cart_mobile_price">{{ item.original_line_price | divided_by: item.quantity | money }}</span>
 
                     {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != nil -%}
                       <dl>
