@@ -35,8 +35,8 @@
              	{%- assign ratio = block.settings.image.aspect_ratio |default:1.7777777777777777 -%}
 				{%- assign img_h = block.settings.image.height | default:300 -%}				
 
-				.feature-artworks{ max-height: 790px}
-     			.slideshow_content{ max-height: 790px}
+				.feature-artworks{ max-height: 790px;min-height:300px}
+     			.slideshow_content{ max-height: 790px;min-height:300px}
 
 
 				.feature-artworks{ height: {{img_h}}px}
@@ -60,22 +60,22 @@
 		{%- for block in se_blocks -%} {%- assign bid = block.id -%}{%- assign btype = block.type -%}
 		{%- if se_height == 'adapt' -%}
           		{%- assign img_h = block.settings.image.height | default:300 -%}	
-       			.feature-artworks{ max-height: 790px}
-     			.slideshow_content{ max-height: 790px}
+       			.feature-artworks{ max-height: 790px;min-height:300px}
+     			.slideshow_content{ max-height: 790px;min-height:300px}
 
 				.feature_box_{{section.id}}{ height: {{img_h}}px}
      			.slideshow_box_{{section.id}}{ height: {{img_h}}px}
 
 				@media screen and (max-width: 750px) {  
 
-				.feature-artworks{ max-height: 350px }
-     			.slideshow_content{ max-height: 350px } 
+				.feature-artworks{ max-height: 350px;min-height:200px }
+     			.slideshow_content{ max-height: 350px;min-height:200px } 
 
 				}
 				@media screen and (max-width: 990px) {  
 
-				.feature-artworks{ max-height:400px}
-     			.slideshow_content{ max-height: 400px }
+				.feature-artworks{ max-height:400px;min-height:200px }
+     			.slideshow_content{ max-height: 400px;min-height:200px } 
 
 				}
 
