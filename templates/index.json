@@ -7,7 +7,7 @@
           "type": "slideshow_img2",
           "settings": {
             "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
-            "image_alignment": "middle_center",
+            "image_alignment": "top_left",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
