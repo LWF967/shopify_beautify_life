@@ -201,6 +201,8 @@
                     {%- endif -%}
 
                     <a href="{{ item.url }}" class="my_cart_link_style">{{ item.product.title | escape }}</a>
+                    
+                    <span class="price price--end my_cart_price_font_size">{{ item.original_line_price | divided_by: item.quantity | money }}</span>
 
                     {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != nil -%}
                       <dl>
