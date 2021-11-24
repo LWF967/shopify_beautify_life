@@ -3,10 +3,10 @@
     "16340032987fd8fd82": {
       "type": "slideshow-beautify-2",
       "blocks": {
-        "cf520457-a362-42f7-a043-5e28a8ffc74d": {
+        "4e0a0993-6e2f-4ec2-94f4-a6dc94886799": {
           "type": "slideshow_img2",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
             "image_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
@@ -14,10 +14,10 @@
             "slider_button_link": ""
           }
         },
-        "4bc6b92e-0f0c-4c0e-a2b8-1bf25ec247cb": {
+        "cf520457-a362-42f7-a043-5e28a8ffc74d": {
           "type": "slideshow_img2",
           "settings": {
-            "image": "shopify:\/\/shop_images\/logo.png",
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
             "image_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
@@ -49,8 +49,8 @@
         }
       },
       "block_order": [
+        "4e0a0993-6e2f-4ec2-94f4-a6dc94886799",
         "cf520457-a362-42f7-a043-5e28a8ffc74d",
-        "4bc6b92e-0f0c-4c0e-a2b8-1bf25ec247cb",
         "56d064e8-838e-4960-8f92-bec0c45e56d9",
         "d98aad89-0e6d-4788-95a8-22f4eb463027"
       ],
