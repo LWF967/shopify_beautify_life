@@ -6,6 +6,9 @@
 
 {%   assign se_height = section.settings.se_height %}
 
+{%- assign image = section.blocks.settings.image %}
+
+
 <section class="se_height_{{ se_height }}"  style="overflow: hidden;margin:0;padding:0;">
 
 {% render 'slideshow-beautify',section:section,%}
