@@ -635,17 +635,12 @@ margin-left:2rem;
   flex-shrink: 0;
 }
 
-@media screen and (min-width: 750px) {
-
-}
 
 
 
 
 
-
-/*================ Build Responsive Grid Classes ================*/
-@media only screen and (max-width: 749px) {
+@media only screen and (max-width: 750px) {
   
  
   /* Whole */
@@ -787,8 +782,6 @@ margin-left:2rem;
 
 
 
-   
-/*================ Build Responsive Grid Classes ================*/
   
    @media only screen and (min-width: 750px) {
   /** Whole */
@@ -961,8 +954,9 @@ margin-left:2rem;
 
   .medium-up--text-center {
     text-align: center !important; } }
-/*================ Build Grid Push Classes ================*/
-@media only screen and (max-width: 749px) {
+
+
+@media only screen and (max-width: 750px) {
   /* Halves */
   .small--push-one-half {
     left: 50%; }
