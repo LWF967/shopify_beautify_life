@@ -1853,10 +1853,6 @@ input[type='checkbox'] {
 #shopify-section-header {
   z-index: 998;
 }
-/* zx change */
-#shopify-section-header-zx {
-  z-index: 998;
-}
 
 .shopify-section-header-sticky {
   position: sticky;
