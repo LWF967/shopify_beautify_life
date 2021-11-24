@@ -197,118 +197,116 @@
     <a id="my_backtop" style="{% if settings.show_back_to_top == 'Disable' %}display: none;{% endif %}{% if settings.back_to_top_style == 'Style 2' %}border: 2px solid #fff; box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .2);{% endif %} {% if settings.button_style == 'Round' %}border-radius: 4px;{% endif %}"></a>
 
     <script>
-      window.onload = function () {
-        {% comment %}
-        /*lzx change*/
-        // footer sticky
-        {% endcomment %}
-        let promo_bar = document.getElementById('shopify-section-promo-bar');
-        let top_bar = document.getElementById('shopify-section-top-bar');
-        let header_zx = document.getElementById('shopify-section-header');
-        let footer_top = document.getElementById('shopify-section-footer-top');
-        let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-        let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
-        let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
-        let main = document.getElementById('MainContent');
-        let sticky = document.getElementsByClassName('my_footer_sticky');
-
-        if(sticky.length > 0) {      
-          if(document.body.clientWidth < 1024) {
-            main.style.marginBottom = 0 + "px";
-          }
-          else if(document.body.clientWidth >= 1024) {
-            let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight-40+1;
-            main.style.background = '#ffffff';
-            main.style.zIndex = 999;
-            main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
-            my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
-            promo_bar.style.zIndex = 999;
-            top_bar.style.zIndex = 999;
-            header_zx.style.zIndex = 999;
-            footer_bottom.style.position = 'fixed';
-            footer_bottom.style.bottom = 0;
-            footer_bottom.style.width = '100%';
-            console.log(footer_bottom_height);
-          }
-        }
-        else {
+      {% comment %}
+      /*lzx change*/
+      // footer sticky
+      {% endcomment %}
+      let promo_bar = document.getElementById('shopify-section-promo-bar');
+      let top_bar = document.getElementById('shopify-section-top-bar');
+      let header_zx = document.getElementById('shopify-section-header');
+      let footer_top = document.getElementById('shopify-section-footer-top');
+      let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+      let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+      let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
+      let main = document.getElementById('MainContent');
+      let sticky = document.getElementsByClassName('my_footer_sticky');
+      
+      if(sticky.length > 0) {      
+        if(document.body.clientWidth < 1024) {
           main.style.marginBottom = 0 + "px";
         }
+        else if(document.body.clientWidth >= 1024) {
+          let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight-40+1;
+          main.style.background = '#ffffff';
+          main.style.zIndex = 999;
+          main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
+          my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
+          promo_bar.style.zIndex = 999;
+          top_bar.style.zIndex = 999;
+          header_zx.style.zIndex = 999;
+          footer_bottom.style.position = 'fixed';
+          footer_bottom.style.bottom = 0;
+          footer_bottom.style.width = '100%';
+          console.log(footer_bottom_height);
+        }
+      }
+      else {
+        main.style.marginBottom = 0 + "px";
+      }
+      
+      {% comment %} // header fixed layout {% endcomment %}
+      let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
+      let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
+      let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
+      let header = document.getElementsByClassName('header')[0];
+      let content = document.getElementsByClassName('content')[0];
+      let my_header_sticky = document.getElementsByClassName('my_header_sticky');
+      let my_backtop = document.getElementById('my_backtop');
+      
+      {% comment %} // backtop {% endcomment %}
+      function gotoTop() {
+        $("#my_backtop").click(
+          function () {
+            $('html,body').animate({ scrollTop: '0px' }, 'slow');
+          })
+      };
+      gotoTop();
+      {% comment %}
+//       js 原生 缺点会卡帧
+//       onclick="move(0);"
+//       function move(end) {
+//         var timer = null;
+//         timer = setInterval(function () {
+//           var speed = (end - document.documentElement.scrollTop) / 5;        //根据终点和offsetLeft取出运动的速度
+//           speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);       //进位取整，小数位变为整位，
 
-        {% comment %} // header fixed layout {% endcomment %}
-        let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
-        let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
-        let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
-        let header = document.getElementsByClassName('header')[0];
-        let content = document.getElementsByClassName('content')[0];
-        let my_header_sticky = document.getElementsByClassName('my_header_sticky');
-        let my_backtop = document.getElementById('my_backtop');
-
-        {% comment %} // backtop {% endcomment %}
-        function gotoTop() {
-          $("#my_backtop").click(
-            function () {
-              $('html,body').animate({ scrollTop: '0px' }, 'slow');
-            })
-        };
-        gotoTop();
-        {% comment %}
-  //       js 原生 缺点会卡帧
-  //       onclick="move(0);"
-  //       function move(end) {
-  //         var timer = null;
-  //         timer = setInterval(function () {
-  //           var speed = (end - document.documentElement.scrollTop) / 5;        //根据终点和offsetLeft取出运动的速度
-  //           speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);       //进位取整，小数位变为整位，
-
-  //           if (Math.abs(end - document.documentElement.scrollTop) <= speed) { //由于在停止的时候最后会出现小的缝隙，或者说没有完全的到达指定地点，所以要小于它的速度
-  //             clearInterval(timer);                       //当距离小于速度时，让计时器停止
-  //             document.documentElement.scrollTop = end;           //在停止后填充缝隙。
-  //           }
-  //           else {
-  //             document.documentElement.scrollTop = document.documentElement.scrollTop + speed;       //移动DIV
-  //           }
-  //         }, 30)
-  //       }
-        {% endcomment %}
-        window.onscroll = function () {
-
-          {% comment %} //获取距离页面顶部的距离 {% endcomment %}
-          let toTop = document.documentElement.scrollTop || document.body.scrollTop;
-          if(my_header_sticky.length > 0) {
-            if(toTop >= all_header_height) {
-              content.style.position = 'fixed';
-              content.style.width = '100%';
-              header_wrapper.style.height = header_wrapper_height + 'px';
-            } else {
-              content.style.position = 'relative';
-            }
-            if(content.style.position == 'fixed') {
-              content.classList.add('my_header_sticky_settings');
-              header.classList.add('my_header_sticky_settings');
-              content.style.transition = 'transform .3s';
-              content.style.top = -(content.scrollHeight) + 'px';
-  //             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
-              content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
-            } else if(content.style.position == 'relative') {
-              content.classList.remove('my_header_sticky_settings');
-              header.classList.remove('my_header_sticky_settings');
-              content.style.top = 0 + 'px';
-              content.style.transform = 'none';
-              content.style.transition = 'none';
-            }
-          }
-
-          {% comment %} // backtop {% endcomment %}
+//           if (Math.abs(end - document.documentElement.scrollTop) <= speed) { //由于在停止的时候最后会出现小的缝隙，或者说没有完全的到达指定地点，所以要小于它的速度
+//             clearInterval(timer);                       //当距离小于速度时，让计时器停止
+//             document.documentElement.scrollTop = end;           //在停止后填充缝隙。
+//           }
+//           else {
+//             document.documentElement.scrollTop = document.documentElement.scrollTop + speed;       //移动DIV
+//           }
+//         }, 30)
+//       }
+      {% endcomment %}
+      window.onscroll = function () {
+        
+        {% comment %} //获取距离页面顶部的距离 {% endcomment %}
+        let toTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if(my_header_sticky.length > 0) {
           if(toTop >= all_header_height) {
-            my_backtop.style.opacity = 1;
-            my_backtop.style.visibility = 'visible';
-            my_backtop.style.cursor = "pointer";
+            content.style.position = 'fixed';
+            content.style.width = '100%';
+            header_wrapper.style.height = header_wrapper_height + 'px';
           } else {
-            my_backtop.style.opacity = 0;
-            my_backtop.style.visibility = 'hidden';
-            my_backtop.style.cursor = "default";
+            content.style.position = 'relative';
           }
+          if(content.style.position == 'fixed') {
+            content.classList.add('my_header_sticky_settings');
+            header.classList.add('my_header_sticky_settings');
+            content.style.transition = 'transform .3s';
+            content.style.top = -(content.scrollHeight) + 'px';
+//             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
+            content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
+          } else if(content.style.position == 'relative') {
+            content.classList.remove('my_header_sticky_settings');
+            header.classList.remove('my_header_sticky_settings');
+            content.style.top = 0 + 'px';
+            content.style.transform = 'none';
+            content.style.transition = 'none';
+          }
+        }
+        
+        {% comment %} // backtop {% endcomment %}
+        if(toTop >= all_header_height) {
+          my_backtop.style.opacity = 1;
+          my_backtop.style.visibility = 'visible';
+          my_backtop.style.cursor = "pointer";
+        } else {
+          my_backtop.style.opacity = 0;
+          my_backtop.style.visibility = 'hidden';
+          my_backtop.style.cursor = "default";
         }
       }
     </script>
