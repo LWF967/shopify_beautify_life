@@ -128,6 +128,9 @@
     .my_cart_mobile_price {
       display: flex !important;
     }
+    .my_cart_mobile_padding_top {
+      padding-top: 15px !important;
+    }
   }
   @media screen and (max-width: 990px) {
     .my_cart_item__quantity {
@@ -191,7 +194,7 @@
             <tbody>
               {%- for item in cart.items -%}
                 <tr class="cart-item" id="CartItem-{{ item.index | plus: 1 }}">
-                  <td class="cart-item__media my_cart_media_padding">
+                  <td class="cart-item__media my_cart_media_padding my_cart_mobile_padding_top">
                     {% if item.image %}
                       <a href="{{ item.url }}">
                         <img class="cart-item__image my_cart_img_style"
