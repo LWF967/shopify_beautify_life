@@ -13,8 +13,10 @@
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
 <style>
-  .my_collection_filters_margin {
-    margin: 35px 0 0;
+  @media screen and (max-width: 750px) {
+    .my_collection_filters_margin {
+      margin: 35px 0 0;
+    }
   }
 </style>
 
