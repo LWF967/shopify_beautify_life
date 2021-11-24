@@ -2,14 +2,14 @@
 
 {% assign customerId = customer.id %}
 
-
+{% assign sid = section.id %}
 {% assign se_blocks = section.blocks %}
 {%   assign se_height = section.settings.se_height %}
 
 {%- assign image = section.blocks.settings.image %}
 
 
-<section class="se_height_{{ se_height }}"  style="overflow: hidden;margin:0;padding:0;">
+<section class=" nt_se_{{sid}} se_height_{{ se_height }}"  style="overflow: hidden;margin:0;padding:0;">
 
 {% render 'slideshow-beautify',section:section,%}
 
