@@ -95,9 +95,12 @@
     border-collapse: collapse;
   }
     
-  .my_cart_table tbody tr {
+  .my_cart_table tbody tr:first-child {
     border-top: 1px solid #000;
-    border-bottom: 1px solid #000;    
+  }
+    
+  .my_cart_table tbody tr {
+    border-bottom: 1px solid #000; 
   }
     
   @media screen and (min-width: 0px) and (max-width: 750px) {
