@@ -38,29 +38,53 @@
 				.feature-artworks{ max-height: 790px}
      			.slideshow_content{ max-height: 790px}
 
+
+				.feature-artworks{ height: {{img_h}}px}
+     			.slideshow_content{ height: {{img_h}}px}
+		
+
 				@media screen and (max-width: 750px) {  
 
-				.feature-artworks{ max-height:{{ 1 | divided_by: ratio | times: 77 }}% }
-     			.slideshow_content{ max-height: {{ 1 | divided_by: ratio | times: 77 }}% } 
+				.feature-artworks{ height: {{img_h}}px}
+     			.slideshow_content{ height: {{img_h}}px}
 
 				}
 				@media screen and (max-width: 990px) {  
 
-				.feature-artworks{ max-height:{{ 1 | divided_by: ratio | times: 77 }}% }
-     			.slideshow_content{ max-height: {{ 1 | divided_by: ratio | times: 77 }}% }
+				.feature-artworks{ height: {{img_h}}px}
+     			.slideshow_content{ height: {{img_h}}px}
+
+				}
+		{%- endif -%}
+		{%- for block in se_blocks -%} {%- assign bid = block.id -%}{%- assign btype = block.type -%}
+		{%- if se_height == 'adapt' -%}
+          
+       			.feature-artworks{ max-height: 790px}
+     			.slideshow_content{ max-height: 790px}
+
+				.feature-artworks{ height: {{img_h}}px}
+     			.slideshow_content{ height: {{img_h}}px}
+
+				@media screen and (max-width: 750px) {  
+
+				.feature-artworks{ max-height: 350px }
+     			.slideshow_content{ max-height: 350px } 
+
+				}
+				@media screen and (max-width: 990px) {  
+
+				.feature-artworks{ max-height:400px}
+     			.slideshow_content{ max-height: 400px }
 
 				}
 
-		{%- elsif se_height == 'adapt' -%}
-          
-       
               	@media screen and (max-width: 750px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_tb | replace:'px','' | strip }}px} }
                 @media screen and (max-width: 990px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_des | replace:'px','' | strip }}px} }
 
 
 
         {%- endif -%}
-  
+  		{%- endfor -%}
      {%- endstyle -%}
   {%- endif -%}
 
