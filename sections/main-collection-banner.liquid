@@ -7,7 +7,7 @@
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
       </h1>
-      <span>{{- collection.description | escape -}}</span>
+      <span>{{- collection.description -}}</span>
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
       {%- endif -%}
