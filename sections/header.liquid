@@ -277,7 +277,7 @@
 <div class="content my_header_background_color my_header_background_opacity">
   <header data-svg-height="" data-header-height="{{ section.settings.header_height }}"
           class="header header--{{ section.settings.logo_position }} page-width {% if section.settings.menu != blank %} header--has-menu {% endif %} my_header my_header_height {% if section.settings.logo_svg != blank %} my_auto_height {% elsif section.settings.logo != blank %}{% if section.settings.logo_aligment == 'left' and my_img_height_left > my_header_height %} my_header_img_left {% elsif section.settings.logo_aligment == 'centered' and my_img_height_centered > my_header_height %} my_auto_height {% endif %}{% endif %}my_header_background_color my_header_background_opacity"
-          {% if settings.full_width == false %} max-width: 1200px;{% endif %}{% if section.settings.logo_svg != blank %}{% if image_height > my_header_height %}{% if section.settings.logo_aligment == 'left' %} height: {{image_height}}px; {% elsif section.settings.logo_aligment == 'centered' %} height: {{image_height_center}}px;{% endif %}{% else %} height: {{my_header_height}}px; {% endif %}{% endif %}">
+          style="{% if settings.full_width == false %} max-width: 1200px;{% endif %}{% if section.settings.logo_svg != blank %}{% if image_height > my_header_height %}{% if section.settings.logo_aligment == 'left' %} height: {{image_height}}px; {% elsif section.settings.logo_aligment == 'centered' %} height: {{image_height_center}}px;{% endif %}{% else %} height: {{my_header_height}}px; {% endif %}{% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
         <details class="menu-drawer-container">
