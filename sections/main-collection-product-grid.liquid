@@ -17,6 +17,10 @@
     .my_collection_filters_margin {
       margin: 35px 0 0;
     }
+    .my_product_grid_ul li:nth-child(odd) {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
   }
 </style>
 
@@ -494,7 +498,7 @@
           grid grid--2-col negative-margin product-grid
           {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
             {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
-          {% endif %}">
+          {% endif %}my_product_grid_ul">
           {%- for product in collection.products -%}
             <li class="grid__item">
               {% render 'product-card',
