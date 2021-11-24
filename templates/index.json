@@ -564,13 +564,62 @@
             "width": "50%",
             "alignment": "center"
           }
+        },
+        "8ee73a9d-057a-4e5c-a828-f1606dd4e959": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "width": "50%"
+          }
+        },
+        "db6cea1e-1b0d-4a31-b68a-ee4b229aa0f8": {
+          "type": "link_list",
+          "settings": {
+            "menu": "main-menu",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "1959a0a0-d475-4859-867c-834e6fce1148": {
+          "type": "blog",
+          "settings": {
+            "blog": "",
+            "image_size": "medium",
+            "description": "<p>Description of your blog.<\/p>",
+            "show_number_articles": true,
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "0b2b237b-a953-4647-9b9c-8e5171fdafe2": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "width": "50%",
+            "alignment": "center",
+            "cover_image": "large",
+            "show_author": false,
+            "show_date": true
+          }
+        },
+        "ca1dcff2-7b3b-4ad0-b5d0-594ac240396c": {
+          "type": "html",
+          "settings": {
+            "code": "",
+            "width": "50%"
+          }
         }
       },
       "block_order": [
         "1637743066e4c71293-0",
         "1637743066e4c71293-1",
         "84d1665e-ef72-464e-a3bf-6386c91cb71b",
-        "dc741816-4fa7-4c29-92e0-1acfda8d8706"
+        "dc741816-4fa7-4c29-92e0-1acfda8d8706",
+        "8ee73a9d-057a-4e5c-a828-f1606dd4e959",
+        "db6cea1e-1b0d-4a31-b68a-ee4b229aa0f8",
+        "1959a0a0-d475-4859-867c-834e6fce1148",
+        "0b2b237b-a953-4647-9b9c-8e5171fdafe2",
+        "ca1dcff2-7b3b-4ad0-b5d0-594ac240396c"
       ],
       "settings": {
         "title": "Custom content"
