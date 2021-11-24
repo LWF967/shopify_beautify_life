@@ -87,20 +87,29 @@
     .my_subtotal_flex_wrap {
       flex-wrap: wrap;
     }
+    .my_cart_footer_mobile {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .my_cart_footer_content_mobile {
+      flex: 0 0 100%;
+      max-width: 100%;
+      text-align: center;
+    }
   }
 </style>
 
 <div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
   <div>
-    <div class="cart__footer">
+    <div class="cart__footer my_cart_footer_mobile">
     {%- if section.settings.show_cart_note -%}
-      <cart-note class="cart__note field my_subtotal_addnote my_subtotal_addnote_position">
+      <cart-note class="cart__note field my_subtotal_addnote my_subtotal_addnote_position my_cart_footer_content_mobile">
         <label for="Cart-note" class="my_subtotal_font_size my_subtotal_margin_bottom">Add a note to your order main</label>
         <textarea class="my_subtotal_textarea"  placeholder="Input your order">{{ cart.note }}</textarea>
       </cart-note>
     {%- endif -%}
 
-    <div class="cart__blocks my_subtotal_cart_blocks_margin my_subtotal_margin_auto">
+    <div class="cart__blocks my_subtotal_cart_blocks_margin my_subtotal_margin_auto my_cart_footer_content_mobile">
       {% for block in section.blocks %}
         {%- case block.type -%}
           {%- when 'subtotal' -%}
