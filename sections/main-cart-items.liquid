@@ -127,6 +127,10 @@
     .my_cart_mobile_padding_top {
       padding-top: 15px !important;
     }
+    .my_cart_mobile_total_padding {
+      padding-top: 15px;
+      align-items: start;
+    }
   }
   @media screen and (max-width: 990px) {
     .my_cart_item__quantity {
@@ -265,48 +269,8 @@
                       </svg>
                     </p>
                   </td>
-                  {% comment %}
-                  <td class="cart-item__totals right small-hide">
-                    <div class="cart-item__price-wrapper">
-                      {%- if item.original_line_price != item.final_line_price -%}
-                        <dl class="cart-item__discounted-prices">
-                          <dt class="visually-hidden">
-                            {{ 'products.product.price.regular_price' | t }}
-                          </dt>
-                          <dd>
-                            <s class="cart-item__old-price price price--end my_cart_price_font_size">
-                              {{ item.original_line_price | money }}
-                            </s>
-                          </dd>
-                          <dt class="visually-hidden">
-                            {{ 'products.product.price.sale_price' | t }}
-                          </dt>
-                          <dd class="price price--end my_cart_price_font_size">
-                            {{ item.final_line_price | money }}
-                          </dd>
-                        </dl>
-                      {%- else -%}
-                        <span class="price price--end my_cart_price_font_size">
-                          {{ item.original_line_price | divided_by: item.quantity | money }}
-                        </span>
-                      {%- endif -%}
-
-                      {%- if item.variant.available and item.unit_price_measurement -%}
-                        <div class="unit-price caption">
-                          <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
-                          {{ item.variant.unit_price | money }}
-                          <span aria-hidden="true">/</span>
-                          <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
-                          {%- if item.variant.unit_price_measurement.reference_value != 1 -%}
-                            {{- item.variant.unit_price_measurement.reference_value -}}
-                          {%- endif -%}
-                          {{ item.variant.unit_price_measurement.reference_unit }}
-                        </div>
-                      {%- endif -%}
-                    </div>
-                  </td>
-				  {% endcomment %}
-                  <td class="cart-item__totals right medium-hide large-up-hide my_cart_align_center">
+                  
+                  <td class="cart-item__totals right medium-hide large-up-hide my_cart_align_center my_cart_mobile_total_padding">
                     <div class="loading-overlay hidden">
                       <div class="loading-overlay__spinner">
                         <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
