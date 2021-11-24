@@ -31,23 +31,33 @@
 
         {%- if se_height == 'adapt_f' -%}
 
-           {%- assign block = se_blocks | where: "type", 'slideshow_img2' | first -%}
-           {%- assign ratio = block.settings.image.aspect_ratio |default:1.7777777777777777 -%}
-           {%- assign ratio_mb = block.settings.image_mb.aspect_ratio |default:ratio -%}
+     
            .nt_se_{{sid}} .img_slider_block{padding-top:{{ 1 | divided_by: ratio_mb | times: 100 }}%}
 			@media (min-width: 768px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ 1 | divided_by: ratio | times: 100 }}%} }
 
         {%- elsif se_height == 'cus_h' -%}
-            .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_mb | replace:'px','' | strip }}px}
-            {%- if use_custom_h == '1' -%}
-                @media (min-width: 768px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_tb | replace:'px','' | strip }}px} }
-                @media (min-width: 1025px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_des | replace:'px','' | strip }}px} }
-            {%- elsif use_custom_h == '2' -%}
-                @media (min-width: 768px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_tb | replace:'px','' | strip }}px} }
-            {%- endif -%}
+          
+       
+                @media screen and (max-width: 750px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_tb | replace:'px','' | strip }}px} }
+                @media screen and (max-width: 990px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_des | replace:'px','' | strip }}px} }
+
+
+		{%- elsif se_height == 'adapt' -%}
+          
+       
+              	@media screen and (max-width: 750px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_tb | replace:'px','' | strip }}px} }
+                @media screen and (max-width: 990px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_des | replace:'px','' | strip }}px} }
+
+
+		{%- elsif se_height == 'full' -%}
+          
+       
+                @media screen and (max-width: 750px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_tb | replace:'px','' | strip }}px} }
+                @media screen and (max-width: 990px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_des | replace:'px','' | strip }}px} }
+
+
         {%- endif -%}
 
-        {%- for block in se_blocks -%}{%- assign bid = block.id -%}{%- assign btype = block.type -%}
 
             {%- if btype == 'slideshow_img2' -%}{%- assign image = block.settings.image -%}
                #nt_{{bid}} .nt_img_txt>a:after{ background-color: {{block.settings.cl_overlay}};opacity: {{block.settings.cl_opacity | divided_by: 100.00}} }
@@ -123,18 +133,9 @@
                   {%- if block.settings.vid_ratio == '1' -%}{%- assign ratio = 1.7777777777777777 -%}{%- else -%}{%- assign ratio = image.aspect_ratio |default:1.77777778 -%}{%- endif -%}
                   @media (min-width: {% if use_custom_h == '2' %}1025{% else %}768{% endif %}px) { #nt_{{bid}} .vid_ratio{padding-top:{{ 1 | divided_by:ratio | times: 100 }}%} }
                {%- endif -%}
-
-            {%- elsif btype == 'html' %}{% continue -%}
-            {%- elsif btype == 'btn' -%}
-              #b_{{bid}}{ {% if block.settings.ls_mb_text != 0 %}letter-spacing:{{block.settings.ls_mb_text}}px;{% endif %}min-height:{{block.settings.h_mb}}px;font-size: {{block.settings.fs_mb_text}}px;color: {{block.settings.cl_txt}};background-color: {{block.settings.cl_bg}};border-color: {{block.settings.cl_bd}} }#b_{{bid}}.btn_icon_true:after {color: {{block.settings.cl_txt}} }@media (min-width: 768px) {#b_{{bid}} { {% if block.settings.ls_text != 0 %}letter-spacing:{{block.settings.ls_text}}px;{% endif %}font-weight: {{block.settings.fw_text}};min-height:{{block.settings.h}}px;font-size: {{block.settings.fs_text}}px }}
-            {%- elsif btype == 'space' -%}
-              #b_{{bid}} {height: {{block.settings.sp_mb}}px}
- 			 @media (min-width: 768px) {#b_{{bid}} { height:{{block.settings.sp}}px} }
-            {%- else -%}
-              #b_{{bid}} { {% if block.settings.ls_mb_text != 0 %}letter-spacing:{{block.settings.ls_mb_text}}px;{% endif %}{% if block.settings.lh_mb_text != 0 %}line-height:{{block.settings.lh_mb_text}}px;{% endif %}font-size: {{block.settings.fs_mb_text}}px;font-weight: {{block.settings.fw_text}};color: {{block.settings.color}} }@media (min-width: 768px) {#b_{{bid}} { {% if block.settings.ls_text != 0 %}letter-spacing:{{block.settings.ls_text}}px;{% endif %}{% if block.settings.lh_text != 0 %}line-height: {{block.settings.lh_text}}px;{% endif %}font-size: {{block.settings.fs_text}}px}}
             {%- endif -%}
 
-        {%- endfor -%}
+  
      {%- endstyle -%}
   {%- endif -%}
 
