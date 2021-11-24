@@ -54,9 +54,18 @@
         {%- elsif se_height == 'cus_h' -%}
           
        
-                @media screen and (max-width: 750px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_tb | replace:'px','' | strip }}px} }
-                @media screen and (max-width: 990px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ section.settings.h_des | replace:'px','' | strip }}px} }
+               	@media screen and (max-width: 750px) {  
 
+				.feature-artworks{ max-height:{{ 1 | divided_by: ratio_mb | times: 100 }}% }
+     			.slideshow_content{ max-height: {{ 1 | divided_by: ratio_mb | times: 100 }}% } 
+
+				}
+				@media screen and (max-width: 990px) {  
+
+				.feature-artworks{ max-height:{{ 1 | divided_by: ratio_mb | times: 100 }}% }
+     			.slideshow_content{ max-height: {{ 1 | divided_by: ratio_mb | times: 100 }}% }
+
+				}
 
 		{%- elsif se_height == 'adapt' -%}
           
