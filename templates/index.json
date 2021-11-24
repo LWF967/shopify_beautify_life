@@ -43,7 +43,7 @@
         "d98aad89-0e6d-4788-95a8-22f4eb463027"
       ],
       "settings": {
-        "se_height": "adapt",
+        "se_height": "adapt_f",
         "text_size": "medium",
         "text_alignment": "top_left",
         "overlay": true,
