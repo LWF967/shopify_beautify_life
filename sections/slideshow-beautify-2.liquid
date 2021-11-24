@@ -59,12 +59,12 @@
 
 		{%- for block in se_blocks -%} {%- assign bid = block.id -%}{%- assign btype = block.type -%}
 		{%- if se_height == 'adapt' -%}
-          
+          		{%- assign img_h = block.settings.image.height | default:300 -%}	
        			.feature-artworks{ max-height: 790px}
      			.slideshow_content{ max-height: 790px}
 
-				.feature-artworks{ height: {{img_h}}px}
-     			.slideshow_content{ height: {{img_h}}px}
+				.feature_box_{{section.id}}{ height: {{img_h}}px}
+     			.slideshow_box_{{section.id}}{ height: {{img_h}}px}
 
 				@media screen and (max-width: 750px) {  
 
