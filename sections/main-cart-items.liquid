@@ -124,6 +124,9 @@
     .my_cart_table tbody tr:last-child {
       padding-bottom: 15px;
     }
+    .my_cart_mobile_padding_top {
+      padding-top: 15px !important;
+    }
   }
   @media screen and (max-width: 990px) {
     .my_cart_item__quantity {
@@ -187,7 +190,7 @@
             <tbody>
               {%- for item in cart.items -%}
                 <tr class="cart-item my_cart_item_mobile_margin" id="CartItem-{{ item.index | plus: 1 }}">
-                  <td class="cart-item__media my_cart_media_padding">
+                  <td class="cart-item__media my_cart_media_padding my_cart_mobile_padding_top">
                     {% if item.image %}
                       <a href="{{ item.url }}">
                         <img class="cart-item__image my_cart_img_style"
@@ -201,7 +204,7 @@
                     {% endif %}
                   </td>
 
-                  <td class="cart-item__details my_cart_item_details_padding">
+                  <td class="cart-item__details my_cart_item_details_padding my_cart_mobile_padding_top">
                     {%- if section.settings.show_vendor -%}
                       <p class="caption-with-letter-spacing light">{{ item.product.vendor }}</p>
                     {%- endif -%}
