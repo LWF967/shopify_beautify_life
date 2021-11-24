@@ -587,7 +587,8 @@ a.active-facets__button.focused .active-facets__button-inner,
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 100;
+/*   z-index: 100; */
+  z-index: 101;
   background-color: rgba(var(--color-foreground), 0.5);
   pointer-events: none;
 }
@@ -713,7 +714,8 @@ a.active-facets__button.focused .active-facets__button-inner,
   right: 1rem;
   width: 4.4rem;
   height: 4.4rem;
-  z-index: 101;
+/*   z-index: 101; */
+  z-index: 102;
   opacity: 0;
   transition: opacity var(--duration-short) ease;
 }

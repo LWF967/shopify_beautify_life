@@ -735,7 +735,8 @@ summary::-webkit-details-marker {
 }
 
 .disclosure-has-popup[open] > summary + * {
-  z-index: 100;
+/*   z-index: 100; */
+  z-index: 101;
 }
 
 @media screen and (min-width: 750px) {
