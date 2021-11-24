@@ -1,12 +1,14 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
 <style>
-  .my_collection_hero_title {
-    font-size: 36px;
-    font-weight: 700;
-  }
-  .my_collection_hero_des {
-    text-align: center;
+  @media screen and (max-width: 750px) {
+    .my_collection_hero_title {
+      font-size: 36px;
+      font-weight: 700;
+    }
+    .my_collection_hero_des {
+      text-align: center;
+    }
   }
 </style>
 

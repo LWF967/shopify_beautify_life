@@ -454,44 +454,6 @@
         "show_view_all": true
       }
     },
-    "16377430666a59b35c": {
-      "type": "custom-content",
-      "blocks": {
-        "1637743066e4c71293-0": {
-          "type": "text",
-          "settings": {
-            "title": "Talk about your brand",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "width": "50%",
-            "alignment": "center",
-            "align_text": "left"
-          }
-        },
-        "1637743066e4c71293-1": {
-          "type": "image",
-          "settings": {
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
-        "84d1665e-ef72-464e-a3bf-6386c91cb71b": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "width": "100%",
-            "alignment": "top-middle"
-          }
-        }
-      },
-      "block_order": [
-        "1637743066e4c71293-0",
-        "1637743066e4c71293-1",
-        "84d1665e-ef72-464e-a3bf-6386c91cb71b"
-      ],
-      "settings": {
-        "title": "Custom content"
-      }
-    },
     "16377450024fa9643e": {
       "type": "featured-product-beautify",
       "blocks": {
@@ -565,6 +527,45 @@
         "hide_variants": false,
         "enable_video_looping": false
       }
+    },
+    "16377430666a59b35c": {
+      "type": "custom-content",
+      "blocks": {
+        "1637743066e4c71293-0": {
+          "type": "text",
+          "settings": {
+            "title": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left"
+          }
+        },
+        "1637743066e4c71293-1": {
+          "type": "image",
+          "settings": {
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "84d1665e-ef72-464e-a3bf-6386c91cb71b": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "width": "100%",
+            "alignment": "top-middle",
+            "cover_image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1637743066e4c71293-0",
+        "1637743066e4c71293-1",
+        "84d1665e-ef72-464e-a3bf-6386c91cb71b"
+      ],
+      "settings": {
+        "title": "Custom content"
+      }
     }
   },
   "order": [
@@ -578,7 +579,7 @@
     "1635497923083b4abb",
     "1635996418e080b5d8",
     "1636093631994b741b",
-    "16377430666a59b35c",
-    "16377450024fa9643e"
+    "16377450024fa9643e",
+    "16377430666a59b35c"
   ]
 }
