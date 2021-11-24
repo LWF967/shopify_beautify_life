@@ -566,6 +566,18 @@
       "settings": {
         "title": "Custom content"
       }
+    },
+    "1637747648ec4979a0": {
+      "type": "video-beautify",
+      "settings": {
+        "image_alignment": "center center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "show_overlay": false,
+        "style": "image_with_play",
+        "video_height": "medium",
+        "heading": "Video",
+        "text_size": "medium"
+      }
     }
   },
   "order": [
@@ -580,6 +592,7 @@
     "1635996418e080b5d8",
     "1636093631994b741b",
     "16377450024fa9643e",
-    "16377430666a59b35c"
+    "16377430666a59b35c",
+    "1637747648ec4979a0"
   ]
 }
