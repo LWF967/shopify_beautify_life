@@ -556,27 +556,24 @@
             "alignment": "top-middle",
             "cover_image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg"
           }
+        },
+        "dc741816-4fa7-4c29-92e0-1acfda8d8706": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "width": "100%",
+            "alignment": "center"
+          }
         }
       },
       "block_order": [
         "1637743066e4c71293-0",
         "1637743066e4c71293-1",
-        "84d1665e-ef72-464e-a3bf-6386c91cb71b"
+        "84d1665e-ef72-464e-a3bf-6386c91cb71b",
+        "dc741816-4fa7-4c29-92e0-1acfda8d8706"
       ],
       "settings": {
         "title": "Custom content"
-      }
-    },
-    "1637747648ec4979a0": {
-      "type": "video-beautify",
-      "settings": {
-        "image_alignment": "center center",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "show_overlay": false,
-        "style": "image_with_play",
-        "video_height": "medium",
-        "heading": "Video",
-        "text_size": "medium"
       }
     }
   },
@@ -592,7 +589,6 @@
     "1635996418e080b5d8",
     "1636093631994b741b",
     "16377450024fa9643e",
-    "16377430666a59b35c",
-    "1637747648ec4979a0"
+    "16377430666a59b35c"
   ]
 }
