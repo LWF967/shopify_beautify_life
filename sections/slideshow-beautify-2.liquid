@@ -30,10 +30,22 @@
      {%- style -%}
 
         {%- if se_height == 'adapt_f' -%}
+				
+				{%- assign block = se_blocks | where: "type", 'slideshow_img2' | first -%}
+             	{%- assign ratio = block.settings.image.aspect_ratio |default:1.7777777777777777 -%}
 
-     
-           .nt_se_{{sid}} .img_slider_block{padding-top:{{ 1 | divided_by: ratio_mb | times: 100 }}%}
-			@media (min-width: 768px) { .nt_se_{{sid}} .img_slider_block{padding-top:{{ 1 | divided_by: ratio | times: 100 }}%} }
+     			  .slideshow_content{
+                    width:100%;
+                    max-height:700px;
+                    position:relative;
+                    box-shadow: 0px 0px 5px 1px #e3e3e3;
+                    box-sizing:border-box;
+                    padding:10px;
+                    border-radius:5px;
+                  }
+           		.nt_se_{{sid}} .img_slider_block{padding-top:{{ 1 | divided_by: ratio_mb | times: 100 }}%}
+				@media screen and (max-width: 750px) {  .nt_se_{{sid}} .img_slider_block{padding-top:{{ 1 | divided_by: ratio | times: 100 }}%} }
+				@media screen and (max-width: 990px) {  .nt_se_{{sid}} .img_slider_block{padding-top:{{ 1 | divided_by: ratio | times: 100 }}%} }
 
         {%- elsif se_height == 'cus_h' -%}
           
@@ -57,84 +69,6 @@
 
 
         {%- endif -%}
-
-
-            {%- if btype == 'slideshow_img2' -%}{%- assign image = block.settings.image -%}
-               #nt_{{bid}} .nt_img_txt>a:after{ background-color: {{block.settings.cl_overlay}};opacity: {{block.settings.cl_opacity | divided_by: 100.00}} }
-               #nt_{{bid}} .pa_txts {
-                 {%- assign cap_h_pos = block.settings.cap_h_pos_mb -%}
-                 {%- assign cap_v_pos = block.settings.cap_v_pos_mb -%}
-                 top:{{cap_v_pos}}%;
-                 {%- if cap_v_pos == 50 and cap_h_pos == 50 -%}width:100%;{%- endif -%}
-                 {%- if cap_h_pos > 50 -%}
-                  right:{{100|minus:cap_h_pos}}%;transform: translate({{100|minus:cap_h_pos}}%, -{{cap_v_pos}}%);
-                 {%- else -%}
-                  left:{{cap_h_pos}}%;transform: translate(-{{cap_h_pos}}%, -{{cap_v_pos}}%);
-                 {%- endif -%}
-               }
-               @media (min-width: 768px) {
-                  #nt_{{bid}} .pa_txts {
-                    {%- assign cap_h_pos = block.settings.cap_h_pos -%}
-                    {%- assign cap_v_pos = block.settings.cap_v_pos -%}
-                    top:{{cap_v_pos}}%;
-                    {%- if cap_v_pos == 50 and cap_h_pos == 50 -%}width:100%;{%- else -%}width:auto;{%- endif -%}
-                    {%- if cap_h_pos > 50 -%}
-                     right:{{100|minus:cap_h_pos}}%;transform: translate({{100|minus:cap_h_pos}}%, -{{cap_v_pos}}%);left:auto;
-                    {%- else -%}
-                     left:{{cap_h_pos}}%;transform: translate(-{{cap_h_pos}}%, -{{cap_v_pos}}%);right:auto;
-                    {%- endif -%}
-                  }
-               }
-               {%- if se_height == 'adapt' and image != blank -%}
-                  {%- assign ratio = image.aspect_ratio -%}
-                  {%- assign ratio_mb = block.settings.image_mb.aspect_ratio |default:ratio -%}
-                  #nt_{{bid}} .img_slider_block{padding-top:{{ 1 | divided_by: ratio_mb | times: 100 }}%}@media (min-width: 768px) { #nt_{{bid}} .img_slider_block{padding-top:{{ 1 | divided_by: ratio | times: 100 }}%} }
-               {%- elsif se_height == 'cus_h' and image != blank and use_custom_h != '1' -%}
-                  @media (min-width: {% if use_custom_h == '2' %}1025{% else %}768{% endif %}px) { #nt_{{bid}} .img_slider_block{padding-top:{{ 1 | divided_by:image.aspect_ratio | times: 100 }}%} }
-               {%- endif -%}
-
-            {%- elsif btype == 'vid' -%}{%- assign image = block.settings.image -%}
-               #nt_{{bid}} .nt_img_txt>a:after{ background-color: {{block.settings.cl_overlay}};opacity: {{block.settings.cl_opacity | divided_by: 100.00}} }
-               #nt_{{bid}} .pa_txts {
-                 {%- assign cap_h_pos = block.settings.cap_h_pos_mb -%}
-                 {%- assign cap_v_pos = block.settings.cap_v_pos_mb -%}
-                 top:{{cap_v_pos}}%;
-                 {%- if cap_v_pos == 50 and cap_h_pos == 50 -%}width:100%;{%- endif -%}
-                 {%- if cap_h_pos > 50 -%}
-                  right:{{100|minus:cap_h_pos}}%;transform: translate({{100|minus:cap_h_pos}}%, -{{cap_v_pos}}%);left:auto;
-                 {%- else -%}
-                  left:{{cap_h_pos}}%;transform: translate(-{{cap_h_pos}}%, -{{cap_v_pos}}%);right:auto;
-                 {%- endif -%}
-               }
-               @media (min-width: 768px) {
-                  #nt_{{bid}} .pa_txts {
-                    {%- assign cap_h_pos = block.settings.cap_h_pos -%}
-                    {%- assign cap_v_pos = block.settings.cap_v_pos -%}
-                    top:{{cap_v_pos}}%;
-                    {%- if cap_v_pos == 50 and cap_h_pos == 50 -%}width:100%;{%- else -%}width:auto;{%- endif -%}
-                    {%- if cap_h_pos > 50 -%}
-                     right:{{100|minus:cap_h_pos}}%;transform: translate({{100|minus:cap_h_pos}}%, -{{cap_v_pos}}%);
-                    {%- else -%}
-                     left:{{cap_h_pos}}%;transform: translate(-{{cap_h_pos}}%, -{{cap_v_pos}}%);
-                    {%- endif -%}
-                  }
-               }
-               {%- if se_height == 'adapt' -%}
-                  {%- if block.settings.vid_ratio == '1' -%}
-                     {%- assign ratio = 1.7777777777777777 -%}
-                     {%- assign ratio_mb = 1.7777777777777777 -%}
-                  {%- else -%}
-                     {%- assign ratio = image.aspect_ratio |default:1.7777777777777777 -%}
-                     {%- assign ratio_mb = block.settings.image_mb.aspect_ratio |default:ratio -%}
-                  {%- endif -%}
-                  #nt_{{bid}} .vid_ratio{padding-top:{{ 1 | divided_by: ratio_mb | times: 100 }}%}
-				  @media (min-width: 768px) { #nt_{{bid}} .vid_ratio{padding-top:{{ 1 | divided_by: ratio | times: 100 }}%} }
-               {%- elsif se_height == 'cus_h' and image != blank and use_custom_h != '1' -%}
-                  {%- if block.settings.vid_ratio == '1' -%}{%- assign ratio = 1.7777777777777777 -%}{%- else -%}{%- assign ratio = image.aspect_ratio |default:1.77777778 -%}{%- endif -%}
-                  @media (min-width: {% if use_custom_h == '2' %}1025{% else %}768{% endif %}px) { #nt_{{bid}} .vid_ratio{padding-top:{{ 1 | divided_by:ratio | times: 100 }}%} }
-               {%- endif -%}
-            {%- endif -%}
-
   
      {%- endstyle -%}
   {%- endif -%}
