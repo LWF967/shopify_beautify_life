@@ -1,5 +1,11 @@
 {{ 'component-collection-hero.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .my_collection_hero_des {
+    text-align: center;
+  }
+</style>
+
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}">
   <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">
@@ -7,7 +13,7 @@
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
       </h1>
-      <span>{{- collection.description -}}</span>
+      <span class="my_collection_hero_des">{{- collection.description -}}</span>
       {%- if section.settings.show_collection_description -%}
         <div class="collection-hero__description rte">{{ collection.description }}</div>
       {%- endif -%}
