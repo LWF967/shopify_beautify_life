@@ -15,6 +15,15 @@
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
+<style>
+  @media screen and (max-width: 750px) {
+    .my_featured_product_beautify_ul li {
+      padding: 0 0 0;
+    }
+  }
+  
+</style>
+
 <section class="{% if section.settings.secondary_background %}background-secondary{% else %}spaced-section{% endif %}">
   <div class="page-width">
     <div class="featured-product product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
@@ -48,7 +57,7 @@
         <p>{{ media[0] }}</p>
         {% endfor %}
         
-         <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list" style="display:flex;">
+         <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list" style="display:flex;">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
