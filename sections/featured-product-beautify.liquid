@@ -92,12 +92,8 @@
           {%- endfor -%}
         </div>
         
-        {%- assign my_number = 0 -%}
-        {%- for media in product.media -%}
-        <p>{{ media }}</p>
-        {{my_number | plus: 1}}
-        {%- endfor -%}
-        {{ my_number }}
+
+        {{ product.media | size }}
         
          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list" style="display:flex;">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
