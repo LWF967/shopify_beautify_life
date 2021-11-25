@@ -45,7 +45,7 @@
         </div>
         
         {% for media in product.media %}
-        <p>{{ product.selected_or_first_available_variant.featured_media }}</p>
+        <p>{{ media[0] }}</p>
         {% endfor %}
         
          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list" style="display:flex;">
