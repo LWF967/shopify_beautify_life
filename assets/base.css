@@ -38,7 +38,7 @@
 
 :root,
 .color-background-1 {
-  --color-foreground: rgb(var(--color-base-text)); /* rgba(var(--color-base-text),0.7) */
+  --color-foreground: var(--color-base-text); /* rgba(var(--color-base-text),0.7) */
   --color-background: var(--color-base-background-1);
   --gradient-background: var(--gradient-base-background-1);
 }
