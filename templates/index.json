@@ -7,11 +7,11 @@
           "type": "slideshow_img2",
           "settings": {
             "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
-            "image_alignment": "middle_left",
+            "image_alignment": "top_left",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
-            "slider_button_link": "shopify:\/\/products\/lol-more"
+            "slider_button_link": ""
           }
         },
         "cf520457-a362-42f7-a043-5e28a8ffc74d": {
@@ -64,15 +64,15 @@
         "auto_time": 3,
         "show_button": true,
         "show_button_visible": "only_hover",
-        "show_button_style": "style1",
+        "show_button_style": "style3",
         "show_button_color": "transparent",
-        "show_button_hover_color": "#d99067",
+        "show_button_hover_color": "#fca2ce",
         "show_page_Dot": false,
-        "page_dot_style": "style_2",
+        "page_dot_style": "style_1",
         "page_dot_color": "dark",
         "feature_title": "title name",
         "link-name": "View all",
-        "button_link": "shopify:\/\/collections"
+        "button_link": ""
       }
     },
     "16366965204a8cb316": {
@@ -82,10 +82,10 @@
           "type": "slideshow_img2",
           "settings": {
             "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
-            "image_alignment": "top_left",
+            "image_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "",
+            "slider_button_text": "title name",
             "slider_button_link": ""
           }
         },
@@ -93,7 +93,7 @@
           "type": "slideshow_img2",
           "settings": {
             "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "image_alignment": "top_right",
+            "image_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
@@ -130,9 +130,9 @@
         "show_button_style": "style1",
         "show_button_color": "white",
         "show_button_hover_color": "#222222",
-        "show_page_Dot": true,
+        "show_page_Dot": false,
         "page_dot_style": "style_1",
-        "page_dot_color": "light",
+        "page_dot_color": "dark",
         "feature_title": "title name",
         "link-name": "View all",
         "button_link": ""
@@ -184,12 +184,11 @@
         "grid": 4,
         "show_view_all": true,
         "show_page_Dot": true,
-        "page_dot_style": "style_2"
+        "page_dot_style": "style_1"
       }
     },
     "1635836350c3b72b9b": {
       "type": "collection-list-Beautify",
-      "disabled": true,
       "blocks": {
         "1635836350c3b72b9b-0": {
           "type": "featured_collection",
@@ -276,11 +275,11 @@
         "product": "text4",
         "log_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
         "heading_text": "Daily Deal Of The Day",
-        "heading_font_size": 72,
-        "color_top": "#b02f2f",
-        "countdown_time": "2021\/11\/30 18:30:00",
-        "time_font_size": 18,
-        "background_color": "#733737",
+        "heading_font_size": 32,
+        "color_top": "#888888",
+        "countdown_time": "2021\/11\/13 18:30:00",
+        "time_font_size": 32,
+        "background_color": "#f9f9f9",
         "background_product_color": "#ffffff"
       }
     },
@@ -292,7 +291,7 @@
         "collection": "frontpage",
         "products_to_show": 4,
         "grid": 4,
-        "show_view_all": true,
+        "show_view_all": false,
         "swipe_on_mobile": false,
         "use_eq_height": true,
         "image_ratio1": "ratio_cus2",
@@ -307,42 +306,6 @@
     "163608389212513e57": {
       "type": "banner-Beautify",
       "blocks": {
-        "156f1a45-4a68-4f2f-9ae1-8593da6509d7": {
-          "type": "banner_third",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-            "header_top": "Head",
-            "url": "",
-            "color": "#ffffff",
-            "w": 140,
-            "h": 3,
-            "open_link": "_blank"
-          }
-        },
-        "9cffad93-dfc5-429d-883f-55d063daab64": {
-          "type": "banner_third",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "header_top": "Head",
-            "url": "",
-            "color": "#ffffff",
-            "w": 140,
-            "h": 3,
-            "open_link": "_blank"
-          }
-        },
-        "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a": {
-          "type": "banner_third",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
-            "header_top": "Head",
-            "url": "",
-            "color": "#ffffff",
-            "w": 140,
-            "h": 3,
-            "open_link": "_blank"
-          }
-        },
         "163608389212513e57-0": {
           "type": "img_top",
           "settings": {
@@ -369,14 +332,50 @@
             "url3": "",
             "open_link": "_blank"
           }
+        },
+        "156f1a45-4a68-4f2f-9ae1-8593da6509d7": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#ffffff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
+        "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#ffffff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
+        "9cffad93-dfc5-429d-883f-55d063daab64": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#ffffff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
         }
       },
       "block_order": [
-        "156f1a45-4a68-4f2f-9ae1-8593da6509d7",
-        "9cffad93-dfc5-429d-883f-55d063daab64",
-        "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a",
         "163608389212513e57-0",
-        "163608389212513e57-1"
+        "163608389212513e57-1",
+        "156f1a45-4a68-4f2f-9ae1-8593da6509d7",
+        "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a",
+        "9cffad93-dfc5-429d-883f-55d063daab64"
       ],
       "settings": {
         "title": "BANNER",
@@ -557,7 +556,7 @@
         "163774500222c241f7-8"
       ],
       "settings": {
-        "product": "lol4",
+        "product": "1",
         "secondary_background": false,
         "show_share_buttons": true,
         "hide_variants": false,
@@ -660,50 +659,6 @@
       "settings": {
         "title": "Custom content"
       }
-    },
-    "1637831449262bb206": {
-      "type": "Text-columns-with-images",
-      "blocks": {
-        "1637831449d1563a7c-0": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "Button",
-            "button_link": "shopify:\/\/collections"
-          }
-        },
-        "1637831449d1563a7c-1": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "Button",
-            "button_link": ""
-          }
-        },
-        "1637831449d1563a7c-2": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "Button",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1637831449d1563a7c-0",
-        "1637831449d1563a7c-1",
-        "1637831449d1563a7c-2"
-      ],
-      "settings": {
-        "Text_columns_with_images_heading": "Text column with images",
-        "Text_columns_with_images_Text_alignment": "Left"
-      }
     }
   },
   "order": [
@@ -719,7 +674,6 @@
     "1636093631994b741b",
     "1637812188b731cca0",
     "16377450024fa9643e",
-    "16377430666a59b35c",
-    "1637831449262bb206"
+    "16377430666a59b35c"
   ]
 }
