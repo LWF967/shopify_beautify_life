@@ -804,122 +804,11 @@ text-decoration:none;
   .medium-up--four-fifths {
     width: 80%; }
 
-  /* Sixths */
-  .medium-up--one-sixth {
-    width: 16.66667%; }
-
-  .medium-up--two-sixths {
-    width: 33.33333%; }
-
-  .medium-up--three-sixths {
-    width: 50%; }
-
-  .medium-up--four-sixths {
-    width: 66.66667%; }
-
-  .medium-up--five-sixths {
-    width: 83.33333%; }
-
-  /* Eighths */
-  .medium-up--one-eighth {
-    width: 12.5%; }
-
-  .medium-up--two-eighths {
-    width: 25%; }
-
-  .medium-up--three-eighths {
-    width: 37.5%; }
-
-  .medium-up--four-eighths {
-    width: 50%; }
-
-  .medium-up--five-eighths {
-    width: 62.5%; }
-
-  .medium-up--six-eighths {
-    width: 75%; }
-
-  .medium-up--seven-eighths {
-    width: 87.5%; }
-
-  /* Tenths */
-  .medium-up--one-tenth {
-    width: 10%; }
-
-  .medium-up--two-tenths {
-    width: 20%; }
-
-  .medium-up--three-tenths {
-    width: 30%; }
-
-  .medium-up--four-tenths {
-    width: 40%; }
-
-  .medium-up--five-tenths {
-    width: 50%; }
-
-  .medium-up--six-tenths {
-    width: 60%; }
-
-  .medium-up--seven-tenths {
-    width: 70%; }
-
-  .medium-up--eight-tenths {
-    width: 80%; }
-
-  .medium-up--nine-tenths {
-    width: 90%; }
-
-  /* Twelfths */
-  .medium-up--one-twelfth {
-    width: 8.33333%; }
-
-  .medium-up--two-twelfths {
-    width: 16.66667%; }
-
-  .medium-up--three-twelfths {
-    width: 25%; }
-
-  .medium-up--four-twelfths {
-    width: 33.33333%; }
-
-  .medium-up--five-twelfths {
-    width: 41.66667%; }
-
-  .medium-up--six-twelfths {
-    width: 50%; }
-
-  .medium-up--seven-twelfths {
-    width: 58.33333%; }
-
-  .medium-up--eight-twelfths {
-    width: 66.66667%; }
-
-  .medium-up--nine-twelfths {
-    width: 75%; }
-
-  .medium-up--ten-twelfths {
-    width: 83.33333%; }
-
-  .medium-up--eleven-twelfths {
-    width: 91.66667%; }
 
   .grid--uniform .medium-up--one-half:nth-child(2n+1),
   .grid--uniform .medium-up--one-third:nth-child(3n+1),
   .grid--uniform .medium-up--one-quarter:nth-child(4n+1),
-  .grid--uniform .medium-up--one-fifth:nth-child(5n+1),
-  .grid--uniform .medium-up--one-sixth:nth-child(6n+1),
-  .grid--uniform .medium-up--two-sixths:nth-child(3n+1),
-  .grid--uniform .medium-up--three-sixths:nth-child(2n+1),
-  .grid--uniform .medium-up--one-eighth:nth-child(8n+1),
-  .grid--uniform .medium-up--two-eighths:nth-child(4n+1),
-  .grid--uniform .medium-up--four-eighths:nth-child(2n+1),
-  .grid--uniform .medium-up--five-tenths:nth-child(2n+1),
-  .grid--uniform .medium-up--one-twelfth:nth-child(12n+1),
-  .grid--uniform .medium-up--two-twelfths:nth-child(6n+1),
-  .grid--uniform .medium-up--three-twelfths:nth-child(4n+1),
-  .grid--uniform .medium-up--four-twelfths:nth-child(3n+1),
-  .grid--uniform .medium-up--six-twelfths:nth-child(2n+1) {
+  .grid--uniform .medium-up--one-fifth:nth-child(5n+1) {
     clear: both; }
 
   .medium-up--show {
@@ -935,6 +824,7 @@ text-decoration:none;
     text-align: right !important; }
 
   .medium-up--text-center {
-    text-align: center !important; } }
+    text-align: center !important; } 
+   }
 
 
