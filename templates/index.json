@@ -280,7 +280,7 @@
         "color_top": "#b02f2f",
         "countdown_time": "2021\/11\/30 18:30:00",
         "time_font_size": 18,
-        "background_color": "#f9f9f9",
+        "background_color": "#733737",
         "background_product_color": "#ffffff"
       }
     },
@@ -307,6 +307,42 @@
     "163608389212513e57": {
       "type": "banner-Beautify",
       "blocks": {
+        "156f1a45-4a68-4f2f-9ae1-8593da6509d7": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#ffffff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
+        "9cffad93-dfc5-429d-883f-55d063daab64": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#ffffff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
+        "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#ffffff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
         "163608389212513e57-0": {
           "type": "img_top",
           "settings": {
@@ -333,50 +369,14 @@
             "url3": "",
             "open_link": "_blank"
           }
-        },
-        "156f1a45-4a68-4f2f-9ae1-8593da6509d7": {
-          "type": "banner_third",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-            "header_top": "Head",
-            "url": "",
-            "color": "#ffffff",
-            "w": 140,
-            "h": 3,
-            "open_link": "_blank"
-          }
-        },
-        "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a": {
-          "type": "banner_third",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
-            "header_top": "Head",
-            "url": "",
-            "color": "#ffffff",
-            "w": 140,
-            "h": 3,
-            "open_link": "_blank"
-          }
-        },
-        "9cffad93-dfc5-429d-883f-55d063daab64": {
-          "type": "banner_third",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "header_top": "Head",
-            "url": "",
-            "color": "#ffffff",
-            "w": 140,
-            "h": 3,
-            "open_link": "_blank"
-          }
         }
       },
       "block_order": [
-        "163608389212513e57-0",
-        "163608389212513e57-1",
         "156f1a45-4a68-4f2f-9ae1-8593da6509d7",
+        "9cffad93-dfc5-429d-883f-55d063daab64",
         "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a",
-        "9cffad93-dfc5-429d-883f-55d063daab64"
+        "163608389212513e57-0",
+        "163608389212513e57-1"
       ],
       "settings": {
         "title": "BANNER",
@@ -557,7 +557,7 @@
         "163774500222c241f7-8"
       ],
       "settings": {
-        "product": "text4",
+        "product": "lol4",
         "secondary_background": false,
         "show_share_buttons": true,
         "hide_variants": false,
