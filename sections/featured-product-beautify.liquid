@@ -92,9 +92,11 @@
           {%- endfor -%}
         </div>
         
-        {% for media in product.media %}
+        {%- assign my_number = 0 -%}
+        {%- for media in product.media -%}
         <p>{{ media }}</p>
-        {% endfor %}
+        {{my_number | plus: 1}}
+        {%- endfor -%}
         
         
          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list" style="display:flex;">
