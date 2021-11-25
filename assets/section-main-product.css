@@ -530,10 +530,14 @@ a.product__text {
   overflow: auto;
 }
 
-.product-media-modal__content > *:not(.active),
-.product__media-list .deferred-media {
+.product-media-modal__content > *:not(.active) {
   display: none;
 }
+  
+.product__media-list .deferred-media {
+  display: block;
+}
+  
 
 @media screen and (min-width: 750px) {
   .product-media-modal__content {
