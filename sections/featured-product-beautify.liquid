@@ -52,6 +52,9 @@
     .my_featured_product_beautify_add {
       min-height: 44px;
     }
+    .product__description rte.my_featured_product_beautify_description {
+      margin: 50px 0 35px;
+    }
   }
 </style>
 
@@ -295,7 +298,7 @@
           
           	{%- when 'description' -%}
             {%- if product.description != blank -%}
-              <div class="product__description rte">
+              <div class="product__description rte my_featured_product_beautify_description">
                 {{ product.description }}
               </div>
             {%- endif -%}
