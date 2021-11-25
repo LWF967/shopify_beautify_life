@@ -608,24 +608,6 @@ text-decoration:none;
 
 
 
-
-
-
-/* li.grid__item__beautify:not(:nth-child(1)){
-
-
-padding-left:1rem;
-} */
-
-/* li.grid__item__beautify:nth-last-child(1){
-margin-right:2rem;
-}
-
-li.grid__item__beautify:nth-child(1){
-margin-left:2rem;
-} */
-
-
 .grid__item__featured {
   padding-left: 3rem;
   padding-bottom: 3rem;
