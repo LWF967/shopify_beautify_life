@@ -5,7 +5,7 @@
 
  
     <!--    左箭头    -->
-      <div class=" dn bk_{{section.settings.show_button_color}} {% if section.settings.show_button  %}icon-changebtn  {% endif%} leftbtn leftbtn-{{section.id}}   button_{{ section.settings.show_button_style }}">
+      <div class=" dn bk_{{section.settings.show_button_color}} {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% endif%} leftbtn leftbtn-{{section.id}}   button_{{ section.settings.show_button_style }}">
       	<p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
             <svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-chevron-down-left" d="M4 4.5L7 1.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
@@ -14,7 +14,7 @@
         </p>
       </div>
 <!--    右箭头    -->
-      <div class=" dn bk_{{section.settings.show_button_color}} {% if section.settings.show_button %}icon-changebtn  {% endif%} rightbtn  rightbtn-{{section.id}}  button_{{ section.settings.show_button_style }} ">
+      <div class=" dn bk_{{section.settings.show_button_color}} {% if section.settings.show_button %}icon-changebtn_{{section.id}}  {% endif%} rightbtn  rightbtn-{{section.id}}  button_{{ section.settings.show_button_style }} ">
       	<p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
           	<svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="icon-chevron-down-left" d="M4 4.5L1 7.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
@@ -274,7 +274,7 @@
   .slideshow_content p{
     margin:0 !important;
   }
-  .icon-changebtn{
+  .icon-changebtn_{{section.id}}{
   	width:40px;
     height:40px;
     text-align:center;
@@ -286,7 +286,7 @@
 
   
   
-    .icon-changebtn:hover{
+    .icon-changebtn_{{section.id}}:hover{
     background-color: {{ section.settings.show_button_hover_color }} !important;
   	box-shadow: 0px 0px 8px 1px #e3e3e3;
     
@@ -357,7 +357,7 @@
 
   }
   
-  .icon-changebtn {
+  .icon-changebtn_{{section.id}} {
   
   display:block;
  
@@ -368,14 +368,14 @@
   {% if section.settings.show_button_visible == 'always' %} 
 
   
- .feature-artworks-{{section.id}}  .icon-changebtn {
+ .feature-artworks-{{section.id}}  .icon-changebtn_{{section.id}} {
   
   display:block;
   opacity:1;
   }
   {% else %}
   
-  .icon-changebtn {
+  .icon-changebtn_{{section.id}} {
   	-webkit-transform: scale(0.5);
 	transform: scale(0.5);
  	opacity: 0;
@@ -384,7 +384,7 @@
   
   }
   
-  .feature-artworks-{{section.id}}:hover .icon-changebtn{
+  .feature-artworks-{{section.id}}:hover .icon-changebtn_{{section.id}}{
     
     -webkit-transform: scale(1);
 	transform: scale(1);
@@ -400,7 +400,7 @@
   
   
   
-  .icon-changebtn p{
+  .icon-changebtn_{{section.id}} p{
   	margin:0;
     height:100% !important;
     position:relative;
@@ -505,7 +505,7 @@
 
     
     
-    .icon-changebtn {
+    .icon-changebtn_{{section.id}} {
   
   display:block;
   opacity:1;
@@ -590,7 +590,7 @@
 
 
   
-  .icon-changebtn {
+  .icon-changebtn_{{section.id}} {
   
   display:block;
   opacity:1;
