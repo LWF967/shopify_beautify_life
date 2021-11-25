@@ -11,7 +11,7 @@
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
-            "slider_button_link": ""
+            "slider_button_link": "shopify:\/\/products\/lol-more"
           }
         },
         "cf520457-a362-42f7-a043-5e28a8ffc74d": {
@@ -57,7 +57,7 @@
       "settings": {
         "se_height": "adapt_f",
         "text_size": "medium",
-        "text_alignment": "top_left",
+        "text_alignment": "middle_left",
         "overlay": true,
         "loop": true,
         "auto_play": false,
@@ -72,7 +72,7 @@
         "page_dot_color": "dark",
         "feature_title": "title name",
         "link-name": "View all",
-        "button_link": ""
+        "button_link": "shopify:\/\/collections"
       }
     },
     "16366965204a8cb316": {
