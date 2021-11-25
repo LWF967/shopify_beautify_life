@@ -184,11 +184,12 @@
         "grid": 4,
         "show_view_all": true,
         "show_page_Dot": true,
-        "page_dot_style": "style_1"
+        "page_dot_style": "style_2"
       }
     },
     "1635836350c3b72b9b": {
       "type": "collection-list-Beautify",
+      "disabled": true,
       "blocks": {
         "1635836350c3b72b9b-0": {
           "type": "featured_collection",
