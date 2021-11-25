@@ -31,6 +31,9 @@
       font-weight: 700;
       margin-bottom: 30px;
     }
+    .no-js-hidden.my_featured_product_beautify_price {
+      margin: 10px 0 30px;
+    }
   }
 </style>
 
@@ -119,7 +122,7 @@
                 {%- endif -%}
               </h2>
             {%- when 'price' -%}
-              <div class="no-js-hidden" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
+              <div class="no-js-hidden my_featured_product_beautify_price" id="price-{{ section.id }}" {{ block.shopify_attributes }}>
                 {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
               </div>
               {%- if product != blank -%}
