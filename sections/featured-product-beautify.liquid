@@ -43,8 +43,11 @@
             {%- endif -%}
           {%- endfor -%}
         </div>
-        {{ product.images }}
-        {{ product.media }}
+        {% if product.images > 0 %}
+        123
+        {% else %}
+        321
+        {% endif %}
          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list" style="display:flex;">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
