@@ -43,6 +43,9 @@
       padding-left: 16px;
       height: 44px;
     }
+    .no-js-hidden.my_featured_product_beautify_variant-selects {
+      margin: 10px 0;
+    }
   }
 </style>
 
@@ -192,7 +195,7 @@
                     </script>
                   </variant-radios>
                 {%- else -%}
-                  <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" data-update-url="false" {{ block.shopify_attributes }}>
+                  <variant-selects class="no-js-hidden my_featured_product_beautify_variant-selects" data-section="{{ section.id }}" data-url="{{ product.url }}" data-update-url="false" {{ block.shopify_attributes }}>
                     {%- for option in product.options_with_values -%}
                       <div class="product-form__input product-form__input--dropdown">
                         <label class="form__label my_featured_product_beautify_size" for="Option-{{ section.id }}-{{ forloop.index0 }}">
