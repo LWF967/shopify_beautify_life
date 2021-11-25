@@ -34,6 +34,9 @@
     .no-js-hidden.my_featured_product_beautify_price {
       margin: 10px 0 30px;
     }
+    .form__label.my_featured_product_beautify_size {
+      font-size: 15px;
+    }
   }
 </style>
 
@@ -135,7 +138,7 @@
               {%- endif -%}
             {%- when 'quantity_selector' -%}
               <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
-                <label class="form__label" for="Quantity-{{ section.id }}">
+                <label class="form__label my_featured_product_beautify_size" for="Quantity-{{ section.id }}">
                   {{ 'products.product.quantity.label' | t }}
                 </label>
                 <quantity-input class="quantity">
