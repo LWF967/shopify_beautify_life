@@ -57,7 +57,7 @@
       "settings": {
         "se_height": "adapt_f",
         "text_size": "medium",
-        "text_alignment": "middle_left",
+        "text_alignment": "middle_right",
         "overlay": true,
         "loop": true,
         "auto_play": false,
