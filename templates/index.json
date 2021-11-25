@@ -291,7 +291,7 @@
         "collection": "frontpage",
         "products_to_show": 4,
         "grid": 4,
-        "show_view_all": false,
+        "show_view_all": true,
         "swipe_on_mobile": false,
         "use_eq_height": true,
         "image_ratio1": "ratio_cus2",
@@ -454,6 +454,41 @@
         "show_view_all": true
       }
     },
+    "1637812188b731cca0": {
+      "type": "rich-text",
+      "blocks": {
+        "163781218818967b69-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "163781218818967b69-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "163781218818967b69-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "163781218818967b69-0",
+        "163781218818967b69-1",
+        "163781218818967b69-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "16377450024fa9643e": {
       "type": "featured-product-beautify",
       "blocks": {
@@ -523,7 +558,7 @@
       "settings": {
         "product": "text4",
         "secondary_background": false,
-        "show_share_buttons": false,
+        "show_share_buttons": true,
         "hide_variants": false,
         "enable_video_looping": false
       }
@@ -637,6 +672,7 @@
     "1635497923083b4abb",
     "1635996418e080b5d8",
     "1636093631994b741b",
+    "1637812188b731cca0",
     "16377450024fa9643e",
     "16377430666a59b35c"
   ]
