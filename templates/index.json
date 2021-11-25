@@ -7,7 +7,7 @@
           "type": "slideshow_img2",
           "settings": {
             "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
-            "image_alignment": "top_left",
+            "image_alignment": "middle_left",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
@@ -57,7 +57,7 @@
       "settings": {
         "se_height": "adapt_f",
         "text_size": "medium",
-        "text_alignment": "middle_right",
+        "text_alignment": "top_left",
         "overlay": true,
         "loop": true,
         "auto_play": false,
@@ -82,7 +82,7 @@
           "type": "slideshow_img2",
           "settings": {
             "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
-            "image_alignment": "middle_center",
+            "image_alignment": "middle_left",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
@@ -93,7 +93,7 @@
           "type": "slideshow_img2",
           "settings": {
             "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "image_alignment": "middle_center",
+            "image_alignment": "top_right",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
