@@ -45,7 +45,7 @@
         </div>
         
         {% comment %}<span>做判断 1张不进入</span>{% endcomment %}
-        <span>1</span>
+        <span>{{ product.media }}</span>
          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list" style="display:flex;">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
