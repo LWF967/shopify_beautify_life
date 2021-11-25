@@ -26,6 +26,10 @@
     .my_featured_product_beautify_ul li:last-child {
       padding: 15px 15px 0 0 !important;
     }
+    .my_featured_product_beautify_title {
+      font-size: 36px;
+      font-weight: 700;
+    }
   }
 </style>
 
@@ -106,7 +110,7 @@
                 {{- block.settings.text -}}
               </p>
             {%- when 'title' -%}
-              <h2 class="h1 product__title" {{ block.shopify_attributes }}>
+              <h2 class="h1 product__title my_featured_product_beautify_title" {{ block.shopify_attributes }}>
                 {%- if product.title != blank -%}
                   {{ product.title | escape }}
                 {%- else -%}
