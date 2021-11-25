@@ -85,7 +85,7 @@
             "image_alignment": "middle_left",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
+            "slider_button_text": "",
             "slider_button_link": ""
           }
         },
@@ -659,6 +659,50 @@
       "settings": {
         "title": "Custom content"
       }
+    },
+    "1637831449262bb206": {
+      "type": "Text-columns-with-images",
+      "blocks": {
+        "1637831449d1563a7c-0": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": "shopify:\/\/collections"
+          }
+        },
+        "1637831449d1563a7c-1": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        },
+        "1637831449d1563a7c-2": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1637831449d1563a7c-0",
+        "1637831449d1563a7c-1",
+        "1637831449d1563a7c-2"
+      ],
+      "settings": {
+        "Text_columns_with_images_heading": "Text column with images",
+        "Text_columns_with_images_Text_alignment": "Left"
+      }
     }
   },
   "order": [
@@ -674,6 +718,7 @@
     "1636093631994b741b",
     "1637812188b731cca0",
     "16377450024fa9643e",
-    "16377430666a59b35c"
+    "16377430666a59b35c",
+    "1637831449262bb206"
   ]
 }
