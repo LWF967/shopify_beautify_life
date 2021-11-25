@@ -291,7 +291,7 @@
         "collection": "frontpage",
         "products_to_show": 4,
         "grid": 4,
-        "show_view_all": false,
+        "show_view_all": true,
         "swipe_on_mobile": false,
         "use_eq_height": true,
         "image_ratio1": "ratio_cus2",
