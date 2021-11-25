@@ -43,7 +43,7 @@
             {%- endif -%}
           {%- endfor -%}
         </div>
-        {{ images }}
+        {{ product.images }}
         {{ product.media }}
          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list" style="display:flex;">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
