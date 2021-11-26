@@ -95,7 +95,7 @@
         {%- assign media_count = product.media | size -%}
         {%- if media_count > 4 -%}
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list" style="display:flex;">
-            <div class="swiper-container" style="width:200px">
+            <div class="swiper-container-featured-product-beautify" style="width:200px">
               <div class="swiper-wrapper">
                 {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
                 {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -534,7 +534,7 @@
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
-  var mySwiper = new Swiper ('.swiper-container', {
+  var mySwiper = new Swiper ('.swiper-container-featured-product-beautify', {
     direction: 'horizontal', // 垂直切换选项
     loop: true, // 循环模式选项
 
