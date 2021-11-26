@@ -282,11 +282,9 @@ body,
 }
 
 /*   鼠標插入光標顔色 */
-  body{
-    
+body{
   caret-color:transparent;
-    
-  }  
+}  
   
   
 .background-secondary {
