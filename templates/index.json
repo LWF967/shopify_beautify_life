@@ -389,7 +389,7 @@
         "title": "BANNER",
         "sub_title": "Popular this week",
         "font_top": 30,
-        "color_top": "#888888",
+        "color_top": "#ffffff",
         "grid": 2,
         "show_view_all": false,
         "show_page_Dot": true
