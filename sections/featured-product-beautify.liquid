@@ -67,11 +67,11 @@
     font-size: 20px;
   }
 
-  .swiper-button-next {
+  .swiper-button-next.nnn {
     right: -20px;
   }
 
-  .swiper-button-prev {
+  .swiper-button-prev.ppp {
     left: -20px;
   }
   @media screen and (max-width: 750px) {
@@ -224,10 +224,16 @@
               <div class="swiper-slide">
                 5
               </div>
+              <div class="swiper-slide">
+                6
+              </div>
+              <div class="swiper-slide">
+                7
+              </div>
             </div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev ppp"></div>
+          <div class="swiper-button-next nnn"></div>
         </div>
         
         
@@ -653,8 +659,8 @@
           clickable: true,
       },
       navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+          nextEl: '.swiper-button-next.ppp',
+          prevEl: '.swiper-button-prev.nnn',
       },
   });
 </script>
