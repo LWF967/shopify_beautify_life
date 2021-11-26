@@ -105,7 +105,7 @@
         {%- if media_count > 4 -%}
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list" style="display:flex;">
             <div class="swiper-container-featured-product-beautify" style="width: 100%; overflow: hidden; position: relative;">
-              <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px) !important;">
+              <div class="swiper-wrapper-featured-product-beautify" style="transform: translate3d(0px, 0px, 0px) !important;">
                 {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
                 {%- if product.selected_or_first_available_variant.featured_media != null -%}
                 {%- assign media = product.selected_or_first_available_variant.featured_media -%}
