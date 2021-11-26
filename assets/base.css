@@ -285,7 +285,10 @@ body,
 body{
   caret-color:transparent;
 }  
-  
+
+input, textarea {
+  caret-color:black;
+}
   
 .background-secondary {
   background-color: var(--color-foreground);
