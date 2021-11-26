@@ -230,6 +230,8 @@
 </style>
 
 
+{% unless section.settings.show_page_Dot %} {% assign pagination = null %} {% else %}  {% assign pagination = pagination %} {% endunless %}
+
 <script type="module">
 
  // import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
