@@ -283,7 +283,7 @@ body,
 
 /*   鼠標插入光標顔色 */
 body{
-  caret-color:transparent;
+/*   caret-color:transparent; */
 }  
   
   
