@@ -38,8 +38,8 @@
       <div style="margin: 1rem 0;">
       {% render 'price', product: product, price_class: '' %}
       </div>
-      <a class="mr_4"><button class="button font-cap">shop now</button></a>
-      <a class="t2"><button class="button white-button font-cap">Detail</button></a>
+      <a class="mr_4" href="{{section.settings.shop_now_url}}"><button class="button font-cap">shop now</button></a>
+      <a class="t2" href="{{section.settings.detail_url}}"><button class="button white-button font-cap">Detail</button></a>
 		
     
     </div>
@@ -162,8 +162,17 @@
       "id": "background_product_color",
       "label": "Background product color",
       "default": "#FFF"
-     }
-
+     },
+	{
+        "label": "Show-Now link ",
+        "id": "shop_now_url",
+        "type": "url"
+      },
+	  {
+        "label": "Detaile link ",
+        "id": "detail_url",
+        "type": "url"
+      }
 
  	],
 	"presets":[
