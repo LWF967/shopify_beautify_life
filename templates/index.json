@@ -170,13 +170,21 @@
             "collection": "pitaya",
             "title": "New supply this week"
           }
+        },
+        "e92aa04e-60ce-4d2f-aee7-93c5f3d9aa16": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
         }
       },
       "block_order": [
         "16366804518eb2e044-1",
         "16366804518eb2e044-0",
         "16366804518eb2e044-2",
-        "108496b1-c9fd-4cb3-b41d-beed0ae9d48e"
+        "108496b1-c9fd-4cb3-b41d-beed0ae9d48e",
+        "e92aa04e-60ce-4d2f-aee7-93c5f3d9aa16"
       ],
       "settings": {
         "title": "NEW RELEASES",
