@@ -244,9 +244,8 @@
 
 
 
-<script type="module">
+{% javascript %}
 
- // import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
 
     import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
@@ -277,9 +276,10 @@
   })  
   
   
-  
-    
-</script>
+
+{% endjavascript %}
+
+
 
 
 {% schema %}
@@ -761,8 +761,7 @@
 
 {% endstylesheet %}
 
-{% javascript %}
-{% endjavascript %}
+
 
 
 
