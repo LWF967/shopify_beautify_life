@@ -89,6 +89,7 @@
 
 
 
+
 {% schema %}
   {
     "name": "daily-deal-of-the-day",
@@ -443,6 +444,22 @@
     transform: rotate(360deg);
   }
 }
+  
+  
+  
+  
+.daily-product :after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    background-image: url({{ section.settings.log_image}});
+}
+  
+  
   
   
   @media screen and (max-width: 750px) {
