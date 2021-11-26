@@ -88,10 +88,9 @@
    
     	  <div class=" pr" style="    overflow: hidden;" >
 
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  
-                    <div class="swiper-slide 1">
+              <div class="main-carousel">
+               
+                    <div class="carousel-cell 1">
                   
                      <a href="{{ block.settings.url1 }}" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url1 == blank %} pe_none{% endif %}">
 
@@ -109,7 +108,7 @@
                      </a>   
                   
                   	</div>
-                    <div class="swiper-slide 2">
+                    <div class="carousel-cell 2">
                   	 
                      <a href="{{ block.settings.url2 }}" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url2 == blank %} pe_none{% endif %}">
 
@@ -130,7 +129,7 @@
                   
                   	</div>
                   
-                    <div class="swiper-slide 3">
+                    <div class="carousel-cell 3">
                   
                   	 <a href="{{ block.settings.url3 }}" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url3 == blank %} pe_none{% endif %}">
 
@@ -158,23 +157,9 @@
 
                      </a> 
                   	
-                  	</div>
-                </div>
-                <!-- 如果需要分页器 -->
-                
-                <div class=" swiper-pagination   {% unless section.settings.show_page_Dot %} 
- opa-0
-  
-  {% else %}  
- opa-1
-  {% endunless %}>" ></div>
            
-                <!-- 如果需要导航按钮 -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                </div>
 
-                <!-- 如果需要滚动条 -->
-                <div class="swiper-scrollbar"></div>
             </div>		
 
            </div>
