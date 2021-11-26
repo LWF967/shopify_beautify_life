@@ -6,8 +6,6 @@
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
 {%- assign product = section.settings.product -%}
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
