@@ -4,13 +4,6 @@
 
 
 
-request = new XMLHttpRequest();
-request.open('GET', '/?sections=banner-flickity', true);
-request.send();
-JSON.parse(request.responseText);
-
-
-
 /*!
  * Flickity PACKAGED v2.2.2
  * Touch, responsive, flickable carousels
