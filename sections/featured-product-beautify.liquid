@@ -113,14 +113,14 @@
                 {%- endfor -%}
               </div>
               <!-- 如果需要分页器 -->
-              <div class="swiper-pagination"></div>
+              <div class="swiper-pagination-{{section.id}}"></div>
 
               <!-- 如果需要导航按钮 -->
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev-{{section.id}}"></div>
+              <div class="swiper-button-next-{{section.id}}"></div>
 
               <!-- 如果需要滚动条 -->
-              <div class="swiper-scrollbar"></div>
+              <div class="swiper-scrollbar-{{section.id}}"></div>
             </div>
           </ul>
         {%- elsif media_count > 1 -%}
@@ -540,18 +540,18 @@
 
     // 如果需要分页器
     pagination: {
-      el: '.swiper-pagination',
+      el: '.swiper-pagination-{{section.id}}',
     },
 
     // 如果需要前进后退按钮
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next-{{section.id}}',
+      prevEl: '.swiper-button-prev-{{section.id}}',
     },
 
     // 如果需要滚动条
     scrollbar: {
-      el: '.swiper-scrollbar',
+      el: '.swiper-scrollbar-{{section.id}}',
     },
   }) 
 </script>
