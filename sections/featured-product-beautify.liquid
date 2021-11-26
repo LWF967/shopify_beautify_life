@@ -94,7 +94,7 @@
         
         {%- assign media_count = product.media | size -%}
                         {{ media_count }}
-        {%- if media_count > 1 -%}
+        {%- if media_count == 1 -%}
            <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list" style="display:flex;">
             {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
             {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -111,8 +111,7 @@
               {%- endunless -%}
             {%- endfor -%}
           </ul>
-        {%- endif -%}
-        {%- if media_count == 5 -%}
+        {%- elsif media_count > 4 -%}
           <div class="swiper-container">
             <div class="swiper-wrapper">
                 <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list" style="display:flex;">
