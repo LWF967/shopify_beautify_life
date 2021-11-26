@@ -192,6 +192,19 @@
 
 <style>
 
+  
+  {% unless section.settings.show_page_Dot %} 
+  .swiper-pagination{
+  	opacity:0;
+  }
+  
+  {% else %}  
+   .swiper-pagination{
+  	opacity:1;
+  }
+  
+  {% endunless %}>
+  
   .banner-beautify-imgbox{
     display: flex;
     flex-direction: row;
@@ -230,7 +243,6 @@
 </style>
 
 
-{% unless section.settings.show_page_Dot %} {% assign pagination = null %} {% else %}  {% assign pagination = pagination %} {% endunless %}
 
 <script type="module">
 
