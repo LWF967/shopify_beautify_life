@@ -1,12 +1,779 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+
+
+
+{{ 'flickity.js' | asset_url | script_tag }}
+
+<div class="page-width">
+  {% if section.settings.title != blank %}
+    <div class="section-header text-center">
+      <h1 style="font-weight:600; color:{{section.settings.color_top}}">{{ section.settings.title | escape }}</h1>
+      <p  style="margin-bottom:39px;"> {{ section.settings.sub_title | escape }} </p>
+    </div>
+  {% endif %}
+
+  {% case section.settings.grid %}
+    {% when 2 %}
+      {%- assign grid_item_width = 'medium-up--one-half' -%}
+    {% when 3 %}
+      {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
+    {% when 4 %}
+      {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
+    {% when 5 %}
+      {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
+  	{% when 6 %}
+      {%- assign grid_item_width = 'small--one-half medium-up--one-sixth' -%}
+  {% endcase %}
+
+
+	
+  {% if section.blocks.size == 0 %}
+    {% include 'no-blocks' %}
+  {% endif %}
+  
+    <div class="banner_third pr"> 
+  {%- for block in section.blocks -%}  
+     {%- case block.type -%}
+
+     {%- when 'banner_third' -%} {%- assign image = block.settings.image -%}
+     <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class=" flex_center {% if block.settings.url == blank %} pe_none{% endif %}"
+        style="background-image:url({{ image | img_url:'540x' }})"
+        > 
+      <div >
+       {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+<!--       		<img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image.width}}%20{{image.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" 
+                 data-src="{{ img_url  }}" 
+                 data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" 
+                 data-sizes="auto" 
+                 class="lazyload lz_op_ef w__100" 
+                 alt="{{image.alt}}" 
+                 loading="lazy"
+                 style="max-width:{{image.width}}px"> -->
+
+         {%- else -%}
+    	
+               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+
+       {%- endif -%}
+       
+        <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{block.settings.color}}">
+           
+          {{block.settings.header_top}}
+        </div>
+      
+      </div>
+	 </a>
+   
+    {%- endcase -%}
+  {%- endfor -%}
+      
+    </div>
+  <div class="collection-grid">
+    <ul class="grid1 grid--uniform">
+            
+      {%- for block in section.blocks -%} 
+        {%- case block.type -%}
+  
+        {%- when 'img_top' -%} 
+      
+      
+      {%- liquid 
+      		assign image1 = block.settings.image1
+      		assign image2 = block.settings.image2
+			assign image3 = block.settings.image3
+      -%}
+           <li class="grid__item__beautify {{ grid_item_width }}" >
+
+         
+   
+    	  <div class=" pr" style="    overflow: hidden;" >
+
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  
+                    <div class="swiper-slide 1">
+                  
+                     <a href="{{ block.settings.url1 }}" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url1 == blank %} pe_none{% endif %}">
+
+                    <div class="banner-beautify-imgbox">
+                    {%- if image1 != blank -%}  {% assign img_url1 = image1 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                         <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url1  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image1.alt}}" style="max-width:{{image1.width}}px;object-fit: cover; ">
+
+                      {%- else -%}
+
+                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                    </div>
+                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top1}}</div>
+
+                     </a>   
+                  
+                  	</div>
+                    <div class="swiper-slide 2">
+                  	 
+                     <a href="{{ block.settings.url2 }}" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url2 == blank %} pe_none{% endif %}">
+
+                    <div class="banner-beautify-imgbox">
+                    {%- if image2 != blank -%}  {% assign img_url2 = image2 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                         <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url2  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image1.alt}}" style="max-width:{{image1.width}}px;object-fit: cover; ">
+
+                      {%- else -%}
+
+                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                    </div>
+                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top2}}</div>
+
+                     </a> 
+                  
+                  
+                  
+                  	</div>
+                  
+                    <div class="swiper-slide 3">
+                  
+                  	 <a href="{{ block.settings.url3 }}" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url3 == blank %} pe_none{% endif %}">
+
+                    <div class="banner-beautify-imgbox">
+                    {%- if image3 != blank -%}  {% assign img_url3 = image3 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+<!--                          <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image3.width}}%20{{image3.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" 
+                               data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image.alt}}" 
+                              style="max-width:{{image.width}}px;   	
+                              background-image:url('{{ image3 | img_url: '800x' }}');
+                              background-repeat: no-repeat;
+                              background-position: center;
+                              background-size: cover;       "> -->
+                      
+                      
+                       <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url3  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image1.alt}}" style="max-width:{{image3.width}}px;  object-fit: cover; ">
+
+
+                      {%- else -%}
+
+                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                    </div>
+              
+                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top3}}</div>
+
+                     </a> 
+                  	
+                  	</div>
+                </div>
+                <!-- 如果需要分页器 -->
+                
+                <div class=" swiper-pagination   {% unless section.settings.show_page_Dot %} 
+ opa-0
+  
+  {% else %}  
+ opa-1
+  {% endunless %}>" ></div>
+           
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- 如果需要滚动条 -->
+                <div class="swiper-scrollbar"></div>
+            </div>		
+
+           </div>
+
+
+             
+   		
+             
+           </li>
+      			
+      	
+      
+      
+      	{%- endcase -%}
+  	 {%- endfor -%}
+  	    </ul>
+  </div>
+  
+
+  
+  
+  
+</div>
+
+<style>
+
+
+  .opa-0{
+  	opacity:0;
   }
+  
+ .opa-1{
+  	opacity:1;
+  }
+  
+
+
+ 
+  
+  .banner-beautify-imgbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;  
+    max-height: 400px;           	
+
+  } 
+  
+  
+   @media screen and (max-width: 750px) {
+ 	.banner-beautify-imgbox{
+    max-height: 200px; 
+     } 
+  }
+
+   @media screen and (min-width: 990px) {
+
+  .banner-beautify-imgbox{
+    max-height: 300px; 
+     }       
+  }
+
+  
+/* .swiper-container {
+
+    max-height: 400px;
+}  
+  
+  .swiper-slide{
+  
+  max-height:400px;
+  
+  }   */
+
+</style>
+
+
+
+
+
+<script type="module">
+
+ // import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+
+    import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+  
+  
+   const swiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+    loop: true, // 循环模式选项 
+
+    // 如果需要分页器
+    
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable :true,
+    },
+  
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+  /*  scrollbar: {
+      el: '.swiper-scrollbar',
+    }, */
+  })  
+  
+  
+  
+    
+</script>
+
+
+{% schema %}
+{
+  "name": {
+
+    "en": "banner  Beautify"
+  },
+  "tag": "section",
+  "class": "index-section",
+  "max_blocks": 8,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": {
+   
+        "en": "Heading"
+      },
+      "default": {
+
+        "en": "BANNER"
+      }
+    },
+
+ 	
+
+ 	{
+      "type": "text",
+      "id": "sub_title",
+      "label": {
+   
+        "en": "Sub text"
+      },
+      "default": {
+
+        "en": "Popular this week"
+      }
+    },
+
+	{
+        "type": "header",
+        "content": "COLUMN TOP"
+      },
+
+    {
+      "type": "range",
+      "id": "font_top",
+      "label": {
+ 
+        "en": "Font size header"
+      },
+      "min": 12,
+      "max": 80,
+      "step": 2,
+      "default": 30
+    },
+
+	{
+      "type": "color",
+      "id": "color_top",
+      "label": "Header color",
+      "default": "#fff"
+     },
+
+	{
+      "type": "range",
+      "id": "grid",
+	  
+      "label": {
+ 
+        "en": "image per row "
+      },
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 3
+    },
+
+	{
+      "type": "checkbox",
+      "id": "show_view_all",
+      "default": false,
+      "label": "t:sections.collection-list.settings.show_view_all.label"
+    },
+	{
+      "type": "checkbox",
+      "id": "show_page_Dot",
+      "default": false,
+      "label": "Show Page Dot"
+    }
+
+  ],
+  "blocks": [
+
+    {
+      "type": "img_top",
+      "name": {
+
+        "en": "IMG BOTTOM"
+      },
+      "settings": [
+
+       {
+         "type": "image_picker",
+         "id": "image1",
+         "label": "Image1"
+       },
+	   {
+         "type": "image_picker",
+         "id": "image2",
+         "label": "Image2"
+       },
+	   {
+         "type": "image_picker",
+         "id": "image3",
+         "label": "Image3"
+       },
+		
+      {
+        "type": "text",
+        "id": "header_top1",
+        "label": {
+
+        "en": "Header1"
+      },
+        "default": {
+
+        "en": "Head1"
+       }
+      },
+	  {
+        "type": "text",
+        "id": "header_top2",
+        "label": {
+
+        "en": "Header2"
+      },
+        "default": {
+
+        "en": "Head2"
+       }
+      },
+
+	 {
+        "type": "text",
+        "id": "header_top3",
+        "label": {
+
+        "en": "Header3"
+      },
+        "default": {
+
+        "en": "Head3"
+       }
+      },
+
+
+       {
+        "label": "Image link1 ",
+        "id": "url1",
+        "type": "url"
+      },
+	  {
+        "label": "Image link2 ",
+        "id": "url2",
+        "type": "url"
+      },
+	 {
+        "label": "Image link3 ",
+        "id": "url3",
+        "type": "url"
+      },
+
+      {
+        "type": "select",
+        "id": "open_link",
+        "options": [
+          {
+            "value": "_self",
+            "label": "Current window (_self)"
+          },
+         {
+            "value": "_blank",
+            "label": "New window (_blank)"
+          }
+        ],
+        "label": "Open link in",
+        "default": "_blank"
+      }
+
+      ]
+    },
+
+	{
+      "type": "banner_third",
+      "name": "IMG TOP",
+      "limit": 3,
+      "settings": [
+		{
+         "type": "image_picker",
+         "id": "image",
+         "label": "Image"
+       },
+		{
+        "type": "text",
+        "id": "header_top",
+        "label": {
+
+        "en": "Header"
+      },
+        "default": {
+
+        "en": "Head"
+       }
+      },
+    {
+        "label": "Image link ",
+        "id": "url",
+        "type": "url"
+      },
+          {
+            "type": "color",
+            "id": "color",
+            "label": "Color",
+            "default": "#fff"
+          },
+          {
+            "type": "range",
+            "id": "w",
+            "min": 50,
+            "max": 150,
+            "step": 10,
+            "label": "Width",
+            "default": 140
+          },
+          {
+            "type": "range",
+            "id": "h",
+            "min": 1,
+            "max": 5,
+            "step": 0.5,
+            "label": "Height",
+            "default": 3
+          },
+		  {
+        "type": "select",
+        "id": "open_link",
+        "options": [
+          {
+            "value": "_self",
+            "label": "Current window (_self)"
+          },
+         {
+            "value": "_blank",
+            "label": "New window (_blank)"
+          }
+        ],
+        "label": "Open link in",
+        "default": "_blank"
+      }
+        ]
+      }
+
+
+  ],
+  "presets": [
+    {
+      "name": {
+
+        "en": "Banner"
+      },
+      "category": {
+
+        "en": "Collection"
+      },
+      "blocks": [
+        {
+          "type": "img_top"
+        },
+        {
+          "type": "img_top"
+        },
+        {
+          "type": "img_top"
+        }
+      ]
+    }
+  ]
+}
 {% endschema %}
 
+<style>
+  
+  .banner_third{
+ 
+  	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+    max-height:68px;
+  }
+  
+  .flex_center{
+  	position:relative;
+    height:100px;
+    width:100%;
+    text-align: center;
+    flex-grow: 1;
+    margin: 10px 20px;
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }	
+
+ .w__100{
+  
+  width:100%;
+  }
+	
+  img{
+  
+  height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  img.lz_op_ef.lazyloaded {
+    -webkit-animation: 1.25s cubic-bezier(.26,.54,.32,1) forwards ani-fadeIn;
+    animation: 1.25s cubic-bezier(.26,.54,.32,1) forwards ani-fadeIn;
+}
+
+  .tc {
+    text-align: center;
+}
+  .pr{
+  
+  position:relative;
+  }
+  .pa{
+  
+  position:absolute;
+  }
+  .nt_promotion_html {
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    right: auto;
+}
+  
+  .nt_promotion .pa {
+    z-index: 10;
+    padding: 10px;
+}
+
+  
+
+.tc_md {
+    text-align: center;
+}
+
+  
+ .pe_none {
+    pointer-events: none;
+}
+  
+  .grid1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  padding: 0;
+  list-style: none;
+}
+
+  
+  
+
+.grid__item__beautify {
+  padding:3rem 2rem 0 2rem;
+/*   padding-top: 3rem; */
+  max-width: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+
+  
+  .grid__item__beautify {
+
+  max-width: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+
+
+  
+@media screen and (min-width: 750px) {
+  .grid1 {
+    margin-left: 0;
+  }
+}
+
+   @media screen and (max-width: 750px) {
+	
+       .grid__item__beautify {
+          width:100%;
+
+          max-width: 100%;
+          flex-grow: 1;
+          flex-shrink: 0;
+		}
+     
+     
+      .banner_third{
+ 
+  	display: flex;
+   	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+  	max-height: max-content;
+  }
+     
+      .flex_center{
+  	position:relative;
+    height:100px;
+    width:100%;
+    text-align: center;
+    flex-grow: 1;
+    padding: 0;
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }	
+     
+     
+     .grid1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    margin-left: 0;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+	}  
+    
+  }
+
+@media screen and (max-width: 990px) {
+
+    .banner_third{
+ 
+  	display: flex;
+   	flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow:hidden;
+  	max-height: max-content;
+  }
+    
+  
+  }
+  
+  
+  
+</style>
+
+
+
 {% stylesheet %}
+
+
+
 {% endstylesheet %}
 
 {% javascript %}
 {% endjavascript %}
+
+
+
