@@ -392,7 +392,7 @@
         "color_top": "#ffffff",
         "grid": 2,
         "show_view_all": false,
-        "show_page_Dot": false
+        "show_page_Dot": true
       }
     },
     "1635497923083b4abb": {
