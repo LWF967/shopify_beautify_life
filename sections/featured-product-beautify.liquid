@@ -59,13 +59,13 @@
     object-fit: cover;
   }
 
-  .swiper-button-prevppp::after,
+/*   .swiper-button-prevppp::after,
   .swiper-button-nextnnn::after {
     color: red;
     width: 10px;
     height: 20px;
     font-size: 20px;
-  }
+  } */
 
   .swiper-button-nextnnn {
     right: -20px;
@@ -630,6 +630,27 @@
 
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+  
+  var mySwiper = new Swiper ('.swiper-container .featured-product-beautify', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    }
+  })
   
   var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
