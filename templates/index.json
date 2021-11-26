@@ -283,7 +283,7 @@
         "product": "text4",
         "log_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
         "heading_text": "Daily Deal Of The Day",
-        "heading_font_size": 30,
+        "heading_font_size": 38,
         "color_top": "#b13e3e",
         "countdown_time": "2021\/11\/29 18:30:00",
         "time_font_size": 32,
@@ -614,7 +614,7 @@
         "163774500222c241f7-8"
       ],
       "settings": {
-        "product": "lol-more",
+        "product": "lol4",
         "secondary_background": false,
         "show_share_buttons": true,
         "hide_variants": false,
