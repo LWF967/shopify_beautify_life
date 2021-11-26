@@ -388,9 +388,9 @@
       "settings": {
         "title": "BANNER",
         "sub_title": "Popular this week",
-        "font_top": 30,
+        "font_top": 36,
         "color_top": "#ffffff",
-        "grid": 1,
+        "grid": 2,
         "show_view_all": false,
         "show_page_Dot": true
       }
