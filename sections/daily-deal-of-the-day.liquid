@@ -49,10 +49,19 @@
   </div>
   <div class="right daily-right">
     <div class="daily-product-box" style="background-color: {{setting.background_product_color}};">
-      <img class="tt1 lazyload daily-product" 
-          
-          
-           data-src="{{section.settings.log_image | img_url}}">
+      
+       <img
+      srcset="{% if section.settings.log_image.width >= 288 %}{{ section.settings.log_image | img_url: '288x' }} 288w,{% endif %}
+        {% if section.settings.log_image.width >= 576 %}{{ section.settings.log_image | img_url: '576x' }} 576w,{% endif %}
+        {% if section.settings.log_image.width >= 750 %}{{ section.settings.log_image| img_url: '750x' }} 750w,{% endif %}
+        {% if section.settings.log_image.width >= 1100 %}{{ section.settings.log_image | img_url: '1100x' }} 1100w,{% endif %}
+        {% if section.settings.log_image.width >= 1500 %}{{ section.settings.log_image | img_url: '1500x' }} 1500w{% endif %}"
+      src="{{ section.settings.log_image | img_url: '1500x' }}"
+      loading="lazy"
+      width="576"
+      height="{{ 576 | divided_by: section.settings.log_image.preview_image.aspect_ratio }}"
+      alt="{{ section.settings.log_image.alt | escape }}"
+    >
       
      
      
