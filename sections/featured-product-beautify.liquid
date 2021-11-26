@@ -74,11 +74,16 @@
   .swiper-button-prev {
     left: -20px;
   }
+  
   .swiper-button-prev.swiper-button-disabled:empty,
   .swiper-button-next.swiper-button-disabled:empty,
   .swiper-button-prev:empty,
   .swiper-button-next:empty {
     display: flex;
+  }
+  
+  .my_featured_product_beautify_ul li modal-opener {
+    width: 100%;
   }
   @media screen and (max-width: 750px) {
     .my_featured_product_beautify_ul li {
@@ -213,7 +218,7 @@
         
         <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list" style="display:flex;">
           <div class="box" style="position:relative; width: 700px; margin: 30% auto;border: 1px solid transparent; padding: 0 15px;">
-            <div class="swiper mySwiper">
+            <div class="swiper mySwiper ">
               <div class="swiper-wrapper">
                 {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
                 {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -233,7 +238,7 @@
                 {%- endfor -%}
               </div>
             </div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-prev "></div>
             <div class="swiper-button-next"></div>
           </div>
         </ul>
