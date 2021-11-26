@@ -59,19 +59,19 @@
     object-fit: cover;
   }
 
-  .swiper-button-prevppp::after,
-  .swiper-button-nextnnn::after {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
     color: red;
     width: 10px;
     height: 20px;
     font-size: 20px;
   }
 
-  .swiper-button-nextnnn {
+  .swiper-button-next {
     right: -20px;
   }
 
-  .swiper-button-prevppp {
+  .swiper-button-prev {
     left: -20px;
   }
   @media screen and (max-width: 750px) {
@@ -228,8 +228,8 @@
               </div>
               <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-button-prevppp"></div>
-            <div class="swiper-button-nextnnn"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
           </div>
         </ul>
         
@@ -656,8 +656,8 @@
           clickable: true,
       },
       navigation: {
-          nextEl: '.swiper-button-nextnnn',
-          prevEl: '.swiper-button-prevppp',
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
       },
   });
 </script>
