@@ -10,7 +10,7 @@
   assign arr_blocks_img = se_blocks | where: "type", 'img' -%}
 
 {{ 'nt-banner.js' | asset_url | script_tag }}
-{{ 'nt-banner.css' | asset_url | stylesheet_tag }}
+
 
 <div class="SlideshowWrapper nt_se_{{sid}} {{section.settings.layout}} se_height_{{ se_height }} nt_first">
 	<div class="fade_flick_{{section.settings.effect}} {% if tp_blocks contains 'vid' %}slideshow_has_video {% endif %}slideshow row no-gutters equal_nt nt_slider js_carousel prev_next_{{section.settings.btn_color}} btn_owl_{{section.settings.btn_owl}} dot_owl_{{section.settings.dot_owl}} dot_color_{{section.settings.dot_color}} btn_vi_{{section.settings.btn_vi}}" data-flickity='{ "fade":0,"cellAlign": "center","imagesLoaded": 0,"lazyLoad": 0,"freeScroll": 0,"wrapAround": {{section.settings.loop}},"autoPlay" : {% if section.settings.autoplay %}{{ section.settings.au_time | times: 1000 }}{% else %}0{% endif %},"pauseAutoPlayOnHover" : {{section.settings.au_hover}}, "rightToLeft": {{settings.use_rtl}}, "prevNextButtons": {{section.settings.button}},"pageDots": {{section.settings.dot}}, "contain" : 1,"adaptiveHeight" : 1,"dragThreshold" : 5,"percentPosition": 1 }'>
