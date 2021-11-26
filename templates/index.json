@@ -395,6 +395,48 @@
         "show_page_Dot": true
       }
     },
+    "16378995192374eec4": {
+      "type": "banner-flickity",
+      "blocks": {
+        "163789951806c9ee2e-0": {
+          "type": "img_top",
+          "settings": {
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "163789951806c9ee2e-1": {
+          "type": "img_top",
+          "settings": {
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        }
+      },
+      "block_order": [
+        "163789951806c9ee2e-0",
+        "163789951806c9ee2e-1"
+      ],
+      "settings": {
+        "title": "BANNER",
+        "sub_title": "Popular this week",
+        "font_top": 30,
+        "color_top": "#fff",
+        "grid": 3,
+        "show_view_all": false,
+        "show_page_Dot": false
+      }
+    },
     "1635497923083b4abb": {
       "type": "contact-form",
       "settings": {
@@ -667,103 +709,6 @@
       "settings": {
         "title": "Custom content"
       }
-    },
-    "16378974635238cd0b": {
-      "type": "banner",
-      "blocks": {
-        "1637897462d68a9c92-0": {
-          "type": "img",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-            "pos_img": "center center",
-            "cl_img": "",
-            "link_img1": "",
-            "open_link": "_blank",
-            "caption_w": "2",
-            "cap_v_pos": 50,
-            "cap_h_pos": 39,
-            "txt_align": "tl_md",
-            "cap_v_pos_mb": 50,
-            "cap_h_pos_mb": 39,
-            "txt_align_mb": "tl",
-            "cl_overlay": "#000",
-            "cl_opacity": 0,
-            "ani_img": "none",
-            "ani_txt": "none"
-          }
-        },
-        "1637897462d68a9c92-1": {
-          "type": "img",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
-            "pos_img": "center center",
-            "cl_img": "",
-            "link_img1": "",
-            "open_link": "_blank",
-            "caption_w": "2",
-            "cap_v_pos": 50,
-            "cap_h_pos": 39,
-            "txt_align": "tl_md",
-            "cap_v_pos_mb": 50,
-            "cap_h_pos_mb": 39,
-            "txt_align_mb": "tl",
-            "cl_overlay": "#000",
-            "cl_opacity": 0,
-            "ani_img": "none",
-            "ani_txt": "none"
-          }
-        },
-        "1637897462d68a9c92-2": {
-          "type": "img",
-          "settings": {
-            "pos_img": "center center",
-            "cl_img": "",
-            "link_img1": "",
-            "open_link": "_blank",
-            "caption_w": "2",
-            "cap_v_pos": 50,
-            "cap_h_pos": 39,
-            "txt_align": "tl_md",
-            "cap_v_pos_mb": 50,
-            "cap_h_pos_mb": 39,
-            "txt_align_mb": "tl",
-            "cl_overlay": "#000",
-            "cl_opacity": 0,
-            "ani_img": "none",
-            "ani_txt": "none"
-          }
-        }
-      },
-      "block_order": [
-        "1637897462d68a9c92-0",
-        "1637897462d68a9c92-1",
-        "1637897462d68a9c92-2"
-      ],
-      "settings": {
-        "se_height": "adapt",
-        "use_custom_h": "1",
-        "h_des": "600px",
-        "h_tb": "500px",
-        "h_mb": "350px",
-        "effect": "1",
-        "loop": true,
-        "autoplay": false,
-        "au_time": 6,
-        "au_hover": true,
-        "button": false,
-        "btn_vi": "1",
-        "btn_owl": "1",
-        "btn_color": "0",
-        "dot": true,
-        "dot_owl": "1",
-        "dot_color": "1",
-        "layout": "nt_full",
-        "cl_bg": "",
-        "mg": ",,50px,",
-        "pd": "",
-        "mg_mb": "",
-        "pd_mb": ""
-      }
     }
   },
   "order": [
@@ -774,12 +719,12 @@
     "163454604067313d0f",
     "1635832448db75c5e7",
     "163608389212513e57",
+    "16378995192374eec4",
     "1635497923083b4abb",
     "1635996418e080b5d8",
     "1636093631994b741b",
     "1637812188b731cca0",
     "16377450024fa9643e",
-    "16377430666a59b35c",
-    "16378974635238cd0b"
+    "16377430666a59b35c"
   ]
 }
