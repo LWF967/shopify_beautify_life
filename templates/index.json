@@ -667,6 +667,101 @@
       "settings": {
         "title": "Custom content"
       }
+    },
+    "16378974635238cd0b": {
+      "type": "banner",
+      "blocks": {
+        "1637897462d68a9c92-0": {
+          "type": "img",
+          "settings": {
+            "pos_img": "center center",
+            "cl_img": "",
+            "link_img1": "",
+            "open_link": "_blank",
+            "caption_w": "2",
+            "cap_v_pos": 50,
+            "cap_h_pos": 39,
+            "txt_align": "tl_md",
+            "cap_v_pos_mb": 50,
+            "cap_h_pos_mb": 39,
+            "txt_align_mb": "tl",
+            "cl_overlay": "#000",
+            "cl_opacity": 0,
+            "ani_img": "none",
+            "ani_txt": "none"
+          }
+        },
+        "1637897462d68a9c92-1": {
+          "type": "img",
+          "settings": {
+            "pos_img": "center center",
+            "cl_img": "",
+            "link_img1": "",
+            "open_link": "_blank",
+            "caption_w": "2",
+            "cap_v_pos": 50,
+            "cap_h_pos": 39,
+            "txt_align": "tl_md",
+            "cap_v_pos_mb": 50,
+            "cap_h_pos_mb": 39,
+            "txt_align_mb": "tl",
+            "cl_overlay": "#000",
+            "cl_opacity": 0,
+            "ani_img": "none",
+            "ani_txt": "none"
+          }
+        },
+        "1637897462d68a9c92-2": {
+          "type": "img",
+          "settings": {
+            "pos_img": "center center",
+            "cl_img": "",
+            "link_img1": "",
+            "open_link": "_blank",
+            "caption_w": "2",
+            "cap_v_pos": 50,
+            "cap_h_pos": 39,
+            "txt_align": "tl_md",
+            "cap_v_pos_mb": 50,
+            "cap_h_pos_mb": 39,
+            "txt_align_mb": "tl",
+            "cl_overlay": "#000",
+            "cl_opacity": 0,
+            "ani_img": "none",
+            "ani_txt": "none"
+          }
+        }
+      },
+      "block_order": [
+        "1637897462d68a9c92-0",
+        "1637897462d68a9c92-1",
+        "1637897462d68a9c92-2"
+      ],
+      "settings": {
+        "se_height": "adapt",
+        "use_custom_h": "1",
+        "h_des": "600px",
+        "h_tb": "500px",
+        "h_mb": "350px",
+        "effect": "1",
+        "loop": true,
+        "autoplay": false,
+        "au_time": 6,
+        "au_hover": true,
+        "button": false,
+        "btn_vi": "1",
+        "btn_owl": "1",
+        "btn_color": "0",
+        "dot": true,
+        "dot_owl": "1",
+        "dot_color": "1",
+        "layout": "nt_full",
+        "cl_bg": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_mb": "",
+        "pd_mb": ""
+      }
     }
   },
   "order": [
@@ -682,6 +777,7 @@
     "1636093631994b741b",
     "1637812188b731cca0",
     "16377450024fa9643e",
-    "16377430666a59b35c"
+    "16377430666a59b35c",
+    "16378974635238cd0b"
   ]
 }
