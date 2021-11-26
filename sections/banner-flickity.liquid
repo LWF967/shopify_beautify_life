@@ -135,14 +135,7 @@
 
                     <div class="banner-beautify-imgbox">
                     {%- if image3 != blank -%}  {% assign img_url3 = image3 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-<!--                          <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image3.width}}%20{{image3.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" 
-                               data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image.alt}}" 
-                              style="max-width:{{image.width}}px;   	
-                              background-image:url('{{ image3 | img_url: '800x' }}');
-                              background-repeat: no-repeat;
-                              background-position: center;
-                              background-size: cover;       "> -->
-                      
+
                       
                        <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url3  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image1.alt}}" style="max-width:{{image3.width}}px;  object-fit: cover; ">
 
