@@ -549,18 +549,18 @@
     
     if( count_time<=0){
       
-      set_time_day.innerHTML = "秒";
-      set_time_hour.innerHTML = "杀";
-      set_time_minutes.innerHTML = "结";
-      set_time_second.innerHTML = "束";
+      set_time_day.innerHTML = "Daily";
+      set_time_hour.innerHTML = "Deal";
+      set_time_minutes.innerHTML = "Time";
+      set_time_second.innerHTML = "Up";
       clearInterval(a);
       
     }else {
      	
-      set_time_day.innerHTML = parseInt(count_time/(3600*24))+"day"; 
-      set_time_hour.innerHTML = parseInt(count_time/3600%24)+"hour";
-      set_time_minutes.innerHTML = parseInt(count_time/60%60)+"minute";
-      set_time_second.innerHTML = parseInt(count_time%60)+"second";
+      set_time_day.innerHTML = parseInt(count_time/(3600*24))+"Day"; 
+      set_time_hour.innerHTML = parseInt(count_time/3600%24)+"Hour";
+      set_time_minutes.innerHTML = parseInt(count_time/60%60)+"Minute";
+      set_time_second.innerHTML = parseInt(count_time%60)+"Second";
       
     }
     
