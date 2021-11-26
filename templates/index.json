@@ -401,6 +401,9 @@
         "163789951806c9ee2e-0": {
           "type": "img_top",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
+            "image2": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "image3": "shopify:\/\/shop_images\/small-business-interior.jpg",
             "header_top1": "Head1",
             "header_top2": "Head2",
             "header_top3": "Head3",
@@ -413,6 +416,9 @@
         "163789951806c9ee2e-1": {
           "type": "img_top",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "image2": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image3": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
             "header_top1": "Head1",
             "header_top2": "Head2",
             "header_top3": "Head3",
