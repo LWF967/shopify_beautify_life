@@ -674,6 +674,7 @@
         "1637897462d68a9c92-0": {
           "type": "img",
           "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "",
@@ -694,6 +695,7 @@
         "1637897462d68a9c92-1": {
           "type": "img",
           "settings": {
+            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
             "pos_img": "center center",
             "cl_img": "",
             "link_img1": "",
