@@ -16,13 +16,13 @@
 {%- endif -%}
 
 <style>
-  .my_featured_product_beautify_ul li modal-opener .product__media.media.media--transparent {
+  .my_featured_product_beautify_ul li {
     padding: 15px 0 0 10px !important;
   }
-  .my_featured_product_beautify_ul li:first-child modal-opener .product__media.media.media--transparent {
+  .my_featured_product_beautify_ul li:first-child {
     padding: 15px 0 0 0 !important;
   }
-  .my_featured_product_beautify_ul li:last-child modal-opener .product__media.media.media--transparent {
+  .my_featured_product_beautify_ul li:last-child {
     padding: 15px 0 0 10px;
   }
   @media screen and (max-width: 750px) {
@@ -110,14 +110,16 @@
                 {%- if product.selected_or_first_available_variant.featured_media != null -%}
                 {%- assign media = product.selected_or_first_available_variant.featured_media -%}
                 <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %} swiper-slide " 
-                    data-media-id="{{ section.id }}-{{ media.id }}">
+                    data-media-id="{{ section.id }}-{{ media.id }}"
+                    style="flex: 0 0 25%;max-width: 25%;">
                   {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
                 </li>
                 {%- endif -%}
                 {%- for media in product.media -%}
                 {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
                 <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %} swiper-slide" 
-                    data-media-id="{{ section.id }}-{{ media.id }}">
+                    data-media-id="{{ section.id }}-{{ media.id }}"
+                    style="flex: 0 0 25%;max-width: 25%;">
                   {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
                 </li>
                 {%- endunless -%}
