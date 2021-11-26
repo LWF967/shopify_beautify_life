@@ -16,13 +16,13 @@
     
     
     <div class="felx_box pd">
-      <h1 style="font-size:{{setting.heading_font_size}}">Daily Deal Of The Day</h1>
+      <h1 class="f4" style="font-size:{{setting.heading_font_size}}">Daily Deal Of The Day</h1>
 <!--       <div class="clock"></div>
       <div class="clock"></div>
       <div class="clock"></div>
       <div class="clock"></div> -->
       
-      <div class="timebox"    data-endtime="{{setting.countdown_time}}"  style="font-siez:{{setting.time_font_size}}">
+      <div class="timebox f5"    data-endtime="{{setting.countdown_time}}"  style="font-siez:{{setting.time_font_size}}">
         <div class="day_time f1 time-div"></div>
         <div class="hour_time f1 time-div"></div>
         <div class="minutes_time f1 time-div"></div>
@@ -241,7 +241,7 @@
   
   .timebox{
   
-  display: flex;
+  display: flex;	
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
@@ -253,6 +253,14 @@
   .f1{
     flex:1;
   
+  }
+  
+  .f5{
+  flex:5;
+  }
+  
+  .f4{
+  flex:4;
   }
   
   .time-div{
