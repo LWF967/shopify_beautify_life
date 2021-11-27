@@ -189,7 +189,7 @@
       "settings": {
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
-        "grid": 4,
+        "grid": 3,
         "show_view_all": true,
         "show_page_Dot": true,
         "page_dot_style": "style_1"
@@ -322,8 +322,8 @@
             "image1": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
             "image2": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
             "image3": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "header_top1": "Head1",
-            "header_top2": "Head2",
+            "header_top1": "Head1asd",
+            "header_top2": "Head2asd",
             "header_top3": "Head3",
             "url1": "",
             "url2": "",
@@ -388,7 +388,7 @@
         "9cffad93-dfc5-429d-883f-55d063daab64"
       ],
       "settings": {
-        "title": "BANNER",
+        "title": "BANNERasdas",
         "sub_title": "Popular this week",
         "font_top": 36,
         "color_top": "#ffffff",
