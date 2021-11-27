@@ -133,18 +133,10 @@
               {% if media_size == 'adapt' and use_eq_height != true %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
   
             >
-              {% if use_eq_height == true %}
               
-              
-              {% endif %}
               
               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
               
-     
-
-              {%- if product_card_product.media[1] != nil and show_secondary_image -%}
-               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-              {%- endif -%}
             </div>
           </div>
         	
