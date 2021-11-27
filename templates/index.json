@@ -72,10 +72,7 @@
         "show_button_hover_color": "#ea0606",
         "show_page_Dot": true,
         "page_dot_style": "style_1",
-        "page_dot_color": "dark",
-        "feature_title": "title name",
-        "link-name": "View all",
-        "button_link": ""
+        "page_dot_color": "dark"
       }
     },
     "16366965204a8cb316": {
@@ -137,10 +134,7 @@
         "show_button_hover_color": "#992f2f",
         "show_page_Dot": true,
         "page_dot_style": "style_1",
-        "page_dot_color": "dark",
-        "feature_title": "title name",
-        "link-name": "View all",
-        "button_link": ""
+        "page_dot_color": "dark"
       }
     },
     "16366804518eb2e044": {
@@ -197,7 +191,12 @@
         "grid": 3,
         "show_view_all": true,
         "show_page_Dot": true,
-        "page_dot_style": "style_1"
+        "page_dot_style": "style_1",
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style3",
+        "show_button_color": "gray",
+        "show_button_hover_color": "#b73131"
       }
     },
     "1635836350c3b72b9b": {
@@ -279,7 +278,12 @@
         "grid": 5,
         "show_view_all": false,
         "show_page_Dot": false,
-        "page_dot_style": "style_1"
+        "page_dot_style": "style_1",
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": ""
       }
     },
     "163454604067313d0f": {
