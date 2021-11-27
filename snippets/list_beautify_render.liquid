@@ -105,9 +105,23 @@
         <!-- 如果需要分页器 -->
           <div class="swiper-pagination-{{section.id}}"></div>
 		{%- endif -%}
+  
+  
           <!-- 如果需要导航按钮 -->
-          <div class="swiper-button-prev-{{section.id}}"></div>
-          <div class="swiper-button-next-{{section.id}}"></div>
+          <div class="swiper-button-prev-{{section.id}}
+                      bk_{{section.settings.show_button_color}}
+                      {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% else %}  dn  {% endif%} 
+                      leftbtn leftbtn-{{section.id}}   button_{{ section.settings.show_button_style }}
+                      
+                      
+                      "></div>
+  
+  
+  
+          <div class="swiper-button-next-{{section.id}}   
+                      bk_{{section.settings.show_button_color}} 
+                      {% if section.settings.show_button %}icon-changebtn_{{section.id}} {% else %} dn  {% endif%} 
+                      rightbtn  rightbtn-{{section.id}}  button_{{ section.settings.show_button_style }}"></div>
 
           <!-- 如果需要滚动条 -->
           <div class="swiper-scrollbar-{{section.id}}"></div>
