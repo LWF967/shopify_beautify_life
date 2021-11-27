@@ -809,18 +809,18 @@
 
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseover',
-      function () {
+      debounce(function () {
         clearInterval(time_gui)
              console.log(time_gui,"ss")
-      },
+      },300),
       false
     )
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseleave',
-      function () {
+      debounce(function () {
         time_gui =  (autop == 'true') ? setInterval(autoPlay, time * 1000) : '无效';
                console.log(time_gui,"xx")
-      },
+      },300),
       false
     )
 
