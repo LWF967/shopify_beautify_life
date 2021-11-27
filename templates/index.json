@@ -70,7 +70,7 @@
         "show_button_style": "style3",
         "show_button_color": "transparent",
         "show_button_hover_color": "#fca2ce",
-        "show_page_Dot": false,
+        "show_page_Dot": true,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
         "feature_title": "title name",
