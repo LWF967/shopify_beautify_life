@@ -7,7 +7,8 @@
           "type": "slideshow_img2",
           "settings": {
             "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
-            "image_alignment": "top_left",
+            "image_alignment": "bottom right",
+            "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
@@ -19,6 +20,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
             "image_alignment": "middle_center",
+            "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
@@ -30,6 +32,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
             "image_alignment": "middle_center",
+            "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
@@ -41,6 +44,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
             "image_alignment": "middle_center",
+            "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
@@ -57,7 +61,6 @@
       "settings": {
         "se_height": "adapt_f",
         "text_size": "medium",
-        "text_alignment": "top_left",
         "overlay": true,
         "loop": true,
         "auto_play": false,
@@ -83,6 +86,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
             "image_alignment": "middle_center",
+            "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
@@ -94,6 +98,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
             "image_alignment": "middle_center",
+            "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
@@ -105,6 +110,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
             "image_alignment": "middle_center",
+            "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
@@ -120,7 +126,6 @@
       "settings": {
         "se_height": "adapt",
         "text_size": "large",
-        "text_alignment": "top_left",
         "overlay": true,
         "loop": true,
         "auto_play": true,
