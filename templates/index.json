@@ -19,7 +19,7 @@
           "type": "slideshow_img2",
           "settings": {
             "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "image_alignment": "middle_center",
+            "image_alignment": "center center",
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
