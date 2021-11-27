@@ -69,7 +69,7 @@
         "show_button_visible": "only_hover",
         "show_button_style": "style3",
         "show_button_color": "transparent",
-        "show_button_hover_color": "#EA0606",
+        "show_button_hover_color": "#ea0606",
         "show_page_Dot": true,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
@@ -85,7 +85,7 @@
           "type": "slideshow_img2",
           "settings": {
             "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
-            "image_alignment": "middle_center",
+            "image_alignment": "center center",
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
