@@ -430,6 +430,28 @@
   }
   
   
+  {% if section.settings.show_button_visible != 'always' %} 
+
+  
+
+  .icon-changebtn_{{section.id}} {
+  	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+ 	opacity: 0;
+    transition: .2s ease-in-out
+  
+  }
+  
+  .swiper-container-{{section.id}}:hover .icon-changebtn_{{section.id}}{
+    
+    -webkit-transform: scale(1);
+	transform: scale(1);
+  	opacity: 1;
+  
+  }
+  
+  {% endif %}
+  
 
 </style>
 
