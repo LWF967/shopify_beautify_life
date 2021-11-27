@@ -101,7 +101,56 @@
             </div>
           </div>
         {%- else -%}
-          <div class="card__content"><h2 class="card__text h3">{{ product_card_product.title }}</h2></div>
+        
+        
+        
+         <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>{% assign image_ratio1 = section.settings.image_ratio1 %}
+            <div class="media media--transparent  {% if use_eq_height == true%}   {{image_ratio1}}   {% endif %}  media--{{ media_size }} media--hover-effect "
+                       {% if use_eq_height == true%}  
+                       	 
+                        {% case image_ratio1 %}
+                          {% when  'ratio_cus1' %}
+
+                          style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_1.aspect_ratio | times: 100 }}%;"
+
+                          {% when  'ratio_cus2' %}
+
+                          style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_2.aspect_ratio | times: 100 }}%;"
+
+                          {% when  'ratio_cus3' %}
+
+                          style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_3.aspect_ratio | times: 100 }}%;"                                                                                        
+
+                          {% when  'ratio_cus4' %}
+
+                          style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_4.aspect_ratio | times: 100 }}%;"
+                
+                         {% endcase %}
+                          
+                       {% endif %}
+            
+                        
+              {% if media_size == 'adapt' and use_eq_height != true %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
+  
+            >
+              {% if use_eq_height == true %}
+              
+              
+              {% endif %}
+              
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              
+     
+
+              {%- if product_card_product.media[1] != nil and show_secondary_image -%}
+               {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- endif -%}
+            </div>
+          </div>
+        	
+        
+        	
+<!--           <div class="card__content"><h2 class="card__text h3">{{ product_card_product.title }}</h2></div> -->
         {%- endif -%}
 
         <div class="card__badge">
