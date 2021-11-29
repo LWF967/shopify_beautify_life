@@ -18,7 +18,8 @@
   }
 </style>
 
-<div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
+<div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}"
+     style="{%- if section.settings.rich_text_margin_top != blank -%}margin-top: {{ section.settings.rich_text_margin_top }}px; {%- endif -%}{%- if section.settings.rich_text_margin_bottom != blank -%}margin-bottom:{{ section.settings.rich_text_margin_bottom }}px;{%- endif -%}">
   <div class="rich-text__blocks">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
@@ -74,6 +75,18 @@
       "id": "full_width",
       "default": true,
       "label": "t:sections.rich-text.settings.full_width.label"
+    },
+    {
+      "type": "text",
+      "id": "rich_text_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "rich_text_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ],
   "blocks": [
