@@ -19,7 +19,7 @@
 
 
 
-<div class="collection page-width{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}">
+<div class="collection page-width{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}" style="{%- if section.settings.featured_colection_margin_top != blank -%}margin-top: {{ section.settings.featured_colection_margin_top }}px; {%- endif -%}{%- if section.settings.featured_colection_margin_bottom != blank -%}margin-bottom:{{ section.settings.featured_colection_margin_bottom }}px;{%- endif -%}">
   <div class="title-wrapper-with-link{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
     <h2 class="title text-center{% if section.settings.title == blank %} title--no-heading{% endif %}">{{ section.settings.title | escape }}</h2>
     <p class="text-center"> {{ section.settings.sub_title | escape }} </p>
@@ -213,10 +213,6 @@
       "step": 1,
       "default": 3
     },
-
-
-
-
     {
       "type": "checkbox",
       "id": "show_view_all",
@@ -233,93 +229,86 @@
       "type": "header",
       "content": "t:sections.featured-collection.settings.header.content"
     },
-	
-	
-	{
-        "type": "checkbox",
-        "id": "use_eq_height",
-        "label": "Use equal height images?",
-        "default": false
-     },
-
-	 {
-        "type": "select",
-        "id": "image_ratio1",
-        "label": "Aspect Ratio",
-        "default": "ratio_nt",
-        "info": "Aspect Ratio Custom will settings in General panel.",
-        "options": [
-          {
-            "group": "Landscape",
-            "value": "ratio2_1",
-            "label": "2:1"
-          },
-          {
-            "group": "Landscape",
-            "value": "ratio16_9",
-            "label": "16:9"
-          },
-          {
-            "group": "Landscape",
-            "value": "ratio8_5",
-            "label": "8:5"
-          },
-          {
-            "group": "Landscape",
-            "value": "ratio3_2",
-            "label": "3:2"
-          },
-          {
-            "group": "Landscape",
-            "value": "ratio4_3",
-            "label": "4:3"
-          },
-          {
-            "group": "Landscape",
-            "value": "ratio_nt",
-            "label": "Ratio ASOS"
-          },
-          {
-            "group": "Squared",
-            "value": "ratio1_1",
-            "label": "1:1"
-          },
-          {
-            "group": "Portrait",
-            "value": "ratio2_3",
-            "label": "2:3"
-          },
-          {
-            "group": "Portrait",
-            "value": "ratio1_2",
-            "label": "1:2"
-          },
-          {
-            "group": "Custom",
-            "value": "ratio_cus1",
-            "label": "Ratio Custom 1"
-          },
-          {
-            "group": "Custom",
-            "value": "ratio_cus2",
-            "label": "Ratio Custom 2"
-          },
-          {
-            "group": "Custom",
-            "value": "ratio_cus3",
-            "label": "Ratio Custom 3"
-          },
-          {
-            "group": "Custom",
-            "value": "ratio_cus4",
-            "label": "Ratio Custom 4"
-          }
-        ]
-      },
-	
-	
-	
-
+    {
+      "type": "checkbox",
+      "id": "use_eq_height",
+      "label": "Use equal height images?",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "image_ratio1",
+      "label": "Aspect Ratio",
+      "default": "ratio_nt",
+      "info": "Aspect Ratio Custom will settings in General panel.",
+      "options": [
+        {
+          "group": "Landscape",
+          "value": "ratio2_1",
+          "label": "2:1"
+        },
+        {
+          "group": "Landscape",
+          "value": "ratio16_9",
+          "label": "16:9"
+        },
+        {
+          "group": "Landscape",
+          "value": "ratio8_5",
+          "label": "8:5"
+        },
+        {
+          "group": "Landscape",
+          "value": "ratio3_2",
+          "label": "3:2"
+        },
+        {
+          "group": "Landscape",
+          "value": "ratio4_3",
+          "label": "4:3"
+        },
+        {
+          "group": "Landscape",
+          "value": "ratio_nt",
+          "label": "Ratio ASOS"
+        },
+        {
+          "group": "Squared",
+          "value": "ratio1_1",
+          "label": "1:1"
+        },
+        {
+          "group": "Portrait",
+          "value": "ratio2_3",
+          "label": "2:3"
+        },
+        {
+          "group": "Portrait",
+          "value": "ratio1_2",
+          "label": "1:2"
+        },
+        {
+          "group": "Custom",
+          "value": "ratio_cus1",
+          "label": "Ratio Custom 1"
+        },
+        {
+          "group": "Custom",
+          "value": "ratio_cus2",
+          "label": "Ratio Custom 2"
+        },
+        {
+          "group": "Custom",
+          "value": "ratio_cus3",
+          "label": "Ratio Custom 3"
+        },
+        {
+          "group": "Custom",
+          "value": "ratio_cus4",
+          "label": "Ratio Custom 4"
+        }
+      ]
+    },
     {
       "type": "select",
       "id": "image_ratio",
@@ -370,6 +359,18 @@
       "default": false,
       "label": "t:sections.featured-collection.settings.show_rating.label",
       "info": "t:sections.featured-collection.settings.show_rating.info"
+    },
+    {
+      "type": "text",
+      "id": "featured_colection_margin_top",
+      "label": "Margin top",
+	  "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "featured_colection_margin_bottom",
+      "label": "Margin bottom",
+	  "info": "Margin bottom. If you not use to blank"
     }
   ],
   "presets": [
