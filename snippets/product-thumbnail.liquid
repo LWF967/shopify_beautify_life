@@ -120,12 +120,16 @@
   {%- else -%}
     <deferred-media class="deferred-media media no-js-hidden my_featured_product_beautify_media" style="padding-top: {{ 1 | divided_by: media.aspect_ratio | times: 100 }}%" data-media-id="{{ media.id }}">
   {%- endif -%}
-  <span class="product__media-icon motion-reduce" aria-hidden="true">
-    {%- liquid
-
-        render 'icon-zoom'
-
-    -%}
+  <style>
+    .my_featured_product_beautify_media_big {
+      height: 3rem;
+      width: 3rem;
+      left: 1.5rem;
+      top: 1.5rem;
+    }
+  </style>  
+  <span class="product__media-icon motion-reduce my_featured_product_beautify_media_big" aria-hidden="true">
+    {%- liquid render 'icon-zoom'-%}
   </span>
   <button id="Deferred-Poster-Modal-{{ media.id }}" class="deferred-media__poster" type="button">
     <span class="deferred-media__poster-button motion-reduce">
