@@ -856,6 +856,7 @@
         "163817830804047752-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
             "align_text": "left",
             "img_link": "",
             "caption_head": "Image"
@@ -864,6 +865,7 @@
         "163817830804047752-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
             "align_text": "left",
             "img_link": "",
             "caption_head": "Image"
@@ -872,6 +874,7 @@
         "163817830804047752-2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
             "align_text": "left",
             "img_link": "",
             "caption_head": "Image"
@@ -880,6 +883,7 @@
         "7abba756-7453-4215-96f1-a1d5f373dbb6": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
             "align_text": "left",
             "img_link": "",
             "caption_head": "Image"

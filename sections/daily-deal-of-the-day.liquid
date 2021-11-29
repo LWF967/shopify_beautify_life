@@ -10,7 +10,7 @@
           
         -%}
 
-<div class="contatin" style="background-color:{{setting.background_color}}">
+<div class="contatin" style="background-color:{{setting.background_color}}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}">
   
   <div class="left ">
     
@@ -162,16 +162,28 @@
       "label": "Background product color",
       "default": "#FFF"
      },
-	{
-        "label": "Show-Now link ",
-        "id": "shop_now_url",
-        "type": "url"
-      },
-	  {
-        "label": "Detaile link ",
-        "id": "detail_url",
-        "type": "url"
-      }
+    {
+      "label": "Show-Now link ",
+      "id": "shop_now_url",
+      "type": "url"
+    },
+    {
+      "label": "Detaile link ",
+      "id": "detail_url",
+      "type": "url"
+    },
+    {
+      "type": "text",
+      "id": "daily_deal_of_the_day_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "daily_deal_of_the_day_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
+    }
 
  	],
 	"presets":[
