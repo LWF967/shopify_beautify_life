@@ -309,7 +309,9 @@
         "background_color": "#f9f9f9",
         "background_product_color": "#ffffff",
         "shop_now_url": "",
-        "detail_url": ""
+        "detail_url": "",
+        "daily_deal_of_the_day_margin_top": "",
+        "daily_deal_of_the_day_margin_bottom": ""
       }
     },
     "1635832448db75c5e7": {
@@ -571,7 +573,9 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "full_width": true
+        "full_width": true,
+        "rich_text_margin_top": "",
+        "rich_text_margin_bottom": ""
       }
     },
     "16377450024fa9643e": {
@@ -850,6 +854,47 @@
         "image_with_text_margin_bottom": ""
       }
     },
+    "1638178795c761289c": {
+      "type": "testimonials",
+      "blocks": {
+        "1638178795f165d66e-0": {
+          "type": "column",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
+        },
+        "1638178795f165d66e-1": {
+          "type": "column",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
+        },
+        "1638178795f165d66e-2": {
+          "type": "column",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
+        }
+      },
+      "block_order": [
+        "1638178795f165d66e-0",
+        "1638178795f165d66e-1",
+        "1638178795f165d66e-2"
+      ],
+      "settings": {
+        "title": "testimonials",
+        "swipe": false,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": ""
+      }
+    },
     "1638178308a7590918": {
       "type": "Gallery",
       "blocks": {
@@ -920,6 +965,7 @@
     "163816995034a6b1f9",
     "16381765176d27cec2",
     "1638176557503a1cb1",
+    "1638178795c761289c",
     "1638178308a7590918"
   ]
 }
