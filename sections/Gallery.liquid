@@ -1,8 +1,4 @@
-
-
 <div class=" page-width ">
-
-
   <div class="" style="display:flex;max-height:300px;overflow:hidden;">
     {%- for block in section.blocks -%}
 
@@ -30,34 +26,46 @@
   "tag": "section",
   "class": "spaced-section",
   "settings": [
-       {
-          "type": "select",
-          "id": "section_height",
-          "options": [
-           {
-              "value": "extra_small",
-              "label": "Extra Small"
-            },
-			{
-              "value": "small",
-              "label": "Small"
-            },
-			{
-              "value": "medium",
-              "label": "Medium"
-            },
-			{
-              "value": "large",
-              "label": "Large"
-            },
-			{
-              "value": "extra_large",
-              "label": "Extra Large"
-            }
-          ],
-          "default": "medium",
-          "label": "Section height"
+    {
+      "type": "select",
+      "id": "section_height",
+      "options": [
+        {
+          "value": "extra_small",
+          "label": "Extra Small"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "extra_large",
+          "label": "Extra Large"
         }
+      ],
+      "default": "medium",
+      "label": "Section height"
+    },
+    {
+      "type": "text",
+      "id": "map_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "map_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
+    }
   ],
   "blocks": [
     {
