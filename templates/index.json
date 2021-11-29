@@ -72,7 +72,9 @@
         "show_button_hover_color": "#ea0606",
         "show_page_Dot": true,
         "page_dot_style": "style_1",
-        "page_dot_color": "dark"
+        "page_dot_color": "dark",
+        "slideshow_beautify_margin_top": "",
+        "slideshow_beautify_margin_bottom": ""
       }
     },
     "16366965204a8cb316": {
@@ -134,7 +136,9 @@
         "show_button_hover_color": "#992f2f",
         "show_page_Dot": true,
         "page_dot_style": "style_1",
-        "page_dot_color": "dark"
+        "page_dot_color": "dark",
+        "slideshow_beautify_margin_top": "",
+        "slideshow_beautify_margin_bottom": ""
       }
     },
     "16366804518eb2e044": {
@@ -325,7 +329,9 @@
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": false,
-        "show_rating": true
+        "show_rating": true,
+        "featured_colection_margin_top": "",
+        "featured_colection_margin_bottom": ""
       }
     },
     "163608389212513e57": {
@@ -411,7 +417,9 @@
         "show_view_all": false,
         "show_page_Dot": true,
         "page_dot_style": "style_1",
-        "page_dot_color": "dark"
+        "page_dot_color": "dark",
+        "banner_beautify_margin_top": "",
+        "banner_beautify_margin_bottom": ""
       }
     },
     "16378995192374eec4": {
@@ -526,7 +534,9 @@
         "show_date": true,
         "show_author": false,
         "soft_background": false,
-        "show_view_all": true
+        "show_view_all": true,
+        "featured_blog_margin_top": "",
+        "featured_blog_margin_bottom": ""
       }
     },
     "1637812188b731cca0": {
@@ -753,11 +763,85 @@
       "type": "map",
       "settings": {
         "heading": "Our store",
-        "address": "<p>123 Fake St.<br>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm<\/p>",
+        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
         "map_address": "301 Front St W, Toronto",
         "button_text": "Get directions",
         "show_pin": true,
         "background_image_position": "center center"
+      }
+    },
+    "16381765176d27cec2": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "163817651783f49392-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "163817651783f49392-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "163817651783f49392-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false
+          }
+        }
+      },
+      "block_order": [
+        "163817651783f49392-0",
+        "163817651783f49392-1",
+        "163817651783f49392-2"
+      ],
+      "settings": {
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1638176557503a1cb1": {
+      "type": "image-with-text",
+      "blocks": {
+        "16381765577b733573-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "16381765577b733573-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16381765577b733573-2": {
+          "type": "button",
+          "settings": {
+            "button_text": "VIEW ALL",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16381765577b733573-0",
+        "16381765577b733573-1",
+        "16381765577b733573-2"
+      ],
+      "settings": {
+        "layout": "image_first",
+        "height": "adapt",
+        "color_scheme": "background-1"
       }
     }
   },
@@ -777,6 +861,8 @@
     "16377450024fa9643e",
     "16377430666a59b35c",
     "16381699299c5800f9",
-    "163816995034a6b1f9"
+    "163816995034a6b1f9",
+    "16381765176d27cec2",
+    "1638176557503a1cb1"
   ]
 }
