@@ -169,6 +169,11 @@
         
         {%- assign media_count = product.media | size -%}
         {%- if media_count > 4 -%}
+          <style>
+            .deferred-media.media.no-js-hidden.my_featured_product_beautify_media {
+              width: 100%;
+            }
+          </style>
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list">
             <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
               <div class="swiper mySwiper my_swiper_detail">
