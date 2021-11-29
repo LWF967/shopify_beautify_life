@@ -645,7 +645,9 @@
         "secondary_background": false,
         "show_share_buttons": true,
         "hide_variants": false,
-        "enable_video_looping": false
+        "enable_video_looping": false,
+        "featured_product_beautify_margin_top": "25",
+        "featured_product_beautify_margin_bottom": "52"
       }
     },
     "16377430666a59b35c": {
@@ -847,43 +849,6 @@
         "image_with_text_margin_top": "",
         "image_with_text_margin_bottom": ""
       }
-    },
-    "163817798658eca148": {
-      "type": "Gallery",
-      "blocks": {
-        "16381779862bc26802-0": {
-          "type": "image",
-          "settings": {
-            "align_text": "left",
-            "img_link": "",
-            "caption_head": "Image"
-          }
-        },
-        "16381779862bc26802-1": {
-          "type": "image",
-          "settings": {
-            "align_text": "left",
-            "img_link": "",
-            "caption_head": "Image"
-          }
-        },
-        "16381779862bc26802-2": {
-          "type": "image",
-          "settings": {
-            "align_text": "left",
-            "img_link": "",
-            "caption_head": "Image"
-          }
-        }
-      },
-      "block_order": [
-        "16381779862bc26802-0",
-        "16381779862bc26802-1",
-        "16381779862bc26802-2"
-      ],
-      "settings": {
-        "section_height": "medium"
-      }
     }
   },
   "order": [
@@ -904,7 +869,6 @@
     "16381699299c5800f9",
     "163816995034a6b1f9",
     "16381765176d27cec2",
-    "1638176557503a1cb1",
-    "163817798658eca148"
+    "1638176557503a1cb1"
   ]
 }
