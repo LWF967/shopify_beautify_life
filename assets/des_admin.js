@@ -41,8 +41,8 @@
       //console.log($parentSection);
   
       if ( $parentSection.hasClass(tcr) || $parentSection.hasClass(tpin) ) {
-          // var el = $parentSection.find(jcr_);
-          // geckoShopify.refresh_flickity(el); 
+          var el = $parentSection.find(jcr_);
+          geckoShopify.refresh_flickity(el); 
       } else if ( $parentSection.hasClass(tpk) ) {
          var el = $parentSection.find(jpk);
          geckoShopify.refresh_packery(el);
