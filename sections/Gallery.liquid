@@ -1,13 +1,9 @@
-{{ 'collage.css' | asset_url | stylesheet_tag }}
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'component-price.css' | asset_url | stylesheet_tag }}
 
-<link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<div class="collage-wrapper page-width{% if section.settings.heading == blank %} no-heading{% endif %}">
-  <h2 class="collage-wrapper-title">{{ section.settings.heading | escape }}</h2>
+<div class=" page-width ">
 
-  <div class="collage collage--{{ section.settings.desktop_layout }}{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
+
+  <div class="">
     {%- for block in section.blocks -%}
 
       {% liquid
@@ -20,42 +16,8 @@
       %}
       {%- case block.type -%}
         {%- when 'image' -%}
-          <div class="collage-card color-{{ block.settings.color_scheme }}{% if focus_card_left %} collage-card--left{% elsif focus_card_right %} collage-card--right{% endif %}" {{ block.shopify_attributes }}>
-            <div class="collage-content collage-card__image-wrapper media media--transparent{% if block.settings.image_padding %} collage-card-spacing{% endif %}">
-              {%- if block.settings.image != blank -%}
-                <img
-                  srcset="{%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
-                    {%- if block.settings.image.width >= 720 -%}{{ block.settings.image | img_url: '720x' }} 720w,{%- endif -%}
-                    {%- if block.settings.image.width >= 990 -%}{{ block.settings.image | img_url: '990x' }} 990w,{%- endif -%}
-                    {%- if block.settings.image.width >= 1100 -%}{{ block.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}
-                    {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
-                    {%- if block.settings.image.width >= 2200 -%}{{ block.settings.image | img_url: '2200x' }} 2200w,{%- endif -%}
-                    {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | img_url: '3000x' }} 3000w,{%- endif -%}"
-                  src="{{ block.settings.image | img_url: '1500x' }}"
-                  sizes="(min-width: {{ settings.page_width }}px) {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px){% else %}{{ settings.page_width | minus: 100 | times: 0.67 | round }}px{% endif %}, (min-width: 750px){% if section.blocks.size == 1 %} calc(100vw - 100px){% else %} 500px{% endif %}, calc(100vw - 30px)"
-                  alt="{{ block.settings.image.alt | escape }}"
-                  loading="lazy"
-                  width="{{ block.settings.image.width }}"
-                  height="{{ block.settings.image.height }}"
-                  class="collage-card__image"
-                >
-              {%- else -%}
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder collage-card__image' }}
-              {%- endif -%}
-            </div>
-            
-            
-             <div class="medium-up--text-{{ block.settings.align_text }}">
-                {% if block.settings.title != blank %}
-                  <h4 class="h3">{{ block.settings.title | escape }}</h4>
-                {% endif %}
-                {% if block.settings.text != blank %}
-                  <div class="rte-setting rte">{{ block.settings.text }}</div>
-                {% endif %}
-              </div>
-            
-            
-          </div>
+			  {%- assign collection = collections[block.settings.collection] -%}
+              {% include 'collection-grid-item', collection: collection %}
 
          {%- endcase -%}
     {%- endfor -%}
