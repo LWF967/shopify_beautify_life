@@ -111,7 +111,8 @@
   
 </style>
 
-<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %} my_text_columns_margin">
+<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %} my_text_columns_margin"
+     style="{%- if section.settings.text_columns_with_images_margin_top != blank -%}margin-top: {{ section.settings.text_columns_with_images_margin_top }}px; {%- endif -%}{%- if section.settings.text_columns_with_images_margin_bottom != blank -%}margin-bottom:{{ section.settings.text_columns_with_images_margin_bottom }}px;{%- endif -%}">
   <div class="page-width">
     {% if section.settings.Text_columns_with_images_heading == blank %}
       <h2 class="Text_columns_with_images_title">Text columns with images</h2>
@@ -206,7 +207,7 @@
 {% schema %}
 {
   "name": "Text columns with images",
-  "class": "spaced-section spaced-section--full-width",
+  "class": "spaced-section--full-width",
   "tag": "section",
   "settings": [
     {
@@ -230,6 +231,18 @@
           "label": "Centered"
         }
       ]
+    },
+    {
+      "type": "text",
+      "id": "text_columns_with_images_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "text_columns_with_images_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ],
   "blocks": [
