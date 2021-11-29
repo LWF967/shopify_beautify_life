@@ -17,7 +17,8 @@
   }
 </style>
 
-<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}">
+<div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}"
+     style="{%- if section.settings.main_collection_banner_margin_top != blank -%}margin-top: {{ section.settings.main_collection_banner_margin_top }}px; {%- endif -%}{%- if section.settings.main_collection_banner_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_collection_banner_margin_bottom }}px;{%- endif -%}">
   <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">
       <h1 class="collection-hero__title my_collection_hero_title">
@@ -72,6 +73,18 @@
       "default": false,
       "label": "t:sections.main-collection-banner.settings.show_collection_image.label",
       "info": "t:sections.main-collection-banner.settings.show_collection_image.info"
+    },
+    {
+      "type": "text",
+      "id": "main_collection_banner_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "main_collection_banner_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ]
 }
