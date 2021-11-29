@@ -9,7 +9,7 @@
 {%- assign image = section.blocks.settings.image %}
 
 
-<section class=" nt_se_{{sid}} se_height_{{ se_height }}"  style="overflow: hidden;margin:0;padding:0;">
+<section class=" nt_se_{{sid}} se_height_{{ se_height }}"  style="overflow: hidden;margin:0;padding:0;{%- if section.settings.slideshow_beautify_margin_top != blank -%}margin-top: {{ section.settings.slideshow_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.slideshow_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.slideshow_beautify_margin_bottom }}px;{%- endif -%}">
 
 {% render 'slideshow-beautify',section:section,color_primary:color_primary %}
 
@@ -117,13 +117,12 @@
  	"tag": "section",
 	"max_blocks": 10,
     "settings": [
-
-		{
+      {
         "type": "select",
         "id": "se_height",
         "label": "Slide height",
         "default": "adapt",
-		"info":"Learn more about.[slideshow guidelines](https://help.shopify.com/en/manual/using-themes/themes-by-shopify/debut#slideshow-sections-specific)",
+        "info":"Learn more about.[slideshow guidelines](https://help.shopify.com/en/manual/using-themes/themes-by-shopify/debut#slideshow-sections-specific)",
         "options": [
           {
             "value": "adapt_f",
@@ -133,11 +132,9 @@
             "value": "adapt",
             "label": "Adapt to image"
           }
-          
         ]
       },
-
-		{
+      {
         "type": "select",
         "id": "text_size",
         "label": "Text size",
@@ -153,26 +150,25 @@
           }
         ]
       },
-		
-	  {
+      {
         "type": "checkbox",
         "id": "overlay",
         "label": "Show overlay",
         "default": true
       },
-	  {
+      {
         "type": "checkbox",
         "id": "loop",
         "label": "Slide Loop",
         "default": true
       },
-	 {
+      {
         "type": "checkbox",
         "id": "auto_play",
         "label": "Auto-rotate slides",
         "default": true
       },
-	{
+      {
         "type": "range",
         "id": "auto_time",
         "min": 3,
@@ -182,17 +178,13 @@
         "unit": "sec",
         "default": 3
       },
-
-	 {
+      {
         "type": "checkbox",
         "id": "show_button",
         "label": "Show Prev Next Button",
         "default": true
       },
-
-
-
-	{
+      {
         "type": "select",
         "id": "show_button_visible",
         "label": "Visible",
@@ -208,8 +200,7 @@
           }
         ]
       },
-	
-	{
+      {
         "type": "select",
         "id": "show_button_style",
         "label": "Style",
@@ -223,14 +214,13 @@
             "value": "style2",
             "label": "Style2"
           },
-		 {
+          {
             "value": "style3",
             "label": "Style3"
           }
         ]
       },
-
-	{
+      {
         "type": "select",
         "id": "show_button_color",
         "label": "Color",
@@ -244,41 +234,50 @@
             "value": "white",
             "label": "White"
           },
-		 {
+          {
             "value": "gray",
             "label": "Gray"
           }
         ]
       },
-		{
-            "type": "color",
-            "id": "show_button_hover_color",
-            "label": "Hover"
-          },
-		
-		
-
-		{
+      {
+        "type": "color",
+        "id": "show_button_hover_color",
+        "label": "Hover"
+      },
+      {
         "type": "checkbox",
         "id": "show_page_Dot",
         "default": false,
         "label": "Show Page Dot"
-        },
-        {
+      },
+      {
         "type":"select",
         "id":"page_dot_style",
         "label":"Style",
         "default":"style_1",
         "options":[{"value":"style_1","label":"Style 1"},{"value":"style_2","label":"Style 2"}]
-        },
-		{
+      },
+      {
         "type":"select",
         "id":"page_dot_color",
         "label":"Color",
         "default":"dark",
         "options":[{"value":"dark","label":"Dark"},{"value":"light","label":"Light"}]
-        }
-	],
+      },
+      {
+        "type": "text",
+        "id": "slideshow_beautify_margin_top",
+        "label": "Margin top",
+        "info": "Margin top. If you not use to blank"
+      },
+      {
+        "type": "text",
+        "id": "slideshow_beautify_margin_bottom",
+        "label": "Margin bottom",
+        "info": "Margin bottom. If you not use to blank"
+      }
+  	],
 	"blocks": [
 		{
       "type": "slideshow_img2",
