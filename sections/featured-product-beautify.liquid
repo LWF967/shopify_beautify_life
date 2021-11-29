@@ -169,8 +169,6 @@
         
         {%- assign media_count = product.media | size -%}
         {%- if media_count > 4 -%}
-        123
-        {% comment %}
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list">
             <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
               <div class="swiper mySwiper my_swiper_detail">
@@ -185,7 +183,7 @@
                   {%- endif -%}
                   {%- for media in product.media -%}
                   {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-                  <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %} swiper-slide" 
+                  <li class="swiper-slide" 
                       data-media-id="{{ section.id }}-{{ media.id }}">
                     {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
                   </li>
@@ -197,7 +195,6 @@
               <div class="swiper-button-next"></div>
             </div>
           </ul>
-        {% endcomment %}
         {%- elsif media_count > 1 -%}
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul my_featured_product_beautify_noswiper" role="list" style="display:flex;">
             {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
@@ -222,7 +219,7 @@
           }
         </style>
         
-        <div class="box" style="position:relative; width: 100%; margin: 0 auto; padding: 0 15px;">
+<!--         <div class="box" style="position:relative; width: 100%; margin: 0 auto; padding: 0 15px;">
           <div class="swiper mySwiper my_swiper_detail">
             <div class="swiper-wrapper my_swiper_div">
               <li class="swiper-slide">
@@ -239,7 +236,7 @@
               </li>
               <li class="swiper-slide">
                 5
-              </li>
+              </li> -->
 <!--               <div class="swiper-slide">
                 123
               </div>
@@ -261,11 +258,11 @@
               <div class="swiper-slide">
                 789
               </div> -->
-            </div>
+<!--             </div>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
-        </div>
+        </div> -->
         
         
         {%- if first_3d_model -%}
