@@ -1,7 +1,7 @@
 
 <div class="collection-grid-item">
   <a href="{% if collection.products == empty %}#{% else %}{{ block.img_link }}{% endif %}" class="collection-grid-item__link">
-    {% unless collection_img == blank %}
+     {%- if block.settings.image != blank -%}
       <div class="collection-grid-item__overlay box ratio-container lazyload js"
         data-bgset="{% include 'bgset', image: collection_img %}"
         data-sizes="auto"
@@ -20,7 +20,7 @@
       {% else %}
         <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_img | img_url: '1024x1024' }}')"></div>
       {% endif %}
-    {% endunless %}
+    {% endif %}
 
     <div class="collection-grid-item__title-wrapper">
       <div class="collection-grid-item__title h3">
