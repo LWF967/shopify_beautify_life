@@ -392,7 +392,7 @@
   })  
   
 
- Shopify.addListener('#shopify-section-{{section.id}}','shopify:section:load',()=>{console.log(222)});
+ Shopify.addListener('document','shopify:section:load',()=>{console.log(222)});
  document.addEventListener('shopify:section:load',()=>{console.log(123)},true);
 
 
