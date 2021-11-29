@@ -5,6 +5,12 @@
 {{ 'des_admin.js' | asset_url | script_tag }}
 
 
+
+<div id="shopify-section-[section-id]" class="shopify-section">
+  <!-- section content -->
+</div>
+
+
 <div class="page-width js_carousel">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
@@ -399,7 +405,7 @@
   request.open('GET', '/?sections=banner-Beautify', true);
   request.send();
   JSON.parse(request.responseText);
- console.log('金克拉');
+  console.log('金克拉');
 </script>
 
 
@@ -409,7 +415,6 @@
 
     "en": "banner  Beautify"
   },
-  "tag": "section",
   "class": "index-section",
   "max_blocks": 8,
   "settings": [
