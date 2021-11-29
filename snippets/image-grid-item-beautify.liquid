@@ -1,5 +1,5 @@
 
-<div class="collection-grid-item">
+<div class="collection-grid-item" style="">
   <a href="{% if block.settings.img_link == empty %}#{% else %}{{ block.img_link }}{% endif %}" class="collection-grid-item__link" style="height:300px;">
      {%- if block.settings.image != blank -%}
       <div class="collection-grid-item__overlay box ratio-container lazyload js"
@@ -9,16 +9,16 @@
         data-image-loading-animation>
       </div>
       <noscript>
-        <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_img | img_url: '1024x1024' }}')"></div>
+        <div class="collection-grid-item__overlay" style="background-image: url('{{ block.settings.image | img_url: '1024x1024' }}')"></div>
       </noscript>
     {% else %}
-      {% if collection == empty %}
+      {% if block.settings.image == empty %}
         <div class="collection-grid-item__overlay">
           {% capture current %}{% cycle 1, 2, 3 %}{% endcapture %}
           {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
         </div>
       {% else %}
-        <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_img | img_url: '1024x1024' }}')"></div>
+        <div class="collection-grid-item__overlay" style="background-image: url('{{ block.settings.image | img_url: '1024x1024' }}')"></div>
       {% endif %}
     {% endif %}
 
