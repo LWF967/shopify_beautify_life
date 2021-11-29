@@ -3,7 +3,7 @@
 
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width" style="margin: {{ section.settings.custom_content_margin_top }}px 0 {{ section.settings.custom_content_margin_bottom }}px">
+<div class="page-width" style="margin-top: {{ section.settings.custom_content_margin_top }}px; margin-bottom:{{ section.settings.custom_content_margin_bottom }}px;">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
       <h4 class="h2">{{ section.settings.title | escape }}</h4>
