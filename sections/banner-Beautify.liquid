@@ -9,7 +9,7 @@
 
 
 
-<div class="page-width js_carousel">
+<div class="page-width ">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
       <h1 style="font-weight:600; ">{{ section.settings.title | escape }}</h1>
@@ -96,8 +96,8 @@
 
             
    
-              <div class="swiper-container1 js_carousel">
-                <div class="swiper-wrapper js_carousel">
+              <div class="swiper-container1 ">
+                <div class="swiper-wrapper ">
                   
                     <div class="swiper-slide 1">
                   
@@ -170,7 +170,7 @@
                 </div>
                 <!-- 如果需要分页器 -->
                 
-                <div class=" js_carousel swiper-pagination-{{section.id}}   {% unless section.settings.show_page_Dot %} 
+                <div class="  swiper-pagination-{{section.id}}   {% unless section.settings.show_page_Dot %} 
  opa-0
   
   {% else %}  
@@ -397,8 +397,7 @@
     }, */
   })  
   
-  window.onload= swiper();
-  
+
 
  document.addEventListener('shopify:section:load',function(){console.log(123)})
 
