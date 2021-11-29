@@ -6,10 +6,12 @@
 
 
 
+<div id="shopify-section-[section-id]" class="shopify-section">
+  <!-- section content -->
+</div>
 
 
-
-<div class="page-width ">
+<div class="page-width js_carousel" style="{%- if section.settings.featured_blog_margin_top != blank -%}margin-top: {{ section.settings.featured_blog_margin_top }}px; {%- endif -%}{%- if section.settings.featured_blog_margin_bottom != blank -%}margin-bottom:{{ section.settings.featured_blog_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
       <h1 style="font-weight:600; ">{{ section.settings.title | escape }}</h1>
@@ -96,8 +98,8 @@
 
             
    
-              <div class="swiper-container1 ">
-                <div class="swiper-wrapper ">
+              <div class="swiper-container1 js_carousel">
+                <div class="swiper-wrapper js_carousel">
                   
                     <div class="swiper-slide 1">
                   
@@ -170,7 +172,7 @@
                 </div>
                 <!-- 如果需要分页器 -->
                 
-                <div class="  swiper-pagination-{{section.id}}   {% unless section.settings.show_page_Dot %} 
+                <div class=" js_carousel swiper-pagination-{{section.id}}   {% unless section.settings.show_page_Dot %} 
  opa-0
   
   {% else %}  
@@ -214,38 +216,30 @@
   	opacity:0;
   }
   
- .opa-1{
+  .opa-1{
   	opacity:1;
   }
-  
 
-
- 
-  
   .banner-beautify-imgbox{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: hidden;  
     max-height: 400px;           	
-
   } 
   
-  
-   @media screen and (max-width: 750px) {
+  @media screen and (max-width: 750px) {
  	.banner-beautify-imgbox{
-    max-height: 200px; 
-     } 
+      max-height: 200px; 
+    } 
   }
 
-   @media screen and (min-width: 990px) {
-
-  .banner-beautify-imgbox{
-    max-height: 300px; 
-     }       
+  @media screen and (min-width: 990px) {
+    .banner-beautify-imgbox{
+      max-height: 300px; 
+    }       
   }
 
-  
 /* .swiper-container {
 
     max-height: 400px;
@@ -257,10 +251,9 @@
   
   }   */
   
-  
-    .swiper-pagination-{{section.id}}.swiper-pagination-hidden {
-        opacity: 0
-    }
+  .swiper-pagination-{{section.id}}.swiper-pagination-hidden {
+    opacity: 0
+  }
   
   
   
@@ -272,25 +265,21 @@
   
   {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
     .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-    background:#4e4e4e;
-	border: 1.5px solid rgb(189 188 188 / 28%);
-
-  	}
-
+      background:#4e4e4e;
+      border: 1.5px solid rgb(189 188 188 / 28%);
+    }
+  
 	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
       background:black;
-    
     }
   {% elsif section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'light' %}
 	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-
-    background:#4e4e4e;
-	border: 1.5px solid rgb(189 188 188 / 28%);
+      background:#4e4e4e;
+      border: 1.5px solid rgb(189 188 188 / 28%);
   	}
-
+  
 	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
       background:white;
-    
     }
   {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'dark' %}
 	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
@@ -397,7 +386,8 @@
     }, */
   })  
   
-
+  window.onload= swiper();
+  
 
  document.addEventListener('shopify:section:load',function(){console.log(123)})
 
@@ -508,7 +498,19 @@
         "label":"Color",
         "default":"dark",
         "options":[{"value":"dark","label":"Dark"},{"value":"light","label":"Light"}]
-        }
+        },
+    {
+      "type": "text",
+      "id": "featured_blog_margin_top",
+      "label": "Margin top",
+	  "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "featured_blog_margin_bottom",
+      "label": "Margin bottom",
+	  "info": "Margin bottom. If you not use to blank"
+    }
 
 
   ],
