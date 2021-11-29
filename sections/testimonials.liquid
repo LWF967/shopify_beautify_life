@@ -8,7 +8,8 @@
     <script src="{{'swiper-bundle.min.js'| asset_url }} "></script>
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}"
+     style="{%- if section.settings.testimonials_margin_top != blank -%}margin-top: {{ section.settings.testimonials_margin_top }}px; {%- endif -%}{%- if section.settings.testimonials_margin_bottom != blank -%}margin-bottom:{{ section.settings.testimonials_margin_bottom }}px;{%- endif -%}">
   <div class="page-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title">
@@ -314,6 +315,18 @@
       "type": "url",
       "id": "button_link",
       "label": "t:sections.multicolumn.settings.button_link.label"
+    },
+    {
+      "type": "text",
+      "id": "testimonials_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "testimonials_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ],
   "blocks": [
