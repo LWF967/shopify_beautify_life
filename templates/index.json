@@ -197,7 +197,9 @@
         "show_button_visible": "only_hover",
         "show_button_style": "style3",
         "show_button_color": "gray",
-        "show_button_hover_color": "#b73131"
+        "show_button_hover_color": "#b73131",
+        "collection_list_beautify_margin_top": "20",
+        "collection_list_beautify_margin_bottom": "10"
       }
     },
     "1635836350c3b72b9b": {
@@ -285,7 +287,9 @@
         "show_button_visible": "always",
         "show_button_style": "style1",
         "show_button_color": "white",
-        "show_button_hover_color": ""
+        "show_button_hover_color": "",
+        "collection_list_beautify_margin_top": "",
+        "collection_list_beautify_margin_bottom": ""
       }
     },
     "163454604067313d0f": {
