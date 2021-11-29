@@ -123,7 +123,7 @@
   <span class="product__media-icon motion-reduce my_featured_product_beautify_media_big" aria-hidden="true">
     {%- liquid render 'icon-zoom'-%}
   </span>
-  <button id="Deferred-Poster-Modal-{{ media.id }} my_featured_product_beautify_media_button" class="deferred-media__poster" type="button">
+  <button id="Deferred-Poster-Modal-{{ media.id }}" class="deferred-media__poster my_featured_product_beautify_media_button" type="button">
     <span class="deferred-media__poster-button motion-reduce">
       {%- if media.media_type == 'model' -%}
         <span class="visually-hidden">{{ 'products.product.media.play_model' | t }}</span>
