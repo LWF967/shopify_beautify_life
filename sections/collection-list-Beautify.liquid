@@ -1,4 +1,4 @@
-<div class="page-width">
+<div class="page-width style="{%- if section.settings.collection_list_beautify_margin_top != blank -%}margin-top: {{ section.settings.collection_list_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.collection_list_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.collection_list_beautify_margin_bottom }}px;{%- endif -%}"">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
       <h1 style="font-weight:600;">{{ section.settings.title | escape }}</h1>
@@ -242,13 +242,13 @@
     },
     {
       "type": "text",
-      "id": "custom_content_margin_top",
+      "id": "collection_list_beautify_margin_top",
       "label": "Margin top",
 	  "info": "Margin top. If you not use to blank"
     },
     {
       "type": "text",
-      "id": "custom_content_margin_bottom",
+      "id": "collection_list_beautify_margin_bottom",
       "label": "Margin bottom",
 	  "info": "Margin bottom. If you not use to blank"
     }
