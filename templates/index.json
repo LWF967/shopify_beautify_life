@@ -763,57 +763,87 @@
       "type": "map",
       "settings": {
         "heading": "Our store",
-        "address": "<p>123 Fake St.<br>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm<\/p>",
+        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
         "map_address": "301 Front St W, Toronto",
         "button_text": "Get directions",
         "show_pin": true,
         "background_image_position": "center center"
       }
     },
-    "16381769428986a888": {
-      "type": "Gallery",
+    "16381765176d27cec2": {
+      "type": "image-with-text-overlay",
       "blocks": {
-        "16381769428ac1a032-0": {
-          "type": "image",
+        "163817651783f49392-0": {
+          "type": "heading",
           "settings": {
-            "align_text": "left",
-            "img_link": "",
-            "caption_head": "Image"
+            "heading": "Image banner",
+            "heading_size": "medium"
           }
         },
-        "16381769428ac1a032-1": {
-          "type": "image",
+        "163817651783f49392-1": {
+          "type": "text",
           "settings": {
-            "align_text": "left",
-            "img_link": "",
-            "caption_head": "Image"
+            "text": "Give customers details about the banner image(s) or content on the template."
           }
         },
-        "16381769428ac1a032-2": {
-          "type": "image",
+        "163817651783f49392-2": {
+          "type": "buttons",
           "settings": {
-            "align_text": "left",
-            "img_link": "",
-            "caption_head": "Image"
-          }
-        },
-        "263a99e2-10df-4153-aca2-117929bc669c": {
-          "type": "image",
-          "settings": {
-            "align_text": "left",
-            "img_link": "",
-            "caption_head": "Image"
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false
           }
         }
       },
       "block_order": [
-        "16381769428ac1a032-0",
-        "16381769428ac1a032-1",
-        "16381769428ac1a032-2",
-        "263a99e2-10df-4153-aca2-117929bc669c"
+        "163817651783f49392-0",
+        "163817651783f49392-1",
+        "163817651783f49392-2"
       ],
       "settings": {
-        "section_height": "medium"
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1638176557503a1cb1": {
+      "type": "image-with-text",
+      "blocks": {
+        "16381765577b733573-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "16381765577b733573-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "16381765577b733573-2": {
+          "type": "button",
+          "settings": {
+            "button_text": "VIEW ALL",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16381765577b733573-0",
+        "16381765577b733573-1",
+        "16381765577b733573-2"
+      ],
+      "settings": {
+        "layout": "image_first",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "image_with_text_margin_top": "",
+        "image_with_text_margin_bottom": ""
       }
     }
   },
@@ -834,6 +864,7 @@
     "16377430666a59b35c",
     "16381699299c5800f9",
     "163816995034a6b1f9",
-    "16381769428986a888"
+    "16381765176d27cec2",
+    "1638176557503a1cb1"
   ]
 }
