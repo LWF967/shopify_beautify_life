@@ -192,6 +192,7 @@
         "show_view_all": true,
         "show_page_Dot": true,
         "page_dot_style": "style_1",
+        "page_dot_color": "dark",
         "show_button": true,
         "show_button_visible": "only_hover",
         "show_button_style": "style3",
@@ -279,6 +280,7 @@
         "show_view_all": false,
         "show_page_Dot": false,
         "page_dot_style": "style_1",
+        "page_dot_color": "dark",
         "show_button": true,
         "show_button_visible": "always",
         "show_button_style": "style1",
@@ -623,7 +625,7 @@
         "163774500222c241f7-8"
       ],
       "settings": {
-        "product": "text4",
+        "product": "lol6",
         "secondary_background": false,
         "show_share_buttons": true,
         "hide_variants": false,
