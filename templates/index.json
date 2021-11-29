@@ -843,8 +843,8 @@
         "layout": "image_first",
         "height": "adapt",
         "color_scheme": "background-1",
-        "image_with_text_margin_top": "32",
-        "image_with_text_margin_bottom": "23"
+        "image_with_text_margin_top": "",
+        "image_with_text_margin_bottom": ""
       }
     }
   },
