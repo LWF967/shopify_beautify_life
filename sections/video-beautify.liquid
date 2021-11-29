@@ -1,7 +1,8 @@
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
-<div class="video-section{% unless section.settings.full_width %} page-width{% endunless %}">
+<div class="video-section{% unless section.settings.full_width %} page-width{% endunless %}"
+     style="{%- if section.settings.video_beautify_margin_top != blank -%}margin-top: {{ section.settings.video_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.video_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.video_beautify_margin_bottom }}px;{%- endif -%}">
   <div{% if section.settings.full_width %} class="page-width"{% endif %}>
     <h2 class="title">{{ section.settings.heading }}</h2>
   </div>
@@ -251,6 +252,18 @@
           ],
           "default": "medium",
           "label": "Text size"
+    },
+    {
+      "type": "text",
+      "id": "video_beautify_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "video_beautify_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ],
   "presets": [
