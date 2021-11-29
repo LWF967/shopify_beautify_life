@@ -849,6 +849,52 @@
         "image_with_text_margin_top": "",
         "image_with_text_margin_bottom": ""
       }
+    },
+    "1638178308a7590918": {
+      "type": "Gallery",
+      "blocks": {
+        "163817830804047752-0": {
+          "type": "image",
+          "settings": {
+            "align_text": "left",
+            "img_link": "",
+            "caption_head": "Image"
+          }
+        },
+        "163817830804047752-1": {
+          "type": "image",
+          "settings": {
+            "align_text": "left",
+            "img_link": "",
+            "caption_head": "Image"
+          }
+        },
+        "163817830804047752-2": {
+          "type": "image",
+          "settings": {
+            "align_text": "left",
+            "img_link": "",
+            "caption_head": "Image"
+          }
+        },
+        "7abba756-7453-4215-96f1-a1d5f373dbb6": {
+          "type": "image",
+          "settings": {
+            "align_text": "left",
+            "img_link": "",
+            "caption_head": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "163817830804047752-0",
+        "163817830804047752-1",
+        "163817830804047752-2",
+        "7abba756-7453-4215-96f1-a1d5f373dbb6"
+      ],
+      "settings": {
+        "section_height": "medium"
+      }
     }
   },
   "order": [
@@ -869,6 +915,7 @@
     "16381699299c5800f9",
     "163816995034a6b1f9",
     "16381765176d27cec2",
-    "1638176557503a1cb1"
+    "1638176557503a1cb1",
+    "1638178308a7590918"
   ]
 }
