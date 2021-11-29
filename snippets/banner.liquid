@@ -1,0 +1,137 @@
+  <div class="swiper-container js_carousel">
+                <div class="swiper-wrapper js_carousel">
+                  
+                    <div class="swiper-slide 1">
+                  
+                     <a href="{{ block.settings.url1 }}" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url1 == blank %} pe_none{% endif %}">
+
+                    <div class="banner-beautify-imgbox">
+                    {%- if image1 != blank -%}  {% assign img_url1 = image1 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                         <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url1  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image1.alt}}" style="max-width:{{image1.width}}px;object-fit: cover; ">
+
+                      {%- else -%}
+
+                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                    </div>
+                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top1}}</div>
+
+                     </a>   
+                  
+                  	</div>
+                    <div class="swiper-slide 2">
+                  	 
+                     <a href="{{ block.settings.url2 }}" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url2 == blank %} pe_none{% endif %}">
+
+                    <div class="banner-beautify-imgbox">
+                    {%- if image2 != blank -%}  {% assign img_url2 = image2 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                         <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url2  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image1.alt}}" style="max-width:{{image1.width}}px;object-fit: cover; ">
+
+                      {%- else -%}
+
+                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                    </div>
+                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top2}}</div>
+
+                     </a> 
+                  
+                  
+                  
+                  	</div>
+                  
+                    <div class="swiper-slide 3">
+                  
+                  	 <a href="{{ block.settings.url3 }}" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url3 == blank %} pe_none{% endif %}">
+
+                    <div class="banner-beautify-imgbox">
+                    {%- if image3 != blank -%}  {% assign img_url3 = image3 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+<!--                          <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image3.width}}%20{{image3.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" 
+                               data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image.alt}}" 
+                              style="max-width:{{image.width}}px;   	
+                              background-image:url('{{ image3 | img_url: '800x' }}');
+                              background-repeat: no-repeat;
+                              background-position: center;
+                              background-size: cover;       "> -->
+                      
+                      
+                       <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url3  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image1.alt}}" style="max-width:{{image3.width}}px;  object-fit: cover; ">
+
+
+                      {%- else -%}
+
+                     {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {%- endif -%}
+                    </div>
+              
+                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top3}}</div>
+
+                     </a> 
+                  	
+                  	</div>
+                </div>
+                <!-- 如果需要分页器 -->
+                
+                <div class=" swiper-pagination-{{section.id}}   {% unless section.settings.show_page_Dot %} 
+ opa-0
+  
+  {% else %}  
+ opa-1
+  {% endunless %}>" ></div>
+           
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- 如果需要滚动条 -->
+                <div class="swiper-scrollbar"></div>
+            </div>		
+
+
+
+<script type="module">
+
+
+
+ // import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+
+    import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+  
+  
+   const swiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+    loop: true, // 循环模式选项 
+
+    // 如果需要分页器
+  
+
+    pagination: {
+      el: '.swiper-pagination-{{section.id}}',
+      clickable :true,
+    },
+    
+    effect : 'fade',
+    
+    autoplay: {
+    delay: 3000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+    },    
+  
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+  /*  scrollbar: {
+      el: '.swiper-scrollbar',
+    }, */
+  })  
+  
+  window.onload= swiper();
+  
+    
+</script>
