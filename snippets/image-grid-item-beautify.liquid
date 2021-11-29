@@ -24,14 +24,9 @@
 
     <div class="collection-grid-item__title-wrapper">
       <div class="collection-grid-item__title h3">
-        {% if collection.title == blank %}
-<!--            'homepage.onboarding.collection_title' | t  -->
-          {{collection_title}}
-  
-        {% else %}
-<!--   获取collection的名字         collection.title  -->
-       {{collection_title}}
-        {% endif %}
+
+       {{block.caption_head}}
+
       </div>
     </div>
   </a>
