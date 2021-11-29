@@ -1,7 +1,8 @@
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 
-<div class="newsletter center{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}">
+<div class="newsletter center{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}"
+     style="{%- if section.settings.newsletter_margin_top != blank -%}margin-top: {{ section.settings.newsletter_margin_top }}px; {%- endif -%}{%- if section.settings.newsletter_margin_bottom != blank -%}margin-bottom:{{ section.settings.newsletter_margin_bottom }}px;{%- endif -%}">
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient" {%- if section.settings.newsletter_bk_box-%} style="background-color:{{ section.settings.newsletter_bk_color }}" {%- endif -%}>
     {%- for block in section.blocks -%}
       {%- case block.type -%}
@@ -81,7 +82,7 @@
 {
   "name": "newsletter",
   "tag": "section",
-  "class": "spaced-section spaced-section--full-width",
+  "class": "spaced-section--full-width",
   "settings": [
 
 	{
@@ -105,6 +106,18 @@
     {
       "type": "paragraph",
       "content": "t:sections.newsletter.settings.paragraph.content"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "newsletter_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ],
   "blocks": [
