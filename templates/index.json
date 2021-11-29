@@ -405,7 +405,9 @@
         "color_top": "#ffffff",
         "grid": 2,
         "show_view_all": false,
-        "show_page_Dot": true
+        "show_page_Dot": true,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark"
       }
     },
     "16378995192374eec4": {
@@ -625,7 +627,7 @@
         "163774500222c241f7-8"
       ],
       "settings": {
-        "product": "lol6",
+        "product": "1",
         "secondary_background": false,
         "show_share_buttons": true,
         "hide_variants": false,
