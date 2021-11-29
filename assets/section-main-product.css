@@ -549,7 +549,8 @@ a.product__text {
   }
 
   .product__modal-opener:not(.product__modal-opener--image) {
-    display: none;
+/*     display: none; */
+    display: block;
   }
 
   .product__media-list .deferred-media {
