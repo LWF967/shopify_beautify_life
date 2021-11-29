@@ -3,7 +3,7 @@
   <a href="{% if collection.products == empty %}#{% else %}{{ block.img_link }}{% endif %}" class="collection-grid-item__link">
      {%- if block.settings.image != blank -%}
       <div class="collection-grid-item__overlay box ratio-container lazyload js"
-        data-bgset="{% include 'bgset', image: collection_img %}"
+        data-bgset="{% include 'bgset', image: block.settings.image %}"
         data-sizes="auto"
         data-parent-fit="cover"
         data-image-loading-animation>
