@@ -122,14 +122,9 @@
   {%- endif -%}
   <span class="product__media-icon motion-reduce" aria-hidden="true">
     {%- liquid
-      case media.media_type
-      when 'video' or 'external_video'
-        render 'icon-play'
-      when 'model'
-        render 'icon-3d-model'
-      else
+
         render 'icon-zoom'
-      endcase
+
     -%}
   </span>
   <button id="Deferred-Poster-Modal-{{ media.id }}" class="deferred-media__poster" type="button">
