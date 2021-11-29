@@ -170,7 +170,7 @@
         {%- assign media_count = product.media | size -%}
         {%- if media_count > 4 -%}
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list" style="display:flex;">
-            <div class="box" style="position:relative; margin: 15px auto 0;border: 1px solid transparent; padding: 0 25px;">
+            <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
               <div class="swiper mySwiper my_swiper_detail">
                 <div class="swiper-wrapper my_swiper_div">
                   {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
