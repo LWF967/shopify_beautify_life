@@ -17,7 +17,7 @@
       {%- case block.type -%}
         {%- when 'image' -%}
 			  {%- assign collection = collections[block.settings.collection] -%}
-              {% include 'collection-grid-item', collection: collection %}
+              {% include 'image-grid-item-beautify', collection: collection %}
 
          {%- endcase -%}
     {%- endfor -%}
