@@ -29,7 +29,8 @@
            {% if display_map %}map-section--display-map{% endif %}
            {% if onboarding == true %}map-section--onboarding{% endif %}"
      data-section-id="{{ section.id }}"
-     data-section-type="map">
+     data-section-type="map"
+     style="{%- if section.settings.map_margin_top != blank -%}margin-top: {{ section.settings.map_margin_top }}px; {%- endif -%}{%- if section.settings.map_margin_bottom != blank -%}margin-bottom:{{ section.settings.map_margin_bottom }}px;{%- endif -%}">
   <div class="page-width map-section__wrapper">
     <div class="map-section__content-wrapper">
       <div class="map-section__content">
@@ -927,6 +928,18 @@
           "value": "bottom right"
         }
       ]
+    },
+    {
+      "type": "text",
+      "id": "map_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "map_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ],
   "presets": [
