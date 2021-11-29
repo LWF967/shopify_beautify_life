@@ -391,8 +391,8 @@
     }, */
   })  
   
- Shopify.on('shopify:section:load',function(){console.log(3333)});
- Shopify.addListener('shopify:section:load',function(){console.log(222)});
+
+ Shopify.addListener('shopify:section:load',()=>{console.log(222)},true);
  document.addEventListener('shopify:section:load',()=>{console.log(123)},true);
 
 
