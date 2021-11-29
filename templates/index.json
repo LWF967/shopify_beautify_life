@@ -772,6 +772,7 @@
     },
     "16381765176d27cec2": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "blocks": {
         "163817651783f49392-0": {
           "type": "heading",
@@ -841,7 +842,9 @@
       "settings": {
         "layout": "image_first",
         "height": "adapt",
-        "color_scheme": "background-1"
+        "color_scheme": "background-1",
+        "image_with_text_margin_top": "32",
+        "image_with_text_margin_bottom": "23"
       }
     }
   },
