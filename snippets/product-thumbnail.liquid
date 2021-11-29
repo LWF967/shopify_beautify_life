@@ -122,13 +122,10 @@
   {%- endif -%}
   <style>
     .my_featured_product_beautify_media_big {
-      height: 3rem;
-      width: 3rem;
-      left: 1.5rem;
-      top: 1.5rem;
+      
     }
   </style>  
-  <span class="product__media-icon motion-reduce my_featured_product_beautify_media_big" aria-hidden="true">
+  <span class="product__media-icon motion-reduce my_featured_product_beautify_media_big" style="height: 3rem;width: 3rem;left: 1.5rem;top: 1.5rem;" aria-hidden="true">
     {%- liquid render 'icon-zoom'-%}
   </span>
   <button id="Deferred-Poster-Modal-{{ media.id }}" class="deferred-media__poster" type="button">
