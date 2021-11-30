@@ -43,7 +43,8 @@
   }
 </style>
 
-<div class="template-search spaced-section{% unless search.performed and search.results.size > 0 %} template-search--empty{% endunless %}">
+<div class="template-search spaced-section{% unless search.performed and search.results.size > 0 %} template-search--empty{% endunless %}"
+     style="{%- if section.settings.main_search_margin_top != blank -%}margin-top: {{ section.settings.main_search_margin_top }}px; {%- endif -%}{%- if section.settings.main_search_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_search_margin_bottom }}px;{%- endif -%}">
   <div class="page-width center">
     {%- if search.performed -%}
       <h1 class="h2">{{ 'templates.search.title' | t }}</h1>
@@ -268,6 +269,18 @@
       "id": "article_show_author",
       "default": false,
       "label": "t:sections.main-search.settings.article_show_author.label"
+    },
+    {
+      "type": "text",
+      "id": "main_search_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "main_search_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ]
 }
