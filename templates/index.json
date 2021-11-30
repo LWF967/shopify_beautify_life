@@ -417,11 +417,9 @@
         "color_top": "#ffffff",
         "grid": 2,
         "show_view_all": false,
-        "show_page_Dot": true,
+        "show_page_Dot": false,
         "page_dot_style": "style_1",
-        "page_dot_color": "dark",
-        "banner_beautify_margin_top": "22",
-        "banner_beautify_margin_bottom": "33"
+        "page_dot_color": "dark"
       }
     },
     "16378995192374eec4": {
