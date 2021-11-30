@@ -164,7 +164,8 @@
   }
 </style>
 
-<cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
+<cart-items class="page-width{% if cart == empty %} is-empty{% endif %}"
+            style="{%- if section.settings.main_cart_items_margin_top != blank -%}margin-top: {{ section.settings.main_cart_items_margin_top }}px; {%- endif -%}{%- if section.settings.main_cart_items_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_cart_items_margin_bottom }}px;{%- endif -%}">
   <div class="title-wrapper-with-link my_cart_margin">
     <h1 class="title title--primary my_cart_empty_font">{{ 'sections.cart.title' | t }}</h1>
     <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
@@ -480,6 +481,18 @@
       "id": "show_vendor",
       "default": false,
       "label": "t:sections.main-cart-items.settings.show_vendor.label"
+    },
+    {
+      "type": "text",
+      "id": "main_cart_items_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "main_cart_items_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ]
 }
