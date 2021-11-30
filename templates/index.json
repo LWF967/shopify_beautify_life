@@ -417,7 +417,7 @@
         "color_top": "#ffffff",
         "grid": 2,
         "show_view_all": false,
-        "show_page_Dot": true,
+        "show_page_Dot": false,
         "page_dot_style": "style_1",
         "page_dot_color": "dark"
       }
@@ -473,7 +473,9 @@
     "1635497923083b4abb": {
       "type": "contact-form",
       "settings": {
-        "heading": "Contact form"
+        "heading": "Contact form",
+        "contact_form_margin_top": "",
+        "contact_form_margin_bottom": ""
       }
     },
     "1635996418e080b5d8": {
@@ -761,7 +763,9 @@
         "map_address": "301 Front St W, Toronto",
         "button_text": "Get directions",
         "show_pin": true,
-        "background_image_position": "center center"
+        "background_image_position": "center center",
+        "map_margin_top": "",
+        "map_margin_bottom": ""
       }
     },
     "163817972763d6e808": {
@@ -793,7 +797,9 @@
       "settings": {
         "newsletter_bk_color": "#f3f3f3",
         "newsletter_bk_box": true,
-        "full_width": true
+        "full_width": true,
+        "newsletter_margin_top": "",
+        "newsletter_margin_bottom": ""
       }
     },
     "1638178308a7590918": {
@@ -843,7 +849,9 @@
         "7abba756-7453-4215-96f1-a1d5f373dbb6"
       ],
       "settings": {
-        "section_height": "medium"
+        "section_height": "medium",
+        "gallery_margin_top": "",
+        "gallery_margin_bottom": ""
       }
     }
   },
