@@ -904,9 +904,9 @@
   slideshow_beautify_lunbo();
   
   
+  document.addEventListener('shopify:section:load',()=>{
   
-  
-  	// Firefox和Chrome早期版本中带有前缀
+   	// Firefox和Chrome早期版本中带有前缀
     
     var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
     // 选择目标节点
@@ -930,6 +930,13 @@
     observer.observe(target, config); 
     // 随后,你还可以停止观察
     observer.disconnect();
+  
+  
+  
+  
+  })
+  
+ 
 
 
   
