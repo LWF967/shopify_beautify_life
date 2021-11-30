@@ -3,7 +3,8 @@
 
 {{ 'flickity.js' | asset_url | script_tag }}
 
-<div class="page-width">
+<div class="page-width"
+     style="{%- if section.settings.banner_flickity_margin_top != blank -%}margin-top: {{ section.settings.banner_flickity_margin_top }}px; {%- endif -%}{%- if section.settings.banner_flickity_margin_bottom != blank -%}margin-bottom:{{ section.settings.banner_flickity_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
       <h1 style="font-weight:600; ">{{ section.settings.title | escape }}</h1>
@@ -324,8 +325,19 @@
       "id": "show_page_Dot",
       "default": false,
       "label": "Show Page Dot"
+    },
+    {
+      "type": "text",
+      "id": "banner_flickity_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "banner_flickity_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
-
   ],
   "blocks": [
 
