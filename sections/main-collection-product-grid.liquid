@@ -13,6 +13,15 @@
 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
 
 <style>
+  .my_product_grid_ul {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+  
+  .my_product_grid_ul li {
+    padding: 0 15px 5rem;
+  }
+  
   @media screen and (max-width: 750px) {
     .my_collection_filters_margin {
       margin: 35px 0 0;
