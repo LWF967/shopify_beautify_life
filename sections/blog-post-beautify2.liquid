@@ -1,4 +1,5 @@
-<div class="page-width">
+<div class="page-width"
+     style="{%- if section.settings.blog_post_beautify2_margin_top != blank -%}margin-top: {{ section.settings.blog_post_beautify2_margin_top }}px; {%- endif -%}{%- if section.settings.blog_post_beautify2_margin_bottom != blank -%}margin-bottom:{{ section.settings.blog_post_beautify2_margin_bottom }}px;{%- endif -%}">
  
   <div class="tc">
     {%assign sections = section.settings%}
@@ -115,28 +116,37 @@
   {
     "name": "Section name",
     "settings": [
-	
-		 {
-          "type": "checkbox",
-          "id": "show_author",
-          "default": true,
-          "label": "Show author"
-         },
-		{
-          "type": "checkbox",
-          "id": "show_date",
-          "default": true,
-          "label": "Show author"
-         },
-		{
-          "type": "checkbox",
-          "id": "show_social",
-          "default": true,
-          "label": "Show author"
-         }
-		
-
-		]
+      {
+        "type": "checkbox",
+        "id": "show_author",
+        "default": true,
+        "label": "Show author"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_date",
+        "default": true,
+        "label": "Show author"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_social",
+        "default": true,
+        "label": "Show author"
+      },
+      {
+        "type": "text",
+        "id": "blog_post_beautify2_margin_top",
+        "label": "Margin top",
+        "info": "Margin top. If you not use to blank"
+      },
+      {
+        "type": "text",
+        "id": "blog_post_beautify2_margin_bottom",
+        "label": "Margin bottom",
+        "info": "Margin bottom. If you not use to blank"
+      }
+	]
   }
 {% endschema %}
 
