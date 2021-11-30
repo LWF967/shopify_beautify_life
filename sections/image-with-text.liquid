@@ -1,5 +1,11 @@
 {{ 'component-image-with-text.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .my_image_with_text_padding {
+    padding: 60px 35px 70px;
+  }
+</style>
+
 <div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}" style="{%- if section.settings.image_with_text_margin_top != blank -%}margin-top: {{ section.settings.image_with_text_margin_top }}px; {%- endif -%}{%- if section.settings.image_with_text_margin_bottom != blank -%}margin-bottom:{{ section.settings.image_with_text_margin_bottom }}px;{%- endif -%}">
   <div class="image-with-text__grid color-{{ section.settings.color_scheme }} grid grid--gapless grid--1-col grid--2-col-tablet gradient{% if section.settings.layout == 'text_first' %} image-with-text__grid--reverse{% endif %}   ">
     <div class="grid__item">
@@ -27,7 +33,7 @@
       </div>
     </div>
     <div class="grid__item">
-      <div class="image-with-text__content image-with-text__content--{{ section.settings.height }}">
+      <div class="image-with-text__content image-with-text__content--{{ section.settings.height }} my_image_with_text_padding">
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'heading' -%}
