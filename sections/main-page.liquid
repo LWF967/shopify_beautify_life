@@ -27,7 +27,8 @@
   }
 </style>
 
-<div class="page-width page-width--narrow my_page_margin">
+<div class="page-width page-width--narrow my_page_margin"
+     style="{%- if section.settings.main_page_margin_top != blank -%}margin-top: {{ section.settings.main_page_margin_top }}px; {%- endif -%}{%- if section.settings.main_page_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_page_margin_bottom }}px;{%- endif -%}">
   <h1 class="main-page-title page-title h0 my_page_title_center">
     {{ page.title | escape }}
   </h1>
@@ -43,13 +44,13 @@
   "settings": [
     {
       "type": "text",
-      "id": "gallery_margin_top",
+      "id": "main_page_margin_top",
       "label": "Margin top",
       "info": "Margin top. If you not use to blank"
     },
     {
       "type": "text",
-      "id": "gallery_margin_bottom",
+      "id": "main_page_margin_bottom",
       "label": "Margin bottom",
       "info": "Margin bottom. If you not use to blank"
     }
