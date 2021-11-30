@@ -4,7 +4,9 @@
       "type": "main-cart-items",
       "settings": {
         "cart_updates": true,
-        "show_vendor": true
+        "show_vendor": true,
+        "main_cart_items_margin_top": "",
+        "main_cart_items_margin_bottom": ""
       }
     },
     "cart-footer": {
@@ -26,7 +28,9 @@
         "buttons"
       ],
       "settings": {
-        "show_cart_note": true
+        "show_cart_note": true,
+        "main_cart_footer_margin_top": "",
+        "main_cart_footer_margin_bottom": ""
       }
     }
   },
