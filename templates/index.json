@@ -893,6 +893,49 @@
         "image_with_text_margin_top": "",
         "image_with_text_margin_bottom": ""
       }
+    },
+    "1638254788d0160884": {
+      "type": "testimonials",
+      "blocks": {
+        "16382547881188589b-0": {
+          "type": "column",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
+        },
+        "16382547881188589b-1": {
+          "type": "column",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
+        },
+        "16382547881188589b-2": {
+          "type": "column",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
+        }
+      },
+      "block_order": [
+        "16382547881188589b-0",
+        "16382547881188589b-1",
+        "16382547881188589b-2"
+      ],
+      "settings": {
+        "title": "testimonials",
+        "swipe": false,
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "testimonials_margin_top": "",
+        "testimonials_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -913,6 +956,7 @@
     "163816995034a6b1f9",
     "163817972763d6e808",
     "1638178308a7590918",
-    "1638254471485c2b3b"
+    "1638254471485c2b3b",
+    "1638254788d0160884"
   ]
 }

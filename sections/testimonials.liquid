@@ -4,8 +4,21 @@
 
 {{'swiper-bundle.min.css'| asset_url |stylesheet_tag}}
 
+<style>
+  .my_testimonials_ul_margin {
+    margin: 0 0;
+  }
+  
+  .my_testimonials_ul_margin li {
+    padding: 0 0;
+  }
+  
+  .my_testimonials_ul_margin li:nth-child(n+2) {
+    padding: 0 0 0 30px;
+  }
+</style>
     
-    <script src="{{'swiper-bundle.min.js'| asset_url }} "></script>
+<script src="{{'swiper-bundle.min.js'| asset_url }} "></script>
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}"
@@ -23,7 +36,8 @@
       <ul class="multicolumn-list grid grid--1-col
                  {% if section.blocks.size > 20 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop
                  {% elsif section.blocks.size > 20 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}
-                 {% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
+                 {% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}
+                 my_testimonials_ul_margin"
         id="Slider-{{ section.id }}"
         role="list"
         style="flex-wrap: nowrap;transition: all 1.5s ease 0s;"
