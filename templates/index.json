@@ -470,8 +470,8 @@
         "grid": 2,
         "show_view_all": false,
         "show_page_Dot": false,
-        "banner_flickity_margin_top": "",
-        "banner_flickity_margin_bottom": ""
+        "banner_flickity_margin_top": "22",
+        "banner_flickity_margin_bottom": "22"
       }
     },
     "1635497923083b4abb": {
