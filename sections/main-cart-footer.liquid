@@ -111,7 +111,10 @@
   }
 </style>
 
-<div class="page-width{% if cart == empty %} is-empty{% endif %}" id="main-cart-footer" data-id="{{ section.id }}">
+<div class="page-width{% if cart == empty %} is-empty{% endif %}" 
+     id="main-cart-footer" 
+     data-id="{{ section.id }}"
+     style="{%- if section.settings.main_cart_footer_margin_top != blank -%}margin-top: {{ section.settings.main_cart_footer_margin_top }}px; {%- endif -%}{%- if section.settings.main_cart_footer_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_cart_footer_margin_bottom }}px;{%- endif -%}">
   <div>
     <div class="cart__footer my_cart_footer_mobile">
     {%- if section.settings.show_cart_note -%}
@@ -233,6 +236,18 @@
       "id": "show_cart_note",
       "default": false,
       "label": "t:sections.main-cart-footer.settings.show_cart_note.label"
+    },
+    {
+      "type": "text",
+      "id": "main_cart_footer_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "main_cart_footer_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ],
   "blocks": [

@@ -358,39 +358,7 @@
     import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
   
-   const swiper = new Swiper ('.swiper-container1', {
-    direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-    loop: true, // 循环模式选项 
 
-    // 如果需要分页器
-  
-
-    pagination: {
-      el: '.swiper-pagination-{{section.id}}',
-      clickable :true,
-    },
-    
-    effect : 'fade',
-    
-    autoplay: {
-    delay: 3000,
-    stopOnLastSlide: false,
-    disableOnInteraction: false,
-    },    
-  
-    
-    // 如果需要前进后退按钮
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    
-    // 如果需要滚动条
-  /*  scrollbar: {
-      el: '.swiper-scrollbar',
-    }, */
-  })  
-  
 
 	
 // let doc_id = document.getElementById('shopify-section-{{section.id}}');
@@ -415,7 +383,7 @@
     effect : 'fade',
     
     autoplay: {
-    delay: 200,
+    delay: 2000,
     stopOnLastSlide: false,
     disableOnInteraction: false,
     },    
