@@ -202,8 +202,8 @@
         "show_button_style": "style3",
         "show_button_color": "gray",
         "show_button_hover_color": "#b73131",
-        "collection_list_beautify_margin_top": "20",
-        "collection_list_beautify_margin_bottom": "10"
+        "collection_list_beautify_margin_top": "",
+        "collection_list_beautify_margin_bottom": ""
       }
     },
     "1635836350c3b72b9b": {
