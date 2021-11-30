@@ -6,6 +6,16 @@
     font-weight: 700;
     text-align: center;
   }
+  
+  .my_main_list_collections_ul {
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+  }
+  
+  .my_main_list_collections_ul li {
+    padding: 0 15px 15px;
+  }
+  
   @media screen and (max-width: 750px) {
     .my_collections_outside_div {
       margin: -15px 0 0;
@@ -36,7 +46,7 @@
     endif
   -%}
 
-  <ul class="collection-list grid grid--1-col grid--3-col-tablet" role="list">
+  <ul class="collection-list grid grid--1-col grid--3-col-tablet my_main_list_collections_ul" role="list">
     {%- for collection in collections -%}
       <li class="collection-list__item grid__item">
         <a{% if collection.all_products_count > 0 %} href="{{ collection.url }}"{% endif %}
