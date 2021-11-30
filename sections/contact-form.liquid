@@ -1,6 +1,7 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
 
-<div class="contact page-width page-width--narrow spaced-section">
+<div class="contact page-width page-width--narrow spaced-section"
+     style="{%- if section.settings.contact_form_margin_top != blank -%}margin-top: {{ section.settings.contact_form_margin_top }}px; {%- endif -%}{%- if section.settings.contact_form_margin_bottom != blank -%}margin-bottom:{{ section.settings.contact_form_margin_bottom }}px;{%- endif -%}">
   <h2 class="title">{{ section.settings.heading | escape }}</h2>
   {%- form 'contact', id: 'ContactForm' -%}
     {%- if form.posted_successfully? -%}
@@ -76,13 +77,24 @@
 {
   "name": "t:sections.contact-form.name",
   "tag": "section",
-  "class": "spaced-section",
   "settings": [
     {
       "type": "text",
       "id": "heading",
       "default": "Contact form",
       "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "contact_form_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "contact_form_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ],
   "presets": [
