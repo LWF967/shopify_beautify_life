@@ -9,6 +9,16 @@
 
 {{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .my_blog_page_beautify_ul {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+  .my_blog_page_beautify_ul li {
+    padding: 0 15px;
+  }
+</style>
+
 <div class="blog{% if section.settings.soft_background %} background-secondary{% endif %}{% if section.settings.heading == blank %} no-heading{% endif %}"
      style="{%- if section.settings.blog_page_beautify_margin_top != blank -%}margin-top: {{ section.settings.blog_page_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.blog_page_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.blog_page_beautify_margin_bottom }}px;{%- endif -%}">
   <div class="page-width-desktop">
@@ -42,7 +52,7 @@
     
       <slider-component class="slider-mobile-gutter">
         <ul id="Slider-{{ section.id }}"
-          class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--3-col-desktop slider slider--tablet{% if posts_exceed_limit %} 1 blog__posts--{{ section.settings.post_limit }}-items{% else %} 2 blog__posts--{{ section.settings.blog.articles_count }}-items{% endif %}"
+          class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--3-col-desktop slider slider--tablet{% if posts_exceed_limit %} 1 blog__posts--{{ section.settings.post_limit }}-items{% else %} 2 blog__posts--{{ section.settings.blog.articles_count }}-items{% endif %} my_blog_page_beautify_ul"
           role="list"
         >
           
