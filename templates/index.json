@@ -420,8 +420,8 @@
         "show_page_Dot": false,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
-        "banner_beautify_margin_top": "123",
-        "banner_beautify_margin_bottom": "123"
+        "banner_beautify_margin_top": "",
+        "banner_beautify_margin_bottom": ""
       }
     },
     "16378995192374eec4": {
@@ -470,8 +470,8 @@
         "grid": 2,
         "show_view_all": false,
         "show_page_Dot": false,
-        "banner_flickity_margin_top": "22",
-        "banner_flickity_margin_bottom": "22"
+        "banner_flickity_margin_top": "",
+        "banner_flickity_margin_bottom": ""
       }
     },
     "1635497923083b4abb": {
