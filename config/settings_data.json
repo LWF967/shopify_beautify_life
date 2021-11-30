@@ -10,7 +10,7 @@
     "promo_bar_home_page_only": true,
     "top_bar_home_page_only": true,
     "full_width": true,
-    "sticky_header": true,
+    "sticky_header": false,
     "show_search_icon": true,
     "Show_dropdown_arrow": true,
     "header_background_color": "#ffffff",
