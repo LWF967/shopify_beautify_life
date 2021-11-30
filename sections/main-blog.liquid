@@ -4,8 +4,8 @@
 
 
 {%- paginate blog.articles by 6 -%}
-
-  <div class="main-blog page-width">
+  <div class="main-blog page-width"
+       style="{%- if section.settings.gallery_margin_top != blank -%}margin-top: {{ section.settings.gallery_margin_top }}px; {%- endif -%}{%- if section.settings.gallery_margin_bottom != blank -%}margin-bottom:{{ section.settings.gallery_margin_bottom }}px;{%- endif -%}">
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
 
     <div class="blog-articles">
@@ -26,7 +26,6 @@
 {
   "name": "t:sections.main-blog.name",
   "tag": "section",
-  "class": "spaced-section",
   "settings": [
     {
       "type": "header",
@@ -54,6 +53,18 @@
     {
       "type": "paragraph",
       "content": "t:sections.main-blog.settings.paragraph.content"
+    },
+    {
+      "type": "text",
+      "id": "main_blog_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "main_blog_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ]
 }
