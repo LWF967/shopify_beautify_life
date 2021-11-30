@@ -1,5 +1,9 @@
-<div class="page-width"
-     style="{%- if section.settings.banner_beautify_margin_top != blank -%}margin-top: {{ section.settings.banner_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.banner_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.banner_beautify_margin_bottom }}px;{%- endif -%}">
+
+
+
+
+
+<div class="page-width ">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
       <h1 style="font-weight:600; ">{{ section.settings.title | escape }}</h1>
@@ -357,34 +361,29 @@
 // Shopify.addListener(doc_id,'shopify:section:load',()=>{console.log(222)});
  
  
-   let swiper = new Swiper ('.swiper-container1', {
+
+ 
+  
+ console.log(swiper)
+ 
+ 
+document.addEventListener('shopify:section:load',()=>{  
+		
+        
+           let swiper = new Swiper ('.swiper-container1', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, // 循环模式选项 
 
     // 如果需要分页器
   
 
-	{% unless section.settings.show_page_Dot %} 
-    
-         pagination: {
-      el: '.swiper-pagination-{{section.id}}',
-      clickable :true,
-      hideOnClick :true,
-    },
-
-  {% else %}  
-	 pagination: {
+    pagination: {
       el: '.swiper-pagination-{{section.id}}',
       clickable :true,
     },
-  {% endunless %}
     
-    
-
     effect : 'fade',
     observer : true,
-    observeParents : true,
-    observeSlideChildren : true,
     autoplay: {
     delay: 5000,
     stopOnLastSlide: false,
@@ -403,13 +402,7 @@
       el: '.swiper-scrollbar',
     }, */
   })
- 
-  
- console.log(swiper)
- 
- 
-document.addEventListener('shopify:section:load',()=>{  
-		document.getElementById('shopify-section-{{section.id}}').style.display = 'none';
+        
 },true);
 
 
@@ -420,6 +413,7 @@ document.addEventListener('shopify:section:load',()=>{
 {% schema %}
 {
   "name": {
+
     "en": "banner  Beautify"
   },
   "tag": "section",
@@ -430,30 +424,40 @@ document.addEventListener('shopify:section:load',()=>{
       "type": "text",
       "id": "title",
       "label": {
+   
         "en": "Heading"
       },
       "default": {
+
         "en": "BANNER"
       }
     },
+
+ 	
+
  	{
       "type": "text",
       "id": "sub_title",
       "label": {
+   
         "en": "Sub text"
       },
       "default": {
+
         "en": "Popular this week"
       }
     },
-    {
-      "type": "header",
-      "content": "COLUMN TOP"
-    },
+
+	{
+        "type": "header",
+        "content": "COLUMN TOP"
+      },
+
     {
       "type": "range",
       "id": "font_top",
       "label": {
+ 
         "en": "Font size header"
       },
       "min": 12,
@@ -461,16 +465,20 @@ document.addEventListener('shopify:section:load',()=>{
       "step": 2,
       "default": 30
     },
+
 	{
       "type": "color",
       "id": "color_top",
       "label": "Header color",
       "default": "#fff"
      },
+
 	{
       "type": "range",
       "id": "grid",
+	  
       "label": {
+ 
         "en": "Bottom image per row "
       },
       "min": 1,
@@ -478,44 +486,37 @@ document.addEventListener('shopify:section:load',()=>{
       "step": 1,
       "default": 3
     },
+
 	{
       "type": "checkbox",
       "id": "show_view_all",
       "default": false,
       "label": "t:sections.collection-list.settings.show_view_all.label"
     },
+
 	{
       "type": "checkbox",
       "id": "show_page_Dot",
       "default": false,
       "label": "Show Page Dot"
     },
-    {
-      "type":"select",
-      "id":"page_dot_style",
-      "label":"Style",
-      "default":"style_1",
-      "options":[{"value":"style_1","label":"Style 1"},{"value":"style_2","label":"Style 2"}]
-    },
-    {
-      "type":"select",
-      "id":"page_dot_color",
-      "label":"Color",
-      "default":"dark",
-      "options":[{"value":"dark","label":"Dark"},{"value":"light","label":"Light"}]
-    },
-    {
-      "type": "text",
-      "id": "banner_beautify_margin_top",
-      "label": "Margin top",
-      "info": "Margin top. If you not use to blank"
-    },
-    {
-      "type": "text",
-      "id": "banner_beautify_margin_bottom",
-      "label": "Margin bottom",
-      "info": "Margin bottom. If you not use to blank"
-    }
+
+        {
+        "type":"select",
+        "id":"page_dot_style",
+        "label":"Style",
+        "default":"style_1",
+        "options":[{"value":"style_1","label":"Style 1"},{"value":"style_2","label":"Style 2"}]
+        },
+		{
+        "type":"select",
+        "id":"page_dot_color",
+        "label":"Color",
+        "default":"dark",
+        "options":[{"value":"dark","label":"Dark"},{"value":"light","label":"Light"}]
+        }
+
+
   ],
   "blocks": [
 
