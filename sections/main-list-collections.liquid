@@ -19,7 +19,8 @@
   }
 </style>
 
-<div class="page-width my_collections_outside_div">
+<div class="page-width my_collections_outside_div"
+     style="{%- if section.settings.main_list_collections_margin_top != blank -%}margin-top: {{ section.settings.main_list_collections_margin_top }}px; {%- endif -%}{%- if section.settings.main_list_collections_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_list_collections_margin_bottom }}px;{%- endif -%}">
   <h1 class="title title--primary my_collections_title">{{ section.settings.title | escape }}</h1>
 
   {%- liquid
@@ -92,7 +93,6 @@
 {% schema %}
 {
   "name": "t:sections.main-list-collections.name",
-  "class": "spaced-section",
   "settings": [
     {
       "type": "text",
@@ -186,6 +186,18 @@
       "id": "image_padding",
       "default": false,
       "label": "t:sections.main-list-collections.settings.image_padding.label"
+    },
+    {
+      "type": "text",
+      "id": "main_list_collections_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "main_list_collections_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ]
 }
