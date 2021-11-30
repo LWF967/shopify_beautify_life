@@ -16,7 +16,7 @@
   <a href="{{ article.url }}" class="article-content motion-reduce">
     {%- if show_image == true and article.image -%}
       <div class="article-card__image-wrapper">
-        <div class="article-card__image media media--landscape {{section.settings.image_ratio1}}">
+        <div class="article-card__image media media--landscape {{section.settings.image_ratio1}} my_article_card_beautify_background">
           <img
             srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
               {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
