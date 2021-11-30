@@ -396,7 +396,7 @@
  let doc_id = document.getElementById('shopify-section-{{section.id}}');
 
  Shopify.addListener(doc_id,'shopify:section:load',()=>{console.log(222)});
- document.addEventListener('shopify:section:load',()=>{console.log(123)},true);
+ document.addEventListener('shopify:section:load',()=>{   swiper() },true);
 
 
 
