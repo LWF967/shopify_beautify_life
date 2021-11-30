@@ -9,7 +9,8 @@
 
 {{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
 
-<div class="blog{% if section.settings.soft_background %} background-secondary{% endif %}{% if section.settings.heading == blank %} no-heading{% endif %}">
+<div class="blog{% if section.settings.soft_background %} background-secondary{% endif %}{% if section.settings.heading == blank %} no-heading{% endif %}"
+     style="{%- if section.settings.blog_page_beautify_margin_top != blank -%}margin-top: {{ section.settings.blog_page_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.blog_page_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.blog_page_beautify_margin_bottom }}px;{%- endif -%}">
   <div class="page-width-desktop">
     <div class="title-wrapper-with-link{% if section.settings.heading == blank %} title-wrapper-with-link--no-heading{% endif %} title-wrapper--self-padded-tablet-down">
       <h2 class="blog__title">{{ section.settings.heading | escape }}</h2>
@@ -257,6 +258,18 @@
       "id": "show_view_all",
       "default": true,
       "label": "t:sections.featured-blog.settings.show_view_all.label"
+    },
+    {
+      "type": "text",
+      "id": "blog_page_beautify_margin_top",
+      "label": "Margin top",
+      "info": "Margin top. If you not use to blank"
+    },
+    {
+      "type": "text",
+      "id": "blog_page_beautify_margin_bottom",
+      "label": "Margin bottom",
+      "info": "Margin bottom. If you not use to blank"
     }
   ],
   "presets": [
