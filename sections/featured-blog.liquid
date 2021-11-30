@@ -10,7 +10,7 @@
 {{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
 
 <style>
-  .my_featured_blog_ul .blog__post.grid__item.article.slider__slide:first-child {
+/*   .my_featured_blog_ul .blog__post.grid__item.article.slider__slide:first-child {
     padding: 0 15px 0 0;
   }
 
@@ -20,7 +20,7 @@
 
   .my_featured_blog_ul .blog__post.grid__item.article.slider__slide {
     padding: 0 15px;
-  }
+  } */
 </style>
 
 <div class="blog{% if section.settings.soft_background %} background-secondary{% endif %}{% if section.settings.heading == blank %} no-heading{% endif %}"  style="{%- if section.settings.featured_blog_margin_top != blank -%}margin-top: {{ section.settings.featured_blog_margin_top }}px; {%- endif -%}{%- if section.settings.featured_blog_margin_bottom != blank -%}margin-bottom:{{ section.settings.featured_blog_margin_bottom }}px;{%- endif -%}">
