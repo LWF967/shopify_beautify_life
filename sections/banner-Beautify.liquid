@@ -373,10 +373,22 @@
     // 如果需要分页器
   
 
+	{% unless section.settings.show_page_Dot %} 
+    
+         pagination: {
+      el: '.swiper-pagination-{{section.id}}',
+      clickable :true,
+      hideOnClick :true,
+    },
+
+  {% else %}  
 	 pagination: {
       el: '.swiper-pagination-{{section.id}}',
       clickable :true,
     },
+  {% endunless %}
+    
+    
 
     effect : 'fade',
     observer : true,
