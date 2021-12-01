@@ -29,7 +29,7 @@
 
 <div class="collection page-width{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}" style="{%- if section.settings.featured_colection_margin_top != blank -%}margin-top: {{ section.settings.featured_colection_margin_top }}px; {%- endif -%}{%- if section.settings.featured_colection_margin_bottom != blank -%}margin-bottom:{{ section.settings.featured_colection_margin_bottom }}px;{%- endif -%}">
   <div class="title-wrapper-with-link{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %}">
-    <h2 class="title text-center{% if section.settings.title == blank %} title--no-heading{% endif %} my_featured_collection_title">{{ section.settings.title | escape }}</h2>
+    <h2 class="title text-center{% if section.settings.title == blank %} title--no-heading{% endif %} my_font_weight_default">{{ section.settings.title | escape }}</h2>
     <p class="text-center my_featured_collection_font_size"> {{ section.settings.sub_title | escape }} </p>
     {%- if section.settings.show_view_all and section.settings.swipe_on_mobile and more_in_collection -%}
       <a href="{{ section.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.featured_collection.view_all' | t }}</a>
@@ -37,37 +37,26 @@
   </div>
 
   <slider-component class="slider-mobile-gutter">
-    
-  
-    
-    
-    
-
-    
     {% case section.settings.grid %}
-    
     {% when 1 %}
       {%- assign grid_item_width = 'small--one-whole' -%}
-    	{%- assign grid_item_style = 'grid__item__featured '-%}
+      {%- assign grid_item_style = 'grid__item__featured '-%}
     {% when 2 %}
       {%- assign grid_item_width = 'medium-up--one-half' -%}
-    {%- assign grid_item_style = 'grid__item__featyred__beautify '-%}
+      {%- assign grid_item_style = 'grid__item__featyred__beautify '-%}
     {% when 3 %}
       {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
-    {%- assign grid_item_style = 'grid__item__featyred__beautify '-%}
+      {%- assign grid_item_style = 'grid__item__featyred__beautify '-%}
     {% when 4 %}
       {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
-    {%- assign grid_item_style = 'grid__item__featyred__beautify '-%}
+      {%- assign grid_item_style = 'grid__item__featyred__beautify '-%}
     {% when 5 %}
       {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
-    {%- assign grid_item_style = 'grid__item__featyred__beautify '-%}
+      {%- assign grid_item_style = 'grid__item__featyred__beautify '-%}
   	{% when 6 %}
       {%- assign grid_item_width = 'small--one-half medium-up--one-sixth' -%}
-    {%- assign grid_item_style = 'grid__item__featyred__beautify '-%}
-
-     {% endcase %}
-    
-
+      {%- assign grid_item_style = 'grid__item__featyred__beautify '-%}
+    {% endcase %}
     
     <ul class="grid grid--2-col   product-grid{% if products_to_display == 4 or section.settings.collection == blank %} grid--2-col-tablet grid--4-col-desktop{% else %} grid--3-col-tablet{% endif %}{% if products_to_display > 5 %} grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider slider--tablet grid--peek{% endif %}{% if section.settings.show_view_all == false or section.settings.collection.products.size < section.settings.products_to_show %} negative-margin{% endif %}{% if section.settings.show_view_all and section.settings.collection.products.size > section.settings.products_to_show %} negative-margin--small{% endif %}  " role="list">
       {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
@@ -106,18 +95,15 @@
     {%- endif -%}
   </slider-component>
   
-   {%- if section.settings.show_view_all and more_in_collection -%}
-  
-    <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
-      <a href="{{ section.settings.collection.url }}"
-        class="button"
-        aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}"
-      >
-        {{ 'sections.featured_collection.view_all' | t }}
-      </a>
-    </div>
-  
-	{%- endif -%}
+    {%- if section.settings.show_view_all and more_in_collection -%}
+      <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
+        <a href="{{ section.settings.collection.url }}"
+          class="button"
+          aria-label="{{ 'sections.featured_collection.view_all_label' | t: collection_name: section.settings.collection.title }}">
+          {{ 'sections.featured_collection.view_all' | t }}
+        </a>
+      </div>
+    {%- endif -%}
   
   
 </div>
