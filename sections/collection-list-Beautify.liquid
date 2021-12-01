@@ -1,7 +1,7 @@
 <div class="page-width" style="{%- if section.settings.collection_list_beautify_margin_top != blank -%}margin-top: {{ section.settings.collection_list_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.collection_list_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.collection_list_beautify_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
-      <h1 style="font-weight: 700; font-size: 24px;">{{ section.settings.title | escape }}</h1>
+      <h1 style="" class="my_collection_list_beautify_title_font_size">{{ section.settings.title | escape }}</h1>
       <p  style="padding-bottom:39px;"> {{ section.settings.sub_title | escape }} </p>
     </div>
   {% endif %}
@@ -74,10 +74,15 @@
     list-style-type: none;
   }
   
-    ol#collection_list_pog li.active{
-      background:blue;
-      color:#fff;
-    }
+  ol#collection_list_pog li.active{
+    background:blue;
+    color:#fff;
+  }
+  
+  .my_collection_list_beautify_title_font_size {
+  	font-weight: 700;
+    font-size: 24px;
+  }
 
 </style>
 
