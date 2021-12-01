@@ -1,8 +1,8 @@
 <div class="page-width" style="{%- if section.settings.collection_list_beautify_margin_top != blank -%}margin-top: {{ section.settings.collection_list_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.collection_list_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.collection_list_beautify_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
-      <h1 class="my_collection_list_beautify_title_font_size">{{ section.settings.title | escape }}</h1>
-      <p  style="padding-bottom:39px;"> {{ section.settings.sub_title | escape }} </p>
+      <h1 class="my_font_size_heading_default my_font_weight_default">{{ section.settings.title | escape }}</h1>
+      <p class="my_section_margin_default"> {{ section.settings.sub_title | escape }} </p>
     </div>
   {% endif %}
 
@@ -79,10 +79,10 @@
     color:#fff;
   }
   
-  .my_collection_list_beautify_title_font_size {
+/*   .my_collection_list_beautify_title_font_size {
   	font-weight: 700;
     font-size: 24px;
-  }
+  } */
 
 </style>
 
