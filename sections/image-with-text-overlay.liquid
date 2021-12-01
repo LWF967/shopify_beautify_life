@@ -29,6 +29,12 @@
   }
 {%- endstyle -%}
 
+<style>
+  .my_image_with_text_overlay_button {
+    min-height: 40px;
+  }
+</style>
+
 <div id="Banner-{{ section.id }}" class="banner{% if section.settings.stack_images_on_mobile and section.settings.image != blank and section.settings.image_2 != blank%} banner--stacked{% endif %}{% if section.settings.adapt_height_first_image and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}"
      style="{%- if section.settings.image_with_text_overlay_margin_top != blank -%}margin-top: {{ section.settings.image_with_text_overlay_margin_top }}px; {%- endif -%}{%- if section.settings.image_with_text_overlay_margin_bottom != blank -%}margin-bottom:{{ section.settings.image_with_text_overlay_margin_bottom }}px;{%- endif -%}">
   {%- if section.settings.image != blank -%}
@@ -72,7 +78,12 @@
           {%- when 'buttons' -%}
             <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank and block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %} banner__buttons--multiple{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.button_label_1 != blank -%}
-                <a{% if block.settings.button_link_1 != blank %} href="{{ block.settings.button_link_1 }}"{% endif %} class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %}"{% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>{{ block.settings.button_label_1 | escape }}</a>
+                <a{% if block.settings.button_link_1 != blank %} 
+                   href="{{ block.settings.button_link_1 }}"{% endif %} 
+                   class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %} my_button_font_size_default my_image_with_text_overlay_button"
+                   {% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>
+                  {{ block.settings.button_label_1 | escape }}
+                </a>
               {%- endif -%}
               
             </div>
