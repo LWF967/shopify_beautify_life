@@ -1,6 +1,13 @@
 {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .my_newsletter_heading_font_size {
+    font-size: 24px;
+    font-weight: 700;
+  }
+</style>
+
 <div class="newsletter center{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}"
      style="{%- if section.settings.newsletter_margin_top != blank -%}margin-top: {{ section.settings.newsletter_margin_top }}px; {%- endif -%}{%- if section.settings.newsletter_margin_bottom != blank -%}margin-bottom:{{ section.settings.newsletter_margin_bottom }}px;{%- endif -%}">
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient" {%- if section.settings.newsletter_bk_box-%} style="background-color:{{ section.settings.newsletter_bk_color }}" {%- endif -%}>
@@ -9,7 +16,7 @@
         {%- when '@app' -%}
           {% render block %}
         {%- when 'heading' -%}
-          <h2 class="h1" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+          <h2 class="h1 my_newsletter_heading_font_size" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {%- when 'paragraph' -%}
           <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'email_form' -%}
@@ -68,14 +75,8 @@
 
 
 <style>
-
-
-
   .newsletter__wrapper .newsletter-form__field-wrapper{
-  
-  
-  background-color:white;
-  
+    background-color:white;
   }
 </style>
 {% schema %}
