@@ -203,7 +203,7 @@
     box-sizing:border-box;
   }
   .product-box{
-    transform:translateX(0);
+    transform:translate(0);
   	width:100%;
     display: -webkit-box;
     position:relative;
@@ -764,7 +764,7 @@
         }
         this.className = 'active'
         contentbox.style.transform =
-          'translateX(' + -itemlist[this.index].index * diff + 'px' + ')'
+          'translate(' + -itemlist[this.index].index * diff + 'px' + ')'
       }
     }
 
@@ -776,7 +776,7 @@
       if (index < itemLength && index != 1) {
         //           index =  list_text.querySelector('.active').index+1;
         contentbox.style.transform =
-          'translateX(' + -parseInt(itemlist[index].index * diff) + 'px' + ')'
+          'translate(' + -parseInt(itemlist[index].index * diff) + 'px' + ')'
 
 
         for (var j = 0; j < list.length; j++) {
@@ -786,7 +786,7 @@
       } else if ((index == itemLength)) {
         index = 0
         contentbox.style.transform =
-          'translateX(' + -parseInt(itemlist[index].index * diff) + 'px' + ')'
+          'translate(' + -parseInt(itemlist[index].index * diff) + 'px' + ')'
 
 
         for (var j = 0; j < list.length; j++) {
@@ -870,7 +870,7 @@
       if (index < itemLength) {
         //           index =  list_text.querySelector('.active').index+1;
         contentbox.style.transform =
-          'translateX(' + -itemlist[index].index * diff + 'px' + ')'
+          'translate(' + -itemlist[index].index * diff + 'px' + ')'
 
         // 	console.log( itemlist[index].index*diff ,'R1');
         for (var j = 0; j < list.length; j++) {
@@ -880,7 +880,7 @@
       } else if ((index = itemLength)) {
         index = 0
         contentbox.style.transform =
-          'translateX(' + -itemlist[index].index * diff + 'px' + ')'
+          'translate(' + -itemlist[index].index * diff + 'px' + ')'
 
         // 	console.log( itemlist[index].index*diff ,'R2');
         for (var j = 0; j < list.length; j++) {
@@ -898,7 +898,7 @@
       if (index > 0) {
         index = list_text.querySelector('.active').index - 1
         contentbox.style.transform =
-          'translateX(' + -itemlist[index].index * diff + 'px' + ')'
+          'translate(' + -itemlist[index].index * diff + 'px' + ')'
 
         for (var j = 0; j < list.length; j++) {
           list[j].className = ''
@@ -907,7 +907,7 @@
       } else if (index <= 0) {
         index = list.length - 1
         contentbox.style.transform =
-          'translateX(' + -itemlist[index].index * diff + 'px' + ')'
+          'translate(' + -itemlist[index].index * diff + 'px' + ')'
 
         //   console.log('进来了');
 
