@@ -84,7 +84,7 @@
 <footer class="footer color-{{ section.settings.color_scheme }} gradient my_footer_bottom_color">
   <div class="footer__content-bottom my_footer_bottom_padding">
     <div class="footer__content-bottom-wrapper page-width">
-      {%- if section.settings.copyrights_layouts == 'Two columns' -%}
+      {%- if section.settings.copyrights_layouts != 'centered' -%}
       <div class="footer__column footer__column--info my_footer_bottom_flex my_footer_bottom_layout_nocenter"> 
         <div class="footer__copyright caption my_footer_copyright my_footer_bottom_item_flex my_footer_bottom_item_nocentered my_footer_bottom_item_nocentered_padding">
           {%- for block in section.blocks -%}
