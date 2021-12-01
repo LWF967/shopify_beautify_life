@@ -2384,7 +2384,7 @@ a{
 }
   
 .my_font_weight_default {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 /* lee section padding/margin */
