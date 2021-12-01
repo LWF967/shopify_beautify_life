@@ -93,7 +93,7 @@
   <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.promo_bar_show_icon}} my_promo_flex"
        data-date='{{section.settings.promo_bar_date}}'>
     {%- if section.settings.promo_bar_link != blank -%}<a href="{{ section.settings.promo_bar_link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>{%- endif -%}
-    <div class="container my_style" {% if settings.full_width == false %} style="max-width: 1200px;"{% endif %}>
+    <div class="container my_style" {% if settings.full_width == false %} style="max-width: 1200px;"{% endif %}style="font-size: 14px;">
       <div class="row al_center my_center">
         {%- capture cap_btn -%}
         {%- if section.settings.promo_bar_show_close -%}
