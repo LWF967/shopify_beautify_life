@@ -2404,3 +2404,8 @@ a{
 .my_clear_margin {
   margin: 0 0;
 }
+
+/* lee title and text margin */
+.my_between_title_and_text_margin {
+  margin-bottom: 5px;
+}
