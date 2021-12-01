@@ -706,8 +706,13 @@
 
 
 
+	// 阻止事件冒泡
+   window.event ? window.event.cancelBubble = true : event.stopPropagation();
 
 
+
+	// 阻止事件冒泡
+   window.event ? window.event.cancelBubble = true : event.stopPropagation();
 
   let slideshow_beautify_lunbo = (function () {
   
