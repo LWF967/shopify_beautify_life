@@ -512,20 +512,11 @@
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
-        },
-        "163835233452da67c2-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "163835233452da67c2-0",
-        "163835233452da67c2-1",
-        "163835233452da67c2-2"
+        "163835233452da67c2-1"
       ],
       "settings": {
         "color_scheme": "background-1",
