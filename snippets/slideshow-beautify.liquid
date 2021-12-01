@@ -820,7 +820,7 @@
         e.stopPropagation();
         clearInterval(time_gui);
              console.log(time_gui,"ss");
-      },1000),
+      },400),
       false
     )
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
@@ -829,7 +829,7 @@
       	e.stopPropagation();
         time_gui =  (autop == 'true') ? setInterval(autoPlay, time * 1000) : 'false';
                console.log(time_gui,"xx");
-      },1000),
+      },400),
       false
     )
 
