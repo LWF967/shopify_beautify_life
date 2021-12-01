@@ -821,8 +821,8 @@
       debounce(function (e) {
        	let _this = this;
         e.stopPropagation();
-        clearInterval(this.time_gui);
-             console.log(this.time_gui,"ss");
+        clearInterval(time_gui);
+             console.log(time_gui,"ss");
       },100),
       false
     )
@@ -831,8 +831,8 @@
       debounce(function (e) {
       	let _this = this;
       	e.stopPropagation();
-        this.time_gui =  (autop == 'true') ? setInterval(autoPlay, time * 1000) : 'false';
-               console.log(this.time_gui,"xx");
+        time_gui =  (autop == 'true') ? setInterval(autoPlay, time * 1000) : 'false';
+               console.log(time_gui,"xx");
       },800),
       false
     )
