@@ -703,7 +703,17 @@
 
 
 <script type="module">
+
+
+
+
+
+
   let slideshow_beautify_lunbo = (function () {
+  
+  
+  console.time("test");
+  
     var contentbox = document.querySelector('.product-box-{{section.id}}')
 
     contentbox.style.transition = 'all 1.5s'
@@ -890,6 +900,10 @@
         list[index].className = 'active'
       }
     },300))
+    
+    console.timeEnd("test");
+    
+    
   });
 
 
