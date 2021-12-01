@@ -278,7 +278,7 @@ body,
 .color-accent-1,
 .color-accent-2 {
   color: var(--color-foreground);
-  background-color: rgb(var(--color-background));
+  background-color: var(--gradient-base-accent-2);
 }
 
 /*   鼠標插入光標顔色 */
