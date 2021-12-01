@@ -17,12 +17,6 @@
   endif
 -%}
 
-<style>
-  .my_featured_collection_title {
-    gap: 0;
-  }
-</style>
-
 <div class="collection page-width{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}" style="{%- if section.settings.featured_colection_margin_top != blank -%}margin-top: {{ section.settings.featured_colection_margin_top }}px; {%- endif -%}{%- if section.settings.featured_colection_margin_bottom != blank -%}margin-bottom:{{ section.settings.featured_colection_margin_bottom }}px;{%- endif -%}">
   <div class="title-wrapper-with-link{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %} my_clear_margin my_featured_collection_title my_section_margin_default">
     <h2 class="title text-center{% if section.settings.title == blank %} title--no-heading{% endif %} my_font_weight_default my_between_title_and_text_margin">{{ section.settings.title | escape }}</h2>
@@ -100,14 +94,10 @@
         </a>
       </div>
     {%- endif -%}
-  
-  
 </div>
 
 <style>
-  
   .slider-mobile-gutterL:after{
-  
     clear: both;
     content: "";
     width: 0;
@@ -115,48 +105,41 @@
     display: block;
     visibility: hidden; 
   }
-  
-  
-  
+
   .collection.page-width:after{
-  
     clear: both;
     content: "";
     width: 0;
     height: 0;
     display: block;
     visibility: hidden;
-  
+  }
+
+  .grid__item__featyred__beautify {
+    padding: 0 1.5rem 0 1.5rem;
+    max-width: 50%;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  .grid__item__featyred__beautify {
+    max-width: 50%;
+    flex-grow: 1;
+    flex-shrink: 0;
   }
   
- .grid__item__featyred__beautify {
-  padding: 0 1.5rem 0 1.5rem;
-/*   padding-top: 3rem; */
-  max-width: 50%;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
+  .my_featured_collection_title {
+    gap: 0;
+  }
 
-
-  
-  .grid__item__featyred__beautify {
-
-  max-width: 50%;
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-  
-   @media screen and (max-width: 750px) {
-	
-       .grid__item__featyred__beautify {
-          width:100%;
-
-          max-width: 50%;
-          flex-grow: 1;
-          flex-shrink: 0;
-		}
+  @media screen and (max-width: 750px) {
+    .grid__item__featyred__beautify {
+      width:100%;
+      max-width: 50%;
+      flex-grow: 1;
+      flex-shrink: 0;
     }
-
+  }
 </style>
 
 
