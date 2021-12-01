@@ -130,6 +130,7 @@
   let hide_banner = document.getElementById('hide_banner');  
   let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
   let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+  hide_banner.style.height = 0;
   console.log(hide_banner.style.height);
   close.onclick = function () {
     if(hide_banner_height > hide_banner.dataset.mheight) {
