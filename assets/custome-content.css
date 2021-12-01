@@ -317,7 +317,8 @@ max-width:30rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   white-space: normal;
-  font-size: calc(((var(--font-size-base) - 2) / (var(--font-size-base))) * 1em); }
+/*   font-size: calc(((var(--font-size-base) - 2) / (var(--font-size-base))) * 1em); */
+  font-size: 13px; }
 
 
 .btn--small {
