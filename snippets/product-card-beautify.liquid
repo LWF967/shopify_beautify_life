@@ -16,6 +16,13 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .my_product_card_beautify_title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+</style>
+
 <div class="card-wrapper">
   <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
     <span class="visually-hidden">{{ product_card_product.title | escape }}</span>
@@ -165,7 +172,7 @@
         {%- endif -%}
 
         {%- if product_card_product.featured_media -%}
-          <span class="card-information__text h5">
+          <span class="card-information__text h5 my_product_card_beautify_title">
             {{ product_card_product.title | escape }}
           </span>
         {%- else -%}
