@@ -4,24 +4,15 @@
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 <style>
-  .my_custom_content_title {
-    font-weight: 700;
-  }
-  
   .my_custom_content_title_font_size {
     font-size: 28px;
-    font-weight: 700;
-  }
-  
-  .my_custom_content_margin_bottom {
-    margin-bottom: 55px;
   }
 </style>
 
 <div class="page-width" style="{%- if section.settings.custom_content_margin_top != blank -%}margin-top: {{ section.settings.custom_content_margin_top }}px; {%- endif -%}{%- if section.settings.custom_content_margin_bottom != blank -%}margin-bottom:{{ section.settings.custom_content_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
-      <h4 class="h2 my_custom_content_title my_custom_content_margin_bottom">{{ section.settings.title | escape }}</h4>
+      <h4 class="h2 my_font_weight_default my_section_margin_default">{{ section.settings.title | escape }}</h4>
     </div>
   {% endif %}
 
@@ -91,7 +82,7 @@
             {% when 'text' %}
               <div class="medium-up--text-{{ block.settings.align_text }}">
                 {% if block.settings.title != blank %}
-                  <h4 class="h3 my_custom_content_title_font_size">{{ block.settings.title | escape }}</h4>
+                  <h4 class="h3 my_custom_content_title_font_size my_font_weight_default">{{ block.settings.title | escape }}</h4>
                 {% endif %}
                 {% if block.settings.text != blank %}
                   <div class="rte-setting rte">{{ block.settings.text }}</div>
