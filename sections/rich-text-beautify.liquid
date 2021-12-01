@@ -4,14 +4,30 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 
+<style>
+  .my_rich_text_beautify_title {
+    font-size: 28px;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .my_rich_text_beautify_title {
+      font-size: 24px;
+    }
+    
+    .my_rich_text_beautify_content {
+      margin: 30px 0 0;
+    }
+  }
+</style>
+
 <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
   <div class="{%- if section.settings.content_full_width -%} rich_full_content  {%- else -%} rich-text__blocks  {%- endif -%}">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'heading' -%}
-          <h2 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+          <h2 class="{{ block.settings.heading_size }} my_rich_text_beautify_title my_font_weight_default" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {%- when 'text' -%}
-          <div class="rich-text__text rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          <div class="rich-text__text rte my_rich_text_beautify_content my_font_size_content_default" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'button' -%}
           <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} 
              class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
