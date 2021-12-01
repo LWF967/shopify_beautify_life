@@ -33,7 +33,7 @@
 <style>
   .my_header_search_price {
     font-size: 14px !important;
-    align-items: center;
+    align-items: center !important;
   }
 </style>
 
@@ -101,7 +101,7 @@
       {{ 'products.product.on_sale' | t }}
     </span>
 
-    <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}" aria-hidden="true">
+    <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}" aria-hidden="true" style="padding: 0 0;">
       {{ 'products.product.sold_out' | t }}
     </span>
   {%- endif -%}
