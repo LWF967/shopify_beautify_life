@@ -227,6 +227,21 @@
 .media.media--transparent.ratio_nt  {padding-bottom: 127.7777778%}
 .media.media--transparent.ratio2_3  {padding-bottom: 150%;}
 
+  
+  
+  .media>img:hover .media>img::before{
+  
+   content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-image-overlay);
+  opacity: var(--opacity-image-overlay); 
+  
+  }
+  
   .list_test:hover .list_test::before{
   
   z-index:1;
