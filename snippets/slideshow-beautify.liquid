@@ -805,8 +805,8 @@
 	 	
     function autoPlay () {
 
-		moveTransition(index)
-          
+		moveTransition(index);
+        console.log('走了');  
       
     }
 
@@ -820,7 +820,7 @@
         e.stopPropagation();
         clearInterval(time_gui);
              console.log(time_gui,"ss");
-      },400),
+      },200),
       false
     )
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
