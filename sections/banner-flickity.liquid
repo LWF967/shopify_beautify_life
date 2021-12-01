@@ -175,8 +175,11 @@
 </div>
 
 <style>
-
-
+  .my_banner_flickity_title_font_size {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
   .opa-0{
   	opacity:0;
   }
@@ -185,13 +188,11 @@
   	opacity:1;
   }
   
-
   .carousel-cell{
   
   width:100%;
   
   }
- 
   
   .banner-beautify-imgbox{
     display: flex;
@@ -199,23 +200,19 @@
     flex-wrap: nowrap;
     overflow: hidden;  
     max-height: 400px;           	
-
   } 
   
-  
-   @media screen and (max-width: 750px) {
- 	.banner-beautify-imgbox{
-    max-height: 200px; 
-     } 
+  @media screen and (max-width: 750px) {
+    .banner-beautify-imgbox{
+      max-height: 200px; 
+    } 
   }
 
-   @media screen and (min-width: 990px) {
-
-  .banner-beautify-imgbox{
-    max-height: 300px; 
-     }       
+  @media screen and (min-width: 990px) {
+    .banner-beautify-imgbox{
+      max-height: 300px; 
+    }       
   }
-
   
 /* .swiper-container {
 
@@ -229,13 +226,6 @@
   }   */
 
 </style>
-
-
-
-
-
-
-
 
 {% schema %}
 {
