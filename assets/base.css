@@ -14,7 +14,7 @@
 
 
 .color-beautify-overlay-1{
-	--color-foreground:white;;
+	--color-foreground:white !imporatnt;
 	--color-background:transparent;
       
     color: white;
@@ -44,10 +44,7 @@
 }
   
   
-  .color-gradient-base-background-2{
   
-  
-  }  
 
 .color-background-2 {
   --color-background: var(--color-base-background-2);
@@ -277,17 +274,12 @@ html.no-js .no-js-hidden {
 body,
 .color-background-1,
 .color-background-2,
+.color-inverse,
 .color-accent-1,
 .color-accent-2 {
   color: var(--color-foreground);
-  background-color: var(--gradient-base-accent-2);
+  background-color: rgb(var(--color-background));
 }
-  
-  .color-inverse{
-  
-   color: var(--color-foreground);
-  background-color: var(--gradient-base-accent-2);
-  }
 
 /*   鼠標插入光標顔色 */
 body {
