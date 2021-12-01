@@ -274,12 +274,17 @@ html.no-js .no-js-hidden {
 body,
 .color-background-1,
 .color-background-2,
-.color-inverse,
 .color-accent-1,
 .color-accent-2 {
   color: var(--color-foreground);
   background-color: var(--gradient-base-accent-2);
 }
+  
+  .color-inverse{
+  
+   color: var(--color-foreground);
+  background-color: var(--gradient-base-accent-2);
+  }
 
 /*   鼠標插入光標顔色 */
 body {
