@@ -282,8 +282,9 @@ body,
 }
 
 /*   鼠標插入光標顔色 */
-body{
+body {
   caret-color:transparent;
+  font-size: 30px;
 }  
 
 input, textarea {
