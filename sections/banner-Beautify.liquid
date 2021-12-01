@@ -2,7 +2,7 @@
      style="{%- if section.settings.banner_beautify_margin_top != blank -%}margin-top: {{ section.settings.banner_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.banner_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.banner_beautify_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
-      <h1 style="font-weight:600; ">{{ section.settings.title | escape }}</h1>
+      <h1 class="my_banner_beautify_title_font_size">{{ section.settings.title | escape }}</h1>
       <p  style="margin-bottom:39px;"> {{ section.settings.sub_title | escape }} </p>
     </div>
   {% endif %}
@@ -193,8 +193,11 @@
 </div>
 
 <style>
-
-
+  .my_banner_beautify_title_font_size {
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
   .opa-0{
   	opacity:0;
   }
@@ -202,10 +205,6 @@
  .opa-1{
   	opacity:1;
   }
-  
-
-
- 
   
   .banner-beautify-imgbox{
     display: flex;
@@ -216,21 +215,18 @@
 
   } 
   
-  
-   @media screen and (max-width: 750px) {
- 	.banner-beautify-imgbox{
-    max-height: 200px; 
-     } 
+  @media screen and (max-width: 750px) {
+    .banner-beautify-imgbox{
+      max-height: 200px; 
+    } 
   }
 
-   @media screen and (min-width: 990px) {
-
-  .banner-beautify-imgbox{
-    max-height: 300px; 
-     }       
+  @media screen and (min-width: 990px) {
+    .banner-beautify-imgbox{
+      max-height: 300px; 
+    }       
   }
 
-  
 /* .swiper-container {
 
     max-height: 400px;
@@ -242,16 +238,9 @@
   
   }   */
   
-  
-    .swiper-pagination-{{section.id}}.swiper-pagination-hidden {
-        opacity: 0
-    }
-  
-  
-  
-  
-  
-    
+  .swiper-pagination-{{section.id}}.swiper-pagination-hidden {
+    opacity: 0
+  }
 /*   定义轮播点 */
   
   
@@ -298,10 +287,8 @@
 
     }
   {% endif %}	
-  
-  
+
   .swiper-pagination-{{section.id}} {
-  
   	width: 100%;
     display: flex;
     justify-content: center;
@@ -311,12 +298,9 @@
     cursor: pointer;
     padding: 0px;
     margin: 0;
-
   }
   
-  
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-	
     float:left;
     width:16px;
     height:16px;
@@ -329,8 +313,6 @@
     margin: 0 14px;
     list-style-type: none;
   }
-  
-
 </style>
 
 
