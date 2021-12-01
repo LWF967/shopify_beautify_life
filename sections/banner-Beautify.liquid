@@ -2,8 +2,8 @@
      style="{%- if section.settings.banner_beautify_margin_top != blank -%}margin-top: {{ section.settings.banner_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.banner_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.banner_beautify_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
-      <h1 class="my_banner_beautify_title_font_size">{{ section.settings.title | escape }}</h1>
-      <p  style="margin-bottom:39px;"> {{ section.settings.sub_title | escape }} </p>
+      <h1 class="my_font_size_heading_default my_font_weight_default my_between_title_and_text_margin">{{ section.settings.title | escape }}</h1>
+      <p  class="my_section_margin_default"> {{ section.settings.sub_title | escape }} </p>
     </div>
   {% endif %}
 
