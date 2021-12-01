@@ -405,7 +405,7 @@
                         <button
                           type="submit"
                           name="add"
-                          class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %} my_featured_product_beautify_add"
+                          class="product-form__submit button button--full-width my_featured_product_beautify_add {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                         {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                         >
                             {%- if product.selected_or_first_available_variant.available -%}
@@ -426,7 +426,7 @@
                       <button
                         type="submit"
                         name="add"
-                        class="product-form__submit button button--full-width button--primary my_featured_product_beautify_add"
+                        class="product-form__submit button button--full-width button--primary"
                         disabled
                       >
                         {{ 'products.product.sold_out' | t }}
