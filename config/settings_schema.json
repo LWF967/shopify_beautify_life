@@ -615,10 +615,6 @@
           {
             "value": "inverse",
             "label": "t:settings_schema.styles.settings.sold_out_badge_color_scheme.options__2.label"
-          },
-          {
-            "value": "gradient-base-background-2",
-            "label": "gradient-base-background-2"
           }
         ],
         "default": "inverse",
