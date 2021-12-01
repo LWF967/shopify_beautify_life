@@ -7,7 +7,7 @@
      style="{%- if section.settings.banner_flickity_margin_top != blank -%}margin-top: {{ section.settings.banner_flickity_margin_top }}px; {%- endif -%}{%- if section.settings.banner_flickity_margin_bottom != blank -%}margin-bottom:{{ section.settings.banner_flickity_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
-      <h1 style="font-weight:600; ">{{ section.settings.title | escape }}</h1>
+      <h1 class="my_banner_flickity_title_font_size">{{ section.settings.title | escape }}</h1>
       <p  style="margin-bottom:39px;"> {{ section.settings.sub_title | escape }} </p>
     </div>
   {% endif %}
@@ -501,29 +501,6 @@
       }
 
 
-  ],
-  "presets": [
-    {
-      "name": {
-
-        "en": "Banner"
-      },
-      "category": {
-
-        "en": "Collection"
-      },
-      "blocks": [
-        {
-          "type": "img_top"
-        },
-        {
-          "type": "img_top"
-        },
-        {
-          "type": "img_top"
-        }
-      ]
-    }
   ]
 }
 {% endschema %}
