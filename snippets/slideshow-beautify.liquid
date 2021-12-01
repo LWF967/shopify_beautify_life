@@ -821,7 +821,7 @@
       debounce(function (e) {
        	let _this = this;
         e.stopPropagation();
-        clearInterval(time_gui);
+        clearInterval(_this.time_gui);
              console.log(time_gui,"ss");
       },100),
       false
