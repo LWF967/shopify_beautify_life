@@ -2395,3 +2395,12 @@ a{
 .my_section_margin_default {
   margin-bottom: 55px !important;
 }
+  
+/* lee padding 0 0/margin 0 0 */
+.my_clear_padding {
+  padding: 0 0;
+}
+  
+.my_clear_margin {
+  margin: 0 0;
+}
