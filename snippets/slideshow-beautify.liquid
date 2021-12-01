@@ -801,7 +801,7 @@
    	let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime;
     
  	 let time_gui ;
-  	 time_gui = (autop == 'true') ? setInterval(autoPlay, time * 1000) : 'false';
+  	 time_gui = (autop == 'true') ? setTimeout(setInterval(autoPlay, time * 1000),300) : 'false';
 	 	
     function autoPlay () {
 
@@ -827,7 +827,7 @@
       'mouseleave',
       debounce(function (e) {
       	e.stopPropagation();
-        time_gui =  (autop == 'true') ? setInterval(autoPlay, time * 1000) : 'false';
+        time_gui =  (autop == 'true') ? setTimeout(setInterval(autoPlay, time * 1000),300) : 'false';
                console.log(time_gui,"xx");
       },400),
       false
