@@ -773,7 +773,7 @@
     function moveTransition (index) {
       index = list_text.querySelector('.active').index + 1
 
-      if (index < itemLength) {
+      if (index < itemLength && index != 1) {
         //           index =  list_text.querySelector('.active').index+1;
         contentbox.style.transform =
           'translate(' + -parseInt(itemlist[index].index * diff) + 'px' + ')'
@@ -783,7 +783,7 @@
           list[j].className = ''
         }
         list[index].className = 'active'
-      } else if ((index = itemLength)) {
+      } else if ((index == itemLength)) {
         index = 0
         contentbox.style.transform =
           'translate(' + -parseInt(itemlist[index].index * diff) + 'px' + ')'
@@ -793,7 +793,12 @@
           list[j].className = ''
         }
         list[index].className = 'active'
+      }else if (index == 1){
+      	
+      	
       }
+      
+      
     }
     
 
