@@ -2339,7 +2339,7 @@ a{
   text-decoration:none;
 }
   
-/* lzx backtop css */
+/* lee backtop css */
 #my_backtop {
   position: fixed;
   display: block;
@@ -2370,4 +2370,28 @@ a{
   transform: rotate(-45deg);
 }
   
+/* lee font-size font-weight css */
+.my_font_size_content_default {
+  font-size: 14px;  
+}
+
+.my_font_size_heading_default {
+  font-size: 24px
+}
+
+.my_button_font_size_default {
+  font-size: 12px;
+}
   
+.my_font_weight {
+  font-weight: 700;
+}
+
+/* lee section padding/margin */
+.my_section_padding_default {
+  padding-bottom: 55px;
+}
+  
+.my_section_margin_default {
+  margin-bottom: 55px;
+}
