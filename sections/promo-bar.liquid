@@ -131,7 +131,7 @@
   let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
   let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
   window.onload = function () {
-    hide_banner.style.top = -hide_banner.dataset.mheight + 1 + 'px';
+    hide_banner.style.top = -hide_banner.dataset.mheight - 1 + 'px';
     hide_banner.style.position = 'absolute';
     hide_banner.style.transform = 'translateY' + hide_banner.dataset.mheight + 'px';
     hide_banner.style.width = '100%';
