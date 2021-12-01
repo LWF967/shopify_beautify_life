@@ -22,7 +22,7 @@
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
     "colors_accent_2": "#334FB4",
-    "gradient_accent_2": "",
+    "gradient_accent_2": "linear-gradient(180deg, rgba(8, 8, 8, 1), rgba(221, 39, 57, 1) 100%)",
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#FFFFFF",
