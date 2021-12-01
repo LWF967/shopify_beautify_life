@@ -795,6 +795,7 @@
         list[index].className = 'active'
       }
     }
+    
 
     let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay;
     
@@ -822,7 +823,7 @@
        	let _this = this;
         e.stopPropagation();
         clearInterval(time_gui);
-             console.log(time_gui,"ss");
+           //  console.log(time_gui,"ss");
       },100),
       false
     )
@@ -832,7 +833,7 @@
       	let _this = this;
       	e.stopPropagation();
         time_gui =  (autop == 'true') ? setInterval(autoPlay, time * 1000) : 'false';
-               console.log(time_gui,"xx");
+           //    console.log(time_gui,"xx");
       },800),
       false
     )
