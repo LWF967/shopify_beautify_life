@@ -1,13 +1,10 @@
-
 {%- assign  setting=section.settings-%}
-
- {%- liquid
+{%- liquid
           assign highest_ratio = 0
       	  assign product = setting.product 
-            if product.images[0].aspect_ratio > highest_ratio
-              assign highest_ratio = product.images[0].aspect_ratio
-            endif          
-          
+          if product.images[0].aspect_ratio > highest_ratio
+            assign highest_ratio = product.images[0].aspect_ratio
+          endif          
         -%}
 
 <div class="contatin" style="background-color:{{setting.background_color}}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}"> 
@@ -21,11 +18,9 @@
         <div class="minutes_time f1 time-div"></div>
         <div class="second_time f1  time-div"></div>
       </div>
-      
     </div>
-    
+
     <div class=" h_50">
-    
       <p style="font-weight:600;">{{ product.title }}</p>
       <p>{{product.description}}</p>
       <div style="margin: 1rem 0;">
@@ -33,22 +28,10 @@
       </div>
       <a class="mr_4" href="{{section.settings.shop_now_url}}"><button class="button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default">shop now</button></a>
       <a class="t2" href="{{section.settings.detail_url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default">Detail</button></a>
-		
-    
     </div>
-  
-    
-
   </div>
   <div class="right daily-right">
     <div class="daily-product-box" style="background-color: {{setting.background_product_color}};">
-      
-    
-      
-     
-     
-      
-      
    		 <div class="daily-product" >
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
@@ -70,120 +53,108 @@
             {%- endif -%}
           {%- endfor -%}
         </div>
-      
-      
     </div>
   </div>
-
-
 </div>
-
-
-
-
-
 
 {% schema %}
   {
     "name": "daily-deal-of-the-day",
 	"tag":"section",
     "settings": [
-
-	 {
-      "type": "product",
-      "id": "product",
-      "label": "Product"
-    },
- 	{
-      "type": "image_picker",
-      "id": "log_image",
-      "label": "Logo image"
-    },
-	 {
-          "type": "text",
-          "id": "heading_text",
-          "default": "Daily Deal Of The Day",
-          "label": "Heading"
-     },
-
-	 {
-      "type": "range",
-      "id": "heading_font_size",
-      "min": 16,
-      "max": 80,
-      "step": 2,
-      "unit": "px",
-      "label": "Font size",
-      "default": 32
-    },
-	{
-      "type": "color",
-      "id": "color_top",
-      "label": "Header color",
-      "default": "#888"
-     },
-	{
+      {
+        "type": "product",
+        "id": "product",
+        "label": "Product"
+      },
+      {
+        "type": "image_picker",
+        "id": "log_image",
+        "label": "Logo image"
+      },
+      {
+        "type": "text",
+        "id": "heading_text",
+        "default": "Daily Deal Of The Day",
+        "label": "Heading"
+      },
+      {
+        "type": "range",
+        "id": "heading_font_size",
+        "min": 16,
+        "max": 80,
+        "step": 2,
+        "unit": "px",
+        "label": "Font size",
+        "default": 32
+      },
+      {
+        "type": "color",
+        "id": "color_top",
+        "label": "Header color",
+        "default": "#888"
+      },
+      {
         "type": "header",
         "content": "COUNTDOWN"
-     },
-	  {
-       "type": "text",
-       "id": "countdown_time",
-       "label": "Data countdown",
-       "default": "2021\/12\/01",
-       "info": "Please use this exact format:yyyy/mm/dd hour/minute/second.Examle: 2021/12/01 10:00:00."
       },
-	 {
-      "type": "range",
-      "id": "time_font_size",
-      "min": 16,
-      "max": 80,
-      "step": 2,
-      "unit": "px",
-      "label": "Font size",
-      "default": 32
-    },
-	{
-      "type": "color",
-      "id": "background_color",
-      "label": "Background color",
-      "default": "#f9f9f9"
-     },
-	{
-      "type": "color",
-      "id": "background_product_color",
-      "label": "Background product color",
-      "default": "#FFF"
-     },
-    {
-      "label": "Show-Now link ",
-      "id": "shop_now_url",
-      "type": "url"
-    },
-    {
-      "label": "Detaile link ",
-      "id": "detail_url",
-      "type": "url"
-    },
-    {
-      "type": "text",
-      "id": "daily_deal_of_the_day_margin_top",
-      "label": "Margin top",
-      "info": "Margin top. If you not use to blank"
-    },
-    {
-      "type": "text",
-      "id": "daily_deal_of_the_day_margin_bottom",
-      "label": "Margin bottom",
-      "info": "Margin bottom. If you not use to blank"
-    }
-
+	  {
+        "type": "text",
+        "id": "countdown_time",
+        "label": "Data countdown",
+        "default": "2021\/12\/01",
+        "info": "Please use this exact format:yyyy/mm/dd hour/minute/second.Examle: 2021/12/01 10:00:00."
+      },
+      {
+        "type": "range",
+        "id": "time_font_size",
+        "min": 16,
+        "max": 80,
+        "step": 2,
+        "unit": "px",
+        "label": "Font size",
+        "default": 32
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color",
+        "default": "#f9f9f9"
+      },
+      {
+        "type": "color",
+        "id": "background_product_color",
+        "label": "Background product color",
+        "default": "#FFF"
+      },
+      {
+        "label": "Show-Now link ",
+        "id": "shop_now_url",
+        "type": "url"
+      },
+      {
+        "label": "Detaile link ",
+        "id": "detail_url",
+        "type": "url"
+      },
+      {
+        "type": "text",
+        "id": "daily_deal_of_the_day_margin_top",
+        "label": "Margin top",
+        "info": "Margin top. If you not use to blank"
+      },
+      {
+        "type": "text",
+        "id": "daily_deal_of_the_day_margin_bottom",
+        "label": "Margin bottom",
+        "info": "Margin bottom. If you not use to blank"
+      }
  	],
 	"presets":[
-	{
-	"name":"daily-deal-of-the-day"
-	}
-]
+      {
+        "name":"daily-deal-of-the-day"
+      }
+	]
   }
 {% endschema %}
 
