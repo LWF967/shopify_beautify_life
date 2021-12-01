@@ -11,8 +11,8 @@
 
 <div class="page-width" style="{%- if section.settings.custom_content_margin_top != blank -%}margin-top: {{ section.settings.custom_content_margin_top }}px; {%- endif -%}{%- if section.settings.custom_content_margin_bottom != blank -%}margin-bottom:{{ section.settings.custom_content_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
-    <div class="section-header text-center my_custom_content_title">
-      <h4 class="h2">{{ section.settings.title | escape }}</h4>
+    <div class="section-header text-center">
+      <h4 class="h2 my_custom_content_title">{{ section.settings.title | escape }}</h4>
     </div>
   {% endif %}
 
