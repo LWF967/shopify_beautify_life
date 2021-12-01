@@ -40,8 +40,8 @@
             endif
           -%}
 
-          <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>{% assign image_ratio1 = section.settings.image_ratio1 %}
-            <div class="media media--transparent  {% if use_eq_height == true%}   {{image_ratio1}}   {% endif %}  media--{{ media_size }} media--hover-effect "
+          <div  {% if add_image_padding %} class="card__media-full-spacer"{% endif %}>{% assign image_ratio1 = section.settings.image_ratio1 %}
+            <div class="media media--transparent  {% if use_eq_height == true%}   {{image_ratio1}}   {% endif %}  media--{{ media_size }}  list_test"
                        {% if use_eq_height == true%}  
                        	 
                         {% case image_ratio1 %}
@@ -223,5 +223,19 @@
 .media.media--transparent.ratio_nt  {padding-bottom: 127.7777778%}
 .media.media--transparent.ratio2_3  {padding-bottom: 150%;}
 
+  
+  
+  
+  .list_test::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-image-overlay);
+  opacity: var(--opacity-image-overlay); }   
+   
+   
 
 </style>
