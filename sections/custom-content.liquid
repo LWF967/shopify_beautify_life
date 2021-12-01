@@ -7,6 +7,11 @@
   .my_custom_content_title {
     font-weight: 700;
   }
+  
+  .my_custom_content_title_font_size {
+    font-size: 28px;
+    font-weight: 700;
+  }
 </style>
 
 <div class="page-width" style="{%- if section.settings.custom_content_margin_top != blank -%}margin-top: {{ section.settings.custom_content_margin_top }}px; {%- endif -%}{%- if section.settings.custom_content_margin_bottom != blank -%}margin-bottom:{{ section.settings.custom_content_margin_bottom }}px;{%- endif -%}">
@@ -82,7 +87,7 @@
             {% when 'text' %}
               <div class="medium-up--text-{{ block.settings.align_text }}">
                 {% if block.settings.title != blank %}
-                  <h4 class="h3">{{ block.settings.title | escape }}</h4>
+                  <h4 class="h3 my_custom_content_title_font_size">{{ block.settings.title | escape }}</h4>
                 {% endif %}
                 {% if block.settings.text != blank %}
                   <div class="rte-setting rte">{{ block.settings.text }}</div>
