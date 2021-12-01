@@ -33,7 +33,7 @@
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
     "sale_badge_color_scheme": "accent-2",
-    "sold_out_badge_color_scheme": "gradient-base-background-2",
+    "sold_out_badge_color_scheme": "inverse",
     "page_width": "1600",
     "share_on_facebook": true,
     "tweet_on_twitter": true,
