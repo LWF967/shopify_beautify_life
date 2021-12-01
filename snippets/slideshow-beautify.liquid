@@ -711,15 +711,7 @@
     var leftbtn = document.querySelector('.leftbtn-{{section.id}}')
     var rightbtn = document.querySelector('.rightbtn-{{section.id}}')
     var mardiff = contentbox.clientWidth * 0.02
-    //  var diff=contentbox.scrollWidth-contentbox.clientWidth;
 
-    //  var diff=contentbox.clientWidth ;
-
-    //  var diff=parseInt(contentbox.clientWidth);
-
-    //  var diff = document.getElementsByClassName('feature-artworks')[0].clientWidth;
-
-    //  var diff =  document.getElementsByClassName('big-box')[0].offsetWidth;
 
     var itemlist = document.querySelectorAll('.slideshow_content-{{section.id}}')
     var itemLength = itemlist.length
@@ -792,7 +784,7 @@
       }
     }
 
-    let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay
+    let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay;
  
  	
 	 	
@@ -803,15 +795,15 @@
       
     }
 
-    let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime
+    let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime;
 
     let time_gui = (autop == 'true') ? setInterval(autoPlay, time * 1000) : 'false';
 
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseover',
       debounce(function () {
-        clearInterval(time_gui)
-             console.log(time_gui,"ss")
+        clearInterval(time_gui);
+             console.log(time_gui,"ss");
       },300),
       false
     )
@@ -819,7 +811,7 @@
       'mouseleave',
       debounce(function () {
         time_gui =  (autop == 'true') ? setInterval(autoPlay, time * 1000) : 'false';
-               console.log(time_gui,"xx")
+               console.log(time_gui,"xx");
       },300),
       false
     )
