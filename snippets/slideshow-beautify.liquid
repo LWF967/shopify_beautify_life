@@ -801,7 +801,7 @@
    	let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime;
     
  	 let time_gui ;
-  	 time_gui = (autop == 'true') ? setTimeout(setInterval(autoPlay, time * 1000),300) : 'false';
+  	 time_gui = (autop == 'true') ? setInterval(autoPlay, time * 1000) : 'false';
 	 	
     function autoPlay () {
 
@@ -820,7 +820,7 @@
         e.stopPropagation();
         clearInterval(time_gui);
              console.log(time_gui,"ss");
-      },200),
+      },100),
       false
     )
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
