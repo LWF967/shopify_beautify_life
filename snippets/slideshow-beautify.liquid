@@ -818,9 +818,9 @@
       'mouseover',
       debounce(function (e) {
         e.stopPropagation();
-        clearInterval();
+        clearInterval(time_gui);
              console.log(time_gui,"ss");
-      },100),
+      },1000),
       false
     )
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
