@@ -797,7 +797,9 @@
     }
 
     let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay;
- 
+    
+   	let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime;
+    
  	 let time_gui ;
   	 time_gui = (autop == 'true') ? setInterval(autoPlay, time * 1000) : 'false';
 	 	
@@ -808,7 +810,7 @@
       
     }
 
-    let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime;
+  
 
    
 
