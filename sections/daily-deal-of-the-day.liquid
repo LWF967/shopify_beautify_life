@@ -10,17 +10,10 @@
           
         -%}
 
-<div class="contatin" style="background-color:{{setting.background_color}}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}">
-  
+<div class="contatin" style="background-color:{{setting.background_color}}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}"> 
   <div class="left ">
-    
-    
     <div class="felx_box  h_50">
       <h1 class="f5 " style="font-size:{{setting.heading_font_size}}px !important; line-height:{{setting.heading_font_size}}px !important; height:100%;">Daily Deal Of The Day</h1>
-<!--       <div class="clock"></div>
-      <div class="clock"></div>
-      <div class="clock"></div>
-      <div class="clock"></div> -->
       
       <div class="timebox f4"    data-endtime="{{setting.countdown_time}}"  >
         <div class="day_time f1 time-div"></div>
@@ -38,8 +31,8 @@
       <div style="margin: 1rem 0;">
       {% render 'price', product: product, price_class: '' %}
       </div>
-      <a class="mr_4" href="{{section.settings.shop_now_url}}"><button class="button font-cap">shop now</button></a>
-      <a class="t2" href="{{section.settings.detail_url}}"><button class="button white-button font-cap">Detail</button></a>
+      <a class="mr_4" href="{{section.settings.shop_now_url}}"><button class="button font-cap my_daily_deal_of_the_day_button_font_size">shop now</button></a>
+      <a class="t2" href="{{section.settings.detail_url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size">Detail</button></a>
 		
     
     </div>
@@ -316,6 +309,9 @@
   overflow:hidden;
   }
   
+  .my_daily_deal_of_the_day_button_font_size {
+    font-size: 13px;
+  }
   
   @media (max-width: 750px) {
 
