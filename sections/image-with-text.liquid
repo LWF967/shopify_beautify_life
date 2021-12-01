@@ -13,8 +13,9 @@
     font-size: 18px;
   }
   
-  .my_image_with_text_button_height {
+  .my_image_with_text_button {
     min-height: 40px;
+    margin-top: 16px;
   }
 </style>
 
@@ -56,7 +57,7 @@
               <div class="image-with-text__text rte my_image_with_text_text_size" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
             {%- when 'button' -%}
               {%- if block.settings.button_text != blank -%}
-                <a{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} my_image_with_text_button_height my_button_font_size_default"{% if block.settings.button_link == blank %} aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
+                <a{% if block.settings.button_link != blank %} href="{{ block.settings.button_link }}"{% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %} my_image_with_text_button my_button_font_size_default"{% if block.settings.button_link == blank %} aria-disabled="true"{% endif %} {{ block.shopify_attributes }}>
                   {{ block.settings.button_text | escape }}
                 </a>
               {%- endif -%}
