@@ -12,12 +12,16 @@
     font-size: 28px;
     font-weight: 700;
   }
+  
+  .my_custom_content_margin_bottom {
+    margin-bottom: 55px;
+  }
 </style>
 
 <div class="page-width" style="{%- if section.settings.custom_content_margin_top != blank -%}margin-top: {{ section.settings.custom_content_margin_top }}px; {%- endif -%}{%- if section.settings.custom_content_margin_bottom != blank -%}margin-bottom:{{ section.settings.custom_content_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
-      <h4 class="h2 my_custom_content_title">{{ section.settings.title | escape }}</h4>
+      <h4 class="h2 my_custom_content_title my_custom_content_margin_bottom">{{ section.settings.title | escape }}</h4>
     </div>
   {% endif %}
 
