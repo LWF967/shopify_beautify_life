@@ -44,7 +44,10 @@
 }
   
   
+ :root,.color-gradient-base-background-2{
   
+   --color-badge-background: var(--gradient-base-background-2);
+  }  
 
 .color-background-2 {
   --color-background: var(--color-base-background-2);
@@ -146,6 +149,8 @@
   --color-badge-border: var(--color-foreground);
   --alpha-badge-border: 0.1;
 }
+  
+  
 
 .color-background-2,
 .color-inverse,
