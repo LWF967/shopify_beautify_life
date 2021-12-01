@@ -16,6 +16,10 @@
 {%- endif -%}
 
 <style>
+  .h1.product__title.my_featured_product_beautify_title {
+    font-size: 36px;
+  }
+  
   .my_featured_product_beautify_noswiper li {
     padding: 15px 0 0 10px !important;
   }
@@ -120,18 +124,8 @@
   }
   
   @media screen and (max-width: 750px) {
-/*     .my_featured_product_beautify_ul li {
-      padding: 15px 0 0 15px !important;
-    }
-    .my_featured_product_beautify_ul li:first-child {
-      padding: 15px 0 0 15px !important;
-    }
-    .my_featured_product_beautify_ul li:last-child {
-      padding: 15px 15px 0 15px !important;
-    } */
     .h1.product__title.my_featured_product_beautify_title {
       font-size: 36px;
-      font-weight: 700;
       margin-bottom: 30px;
     }
     .no-js-hidden.my_featured_product_beautify_price {
@@ -275,7 +269,7 @@
                 {{- block.settings.text -}}
               </p>
             {%- when 'title' -%}
-              <h2 class="h1 product__title my_featured_product_beautify_title" {{ block.shopify_attributes }}>
+              <h2 class="h1 product__title my_featured_product_beautify_title my_font_weight_default" {{ block.shopify_attributes }}>
                 {%- if product.title != blank -%}
                   {{ product.title | escape }}
                 {%- else -%}
