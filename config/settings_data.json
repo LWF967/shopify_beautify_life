@@ -22,7 +22,6 @@
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
     "colors_accent_2": "#334FB4",
-    "gradient_accent_2": "linear-gradient(180deg, rgba(8, 8, 8, 1), rgba(22, 20, 20, 1) 100%)",
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
     "colors_background_1": "#FFFFFF",
@@ -75,7 +74,7 @@
           "logo": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
           "logo_width": 50,
           "header_height": 60,
-          "header_text_height_font_size": 18,
+          "header_text_height_font_size": 14,
           "menu": "main-menu"
         }
       },
@@ -279,7 +278,7 @@
           "46b8ba71-433b-4b1d-af31-675da9061dac"
         ],
         "settings": {
-          "copyrights_layouts": "centered",
+          "copyrights_layouts": "Two columns",
           "background_color": "#ffffff",
           "text_color": "#000000",
           "link_color": "#0031ff",
