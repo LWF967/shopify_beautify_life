@@ -618,7 +618,7 @@
           }
         ],
         "default": "inverse",
-        "label": "t:settings_schema.styles.settings.sold_out_badge_color_scheme.label"
+        "label": "sold_out_badge_color_scheme"
       },
       {
         "type": "header",
