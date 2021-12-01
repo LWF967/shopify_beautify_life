@@ -4,6 +4,10 @@
   .my_image_with_text_padding {
     padding: 60px 35px 70px;
   }
+  
+  .my_image_with_text_heading {
+    font-size: 28px;
+  }
 </style>
 
 <div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}" style="{%- if section.settings.image_with_text_margin_top != blank -%}margin-top: {{ section.settings.image_with_text_margin_top }}px; {%- endif -%}{%- if section.settings.image_with_text_margin_bottom != blank -%}margin-bottom:{{ section.settings.image_with_text_margin_bottom }}px;{%- endif -%}">
@@ -37,7 +41,7 @@
         {%- for block in section.blocks -%}
           {% case block.type %}
             {%- when 'heading' -%}
-              <h2 class="image-with-text__heading h1" {{ block.shopify_attributes }}>
+              <h2 class="image-with-text__heading h1 my_image_with_text_heading" {{ block.shopify_attributes }}>
                 {{ block.settings.heading | escape }}
               </h2>
             {%- when 'text' -%}
