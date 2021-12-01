@@ -424,56 +424,6 @@
         "banner_beautify_margin_bottom": ""
       }
     },
-    "16378995192374eec4": {
-      "type": "banner-flickity",
-      "blocks": {
-        "163789951806c9ee2e-0": {
-          "type": "img_top",
-          "settings": {
-            "image1": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
-            "image2": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-            "image3": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "header_top1": "Head1",
-            "header_top2": "Head2",
-            "header_top3": "Head3",
-            "url1": "",
-            "url2": "",
-            "url3": "",
-            "open_link": "_blank"
-          }
-        },
-        "163789951806c9ee2e-1": {
-          "type": "img_top",
-          "settings": {
-            "image1": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "image2": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "image3": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
-            "header_top1": "Head1",
-            "header_top2": "Head2",
-            "header_top3": "Head3",
-            "url1": "",
-            "url2": "",
-            "url3": "",
-            "open_link": "_blank"
-          }
-        }
-      },
-      "block_order": [
-        "163789951806c9ee2e-0",
-        "163789951806c9ee2e-1"
-      ],
-      "settings": {
-        "title": "BANNER",
-        "sub_title": "Popular this week",
-        "font_top": 30,
-        "color_top": "#ffffff",
-        "grid": 2,
-        "show_view_all": false,
-        "show_page_Dot": false,
-        "banner_flickity_margin_top": "",
-        "banner_flickity_margin_bottom": ""
-      }
-    },
     "1635497923083b4abb": {
       "type": "contact-form",
       "settings": {
@@ -946,7 +896,6 @@
     "163454604067313d0f",
     "1635832448db75c5e7",
     "163608389212513e57",
-    "16378995192374eec4",
     "1635497923083b4abb",
     "1635996418e080b5d8",
     "1636093631994b741b",
