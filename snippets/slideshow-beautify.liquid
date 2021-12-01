@@ -819,18 +819,20 @@
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseover',
       debounce(function (e) {
+       	let _this = this;
         e.stopPropagation();
-        clearInterval(time_gui);
-             console.log(time_gui,"ss");
+        clearInterval(_this.time_gui);
+             console.log(_this.time_gui,"ss");
       },100),
       false
     )
     document.getElementsByClassName('feature-artworks-{{section.id}}')[0].addEventListener(
       'mouseleave',
       debounce(function (e) {
+      	let _this = this;
       	e.stopPropagation();
-        time_gui =  (autop == 'true') ? setInterval(autoPlay, time * 1000) : 'false';
-               console.log(time_gui,"xx");
+        _this.time_gui =  (autop == 'true') ? setInterval(autoPlay, time * 1000) : 'false';
+               console.log(_this.time_gui,"xx");
       },800),
       false
     )
