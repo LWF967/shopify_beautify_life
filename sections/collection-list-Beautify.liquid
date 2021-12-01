@@ -1,7 +1,7 @@
 <div class="page-width" style="{%- if section.settings.collection_list_beautify_margin_top != blank -%}margin-top: {{ section.settings.collection_list_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.collection_list_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.collection_list_beautify_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
-      <h1 class="my_font_size_heading_default my_font_weight_default">{{ section.settings.title | escape }}</h1>
+      <h1 class="my_font_size_heading_default my_font_weight_default my_between_title_and_text_margin">{{ section.settings.title | escape }}</h1>
       <p class="my_section_margin_default"> {{ section.settings.sub_title | escape }} </p>
     </div>
   {% endif %}
