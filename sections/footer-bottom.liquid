@@ -104,7 +104,7 @@
           {%- endfor -%}
         </div>
       </div>
-      {%- elsif section.settings.copyrights_layouts == 'centered' -%}
+      {%- else -%}
       <div class="footer__column footer__column--info my_footer_bottom_flex my_footer_bottom_layout_center"> 
         <div class="footer__copyright caption my_footer_copyright my_footer_bottom_item_flex my_footer_bottom_item_centered my_footer_bottom_item_centered_padding">
           {%- for block in section.blocks -%}
