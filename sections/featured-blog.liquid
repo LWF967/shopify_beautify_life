@@ -43,7 +43,7 @@
   
   @media screen and (max-width: 990px) {
     .my_featured_blog_ul .blog__post.grid__item.article.slider__slide:first-child {
-      padding: 0 15px 0 0px;
+      padding: 0 15px 0 15px;
     }
   }
 </style>
@@ -104,7 +104,6 @@
           
         </ul>
         {%- if posts_exceed_limit -%}
-        {{ section.settings.post_limit }}
           <div class="slider-buttons no-js-hidden{% if section.settings.post_limit < 3 %} medium-hide{% endif %}{% if section.settings.post_limit < 2 %} small-hide{% endif %}">
             <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
             <div class="slider-counter caption">
