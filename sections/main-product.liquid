@@ -15,6 +15,10 @@
     font-size: 13px;
     min-height: 44px;
   }
+  
+  .my_main_product_title_font_size {
+    font-size: 36px;
+  }
 </style>
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
@@ -87,7 +91,7 @@
               {{- block.settings.text -}}
             </p>
           {%- when 'title' -%}
-            <h1 class="product__title" {{ block.shopify_attributes }}>
+            <h1 class="product__title my_font_weight_default my_main_product_title_font_size" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
           {%- when 'price' -%}
