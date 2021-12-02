@@ -122,9 +122,9 @@
      style="{%- if section.settings.text_columns_with_images_margin_top != blank -%}margin-top: {{ section.settings.text_columns_with_images_margin_top }}px; {%- endif -%}{%- if section.settings.text_columns_with_images_margin_bottom != blank -%}margin-bottom:{{ section.settings.text_columns_with_images_margin_bottom }}px;{%- endif -%}">
   <div class="page-width">
     {% if section.settings.Text_columns_with_images_heading == blank %}
-      <h2 class="Text_columns_with_images_title my_font_weight_default my_clear_margin aaa">Text columns with images</h2>
+      <h2 class="Text_columns_with_images_title my_font_weight_default my_clear_margin ">Text columns with images</h2>
     {% else %}
-      <h2 class="Text_columns_with_images_title my_font_weight_default my_clear_margin aaa">{{ section.settings.Text_columns_with_images_heading }}</h2>
+      <h2 class="Text_columns_with_images_title my_font_weight_default my_clear_margin ">{{ section.settings.Text_columns_with_images_heading }}</h2>
     {% endif %}
     <slider-component class="slider-mobile-gutter">
       <ul class="multicolumn-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %} my_text_ul_li_margin my_clear_margin"
