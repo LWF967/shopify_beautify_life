@@ -110,7 +110,12 @@
                   	</div>
                  </div>
                 <!-- 如果需要分页器 -->
-                 <div class="  swiper-pagination-{{section.id}}   >" ></div>
+                 <div class="  swiper-pagination-{{section.id}} 	{% unless section.settings.show_page_Dot %} 
+   opa-0
+ 
+  {% else %}  
+	opa-1
+  {% endunless %}  >" ></div>
                 <!-- 如果需要导航按钮 -->
 <!--                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div> -->
@@ -315,7 +320,7 @@ document.addEventListener('shopify:section:load',()=>{
 
 	{% unless section.settings.show_page_Dot %} 
     
-         pagination: {
+       pagination: {
       el: '.swiper-pagination-{{section.id}}',
       clickable :true,
       hideOnClick :true,
