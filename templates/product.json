@@ -78,7 +78,6 @@
     },
     "main": {
       "type": "main-product",
-      "disabled": true,
       "blocks": {
         "title": {
           "type": "title",
