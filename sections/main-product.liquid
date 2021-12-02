@@ -49,7 +49,7 @@
     height: 100%;
   }
 
-  .swiper-slide {
+  .swiper-slide1 {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -68,7 +68,7 @@
     align-items: center;
   }
 
-  .swiper-slide img {
+  .swiper-slide1 img {
     display: block;
     width: 100%;
     height: 100%;
@@ -251,7 +251,7 @@
                   {%- endif -%}
                   {%- for media in product.media -%}
                   {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-                  <li class="swiper-slide" 
+                  <li class="swiper-slide1" 
                       data-media-id="{{ section.id }}-{{ media.id }}">
                     {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
                   </li>
