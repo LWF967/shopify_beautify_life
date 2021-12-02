@@ -921,6 +921,46 @@
         "testimonials_margin_top": "",
         "testimonials_margin_bottom": ""
       }
+    },
+    "1638429660d88bc09d": {
+      "type": "collage",
+      "blocks": {
+        "1638429660a26d7067-0": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video",
+            "image_padding": false
+          }
+        },
+        "1638429660a26d7067-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "1638429660a26d7067-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "1638429660a26d7067-0",
+        "1638429660a26d7067-1",
+        "1638429660a26d7067-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
     }
   },
   "order": [
@@ -942,6 +982,7 @@
     "1638178308a7590918",
     "1638254471485c2b3b",
     "1638344641035ba32e",
-    "1638254788d0160884"
+    "1638254788d0160884",
+    "1638429660d88bc09d"
   ]
 }
