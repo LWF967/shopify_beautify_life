@@ -926,7 +926,7 @@
    let doc_id = document.getElementsByClassName('nt_se_{{section.id}}')[0];
 
 
-	doc_id.addEventListener('DOMAttrModified',()=>{
+	doc_id.addEventListener('DOMSubtreeModified',()=>{
     
     
      document.addEventListener('shopify:section:load',()=>{
