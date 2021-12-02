@@ -44,7 +44,7 @@
     margin-right: 0 !important;
   }
   
-  .swiper {
+  .swiper1 {
     width: 100%;
     height: 100%;
   }
@@ -239,7 +239,7 @@
           </style>
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_main_product_ul" role="list">
             <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
-              <div class="swiper my_swiper_detail1">
+              <div class="swiper1 my_swiper_detail1">
                 <div class="swiper-wrapper my_swiper_div1">
                   {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
                   {%- if product.selected_or_first_available_variant.featured_media != null -%}
