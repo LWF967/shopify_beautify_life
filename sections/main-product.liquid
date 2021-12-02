@@ -281,6 +281,76 @@
             {%- endfor -%}
           </ul>
         {%- endif -%}
+        
+<style>
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    color: red;
+    width: 10px;
+    height: 20px;
+    font-size: 20px;
+  }
+  .swiper-button-next {
+    right: -20px;
+  }
+  .swiper-button-prev {
+    left: -20px;
+  }
+</style>
+        <div class="box" style="position:relative; width: 698px; margin: 0 auto;border: 1px solid transparent; padding: 0 15px;">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                123
+              </div>
+              <div class="swiper-slide">
+                1234
+              </div>
+              <div class="swiper-slide">
+                12345
+              </div>
+              <div class="swiper-slide">
+                123244
+              </div>
+              <div class="swiper-slide">
+                4355432543
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
 
         
         
