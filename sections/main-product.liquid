@@ -29,7 +29,7 @@
   
   
   
-/*   .my_featured_product_beautify_noswiper li {
+  .my_featured_product_beautify_noswiper li {
     padding: 15px 0 0 10px !important;
   }
   
@@ -76,26 +76,26 @@
     object-fit: cover;
   }
 
-  .swiper-button-prev.featured_product_beautify_prev:after,
-  .swiper-button-next.featured_product_beautify_next:after {
+  .swiper-button-prev.featured_product_beautify_prev1:after,
+  .swiper-button-next.featured_product_beautify_next1:after {
     color: #000;
     width: 10px;
     height: 20px;
     font-size: 20px;
   }
 
-  .swiper-button-next.featured_product_beautify_next {
+  .swiper-button-next.featured_product_beautify_next1 {
     right: -5px;
   }
 
-  .swiper-button-prev.featured_product_beautify_prev {
+  .swiper-button-prev.featured_product_beautify_prev1 {
     left: -5px;
   }
   
-  .swiper-button-prev.featured_product_beautify_prev.swiper-button-disabled:empty,
-  .swiper-button-next.featured_product_beautify_nextswiper-button-disabled:empty,
-  .swiper-button-prev.featured_product_beautify_prev:empty,
-  .swiper-button-next.featured_product_beautify_next:empty {
+  .swiper-button-prev.featured_product_beautify_prev1.swiper-button-disabled:empty,
+  .swiper-button-next.featured_product_beautify_next1.swiper-button-disabled:empty,
+  .swiper-button-prev.featured_product_beautify_prev1:empty,
+  .swiper-button-next.featured_product_beautify_next1:empty {
     display: flex;
   }
   
@@ -130,10 +130,10 @@
   .my_featured_product_beautify_add {
     font-size: 13px;
     min-height: 44px;
-  } */
+  }
   
 /*   @media screen and (max-width: 750px) { */
-/*     .h1.product__title.my_featured_product_beautify_title {
+    .h1.product__title.my_featured_product_beautify_title {
       font-size: 36px;
       margin-bottom: 30px;
     }
@@ -166,7 +166,7 @@
       font-size: 16px;
       font-weight: 700;
       margin: 50px 0 0;
-    } */
+    }
 /*   } */
   
 </style>
@@ -240,7 +240,7 @@
           </style>
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list">
             <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
-              <div class="swiper mySwiper my_swiper_detail">
+              <div class="swiper mySwiper my_swiper_detail1">
                 <div class="swiper-wrapper my_swiper_div">
                   {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
                   {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -260,8 +260,8 @@
                   {%- endfor -%}
                 </div>
               </div>
-              <div class="swiper-button-prev featured_product_beautify_prev"></div>
-              <div class="swiper-button-next featured_product_beautify_next"></div>
+              <div class="swiper-button-prev featured_product_beautify_prev1"></div>
+              <div class="swiper-button-next featured_product_beautify_next1"></div>
             </div>
           </ul>
         {%- elsif media_count > 1 -%}
@@ -739,7 +739,7 @@
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
-  var swiper = new Swiper(".my_swiper_detail", {
+  var swiper = new Swiper(".my_swiper_detail1", {
       slidesPerView: 4,
       spaceBetween: 10,
       pagination: {
@@ -747,8 +747,8 @@
           clickable: true,
       },
       navigation: {
-          nextEl: '.swiper-button-next.featured_product_beautify_next',
-          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+          nextEl: '.swiper-button-next.featured_product_beautify_next1',
+          prevEl: '.swiper-button-prev.featured_product_beautify_prev1',
       },
   });
 </script>
