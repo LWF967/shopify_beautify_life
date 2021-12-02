@@ -19,6 +19,10 @@
   .my_main_product_title_font_size {
     font-size: 36px;
   }
+  
+  .my_main_product_vendor_font_size {
+    font-size: 18px;
+  }
 </style>
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
@@ -87,7 +91,7 @@
           {%- when '@app' -%}
             {% render block %}
           {%- when 'text' -%}
-            <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
+            <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %} my_main_product_vendor_font_size" {{ block.shopify_attributes }}>
               {{- block.settings.text -}}
             </p>
           {%- when 'title' -%}
