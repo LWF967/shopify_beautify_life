@@ -305,11 +305,11 @@
         "heading_font_size": 40,
         "color_top": "#b13e3e",
         "countdown_time": "2021\/12\/9 18:30:00",
-        "time_font_size": 32,
-        "background_color": "#f9f9f9",
+        "time_font_size": 40,
+        "background_color": "#c46666",
         "background_product_color": "#ffffff",
-        "shop_now_url": "",
-        "detail_url": "",
+        "shop_now_url": "shopify:\/\/products\/text6",
+        "detail_url": "shopify:\/\/products\/strawberry",
         "daily_deal_of_the_day_margin_top": "",
         "daily_deal_of_the_day_margin_bottom": ""
       }
