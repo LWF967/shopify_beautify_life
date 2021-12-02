@@ -3,16 +3,16 @@
     "16384135707c96cca5": {
       "type": "featured-product-beautify",
       "blocks": {
+        "1638413570b526abd5-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
         "1638413570b526abd5-0": {
           "type": "text",
           "settings": {
             "text": "{{ section.settings.product.vendor }}",
             "text_style": "uppercase"
-          }
-        },
-        "1638413570b526abd5-1": {
-          "type": "title",
-          "settings": {
           }
         },
         "1638413570b526abd5-2": {
@@ -56,8 +56,8 @@
         }
       },
       "block_order": [
-        "1638413570b526abd5-0",
         "1638413570b526abd5-1",
+        "1638413570b526abd5-0",
         "1638413570b526abd5-2",
         "1638413570b526abd5-3",
         "1638413570b526abd5-4",
