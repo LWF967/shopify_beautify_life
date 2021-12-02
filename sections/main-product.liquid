@@ -206,7 +206,7 @@
             {%- endunless -%}
           {%- endfor -%}
         </ul>
-
+        {% endcomment %}
         
         <div class="product__media-list">
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -229,8 +229,6 @@
             {%- endif -%}
           {%- endfor -%}
         </div>
-        
-                {% endcomment %}
         
         {%- assign media_count = product.media | size -%}
         {%- if media_count > 4 -%}
