@@ -32,9 +32,15 @@
  */
 
 .newsletter__wrapper > .newsletter__subheading.rte{
-	margin-top: 2rem;
-    margin-bottom: 5.5rem;	
+  margin-top: 2rem;
+  margin-bottom: 5.5rem;	
+}
 
+@media screen and (max-width: 750px) {
+  .newsletter__wrapper > .newsletter__subheading.rte{
+    margin-top: 2rem;
+    margin-bottom: 3rem;	
+  }
 }
 
 .newsletter__wrapper > * + .newsletter-form {

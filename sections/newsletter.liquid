@@ -18,7 +18,7 @@
         {%- when 'heading' -%}
           <h2 class="h1 my_newsletter_heading_font_size" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {%- when 'paragraph' -%}
-          <div class="newsletter__subheading rte my_section_margin_default" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          <div class="newsletter__subheading rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }}>
             {% form 'customer', class: 'newsletter-form' %}
