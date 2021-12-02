@@ -144,19 +144,19 @@
     "16366804518eb2e044": {
       "type": "collection-list-Beautify",
       "blocks": {
-        "16366804518eb2e044-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "pitaya",
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "title": "New supply this week"
-          }
-        },
         "16366804518eb2e044-1": {
           "type": "featured_collection",
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "title": "New supply this week"
+          }
+        },
+        "16366804518eb2e044-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pitaya",
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
             "title": "New supply this week"
           }
         },
@@ -183,8 +183,8 @@
         }
       },
       "block_order": [
-        "16366804518eb2e044-0",
         "16366804518eb2e044-1",
+        "16366804518eb2e044-0",
         "16366804518eb2e044-2",
         "108496b1-c9fd-4cb3-b41d-beed0ae9d48e",
         "e92aa04e-60ce-4d2f-aee7-93c5f3d9aa16"
