@@ -65,7 +65,7 @@
         "loop": true,
         "auto_play": false,
         "auto_time": 3,
-        "show_button": true,
+        "show_button": false,
         "show_button_visible": "only_hover",
         "show_button_style": "style3",
         "show_button_color": "transparent",
@@ -804,20 +804,20 @@
         "16382544719fc01cce-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "Image with textsdsd"
           }
         },
         "16382544719fc01cce-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.asdasdasdas<\/p>"
           }
         },
         "16382544719fc01cce-2": {
           "type": "button",
           "settings": {
-            "button_text": "VIEW ALL",
-            "button_link": ""
+            "button_text": "VIEW ALLasdasd",
+            "button_link": "shopify:\/\/collections\/all"
           }
         }
       },
@@ -827,6 +827,7 @@
         "16382544719fc01cce-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
         "layout": "image_first",
         "height": "adapt",
         "color_scheme": "background-1",
