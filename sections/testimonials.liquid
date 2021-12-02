@@ -17,6 +17,12 @@
   .my_testimonials_title {
     align-items: center;
   }
+  
+  @media screen and (max-width: 750px) {
+    .my_testimonials_mobile_margin {
+      margin-bottom: 30px;
+    }
+  }
 </style>
     
 <script src="{{'swiper-bundle.min.js'| asset_url }} "></script>
@@ -25,7 +31,7 @@
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}"
      style="{%- if section.settings.testimonials_margin_top != blank -%}margin-top: {{ section.settings.testimonials_margin_top }}px; {%- endif -%}{%- if section.settings.testimonials_margin_bottom != blank -%}margin-bottom:{{ section.settings.testimonials_margin_bottom }}px;{%- endif -%}">
   <div class="page-width">
-    <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %} my_testimonials_title my_clear_margin my_section_margin_default">
+    <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %} my_testimonials_title my_clear_margin my_section_margin_default my_testimonials_mobile_margin">
       <h2 class="title my_font_size_heading_default my_font_weight_default">
         {{ section.settings.title | escape }}
       </h2>
