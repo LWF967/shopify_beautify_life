@@ -131,8 +131,8 @@
         "auto_time": 4,
         "show_button": true,
         "show_button_visible": "always",
-        "show_button_style": "style2",
-        "show_button_color": "gray",
+        "show_button_style": "style1",
+        "show_button_color": "white",
         "show_button_hover_color": "#992f2f",
         "show_page_Dot": true,
         "page_dot_style": "style_1",
@@ -149,7 +149,7 @@
           "settings": {
             "collection": "pitaya",
             "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "title": "New supply this week"
+            "title": "New supply th"
           }
         },
         "16366804518eb2e044-1": {
@@ -200,7 +200,7 @@
         "show_button": true,
         "show_button_visible": "always",
         "show_button_style": "style2",
-        "show_button_color": "gray",
+        "show_button_color": "transparent",
         "show_button_hover_color": "#b73131",
         "collection_list_beautify_margin_top": "",
         "collection_list_beautify_margin_bottom": ""
@@ -282,7 +282,7 @@
       "settings": {
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
-        "grid": 3,
+        "grid": 4,
         "show_view_all": false,
         "show_page_Dot": false,
         "page_dot_style": "style_1",
@@ -291,7 +291,7 @@
         "show_button_visible": "always",
         "show_button_style": "style1",
         "show_button_color": "white",
-        "show_button_hover_color": "",
+        "show_button_hover_color": "#ffffff",
         "collection_list_beautify_margin_top": "",
         "collection_list_beautify_margin_bottom": ""
       }
