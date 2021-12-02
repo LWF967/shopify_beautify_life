@@ -26,7 +26,7 @@
      style="{%- if section.settings.testimonials_margin_top != blank -%}margin-top: {{ section.settings.testimonials_margin_top }}px; {%- endif -%}{%- if section.settings.testimonials_margin_bottom != blank -%}margin-bottom:{{ section.settings.testimonials_margin_bottom }}px;{%- endif -%}">
   <div class="page-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %} my_testimonials_title">
-      <h2 class="title my_font_weight_default">
+      <h2 class="title my_font_weight_default my_clear_margin">
         {{ section.settings.title | escape }}
       </h2>
       {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
@@ -38,7 +38,7 @@
                  {% if section.blocks.size > 20 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop
                  {% elsif section.blocks.size > 20 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}
                  {% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}
-                 my_testimonials_ul_margin"
+                 my_testimonials_ul_margin my_clear_margin"
         id="Slider-{{ section.id }}"
         role="list"
         style="flex-wrap: nowrap;transition: all 1.5s ease 0s;"
