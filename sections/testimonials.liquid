@@ -25,8 +25,8 @@
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}"
      style="{%- if section.settings.testimonials_margin_top != blank -%}margin-top: {{ section.settings.testimonials_margin_top }}px; {%- endif -%}{%- if section.settings.testimonials_margin_bottom != blank -%}margin-bottom:{{ section.settings.testimonials_margin_bottom }}px;{%- endif -%}">
   <div class="page-width">
-    <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %} my_testimonials_title">
-      <h2 class="title my_font_weight_default my_clear_margin">
+    <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %} my_testimonials_title my_clear_margin">
+      <h2 class="title my_font_weight_default">
         {{ section.settings.title | escape }}
       </h2>
       {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
