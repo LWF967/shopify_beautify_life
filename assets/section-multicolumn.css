@@ -181,7 +181,8 @@
 }
 
 .multicolumn-card__info {
-  padding: 2.5rem 2.5rem;
+/*   padding: 2.5rem 2.5rem; */
+  padding: 0 2.5rem;
 }
 
 .background-none .multicolumn-card__info {
