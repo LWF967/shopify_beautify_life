@@ -923,8 +923,11 @@
 
   slideshow_beautify_lunbo();
   
+   let doc_id = document.getElementsByClassName('feature-artworks-{{section.id}}');
+
+// Shopify.addListener(doc_id,'shopify:section:load',()=>{console.log(222)});
   
-  document.addEventListener('shopify:section:load',()=>{
+  doc_id.addEventListener('shopify:section:load',()=>{
   
 
     slideshow_beautify_lunbo();
