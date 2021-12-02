@@ -72,7 +72,7 @@
         "show_button_hover_color": "#ea0606",
         "show_page_Dot": true,
         "page_dot_style": "style_1",
-        "page_dot_color": "dark",
+        "page_dot_color": "light",
         "slideshow_beautify_margin_top": "",
         "slideshow_beautify_margin_bottom": ""
       }
