@@ -73,7 +73,7 @@
         "show_page_Dot": true,
         "page_dot_style": "style_1",
         "page_dot_color": "light",
-        "slideshow_beautify_margin_top": "",
+        "slideshow_beautify_margin_top": "88",
         "slideshow_beautify_margin_bottom": ""
       }
     },
@@ -192,7 +192,7 @@
       "settings": {
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
-        "grid": 3,
+        "grid": 4,
         "show_view_all": true,
         "show_page_Dot": true,
         "page_dot_style": "style_1",
