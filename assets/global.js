@@ -201,7 +201,7 @@ Shopify.setSelectorByValue = function(selector, value) {
 Shopify.addListener = function(target, eventName, callback) {
 //   console.log('443',target,'-',eventName,'-');
   target.addEventListener ? target.addEventListener(eventName, callback, false) : target.attachEvent('on'+eventName, callback);
-//   console.log('444',target,'-',eventName,'-');
+  console.log('有人调用我了',target,'-',eventName,'-');
   
 };
 
