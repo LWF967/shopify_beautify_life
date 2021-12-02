@@ -28,19 +28,19 @@
   
   
   
-  .my_featured_product_beautify_noswiper li {
+  .my_main_product_noswiper li {
     padding: 15px 0 0 10px !important;
   }
   
-  .my_featured_product_beautify_noswiper li:first-child {
+  .my_main_product_noswiper li:first-child {
     padding: 15px 0 0 0 !important;
   }
   
-  .my_featured_product_beautify_noswiper li:last-child {
+  .my_main_product_noswiper li:last-child {
     padding: 15px 0 0 10px;
   }
   
-  .my_featured_product_beautify_ul li:last-child {
+  .my_main_product_ul li:last-child {
     margin-right: 0 !important;
   }
   
@@ -75,30 +75,30 @@
     object-fit: cover;
   }
 
-  .swiper-button-prev.featured_product_beautify_prev:after,
-  .swiper-button-next.featured_product_beautify_next:after {
+  .swiper-button-prev.main_product_prev:after,
+  .swiper-button-next.main_product_next:after {
     color: #000;
     width: 10px;
     height: 20px;
     font-size: 20px;
   }
 
-  .swiper-button-next.featured_product_beautify_next {
+  .swiper-button-next.main_product_next {
     right: -5px;
   }
 
-  .swiper-button-prev.featured_product_beautify_prev {
+  .swiper-button-prev.main_product_prev {
     left: -5px;
   }
   
-  .swiper-button-prev.featured_product_beautify_prev.swiper-button-disabled:empty,
-  .swiper-button-next.featured_product_beautify_next.swiper-button-disabled:empty,
-  .swiper-button-prev.featured_product_beautify_prev:empty,
-  .swiper-button-next.featured_product_beautify_next:empty {
+  .swiper-button-prev.main_product_prev.swiper-button-disabled:empty,
+  .swiper-button-next.main_product_next.swiper-button-disabled:empty,
+  .swiper-button-prev.main_product_prev:empty,
+  .swiper-button-next.main_product_next:empty {
     display: flex;
   }
   
-  .my_featured_product_beautify_ul li modal-opener {
+  .my_main_product_ul li modal-opener {
     width: 100%;
   }
   
@@ -114,15 +114,15 @@
     display: block;
   }
   
-  .my_featured_product_beautify_ul li deferred-media {
+  .my_main_product_ul li deferred-media {
     display: none;
   }
   
-  .my_featured_product_beautify_ul li modal-opener {
+  .my_main_product_ul li modal-opener {
     display: block !important;
   }
   
-  .my_featured_product_beautify_ul .my_featured_product_beautify_media {
+  .my_main_product_ul .my_featured_product_beautify_media {
     display: none !important;
   }
   
@@ -237,10 +237,10 @@
               width: 100%;
             }
           </style>
-          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list">
+          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_main_product_ul" role="list">
             <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
-              <div class="swiper mySwiper my_swiper_detail">
-                <div class="swiper-wrapper my_swiper_div">
+              <div class="swiper mySwiper my_swiper_detail1">
+                <div class="swiper-wrapper my_swiper_div1">
                   {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
                   {%- if product.selected_or_first_available_variant.featured_media != null -%}
                   {%- assign media = product.selected_or_first_available_variant.featured_media -%}
@@ -259,12 +259,12 @@
                   {%- endfor -%}
                 </div>
               </div>
-              <div class="swiper-button-prev featured_product_beautify_prev"></div>
-              <div class="swiper-button-next featured_product_beautify_next"></div>
+              <div class="swiper-button-prev main_product_prev"></div>
+              <div class="swiper-button-next main_product_next"></div>
             </div>
           </ul>
         {%- elsif media_count > 1 -%}
-          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul my_featured_product_beautify_noswiper" role="list" style="display:flex;">
+          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_main_product_ul my_main_product_noswiper" role="list" style="display:flex;">
             {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
             {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
@@ -738,7 +738,7 @@
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
-  var swiper = new Swiper(".my_swiper_detail", {
+  var swiper = new Swiper(".my_swiper_detail1", {
       slidesPerView: 4,
       spaceBetween: 10,
       pagination: {
@@ -746,8 +746,8 @@
           clickable: true,
       },
       navigation: {
-          nextEl: '.swiper-button-next.featured_product_beautify_next',
-          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+          nextEl: '.swiper-button-next.main_product_next',
+          prevEl: '.swiper-button-prev.main_product_prev',
       },
   });
 </script>
