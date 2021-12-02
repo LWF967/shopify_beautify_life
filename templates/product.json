@@ -2,7 +2,6 @@
   "sections": {
     "163841498568f616bc": {
       "type": "featured-product-beautify",
-      "disabled": true,
       "blocks": {
         "163841498518be9207-0": {
           "type": "text",
@@ -68,7 +67,7 @@
         "163841498518be9207-8"
       ],
       "settings": {
-        "product": "text4",
+        "product": "lol6",
         "secondary_background": false,
         "show_share_buttons": false,
         "hide_variants": false,
