@@ -932,7 +932,7 @@
   console.log(doc_id,'取到了');
   Shopify.addListener(doc_id,'shopify:section:load',()=>{console.log(222)});
   console.log(doc_id.addEventListener,'看看真不真');
-  doc_id.addEventListener('onshopify:section:load',()=>{
+  doc_id.addEventListener('shopify:section:load',()=>{
   
   console.log('终于绑定了');
   
