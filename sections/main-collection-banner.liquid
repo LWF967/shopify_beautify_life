@@ -5,11 +5,15 @@
     margin: 10px 0 0;
     text-align: center;
   }
+  
+  .my_collection_hero_title {
+    font-size: 36px;
+    margin: 35px 0 0;
+  }
   @media screen and (max-width: 750px) {
     .my_collection_hero_title {
       font-size: 36px;
       margin: 35px 0 0;
-      font-weight: 700;
     }
 /*     .my_collection_hero_des {
       margin: 10px 0 0;
@@ -22,7 +26,7 @@
      style="{%- if section.settings.main_collection_banner_margin_top != blank -%}margin-top: {{ section.settings.main_collection_banner_margin_top }}px; {%- endif -%}{%- if section.settings.main_collection_banner_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_collection_banner_margin_bottom }}px;{%- endif -%}">
   <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">
-      <h1 class="collection-hero__title my_collection_hero_title">
+      <h1 class="collection-hero__title my_collection_hero_title my_font_weight_default">
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
         {{- collection.title | escape -}}
       </h1>
