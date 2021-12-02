@@ -19,19 +19,19 @@
     font-weight: bold;
   }
   
-  .my_image {
+  .my_text_columns_with_images_image {
   	width: 100%; 
     display: flex;
     align-items: center; 
     justify-content: center;
   }
   
-  .my_image img {
+  .my_text_columns_with_images_image img {
   	padding: 0 30px; 
     height: 30rem;
   }
   
-  .my_button {
+  .my_text_columns_with_images_button {
     display: inline-block;
     width: 10rem;
     height: 30px !important;
@@ -44,7 +44,7 @@
     text-decoration: none;
   }
   
-  .hide_my_button {
+  .hide_my_text_columns_with_images_button {
   	display: none;
   }
   
@@ -56,7 +56,7 @@
   	text-align: center;
   }
   
-  .my_div {
+  .my_text_columns_with_images_div {
   	width: 100%; 
     display: flex;
     align-items: center; 
@@ -145,7 +145,7 @@
               
               {% if block.settings.show_image == true %}
                 {%- if block.settings.image != blank -%}
-                  <div class="my_image">
+                  <div class="my_text_columns_with_images_image">
                   	<img src="{{ block.settings.image | img_url: '550x' }}" loading="lazy">
                   </div>
                 {%- endif -%}
@@ -160,11 +160,11 @@
                     <div class="rte my_text_columns_with_images_left my_text_content_margin_top">{{ block.settings.text }}</div>
                   {%- endif -%}
                   {% if block.settings.button_label == blank or block.settings.button_link == blank %}
-                    <a class="my_button hide_my_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                    <a class="my_text_columns_with_images_button hide_my_text_columns_with_images_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
                       {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
                     </a>
                     {% else %}
-                    <a class="my_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                    <a class="my_text_columns_with_images_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
                        {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
                     </a>
                   {% endif %}
@@ -176,14 +176,14 @@
                     <div class="rte my_text_columns_with_images_center my_text_content_margin_top">{{ block.settings.text }}</div>
                   {%- endif -%}
                   {% if block.settings.button_label == blank or block.settings.button_link == blank %}
-                    <div class="my_div">
-                	  <a class="my_button hide_my_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                    <div class="my_text_columns_with_images_div">
+                	  <a class="my_text_columns_with_images_button hide_my_text_columns_with_images_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
                        {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
                       </a>
                 	</div>
                     {% else %}
-                	<div class="my_div">
-                	  <a class="my_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                	<div class="my_text_columns_with_images_div">
+                	  <a class="my_text_columns_with_images_button"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
                        {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
                       </a>
                 	</div>
