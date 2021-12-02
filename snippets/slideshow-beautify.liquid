@@ -926,8 +926,10 @@
    let doc_id = document.getElementsByClassName('nt_se_{{section.id}}')[0];
 
 
-
-  document.addEventListener('shopify:section:load',()=>{
+	doc_id.addEventListener('DOMAttrModified',()=>{
+    
+    
+     document.addEventListener('shopify:section:load',()=>{
  	
     var id = ' feature-artworks-{{section.id}} ';
     
@@ -941,6 +943,10 @@
 
   
   },true)
+    
+    })
+
+
 
   
  
