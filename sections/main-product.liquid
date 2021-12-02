@@ -32,6 +32,7 @@
   
   
   .my_featured_product_beautify_noswiper li {
+    flex: 1;
     padding: 15px 0 0 10px !important;
   }
   
@@ -267,7 +268,7 @@
           </div>
         </ul>
         {%- elsif media_count > 1 -%}
-        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul my_featured_product_beautify_noswiper" role="list" style="display:flex;">
+        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul my_featured_product_beautify_noswiper" role="list" style="display:flex; margin: 0 0;">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
           {%- assign media = product.selected_or_first_available_variant.featured_media -%}
