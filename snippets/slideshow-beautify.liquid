@@ -930,8 +930,15 @@
 
 
   console.log(doc_id,'取到了');
+  Shopify.addListener(doc_id,'shopify:section:load',()=>{console.log(222)});
+  
+  doc_id.addEventListener('shopify:section:load',()=>{
+  
+  console.log('终于绑定了');
+  
+  },true);
 
-     document.getElementsByClassName('nt_se_{{section.id}}')[0].addEventListener('shopify:section:load',()=>{
+      document.getElementsByClassName('nt_se_{{section.id}}')[0].addEventListener('shopify:section:load',()=>{
 
     
    	console.log('进来了');
