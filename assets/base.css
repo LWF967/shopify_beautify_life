@@ -2405,7 +2405,7 @@ a{
   margin-bottom: 55px;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 990px){
   .my_section_padding_default {
     padding-bottom: 30px;
   }
