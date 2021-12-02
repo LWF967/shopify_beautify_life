@@ -72,6 +72,10 @@
     padding: 0 15px;
   }
   
+  .my_text_columns_with_images_title_margin {
+    padding: 0 0 10px;
+  }
+  
   @media screen and (max-width: 750px) {
     .Text_columns_with_images_title {
       text-align: center;
@@ -150,7 +154,7 @@
               <div class="multicolumn-card__info my_text_content_padding">
                 {% if section.settings.Text_columns_with_images_Text_alignment == "Left" %}
                   {%- if block.settings.title != blank -%}
-                    <h3 class="add_title my_text_columns_with_images_left">{{ block.settings.title | escape }}</h3>
+                    <h3 class="add_title my_text_columns_with_images_left my_text_columns_with_images_title_margin">{{ block.settings.title | escape }}</h3>
                   {%- endif -%}
                   {%- if block.settings.text != blank -%}
                     <div class="rte my_text_columns_with_images_left my_text_content_margin_top">{{ block.settings.text }}</div>
