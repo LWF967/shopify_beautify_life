@@ -11,7 +11,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
+            "slider_button_text": "title namenghnjh",
             "slider_button_link": ""
           }
         },
@@ -60,12 +60,12 @@
       ],
       "settings": {
         "se_height": "adapt_f",
-        "text_size": "medium",
+        "text_size": "large",
         "overlay": true,
         "loop": true,
         "auto_play": false,
         "auto_time": 3,
-        "show_button": false,
+        "show_button": true,
         "show_button_visible": "only_hover",
         "show_button_style": "style3",
         "show_button_color": "transparent",
