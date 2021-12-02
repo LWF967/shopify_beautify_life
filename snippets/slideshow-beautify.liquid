@@ -926,27 +926,20 @@
    let doc_id = document.getElementsByClassName('nt_se_{{section.id}}')[0];
 
 
-	doc_id.addEventListener('DOMSubtreeModified',()=>{
-    
-    
+
+
+
      document.addEventListener('shopify:section:load',()=>{
- 	
-    var id = ' feature-artworks-{{section.id}} ';
-    
-    if( id == ' feature-artworks-{{section.id}} '){
+
     
    	console.log('进来了');
     slideshow_beautify_lunbo();
     
-    }
+  
 
 
   
   },true)
-    
-    },false)
-
-
 
   
  
