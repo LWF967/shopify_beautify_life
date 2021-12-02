@@ -4,6 +4,10 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 
+
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+
+
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
 {%- assign product = section.settings.product -%}
@@ -631,6 +635,7 @@
 
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+
   
   var swiper12 = new Swiper(".my_swiper_detai12", {
       slidesPerView: 4,
