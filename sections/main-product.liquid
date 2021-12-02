@@ -63,84 +63,6 @@
           {%- endfor -%}
         </ul>
         
-        {% comment %}
-        <div class="product__media-list">
-          {%- if product.selected_or_first_available_variant.featured_media != null -%}
-            {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-            <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-              {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
-            </div>
-          {%- endif -%}
-          {%- liquid
-            assign media_to_render = product.featured_media.id
-            for variant in product.variants
-              assign media_to_render = media_to_render | append: variant.featured_media.id | append: ' '
-            endfor
-          -%}
-          {%- for media in product.media -%}
-            {%- if media_to_render contains media.id and media.id != product.selected_or_first_available_variant.featured_media.id -%}
-              <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-                {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
-              </div>
-            {%- endif -%}
-          {%- endfor -%}
-        </div>
-        
-        {%- assign media_count = product.media | size -%}
-        {%- if media_count > 4 -%}
-          <style>
-            .deferred-media.media.no-js-hidden.my_featured_product_beautify_media {
-              width: 100%;
-            }
-          </style>
-          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list">
-            <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
-              <div class="swiper mySwiper my_swiper_detail1">
-                <div class="swiper-wrapper my_swiper_div">
-                  {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-                  {%- if product.selected_or_first_available_variant.featured_media != null -%}
-                  {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-                  <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" 
-                      data-media-id="{{ section.id }}-{{ media.id }}">
-                    {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-                  </li>
-                  {%- endif -%}
-                  {%- for media in product.media -%}
-                  {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-                  <li class="swiper-slide" 
-                      data-media-id="{{ section.id }}-{{ media.id }}">
-                    {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-                  </li>
-                  {%- endunless -%}
-                  {%- endfor -%}
-                </div>
-              </div>
-              <div class="swiper-button-prev featured_product_beautify_prev1"></div>
-              <div class="swiper-button-next featured_product_beautify_next1"></div>
-            </div>
-          </ul>
-        {%- elsif media_count > 1 -%}
-          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul my_featured_product_beautify_noswiper" role="list" style="display:flex;">
-            {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-            {%- if product.selected_or_first_available_variant.featured_media != null -%}
-            {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-            <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-              {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-            </li>
-            {%- endif -%}
-            {%- for media in product.media -%}
-            {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-            <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-              {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-            </li>
-            {%- endunless -%}
-            {%- endfor -%}
-          </ul>
-        {%- endif -%}
-        {% endcomment %}
-        
-        
-        
         <div class="slider-buttons no-js-hidden{% if product.media.size < 2 %} small-hide{% endif %}">
           <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
           <div class="slider-counter caption">
@@ -588,24 +510,6 @@
       {%- endfor -%}
     ]
   }
-</script>
-
-
-<script type="module">
-  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
-  
-  var swiper = new Swiper(".my_swiper_detail1", {
-      slidesPerView: 4,
-      spaceBetween: 10,
-      pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-      },
-      navigation: {
-          nextEl: '.swiper-button-next.featured_product_beautify_next1',
-          prevEl: '.swiper-button-prev.featured_product_beautify_prev1',
-      },
-  });
 </script>
 
 {% schema %}
