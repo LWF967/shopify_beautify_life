@@ -31,16 +31,12 @@
 -%}
 
 <style>
-  .my_header_search_price {
-    font-size: 14px !important;
-  }
-  
   .my_price_font_size {
     font-size: 18px;
   }
 </style>
 
-<div class="price my_header_search_price
+<div class="price
   {%- if price_class %} {{ price_class }}{% endif -%}
   {%- if available == false %} price--sold-out {% endif -%}
   {%- if compare_at_price > price %} price--on-sale {% endif -%}
