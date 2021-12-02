@@ -2405,12 +2405,14 @@ a{
   margin-bottom: 55px;
 }
 
-.my_mobile_section_padding_default {
-  padding-bottom:30px;
-}
-  
-.my_mobile_section_margin_default {
-  margin-bottom: 30px;
+@media screen and (max-width: 750px){
+  .my_section_padding_default {
+    padding-bottom: 30px;
+  }
+
+  .my_section_margin_default {
+    margin-bottom: 30px;
+  }
 }
   
 /* lee title and text margin */
