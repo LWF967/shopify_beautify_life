@@ -1188,7 +1188,7 @@ deferred-media {
   text-decoration: none;
   border: 0;
   border-radius: 0;
-  background-color: var(--color-button);
+  background-color: rgb(var(--color-button));
   box-shadow: 0 0 0 0.1rem rgb(var(--color-button));
   color: rgb(var(--color-button-text));
   min-width: 12rem;
