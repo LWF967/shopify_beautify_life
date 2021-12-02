@@ -15,6 +15,18 @@
             "slider_button_link": ""
           }
         },
+        "d98aad89-0e6d-4788-95a8-22f4eb463027": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "image_alignment": "middle_center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
         "cf520457-a362-42f7-a043-5e28a8ffc74d": {
           "type": "slideshow_img2",
           "settings": {
@@ -38,25 +50,13 @@
             "slider_button_text": "title name",
             "slider_button_link": ""
           }
-        },
-        "d98aad89-0e6d-4788-95a8-22f4eb463027": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "image_alignment": "middle_center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
         }
       },
       "block_order": [
         "4e0a0993-6e2f-4ec2-94f4-a6dc94886799",
+        "d98aad89-0e6d-4788-95a8-22f4eb463027",
         "cf520457-a362-42f7-a043-5e28a8ffc74d",
-        "56d064e8-838e-4960-8f92-bec0c45e56d9",
-        "d98aad89-0e6d-4788-95a8-22f4eb463027"
+        "56d064e8-838e-4960-8f92-bec0c45e56d9"
       ],
       "settings": {
         "se_height": "adapt_f",
@@ -80,11 +80,11 @@
     "16366965204a8cb316": {
       "type": "slideshow-beautify-2",
       "blocks": {
-        "8f64082c-3285-44d3-89fb-a12006fa7cda": {
+        "f6d6b42e-2c43-47f7-a951-c5acebe942df": {
           "type": "slideshow_img2",
           "settings": {
-            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
-            "image_alignment": "center center",
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image_alignment": "middle_center",
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
@@ -92,11 +92,11 @@
             "slider_button_link": ""
           }
         },
-        "f6d6b42e-2c43-47f7-a951-c5acebe942df": {
+        "8f64082c-3285-44d3-89fb-a12006fa7cda": {
           "type": "slideshow_img2",
           "settings": {
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "image_alignment": "middle_center",
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
+            "image_alignment": "center center",
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
@@ -118,8 +118,8 @@
         }
       },
       "block_order": [
-        "8f64082c-3285-44d3-89fb-a12006fa7cda",
         "f6d6b42e-2c43-47f7-a951-c5acebe942df",
+        "8f64082c-3285-44d3-89fb-a12006fa7cda",
         "27a0088d-ec9a-48b1-a000-9c983fcc2430"
       ],
       "settings": {
@@ -144,19 +144,19 @@
     "16366804518eb2e044": {
       "type": "collection-list-Beautify",
       "blocks": {
-        "16366804518eb2e044-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "title": "New supply this week"
-          }
-        },
         "16366804518eb2e044-0": {
           "type": "featured_collection",
           "settings": {
             "collection": "pitaya",
             "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "title": "New supply this week"
+          }
+        },
+        "16366804518eb2e044-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
             "title": "New supply this week"
           }
         },
@@ -183,8 +183,8 @@
         }
       },
       "block_order": [
-        "16366804518eb2e044-1",
         "16366804518eb2e044-0",
+        "16366804518eb2e044-1",
         "16366804518eb2e044-2",
         "108496b1-c9fd-4cb3-b41d-beed0ae9d48e",
         "e92aa04e-60ce-4d2f-aee7-93c5f3d9aa16"
