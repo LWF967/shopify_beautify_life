@@ -6,6 +6,17 @@
     font-size: 24px;
     font-weight: 700;
   }
+  
+  @media screen and (min-width: 990px) {
+    .my_newsletter_mobile_flex {
+      flex-wrap: wrap;
+    }
+    
+    .my_newsletter_mobile_style {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
 </style>
 
 <div class="newsletter center{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}"
@@ -24,7 +35,7 @@
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="newsletter-form__field-wrapper">
-                <div class="field">
+                <div class="field my_newsletter_mobile_flex">
                   <input
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
@@ -55,7 +66,7 @@
                   </button> -->
                   
                   
-                  <button type="submit" class="button">
+                  <button type="submit" class="button my_newsletter_mobile_style">
                     SUBSCRIBE
                   </button>
                 </div>
