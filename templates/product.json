@@ -2,6 +2,7 @@
   "sections": {
     "163841498568f616bc": {
       "type": "featured-product-beautify",
+      "disabled": true,
       "blocks": {
         "163841498518be9207-0": {
           "type": "text",
