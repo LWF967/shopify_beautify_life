@@ -17,10 +17,6 @@
   .my_testimonials_title {
     align-items: center;
   }
-  
-  .my_testimonials_author_margin {
-    margin-top: 18px;
-  }
 </style>
     
 <script src="{{'swiper-bundle.min.js'| asset_url }} "></script>
@@ -97,7 +93,7 @@
                 {%- endif -%}
                 
                 {%- if block.settings.testimonials_author_text != blank -%}
-                <div class="tc my_testimonials_author_margin">{{block.settings.testimonials_author_text}}</div>	 
+                <div class="tc" style="margin-top: 18px;">{{block.settings.testimonials_author_text}}</div>	 
                 {% endif %}
        
               </div>            
