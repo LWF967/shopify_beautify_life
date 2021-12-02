@@ -188,7 +188,7 @@
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
         </a>
-		{% comment %}
+		
         <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -205,9 +205,9 @@
             {%- endunless -%}
           {%- endfor -%}
         </ul>
-		{% endcomment %}
+
         
-        
+        {% comment %}
         {%- assign media_count = product.media | size -%}
         {%- if media_count > 4 -%}
           <style>
@@ -259,7 +259,7 @@
             {%- endfor -%}
           </ul>
         {%- endif -%}
-        
+        {% endcomment %}
         
         
         
