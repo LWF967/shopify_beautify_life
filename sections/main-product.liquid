@@ -1,8 +1,5 @@
 {% comment %}theme-check-disable TemplateLength{% endcomment %}
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
-
-{{ 'section-featured-product.css' | asset_url | stylesheet_tag }}
-
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
@@ -28,150 +25,6 @@
     font-size: 18px;
     margin-bottom: 10px;
   }
-  
-  
-  
-  .my_main_product_noswiper li {
-    padding: 15px 0 0 10px !important;
-  }
-  
-  .my_main_product_noswiper li:first-child {
-    padding: 15px 0 0 0 !important;
-  }
-  
-  .my_main_product_noswiper li:last-child {
-    padding: 15px 0 0 10px;
-  }
-  
-  .my_featured_product_beautify_ul li:last-child {
-    margin-right: 0 !important;
-  }
-  
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide1 {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide1 img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .swiper-button-prev.main_product_prev:after,
-  .swiper-button-next.main_product_next:after {
-    color: #000;
-    width: 10px;
-    height: 20px;
-    font-size: 20px;
-  }
-
-  .swiper-button-next.main_product_next {
-    right: -5px;
-  }
-
-  .swiper-button-prev.main_product_prev {
-    left: -5px;
-  }
-  
-  .swiper-button-prev.main_product_prev.swiper-button-disabled:empty,
-  .swiper-button-next.main_product_next.swiper-button-disabled:empty,
-  .swiper-button-prev.main_product_prev:empty,
-  .swiper-button-next.main_product_next:empty {
-    display: flex;
-  }
-  
-  .my_featured_product_beautify_ul li modal-opener {
-    width: 100%;
-  }
-  
-  .product__media-icon.motion-reduce.my_featured_product_beautify_media_big {
-    height: 3rem;
-    width: 3rem;
-    left: 1.5rem;
-    top: 1.5rem;
-    opacity: 0;
-  }
-  
-  .product__media-list deferred-media {
-    display: block;
-  }
-  
-  .my_featured_product_beautify_ul li deferred-media {
-    display: none;
-  }
-  
-  .my_featured_product_beautify_ul li modal-opener {
-    display: block !important;
-  }
-  
-  .my_featured_product_beautify_ul .my_featured_product_beautify_media {
-    display: none !important;
-  }
-  
-  .my_featured_product_beautify_add {
-    font-size: 13px;
-    min-height: 44px;
-  }
-
-  
-  
-  .h1.product__title.my_featured_product_beautify_title {
-    font-size: 36px;
-    margin-bottom: 30px;
-  }
-  .no-js-hidden.my_featured_product_beautify_price {
-    margin: 10px 0 30px;
-  }
-  .form__label.my_featured_product_beautify_size {
-    font-size: 15px;
-    margin-bottom: 5px;
-  }
-  .select__select.my_featured_product_beautify_select {
-    font-size: 14px;
-    padding-left: 16px;
-    height: 44px;
-  }
-  .no-js-hidden.my_featured_product_beautify_variant-selects {
-    margin: 10px 0;
-  }
-  .product-form__input.product-form__quantity.my_featured_product_beautify_quantity {
-    margin: 10px 0 15px;
-  }
-  .my_featured_product_beautify_add {
-    font-size: 13px;
-    min-height: 44px;
-  }
-  .product__description.rte.my_featured_product_beautify_description {
-    margin: 50px 0 35px;
-  }
-  .link.product__view-details.animate-arrow.my_featured_product_beautify_details {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 50px 0 0;
-  }
-  
-  
 </style>
 
 
@@ -211,79 +64,7 @@
         </ul>
         {% endcomment %}
         
-        <div class="product__media-list">
-          {%- if product.selected_or_first_available_variant.featured_media != null -%}
-            {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-            <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-              {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
-            </div>
-          {%- endif -%}
-          {%- liquid
-            assign media_to_render = product.featured_media.id
-            for variant in product.variants
-              assign media_to_render = media_to_render | append: variant.featured_media.id | append: ' '
-            endfor
-          -%}
-          {%- for media in product.media -%}
-            {%- if media_to_render contains media.id and media.id != product.selected_or_first_available_variant.featured_media.id -%}
-              <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-                {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
-              </div>
-            {%- endif -%}
-          {%- endfor -%}
-        </div>
-        
-        {%- assign media_count = product.media | size -%}
-        {%- if media_count > 4 -%}
-          <style>
-            .deferred-media.media.no-js-hidden.my_featured_product_beautify_media {
-              width: 100%;
-            }
-          </style>
-          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list">
-            <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
-              <div class="swiper my_swiper_detail1">
-                <div class="swiper-wrapper my_swiper_div1">
-                  {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-                  {%- if product.selected_or_first_available_variant.featured_media != null -%}
-                  {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-                  <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" 
-                      data-media-id="{{ section.id }}-{{ media.id }}">
-                    {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-                  </li>
-                  {%- endif -%}
-                  {%- for media in product.media -%}
-                  {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-                  <li class="swiper-slide1" 
-                      data-media-id="{{ section.id }}-{{ media.id }}">
-                    {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-                  </li>
-                  {%- endunless -%}
-                  {%- endfor -%}
-                </div>
-              </div>
-              <div class="swiper-button-prev main_product_prev"></div>
-              <div class="swiper-button-next main_product_next"></div>
-            </div>
-          </ul>
-        {%- elsif media_count > 1 -%}
-          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul my_main_product_noswiper" role="list" style="display:flex;">
-            {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-            {%- if product.selected_or_first_available_variant.featured_media != null -%}
-            {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-            <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-              {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-            </li>
-            {%- endif -%}
-            {%- for media in product.media -%}
-            {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-            <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-              {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-            </li>
-            {%- endunless -%}
-            {%- endfor -%}
-          </ul>
-        {%- endif -%}
+      
         
         
         <div class="slider-buttons no-js-hidden{% if product.media.size < 2 %} small-hide{% endif %}">
@@ -734,27 +515,6 @@
     ]
   }
 </script>
-
-
-
-<script type="module">
-  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
-  
-  var swiper = new Swiper(".my_swiper_detail1", {
-      slidesPerView: 4,
-      spaceBetween: 10,
-      pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-      },
-      navigation: {
-          nextEl: '.swiper-button-next.main_product_next',
-          prevEl: '.swiper-button-prev.main_product_prev',
-      },
-  });
-</script>
-
-
 
 {% schema %}
 {

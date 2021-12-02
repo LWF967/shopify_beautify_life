@@ -932,6 +932,20 @@
    if(designMode){
    
    console.log('进入后台了');
+   
+ 
+
+    var mo = new MutationObserver( slideshow_beautify_lunbo(););
+
+    var option = {
+      'childList': true,
+      'subtree': true
+    };
+    
+	let doc_id = document.getElementsByClassName('nt_se_{{section.id}}')[0];
+    mo.observe(doc_id, option);
+   
+   
    }
   
    let doc_id = document.getElementsByClassName('nt_se_{{section.id}}')[0];
