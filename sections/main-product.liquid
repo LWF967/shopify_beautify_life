@@ -151,6 +151,12 @@
     margin: 50px 0 0;
   }
   
+  .my_main_product_description_margin {
+    margin: 50px 0 35px;
+  }
+  
+  
+  
 
   .h1.product__title.my_featured_product_beautify_title {
     font-size: 36px;
@@ -353,7 +359,7 @@
             </div>
           {%- when 'description' -%}
             {%- if product.description != blank -%}
-              <div class="product__description rte">
+              <div class="product__description rte my_main_product_description_margin">
                 {{ product.description }}
               </div>
             {%- endif -%}
