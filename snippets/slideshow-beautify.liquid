@@ -22,7 +22,13 @@
           	</svg>
         </p>
       </div>
-    <div class="big-box big-box-{{section.id}}" data-autoplay="{{section.settings.auto_play}}" data-autotime="{{section.settings.auto_time}}">
+    <div class="big-box big-box-{{section.id}}" 
+         
+         data-autorotate="{{ section.settings.autorotate }}"
+         data-slider-container
+         data-speed="{{section.settings.auto_time}}"
+
+         data-autoplay="{{section.settings.auto_play}}" data-autotime="{{section.settings.auto_time}}">
       <div class="product-box product-box-{{section.id}}" >
       
     	{% for block in section.blocks %}
