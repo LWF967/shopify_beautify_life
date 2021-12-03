@@ -17,8 +17,6 @@
   .my_main_product_add {
     font-size: 13px;
     min-height: 44px;
-    margin-right: 10px;
-    flex; 50%;
   }
   
   .my_main_product_title {
@@ -182,6 +180,11 @@
   
   .my_main_product_product_form_button {
     display: flex;
+  }
+  
+  .my_main_product_add_button {
+    margin-right: 10px;
+    flex; 50%;
   }
   
   .my_main_product_paybutton {
@@ -573,7 +576,8 @@
                     <button
                       type="submit"
                       name="add"
-                      class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %} my_main_product_add"
+                      class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %} my_main_product_add 
+                             {%- if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' -%}my_main_product_add_button{%- endif -%}"
                     {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
                         {%- if product.selected_or_first_available_variant.available -%}
@@ -582,7 +586,7 @@
                           {{ 'products.product.sold_out' | t }}
                         {%- endif -%}
                     </button>
-                    <div class="my_main_product_paybutton">
+                    <div class="{%- if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' -%}my_main_product_paybutton{%- endif -%}">
                     {%- if block.settings.show_dynamic_checkout -%}
                       {{ form | payment_button }}
                     {%- endif -%}
