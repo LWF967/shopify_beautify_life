@@ -76,8 +76,11 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "show_share_buttons": true,
         "hide_variants": true,
-        "enable_video_looping": true
+        "enable_video_looping": true,
+        "main_product_margin_top": "",
+        "main_product_margin_bottom": ""
       }
     },
     "product-recommendations": {
