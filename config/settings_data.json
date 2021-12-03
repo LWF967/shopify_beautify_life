@@ -240,10 +240,10 @@
           "0e03fff2-5f48-4c58-ab83-ce5e1b70e304"
         ],
         "settings": {
-          "sticky_footer": true,
+          "sticky_footer": false,
           "accordions_options_on_mobile": true,
           "border_footer": true,
-          "border_color": "#cf1f1f",
+          "border_color": "#000000",
           "background_color": "#f2f2f2",
           "heading_color": "#000000",
           "text_color": "#797979",

@@ -320,8 +320,8 @@
         "title": "TRENDING",
         "sub_title": "Popular this week",
         "collection": "frontpage",
-        "products_to_show": 4,
-        "grid": 4,
+        "products_to_show": 8,
+        "grid": 6,
         "show_view_all": false,
         "swipe_on_mobile": false,
         "use_eq_height": true,
@@ -490,7 +490,7 @@
         "show_title": true,
         "show_short_content": true,
         "show_date": true,
-        "show_author": false,
+        "show_author": true,
         "soft_background": false,
         "show_view_all": true,
         "featured_blog_margin_top": "",
@@ -888,7 +888,6 @@
     },
     "163849671168c3a046": {
       "type": "slideshow-beatify-debut",
-      "disabled": true,
       "blocks": {
         "1638496711aacadadb-0": {
           "type": "image",
@@ -947,7 +946,7 @@
         "text_alignment": "center center",
         "show_overlay": true,
         "autorotate": false,
-        "autorotate_speed": 5
+        "autorotate_speed": 3
       }
     }
   },
