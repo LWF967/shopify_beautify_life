@@ -1006,8 +1006,8 @@ theme.Sections.prototype = Object.assign({}, theme.Sections.prototype, {
   },
 
   _onSectionLoad: function(evt) {
-    console.log(this,'this');
-    console.log(evt,'evt');
+    console.log(this,'this自己的轮播');
+    console.log(evt,'evt自己的轮播');
     var container = document.querySelector(
       '[data-section-id="' + evt.detail.sectionId + '"]'
     );
