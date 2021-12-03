@@ -231,7 +231,7 @@
     .my_main_product_left_content_mobile {
       max-width: 100% !important;
       width: 100% !important;
-      padding: 0 0;
+      padding: 0 0
     }
     
     .my_main_product_product_media_list {
@@ -264,12 +264,11 @@
          style="{%- if section.settings.main_product_margin_top != blank -%}margin-top: {{ section.settings.main_product_margin_top }}px; {%- endif -%}{%- if section.settings.main_product_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_product_margin_bottom }}px;{%- endif -%}">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper my_main_product_left_content
-                {%- if section.settings.main_product_mediasize == 'Small' %}_small
-                {%- elsif section.settings.main_product_mediasize == 'Medium' %}_medium
-                {%- elsif section.settings.main_product_mediasize == 'Large' %}_large
-                {%- elsif section.settings.main_product_mediasize == 'Extra large' %}_extra_large
-                {%- endif %} my_main_product_left_content_mobile">
-<!--       <slider-component class="slider-mobile-gutter"> -->
+                {% if section.settings.main_product_mediasize == 'Small' %}_small
+                {% elsif section.settings.main_product_mediasize == 'Medium' %}_medium
+                {% elsif section.settings.main_product_mediasize == 'Large' %}_large
+                {% elsif section.settings.main_product_mediasize == 'Extra large' %}_extra_large
+                {% endif %} my_main_product_left_content_mobile">
       <div>
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
@@ -380,7 +379,6 @@
           <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
         </div>
         {% endcomment %}
-<!--       </slider-component> -->
     </div>
       {%- if first_3d_model -%}
         <button
