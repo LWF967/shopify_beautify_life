@@ -1110,25 +1110,7 @@ window.slate = window.slate || {};
    
  
  
- 	document.addEventListener(
-    'shopify:section:load',
-    this._onSectionLoad.bind(this)
-  );
-  
-  
-  
-   _onSectionLoad: function(evt) {
-    console.log(this,'this');
-    console.log(evt,'evt');
-    var container = document.querySelector(
-      '[data-section-id="' + evt.detail.sectionId + '"]'
-    );
-
-    if (container) {
-      this._createInstance(container);
-    }
-  },
-  
+ }
 
 
   
