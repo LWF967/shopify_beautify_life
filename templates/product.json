@@ -78,7 +78,7 @@
         "enable_sticky_info": true,
         "show_share_buttons": true,
         "hide_variants": false,
-        "enable_video_looping": false,
+        "enable_video_looping": true,
         "main_product_margin_top": "",
         "main_product_margin_bottom": ""
       }
