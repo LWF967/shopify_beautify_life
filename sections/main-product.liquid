@@ -572,7 +572,8 @@
               <product-form class="product-form" style="{% if settings.enable_catalog_mode %}display: none;{% endif %}">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                  <div class="product-form__buttons my_main_product_product_form_button">
+                  <div class="product-form__buttons 
+                              {%- if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' -%}my_main_product_product_form_button{%- endif -%}">
                     <button
                       type="submit"
                       name="add"
