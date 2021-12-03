@@ -60,6 +60,8 @@ window.theme = window.theme || {};
 window.theme = window.theme || {};
 
 theme.Sections = function Sections() {
+  
+  console.log(this,'定义this');
   this.constructors = {};
   this.instances = [];
 
