@@ -153,32 +153,6 @@
     margin: 50px 0 0;
   }
   
-  .my_main_product_left_content_small {
-    max-width: 33.333333% !important;
-    width: 33.333333% !important;
-  }
-  
-  .my_main_product_left_content_medium {
-    max-width: 50% !important;
-    width: 50% !important;
-  }
-  
-  .my_main_product_left_content_large {
-    max-width: 66.666667% !important;
-    width: 66.666667% !important;
-  }
-  
-  .my_main_product_left_content_extra_large {
-    max-width: 100% !important;
-    width: 100% !important;
-  }
-  
-  .my_main_product_right_content {
-    max-width: none !important;
-    width: auto !important;
-  }
-  
-  
   
 
   .h1.product__title.my_featured_product_beautify_title {
@@ -226,12 +200,12 @@
 <section class="page-width"
          style="{%- if section.settings.main_product_margin_top != blank -%}margin-top: {{ section.settings.main_product_margin_top }}px; {%- endif -%}{%- if section.settings.main_product_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_product_margin_bottom }}px;{%- endif -%}">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="grid__item product__media-wrapper my_main_product_left_content
-                {%- if section.settings.main_product_mediasize == 'Small' -%}_small
-                {%- elsif section.settings.main_product_mediasize == 'Medium' -%}_medium
-                {%- elsif section.settings.main_product_mediasize == 'Large' -%}_large
-                {%- elsif section.settings.main_product_mediasize == 'Extra large' -%}_extra_large
-                {%- endif -%}">
+    <div class="grid__item product__media-wrapper"
+         style="{% if section.settings.main_product_mediasize == 'Small' %}max-width: 33.333333%; width: 33.333333%;
+                {% elsif section.settings.main_product_mediasize == 'Medium' %}max-width: 50%; width: 50%;
+                {% elsif section.settings.main_product_mediasize == 'Large' %}max-width: 66.666667%; width: 66.666667%;
+                {% elsif section.settings.main_product_mediasize == 'Extra large' %}max-width: 100%; width: 100%;
+                {% endif %}">
       <slider-component class="slider-mobile-gutter">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
@@ -357,7 +331,8 @@
         </button>
       {%- endif -%}
     </div>
-    <div class="product__info-wrapper grid__item my_main_product_right_content">
+    <div class="product__info-wrapper grid__item"
+         style="max-width: none; width: auto;">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %} my_main_product_info">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
