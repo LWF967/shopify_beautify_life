@@ -153,12 +153,27 @@
     margin: 50px 0 0;
   }
   
+  .my_main_product_left_content_small {
+    max-width: 33.333333%;
+    width: 33.333333%;
+  }
+  
   .my_main_product_left_content_medium {
     max-width: 50%;
     width: 50%;
   }
   
-  .my_main_product_right_content_medium {
+  .my_main_product_left_content_large {
+    max-width: 66.666667%;
+    width: 66.666667%;
+  }
+  
+  .my_main_product_left_content_extra_large {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .my_main_product_right_content {
     max-width: none;
     width: auto;
   }
@@ -211,7 +226,12 @@
 <section class="page-width"
          style="{%- if section.settings.main_product_margin_top != blank -%}margin-top: {{ section.settings.main_product_margin_top }}px; {%- endif -%}{%- if section.settings.main_product_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_product_margin_bottom }}px;{%- endif -%}">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="grid__item product__media-wrapper my_main_product_left_content">
+    <div class="grid__item product__media-wrapper my_main_product_left_content
+                {%- if section.settings.main_product_mediasize == 'Small' -%}_small
+                {%- elsif section.settings.main_product_mediasize == 'Medium' -%}_medium
+                {%- elsif section.settings.main_product_mediasize == 'Large' -%}_large
+                {%- elsif section.settings.main_product_mediasize == 'Extra large' -%}_extra_large
+                {%- endif -%}">
       <slider-component class="slider-mobile-gutter">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
