@@ -153,6 +153,15 @@
     margin: 50px 0 0;
   }
   
+  .my_main_product_left_content_medium {
+    max-width: 50%;
+    width: 50%;
+  }
+  
+  .my_main_product_right_content_medium {
+    max-width: none;
+    width: auto;
+  }
   
   
   
@@ -202,7 +211,7 @@
 <section class="page-width"
          style="{%- if section.settings.main_product_margin_top != blank -%}margin-top: {{ section.settings.main_product_margin_top }}px; {%- endif -%}{%- if section.settings.main_product_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_product_margin_bottom }}px;{%- endif -%}">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="grid__item product__media-wrapper">
+    <div class="grid__item product__media-wrapper my_main_product_left_content">
       <slider-component class="slider-mobile-gutter">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
@@ -328,7 +337,7 @@
         </button>
       {%- endif -%}
     </div>
-    <div class="product__info-wrapper grid__item">
+    <div class="product__info-wrapper grid__item my_main_product_right_content">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %} my_main_product_info">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -1086,7 +1095,7 @@
     },
     {
       "type": "select",
-      "id": "main_product_size",
+      "id": "main_product_mediasize",
       "options": [
         {
           "value": "Small",
