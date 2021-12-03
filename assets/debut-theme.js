@@ -43,12 +43,12 @@
         number_of_results_found: 36,
         one_result_found: 37
       },
-      moneyFormat: {{ shop.money_format | json }},
-      moneyFormatWithCurrency: {{ shop.money_with_currency_format | json }},
+      moneyFormat: 38,
+      moneyFormatWithCurrency: 39,
       settings: {
-        predictiveSearchEnabled: {{ settings.predictive_search_enabled | json }},
-        predictiveSearchShowPrice: {{ settings.predictive_search_show_price | json }},
-        predictiveSearchShowVendor: {{ settings.predictive_search_show_vendor | json }}
+        predictiveSearchEnabled: 40,
+        predictiveSearchShowPrice: 41,
+        predictiveSearchShowVendor: 42
       },
       stylesheet: "{{ 'theme.css' | asset_url }}"
     };
