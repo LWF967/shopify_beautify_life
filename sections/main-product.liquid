@@ -17,6 +17,8 @@
   .my_main_product_add {
     font-size: 13px;
     min-height: 44px;
+    margin-right: 10px;
+    flex; 50%;
   }
   
   .my_main_product_title {
@@ -176,6 +178,14 @@
   .my_main_product_right_content {
     max-width: none !important;
     width: auto !important;
+  }
+  
+  .my_main_product_product_form_button {
+    display: flex;
+  }
+  
+  .my_main_product_paybutton {
+    flex: 50%;
   }
   
   
@@ -559,7 +569,7 @@
               <product-form class="product-form" style="{% if settings.enable_catalog_mode %}display: none;{% endif %}">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                  <div class="product-form__buttons">
+                  <div class="product-form__buttons my_main_product_product_form_button">
                     <button
                       type="submit"
                       name="add"
@@ -572,9 +582,11 @@
                           {{ 'products.product.sold_out' | t }}
                         {%- endif -%}
                     </button>
+                    <div class="my_main_product_paybutton">
                     {%- if block.settings.show_dynamic_checkout -%}
                       {{ form | payment_button }}
                     {%- endif -%}
+                    </div>
                   </div>
                 {%- endform -%}
         
