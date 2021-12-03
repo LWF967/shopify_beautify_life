@@ -593,6 +593,10 @@
             {%- endif -%}
           {%- endcase -%}
         {%- endfor -%}
+        
+        {% if section.settings.show_share_buttons %}
+        	{% include 'social-share-beautify'%}
+        {% endif %}
 <!--         %- if request.page_type == 'index' -%} -->
           <a href="{{ product.url }}" class="link product__view-details animate-arrow my_main_product_details">
             {{ 'products.product.view_full_details' | t }}
