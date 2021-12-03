@@ -195,7 +195,9 @@
     padding-left: 0 !important;
   }
   
-  
+  .my_main_product_nomargin {
+    margin-top: 0;
+  }
   
   @media screen and (max-width: 750px) {
     .h1.product__title.my_featured_product_beautify_title {
@@ -399,8 +401,7 @@
         </button>
       {%- endif -%}
     </div>
-    <div class="product__info-wrapper grid__item my_main_product_right_content 
-                {% if section.settings.main_product_mediasize == 'Extra large' %} my_main_product_right_content_no_padding {% endif %}">
+    <div class="product__info-wrapper grid__item my_main_product_right_content {% if section.settings.main_product_mediasize == 'Extra large' %} my_main_product_right_content_no_padding {% endif %}">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %} my_main_product_info">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -414,7 +415,7 @@
               {{- block.settings.text -}}
             </p>
           {%- when 'title' -%}
-            <h1 class="product__title my_font_weight_default my_main_product_title" {{ block.shopify_attributes }}>
+            <h1 class="product__title my_font_weight_default my_main_product_title my_main_product_nomargin" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
           {%- when 'price' -%}
