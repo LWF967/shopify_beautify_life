@@ -910,11 +910,23 @@
             "button_label": "",
             "button_link": ""
           }
+        },
+        "e55d5964-b734-42ba-88d2-2c09558bb192": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
+            "alignment": "center center",
+            "slide_title": "Image slide",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "1638496711aacadadb-0",
-        "1638496711aacadadb-1"
+        "1638496711aacadadb-1",
+        "e55d5964-b734-42ba-88d2-2c09558bb192"
       ],
       "settings": {
         "slideshow_height": "adapt",
