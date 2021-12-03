@@ -139,8 +139,9 @@
     right: 2.8rem;
   }
   
-  .my_main_product_addtocart_height {
+  .my_main_product_addtocart {
     height: 4.4rem;
+    padding: 0 6rem 0 1.6rem;
   }
   
   
@@ -473,7 +474,7 @@
                       </label>
                       <div class="select">
                         <select id="Option-{{ section.id }}-{{ forloop.index0 }}"
-                          class="select__select my_main_product_addtocart_height"
+                          class="select__select my_main_product_addtocart"
                           name="options[{{ option.name | escape }}]"
                           form="product-form-{{ section.id }}"
                         >
@@ -499,7 +500,7 @@
               <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
                 <label class="form__label my_main_product_size" for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
                 <div class="select">
-                  <select name="id" id="Variants-{{ section.id }}" class="select__select my_main_product_addtocart_height" form="product-form">
+                  <select name="id" id="Variants-{{ section.id }}" class="select__select my_main_product_addtocart" form="product-form">
                     {%- for variant in product.variants -%}
                       <option
                         {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
