@@ -932,43 +932,6 @@
   
   
 
-    var mo = new MutationObserver( slideshow_beautify_lunbo());
-
-    var option = {
-      'childList': true,
-      'subtree': true
-    };
-    
-	let doc_id = document.getElementsByClassName('nt_se_{{section.id}}')[0];
-    mo.observe(doc_id, option);
-   
-   
-   }
-  
-   let doc_id = document.getElementsByClassName('nt_se_{{section.id}}')[0];
-
-
-
-  console.log(doc_id,'取到了');
-  Shopify.addListener(doc_id,'shopify:section:load',()=>{  slideshow_beautify_lunbo(); });
-  console.log(doc_id.addEventListener,'看看真不真');
-  doc_id.addEventListener('shopify:section:load',()=>{
-  
-  console.log('终于绑定了');
-  slideshow_beautify_lunbo();
-  },true);
-
-      document.getElementsByClassName('nt_se_{{section.id}}')[0].addEventListener('shopify:section:load',()=>{
-
-    
-   	console.log('进来了');
-    slideshow_beautify_lunbo();
-    
-  
-
-
-  
-  },true)
 
 
 
