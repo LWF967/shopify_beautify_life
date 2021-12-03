@@ -91,6 +91,8 @@ theme.Sections = function Sections() {
   );
 };
 
+
+
 theme.Sections.prototype = Object.assign({}, theme.Sections.prototype, {
   _createInstance: function(container, constructor) {
     var id = container.getAttribute('data-section-id');
