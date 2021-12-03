@@ -534,10 +534,12 @@
               <product-form class="product-form" style="{% if settings.enable_catalog_mode %}display: none;{% endif %}">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                  <div class="product-form__buttons">
+                  <div class="product-form__buttons"
+                       style="{% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}display: flex;{% endif %}">
                     <button
                       type="submit"
                       name="add"
+                      style="{% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}flex: 50%;margin-right: 30px;{% endif %}"
                       class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %} my_main_product_add"
                     {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
@@ -547,9 +549,11 @@
                           {{ 'products.product.sold_out' | t }}
                         {%- endif -%}
                     </button>
-                    {%- if block.settings.show_dynamic_checkout -%}
-                      {{ form | payment_button }}
-                    {%- endif -%}
+                    <div style="{% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}flex: 50%;{% endif %}">
+                      {%- if block.settings.show_dynamic_checkout -%}
+                        {{ form | payment_button }}
+                      {%- endif -%}
+                    </div>
                   </div>
                 {%- endform -%}
         
