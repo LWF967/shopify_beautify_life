@@ -51,6 +51,7 @@
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
@@ -75,6 +76,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
+        "show_share_buttons": true,
         "hide_variants": false,
         "enable_video_looping": false,
         "main_product_margin_top": "",
