@@ -892,6 +892,7 @@
         "1638496711aacadadb-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
             "alignment": "center center",
             "slide_title": "Image slide",
             "subheading": "Tell your brand's story through images",
@@ -902,6 +903,7 @@
         "1638496711aacadadb-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
             "alignment": "center center",
             "slide_title": "Image slide",
             "subheading": "Tell your brand's story through images",
