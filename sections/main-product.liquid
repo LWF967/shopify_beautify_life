@@ -235,10 +235,16 @@
     
     .my_main_product_product_media_list {
       width: 100% !important;
+      padding: 0 0;
+      margin: 0 0;
     }
     
     .my_main_product_product_media_list modal-opener {
       display: none;
+    }
+    
+    .my_main_product_product_media_list .my_main_product_product_media_item {
+      width: 100% !important;
     }
     
   }
@@ -291,7 +297,7 @@
         <div class="product__media-list my_main_product_product_media_list">
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
           {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-          <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
+          <div class="product__media-item my_main_product_product_media_item" data-media-id="{{ section.id }}-{{ media.id }}">
             {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
           </div>
           {%- endif -%}
@@ -303,7 +309,7 @@
           -%}
           {%- for media in product.media -%}
           {%- if media_to_render contains media.id and media.id != product.selected_or_first_available_variant.featured_media.id -%}
-          <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
+          <div class="product__media-item my_main_product_product_media_item" data-media-id="{{ section.id }}-{{ media.id }}">
             {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
           </div>
           {%- endif -%}
