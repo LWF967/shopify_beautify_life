@@ -21,9 +21,10 @@
 
 
 {{ 'debut-theme.css' | asset_url | stylesheet_tag }}
+{{ 'debut-theme.js' | asset_url | script_tag }}
 
-  <link rel="preload" href="{{ 'debut-theme.css' | asset_url }}" as="style">
-<link rel="preload" href="{{ 'debut-theme.js' | asset_url }}" as="script">
+<!--   <link rel="preload" href="{{ 'debut-theme.css' | asset_url }}" as="style">
+<link rel="preload" href="{{ 'debut-theme.js' | asset_url }}" as="script"> -->
 
 <div data-section-id="{{ section.id }}" data-section-type="slideshow-section">
   {%- if section.blocks.size > 0 -%}
