@@ -110,6 +110,8 @@ theme.Sections.prototype = Object.assign({}, theme.Sections.prototype, {
   },
 
   _onSectionLoad: function(evt) {
+    console.log(this,'this');
+    console.log(evt,'evt');
     var container = document.querySelector(
       '[data-section-id="' + evt.detail.sectionId + '"]'
     );
