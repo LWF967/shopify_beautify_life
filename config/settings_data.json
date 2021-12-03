@@ -225,34 +225,7 @@
           "0e03fff2-5f48-4c58-ab83-ce5e1b70e304": {
             "type": "text2",
             "settings": {
-              "newsletter_design": "3",
-              "heading": "Newsletter",
-              "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
-              "container_width": "5"
-            }
-          },
-          "5d422c03-df57-4ab9-bdc9-cc2347ca6fbf": {
-            "type": "text2",
-            "settings": {
-              "newsletter_design": "1",
-              "heading": "Newsletter",
-              "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
-              "container_width": "5"
-            }
-          },
-          "1ba7233d-232c-4023-84bc-4026db738fc8": {
-            "type": "text2",
-            "settings": {
-              "newsletter_design": "1",
-              "heading": "Newsletter",
-              "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
-              "container_width": "5"
-            }
-          },
-          "8c19869f-7a43-446b-93c0-b98be1a8e9d4": {
-            "type": "text2",
-            "settings": {
-              "newsletter_design": "1",
+              "newsletter_design": "4",
               "heading": "Newsletter",
               "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
               "container_width": "5"
@@ -264,10 +237,7 @@
           "813890e0-2367-4953-b348-378adfebbfdf",
           "95516c21-286f-4cb0-804a-b154a39441dd",
           "e8613138-c13d-4acc-bcbd-7b5c43c0b596",
-          "0e03fff2-5f48-4c58-ab83-ce5e1b70e304",
-          "5d422c03-df57-4ab9-bdc9-cc2347ca6fbf",
-          "1ba7233d-232c-4023-84bc-4026db738fc8",
-          "8c19869f-7a43-446b-93c0-b98be1a8e9d4"
+          "0e03fff2-5f48-4c58-ab83-ce5e1b70e304"
         ],
         "settings": {
           "sticky_footer": false,
