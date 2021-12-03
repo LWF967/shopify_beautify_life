@@ -145,6 +145,11 @@
     font-size: 14px;
   }
   
+  .link.product__view-details.animate-arrow.my_main_product_details {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 50px 0 0;
+  }
   
 
   .h1.product__title.my_featured_product_beautify_title {
@@ -176,11 +181,8 @@
   .product__description.rte.my_featured_product_beautify_description {
     margin: 50px 0 35px;
   }
-  .link.product__view-details.animate-arrow.my_featured_product_beautify_details {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 50px 0 0;
-  }
+  
+  
 </style>
 
 
@@ -591,6 +593,12 @@
             {%- endif -%}
           {%- endcase -%}
         {%- endfor -%}
+        {%- if request.page_type == 'index' -%}
+          <a href="{{ product.url }}" class="link product__view-details animate-arrow my_main_product_details">
+            {{ 'products.product.view_full_details' | t }}
+            {% render 'icon-arrow' %}
+          </a>
+        {%- endif -%}
       </div>
     </div>
   </div>
