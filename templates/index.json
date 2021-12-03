@@ -325,8 +325,8 @@
         "show_view_all": false,
         "swipe_on_mobile": false,
         "use_eq_height": true,
-        "image_ratio1": "ratio_cus2",
-        "image_ratio": "adapt",
+        "image_ratio1": "ratio_nt",
+        "image_ratio": "portrait",
         "show_secondary_image": false,
         "add_image_padding": false,
         "show_image_outline": true,
@@ -885,70 +885,6 @@
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }
-    },
-    "163849671168c3a046": {
-      "type": "slideshow-beatify-debut",
-      "disabled": true,
-      "blocks": {
-        "1638496711aacadadb-0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-            "alignment": "center center",
-            "slide_title": "Image slide",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "1638496711aacadadb-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
-            "alignment": "center center",
-            "slide_title": "Image slide",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "e55d5964-b734-42ba-88d2-2c09558bb192": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
-            "alignment": "center center",
-            "slide_title": "Image slide",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "5f850e22-f98d-4992-9a89-c27d36f86364": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
-            "alignment": "center center",
-            "slide_title": "Image slide",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1638496711aacadadb-0",
-        "1638496711aacadadb-1",
-        "e55d5964-b734-42ba-88d2-2c09558bb192",
-        "5f850e22-f98d-4992-9a89-c27d36f86364"
-      ],
-      "settings": {
-        "slideshow_height": "adapt",
-        "text_size": "medium",
-        "text_alignment": "center center",
-        "show_overlay": true,
-        "autorotate": false,
-        "autorotate_speed": 3
-      }
     }
   },
   "order": [
@@ -970,7 +906,6 @@
     "1638254471485c2b3b",
     "1638344641035ba32e",
     "1638254788d0160884",
-    "1638429660d88bc09d",
-    "163849671168c3a046"
+    "1638429660d88bc09d"
   ]
 }
