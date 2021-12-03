@@ -886,80 +886,41 @@
         "mobile_layout": "collage"
       }
     },
-    "1638442260d38038a2": {
-      "type": "featured-product-beautify",
+    "163849671168c3a046": {
+      "type": "slideshow-beatify-debut",
       "blocks": {
-        "1638442260175d7c0b-0": {
-          "type": "text",
+        "1638496711aacadadb-0": {
+          "type": "image",
           "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
+            "alignment": "center center",
+            "slide_title": "Image slide",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "",
+            "button_link": ""
           }
         },
-        "1638442260175d7c0b-1": {
-          "type": "title",
+        "1638496711aacadadb-1": {
+          "type": "image",
           "settings": {
-          }
-        },
-        "1638442260175d7c0b-2": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "1638442260175d7c0b-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "1638442260175d7c0b-4": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "dropdown"
-          }
-        },
-        "1638442260175d7c0b-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "1638442260175d7c0b-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "1638442260175d7c0b-7": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "1638442260175d7c0b-8": {
-          "type": "share",
-          "settings": {
+            "alignment": "center center",
+            "slide_title": "Image slide",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "1638442260175d7c0b-0",
-        "1638442260175d7c0b-1",
-        "1638442260175d7c0b-2",
-        "1638442260175d7c0b-3",
-        "1638442260175d7c0b-4",
-        "1638442260175d7c0b-5",
-        "1638442260175d7c0b-6",
-        "1638442260175d7c0b-7",
-        "1638442260175d7c0b-8"
+        "1638496711aacadadb-0",
+        "1638496711aacadadb-1"
       ],
       "settings": {
-        "product": "text4",
-        "secondary_background": false,
-        "show_share_buttons": false,
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "featured_product_beautify_margin_top": "",
-        "featured_product_beautify_margin_bottom": ""
+        "slideshow_height": "adapt",
+        "text_size": "medium",
+        "text_alignment": "center center",
+        "show_overlay": true,
+        "autorotate": false,
+        "autorotate_speed": 5
       }
     }
   },
@@ -983,6 +944,6 @@
     "1638344641035ba32e",
     "1638254788d0160884",
     "1638429660d88bc09d",
-    "1638442260d38038a2"
+    "163849671168c3a046"
   ]
 }
