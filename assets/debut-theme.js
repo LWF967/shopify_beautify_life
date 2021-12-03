@@ -1,3 +1,13 @@
+
+    var theme = {
+      breakpoints: {
+        medium: 750,
+        large: 990,
+        widescreen: 1400
+      }
+    };
+
+
 window.theme = window.theme || {};
 
 /* ================ SLATE ================ */
