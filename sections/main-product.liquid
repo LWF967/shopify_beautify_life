@@ -153,6 +153,32 @@
     margin: 50px 0 0;
   }
   
+  .my_main_product_left_content_small {
+    max-width: 33.333333% !important;
+    width: 33.333333% !important;
+  }
+  
+  .my_main_product_left_content_medium {
+    max-width: 50% !important;
+    width: 50% !important;
+  }
+  
+  .my_main_product_left_content_large {
+    max-width: 66.666667% !important;
+    width: 66.666667% !important;
+  }
+  
+  .my_main_product_left_content_extra_large {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .my_main_product_right_content {
+    max-width: none !important;
+    width: auto !important;
+  }
+  
+  
   
 
   .h1.product__title.my_featured_product_beautify_title {
@@ -200,12 +226,12 @@
 <section class="page-width"
          style="{%- if section.settings.main_product_margin_top != blank -%}margin-top: {{ section.settings.main_product_margin_top }}px; {%- endif -%}{%- if section.settings.main_product_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_product_margin_bottom }}px;{%- endif -%}">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-    <div class="grid__item product__media-wrapper"
-         style="{% if section.settings.main_product_mediasize == 'Small' %}max-width: 33.333333%; width: 33.333333%;
-                {% elsif section.settings.main_product_mediasize == 'Medium' %}max-width: 50%; width: 50%;
-                {% elsif section.settings.main_product_mediasize == 'Large' %}max-width: 66.666667%; width: 66.666667%;
-                {% elsif section.settings.main_product_mediasize == 'Extra large' %}max-width: 100%; width: 100%;
-                {% endif %}">
+    <div class="grid__item product__media-wrapper my_main_product_left_content
+                {%- if section.settings.main_product_mediasize == 'Small' -%}_small
+                {%- elsif section.settings.main_product_mediasize == 'Medium' -%}_medium
+                {%- elsif section.settings.main_product_mediasize == 'Large' -%}_large
+                {%- elsif section.settings.main_product_mediasize == 'Extra large' -%}_extra_large
+                {%- endif -%}">
       <slider-component class="slider-mobile-gutter">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
@@ -331,8 +357,7 @@
         </button>
       {%- endif -%}
     </div>
-    <div class="product__info-wrapper grid__item"
-         style="max-width: none; width: auto;">
+    <div class="product__info-wrapper grid__item my_main_product_right_content">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container{% if section.settings.enable_sticky_info %} product__info-container--sticky{% endif %} my_main_product_info">
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -534,12 +559,10 @@
               <product-form class="product-form" style="{% if settings.enable_catalog_mode %}display: none;{% endif %}">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                  <div class="product-form__buttons"
-                       style="{% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}display: flex;{% endif %}">
+                  <div class="product-form__buttons">
                     <button
                       type="submit"
                       name="add"
-                      style="{% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}flex: 50%;margin-right: 30px;{% endif %}"
                       class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %} my_main_product_add"
                     {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
@@ -549,11 +572,9 @@
                           {{ 'products.product.sold_out' | t }}
                         {%- endif -%}
                     </button>
-                    <div style="{% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}flex: 50%;{% endif %}">
-                      {%- if block.settings.show_dynamic_checkout -%}
-                        {{ form | payment_button }}
-                      {%- endif -%}
-                    </div>
+                    {%- if block.settings.show_dynamic_checkout -%}
+                      {{ form | payment_button }}
+                    {%- endif -%}
                   </div>
                 {%- endform -%}
         
