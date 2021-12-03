@@ -243,7 +243,7 @@
           "sticky_footer": false,
           "accordions_options_on_mobile": true,
           "border_footer": true,
-          "border_color": "#000000",
+          "border_color": "#cf1f1f",
           "background_color": "#f2f2f2",
           "heading_color": "#000000",
           "text_color": "#797979",

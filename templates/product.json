@@ -101,16 +101,16 @@
     "163850249263e7519b": {
       "type": "featured-product-beautify",
       "blocks": {
+        "1638502492ebc98427-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
         "1638502492ebc98427-0": {
           "type": "text",
           "settings": {
             "text": "{{ section.settings.product.vendor }}",
             "text_style": "uppercase"
-          }
-        },
-        "1638502492ebc98427-1": {
-          "type": "title",
-          "settings": {
           }
         },
         "1638502492ebc98427-2": {
@@ -154,8 +154,8 @@
         }
       },
       "block_order": [
-        "1638502492ebc98427-0",
         "1638502492ebc98427-1",
+        "1638502492ebc98427-0",
         "1638502492ebc98427-2",
         "1638502492ebc98427-3",
         "1638502492ebc98427-4",
