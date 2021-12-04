@@ -62,16 +62,15 @@
           {%- endif -%} 
                
                <div class="slideshow_text_box_{{section.id}}  {{ block.settings.text_alignment }}"> 
-                 <h1 class="my_font_weight_default
+                 <h1 class="my_font_weight_default my_slideshow_beautify_heading_margin
                             {% if section.settings.text_size == 'medium' %}my_slideshow_beautify_heading_text_size_medium
                             {% elsif section.settings.text_size == 'large' %}my_slideshow_beautify_heading_text_size_large
                             {% endif %}" style="padding:0;margin:0;color:white;">{{block.settings.slider_heading_text}}</h1>
-                 <p class="my_slideshow_beautify_sub_margin
-                           {% if section.settings.text_size == 'medium' %}my_slideshow_beautify_sub_text_size_medium
+                 <p class="{% if section.settings.text_size == 'medium' %}my_slideshow_beautify_sub_text_size_medium
                            {% elsif section.settings.text_size == 'large' %}my_slideshow_beautify_sub_text_size_large
                            {% endif %}" style="color:white;">{{block.settings.slider_sub_text}}</p>
                  
-                 <div class="button {% if block.settings.slider_button_text != blank and block.settings.slider_button_link != blank %} banner__buttons--multiple{% endif %}" >
+                 <div class="button {% if block.settings.slider_button_text != blank and block.settings.slider_button_link != blank %} banner__buttons--multiple{% endif %} my_slideshow_beautify_btn_margin" >
                    {%- if block.settings.slider_button_text != blank -%}
                    <a{% if block.settings.slider_button_link != blank %} href="{{ block.settings.slider_button_link }}"{% endif %} class="button  button--primary"{% if block.settings.slider_button_link == blank %} aria-disabled="true"{% endif %}>{{ block.settings.slider_button_text | escape }}</a>
                    {%- endif -%}
@@ -127,8 +126,12 @@
     font-size: 23px;
   }
   
-  .my_slideshow_beautify_sub_margin {
-    margin: 15px 0 30px;
+  .my_slideshow_beautify_heading_margin {
+    margin-bottom: 15px;
+  }
+  
+  .my_slideshow_beautify_btn_margin {
+    margin-top: 30px;
   }
   
   @media screen and (max-width: 750px) {
