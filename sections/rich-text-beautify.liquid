@@ -5,14 +5,14 @@
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
-  .my_rich_text_beautify_title {
+/*   .my_rich_text_beautify_title {
     font-size: 28px;
   }
   
   .my_rich_text_beautify_content {
     font-size: 18px;
     margin: 40px 0 0;
-  }
+  } */
   
   @media screen and (max-width: 750px) {
     .my_rich_text_beautify_title {
@@ -27,7 +27,16 @@
 </style>
 
 {% style %}
-
+  {%- if block.settings.heading_size == 'small' -%}
+    .my_rich_text_beautify_title {font-size: 22x;} 
+    .my_rich_text_beautify_content {font-size: 13x;margin: 40px 0 0;}
+  {%- elsif block.settings.heading_size == 'medium' -%}
+    .my_rich_text_beautify_title {font-size: 26px;} 
+    .my_rich_text_beautify_content {font-size: 15px;margin: 40px 0 0;}
+  {%- elsif block.settings.heading_size == 'large' -%}
+    .my_rich_text_beautify_title {font-size: 36px;} 
+    .my_rich_text_beautify_content {font-size: 17px;margin: 40px 0 0;}
+  {%- endif -%}
 {% endstyle %}
 
 <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
@@ -121,19 +130,19 @@
           "id": "heading_size",
           "options": [
             {
-              "value": "h2",
+              "value": "small",
               "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__1.label"
             },
             {
-              "value": "h1",
+              "value": "medium",
               "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__2.label"
             },
             {
-              "value": "h0",
+              "value": "large",
               "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__3.label"
             }
           ],
-          "default": "h1",
+          "default": "medium",
           "label": "t:sections.rich-text.blocks.heading.settings.heading_size.label"
         }
       ]
