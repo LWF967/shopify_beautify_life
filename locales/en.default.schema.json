@@ -241,6 +241,14 @@
         }
       }
     },
+    "margintip": {
+      "name": "Margintip",
+      "settings": {
+        "margin_tip": {
+          "label": "Keep it blank if you not use it"
+        }
+      }
+    },
     "apps": {
       "name": "Apps",
       "settings": {
