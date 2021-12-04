@@ -178,6 +178,10 @@
     align-items: start;
   }
   
+  .my_footer_button_padding {
+    padding: 0 10px;
+  }
+  
   @media screen and (min-width: 769px) and (max-width: 1024px) {
 	.my_footer_item_width_1 {
       flex: 0 0 50%;
@@ -404,7 +408,7 @@
                               {{ 'newsletter.label' | t }}
                             </label>
                             <button type="submit" class="field__button my_footer_button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                              <span>SUBSCRIBE</span>
+                              <span class="my_footer_button_padding">SUBSCRIBE</span>
                             </button>
                           </div>
                           {%- if form.errors -%}
@@ -444,7 +448,7 @@
                               {{ 'newsletter.label' | t }}
                             </label>
                             <button type="submit" class="field__button my_footer_button my_footer_newsletter_design_2" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-							  <span>SUBSCRIBE</span>
+							  <span class="my_footer_button_padding">SUBSCRIBE</span>
                             </button>
                           </div>
                           {%- if form.errors -%}
@@ -484,7 +488,7 @@
                               {{ 'newsletter.label' | t }}
                             </label>
                             <button type="submit" class="field__button my_footer_button my_footer_newsletter_design_3" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-							  <span>SUBSCRIBE</span>
+							  <span class="my_footer_button_padding">SUBSCRIBE</span>
                             </button>
                           </div>
                           {%- if form.errors -%}
@@ -524,7 +528,7 @@
                               {{ 'newsletter.label' | t }}
                             </label>
                             <button type="submit" class="field__button my_footer_button my_footer_newsletter_design_4_button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                              <span>SUBSCRIBE</span>
+                              <span class="my_footer_button_padding">SUBSCRIBE</span>
                             </button>
                           </div>
                           {%- if form.errors -%}
