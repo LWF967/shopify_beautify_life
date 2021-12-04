@@ -26,6 +26,10 @@
   }
 </style>
 
+{% style %}
+
+{% endstyle %}
+
 <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
   <div class="{%- if section.settings.content_full_width -%} rich_full_content  {%- else -%} rich-text__blocks  {%- endif -%}">
     {%- for block in section.blocks -%}
@@ -47,18 +51,11 @@
   </div>
 </div>
 
-
 <style>
-
-
   .rich_full_content{
-  
-  
-  width:100%;
-  word-break:break-all;  
-  
+    width: 100%;
+    word-break: break-all;  
   }
-
 </style>
 {% schema %}
 {
