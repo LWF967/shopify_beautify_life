@@ -173,6 +173,11 @@
     transition: all .5s;
   }
   
+  .my_footer_p_align p {
+    display: flex; 
+    align-items: start;
+  }
+  
   @media screen and (min-width: 769px) and (max-width: 1024px) {
 	.my_footer_item_width_1 {
       flex: 0 0 50%;
@@ -341,7 +346,7 @@
                       </div>
                     </h2>
                   {%- endif -%}
-                  <div class="footer-block__details-content rte my_footer_p">
+                  <div class="footer-block__details-content rte my_footer_p my_footer_p_align">
                         {%- if block.settings.image != blank -%}
                           {%- assign image_size = block.settings.custom_logo_width | append: 'x' -%}
                            <img
