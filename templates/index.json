@@ -520,7 +520,7 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": false,
-        "content_full_width": true,
+        "content_full_width": false,
         "heading_size": "large"
       }
     },
