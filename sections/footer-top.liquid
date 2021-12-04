@@ -178,8 +178,11 @@
     align-items: start;
   }
   
-  .my_footer_button_padding {
-    padding: 0 10px;
+  .my_footer_button_style {
+    padding: 0 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   
   @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -250,7 +253,7 @@
 .my_footer_input:hover { box-shadow: none; }
 .my_field__input { box-shadow: none; }
 .my_field__input:focus { outline: transparent; box-shadow: none; }
-.my_footer_button { color: {{ section.settings.newsletter_button_text_color }} !important; background: {{ section.settings.newsletter_button_color }}; height: 40px; margin: 2px 2px 1px 0; width: auto; }
+.my_footer_button { color: {{ section.settings.newsletter_button_text_color }} !important; background: {{ section.settings.newsletter_button_color }}; height: 40px; margin: 2px 2px 1px 0; width: auto; max-width: 50%; }
 .my_footer_displaynone { display: none; }
 {%- if section.settings.accordions_options_on_mobile -%}
   @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -408,7 +411,7 @@
                               {{ 'newsletter.label' | t }}
                             </label>
                             <button type="submit" class="field__button my_footer_button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                              <span class="my_footer_button_padding">SUBSCRIBE</span>
+                              <span class="my_footer_button_style">SUBSCRIBE</span>
                             </button>
                           </div>
                           {%- if form.errors -%}
@@ -448,7 +451,7 @@
                               {{ 'newsletter.label' | t }}
                             </label>
                             <button type="submit" class="field__button my_footer_button my_footer_newsletter_design_2" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-							  <span class="my_footer_button_padding">SUBSCRIBE</span>
+							  <span class="my_footer_button_style">SUBSCRIBE</span>
                             </button>
                           </div>
                           {%- if form.errors -%}
@@ -488,7 +491,7 @@
                               {{ 'newsletter.label' | t }}
                             </label>
                             <button type="submit" class="field__button my_footer_button my_footer_newsletter_design_3" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-							  <span class="my_footer_button_padding">SUBSCRIBE</span>
+							  <span class="my_footer_button_style">SUBSCRIBE</span>
                             </button>
                           </div>
                           {%- if form.errors -%}
@@ -528,7 +531,7 @@
                               {{ 'newsletter.label' | t }}
                             </label>
                             <button type="submit" class="field__button my_footer_button my_footer_newsletter_design_4_button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                              <span class="my_footer_button_padding">SUBSCRIBE</span>
+                              <span class="my_footer_button_style">SUBSCRIBE</span>
                             </button>
                           </div>
                           {%- if form.errors -%}
