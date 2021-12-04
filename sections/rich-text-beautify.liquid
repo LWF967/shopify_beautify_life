@@ -4,24 +4,15 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 
-
-{%- style -%}
+<style>
   .my_rich_text_beautify_title {
     font-size: 28px;
   }
-  
+
   .my_rich_text_beautify_content {
     font-size: 18px;
     margin: 40px 0 0;
   }
-
-    .my_rich_text_beautify_title {font-size: 36px;} 
-    .my_rich_text_beautify_content {font-size: 17px;margin: 40px 0 0;}
-
-{%- endstyle -%}
-
-<style>
-
   
   @media screen and (max-width: 750px) {
     .my_rich_text_beautify_title {
@@ -34,6 +25,19 @@
     }
   }
 </style>
+
+{%- style -%}
+  {%- if section.blocks.settings.heading_size == 'small' -%}
+    .my_rich_text_beautify_title {font-size: 22px;} 
+    .my_rich_text_beautify_content {font-size: 13px;margin: 40px 0 0;}
+  {%- elsif section.blocks.settings.heading_size == 'medium' -%}
+    .my_rich_text_beautify_title {font-size: 26px;} 
+    .my_rich_text_beautify_content {font-size: 15px;margin: 40px 0 0;}
+  {%- elsif section.blocks.settings.heading_size == 'large' -%}
+    .my_rich_text_beautify_title {font-size: 36px;} 
+    .my_rich_text_beautify_content {font-size: 17px;margin: 40px 0 0;}
+  {%- endif -%}
+{%- endstyle -%}
 
 <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
   <div class="{%- if section.settings.content_full_width -%} rich_full_content  {%- else -%} rich-text__blocks  {%- endif -%}" style="text-align: center;">
