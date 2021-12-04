@@ -230,6 +230,15 @@
               "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
               "container_width": "5"
             }
+          },
+          "a636ca00-a8bd-4acb-9982-ed16ec69ae4b": {
+            "type": "text2",
+            "settings": {
+              "newsletter_design": "1",
+              "heading": "Newsletter",
+              "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
+              "container_width": "7"
+            }
           }
         },
         "block_order": [
@@ -237,7 +246,8 @@
           "813890e0-2367-4953-b348-378adfebbfdf",
           "95516c21-286f-4cb0-804a-b154a39441dd",
           "e8613138-c13d-4acc-bcbd-7b5c43c0b596",
-          "0e03fff2-5f48-4c58-ab83-ce5e1b70e304"
+          "0e03fff2-5f48-4c58-ab83-ce5e1b70e304",
+          "a636ca00-a8bd-4acb-9982-ed16ec69ae4b"
         ],
         "settings": {
           "sticky_footer": false,
