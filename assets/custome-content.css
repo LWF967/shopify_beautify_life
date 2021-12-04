@@ -233,6 +233,23 @@ font-weight:600;
     .collection-grid-item__title {
       padding: 0 15px; } }
 
+.my_collection_grid_item_title {
+  color: var(--color-overlay-title-text) !important;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  padding: 0 0px;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transition: 0.1s cubic-bezier(0.44, 0.13, 0.48, 0.87);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  hyphens: auto; }
+  @media only screen and (min-width: 750px) {
+    .my_collection_grid_item_title {
+      padding: 0 0px; } }
+
 .collection-grid-item__link {
   position: absolute;
   top: 0;
