@@ -1,5 +1,3 @@
-
-
 <div id="SlideshowWrapper-{{ section.id }}" class="feature-artworks  feature_box_{{section.id}} feature-artworks-{{section.id}}"   
      data-section-id="{{ section.id }}" data-section-type="slideshow-section"  data-slider>
 
@@ -63,18 +61,20 @@
                <div style="max-height:400px"> {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}  </div>
           {%- endif -%} 
                
-             <div  class="slideshow_text_box_{{section.id}}  {{ block.settings.text_alignment }}"> 
-               <h1 style="padding:0;margin:0;color:white;">{{block.settings.slider_heading_text}}</h1>
-               <p style="color:white;">{{block.settings.slider_sub_text}}</p>
-            <div class="button {% if block.settings.slider_button_text != blank and block.settings.slider_button_link != blank %} banner__buttons--multiple{% endif %}" 
-                >
-              {%- if block.settings.slider_button_text != blank -%}
-                <a{% if block.settings.slider_button_link != blank %} href="{{ block.settings.slider_button_link }}"{% endif %} class="button  button--primary"{% if block.settings.slider_button_link == blank %} aria-disabled="true"{% endif %}>{{ block.settings.slider_button_text | escape }}</a>
-              {%- endif -%}
-           
-            </div>
-               
-              </div>
+               <div class="slideshow_text_box_{{section.id}}  {{ block.settings.text_alignment }}"> 
+                 <h1 class="{% if section.settings.text_size == 'medium' %}my_slideshow_beautify_heading_text_size_medium
+                            {% elsif section.settings.text_size == 'large' %}my_slideshow_beautify_heading_text_size_large
+                            {% endif %}" style="padding:0;margin:0;color:white;">{{block.settings.slider_heading_text}}</h1>
+                 <p class="{% if section.settings.text_size == 'medium' %}my_slideshow_beautify_sub_text_size_medium
+                           {% elsif section.settings.text_size == 'large' %}my_slideshow_beautify_sub_text_size_large
+                           {% endif %}" style="color:white;">{{block.settings.slider_sub_text}}</p>
+                 
+                 <div class="button {% if block.settings.slider_button_text != blank and block.settings.slider_button_link != blank %} banner__buttons--multiple{% endif %}" >
+                   {%- if block.settings.slider_button_text != blank -%}
+                   <a{% if block.settings.slider_button_link != blank %} href="{{ block.settings.slider_button_link }}"{% endif %} class="button  button--primary"{% if block.settings.slider_button_link == blank %} aria-disabled="true"{% endif %}>{{ block.settings.slider_button_text | escape }}</a>
+                   {%- endif -%}
+                 </div>
+               </div>
 				
          	</div> 
         {% endcase %}
@@ -109,6 +109,22 @@
 
 
 <style>
+  .my_slideshow_beautify_heading_text_size_medium {
+    font-size: 35px;
+  }
+
+  .my_slideshow_beautify_sub_text_size_medium {
+    font-size: 19px;
+  }
+
+  .my_slideshow_beautify_heading_text_size_large {
+    font-size: 65px;
+  }
+
+  .my_slideshow_beautify_sub_text_size_large {
+    font-size: 23px;
+  }
+  
   .slideshow_text_box_{{section.id}}{
   	text-align: center;
     position: absolute;
