@@ -223,7 +223,7 @@ font-weight:600;
   padding-bottom: 100%;
   margin-bottom: 0px; }
   @media only screen and (min-width: 750px) {
-    .collection-grid-item {
+    .my_collection_grid_item {
       margin-bottom: 0px; } }
 /* lzx change prev_btn, next_btn in Carousel align center --end-- */
 
