@@ -33,13 +33,31 @@
   }
 
   @media screen and (max-width: 750px) {
-    .my_rich_text_beautify_title {
-      font-size: 24px;
+    .my_rich_text_beautify_title_small {
+      font-size: 17px;
     }
-    
-    .my_rich_text_beautify_content {
+
+    .my_rich_text_beautify_content_small {
+      font-size: 12px;
+      margin: 40px 0 0;
+    }
+
+    .my_rich_text_beautify_title_medium {
+      font-size: 20px;
+    }
+
+    .my_rich_text_beautify_content_medium {
       font-size: 14px;
-      margin: 30px 0 0;
+      margin: 40px 0 0;
+    }
+
+    .my_rich_text_beautify_title_large {
+      font-size: 28px;
+    }
+
+    .my_rich_text_beautify_content_large  {
+      font-size: 16px;
+      margin: 40px 0 0;
     }
   }
 </style>
@@ -53,9 +71,9 @@
                      {% elsif section.settings.heading_size == 'medium' %}my_rich_text_beautify_title_medium
                      {% elsif section.settings.heading_size == 'large' %}my_rich_text_beautify_title_large
                      {% endif %}
-                     my_font_weight_default my_rich_text_beautify_title" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+                     my_font_weight_default" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {%- when 'text' -%}
-          <div class="rich-text__text rte my_rich_text_beautify_content
+          <div class="rich-text__text rte
                      {% if section.settings.heading_size == 'small' %}my_rich_text_beautify_content_small
                      {% elsif section.settings.heading_size == 'medium' %}my_rich_text_beautify_content_medium
                      {% elsif section.settings.heading_size == 'large' %}my_rich_text_beautify_content_large
