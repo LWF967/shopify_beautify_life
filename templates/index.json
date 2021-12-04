@@ -503,8 +503,7 @@
         "163835233452da67c2-0": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "medium"
+            "heading": "Talk about your brand"
           }
         },
         "163835233452da67c2-1": {
@@ -521,11 +520,13 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true,
-        "content_full_width": true
+        "content_full_width": true,
+        "heading_size": "large"
       }
     },
     "16377430666a59b35c": {
       "type": "custom-content",
+      "disabled": true,
       "blocks": {
         "1637743066e4c71293-0": {
           "type": "text",
