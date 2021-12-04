@@ -6,6 +6,14 @@
 
 
 {%- style -%}
+  .my_rich_text_beautify_title {
+    font-size: 28px;
+  }
+  
+  .my_rich_text_beautify_content {
+    font-size: 18px;
+    margin: 40px 0 0;
+  }
   {%- if block.settings.heading_size == 'small' -%}
     .my_rich_text_beautify_title {font-size: 22px;} 
     .my_rich_text_beautify_content {font-size: 13px;margin: 40px 0 0;}
@@ -19,14 +27,7 @@
 {%- endstyle -%}
 
 <style>
-  .my_rich_text_beautify_title {
-    font-size: 28px;
-  }
-  
-  .my_rich_text_beautify_content {
-    font-size: 18px;
-    margin: 40px 0 0;
-  }
+
   
   @media screen and (max-width: 750px) {
     .my_rich_text_beautify_title {
