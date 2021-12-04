@@ -40,7 +40,7 @@
 {%- endstyle -%}
 
 <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
-  <div class="{%- if section.settings.content_full_width -%} rich_full_content  {%- else -%} rich-text__blocks  {%- endif -%}">
+  <div class="{%- if section.settings.content_full_width -%} rich_full_content  {%- else -%} rich-text__blocks  {%- endif -%}" style="text-align: center;">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'heading' -%}
