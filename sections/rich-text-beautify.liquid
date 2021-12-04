@@ -53,9 +53,9 @@
                      {% elsif section.settings.heading_size == 'medium' %}my_rich_text_beautify_title_medium
                      {% elsif section.settings.heading_size == 'large' %}my_rich_text_beautify_title_large
                      {% endif %}
-                     my_font_weight_default" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+                     my_font_weight_default my_rich_text_beautify_title" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {%- when 'text' -%}
-          <div class="rich-text__text rte
+          <div class="rich-text__text rte my_rich_text_beautify_content
                      {% if section.settings.heading_size == 'small' %}my_rich_text_beautify_content_small
                      {% elsif section.settings.heading_size == 'medium' %}my_rich_text_beautify_content_medium
                      {% elsif section.settings.heading_size == 'large' %}my_rich_text_beautify_content_large
