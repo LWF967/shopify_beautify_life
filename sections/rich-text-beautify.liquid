@@ -5,15 +5,33 @@
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
-/*   .my_rich_text_beautify_title {
-    font-size: 28px;
+  .my_rich_text_beautify_title_small {
+    font-size: 22px;
   }
 
-  .my_rich_text_beautify_content {
-    font-size: 18px;
+  .my_rich_text_beautify_content_small {
+    font-size: 13px;
     margin: 40px 0 0;
-  } */
-  
+  }
+
+  .my_rich_text_beautify_title_medium {
+    font-size: 26px;
+  }
+
+  .my_rich_text_beautify_content_medium {
+    font-size: 15px;
+    margin: 40px 0 0;
+  }
+
+  .my_rich_text_beautify_title_large {
+    font-size: 36px;
+  }
+
+  .my_rich_text_beautify_content_large  {
+    font-size: 17px;
+    margin: 40px 0 0;
+  }
+
   @media screen and (max-width: 750px) {
     .my_rich_text_beautify_title {
       font-size: 24px;
@@ -26,30 +44,22 @@
   }
 </style>
 
-{%- style -%}
-  {%- if section.blocks.settings.heading_size == 'small' -%}
-    .my_rich_text_beautify_title {font-size: 22px;} 
-    .my_rich_text_beautify_content {font-size: 13px;margin: 40px 0 0;}
-  {%- elsif section.blocks.settings.heading_size == 'medium' -%}
-    .my_rich_text_beautify_title {font-size: 26px;} 
-    .my_rich_text_beautify_content {font-size: 15px;margin: 40px 0 0;}
-  {%- elsif section.blocks.settings.heading_size == 'large' -%}
-    .my_rich_text_beautify_title {font-size: 36px;} 
-    .my_rich_text_beautify_content {font-size: 17px;margin: 40px 0 0;}
-  {%- else -%}
-	.my_rich_text_beautify_title {font-size: 26px;} 
-    .my_rich_text_beautify_content {font-size: 15px;margin: 40px 0 0;}
-  {%- endif -%}
-{%- endstyle -%}
-
 <div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}">
   <div class="{%- if section.settings.content_full_width -%} rich_full_content  {%- else -%} rich-text__blocks  {%- endif -%}" style="text-align: center;">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'heading' -%}
-          <h2 class="my_rich_text_beautify_title my_font_weight_default" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
+          <h2 class="{% if block.settings.heading_size == 'small' %}my_rich_text_beautify_title_small
+                     {% elsif block.settings.heading_size == 'medium' %}my_rich_text_beautify_title_medium
+                     {% elsif block.settings.heading_size == 'large' %}my_rich_text_beautify_title_large
+                     {% endif %}
+                     my_font_weight_default" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {%- when 'text' -%}
-          <div class="rich-text__text rte my_rich_text_beautify_content" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          <div class="rich-text__text rte
+                     {% if block.settings.heading_size == 'small' %}my_rich_text_beautify_content_small
+                     {% elsif block.settings.heading_size == 'medium' %}my_rich_text_beautify_content_medium
+                     {% elsif block.settings.heading_size == 'large' %}my_rich_text_beautify_content_large
+                     {% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'button' -%}
           <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} 
              class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
