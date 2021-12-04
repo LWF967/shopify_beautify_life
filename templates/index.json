@@ -60,7 +60,7 @@
       ],
       "settings": {
         "se_height": "adapt_f",
-        "text_size": "large",
+        "text_size": "medium",
         "overlay": true,
         "loop": true,
         "auto_play": false,
