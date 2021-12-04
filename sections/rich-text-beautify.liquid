@@ -49,16 +49,16 @@
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'heading' -%}
-          <h2 class="{% if block.settings.heading_size == 'small' %}my_rich_text_beautify_title_small
-                     {% elsif block.settings.heading_size == 'medium' %}my_rich_text_beautify_title_medium
-                     {% elsif block.settings.heading_size == 'large' %}my_rich_text_beautify_title_large
+          <h2 class="{% if section.settings.heading_size == 'small' %}my_rich_text_beautify_title_small
+                     {% elsif section.settings.heading_size == 'medium' %}my_rich_text_beautify_title_medium
+                     {% elsif section.settings.heading_size == 'large' %}my_rich_text_beautify_title_large
                      {% endif %}
                      my_font_weight_default" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {%- when 'text' -%}
           <div class="rich-text__text rte
-                     {% if block.settings.heading_size == 'small' %}my_rich_text_beautify_content_small
-                     {% elsif block.settings.heading_size == 'medium' %}my_rich_text_beautify_content_medium
-                     {% elsif block.settings.heading_size == 'large' %}my_rich_text_beautify_content_large
+                     {% if section.settings.heading_size == 'small' %}my_rich_text_beautify_content_small
+                     {% elsif section.settings.heading_size == 'medium' %}my_rich_text_beautify_content_medium
+                     {% elsif section.settings.heading_size == 'large' %}my_rich_text_beautify_content_large
                      {% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'button' -%}
           <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} 
@@ -124,6 +124,26 @@
       "id": "content_full_width",
       "default": true,
       "label": "Wide display"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "small",
+          "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__1.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__2.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__3.label"
+        }
+      ],
+      "default": "medium",
+      "label": "t:sections.rich-text.blocks.heading.settings.heading_size.label"
     }
   ],
   "blocks": [
@@ -137,26 +157,6 @@
           "id": "heading",
           "default": "Talk about your brand",
           "label": "t:sections.rich-text.blocks.heading.settings.heading.label"
-        },
-        {
-          "type": "select",
-          "id": "heading_size",
-          "options": [
-            {
-              "value": "small",
-              "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__1.label"
-            },
-            {
-              "value": "medium",
-              "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__2.label"
-            },
-            {
-              "value": "large",
-              "label": "t:sections.rich-text.blocks.heading.settings.heading_size.options__3.label"
-            }
-          ],
-          "default": "medium",
-          "label": "t:sections.rich-text.blocks.heading.settings.heading_size.label"
         }
       ]
     },
