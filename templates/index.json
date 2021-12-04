@@ -509,7 +509,7 @@
         "163835233452da67c2-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.1111111111111111111111111111111111111111111111111111111111111111111<\/p>"
           }
         }
       },
@@ -519,7 +519,7 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "full_width": true,
+        "full_width": false,
         "content_full_width": true,
         "heading_size": "medium"
       }
