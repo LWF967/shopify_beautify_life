@@ -10,17 +10,30 @@
     - show_image_outline: {Boolean} Show card outline. Default: true (optional)
     - show_rating: {Boolean} Show the product rating. Default: false
 
+	Class
+	media--hover-effect :  hover-->magnifier 
+	test_list: hover-->overlay
+
     Usage:
     {% render 'product-card', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .my_product_card_beautify_title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+</style>
+
 <div class="card-wrapper">
   <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
     <span class="visually-hidden">{{ product_card_product.title | escape }}</span>
 
-    <div class="card card--product  {% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}" tabindex="-1">
+<!--     <div class="card card--product  {% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}" tabindex="-1"> -->
+      
+    <div class="card card--product  {% if product_card_product.featured_media == nil %} card--outline card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}" tabindex="-1">
       <div class="card__inner">
         {%- if product_card_product.featured_media -%}
           {%- liquid
@@ -31,8 +44,8 @@
             endif
           -%}
 
-          <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>{% assign image_ratio1 = section.settings.image_ratio1 %}
-            <div class="media media--transparent  {% if use_eq_height == true%}   {{image_ratio1}}   {% endif %}  media--{{ media_size }} media--hover-effect "
+          <div  {% if add_image_padding %} class="card__media-full-spacer"{% endif %}>{% assign image_ratio1 = section.settings.image_ratio1 %}
+            <div class="media media--transparent  {% if use_eq_height == true%}   {{image_ratio1}}   {% endif %}  media--{{ media_size }}  list_test"
                        {% if use_eq_height == true%}  
                        	 
                         {% case image_ratio1 %}
@@ -101,7 +114,48 @@
             </div>
           </div>
         {%- else -%}
-          <div class="card__content"><h2 class="card__text h3">{{ product_card_product.title }}</h2></div>
+        
+        
+        
+         <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>{% assign image_ratio1 = section.settings.image_ratio1 %}
+            <div class="media media--transparent  {% if use_eq_height == true%}   {{image_ratio1}}   {% endif %}  media--{{ media_size }}  "
+                       {% if use_eq_height == true%}  
+                       	 
+                        {% case image_ratio1 %}
+                          {% when  'ratio_cus1' %}
+
+                          style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_1.aspect_ratio | times: 100 }}%;"
+
+                          {% when  'ratio_cus2' %}
+
+                          style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_2.aspect_ratio | times: 100 }}%;"
+
+                          {% when  'ratio_cus3' %}
+
+                          style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_3.aspect_ratio | times: 100 }}%;"                                                                                        
+
+                          {% when  'ratio_cus4' %}
+
+                          style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_4.aspect_ratio | times: 100 }}%;"
+                
+                         {% endcase %}
+                          
+                       {% endif %}
+            
+                        
+              {% if media_size == 'adapt' and use_eq_height != true %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
+  
+            >
+              
+              
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              
+            </div>
+          </div>
+        	
+        
+        	
+<!--           <div class="card__content"><h2 class="card__text h3">{{ product_card_product.title }}</h2></div> -->
         {%- endif -%}
 
         <div class="card__badge">
@@ -122,7 +176,12 @@
         {%- endif -%}
 
         {%- if product_card_product.featured_media -%}
-          <span class="card-information__text h5">
+          <span class="card-information__text h5 my_product_card_beautify_title">
+            {{ product_card_product.title | escape }}
+          </span>
+        {%- else -%}
+        
+          <span class="card-information__text h5 my_product_card_beautify_title">
             {{ product_card_product.title | escape }}
           </span>
         {%- endif -%}
@@ -168,5 +227,29 @@
 .media.media--transparent.ratio_nt  {padding-bottom: 127.7777778%}
 .media.media--transparent.ratio2_3  {padding-bottom: 150%;}
 
+  
+  
+	.card-wrapper:hover .list_test::before{
+  
+  z-index:1;
+  }
+  
+
+  
+  .list_test:focus {
+    opacity: 1; }
+  
+  
+  .list_test::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-image-overlay);
+  opacity: var(--opacity-image-overlay); }   
+   
+   
 
 </style>
