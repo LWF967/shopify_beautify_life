@@ -506,7 +506,7 @@
         "show_page_Dot": true,
         "page_dot_style": "style_1",
         "page_dot_color": "light",
-        "slideshow_beautify_margin_top": "88",
+        "slideshow_beautify_margin_top": "",
         "slideshow_beautify_margin_bottom": ""
       }
     },
