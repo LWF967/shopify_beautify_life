@@ -265,7 +265,7 @@
         "swipe_on_mobile": false,
         "use_eq_height": true,
         "image_ratio1": "ratio_nt",
-        "image_ratio": "portrait",
+        "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
         "show_image_outline": true,
