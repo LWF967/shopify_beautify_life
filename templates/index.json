@@ -883,8 +883,8 @@
         "text_size": "medium",
         "text_alignment": "center center",
         "show_overlay": true,
-        "autorotate": false,
-        "autorotate_speed": 3
+        "autorotate": true,
+        "autorotate_speed": 5
       }
     }
   },
