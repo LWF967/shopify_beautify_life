@@ -53,6 +53,12 @@
   }
 }
 
+@media screen and (min-width: 750px) {
+  .multicolumn .button .my_text_column_with_images_button_margin_top {
+    margin-top: 2rem;
+  }
+}
+
 .multicolumn-list {
   margin-bottom: 0;
   padding: 0;
