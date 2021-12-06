@@ -1083,7 +1083,7 @@ theme.Sections.prototype = Object.assign({}, theme.Sections.prototype, {
     var container = document.querySelector(
       '[data-section-id="' + evt.detail.sectionId + '"]'
     );
-
+	console.log(container,'这是改变的内容');
     if (container) {
       this._createInstance(container);
     }
