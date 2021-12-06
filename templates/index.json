@@ -854,6 +854,7 @@
         "1638757016d16b82ad-0": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
             "alignment": "center center",
             "slide_title": "Image slide",
             "subheading": "Tell your brand's story through images",
@@ -864,6 +865,7 @@
         "1638757016d16b82ad-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
             "alignment": "center center",
             "slide_title": "Image slide",
             "subheading": "Tell your brand's story through images",
