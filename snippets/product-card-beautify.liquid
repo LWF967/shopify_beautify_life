@@ -10,6 +10,10 @@
     - show_image_outline: {Boolean} Show card outline. Default: true (optional)
     - show_rating: {Boolean} Show the product rating. Default: false
 
+	Class
+	media--hover-effect :  hover-->magnifier 
+	test_list: hover-->overlay
+
     Usage:
     {% render 'product-card', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
@@ -223,10 +227,28 @@
 .media.media--transparent.ratio_nt  {padding-bottom: 127.7777778%}
 .media.media--transparent.ratio2_3  {padding-bottom: 150%;}
 
-  .list_text:hover{
+  
+  
+  .media>img:hover .media>img::before{
+  
+   content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-image-overlay);
+  opacity: var(--opacity-image-overlay); 
+  
+  }
+  
+  .list_test:hover .list_test::before{
   
   z-index:1;
   }
+  
+  .list_test:focus {
+    opacity: 1; }
   
   
   .list_test::before {
