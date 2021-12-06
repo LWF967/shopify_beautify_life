@@ -1,7 +1,7 @@
 
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 
-<div class="page-width"
+<div class="page-width spaced-section"
      style="{%- if section.settings.banner_beautify_margin_top != blank -%}margin-top: {{ section.settings.banner_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.banner_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.banner_beautify_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
     <div class="section-header text-center my_section_margin_default">
