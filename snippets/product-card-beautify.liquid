@@ -20,9 +20,7 @@
   <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
     <span class="visually-hidden">{{ product_card_product.title | escape }}</span>
 
-<!--     <div class="card card--product  {% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}" tabindex="-1"> -->
-      
-    <div class="card card--product  {% if product_card_product.featured_media == nil %} card--outline card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}" tabindex="-1">
+    <div class="card card--product  {% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}" tabindex="-1">
       <div class="card__inner">
         {%- if product_card_product.featured_media -%}
           {%- liquid
@@ -34,7 +32,7 @@
           -%}
 
           <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>{% assign image_ratio1 = section.settings.image_ratio1 %}
-            <div class="media media--transparent  {% if use_eq_height == true%}   {{image_ratio1}}   {% endif %}  media--{{ media_size }}  "
+            <div class="media media--transparent  {% if use_eq_height == true%}   {{image_ratio1}}   {% endif %}  media--{{ media_size }} media--hover-effect "
                        {% if use_eq_height == true%}  
                        	 
                         {% case image_ratio1 %}
@@ -103,48 +101,7 @@
             </div>
           </div>
         {%- else -%}
-        
-        
-        
-         <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>{% assign image_ratio1 = section.settings.image_ratio1 %}
-            <div class="media media--transparent  {% if use_eq_height == true%}   {{image_ratio1}}   {% endif %}  media--{{ media_size }}  "
-                       {% if use_eq_height == true%}  
-                       	 
-                        {% case image_ratio1 %}
-                          {% when  'ratio_cus1' %}
-
-                          style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_1.aspect_ratio | times: 100 }}%;"
-
-                          {% when  'ratio_cus2' %}
-
-                          style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_2.aspect_ratio | times: 100 }}%;"
-
-                          {% when  'ratio_cus3' %}
-
-                          style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_3.aspect_ratio | times: 100 }}%;"                                                                                        
-
-                          {% when  'ratio_cus4' %}
-
-                          style="padding-bottom: {{ 1 | divided_by: settings.ratio_custom_4.aspect_ratio | times: 100 }}%;"
-                
-                         {% endcase %}
-                          
-                       {% endif %}
-            
-                        
-              {% if media_size == 'adapt' and use_eq_height != true %} style="padding-bottom: {{ 1 | divided_by: featured_media_aspect_ratio | times: 100 }}%;"{% endif %}
-  
-            >
-              
-              
-              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-              
-            </div>
-          </div>
-        	
-        
-        	
-<!--           <div class="card__content"><h2 class="card__text h3">{{ product_card_product.title }}</h2></div> -->
+          <div class="card__content"><h2 class="card__text h3">{{ product_card_product.title }}</h2></div>
         {%- endif -%}
 
         <div class="card__badge">
@@ -166,11 +123,6 @@
 
         {%- if product_card_product.featured_media -%}
           <span class="card-information__text h5">
-            {{ product_card_product.title | escape }}
-          </span>
-        {%- else -%}
-        
-        <span class="card-information__text h5">
             {{ product_card_product.title | escape }}
           </span>
         {%- endif -%}
