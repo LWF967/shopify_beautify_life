@@ -1,5 +1,8 @@
-.blog:not(.background-secondary) {
+/* .blog:not(.background-secondary) {
   margin: 5rem 0;
+} */
+.blog:not(.background-secondary) {
+  margin: 5.5rem 0 0;
 }
 
 .blog.background-secondary {
