@@ -12,7 +12,7 @@
     {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image,show_title: section.settings.show_title,show_short_content: section.settings.show_short_content, %}
 {% endcomment %}
 
-<article class="article-card{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
+<article class="article-card my_article_card_beautify_flex_wrap{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
   <a href="{{ article.url }}" class="article-content motion-reduce">
     {%- if show_image == true and article.image -%}
       <div class="article-card__image-wrapper">
@@ -94,10 +94,12 @@
 
 <style>
 
+  .my_article_card_beautify_flex_wrap {
+    flex-wrap: wrap;
+  }
 
   .article-card__footer{
-  
-  text-align:center;
+    text-align:center;
   }
   
   
