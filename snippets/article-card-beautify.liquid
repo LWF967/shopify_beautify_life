@@ -13,9 +13,9 @@
 {% endcomment %}
 
 <article class="article-card my_article_card_beautify_flex_wrap{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
-  <a href="{{ article.url }}" class="article-content motion-reduce">
+  <a href="{{ article.url }}" class="article-content motion-reduce card-wrapper">
     {%- if show_image == true and article.image -%}
-      <div class="article-card__image-wrapper">
+      <div class="article-card__image-wrapper list_test">
         <div class="article-card__image media media--landscape {{section.settings.image_ratio1}} my_article_card_beautify_background">
           <img
             srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
@@ -112,7 +112,6 @@
   .list_test:focus {
     opacity: 1; 
   }
-
 
   .list_test::before {
     content: '';
