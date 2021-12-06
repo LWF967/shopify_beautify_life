@@ -1062,6 +1062,9 @@ theme.Sections.prototype = Object.assign({}, theme.Sections.prototype, {
     var id = container.getAttribute('data-section-id');
     var type = container.getAttribute('data-section-type');
 
+	console.log(id,'这是取出来内容的sectionid');
+    console.log(type,'这是取出来内容的sectiontype');
+	
     constructor = constructor || this.constructors[type];
 
     if (typeof constructor === 'undefined') {
