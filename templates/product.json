@@ -77,7 +77,7 @@
       "settings": {
         "enable_sticky_info": true,
         "show_share_buttons": true,
-        "main_product_mediasize": "Medium",
+        "main_product_mediasize": "Large",
         "hide_variants": true,
         "enable_video_looping": true,
         "main_product_margin_top": "",
