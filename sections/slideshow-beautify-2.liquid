@@ -9,7 +9,7 @@
 {%- assign image = section.blocks.settings.image %}
 
 
-<section class=" nt_se_{{sid}} se_height_{{ se_height }}"  style="overflow: hidden;margin:0;padding:0;{%- if section.settings.slideshow_beautify_margin_top != blank -%}margin-top: {{ section.settings.slideshow_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.slideshow_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.slideshow_beautify_margin_bottom }}px;{%- endif -%}">
+<section class="spaced-section nt_se_{{sid}} se_height_{{ se_height }}"  style="overflow: hidden;margin:0;padding:0;{%- if section.settings.slideshow_beautify_margin_top != blank -%}margin-top: {{ section.settings.slideshow_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.slideshow_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.slideshow_beautify_margin_bottom }}px;{%- endif -%}">
 
 {% render 'slideshow-beautify',section:section,color_primary:color_primary %}
 
