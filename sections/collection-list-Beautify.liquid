@@ -1,4 +1,6 @@
-<div class="page-width spaced-section" style="{%- if section.settings.collection_list_beautify_margin_top != blank -%}margin-top: {{ section.settings.collection_list_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.collection_list_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.collection_list_beautify_margin_bottom }}px;{%- endif -%}">
+
+
+<div class="page-width" style="{%- if section.settings.collection_list_beautify_margin_top != blank -%}margin-top: {{ section.settings.collection_list_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.collection_list_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.collection_list_beautify_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
     <div class="section-header text-center my_section_margin_default">
       <h1 class="my_font_size_heading_default my_font_weight_default my_between_title_and_text_margin">{{ section.settings.title | escape }}</h1>
@@ -85,23 +87,6 @@
   } */
 
 </style>
-
-<script>
-
-  
-//   var list_text = document.getElementById('collection_list_pog-{{section.id}}');
-                                          
-//   var itemLength = document.getElementById('list_beautify_render-{{section.id}}').length;
-//                                           console.log(list_text,'++++',itemLength);
-
-//  console.log( {{ section.settings.show_page_Dot}});
-//   if({{section.settings.show_page_Dot}}){
-  
-//   console.log(222)
-//   }
-// //   console.log(222)
-
-</script>
 
 
 
