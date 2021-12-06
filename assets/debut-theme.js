@@ -5406,7 +5406,7 @@ document.addEventListener('DOMContentLoaded', function() {
   sections.register('slideshow-section', theme.SlideshowSection);
   sections.register('video-section', theme.VideoSection);
 
-  theme.customerTemplates.init();
+
 
   // Theme-specific selectors to make tables scrollable
   var tableSelectors = '.rte table,' + '.custom__item-inner--html table';
