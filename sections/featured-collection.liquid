@@ -17,7 +17,7 @@
   endif
 -%}
 
-<div class="collection page-width spaced-section{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}" style="{%- if section.settings.featured_colection_margin_top != blank -%}margin-top: {{ section.settings.featured_colection_margin_top }}px; {%- endif -%}{%- if section.settings.featured_colection_margin_bottom != blank -%}margin-bottom:{{ section.settings.featured_colection_margin_bottom }}px;{%- endif -%}">
+<div class="collection page-width{% if section.settings.swipe_on_mobile == true and section.settings.collection.all_products_count > 2 and section.settings.products_to_show > 2 %} page-width-desktop{% endif %}" style="{%- if section.settings.featured_colection_margin_top != blank -%}margin-top: {{ section.settings.featured_colection_margin_top }}px; {%- endif -%}{%- if section.settings.featured_colection_margin_bottom != blank -%}margin-bottom:{{ section.settings.featured_colection_margin_bottom }}px;{%- endif -%}">
   <div class="title-wrapper-with-link{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %} my_clear_margin my_featured_collection_title my_section_margin_default my_featured_collection_mobile_align">
     <h2 class="title text-center{% if section.settings.title == blank %} title--no-heading{% endif %} my_font_weight_default my_between_title_and_text_margin my_font_size_heading_default">{{ section.settings.title | escape }}</h2>
     <p class="text-center my_font_size_content_default my_clear_margin"> {{ section.settings.sub_title | escape }} </p>
@@ -139,9 +139,7 @@
       flex-grow: 1;
       flex-shrink: 0;
     }
-  }
-  
-  @media screen and (max-width: 990px) {
+    
     .my_featured_collection_mobile_align {
       align-items: center;
     }
@@ -153,6 +151,7 @@
 {
   "name": "t:sections.featured-collection.name",
   "tag": "section",
+  "class": "spaced-section",
   "settings": [
     {
       "type": "text",
