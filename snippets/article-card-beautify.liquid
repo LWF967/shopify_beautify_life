@@ -39,7 +39,7 @@
   <div class="article-card__info">
     <header class="article-card__header">
       {%- if show_title -%}
-      <h2 class="article-card__title my_featured_blog_title_font_size my_font_weight_default my_clear_margin" id="Article-{{ article.id }}">
+      <h2 class="article-card__title my_featured_blog_title_font_size my_font_weight_default my_featured_blog_title_clear_margin" id="Article-{{ article.id }}">
         {{ article.title | escape }}
       </h2>
       {%- endif -%}
@@ -104,6 +104,9 @@
     text-align:center;
   }
   
+  .article-card__header .my_featured_blog_title_clear_margin {
+    margin: 0 0;
+  }
   
   .my_article_card_beautify_card_wrapper:hover .my_article_card_beautify_card_item::before{
     z-index:1;
