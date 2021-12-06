@@ -105,6 +105,27 @@
   }
   
   
+  .card-wrapper:hover .list_test::before{
+    z-index:1;
+  }
+
+  .list_test:focus {
+    opacity: 1; 
+  }
+
+
+  .list_test::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-image-overlay);
+    opacity: var(--opacity-image-overlay); 
+  }   
+  
+  
   .media.media--landscape.ratio8_5  {padding-bottom: 62.5%}
   .media.media--landscape.ratio3_2  {padding-bottom: 66.66%}
   .media.media--landscape.ratio2_1  {padding-bottom: 50%}
