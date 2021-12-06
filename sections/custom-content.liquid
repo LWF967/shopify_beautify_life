@@ -8,6 +8,10 @@
     font-size: 28px;
     margin-bottom: 18px;
   }
+  
+  .my_custom_content_clear_margin_bottom {
+    margin-bottom: 0px;
+  }
 </style>
 
 <div class="page-width" style="{%- if section.settings.custom_content_margin_top != blank -%}margin-top: {{ section.settings.custom_content_margin_top }}px; {%- endif -%}{%- if section.settings.custom_content_margin_bottom != blank -%}margin-bottom:{{ section.settings.custom_content_margin_bottom }}px;{%- endif -%}">
@@ -17,7 +21,7 @@
     </div>
   {% endif %}
 
-  <div class="custom-content">
+  <div class="custom-content my_custom_content_clear_margin_bottom">
     {%- assign block_width_mobile = '' -%}
 
     {% for block in section.blocks %}
