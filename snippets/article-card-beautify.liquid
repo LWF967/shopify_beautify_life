@@ -35,62 +35,61 @@
         </div>
       </div>
     {%- endif -%}
-
-    <div class="article-card__info">
-      <header class="article-card__header">
-        {%- if show_title -%}
-        <h2 class="article-card__title my_featured_blog_title_font_size my_font_weight_default" id="Article-{{ article.id }}">
-          {{ article.title | escape }}
-        </h2>
-        {%- endif -%}
-        {%- if show_date -%}
-          <span class="circle-divider caption-with-letter-spacing">
-            {{- article.published_at | time_tag: format: 'month_year' -}}
-          </span>
-        {%- endif -%}
-        {%- if show_author -%}
-          <span class="caption-with-letter-spacing">{{ article.author -}}</span>
-        {%- endif -%}
-      </header>
-      {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-        <p class="article-card__excerpt rte-width"  
-          {%- if show_short_content -%}
-          style="    
-          text-overflow: ellipsis;
-          white-space: break-spaces;
-          overflow: hidden;
-          max-height: 200px;"
-          {%- endif -%} 
-           >   
-          
-          
-          {%- if article.excerpt.size > 0 and show_short_content -%}
-            {{ article.excerpt | strip_html | truncate: 30 }}
-          {%- elsif article.excerpt.size > 0 and show_short_content == false -%}
-            {{ article.excerpt | strip_html }}
-          {%- elsif article.excerpt.size <= 0 and show_short_content -%}
-          	{{ article.content | strip_html | truncate: 60 }}
-          {%- elsif article.excerpt.size <= 0 and show_short_content == false -%}
-      		{{ article.content | strip_html  }}
-          {%- endif -%}
-          
-  
-
-   
-        </p>
-      {%- endif -%}
-      <div class="article-card__footer">
-        {%- if article.comments_count > 0 and blog.comments_enabled? -%}
-          <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
-        {%- endif -%}
-          {%- if show_short_content -%}
-          <div class="button my_button_font_size_default my_font_weight_default">
-           READ MORE
-          </div>
-         {%- endif -%} 
-      </div>
-    </div>
   </a>
+  <div class="article-card__info">
+    <header class="article-card__header">
+      {%- if show_title -%}
+      <h2 class="article-card__title my_featured_blog_title_font_size my_font_weight_default" id="Article-{{ article.id }}">
+        {{ article.title | escape }}
+      </h2>
+      {%- endif -%}
+      {%- if show_date -%}
+      <span class="circle-divider caption-with-letter-spacing">
+        {{- article.published_at | time_tag: format: 'month_year' -}}
+      </span>
+      {%- endif -%}
+      {%- if show_author -%}
+      <span class="caption-with-letter-spacing">{{ article.author -}}</span>
+      {%- endif -%}
+    </header>
+    {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
+    <p class="article-card__excerpt rte-width"  
+       {%- if show_short_content -%}
+       style="    
+              text-overflow: ellipsis;
+              white-space: break-spaces;
+              overflow: hidden;
+              max-height: 200px;"
+       {%- endif -%} 
+       >   
+
+
+      {%- if article.excerpt.size > 0 and show_short_content -%}
+      {{ article.excerpt | strip_html | truncate: 30 }}
+      {%- elsif article.excerpt.size > 0 and show_short_content == false -%}
+      {{ article.excerpt | strip_html }}
+      {%- elsif article.excerpt.size <= 0 and show_short_content -%}
+      {{ article.content | strip_html | truncate: 60 }}
+      {%- elsif article.excerpt.size <= 0 and show_short_content == false -%}
+      {{ article.content | strip_html  }}
+      {%- endif -%}
+
+
+
+
+    </p>
+    {%- endif -%}
+    <div class="article-card__footer">
+      {%- if article.comments_count > 0 and blog.comments_enabled? -%}
+      <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
+      {%- endif -%}
+      {%- if show_short_content -%}
+      <div class="button my_button_font_size_default my_font_weight_default">
+        READ MORE
+      </div>
+      {%- endif -%} 
+    </div>
+  </div>
 </article>
 
 <style>
