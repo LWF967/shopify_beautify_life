@@ -254,6 +254,12 @@ html.no-js .no-js-hidden {
 .spaced-section {
   margin-top: 5rem;
 }
+  
+@media screen and (max-width: 990px) {
+  .spaced-section {
+    margin-top: 3.5rem;
+  }
+}
 
 /* .spaced-section:last-child {
   margin-bottom: 5rem;
