@@ -1,82 +1,5 @@
 {
   "sections": {
-    "16340032987fd8fd82": {
-      "type": "slideshow-beautify-2",
-      "blocks": {
-        "4e0a0993-6e2f-4ec2-94f4-a6dc94886799": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
-            "image_alignment": "bottom right",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "Image with text overlay",
-            "slider_sub_text": "Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.",
-            "slider_button_text": "title namenghnjh",
-            "slider_button_link": ""
-          }
-        },
-        "d98aad89-0e6d-4788-95a8-22f4eb463027": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "image_alignment": "middle_center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
-        },
-        "cf520457-a362-42f7-a043-5e28a8ffc74d": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "image_alignment": "center center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
-        },
-        "56d064e8-838e-4960-8f92-bec0c45e56d9": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
-            "image_alignment": "middle_center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "4e0a0993-6e2f-4ec2-94f4-a6dc94886799",
-        "d98aad89-0e6d-4788-95a8-22f4eb463027",
-        "cf520457-a362-42f7-a043-5e28a8ffc74d",
-        "56d064e8-838e-4960-8f92-bec0c45e56d9"
-      ],
-      "settings": {
-        "se_height": "adapt_f",
-        "text_size": "medium",
-        "overlay": true,
-        "loop": true,
-        "auto_play": false,
-        "auto_time": 3,
-        "show_button": true,
-        "show_button_visible": "only_hover",
-        "show_button_style": "style2",
-        "show_button_color": "transparent",
-        "show_button_hover_color": "#ea0606",
-        "show_page_Dot": true,
-        "page_dot_style": "style_1",
-        "page_dot_color": "light",
-        "slideshow_beautify_margin_top": "88",
-        "slideshow_beautify_margin_bottom": ""
-      }
-    },
     "16366965204a8cb316": {
       "type": "slideshow-beautify-2",
       "blocks": {
@@ -139,391 +62,6 @@
         "page_dot_color": "dark",
         "slideshow_beautify_margin_top": "",
         "slideshow_beautify_margin_bottom": ""
-      }
-    },
-    "16366804518eb2e044": {
-      "type": "collection-list-Beautify",
-      "blocks": {
-        "16366804518eb2e044-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "pitaya",
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "title": "New supply th"
-          }
-        },
-        "16366804518eb2e044-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "title": "New supply this week"
-          }
-        },
-        "16366804518eb2e044-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "New supply this week"
-          }
-        },
-        "108496b1-c9fd-4cb3-b41d-beed0ae9d48e": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "pitaya",
-            "title": "New supply this week"
-          }
-        },
-        "e92aa04e-60ce-4d2f-aee7-93c5f3d9aa16": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "New supply this week"
-          }
-        }
-      },
-      "block_order": [
-        "16366804518eb2e044-0",
-        "16366804518eb2e044-1",
-        "16366804518eb2e044-2",
-        "108496b1-c9fd-4cb3-b41d-beed0ae9d48e",
-        "e92aa04e-60ce-4d2f-aee7-93c5f3d9aa16"
-      ],
-      "settings": {
-        "title": "NEW RELEASES",
-        "sub_title": "New supply this week",
-        "grid": 6,
-        "show_view_all": true,
-        "show_page_Dot": true,
-        "page_dot_style": "style_1",
-        "page_dot_color": "dark",
-        "show_button": true,
-        "show_button_visible": "always",
-        "show_button_style": "style2",
-        "show_button_color": "transparent",
-        "show_button_hover_color": "#b73131",
-        "collection_list_beautify_margin_top": "",
-        "collection_list_beautify_margin_bottom": ""
-      }
-    },
-    "1635836350c3b72b9b": {
-      "type": "collection-list-Beautify",
-      "blocks": {
-        "1635836350c3b72b9b-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "frontpage",
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "title": "Collection"
-          }
-        },
-        "1635836350c3b72b9b-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "pitaya",
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "title": "ttt1"
-          }
-        },
-        "1635836350c3b72b9b-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "New supply this week"
-          }
-        },
-        "b47fcf84-0bd5-4408-8a75-0e35ec59dd74": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "New supply this week"
-          }
-        },
-        "27647972-99f3-4c89-8813-30902cb683b2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "New supply this week"
-          }
-        },
-        "c260e375-4204-46a5-92c3-908126eb528f": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "New supply this week"
-          }
-        },
-        "00f2f9a8-e301-4b06-976e-4bab8436e34c": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "New supply this week"
-          }
-        },
-        "3664c841-28d4-4335-9ab7-8dcc37753f00": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "title": "New supply this week"
-          }
-        }
-      },
-      "block_order": [
-        "1635836350c3b72b9b-0",
-        "1635836350c3b72b9b-1",
-        "1635836350c3b72b9b-2",
-        "b47fcf84-0bd5-4408-8a75-0e35ec59dd74",
-        "27647972-99f3-4c89-8813-30902cb683b2",
-        "c260e375-4204-46a5-92c3-908126eb528f",
-        "00f2f9a8-e301-4b06-976e-4bab8436e34c",
-        "3664c841-28d4-4335-9ab7-8dcc37753f00"
-      ],
-      "settings": {
-        "title": "NEW RELEASES",
-        "sub_title": "New supply this week",
-        "grid": 4,
-        "show_view_all": false,
-        "show_page_Dot": false,
-        "page_dot_style": "style_1",
-        "page_dot_color": "dark",
-        "show_button": true,
-        "show_button_visible": "always",
-        "show_button_style": "style1",
-        "show_button_color": "white",
-        "show_button_hover_color": "#ffffff",
-        "collection_list_beautify_margin_top": "",
-        "collection_list_beautify_margin_bottom": ""
-      }
-    },
-    "163454604067313d0f": {
-      "type": "daily-deal-of-the-day",
-      "settings": {
-        "product": "text4",
-        "log_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-        "heading_text": "Daily Deal Of The Day",
-        "heading_font_size": 40,
-        "color_top": "#b13e3e",
-        "countdown_time": "2021\/12\/9 18:30:00",
-        "time_font_size": 52,
-        "background_color": "#c46666",
-        "background_product_color": "#ffffff",
-        "shop_now_url": "shopify:\/\/products\/text6",
-        "detail_url": "shopify:\/\/products\/strawberry",
-        "daily_deal_of_the_day_margin_top": "",
-        "daily_deal_of_the_day_margin_bottom": ""
-      }
-    },
-    "1635832448db75c5e7": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "TRENDING",
-        "sub_title": "Popular this week",
-        "collection": "frontpage",
-        "products_to_show": 8,
-        "grid": 6,
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "use_eq_height": true,
-        "image_ratio1": "ratio_nt",
-        "image_ratio": "portrait",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "featured_colection_margin_top": "",
-        "featured_colection_margin_bottom": ""
-      }
-    },
-    "163608389212513e57": {
-      "type": "banner-Beautify",
-      "blocks": {
-        "163608389212513e57-0": {
-          "type": "img_top",
-          "settings": {
-            "image1": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
-            "image2": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "image3": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "header_top1": "Head1asd",
-            "header_top2": "Head2asd",
-            "header_top3": "Head3",
-            "url1": "",
-            "url2": "",
-            "url3": "",
-            "open_link": "_blank"
-          }
-        },
-        "163608389212513e57-1": {
-          "type": "img_top",
-          "settings": {
-            "header_top1": "Head1",
-            "header_top2": "Head2",
-            "header_top3": "Head3",
-            "url1": "",
-            "url2": "",
-            "url3": "",
-            "open_link": "_blank"
-          }
-        },
-        "156f1a45-4a68-4f2f-9ae1-8593da6509d7": {
-          "type": "banner_third",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-            "header_top": "Head",
-            "url": "",
-            "color": "#ffffff",
-            "w": 140,
-            "h": 3,
-            "open_link": "_blank"
-          }
-        },
-        "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a": {
-          "type": "banner_third",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
-            "header_top": "Head",
-            "url": "",
-            "color": "#ffffff",
-            "w": 140,
-            "h": 3,
-            "open_link": "_blank"
-          }
-        },
-        "9cffad93-dfc5-429d-883f-55d063daab64": {
-          "type": "banner_third",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "header_top": "Head",
-            "url": "",
-            "color": "#ffffff",
-            "w": 140,
-            "h": 3,
-            "open_link": "_blank"
-          }
-        }
-      },
-      "block_order": [
-        "163608389212513e57-0",
-        "163608389212513e57-1",
-        "156f1a45-4a68-4f2f-9ae1-8593da6509d7",
-        "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a",
-        "9cffad93-dfc5-429d-883f-55d063daab64"
-      ],
-      "settings": {
-        "title": "BANNERasdas",
-        "sub_title": "Popular this week",
-        "font_top": 36,
-        "color_top": "#ffffff",
-        "grid": 2,
-        "show_view_all": false,
-        "show_page_Dot": false,
-        "page_dot_style": "style_1",
-        "page_dot_color": "dark",
-        "banner_beautify_margin_top": "",
-        "banner_beautify_margin_bottom": ""
-      }
-    },
-    "1635497923083b4abb": {
-      "type": "contact-form",
-      "settings": {
-        "heading": "Contact form",
-        "contact_form_margin_top": "",
-        "contact_form_margin_bottom": ""
-      }
-    },
-    "1635996418e080b5d8": {
-      "type": "Text-columns-with-images",
-      "blocks": {
-        "1635996418e080b5d8-0": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "Button",
-            "button_link": "shopify:\/\/collections\/frontpage"
-          }
-        },
-        "1635996418e080b5d8-1": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "Button",
-            "button_link": ""
-          }
-        },
-        "1635996418e080b5d8-2": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "Button",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1635996418e080b5d8-0",
-        "1635996418e080b5d8-1",
-        "1635996418e080b5d8-2"
-      ],
-      "settings": {
-        "Text_columns_with_images_heading": "Text column with images",
-        "Text_columns_with_images_Text_alignment": "Left",
-        "text_columns_with_images_margin_top": "",
-        "text_columns_with_images_margin_bottom": ""
-      }
-    },
-    "1636093631994b741b": {
-      "type": "featured-blog",
-      "settings": {
-        "heading": "Blog posts",
-        "head_text": "The most exciting news",
-        "blog": "新闻",
-        "post_limit": 3,
-        "show_image": true,
-        "show_title": true,
-        "show_short_content": true,
-        "show_date": true,
-        "show_author": true,
-        "soft_background": false,
-        "show_view_all": true,
-        "featured_blog_margin_top": "",
-        "featured_blog_margin_bottom": ""
-      }
-    },
-    "163835233482a21c91": {
-      "type": "rich-text-beautify",
-      "blocks": {
-        "163835233452da67c2-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand"
-          }
-        },
-        "163835233452da67c2-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.1111111111111111111111111111111111111111111111111111111111111111111<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "163835233452da67c2-0",
-        "163835233452da67c2-1"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": false,
-        "content_full_width": false,
-        "heading_size": "large",
-        "rich_text_beautify_margin_top": "",
-        "rich_text_beautify_margin_bottom": ""
       }
     },
     "16377430666a59b35c": {
@@ -625,51 +163,222 @@
         "custom_content_margin_bottom": ""
       }
     },
-    "163816995034a6b1f9": {
-      "type": "map",
-      "settings": {
-        "heading": "Our store",
-        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
-        "map_address": "301 Front St W, Toronto",
-        "button_text": "Get directions",
-        "show_pin": true,
-        "background_image_position": "center center",
-        "map_margin_top": "",
-        "map_margin_bottom": ""
-      }
-    },
-    "163817972763d6e808": {
-      "type": "newsletter",
+    "1635836350c3b72b9b": {
+      "type": "collection-list-Beautify",
       "blocks": {
-        "1638179727dc4b7d9c-0": {
-          "type": "heading",
+        "1635836350c3b72b9b-0": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "SUBSCRIBE TO OUR NEWSLETTER"
+            "collection": "frontpage",
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "title": "Collection"
           }
         },
-        "1638179727dc4b7d9c-1": {
-          "type": "paragraph",
+        "1635836350c3b72b9b-1": {
+          "type": "featured_collection",
           "settings": {
-            "text": "<p>Promotions, new products and sales. Directly to your inbox<\/p>"
+            "collection": "pitaya",
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "title": "ttt1"
           }
         },
-        "1638179727dc4b7d9c-2": {
-          "type": "email_form",
+        "1635836350c3b72b9b-2": {
+          "type": "featured_collection",
           "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "b47fcf84-0bd5-4408-8a75-0e35ec59dd74": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "27647972-99f3-4c89-8813-30902cb683b2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "c260e375-4204-46a5-92c3-908126eb528f": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "00f2f9a8-e301-4b06-976e-4bab8436e34c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "3664c841-28d4-4335-9ab7-8dcc37753f00": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "title": "New supply this week"
           }
         }
       },
       "block_order": [
-        "1638179727dc4b7d9c-0",
-        "1638179727dc4b7d9c-1",
-        "1638179727dc4b7d9c-2"
+        "1635836350c3b72b9b-0",
+        "1635836350c3b72b9b-1",
+        "1635836350c3b72b9b-2",
+        "b47fcf84-0bd5-4408-8a75-0e35ec59dd74",
+        "27647972-99f3-4c89-8813-30902cb683b2",
+        "c260e375-4204-46a5-92c3-908126eb528f",
+        "00f2f9a8-e301-4b06-976e-4bab8436e34c",
+        "3664c841-28d4-4335-9ab7-8dcc37753f00"
       ],
       "settings": {
-        "newsletter_bk_color": "#f3f3f3",
-        "newsletter_bk_box": true,
-        "full_width": true,
-        "newsletter_margin_top": "",
-        "newsletter_margin_bottom": ""
+        "title": "NEW RELEASES",
+        "sub_title": "New supply this week",
+        "grid": 4,
+        "show_view_all": false,
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "#ffffff",
+        "collection_list_beautify_margin_top": "",
+        "collection_list_beautify_margin_bottom": ""
+      }
+    },
+    "1635832448db75c5e7": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "TRENDING",
+        "sub_title": "Popular this week",
+        "collection": "frontpage",
+        "products_to_show": 8,
+        "grid": 6,
+        "show_view_all": false,
+        "swipe_on_mobile": false,
+        "use_eq_height": true,
+        "image_ratio1": "ratio_nt",
+        "image_ratio": "portrait",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "featured_colection_margin_top": "",
+        "featured_colection_margin_bottom": ""
+      }
+    },
+    "1636093631994b741b": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "head_text": "The most exciting news",
+        "blog": "新闻",
+        "post_limit": 3,
+        "show_image": true,
+        "show_title": true,
+        "show_short_content": true,
+        "show_date": true,
+        "show_author": true,
+        "soft_background": false,
+        "show_view_all": true,
+        "featured_blog_margin_top": "",
+        "featured_blog_margin_bottom": ""
+      }
+    },
+    "163608389212513e57": {
+      "type": "banner-Beautify",
+      "blocks": {
+        "163608389212513e57-0": {
+          "type": "img_top",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
+            "image2": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "image3": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "header_top1": "Head1asd",
+            "header_top2": "Head2asd",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "163608389212513e57-1": {
+          "type": "img_top",
+          "settings": {
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "156f1a45-4a68-4f2f-9ae1-8593da6509d7": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#ffffff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
+        "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#ffffff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
+        "9cffad93-dfc5-429d-883f-55d063daab64": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#ffffff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        }
+      },
+      "block_order": [
+        "163608389212513e57-0",
+        "163608389212513e57-1",
+        "156f1a45-4a68-4f2f-9ae1-8593da6509d7",
+        "c5c3710c-1923-4fcf-a6ae-7b9ecd0f1d2a",
+        "9cffad93-dfc5-429d-883f-55d063daab64"
+      ],
+      "settings": {
+        "title": "BANNERasdas",
+        "sub_title": "Popular this week",
+        "font_top": 36,
+        "color_top": "#ffffff",
+        "grid": 2,
+        "show_view_all": false,
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "banner_beautify_margin_top": "",
+        "banner_beautify_margin_bottom": ""
       }
     },
     "1638178308a7590918": {
@@ -722,6 +431,83 @@
         "section_height": "medium",
         "gallery_margin_top": "",
         "gallery_margin_bottom": ""
+      }
+    },
+    "16340032987fd8fd82": {
+      "type": "slideshow-beautify-2",
+      "blocks": {
+        "4e0a0993-6e2f-4ec2-94f4-a6dc94886799": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
+            "image_alignment": "bottom right",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "Image with text overlay",
+            "slider_sub_text": "Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.",
+            "slider_button_text": "title namenghnjh",
+            "slider_button_link": ""
+          }
+        },
+        "d98aad89-0e6d-4788-95a8-22f4eb463027": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "image_alignment": "middle_center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "cf520457-a362-42f7-a043-5e28a8ffc74d": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "56d064e8-838e-4960-8f92-bec0c45e56d9": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
+            "image_alignment": "middle_center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "4e0a0993-6e2f-4ec2-94f4-a6dc94886799",
+        "d98aad89-0e6d-4788-95a8-22f4eb463027",
+        "cf520457-a362-42f7-a043-5e28a8ffc74d",
+        "56d064e8-838e-4960-8f92-bec0c45e56d9"
+      ],
+      "settings": {
+        "se_height": "adapt_f",
+        "text_size": "medium",
+        "overlay": true,
+        "loop": true,
+        "auto_play": false,
+        "auto_time": 3,
+        "show_button": true,
+        "show_button_visible": "only_hover",
+        "show_button_style": "style2",
+        "show_button_color": "transparent",
+        "show_button_hover_color": "#ea0606",
+        "show_page_Dot": true,
+        "page_dot_style": "style_1",
+        "page_dot_color": "light",
+        "slideshow_beautify_margin_top": "88",
+        "slideshow_beautify_margin_bottom": ""
       }
     },
     "1638254471485c2b3b": {
@@ -804,6 +590,129 @@
         "image_with_text_overlay_margin_bottom": ""
       }
     },
+    "1638771673477d03f0": {
+      "type": "featured-product-beautify",
+      "blocks": {
+        "16387716731c66ad07-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "16387716731c66ad07-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "16387716731c66ad07-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "16387716731c66ad07-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "16387716731c66ad07-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "16387716731c66ad07-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "16387716731c66ad07-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "16387716731c66ad07-7": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "16387716731c66ad07-8": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16387716731c66ad07-0",
+        "16387716731c66ad07-1",
+        "16387716731c66ad07-2",
+        "16387716731c66ad07-3",
+        "16387716731c66ad07-4",
+        "16387716731c66ad07-5",
+        "16387716731c66ad07-6",
+        "16387716731c66ad07-7",
+        "16387716731c66ad07-8"
+      ],
+      "settings": {
+        "product": "",
+        "secondary_background": false,
+        "show_share_buttons": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "featured_product_beautify_margin_top": "",
+        "featured_product_beautify_margin_bottom": ""
+      }
+    },
+    "163454604067313d0f": {
+      "type": "daily-deal-of-the-day",
+      "settings": {
+        "product": "text4",
+        "log_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+        "heading_text": "Daily Deal Of The Day",
+        "heading_font_size": 40,
+        "color_top": "#b13e3e",
+        "countdown_time": "2021\/12\/9 18:30:00",
+        "time_font_size": 52,
+        "background_color": "#c46666",
+        "background_product_color": "#ffffff",
+        "shop_now_url": "shopify:\/\/products\/text6",
+        "detail_url": "shopify:\/\/products\/strawberry",
+        "daily_deal_of_the_day_margin_top": "",
+        "daily_deal_of_the_day_margin_bottom": ""
+      }
+    },
+    "163835233482a21c91": {
+      "type": "rich-text-beautify",
+      "blocks": {
+        "163835233452da67c2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand"
+          }
+        },
+        "163835233452da67c2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.1111111111111111111111111111111111111111111111111111111111111111111<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "163835233452da67c2-0",
+        "163835233452da67c2-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "content_full_width": false,
+        "heading_size": "large",
+        "rich_text_beautify_margin_top": "",
+        "rich_text_beautify_margin_bottom": ""
+      }
+    },
     "1638254788d0160884": {
       "type": "testimonials",
       "blocks": {
@@ -847,26 +756,134 @@
         "testimonials_margin_top": "",
         "testimonials_margin_bottom": ""
       }
+    },
+    "1635996418e080b5d8": {
+      "type": "Text-columns-with-images",
+      "blocks": {
+        "1635996418e080b5d8-0": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": "shopify:\/\/collections\/frontpage"
+          }
+        },
+        "1635996418e080b5d8-1": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        },
+        "1635996418e080b5d8-2": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1635996418e080b5d8-0",
+        "1635996418e080b5d8-1",
+        "1635996418e080b5d8-2"
+      ],
+      "settings": {
+        "Text_columns_with_images_heading": "Text column with images",
+        "Text_columns_with_images_Text_alignment": "Left",
+        "text_columns_with_images_margin_top": "",
+        "text_columns_with_images_margin_bottom": ""
+      }
+    },
+    "1638771575eb761fd8": {
+      "type": "video-beautify",
+      "settings": {
+        "image_alignment": "center center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "show_overlay": false,
+        "style": "image_with_play",
+        "video_height": "medium",
+        "heading": "Video",
+        "text_size": "medium",
+        "video_beautify_margin_top": "",
+        "video_beautify_margin_bottom": ""
+      }
+    },
+    "163817972763d6e808": {
+      "type": "newsletter",
+      "blocks": {
+        "1638179727dc4b7d9c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "SUBSCRIBE TO OUR NEWSLETTER"
+          }
+        },
+        "1638179727dc4b7d9c-1": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Promotions, new products and sales. Directly to your inbox<\/p>"
+          }
+        },
+        "1638179727dc4b7d9c-2": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1638179727dc4b7d9c-0",
+        "1638179727dc4b7d9c-1",
+        "1638179727dc4b7d9c-2"
+      ],
+      "settings": {
+        "newsletter_bk_color": "#f3f3f3",
+        "newsletter_bk_box": true,
+        "full_width": true,
+        "newsletter_margin_top": "",
+        "newsletter_margin_bottom": ""
+      }
+    },
+    "163816995034a6b1f9": {
+      "type": "map",
+      "settings": {
+        "heading": "Our store",
+        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
+        "map_address": "301 Front St W, Toronto",
+        "button_text": "Get directions",
+        "show_pin": true,
+        "background_image_position": "center center",
+        "map_margin_top": "",
+        "map_margin_bottom": ""
+      }
     }
   },
   "order": [
-    "16340032987fd8fd82",
     "16366965204a8cb316",
-    "16366804518eb2e044",
-    "1635836350c3b72b9b",
-    "163454604067313d0f",
-    "1635832448db75c5e7",
-    "163608389212513e57",
-    "1635497923083b4abb",
-    "1635996418e080b5d8",
-    "1636093631994b741b",
-    "163835233482a21c91",
     "16377430666a59b35c",
-    "163816995034a6b1f9",
-    "163817972763d6e808",
+    "1635836350c3b72b9b",
+    "1635832448db75c5e7",
+    "1636093631994b741b",
+    "163608389212513e57",
     "1638178308a7590918",
+    "16340032987fd8fd82",
     "1638254471485c2b3b",
     "1638344641035ba32e",
-    "1638254788d0160884"
+    "1638771673477d03f0",
+    "163454604067313d0f",
+    "163835233482a21c91",
+    "1638254788d0160884",
+    "1635996418e080b5d8",
+    "1638771575eb761fd8",
+    "163817972763d6e808",
+    "163816995034a6b1f9"
   ]
 }
