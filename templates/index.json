@@ -847,6 +847,43 @@
         "testimonials_margin_top": "",
         "testimonials_margin_bottom": ""
       }
+    },
+    "1638757016adda27ea": {
+      "type": "slideshow-beatify-debut",
+      "blocks": {
+        "1638757016d16b82ad-0": {
+          "type": "image",
+          "settings": {
+            "alignment": "center center",
+            "slide_title": "Image slide",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1638757016d16b82ad-1": {
+          "type": "image",
+          "settings": {
+            "alignment": "center center",
+            "slide_title": "Image slide",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1638757016d16b82ad-0",
+        "1638757016d16b82ad-1"
+      ],
+      "settings": {
+        "slideshow_height": "adapt",
+        "text_size": "medium",
+        "text_alignment": "center center",
+        "show_overlay": true,
+        "autorotate": false,
+        "autorotate_speed": 5
+      }
     }
   },
   "order": [
@@ -867,6 +904,7 @@
     "1638178308a7590918",
     "1638254471485c2b3b",
     "1638344641035ba32e",
-    "1638254788d0160884"
+    "1638254788d0160884",
+    "1638757016adda27ea"
   ]
 }
