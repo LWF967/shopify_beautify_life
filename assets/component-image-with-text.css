@@ -2,6 +2,11 @@
 /*   margin-top: 5rem; */
   margin-top: 5.5rem;
 }
+@media screen and (max-width: 990px) {
+  .image-with-text {
+    margin-top: 3.5rem;
+  }
+}
 
 .image-with-text:not(.color-scheme-background-1) {
   margin-bottom: 5rem;
