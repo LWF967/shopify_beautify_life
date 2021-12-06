@@ -124,7 +124,7 @@
      style="{%- if section.settings.text_columns_with_images_margin_top != blank -%}margin-top: {{ section.settings.text_columns_with_images_margin_top }}px; {%- endif -%}{%- if section.settings.text_columns_with_images_margin_bottom != blank -%}margin-bottom:{{ section.settings.text_columns_with_images_margin_bottom }}px;{%- endif -%}">
   <div class="page-width">
     {% if section.settings.Text_columns_with_images_heading == blank %}
-      <h2 class="Text_columns_with_images_title my_font_weight_default my_clear_margin my_section_margin_default">Text columns with images</h2>
+      <h2 class="Text_columns_with_images_title my_font_weight_default my_clear_margin my_section_margin_default">Text columns with images{{ settings.button_style }}</h2>
     {% else %}
       <h2 class="Text_columns_with_images_title my_font_weight_default my_clear_margin my_section_margin_default">{{ section.settings.Text_columns_with_images_heading }}</h2>
     {% endif %}
