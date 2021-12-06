@@ -78,9 +78,15 @@
               {% endif %}
               
               <img
-           
+                srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
+                {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
+                {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
+                {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
+                {%- if article.image.src.width >= 1000 -%}{{ article.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+                {%- if article.image.src.width >= 1500 -%}{{ article.image.src | img_url: '1500x' }} 1500w,{%- endif -%}"
                 src="{{ product_card_product.featured_media | img_url: '533x' }}"
-                            alt="{{ product_card_product.featured_media.alt | escape }}"
+                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+				alt="{{ product_card_product.featured_media.alt | escape }}"
                 loading="lazy"
                 class="motion-reduce"
                 width="{{ product_card_product.featured_media.width }}"
@@ -89,9 +95,15 @@
 
               {%- if product_card_product.media[1] != nil and show_secondary_image -%}
                 <img
-                 
+                  srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
+                  {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
+                  {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
+                  {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
+                  {%- if article.image.src.width >= 1000 -%}{{ article.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+                  {%- if article.image.src.width >= 1500 -%}{{ article.image.src | img_url: '1500x' }} 1500w,{%- endif -%}"
                   src="{{ product_card_product.media[1] | img_url: '533x' }}"
-                               alt="{{ product_card_product.media[1].alt | escape }}"
+                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                  alt="{{ product_card_product.media[1].alt | escape }}"
                   loading="lazy"
                   class="motion-reduce"
                 width="{{ product_card_product.media[1].width }}"
