@@ -1121,6 +1121,44 @@ window.slate = window.slate || {};
 
 
 
+
+
+
+
+ /**
+     * 观察器实例的回调函数
+     * 每次DOM变动后调用，多个连续的DOM变化会合并为一次调用，在最后一次变动执行完毕后调用
+     * @param {array} changeArr - 变动数组，由Mutation Record实例组成
+     * @param {object} observer - 观察器实例
+     * */
+    let callback = function (changeArr, observer) {
+        console.log(changeArr);
+        console.log(observer);
+    };
+
+
+    // 新建观察器实例
+    let domObserver = new MutationObserver(callback);
+
+    /**
+     * observer启动监听
+     * @param {object} dom     - 指定要观察的dom元素
+     * @param {object} options - 指定要观察的变动类型（子节点变动、属性变动）
+     * */
+    domObserver.observe(oDiv, {
+        childList: true,                        // 观察子节点变化（新增、删除、更改）
+        attributes: false,                      // 观察属性变化
+        characterData: false,                   // 观察节点内容或节点文本变化
+
+        subtree: false,                         // 是否作用于该节点的所有后代节点
+        // attributeFilter: ['class', 'src'],   // 表示要观察的特定属性
+        attributeOldValue: false,               // 观察attributes变化时，是否记录变化前的属性值
+        characterDataOldValue: false,           // 观察characterData变化时，是否记录变化前的值
+    })
+
+
+
+
  var designMode = Shopify.designMode || false;
    if(designMode){
    
