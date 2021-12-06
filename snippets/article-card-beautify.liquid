@@ -79,7 +79,7 @@
 
     </p>
     {%- endif -%}
-    <div class="article-card__footer">
+    <div class="article-card__footer my_article_card_beautify_btn_align">
       {%- if article.comments_count > 0 and blog.comments_enabled? -%}
       <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
       {%- endif -%}
@@ -130,6 +130,10 @@
     background-color: var(--color-image-overlay);
     opacity: var(--opacity-image-overlay); 
   }   
+  
+  .my_article_card_beautify_btn_align {
+    text-align: left; 
+  }
   
   .my_article_card_beautify_btn {
     background: #fff;
