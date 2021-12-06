@@ -10,22 +10,11 @@
     - show_image_outline: {Boolean} Show card outline. Default: true (optional)
     - show_rating: {Boolean} Show the product rating. Default: false
 
-	Class
-	media--hover-effect :  hover-->magnifier 
-	test_list: hover-->overlay
-
     Usage:
     {% render 'product-card', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
-
-<style>
-  .my_product_card_beautify_title {
-    font-size: 16px;
-    font-weight: 700;
-  }
-</style>
 
 <div class="card-wrapper">
   <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
@@ -44,8 +33,8 @@
             endif
           -%}
 
-          <div  {% if add_image_padding %} class="card__media-full-spacer"{% endif %}>{% assign image_ratio1 = section.settings.image_ratio1 %}
-            <div class="media media--transparent  {% if use_eq_height == true%}   {{image_ratio1}}   {% endif %}  media--{{ media_size }}  list_test"
+          <div{% if add_image_padding %} class="card__media-full-spacer"{% endif %}>{% assign image_ratio1 = section.settings.image_ratio1 %}
+            <div class="media media--transparent  {% if use_eq_height == true%}   {{image_ratio1}}   {% endif %}  media--{{ media_size }} media--hover-effect "
                        {% if use_eq_height == true%}  
                        	 
                         {% case image_ratio1 %}
@@ -176,12 +165,12 @@
         {%- endif -%}
 
         {%- if product_card_product.featured_media -%}
-          <span class="card-information__text h5 my_product_card_beautify_title">
+          <span class="card-information__text h5">
             {{ product_card_product.title | escape }}
           </span>
         {%- else -%}
         
-          <span class="card-information__text h5 my_product_card_beautify_title">
+        <span class="card-information__text h5">
             {{ product_card_product.title | escape }}
           </span>
         {%- endif -%}
@@ -227,29 +216,5 @@
 .media.media--transparent.ratio_nt  {padding-bottom: 127.7777778%}
 .media.media--transparent.ratio2_3  {padding-bottom: 150%;}
 
-  
-  
-	.card-wrapper:hover .list_test::before{
-  
-  z-index:1;
-  }
-  
-
-  
-  .list_test:focus {
-    opacity: 1; }
-  
-  
-  .list_test::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: var(--color-image-overlay);
-  opacity: var(--opacity-image-overlay); }   
-   
-   
 
 </style>
