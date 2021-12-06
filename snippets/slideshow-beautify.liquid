@@ -1203,7 +1203,7 @@ console.log('3');
      * */
     domObserver.observe(oDiv, {
         childList: true,                        // 观察子节点变化（新增、删除、更改）
-        attributes: false,                      // 观察属性变化
+        attributes: true,                      // 观察属性变化
         characterData: true,                   // 观察节点内容或节点文本变化
 
         subtree: true,                         // 是否作用于该节点的所有后代节点
