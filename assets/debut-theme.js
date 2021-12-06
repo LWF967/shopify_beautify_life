@@ -5471,17 +5471,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     removeImageLoadingAnimation(image);
 
-    if (document.body.classList.contains('template-index')) {
-      var mainContent = document.getElementById('MainContent');
 
-      if (mainContent && mainContent.children && mainContent.children.length) {
-        var firstSection = document.getElementsByClassName('index-section')[0];
-
-        if (!firstSection.contains(image)) return;
-
-        window.performance.mark('debut:index:first_image_visible');
-      }
-    }
 
     if (image.hasAttribute('data-bgset')) {
       var innerImage = image.querySelector(selectors.lazyloaded);
