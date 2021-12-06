@@ -122,6 +122,16 @@
           font-size: 1.6rem;
         }
       }
+    
+      {%- if settings.button_style == 'Round' -%}
+         .button {
+          border-radius: 4px;
+    	}
+      {%- else -%}
+         .button {
+          border-radius: 0px;
+    	}
+      {%- endif -%}
     {% endstyle %}
     
 	{% include 'css-variables' %}
