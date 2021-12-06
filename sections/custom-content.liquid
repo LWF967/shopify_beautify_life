@@ -14,7 +14,7 @@
   }
 </style>
 
-<div class="page-width" style="{%- if section.settings.custom_content_margin_top != blank -%}margin-top: {{ section.settings.custom_content_margin_top }}px; {%- endif -%}{%- if section.settings.custom_content_margin_bottom != blank -%}margin-bottom:{{ section.settings.custom_content_margin_bottom }}px;{%- endif -%}">
+<div class="page-width spaced-section" style="{%- if section.settings.custom_content_margin_top != blank -%}margin-top: {{ section.settings.custom_content_margin_top }}px; {%- endif -%}{%- if section.settings.custom_content_margin_bottom != blank -%}margin-bottom:{{ section.settings.custom_content_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
     <div class="text-center">
       <h4 class="h2 my_font_weight_default my_clear_margin my_section_margin_default my_font_size_heading_default">{{ section.settings.title | escape }}</h4>
@@ -398,7 +398,7 @@
 
     "en": "Custom content"
   },
-  "class": "index-section spaced-section",
+  "class": "index-section",
   "settings": [
     {
       "type": "text",
