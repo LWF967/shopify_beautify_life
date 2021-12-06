@@ -5151,7 +5151,7 @@ document.addEventListener('DOMContentLoaded', function() {
  
   sections.register('collection-template', theme.Filters);
 
-  sections.register('slideshow-section', theme.SlideshowSection);
+  sections.register('slideshow-section',  theme.SlideshowSection);
   sections.register('video-section', theme.VideoSection);
 
 
