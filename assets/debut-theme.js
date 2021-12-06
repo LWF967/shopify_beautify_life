@@ -5024,288 +5024,35 @@ theme.Video = (function() {
   };
 })();
 
-theme.ProductVideo = (function() {
-  var videos = {};
-
-  var hosts = {
-    shopify: 'shopify',
-    external: 'external'
-  };
-
-  var selectors = {
-    productMediaWrapper: '[data-product-single-media-wrapper]'
-  };
-
-  var attributes = {
-    enableVideoLooping: 'enable-video-looping',
-    videoId: 'video-id'
-  };
-
-  function init(videoContainer, sectionId) {
-    if (!videoContainer) {
-      return;
-    }
-
-    var videoElement = videoContainer.querySelector('iframe, video');
-
-    if (!videoElement) {
-      return;
-    }
-
-    var mediaId = videoContainer.getAttribute('data-media-id');
-
-    videos[mediaId] = {
-      mediaId: mediaId,
-      sectionId: sectionId,
-      host: hostFromVideoElement(videoElement),
-      container: videoContainer,
-      element: videoElement,
-      ready: function() {
-        createPlayer(this);
-      }
-    };
-
-    window.Shopify.loadFeatures([
-      {
-        name: 'video-ui',
-        version: '2.0',
-        onLoad: setupVideos
-      }
-    ]);
-    theme.LibraryLoader.load('plyrShopifyStyles');
-  }
-
-  function setupVideos(errors) {
-    if (errors) {
-      fallbackToNativeVideo();
-      return;
-    }
-
-    loadVideos();
-  }
-
-  function createPlayer(video) {
-    if (video.player) {
-      return;
-    }
-
-    var productMediaWrapper = video.container.closest(
-      selectors.productMediaWrapper
-    );
-
-    var enableLooping =
-      productMediaWrapper.getAttribute(
-        'data-' + attributes.enableVideoLooping
-      ) === 'true';
-
-    // eslint-disable-next-line no-undef
-    video.player = new Shopify.Video(video.element, {
-      loop: { active: enableLooping }
-    });
-
-    var pauseVideo = function() {
-      if (!video.player) return;
-      video.player.pause();
-    };
-
-    productMediaWrapper.addEventListener('mediaHidden', pauseVideo);
-    productMediaWrapper.addEventListener('xrLaunch', pauseVideo);
-
-    productMediaWrapper.addEventListener('mediaVisible', function() {
-      if (theme.Helpers.isTouch()) return;
-      if (!video.player) return;
-      video.player.play();
-    });
-  }
-
-  function hostFromVideoElement(video) {
-    if (video.tagName === 'VIDEO') {
-      return hosts.shopify;
-    }
-
-    return hosts.external;
-  }
-
-  function loadVideos() {
-    for (var key in videos) {
-      if (videos.hasOwnProperty(key)) {
-        var video = videos[key];
-        video.ready();
-      }
-    }
-  }
-
-  function fallbackToNativeVideo() {
-    for (var key in videos) {
-      if (videos.hasOwnProperty(key)) {
-        var video = videos[key];
-
-        if (video.nativeVideo) continue;
-
-        if (video.host === hosts.shopify) {
-          video.element.setAttribute('controls', 'controls');
-          video.nativeVideo = true;
-        }
-      }
-    }
-  }
-
-  function removeSectionVideos(sectionId) {
-    for (var key in videos) {
-      if (videos.hasOwnProperty(key)) {
-        var video = videos[key];
-
-        if (video.sectionId === sectionId) {
-          if (video.player) video.player.destroy();
-          delete videos[key];
-        }
-      }
-    }
-  }
-
-  return {
-    init: init,
-    hosts: hosts,
-    loadVideos: loadVideos,
-    removeSectionVideos: removeSectionVideos
-  };
-})();
-
-theme.ProductModel = (function() {
-  var modelJsonSections = {};
-  var models = {};
-  var xrButtons = {};
-
-  var selectors = {
-    mediaGroup: '[data-product-single-media-group]',
-    xrButton: '[data-shopify-xr]'
-  };
-
-  function init(modelViewerContainers, sectionId) {
-    modelJsonSections[sectionId] = {
-      loaded: false
-    };
-
-    modelViewerContainers.forEach(function(modelViewerContainer, index) {
-      var mediaId = modelViewerContainer.getAttribute('data-media-id');
-      var modelViewerElement = modelViewerContainer.querySelector(
-        'model-viewer'
-      );
-      var modelId = modelViewerElement.getAttribute('data-model-id');
-
-      if (index === 0) {
-        var mediaGroup = modelViewerContainer.closest(selectors.mediaGroup);
-        var xrButton = mediaGroup.querySelector(selectors.xrButton);
-        xrButtons[sectionId] = {
-          element: xrButton,
-          defaultId: modelId
-        };
-      }
-
-      models[mediaId] = {
-        modelId: modelId,
-        sectionId: sectionId,
-        container: modelViewerContainer,
-        element: modelViewerElement
-      };
-    });
-
-    window.Shopify.loadFeatures([
-      {
-        name: 'shopify-xr',
-        version: '1.0',
-        onLoad: setupShopifyXr
-      },
-      {
-        name: 'model-viewer-ui',
-        version: '1.0',
-        onLoad: setupModelViewerUi
-      }
-    ]);
-    theme.LibraryLoader.load('modelViewerUiStyles');
-  }
-
-  function setupShopifyXr(errors) {
-    if (errors) return;
-
-    if (!window.ShopifyXR) {
-      document.addEventListener('shopify_xr_initialized', function() {
-        setupShopifyXr();
-      });
-      return;
-    }
-
-    for (var sectionId in modelJsonSections) {
-      if (modelJsonSections.hasOwnProperty(sectionId)) {
-        var modelSection = modelJsonSections[sectionId];
-
-        if (modelSection.loaded) continue;
-        var modelJson = document.querySelector('#ModelJson-' + sectionId);
-
-        window.ShopifyXR.addModels(JSON.parse(modelJson.innerHTML));
-        modelSection.loaded = true;
-      }
-    }
-    window.ShopifyXR.setupXRElements();
-  }
-
-  function setupModelViewerUi(errors) {
-    if (errors) return;
-
-    for (var key in models) {
-      if (models.hasOwnProperty(key)) {
-        var model = models[key];
-        if (!model.modelViewerUi) {
-          model.modelViewerUi = new Shopify.ModelViewerUI(model.element);
-        }
-        setupModelViewerListeners(model);
-      }
-    }
-  }
-
-  function setupModelViewerListeners(model) {
-    var xrButton = xrButtons[model.sectionId];
-
-    model.container.addEventListener('mediaVisible', function() {
-      xrButton.element.setAttribute('data-shopify-model3d-id', model.modelId);
-      if (theme.Helpers.isTouch()) return;
-      model.modelViewerUi.play();
-    });
-
-    model.container.addEventListener('mediaHidden', function() {
-      xrButton.element.setAttribute(
-        'data-shopify-model3d-id',
-        xrButton.defaultId
-      );
-      model.modelViewerUi.pause();
-    });
-
-    model.container.addEventListener('xrLaunch', function() {
-      model.modelViewerUi.pause();
-    });
-  }
-
-  function removeSectionModels(sectionId) {
-    for (var key in models) {
-      if (models.hasOwnProperty(key)) {
-        var model = models[key];
-        if (model.sectionId === sectionId) {
-          models[key].modelViewerUi.destroy();
-          delete models[key];
-        }
-      }
-    }
-    delete modelJsonSections[sectionId];
-  }
-
-  return {
-    init: init,
-    removeSectionModels: removeSectionModels
-  };
-})();
 
 window.theme = window.theme || {};
 
+theme.FormStatus = (function() {
+  var selectors = {
+    statusMessage: '[data-form-status]'
+  };
+
+  function init() {
+    var statusMessages = document.querySelectorAll(selectors.statusMessage);
+
+    statusMessages.forEach(function(statusMessage) {
+      statusMessage.setAttribute('tabindex', -1);
+      statusMessage.focus();
+
+      statusMessage.addEventListener(
+        'blur',
+        function(evt) {
+          evt.target.removeAttribute('tabindex');
+        },
+        { once: true }
+      );
+    });
+  }
+
+  return {
+    init: init
+  };
+})();
 
 
 
