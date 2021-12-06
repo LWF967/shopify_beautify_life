@@ -1233,49 +1233,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // sections.register('slideshow-section', theme.SlideshowSection);
 
 
-  var selectors = {
-    image: '[data-image]',
-    lazyloaded: '.lazyloaded'
-  };
-
-  document.addEventListener('lazyloaded', function(evt) {
-    var image = evt.target;
-
-    removeImageLoadingAnimation(image);
-
-
-
-    if (image.hasAttribute('data-bgset')) {
-      var innerImage = image.querySelector(selectors.lazyloaded);
-
-      if (innerImage) {
-        var alt = image.getAttribute('data-alt');
-        var src = innerImage.hasAttribute('data-src')
-          ? innerImage.getAttribute('data-src')
-          : image.getAttribute('data-bg');
-
-        image.setAttribute('alt', alt ? alt : '');
-        image.setAttribute('src', src ? src : '');
-      }
-    }
-
-    if (!image.hasAttribute('data-image')) {
-      return;
-    }
-  });
-
-  // When the theme loads, lazysizes might load images before the "lazyloaded"
-  // event listener has been attached. When this happens, the following function
-  // hides the loading placeholders.
-  function onLoadHideLazysizesAnimation() {
-    var alreadyLazyloaded = document.querySelectorAll('.lazyloaded');
-    alreadyLazyloaded.forEach(function(image) {
-      removeImageLoadingAnimation(image);
-    });
-  }
-
-  onLoadHideLazysizesAnimation();
-
 
 
 
