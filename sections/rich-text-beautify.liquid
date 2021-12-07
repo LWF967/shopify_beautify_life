@@ -62,7 +62,7 @@
   }
 </style>
 
-<div class="rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}"
+<div class="spaced-section rich-text color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width{% endif %}"
      style="{%- if section.settings.rich_text_beautify_margin_top != blank -%}margin-top: {{ section.settings.rich_text_beautify_margin_top}}px; {%- endif -%}{%- if section.settings.rich_text_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.rich_text_beautify_margin_bottom }}px;{%- endif -%}">
   <div class="{%- if section.settings.content_full_width -%} rich_full_content  {%- else -%} rich-text__blocks  {%- endif -%}" style="text-align: center;">
     {%- for block in section.blocks -%}
