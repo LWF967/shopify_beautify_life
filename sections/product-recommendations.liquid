@@ -19,7 +19,7 @@
   }
 </style>
 
-<product-recommendations class="product-recommendations page-width" 
+<product-recommendations class="product-recommendations page-width spaced-section" 
                          style="{%- if section.settings.product_recommendations_margin_top != blank -%}margin-top: {{ section.settings.product_recommendations_margin_top }}px; {%- endif -%}{%- if section.settings.product_recommendations_margin_bottom != blank -%}margin-bottom:{{ section.settings.product_recommendations_margin_bottom }}px;{%- endif -%}"
                          data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4">
   {% if recommendations.performed and recommendations.products_count > 0 %}
