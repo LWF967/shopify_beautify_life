@@ -7,7 +7,9 @@
         "sort": "alphabetical",
         "image_ratio": "square",
         "color_scheme": "background-1",
-        "image_padding": false
+        "image_padding": false,
+        "main_list_collections_margin_top": "",
+        "main_list_collections_margin_bottom": ""
       }
     },
     "select": {
@@ -54,60 +56,21 @@
         "sub_title": "New supply this week",
         "grid": 3,
         "show_view_all": true,
-        "show_page_Dot": true
-      }
-    },
-    "1636623423d91d99e2": {
-      "type": "collection-list-Beautify",
-      "blocks": {
-        "1636623423d91d99e2-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "New supply this week"
-          }
-        },
-        "1636623423d91d99e2-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "frontpage",
-            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "title": "New supply this week"
-          }
-        },
-        "1636623423d91d99e2-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "New supply this week"
-          }
-        },
-        "e2f9becc-e607-4a5a-9fb0-781e9a3c4a45": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "New supply this week"
-          }
-        }
-      },
-      "block_order": [
-        "1636623423d91d99e2-0",
-        "1636623423d91d99e2-1",
-        "1636623423d91d99e2-2",
-        "e2f9becc-e607-4a5a-9fb0-781e9a3c4a45"
-      ],
-      "settings": {
-        "title": "NEW RELEASES",
-        "sub_title": "New supply this week",
-        "grid": 3,
-        "show_view_all": false,
-        "show_page_Dot": true
+        "show_page_Dot": true,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "",
+        "collection_list_beautify_margin_top": "",
+        "collection_list_beautify_margin_bottom": ""
       }
     }
   },
   "order": [
     "main",
-    "select",
-    "1636623423d91d99e2"
+    "select"
   ]
 }
