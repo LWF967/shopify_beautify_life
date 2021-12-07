@@ -210,6 +210,10 @@
     margin-bottom: 0;
   }
   
+  .tengxun {
+    cursor: no-allowed;
+  }
+  
   @media screen and (max-width: 750px) {
 /*     .h1.product__title.my_featured_product_beautify_title {
       font-size: 36px;
@@ -496,7 +500,7 @@
                             {%- endif -%}
                         </button>
                         {%- if block.settings.show_dynamic_checkout -%}
-                        <button class="button my_featured_product_beautify_payment_button"
+                        <button class="button my_featured_product_beautify_payment_button {% if product.selected_or_first_available_variant.available == false %} tengxun{% endif %}"
                                 {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
                           {{ form | payment_button }}
                         </button>
