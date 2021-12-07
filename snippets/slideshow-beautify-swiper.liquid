@@ -139,7 +139,7 @@
   
   // 分页器
   
-  	 <div id="slide_pog-{{section.id}}" class="swiper-pagination-{{section.id}}" style="{% unless section.settings.show_page_Dot %} z-index:-1; {% endunless %} 
+<!--   	 <div id="slide_pog-{{section.id}}" class="swiper-pagination-{{section.id}}" style="{% unless section.settings.show_page_Dot %} z-index:-1; {% endunless %} 
                                              
                                              {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
                                              
@@ -150,7 +150,13 @@
                                              {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light'%}
                                              
                                     		 {% endif %}	">
-    </div>
+    </div> -->
+  
+  
+  		{%- if section.settings.show_page_Dot-%}
+        <!-- 如果需要分页器 -->
+          <div class="swiper-pagination-{{section.id}}"></div>
+		{%- endif -%}
 
     
 
