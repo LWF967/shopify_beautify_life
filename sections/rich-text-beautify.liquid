@@ -5,6 +5,11 @@
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 
 <style>
+  .rich_full_content{
+    width: 100%;
+    word-break: break-all;  
+  }
+  
   .my_rich_text_beautify_title_small {
     font-size: 22px;
   }
@@ -83,12 +88,6 @@
   </div>
 </div>
 
-<style>
-  .rich_full_content{
-    width: 100%;
-    word-break: break-all;  
-  }
-</style>
 {% schema %}
 {
   "name": "Rich text beautify",
