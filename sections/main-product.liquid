@@ -283,7 +283,7 @@
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-<section class="page-width"
+<section class="page-width spaced-section"
          style="{%- if section.settings.main_product_margin_top != blank -%}margin-top: {{ section.settings.main_product_margin_top }}px; {%- endif -%}{%- if section.settings.main_product_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_product_margin_bottom }}px;{%- endif -%}">
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper my_main_product_left_content{% if section.settings.main_product_mediasize == 'Small' %}_small{% elsif section.settings.main_product_mediasize == 'Medium' %}_medium{% elsif section.settings.main_product_mediasize == 'Large' %}_large{% elsif section.settings.main_product_mediasize == 'Extra large' %}_extra_large{% endif %} my_main_product_left_content_mobile">
