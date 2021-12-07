@@ -199,9 +199,9 @@
         "grid": 6,
         "show_view_all": false,
         "swipe_on_mobile": false,
+        "image_ratio": "adapt",
         "use_eq_height": true,
         "image_ratio1": "ratio_nt",
-        "image_ratio": "adapt",
         "show_secondary_image": false,
         "add_image_padding": false,
         "show_image_outline": true,
@@ -605,7 +605,7 @@
     "163454604067313d0f": {
       "type": "daily-deal-of-the-day",
       "settings": {
-        "product": "text4",
+        "product": "lol2",
         "log_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
         "heading_text": "Daily Deal Of The Day",
         "heading_font_size": 40,
@@ -615,7 +615,6 @@
         "background_color": "#c46666",
         "background_product_color": "#ffffff",
         "shop_now_url": "shopify:\/\/products\/text6",
-        "detail_url": "shopify:\/\/products\/strawberry",
         "daily_deal_of_the_day_margin_top": "",
         "daily_deal_of_the_day_margin_bottom": ""
       }
