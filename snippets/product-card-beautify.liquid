@@ -170,7 +170,7 @@
     </div>
   </a>
 </div>
-<div class="card-information">
+<div class="card-information my_product_card_beautify_margin_top">
   <div class="card-information__wrapper">
     {%- if show_vendor -%}
     <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
@@ -226,29 +226,28 @@
 .media.media--transparent.ratio1_1  {padding-bottom: 100%}
 .media.media--transparent.ratio_nt  {padding-bottom: 127.7777778%}
 .media.media--transparent.ratio2_3  {padding-bottom: 150%;}
+  
 
-  
-  
-	.card-wrapper:hover .list_test::before{
-  
-  z-index:1;
+  .card-wrapper:hover .list_test::before{
+    z-index:1;
   }
-  
 
-  
   .list_test:focus {
-    opacity: 1; }
-  
-  
-  .list_test::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: var(--color-image-overlay);
-  opacity: var(--opacity-image-overlay); }   
-   
+    opacity: 1; 
+  }
 
+  .list_test::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-image-overlay);
+    opacity: var(--opacity-image-overlay); 
+  }   
+  
+  .my_product_card_beautify_margin_top {
+    margin-top: 15px;
+  }
 </style>
