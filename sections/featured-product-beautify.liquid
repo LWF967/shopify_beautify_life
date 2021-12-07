@@ -178,6 +178,10 @@
     margin: 10px 0 15px;
   }
   
+  .my_featured_product_beautify_select_clear_margin_bottom {
+    margin-bottom: 0;
+  }
+  
   @media screen and (max-width: 750px) {
 /*     .h1.product__title.my_featured_product_beautify_title {
       font-size: 36px;
@@ -395,7 +399,7 @@
                 {%- else -%}
                   <variant-selects class="no-js-hidden my_featured_product_beautify_variant-selects" data-section="{{ section.id }}" data-url="{{ product.url }}" data-update-url="false" {{ block.shopify_attributes }}>
                     {%- for option in product.options_with_values -%}
-                      <div class="product-form__input product-form__input--dropdown">
+                      <div class="product-form__input product-form__input--dropdown my_featured_product_beautify_select_clear_margin_bottom">
                         <label class="form__label my_featured_product_beautify_size" for="Option-{{ section.id }}-{{ forloop.index0 }}">
                           {{ option.name }}
                         </label>
