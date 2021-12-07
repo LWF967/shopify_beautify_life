@@ -28,7 +28,7 @@
 
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %}"
      style="{%- if section.settings.main_collection_banner_margin_top != blank -%}margin-top: {{ section.settings.main_collection_banner_margin_top }}px; {%- endif -%}{%- if section.settings.main_collection_banner_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_collection_banner_margin_bottom }}px;{%- endif -%}">
-  <div class="collection-hero__inner page-width my_section_margin_default">
+  <div class="collection-hero__inner page-width">
     <div class="collection-hero__text-wrapper">
       <h1 class="collection-hero__title my_collection_hero_title my_font_weight_default">
         <span class="visually-hidden">{{ 'sections.collection_template.title' | t }}: </span>
