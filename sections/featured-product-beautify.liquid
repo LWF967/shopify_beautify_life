@@ -248,7 +248,7 @@
 <section class="{% if section.settings.secondary_background %}background-secondary{% endif %}"
          style="{%- if section.settings.featured_product_beautify_margin_top != blank -%}margin-top: {{ section.settings.featured_product_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.featured_product_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.featured_product_beautify_margin_bottom }}px;{%- endif -%}">
   <div class="page-width spaced-section">
-    <div class="featured-product product grid grid--1-col my_featured_product_clear_margin_bottom{% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
+    <div class="featured-product product grid grid--1-col my_featured_product_clear_margin_bottom {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
