@@ -4,7 +4,7 @@
 
 
 {%- paginate blog.articles by 6 -%}
-  <div class="main-blog page-width"
+  <div class="main-blog page-width spaced-section"
        style="{%- if section.settings.main_blog_margin_top != blank -%}margin-top: {{ section.settings.main_blog_margin_top }}px; {%- endif -%}{%- if section.settings.main_blog_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_blog_margin_bottom }}px;{%- endif -%}">
     <h1 class="title--primary">{{ blog.title | escape }}</h1>
 
