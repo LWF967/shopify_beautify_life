@@ -80,8 +80,8 @@
         "main_product_mediasize": "Large",
         "hide_variants": true,
         "enable_video_looping": true,
-        "main_product_margin_top": "23",
-        "main_product_margin_bottom": "32"
+        "main_product_margin_top": "",
+        "main_product_margin_bottom": ""
       }
     },
     "product-recommendations": {
@@ -94,8 +94,8 @@
         "show_image_outline": true,
         "show_vendor": true,
         "show_rating": true,
-        "product_recommendations_margin_top": "32",
-        "product_recommendations_margin_bottom": "32"
+        "product_recommendations_margin_top": "",
+        "product_recommendations_margin_bottom": ""
       }
     },
     "16388564124b132782": {
