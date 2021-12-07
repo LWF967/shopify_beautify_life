@@ -45,6 +45,15 @@
   text-align:center;
 }
 
+/* lzx change start */
+@media screen and (max-width: 990px) {
+  .collection-hero__title {
+    margin: 3.5rem 0 0;
+    text-align:center;
+  }
+}
+/* lzx change end */
+
 .collection-hero__title + .collection-hero__description {
   margin-top: 1.5rem;
   font-size: 1.6rem;
