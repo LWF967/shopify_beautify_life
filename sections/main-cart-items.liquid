@@ -164,7 +164,7 @@
   }
 </style>
 
-<cart-items class="page-width{% if cart == empty %} is-empty{% endif %}"
+<cart-items class="page-width spaced-section{% if cart == empty %} is-empty{% endif %}"
             style="{%- if section.settings.main_cart_items_margin_top != blank -%}margin-top: {{ section.settings.main_cart_items_margin_top }}px; {%- endif -%}{%- if section.settings.main_cart_items_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_cart_items_margin_bottom }}px;{%- endif -%}">
   <div class="title-wrapper-with-link my_cart_margin">
     <h1 class="title title--primary my_cart_empty_font">{{ 'sections.cart.title' | t }}</h1>
