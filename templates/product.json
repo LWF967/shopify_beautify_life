@@ -94,8 +94,8 @@
         "show_image_outline": true,
         "show_vendor": true,
         "show_rating": true,
-        "product_recommendations_margin_top": "",
-        "product_recommendations_margin_bottom": ""
+        "product_recommendations_margin_top": "32",
+        "product_recommendations_margin_bottom": "32"
       }
     },
     "16388564124b132782": {
@@ -165,7 +165,7 @@
         "16388564128bfe2397-8"
       ],
       "settings": {
-        "product": "text4",
+        "product": "lol-more",
         "secondary_background": false,
         "show_share_buttons": false,
         "hide_variants": false,
