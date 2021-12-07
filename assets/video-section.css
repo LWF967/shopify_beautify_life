@@ -4,6 +4,14 @@
   margin-top: 5.5rem;
 }
 
+/* lzx change start */
+@media screen and (max-width: 990px) {
+  .video-section.page-width {
+    margin-top: 3.5rem;
+  }
+}
+/* lzx change end */
+
 .video-section__media {
   position: relative;
   padding-bottom: 56.25%;
