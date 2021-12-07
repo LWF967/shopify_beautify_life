@@ -1,10 +1,10 @@
-<div class="page-width"
+<div class="page-width spaced-section"
      style="{%- if section.settings.blog_post_beautify2_margin_top != blank -%}margin-top: {{ section.settings.blog_post_beautify2_margin_top }}px; {%- endif -%}{%- if section.settings.blog_post_beautify2_margin_bottom != blank -%}margin-bottom:{{ section.settings.blog_post_beautify2_margin_bottom }}px;{%- endif -%}">
  
   <div class="tc">
     {%assign sections = section.settings%}
     {%if sections.show_author %}
-    <h1 >Post title</h1>
+    <h1 class="my_clear_margin">Post title</h1>
     {% endif %}
     {% if sections.show_date %}
     <div>
