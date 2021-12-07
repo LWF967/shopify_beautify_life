@@ -34,7 +34,7 @@
 }
 
 /* lzx change start */
-@media screen and (min-width: 990px) {
+@media screen and (max-width: 990px) {
   .rich-text:not(.rich-text--full-width),
   .rich-text--full-width.color-background-1 {
     margin-top: 3.5rem;
