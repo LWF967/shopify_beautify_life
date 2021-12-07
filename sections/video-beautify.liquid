@@ -45,7 +45,7 @@
       type="button"
     	
     >
-      {%- if section.settings.cover_image != blank  -%}
+      {%- if section.settings.cover_image != blank  and  section.settings.show_overlay == true -%}
         <img
           srcset="{%- if section.settings.cover_image.width >= 375 -%}{{ section.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
             {%- if section.settings.cover_image.width >= 750 -%}{{ section.settings.cover_image | img_url: '750x' }} 750w,{%- endif -%}
