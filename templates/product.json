@@ -80,8 +80,8 @@
         "main_product_mediasize": "Large",
         "hide_variants": true,
         "enable_video_looping": true,
-        "main_product_margin_top": "",
-        "main_product_margin_bottom": ""
+        "main_product_margin_top": "12",
+        "main_product_margin_bottom": "12"
       }
     },
     "product-recommendations": {
