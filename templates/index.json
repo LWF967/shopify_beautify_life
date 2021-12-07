@@ -706,8 +706,8 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "full_width": true,
-        "content_full_width": true,
+        "full_width": false,
+        "content_full_width": false,
         "heading_size": "large",
         "rich_text_beautify_margin_top": "",
         "rich_text_beautify_margin_bottom": ""
