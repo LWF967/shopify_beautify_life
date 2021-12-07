@@ -944,6 +944,16 @@ summary::-webkit-details-marker {
   list-style: none;
 }
 
+/* lzx change start */
+.my_grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem;
+  padding: 0;
+  list-style: none;
+}
+/* lzx change end */
+
 @media screen and (min-width: 750px) {
   .grid {
     margin-left: -1rem;
