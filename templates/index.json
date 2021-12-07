@@ -662,8 +662,8 @@
         "show_share_buttons": true,
         "hide_variants": false,
         "enable_video_looping": false,
-        "featured_product_beautify_margin_top": "123",
-        "featured_product_beautify_margin_bottom": "22"
+        "featured_product_beautify_margin_top": "",
+        "featured_product_beautify_margin_bottom": ""
       }
     },
     "163454604067313d0f": {
