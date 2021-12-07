@@ -5,6 +5,14 @@
   margin: 5.5rem 0 0;
 }
 
+/* lzx change start */
+@media screen and (max-width: 990px) {
+  .blog:not(.background-secondary) {
+    margin: 3.5rem 0 0;
+  }
+}
+/* lzx change end */
+
 .blog.background-secondary {
   padding: 4rem 0 3rem;
 }
