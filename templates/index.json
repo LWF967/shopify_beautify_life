@@ -807,6 +807,7 @@
     "1638771575eb761fd8": {
       "type": "video-beautify",
       "settings": {
+        "cover_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
         "image_alignment": "center center",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "show_overlay": false,
