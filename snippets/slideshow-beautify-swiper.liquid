@@ -846,7 +846,7 @@
 
 <script type="module">
 
- console.log('轮播swiper');
+// console.log('轮播swiper');
  
  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
 
@@ -902,13 +902,14 @@
     
   })
   
-  console.log('运行了,没效果');
+ // console.log('运行了,没效果');
   
    
        document.addEventListener('shopify:section:load',()=>{
 
    
-     console.log('知道你要刷新');
+ //    console.log('知道你要刷新');
+ 
  let swiper123 = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, // 循环模式选项 
