@@ -513,7 +513,8 @@
             {%- when 'share' -%}
 
             {% if section.settings.show_share_buttons %}
-            {% include 'social-share-beautify'%}
+<!--              include 'social-share-beautify'%} -->
+          	  {% include 'my-social-sharing'%}
             {% endif %}
           
             {%- when 'custom_liquid' -%}
