@@ -76,16 +76,19 @@
       data-parent-fit="contain"
       style="
              background-image: url({{ section.settings.cover_image |image_url }});
-             background-position: {{ section.settings.image_alignment }};" 
-    style="
-    border: none;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%; 
-    position:absolute;
-    display:block;"></div>
+             background-position: {{ section.settings.image_alignment }};
+             
+             border: none;
+             cursor: pointer;
+             margin: 0;
+             padding: 0;
+             height: 100%;
+             width: 100%; 
+             position:absolute;
+             display:block;
+             
+             " 
+   ></div>
     <template>
       {%- if section.settings.video_url.type == 'youtube' -%}
         <iframe src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1?rel=0&amp;autoplay=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
