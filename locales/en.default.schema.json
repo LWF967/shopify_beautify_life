@@ -246,9 +246,6 @@
       "settings": {
         "margin_tip": {
           "label": "Keep it blank if you not use it"
-        },
-        "margin_placeholder": {
-          "label": "55"
         }
       }
     },
