@@ -116,6 +116,7 @@
 
 
 
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 
 {% assign img_position = section.blocks | where: "type", "slideshow_img2" %}
 
@@ -740,10 +741,52 @@
 
 <script type="module">
 
-
+ import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
 
 	
+  let swiper = new Swiper ('.swiper-container1', {
+    direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+    loop: true, // 循环模式选项 
 
+    // 如果需要分页器
+  
+
+	{% unless section.settings.show_page_Dot %} 
+    
+         pagination: {
+      el: '.swiper-pagination-{{section.id}}',
+      clickable :true,
+      hideOnClick :true,
+    },
+
+  {% else %}  
+	 pagination: {
+      el: '.swiper-pagination-{{section.id}}',
+      clickable :true,
+    },
+  {% endunless %}
+    
+    
+
+    effect : 'fade',
+    observer : true,
+    observeParents : true,
+    observeSlideChildren : true,
+    autoplay: {
+    delay: 5000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+    },    
+  
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+  })
+ 
 
 </script>
 
