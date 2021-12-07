@@ -2434,3 +2434,7 @@ a{
 .my_between_title_and_text_margin {
   margin-bottom: 5px !important;
 }
+  
+.shopify-section {
+  overflow: hidden;
+}
