@@ -1,4 +1,4 @@
-<div id="SlideshowWrapper-{{ section.id }}" class="feature-artworks  feature_box_{{section.id}} feature-artworks-{{section.id}}  swiper-container-slideshow"   
+<div id="SlideshowWrapper-{{ section.id }}" class="feature-artworks  feature_box_{{section.id}} feature-artworks-{{section.id}}  swiper-container-{{section.id}}"   
      >
 
   
@@ -972,7 +972,7 @@
  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
 
 	
-  let swiper123 = new Swiper ('.swiper-container-slideshow', {
+  let swiper123 = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, // 循环模式选项 
 
