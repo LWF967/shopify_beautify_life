@@ -19,6 +19,14 @@
   }
 }
 
+/* lzx change start */
+@media screen and (max-width: 750px) {
+  .multicolumn.no-heading:not(.background-secondary) {
+    margin-top: 3.5rem;
+  }
+}
+/* lzx change end */
+
 .multicolumn.background-secondary .title-wrapper-with-link {
   margin-top: 0;
 }
