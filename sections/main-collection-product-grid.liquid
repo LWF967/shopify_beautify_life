@@ -37,7 +37,7 @@
   }
 </style>
 
-<div class="page-width" style="{%- if section.settings.main_collection_product_grid_margin_top != blank -%}margin-top: {{ section.settings.main_collection_product_grid_margin_top }}px; {%- endif -%}{%- if section.settings.main_collection_product_grid_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_collection_product_grid_margin_bottom }}px;{%- endif -%}">
+<div class="page-width spaced-section" style="{%- if section.settings.main_collection_product_grid_margin_top != blank -%}margin-top: {{ section.settings.main_collection_product_grid_margin_top }}px; {%- endif -%}{%- if section.settings.main_collection_product_grid_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_collection_product_grid_margin_bottom }}px;{%- endif -%}">
   <div class="page-width collection-filters my_collection_filters_margin" id="main-collection-filters" data-id="{{ section.id }}">
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
       {%- assign total_active_values = 0 -%}
@@ -552,7 +552,6 @@
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",
-  "class": "spaced-section",
   "settings": [
     {
       "type": "range",
