@@ -96,15 +96,12 @@
   
   
 <!--    分页器 -->
-  
+  {%- if section.settings.show_page_Dot -%}
   	 <div  class="12 swiper-pagination-{{section.id}}" >
     </div>
+  {%- endif -%}
   
-  
-  		{%- if section.settings.show_page_Dot-%}
-        <!-- 如果需要分页器 -->
-          <div class="22 swiper-pagination-{{section.id}}"></div>
-		{%- endif -%}
+ 
 
    </div> 
 
