@@ -10,24 +10,9 @@
     font-size: 36px;
     font-weight: 700;
   }
-  .my_page_margin {
-    margin: 55px auto;
-  }
-  
-  @media screen and (max-width: 750px) {
-    .my_page_margin {
-      margin: 35px auto;
-    }
-  }
-  
-  @media screen and (max-width: 990px) {
-    .my_page_margin {
-      margin: 35px auto;
-    }
-  }
 </style>
 
-<div class="page-width page-width--narrow my_page_margin"
+<div class="page-width spaced-section page-width--narrow"
      style="{%- if section.settings.main_page_margin_top != blank -%}margin-top: {{ section.settings.main_page_margin_top }}px; {%- endif -%}{%- if section.settings.main_page_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_page_margin_bottom }}px;{%- endif -%}">
   <h1 class="main-page-title page-title h0 my_page_title_center">
     {{ page.title | escape }}
