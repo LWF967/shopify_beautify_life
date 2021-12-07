@@ -622,7 +622,8 @@
                         {%- endif -%}
                     </button>
                     <div class="button {% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}my_main_product_paybutton_small_extralarge
-                                       {% elsif section.settings.main_product_mediasize == 'Medium' or section.settings.main_product_mediasize == 'Large' %}my_main_product_paybutton_medium_large{% endif %}">
+                                       {% elsif section.settings.main_product_mediasize == 'Medium' or section.settings.main_product_mediasize == 'Large' %}my_main_product_paybutton_medium_large{% endif %}"
+                         {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
                     {%- if block.settings.show_dynamic_checkout -%}
                       {{ form | payment_button }}
                     {%- endif -%}
