@@ -123,6 +123,13 @@
     min-height: 44px;
   }
   
+  .my_featured_product_beautify_payment_button {
+    width: 100%;
+    height: 44px;
+    min-height: 44px;
+    
+  }
+  
   @media screen and (max-width: 750px) {
     .h1.product__title.my_featured_product_beautify_title {
       font-size: 36px;
@@ -409,7 +416,9 @@
                             {%- endif -%}
                         </button>
                         {%- if block.settings.show_dynamic_checkout -%}
+                        <div class="button my_featured_product_beautify_payment_button">
                           {{ form | payment_button }}
+                        </div>
                         {%- endif -%}
                       </div>
                     {%- endform -%}
