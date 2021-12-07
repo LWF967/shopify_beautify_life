@@ -948,7 +948,7 @@
   });
 
  // 初始化，根据方法实际情况可选择
- // const slide_beautify = new  slideshow_beautify_lunbo();
+  const slide_beautify = new  slideshow_beautify_lunbo();
   
   
   
@@ -1233,7 +1233,9 @@ console.log('4');
 
 document.addEventListener('DOMContentLoaded', function() {
   var sections = new theme.Sections();
-  
+
+//  这个register 方法需要我们先利用好构造函数才行，我这里没有初设构造函数
+//  sections.register('slideshow-section', function() );
 
 
 });
