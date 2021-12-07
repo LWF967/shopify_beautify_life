@@ -148,14 +148,18 @@
     margin: 10px 0 30px;
   }
   
+  .my_featured_product_beautify_vendor {
+    font-size: 18px;
+  }
+  
   @media screen and (max-width: 750px) {
-    .h1.product__title.my_featured_product_beautify_title {
+/*     .h1.product__title.my_featured_product_beautify_title {
       font-size: 36px;
       margin-bottom: 30px;
     }
     .no-js-hidden.my_featured_product_beautify_price {
       margin: 10px 0 30px;
-    }
+    } */
     .form__label.my_featured_product_beautify_size {
       font-size: 15px;
       margin-bottom: 5px;
@@ -290,7 +294,7 @@
           {%- for block in section.blocks -%}
             {%- case block.type -%}
             {%- when 'text' -%}
-              <p class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
+              <p class="product__text my_featured_product_beautify_vendor{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}" {{ block.shopify_attributes }}>
                 {{- block.settings.text -}}
               </p>
             {%- when 'title' -%}
