@@ -194,6 +194,11 @@
     margin: 50px 0 35px;
   }
   
+  .link.product__view-details.animate-arrow.my_featured_product_beautify_details {
+    font-size: 16px;
+    margin: 50px 0 0;
+  }
+  
   @media screen and (max-width: 750px) {
 /*     .h1.product__title.my_featured_product_beautify_title {
       font-size: 36px;
@@ -223,12 +228,12 @@
     }
 /*     .product__description.rte.my_featured_product_beautify_description {
       margin: 50px 0 35px;
-    } */
+    } 
     .link.product__view-details.animate-arrow.my_featured_product_beautify_details {
       font-size: 16px;
       font-weight: 700;
       margin: 50px 0 0;
-    }
+    }*/
   }
 </style>
 
@@ -544,7 +549,7 @@
             {%- endcase -%}
           {%- endfor -%}
         {%- if request.page_type == 'index' -%}
-          <a href="{{ product.url }}" class="link product__view-details animate-arrow my_featured_product_beautify_details">
+          <a href="{{ product.url }}" class="link product__view-details animate-arrow my_featured_product_beautify_details my_font_weight_default">
             {{ 'products.product.view_full_details' | t }}
             {% render 'icon-arrow' %}
           </a>
