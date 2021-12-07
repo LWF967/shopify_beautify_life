@@ -812,7 +812,7 @@
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "show_overlay": true,
         "style": "image_with_play",
-        "video_height": "medium",
+        "video_height": "large",
         "heading": "Video",
         "text_size": "medium",
         "video_beautify_margin_top": "",

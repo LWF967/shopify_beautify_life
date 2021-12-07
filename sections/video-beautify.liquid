@@ -69,6 +69,8 @@
         {%- render 'icon-play' -%}
       </span>
     </button>
+    {%- if section.settings.cover_image != blank  and  section.settings.show_overlay == true and section.settings.style == 'image_with_play'-%}
+        
     <div 
      
       data-bgset="{% include 'bgset', image: section.settings.cover_image %}"
@@ -89,6 +91,7 @@
              
              " 
    ></div>
+    {%- endif -%}
     <template>
       {%- if section.settings.video_url.type == 'youtube' -%}
         <iframe src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1?rel=0&amp;autoplay=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
