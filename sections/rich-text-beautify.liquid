@@ -75,7 +75,7 @@
         {%- when 'heading' -%}
           <h2 class="{% if section.settings.heading_size == 'small' %}my_rich_text_beautify_title_small {% elsif section.settings.heading_size == 'medium' %}my_rich_text_beautify_title_medium {% elsif section.settings.heading_size == 'large' %}my_rich_text_beautify_title_large {% endif %}my_font_weight_default" {{ block.shopify_attributes }}>{{ block.settings.heading | escape }}</h2>
         {%- when 'text' -%}
-          <div class="rich-text__text rte{% if section.settings.heading_size == 'small' %}my_rich_text_beautify_content_small{% elsif section.settings.heading_size == 'medium' %}my_rich_text_beautify_content_medium{% elsif section.settings.heading_size == 'large' %}my_rich_text_beautify_content_large{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+          <div class="rich-text__text rte{% if section.settings.heading_size == 'small' %} my_rich_text_beautify_content_small{% elsif section.settings.heading_size == 'medium' %} my_rich_text_beautify_content_medium{% elsif section.settings.heading_size == 'large' %} my_rich_text_beautify_content_large{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
         {%- when 'button' -%}
           <a{% if block.settings.button_link == blank %} aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %} 
              class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" 
