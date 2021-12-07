@@ -406,8 +406,7 @@
           data-shopify-xr
           data-shopify-model3d-id="{{ first_3d_model.id }}"
           data-shopify-title="{{ product.title | escape }}"
-          data-shopify-xr-hidden
-        >
+          data-shopify-xr-hidden>
           {% render 'icon-3d-model' %}
           {{ 'products.product.xr_button' | t }}
         </button>
@@ -484,8 +483,7 @@
                     id="Quantity-{{ section.id }}"
                     min="1"
                     value="1"
-                    form="product-form-{{ section.id }}"
-                  >
+                    form="product-form-{{ section.id }}">
                 <button class="quantity__button no-js-hidden" name="plus" type="button">
                   <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
                   {% render 'icon-plus' %}
@@ -518,8 +516,7 @@
                           value="{{ shop.url | append: product.url }}"
                           placeholder="{{ 'general.share.share_url' | t }}"
                           onclick="this.select();"
-                          readonly
-                    >
+                          readonly>
                     <label class="field__label" for="url">{{ 'general.share.share_url' | t }}</label>
                   </div>
                   <button class="share-button__close hidden no-js-hidden">
@@ -546,8 +543,7 @@
                                 name="{{ option.name }}"
                                 value="{{ value | escape }}"
                                 form="product-form-{{ section.id }}"
-                                {% if option.selected_value == value %}checked{% endif %}
-                          >
+                                {% if option.selected_value == value %}checked{% endif %}>
                           <label for="{{ section.id }}-{{ option.name }}-{{ forloop.index0 }}">
                             {{ value }}
                           </label>
@@ -569,8 +565,7 @@
                         <select id="Option-{{ section.id }}-{{ forloop.index0 }}"
                           class="select__select my_main_product_addtocart"
                           name="options[{{ option.name | escape }}]"
-                          form="product-form-{{ section.id }}"
-                        >
+                          form="product-form-{{ section.id }}">
                           {%- for value in option.values -%}
                             <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
                               {{ value }}
@@ -598,8 +593,7 @@
                       <option
                         {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
                         {% if variant.available == false %}disabled{% endif %}
-                        value="{{ variant.id }}"
-                      >
+                        value="{{ variant.id }}">
                         {{ variant.title }}
                         {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
                         - {{ variant.price | money | strip_html }}
@@ -615,15 +609,11 @@
               <product-form class="product-form" style="{% if settings.enable_catalog_mode %}display: none;{% endif %}">
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                  <div class="product-form__buttons 
-                              {% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}my_main_product_product_form_button{% endif %}">
+                  <div class="product-form__buttons {% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}my_main_product_product_form_button{% endif %}">
                     <button
                       type="submit"
                       name="add"
-                      class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %} my_main_product_add 
-                             {% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}my_main_product_add_button{% endif %}"
-                    {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
-                    >
+                      class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %} my_main_product_add {% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}my_main_product_add_button{% endif %}"{% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
                         {%- if product.selected_or_first_available_variant.available -%}
                           {{ 'products.product.add_to_cart' | t }}
                         {%- else -%}
@@ -649,8 +639,7 @@
                 {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %} available{% endif %}
                 data-base-url="{{ shop.url }}{{ routes.root_url }}"
                 data-variant-id="{{ product.selected_or_first_available_variant.id }}"
-                data-has-only-default-variant="{{ product.has_only_default_variant }}"
-              >
+                data-has-only-default-variant="{{ product.has_only_default_variant }}">
                 <template>
                   <pickup-availability-preview class="pickup-availability-preview">
                     {% render 'icon-unavailable' %}
