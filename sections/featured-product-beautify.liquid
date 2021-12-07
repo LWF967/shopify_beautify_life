@@ -210,10 +210,6 @@
     margin-bottom: 0;
   }
   
-  .tengxun {
-    cursor: no-allowed;
-  }
-  
   @media screen and (max-width: 750px) {
 /*     .h1.product__title.my_featured_product_beautify_title {
       font-size: 36px;
@@ -251,6 +247,18 @@
     }*/
   }
 </style>
+
+{%- style -%}
+  {% if product.selected_or_first_available_variant.available == false %}
+    .button.my_featured_product_beautify_payment_button .shopify-payment-button .shopify-payment-button__button {
+      display: inline-block;
+      background: var(--color-button);
+      text-transform: uppercase;
+      min-height: auto;
+   	  cursor: not-allowed;
+    }
+  {% endif %}
+{%- endstyle -%}
 
 <section class="spaced-section {% if section.settings.secondary_background %}background-secondary{% endif %}"
          style="{%- if section.settings.featured_product_beautify_margin_top != blank -%}margin-top: {{ section.settings.featured_product_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.featured_product_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.featured_product_beautify_margin_bottom }}px;{%- endif -%}">
@@ -500,7 +508,7 @@
                             {%- endif -%}
                         </button>
                         {%- if block.settings.show_dynamic_checkout -%}
-                        <button class="button my_featured_product_beautify_payment_button {% if product.selected_or_first_available_variant.available == false %} tengxun{% endif %}"
+                        <button class="button my_featured_product_beautify_payment_button"
                                 {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
                           {{ form | payment_button }}
                         </button>
