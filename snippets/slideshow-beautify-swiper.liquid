@@ -1013,9 +1013,65 @@ console.log('轮播swiper');
     navigation: {
       nextEl: '.swiper-button-next-{{section.id}}',
       prevEl: '.swiper-button-prev-{{section.id}}',
-    },
+    }
     
   })
+  
+  
+  
+   
+       document.addEventListener('shopify:section:load',()=>{
+
+   
+    
+ let swiper123 = new Swiper ('.swiper-container-{{section.id}}', {
+    direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+    loop: true, // 循环模式选项 
+
+    // 如果需要分页器
+  
+
+	{% unless section.settings.show_page_Dot %} 
+    
+         pagination: {
+      el: '.swiper-pagination-{{section.id}}',
+      clickable :true,
+      hideOnClick :true,
+    },
+
+  {% else %}  
+	 pagination: {
+      el: '.swiper-pagination-{{section.id}}',
+      clickable :true,
+    },
+  {% endunless %}
+    
+
+
+    effect : 'fade',
+    observer : true,
+    observeParents : true,
+    observeSlideChildren : true,
+    autoplay: {
+    delay: 5000,
+    stopOnLastSlide: false,
+    disableOnInteraction: false,
+    },    
+  
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next-{{section.id}}',
+      prevEl: '.swiper-button-prev-{{section.id}}',
+    }
+    
+  })
+  
+
+
+
+  
+  },true)
  
 
 </script>
