@@ -6,7 +6,9 @@
   
     <!--    左箭头    -->
       <div class="swiper-button-prev-{{section.id}}
-                  bk_{{section.settings.show_button_color}} {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% else %}  z-1  {% endif%} leftbtn leftbtn-{{section.id}}   button_{{ section.settings.show_button_style }}">
+                  bk_{{section.settings.show_button_color}} 
+                  {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% else %}  z-1  {% endif%}
+                  leftbtn leftbtn-{{section.id}}   button_{{ section.settings.show_button_style }}">
       	<p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
             <svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-chevron-down-left" d="M4 4.5L7 1.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
@@ -22,7 +24,9 @@
   
 <!--    右箭头    -->
       <div class="swiper-button-next-{{section.id}} 
-                  bk_{{section.settings.show_button_color}} {% if section.settings.show_button %}icon-changebtn_{{section.id}} {% else %} z-1  {% endif%} rightbtn  rightbtn-{{section.id}}  button_{{ section.settings.show_button_style }} ">
+                  bk_{{section.settings.show_button_color}} 
+                  {% if section.settings.show_button %}icon-changebtn_{{section.id}} {% else %} z-1  {% endif%}
+                  rightbtn  rightbtn-{{section.id}}  button_{{ section.settings.show_button_style }} ">
       	<p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
           	<svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="icon-chevron-down-left" d="M4 4.5L1 7.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
