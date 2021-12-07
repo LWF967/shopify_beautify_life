@@ -3,7 +3,7 @@
     "show_back_to_top": "Desktop+Mobile",
     "back_to_top_style": "Style 2",
     "button_style": "Round",
-    "enable_prevent_copying": false,
+    "enable_prevent_copying": true,
     "enable_catalog_mode": false,
     "ratio_custom_1": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
     "ratio_custom_2": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
