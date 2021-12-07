@@ -20,7 +20,7 @@
   }
 </style>
 
-<div class="newsletter center{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}"
+<div class="newsletter center spaced-section{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif %}"
      style="{%- if section.settings.newsletter_margin_top != blank -%}margin-top: {{ section.settings.newsletter_margin_top }}px; {%- endif -%}{%- if section.settings.newsletter_margin_bottom != blank -%}margin-bottom:{{ section.settings.newsletter_margin_bottom }}px;{%- endif -%}">
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient" {%- if section.settings.newsletter_bk_box-%} style="background-color:{{ section.settings.newsletter_bk_color }}" {%- endif -%}>
     {%- for block in section.blocks -%}
