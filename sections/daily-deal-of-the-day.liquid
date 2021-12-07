@@ -26,14 +26,7 @@
       {% render 'price', product: product, price_class: '' %}
       </div>
       
-      {% if product.available %}
-      
-      <a class="mr_4" href="{{section.settings.shop_now_url}}"><button class="button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default">shop now</button></a>
-      <a class="t2" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default">Detail</button></a>
-      {% else %}
-      
-        <a  href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default">Sold Out</button></a>
-      {% endif %}
+    
       
       
            <product-form class="product-form" style="{% if settings.enable_catalog_mode %}display: none;{% endif %}">

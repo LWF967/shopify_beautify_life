@@ -496,7 +496,8 @@
                             {%- endif -%}
                         </button>
                         {%- if block.settings.show_dynamic_checkout -%}
-                        <button class="button my_featured_product_beautify_payment_button">
+                        <button class="button my_featured_product_beautify_payment_button"
+                                {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
                           {{ form | payment_button }}
                         </button>
                         {%- endif -%}
