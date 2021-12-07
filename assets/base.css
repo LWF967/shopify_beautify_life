@@ -2435,8 +2435,6 @@ a{
   margin-bottom: 5px !important;
 }
   
-.shopify-section:not(#shopify-section-promo-bar),
-.shopify-section:not(#shopify-section-top-bar),
-.shopify-section:not(#shopify-section-header){
+.shopify-section:not(#shopify-section-promo-bar, #shopify-section-top-bar, #shopify-section-header){
   overflow: hidden;
 }
