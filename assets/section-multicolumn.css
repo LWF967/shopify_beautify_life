@@ -20,7 +20,7 @@
 }
 
 /* lzx change start */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 990px) {
   .multicolumn.no-heading:not(.background-secondary) {
     margin-top: 3.5rem;
   }
@@ -104,7 +104,7 @@
 }
 
 /* lzx change start */
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 990px) {
   .multicolumn:not(.background-secondary) {
     margin: 3.5rem 0 0 0;
   }
