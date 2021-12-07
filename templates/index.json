@@ -1,69 +1,5 @@
 {
   "sections": {
-    "16366965204a8cb316": {
-      "type": "slideshow-beautify-2",
-      "blocks": {
-        "f6d6b42e-2c43-47f7-a951-c5acebe942df": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "image_alignment": "middle_center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
-        },
-        "8f64082c-3285-44d3-89fb-a12006fa7cda": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
-            "image_alignment": "center center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
-        },
-        "27a0088d-ec9a-48b1-a000-9c983fcc2430": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-            "image_alignment": "middle_center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "f6d6b42e-2c43-47f7-a951-c5acebe942df",
-        "8f64082c-3285-44d3-89fb-a12006fa7cda",
-        "27a0088d-ec9a-48b1-a000-9c983fcc2430"
-      ],
-      "settings": {
-        "se_height": "adapt",
-        "text_size": "medium",
-        "overlay": true,
-        "loop": true,
-        "auto_play": true,
-        "auto_time": 4,
-        "show_button": true,
-        "show_button_visible": "always",
-        "show_button_style": "style1",
-        "show_button_color": "white",
-        "show_button_hover_color": "#992f2f",
-        "show_page_Dot": true,
-        "page_dot_style": "style_1",
-        "page_dot_color": "dark",
-        "slideshow_beautify_margin_top": "",
-        "slideshow_beautify_margin_bottom": ""
-      }
-    },
     "16377430666a59b35c": {
       "type": "custom-content",
       "blocks": {
@@ -868,7 +804,6 @@
     }
   },
   "order": [
-    "16366965204a8cb316",
     "16377430666a59b35c",
     "1635836350c3b72b9b",
     "1635832448db75c5e7",
