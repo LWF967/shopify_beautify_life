@@ -3,10 +3,49 @@
 
   
   
+      <div class="swiper-button-prev-{{section.id}}
+                      bk_{{section.settings.show_button_color}}
+                      {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% else %}  dn  {% endif%} 
+                      leftbtn leftbtn-{{section.id}}   button_{{ section.settings.show_button_style }}
+                      
+                      
+                      ">
+            
+             <p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
+                <svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="icon-chevron-down-left" d="M4 4.5L7 1.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
+                    <path class="icon-chevron-down-right" d="M4 4.5L7 7.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
+                </svg>
+             </p>
   
-    <div class="swiper-button-prev">
+  
+  
+  		  </div>
+  
+  
+  
+          <div class="swiper-button-next-{{section.id}}   
+                      bk_{{section.settings.show_button_color}} 
+                      {% if section.settings.show_button %}icon-changebtn_{{section.id}} {% else %} dn  {% endif%} 
+                      rightbtn  rightbtn-{{section.id}}  button_{{ section.settings.show_button_style }}">
+  
+               <p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
+                  <svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="icon-chevron-down-left" d="M4 4.5L1 7.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
+                    <path class="icon-chevron-down-right" d="M4 4.5L1 1.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
+                  </svg>
+              </p>
+
+
+  
+  		  </div>
+  
+  
+  
+  
     <!--    左箭头    -->
-      <div class=" bk_{{section.settings.show_button_color}} {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% else %}  dn  {% endif%} leftbtn leftbtn-{{section.id}}   button_{{ section.settings.show_button_style }}">
+      <div class="swiper-button-prev-{{section.id}}
+                  bk_{{section.settings.show_button_color}} {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% else %}  dn  {% endif%} leftbtn leftbtn-{{section.id}}   button_{{ section.settings.show_button_style }}">
       	<p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
             <svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-chevron-down-left" d="M4 4.5L7 1.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
@@ -15,13 +54,14 @@
         </p>
       </div>
   
-	</div>
+	
   
   
-    <div class="swiper-button-next">
+    
   
 <!--    右箭头    -->
-      <div class="  bk_{{section.settings.show_button_color}} {% if section.settings.show_button %}icon-changebtn_{{section.id}} {% else %} dn  {% endif%} rightbtn  rightbtn-{{section.id}}  button_{{ section.settings.show_button_style }} ">
+      <div class="swiper-button-next-{{section.id}} 
+                  bk_{{section.settings.show_button_color}} {% if section.settings.show_button %}icon-changebtn_{{section.id}} {% else %} dn  {% endif%} rightbtn  rightbtn-{{section.id}}  button_{{ section.settings.show_button_style }} ">
       	<p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
           	<svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="icon-chevron-down-left" d="M4 4.5L1 7.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
@@ -29,7 +69,7 @@
           	</svg>
         </p>
       </div>
-    </div>
+ 
 
   
   <div id="Slideshow-{{ section.id }}"
@@ -122,6 +162,101 @@
 
 
 <style>
+  
+  
+  
+  
+  
+  
+  
+    
+.swiper-button-next-{{section.id}},
+    .swiper-button-prev-{{section.id}} {
+        position: absolute;
+        top: 50%;
+        width: calc(var(--swiper-navigation-size)/ 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color, var(--swiper-theme-color))
+    }
+
+    .swiper-button-next-{{section.id}}.swiper-button-disabled,
+    .swiper-button-prev-{{section.id}}.swiper-button-disabled {
+        opacity: .35;
+        cursor: auto;
+        pointer-events: none
+    }
+
+    .swiper-button-next-{{section.id}}:after,
+    .swiper-button-prev-{{section.id}}:after {
+        font-family: swiper-icons;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none !important;
+        letter-spacing: 0;
+        text-transform: none;
+        font-variant: initial;
+        line-height: 1
+    }
+
+    .swiper-button-prev-{{section.id}},
+    .swiper-rtl .swiper-button-next-{{section.id}} {
+        left: 10px;
+        right: auto
+    }
+
+/*     .swiper-button-prev-{{section.id}}:after,
+    .swiper-rtl .swiper-button-next-{{section.id}}:after {
+        content: 'prev'
+    } */
+
+    .swiper-button-next-{{section.id}},
+    .swiper-rtl .swiper-button-prev-{{section.id}} {
+        right: 10px;
+        left: auto
+    }
+
+/*     .swiper-button-next-{{section.id}}:after,
+    .swiper-rtl .swiper-button-prev-{{section.id}}:after {
+        content: 'next'
+    } */
+
+    .swiper-button-lock {
+        display: none
+    }
+
+/*   .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  
+  
+  bottom:-5px !important;
+    
+  } */
+  
+  .swiper-pagination-bullet{
+    
+  width:16px !important;
+  height:16px !important;  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   .my_slideshow_beautify_heading_text_size_medium {
     font-size: 35px;
   }
