@@ -35,11 +35,8 @@
   
   <div id="Slideshow-{{ section.id }}"
          class="big-box big-box-{{section.id}}  swiper-wrapper" 
-         data-autorotate="{{ section.settings.auto_play }}"
-         data-slider-container
-         data-speed="{{section.settings.auto_time}}"
 
-         data-autoplay="{{section.settings.auto_play}}" data-autotime="{{section.settings.auto_time}}">
+       >
       <div class="product-box product-box-{{section.id}}" >
       
     	{% for block in section.blocks %}
