@@ -810,7 +810,7 @@
         "cover_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
         "image_alignment": "center center",
         "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "show_overlay": false,
+        "show_overlay": true,
         "style": "image_with_play",
         "video_height": "medium",
         "heading": "Video",
