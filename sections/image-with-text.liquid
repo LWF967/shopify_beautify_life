@@ -21,11 +21,14 @@
     .my_image_with_text_padding {
       padding: 30px 0 0;
     }
-    
+  }
+  
+  @media screen and (max-width: 990px) {
     .my_button_font_size_default {
       font-size: 13px;
     }
   }
+      
 </style>
 
 <div class="image-with-text {% if section.settings.full_width %}image-with-text--full-width{% else %}page-width{% endif %} color-scheme-{{ section.settings.color_scheme }}" style="{%- if section.settings.image_with_text_margin_top != blank -%}margin-top: {{ section.settings.image_with_text_margin_top }}px; {%- endif -%}{%- if section.settings.image_with_text_margin_bottom != blank -%}margin-bottom:{{ section.settings.image_with_text_margin_bottom }}px;{%- endif -%}">
