@@ -659,7 +659,7 @@
       "settings": {
         "product": "1",
         "secondary_background": false,
-        "show_share_buttons": false,
+        "show_share_buttons": true,
         "hide_variants": false,
         "enable_video_looping": false,
         "featured_product_beautify_margin_top": "",
