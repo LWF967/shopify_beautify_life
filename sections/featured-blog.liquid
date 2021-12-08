@@ -62,7 +62,7 @@
   } */
 </style>
 
-<div class="blog page-width spaced-section{% if section.settings.soft_background %} background-secondary{% endif %}{% if section.settings.heading == blank %} no-heading{% endif %}"  style="{%- if section.settings.featured_blog_margin_top != blank -%}margin-top: {{ section.settings.featured_blog_margin_top }}px; {%- endif -%}{%- if section.settings.featured_blog_margin_bottom != blank -%}margin-bottom:{{ section.settings.featured_blog_margin_bottom }}px;{%- endif -%}">
+<div class="blog spaced-section{% if section.settings.soft_background %} background-secondary{% endif %}{% if section.settings.heading == blank %} no-heading{% endif %}"  style="{%- if section.settings.featured_blog_margin_top != blank -%}margin-top: {{ section.settings.featured_blog_margin_top }}px; {%- endif -%}{%- if section.settings.featured_blog_margin_bottom != blank -%}margin-bottom:{{ section.settings.featured_blog_margin_bottom }}px;{%- endif -%}">
   <div class="page-width-desktop">
     <div class="title-wrapper-with-link{% if section.settings.heading == blank %} title-wrapper-with-link--no-heading{% endif %} title-wrapper--self-padded-tablet-down my_featured_blog_title my_clear_margin my_section_margin_default">
       <h2 class="blog__title my_font_weight_default my_between_title_and_text_margin my_font_size_heading_default">{{ section.settings.heading | escape }}</h2>
