@@ -175,13 +175,15 @@
   @media screen and (max-width: 750px) {
     .banner-beautify-imgbox{
       max-height: 200px; 
-    } 
-  }
-  
-  @media screen and (max-width: 990px) {
-    .banner-beautify-imgbox{
-      max-height: 200px; 
-    } 
+    }
+    
+    .my_banner_beautify_ul_margin li:nth-child(odd) {
+      padding: 0 0 1.5rem;
+    }
+
+    .my_banner_beautify_ul_margin li:nth-child(even) {
+      padding: 0 0 1.5rem;
+    }
   }
 
   @media screen and (min-width: 990px) {
@@ -191,6 +193,10 @@
   }
   
   @media screen and (max-width: 990px) {
+    .banner-beautify-imgbox{
+      max-height: 200px; 
+    } 
+    
     .my_banner_beautify_ul_margin {
       margin: 0 0;
     }
