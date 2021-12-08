@@ -225,7 +225,7 @@
           "0e03fff2-5f48-4c58-ab83-ce5e1b70e304": {
             "type": "text2",
             "settings": {
-              "newsletter_design": "3",
+              "newsletter_design": "1",
               "heading": "Newsletter",
               "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
               "container_width": "7"
