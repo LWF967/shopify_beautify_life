@@ -811,67 +811,61 @@ document.addEventListener('shopify:section:load',()=>{
   }
 }
 
-   @media screen and (max-width: 750px) {
-	
-       .grid__item__beautify {
-          width:100%;
+  @media screen and (max-width: 750px) {
+    .grid__item__beautify {
+      width:100%;
+      max-width: 100%;
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
 
-          max-width: 100%;
-          flex-grow: 1;
-          flex-shrink: 0;
-		}
-     
-     
-      .banner_third{
- 
-  	display: flex;
-   	flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow:hidden;
-  	max-height: max-content;
-  }
-     
-      .flex_center{
-  	position:relative;
-    height:100px;
-    width:100%;
-    text-align: center;
-    flex-grow: 1;
-    padding: 0;
-    overflow: hidden;
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }	
-     
-     
-     .grid1 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-    margin-left: 0;
-    padding: 0;
-    list-style: none;
-    flex-direction: column;
-	}  
-    
+    .banner_third{
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow:hidden;
+      max-height: max-content;
+    }
+
+    .flex_center{
+      position:relative;
+      height:100px;
+      width:100%;
+      text-align: center;
+      flex-grow: 1;
+      padding: 0;
+      overflow: hidden;
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }	
+
+
+    .grid1 {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+      margin-left: 0;
+      padding: 0;
+      list-style: none;
+      flex-direction: column;
+    }  
+
   }
 
 @media screen and (max-width: 990px) {
-
-    .banner_third{
- 
-  	display: flex;
-   	flex-direction: column;
+  .banner_third{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow:hidden;
-  	max-height: max-content;
+    max-height: max-content;
+    margin: 0 0 3rem;
   }
-    
-  
-  }
+}
   
   
   
