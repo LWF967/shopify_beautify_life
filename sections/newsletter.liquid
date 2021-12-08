@@ -17,6 +17,7 @@
     margin: 2px 2px;
     background: #000;
     color: #fff;
+    border: 1px solid #000;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -46,6 +47,7 @@
     margin: 2px 2px;
     background: #000;
     color: #fff;
+    border: 1px solid #000;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -66,12 +68,8 @@
     text-overflow: ellipsis;
   }
   
-  .my_field_input_radius {
-    border-radius: 4px;
-  }
-  
   .my_field_input_style {
-    border: 1px solid #000;
+    border-radius: 4px;
   }
   
   .my_field_input_style:hover,
@@ -119,7 +117,7 @@
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
                     name="contact[email]"
-                    class="field__input my_field_input_style {% if section.settings.button_design == '3' or section.settings.button_design == '4' %}my_field_input_radius{% endif %}"
+                    class="field__input {% if section.settings.button_design == '3' or section.settings.button_design == '4' %}my_field_input_style{% endif %}"
                     style="background: #fff;"
                     value="{{ form.email }}"
                     aria-required="true"
