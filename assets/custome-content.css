@@ -80,8 +80,10 @@
       -moz-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
       flex: 0 0 auto;
-      padding-left: 22px;
-      margin-bottom: 22px; }
+/*       padding-left: 22px; lzx change
+      margin-bottom: 22px; */ 
+      padding-left: 15px;
+      margin-bottom: 15px; }
       .custom__item.small--one-half {
         -webkit-flex: 1 0 50%;
         -moz-flex: 1 0 50%;
