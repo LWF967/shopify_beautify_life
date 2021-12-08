@@ -74,6 +74,15 @@
   margin-bottom: 30px;
   padding-left: 30px;
   max-width: 100%; }
+  @media only screen and (max-width: 990px) {
+    .custom__item {
+        -webkit-flex: 0 0 auto;
+        -moz-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        margin-bottom: 15px;
+        padding-left: 15px;
+        max-width: 100%; } }
   @media only screen and (max-width: 749px) {
     .custom__item {
       -webkit-flex: 0 0 auto;
