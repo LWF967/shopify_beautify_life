@@ -962,6 +962,7 @@ summary::-webkit-details-marker {
   }
 }
   
+/* lzx change start */
 @media screen and (max-width: 990px) {
   .grid {
 /*     margin-left: -1rem; */
@@ -969,7 +970,8 @@ summary::-webkit-details-marker {
     margin-right: 0;
   }
 }
-
+/* lzx change end */
+  
 .grid__item {
   padding-left: 0.5rem;
   padding-bottom: 0.5rem;
