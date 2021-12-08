@@ -29,11 +29,16 @@
     {%- comment -%}
       Based on the image overlay opacity, either lighten or darken the image on hover
     {%- endcomment -%}
-    {%- if image_overlay_opacity > 0.85 -%}
-      {%- assign image_overlay_opacity_hover = image_overlay_opacity | minus: 0.3 -%}
-    {%- else -%}
-      {%- assign image_overlay_opacity_hover = image_overlay_opacity | plus: 0.4 -%}
-    {%- endif -%}
+
+	{%- if settings.image_overlay_opacity_hover -%}
+		{%- assign image_overlay_opacity_hover = settings.image_overlay_opacity_hover -%}
+	{%- else -%}
+      {%- if image_overlay_opacity > 0.85 -%}
+        {%- assign image_overlay_opacity_hover = image_overlay_opacity | minus: 0.3 -%}
+      {%- else -%}
+        {%- assign image_overlay_opacity_hover = image_overlay_opacity | plus: 0.4 -%}
+      {%- endif -%}
+	{%- endif -%}
     --hover-overlay-opacity: {{ image_overlay_opacity_hover | at_most: 1 }};
 
 
