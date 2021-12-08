@@ -412,7 +412,7 @@
   .daily-product :after {
     content: '';
     position: absolute;
-    position: fixed;
+/*     position: fixed; */
     width: 100%;
     height: auto;
     top: 0;
@@ -421,6 +421,7 @@
     left: 0;
     z-index: 999;
     background-image: url({{ section.settings.log_image | img_url :'x400'}});
+    background-size: content;
   }
   
   @media screen and (max-width: 990px) {
