@@ -19,6 +19,7 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     cursor: pointer;
+    padding: 0 0;
   }
   
   .my_newsletter_button_style_1 {
@@ -56,6 +57,10 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+  
+  .my_newsletter_button_text {
+    padding: 0 15px;
   }
   
   @media screen and (max-width: 990px) {
@@ -114,7 +119,7 @@
                   </label>
                   
                   <button type="submit" class="my_newsletter_button_style {% if section.settings.button_design == '1' %}my_newsletter_button_style_1{% elsif section.settings.button_design == '2' %}my_newsletter_button_style_2{% elsif section.settings.button_design == '3' %}my_newsletter_button_style_3{% elsif section.settings.button_design == '4' %}my_newsletter_button_style_4{% endif %} my_newsletter_mobile_style">
-                    <span>SUBSCRIBE</span>
+                    <span class="my_newsletter_button_text">SUBSCRIBE</span>
                   </button>
                 </div>
                 {%- if form.errors -%}
