@@ -93,7 +93,7 @@
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
                     name="contact[email]"
-                    class="field__input my_field_input_style"
+                    class="field__input {% if section.settings.button_design == '3' or section.settings.button_design == '4' %}my_field_input_style{% endif %}"
                     style="background: #fff;"
                     value="{{ form.email }}"
                     aria-required="true"
@@ -114,7 +114,7 @@
                     {{ 'newsletter.label' | t }}
                   </label>
                   
-                  <button type="submit" class="my_newsletter_button_style_4 my_newsletter_mobile_style">
+                  <button type="submit" class="{% if section.settings.button_design == '1' %}my_newsletter_button_style_1{% elsif section.settings.button_design == '2' %}my_newsletter_button_style_2{% elsif section.settings.button_design == '3' %}my_newsletter_button_style_3{% elsif section.settings.button_design == '4' %}my_newsletter_button_style_4{% endif %} my_newsletter_mobile_style">
                     SUBSCRIBE
                   </button>
                 </div>
