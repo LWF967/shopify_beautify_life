@@ -526,6 +526,8 @@
 </style>
 
 <script>
+  
+  const timedeal =  function abc(){
 	var set_time_box = document.getElementsByClassName('timebox')[0];
   	var set_time_day = set_time_box.getElementsByClassName('day_time')[0];
     var set_time_hour = set_time_box.getElementsByClassName('hour_time')[0];
@@ -556,14 +558,18 @@
   var a = setInterval(cctime,1000);
   
   
+  }
+  
+  var timebb = new timedeal();
+  
   document.addEventListener('shopify:section:load',()=>{  
     console.log('这是渲染完的');
-	a = setInterval(cctime,1000);
+	 timebb = new timedeal();
 	},true);
   
     document.addEventListener('shopify:section:unload',()=>{  
 	console.log('正在重新渲染');
-    clearInterval(a);
+    timebb = null;
 	},true);
 
 </script>
