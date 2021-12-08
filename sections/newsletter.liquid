@@ -16,6 +16,11 @@
     margin: 2px 2px;
   }
   
+  .my_field_input_style:hover,
+  .my_field_input_style:focus {
+    box-shadow: 0 0 0 0.1rem var(--color-foreground);
+  }
+  
   @media screen and (max-width: 990px) {
     .my_newsletter_mobile_flex {
       flex-wrap: wrap;
@@ -50,7 +55,7 @@
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
                     name="contact[email]"
-                    class="field__input"
+                    class="field__input my_field_input_style"
                     style="background: #fff;"
                     value="{{ form.email }}"
                     aria-required="true"
