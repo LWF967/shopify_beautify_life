@@ -419,6 +419,24 @@
     z-index: 999;
     background-image: url({{ section.settings.log_image | img_url :'x400'}});
   }
+  
+  @media screen and (max-width: 990px) {
+    .daily-product :after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 999;
+      background-image: url({{ section.settings.log_image | img_url :'x400'}});
+      background-size: 100%;
+      position: fixed;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: auto;
+    }
+  }
 
   @media screen and (max-width: 750px) {
     .felx_box{
