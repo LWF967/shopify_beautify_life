@@ -68,7 +68,7 @@
     text-overflow: ellipsis;
   }
   
-  .my_field_input_style {
+  .my_field_input_radius {
     border-radius: 4px;
   }
   
@@ -117,7 +117,7 @@
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
                     name="contact[email]"
-                    class="field__input {% if section.settings.button_design == '3' or section.settings.button_design == '4' %}my_field_input_style{% endif %}"
+                    class="field__input my_field_input_style {% if section.settings.button_design == '3' or section.settings.button_design == '4' %}my_field_input_radius{% endif %}"
                     style="background: #fff;"
                     value="{{ form.email }}"
                     aria-required="true"
