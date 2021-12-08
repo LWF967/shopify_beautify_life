@@ -45,17 +45,17 @@
     margin: 0 9px;
   }
   
-  .icon_flex_l .bubble_top {
+  .icon_flex_l .bubble {
     left: 0;
   }
   
-  .icon_flex_c .bubble_top {
+  .icon_flex_c .bubble {
     left: 50%;
     transform: translateX(-50%);
   }
   
-  .icon_flex_r .bubble_top {
-    bottom: -30px;
+  .icon_flex_r .bubble {
+    top: -30px;
     right: 0;
   }
 
@@ -95,22 +95,6 @@
     position: absolute;
     display: block;
     top: -30px;
-    padding: 2px 5px;
-    background: #000;
-    color: white;
-    white-space: nowrap;
-    font-size: 10px;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all .3s;
-    cursor: default;
-  }
-  
-  .bubble_top {
-    position: absolute;
-    display: block;
-    bottom: -30px;
     padding: 2px 5px;
     background: #000;
     color: white;
@@ -170,15 +154,15 @@
   .product__info-wrapper .my_a_padding:hover .bubble,
   .my_main_product_info .my_a_padding:hover .bubble,
   .my_footer_border .my_a_padding:hover .bubble,
-  .icon_flex_c .my_a_padding:hover .bubble_top,
+  .icon_flex_c .my_a_padding:hover .bubble,
   .my_password_icon .my_a_padding:hover .bubble {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(-5px);
   }
   
-  .icon_flex_l .my_a_padding:hover .bubble_top,
-  .icon_flex_r .my_a_padding:hover .bubble_top {
+  .icon_flex_l .my_a_padding:hover .bubble,
+  .icon_flex_r .my_a_padding:hover .bubble {
     opacity: 1;
     visibility: visible;
     transform: translateY(-5px);
@@ -197,7 +181,7 @@
   {%- unless follow_social -%}  
   {% if settings.share_on_facebook %}
   <a data-no-instant rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u={{ permalinkURL }}" target="{{target}}" class="facebook cb {{class_tooltip}} my_a_padding">
-    <span class="bubble bubble_top">{{ 'general.nt_tooltip.share_fb' | t }}</span>
+    <span class="bubble">{{ 'general.nt_tooltip.share_fb' | t }}</span>
     <span class="ts_style">
       {%- render 'icon-facebook' -%} 
     </span>
@@ -205,7 +189,7 @@
   {% endif %}
   {% if settings.tweet_on_twitter %}
   <a data-no-instant rel="noopener noreferrer nofollow" href="http://twitter.com/share?text={{ permaTitle }}&amp;url={{ permalinkURL }}" target="{{target}}" class="twitter cb {{class_tooltip}} my_a_padding">
-    <span class="bubble bubble_top">{{ 'general.nt_tooltip.share_tw' | t }}</span>
+    <span class="bubble">{{ 'general.nt_tooltip.share_tw' | t }}</span>
     <span class="ts_style">
       {%- render 'icon-twitter' -%}
     </span>
@@ -213,7 +197,7 @@
   {% endif %}
   {% if settings.pin_on_pinterest %}
   <a data-no-instant rel="noopener noreferrer nofollow" href="http://pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media=http:{{permaImage}}&amp;description={{ permaTitle }}" target="{{target}}" class="pinterest cb {{class_tooltip}} my_a_padding">
-    <span class="bubble bubble_top">{{ 'general.nt_tooltip.share_pr' | t }}</span>
+    <span class="bubble">{{ 'general.nt_tooltip.share_pr' | t }}</span>
     <span class="ts_style">
       {%- render 'icon-pinterest' -%}
     </span>
@@ -226,56 +210,56 @@
           <a data-no-instant rel="noopener noreferrer nofollow" href="{{ settings[social_link] | escape }}" target="{{target}}" class="{{socials_icon[forloop.index0] | remove:'-play'}} cb {{class_tooltip}} my_a_padding">
             {% if socials_icon[forloop.index0] == "twitter" %}
               {% if settings.social_twitter_link != blank %}
-                <span class="bubble bubble_top">{{ socials_txt[forloop.index0] | t }}</span>
+                <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
                   {%- render 'icon-twitter' -%}
                 </span>
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "facebook" %}
               {% if settings.social_facebook_link != blank %}
-                <span class="bubble bubble_top">{{ socials_txt[forloop.index0] | t }}</span>
+                <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
                   {%- render 'icon-facebook' -%}
                 </span>
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "pinterest" %}
               {% if settings.social_pinterest_link != blank %}
-                <span class="bubble bubble_top">{{ socials_txt[forloop.index0] | t }}</span>
+                <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
                   {%- render 'icon-pinterest' -%}
                 </span>
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "instagram" %}
               {% if settings.social_instagram_link != blank %}
-                <span class="bubble bubble_top">{{ socials_txt[forloop.index0] | t }}</span>
+                <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
                   {%- render 'icon-instagram' -%}
                 </span>
               {% endif %}    
             {% elsif socials_icon[forloop.index0] == "tumblr" %}
               {% if settings.social_tumblr_link != blank %}
-                <span class="bubble bubble_top">{{ socials_txt[forloop.index0] | t }}</span>
+                <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
                   {%- render 'icon-tumblr' -%}
                 </span>
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "snapchat" %}
               {% if settings.social_snapchat_link != blank %}
-                <span class="bubble bubble_top">{{ socials_txt[forloop.index0] | t }}</span>
+                <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
                   {%- render 'icon-snapchat' -%}
                 </span>
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "youtube-play" %}
               {% if settings.social_youtube_link != blank %}
-                <span class="bubble bubble_top">{{ socials_txt[forloop.index0] | t }}</span>
+                <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
                   {%- render 'icon-youtube' -%}
                 </span>
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "vimeo" %}
               {% if settings.social_vimeo_link != blank %}
-                <span class="bubble bubble_top">{{ socials_txt[forloop.index0] | t }}</span>
+                <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
                   {%- render 'icon-vimeo' -%}
                 </span>
