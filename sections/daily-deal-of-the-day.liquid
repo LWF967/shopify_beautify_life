@@ -557,11 +557,12 @@
   
   
   document.addEventListener('shopify:section:load',()=>{  
-	
+	setInterval(a);
 	},true);
   
     document.addEventListener('shopify:section:unload',()=>{  
-	
+	console.log('正在重新渲染');
+    clearInterval(a);
 	},true);
 
 </script>
