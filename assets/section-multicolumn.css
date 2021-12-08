@@ -118,8 +118,10 @@
 
 .multicolumn-card-spacing {
   padding-top: 2.5rem;
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+/*   margin-left: 2.5rem;
+  margin-right: 2.5rem; */
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .multicolumn-card__info > :nth-child(2) {
