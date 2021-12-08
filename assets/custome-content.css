@@ -839,7 +839,8 @@ text-decoration:none;
   .grid--uniform .medium-up--one-half:nth-child(2n+1),
   .grid--uniform .medium-up--one-third:nth-child(3n+1),
   .grid--uniform .medium-up--one-quarter:nth-child(4n+1),
-  .grid--uniform .medium-up--one-fifth:nth-child(5n+1) {
+  .grid--uniform .medium-up--one-fifth:nth-child(5n+1),
+  .grid--uniform .medium-up--one-sixth:nth-child(6n+1),   {
     clear: both; }
 
   .medium-up--show {
