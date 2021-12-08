@@ -566,7 +566,7 @@
       set_time_second.innerHTML = "Up";
       clearInterval(a);
     }else {
-      set_time_day.innerHTML = parseInt(count_time/(3600*24))+"Day"; 
+      set_time_day.innerHTML = parseInt(count_time/(3600*24))+"<p>Day</p>"; 
       set_time_hour.innerHTML = parseInt(count_time/3600%24)+"H";
       set_time_minutes.innerHTML = parseInt(count_time/60%60)+"Min";
       set_time_second.innerHTML = parseInt(count_time%60)+"S";
