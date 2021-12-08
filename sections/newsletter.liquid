@@ -37,17 +37,21 @@
     margin: 2px 2px;
     background: #000;
     color: #fff;
+    border-radius: 4px;
   }
 
   .my_newsletter_button_style_4 {
     position: absolute;
     top: 0;
     right: 0;
-    height: 40px;
-    min-height: 40px;
-    margin: 2px 2px;
+    height: 100%;
     background: #000;
     color: #fff;
+    border: 1px solid #000;
+  }
+  
+  .my_field_input_style {
+    border-radius: 4px;
   }
   
   .my_field_input_style:hover,
@@ -110,7 +114,7 @@
                     {{ 'newsletter.label' | t }}
                   </label>
                   
-                  <button type="submit" class="my_newsletter_button_style_2 my_newsletter_mobile_style">
+                  <button type="submit" class="my_newsletter_button_style_3 my_newsletter_mobile_style">
                     SUBSCRIBE
                   </button>
                 </div>
