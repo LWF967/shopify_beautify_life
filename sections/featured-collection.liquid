@@ -52,7 +52,7 @@
       {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
         <li class=" {{ grid_item_style }} {{ grid_item_width }}    
                    {% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} slider__slide{% endif %}"
-            style="{%- if section.settings.use_eq_height -%} flex: 1; {%- endif -%}"
+            
             >
           {% render 'product-card-beautify',
             use_eq_height:section.settings.use_eq_height,
