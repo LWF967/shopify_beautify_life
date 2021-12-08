@@ -31,7 +31,7 @@
     {%- endcomment -%}
 
 	{%- if settings.image_overlay_opacity_hover -%}
-		{%- assign image_overlay_opacity_hover = settings.image_overlay_opacity_hover -%}
+		{%- assign image_overlay_opacity_hover = settings.image_overlay_opacity_hover | divided_by: 100.00 -%}
 	{%- else -%}
       {%- if image_overlay_opacity > 0.85 -%}
         {%- assign image_overlay_opacity_hover = image_overlay_opacity | minus: 0.3 -%}
