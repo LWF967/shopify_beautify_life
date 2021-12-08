@@ -955,7 +955,9 @@ summary::-webkit-details-marker {
 
 @media screen and (min-width: 750px) {
   .grid {
-    margin-left: -1rem;
+/*     margin-left: -1rem; */
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
   }
 }
 
