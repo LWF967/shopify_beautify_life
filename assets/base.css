@@ -936,10 +936,9 @@ summary::-webkit-details-marker {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
+/*   margin-bottom: 2rem; */
 /*   margin-left: -0.5rem; */
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
+  margin: 0 -0.75rem 0;
   padding: 0;
   list-style: none;
 }
