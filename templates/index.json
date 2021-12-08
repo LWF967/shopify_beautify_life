@@ -611,7 +611,7 @@
         "heading_font_size": 40,
         "color_top": "#b13e3e",
         "countdown_time": "2021\/12\/9 18:30:00",
-        "time_font_size": 52,
+        "time_font_size": 30,
         "background_color": "#c46666",
         "background_product_color": "#ffffff",
         "shop_now_url": "shopify:\/\/products\/text6",
