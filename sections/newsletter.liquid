@@ -13,6 +13,7 @@
     right: 0;
     height: 40px;
     min-height: 40px;
+    max-width: 50%;
     margin: 2px 2px;
     background: #000;
     color: #fff;
@@ -23,6 +24,7 @@
     top: 0;
     right: 0;
     height: 100%;
+    max-width: 50%;
     background: #000;
     color: #fff;
     border: 1px solid #000;
@@ -34,6 +36,7 @@
     right: 0;
     height: 40px;
     min-height: 40px;
+    max-width: 50%;
     margin: 2px 2px;
     background: #000;
     color: #fff;
@@ -45,6 +48,7 @@
     top: 0;
     right: 0;
     height: 100%;
+    max-width: 50%;
     background: #000;
     color: #fff;
     border: 1px solid #000;
@@ -57,6 +61,12 @@
   .my_field_input_style:hover,
   .my_field_input_style:focus {
     box-shadow: 0 0 0 0.1rem var(--color-foreground);
+  }
+  
+  .my_newsletter_btn_text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   
   @media screen and (max-width: 990px) {
@@ -115,7 +125,7 @@
                   </label>
                   
                   <button type="submit" class="{% if section.settings.button_design == '1' %}my_newsletter_button_style_1{% elsif section.settings.button_design == '2' %}my_newsletter_button_style_2{% elsif section.settings.button_design == '3' %}my_newsletter_button_style_3{% elsif section.settings.button_design == '4' %}my_newsletter_button_style_4{% endif %} my_newsletter_mobile_style">
-                    SUBSCRIBE
+                    <span class="my_newsletter_btn_text">SUBSCRIBE</span>
                   </button>
                 </div>
                 {%- if form.errors -%}
