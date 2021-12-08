@@ -8,9 +8,9 @@
         -%}
 
 <div class="contatin spaced-section" style="background-color:{{setting.background_color}}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}"> 
-  <div class="left felx_box">
+  <div class="left ">
     <div class="felx_box h_50">
-      <h1 class="f5 " style="font-size:{{setting.heading_font_size}}px !important; line-height:{{setting.heading_font_size}}px !important; height:100%;">{{section.settings.heading_text | truncate: 25 }}</h1>
+      <h1 class="f5 felx_box" style="font-size:{{setting.heading_font_size}}px !important; line-height:{{setting.heading_font_size}}px !important; height:100%;">{{section.settings.heading_text | truncate: 25 }}</h1>
       <div class="timebox f4"    data-endtime="{{setting.countdown_time}}"  >
         <div class="day_time f1 time-div"></div>
         <div class="hour_time f1 time-div"></div>
