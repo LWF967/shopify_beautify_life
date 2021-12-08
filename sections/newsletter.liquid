@@ -72,10 +72,6 @@
     border-radius: 4px;
   }
   
-  .my_field_input_style {
-    height: 44px;
-  }
-  
   .my_field_input_style:hover,
   .my_field_input_style:focus {
     box-shadow: 0 0 0 0.1rem var(--color-foreground);
@@ -121,7 +117,7 @@
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
                     name="contact[email]"
-                    class="field__input my_field_input_style {% if section.settings.button_design == '3' or section.settings.button_design == '4' %}my_field_input_radius{% endif %}"
+                    class="field__input {% if section.settings.button_design == '3' or section.settings.button_design == '4' %}my_field_input_radius{% endif %}"
                     style="background: #fff;"
                     value="{{ form.email }}"
                     aria-required="true"
