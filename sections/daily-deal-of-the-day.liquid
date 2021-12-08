@@ -579,7 +579,12 @@
   
   var timebb = new timedeal();
   
-  document.addEventListener('shopify:section:load',()=>{  
+  
+   var designMode = Shopify.designMode || false;
+   if(designMode){
+   
+//    console.log('进入后台了');
+   document.addEventListener('shopify:section:load',()=>{  
     console.log('这是渲染完的');
 	 timebb = new timedeal();
 	},true);
@@ -589,6 +594,11 @@
     timebb = null;
 	},true);
 
+ 
+ 
+ }
+  
+  
 </script>
 
 
