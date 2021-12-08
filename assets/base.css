@@ -966,8 +966,8 @@ summary::-webkit-details-marker {
 @media screen and (max-width: 990px) {
   .grid {
 /*     margin-left: -1rem; */
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
   }
 }
 /* lzx change end */
