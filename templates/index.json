@@ -681,13 +681,22 @@
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "testimonials_author_text": "Author"
           }
+        },
+        "672e0890-39ba-4b25-9d67-92af3206399a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/01.png",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
         }
       },
       "block_order": [
         "16382547881188589b-0",
         "16382547881188589b-1",
         "16382547881188589b-2",
-        "03f80b97-e139-4166-bd9b-ac56655e1e5a"
+        "03f80b97-e139-4166-bd9b-ac56655e1e5a",
+        "672e0890-39ba-4b25-9d67-92af3206399a"
       ],
       "settings": {
         "title": "TESTIMONIALS",
