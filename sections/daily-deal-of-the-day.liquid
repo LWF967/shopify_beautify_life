@@ -678,36 +678,10 @@
   }  
 </style>
 
+<script>
 
 
-<script type="module">
-  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
-
-  
-  const deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
-  	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-    //  slidesPerView: 4,
-      autoplay: true,
-      loop: true,
-    
-   // 如果需要分页器
-      pagination: {
-        el: '.swiper-pagination-{{section.id}}',
-      },
-      
-      navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-      },
-
-  });
-    
-  
-  console.log('看看我出错没+',deal_swiper123);
-    
-  
-  
-    const timedeal =  function abc(){
+  const timedeal =  function abc(){
 	var set_time_box = document.getElementsByClassName('timebox')[0];
   	var set_time_day = set_time_box.getElementsByClassName('day_time')[0];
     var set_time_hour = set_time_box.getElementsByClassName('hour_time')[0];
@@ -760,8 +734,34 @@
  
  
  }
+
+</script>
+
+<script type="module">
+  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+
   
+  const deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
+  	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+    //  slidesPerView: 4,
+      autoplay: true,
+      loop: true,
+    
+   // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination-{{section.id}}',
+      },
+      
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+
+  });
+    
   
+  console.log('看看我出错没+',deal_swiper123);
+     
   
 </script>
 
