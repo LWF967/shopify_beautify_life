@@ -41,13 +41,8 @@
     justify-content: center;
   }
 
-  .swiper_pagination_testimonials .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: #000;
-  }
-
   .swiper_pagination_testimonials .swiper-pagination-bullet {
     transition: all 1.5s;
-    border: 1.5px solid;
   }
   
   .my_testimonials_ul_margin {
@@ -63,6 +58,44 @@
   .my_testimonials_title {
     align-items: center;
   }
+  
+  {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
+    .swiper_pagination_testimonials .swiper-pagination-bullet {
+      background:#4e4e4e;
+      border: 1.5px solid rgb(189 188 188 / 28%);
+  	}
+
+	.swiper_pagination_testimonials .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background:black;
+    }
+  {% elsif section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'light' %}
+	.swiper_pagination_testimonials .swiper-pagination-bullet {
+      background:#4e4e4e;
+      border: 1.5px solid rgb(189 188 188 / 28%);
+  	}
+
+	.swiper_pagination_testimonials .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background:white;
+    }
+  {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'dark' %}
+	.swiper_pagination_testimonials .swiper-pagination-bullet {
+      border: 1px solid #323232;
+      background:white;
+  	}
+
+	.swiper_pagination_testimonials .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background:black;
+    }
+  {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light'%}
+	.swiper_pagination_testimonials .swiper-pagination-bullet {
+      border: 1px solid #323232;
+      background:#adadad;
+  	}
+
+	.swiper_pagination_testimonials .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background:white;
+    }
+  {% endif %}	
 </style>
     
 <script src="{{'swiper-bundle.min.js'| asset_url }} "></script>
@@ -268,12 +301,25 @@
       "default": "testimonials",
       "label": "t:sections.multicolumn.settings.title.label"
     },
-	
     {
       "type": "checkbox",
       "id": "swipe",
       "default": false,
       "label": "Show Page Dot"
+    },
+    {
+      "type":"select",
+      "id":"page_dot_style",
+      "label":"Style",
+      "default":"style_1",
+      "options":[{"value":"style_1","label":"Style 1"},{"value":"style_2","label":"Style 2"}]
+    },
+    {
+      "type":"select",
+      "id":"page_dot_color",
+      "label":"Color",
+      "default":"dark",
+      "options":[{"value":"dark","label":"Dark"},{"value":"light","label":"Light"}]
     },
     {
       "type": "select",
