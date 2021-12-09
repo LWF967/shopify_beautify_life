@@ -88,8 +88,8 @@
     height: 100%;
   }
 </style>
-
-<div id="hide_banner" style="height:auto;margin-top:-{{ section.settings.promo_bar_height }}px;{%- if settings.promo_bar == false and settings.promo_bar_home_page_only -%}display: none;{%- elsif settings.promo_bar == false and settings.promo_bar_home_page_only == false -%}display: none;{%- elsif settings.promo_bar and settings.promo_bar_home_page_only and request.page_type != 'index' -%}display: none;{%- endif -%}" data-mheight='{{ section.settings.promo_bar_height }}'>
+<!-- margin-top:-{{ section.settings.promo_bar_height }}px; -->
+<div id="hide_banner" style="height:auto;{%- if settings.promo_bar == false and settings.promo_bar_home_page_only -%}display: none;{%- elsif settings.promo_bar == false and settings.promo_bar_home_page_only == false -%}display: none;{%- elsif settings.promo_bar and settings.promo_bar_home_page_only and request.page_type != 'index' -%}display: none;{%- endif -%}" data-mheight='{{ section.settings.promo_bar_height }}'>
   <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.promo_bar_show_icon}} my_promo_flex"
        data-date='{{section.settings.promo_bar_date}}'>
     {%- if section.settings.promo_bar_link != blank -%}<a href="{{ section.settings.promo_bar_link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>{%- endif -%}
@@ -147,7 +147,9 @@
   }
   
 //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-      hide_banner.style.marginTop = 0 + 'px';
+  
+  
+//       hide_banner.style.marginTop = 0 + 'px';
 
 </script>
 
