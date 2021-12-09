@@ -93,7 +93,7 @@
             {%- liquid
              assign media = product.selected_or_first_available_variant.featured_media 
            
-                 render 'product-media',media: media, loop: false, variant_image: true
+                 render 'product-media',media: media, loop: false, variant_image: true, meida_width: true
             -%}
               </div>
          
