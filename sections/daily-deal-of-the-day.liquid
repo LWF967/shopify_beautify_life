@@ -584,9 +584,28 @@
   }  
 </style>
 
-<script>
+
+
+<script type="module">
+  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+
   
-  const timedeal =  function abc(){
+  var deal_swiper = new Swiper(".my_deal_swiper", {
+  	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+      slidesPerView: 4,
+      spaceBetween: 10,
+
+      navigation: {
+          nextEl: '.swiper-button-next.featured_product_beautify_next',
+          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+      },
+
+  });
+  
+  
+  
+  
+    const timedeal =  function abc(){
 	var set_time_box = document.getElementsByClassName('timebox')[0];
   	var set_time_day = set_time_box.getElementsByClassName('day_time')[0];
     var set_time_hour = set_time_box.getElementsByClassName('hour_time')[0];
@@ -641,23 +660,6 @@
  }
   
   
-</script>
-
-
-<script type="module">
-  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
-
   
-  var deal_swiper = new Swiper(".my_deal_swiper", {
-  	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-      slidesPerView: 4,
-      spaceBetween: 10,
-
-      navigation: {
-          nextEl: '.swiper-button-next.featured_product_beautify_next',
-          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
-      },
-
-  });
 </script>
 
