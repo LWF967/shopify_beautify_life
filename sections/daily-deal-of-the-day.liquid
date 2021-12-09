@@ -113,6 +113,27 @@
   </div>
 </div>
 
+
+   <div class=" my_deal_swiper-{{section.id}} swiper" > 
+          	<div class=" product__media-item swiper-wrapper ">
+    	{%- for media in product.media -%}
+              <div class="slider__slide" style="width:100%;">
+            {%- liquid
+             assign media = product.selected_or_first_available_variant.featured_media 
+           
+                 render 'product-media',media: media, loop: false, variant_image: true
+            -%}
+              </div>
+         
+          {%- endfor -%}
+           </div>
+<!--              <div class="swiper-button-prev del_featured_product_beautify_prev-{{section.id}}"></div>
+            <div class="swiper-button-next del_featured_product_beautify_next-{{section.id}}"></div> -->
+            <div class="swiper-button-prev del_featured_product_beautify_prev-{{section.id}}"></div>
+            <div class="swiper-button-next del_featured_product_beautify_next-{{section.id}}"></div>
+           <div class="swiper-pagination-{{section.id}}"></div>
+     	  </div>
+
 {% schema %}
   {
     "name": "daily-deal-of-the-day",
