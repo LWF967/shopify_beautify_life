@@ -177,7 +177,7 @@
         "sub_title": "New supply this week",
         "grid": 4,
         "show_view_all": false,
-        "show_page_Dot": false,
+        "show_page_Dot": true,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
         "show_button": true,
@@ -605,7 +605,7 @@
     "163454604067313d0f": {
       "type": "daily-deal-of-the-day",
       "settings": {
-        "product": "text4",
+        "product": "lol2",
         "log_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
         "heading_text": "Daily Deal Of The Day 123123 j",
         "heading_font_size": 40,
