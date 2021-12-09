@@ -335,6 +335,49 @@
   .my_daily_deal_of_the_day_button_font_size {
     font-size: 13px;
   }
+  
+  
+  
+      
+.swiper-button-next-{{section.id}},
+    .swiper-button-prev-{{section.id}} {
+        position: absolute;
+        top: 50%;
+        width: calc(var(--swiper-navigation-size)/ 44 * 27);
+        height: var(--swiper-navigation-size);
+        margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+        z-index: 10;
+        cursor: pointer;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        color: var(--swiper-navigation-color, var(--swiper-theme-color))
+    }
+
+    .swiper-button-next-{{section.id}}.swiper-button-disabled,
+    .swiper-button-prev-{{section.id}}.swiper-button-disabled {
+        opacity: .35;
+        cursor: auto;
+        pointer-events: none
+    }
+
+    .swiper-button-next-{{section.id}}:after,
+    .swiper-button-prev-{{section.id}}:after {
+        font-family: swiper-icons;
+        font-size: var(--swiper-navigation-size);
+        text-transform: none !important;
+        letter-spacing: 0;
+        text-transform: none;
+        font-variant: initial;
+        line-height: 1
+    }
+
+    .swiper-button-prev-{{section.id}},
+    .swiper-rtl .swiper-button-next-{{section.id}} {
+        left: 10px;
+        right: auto
+    }
+  
 
   @media (max-width: 750px) {
     .contatin{
