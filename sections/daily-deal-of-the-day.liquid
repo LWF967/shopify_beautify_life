@@ -86,7 +86,7 @@
            
            {% endcomment %}
           
-           <div class=" my_deal_swiper-{{section.id}}"    product__media-item> 
+          <div class=" my_deal_swiper-{{section.id}}"    product__media-item> 
           	<div class="  swiper-wrapper ">
     	{%- for media in product.media -%}
               <div class="slider__slide" style="width:100%;">
@@ -100,8 +100,8 @@
          
           {%- endfor -%}
            </div>
-             <div class="swiper-button-prev featured_product_beautify_prev-{{section.id}}"></div>
-            <div class="swiper-button-next featured_product_beautify_next-{{section.id}}"></div>
+             <div class="swiper-button-prev del_featured_product_beautify_prev-{{section.id}}"></div>
+            <div class="swiper-button-next del_featured_product_beautify_next-{{section.id}}"></div>
     	  </div>
 		
   
@@ -335,8 +335,8 @@
   
   
       
-.featured_product_beautify_prev-{{section.id}},
-    .featured_product_beautify_next-{{section.id}} {
+.del_featured_product_beautify_prev-{{section.id}},
+    .del_featured_product_beautify_next-{{section.id}} {
         position: absolute;
         top: 50%;
         width: calc(var(--swiper-navigation-size)/ 44 * 27);
@@ -631,8 +631,8 @@
       spaceBetween: 10,
 
       navigation: {
-          nextEl: 'featured_product_beautify_next-{{section.id}}',
-          prevEl: 'featured_product_beautify_prev-{{section.id}}',
+          nextEl: 'del_featured_product_beautify_next-{{section.id}}',
+          prevEl: 'del_featured_product_beautify_prev-{{section.id}}',
       },
 
   });
