@@ -150,7 +150,9 @@
         {%- endfor -%}
           </div>
         </div>
+        {% if section.blocks.size > 3 %}
         <div class="swiper_pagination_testimonials"></div>
+        {% endif %}
       </ul>
 	
       {%-  if section.settings.swipe == true and  section.blocks.size > 3 -%}
