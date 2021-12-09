@@ -22,7 +22,8 @@
       {
         "type": "text",
         "id": "text___1",
-        "placeholder": "Enter Global CSS code"
+        "placeholder": "Enter Global CSS code",
+        "default": "123"
       },
       {
         "type": "header",
