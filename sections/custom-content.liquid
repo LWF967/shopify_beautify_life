@@ -187,7 +187,7 @@
               {% endif %}
             {%- when 'link_list' -%}
               {%- assign custom_linklist = block.settings.menu -%}
-              <ul class="list--inline custom__linklist">
+              <ul class="list--inline custom__linklist" style="padding: 0 0;">
                 {%- for link in linklists[custom_linklist].links -%}
                   <li class="custom__linklist-item">
                     <a href="{{ link.url }}" class="custom__linklist-link">
