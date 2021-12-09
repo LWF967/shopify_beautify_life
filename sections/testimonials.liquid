@@ -33,7 +33,7 @@
         <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
       {%- endif -%}
     </div>
-    <slider-component  class="testimonials-box slider-mobile-gutter" style="overflow:hidden;">
+<!--     <slider-component  class="testimonials-box slider-mobile-gutter" style="overflow:hidden;"> -->
       <ul class="multicolumn-list grid grid--1-col
                  {% if section.blocks.size > 20 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop
                  {% elsif section.blocks.size > 20 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}
@@ -43,6 +43,8 @@
         role="list"
         style="flex-wrap: nowrap;transition: all 1.5s ease 0s;"
       >
+        <div class="swiper my_swiper_testimonial">
+          <div class="swiper-wrapper">
         {%- liquid
           assign highest_ratio = 0
           for block in section.blocks
@@ -100,6 +102,8 @@
             </div>
           </li>
         {%- endfor -%}
+          </div>
+        </div>
       </ul>
 	
       {%-  if section.settings.swipe == true and  section.blocks.size > 3 -%}
@@ -114,7 +118,7 @@
       
  
       
-    </slider-component>
+<!--     </slider-component> -->
     <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
         <a class="button button--primary"{% if section.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
@@ -172,54 +176,35 @@
 
 </style>
 
-
-<script>
-
-//获取轮播点
-
- let testimonials_lunbo = function(){
-    
-   var contentbox = document.getElementById('Slider-template--15036995076262__163488699162d893f0'); 
- var list_text = document.getElementById('slide_pog2'); 
-   var itemlist=document.querySelectorAll(".testimonials-li");
-   var itemLength  = itemlist.length;
-//    var diff = contentbox.clientWidth;
-   var diff=document.getElementsByClassName('testimonials-box slider-mobile-gutter')[0].clientWidth;
+<script type="module">
+  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
-  for (let a = 0; a < itemLength/3; a++) {
-            itemlist[a].index = a;
-            list_text.innerHTML += "<li></li>"
-            
-        }
-  
-  var list = list_text.getElementsByTagName("li");
-  list[0].index= 0;
-  list[0].className="active";
-  
-  
-  
-  
-  for (var c = 0; c < list.length; c++) {
-        list[c].index = c;
-        list[c].onclick = function(){
-            for(var j = 0;j<list.length;j++){
-                list[j].className="";
-            }
-            this.className="active";
-   
-//            contentbox.style.transform="translate(calc(" + -itemlist[this.index].index*diff  + "px +" + " 2.5rem))";
-          
-           contentbox.style.transform="translate(calc(" + -itemlist[this.index].index*diff  + "px" + " ))";
-          
-        }
-    }
-  
-  
-  
-  }();
-
-
-
+  var swiper = new Swiper(".my_swiper_testimonial", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+          el: ".swiper_pagination_blog",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next.featured_product_beautify_next',
+          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+      },
+      breakpoints: {
+        0: {  //当屏幕宽度大于等于0 
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        750: {  //当屏幕宽度大于等于750 
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        990: {  //当屏幕宽度大于等于990
+          slidesPerView: 3,
+          spaceBetween: 30,
+		}
+      }
+  });
 </script>
 
 {% schema %}
