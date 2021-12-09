@@ -44,13 +44,13 @@
                                 
                   </div>
                 {%- endform -%}
-       			 <a class="t2" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default">Detail</button></a>
+       			 <a class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default">Detail</button></a>
              
         
               </product-form>
         {% else %}
       
-        <a  class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default">Sold Out</button></a>
+        <a  href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default">Sold Out</button></a>
       {% endif %}
       
       
