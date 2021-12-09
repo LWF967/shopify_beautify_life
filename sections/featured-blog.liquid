@@ -200,7 +200,7 @@ ul class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
   var swiper = new Swiper(".my_swiper_blog", {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 30,
       pagination: {
           el: ".swiper-pagination",
@@ -209,6 +209,17 @@ ul class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--
       navigation: {
           nextEl: '.swiper-button-next.featured_product_beautify_next',
           prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+      },
+      breakpoints: {
+        0: {  //当屏幕宽度大于等于0 
+          slidesPerView: 1,
+        },
+        750: {  //当屏幕宽度大于等于750 
+          slidesPerView: 2,
+        },
+        990: {  //当屏幕宽度大于等于990
+          slidesPerView: 3,
+		}
       }
   });
 </script>
