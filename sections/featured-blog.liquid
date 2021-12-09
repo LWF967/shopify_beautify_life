@@ -9,7 +9,40 @@
 
 {{ 'section-featured-blog.css' | asset_url | stylesheet_tag }}
 
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+
 <style>
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
   .slider-mobile-gutter .my_featured_blog_ul {
     margin-left: -1.5rem;
     margin-right: -1.5rem;
@@ -96,27 +129,29 @@ ul class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--
           class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--3-col-desktop{% if posts_exceed_limit %} 1 blog__posts--{{ section.settings.post_limit }}-items{% else %} 2 blog__posts--{{ section.settings.blog.articles_count }}-items{% endif %} my_featured_blog_ul"
           role="list"
         >
-          
-          {%- case section.settings.show_view_all -%}
-          {%- when true -%}
-          
-          {%- for article in section.settings.blog.articles limit: 3 -%}
-            <li class="blog__post grid__item article slider__slide slider__slide--full-width 1">
-              {% render 'article-card-beautify', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_title: section.settings.show_title,show_short_content: section.settings.show_short_content,show_date: section.settings.show_date, show_author: section.settings.show_author %}
-            </li>
-          {%- endfor -%}
-          
-          {%- when false -%}
-          
-          
-          {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
-            <li class="blog__post grid__item article slider__slide slider__slide--full-width 2">
-              {% render 'article-card-beautify', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_title: section.settings.show_title,show_short_content: section.settings.show_short_content,show_date: section.settings.show_date, show_author: section.settings.show_author %}
-            </li>
-          {%- endfor -%}
-          
-          {%- endcase -%}
-          
+          <div class="swiper my_swiper_blog">
+            <div class="swiper-wrapper">
+            {%- case section.settings.show_view_all -%}
+            {%- when true -%}
+
+            {%- for article in section.settings.blog.articles limit: 3 -%}
+              <li class="blog__post grid__item article slider__slide slider__slide--full-width 1 swiper-slide">
+                {% render 'article-card-beautify', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_title: section.settings.show_title,show_short_content: section.settings.show_short_content,show_date: section.settings.show_date, show_author: section.settings.show_author %}
+              </li>
+            {%- endfor -%}
+
+            {%- when false -%}
+
+
+            {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
+              <li class="blog__post grid__item article slider__slide slider__slide--full-width 2 swiper-slide">
+                {% render 'article-card-beautify', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_title: section.settings.show_title,show_short_content: section.settings.show_short_content,show_date: section.settings.show_date, show_author: section.settings.show_author %}
+              </li>
+            {%- endfor -%}
+
+            {%- endcase -%}
+            </div>
+          </div> 
         </ul>
         {%- if posts_exceed_limit -%}
 <!--           <div class="slider-buttons no-js-hidden{% if section.settings.post_limit < 3 %} medium-hide{% endif %}{% if section.settings.post_limit < 2 %} small-hide{% endif %}">
@@ -158,6 +193,23 @@ ul class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--
     {%- endif -%}
   </div>
 </div>
+
+<script type="module">
+  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+  
+  var swiper = new Swiper(".my_swiper_blog", {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next.featured_product_beautify_next',
+          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+      }
+  });
+</script>
 
 {% schema %}
 {
