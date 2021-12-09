@@ -93,7 +93,7 @@
             {%- liquid
              assign media = product.selected_or_first_available_variant.featured_media 
               unless media.id == product.selected_or_first_available_variant.featured_media.id              
-                 render 'product-media',media: media, loop: true, variant_image: true
+                 render 'product-media',media: media, loop: false, variant_image: true
               endunless
             -%}
               </div>
