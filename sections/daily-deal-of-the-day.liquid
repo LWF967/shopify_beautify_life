@@ -98,7 +98,7 @@
               endif
 
               unless media.id == product.selected_or_first_available_variant.featured_media.id              
-                render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: true
+                render 'product-media', media: media,
               endunless
             -%}
               </li>
