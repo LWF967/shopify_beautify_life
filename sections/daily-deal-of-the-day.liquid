@@ -224,6 +224,59 @@
 
 
 <style>
+  
+  
+  
+   
+  /*   定义轮播点 */
+  
+  
+ 
+    .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
+    background:#4e4e4e;
+	border: 1.5px solid rgb(189 188 188 / 28%);
+
+  	}
+
+	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
+      background:black;
+    
+    }
+   
+  
+  .swiper-pagination-{{section.id}} {
+  
+  	width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    z-index: 100;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0;
+
+  }
+  
+  
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
+	
+    float:left;
+    width:16px;
+    height:16px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 10px;
+    border-radius: 50%;
+    text-align: center;
+    transition:all 1.5s;
+    margin: 0 14px;
+    list-style-type: none;
+  }
+  
+  
+  
+  
   .font-cap {
     text-transform: capitalize;
   }
