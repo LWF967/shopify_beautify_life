@@ -722,6 +722,7 @@
           "type": "column",
           "settings": {
             "show_image": true,
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
             "title": "Add a title or tagline",
             "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
             "button_label": "Button",
@@ -732,6 +733,7 @@
           "type": "column",
           "settings": {
             "show_image": true,
+            "image": "shopify:\/\/shop_images\/01.png",
             "title": "Add a title or tagline",
             "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
             "button_label": "Button",
