@@ -93,8 +93,7 @@
             {%- liquid
              assign media = product.selected_or_first_available_variant.featured_media 
            
-                
-         		render 'product-thumbnail', media: media, position: forloop.index, loop: false, modal_id: section.id, xr_button: false
+                 render 'product-media',media: media, loop: false, variant_image: true
             -%}
               </div>
          
