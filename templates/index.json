@@ -691,7 +691,7 @@
       ],
       "settings": {
         "title": "TESTIMONIALS",
-        "swipe": false,
+        "swipe": true,
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",

@@ -646,6 +646,7 @@
 
   
   var deal_swiper = new Swiper(".my_deal_swiper", {
+  	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
       slidesPerView: 4,
       spaceBetween: 10,
 
@@ -653,17 +654,7 @@
           nextEl: '.swiper-button-next.featured_product_beautify_next',
           prevEl: '.swiper-button-prev.featured_product_beautify_prev',
       },
-      breakpoints: {
-        0: {  //当屏幕宽度大于等于0 
-          slidesPerView: 2,
-        },
-        750: {  //当屏幕宽度大于等于750 
-          slidesPerView: 2,
-        },
-        990: {  //当屏幕宽度大于等于990
-          slidesPerView: 4,
-		}
-      }
+
   });
 </script>
 
