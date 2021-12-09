@@ -67,6 +67,12 @@
     padding: 0 15px;
   }
   
+  @media screen and (max-width: 750px) {
+    .my_newsletter_padding {
+      padding: 5.5rem 3.5rem;
+    }
+  }
+  
   @media screen and (max-width: 990px) {
 /*     .my_newsletter_mobile_flex {
       flex-wrap: wrap;
@@ -77,12 +83,15 @@
       margin-top: 20px;
       font-size: 13px;
     } */
+    .my_newsletter_padding {
+      padding: 5.5rem 5rem;
+    }
   }
 </style>
 
 <div class="newsletter center spaced-section{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif %}"
      style="{%- if section.settings.newsletter_margin_top != blank -%}margin-top: {{ section.settings.newsletter_margin_top }}px; {%- endif -%}{%- if section.settings.newsletter_margin_bottom != blank -%}margin-bottom:{{ section.settings.newsletter_margin_bottom }}px;{%- endif -%}">
-  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient" {%- if section.settings.newsletter_bk_box-%} style="background-color:{{ section.settings.newsletter_bk_color }}" {%- endif -%}>
+  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient my_newsletter_padding" {%- if section.settings.newsletter_bk_box-%} style="background-color:{{ section.settings.newsletter_bk_color }}" {%- endif -%}>
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
