@@ -245,7 +245,7 @@
       "name": "Margintip",
       "settings": {
         "margin_tip": {
-          "label": "Keep it blank if you not use it"
+          "label": "Keep it blank if you not use it, default value 55"
         }
       }
     },
