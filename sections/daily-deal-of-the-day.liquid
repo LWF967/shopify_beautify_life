@@ -86,7 +86,7 @@
            
            {% endcomment %}
           
-           <div class=" my_deal_swiper-{{section.id}}"    product__media-item> 
+           <div class=" my_deal_swiper-{{section.id}} swiper"    product__media-item> 
           	<div class="  swiper-wrapper ">
     	{%- for media in product.media -%}
               <div class="slider__slide" style="width:100%;">
@@ -624,7 +624,7 @@
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
 
   
-  var deal_swiper = new Swiper(".my_deal_swiper-{{section.id}}", {
+  var deal_swiper = new Swiper(".swiper", {
   	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     //  slidesPerView: 4,
       loop: true,
