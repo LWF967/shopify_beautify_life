@@ -85,14 +85,14 @@
           {%- endfor -%}
            
            {% endcomment %}
-           
-           <div class="product__media-item my_deal_swiper-{{section.id}}"  123> 
+          
+           <div class=" my_deal_swiper-{{section.id}}"    product__media-item> 
           	<div class="  swiper-wrapper ">
     	{%- for media in product.media -%}
               <div class="slider__slide">
             {%- liquid
-            assign media = product.selected_or_first_available_variant.featured_media 
-             unless media.id == product.selected_or_first_available_variant.featured_media.id              
+             assign media = product.selected_or_first_available_variant.featured_media 
+              unless media.id == product.selected_or_first_available_variant.featured_media.id              
                  render 'product-media',media: media, loop: false, variant_image: true
               endunless
             -%}
@@ -239,7 +239,7 @@
     }
   }
 
-  .my_deal_swiper{
+  .my_deal_swiper-{{section.id}}{
   width: 600px;
     height: 300px;
   }
