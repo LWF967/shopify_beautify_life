@@ -61,7 +61,7 @@
   </div>
   <div class="right daily-right">
     <div class="daily-product-box" style="background-color: {{setting.background_product_color}};">
-   		 <div class="daily-product  my_deal_swiper-{{section.id}}" >
+   		 <div class="daily-product  my_deal_swiper-{{section.id}} swiper" >
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
             <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
