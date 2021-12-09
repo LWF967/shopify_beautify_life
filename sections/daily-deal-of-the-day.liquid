@@ -754,7 +754,11 @@
   const deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
   	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
       slidesPerView: 1,
-      autoplay: true,
+      autoplay: {
+      delay: 3000,
+      stopOnLastSlide: false,
+      disableOnInteraction: false,
+      },
       loop: true,
     
    // 如果需要分页器
