@@ -86,10 +86,10 @@
            
            {% endcomment %}
           
-          <div class=" my_deal_swiper-{{section.id}} swiper" style="width:600px;height:67%;" > 
+          <div class=" my_deal_swiper-{{section.id}} swiper"  > 
           	<div class=" swiper-wrapper ">
     	{%- for media in product.media -%}
-              <div class="product__media-item  swiper-slide" style="width:100%;height:300px;">
+              <div class="product__media-item  swiper-slide" >
             {%- liquid
              assign media = product.selected_or_first_available_variant.featured_media 
            
