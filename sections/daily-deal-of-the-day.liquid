@@ -61,7 +61,7 @@
   </div>
   <div class="right daily-right">
     <div class="daily-product-box" style="background-color: {{setting.background_product_color}};">
-   		 <div class="daily-product" >
+   		 <div class="daily-product my_deal_swiper" >
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
             <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
@@ -639,5 +639,32 @@
 </script>
 
 
+<script type="module">
+  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
 
+  
+  var deal_swiper = new Swiper(".my_deal_swiper", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next.featured_product_beautify_next',
+          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+      },
+      breakpoints: {
+        0: {  //当屏幕宽度大于等于0 
+          slidesPerView: 2,
+        },
+        750: {  //当屏幕宽度大于等于750 
+          slidesPerView: 2,
+        },
+        990: {  //当屏幕宽度大于等于990
+          slidesPerView: 4,
+		}
+      }
+  });
+</script>
 
