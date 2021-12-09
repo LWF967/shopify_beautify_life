@@ -134,7 +134,7 @@
     if(hide_banner_height > hide_banner.dataset.mheight) {
       hide_banner.dataset.mheight = hide_banner_height;
     }
-    hide_banner.style.marginTop = 0 + 'px';
+    hide_banner.style.marginTop = 1 + 'px';
   }
   
   if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
@@ -146,9 +146,9 @@
     }
   }
   
-  window.onload = function() {
+
     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-  }
+  
 </script>
 
 {%- schema -%}
