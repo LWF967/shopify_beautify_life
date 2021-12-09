@@ -87,9 +87,9 @@
            {% endcomment %}
            
            <div class="product__media-item my_deal_swiper-{{section.id}}"  123> 
-          	<ul class="  swiper-wrapper ">
+          	<div class="  swiper-wrapper ">
     	{%- for media in product.media -%}
-              <li class="slider__slide">
+              <div class="slider__slide">
             {%- liquid
               if section.settings.hide_variants and media_to_render contains media.id
                 assign variant_image = true
@@ -101,10 +101,10 @@
                 render 'product-media', media: media,
               endunless
             -%}
-              </li>
+              </div>
          
           {%- endfor -%}
-           </ul>
+           </div>
              <div class="swiper-button-prev featured_product_beautify_prev-{{section.id}}"></div>
             <div class="swiper-button-next featured_product_beautify_next-{{section.id}}"></div>
     	  </div>
