@@ -739,12 +739,36 @@
             "button_label": "Button",
             "button_link": "shopify:\/\/collections\/frontpage"
           }
+        },
+        "ac57a4b1-31ce-47c6-a886-b5cba91b2deb": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        },
+        "7f0a332f-a0c7-4485-9968-a56273dc688f": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "1635996418e080b5d8-0",
         "1635996418e080b5d8-1",
-        "1635996418e080b5d8-2"
+        "1635996418e080b5d8-2",
+        "ac57a4b1-31ce-47c6-a886-b5cba91b2deb",
+        "7f0a332f-a0c7-4485-9968-a56273dc688f"
       ],
       "settings": {
         "Text_columns_with_images_heading": "Text column with images",
