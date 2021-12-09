@@ -605,7 +605,7 @@
     "163454604067313d0f": {
       "type": "daily-deal-of-the-day",
       "settings": {
-        "product": "lol2",
+        "product": "text4",
         "log_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
         "heading_text": "Daily Deal Of The Day 123123 j",
         "heading_font_size": 40,
@@ -614,7 +614,6 @@
         "time_font_size": 30,
         "background_color": "#c46666",
         "background_product_color": "#ffffff",
-        "shop_now_url": "shopify:\/\/products\/text6",
         "daily_deal_of_the_day_margin_top": "",
         "daily_deal_of_the_day_margin_bottom": ""
       }
