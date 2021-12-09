@@ -83,7 +83,8 @@
           {%- endfor -%}
         </div>
     </div>
-    
+    	
+    	<div class="tt1"> 
     	{%- for media in product.media -%}
             {%- liquid
               if section.settings.hide_variants and media_to_render contains media.id
@@ -97,7 +98,7 @@
               endunless
             -%}
           {%- endfor -%}
-    
+    	</div>
   </div>
 </div>
 
