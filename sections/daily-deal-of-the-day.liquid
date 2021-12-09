@@ -93,8 +93,8 @@
             {%- liquid
              assign media = product.selected_or_first_available_variant.featured_media 
            
-                 render 'product-media',media: media, loop: false, variant_image: true
-         
+                
+         		render 'product-thumbnail', media: media, position: forloop.index, loop: false, modal_id: section.id, xr_button: false
             -%}
               </div>
          
@@ -104,25 +104,6 @@
             <div class="swiper-button-next del_featured_product_beautify_next-{{section.id}}"></div>
            <div class="swiper-pagination-{{section.id}}"></div>
      	  </div>
-		
-  		
-           
-           <div class="swipertt">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                </div>
-                <!-- 如果需要分页器 -->
-                <div class="swiper-pagination"></div>
-
-                <!-- 如果需要导航按钮 -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- 如果需要滚动条 -->
-                <div class="swiper-scrollbar"></div>
-            </div>
            
         </div>
     </div>
