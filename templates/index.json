@@ -692,6 +692,8 @@
       "settings": {
         "title": "TESTIMONIALS",
         "swipe": true,
+        "page_dot_style": "style_2",
+        "page_dot_color": "dark",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
