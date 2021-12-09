@@ -606,7 +606,6 @@
       "type": "daily-deal-of-the-day",
       "settings": {
         "product": "text4",
-        "log_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
         "heading_text": "Daily Deal Of The Day 123123 j",
         "heading_font_size": 40,
         "color_top": "#b13e3e",
@@ -681,22 +680,13 @@
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "testimonials_author_text": "Author"
           }
-        },
-        "672e0890-39ba-4b25-9d67-92af3206399a": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/01.png",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "testimonials_author_text": "Author"
-          }
         }
       },
       "block_order": [
         "16382547881188589b-0",
         "16382547881188589b-1",
         "16382547881188589b-2",
-        "03f80b97-e139-4166-bd9b-ac56655e1e5a",
-        "672e0890-39ba-4b25-9d67-92af3206399a"
+        "03f80b97-e139-4166-bd9b-ac56655e1e5a"
       ],
       "settings": {
         "title": "TESTIMONIALS",
