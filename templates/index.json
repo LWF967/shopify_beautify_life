@@ -673,12 +673,21 @@
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "testimonials_author_text": "Author"
           }
+        },
+        "1f1b6a83-75b3-415a-8879-ad184c242665": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
         }
       },
       "block_order": [
         "16382547881188589b-0",
         "16382547881188589b-1",
-        "16382547881188589b-2"
+        "16382547881188589b-2",
+        "1f1b6a83-75b3-415a-8879-ad184c242665"
       ],
       "settings": {
         "title": "TESTIMONIALS",
