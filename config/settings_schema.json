@@ -20,12 +20,6 @@
     "name": "general",
     "settings": [
       {
-        "type": "text",
-        "id": "text___1",
-        "placeholder": "Enter Global CSS code",
-        "default": "123"
-      },
-      {
         "type": "header",
         "content": "Shop settings"
       },
