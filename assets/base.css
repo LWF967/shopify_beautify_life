@@ -1880,11 +1880,6 @@ input[type='checkbox'] {
   letter-spacing: 0.1rem;
 }
   
-/* section-promo */
-#shopify-section-promo-bar {
-  z-index: -1;
-}
-  
 /* section-header */
 #shopify-section-header {
   z-index: 101;
