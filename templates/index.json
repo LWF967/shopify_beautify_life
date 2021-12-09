@@ -673,12 +673,21 @@
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "testimonials_author_text": "Author"
           }
+        },
+        "a8cb1c45-9cef-431d-bd8b-e212492b4a9c": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
         }
       },
       "block_order": [
         "16382547881188589b-0",
         "16382547881188589b-1",
-        "16382547881188589b-2"
+        "16382547881188589b-2",
+        "a8cb1c45-9cef-431d-bd8b-e212492b4a9c"
       ],
       "settings": {
         "title": "TESTIMONIALS",
