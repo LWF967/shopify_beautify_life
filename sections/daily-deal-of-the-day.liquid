@@ -33,8 +33,7 @@
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                   <div class="product-form__buttons {% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}my_main_product_product_form_button{% endif %}">
            
-                    <div class="button {% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}my_main_product_paybutton_small_extralarge
-                                       {% elsif section.settings.main_product_mediasize == 'Medium' or section.settings.main_product_mediasize == 'Large' %}my_main_product_paybutton_medium_large{% endif %}">
+                    <div class="button my_clear_padding " >
 
                       {{ form | payment_button }}
              		
@@ -44,7 +43,7 @@
                                 
                   </div>
                 {%- endform -%}
-       			 <a class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default">Detail</button></a>
+       			 <a class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default my_clear_padding" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default">Detail</button></a>
              
         
               </product-form>
