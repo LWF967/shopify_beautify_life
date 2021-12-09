@@ -703,7 +703,7 @@
         "swipe": false,
         "image_width": "full",
         "image_ratio": "adapt",
-        "column_alignment": "center",
+        "column_alignment": "left",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
