@@ -43,7 +43,7 @@
         role="list"
         style="flex-wrap: nowrap;transition: all 1.5s ease 0s;"
       >
-        <div class="swiper my_swiper_testimonial">
+        <div class="swiper my_swiper_testimonials">
           <div class="swiper-wrapper">
         {%- liquid
           assign highest_ratio = 0
@@ -104,6 +104,7 @@
         {%- endfor -%}
           </div>
         </div>
+        <div class="swiper_pagination_testimonials"></div>
       </ul>
 	
       {%-  if section.settings.swipe == true and  section.blocks.size > 3 -%}
@@ -179,11 +180,11 @@
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
-  var swiper = new Swiper(".my_swiper_testimonial", {
+  var swiper = new Swiper(".my_swiper_testimonials", {
       slidesPerView: 3,
       spaceBetween: 30,
       pagination: {
-          el: ".swiper_pagination_blog",
+          el: ".swiper_pagination_testimonials",
           clickable: true,
       },
       navigation: {
