@@ -105,8 +105,8 @@
          
           {%- endfor -%}
            </ul>
-             <div class="swiper-button-prev-{{section.id}} featured_product_beautify_prev"></div>
-            <div class="swiper-button-next-{{section.id}} featured_product_beautify_next"></div>
+             <div class="swiper-button-prev featured_product_beautify_prev-{{section.id}}"></div>
+            <div class="swiper-button-next featured_product_beautify_next-{{section.id}}"></div>
     	  </div>
 
         </div>
@@ -639,8 +639,8 @@
       spaceBetween: 10,
 
       navigation: {
-          nextEl: '.swiper-button-next-{{section.id}}.featured_product_beautify_next',
-          prevEl: '.swiper-button-prev-{{section.id}}.featured_product_beautify_prev',
+          nextEl: '.swiper-button-next.featured_product_beautify_next-{{section.id}}',
+          prevEl: '.swiper-button-prev.featured_product_beautify_prev-{{section.id}}',
       },
 
   });
