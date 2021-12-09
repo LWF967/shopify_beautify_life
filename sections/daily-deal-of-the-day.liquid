@@ -102,6 +102,7 @@
            </div>
              <div class="swiper-button-prev del_featured_product_beautify_prev-{{section.id}}"></div>
             <div class="swiper-button-next del_featured_product_beautify_next-{{section.id}}"></div>
+           <div class="swiper-pagination-{{section.id}}"></div>
  <!--     	  </div> -->
 		
   
@@ -632,7 +633,7 @@
     
    // 如果需要分页器
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination-{{section.id}}',
       },
       
       navigation: {
