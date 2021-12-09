@@ -220,12 +220,11 @@
   }
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
 
 
-{% javascript %}
-{% endjavascript %}
+{{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+
+
 
 
 <style>
