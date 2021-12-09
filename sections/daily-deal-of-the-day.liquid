@@ -766,6 +766,30 @@
    document.addEventListener('shopify:section:load',()=>{  
     console.log('这是渲染完的');
 	 timebb = new timedeal();
+     
+     
+     const deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
+  	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+      slidesPerView: 1,
+      autoplay: {
+      delay: 3000,
+      stopOnLastSlide: false,
+      disableOnInteraction: false,
+      },
+      loop: true,
+    
+   // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination-{{section.id}}',
+      },
+      
+      navigation: {
+          nextEl: '.swiper-button-next.del_featured_product_beautify_next-{{section.id}}',
+          prevEl: '.swiper-button-prev.del_featured_product_beautify_prev-{{section.id}}',
+      },
+
+  	});
+     
 	},true);
   
     document.addEventListener('shopify:section:unload',()=>{  
