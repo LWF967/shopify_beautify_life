@@ -61,7 +61,7 @@
   </div>
   <div class="right daily-right">
     <div class="daily-product-box" style="background-color: {{setting.background_product_color}};">
-   		 <div class="daily-product  my_deal_swiper-{{section.id}} swiper" >
+   		 <div class="daily-product  " >
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
             <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
@@ -86,7 +86,7 @@
            
            {% endcomment %}
           
-<!--           <div class=" my_deal_swiper-{{section.id}}"    product__media-item>  -->
+          <div class=" my_deal_swiper-{{section.id}} swiper"    product__media-item> 
           	<div class=" product__media-item swiper-wrapper ">
     	{%- for media in product.media -%}
               <div class="slider__slide" style="width:100%;">
@@ -103,7 +103,7 @@
              <div class="swiper-button-prev del_featured_product_beautify_prev-{{section.id}}"></div>
             <div class="swiper-button-next del_featured_product_beautify_next-{{section.id}}"></div>
            <div class="swiper-pagination-{{section.id}}"></div>
- <!--     	  </div> -->
+     	  </div>
 		
   
            
