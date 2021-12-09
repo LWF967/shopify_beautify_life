@@ -750,6 +750,27 @@
    document.addEventListener('shopify:section:load',()=>{  
     console.log('这是渲染完的');
 	 timebb = new timedeal();
+     
+      
+        const deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
+          direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+        //  slidesPerView: 4,
+          autoplay: true,
+          loop: true,
+
+       // 如果需要分页器
+          pagination: {
+            el: '.swiper-pagination-{{section.id}}',
+          },
+
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+
+     	 });
+     
+     
 	},true);
   
     document.addEventListener('shopify:section:unload',()=>{  
