@@ -84,9 +84,7 @@
             {%- endif -%}
           {%- endfor -%}
            
-           {% endcomment %}
-          
-          <div class=" my_deal_swiper-{{section.id}} swiper" > 
+            <div class=" my_deal_swiper-{{section.id}} swiper" > 
           	<div class=" product__media-item swiper-wrapper ">
     	{%- for media in product.media -%}
               <div class="slider__slide" style="width:100%;">
@@ -106,6 +104,11 @@
            <div class="swiper-pagination-{{section.id}}"></div>
      	  </div>
            
+           
+           
+           {% endcomment %}
+          
+         
         </div>
     </div>
     	
