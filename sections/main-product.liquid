@@ -289,6 +289,14 @@
 
 <section class="page-width spaced-section"
          style="{%- if section.settings.main_product_margin_top != blank -%}margin-top: {{ section.settings.main_product_margin_top }}px; {%- endif -%}{%- if section.settings.main_product_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_product_margin_bottom }}px;{%- endif -%}">
+  <div class="col-auto flex al_center">
+    {%- assign next_pr = collection.next_product -%}
+    {%- assign prev_pr = collection.previous_product -%}
+
+    {%- if prev_pr -%}<a href="{{prev_pr.url}}" class="pl__5 pr__5 fs__18 cd chp ttip_nt tooltip_bottom_left"><i class="las la-angle-left"></i><span class="tt_txt">{{prev_pr.title}}</span></a>{%- endif -%}
+    <a href="{{collection.url}}" class="pl__5 pr__5 fs__20 cd chp ttip_nt tooltip_bottom_left"><i class="fwb iccl iccl-grid fs__15"></i><span class="tt_txt">{{'products.product.back_to' | t:title:collection.title}}</span></a>
+    {%- if next_pr -%}<a href="{{next_pr.url}}" class="pl__5 pr__5 fs__18 cd chp ttip_nt tooltip_bottom_left"><i class="las la-angle-right"></i><span class="tt_txt">{{next_pr.title}}</span></a>{%- endif -%}
+  </div>
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper my_main_product_left_content{% if section.settings.main_product_mediasize == 'Small' %}_small{% elsif section.settings.main_product_mediasize == 'Medium' %}_medium{% elsif section.settings.main_product_mediasize == 'Large' %}_large{% elsif section.settings.main_product_mediasize == 'Extra large' %}_extra_large{% endif %} my_main_product_left_content_mobile">
       <div>
