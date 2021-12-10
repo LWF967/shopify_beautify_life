@@ -59,10 +59,10 @@
     right: 0;
   }
 
-  .product__info-wrapper .bubble,
-  .my_footer_border .bubble,
-  .my_main_product_info .bubble,
-  .my_password_icon .bubble {
+  .product__info-wrapper .bubble:not(#shopify-section-top-bar),
+  .my_footer_border .bubble:not(#shopify-section-top-bar),
+  .my_main_product_info .bubble:not(#shopify-section-top-bar),
+  .my_password_icon .bubble:not(#shopify-section-top-bar) {
     left: 50%;
     transform: translateX(-50%);
   }
@@ -167,11 +167,11 @@
     transform: translateY(0px);
   }
   
-  .product__info-wrapper .my_a_padding:hover .bubble,
-  .my_main_product_info .my_a_padding:hover .bubble,
-  .my_footer_border .my_a_padding:hover .bubble,
+  .product__info-wrapper .my_a_padding:hover .bubble:not(#shopify-section-top-bar),
+  .my_main_product_info .my_a_padding:hover .bubble:not(#shopify-section-top-bar),
+  .my_footer_border .my_a_padding:hover .bubble:not(#shopify-section-top-bar),
   .icon_flex_c .my_a_padding:hover .bubble,
-  .my_password_icon .my_a_padding:hover .bubble {
+  .my_password_icon .my_a_padding:hover .bubble:not(#shopify-section-top-bar) {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(-5px);
