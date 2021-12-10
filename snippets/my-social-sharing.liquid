@@ -45,7 +45,7 @@
     margin: 0 9px;
   }
   
-/*   .icon_flex_l .bubble {
+  .icon_flex_l .bubble {
     left: 0;
   }
   
@@ -57,26 +57,12 @@
   .icon_flex_r .bubble {
     top: -30px;
     right: 0;
-  } */
-  
-  .icon_flex_l .bubble {
-    left: 0;
   }
 
-  .icon_flex_c .bubble {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .icon_flex_r .bubble {
-    top: 30px;
-    right: 0;
-  }
-
-  .product__info-wrapper .bubble:not(#shopify-section-top-bar),
-  .my_footer_border .bubble:not(#shopify-section-top-bar),
-  .my_main_product_info .bubble:not(#shopify-section-top-bar),
-  .my_password_icon .bubble:not(#shopify-section-top-bar) {
+  .product__info-wrapper .bubble,
+  .my_footer_border .bubble,
+  .my_main_product_info .bubble,
+  .my_password_icon .bubble {
     left: 50%;
     transform: translateX(-50%);
   }
@@ -105,23 +91,7 @@
     transition: all .3s;
   }
   
-  .bubble {
-    position: absolute;
-    display: block;
-    top: 30px;
-    padding: 2px 5px;
-    background: #000;
-    color: white;
-    white-space: nowrap;
-    font-size: 10px;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all .3s;
-    cursor: default;
-  }
-  
-  .bubble:not(#shopify-section-top-bar) {
+  .bubble:not(< #shopify-section-top-bar) {
     position: absolute;
     display: block;
     top: -30px;
@@ -181,11 +151,11 @@
     transform: translateY(0px);
   }
   
-  .product__info-wrapper .my_a_padding:hover .bubble:not(#shopify-section-top-bar),
-  .my_main_product_info .my_a_padding:hover .bubble:not(#shopify-section-top-bar),
-  .my_footer_border .my_a_padding:hover .bubble:not(#shopify-section-top-bar),
+  .product__info-wrapper .my_a_padding:hover .bubble,
+  .my_main_product_info .my_a_padding:hover .bubble,
+  .my_footer_border .my_a_padding:hover .bubble,
   .icon_flex_c .my_a_padding:hover .bubble,
-  .my_password_icon .my_a_padding:hover .bubble:not(#shopify-section-top-bar) {
+  .my_password_icon .my_a_padding:hover .bubble {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(-5px);
@@ -195,7 +165,7 @@
   .icon_flex_r .my_a_padding:hover .bubble {
     opacity: 1;
     visibility: visible;
-    transform: translateY(5px);
+    transform: translateY(-5px);
   }
   
   .my_padding a:first-child {
