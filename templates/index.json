@@ -430,7 +430,6 @@
       "settings": {
         "se_height": "adapt_f",
         "text_size": "medium",
-        "overlay": true,
         "loop": true,
         "auto_play": false,
         "auto_time": 3,
@@ -593,7 +592,7 @@
         "16387716731c66ad07-8"
       ],
       "settings": {
-        "product": "lol-more",
+        "product": "lol6",
         "secondary_background": false,
         "show_share_buttons": true,
         "hide_variants": false,
