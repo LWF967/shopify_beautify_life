@@ -97,87 +97,10 @@
         "product_recommendations_margin_top": "",
         "product_recommendations_margin_bottom": ""
       }
-    },
-    "16388564124b132782": {
-      "type": "featured-product-beautify",
-      "blocks": {
-        "16388564128bfe2397-1": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "16388564128bfe2397-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "16388564128bfe2397-2": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "16388564128bfe2397-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "16388564128bfe2397-4": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "dropdown"
-          }
-        },
-        "16388564128bfe2397-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "16388564128bfe2397-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "16388564128bfe2397-7": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "16388564128bfe2397-8": {
-          "type": "share",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "16388564128bfe2397-1",
-        "16388564128bfe2397-0",
-        "16388564128bfe2397-2",
-        "16388564128bfe2397-3",
-        "16388564128bfe2397-4",
-        "16388564128bfe2397-5",
-        "16388564128bfe2397-6",
-        "16388564128bfe2397-7",
-        "16388564128bfe2397-8"
-      ],
-      "settings": {
-        "product": "lol-more",
-        "secondary_background": false,
-        "show_share_buttons": true,
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "featured_product_beautify_margin_top": "",
-        "featured_product_beautify_margin_bottom": ""
-      }
     }
   },
   "order": [
     "main",
-    "product-recommendations",
-    "16388564124b132782"
+    "product-recommendations"
   ]
 }
