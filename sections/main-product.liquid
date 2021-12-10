@@ -335,31 +335,13 @@
   
   <div class="my_main_product_bread">   
     <div class="my_main_product_bread_item">
-      <a class="my_main_product_bread_item_Home my_font_weight_default" href="/">Home</a>
+      <a href="/" class="my_main_product_bread_item_Home my_font_weight_default">Home</a>
     </div>
     <div class="my_main_product_bread_item">
       {% render 'icon-caret' %}
       {{ product.title }}
     </div>
   </div>
-  {% comment %}
-  {% if collection != blank %}
-    {{ collection.next_product }}
-    {{ collection.previous_product }}
-  {% else %}
-    123{{ product.title }}
-  {% endif %}
-  <div class="col-auto flex al_center">
-    {%- assign next_pr = collection.next_product -%}
-    {%- assign prev_pr = collection.previous_product -%}
-
-    <a href="{{prev_pr.url}}" class="pl__5 pr__5 fs__18 cd chp ttip_nt tooltip_bottom_left"><i class="las la-angle-left"></i><span class="tt_txt">{{prev_pr.title}}123</span></a>
-    <a href="{{collection.url}}" class="pl__5 pr__5 fs__20 cd chp ttip_nt tooltip_bottom_left"><i class="fwb iccl iccl-grid fs__15"></i><span class="tt_txt">></span></a>
-    <a href="{{next_pr.url}}" class="pl__5 pr__5 fs__18 cd chp ttip_nt tooltip_bottom_left"><i class="las la-angle-right"></i><span class="tt_txt">{{ product.title }}{{next_pr.title}}</span></a>
-  </div>
-  {% endcomment %}
-  
-  
   
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper my_main_product_left_content{% if section.settings.main_product_mediasize == 'Small' %}_small{% elsif section.settings.main_product_mediasize == 'Medium' %}_medium{% elsif section.settings.main_product_mediasize == 'Large' %}_large{% elsif section.settings.main_product_mediasize == 'Extra large' %}_extra_large{% endif %} my_main_product_left_content_mobile">
