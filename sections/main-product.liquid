@@ -294,7 +294,7 @@
     {%- assign prev_pr = collection.previous_product -%}
 
     {%- if prev_pr -%}<a href="{{prev_pr.url}}" class="pl__5 pr__5 fs__18 cd chp ttip_nt tooltip_bottom_left"><i class="las la-angle-left"></i><span class="tt_txt">{{prev_pr.title}}</span></a>{%- endif -%}
-    <a href="{{collection.url}}" class="pl__5 pr__5 fs__20 cd chp ttip_nt tooltip_bottom_left"><i class="fwb iccl iccl-grid fs__15"></i><span class="tt_txt">{{'products.product.back_to' | t:title:collection.title}}</span></a>
+    <a href="{{collection.url}}" class="pl__5 pr__5 fs__20 cd chp ttip_nt tooltip_bottom_left"><i class="fwb iccl iccl-grid fs__15"></i><span class="tt_txt">></span></a>
     {%- if next_pr -%}<a href="{{next_pr.url}}" class="pl__5 pr__5 fs__18 cd chp ttip_nt tooltip_bottom_left"><i class="las la-angle-right"></i><span class="tt_txt">{{next_pr.title}}</span></a>{%- endif -%}
   </div>
   <div class="product grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
