@@ -153,6 +153,23 @@
     transition: all .3s;
   }
   
+  .my_a_padding::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    top: -10px;
+    left: calc(50% - 5px);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #000 transparent transparent;
+    opacity: 0;
+    transform: translateY(5px);
+    pointer-events: none;
+    transition: all .3s;
+  }
+  
   .my_a_padding:hover .ts_style svg { 
     transform: translateY(-5px);
   }
