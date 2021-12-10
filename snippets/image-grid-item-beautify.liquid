@@ -1,6 +1,6 @@
 
 <div class="collection-grid-item" style="">
-  <a href="{% if block.settings.img_link == empty %}#{% else %}{{ block.img_link }}{% endif %}" class="collection-grid-item__link" style="height:300px;">
+  <a href="{% if block.settings.img_link == empty %}#{% else %}{{ block.img_link }}{% endif %}" class="collection-grid-item__link gallery-list" style="height:300px;">
      {%- if block.settings.image != blank -%}
       <div class="collection-grid-item__overlay box ratio-container lazyload js"
         data-bgset="{% include 'bgset', image: block.settings.image %}"
@@ -31,3 +31,25 @@
     </div>
   </a>
 </div>
+
+
+<style>
+  
+    .gallery-list{
+  
+    max-height:300px;
+
+  
+  	}  
+  
+  	 
+  @media screen and (max-width: 750px) {
+
+  
+	.gallery-list{
+    max-height: 100%;
+	}
+  
+  }
+
+</style>
