@@ -288,7 +288,7 @@
     }
   }
   
-  .father svg {
+  .my_main_product_arrow svg {
     height: 0.6rem;
     right: 1.5rem;
     top: calc(50% - 0.2rem);
@@ -312,7 +312,8 @@
   {{ 'Next product' | link_to: collection.next_product.url, collection.next_product.title }}
 {% endif %}
   
-  {{  product.title }}  <span class="father">{% render 'icon-caret' %}</span>
+  {{  product.title }}  
+  <span class="my_main_product_arrow">{% render 'icon-caret' %}</span>
   
   {% comment %}
   {% if collection != blank %}
