@@ -74,7 +74,7 @@
           "logo": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
           "logo_width": 50,
           "header_height": 60,
-          "header_text_height_font_size": 18,
+          "header_text_height_font_size": 15,
           "menu": "main-menu"
         }
       },
