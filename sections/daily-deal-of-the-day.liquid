@@ -907,26 +907,8 @@
 	 timebb = new timedeal();
      
      
-     const deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
-  	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-      slidesPerView: 1,
-      followFinger : false,
-      autoplay: {
-      delay: 4000,
-      stopOnLastSlide: false,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-      },
-      loop: true,
-    
-   // 如果需要分页器
-      pagination: {
-        el: '.swiper-pagination-{{section.id}}',
-        clickable :false,
-      },
-      
-
-  	});
+     
+    deal_swiper123.pagination.update()
      
 	},true);
   
