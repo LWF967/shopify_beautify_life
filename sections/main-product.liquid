@@ -294,12 +294,13 @@
     {{ collection.title }}
   {% endfor %}
   
-<!--   {% if collection != blank %}
+  {% comment %}
+  {% if collection != blank %}
     {{ collection.next_product }}
     {{ collection.previous_product }}
   {% else %}
     123{{ product.title }}
-  {% endif %} -->
+  {% endif %}
   <div class="col-auto flex al_center">
     {%- assign next_pr = collection.next_product -%}
     {%- assign prev_pr = collection.previous_product -%}
@@ -308,7 +309,7 @@
     <a href="{{collection.url}}" class="pl__5 pr__5 fs__20 cd chp ttip_nt tooltip_bottom_left"><i class="fwb iccl iccl-grid fs__15"></i><span class="tt_txt">></span></a>
     <a href="{{next_pr.url}}" class="pl__5 pr__5 fs__18 cd chp ttip_nt tooltip_bottom_left"><i class="las la-angle-right"></i><span class="tt_txt">{{ product.title }}{{next_pr.title}}</span></a>
   </div>
-  
+  {% endcomment %}
   
   
   
