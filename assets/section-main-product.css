@@ -559,6 +559,10 @@ a.product__text {
     display: block;
   }
 }
+  
+.product__modal-opener:not(.product__modal-opener--image) {
+  display: none;
+}
 
 .product__media-list .deferred-media,
 .product__media-list .product__modal-opener {
