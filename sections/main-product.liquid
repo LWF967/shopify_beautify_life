@@ -305,7 +305,7 @@
   {{ 'Next product' | link_to: collection.next_product.url, collection.next_product.title }}
 {% endif %}
   
-  {{  product.title }} transform: rotate(-90deg); {% render 'icon-caret' %}
+  {{  product.title }} transform: rotate(-90deg); <span style="width:5px; height: 5px;">{% render 'icon-caret' %}</span>
   
   {% comment %}
   {% if collection != blank %}
