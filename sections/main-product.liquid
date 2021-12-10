@@ -288,7 +288,7 @@
     }
   }
   
-  .my_main_product_bread {
+  .my_main_product_bread_item {
     position: relative;
   }
   
@@ -320,8 +320,10 @@
   
   <div class="my_main_product_bread">
     <a href="/">home</a>
-    <span class="my_main_product_arrow">{% render 'icon-caret' %}</span>
-    <span>{{ product.title }}</span>
+    <div class="my_main_product_bread_item">
+      <span class="my_main_product_arrow">{% render 'icon-caret' %}</span>
+      <span>{{ product.title }}</span>
+    </div>
   </div>
   {% comment %}
   {% if collection != blank %}
