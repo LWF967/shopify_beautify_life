@@ -628,6 +628,7 @@
     z-index: 999;
     background-image: url({{ section.settings.log_image | img_url :'x400'}});
     background-size: 100%;
+    background-position: center;
   }
   {%- endif -%}
   @media screen and (max-width: 990px) {
@@ -646,6 +647,7 @@
       position: fixed;
       width: 100%;
       height: auto;
+      background-position: center;
     }
   }
   {%- endif -%}
