@@ -44,6 +44,16 @@
   
   }
 
+  
+  {% case section.settings.section_height  %}
+  
+  {% when 'extra_small'%}
+  {% when 'small'%}
+  {% when 'medium'%}
+  {% when 'large'%}
+  {% when 'extra_large'%}
+  
+  {% endcase %}
 </style>
 
 {% schema %}
