@@ -244,6 +244,50 @@ ul class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--
 		}
       }
   });
+  
+  
+  
+     var designMode = Shopify.designMode || false;
+   if(designMode){
+   
+   document.addEventListener('shopify:section:load',()=>{  
+   
+	
+ var swiper = new Swiper(".my_swiper_blog", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+          el: ".swiper_pagination_blog",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next.featured_product_beautify_next',
+          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+      },
+      breakpoints: {
+        0: {  //当屏幕宽度大于等于0 
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        750: {  //当屏幕宽度大于等于750 
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        990: {  //当屏幕宽度大于等于990
+          slidesPerView: 3,
+          spaceBetween: 30,
+		}
+      }
+  });
+  
+    
+     
+	},true);
+  
+
+ }
+  
+  
 </script>
 
 {% schema %}
