@@ -174,6 +174,21 @@
     transform: translateY(-5px);
   }
   
+  .my_a_padding:hover::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    top: 10px;
+    left: calc(50% - 5px);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #000 transparent transparent;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
   .my_a_padding:hover::before {
     position: absolute;
     display: inline-block;
