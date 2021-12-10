@@ -91,6 +91,14 @@
     	{%- for media in product.media -%}
               
               {% comment %}
+            
+              
+                <div class="swiper-slide product__media-item " my_main_product_product_media_item  data-media-id="{{ section.id }}-{{ media.id }}">
+            {% render 'product-thumbnail', media: media, position: 'featured', loop: false, modal_id: section.id, xr_button: false %}
+            </div>
+
+              {% endcomment %}
+              
               <div class="  swiper-slide  product__media-item"  >
             {%- liquid
              assign media = product.selected_or_first_available_variant.featured_media 
@@ -98,12 +106,6 @@
                  render 'product-media',media: media, loop: false, variant_image: true, meida_width: true
             -%}
               </div>
-              {% endcomment %}
-              
-            <div class="swiper-slide product__media-item " my_main_product_product_media_item  data-media-id="{{ section.id }}-{{ media.id }}">
-            {% render 'product-thumbnail', media: media, position: 'featured', loop: false, modal_id: section.id, xr_button: false %}
-            </div>
-
               
          
           {%- endfor -%}
