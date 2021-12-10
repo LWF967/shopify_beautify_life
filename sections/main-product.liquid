@@ -221,6 +221,29 @@
   .my_main_product_share_button {
     margin-bottom: 3.5rem;
   }
+
+  .my_main_product_bread {
+    display: flex;
+    margin-bottom: 3rem;
+  }
+
+  .my_main_product_bread_item {
+    position: relative;
+    font-size: 12px;
+  }
+
+  .my_main_product_bread_item:not(:first-child) {
+    margin-left: 1.2rem;
+  }
+
+  .my_main_product_bread_item svg {
+    height: 0.6rem;
+    left: 0;
+    top: 1rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+    transform: rotate(-90deg);
+  }
   
   @media screen and (max-width: 750px) {
     .h1.product__title.my_featured_product_beautify_title {
@@ -280,35 +303,17 @@
     .my_main_product_right_content {
       margin-top: 55px;
     }
+    
+    .my_main_product_bread {
+      display: flex;
+      margin-bottom: 1.5rem;
+    }
   }
   
   @media screen and (max-width: 990px) {
     .product__media-icon.motion-reduce.my_product_thumbnail_mobile_hidden {
       display: none;
     }
-  }
-  
-  .my_main_product_bread {
-    display: flex;
-    margin-bottom: 3rem;
-  }
-  
-  .my_main_product_bread_item {
-    position: relative;
-    font-size: 12px;
-  }
-  
-  .my_main_product_bread_item:not(:first-child) {
-    margin-left: 1.2rem;
-  }
-  
-  .my_main_product_bread_item svg {
-    height: 0.6rem;
-    left: 0;
-    top: 1rem;
-    vertical-align: middle;
-    margin-right: 1rem;
-    transform: rotate(-90deg);
   }
 </style>
 
