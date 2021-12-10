@@ -310,11 +310,12 @@
   
   {% if collection.next_product %}
   {{ 'Next product' | link_to: collection.next_product.url, collection.next_product.title }}
-{% endif %}
+  {% endif %}
   
-  {{  product.title }}  
-  <span class="my_main_product_arrow">{% render 'icon-caret' %}</span>
-  
+  <div>
+    <span>{{ product.title }}</span>
+    <span class="my_main_product_arrow">{% render 'icon-caret' %}</span>
+  </div>
   {% comment %}
   {% if collection != blank %}
     {{ collection.next_product }}
