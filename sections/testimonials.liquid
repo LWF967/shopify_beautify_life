@@ -288,6 +288,50 @@
 		}
       }
   });
+  
+  
+   var designMode = Shopify.designMode || false;
+   if(designMode){
+   
+//    console.log('进入后台了');
+   document.addEventListener('shopify:section:load',()=>{  
+   
+	
+   var swiper = new Swiper(".my_swiper_testimonials", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+          el: ".swiper_pagination_testimonials",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next.featured_product_beautify_next',
+          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+      },
+      breakpoints: {
+        0: {  //当屏幕宽度大于等于0 
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        750: {  //当屏幕宽度大于等于750 
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        990: {  //当屏幕宽度大于等于990
+          slidesPerView: 3,
+          spaceBetween: 30,
+		}
+      }
+  });
+    
+     
+	},true);
+  
+
+ }
+  
+  
+  
 </script>
 
 {% schema %}
