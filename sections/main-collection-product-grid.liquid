@@ -26,19 +26,20 @@
     .my_collection_filters_margin {
       margin: 35px 0 0;
     }
-    .my_product_grid_ul li:nth-child(odd) {
-      padding-right: 15px;
-      padding-bottom: 15px;
+    
+    .my_product_grid_ul {
+      margin-left: -0.75rem;
+      margin-right: -0.75rem;
     }
-    .my_product_grid_ul li:nth-child(even) {
-      padding-left: 0px;
-      padding-bottom: 15px;
+    
+    .my_product_grid_ul li {
+      padding: 0 0.75rem 1.5rem;
     }
   }
 </style>
 
 <div class="page-width spaced-section" style="{%- if section.settings.main_collection_product_grid_margin_top != blank -%}margin-top: {{ section.settings.main_collection_product_grid_margin_top }}px; {%- endif -%}{%- if section.settings.main_collection_product_grid_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_collection_product_grid_margin_bottom }}px;{%- endif -%}">
-  <div class="page-width collection-filters my_collection_filters_margin" id="main-collection-filters" data-id="{{ section.id }}">
+  <div class="collection-filters my_collection_filters_margin" id="main-collection-filters" data-id="{{ section.id }}">
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
       {%- assign total_active_values = 0 -%}
 
@@ -486,7 +487,7 @@
   <div id="CollectionProductGrid">
     {%- paginate collection.products by section.settings.products_per_page -%}
       {%- if collection.products.size == 0 -%}
-        <div class="collection collection--empty page-width" id="main-collection-product-grid" data-id="{{ section.id }}">
+        <div class="collection collection--empty" id="main-collection-product-grid" data-id="{{ section.id }}">
           <div class="loading-overlay gradient"></div>
 
           <p class="collection-product-count light" role="status">
