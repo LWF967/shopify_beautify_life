@@ -67,7 +67,7 @@
     endif
   -%}
 
-  <ul class="collection-list grid grid--1-col grid--3-col-tablet my_main_list_collections_ul card-wrapper" role="list">
+  <ul class="collection-list grid grid--1-col grid--3-col-tablet my_main_list_collections_ul" role="list">
     {%- for collection in collections -%}
       <li class="collection-list__item grid__item">
         <a{% if collection.all_products_count > 0 %} href="{{ collection.url }}"{% endif %}
