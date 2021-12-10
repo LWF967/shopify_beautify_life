@@ -75,7 +75,7 @@
         >
           <div class="card--stretch card-colored color-{{ section.settings.color_scheme }}">
             {%- if collection.featured_image != blank -%}
-              <div{% if section.settings.image_padding %} class="card__media-spacer"{% endif %}>
+              <div{% if section.settings.image_padding %} class="card__media-spacer"{% endif %} class="card-wrapper">
                 {% if section.settings.image_padding %}<div class="overlay-card"></div>{% endif %}
                 <div class="media media--{{ section.settings.image_ratio }} media--hover-effect overflow-hidden list_test"
                   {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: collection.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
