@@ -218,6 +218,10 @@
     margin-top: 0;
   }
   
+  .my_main_product_share_button {
+    margin-bottom: 3.5rem;
+  }
+  
   @media screen and (max-width: 750px) {
     .h1.product__title.my_featured_product_beautify_title {
       font-size: 36px;
@@ -525,7 +529,7 @@
               </modal-opener>
               <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.text }}</a>
           {%- when 'share' -%}
-            <share-button class="share-button" {{ block.shopify_attributes }}>
+            <share-button class="share-button my_main_product_share_button" {{ block.shopify_attributes }}>
               <button class="share-button__button hidden">
                 {% render 'icon-share' %}
                 {{ block.settings.share_label | escape }}
