@@ -296,7 +296,7 @@
     {{ collection.next_product }}
     {{ collection.previous_product }}
   {% else %}
-    123
+    123{{ product.title }}
   {% endif %}
   <div class="col-auto flex al_center">
     {%- assign next_pr = collection.next_product -%}
