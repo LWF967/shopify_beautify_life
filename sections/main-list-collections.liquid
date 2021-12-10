@@ -16,6 +16,27 @@
     padding: 0 15px 15px;
   }
   
+    .card-wrapper:hover .list_test::before{
+/*     z-index:1; */
+    opacity: var(--hover-overlay-opacity);
+  }
+
+  .list_test:focus {
+    opacity: 1; 
+  }
+
+  .list_test::before {
+    z-index:1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-image-overlay);
+    opacity: var(--opacity-image-overlay); 
+  } 
+  
   @media screen and (max-width: 750px) {
     .my_collections_outside_div {
       margin: -15px 0 0;
@@ -46,7 +67,7 @@
     endif
   -%}
 
-  <ul class="collection-list grid grid--1-col grid--3-col-tablet my_main_list_collections_ul" role="list">
+  <ul class="collection-list grid grid--1-col grid--3-col-tablet my_main_list_collections_ul card-wrapper" role="list">
     {%- for collection in collections -%}
       <li class="collection-list__item grid__item">
         <a{% if collection.all_products_count > 0 %} href="{{ collection.url }}"{% endif %}
@@ -56,7 +77,7 @@
             {%- if collection.featured_image != blank -%}
               <div{% if section.settings.image_padding %} class="card__media-spacer"{% endif %}>
                 {% if section.settings.image_padding %}<div class="overlay-card"></div>{% endif %}
-                <div class="media media--{{ section.settings.image_ratio }} media--hover-effect overflow-hidden"
+                <div class="media media--{{ section.settings.image_ratio }} media--hover-effect overflow-hidden list_test"
                   {% if section.settings.image_ratio == 'adapt' %}style="padding-bottom: {{ 1 | divided_by: collection.featured_image.aspect_ratio | times: 100 }}%;"{% endif %}>
 
                   <img
