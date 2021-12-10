@@ -61,6 +61,11 @@
   </div>
   <div class="right daily-right">
     <div class="daily-product-box" style="background-color: {{setting.background_product_color}};">
+      
+       {%- if section.settings.log_image != null -%}
+       <div class="daily-product  " style="overflow:hidden;">
+       </div>
+       {%- else -%}
    		 <div class="daily-product  " style="overflow:hidden;">
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
@@ -117,6 +122,8 @@
      	  </div>
            
         </div>
+      {%- endif -%}
+      
     </div>
     	
     	
