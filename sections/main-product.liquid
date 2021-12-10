@@ -287,6 +287,13 @@
       display: none;
     }
   }
+  
+  .father svg {
+    position: absolute;
+    height: 0.6rem;
+    right: 1.5rem;
+    top: calc(50% - 0.2rem);
+  }
 </style>
 
 
@@ -305,7 +312,7 @@
   {{ 'Next product' | link_to: collection.next_product.url, collection.next_product.title }}
 {% endif %}
   
-  {{  product.title }} transform: rotate(-90deg); <span style="width:5px; height: 5px;">{% render 'icon-caret' %}</span>
+  {{  product.title }} transform: rotate(-90deg); <span class="father">{% render 'icon-caret' %}</span>
   
   {% comment %}
   {% if collection != blank %}
