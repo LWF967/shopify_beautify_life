@@ -75,7 +75,7 @@
 </noscript>
 
 <modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" data-modal="#ProductModal-{{ modal_id }}" >
-  <span class="product__media-icon motion-reduce my_product_thumbnail_mobile_hidden" aria-hidden="true">
+  <span class="product__media-icon motion-reduce my_product_thumbnail_mobile_hidden" style="display: none;" aria-hidden="true">
     {%- liquid
       case media.media_type
       when 'video' or 'external_video'
