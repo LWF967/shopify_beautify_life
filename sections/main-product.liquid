@@ -290,7 +290,9 @@
 <section class="page-width spaced-section"
          style="{%- if section.settings.main_product_margin_top != blank -%}margin-top: {{ section.settings.main_product_margin_top }}px; {%- endif -%}{%- if section.settings.main_product_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_product_margin_bottom }}px;{%- endif -%}">
   
-  
+  {% for collection in product.collections %}
+    {{ collection.title }}
+  {% endfor %}
   
   {% if collection != blank %}
     {{ collection.next_product }}
