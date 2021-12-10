@@ -184,7 +184,7 @@
         "show_button_visible": "always",
         "show_button_style": "style1",
         "show_button_color": "white",
-        "show_button_hover_color": "#ffffff",
+        "show_button_hover_color": "#da4747",
         "collection_list_beautify_margin_top": "",
         "collection_list_beautify_margin_bottom": ""
       }
