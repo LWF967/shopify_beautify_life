@@ -519,11 +519,24 @@
     background-color: rgba(255,255,255,.5);
     color: rgb(183,183,183);
   }
+  
+  {%- if section.settings.show_button_color =='transparent' -%}
 
   .icon-changebtn_{{section.id}}:hover{
     background-color: {{ section.settings.show_button_hover_color }} !important;
   	box-shadow: 0px 0px 8px 1px #e3e3e3;
+    border:none;
   }
+  
+  {%- else -%}
+   .icon-changebtn_{{section.id}}:hover{
+    background-color: {{ section.settings.show_button_hover_color }} !important;
+  	box-shadow: 0px 0px 8px 1px #e3e3e3;
+  
+  }
+  
+  
+  {%- endif -%}
   
   .bk_transparent{
     background-color: transparent;
