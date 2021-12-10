@@ -37,7 +37,20 @@
   
     .gallery-list{
   
-    max-height:380px;
+    {% case section.settings.section_height  %}
+  
+    {% when 'extra_small'%}
+        max-height: calc(380px * 0.4);
+    {% when 'small'%}
+        max-height: calc(380px * 0.8);
+    {% when 'medium'%}
+        max-height: calc(380px * 1);
+    {% when 'large'%}
+        max-height: calc(380px * 1.2);
+    {% when 'extra_large'%}
+        max-height: calc(380px * 1.6);
+
+    {% endcase %}
 
   
   	}  
