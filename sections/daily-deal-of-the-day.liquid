@@ -89,7 +89,7 @@
           <div class=" my_deal_swiper-{{section.id}} "  style="overflow:hidden;" > 
           	<div class=" swiper-wrapper " >
     	{%- for media in product.media -%}
-              <div class="  swiper-slide  product__media-item" style="height:0;" >
+              <div class="  swiper-slide  product__media-item" style="height:0;padding:30% 0;" >
             {%- liquid
              assign media = product.selected_or_first_available_variant.featured_media 
            
