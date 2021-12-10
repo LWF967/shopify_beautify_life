@@ -1,6 +1,6 @@
 <div class="page-width spaced-section"
      style="{%- if section.settings.gallery_margin_top != blank -%}margin-top: {{ section.settings.gallery_margin_top }}px; {%- endif -%}{%- if section.settings.gallery_margin_bottom != blank -%}margin-bottom:{{ section.settings.gallery_margin_bottom }}px;{%- endif -%}">
-  <div class="" style="display:flex;max-height:300px;overflow:hidden;">
+  <div class="gallery-box" >
     {%- for block in section.blocks -%}
 
       {% liquid
@@ -20,6 +20,31 @@
     {%- endfor -%}
   </div>
 </div>
+
+<style>
+  
+    .gallery-box{
+  
+  	display:flex;
+    max-height:300px;
+    overflow:hidden;
+  
+  	}  
+  
+  	 
+  @media screen and (max-width: 750px) {
+
+  
+	.gallery-box{
+    display: flex;
+    /* max-height: 300px; */
+    overflow: hidden;
+    flex-direction: column;
+	}
+  
+  }
+
+</style>
 
 {% schema %}
 {
