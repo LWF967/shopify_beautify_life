@@ -288,7 +288,12 @@
     }
   }
   
+  .my_main_product_bread {
+    position: relative;
+  }
+  
   .my_main_product_arrow svg {
+    position: absolute;
     height: 0.6rem;
     right: 1.5rem;
     top: calc(50% - 0.2rem);
@@ -313,7 +318,7 @@
   {{ 'Next product' | link_to: collection.next_product.url, collection.next_product.title }}
   {% endif %}
   
-  <div>
+  <div class="my_main_product_bread">
     <span>{{ product.title }}</span>
     <span class="my_main_product_arrow">{% render 'icon-caret' %}</span>
   </div>
