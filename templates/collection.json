@@ -47,7 +47,9 @@
         "1639186493da9895e1-1": {
           "type": "img_top",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
             "image2": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image3": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
             "header_top1": "Head1",
             "header_top2": "Head2",
             "header_top3": "Head3",
@@ -80,7 +82,7 @@
         "title": "BANNER",
         "sub_title": "Popular this week",
         "font_top": 30,
-        "color_top": "#fff",
+        "color_top": "#ffffff",
         "grid": 3,
         "show_view_all": false,
         "show_page_Dot": false,
