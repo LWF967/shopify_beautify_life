@@ -90,12 +90,44 @@
         "collection_list_beautify_margin_top": "",
         "collection_list_beautify_margin_bottom": ""
       }
+    },
+    "16391871333030f690": {
+      "type": "custom-content",
+      "blocks": {
+        "16391871328928b411-0": {
+          "type": "text",
+          "settings": {
+            "title": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left"
+          }
+        },
+        "16391871328928b411-1": {
+          "type": "image",
+          "settings": {
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16391871328928b411-0",
+        "16391871328928b411-1"
+      ],
+      "settings": {
+        "title": "Custom content",
+        "custom_content_margin_top": "",
+        "custom_content_margin_bottom": ""
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
     "16391866554cce6bd6",
-    "1639186803422e40cb"
+    "1639186803422e40cb",
+    "16391871333030f690"
   ]
 }
