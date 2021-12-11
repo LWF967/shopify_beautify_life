@@ -48,6 +48,12 @@
     position: inherit;
   }
   
+  .my_card_badge_content {
+    margin: 0 0;
+    line-height: normal;
+    padding: 0.6rem 2.5rem;
+  }
+  
   .my_card_content {
     margin-top: 1.5rem;
   }
@@ -207,7 +213,7 @@
                     </div>
                   </div>
                   <div class="card__badge my_card_badge">
-                    <span class="badge color-background-1">{{ item.content | strip_html | truncate: 100 }}</span>
+                    <span class="badge color-background-1 my_card_badge_content">{{ item.content | strip_html | truncate: 100 }}</span>
                   </div>
                 {%- when 'page' -%}
                   <a href="{{ item.url }}" class="card-wrapper">
