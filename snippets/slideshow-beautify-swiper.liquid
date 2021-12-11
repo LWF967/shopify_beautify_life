@@ -977,11 +977,11 @@
  
   	$('.swiper-container-{{section.id}}').mouseover(function(){
     	console.log('w y x 22 ');
-        swiper123.stopAutoplay();
+        swiper123.autoplay.stop();
     })
     $('.swiper-container-{{section.id}}').mouseout(function(){
     	console.log('w y x 12');
-        swiper123.startAutoplay();
+        swiper123.autoplay.start();
     })
  
  
