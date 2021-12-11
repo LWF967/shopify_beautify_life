@@ -1017,7 +1017,10 @@ function debounce(func, wait = 500) {
 // 根据不同端，添加不同响应事件    
 
       if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-
+		
+        
+        
+        $('.swiper-container-{{section.id}}').unbind('mouseover').unbind('mouseout');
 
         document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchstart', debounce(function () {
           console.log('对象触摸了');
