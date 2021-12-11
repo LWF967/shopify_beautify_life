@@ -520,6 +520,9 @@
     color: rgb(183,183,183);
   }
   
+  @media (any-hover: hover){
+    
+    
   {%- if section.settings.show_button_color =='transparent' -%}
 
   .icon-changebtn_{{section.id}}:hover{
@@ -538,6 +541,13 @@
   
   
   {%- endif -%}
+    
+	
+ }
+  
+
+  
+  
   
   .bk_transparent{
     background-color: transparent;
@@ -587,10 +597,16 @@
     transform: translate(-27%,-78%) rotate(318deg) !important;
   }
 
+    
+  @media (any-hover: hover){
+  
   .button_style1:hover,.button_style2:hover,.button_style3:hover{
     color: rgb(255,255,255);
   }
 
+    
+  }
+  
   .dn{
     display: none;
   }
