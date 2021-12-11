@@ -2452,6 +2452,6 @@ a{
   margin-bottom: 5px !important;
 }
   
-.shopify-section:not(#shopify-section-promo-bar, #shopify-section-top-bar, #shopify-section-header){
+.shopify-section:not(#shopify-section-promo-bar, #shopify-section-top-bar, #shopify-section-header, #shopify-section-template--15036994715814__main){
   overflow: hidden;
 }
