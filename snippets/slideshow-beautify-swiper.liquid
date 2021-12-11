@@ -1049,9 +1049,9 @@ if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
  
  
  	 
-  window.addEventListener("resize", function(){
+  window.addEventListener("resize", debounce(function(){
   console.log("4")
-	});
+	}));
 
     
     
