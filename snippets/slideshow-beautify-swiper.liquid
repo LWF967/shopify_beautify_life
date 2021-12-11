@@ -1019,11 +1019,11 @@
  
  
   	$('.swiper-container-{{section.id}}').mouseover( debounce(function(){
-
+		console.log('鼠标进来');
         swiper123.autoplay.stop();
     }))
     $('.swiper-container-{{section.id}}').mouseout( debounce(function(){
-
+		console.log('鼠标离开');
         swiper123.autoplay.start();
     }))
  
