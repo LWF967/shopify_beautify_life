@@ -973,6 +973,16 @@
   
   },true)
  
+ 
+ 
+  	$('.swiper-container-{{section.id}}').mouseover(function(){
+        swiper123.stopAutoplay();
+    })
+    $('.swiper-container-{{section.id}}').mouseout(function(){
+        swiper123.startAutoplay();
+    })
+ 
+ 
 
 </script>
 
