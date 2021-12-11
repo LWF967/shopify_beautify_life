@@ -1052,12 +1052,12 @@ function debounce(func, wait = 500) {
       } 
 	}
     
-  var sizeScreenChange = new ScreenSizeChange();
-   sizeScreenChange();
+//  var sizeScreenChange = new ScreenSizeChange();
+   ScreenSizeChange()
   
  	 
   window.addEventListener("resize", debounce(function(){
-  sizeScreenChange();
+ 	ScreenSizeChange()
   console.log('屏幕变了');
 	})
     );
