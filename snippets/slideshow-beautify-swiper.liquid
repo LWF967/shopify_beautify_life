@@ -1040,8 +1040,8 @@
     }))
     
  	document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchend', debounce(function(){
-		console.log('对象触摸了');
-        swiper123.autoplay.stop();
+		console.log('对象没接触了');
+        swiper123.autoplay.start();
     }))
     
     
