@@ -892,10 +892,7 @@
     
     
     
-    
-  document.body.addEventListener('touchstart', function() { console.log('触摸了');});
-    
-  document.body.addEventListener('touchmove', function() { console.log('触摸了');});
+
 
 
     
@@ -1030,6 +1027,21 @@
         swiper123.autoplay.start();
     }))
  
+ 
+ 	 
+  	$('.swiper-container-{{section.id}}').touchstart( debounce(function(){
+		console.log('对象触摸了');
+        swiper123.autoplay.stop();
+    }))
+    $('.swiper-container-{{section.id}}').touchmove( debounce(function(){
+		console.log('对象移动了');
+        swiper123.autoplay.start();
+    }))
+ 
+     
+//  document.body.addEventListener('touchstart', function() { console.log('触摸了');});
+    
+//  document.body.addEventListener('touchmove', function() { console.log('移动了');});
  
 
 </script>
