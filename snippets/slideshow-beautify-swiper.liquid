@@ -1032,17 +1032,17 @@
   	document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchstart', function(){
 		console.log('对象触摸了');
         swiper123.autoplay.stop();
-    })
+    },false)
     
  	document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchmove', debounce(function(){
 		console.log('对象移动了');
        
-    }))
+    }),false)
     
  	document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchend', debounce(function(){
 		console.log('对象没接触了');
         swiper123.autoplay.start();
-    }))
+    }),false)
     
     
      
