@@ -1,25 +1,40 @@
 {
   "sections": {
-    "1639191641110f7189": {
-      "type": "featured-blog",
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
       "settings": {
-        "heading": "Blog posts",
-        "head_text": "The most exciting news",
-        "blog": "",
-        "post_limit": 3,
-        "show_image": true,
-        "show_title": true,
-        "show_short_content": true,
-        "show_date": true,
-        "show_author": false,
-        "soft_background": false,
-        "show_view_all": true,
-        "featured_blog_margin_top": "",
-        "featured_blog_margin_bottom": ""
       }
     }
   },
   "order": [
-    "1639191641110f7189"
+    "main"
   ]
 }
