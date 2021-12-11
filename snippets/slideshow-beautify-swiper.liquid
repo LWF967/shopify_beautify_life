@@ -633,6 +633,8 @@
     display: block;
   }
     
+  
+  
   {% if section.settings.show_button_visible == 'always' %} 
     .feature-artworks-{{section.id}}  .icon-changebtn_{{section.id}} {
       display: block;
@@ -647,11 +649,16 @@
       transition: .2s ease-in-out
     }
   
+    
+  @media (any-hover: hover){
+    
     .feature-artworks-{{section.id}}:hover .icon-changebtn_{{section.id}}{
       -webkit-transform: scale(1);
       transform: scale(1);
       opacity: 1;
     }
+    
+  }
   {% endif %}
 
   .icon-changebtn_{{section.id}} p{
