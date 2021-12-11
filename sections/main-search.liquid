@@ -36,8 +36,8 @@
     padding: 0 3rem 1.5rem;
   }
 
-  .template-search__results.page-width.spaced-section {
-    margin-top：5.5rem;
+  .template-search__results.page-width.my_main_search_result_margin {
+    margin-top: 5.5rem;
   }
   
   @media screen and (min-width: 750px) {
@@ -132,7 +132,7 @@
   </div>
   {%- if search.performed and search.results.size > 0 -%}
     {% paginate search.results by 24 %}
-      <div class="template-search__results page-width spaced-section">
+      <div class="template-search__results page-width my_main_search_result_margin">
         <ul class="grid grid--4-col-desktop grid--3-col-tablet grid--2-col grid--one-third-max grid--quarter-max negative-margin product-grid my_main_search_ul_margin" role="list">
           {%- for item in search.results -%}
             <li class="grid__item{% unless item.object_type == 'product' %} grid__item--small{% endunless %}">
