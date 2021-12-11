@@ -887,7 +887,6 @@
  
  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
 
-	
     
   
 let swiper123 = new Swiper('.swiper-container-{{section.id}}', {
@@ -1010,47 +1009,58 @@ function debounce(func, wait = 500) {
     }, wait)
   }
 }
+ 
+ 
+ （function(window){ 
+ 	function ScreenSizeChange(){
+
 // 根据不同端，添加不同响应事件    
 
-if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+      if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
 
-  document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchstart', debounce(function () {
-    console.log('对象触摸了');
-    swiper123.autoplay.stop();
-  }, 500), true)
+        document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchstart', debounce(function () {
+          console.log('对象触摸了');
+          swiper123.autoplay.stop();
+        }, 500), true)
 
-  document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchmove', debounce(function () {
-    console.log('对象移动了');
+        document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchmove', debounce(function () {
+          console.log('对象移动了');
 
-  }), true)
+        }), true)
 
-  document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchend', debounce(function () {
-    console.log('对象没接触了');
-    swiper123.autoplay.start();
-  }, 500), true)
+        document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchend', debounce(function () {
+          console.log('对象没接触了');
+          swiper123.autoplay.start();
+        }, 500), true)
 
-} else {
-
-
-  $('.swiper-container-{{section.id}}').mouseover(debounce(function () {
-    console.log('鼠标进来');
-    swiper123.autoplay.stop();
-  }))
-
-  $('.swiper-container-{{section.id}}').mouseout(debounce(function () {
-    console.log('鼠标离开');
-    swiper123.autoplay.start();
-  }))
+      } else {
 
 
+        $('.swiper-container-{{section.id}}').mouseover(debounce(function () {
+          console.log('鼠标进来');
+          swiper123.autoplay.stop();
+        }))
 
-}
+        $('.swiper-container-{{section.id}}').mouseout(debounce(function () {
+          console.log('鼠标离开');
+          swiper123.autoplay.start();
+        }))
+
+
+
+      } 
+	}
+    
+    window.ScreenSizeChange = ScreenSizeChange;
+    })(window);
  
  
+  
  	 
   window.addEventListener("resize", debounce(function(){
-  console.log("4")
+   var sizeScreenChange = new ScreenSizeChange();
+   sizeScreenChange();
 	}));
 
     
