@@ -1029,15 +1029,15 @@
  
  
  	 
-  	document.getElementsByClassName('.swiper-container-{{section.id}}')[0].addEventListener('touchstart', function(){
+  	document.getElementsByClassName('.swiper-container-{{section.id}}')[0].addEventListener('touchstart', debounce(function(){
 		console.log('对象触摸了');
         swiper123.autoplay.stop();
-    })
+    }))
     
- 	document.getElementsByClassName('.swiper-container-{{section.id}}')[0].addEventListener('touchmove', function(){
+ 	document.getElementsByClassName('.swiper-container-{{section.id}}')[0].addEventListener('touchmove', debounce(function(){
 		console.log('对象移动了');
         swiper123.autoplay.start();
-    })
+    }))
  
      
   document.body.addEventListener('touchstart', function() { console.log('触摸了');});
