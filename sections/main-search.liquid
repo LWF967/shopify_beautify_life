@@ -27,11 +27,6 @@
   .template-search .grid__item--small:not(:last-child) {
     padding-bottom: 0.5rem;
   }
-  
-  .my_main_search_content_border {
-    border-style: solid;
-    border-width: 1px;
-  }
 
   @media screen and (min-width: 750px) {
     .template-search__results {
@@ -86,7 +81,7 @@
             <input name="options[prefix]" type="hidden" value="last">
 
             {%- if settings.predictive_search_enabled -%}
-              <div class="predictive-search predictive-search--search-template my_main_search_content_border" tabindex="-1" data-predictive-search>
+              <div class="predictive-search predictive-search--search-template" tabindex="-1" data-predictive-search>
                 <div class="predictive-search__loading-state">
                   <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
                     <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
