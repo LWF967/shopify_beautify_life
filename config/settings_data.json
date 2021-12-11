@@ -18,7 +18,7 @@
     "header_sticky_background_color": "#e2e2e2",
     "header_sticky_icon_and_text_color": "#000000",
     "header_count_color": "#000000",
-    "header_count_text_color": "#ffffff",
+    "header_count_text_color": "#ff0000",
     "colors_solid_button_labels": "#FFFFFF",
     "colors_accent_1": "#121212",
     "colors_accent_2": "#334FB4",
