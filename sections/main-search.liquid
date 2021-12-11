@@ -57,6 +57,31 @@
   .my_card_content {
     margin-top: 1.5rem;
   }
+ 
+  
+  .card-wrapper:hover .my_main_search::before{
+    opacity: var(--hover-overlay-opacity);
+   }
+
+  .my_main_search:focus {
+    opacity: 1; 
+  }
+
+  .my_main_search::before {
+    z-index:1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-image-overlay);
+    opacity: var(--opacity-image-overlay); 
+  }   
+  
+  .search__button .icon {
+    height: 1.8rem;
+  }
   
   @media screen and (min-width: 750px) {
     .template-search__results {
@@ -80,10 +105,6 @@
     .template-search__results.page-width.my_main_search_result_margin {
       margin-top: 3.5rem;
     } 
-  }
-
-  .search__button .icon {
-    height: 1.8rem;
   }
 </style>
 
@@ -181,7 +202,7 @@
                     <div class="card card--search card--soft{% unless item.image %} card--text-only{% endunless %}">
                       <div class="card__inner">
                         {%- if item.image -%}
-                          <div class="media media--cropped">
+                          <div class="media media--cropped my_main_search">
                             <img
                               srcset="{%- if item.image.src.width >= 165 -%}{{ item.image.src | img_url: '165x' }} 165w,{%- endif -%}
                                 {%- if item.image.src.width >= 360 -%}{{ item.image.src | img_url: '360x' }} 360w,{%- endif -%}
