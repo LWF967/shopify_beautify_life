@@ -96,10 +96,45 @@
         "product_recommendations_margin_top": "",
         "product_recommendations_margin_bottom": ""
       }
+    },
+    "1639186192410e863c": {
+      "type": "daily-deal-of-the-day",
+      "settings": {
+        "product": "",
+        "heading_text": "Daily Deal Of The Day",
+        "heading_font_size": 32,
+        "color_top": "#888",
+        "countdown_time": "2021\/12\/01",
+        "time_font_size": 32,
+        "background_color": "#f9f9f9",
+        "background_product_color": "#FFF",
+        "daily_deal_of_the_day_margin_top": "",
+        "daily_deal_of_the_day_margin_bottom": ""
+      }
+    },
+    "1639186196e9d8016e": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "head_text": "The most exciting news",
+        "blog": "新闻",
+        "post_limit": 3,
+        "show_image": true,
+        "show_title": true,
+        "show_short_content": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": true,
+        "featured_blog_margin_top": "",
+        "featured_blog_margin_bottom": ""
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "1639186192410e863c",
+    "1639186196e9d8016e"
   ]
 }
