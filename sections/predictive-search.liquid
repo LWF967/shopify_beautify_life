@@ -29,6 +29,10 @@
   .my_predictive_search_search_keywords {
     border-top: 1px solid;
   }
+  
+  .aaaaaa {
+    align-items: center;
+  }
 </style>
 {%- if predictive_search.performed -%}
   <div id="predictive-search-results" class="my_predictive_search">
@@ -44,7 +48,7 @@
     <ul id="predictive-search-results-list " class="predictive-search__results-list list-unstyled" role="listbox" aria-labelledby="predictive-search-products">
       {%- for product in predictive_search.resources.products -%}
         <li id="predictive-search-option-{{ forloop.index }}" class="predictive-search__list-item" role="option" aria-selected="false">
-          <a href="{{ product.url }}" class="predictive-search__item predictive-search__item--link link link--text" tabindex="-1">
+          <a href="{{ product.url }}" class="predictive-search__item predictive-search__item--link link link--text aaaaaa" tabindex="-1">
             {%- if product.featured_media != blank -%}
               <img class="predictive-search__image"
                 src="{{ product.featured_media | img_url: '150x' }}"
