@@ -76,8 +76,8 @@
                 alt="{{ media.alt | escape }}"
                 loading="lazy"
                 width="1100"
-                height="{{ 1100 | divided_by: media.preview_image.aspect_ratio | ceil }}"
-                data-media-id="{{ media.id }}"
+                height="{{ 1100 | divided_by: section.settings.log_image.aspect_ratio | ceil }}"
+                data-media-id="{{ section.settings.log_image.id }}"
                 {% if variant_image %}class="product__media-item--variant"{% endif %}
               >           
          </div>
