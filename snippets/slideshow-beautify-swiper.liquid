@@ -1029,11 +1029,11 @@
  
  
  	 
-  	$('.swiper-container-{{section.id}}').touchstart( debounce(function(){
+  	$('.swiper-container-{{section.id}}').addEventListener('touchstart', debounce(function(){
 		console.log('对象触摸了');
         swiper123.autoplay.stop();
     }))
-    $('.swiper-container-{{section.id}}').touchmove( debounce(function(){
+    $('.swiper-container-{{section.id}}').addEventListener('touchmove', debounce(function(){
 		console.log('对象移动了');
         swiper123.autoplay.start();
     }))
