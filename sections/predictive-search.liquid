@@ -2,22 +2,30 @@
   .my_header_search_product{
     font-size: 14px;
   }
+  
   .my_header_search_title {
     margin: 0 0;
     font-size: 14px;
     font-weight: 700;
   }
+  
   .my_header_search_vendor {
     margin-top: 0.5rem;
     font-size: 14px;
   }
+  
   .my_header_search_for {
     font-size: 14px;
     font-weight: 700;
   }
+  
+  .my_predictive_search_border {
+    border-style: solid;
+    border-width: 1px;
+  }
 </style>
 {%- if predictive_search.performed -%}
-  <div id="predictive-search-results">
+  <div id="predictive-search-results my_predictive_search_border">
     {%- if predictive_search.resources.products.size > 0 -%} 
       <h2 id="predictive-search-products" class="predictive-search__heading my_header_search_product">
         {{ 'templates.search.products' | t }}
