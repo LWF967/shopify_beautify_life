@@ -1016,23 +1016,15 @@
           }, wait)
         }
       }
- 
- 
-  	$('.swiper-container-{{section.id}}').mouseover( debounce(function(){
-		console.log('鼠标进来');
-        swiper123.autoplay.stop();
-    }))
-    $('.swiper-container-{{section.id}}').mouseout( debounce(function(){
-		console.log('鼠标离开');
-        swiper123.autoplay.start();
-    }))
- 
- 
- 	 
-  	document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchstart', debounce(function(){
+// 根据不同端，添加不同响应事件    
+
+    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+    
+    
+    	document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchstart', debounce(function(){
 		console.log('对象触摸了');
         swiper123.autoplay.stop();
-    },1000),true)
+    },500),true)
     
  	document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchmove', debounce(function(){
 		console.log('对象移动了');
@@ -1042,7 +1034,31 @@
  	document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchend', debounce(function(){
 		console.log('对象没接触了');
         swiper123.autoplay.start();
-    },1000),true)
+    },500),true)
+    
+    }else{
+    
+    
+     	$('.swiper-container-{{section.id}}').mouseover( debounce(function(){
+		console.log('鼠标进来');
+        swiper123.autoplay.stop();
+        }))
+        
+        $('.swiper-container-{{section.id}}').mouseout( debounce(function(){
+            console.log('鼠标离开');
+            swiper123.autoplay.start();
+        }))
+ 
+    
+    
+    }  
+      
+ 
+ 
+ 
+ 
+ 	 
+  
     
     
      
