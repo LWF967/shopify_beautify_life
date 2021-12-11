@@ -618,6 +618,7 @@
       "type": "daily-deal-of-the-day",
       "settings": {
         "product": "text4",
+        "log_image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
         "heading_text": "Daily Deal Of The Day 123123 j",
         "heading_font_size": 40,
         "color_top": "#b13e3e",
