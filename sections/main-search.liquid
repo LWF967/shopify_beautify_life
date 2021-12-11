@@ -48,6 +48,10 @@
     position: inherit;
   }
   
+  .my_card_content {
+    margin-top: 1.5rem;
+  }
+  
   @media screen and (min-width: 750px) {
     .template-search__results {
       margin-top: 9rem;
@@ -191,7 +195,7 @@
                       </div>
                     </div>
                   </a>
-                  <div class="card__content">
+                  <div class="card__content my_card_content">
                     <h2 class="card__text h3">{{ item.title | truncate: 50 | escape }}</h2>
                     <div class="card-article-info caption-with-letter-spacing h5">
                       {%- if section.settings.article_show_date -%}
