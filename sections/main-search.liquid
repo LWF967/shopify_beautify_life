@@ -47,9 +47,9 @@
      style="{%- if section.settings.main_search_margin_top != blank -%}margin-top: {{ section.settings.main_search_margin_top }}px; {%- endif -%}{%- if section.settings.main_search_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_search_margin_bottom }}px;{%- endif -%}">
   <div class="page-width center">
     {%- if search.performed -%}
-      <h1 class="h2">{{ 'templates.search.title' | t }}</h1>
+      <h1 class="h2 my_font_weight_default">{{ 'templates.search.title' | t }}</h1>
     {%- else -%}
-      <h1 class="h2">{{ 'general.search.search' | t }}</h1>
+      <h1 class="h2 my_font_weight_default">{{ 'general.search.search' | t }}</h1>
     {%- endif -%}
     <div class="template-search__search">
       {%- if settings.predictive_search_enabled -%}
