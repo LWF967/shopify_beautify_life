@@ -27,6 +27,10 @@
   .template-search .grid__item--small:not(:last-child) {
     padding-bottom: 0.5rem;
   }
+  
+  .my_main_search_ul_margin {
+    margin: 0 0;
+  }
 
   @media screen and (min-width: 750px) {
     .template-search__results {
@@ -117,7 +121,7 @@
   {%- if search.performed and search.results.size > 0 -%}
     {% paginate search.results by 24 %}
       <div class="template-search__results page-width">
-        <ul class="grid grid--4-col-desktop grid--3-col-tablet grid--2-col grid--one-third-max grid--quarter-max negative-margin product-grid" role="list">
+        <ul class="grid grid--4-col-desktop grid--3-col-tablet grid--2-col grid--one-third-max grid--quarter-max negative-margin product-grid my_main_search_ul_margin" role="list">
           {%- for item in search.results -%}
             <li class="grid__item{% unless item.object_type == 'product' %} grid__item--small{% endunless %}">
               {%- case item.object_type -%}
