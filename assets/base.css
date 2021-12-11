@@ -2455,7 +2455,3 @@ a{
 .shopify-section:not(#shopify-section-promo-bar, #shopify-section-top-bar, #shopify-section-header){
   overflow: hidden;
 }
-  
-  .shopify-payment-button__button--hidden {
-    display: none;
-  }
