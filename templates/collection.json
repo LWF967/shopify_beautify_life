@@ -25,10 +25,75 @@
         "main_collection_product_grid_margin_top": "",
         "main_collection_product_grid_margin_bottom": ""
       }
+    },
+    "16391864937e29cd52": {
+      "type": "banner-Beautify",
+      "blocks": {
+        "1639186493da9895e1-0": {
+          "type": "img_top",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "image2": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
+            "image3": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "1639186493da9895e1-1": {
+          "type": "img_top",
+          "settings": {
+            "image2": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "1639186493da9895e1-2": {
+          "type": "img_top",
+          "settings": {
+            "image3": "shopify:\/\/shop_images\/01.png",
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        }
+      },
+      "block_order": [
+        "1639186493da9895e1-0",
+        "1639186493da9895e1-1",
+        "1639186493da9895e1-2"
+      ],
+      "settings": {
+        "title": "BANNER",
+        "sub_title": "Popular this week",
+        "font_top": 30,
+        "color_top": "#fff",
+        "grid": 3,
+        "show_view_all": false,
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "banner_beautify_margin_top": "",
+        "banner_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
     "banner",
-    "product-grid"
+    "product-grid",
+    "16391864937e29cd52"
   ]
 }
