@@ -78,8 +78,8 @@
         --color-base-outline-button-labels: {{ settings.colors_outline_button_labels.red }}, {{ settings.colors_outline_button_labels.green }}, {{ settings.colors_outline_button_labels.blue }};
 <!--         --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }}; -->
 <!--         --color-base-accent-1: {{ settings.colors_primary_buttons.red }}, {{ settings.colors_primary_buttons.green }}, {{ settings.colors_primary_buttons.blue }}; -->
-    	--color-base-accent-1: {{ settings.colors_accent_1 | color_to_rgb | remove: 'rgb(' | remove: 'rgba(' | remove: ')' | remove: ', 0.0'  }};
-        --color-base-accent-2: {{ settings.colors_accent_2 | color_to_rgb | remove: 'rgb(' | remove: 'rgba(' | remove: ')' | remove: ', 0.0' }};
+    	--color-base-accent-1: {{ settings.colors_primary_buttons | color_to_rgb | remove: 'rgb(' | remove: 'rgba(' | remove: ')' | remove: ', 0.0'  }};
+        --color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};
         --payment-terms-background-color: {{ settings.colors_background_1 }};
 
         --gradient-base-background-1: {% if settings.gradient_background_1 != blank %}{{ settings.gradient_background_1 }}{% else %}{{ settings.colors_background_1 }}{% endif %};
@@ -122,25 +122,10 @@
           font-size: 1.6rem;
         }
       }
-    
-      {%- if settings.button_style == 'Round' -%}
-         .button {
-          border-radius: 4px !important;
-    	}
-      {%- elsif settings.button_style == 'Default' -%}
-         .button {
-          border-radius: 0px !important;
-    	}
-      {%- endif -%}
     {% endstyle %}
     
-{% include 'css-variables' %} 
+	{% include 'css-variables' %}
     {{ 'base.css' | asset_url | stylesheet_tag }}
-	{{'custome-content.css'| asset_url |stylesheet_tag}}
-
-	{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
-    
-    {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -200,7 +185,7 @@
     {% section 'top-bar' %}
     {% section 'header' %}
 
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1" style="background: #fff;">
+    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
@@ -227,33 +212,29 @@
       let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
       let main = document.getElementById('MainContent');
       let sticky = document.getElementsByClassName('my_footer_sticky');
-console.log(document.getElementsByClassName('footer__content-bottom my_footer_bottom_padding')[0].scrollHeight);
-//       window.onload = function () {
-        if(sticky.length > 0) {      
-          if(document.body.clientWidth < 1024) {
-            main.style.marginBottom = 0 + "px";
-          }
-          else if(document.body.clientWidth >= 1024) {
-            let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight - 55;
-//             main.style.background = '#ffffff';
-            main.style.zIndex = 2;
-            main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
-            my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
-            promo_bar.style.zIndex = 1;
-            top_bar.style.zIndex = 1;
-            header_zx.style.zIndex = 1;
-            footer_bottom.style.position = 'fixed';
-            footer_bottom.style.bottom = 0;
-            footer_bottom.style.width = '100%';
-            console.log(my_footer_sticky_height);
-            console.log(footer_bottom_height);
-          }
-        }
-        else {
+      
+      if(sticky.length > 0) {      
+        if(document.body.clientWidth < 1024) {
           main.style.marginBottom = 0 + "px";
         }
-//       }
-
+        else if(document.body.clientWidth >= 1024) {
+          let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight-40+1;
+          main.style.background = '#ffffff';
+          main.style.zIndex = 999;
+          main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
+          my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
+          promo_bar.style.zIndex = 999;
+          top_bar.style.zIndex = 999;
+          header_zx.style.zIndex = 999;
+          footer_bottom.style.position = 'fixed';
+          footer_bottom.style.bottom = 0;
+          footer_bottom.style.width = '100%';
+          console.log(footer_bottom_height);
+        }
+      }
+      else {
+        main.style.marginBottom = 0 + "px";
+      }
       
       {% comment %} // header fixed layout {% endcomment %}
       let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
@@ -286,7 +267,6 @@ console.log(document.getElementsByClassName('footer__content-bottom my_footer_bo
             content.style.position = 'relative';
           }
           if(content.style.position == 'fixed') {
-//             header_zx.style.zIndex = 3;
             content.classList.add('my_header_sticky_settings');
             header.classList.add('my_header_sticky_settings');
             content.style.transition = 'transform .3s';
@@ -294,7 +274,6 @@ console.log(document.getElementsByClassName('footer__content-bottom my_footer_bo
 //             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
             content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
           } else if(content.style.position == 'relative') {
-//             header_zx.style.zIndex = 2;
             content.classList.remove('my_header_sticky_settings');
             header.classList.remove('my_header_sticky_settings');
             content.style.top = 0 + 'px';
