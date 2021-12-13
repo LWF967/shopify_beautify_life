@@ -37,9 +37,11 @@
 /*   .my_header_search_price {
     font-size: 18px !important;
   } */
-  .price-item.price-item--regular.my_font_size_content_default.my_header_search_price {
-    font-size: 14px;
-  }
+  {%- if request.page_type != 'peoduct' -%}
+    .price-item.price-item--regular.my_font_size_content_default.my_header_search_price {
+      font-size: 14px;
+    }
+  {%- endif -%}
 </style>
 
 <div class="price
