@@ -1036,17 +1036,14 @@ function debounce(func, wait = 500) {
         $('.swiper-container-{{section.id}}').unbind('mouseover').unbind('mouseout');
 
         document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchstart', debounce(function () {
-          console.log('对象触摸了');
           swiper123.autoplay.stop();
         }, 500), true)
 
         document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchmove', debounce(function () {
-          console.log('对象移动了');
 
         }), true)
 
         document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchend', debounce(function () {
-          console.log('对象没接触了');
           swiper123.autoplay.start();
         }, 500), true)
 
@@ -1054,12 +1051,10 @@ function debounce(func, wait = 500) {
 
 
         $('.swiper-container-{{section.id}}').mouseover(debounce(function () {
-          console.log('鼠标进来');
           swiper123.autoplay.stop();
         }))
 
         $('.swiper-container-{{section.id}}').mouseout(debounce(function () {
-          console.log('鼠标离开');
           swiper123.autoplay.start();
         }))
 
@@ -1068,13 +1063,11 @@ function debounce(func, wait = 500) {
       } 
 	}
     
-//  var sizeScreenChange = new ScreenSizeChange();
    ScreenSizeChange()
   
  	 
   window.addEventListener("resize", debounce(function(){
  	ScreenSizeChange()
-  console.log('屏幕变了');
 	})
     );
 
