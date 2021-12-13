@@ -55,11 +55,7 @@
     {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
     <p class="article-card__excerpt rte-width"  
        {%- if show_short_content -%}
-       style="    
-              text-overflow: ellipsis;
-              white-space: break-spaces;
-              overflow: hidden;
-              max-height: 200px;"
+       style="text-overflow: ellipsis;white-space: break-spaces;overflow: hidden;max-height: 200px;margin: 0 0 20px;"
        {%- endif -%} 
        >   
 
