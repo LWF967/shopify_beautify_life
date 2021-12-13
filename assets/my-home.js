@@ -26,7 +26,6 @@ if(sticky.length > 0) {
     footer_bottom.style.position = 'fixed';
     footer_bottom.style.bottom = 0;
     footer_bottom.style.width = '100%';
-//     console.log(1);
   }
 }
 else {
