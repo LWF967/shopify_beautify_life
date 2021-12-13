@@ -52,7 +52,6 @@ function gotoTop() {
 gotoTop();
 
 window.onscroll = function () {
-
   //获取距离页面顶部的距离
   let toTop = document.documentElement.scrollTop || document.body.scrollTop;
   if(my_header_sticky.length > 0) {
