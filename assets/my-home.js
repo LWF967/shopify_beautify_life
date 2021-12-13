@@ -62,8 +62,8 @@ window.onscroll = function () {
       content.style.position = 'relative';
     }
     if(content.style.position == 'fixed') {
-      top_bar.style.zIndex = 4;
-      header_zx.style.zIndex = 3;
+      top_bar.style.zIndex = 5;
+      header_zx.style.zIndex = 4;
       content.classList.add('my_header_sticky_settings');
       header.classList.add('my_header_sticky_settings');
       content.style.transition = 'transform .3s';
@@ -71,8 +71,8 @@ window.onscroll = function () {
       //             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
       content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
     } else if(content.style.position == 'relative') {
-      top_bar.style.zIndex = 3;
-      header_zx.style.zIndex = 2;
+      top_bar.style.zIndex = 4;
+      header_zx.style.zIndex = 3;
       content.classList.remove('my_header_sticky_settings');
       header.classList.remove('my_header_sticky_settings');
       content.style.top = 0 + 'px';
