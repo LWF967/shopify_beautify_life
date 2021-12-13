@@ -211,9 +211,7 @@
       <span class="visually-hidden">{{ product_card_product.metafields.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
     </p>
     {%- endif -%}
-    <div style="font-size: 14px;">
-      {% render 'price', product: product_card_product, price_class: '' %}
-    </div>
+    {% render 'price', product: product_card_product, price_class: '' %}
   </div>
 </div>
 
@@ -253,5 +251,13 @@
   
   .my_product_card_beautify_margin_top {
     margin-top: 15px;
+  }
+  
+  .card-information__wrapper .my_price_font_size {
+    font-size: 14px;
+  }
+
+  .card-information__wrapper .my_header_search_price {
+    font-size: 18px !important;
   }
 </style>
