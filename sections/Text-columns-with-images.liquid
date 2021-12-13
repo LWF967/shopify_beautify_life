@@ -191,7 +191,7 @@
                     <h3 class="add_title my_text_columns_with_images_left my_text_columns_with_images_title_margin">{{ block.settings.title | escape }}</h3>
                   {%- endif -%}
                   {%- if block.settings.text != blank -%}
-                    <div class="rte my_text_columns_with_images_left my_text_content_margin_top">{{ block.settings.text }}</div>
+                    <div class="rte my_text_columns_with_images_left my_text_content_margin_top my_font_size_content_default">{{ block.settings.text }}</div>
                   {%- endif -%}
                   {% if block.settings.button_label == blank or block.settings.button_link == blank %}
                     <a class="button my_text_column_with_images_button_margin_top my_text_columns_with_images_button hide_my_text_columns_with_images_button my_button_font_size_default"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
