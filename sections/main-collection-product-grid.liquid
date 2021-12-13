@@ -484,7 +484,7 @@
     {%- endif -%}
   </div>
 
-  <div id="CollectionProductGrid" class="page-width">
+  <div id="CollectionProductGrid" class="page-width spaced-section">
     {%- paginate collection.products by section.settings.products_per_page -%}
       {%- if collection.products.size == 0 -%}
         <div class="collection collection--empty" id="main-collection-product-grid" data-id="{{ section.id }}">
