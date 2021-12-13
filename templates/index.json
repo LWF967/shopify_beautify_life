@@ -55,7 +55,7 @@
         "1959a0a0-d475-4859-867c-834e6fce1148": {
           "type": "blog",
           "settings": {
-            "blog": "",
+            "blog": "技术分享",
             "image_size": "medium",
             "description": "<p>Description of your blog.<\/p>",
             "show_number_articles": true,
