@@ -72,7 +72,7 @@ window.onscroll = function () {
 }
 
 window.onload = function(){
- 	console.log("页面加载完成!!!");
+  console.log("页面加载完成!!!");
   if(sticky.length > 0) {      
     if(document.body.clientWidth < 1024) {
       main.style.marginBottom = 0 + "px";
