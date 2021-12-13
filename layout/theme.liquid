@@ -242,8 +242,6 @@
             promo_bar.style.zIndex = 1;
             top_bar.style.zIndex = 1;
             header_zx.style.zIndex = 1;
-//             footer_top.style.zIndex = 0;
-//             footer_bottom.style.zIndex = 0;
             footer_bottom.style.position = 'fixed';
             footer_bottom.style.bottom = 0;
             footer_bottom.style.width = '100%';
@@ -287,8 +285,6 @@
           }
           if(content.style.position == 'fixed') {
 //             header_zx.style.zIndex = 2;
-//             main.style.zIndex = 2;
-            header_zx.style.zIndex = 2;
             content.classList.add('my_header_sticky_settings');
             header.classList.add('my_header_sticky_settings');
             content.style.transition = 'transform .3s';
@@ -296,9 +292,7 @@
 //             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
             content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
           } else if(content.style.position == 'relative') {
-//             promo_bar.style.zIndex = 1;
-//             top_bar.style.zIndex = 1;
-            header_zx.style.zIndex = 1;
+//             header_zx.style.zIndex = 1;
             content.classList.remove('my_header_sticky_settings');
             header.classList.remove('my_header_sticky_settings');
             content.style.top = 0 + 'px';
