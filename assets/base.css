@@ -2411,6 +2411,10 @@ a{
   font-size: 24px
 }
 
+.my_small_button_font_size_default {
+  font-size: 12px;
+}
+  
 .my_button_font_size_default {
   font-size: 13px;
 }
