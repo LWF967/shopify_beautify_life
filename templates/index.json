@@ -393,7 +393,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
             "image_alignment": "bottom right",
-            "text_alignment": "middle_center",
+            "text_alignment": "top_left",
             "slider_heading_text": "Image with text overlay",
             "slider_sub_text": "Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.",
             "slider_button_text": "title namenghnjh",
