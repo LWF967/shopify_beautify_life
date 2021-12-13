@@ -906,7 +906,7 @@
  
 let swiper123 = new Swiper('.swiper-container-{{section.id}}', {
   direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-  loop: {{section.settings.auto_play}}, // 循环模式选项 
+  loop: true, // 循环模式选项 
 
   // 如果需要分页器
 
@@ -932,12 +932,15 @@ let swiper123 = new Swiper('.swiper-container-{{section.id}}', {
   observer: true,
   observeParents: true,
   observeSlideChildren: true,
-  autoplay: {
-    delay: {{section.settings.auto_time | times:1000}},
-    stopOnLastSlide: false,
-    disableOnInteraction: false,
-  },
-
+  {% if section.settings.auto_play %}
+    autoplay: {
+      delay: {{section.settings.auto_time | times:1000}},
+      stopOnLastSlide: false,
+      disableOnInteraction: false,
+    },
+	{% else %}
+    autoplay:true,
+  {% endif %}
 
   // 如果需要前进后退按钮
   navigation: {
@@ -957,7 +960,7 @@ document.addEventListener('shopify:section:load', () => {
 
   let swiper123 = new Swiper('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-    loop: {{section.settings.auto_play}}, // 循环模式选项 
+    loop: true, // 循环模式选项 
 
     // 如果需要分页器
 
@@ -983,12 +986,15 @@ document.addEventListener('shopify:section:load', () => {
     observer: true,
     observeParents: true,
     observeSlideChildren: true,
+    {% if section.settings.auto_play %}
     autoplay: {
       delay: {{section.settings.auto_time | times:1000}},
       stopOnLastSlide: false,
       disableOnInteraction: false,
     },
-
+	{% else %}
+    autoplay:true,
+    {% endif %}
 
     // 如果需要前进后退按钮
     navigation: {
