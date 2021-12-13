@@ -447,7 +447,7 @@
         "se_height": "adapt_f",
         "text_size": "medium",
         "loop": true,
-        "auto_play": false,
+        "auto_play": true,
         "auto_time": 5,
         "show_button": true,
         "show_button_visible": "only_hover",
