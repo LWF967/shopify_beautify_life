@@ -62,11 +62,8 @@
       {%- else -%}
         {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
       {%- endif -%}
-      <div style="    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);">
-      <span class="title my_font_size_heading_default my_font_weight_default my_video_align_center" style="z-index: 1; color: white;">{{ section.settings.heading }}</span>
+      <div class="my_video_text">
+      <span class="title my_font_size_heading_default my_font_weight_default my_video_align_center" style="color: white;margin: 0 0 30px;">{{ section.settings.heading }}</span>
       <span class="deferred-media__poster-button motion-reduce">
         {%- render 'icon-play' -%}
       </span>
@@ -124,6 +121,21 @@
   
   .my_video_align_center {
     text-align: center;
+  }
+  
+  .my_video_text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 10%;
+    height: 20%;
+    z-index: 1;
+    border: 10px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
 </style>
