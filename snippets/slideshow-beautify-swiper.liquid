@@ -936,7 +936,7 @@ let swiper123 = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{
   observeSlideChildren: true,
 	if(swiperAutoPlay){
     autoplay: {
-      delay: {{section.settings.auto_time | times:1000}},
+      delay: swiperTime * 1000 ,
       stopOnLastSlide: false,
       disableOnInteraction: false,
     },
@@ -988,7 +988,7 @@ document.addEventListener('shopify:section:load', () => {
     observeSlideChildren: true,
     if(swiperAutoPlay){
     autoplay: {
-      delay: {{section.settings.auto_time | times:1000}},
+      delay: swiperTime * 1000,
       stopOnLastSlide: false,
       disableOnInteraction: false,
     },
