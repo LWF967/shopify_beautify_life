@@ -31,9 +31,9 @@
 -%}
 
 <style>
-  .my_price_font_size {
+/*   .my_price_font_size {
     font-size: 18px;
-  }
+  } */
   .my_header_search_price {
     font-size: 18px !important;
   }
@@ -52,7 +52,7 @@
         - div.price__sale: Displayed when a variant is a sale
         - div.price__availability: Displayed when the product is sold out
     {%- endcomment -%}
-    <div class="price__regular my_price_font_size my_font_weight_default">
+    <div class="price__regular my_font_size_content_default my_price_font_size my_font_weight_default">
       <dt>
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       </dt>
@@ -62,7 +62,7 @@
         </span>
       </dd>
     </div>
-    <div class="price__sale my_price_font_size my_font_weight_default">
+    <div class="price__sale my_font_size_content_default my_price_font_size my_font_weight_default">
       <dt class="price__compare">
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       </dt>
