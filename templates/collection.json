@@ -21,7 +21,7 @@
         "show_rating": false,
         "enable_filtering": true,
         "enable_sorting": true,
-        "collapse_on_larger_devices": false,
+        "collapse_on_larger_devices": true,
         "main_collection_product_grid_margin_top": "",
         "main_collection_product_grid_margin_bottom": ""
       }
@@ -131,7 +131,7 @@
             "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
             "header_top": "Head",
             "url": "",
-            "color": "#fff",
+            "color": "#ffffff",
             "w": 140,
             "h": 3,
             "open_link": "_blank"
@@ -143,7 +143,7 @@
             "image": "shopify:\/\/shop_images\/01.png",
             "header_top": "Head",
             "url": "",
-            "color": "#fff",
+            "color": "#ffffff",
             "w": 140,
             "h": 3,
             "open_link": "_blank"
@@ -200,7 +200,7 @@
         "title": "BANNER",
         "sub_title": "Popular this week",
         "font_top": 30,
-        "color_top": "#fff",
+        "color_top": "#ffffff",
         "grid": 3,
         "show_view_all": false,
         "show_page_Dot": false,
