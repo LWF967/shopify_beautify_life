@@ -344,7 +344,7 @@
                       </div>
               		</h2>
                   {%- endif -%}
-                  <div class="footer-block__details-content rte my_footer_p">
+                  <div class="footer-block__details-content rte my_footer_p my_font_size_content_default">
                     {{ block.settings.subtext }}
                   </div>
                 {%- when 'text1' -%}
@@ -357,7 +357,7 @@
                       </div>
                     </h2>
                   {%- endif -%}
-                  <div class="footer-block__details-content rte my_footer_p my_footer_p_align">
+                  <div class="footer-block__details-content rte my_footer_p my_footer_p_align my_font_size_content_default">
                         {%- if block.settings.image != blank -%}
                           {%- assign image_size = block.settings.custom_logo_width | append: 'x' -%}
                            <img
@@ -384,7 +384,7 @@
                       </div>
               		</h2>
                   {%- endif -%}
-                  <div class="footer-block__details-content rte my_footer_p">
+                  <div class="footer-block__details-content rte my_footer_p my_font_size_content_default">
                     <p>{{ block.settings.sub_text }}</p>
                     {%- if  block.settings.newsletter_design == '1' -%}
                       {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form my_form_margin0' -%}
