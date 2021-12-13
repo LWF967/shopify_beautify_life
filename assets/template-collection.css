@@ -70,8 +70,8 @@
 
 .collection-product-count__text {
   font-size: 1.4rem;
-  line-height: 1.5;
-  margin: 0;
+/*   line-height: 1.5;
+  margin: 0; */
 }
 
 .collection-product-count__text.loading {
