@@ -34,9 +34,9 @@
 /*   .my_price_font_size {
     font-size: 18px;
   } */
-  .my_header_search_price {
+/*   .my_header_search_price {
     font-size: 18px !important;
-  }
+  } */
 </style>
 
 <div class="price
@@ -57,7 +57,7 @@
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       </dt>
       <dd {% if show_badges == false %}class="price__last"{% endif %}>
-        <span class="price-item price-item--regular my_header_search_price">
+        <span class="price-item price-item--regular my_font_size_content_default my_header_search_price">
           {{ money_price }}
         </span>
       </dd>
@@ -67,7 +67,7 @@
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       </dt>
       <dd class="price__compare">
-        <s class="price-item price-item--regular my_header_search_price">
+        <s class="price-item price-item--regular my_font_size_content_default my_header_search_price">
           {% if settings.currency_code_enabled %}
             {{ compare_at_price | money_with_currency }}
           {% else %}
