@@ -137,6 +137,24 @@
     justify-content: center;
     align-items: center;
   }
+  
+  {
+    background-color: rgb(var(--color-background));
+    border: 0.1rem solid rgba(var(--color-foreground),.1);
+    border-radius: 50%;
+    color: rgb(var(--color-foreground));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.2rem;
+    width: 6.2rem;
+    position: static;
+    left: 0;
+    top: 0;
+    transform: none;
+    transition: transform var(--duration-short) ease,color var(--duration-short) ease;
+    z-index: 1;
+  }
 
 </style>
 {% schema %}
