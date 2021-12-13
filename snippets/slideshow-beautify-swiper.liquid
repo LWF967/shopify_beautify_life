@@ -939,7 +939,7 @@ let swiper123 = new Swiper('.swiper-container-{{section.id}}', {
       disableOnInteraction: false,
     },
 	{% else %}
-    autoplay:true,
+    autoplay:false,
   {% endif %}
 
   // 如果需要前进后退按钮
@@ -993,7 +993,7 @@ document.addEventListener('shopify:section:load', () => {
       disableOnInteraction: false,
     },
 	{% else %}
-    autoplay:true,
+    autoplay:false,
     {% endif %}
 
     // 如果需要前进后退按钮
