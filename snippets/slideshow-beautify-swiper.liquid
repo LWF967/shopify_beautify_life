@@ -1008,9 +1008,11 @@ console.log('baibai',swiperTime);
 
   })
 
-{% if  section.settings.auto_play == true %}
-	swiper123.autoplay.stop();
-  {% endif %}
+	{% if  section.settings.auto_play == true %}
+		swiper123.autoplay.start();
+	{% else %}
+		swiper123.autoplay.stop();
+  	{% endif %}
   
 
 
