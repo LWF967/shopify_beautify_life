@@ -84,7 +84,7 @@
               {%- if block.settings.button_label_1 != blank -%}
                 <a{% if block.settings.button_link_1 != blank %} 
                    href="{{ block.settings.button_link_1 }}"{% endif %} 
-                   class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %} my_button_font_size_default my_image_with_text_overlay_button"
+                   class="button{% if block.settings.button_style_secondary_1 %} button--secondary{% else %} button--primary{% endif %} my_button_font_size_default my_image_with_text_overlay_button my_font_weight_default"
                    {% if block.settings.button_link_1 == blank %} aria-disabled="true"{% endif %}>
                   {{ block.settings.button_label_1 | escape }}
                 </a>
