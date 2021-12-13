@@ -447,7 +447,7 @@
         "se_height": "adapt_f",
         "text_size": "medium",
         "loop": true,
-        "auto_play": true,
+        "auto_play": false,
         "auto_time": 3,
         "show_button": true,
         "show_button_visible": "only_hover",
@@ -608,7 +608,7 @@
         "16387716731c66ad07-8"
       ],
       "settings": {
-        "product": "lol6",
+        "product": "text4",
         "secondary_background": false,
         "show_share_buttons": true,
         "hide_variants": false,
