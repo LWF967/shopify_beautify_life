@@ -21,6 +21,9 @@
     }
   }
   {% endif %}
+  .my_rte_setting_p_style p {
+    margin: 0 0;
+  }
 </style>
 
 
@@ -39,7 +42,7 @@
           <h3 class="h4 my_font_size_heading_default my_font_weight_default my_clear_margin">{{ section.settings.heading | escape }}</h3>
         {% endif %}
         {% if section.settings.address != blank %}
-          <div class="rte-setting">{{ section.settings.address }}</div>
+          <div class="rte-setting my_rte_setting_p_style">{{ section.settings.address }}</div>
           {% if section.settings.map_address != blank and section.settings.button_text != blank %}
             <p style="margin:0; box-sizing:content-box;">
               <a href="https://maps.google.com?daddr={{ section.settings.map_address | escape }}"
