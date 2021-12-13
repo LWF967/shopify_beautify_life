@@ -935,15 +935,13 @@ let swiper123 = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{
   observer: true,
   observeParents: true,
   observeSlideChildren: true,
- {% unless  section.settings.auto_play %}
+  {% if  section.settings.auto_play == true %}
     autoplay: {
       delay: swiperTime * 1000 ,
       stopOnLastSlide: false,
       disableOnInteraction: false,
     },
-   {% else %}
-	autoplay: false,    
-  {% endunless %}
+  {% endif %}
 	
   // 如果需要前进后退按钮
   navigation: {
@@ -992,17 +990,15 @@ console.log('baibai',swiperTime);
     observer: true,
     observeParents: true,
     observeSlideChildren: true,
-   {% unless  section.settings.auto_play %}
+   {% if  section.settings.auto_play == true %}
     autoplay: {
       delay: swiperTime * 1000 ,
       stopOnLastSlide: false,
       disableOnInteraction: false,
     },
-   {% else %}
-	autoplay: false,    
-  {% endunless %}
+  {% endif %}
   
-	  
+	
 
     // 如果需要前进后退按钮
     navigation: {
