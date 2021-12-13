@@ -20,7 +20,7 @@
     </div>
 
     <div class="h_55">
-      <p style="font-weight:600;font-size: 18px;margin: 0 0;">{{ product.title }}</p>
+      <p class="my_daily_deal_of_the_day_product_title_margin" style="font-weight:600;font-size: 18px;">{{ product.title }}</p>
       <p class="my_font_size_content_default my_daily_deal_of_the_day_product_desc_margin">{{product.description}}</p>
       <div class="my_daily_deal_of_the_day_product_price_margin">
       {% render 'price', product: product, price_class: '' %}
@@ -676,6 +676,10 @@
       margin-left: 0%;
       text-align: left;
     }
+    
+    .my_daily_deal_of_the_day_product_title_margin {
+      margin: 15px 0 0;
+    }
   }
 
   
@@ -833,6 +837,10 @@
 
   .left .h_55 .price-item.price-item--regular.my_font_size_content_default.my_header_search_price {
     font-size: 14px;
+  }
+  
+  .my_daily_deal_of_the_day_product_title_margin {
+    margin: 0 0;
   }
   
   .my_daily_deal_of_the_day_product_desc_margin {
