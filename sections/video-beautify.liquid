@@ -62,10 +62,15 @@
       {%- else -%}
         {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
       {%- endif -%}
+      <div style="    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);">
       <span class="title my_font_size_heading_default my_font_weight_default my_video_align_center" style="z-index: 1; color: white;">{{ section.settings.heading }}</span>
       <span class="deferred-media__poster-button motion-reduce">
         {%- render 'icon-play' -%}
       </span>
+      </div>
     </button>
     {%- if section.settings.cover_image != blank  and  section.settings.show_overlay == true and section.settings.style == 'image_with_play'-%}
         
