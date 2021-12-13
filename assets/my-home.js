@@ -92,3 +92,7 @@ window.onscroll = function () {
     my_backtop.style.cursor = "default";
   }
 }
+
+window.onload = function(){
+ 	alert("页面加载完成!!!");
+}
