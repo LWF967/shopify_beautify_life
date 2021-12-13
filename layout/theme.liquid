@@ -228,7 +228,7 @@
       let main = document.getElementById('MainContent');
       let sticky = document.getElementsByClassName('my_footer_sticky');
 
-      window.onload = function () {
+//       window.onload = function () {
         if(sticky.length > 0) {      
           if(document.body.clientWidth < 1024) {
             main.style.marginBottom = 0 + "px";
@@ -252,8 +252,7 @@
         else {
           main.style.marginBottom = 0 + "px";
         }
-      }
-      console.log(footer_bottom_height);
+//       }
 
       
       {% comment %} // header fixed layout {% endcomment %}
