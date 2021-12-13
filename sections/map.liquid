@@ -21,11 +21,6 @@
     }
   }
   {% endif %}
-  
-  .my_map_heading_font_size {
-    font-size: 14px;
-    font-weight: 700;
-  }
 </style>
 
 
@@ -41,7 +36,7 @@
       <div class="map-section__content">
         <h2 class="visually-hidden visually-hidden--static">{{ 'sections.map.section_heading' | t }}</h2>
         {% if section.settings.heading != blank %}
-          <h3 class="h4 my_map_heading_font_size">{{ section.settings.heading | escape }}</h3>
+          <h3 class="h4 my_font_size_heading_default my_font_weight_default">{{ section.settings.heading | escape }}</h3>
         {% endif %}
         {% if section.settings.address != blank %}
           <div class="rte-setting">{{ section.settings.address }}</div>
