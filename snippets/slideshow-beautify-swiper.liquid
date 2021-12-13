@@ -935,14 +935,13 @@ let swiper123 = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{
   observer: true,
   observeParents: true,
   observeSlideChildren: true,
-	if(swiperAutoPlay){
     autoplay: {
       delay: 7000 ,
       stopOnLastSlide: false,
       disableOnInteraction: false,
     },
   
-	}
+	
   // 如果需要前进后退按钮
   navigation: {
     nextEl: '.swiper-button-next-{{section.id}}',
@@ -987,14 +986,13 @@ document.addEventListener('shopify:section:load', () => {
     observer: true,
     observeParents: true,
     observeSlideChildren: true,
-    if(swiperAutoPlay){
     autoplay: {
       delay: 7000,
       stopOnLastSlide: false,
       disableOnInteraction: false,
     },
   
-	}
+	
 
     // 如果需要前进后退按钮
     navigation: {
