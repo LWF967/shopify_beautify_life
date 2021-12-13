@@ -96,10 +96,87 @@
         "product_recommendations_margin_top": "",
         "product_recommendations_margin_bottom": ""
       }
+    },
+    "16393856137f137526": {
+      "type": "featured-product-beautify",
+      "blocks": {
+        "16393856134bed661a-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "16393856134bed661a-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "16393856134bed661a-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "16393856134bed661a-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "16393856134bed661a-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "16393856134bed661a-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "16393856134bed661a-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "16393856134bed661a-7": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "16393856134bed661a-8": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16393856134bed661a-0",
+        "16393856134bed661a-1",
+        "16393856134bed661a-2",
+        "16393856134bed661a-3",
+        "16393856134bed661a-4",
+        "16393856134bed661a-5",
+        "16393856134bed661a-6",
+        "16393856134bed661a-7",
+        "16393856134bed661a-8"
+      ],
+      "settings": {
+        "product": "lol-more",
+        "secondary_background": false,
+        "show_share_buttons": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "featured_product_beautify_margin_top": "",
+        "featured_product_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "16393856137f137526"
   ]
 }
