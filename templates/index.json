@@ -448,7 +448,7 @@
         "text_size": "medium",
         "loop": true,
         "auto_play": false,
-        "auto_time": 3,
+        "auto_time": 7,
         "show_button": true,
         "show_button_visible": "only_hover",
         "show_button_style": "style2",
