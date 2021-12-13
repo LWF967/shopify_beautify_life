@@ -62,9 +62,7 @@
       {%- else -%}
         {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
       {%- endif -%}
-      <div>
-        <h2 class="title my_font_size_heading_default my_font_weight_default my_video_align_center">{{ section.settings.heading }}</h2>
-      </div>
+      <h2 class="title my_font_size_heading_default my_font_weight_default my_video_align_center">{{ section.settings.heading }}</h2>
       <span class="deferred-media__poster-button motion-reduce">
         {%- render 'icon-play' -%}
       </span>
