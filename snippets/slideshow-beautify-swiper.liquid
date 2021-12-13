@@ -37,7 +37,7 @@
  
 
   
-  <div  class="  swiper-wrapper"  data-autoplay="{{section.settings.auto_play}}" data-autotime="{{section.settings.auto_time}}" >
+  <div  class="  swiper-wrapper  swiper-wrapper-{{section.id}} "  data-autoplay="{{section.settings.auto_play}}" data-autotime="{{section.settings.auto_time}}" >
       
       
     	{% for block in section.blocks %}
@@ -902,7 +902,7 @@
 
 
  
- 
+ let  autoPlay = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.autoplay;
  
 let swiper123 = new Swiper('.swiper-container-{{section.id}}', {
   direction: 'horizontal', // 垂直切换选项  horizontal  vertical
@@ -932,7 +932,7 @@ let swiper123 = new Swiper('.swiper-container-{{section.id}}', {
   observer: true,
   observeParents: true,
   observeSlideChildren: true,
-  {% if section.settings.auto_play == 'true'%}
+  {% if autoPlay == 'true'%}
     autoplay: {
       delay: {{section.settings.auto_time | times:1000}},
       stopOnLastSlide: false,
@@ -986,7 +986,7 @@ document.addEventListener('shopify:section:load', () => {
     observer: true,
     observeParents: true,
     observeSlideChildren: true,
-    {% if section.settings.auto_play == 'true'%}
+    {% if autoPlay== 'true'%}
     autoplay: {
       delay: {{section.settings.auto_time | times:1000}},
       stopOnLastSlide: false,
