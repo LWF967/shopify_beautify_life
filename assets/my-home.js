@@ -94,5 +94,5 @@ window.onscroll = function () {
 }
 
 window.onload = function(){
- 	alert("页面加载完成!!!");
+ 	console.log("页面加载完成!!!");
 }
