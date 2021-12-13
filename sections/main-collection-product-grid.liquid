@@ -261,7 +261,7 @@
 
       <menu-drawer class="mobile-facets__wrapper {% unless section.settings.collapse_on_larger_devices %} medium-hide large-up-hide{% endunless %}" data-breakpoint="mobile">
         <details class="mobile-facets__disclosure disclosure-has-popup">
-          <summary class="mobile-facets__open-wrapper focus-offset">
+          <summary class="mobile-facets__open-wrapper focus-offset y-center">
             <span class="mobile-facets__open">
               {% render 'icon-filter' %}
               <span class="mobile-facets__open-label button-label">{{ 'sections.collection_template.filter_and_sort' | t }}</span>
@@ -559,7 +559,11 @@
     
   } 
   	
-  
+  summary + .mobile-facets__open-wrapper + .y-center 
+  {
+	top: 50%;
+    transform: translateY(-50%);  
+  }
 
 </style>
 
