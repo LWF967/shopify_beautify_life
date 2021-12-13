@@ -63,23 +63,20 @@
         {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
       {%- endif -%}
       <div class="my_video_text">
-      <span class="title my_font_size_heading_default my_font_weight_default my_video_align_center" style="color: white;margin: 0 0 30px;">{{ section.settings.heading }}</span>
+      <span class="title my_font_weight_default my_video_align_center my_video_font_size" style="color: white;margin: 0 0 30px;">{{ section.settings.heading }}</span>
       <span class="deferred-media__poster-button motion-reduce">
         {%- render 'icon-play' -%}
       </span>
       </div>
     </button>
-    {%- if section.settings.cover_image != blank  and  section.settings.show_overlay == true and section.settings.style == 'image_with_play'-%}
-        
+    {%- if section.settings.cover_image != blank  and  section.settings.show_overlay == true and section.settings.style == 'image_with_play'-%}   
     <div 
-     
       data-bgset="{% include 'bgset', image: section.settings.cover_image %}"
       data-sizes="auto"
       data-parent-fit="contain"
       style="
              background-image: url({{ section.settings.cover_image |image_url }});
              background-position: {{ section.settings.image_alignment }};
-             
              border: none;
              cursor: pointer;
              margin: 0;
@@ -88,7 +85,6 @@
              width: 100%; 
              position:absolute;
              display:block;
-             
              " 
    ></div>
     {%- endif -%}
@@ -105,7 +101,7 @@
 
 <style>
   .video__overlay{
-    display:block !important;
+    display: block !important;
   }
   
   .video__overlay::before {
@@ -155,6 +151,13 @@
       z-index: 1;
     }
   {%- endif -%}
+  .my_video_font_size {
+    {%- if section.settings.text_size == 'medium' -%}
+      font-size: 24px;
+    {%- elsif section.settings.text_size == 'large' -%}
+      font-size: 30px;
+    {%- endif -%}
+  }
 </style>
 {% schema %}
 {
