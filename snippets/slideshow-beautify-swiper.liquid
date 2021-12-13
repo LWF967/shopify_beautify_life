@@ -902,7 +902,9 @@
 
 
  
- let  autoPlay = document.getElementsByClassName(' swiper-wrapper-{{section.id}}')[0].dataset.autoplay;
+ let  swiperAutoPlay = document.getElementsByClassName(' swiper-wrapper-{{section.id}}')[0].dataset.autoplay;
+ let swiperTime = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.autotime;	 
+ 
  
 let swiper123 = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{section.id}}', {
   direction: 'horizontal', // 垂直切换选项  horizontal  vertical
@@ -932,14 +934,14 @@ let swiper123 = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{
   observer: true,
   observeParents: true,
   observeSlideChildren: true,
-  {% if autoPlay == 'true'%}
+	if(swiperAutoPlay){
     autoplay: {
       delay: {{section.settings.auto_time | times:1000}},
       stopOnLastSlide: false,
       disableOnInteraction: false,
     },
-  {% endif %}
-
+  
+	}
   // 如果需要前进后退按钮
   navigation: {
     nextEl: '.swiper-button-next-{{section.id}}',
@@ -984,13 +986,14 @@ document.addEventListener('shopify:section:load', () => {
     observer: true,
     observeParents: true,
     observeSlideChildren: true,
-    {% if autoPlay== 'true'%}
+    if(swiperAutoPlay){
     autoplay: {
       delay: {{section.settings.auto_time | times:1000}},
       stopOnLastSlide: false,
       disableOnInteraction: false,
     },
-    {% endif %}
+  
+	}
 
     // 如果需要前进后退按钮
     navigation: {
