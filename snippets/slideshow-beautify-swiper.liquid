@@ -932,7 +932,7 @@ let swiper123 = new Swiper('.swiper-container-{{section.id}}', {
   observer: true,
   observeParents: true,
   observeSlideChildren: true,
-  {% if section.settings.auto_play %}
+  {% if section.settings.auto_play == 'true'%}
     autoplay: {
       delay: {{section.settings.auto_time | times:1000}},
       stopOnLastSlide: false,
@@ -986,7 +986,7 @@ document.addEventListener('shopify:section:load', () => {
     observer: true,
     observeParents: true,
     observeSlideChildren: true,
-    {% if section.settings.auto_play %}
+    {% if section.settings.auto_play == 'true'%}
     autoplay: {
       delay: {{section.settings.auto_time | times:1000}},
       stopOnLastSlide: false,
