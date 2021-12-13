@@ -37,7 +37,7 @@
  
 
   
-  <div  class="  swiper-wrapper"  >
+  <div  class="  swiper-wrapper"  data-autoplay="{{section.settings.auto_play}}" data-autotime="{{section.settings.auto_time}}" >
       
       
     	{% for block in section.blocks %}
@@ -900,11 +900,15 @@
  
  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
 
+ let autop = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autoplay;
     
-  
+ let time = document.getElementsByClassName('big-box-{{section.id}}')[0].dataset.autotime;   
+ 
+ 
+ 
 let swiper123 = new Swiper('.swiper-container-{{section.id}}', {
   direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-  loop: true, // 循环模式选项 
+  loop: {{section.settings.auto_play}}, // 循环模式选项 
 
   // 如果需要分页器
 
@@ -931,7 +935,7 @@ let swiper123 = new Swiper('.swiper-container-{{section.id}}', {
   observeParents: true,
   observeSlideChildren: true,
   autoplay: {
-    delay: 5000,
+    delay:  delay: {{section.settings.auto_time | times:1000}},
     stopOnLastSlide: false,
     disableOnInteraction: false,
   },
@@ -955,7 +959,7 @@ document.addEventListener('shopify:section:load', () => {
 
   let swiper123 = new Swiper('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-    loop: true, // 循环模式选项 
+    loop: {{section.settings.auto_play}}, // 循环模式选项 
 
     // 如果需要分页器
 
@@ -982,7 +986,7 @@ document.addEventListener('shopify:section:load', () => {
     observeParents: true,
     observeSlideChildren: true,
     autoplay: {
-      delay: 5000,
+      delay: {{section.settings.auto_time | times:1000}},
       stopOnLastSlide: false,
       disableOnInteraction: false,
     },
