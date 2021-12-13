@@ -293,6 +293,8 @@
 //             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
             content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
           } else if(content.style.position == 'relative') {
+            promo_bar.style.zIndex = 1;
+            top_bar.style.zIndex = 1;
             header_zx.style.zIndex = 1;
             content.classList.remove('my_header_sticky_settings');
             header.classList.remove('my_header_sticky_settings');
