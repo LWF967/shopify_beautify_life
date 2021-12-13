@@ -21,6 +21,10 @@
     font-size: 16px;
   }
   
+  .my_product_card_a_hover:hover {
+    text-decoration: underline;
+  }
+  
   .my_product_card_margin_top {
     margin-top: 15px;
   }
@@ -124,7 +128,7 @@
     {%- endif -%}
 
     {%- if product_card_product.featured_media -%}
-    <a href="{{ product_card_product.url | default: '#' }}">
+    <a href="{{ product_card_product.url | default: '#' }}" class="my_product_card_a_hover">
       <span class="card-information__text h5 my_font_weight_default my_product_card">
         {{ product_card_product.title | escape }}
       </span>
