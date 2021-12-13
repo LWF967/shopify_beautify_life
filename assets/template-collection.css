@@ -414,7 +414,7 @@ button.facets__button {
   width: 100%;
   grid-column: 1 / -1;
   grid-row: 2;
-  margin-top: -0.5rem;
+/*   margin-top: -0.5rem; */
 }
 
 .active-facets__button {
