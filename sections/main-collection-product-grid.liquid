@@ -39,12 +39,12 @@
 </style>
 
 <div class=" spaced-section" style="{%- if section.settings.main_collection_product_grid_margin_top != blank -%}margin-top: {{ section.settings.main_collection_product_grid_margin_top }}px; {%- endif -%}{%- if section.settings.main_collection_product_grid_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_collection_product_grid_margin_bottom }}px;{%- endif -%}">
-  <div class="collection-filters my_collection_filters_margin pd-5" id="main-collection-filters" data-id="{{ section.id }}">
+  <div class="collection-filters my_collection_filters_margin " id="main-collection-filters" data-id="{{ section.id }}">
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
       {%- assign total_active_values = 0 -%}
 
       {%- unless section.settings.collapse_on_larger_devices -%}
-        <collection-filters-form class="facets small-hide">
+        <collection-filters-form class="facets small-hide pd-5">
           <form id="CollectionFiltersForm" class="facets__form">
             {% if section.settings.enable_filtering %}
               <div id="FacetsWrapperDesktop" class="facets__wrapper">
@@ -546,7 +546,7 @@
       font-style: oblique;
   }
 
-  .collection-filters .pd-5{
+  .collection-filters  collection-filters-form + .pd-5{
   
     padding:5.5rem 5rem;
     
