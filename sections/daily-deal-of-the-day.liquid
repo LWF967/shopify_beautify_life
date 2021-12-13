@@ -22,7 +22,7 @@
     <div class="h_55">
       <p style="font-weight:600;font-size: 18px;margin: 0 0;">{{ product.title }}</p>
       <p class="my_font_size_content_default my_daily_deal_of_the_day_product_desc_margin">{{product.description}}</p>
-      <div style="margin: 1rem 0;">
+      <div class="my_daily_deal_of_the_day_product_price_margin">
       {% render 'price', product: product, price_class: '' %}
       </div>
       
@@ -837,6 +837,10 @@
   
   .my_daily_deal_of_the_day_product_desc_margin {
     margin: 10px 0 15px;
+  }
+  
+  .my_daily_deal_of_the_day_product_price_margin {
+    margin: 0 0 25px;
   }
   
 </style>
