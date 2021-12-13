@@ -952,7 +952,11 @@ let swiper123 = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{
 })
 
 
-
+{% if  section.settings.auto_play == true %}
+		swiper123.autoplay.start();
+	{% else %}
+		swiper123.autoplay.stop();
+  	{% endif %}
 
 document.addEventListener('shopify:section:load', () => {
 
