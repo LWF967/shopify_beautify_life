@@ -124,9 +124,11 @@
     {%- endif -%}
 
     {%- if product_card_product.featured_media -%}
-    <span class="card-information__text h5 my_font_weight_default my_product_card">
-      {{ product_card_product.title | escape }}
-    </span>
+    <a href="{{ product_card_product.url | default: '#' }}">
+      <span class="card-information__text h5 my_font_weight_default my_product_card">
+        {{ product_card_product.title | escape }}
+      </span>
+    </a>
     {%- endif -%}
 
     {% comment %} TODO: metafield {% endcomment %}
