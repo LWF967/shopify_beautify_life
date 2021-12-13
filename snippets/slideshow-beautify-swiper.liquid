@@ -904,7 +904,7 @@
  
  let  autoPlay = document.getElementsByClassName(' swiper-wrapper-{{section.id}}')[0].dataset.autoplay;
  
-let swiper123 = new Swiper('.feature-artworks-{{section.id}} .swiper-container-{{section.id}}', {
+let swiper123 = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{section.id}}', {
   direction: 'horizontal', // 垂直切换选项  horizontal  vertical
   loop: true, // 循环模式选项 
 
@@ -956,7 +956,7 @@ document.addEventListener('shopify:section:load', () => {
 
 
 
-  let swiper123 = new Swiper('.feature-artworks-{{section.id}} .swiper-container-{{section.id}}', {
+  let swiper123 = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, // 循环模式选项 
 
