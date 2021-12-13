@@ -28,6 +28,10 @@
   .my_rte_setting_p_style p {
     margin: 0 0 20px;
   }
+  
+  .my_map_getdirection {
+    border: 1px solid #000;
+  }
 </style>
 
 
@@ -50,7 +54,7 @@
           {% if section.settings.map_address != blank and section.settings.button_text != blank %}
             <p style="margin:0; box-sizing:content-box;">
               <a href="https://maps.google.com?daddr={{ section.settings.map_address | escape }}"
-                 class="btn btn--secondary btn--small map_section__directions-btn"
+                 class="btn btn--secondary btn--small map_section__directions-btn my_map_getdirection"
                  target="_blank"
                  rel="noopener"
                  aria-describedby="a11y-new-window-external-message"
