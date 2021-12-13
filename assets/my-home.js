@@ -16,6 +16,7 @@ if(sticky.length > 0) {
   }
   else if(document.body.clientWidth >= 1024) {
     let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight - 55;
+    main.style.background = '#ffffff';
     main.style.zIndex = 2;
     main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
     my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
