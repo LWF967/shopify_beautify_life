@@ -213,7 +213,6 @@
     
     <a id="my_backtop" style="{% if settings.show_back_to_top == 'Disable' %}display: none;{% endif %}{% if settings.back_to_top_style == 'Style 2' %}border: 2px solid #fff; box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .2);{% endif %} {% if settings.button_style == 'Round' %}border-radius: 4px;{% endif %}"></a>
 
-    <script src="{{ 'footer-sticky.js' | asset_url }}" defer="defer"></script>
     <script>
       {% comment %}
       /*lzx change*/
@@ -292,7 +291,7 @@
         }
       }
     </script>
-    
+        <script src="{{ 'footer-sticky.js' | asset_url }}" defer="defer"></script>
     {% if settings.enable_prevent_copying %}
     <script>
       {% comment %} // disable_right_click {% endcomment %}
