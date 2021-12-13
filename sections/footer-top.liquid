@@ -316,7 +316,7 @@
 {%- endif -%}
 {%- endstyle -%}
 
-<footer class="footer color-{{ section.settings.color_scheme }} gradient {% if section.settings.sticky_footer %}my_footer_sticky{% endif %} {% if section.settings.accordions_options_on_mobile %}@media screen and (min-width: 0px) and (max-width: 768px){% endif %}">
+<footer class="footer color-{{ section.settings.color_scheme }} gradient {% if section.settings.sticky_footer %}my_footer_sticky{% endif %} {% if section.settings.accordions_options_on_mobile %}{% endif %}">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
   <div class="my_footer_bgcolor my_footer_margin_top {% if section.settings.border_footer %}my_footer_border{% endif %}">
     <div class="my_footer_top_padding page-width my_footer_bgcolor my_footer_mobile_flex">
