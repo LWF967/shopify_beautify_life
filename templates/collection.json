@@ -21,7 +21,7 @@
         "show_rating": false,
         "enable_filtering": true,
         "enable_sorting": true,
-        "collapse_on_larger_devices": true,
+        "collapse_on_larger_devices": false,
         "main_collection_product_grid_margin_top": "",
         "main_collection_product_grid_margin_bottom": ""
       }
