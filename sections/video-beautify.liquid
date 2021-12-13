@@ -42,9 +42,6 @@
       type="button"
     	
     >
-      <div>
-        <h2 class="title my_font_size_heading_default my_font_weight_default my_video_align_center">{{ section.settings.heading }}</h2>
-      </div>
       {%- if section.settings.cover_image != blank  and  section.settings.show_overlay == true and section.settings.style == 'image_with_play'-%}
         <img
           srcset="{%- if section.settings.cover_image.width >= 375 -%}{{ section.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
@@ -65,6 +62,9 @@
       {%- else -%}
         {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
       {%- endif -%}
+      <div>
+        <h2 class="title my_font_size_heading_default my_font_weight_default my_video_align_center">{{ section.settings.heading }}</h2>
+      </div>
       <span class="deferred-media__poster-button motion-reduce">
         {%- render 'icon-play' -%}
       </span>
