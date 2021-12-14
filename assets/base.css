@@ -1299,7 +1299,7 @@ details[open] > .share-button__fallback {
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
   font-size: 1.2rem;
-  color: var(--color-foreground);
+  color: var(--color-form-text);
 }
 
 .field__input:hover,
