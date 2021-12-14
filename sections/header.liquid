@@ -80,6 +80,7 @@
        url('//at.alicdn.com/t/font_2903696_p8b4e67fhg.woff?t=1635837134306') format('woff'),
        url('//at.alicdn.com/t/font_2903696_p8b4e67fhg.ttf?t=1635837134306') format('truetype');
   }
+  
   .my_cart {
     width: 16px;
     font-family: "iconfont" !important;
@@ -89,6 +90,7 @@
     -webkit-text-stroke-width: 0.2px;
     -moz-osx-font-smoothing: grayscale;
   }
+  
   .my_grid_style {
     grid-area: auto;
     text-align: center;
@@ -728,7 +730,7 @@
 		<span class="my_cart">&#xe66e;</span>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
-          <div class="my_cart_count_bubble">
+          <div class="cart-count-bubble">
             
             {% comment %}
             {%- if cart.item_count < 100 -%}
