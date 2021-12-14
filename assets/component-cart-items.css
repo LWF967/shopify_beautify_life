@@ -11,6 +11,7 @@
   font-weight: normal;
 }
 
+/* lzx change start */
 @media screen and (min-width: 750px) {
   .cart-items th {
     text-align: left;
@@ -19,6 +20,7 @@
     font-weight: normal;
   }
 }
+/* lzx change end */
 
 .cart-item__quantity {
   display: flex;
