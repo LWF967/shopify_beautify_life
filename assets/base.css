@@ -1674,7 +1674,7 @@ input[type='checkbox'] {
 } */
   
 /* zx change */
-/* .cart-count-bubble {
+.cart-count-bubble {
   position: absolute;
   background-color: #797979;
   color: rgb(var(--color-button-text));
@@ -1688,7 +1688,7 @@ input[type='checkbox'] {
   bottom: 2.1rem;
   left: 1rem;
   line-height: 1.1;
-} */
+}
 
 /* section-announcement-bar */
 #shopify-section-announcement-bar {
