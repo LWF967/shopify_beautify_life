@@ -236,7 +236,7 @@
                       <p class="caption-with-letter-spacing light">{{ item.product.vendor }}</p>
                     {%- endif -%}
 
-                    <a href="{{ item.url }}" class="my_cart_link_style">{{ item.product.title | escape }}{{ item.product.size | escape }}{{ item.quantity | escape }}</a>
+                    <a href="{{ item.url }}" class="my_cart_link_style">{{ item.product.title | escape }}size{{ item.product.size | escape }}quantity{{ item.quantity | escape }}</a>
                     
                     <span class="price my_cart_price_font_size my_cart_mobile_price">{{ item.original_line_price | divided_by: item.quantity | money }}</span>
 
