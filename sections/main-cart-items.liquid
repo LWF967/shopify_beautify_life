@@ -172,7 +172,7 @@
             style="{%- if section.settings.main_cart_items_margin_top != blank -%}margin-top: {{ section.settings.main_cart_items_margin_top }}px; {%- endif -%}{%- if section.settings.main_cart_items_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_cart_items_margin_bottom }}px;{%- endif -%}">
   <div class="title-wrapper-with-link my_cart_margin">
     <h1 class="title title--primary my_cart_empty_font my_font_weight_default">{{ 'sections.cart.title' | t }}</h1>
-    <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
+    <a href="{{ routes.all_products_collection_url }}" class="underlined-link my_font_size_content_default">{{ 'general.continue_shopping' | t }}</a>
   </div>
 
   <div class="cart__warnings my_cart_empty_padding">
