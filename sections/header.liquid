@@ -203,16 +203,16 @@
   }
   
   .my_cart_count_bubble {
-/*     position: absolute;
+    position: absolute;
     height: 15px;
-    width: 15px; */
+    width: 15px;
     background: {{ settings.header_count_color }};
-/*     text-align: center;
+    text-align: center;
     line-height: 15px;
     border-radius: 100%;
     font-size: 9px;
     bottom: 20px;
-    left: 10px; */
+    left: 10px;
   }
   {%- if cart.item_count < 100 -%}
     .my_cart_count_bubble::after {
@@ -730,7 +730,7 @@
 		<span class="my_cart">&#xe66e;</span>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
-          <div class="cart-count-bubble my_cart_count_bubble">
+          <div class="my_cart_count_bubble">
             
             {% comment %}
             {%- if cart.item_count < 100 -%}
