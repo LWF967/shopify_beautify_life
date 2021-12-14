@@ -385,7 +385,7 @@ h5,
   font-style: var(--font-heading-style);
   font-weight: var(--font-heading-weight);
   letter-spacing: 0.06rem;
-  color: rgb(var(--color-foreground));
+    color: var(--font-title-color);
   line-height: 1.3;
 }
 
