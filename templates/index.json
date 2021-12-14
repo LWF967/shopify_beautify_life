@@ -838,6 +838,10 @@
         "newsletter_bk_box": true,
         "full_width": true,
         "button_design": "1",
+        "newsletter_input_color": "#ababab",
+        "newsletter_border_color": "#000000",
+        "newsletter_button_color": "#000000",
+        "newsletter_button_text_color": "#ffffff",
         "newsletter_margin_top": "",
         "newsletter_margin_bottom": ""
       }
