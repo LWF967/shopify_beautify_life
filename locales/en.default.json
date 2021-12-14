@@ -208,7 +208,7 @@
         "other": "{{ count }} results found for “{{ terms }}”"
       },
       "title": "Search results",
-      "search_for": "SEARCH FOR "
+      "search_for": "SEARCH FOR “{{ terms }}”"
     },
     "cart": {
       "cart": "Cart"
