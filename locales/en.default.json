@@ -71,7 +71,8 @@
       "previous": "Previous page"
     },
     "search": {
-      "search": "SEARCH OUR SITE"
+      "search": "SEARCH OUR SITE",
+      "search_label": "Search"
     },
     "cart": {
       "view": "View my cart ({{ count }})",

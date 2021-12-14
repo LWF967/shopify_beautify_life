@@ -135,7 +135,7 @@
               type="search"
               name="q"
               value="{{ search.terms | escape }}"
-              placeholder="{{ 'general.search.search' | t }}"
+              placeholder="{{ 'general.search.search_label' | t }}"
               {%- if settings.predictive_search_enabled -%}
                 role="combobox"
                 aria-expanded="false"
@@ -149,7 +149,7 @@
                 spellcheck="false"
               {%- endif -%}
             >
-            <label class="field__label" for="Search-In-Template">{{ 'general.search.search' | t }}</label>
+            <label class="field__label" for="Search-In-Template">{{ 'general.search.search_label' | t }}</label>
             <input name="options[prefix]" type="hidden" value="last">
 
             {%- if settings.predictive_search_enabled -%}
