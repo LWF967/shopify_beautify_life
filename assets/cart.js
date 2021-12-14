@@ -38,8 +38,8 @@ class CartItems extends HTMLElement {
         selector: '.js-contents',
       },
       {
-        id: 'cart-icon-bubble',
-        section: 'cart-icon-bubble',
+        id: 'my_cart_count_bubble', /*cart-icon-bubble*/
+        section: 'my_cart_count_bubble',
         selector: '.shopify-section'
       },
       {
