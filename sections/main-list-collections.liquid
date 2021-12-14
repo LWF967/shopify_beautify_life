@@ -38,11 +38,7 @@
     opacity: var(--opacity-image-overlay); 
   } 
   
-  @media screen and (max-width: 750px) {
-    .my_collections_outside_div {
-      margin: -15px 0 0;
-    }
-    
+  @media screen and (max-width: 750px) {    
     .my_collections_title {
       font-size: 36px;
       font-weight: 700;
@@ -61,7 +57,7 @@
   }
 </style>
 
-<div class="page-width spaced-section my_collections_outside_div"
+<div class="page-width spaced-section"
      style="{%- if section.settings.main_list_collections_margin_top != blank -%}margin-top: {{ section.settings.main_list_collections_margin_top }}px; {%- endif -%}{%- if section.settings.main_list_collections_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_list_collections_margin_bottom }}px;{%- endif -%}">
   <h1 class="title title--primary my_collections_title my_section_margin_default">{{ section.settings.title | escape }}</h1>
 
