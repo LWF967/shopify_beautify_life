@@ -24,7 +24,11 @@
     
   .cart__empty-text.my_cart_empty_font {
     font-size: 36px;
-    font-weight: 700;
+    margin: 0 0;
+  }
+    
+  .title.title--primary.my_cart_empty_font {
+    font-size: 36px;
     margin: 0 0;
   }
     
@@ -167,13 +171,13 @@
 <cart-items class="page-width spaced-section{% if cart == empty %} is-empty{% endif %}"
             style="{%- if section.settings.main_cart_items_margin_top != blank -%}margin-top: {{ section.settings.main_cart_items_margin_top }}px; {%- endif -%}{%- if section.settings.main_cart_items_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_cart_items_margin_bottom }}px;{%- endif -%}">
   <div class="title-wrapper-with-link my_cart_margin">
-    <h1 class="title title--primary my_cart_empty_font">{{ 'sections.cart.title' | t }}</h1>
+    <h1 class="title title--primary my_cart_empty_font my_font_weight_default">{{ 'sections.cart.title' | t }}</h1>
     <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
   </div>
 
   <div class="cart__warnings my_cart_empty_padding">
     {% comment %}<h1 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h1>{% endcomment %}
-    <h1 class="cart__empty-text my_cart_empty_font">Your cart</h1>
+    <h1 class="cart__empty-text my_cart_empty_font my_font_weight_default">Your cart</h1>
     <p class="my_cart_empty_tip my_font_size_content_default">Your cart is currently empty</p>
     {% comment %}<a href=" routes.all_products_collection_url }}" class="button">
       {{ 'general.continue_shopping' | t }}
