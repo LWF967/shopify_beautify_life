@@ -178,14 +178,17 @@
     {%- endif -%}
 
     {%- if product_card_product.featured_media -%}
-    <span class="card-information__text h5 my_product_card_beautify_title">
-      {{ product_card_product.title | escape }}
-    </span>
+    <a href="{{ product_card_product.url | default: '#' }}">
+      <span class="card-information__text h5 my_product_card_beautify_title">
+        {{ product_card_product.title | escape }}
+      </span>
+    </a>
     {%- else -%}
-
-    <span class="card-information__text h5 my_product_card_beautify_title">
-      {{ product_card_product.title | escape }}
-    </span>
+    <a href="{{ product_card_product.url | default: '#' }}">
+      <span class="card-information__text h5 my_product_card_beautify_title">
+        {{ product_card_product.title | escape }}
+      </span>
+    </a>
     {%- endif -%}
 
     {% comment %} TODO: metafield {% endcomment %}
