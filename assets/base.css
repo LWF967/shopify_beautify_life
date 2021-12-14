@@ -1674,7 +1674,7 @@ input[type='checkbox'] {
 } */
   
 /* zx change */
-.cart-count-bubble {
+/* .cart-count-bubble {
   position: absolute;
   background-color: #797979;
   color: rgb(var(--color-button-text));
@@ -1688,7 +1688,7 @@ input[type='checkbox'] {
   bottom: 2.1rem;
   left: 1rem;
   line-height: 1.1;
-}
+} */
 
 /* section-announcement-bar */
 #shopify-section-announcement-bar {
@@ -2206,9 +2206,9 @@ details-disclosure > details {
   line-height: 1;
   padding: 0.6rem 1.3rem;
   text-align: center;
-/*   background-color:var(--color-price-background);
+  background-color:var(--color-price-background);
   border-color: var(--color-price-background);
-  color: rgb(var(--color-foreground)); */
+  color: rgb(var(--color-foreground));
   word-break: break-word;
 }
 
@@ -2272,7 +2272,6 @@ a{
   
 .my_font_weight_default {
   font-weight: 700;
- 
 }
   
 /* lee padding 0 0/margin 0 0 */
