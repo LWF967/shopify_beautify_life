@@ -1524,7 +1524,7 @@ input[type='checkbox'] {
 
 /* component-quantity */
 .quantity {
-  border: 0.1rem solid rgba(var(--color-base-text),0.7);
+  border: 0.1rem solid --color-form-border;
   position: relative;
   height: 4.5rem;
   width: 14rem;
