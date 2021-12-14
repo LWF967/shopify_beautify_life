@@ -21,8 +21,14 @@
 
 <style>
   .my_product_card_beautify_title {
+    display: inline;
+    padding-right: 0;
     font-size: 16px;
     font-weight: 700;
+  }
+  
+  .my_product_card_beautify_a_hover:hover {
+    text-decoration: underline;
   }
 </style>
 
@@ -178,13 +184,13 @@
     {%- endif -%}
 
     {%- if product_card_product.featured_media -%}
-    <a href="{{ product_card_product.url | default: '#' }}">
+    <a href="{{ product_card_product.url | default: '#' }}" class="my_product_card_beautify_a_hover">
       <span class="card-information__text h5 my_product_card_beautify_title">
         {{ product_card_product.title | escape }}
       </span>
     </a>
     {%- else -%}
-    <a href="{{ product_card_product.url | default: '#' }}">
+    <a href="{{ product_card_product.url | default: '#' }}" class="my_product_card_beautify_a_hover">
       <span class="card-information__text h5 my_product_card_beautify_title">
         {{ product_card_product.title | escape }}
       </span>
