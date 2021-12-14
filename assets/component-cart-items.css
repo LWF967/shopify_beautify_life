@@ -11,6 +11,15 @@
   font-weight: normal;
 }
 
+@media screen and (min-width: 750px) {
+  .cart-items th {
+    text-align: left;
+    padding-bottom: 2.8rem;
+    opacity: 0.85;
+    font-weight: normal;
+  }
+}
+
 .cart-item__quantity {
   display: flex;
 }
