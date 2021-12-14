@@ -52,7 +52,7 @@
 
 <div class="page-width spaced-section my_collections_outside_div"
      style="{%- if section.settings.main_list_collections_margin_top != blank -%}margin-top: {{ section.settings.main_list_collections_margin_top }}px; {%- endif -%}{%- if section.settings.main_list_collections_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_list_collections_margin_bottom }}px;{%- endif -%}">
-  <h1 class="title title--primary my_collections_title">{{ section.settings.title | escape }}</h1>
+  <h1 class="title title--primary my_collections_title my_section_margin_default">{{ section.settings.title | escape }}</h1>
 
   {%- liquid
     case section.settings.sort
