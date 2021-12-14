@@ -114,7 +114,7 @@
 <div class="page-width spaced-section{% if cart == empty %} is-empty{% endif %}" 
      id="main-cart-footer" 
      data-id="{{ section.id }}"
-     style="{%- if section.settings.main_cart_footer_margin_top != blank -%}margin-top: {{ section.settings.main_cart_footer_margin_top }}px; {%- endif -%}{%- if section.settings.main_cart_footer_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_cart_footer_margin_bottom }}px;{%- endif -%}">
+     style="{% if cart == empty %}display: none;{% endif %}{%- if section.settings.main_cart_footer_margin_top != blank -%}margin-top: {{ section.settings.main_cart_footer_margin_top }}px; {%- endif -%}{%- if section.settings.main_cart_footer_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_cart_footer_margin_bottom }}px;{%- endif -%}">
   <div>
     <div class="cart__footer my_cart_footer_mobile">
     {%- if section.settings.show_cart_note -%}
