@@ -167,9 +167,9 @@
 
         <div class="card__badge">
           {%- if product_card_product.available == false -%}
-            <span class="badge badge--bottom-left color-{{ settings.colors_label_sold }}" aria-hidden="true">{{ 'products.product.sold_out' | t }}</span>
+            <span class="badge badge--bottom-left color-{{ settings.colors_label_sold }}" style="background-color:none; color:var(--color-label-sold); border-color: var(--color-label-sold);" aria-hidden="true">{{ 'products.product.sold_out' | t }}</span>
           {%- elsif product_card_product.compare_at_price > product_card_product.price and product_card_product.available -%}
-            <span class="badge badge--bottom-left color-{{ settings.colors_label_sale }}" aria-hidden="true">{{ 'products.product.on_sale' | t }}</span>
+            <span class="badge badge--bottom-left color-{{ settings.colors_label_sale }}" style="background-color:var(--color-label-sale);color:white;" aria-hidden="true">{{ 'products.product.on_sale' | t }}</span>
           {%- endif -%}
         </div>
       </div>
