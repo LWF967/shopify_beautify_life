@@ -29,6 +29,7 @@
     "color_image_overlay_text": "#fff",
     "color_image_overlay": "#cf3c3c",
     "image_overlay_opacity": 10,
+    "color_page_borders_and_lines": "#ff0000",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
     "sale_badge_color_scheme": "accent-2",
