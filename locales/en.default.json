@@ -224,7 +224,7 @@
       }
     },
     "404": {
-      "title": "Page not found",
+      "title": "Page Not Found",
       "subtext": "404",
       "info_text": "The page you requested does not exist"
     }
