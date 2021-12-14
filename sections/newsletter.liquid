@@ -50,6 +50,11 @@
   
   .my_field_input_style {
     height: 44px;
+    color: {{ section.settings.newsletter_input_color }};
+  }
+  
+  .my_newsletter_label {
+    color: {{ section.settings.newsletter_input_color }};
   }
   
   .my_field_input_style:hover,
@@ -112,7 +117,7 @@
                     placeholder="{{ 'newsletter.label' | t }}"
                     required
                   >
-                  <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                  <label class="field__label my_newsletter_label" for="NewsletterForm--{{ section.id }}">
                     {{ 'newsletter.label' | t }}
                   </label>
                   
