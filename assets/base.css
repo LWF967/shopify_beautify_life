@@ -1282,7 +1282,7 @@ details[open] > .share-button__fallback {
 .customer select {
   -webkit-appearance: none;
   appearance: none;
-  background-color: transparent;
+  background-color: var(--color-form-background);
   border: 0;
   border-radius: 0;
   color: rgb(var(--color-form-text));
