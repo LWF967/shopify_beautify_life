@@ -280,6 +280,22 @@
       },
       {
         "type": "header",
+        "content": "Label color"
+      },
+      {
+        "type": "color",
+        "id": "colors_label_sale",
+        "default": "#333",
+        "label": "Label sale"
+      },
+      {
+        "type": "color",
+        "id": "colors_sale_sold",
+        "default": "#EA0606",
+        "label": "Label sold"
+      },
+      {
+        "type": "header",
         "content": "Buttons"
       },
       {
