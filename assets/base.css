@@ -1529,6 +1529,7 @@ input[type='checkbox'] {
   height: 4.5rem;
   width: 14rem;
   display: flex;
+  color:var(--color-form-text);
 }
 
 .quantity__input {
