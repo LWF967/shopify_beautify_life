@@ -206,8 +206,8 @@
     position: absolute;
     background: {{ settings.header_count_color }};
     color: {{ settings.header_count_text_color }};
-    height: auto;
-    width: auto;
+    height: 1.5rem;
+    width: 1.5rem;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -749,7 +749,7 @@
           <div class="cart-count-bubble">
 
             {%- if cart.item_count < 100 -%}
-            <span aria-hidden="true" style="padding: 0.1rem 0.5rem">{{ cart.item_count }}</span>
+            <span aria-hidden="true">{{ cart.item_count }}</span>
             {%- endif -%}
             {%comment%}<span class="">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>{%endcomment%}
  
