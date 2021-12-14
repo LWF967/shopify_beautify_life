@@ -76,10 +76,10 @@
                  <h1 class="my_font_weight_default my_slideshow_beautify_heading_margin
                             {% if section.settings.text_size == 'medium' %}my_slideshow_beautify_heading_text_size_medium
                             {% elsif section.settings.text_size == 'large' %}my_slideshow_beautify_heading_text_size_large
-                            {% endif %}" style="color:white;">{{block.settings.slider_heading_text}}</h1>
+                            {% endif %}" >{{block.settings.slider_heading_text}}</h1>
                  <p class="{% if section.settings.text_size == 'medium' %}my_slideshow_beautify_sub_text_size_medium
                            {% elsif section.settings.text_size == 'large' %}my_slideshow_beautify_sub_text_size_large
-                           {% endif %}" style="color:white;">{{block.settings.slider_sub_text}}</p>
+                           {% endif %}" >{{block.settings.slider_sub_text}}</p>
                  
                  <div class="button {% if block.settings.slider_button_text != blank and block.settings.slider_button_link != blank %} banner__buttons--multiple{% endif %} my_slideshow_beautify_btn_margin" >
                    {%- if block.settings.slider_button_text != blank -%}
