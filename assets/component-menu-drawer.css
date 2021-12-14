@@ -40,7 +40,7 @@ menu-drawer > details[open] > summary::before {
   padding: 0;
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
   border-left: 0;
-  background-color: white;
+  background-color: rgb(var(--color-background));
   overflow-x: hidden;
 }
 
