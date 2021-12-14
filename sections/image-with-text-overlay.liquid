@@ -36,6 +36,19 @@
   
   .banner__text.my_image_with_overlay_text_margin {
     margin-top: 15px;
+    {% if section.settings.text_size == 'large' %}
+      font-size: 23px;
+    {% elsif section.settings.text_size == 'medium'  %}
+      font-size: 19px;
+    {% endif %}
+  }
+  
+  .my_image_with_overlay_heading {
+    {% if section.settings.text_size == 'large' %}
+      font-size: 65px;
+    {% elsif section.settings.text_size == 'medium'  %}
+      font-size: 23px;
+    {% endif %}
   }
 </style>
 
@@ -72,7 +85,7 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading {% if block.settings.heading_size == 'medium' %}h1{% else %}h0{% endif %}" {{ block.shopify_attributes }}>
+            <h2 class="banner__heading my_image_with_overlay_heading" {{ block.shopify_attributes }}>
               <span>{{ block.settings.heading | escape }}</span>
             </h2>
           {%- when 'text' -%}
