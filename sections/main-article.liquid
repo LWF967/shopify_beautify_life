@@ -3,8 +3,11 @@
 <style>
   .my_main_article_title {
     font-size: 36px;
-    text-align: center;
     margin-bottom: 1.5rem;
+  }
+  
+  .my_main_article_text_align {
+    text-align: center;
   }
 </style>
 
@@ -40,7 +43,7 @@
         {%- endif -%}
 
         {%- when 'title'-%}
-          <header class="page-width page-width--narrow" {{ block.shopify_attributes }}>
+          <header class="page-width page-width--narrow my_main_article_text_align" {{ block.shopify_attributes }}>
             <h1 class="article-template__title my_main_article_title my_font_weight_default" itemprop="headline">{{ article.title | escape }}</h1>
             {%- if block.settings.blog_show_date -%}
               <span class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'month_year' }}</span>
