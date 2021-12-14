@@ -202,6 +202,22 @@
     margin-right: 9px;
   }
   
+  .cart-count-bubble {
+    position: absolute;
+    background: {{ settings.header_count_color }};
+    color: {{ settings.header_count_text_color }};
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    bottom: 2.1rem;
+    left: 1rem;
+    line-height: 1.1;
+  }
+  
   .my_cart_count_bubble {
     position: absolute;
     height: 15px;
@@ -730,7 +746,7 @@
 		<span class="my_cart">&#xe66e;</span>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
-          <div class="my_cart_count_bubble">
+          <div class="cart-count-bubble">
             
             {% comment %}
             {%- if cart.item_count < 100 -%}
