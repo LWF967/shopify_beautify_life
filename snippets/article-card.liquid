@@ -36,7 +36,7 @@
       </div>
     {%- endif -%}
   </a>
-  <div class="article-card__info">
+  <div class="article-card__info my_article_card_info">
     <header class="article-card__header">
       <h2 class="article-card__title" id="Article-{{ article.id }}">
         {{ article.title | escape }}
@@ -88,6 +88,10 @@
   
   .my_article_card_flex {
     flex-direction: column;
+  }
+  
+  .my_article_card_info {
+    width: 100%;
   }
 </style>
 
