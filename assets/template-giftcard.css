@@ -120,9 +120,9 @@ h2,
   border: none;
   padding: 1.5rem 3rem;
   text-decoration: none;
-  background-color: rgb(var(--color-base-accent-1));
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-base-accent-1));
-  color: rgb(var(--color-base-solid-button-labels));
+  background-color: var(--color-button);
+  box-shadow: 0 0 0 0.1rem var(--color-button);
+  color: var(--color-foreground);
   min-width: 12rem;
   height: auto;
   font-size: 1.5rem;
@@ -131,7 +131,7 @@ h2,
 }
 
 .button:hover {
-  box-shadow: 0 0 0 0.2rem rgb(var(--color-base-accent-1));
+  box-shadow: 0 0 0 0.2rem var(--color-button);
 }
 
 .button--secondary {
