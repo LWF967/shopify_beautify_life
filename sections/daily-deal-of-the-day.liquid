@@ -941,7 +941,8 @@
   
   }
   
-  var timebb_{{section.id}} = new timedeal();
+  var sectionId = timebb+'{{section.id}}';
+  var sectionId = new timedeal();
   
   
    var designMode = Shopify.designMode || false;
@@ -950,7 +951,7 @@
 //    console.log('进入后台了');
    document.addEventListener('shopify:section:load',()=>{  
     console.log('这是渲染完的');
-	 timebb_{{section.id}} = new timedeal();
+	 sectionId = new timedeal();
      
      
      const deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
@@ -979,7 +980,7 @@
   
     document.addEventListener('shopify:section:unload',()=>{  
 	console.log('正在重新渲染');
-    timebb_{{section.id}} = null;
+    sectionId = null;
 	},true);
 
  
