@@ -60,7 +60,6 @@
     margin-left: 0;
     margin-right: 0;
   }
- 
   
   .card-wrapper:hover .my_main_search::before{
     opacity: var(--hover-overlay-opacity);
@@ -90,7 +89,7 @@
     height: 1.8rem;
   }
   
-  .my_main_search_form_search_margin {
+  .template-search__search .my_main_search_form_search_margin {
     margin-top: 1.5rem;
   }
 
@@ -123,9 +122,9 @@
      style="{%- if section.settings.main_search_margin_top != blank -%}margin-top: {{ section.settings.main_search_margin_top }}px; {%- endif -%}{%- if section.settings.main_search_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_search_margin_bottom }}px;{%- endif -%}">
   <div class="page-width center">
     {%- if search.performed -%}
-      <h1 class="h2 my_font_weight_default my_clear_margin">{{ 'templates.search.search_for' | t: terms: search.terms }}</h1>
+      <h1 class="h2 my_font_weight_default my_clear_margin"style="color:var(--font-page-heading);">{{ 'templates.search.search_for' | t: terms: search.terms }}</h1>
     {%- else -%}
-      <h1 class="h2 my_font_weight_default my_clear_margin">{{ 'general.search.search' | t }}</h1>
+      <h1 class="h2 my_font_weight_default my_clear_margin" style="color:var(--font-page-heading);">{{ 'general.search.search' | t }}</h1>
     {%- endif -%}
     <div class="template-search__search">
       {%- if settings.predictive_search_enabled -%}
@@ -139,7 +138,7 @@
               type="search"
               name="q"
               value="{{ search.terms | escape }}"
-              placeholder="{{ 'general.search.search_label' | t }}"
+              placeholder="{{ 'general.search.search' | t }}"
               {%- if settings.predictive_search_enabled -%}
                 role="combobox"
                 aria-expanded="false"
@@ -192,7 +191,7 @@
   </div>
   {%- if search.performed and search.results.size > 0 -%}
     {% paginate search.results by 24 %}
-      <div class="template-search__results page-width my_main_search_result_margin">
+      <div class="template-search__results page-width my_main_search_form_search_margin">
         <ul class="grid grid--4-col-desktop grid--3-col-tablet grid--2-col grid--one-third-max grid--quarter-max negative-margin product-grid my_main_search_ul_margin" role="list">
           {%- for item in search.results -%}
             <li class="grid__item{% unless item.object_type == 'product' %} grid__item--small{% endunless %}">
@@ -233,6 +232,9 @@
                       </div>
                     </div>
                   </a>
+                  <div class="card__badge my_card_badge">
+                    <span class="badge color-background-1" style="color:{{settings.colors_secondary_labels_and_borders}};background-color:{{ settings.colors_label_blog_page}};border-color:{{ settings.colors_label_blog_page}}">{{ 'blogs.article.blog' | t }}</span>
+                  </div>
                   <div class="card__content my_card_content">
                     <h2 class="card__text h3">{{ item.title | truncate: 50 | escape }}</h2>
                     <div class="card-article-info caption-with-letter-spacing h5">
@@ -244,16 +246,13 @@
                       {%- endif -%}
                     </div>
                   </div>
-                  <div class="card__badge my_card_badge">
-                    <span class="badge color-background-1 my_card_badge_content">{{ item.content | strip_html | truncate: 100 }}</span>
-                  </div>
                 {%- when 'page' -%}
                   <a href="{{ item.url }}" class="card-wrapper">
                     <div class="card card--search card--soft card--text-only">
                       <div class="card__inner">
                         <div class="card__content"><h2 class="card__text h3">{{ item.title | truncate: 50 | escape }}</h2></div>
                         <div class="card__badge">
-                          <span class="badge color-background-1">{{ 'templates.search.page' | t }}</span>
+                          <span class="badge color-background-1" style="color:{{settings.colors_secondary_labels_and_borders}};background-color:{{ settings.colors_label_blog_page}};border-color:{{ settings.colors_label_blog_page}}" >{{ 'templates.search.page' | t }}</span>
                         </div>
                       </div>
                     </div>
@@ -274,6 +273,7 @@
 {
   "name": "t:sections.main-search.name",
   "tag": "section",
+  "class": "spaced-section",
   "settings": [
     {
       "type": "header",
@@ -350,13 +350,13 @@
       "type": "text",
       "id": "main_search_margin_top",
       "label": "Margin top",
-      "info": "Margin top. If you not use to blank"
+      "info": "t:sections.margintip.settings.margin_tip.label"
     },
     {
       "type": "text",
       "id": "main_search_margin_bottom",
       "label": "Margin bottom",
-      "info": "Margin bottom. If you not use to blank"
+      "info": "t:sections.margintip.settings.margin_tip.label"
     }
   ]
 }
