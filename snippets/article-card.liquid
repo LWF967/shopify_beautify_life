@@ -42,12 +42,12 @@
         {{ article.title | escape }}
       </h2>
       {%- if show_date -%}
-      <span class="circle-divider caption-with-letter-spacing">
+      <span class="circle-divider caption-with-letter-spacing my_font_size_content_default">
         {{- article.published_at | time_tag: format: 'month_year' -}}
       </span>
       {%- endif -%}
       {%- if show_author -%}
-      <span class="caption-with-letter-spacing">{{ article.author -}}</span>
+      <span class="caption-with-letter-spacing my_font_size_content_default">{{ article.author -}}</span>
       {%- endif -%}
     </header>
     {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
