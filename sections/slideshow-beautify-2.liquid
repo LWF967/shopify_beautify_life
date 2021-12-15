@@ -16,11 +16,14 @@
 
 {%- assign image = section.blocks.settings.image %}
 
-{% stylesheet %}
+
+
+<style scoped>
   .tt1{ 
 	color: red;
 }
-{% endstylesheet %}
+</style>
+
 <section class="spaced-section nt_se_{{sid}} se_height_{{ se_height }}"  style="overflow: hidden;padding:0;{%- if section.settings.slideshow_beautify_margin_top != blank -%}margin-top: {{ section.settings.slideshow_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.slideshow_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.slideshow_beautify_margin_bottom }}px;{%- endif -%}">
   <p class="tt1">2134412</p>
 {% render 'slideshow-beautify-swiper',section:section,color_primary:color_primary %}
@@ -46,10 +49,6 @@
 
         {%- if se_height == 'adapt_f' -%}
 				
-
-  .tt1{ 
-	color: red;
-}
 
 				{%- assign block = se_blocks | where: "type", 'slideshow_img2' | first -%}
              	{%- assign ratio = block.settings.image.aspect_ratio |default:1.7777777777777777 -%}
