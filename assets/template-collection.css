@@ -934,20 +934,3 @@ input.mobile-facets__checkbox {
 .mobile-facets__sort .select__select {
   box-shadow: none;
 }
-
-
-/* lzx change start */
-.shopify-payment-button__button--hidden {
-  display: none;
-}
-
-
-.shopify-payment-button__button--unbranded {
-  background-color: var(--color-button);
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
-  color: rgb(var(--color-button-text));
-  font-size: 1.4rem;
-  line-height: 1.2;
-  letter-spacing: 0.07rem;
-}
-/* lzx change end */
