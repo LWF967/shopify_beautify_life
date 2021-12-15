@@ -18,6 +18,7 @@
 
 	--color-foreground:{{ settings.colors_body_text }};
  	
+	--color-foreground-rgba:{{ settings.colors_body_text | color_modify: 'alpha', 0.85 }};
 
     --color-overlay-title-text: {{ settings.color_image_overlay_text }};
     --color-image-overlay: {{ settings.color_image_overlay }};
