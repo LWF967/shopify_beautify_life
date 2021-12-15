@@ -105,10 +105,11 @@
           </div>
     {%- endcase -%}
   {%- endfor -%}
-  
-  {%- if section.settings.show_social_icon -%}
-    {%- render 'my-social-sharing' -%}
-  {%- endif -%}
+  <div class="article-template__social-sharing page-width page-width--narrow">
+    {%- if section.settings.show_social_icon -%}
+      {%- render 'my-social-sharing' -%}
+    {%- endif -%}
+  </div>
   
   <div class="element-margin center">
     <a href="{{ blog.url }}" class="article-template__link link animate-arrow{% if blog.comments_enabled? == false %} spaced-section{% endif %}">
