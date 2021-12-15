@@ -15,7 +15,7 @@
        style="{%- if section.settings.main_blog_margin_top != blank -%}margin-top: {{ section.settings.main_blog_margin_top }}px; {%- endif -%}{%- if section.settings.main_blog_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_blog_margin_bottom }}px;{%- endif -%}">
     <h1 class="title--primary my_main_blog_title my_font_weight_default my_clear_margin">{{ blog.title | escape }}</h1>
 
-    <div class="blog-articles">
+    <div class="blog-articles spaced-section">
       {%- for article in blog.articles -%}
         <div class="blog-articles__article article">
           {%- render 'article-card', article: article, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
