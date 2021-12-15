@@ -555,6 +555,12 @@
         "id": "color_page_background",
         "label": "Background",
         "default": "#FFFFFF"
+      },
+      {
+        "type": "color",
+        "id": "colors_page_stickiness",
+        "default": "#EA0606",
+        "label": "Stickiness header popup"
       }
     ]
   },
