@@ -76,6 +76,11 @@
 	  <a href="{{ article.url }}" class="button my_button_font_size_default my_font_weight_default">
         READ MORE
       </a>
+      <a href="{{ article.url }}">
+        <div class="button my_small_button_font_size_default my_article_card_btn">
+          READ MORE
+        </div>
+      </a>
     </div>
   </div>
 </article>
@@ -120,6 +125,15 @@
   
   .my_article_card_content {
     margin: 0 0 20px;
+  }
+  
+  .my_article_card_btn {
+    background: #fff;
+    color: #000;
+    border: 1px solid #000;
+    min-height: 30px;
+    height: 30px;
+    padding: 0 15px;
   }
 </style>
 
