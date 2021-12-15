@@ -38,7 +38,7 @@
   </a>
   <div class="article-card__info my_article_card_info">
     <header class="article-card__header">
-      <h2 class="article-card__title" id="Article-{{ article.id }}">
+      <h2 class="article-card__title my_font_weight_default my_article_card_title" id="Article-{{ article.id }}">
         {{ article.title | escape }}
       </h2>
       {%- if show_date -%}
@@ -111,6 +111,10 @@
     left: 0;
     background-color: var(--color-image-overlay);
     opacity: var(--opacity-image-overlay); 
-  }   
+  }
+  
+  .my_article_card_title {
+    font-size: 28px;
+  }
 </style>
 
