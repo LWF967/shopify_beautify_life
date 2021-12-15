@@ -104,11 +104,11 @@
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           </div>
     {%- endcase -%}
+  {%- endfor -%}
     {{ settings.share_on_facebook }}
     {{ settings.tweet_on_twitter }}
     {{ settings.pin_on_pinterest }}
-  {%- endfor -%}
-
+  
   <div class="element-margin center">
     <a href="{{ blog.url }}" class="article-template__link link animate-arrow{% if blog.comments_enabled? == false %} spaced-section{% endif %}">
       <span class="icon-wrap">{% render 'icon-arrow' %}</span>
