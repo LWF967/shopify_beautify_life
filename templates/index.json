@@ -504,8 +504,7 @@
         "1638344641deab7755-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "large"
+            "heading": "Image banner"
           }
         },
         "1638344641deab7755-1": {
@@ -533,8 +532,8 @@
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
+        "text_size": "medium",
         "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "image_with_text_overlay_margin_top": "",
@@ -858,6 +857,21 @@
         "map_margin_top": "",
         "map_margin_bottom": ""
       }
+    },
+    "16395531276f6a2387": {
+      "type": "daily-deal-of-the-day",
+      "settings": {
+        "product": "text4",
+        "heading_text": "Daily Deal Of The Day",
+        "heading_font_size": 32,
+        "color_top": "#888",
+        "countdown_time": "2021\/12\/12",
+        "time_font_size": 32,
+        "background_color": "#f9f9f9",
+        "background_product_color": "#FFF",
+        "daily_deal_of_the_day_margin_top": "",
+        "daily_deal_of_the_day_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -877,6 +891,7 @@
     "1635996418e080b5d8",
     "1638771575eb761fd8",
     "163817972763d6e808",
-    "163816995034a6b1f9"
+    "163816995034a6b1f9",
+    "16395531276f6a2387"
   ]
 }
