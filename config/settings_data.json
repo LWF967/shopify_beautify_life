@@ -20,7 +20,7 @@
     "header_count_color": "#000000",
     "header_count_text_color": "#ff0000",
     "colors_sub_title_text": "#913a3a",
-    "colors_body_text": "#183021",
+    "colors_body_text": "#626663",
     "colors_sale_price": "#e667d3",
     "colors_page_heading": "#117946",
     "colors_primary_buttons": "#ce6023",
@@ -237,6 +237,32 @@
               "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
               "container_width": "5"
             }
+          },
+          "37881f50-177f-4ae3-acce-66ac8d49055c": {
+            "type": "text1",
+            "settings": {
+              "custom_logo_width": 54,
+              "heading": "Get in touch",
+              "textarea": "<p><i class=\"my_icon\"><\/i><span class=\"footer_location\">184Main Rd E, St Albans <br> VIC3021, Australia<\/span><\/p><p><i class=\"my_icon\"><\/i><span class=\"footer_email\"> <a href=\"mailto:Giraffly@company.com\">contact@company.com<\/a><\/span><\/p><p><i class=\"my_icon\"><\/i><span class=\"footer_phone\">+1 23456789<\/span><\/p>",
+              "container_width": "5"
+            }
+          },
+          "b91009cb-0e22-47e1-8529-535ce5a43543": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Menu",
+              "menu": "footer",
+              "container_width": "5"
+            }
+          },
+          "12db6ac5-d49e-4874-ba1e-3fd3d983af58": {
+            "type": "text2",
+            "settings": {
+              "newsletter_design": "1",
+              "heading": "Newsletter",
+              "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
+              "container_width": "5"
+            }
           }
         },
         "block_order": [
@@ -244,7 +270,10 @@
           "813890e0-2367-4953-b348-378adfebbfdf",
           "95516c21-286f-4cb0-804a-b154a39441dd",
           "e8613138-c13d-4acc-bcbd-7b5c43c0b596",
-          "0e03fff2-5f48-4c58-ab83-ce5e1b70e304"
+          "0e03fff2-5f48-4c58-ab83-ce5e1b70e304",
+          "37881f50-177f-4ae3-acce-66ac8d49055c",
+          "b91009cb-0e22-47e1-8529-535ce5a43543",
+          "12db6ac5-d49e-4874-ba1e-3fd3d983af58"
         ],
         "settings": {
           "sticky_footer": false,
