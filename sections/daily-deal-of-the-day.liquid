@@ -878,36 +878,12 @@
 
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
-
   
-  const deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
-  	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-      slidesPerView: 1,
-      followFinger : false,
-      autoplay: {
-      delay: 4000,
-      stopOnLastSlide: false,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
-      },
-      loop: true,
+  
+  
+  
+  
     
-   // 如果需要分页器
-      pagination: {
-        el: '.swiper-pagination-{{section.id}}',
-        clickable :false,
-      },
-      
-
-
-  });
-    
-  
-  console.log('看看我出错没+',deal_swiper123);
-     
-
-  
-  
   const timedeal =  function abc(){
 	var set_time_box = document.getElementsByClassName('timebox-{{section.id}}')[0];
   	var set_time_day = set_time_box.getElementsByClassName('day_time-{{section.id}}')[0];
@@ -943,7 +919,37 @@
   
   var timebb = new timedeal();
   
-  console.log('111');
+  console.log('123123');
+
+  
+  const deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
+  	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+      slidesPerView: 1,
+      followFinger : false,
+      autoplay: {
+      delay: 4000,
+      stopOnLastSlide: false,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+      },
+      loop: true,
+    
+   // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination-{{section.id}}',
+        clickable :false,
+      },
+      
+
+
+  });
+    
+  
+  console.log('看看我出错没+',deal_swiper123);
+     
+
+  
+
    var designMode = Shopify.designMode || false;
    if(designMode){
    
