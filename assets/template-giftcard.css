@@ -104,11 +104,11 @@ h2,
   font-size: 1.6rem;
   line-height: 1;
   text-decoration: underline;
-  color: rgb(var(--color-base-outline-button-labels));
+  color: var(--color-button-secondary-label);
 }
 
 .link:hover {
-  color: rgba(var(--color-base-outline-button-labels), 0.75);
+  color: var(--color-button-secondary-label);
 }
 
 .button {
