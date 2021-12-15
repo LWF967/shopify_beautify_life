@@ -891,7 +891,7 @@
     "16395627105286339d": {
       "type": "daily-deal-of-the-day",
       "settings": {
-        "product": "",
+        "product": "text4",
         "heading_text": "Daily Deal Of The Day",
         "heading_font_size": 32,
         "color_top": "#888",
