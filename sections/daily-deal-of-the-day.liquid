@@ -2,6 +2,7 @@
 {%- liquid
           assign highest_ratio = 0
       	  assign product = setting.product 
+          assign sectionId = section.id
           if product.images[0].aspect_ratio > highest_ratio
             assign highest_ratio = product.images[0].aspect_ratio
           endif          
@@ -14,11 +15,11 @@
      	{%- when 'time' -%}
           <div class="felx_box h_45">
             <div class="f5 felx_box" style=" font: bold {{block.settings.heading_font_size}}px 'Droid Sans', Arial, sans-serif; line-height:{{block.settings.heading_font_size}}px !important; height:100%;">{{block.heading_text | truncate: 25 ,"" }}</div>
-            <div class="timebox timebox-{{section.id}} f4"    data-endtime="{{block.settings.countdown_time}}"  >
-              <div class="day_time day_time-{{section.id}} f1 time-div"></div>
-              <div class="hour_time hour_time-{{section.id}} f1 time-div"></div>
-              <div class="minutes_time minutes_time-{{section.id}} f1 time-div"></div>
-              <div class="second_time second_time-{{section.id}} f1  time-div"></div>
+            <div class="timebox timebox-{{sectionId}} f4"    data-endtime="{{block.settings.countdown_time}}"  >
+              <div class="day_time day_time-{{sectionId}} f1 time-div"></div>
+              <div class="hour_time hour_time-{{sectionId}} f1 time-div"></div>
+              <div class="minutes_time minutes_time-{{sectionId}} f1 time-div"></div>
+              <div class="second_time second_time-{{sectionId}} f1  time-div"></div>
             </div>
           </div>
       {%- endcase -%}
