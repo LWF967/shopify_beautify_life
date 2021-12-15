@@ -173,7 +173,7 @@
         "featured_product_beautify_margin_bottom": ""
       }
     },
-    "16395523635ef3025d": {
+    "16395524088ec92f0f": {
       "type": "daily-deal-of-the-day",
       "settings": {
         "product": "text4",
@@ -187,12 +187,60 @@
         "daily_deal_of_the_day_margin_top": "",
         "daily_deal_of_the_day_margin_bottom": ""
       }
+    },
+    "163955241172f0d512": {
+      "type": "collection-list-Beautify",
+      "blocks": {
+        "16395524117ed2055d-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "orange",
+            "title": "New supply this week"
+          }
+        },
+        "16395524117ed2055d-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "16395524117ed2055d-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        }
+      },
+      "block_order": [
+        "16395524117ed2055d-0",
+        "16395524117ed2055d-1",
+        "16395524117ed2055d-2"
+      ],
+      "settings": {
+        "title": "NEW RELEASES",
+        "sub_title": "New supply this week",
+        "grid": 3,
+        "show_view_all": false,
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "",
+        "collection_list_beautify_margin_top": "",
+        "collection_list_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
     "main",
     "product-recommendations",
     "16393856137f137526",
-    "16395523635ef3025d"
+    "16395524088ec92f0f",
+    "163955241172f0d512"
   ]
 }
