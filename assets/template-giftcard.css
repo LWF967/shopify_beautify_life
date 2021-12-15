@@ -136,12 +136,12 @@ h2,
 
 .button--secondary {
   color: var(--color-button-secondary-label);
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-base-outline-button-labels));
+  box-shadow: 0 0 0 0.1rem var(--color-button-secondary-label);
   background-color: transparent;
 }
 
 .button--secondary:hover {
-  box-shadow: 0 0 0 0.2rem rgb(var(--color-base-outline-button-labels));
+  box-shadow: 0 0 0 0.2rem var(--color-button-secondary-label);
 }
 
 .gift-card {
