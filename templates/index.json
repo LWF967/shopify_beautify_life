@@ -205,7 +205,7 @@
         "show_button": true,
         "show_button_visible": "always",
         "show_button_style": "style3",
-        "show_button_color": "white",
+        "show_button_color": "gray",
         "show_button_hover_color": "#da4747",
         "collection_list_beautify_margin_top": "",
         "collection_list_beautify_margin_bottom": ""
@@ -452,7 +452,7 @@
         "show_button": true,
         "show_button_visible": "always",
         "show_button_style": "style3",
-        "show_button_color": "transparent",
+        "show_button_color": "gray",
         "show_button_hover_color": "#ea0606",
         "show_page_Dot": true,
         "page_dot_style": "style_1",
