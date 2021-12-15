@@ -934,3 +934,10 @@ input.mobile-facets__checkbox {
 .mobile-facets__sort .select__select {
   box-shadow: none;
 }
+
+
+/* lzx change start */
+.shopify-payment-button__button--hidden {
+  display: none;
+}
+/* lzx change end */
