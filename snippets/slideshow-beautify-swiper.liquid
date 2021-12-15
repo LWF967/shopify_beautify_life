@@ -8,7 +8,7 @@
       <div class="swiper-button-prev-{{section.id}}
                   bk_{{section.settings.show_button_color}} 
                   {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% else %}  z-1  {% endif%}
-                  leftbtn leftbtn-{{section.id}}   button_{{ section.settings.show_button_style }}">
+                  slide_leftbtn slide_leftbtn-{{section.id}}   button_{{ section.settings.show_button_style }}">
       	<p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
             <svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="icon-chevron-down-left" d="M4 4.5L7 1.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
@@ -26,7 +26,7 @@
       <div class="swiper-button-next-{{section.id}} 
                   bk_{{section.settings.show_button_color}} 
                   {% if section.settings.show_button %}icon-changebtn_{{section.id}} {% else %} z-1  {% endif%}
-                  rightbtn  rightbtn-{{section.id}}  button_{{ section.settings.show_button_style }} ">
+                  slide_rightbtn  slide_rightbtn-{{section.id}}  button_{{ section.settings.show_button_style }} ">
       	<p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
           	<svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="icon-chevron-down-left" d="M4 4.5L1 7.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
@@ -575,11 +575,11 @@
     border-radius: 0;
   }
 
-  .leftbtn.button_style3{
+  .slide_leftbtn.button_style3{
     left: 15px;
   }
 
-  .rightbtn.button_style3{
+  .slide_rightbtn.button_style3{
     right: 15px;
   }
   .button_style3{
@@ -593,7 +593,7 @@
     transform: translate(-62.5%,-50%) rotate(318deg) !important;
   }
   
-  .rightbtn.button_style3 p svg:nth-child(1) {
+  .slide_rightbtn.button_style3 p svg:nth-child(1) {
     transform: translate(-27%,-78%) rotate(318deg) !important;
   }
 
@@ -611,7 +611,7 @@
     display: none;
   }
 
-  .leftbtn{
+  .slide_leftbtn{
     position: absolute;
     top: 50%;
     left: 5px; 
@@ -620,7 +620,7 @@
 
   }
   
-  .rightbtn{
+  .slide_rightbtn{
     position: absolute;
     top: 50%;
     right: 5px;
@@ -667,13 +667,13 @@
     position: relative;
   }
   
-  .leftbtn p svg{
+  .slide_leftbtn p svg{
   	position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-62.5%,-50%);
   }
-  .rightbtn p svg{
+  .slide_rightbtn p svg{
   	position:absolute;
     top:50%;
     left:50%;
