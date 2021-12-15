@@ -13,6 +13,16 @@
   .my_main_article_share {
     margin-bottom: 10px;
   }
+  
+  .my_font_size_content_default.my_main_article_content_margin {
+    margin-top: 5.5rem;
+  }
+  
+  @media screen and (max-width: 990px) {
+    .my_font_size_content_default.my_main_article_content_margin {
+      margin-top: 3.5rem;
+    }
+  }
 </style>
 
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
@@ -60,7 +70,7 @@
           </header>
 
         {%- when 'content'-%}
-          <div class="article-template__content page-width page-width--narrow rte my_font_size_content_default" itemprop="articleBody" {{ block.shopify_attributes }}>
+          <div class="article-template__content page-width page-width--narrow rte my_font_size_content_default my_main_article_content_margin" itemprop="articleBody" {{ block.shopify_attributes }}>
               {{ article.content }}
           </div>
 
