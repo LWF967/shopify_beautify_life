@@ -104,6 +104,9 @@
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           </div>
     {%- endcase -%}
+    {{ settings.share_on_facebook }}
+    {{ settings.tweet_on_twitter }}
+    {{ settings.pin_on_pinterest }}
   {%- endfor -%}
 
   <div class="element-margin center">
