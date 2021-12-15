@@ -28,6 +28,7 @@
     "color_image_overlay": "#534b52",
     "image_overlay_opacity": 10,
     "color_page_borders_and_lines": "#ff0000",
+    "colors_page_stickiness": "#ffffff",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
     "page_width": "1600",
