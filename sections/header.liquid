@@ -136,9 +136,9 @@
   	height: auto;
   }
   
-  .my_icon_color {
+/*   .my_icon_color {
     color: #797979;
-  }
+  } */
   
   .my_header_icon {
   	position: relative;
@@ -728,8 +728,8 @@
         </a>
       {%- endif -%}
 
-      {% comment %}<a href=" routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset my_icon_color" id="cart-icon-bubble">{% endcomment %}
-      <a href="{{ routes.cart_url }}" class="header__icon--cart my_header_icon link--text focus-inset my_icon_color my_carticon_margin" id="cart-icon-bubble">
+      {% comment %}<a href=" routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset" id="cart-icon-bubble">{% endcomment %}
+      <a href="{{ routes.cart_url }}" class="header__icon--cart my_header_icon link--text focus-inset my_carticon_margin" id="cart-icon-bubble">
         {% comment %}
           {%- liquid
             if cart == empty
