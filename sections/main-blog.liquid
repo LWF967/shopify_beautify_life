@@ -13,7 +13,7 @@
 {%- paginate blog.articles by 6 -%}
   <div class="main-blog page-width spaced-section"
        style="{%- if section.settings.main_blog_margin_top != blank -%}margin-top: {{ section.settings.main_blog_margin_top }}px; {%- endif -%}{%- if section.settings.main_blog_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_blog_margin_bottom }}px;{%- endif -%}">
-    <h1 class="title--primary my_main_blog_title my_font_weight_default">{{ blog.title | escape }}</h1>
+    <h1 class="title--primary my_main_blog_title my_font_weight_default my_clear_margin">{{ blog.title | escape }}</h1>
 
     <div class="blog-articles">
       {%- for article in blog.articles -%}
