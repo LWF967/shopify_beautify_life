@@ -1,7 +1,14 @@
 {
   "sections": {
     "main": {
-      "type": "main-blog"
+      "type": "main-blog",
+      "settings": {
+        "show_image": true,
+        "show_date": true,
+        "show_author": true,
+        "main_blog_margin_top": "",
+        "main_blog_margin_bottom": ""
+      }
     }
   },
   "order": [
