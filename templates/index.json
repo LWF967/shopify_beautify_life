@@ -888,10 +888,10 @@
         "daily_deal_of_the_day_margin_bottom": ""
       }
     },
-    "1639553590b45d2555": {
+    "16395537451b2021de": {
       "type": "daily-deal-of-the-day",
       "settings": {
-        "product": "text4",
+        "product": "",
         "heading_text": "Daily Deal Of The Day",
         "heading_font_size": 32,
         "color_top": "#888",
@@ -924,6 +924,6 @@
     "163816995034a6b1f9",
     "16395531276f6a2387",
     "16395532328d0bd3db",
-    "1639553590b45d2555"
+    "16395537451b2021de"
   ]
 }
