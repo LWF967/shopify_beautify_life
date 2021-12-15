@@ -12,11 +12,11 @@
     {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
 {% endcomment %}
 
-<article class="article-card my_article_card_flex{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
+<article class="article-card my_article_card_flex card-wrapper{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
   <a href="{{ article.url }}" class="article-content motion-reduce">
     {%- if show_image == true and article.image -%}
       <div class="article-card__image-wrapper">
-        <div class="article-card__image media media--landscape">
+        <div class="article-card__image media media--landscape list_test">
           <img
             srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
               {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
@@ -93,5 +93,25 @@
   .my_article_card_info {
     width: 100%;
   }
+  
+  .card-wrapper:hover .list_test::before{
+    opacity: var(--hover-overlay-opacity);
+  }
+
+  .list_test:focus {
+    opacity: 1; 
+  }
+
+  .list_test::before {
+    z-index:1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-image-overlay);
+    opacity: var(--opacity-image-overlay); 
+  }   
 </style>
 
