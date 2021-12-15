@@ -853,32 +853,27 @@
         "map_margin_bottom": ""
       }
     },
-    "16395531276f6a2387": {
+    "163955974651c1a9fc": {
       "type": "daily-deal-of-the-day",
+      "blocks": {
+        "1639559746ca851d19-0": {
+          "type": "time",
+          "settings": {
+            "heading_text": "Daily Deal Of The Day",
+            "heading_font_size": 32,
+            "color_top": "#888",
+            "countdown_time": "2021\/12\/01",
+            "time_font_size": 32
+          }
+        }
+      },
+      "block_order": [
+        "1639559746ca851d19-0"
+      ],
       "settings": {
-        "product": "text4",
+        "product": "",
         "background_color": "#f9f9f9",
-        "background_product_color": "#ffffff",
-        "daily_deal_of_the_day_margin_top": "",
-        "daily_deal_of_the_day_margin_bottom": ""
-      }
-    },
-    "16395532328d0bd3db": {
-      "type": "daily-deal-of-the-day",
-      "settings": {
-        "product": "text4",
-        "background_color": "#f9f9f9",
-        "background_product_color": "#ffffff",
-        "daily_deal_of_the_day_margin_top": "",
-        "daily_deal_of_the_day_margin_bottom": ""
-      }
-    },
-    "16395537451b2021de": {
-      "type": "daily-deal-of-the-day",
-      "settings": {
-        "product": "text4",
-        "background_color": "#f9f9f9",
-        "background_product_color": "#ffffff",
+        "background_product_color": "#FFF",
         "daily_deal_of_the_day_margin_top": "",
         "daily_deal_of_the_day_margin_bottom": ""
       }
@@ -902,8 +897,6 @@
     "1638771575eb761fd8",
     "163817972763d6e808",
     "163816995034a6b1f9",
-    "16395531276f6a2387",
-    "16395532328d0bd3db",
-    "16395537451b2021de"
+    "163955974651c1a9fc"
   ]
 }
