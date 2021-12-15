@@ -13,8 +13,8 @@
      {%- case block.type -%}
      	{%- when 'time' -%}
     <div class="felx_box h_45">
-      <div class="f5 felx_box" style=" font: bold {{section.settings.heading_font_size}}px 'Droid Sans', Arial, sans-serif; line-height:{{setting.heading_font_size}}px !important; height:100%;">{{section.settings.heading_text | truncate: 25 ,"" }}</div>
-      <div class="timebox timebox-{{section.id}} f4"    data-endtime="{{setting.countdown_time}}"  >
+      <div class="f5 felx_box" style=" font: bold {{block.heading_font_size}}px 'Droid Sans', Arial, sans-serif; line-height:{{block.heading_font_size}}px !important; height:100%;">{{block.heading_text | truncate: 25 ,"" }}</div>
+      <div class="timebox timebox-{{section.id}} f4"    data-endtime="{{block.countdown_time}}"  >
         <div class="day_time day_time-{{section.id}} f1 time-div"></div>
         <div class="hour_time hour_time-{{section.id}} f1 time-div"></div>
         <div class="minutes_time minutes_time-{{section.id}} f1 time-div"></div>
