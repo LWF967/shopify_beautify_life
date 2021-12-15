@@ -27,6 +27,71 @@
   .template-search .grid__item--small:not(:last-child) {
     padding-bottom: 0.5rem;
   }
+  
+  .grid.grid--4-col-desktop.grid--3-col-tablet.grid--2-col.grid--one-third-max.grid--quarter-max.negative-margin.product-grid.my_main_search_ul_margin {
+    margin: 0 -1.5rem;
+  }
+  
+  .grid.grid--4-col-desktop.grid--3-col-tablet.grid--2-col.grid--one-third-max.grid--quarter-max.negative-margin.product-grid.my_main_search_ul_margin li {
+    padding: 0 1.5rem 3rem;
+  }
+
+  .template-search__results.page-width.my_main_search_result_margin {
+    margin-top: 5.5rem;
+  }
+  
+  .my_card_badge {
+    bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    left: 1rem;
+    position: inherit;
+  }
+  
+  .my_card_badge_content {
+    margin: 0 0;
+    padding: 2rem 0 0;
+    line-height: normal;
+    text-align: left;
+  }
+  
+  .my_card_content {
+    margin-top: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .card-wrapper:hover .my_main_search::before{
+    opacity: var(--hover-overlay-opacity);
+   }
+
+  .my_main_search:focus {
+    opacity: 1; 
+  }
+
+  .my_main_search::before {
+    z-index:1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-image-overlay);
+    opacity: var(--opacity-image-overlay); 
+  }   
+  
+  .card-wrapper:hover .my_main_search img {
+    transform: scale(1);
+  }
+  
+  .search__button .icon {
+    height: 1.8rem;
+  }
+  
+  .template-search__search .my_main_search_form_search_margin {
+    margin-top: 1.5rem;
+  }
 
   @media screen and (min-width: 750px) {
     .template-search__results {
@@ -37,18 +102,29 @@
       padding-bottom: 1rem;
     }
   }
+  
+  @media screen and (max-width: 750px) {
+    .grid.grid--4-col-desktop.grid--3-col-tablet.grid--2-col.grid--one-third-max.grid--quarter-max.negative-margin.product-grid.my_main_search_ul_margin {
+      margin: 0 -0.75rem;
+    }
+    
+    .grid.grid--4-col-desktop.grid--3-col-tablet.grid--2-col.grid--one-third-max.grid--quarter-max.negative-margin.product-grid.my_main_search_ul_margin li {
+      padding: 0 0.75rem 1.5rem;
+    }
 
-  .search__button .icon {
-    height: 1.8rem;
+    .template-search__results.page-width.my_main_search_result_margin {
+      margin-top: 3.5rem;
+    } 
   }
 </style>
 
-<div class="template-search spaced-section{% unless search.performed and search.results.size > 0 %} template-search--empty{% endunless %}">
+<div class="template-search spaced-section{% unless search.performed and search.results.size > 0 %} template-search--empty{% endunless %}"
+     style="{%- if section.settings.main_search_margin_top != blank -%}margin-top: {{ section.settings.main_search_margin_top }}px; {%- endif -%}{%- if section.settings.main_search_margin_bottom != blank -%}margin-bottom:{{ section.settings.main_search_margin_bottom }}px;{%- endif -%}">
   <div class="page-width center">
     {%- if search.performed -%}
-      <h1 class="h2"style="color:var(--font-page-heading);">{{ 'templates.search.title' | t }}</h1>
+      <h1 class="h2 my_font_weight_default my_clear_margin"style="color:var(--font-page-heading);">{{ 'templates.search.search_for' | t: terms: search.terms }}</h1>
     {%- else -%}
-      <h1 class="h2" style="color:var(--font-page-heading);">{{ 'general.search.search' | t }}</h1>
+      <h1 class="h2 my_font_weight_default my_clear_margin" style="color:var(--font-page-heading);">{{ 'general.search.search' | t }}</h1>
     {%- endif -%}
     <div class="template-search__search">
       {%- if settings.predictive_search_enabled -%}
@@ -269,6 +345,18 @@
       "id": "article_show_author",
       "default": false,
       "label": "t:sections.main-search.settings.article_show_author.label"
+    },
+    {
+      "type": "text",
+      "id": "main_search_margin_top",
+      "label": "Margin top",
+      "info": "t:sections.margintip.settings.margin_tip.label"
+    },
+    {
+      "type": "text",
+      "id": "main_search_margin_bottom",
+      "label": "Margin bottom",
+      "info": "t:sections.margintip.settings.margin_tip.label"
     }
   ]
 }
