@@ -17,12 +17,12 @@ if(sticky.length > 0) {
   else if(document.body.clientWidth >= 1024) {
     let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight - 55;
 //     main.style.background = '#ffffff';
-    main.style.zIndex = 2;
+    main.style.zIndex = 899;
     main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
     my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
-    promo_bar.style.zIndex = 1;
-    top_bar.style.zIndex = 2;
-    header_zx.style.zIndex = 1;
+    promo_bar.style.zIndex = 898;
+    top_bar.style.zIndex = 899;
+    header_zx.style.zIndex = 898;
     footer_bottom.style.position = 'fixed';
     footer_bottom.style.bottom = 0;
     footer_bottom.style.width = '100%';
@@ -62,8 +62,8 @@ window.onscroll = function () {
       content.style.position = 'relative';
     }
     if(content.style.position == 'fixed') {
-      top_bar.style.zIndex = 13;
-      header_zx.style.zIndex = 12;
+//       top_bar.style.zIndex = 13;
+//       header_zx.style.zIndex = 12;
       content.classList.add('my_header_sticky_settings');
       header.classList.add('my_header_sticky_settings');
       content.style.transition = 'transform .3s';
@@ -71,8 +71,8 @@ window.onscroll = function () {
       //             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
       content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
     } else if(content.style.position == 'relative') {
-      top_bar.style.zIndex = 12;
-      header_zx.style.zIndex = 11;
+//       top_bar.style.zIndex = 12;
+//       header_zx.style.zIndex = 11;
       content.classList.remove('my_header_sticky_settings');
       header.classList.remove('my_header_sticky_settings');
       content.style.top = 0 + 'px';
