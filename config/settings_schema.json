@@ -301,6 +301,12 @@
         "label": "Label sold"
       },
       {
+        "type": "color",
+        "id": "colors_label_blog_page",
+        "default": "#EA0606",
+        "label": "Blog label and Page label"
+      },
+      {
         "type": "header",
         "content": "Buttons"
       },
