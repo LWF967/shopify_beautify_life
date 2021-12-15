@@ -49,10 +49,10 @@
         {%- when 'title'-%}
           <header class="page-width page-width--narrow my_main_article_text_align" {{ block.shopify_attributes }}>
             <h1 class="article-template__title my_main_article_title my_font_weight_default" itemprop="headline">{{ article.title | escape }}</h1>
-            {%- if block.settings.blog_show_date -%}
+            {%- if section.settings.show_date -%}
               <span class="circle-divider caption-with-letter-spacing my_font_size_content_default" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'month_year' }}</span>
             {%- endif -%}
-            {%- if block.settings.blog_show_author -%}
+            {%- if section.settings.show_author -%}
               <span class="caption-with-letter-spacing my_font_size_content_default" itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <span itemprop="name">{{ article.author }}</span>
               </span>
