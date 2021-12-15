@@ -51,7 +51,7 @@
       {%- endif -%}
     </header>
     {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-    <p class="article-card__excerpt rte-width my_font_size_content_default"  
+    <p class="article-card__excerpt rte-width my_font_size_content_default my_article_card_content"  
        style="    
               text-overflow: ellipsis;
               white-space: break-spaces;
@@ -116,6 +116,10 @@
   .my_font_weight_default.my_article_card_title {
     font-size: 28px;
     margin-bottom: 0;
+  }
+  
+  .my_article_card_content {
+    margin: 0 0 20px;
   }
 </style>
 
