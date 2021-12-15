@@ -46,6 +46,11 @@
 
         {%- if se_height == 'adapt_f' -%}
 				
+
+  .tt1{ 
+	color: red;
+}
+
 				{%- assign block = se_blocks | where: "type", 'slideshow_img2' | first -%}
              	{%- assign ratio = block.settings.image.aspect_ratio |default:1.7777777777777777 -%}
 				{%- assign img_h = block.settings.image.height | default:300 -%}				
