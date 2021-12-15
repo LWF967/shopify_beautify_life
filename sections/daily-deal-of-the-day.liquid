@@ -962,8 +962,11 @@
   }
   
  // var timebbSectionId = timebb+'{{section.id}}';
-
-  var timebbSectionId = new timedeal();
+  
+var timebbSectionId =  setTimeout(()=>{
+ return new timedeal();
+  }, 3000 )
+//  var timebbSectionId = new timedeal();
   
   
    var designMode = Shopify.designMode || false;
