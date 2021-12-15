@@ -9,7 +9,7 @@
 
 <div class="contatin spaced-section" style="background-color:{{setting.background_color}}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}"> 
   <div class="left ">
-    {%- for block in section.blocks -%}
+    {%- for block in  section.blocks -%}
      {%- case block.type -%}
      	{%- when 'time' -%}
           <div class="felx_box h_45">
