@@ -2,7 +2,6 @@
 {%- liquid
           assign highest_ratio = 0
       	  assign product = setting.product 
-          assign sectionId = section.id
           if product.images[0].aspect_ratio > highest_ratio
             assign highest_ratio = product.images[0].aspect_ratio
           endif          
@@ -10,20 +9,16 @@
 
 <div class="contatin spaced-section" style="background-color:{{setting.background_color}}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}"> 
   <div class="left ">
-    {%- for block in  section.blocks -%}
-     {%- case block.type -%}
-     	{%- when 'time' -%}
-          <div class="felx_box h_45">
-            <div class="f5 felx_box" style=" font: bold {{block.settings.heading_font_size}}px 'Droid Sans', Arial, sans-serif; line-height:{{block.settings.heading_font_size}}px !important; height:100%;">{{block.heading_text | truncate: 25 ,"" }}</div>
-            <div class="timebox timebox-{{sectionId}} f4"    data-endtime="{{block.settings.countdown_time}}"  >
-              <div class="day_time day_time-{{sectionId}} f1 time-div"></div>
-              <div class="hour_time hour_time-{{sectionId}} f1 time-div"></div>
-              <div class="minutes_time minutes_time-{{sectionId}} f1 time-div"></div>
-              <div class="second_time second_time-{{sectionId}} f1  time-div"></div>
-            </div>
-          </div>
-      {%- endcase -%}
-    {%- endfor -%}
+    <div class="felx_box h_45">
+      <div class="f5 felx_box" style=" font: bold {{section.settings.heading_font_size}}px 'Droid Sans', Arial, sans-serif; line-height:{{setting.heading_font_size}}px !important; height:100%;">{{section.settings.heading_text | truncate: 25 ,"" }}</div>
+      <div class="timebox timebox-{{section.id}} f4"    data-endtime="{{setting.countdown_time}}"  >
+        <div class="day_time day_time-{{section.id}} f1 time-div"></div>
+        <div class="hour_time hour_time-{{section.id}} f1 time-div"></div>
+        <div class="minutes_time minutes_time-{{section.id}} f1 time-div"></div>
+        <div class="second_time second_time-{{section.id}} f1  time-div"></div>
+      </div>
+    </div>
+
     <div class="h_55">
       <p class="my_daily_deal_of_the_day_product_title_margin" style="font-weight:600;font-size: 18px;">{{ product.title }}</p>
       <p class="my_font_size_content_default my_daily_deal_of_the_day_product_desc_margin">{{product.description}}</p>
@@ -164,7 +159,7 @@
   {
     "name": "daily-deal-of-the-day",
 	"tag":"section",
-	"max_blocks": 1,
+
     "settings": [
       {
         "type": "product",
@@ -203,67 +198,10 @@
         "info": "t:sections.margintip.settings.margin_tip.label"
       }
  	],
-	"blocks":[
-	{	
-		"name":"time",
-		"type":"time",
-		"limit": 1,
-		"settings":[
-		{
-        "type": "text",
-        "id": "heading_text",
-        "default": "Daily Deal Of The Day",
-		"info" : "Text limit to display 25 characters",
-        "label": "Heading"
-      },
-      {
-        "type": "range",
-        "id": "heading_font_size",
-        "min": 16,
-        "max": 60,
-        "step": 2,
-        "unit": "px",
-        "label": "Font size",
-        "default": 32
-      },
-      {
-        "type": "color",
-        "id": "color_top",
-        "label": "Header color",
-        "default": "#888"
-      },
-      {
-        "type": "header",
-        "content": "COUNTDOWN"
-      },
-	  {
-        "type": "text",
-        "id": "countdown_time",
-        "label": "Data countdown",
-        "default": "2021\/12\/01",
-        "info": "Please use this exact format:yyyy/mm/dd hour/minute/second.Examle: 2021/12/01 10:00:00."
-      },
-      {
-        "type": "range",
-        "id": "time_font_size",
-        "min": 16,
-        "max": 40,
-        "step": 2,
-        "unit": "px",
-        "label": "Font size",
-        "default": 32
-      }
-		]
-	}
-	],
+
 	"presets":[
       {
-        "name":"daily-deal-of-the-day",
-		"blocks": [
-          {
-            "type": "time"
-          }
-        ]
+        "name":"daily-deal-of-the-day"
       }
 	]
   }
@@ -930,11 +868,11 @@
   
   
   const timedeal =  function abc(){
-	var set_time_box = document.getElementsByClassName('timebox-{{sectionId}}')[0];
-  	var set_time_day = set_time_box.getElementsByClassName('day_time-{{sectionId}}')[0];
-    var set_time_hour = set_time_box.getElementsByClassName('hour_time-{{sectionId}}')[0];
-    var set_time_minutes = set_time_box.getElementsByClassName('minutes_time-{{sectionId}}')[0];
-  	var set_time_second = set_time_box.getElementsByClassName('second_time-{{sectionId}}')[0];
+	var set_time_box = document.getElementsByClassName('timebox-{{section.id}}')[0];
+  	var set_time_day = set_time_box.getElementsByClassName('day_time-{{section.id}}')[0];
+    var set_time_hour = set_time_box.getElementsByClassName('hour_time-{{section.id}}')[0];
+    var set_time_minutes = set_time_box.getElementsByClassName('minutes_time-{{section.id}}')[0];
+  	var set_time_second = set_time_box.getElementsByClassName('second_time-{{section.id}}')[0];
   	
   	var endT = set_time_box.dataset.endtime;
 
@@ -964,13 +902,7 @@
   
  // var timebbSectionId = timebb+'{{section.id}}';
   
-  console.log('1111');
-
- var timebbSectionId = new timedeal();
- 
-    console.log('222');
-  
-//  var timebbSectionId = new timedeal();
+  var timebbSectionId = new timedeal();
   
   
    var designMode = Shopify.designMode || false;
