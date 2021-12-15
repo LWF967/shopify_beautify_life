@@ -229,23 +229,23 @@
                           >
                           </div>
                         {%- endif -%}
-                        <div class="card__content my_card_content">
-                          <h2 class="card__text h3">{{ item.title | truncate: 50 | escape }}</h2>
-                          <div class="card-article-info caption-with-letter-spacing h5">
-                            {%- if section.settings.article_show_date -%}
-                              <span class="circle-divider">{{ item.published_at | time_tag: format: 'month_year' }}</span>
-                            {%- endif -%}
-                            {%- if section.settings.article_show_author -%}
-                              <span>{{ item.author }}</span>
-                            {%- endif -%}
-                          </div>
-                        </div>
-                        <div class="card__badge my_card_badge">
-                          <span class="badge color-background-1 my_card_badge_content" style="color:{{settings.colors_secondary_labels_and_borders}};background-color:{{ settings.colors_label_blog_page}};border-color:{{ settings.colors_label_blog_page}}">{{ 'blogs.article.blog' | t }}</span>
-                        </div>
                       </div>
                     </div>
                   </a>
+                  <div class="card__content my_card_content">
+                    <h2 class="card__text h3">{{ item.title | truncate: 50 | escape }}</h2>
+                    <div class="card-article-info caption-with-letter-spacing h5">
+                      {%- if section.settings.article_show_date -%}
+                      <span class="circle-divider">{{ item.published_at | time_tag: format: 'month_year' }}</span>
+                      {%- endif -%}
+                      {%- if section.settings.article_show_author -%}
+                      <span>{{ item.author }}</span>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                  <div class="card__badge my_card_badge">
+                    <span class="badge color-background-1 my_card_badge_content" style="color:{{settings.colors_secondary_labels_and_borders}};background-color:{{ settings.colors_label_blog_page}};border-color:{{ settings.colors_label_blog_page}}">{{ 'blogs.article.blog' | t }}</span>
+                  </div>
                 {%- when 'page' -%}
                   <a href="{{ item.url }}" class="card-wrapper">
                     <div class="card card--search card--soft card--text-only">
