@@ -888,14 +888,14 @@
         "daily_deal_of_the_day_margin_bottom": ""
       }
     },
-    "16395627105286339d": {
+    "1639563077d919d774": {
       "type": "daily-deal-of-the-day",
       "settings": {
-        "product": "text4",
+        "product": "",
         "heading_text": "Daily Deal Of The Day",
         "heading_font_size": 32,
         "color_top": "#888",
-        "countdown_time": "2021\/12\/12",
+        "countdown_time": "2021\/12\/01",
         "time_font_size": 32,
         "background_color": "#f9f9f9",
         "background_product_color": "#FFF",
@@ -924,6 +924,6 @@
     "163816995034a6b1f9",
     "163955974651c1a9fc",
     "1639562125520ac512",
-    "16395627105286339d"
+    "1639563077d919d774"
   ]
 }
