@@ -730,7 +730,7 @@
 
       {% comment %}<a href=" routes.cart_url }}" class="header__icon header__icon--cart link link--text focus-inset my_icon_color" id="cart-icon-bubble">{% endcomment %}
       <a href="{{ routes.cart_url }}" class="header__icon--cart my_header_icon link--text focus-inset my_icon_color my_carticon_margin" id="cart-icon-bubble">
-<!--         {% comment %} -->
+        {% comment %}
           {%- liquid
             if cart == empty
               render 'icon-cart-empty'
@@ -738,8 +738,8 @@
               render 'icon-cart'
             endif
           -%}
-<!--         {% endcomment %} -->
-<!-- 		<span class="my_cart">&#xe66e;</span> -->
+        {% endcomment %}
+		<span class="my_cart">&#xe66e;</span>
         <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
         {%- if cart != empty -%}
           <div class="cart-count-bubble">
