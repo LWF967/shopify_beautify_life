@@ -105,7 +105,11 @@
           </div>
     {%- endcase -%}
   {%- endfor -%}
-  {% render 'my-social-sharing' %}
+  
+  {%- if section.settings.show_social_icon -%}
+    {%- render 'my-social-sharing' -%}
+  {%- endif -%}
+  
   <div class="element-margin center">
     <a href="{{ blog.url }}" class="article-template__link link animate-arrow{% if blog.comments_enabled? == false %} spaced-section{% endif %}">
       <span class="icon-wrap">{% render 'icon-arrow' %}</span>
@@ -304,6 +308,26 @@
 {
   "name": "t:sections.main-article.name",
   "tag": "section",
+  "settings": [
+  	{
+      "type": "checkbox",
+      "id": "show_date",
+      "default": true,
+      "label": "t:sections.main-blog.settings.show_date.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "default": false,
+      "label": "t:sections.main-blog.settings.show_author.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social_icon",
+      "default": false,
+      "label": "Show social sharing icon"
+    }
+  ],
   "blocks": [
     {
       "type": "@app"
