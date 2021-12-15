@@ -73,10 +73,8 @@
       {%- if article.comments_count > 0 and blog.comments_enabled? -%}
       <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
       {%- endif -%}
-	  <a href="{{ article.url }}">
-        <div class="button my_button_font_size_default my_font_weight_default">
-          READ MORE
-        </div>
+	  <a href="{{ article.url }}" class="button my_button_font_size_default my_font_weight_default">
+        READ MORE
       </a>
     </div>
   </div>
