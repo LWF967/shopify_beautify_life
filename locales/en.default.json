@@ -114,6 +114,7 @@
   },
   "blogs": {
     "article": {
+      "blog": "Blog",
       "view_all": "View more",
       "view_all_blogs": "View all blogs",
       "all_topics": "All topics",
