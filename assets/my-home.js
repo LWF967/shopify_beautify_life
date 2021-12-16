@@ -49,6 +49,9 @@ function my_home() {
   else {
     main.style.marginBottom = 0 + "px";
   }
+  
+  console.log("top:"+my_footer_sticky_height);
+  console.log("bottom:"+footer_bottom_height);
 
   // backtop 
   function gotoTop() {
