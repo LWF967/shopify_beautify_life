@@ -693,8 +693,11 @@
 
 <script>
   let openthedoor = document.getElementsByClassName('overflow-hidden-mobile');
+  let sadasd = document.getElementsByClassName('mobile-facets__open')[0];
   let qheader = document.getElementById('shopify-section-header');
-      console.log(openthedoor.length);
+  sadasd.onclick = function () {
+    console.log(openthedoor.length);
+  }
   if(openthedoor.length > 0) {
     qheader.style.zIndex = 1;
     console.log(1);
