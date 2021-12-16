@@ -558,12 +558,16 @@
 </style>
 
 
+
+
 <script type="module">
 
 
 
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
+  
+  	var gridNum = {{grid}};
 
    const swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
@@ -618,7 +622,7 @@
     
   })    
   
-   console.log({{grid}},'1111');
+   console.log(gridNum,'1111');
    
 
   
@@ -633,7 +637,7 @@
    
 
     console.log('奇怪')
-    console.log({{grid}},'222');
+    console.log(gridNum,'222');
    const swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, 
@@ -687,7 +691,7 @@
     
   })    
 
-    console.log({{grid}},'333');
+    console.log(gridNum,'333');
     console.log('奇怪2')
   
   },true)
