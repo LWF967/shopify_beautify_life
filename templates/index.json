@@ -160,6 +160,13 @@
             "collection": "",
             "title": "New supply this week"
           }
+        },
+        "c5c5f8a0-dc55-4217-bad1-e59039314a0a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
         }
       },
       "block_order": [
@@ -167,12 +174,13 @@
         "1639620369bd20c112-1",
         "1639620369bd20c112-2",
         "74f70aef-ccdd-4160-9ce0-9b4e6c858801",
-        "ceaa8859-bf33-407c-a466-861aeadf35a5"
+        "ceaa8859-bf33-407c-a466-861aeadf35a5",
+        "c5c5f8a0-dc55-4217-bad1-e59039314a0a"
       ],
       "settings": {
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
-        "grid": 3,
+        "grid": 6,
         "show_view_all": false,
         "show_page_Dot": true,
         "page_dot_style": "style_1",
