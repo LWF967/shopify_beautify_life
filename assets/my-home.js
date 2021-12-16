@@ -33,7 +33,7 @@ function my_home() {
       main.style.marginBottom = 0 + "px";
     }
     else if(document.body.clientWidth >= 1024) {
-      var my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+      let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
       //     main.style.background = '#ffffff';
       main.style.zIndex = 899;
       main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
