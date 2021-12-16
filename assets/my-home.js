@@ -26,15 +26,14 @@ function my_home() {
   let content = document.getElementsByClassName('content')[0];
   let my_header_sticky = document.getElementsByClassName('my_header_sticky');
   let my_backtop = document.getElementById('my_backtop');
-      let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
 
-  
   // footer sticky
   if(sticky.length > 0) {      
     if(document.body.clientWidth < 1024) {
       main.style.marginBottom = 0 + "px";
     }
     else if(document.body.clientWidth >= 1024) {
+      let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
       //     main.style.background = '#ffffff';
       console.log("top:"+my_footer_sticky_height);
       main.style.zIndex = 899;
