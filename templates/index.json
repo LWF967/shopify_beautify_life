@@ -128,6 +128,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
             "title": "New supply this week"
           }
         },
@@ -135,6 +136,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
             "title": "New supply this week"
           }
         },
