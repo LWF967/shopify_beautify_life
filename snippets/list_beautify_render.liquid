@@ -630,73 +630,14 @@
 
 // Shopify.addListener(doc_id,'shopify:section:load',()=>{console.log(222)});
   
-  
-  
-       document.addEventListener('shopify:section:load',()=>{
 
-   
-	 gridNum = {{grid}};
-    console.log('奇怪')
-    console.log(gridNum,'222');
-   const swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
-    direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-    loop: true, 
-    // 循环模式选项 
-
-	// slidesPerView:{{grid}},
-
-    
-    // 如果需要分页器
-    pagination: {
-      el: '.swiper-pagination-{{section.id}}',
-      clickable :true
-    },
-    
-    // 如果需要前进后退按钮
-    navigation: {
-      nextEl: '.swiper-button-next-{{section.id}}',
-      prevEl: '.swiper-button-prev-{{section.id}}',
-    },
-    
-    
-    // 如果需要滚动条
-  /*  scrollbar: {
-      el: '.swiper-scrollbar-{{section.id}}',
-    }, */
-    
-    //控制间距bereakpoint
-    
-    spaceBetween: 40,
-
-  	breakpoints: { 
-        320: {  //当屏幕宽度大于等于320
-
-          slidesPerView:2,
-          spaceBetween: 15
-        },
-        768: {  //当屏幕宽度大于等于768 
-          slidesPerView:3,
-          spaceBetween: 15
-        },
-        1280: {  //当屏幕宽度大于等于1280
-
-          slidesPerView:{{grid}},
-          spaceBetween: 30
-        }
-      },
-
-
-
-    
-    
-  })    
-
-    console.log(gridNum,'333');
-    console.log('奇怪2')
-  
-  },true)
 	
-    
+     document.addEventListener('shopify:section:unload',()=>{
+   
+   swiperListBeautify.enable();
+  console.log('sss');
+  },true)
+
     
 
   
@@ -704,7 +645,7 @@
    
    swiperListBeautify.disable();
   console.log('sss');
-  })
+  },true)
 
     
 </script>
