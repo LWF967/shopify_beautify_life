@@ -642,6 +642,21 @@
        document.addEventListener('shopify:section:load',()=>{
 
    
+   
+    if(windows_width>750 && windows_width<950){
+  	wind_width = 3;
+    
+    }else if(windows_width>400 && windows_width<750){
+    
+    wind_width = 2;
+    }else if(windows_width<400){
+    
+   	 wind_width = 2;
+    }else{
+    
+     wind_width = {{grid}} ;
+    }
+    
     
    const swiper1 = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
