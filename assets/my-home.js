@@ -1,11 +1,11 @@
 // lzx change
 // footer sticky
-// var myHomeFreshDesignMode = Shopify.designMode || false;
-// if(myHomeFreshDesignMode){
-//   document.addEventListener('shopify:section:load',() => {  
-//     my_home();
-//   },true);
-// }
+var myHomeFreshDesignMode = Shopify.designMode || false;
+if(myHomeFreshDesignMode){
+  document.addEventListener('shopify:section:load',() => {  
+    my_home();
+  },true);
+}
 my_home();
 function my_home() {
   let promo_bar = document.getElementById('shopify-section-promo-bar');
