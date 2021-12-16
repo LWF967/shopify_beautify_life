@@ -48,7 +48,7 @@ function my_home() {
         
   console.log("top:"+my_footer_sticky_height);
   console.log("bottom:"+footer_bottom_height);
-      console.log("main bottom"+main.style.marginBottom);
+//       console.log("main bottom"+main.style.marginBottom);
     }
   }
   else {
