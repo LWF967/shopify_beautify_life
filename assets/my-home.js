@@ -60,7 +60,6 @@ window.onscroll = function () {
   
   //获取距离页面顶部的距离
   let toTop = document.documentElement.scrollTop || document.body.scrollTop;
-  let asda = header_wrapper.style.height;
   if(my_header_sticky.length > 0) {
     if(toTop >= all_header_height) {
       content.style.position = 'fixed';
@@ -71,7 +70,7 @@ window.onscroll = function () {
       header.classList.add('my_header_sticky_settings');
       content.style.transition = 'transform .3s';
 //       content.style.top = -(content.scrollHeight) + 'px';
-      content.style.top = "-"+(asda);
+      content.style.top = "-" + (header_wrapper.style.height);
       
       
       //             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
