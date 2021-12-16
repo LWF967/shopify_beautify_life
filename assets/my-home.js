@@ -71,6 +71,12 @@ window.onscroll = function () {
     if(content.style.position == 'fixed') {
 //       top_bar.style.zIndex = 13;
 //       header_zx.style.zIndex = 12;
+      content.classList.add('my_header_sticky_settings');
+      header.classList.add('my_header_sticky_settings');
+      content.style.transition = 'transform .3s';
+      content.style.top = -(content.scrollHeight) + 'px';
+      //             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
+      content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
       header_drawer.onclick = function() {
         content.classList.add('my_header_sticky_settings');
         header.classList.add('my_header_sticky_settings');
@@ -82,6 +88,11 @@ window.onscroll = function () {
     } else if(content.style.position == 'relative') {
 //       top_bar.style.zIndex = 12;
 //       header_zx.style.zIndex = 11;
+      content.classList.remove('my_header_sticky_settings');
+      header.classList.remove('my_header_sticky_settings');
+      content.style.top = 0 + 'px';
+      content.style.transform = 'none';
+      content.style.transition = 'none';
       header_drawer.onclick = function() {
         content.classList.remove('my_header_sticky_settings');
         header.classList.remove('my_header_sticky_settings');
