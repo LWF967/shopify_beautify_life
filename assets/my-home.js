@@ -93,7 +93,8 @@ window.onscroll = function () {
   if(headerFreshDesignMode){
     document.addEventListener('shopify:section:load',() => {  
       console.log("进入header");
-      header_fresh();                          
+      header_fresh();   
+    console.log(header_fresh);
     },true);
   }
 
