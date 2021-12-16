@@ -692,9 +692,10 @@
 
 
 <script>
-  let openthedoor = document.getElementsByClassName('mobile-facets__open')[0];
-  openthedoor.onclick = function() {
-    console.log('open');
+  let openthedoor = document.getElementsByClassName('overflow-hidden-mobile');
+  let qheader = document.getElementById('shopify-section-header');
+  if(openthedoor.length > 0) {
+    qheader.style.zIndex = 1;
   }
   
 </script>
