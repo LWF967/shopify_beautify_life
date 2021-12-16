@@ -249,7 +249,7 @@
         "settings": {
           "sticky_footer": true,
           "accordions_options_on_mobile": true,
-          "border_footer": true,
+          "border_footer": false,
           "border_color": "#ff0000",
           "background_color": "#f2f2f2",
           "heading_color": "#000000",
