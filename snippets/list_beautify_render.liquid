@@ -23,6 +23,9 @@
 
     </ul>
     {%endcomment%}
+  
+
+  
     	  <div  class="swiper-wrapper " data-grid="{{grid}}" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
 
   
@@ -635,13 +638,12 @@
   
   
        document.addEventListener('shopify:section:load',()=>{
-
-   swiperListBeautify.update();
    
-   
+    var tt1 = document.getElementsByClassName("swiper-container-{{section.id}}");
+    var tt2 = tt1.getElementsByClassName('swiper-wrapper')[0].dataset.grid;
 	var gridNum = {{grid}};
     console.log('奇怪')
-    console.log(gridNum,'222');
+    console.log(gridNum,'222',tt2);
     var swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, 
