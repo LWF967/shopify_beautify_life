@@ -585,7 +585,7 @@
     loop: true, 
     // 循环模式选项 
 
-    slidesPerView:wind_width,
+   
 
     
     // 如果需要分页器
@@ -613,17 +613,19 @@
     breakpoints: { 
       320: {  //当屏幕宽度大于等于320
     
+     	slidesPerView:2,
         spaceBetween: 15
       },
       768: {  //当屏幕宽度大于等于768 
-     
+ 		slidesPerView:3,
         spaceBetween: 15
       },
       1280: {  //当屏幕宽度大于等于1280
-  
+      
+  		slidesPerView:{{grid}},
         spaceBetween: 30
       }
-    }
+    },
 
 
 
@@ -642,20 +644,7 @@
        document.addEventListener('shopify:section:load',()=>{
 
    
-   
-    if(windows_width>750 && windows_width<950){
-  	wind_width = 3;
-    
-    }else if(windows_width>400 && windows_width<750){
-    
-    wind_width = 2;
-    }else if(windows_width<400){
-    
-   	 wind_width = 2;
-    }else{
-    
-     wind_width = {{grid}} ;
-    }
+
     
     
    const swiper1 = new Swiper ('.swiper-container-{{section.id}}', {
@@ -663,7 +652,7 @@
     loop: true, 
     // 循环模式选项 
 
-    slidesPerView:wind_width,
+
 
     
     // 如果需要分页器
@@ -688,20 +677,22 @@
     
     spaceBetween: 40,
 
-    breakpoints: { 
-      320: {  //当屏幕宽度大于等于320
-    
-        spaceBetween: 10
+  	breakpoints: { 
+        320: {  //当屏幕宽度大于等于320
+
+          slidesPerView:2,
+          spaceBetween: 15
+        },
+        768: {  //当屏幕宽度大于等于768 
+          slidesPerView:3,
+          spaceBetween: 15
+        },
+        1280: {  //当屏幕宽度大于等于1280
+
+          slidesPerView:{{grid}},
+          spaceBetween: 30
+        }
       },
-      768: {  //当屏幕宽度大于等于768 
-     
-        spaceBetween: 20
-      },
-      1280: {  //当屏幕宽度大于等于1280
-  
-        spaceBetween: 30
-      }
-    }
 
 
 
