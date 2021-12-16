@@ -84,6 +84,7 @@ window.onscroll = function () {
       }
     }
   }
+  header_fresh();
   
   //获取距离页面顶部的距离
   var headerFreshDesignMode = Shopify.designMode || false;
