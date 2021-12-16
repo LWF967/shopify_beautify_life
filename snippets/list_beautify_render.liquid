@@ -578,7 +578,7 @@
 
    
 	// slidesPerView:{{grid}},
-    
+    loopedSlides: {{grid}},
     // 如果需要分页器
     pagination: {
       el: '.swiper-pagination-{{section.id}}',
@@ -640,7 +640,7 @@
     var swiperBeautifyContainer = document.getElementsByClassName('swiper-container-{{section.id}}')[0];
     var swiperBeautifyWrapperGrid = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid;
     
-	var gridNum = {{grid}};
+
 
     var swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
@@ -649,7 +649,7 @@
 
 	// slidesPerView:{{grid}},
 
-    
+     loopedSlides: swiperBeautifyWrapperGrid,
     // 如果需要分页器
     pagination: {
       el: '.swiper-pagination-{{section.id}}',
