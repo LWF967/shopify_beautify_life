@@ -635,7 +635,7 @@
        document.addEventListener('shopify:section:load',()=>{
 
    
-	var gridNum = {{grid}};
+	 gridNum = {{grid}};
     console.log('奇怪')
     console.log(gridNum,'222');
    const swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
@@ -695,6 +695,15 @@
     console.log('奇怪2')
   
   },true)
-
+	
+    
+    
+   document.addEventListener('shopify:section:select',()=>{
+   
+   console.log('客户选择右边了');
+   
+   gridNum = {{grid}};
+  })
+    
     
 </script>
