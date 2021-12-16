@@ -570,10 +570,13 @@
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
 
-
+ var swiperBeautifyContainer = document.getElementsByClassName('swiper-container-{{section.id}} list-beautify-render')[0];
+    var swiperBeautifyWrapperGrid = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid;
+    var swiperBeautifyWrapperLoop = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.loop;
+    
    var swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-    loop: {{slide_loop}}, 
+    loop: swiperBeautifyWrapperLoop, 
     // 循环模式选项 
 
    
