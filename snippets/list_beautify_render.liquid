@@ -1,7 +1,7 @@
 
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 <div class="my_swiper_outside_content">
-<div class="swiper-container-{{section.id}}" style="overflow: hidden;position:relative;">
+<div class="swiper-container-{{section.id}} list-beautify-render" style="overflow: hidden;position:relative;">
     
     {% comment %}
     <ul id="grid-ul-beautify-box" class="swiper-wrapper grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
@@ -638,7 +638,7 @@
   
        document.addEventListener('shopify:section:load',()=>{
    
-    var swiperBeautifyContainer = document.getElementsByClassName('swiper-container-{{section.id}}')[0];
+    var swiperBeautifyContainer = document.getElementsByClassName('swiper-container-{{section.id}} list-beautify-render')[0];
     var swiperBeautifyWrapperGrid = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid;
     var swiperBeautifyWrapperLoop = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.loop;
 
