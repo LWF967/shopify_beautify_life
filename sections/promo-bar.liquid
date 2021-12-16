@@ -149,6 +149,37 @@
     hide_banner.style.marginTop = 0 + 'px';
     hide_banner.style.transition = "all .5s";
   }
+  
+  var promoFreshDesignMode = Shopify.designMode || false;
+  if(promoFreshDesignMode){
+    document.addEventListener('shopify:section:load',() => {  
+      console.log("进入promo");
+      close.onclick = function () {
+        if(hide_banner_height > hide_banner.dataset.mheight) {
+          hide_banner.dataset.mheight = hide_banner_height;
+        }
+        hide_banner.style.marginTop = -hide_banner_height + 'px';
+      }
+
+      if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+        close.onclick = function () {
+          if(hide_banner_height > hide_banner.dataset.mheight) {
+            hide_banner.dataset.mheight = hide_banner_height;
+          }
+          hide_banner.style.marginTop = -hide_banner_height + 'px';
+        }
+      }
+      hide_banner.dataset.mheight = hide_banner_height + 1;
+      hide_banner.style.marginTop = -hide_banner_height + 'px';
+
+      //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+      window.onload = function () {
+        hide_banner.style.marginTop = 0 + 'px';
+        hide_banner.style.transition = "all .5s";
+      }                         
+    },true);
+  }
+
 
 </script>
 
