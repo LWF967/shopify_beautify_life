@@ -71,7 +71,7 @@ window.onscroll = function () {
       header.classList.add('my_header_sticky_settings');
       content.style.transition = 'transform .3s';
 //       content.style.top = -(content.scrollHeight) + 'px';
-      content.style.top = asda;
+      content.style.top = "-"+(asda);
       
       
       //             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
