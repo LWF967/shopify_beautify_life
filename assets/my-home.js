@@ -51,6 +51,13 @@ function gotoTop() {
 gotoTop();
 
 window.onscroll = function () {
+  
+  //header_drawer
+  let header_drawer = document.getElementById("header_drawer");
+  header_drawer.onclick = function() {
+    console.log(1);
+  }
+  
   //获取距离页面顶部的距离
   let toTop = document.documentElement.scrollTop || document.body.scrollTop;
   if(my_header_sticky.length > 0) {
@@ -64,20 +71,24 @@ window.onscroll = function () {
     if(content.style.position == 'fixed') {
 //       top_bar.style.zIndex = 13;
 //       header_zx.style.zIndex = 12;
-      content.classList.add('my_header_sticky_settings');
-      header.classList.add('my_header_sticky_settings');
-      content.style.transition = 'transform .3s';
-      content.style.top = -(content.scrollHeight) + 'px';
-      //             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
-      content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
+      header_drawer.onclick = function() {
+        content.classList.add('my_header_sticky_settings');
+        header.classList.add('my_header_sticky_settings');
+        content.style.transition = 'transform .3s';
+        content.style.top = -(content.scrollHeight) + 'px';
+        //             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
+        content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
+      }
     } else if(content.style.position == 'relative') {
 //       top_bar.style.zIndex = 12;
 //       header_zx.style.zIndex = 11;
-      content.classList.remove('my_header_sticky_settings');
-      header.classList.remove('my_header_sticky_settings');
-      content.style.top = 0 + 'px';
-      content.style.transform = 'none';
-      content.style.transition = 'none';
+      header_drawer.onclick = function() {
+        content.classList.remove('my_header_sticky_settings');
+        header.classList.remove('my_header_sticky_settings');
+        content.style.top = 0 + 'px';
+        content.style.transform = 'none';
+        content.style.transition = 'none';
+      }
     }
   }
 
@@ -91,10 +102,5 @@ window.onscroll = function () {
     my_backtop.style.visibility = 'hidden';
     my_backtop.style.cursor = "default";
   }
-  
-  //header_drawer
-  let header_drawer = document.getElementById("header_drawer");
-  header_drawer.onclick = function() {
-    console.log(1);
-  }
+ 
 }
