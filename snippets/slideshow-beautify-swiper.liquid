@@ -907,7 +907,7 @@
  let  swiperAutoPlay = document.getElementsByClassName(' swiper-wrapper-{{section.id}}')[0].dataset.autoplay;
  let swiperTime = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.autotime;	 
  let swiperLoop = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.loop;	
-
+	(swiperLoop == "false") ? swiperLoop=false : swiperLoop=true;
 // console.log(swiperAutoPlay,'',swiperTime)
  
 var swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{section.id}}', {
@@ -967,7 +967,7 @@ document.addEventListener('shopify:section:load', () => {
  let  swiperAutoPlay = document.getElementsByClassName(' swiper-wrapper-{{section.id}}')[0].dataset.autoplay;
  let swiperTime = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.autotime;	 
   let swiperLoop = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.loop;	
-
+	(swiperLoop == "false") ? swiperLoop=false : swiperLoop=true;
 
 // console.log('baibai',swiperTime);
 
