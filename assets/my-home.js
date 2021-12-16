@@ -106,6 +106,7 @@ window.onscroll = function () {
 }
 
 function my_header_sticky() {
+  console.log(123);
   if(my_header_sticky.length > 0) {
     if(toTop >= all_header_height) {
       content.style.position = 'fixed';
