@@ -53,6 +53,7 @@ gotoTop();
 
 window.onscroll = function () {
   let toTop = document.documentElement.scrollTop || document.body.scrollTop;
+  
   function header_fresh(){
     if(my_header_sticky.length > 0) {
       if(toTop >= all_header_height) {
@@ -84,6 +85,7 @@ window.onscroll = function () {
       }
     }
   }
+  
   header_fresh();
   
   //获取距离页面顶部的距离
