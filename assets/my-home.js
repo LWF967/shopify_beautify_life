@@ -77,8 +77,13 @@ function my_home() {
         content.style.position = 'relative';
       }
       if(content.style.position == 'fixed') {
-        top_bar.style.zIndex = 901;
-        header_zx.style.zIndex = 900;
+        if(document.body.clientWidth > 990) {
+          top_bar.style.zIndex = 901;
+          header_zx.style.zIndex = 900;
+        } else if (document.body.clientWidth < 990) {
+          top_bar.style.zIndex = 1;
+          header_zx.style.zIndex = 0;
+        }
         content.classList.add('my_header_sticky_settings');
         header.classList.add('my_header_sticky_settings');
         content.style.transition = 'transform .3s';
@@ -88,8 +93,13 @@ function my_home() {
         // content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
         content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
       } else if(content.style.position == 'relative') {
-        top_bar.style.zIndex = 899;
-        header_zx.style.zIndex = 898;
+        if(document.body.clientWidth > 990) {
+          top_bar.style.zIndex = 899;
+          header_zx.style.zIndex = 898;
+        } else if (document.body.clientWidth < 990) {
+          top_bar.style.zIndex = 1;
+          header_zx.style.zIndex = 0;
+        }
         content.classList.remove('my_header_sticky_settings');
         header.classList.remove('my_header_sticky_settings');
         content.style.top = 0 + 'px';
