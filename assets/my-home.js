@@ -94,7 +94,7 @@ window.onscroll = function () {
     document.addEventListener('shopify:section:load',() => {  
       console.log("进入header");
       header_fresh();   
-    console.log(header_fresh);
+//     console.log(header_fresh);
     },true);
   }
 
