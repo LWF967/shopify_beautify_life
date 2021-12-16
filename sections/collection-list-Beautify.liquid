@@ -19,7 +19,7 @@
       {%- assign grid_item_width = 'small--one-half medium-up--one-sixth' -%}
   {% endcase %}
 
-  {%render 'list_beautify_render',collection: collection　, grid:section.settings.grid ,grid_item_width:grid_item_width%}
+  {%render 'list_beautify_render',collection: collection　, grid:section.settings.grid ,grid_item_width:grid_item_width , slide_loop:section.settings.slide_loop %}
 	
   {% if section.blocks.size == 0 %}
     {% include 'no-blocks' %}

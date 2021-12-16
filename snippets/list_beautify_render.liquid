@@ -26,7 +26,7 @@
   
 
   
-    	  <div  class="swiper-wrapper " data-grid="{{grid}}" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
+    	  <div  class="swiper-wrapper " data-grid="{{grid}}" data-loop="{{slide_loop}}"  style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
 
   
       {% for block in section.blocks limit: section.blocks.size %}
