@@ -10,6 +10,16 @@ let my_footer_sticky = document.getElementsByClassName('footer color- gradient m
 let main = document.getElementById('MainContent');
 let sticky = document.getElementsByClassName('my_footer_sticky');
 
+// header fixed layout 
+let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
+let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
+let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
+let header = document.getElementsByClassName('header')[0];
+let content = document.getElementsByClassName('content')[0];
+let my_header_sticky = document.getElementsByClassName('my_header_sticky');
+let my_backtop = document.getElementById('my_backtop');
+
+// footer sticky
 if(sticky.length > 0) {      
   if(document.body.clientWidth < 1024) {
     main.style.marginBottom = 0 + "px";
@@ -32,15 +42,6 @@ else {
   main.style.marginBottom = 0 + "px";
 }
 
-// header fixed layout 
-let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
-let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
-let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
-let header = document.getElementsByClassName('header')[0];
-let content = document.getElementsByClassName('content')[0];
-let my_header_sticky = document.getElementsByClassName('my_header_sticky');
-let my_backtop = document.getElementById('my_backtop');
-
 // backtop 
 function gotoTop() {
   $("#my_backtop").click(
@@ -49,9 +50,9 @@ function gotoTop() {
     })
 };
 gotoTop();
-
+let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 window.onscroll = function () {
-  let toTop = document.documentElement.scrollTop || document.body.scrollTop;
+  
   if(my_header_sticky.length > 0) {
     if(toTop >= all_header_height) {
       content.style.position = 'fixed';
@@ -130,4 +131,8 @@ window.onscroll = function () {
     my_backtop.style.cursor = "default";
   }
  
+}
+
+function my_header_sticky() {
+  
 }
