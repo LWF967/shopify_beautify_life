@@ -575,7 +575,7 @@
     // 循环模式选项 
 
    
-	 slidesPerView:{{grid}},
+	// slidesPerView:{{grid}},
     
     // 如果需要分页器
     pagination: {
@@ -599,7 +599,23 @@
     
     spaceBetween: 40,
 
- 
+    breakpoints: { 
+      320: {  //当屏幕宽度大于等于320
+    
+     	slidesPerView:2,
+        spaceBetween: 15
+      },
+      768: {  //当屏幕宽度大于等于768 
+ 		slidesPerView:3,
+        spaceBetween: 15
+      },
+      1280: {  //当屏幕宽度大于等于1280
+      
+  		slidesPerView:{{grid}},
+        spaceBetween: 30
+      }
+    },
+
 
 
     
@@ -629,7 +645,7 @@
     loop: true, 
     // 循环模式选项 
 
-	 slidesPerView:{{grid}},
+	// slidesPerView:{{grid}},
 
     
     // 如果需要分页器
@@ -654,6 +670,23 @@
     
     spaceBetween: 40,
 
+  	breakpoints: { 
+        320: {  //当屏幕宽度大于等于320
+
+          slidesPerView:2,
+          spaceBetween: 15
+        },
+        768: {  //当屏幕宽度大于等于768 
+          slidesPerView:3,
+          spaceBetween: 15
+        },
+        1280: {  //当屏幕宽度大于等于1280
+		
+
+          slidesPerView:{{grid}},
+          spaceBetween: 30
+        }
+      },
 
 
 
