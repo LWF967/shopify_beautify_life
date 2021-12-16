@@ -869,6 +869,120 @@
 
 
 <script type="module">
+  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+  
+  
+  
+  
+  
+    
+  const timedeal =  function abc(){
+	var set_time_box = document.getElementsByClassName('timebox-{{section.id}}')[0];
+  	var set_time_day = set_time_box.getElementsByClassName('day_time-{{section.id}}')[0];
+    var set_time_hour = set_time_box.getElementsByClassName('hour_time-{{section.id}}')[0];
+    var set_time_minutes = set_time_box.getElementsByClassName('minutes_time-{{section.id}}')[0];
+  	var set_time_second = set_time_box.getElementsByClassName('second_time-{{section.id}}')[0];
+  	
+  	var endT = set_time_box.dataset.endtime;
+
+  	var end_time = new Date(endT); 	
+  
+  function cctime(){
+    var now_time = new Date(); 
+    var count_time = parseInt((end_time.getTime() - now_time.getTime())/1000);
+
+    if( count_time<=0){
+      set_time_day.innerHTML = "Daily";
+      set_time_hour.innerHTML = "Deal";
+      set_time_minutes.innerHTML = "Time";
+      set_time_second.innerHTML = "Up";
+      clearInterval(a);
+    }else {
+      set_time_day.innerHTML = parseInt(count_time/(3600*24))+"<span>Day</span>"; 
+      set_time_hour.innerHTML = parseInt(count_time/3600%24)+"<span>H</span>";
+      set_time_minutes.innerHTML = parseInt(count_time/60%60)+"<span>Min</span>";
+      set_time_second.innerHTML = parseInt(count_time%60)+"<span>S</span>";
+    }
+  };
+  var a = setInterval(cctime,1000);
+  
+  
+  }
+  
+  var timebb = new timedeal();
+  
+  console.log('123123');
+
+  
+  const deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
+  	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+      slidesPerView: 1,
+      followFinger : false,
+      autoplay: {
+      delay: 4000,
+      stopOnLastSlide: false,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+      },
+      loop: true,
+    
+   // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination-{{section.id}}',
+        clickable :false,
+      },
+      
+
+
+  });
+    
+  
+  console.log('看看我出错没+',deal_swiper123);
+     
+
+  
+
+   var designMode = Shopify.designMode || false;
+   if(designMode){
+   
+//    console.log('进入后台了');
+   document.addEventListener('shopify:section:load',()=>{  
+    console.log('这是渲染完的');
+	 timebb = new timedeal();
+     
+     
+     const deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
+  	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+      slidesPerView: 1,
+      followFinger : false,
+      autoplay: {
+      delay: 4000,
+      stopOnLastSlide: false,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+      },
+      loop: true,
+    
+   // 如果需要分页器
+      pagination: {
+        el: '.swiper-pagination-{{section.id}}',
+        clickable :false,
+      },
+      
+
+  	});
+    
+     
+	},true);
+  
+    document.addEventListener('shopify:section:unload',()=>{  
+	console.log('正在重新渲染');
+    timebb = null;
+	},true);
+
+ 
+ 
+ }
   
 </script>
 
