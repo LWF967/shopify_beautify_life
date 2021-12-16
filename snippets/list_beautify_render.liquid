@@ -637,10 +637,10 @@
        document.addEventListener('shopify:section:load',()=>{
 
    
-	 gridNum = {{grid}};
+	var gridNum = {{grid}};
     console.log('奇怪')
     console.log(gridNum,'222');
-    swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
+    var swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, 
     // 循环模式选项 
@@ -699,11 +699,11 @@
   },true)
 
   
-   document.addEventListener('shopify:section:unload',()=>{
+//   document.addEventListener('shopify:section:unload',()=>{
    
-   swiperListBeautify ="null";
-  console.log('sss');
-  },true)
+  // swiperListBeautify ="null";
+   //console.log('sss');
+  //},true)
 
     
 </script>
