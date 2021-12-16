@@ -307,7 +307,7 @@
           class="header header--{{ section.settings.logo_position }} page-width {% if section.settings.menu != blank %} header--has-menu {% endif %} my_header my_header_height {% if section.settings.logo_svg != blank %} my_auto_height {% elsif section.settings.logo != blank %}{% if section.settings.logo_aligment == 'left' and my_img_height_left > my_header_height %} my_header_img_left {% elsif section.settings.logo_aligment == 'centered' and my_img_height_centered > my_header_height %} my_auto_height {% endif %}{% endif %}my_header_background_color my_header_background_opacity"
           style="border-bottom: 1px solid {{settings.color_page_borders_and_lines}};{% if settings.full_width == false %} max-width: 1200px;{% endif %}{% if section.settings.logo_svg != blank %}{% if image_height > my_header_height %}{% if section.settings.logo_aligment == 'left' %} height: {{image_height}}px; {% elsif section.settings.logo_aligment == 'centered' %} height: {{image_height_center}}px;{% endif %}{% else %} height: {{my_header_height}}px; {% endif %}{% endif %}">
     {%- if section.settings.menu != blank -%}
-      <header-drawer data-breakpoint="tablet">
+      <header-drawer data-breakpoint="tablet" id="header_drawer">
         <details class="menu-drawer-container">
           <summary class="header__icon header__icon--menu header__icon--summary link link--text focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
             <span>
