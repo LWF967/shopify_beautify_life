@@ -65,7 +65,6 @@ window.onscroll = function () {
       // content.style.top = -(content.scrollHeight) + 'px';
       content.style.top = "-" + (header_wrapper.style.height);
 
-
       // content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
       // content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
       content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
@@ -117,6 +116,6 @@ window.onscroll = function () {
 var headerFreshDesignMode = Shopify.designMode || false;
 if(headerFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {  
-    
+    header_wrapper.style.color = 'red';
   },true);
 }
