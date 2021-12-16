@@ -3,11 +3,11 @@
 var myFreshDesignMode = Shopify.designMode || false;
 if(myFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {  
-aaaa();
+    my_home();
   },true);
 }
-aaaa();
-function aaaa() {
+my_home();
+function my_home() {
     let promo_bar = document.getElementById('shopify-section-promo-bar');
     let top_bar = document.getElementById('shopify-section-top-bar');
     let header_zx = document.getElementById('shopify-section-header');
