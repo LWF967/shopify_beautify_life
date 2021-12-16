@@ -571,7 +571,7 @@
   
 
  var swiperBeautifyContainer = document.getElementsByClassName('swiper-container-{{section.id}} list-beautify-render')[0];
-    var swiperBeautifyWrapperGrid = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid;
+    var swiperBeautifyWrapperGrid = parseInt(swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid);
     var swiperBeautifyWrapperLoop = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.loop;
     (swiperBeautifyWrapperLoop == "false") ? swiperBeautifyWrapperLoop=false : swiperBeautifyWrapperLoop=true;
     
@@ -643,7 +643,7 @@
        document.addEventListener('shopify:section:load',()=>{
    
     var swiperBeautifyContainer = document.getElementsByClassName('swiper-container-{{section.id}} list-beautify-render')[0];
-    var swiperBeautifyWrapperGrid = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid;
+    var swiperBeautifyWrapperGrid = parseInt(swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid);
     var swiperBeautifyWrapperLoop = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.loop;
 	(swiperBeautifyWrapperLoop == "false") ? swiperBeautifyWrapperLoop=false : swiperBeautifyWrapperLoop=true;
 
