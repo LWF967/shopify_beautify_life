@@ -11,7 +11,7 @@ function my_home() {
   let promo_bar = document.getElementById('shopify-section-promo-bar');
   let top_bar = document.getElementById('shopify-section-top-bar');
   let header_zx = document.getElementById('shopify-section-header');
-  let footer_top = document.getElementById('shopify-section-footer-top');
+//   let footer_top = document.getElementById('shopify-section-footer-top');
   let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
   let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
   let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
@@ -77,8 +77,7 @@ function my_home() {
         content.style.position = 'relative';
       }
       if(content.style.position == 'fixed') {
-        //       top_bar.style.zIndex = 13;
-        //       header_zx.style.zIndex = 12;
+
         content.classList.add('my_header_sticky_settings');
         header.classList.add('my_header_sticky_settings');
         content.style.transition = 'transform .3s';
@@ -88,8 +87,7 @@ function my_home() {
         // content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
         content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
       } else if(content.style.position == 'relative') {
-        //       top_bar.style.zIndex = 12;
-        //       header_zx.style.zIndex = 11;
+
         content.classList.remove('my_header_sticky_settings');
         header.classList.remove('my_header_sticky_settings');
         content.style.top = 0 + 'px';
