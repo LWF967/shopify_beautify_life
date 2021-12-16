@@ -84,7 +84,7 @@ window.onscroll = function () {
         content.style.transition = 'none';
       }
     }
-                            
+      console.log("结束");                      
   },true);
 
   // backtop 
