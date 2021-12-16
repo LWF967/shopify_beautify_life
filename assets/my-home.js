@@ -56,7 +56,7 @@ window.onscroll = function () {
   var headerFreshDesignMode = Shopify.designMode || false;
   if(headerFreshDesignMode){
     document.addEventListener('shopify:section:load',() => {  
-      console.log("刷新成功");
+      console.log("进入header");
       if(my_header_sticky.length > 0) {
         if(toTop >= all_header_height) {
           content.style.position = 'fixed';
