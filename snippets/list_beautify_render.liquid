@@ -1,6 +1,6 @@
 
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
-<div class="my_swiper_outside_content">
+
 <div class="swiper-container-{{section.id}}" style="overflow: hidden;position:relative;">
     
     {% comment %}
@@ -157,7 +157,6 @@
         <!-- 如果需要分页器 -->
           <div class="swiper-pagination-{{section.id}}"></div>
 		{%- endif -%}
-</div>
 
 
 
