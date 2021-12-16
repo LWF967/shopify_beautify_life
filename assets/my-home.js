@@ -69,9 +69,14 @@ window.onscroll = function () {
       content.classList.add('my_header_sticky_settings');
       header.classList.add('my_header_sticky_settings');
       content.style.transition = 'transform .3s';
-      content.style.top = -(content.scrollHeight) + 'px';
+//       content.style.top = -(content.scrollHeight) + 'px';
+      content.style.top = -header_wrapper.style.height;
+      
+      
       //             content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
-      content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
+//       content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
+            content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
+
       
     } else {
       content.style.position = 'relative';
