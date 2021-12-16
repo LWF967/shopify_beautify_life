@@ -54,7 +54,7 @@ window.onscroll = function () {
   let toTop = document.documentElement.scrollTop || document.body.scrollTop;
   //获取距离页面顶部的距离
   document.addEventListener('shopify:section:load',() => {  
-
+    console.log("刷新成功");
     if(my_header_sticky.length > 0) {
       if(toTop >= all_header_height) {
         content.style.position = 'fixed';
