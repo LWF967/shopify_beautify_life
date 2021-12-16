@@ -956,9 +956,9 @@ var swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swipe
 
 
 	{% if  section.settings.auto_play == true %}
-		swiper123.autoplay.start();
+		swiperBeautifySlideshow.autoplay.start();
 	{% else %}
-		swiper123.autoplay.stop();
+		swiperBeautifySlideshow.autoplay.stop();
   	{% endif %}
 
 document.addEventListener('shopify:section:load', () => {
@@ -1018,9 +1018,9 @@ document.addEventListener('shopify:section:load', () => {
   })
 
 	{% if  section.settings.auto_play == true %}
-		swiper123.autoplay.start();
+		swiperBeautifySlideshow.autoplay.start();
 	{% else %}
-		swiper123.autoplay.stop();
+		swiperBeautifySlideshow.autoplay.stop();
   	{% endif %}
   
 
@@ -1062,7 +1062,7 @@ function debounce(func, wait = 500) {
         $('.swiper-container-{{section.id}}').unbind('mouseover').unbind('mouseout');
 
         document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchstart', debounce(function () {
-          swiper123.autoplay.stop();
+          swiperBeautifySlideshow.autoplay.stop();
         }, 500), true)
 
         document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchmove', debounce(function () {
@@ -1070,18 +1070,18 @@ function debounce(func, wait = 500) {
         }), true)
 
         document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchend', debounce(function () {
-          swiper123.autoplay.start();
+          swiperBeautifySlideshow.autoplay.start();
         }, 500), true)
 
       } else {
 
 
         $('.swiper-container-{{section.id}}').mouseover(debounce(function () {
-          swiper123.autoplay.stop();
+          swiperBeautifySlideshow.autoplay.stop();
         }))
 
         $('.swiper-container-{{section.id}}').mouseout(debounce(function () {
-          swiper123.autoplay.start();
+          swiperBeautifySlideshow.autoplay.start();
         }))
 
 
