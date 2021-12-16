@@ -147,12 +147,16 @@
         }
       }
       hide_banner.dataset.mheight = hide_banner_height + 1;
-//       hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+      hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
       //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 //       window.onload = function () {
-        hide_banner.style.marginTop = 0 + 'px';
-        hide_banner.style.transition = "all .5s";
+    let my_timer = setTimeout(function() {
+      hide_banner.style.marginTop = 0 + 'px';
+      hide_banner.style.transition = "all .5s";
+    }, 500);
+    clearTimeout(my_timer);
+        
 //       }
     },true);
   }
