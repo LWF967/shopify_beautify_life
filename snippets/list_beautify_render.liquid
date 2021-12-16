@@ -611,7 +611,18 @@
       },
       1280: {  //当屏幕宽度大于等于1280
       
-  		slidesPerView:{{grid}},
+		 {% case grid %}
+         	{% when '2'%}
+            slidesPerView:2,
+         	{% when '3'%}
+            slidesPerView:3,
+            {% when '4'%}
+            slidesPerView:4,
+            {% when '5'%}
+            slidesPerView:5,
+            {% when '6'%}
+            slidesPerView:6,       
+		 {% endcase %}
         spaceBetween: 30
       }
     },
@@ -682,7 +693,20 @@
         },
         1280: {  //当屏幕宽度大于等于1280
 
-          slidesPerView:{{grid}},
+
+		 {% case grid %}
+         	{% when '2'%}
+            slidesPerView:2,
+         	{% when '3'%}
+            slidesPerView:3,
+            {% when '4'%}
+            slidesPerView:4,
+            {% when '5'%}
+            slidesPerView:5,
+            {% when '6'%}
+            slidesPerView:6,       
+		 {% endcase %}
+
           spaceBetween: 30
         }
       },
