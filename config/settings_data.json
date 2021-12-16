@@ -9,7 +9,7 @@
     "ratio_custom_2": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
     "promo_bar_home_page_only": false,
     "top_bar_home_page_only": false,
-    "full_width": false,
+    "full_width": true,
     "sticky_header": true,
     "show_search_icon": true,
     "Show_dropdown_arrow": true,
