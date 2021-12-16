@@ -618,7 +618,7 @@
    
    var swiperBeautifyEvent;
    
-swiperBeautifyEvent.addListener = function(target, eventName, callback) {
+Shopify.addListener = function(target, eventName, callback) {
 //   console.log('443',target,'-',eventName,'-');
   target.addEventListener ? target.addEventListener(eventName, callback, false) : target.attachEvent('on'+eventName, callback);
   console.log('有人调用我了',target,'-',eventName,'-');
@@ -627,7 +627,7 @@ swiperBeautifyEvent.addListener = function(target, eventName, callback) {
   
    let doc_id = document.getElementById('shopify-section-{{section.id}}');
 
- swiperBeautifyEvent.addListener(doc_id,'shopify:section:load',()=>{
+ Shopify.addListener(doc_id,'shopify:section:load',()=>{
  
  
  
