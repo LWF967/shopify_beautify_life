@@ -44,14 +44,15 @@ function my_home() {
       footer_bottom.style.position = 'fixed';
       footer_bottom.style.bottom = 0;
       footer_bottom.style.width = '100%';
+      
+        
+  console.log("top:"+my_footer_sticky_height);
+  console.log("bottom:"+footer_bottom_height);
     }
   }
   else {
     main.style.marginBottom = 0 + "px";
   }
-  
-  console.log("top:"+my_footer_sticky_height);
-  console.log("bottom:"+footer_bottom_height);
 
   // backtop 
   function gotoTop() {
