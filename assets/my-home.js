@@ -48,6 +48,8 @@ function my_home() {
 
       console.log("top:"+my_footer_sticky_height); 
       console.log("bottom:"+footer_bottom_height);
+      console.log("footer:"+my_footer_sticky_height+footer_bottom_height); 
+      console.log("main:"+main.style.marginBottom); 
     }
   }
   else {
