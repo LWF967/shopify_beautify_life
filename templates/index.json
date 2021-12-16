@@ -121,92 +121,57 @@
         "featured_colection_margin_bottom": ""
       }
     },
-    "1635836350c3b72b9b": {
+    "16396203697a4ba826": {
       "type": "collection-list-Beautify",
       "blocks": {
-        "1635836350c3b72b9b-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "frontpage",
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "title": "Collection"
-          }
-        },
-        "1635836350c3b72b9b-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "pitaya",
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "title": "ttt1"
-          }
-        },
-        "1635836350c3b72b9b-2": {
+        "1639620369bd20c112-0": {
           "type": "featured_collection",
           "settings": {
             "collection": "",
             "title": "New supply this week"
           }
         },
-        "b47fcf84-0bd5-4408-8a75-0e35ec59dd74": {
+        "1639620369bd20c112-1": {
           "type": "featured_collection",
           "settings": {
             "collection": "",
             "title": "New supply this week"
           }
         },
-        "27647972-99f3-4c89-8813-30902cb683b2": {
+        "1639620369bd20c112-2": {
           "type": "featured_collection",
           "settings": {
             "collection": "",
             "title": "New supply this week"
           }
         },
-        "c260e375-4204-46a5-92c3-908126eb528f": {
+        "74f70aef-ccdd-4160-9ce0-9b4e6c858801": {
           "type": "featured_collection",
           "settings": {
             "collection": "",
-            "title": "New supply this week"
-          }
-        },
-        "00f2f9a8-e301-4b06-976e-4bab8436e34c": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "title": "New supply this week"
-          }
-        },
-        "3664c841-28d4-4335-9ab7-8dcc37753f00": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
             "title": "New supply this week"
           }
         }
       },
       "block_order": [
-        "1635836350c3b72b9b-0",
-        "1635836350c3b72b9b-1",
-        "1635836350c3b72b9b-2",
-        "b47fcf84-0bd5-4408-8a75-0e35ec59dd74",
-        "27647972-99f3-4c89-8813-30902cb683b2",
-        "c260e375-4204-46a5-92c3-908126eb528f",
-        "00f2f9a8-e301-4b06-976e-4bab8436e34c",
-        "3664c841-28d4-4335-9ab7-8dcc37753f00"
+        "1639620369bd20c112-0",
+        "1639620369bd20c112-1",
+        "1639620369bd20c112-2",
+        "74f70aef-ccdd-4160-9ce0-9b4e6c858801"
       ],
       "settings": {
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
-        "grid": 4,
+        "grid": 3,
         "show_view_all": false,
-        "show_page_Dot": true,
+        "show_page_Dot": false,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
         "show_button": true,
         "show_button_visible": "always",
-        "show_button_style": "style3",
-        "show_button_color": "gray",
-        "show_button_hover_color": "#da4747",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "",
         "collection_list_beautify_margin_top": "",
         "collection_list_beautify_margin_bottom": ""
       }
@@ -894,11 +859,11 @@
         "product": "",
         "heading_text": "Daily Deal Of The Day",
         "heading_font_size": 32,
-        "color_top": "#888",
+        "color_top": "#888888",
         "countdown_time": "2021\/12\/01",
         "time_font_size": 32,
         "background_color": "#f9f9f9",
-        "background_product_color": "#FFF",
+        "background_product_color": "#ffffff",
         "daily_deal_of_the_day_margin_top": "",
         "daily_deal_of_the_day_margin_bottom": ""
       }
@@ -907,7 +872,7 @@
   "order": [
     "16377430666a59b35c",
     "1635832448db75c5e7",
-    "1635836350c3b72b9b",
+    "16396203697a4ba826",
     "1636093631994b741b",
     "163608389212513e57",
     "1638178308a7590918",
