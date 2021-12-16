@@ -102,6 +102,7 @@ window.onscroll = function () {
           content.style.position = 'relative';
         }
         if(content.style.position == 'fixed') {
+          console.log(1);
           //       top_bar.style.zIndex = 13;
           //       header_zx.style.zIndex = 12;
           content.classList.add('my_header_sticky_settings');
