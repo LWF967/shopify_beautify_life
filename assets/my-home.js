@@ -91,4 +91,10 @@ window.onscroll = function () {
     my_backtop.style.visibility = 'hidden';
     my_backtop.style.cursor = "default";
   }
+  
+  //header_drawer
+  let header_drawer = document.getElementById("header_drawer");
+  header_drawer.onclick = function() {
+    console.log(1);
+  }
 }
