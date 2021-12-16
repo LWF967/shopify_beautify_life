@@ -62,8 +62,10 @@ window.onscroll = function () {
           content.style.position = 'fixed';
           content.style.width = '100%';
           header_wrapper.style.height = header_wrapper_height + 'px';
+          console.log("1");
         } else {
           content.style.position = 'relative';
+          console.log("2");
         }
         if(content.style.position == 'fixed') {
           //       top_bar.style.zIndex = 13;
@@ -76,6 +78,7 @@ window.onscroll = function () {
           // content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
           // content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
           content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
+                    console.log("3");
         } else if(content.style.position == 'relative') {
           //       top_bar.style.zIndex = 12;
           //       header_zx.style.zIndex = 11;
@@ -84,6 +87,7 @@ window.onscroll = function () {
           content.style.top = 0 + 'px';
           content.style.transform = 'none';
           content.style.transition = 'none';
+                    console.log("4");
         }
       }                                  
     },true);
