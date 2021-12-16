@@ -639,8 +639,9 @@
   
        document.addEventListener('shopify:section:load',()=>{
    
-    var tt1 = document.getElementsByClassName("swiper-container-{{section.id}}");
+    var tt1 = document.getElementsByClassName('swiper-container-{{section.id}}')[0];
     var tt2 = tt1.getElementsByClassName('swiper-wrapper')[0].dataset.grid;
+    
 	var gridNum = {{grid}};
     console.log('奇怪')
     console.log(gridNum,'222',tt2);
