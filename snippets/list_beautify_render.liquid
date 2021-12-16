@@ -573,7 +573,7 @@
 
    var swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-    loop: false, 
+    loop: {{slide_loop}}, 
     // 循环模式选项 
 
    
@@ -640,12 +640,12 @@
    
     var swiperBeautifyContainer = document.getElementsByClassName('swiper-container-{{section.id}}')[0];
     var swiperBeautifyWrapperGrid = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid;
-    
+    var swiperBeautifyWrapperLoop = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.loop;
 
 
     var swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-    loop: false, 
+    loop: swiperBeautifyWrapperLoop, 
     // 循环模式选项 
 
 	// slidesPerView:{{grid}},
