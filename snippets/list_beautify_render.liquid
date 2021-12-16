@@ -8,7 +8,7 @@
 
   
       {% for block in section.blocks limit: section.blocks.size %}
-        <li id="grid__item__beautify-{{section.id}}" class="swiper-slide grid__item__beautify  {{grid_item_width}}"  {{ block.shopify_attributes }}>
+        <li id="grid__item__beautify-{{section.id}}" class="swiper-slide grid__item__beautify "  {{ block.shopify_attributes }}>
           {%- liquid 
              assign   collection_title = block.settings.title
              assign   collection = collections[block.settings.collection] 
@@ -23,7 +23,7 @@
 
     </ul>
     {%endcomment%}
-    	  <div  class="swiper-wrapper  " data-grid="{{grid}}" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
+    	  <div  class="swiper-wrapper {{grid_item_width}} " data-grid="{{grid}}" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
 
   
       {% for block in section.blocks limit: section.blocks.size %}
