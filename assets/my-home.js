@@ -34,10 +34,8 @@ function my_home() {
       main.style.marginBottom = 0 + "px";
     }
     else if(document.body.clientWidth >= 1024) {
-              let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+      let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
 
-      //     main.style.background = '#ffffff';
-//       console.log("top:"+my_footer_sticky_height);
       main.style.zIndex = 899;
       main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
       my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
@@ -47,9 +45,9 @@ function my_home() {
       footer_bottom.style.position = 'fixed';
       footer_bottom.style.bottom = 0;
       footer_bottom.style.width = '100%';
-      
-        
-//   console.log("bottom:"+footer_bottom_height);
+
+      console.log("top:"+my_footer_sticky_height); 
+      console.log("bottom:"+footer_bottom_height);
     }
   }
   else {
