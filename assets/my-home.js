@@ -1,7 +1,7 @@
 // lzx change
 // footer sticky
-var myFreshDesignMode = Shopify.designMode || false;
-if(myFreshDesignMode){
+var myHomeFreshDesignMode = Shopify.designMode || false;
+if(myHomeFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {  
     my_home();
   },true);
