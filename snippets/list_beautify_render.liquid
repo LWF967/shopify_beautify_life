@@ -624,8 +624,7 @@
     
     
   })    
-  
-   console.log({{grid}},'1111');
+
    
 
   
@@ -639,12 +638,11 @@
   
        document.addEventListener('shopify:section:load',()=>{
    
-    var tt1 = document.getElementsByClassName('swiper-container-{{section.id}}')[0];
-    var tt2 = tt1.getElementsByClassName('swiper-wrapper')[0].dataset.grid;
+    var swiperBeautifyContainer = document.getElementsByClassName('swiper-container-{{section.id}}')[0];
+    var swiperBeautifyWrapperGrid = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid;
     
 	var gridNum = {{grid}};
-    console.log('奇怪')
-    console.log(gridNum,'222',tt2);
+
     var swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, 
@@ -687,7 +685,7 @@
         },
         1280: {  //当屏幕宽度大于等于1280
 
-          slidesPerView:tt2,
+          slidesPerView:swiperBeautifyWrapperGrid,
           spaceBetween: 30
         }
       },
@@ -698,8 +696,6 @@
     
   })    
 
-    console.log(gridNum,'333');
-    console.log('奇怪2')
   
   },true)
 
