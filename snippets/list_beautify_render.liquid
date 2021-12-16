@@ -1,6 +1,6 @@
 
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
-<div class="my_swiper_outside_content">
+<div class="my_swipter_outside_content">
 <div class="swiper-container-{{section.id}}" style="overflow: hidden;position:relative;">
     
     {% comment %}
@@ -111,7 +111,7 @@
           <div class="swiper-button-prev-{{section.id}}
                       bk_{{section.settings.show_button_color}}
                       {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% else %}  dn  {% endif%} 
-                      leftbtn leftbtn-{{section.id}} list_button_{{ section.settings.show_button_style }}
+                      leftbtn leftbtn-{{section.id}}   button_{{ section.settings.show_button_style }}
                       
                       
                       ">
@@ -132,7 +132,7 @@
           <div class="swiper-button-next-{{section.id}}   
                       bk_{{section.settings.show_button_color}} 
                       {% if section.settings.show_button %}icon-changebtn_{{section.id}} {% else %} dn  {% endif%} 
-                      rightbtn  rightbtn-{{section.id}}  list_button_{{ section.settings.show_button_style }}">
+                      rightbtn  rightbtn-{{section.id}}  button_{{ section.settings.show_button_style }}">
   
                <p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
                   <svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -158,12 +158,8 @@
           <div class="swiper-pagination-{{section.id}}"></div>
 		{%- endif -%}
 </div>
-
-
-
-{{grid}}-11111111
 <style>
-  .my_swiper_outside_content {
+  .my_swipter_outside_content {
     padding-bottom: 30px;
     position: relative;
   }
@@ -369,9 +365,9 @@
   {%- endif -%}
   
   
-
+  
   .bk_transparent{
-    background-color: {{bk_btn}};
+  background-color: {{bk_btn}};
     color:black;
   }
   
@@ -379,44 +375,47 @@
     background-color: {{bk_btn}};
     color:black;
   }
-
+  
   .bk_gray{
     background-color: {{bk_btn}};
     color:white;  
   }
-
-  .list_button_style1{
-    border-radius:50%;
-  }
-
-  .list_button_style2{
-    border-radius:0;
-  }
-
-  .leftbtn.list_button_style3{
-    left:15px;
-  }
-
-  .rightbtn.list_button_style3{
-    right:15px;
+  
+  .button_style1{
+	border-radius:50%;
   }
   
-  .list_button_style3{
-/*     background-color: gray ; */
-	border-radius: 0;
-    transform:translateY(-50%) rotate(45deg) !important;
+  .button_style2{
+	border-radius:0;
+  }
+  
+  .leftbtn.button_style3{
+  
+  left:15px;
+  }
+  
+  .rightbtn.button_style3{
+  
+  right:15px;
+  }
+  .button_style3{
+    
+    background-color: gray ;
+	border-radius:0;
+    transform: rotate(45deg) !important;
   }
  
-  .list_button_style3 p svg:nth-child(1) {
-    transform: translate(-62.5%,-50%) rotate(318deg) !important;
-  }
   
-  .rightbtn.list_button_style3 p svg:nth-child(1) {
-    transform: translate(-27%,-78%) rotate(318deg) !important;
+   .button_style3 p svg:nth-child(1) {
+ transform: translate(-62.5%,-50%) rotate(318deg) !important;
+  }
+   .rightbtn.button_style3 p svg:nth-child(1) {
+ transform: translate(-27%,-78%) rotate(318deg) !important;
   }
 
-  .list_button_style1:hover,.list_button_style2:hover,.list_button_style3:hover{
-    color:rgb(255,255,255);
+  .button_style1:hover,.button_style2:hover,.button_style3:hover{
+  
+  color:rgb(255,255,255);
   }
   
   
@@ -558,30 +557,39 @@
 </style>
 
 
-
-
 <script type="module">
 
 
 
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
+  var windows_width = window.innerWidth;
+
+
+ 
+ 	var wind_width;
   
-  	var gridNum = {{grid}};
+   if(windows_width>750 && windows_width<950){
+  	wind_width = 3;
     
+    }else if(windows_width>400 && windows_width<750){
     
-
+    wind_width = 2;
+    }else if(windows_width<400){
     
+   	 wind_width = 2;
+    }else{
     
+     wind_width = {{grid}} ;
+    }
     
-
-   const swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
+   const swiper1 = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, 
     // 循环模式选项 
 
-   
-	// slidesPerView:wind_width,
+    slidesPerView:wind_width,
+
     
     // 如果需要分页器
     pagination: {
@@ -608,19 +616,17 @@
     breakpoints: { 
       320: {  //当屏幕宽度大于等于320
     
-     	slidesPerView:2,
         spaceBetween: 15
       },
       768: {  //当屏幕宽度大于等于768 
- 		slidesPerView:3,
-        spaceBetween: 15
+     
+        spaceBetween: 20
       },
       1280: {  //当屏幕宽度大于等于1280
-      
-  		slidesPerView:{{grid}},
+  
         spaceBetween: 30
       }
-    },
+    }
 
 
 
@@ -628,25 +634,25 @@
     
   })    
   
-   console.log({{grid}},'1111');
-   
-
   
-//   let doc_id = document.getElementById('shopify-section-{{section.id}}');
+  
+  // let doc_id = document.getElementById('shopify-section-{{section.id}}');
 
 // Shopify.addListener(doc_id,'shopify:section:load',()=>{console.log(222)});
   
+  
+  
+       document.addEventListener('shopify:section:load',()=>{
 
-	
-     document.addEventListener('shopify:section:load',()=>{
    
-   const swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
+    
+   const swiper1 = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, 
     // 循环模式选项 
 
-   
-	// slidesPerView:wind_width,
+    slidesPerView:wind_width,
+
     
     // 如果需要分页器
     pagination: {
@@ -673,36 +679,26 @@
     breakpoints: { 
       320: {  //当屏幕宽度大于等于320
     
-     	slidesPerView:2,
-        spaceBetween: 15
+        spaceBetween: 10
       },
       768: {  //当屏幕宽度大于等于768 
- 		slidesPerView:3,
-        spaceBetween: 15
+     
+        spaceBetween: 20
       },
       1280: {  //当屏幕宽度大于等于1280
-      
-  		slidesPerView:{{grid}},
+  
         spaceBetween: 30
       }
-    },
+    }
 
 
 
     
     
   })    
-  
-  console.log('sss');
-  },true)
 
-    
 
   
-   document.addEventListener('shopify:section:unload',()=>{
-   
-   swiperListBeautify.disable();
-  console.log('sss');
   },true)
 
     
