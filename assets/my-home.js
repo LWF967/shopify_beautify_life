@@ -55,7 +55,7 @@ window.onscroll = function () {
   //header_drawer
   let header_drawer = document.getElementById("header_drawer");
   header_drawer.onclick = function() {
-    console.log(1);
+    console.log(header_wrapper.style.height);
   }
   
   //获取距离页面顶部的距离
