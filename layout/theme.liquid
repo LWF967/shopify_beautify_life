@@ -134,6 +134,7 @@
         font-weight: var(--font-body-weight);
     
       }
+    	
     
       @media screen and (min-width: 750px) {
         body {
@@ -209,7 +210,7 @@
     {% endif %}
   {% endstyle %}
   
-  <body class="gradient">
+  <body class="gradient" style="background-color:{{settings.color_page_background}}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
