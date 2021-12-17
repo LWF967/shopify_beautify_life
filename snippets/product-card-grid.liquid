@@ -44,6 +44,6 @@
 
   <div class="h4 grid-view-item__title product-card__title" aria-hidden="true">{{ product.title }}</div>
 
-  {% include 'product-price-listing', product: product, show_vendor: show_vendor %}
+ {% render 'price', product: product_card_product, price_class: '' %}
 
 </div>
