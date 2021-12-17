@@ -311,6 +311,7 @@
                     {%- endif -%}
                   </div>
 
+                  {%- comment -%}
                   {%- if article.tags.size > 0 -%}
                     <div class="article__tags rte">
                       <ul class="list--inline" aria-label="{{ 'blogs.article.tags' | t }}">
@@ -322,6 +323,7 @@
                       </ul>
                     </div>
                   {%- endif -%}
+                  {%-endcomment-%}
 
                   <ul class="list--inline article__meta-buttons">
                     <li>
