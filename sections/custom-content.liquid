@@ -250,7 +250,7 @@
           			---{{article.image}}
           			
               {%- if article != empty -%}
-                <div id="Article-{{ article.image.id }}" class="article">
+                <div id="Article-{{ article.image.id }}" >
                   <a href="{{ article.url }}" class="article__link article__link--fixed-overlay">
                     {%- if article.image and cover_image != 'none' -%}
                       {%- capture img_id -%}ArticleImage-{{ article.image.id }}{%- endcapture -%}
