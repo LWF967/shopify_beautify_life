@@ -290,6 +290,30 @@
                     <h2 class="article__title h3">{{ article.title }}</h2>
                   </a>
 
+                  	 <a href="{{ article.url }}" class="article-content motion-reduce my_article_card_beautify_card_wrapper">
+                          {%- if show_image == true and article.image -%}
+                            <div class="article-card__image-wrapper my_article_card_beautify_card_item">
+                              <div class="article-card__image media media--landscape {{section.settings.image_ratio1}} my_article_card_beautify_background">
+                                <img
+                                  srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
+                                    {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
+                                    {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
+                                    {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
+                                    {%- if article.image.src.width >= 1000 -%}{{ article.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
+                                    {%- if article.image.src.width >= 1500 -%}{{ article.image.src | img_url: '1500x' }} 1500w,{%- endif -%}"
+                                  src="{{ article.image.src | img_url: '533x' }}"
+                                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                                  alt="{{ article.image.src.alt | escape }}"
+                                  width="{{ article.image.width }}"
+                                  height="{{ article.image.height }}"
+                                  loading="lazy"
+                                  class="motion-reduce"
+                                >
+                              </div>
+                            </div>
+                          {%- endif -%}
+                        </a>
+                  
                   {%- if block.settings.show_author or block.settings.show_date -%}
                     <div class="article__meta">
                       {%- if block.settings.show_author -%}
