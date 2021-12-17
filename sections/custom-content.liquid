@@ -238,8 +238,8 @@
                   {%- endif -%}
                 </div>
             {%- when 'article' -%}
-<!--               %- assign article = articles[block.settings.article] -% -->
-           {%- assign article = block.settings.article -%}
+              {%- assign article = articles[block.settings.article] -%}
+
               {%- assign cover_image = block.settings.cover_image -%}
           			{{block.settings.article}}4444
           			{{section.blocks.type['article']}}2222
