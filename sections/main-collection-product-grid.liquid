@@ -420,11 +420,11 @@
                         <div class="mobile-facets__sort">
                           <label for="SortBy-mobile">{{ 'sections.collection_template.sort_by_label' | t }}</label>
                           <div class="select">
-                            <select name="sort_by" class="select__select" id="SortBy-mobile" aria-describedby="a11y-refresh-page-message">
+                            <ul name="sort_by" class="select__select" id="SortBy-mobile" aria-describedby="a11y-refresh-page-message">
                               {%- for option in collection.sort_options -%}
-                                <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
+                                <li value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</li>
                               {%- endfor -%}
-                            </select>
+                            </ul>
                             {% render 'icon-caret' %}
                           </div>
                         </div>
