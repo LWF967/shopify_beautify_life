@@ -32,7 +32,7 @@
         "dc741816-4fa7-4c29-92e0-1acfda8d8706": {
           "type": "product",
           "settings": {
-            "product": "",
+            "product": "text4",
             "width": "50%",
             "alignment": "center"
           }
@@ -40,7 +40,7 @@
         "8ee73a9d-057a-4e5c-a828-f1606dd4e959": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "frontpage",
             "width": "50%"
           }
         },
@@ -55,7 +55,8 @@
         "1959a0a0-d475-4859-867c-834e6fce1148": {
           "type": "blog",
           "settings": {
-            "blog": "",
+            "blog": "新闻",
+            "cover_image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
             "image_size": "medium",
             "description": "<p>Description of your blog.<\/p>",
             "show_number_articles": true,
