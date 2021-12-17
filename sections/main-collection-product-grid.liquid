@@ -141,7 +141,7 @@
                           {% render 'icon-caret' %}
                         </div>
                       </summary>
-                      <div class="facets__display" style="background-color:{{setion.settings.colors_page_stickiness}}">
+                      <div class="facets__display" style="background-color:{{settings.colors_page_stickiness}}">
                         <div class="facets__header">
                           {%- assign max_price_amount = filter.range_max | money | strip_html | escape -%}
                           <span class="facets__selected">{{ "sections.collection_template.max_price" | t: price: max_price_amount }}</span>
