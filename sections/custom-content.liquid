@@ -171,7 +171,7 @@
                       {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
                       {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
                     </div>
-                    <div class="h4 grid-view-item__title">{{ 'homepage.onboarding.product_title' | t }}</div>
+                    <div class="h4 grid-view-item__title" style="var(--font-title-color)">{{ 'homepage.onboarding.product_title' | t }}</div>
                     <div class="grid-view-item__meta">
                       {{ 1999 | money }}
                     </div>
