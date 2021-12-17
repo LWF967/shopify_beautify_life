@@ -240,7 +240,8 @@
             {%- when 'article' -%}
               {%- assign article = articles[block.settings.article] -%}
               {%- assign cover_image = block.settings.cover_image -%}
-
+					{{article}}-----
+                    --------{{articles[block.settings.article]}}
               {%- if article != empty -%}
                 <div id="Article-{{ article.image.id }}" class="article">
                   <a href="{{ article.url }}" class="article__link article__link--fixed-overlay">
