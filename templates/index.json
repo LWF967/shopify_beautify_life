@@ -129,7 +129,7 @@
         "1639620369bd20c112-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
+            "collection": "orange",
             "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
             "title": "New supply this week"
           }
@@ -182,7 +182,7 @@
       "settings": {
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
-        "grid": 4,
+        "grid": 3,
         "slide_loop": true,
         "show_view_all": false,
         "show_page_Dot": true,
