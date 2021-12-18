@@ -5,10 +5,19 @@
 :root{
 
 	--font-size-base: 12px;
+     
 
 }
+:root,
+.color-background-1 {
+      --color-background: var(--color-base-background-1);
+     
+    }
 
+  .color-background-2 {
+    --color-background: var(--color-base-background-2);
 
+      }
 
 .color-beautify-overlay-1{
 	--color-foreground:white !imporatnt;
