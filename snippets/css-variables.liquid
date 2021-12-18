@@ -15,7 +15,16 @@
 
 
 
-	
+	.color-background-1 {
+  --color-foreground: var(--color-base-text);
+  --color-background: var(--color-base-background-1);
+  --gradient-background: var(--gradient-base-background-1);
+}
+
+.color-background-2 {
+  --color-background: var(--color-base-background-2);
+  --gradient-background: var(--gradient-base-background-2);
+}
 	--color-foreground:{{ settings.colors_body_text }};
  	
 	--color-foreground-rgba:{{ settings.colors_body_text | color_modify: 'alpha', 0.45 }};
