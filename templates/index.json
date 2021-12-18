@@ -146,6 +146,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
             "title": "New supply this week"
           }
         },
@@ -167,6 +168,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "",
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
             "title": "New supply this week"
           }
         }
