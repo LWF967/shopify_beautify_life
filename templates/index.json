@@ -108,7 +108,7 @@
         "sub_title": "Popular this week",
         "collection": "frontpage",
         "products_to_show": 8,
-        "grid": 6,
+        "grid": 4,
         "show_view_all": false,
         "swipe_on_mobile": false,
         "image_ratio": "adapt",
