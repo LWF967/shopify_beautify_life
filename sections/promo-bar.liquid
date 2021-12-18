@@ -1,6 +1,6 @@
 {%- style -%}
 {%- assign promo_bar_bg_op = section.settings.promo_bar_bg_op | divided_by: 100.0 -%}
-<!--  background-color: {{ section.settings.promo_bar_bg | color_modify: 'alpha', promo_bar_bg_op }}; -->
+ background-color: {{ section.settings.promo_bar_bg | color_modify: 'alpha', promo_bar_bg_op }};
 .h__banner {min-height:{{section.settings.promo_bar_height}}px;font-size:{{section.settings.promo_bar_fontsize}}px;}.h_banner_wrap {color:{{section.settings.promo_bar_cl}} }.h_banner_close,.h_banner_close:hover,.h_banner_close:focus {color:{{section.settings.promo_bar_cl_btn}} !important }.h_banner_close:after, .h_banner_close:before {background-color:{{section.settings.promo_bar_cl_btn}} }
 .my_a:hover { color: {{ section.settings.promo_bar_cl_btn | color_darken: 10 }} !important; transition: all .3s; }
 .my_a:hover .i_left { transform: rotate(45deg);border-bottom: 1px solid {{ section.settings.promo_bar_cl_btn | color_darken: 10 }} !important; transition: all .3s; } .my_a:hover .i_right { transform: rotate(-45deg);border-bottom: 1px solid {{ section.settings.promo_bar_promo_bar_cl_btn | color_darken: 10 }} !important; transition: all .3s; }
