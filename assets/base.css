@@ -10,7 +10,6 @@
 }
 :root,
 .color-background-1 {
-  
   --color-background: var(--color-base-background-1);
   --gradient-background: var(--gradient-base-background-1);
 }
