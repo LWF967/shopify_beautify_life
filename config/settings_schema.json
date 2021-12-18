@@ -558,18 +558,6 @@
       },
       {
         "type": "color",
-        "id": "colors_background_1",
-        "default": "#FFFFFF",
-        "label": "Background-1"
-      },
-      {
-        "type": "color",
-        "id": "colors_background_2",
-        "default": "#F3F3F3",
-        "label": "Background-2"
-      },
-      {
-        "type": "color",
         "id": "colors_page_stickiness",
         "default": "#EA0606",
         "label": "Stickiness header popup"
