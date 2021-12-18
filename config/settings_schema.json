@@ -560,13 +560,13 @@
         "type": "color",
         "id": "colors_background_1",
         "default": "#FFFFFF",
-        "label": "b1"
+        "label": "Background-1"
       },
       {
         "type": "color",
         "id": "colors_background_2",
         "default": "#F3F3F3",
-        "label": "b2"
+        "label": "Background-2"
       },
       {
         "type": "color",
