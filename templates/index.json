@@ -184,7 +184,7 @@
         "sub_title": "New supply this week",
         "grid": 3,
         "slide_loop": true,
-        "show_view_all": false,
+        "show_view_all": true,
         "show_page_Dot": true,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
