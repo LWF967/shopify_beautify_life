@@ -558,9 +558,15 @@
       },
       {
         "type": "color",
-        "id": "color_page_background-2",
-        "label": "Background-2",
-        "default": "#F3F3F3"
+        "id": "colors_background_1",
+        "default": "#FFFFFF",
+        "label": "b1"
+      },
+      {
+        "type": "color",
+        "id": "colors_background_2",
+        "default": "#F3F3F3",
+        "label": "b2"
       },
       {
         "type": "color",
