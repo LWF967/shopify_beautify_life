@@ -558,6 +558,12 @@
       },
       {
         "type": "color",
+        "id": "color_page_background-2",
+        "label": "Background-2",
+        "default": "#F3F3F3"
+      },
+      {
+        "type": "color",
         "id": "colors_page_stickiness",
         "default": "#EA0606",
         "label": "Stickiness header popup"
