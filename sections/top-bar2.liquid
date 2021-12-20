@@ -66,7 +66,7 @@
   {%- if settings.h_transparent and settings.header_design != '7' and settings.h_tr_top and template.name == 'index' -%}
   {%- assign bg_op = section.settings.bg_op_tr | divided_by: 100.0 -%}.h__top,.h__top.bgbl { background-color: {{ section.settings.bg_tr | color_modify: 'alpha', bg_op }};{% if section.settings.show_border_tr %}border-bottom: 1px solid {{ section.settings.bd_cl_tr }};{% endif %};color:{{section.settings.cl_tr}} } .header-text >.cg,.h__top .nt_currency { color:{{section.settings.cl_tr}}  } .h__top .cr { color:{{section.settings.cl_cr_tr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{section.settings.cl_a_tr}}  } 
   {%- else -%}
-  {%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}h__top,.h__top.bgbl { background-color: {{ section.settings.bg | color_modify: 'alpha', bg_op }};{% if section.settings.show_border %}border-bottom: 1px solid {{ section.settings.bd_cl }};{% endif %}color:{{section.settings.cl}} } .header-text >.cg,.h__top .nt_currency { color:{{section.settings.cl}}  } .h__top .cr { color:{{section.settings.cl_cr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{section.settings.cl_a}}  } 
+  {%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}h__top,.h__top.bgbl { {%-if section.settings.color_scheme =="bg"-%} background-color:{{section.settings.bg | color_modify: 'alpha', bg_op}}{%-else-%} background-color:{{settings.color_page_background | color_modify: 'alpha', bg_op}}{%-endif-%} }};{% if section.settings.show_border %}border-bottom: 1px solid {{ section.settings.bd_cl }};{% endif %}color:{{section.settings.cl}} } .header-text >.cg,.h__top .nt_currency { color:{{section.settings.cl}}  } .h__top .cr { color:{{section.settings.cl_cr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{section.settings.cl_a}}  } 
   {%- endif -%}{%- endstyle -%}
 
 <style>
@@ -141,6 +141,22 @@
         "id": "bg",
         "label": "Background Color",
         "default": "#f6f6f8"
+      },
+	{
+       "type": "select",
+       "id": "color_scheme",
+      "options": [
+        {
+       "value": "gradient",
+       "label": "Global-page background" 
+        },
+       {
+        "value": "bg",
+        "label": "Top-bar background"
+         }
+       ],
+     "default": "gradient",
+       "label": "Background options"
       },
       {
         "type": "range",
