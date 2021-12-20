@@ -35,6 +35,7 @@ function my_home() {
       if(document.body.clientWidth < 1024) {
         main.style.marginBottom = 0 + "px";
         my_footer_sticky.style.opacity = 1;
+        footer_bottom.style.position = 'static';
         console.log("less 1024");
       }
       else if(document.body.clientWidth >= 1024) {
