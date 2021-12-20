@@ -165,7 +165,8 @@
       ],
       "settings": {
         "product": "1",
-        "secondary_background": false,
+        "featured_bk_color": "#1eec5e",
+        "color_scheme": "gradient",
         "show_share_buttons": false,
         "hide_variants": false,
         "enable_video_looping": false,
@@ -183,9 +184,59 @@
         "countdown_time": "2021\/12\/01",
         "time_font_size": 32,
         "background_color": "#f9f9f9",
+        "color_scheme": "gradient",
         "background_product_color": "#ffffff",
+        "color_schemes": "gradient",
         "daily_deal_of_the_day_margin_top": "",
         "daily_deal_of_the_day_margin_bottom": ""
+      }
+    },
+    "16399909164ab9b41a": {
+      "type": "collection-list-Beautify",
+      "blocks": {
+        "163999091639f986c6-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "163999091639f986c6-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "163999091639f986c6-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        }
+      },
+      "block_order": [
+        "163999091639f986c6-0",
+        "163999091639f986c6-1",
+        "163999091639f986c6-2"
+      ],
+      "settings": {
+        "title": "NEW RELEASES",
+        "sub_title": "New supply this week",
+        "grid": 3,
+        "slide_loop": false,
+        "show_view_all": false,
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "",
+        "collection_list_beautify_margin_top": "",
+        "collection_list_beautify_margin_bottom": ""
       }
     }
   },
@@ -193,6 +244,7 @@
     "main",
     "product-recommendations",
     "16393856137f137526",
-    "16395524088ec92f0f"
+    "16395524088ec92f0f",
+    "16399909164ab9b41a"
   ]
 }
