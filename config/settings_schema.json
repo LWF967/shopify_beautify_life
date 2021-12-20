@@ -576,7 +576,7 @@
         "type": "color",
         "id": "color_icon",
         "label": "Icon color",
-        "default": "#E4E4E4"
+        "default": "#000000"
       }
     ]
   },
