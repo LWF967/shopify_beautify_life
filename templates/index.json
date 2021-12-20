@@ -530,7 +530,7 @@
         "layout": "image_first",
         "height": "adapt",
         "image_with_text_bk_color": "#dd2323",
-        "color_scheme": "image_with_text_bk_color",
+        "color_scheme": "gradient",
         "image_with_text_margin_top": "",
         "image_with_text_margin_bottom": ""
       }
