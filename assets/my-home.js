@@ -27,9 +27,10 @@ function my_home() {
   let my_header_sticky = document.getElementsByClassName('my_header_sticky');
   let my_backtop = document.getElementById('my_backtop');
 
-
+    
   // footer sticky
   if(sticky.length > 0) {
+    window.onresize = function() {console.log(12123123123123);}
     if(document.body.clientWidth < 1024) {
       main.style.marginBottom = 0 + "px";
       my_footer_sticky.style.opacity = 1;
