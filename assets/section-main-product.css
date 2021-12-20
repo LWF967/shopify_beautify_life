@@ -506,7 +506,9 @@ a.product__text {
 }
 
 .product-media-modal {
-  background-color: rgb(var(--color-background));
+/*   lzxchange  */
+/*   background-color: rgb(var(--color-background)); */
+  background-color: #fff;
   height: 100%;
   position: fixed;
   top: 0;
