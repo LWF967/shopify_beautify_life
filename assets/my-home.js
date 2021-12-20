@@ -10,6 +10,7 @@ if(myHomeFreshDesignMode){
 
 window.onload = function() {
   my_home();
+  alert(footer_bottom_height);
   // hide_banner variant define in promo-bar.liquid
   hide_banner.style.marginTop = 0 + 'px';
   hide_banner.style.transition = "all .5s";
@@ -38,7 +39,7 @@ function my_home() {
   let content = document.getElementsByClassName('content')[0];
   let my_header_sticky = document.getElementsByClassName('my_header_sticky');
   let my_backtop = document.getElementById('my_backtop');
-  alert(footer_bottom_height);
+  
 
 
   // footer sticky
