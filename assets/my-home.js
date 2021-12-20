@@ -6,7 +6,7 @@ if(myHomeFreshDesignMode){
     my_home();
   },true);
 }
-// my_home();
+my_home();
 window.onresize = function () {
   my_home();
 }
