@@ -219,7 +219,7 @@
   }
 </style>
 
-<div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center my_top_bar_center my_width" style="{%-if section.settings.color_scheme =="bg"-%} background-color:{{section.settings.bg | color_modify: 'alpha', bg_op}}{%-else-%} background-color:{{settings.color_page_background | color_modify: 'alpha', bg_op}}{%-endif-%}"
+<div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center my_top_bar_center my_width" style="{%-if section.settings.color_scheme =="bg"-%} background-color:{{section.settings.bg }}{%-else-%} background-color:{{settings.color_page_background }}{%-endif-%}"
      {%- if settings.top_bar == false and settings.top_bar_home_page_only -%}style="display: none;"
      {%- elsif settings.top_bar == false and settings.top_bar_home_page_only == false -%}style="display: none;"
      {%- elsif settings.top_bar and settings.top_bar_home_page_only and request.page_type != 'index' -%}style="display: none;"
