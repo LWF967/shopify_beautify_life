@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}" style="{%-if section.settings.background_style =="gradient"-%} background-color:{{settings.color_page_background}}{%-endif-%}">
   <div class="page-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
       <h2 class="title">
@@ -170,17 +170,13 @@
           "value": "none",
           "label": "t:sections.multicolumn.settings.background_style.options__1.label"
         },
-        {
-          "value": "primary",
-          "label": "t:sections.multicolumn.settings.background_style.options__2.label"
-        },
-        {
-          "value": "secondary",
-          "label": "t:sections.multicolumn.settings.background_style.options__3.label"
+		{
+          "value": "gradient",
+          "label": "Global-page background"
         }
       ],
-      "default": "primary",
-      "label": "t:sections.multicolumn.settings.background_style.label"
+      "default": "gradient",
+      "label": "Background options"
     },
     {
       "type": "text",
