@@ -82,7 +82,9 @@
 
 <div class="newsletter center spaced-section{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif %}"
      style="{%- if section.settings.newsletter_margin_top != blank -%}margin-top: {{ section.settings.newsletter_margin_top }}px; {%- endif -%}{%- if section.settings.newsletter_margin_bottom != blank -%}margin-bottom:{{ section.settings.newsletter_margin_bottom }}px;{%- endif -%}">
-  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient my_newsletter_padding" {%- if section.settings.newsletter_bk_box-%} style="background-color:{{ section.settings.newsletter_bk_color }}" {%- endif -%}>
+<!--   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient my_newsletter_padding" {%- if section.settings.newsletter_bk_box-%} style="background-color:{{ section.settings.newsletter_bk_color }}" {%- endif -%}> -->
+      <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient my_newsletter_padding"  style="{%-if section.settings.color_scheme =="newsletter_bk_color"-%} background-color:{{section.settings.newsletter_bk_color}}{%-else-%} background:var(--color-base-background-1){%-endif-%}">
+
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
@@ -158,6 +160,22 @@
       "label": "Background",
       "default": "#f3f3f3"
      },
+	{
+          "type": "select",
+          "id": "color_scheme",
+          "options": [
+            {
+              "value": "background-1",
+              "label": "全局背景"
+            },
+            {
+              "value": "newsletter_bk_color",
+              "label": "自己的背景"
+            }
+          ],
+          "default": "background-1",
+          "label": "全局背景"
+        },
 	{
         "type": "checkbox",
         "id": "newsletter_bk_box",
