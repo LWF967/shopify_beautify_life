@@ -7,7 +7,7 @@
           endif          
         -%}
 
-<div class="contatin spaced-section" style="background-color:{{setting.background_color}}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}"> 
+<div class="contatin spaced-section" style="{%-if settings.color_scheme =="background_color"-%} background-color:{{settings.background_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%}{%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}"> 
   <div class="left ">
     <div class="felx_box h_45">
       <div class="f5 felx_box" style=" font: bold {{section.settings.heading_font_size}}px 'Droid Sans', Arial, sans-serif; line-height:{{setting.heading_font_size}}px !important; height:100%; color:{{section.settings.color_top}};">{{section.settings.heading_text | truncate: 25 ,"" }}</div>
