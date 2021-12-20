@@ -21,7 +21,7 @@
 .header-text >a:not(.cg),.dark_mode_true 
 .header-text>a:not(.cg) { color:{{section.settings.cl_a_tr}}  } 
 {%- else -%}
-{%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}h__top,.h__top.bgbl { background-color: {{ section.settings.bg | color_modify: 'alpha', bg_op }};{% if section.settings.show_border %}border-bottom: 1px solid {{ section.settings.bd_cl }};{% endif %}color:{{section.settings.cl}} } .header-text >.cg,.h__top .nt_currency { color:{{section.settings.cl}}  } .h__top .cr { color:{{section.settings.cl_cr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{section.settings.cl_a}}  } 
+{%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}h__top,.h__top.bgbl { {%-if section.settings.color_scheme =="bg"-%} background-color:{{section.settings.bg | color_modify: 'alpha', bg_op}}{%-else-%} background-color:{{settings.color_page_background | color_modify: 'alpha', bg_op}}{%-endif-%} }};{% if section.settings.show_border %}border-bottom: 1px solid {{ section.settings.bd_cl }};{% endif %}color:{{section.settings.cl}} } .header-text >.cg,.h__top .nt_currency { color:{{section.settings.cl}}  } .h__top .cr { color:{{section.settings.cl_cr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{section.settings.cl_a}}  } 
 {%- endif -%}
 {%- endstyle -%}
 
@@ -219,7 +219,7 @@
   }
 </style>
 
-<div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center my_top_bar_center my_width" style="{%-if section.settings.color_scheme =="bg"-%} background-color:{{section.settings.bg }}{%-else-%} background-color:{{settings.color_page_background }}{%-endif-%}"
+<div class="h__top bgbl pt__10 pb__10 fs__12 flex fl_center al_center my_top_bar_center my_width" style=""
      {%- if settings.top_bar == false and settings.top_bar_home_page_only -%}style="display: none;"
      {%- elsif settings.top_bar == false and settings.top_bar_home_page_only == false -%}style="display: none;"
      {%- elsif settings.top_bar and settings.top_bar_home_page_only and request.page_type != 'index' -%}style="display: none;"
