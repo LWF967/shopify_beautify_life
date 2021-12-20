@@ -247,7 +247,7 @@
 
 {%- style -%}
 .my_footer_a_hover { text-decoration: none; display: inline-block; transition: all .3s; } .my_footer_a_hover:hover { color: {{ section.settings.hover_link_color }} !important; }
-.my_footer_bgcolor { background:  {{ section.settings.background_color }}; }
+.my_footer_bgcolor { {%-if section.settings.color_scheme =="background_color"-%} background:{{section.settings.background_color}}{%-else-%} background:{{settings.color_page_background}}{%-endif-%} }
 
 .my_footer_heading { color: {{ section.settings.heading_color }}; font-size: 18px; margin-bottom: 30px; margin-top: 0; font-weight: 700; }
 .my_footer_item_width { flex: 0 0 {{ section.blocks.settings.container_width }}; max-width: {{ section.blocks.settings.container_width }}; }
