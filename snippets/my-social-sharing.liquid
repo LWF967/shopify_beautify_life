@@ -127,7 +127,6 @@
     left: calc(50% - 5px);
     border-width: 5px;
     border-style: solid;
-    border-color: {{ settings.color_icon }};
     opacity: 0;
     transform: translateY(5px);
     pointer-events: none;
@@ -140,14 +139,14 @@
   .my_main_product_info .my_a_padding::before,
   .my_password_icon .my_a_padding::before {
     top: -10px;
-    border-color: #000 transparent transparent transparent;
+    border-color: {{ settings.color_icon }} transparent transparent transparent;
   }
   
   .icon_flex_c .my_a_padding::before,
   .icon_flex_l .my_a_padding::before,
   .icon_flex_r .my_a_padding::before {
     top: 10px;
-    border-color: transparent transparent #000 transparent;
+    border-color: transparent transparent {{ settings.color_icon }} transparent;
   }
   
   .my_a_padding:hover .ts_style svg { 
