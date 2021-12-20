@@ -175,7 +175,7 @@
 .list--inline>li a {
    touch-action: manipulation;
    text-decoration: none;
-   color: rgba(var(--color-foreground),.75);
+   color: rgba(var(--color-button-secondary-label),.75);
 }    
     
    
