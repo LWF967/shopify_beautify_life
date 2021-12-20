@@ -80,7 +80,7 @@
 }
 
 .multicolumn:not(.background-none) .multicolumn-card {
-  background: rgba(var(--color-foreground), 0.04);
+  background: var(--color-foreground-rgba);
   height: 100%;
 }
 
