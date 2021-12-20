@@ -753,7 +753,7 @@
         "image_ratio": "adapt",
         "column_alignment": "left",
         "testimonials_bk_color": "#1eec51",
-        "background_style": "primary",
+        "background_style": "gradient",
         "button_label": "",
         "button_link": "",
         "testimonials_margin_top": "",
