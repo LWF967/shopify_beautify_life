@@ -43,7 +43,7 @@ function my_home() {
       let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
 
       main.style.zIndex = 899;
-      main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
+      main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + 60 + "px";
       my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
       my_footer_sticky.style.opacity = 1;
       promo_bar.style.zIndex = 898;
