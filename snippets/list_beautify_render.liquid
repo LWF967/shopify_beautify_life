@@ -668,7 +668,7 @@
    
 	// slidesPerView:{{grid}},
     slidesPerGroup :  {{grid}},
-    loopedSlides: {{grid}},
+   
     // 如果需要分页器
     pagination: {
       el: '.swiper-pagination-{{section.id}}',
@@ -693,16 +693,18 @@
 
     breakpoints: { 
       320: {  //当屏幕宽度大于等于320
-    
+    	loopedSlides: 2,
      	slidesPerView:2,
         spaceBetween: 15
       },
       768: {  //当屏幕宽度大于等于768 
+      	loopedSlides: 2,
  		slidesPerView:3,
         spaceBetween: 15
       },
       1024: {  //当屏幕宽度大于等于1024
       
+      	loopedSlides: {{grid}},
   		slidesPerView:{{grid}},
         spaceBetween: 30
       }
