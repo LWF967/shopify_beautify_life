@@ -14,9 +14,9 @@ window.onload = function() {
   hide_banner.style.transition = "all .5s";
 }
 
-// window.onresize = function() {
-//   my_home();
-// }
+window.onresize = function() {
+  my_home();
+}
 
 function my_home() {
   let promo_bar = document.getElementById('shopify-section-promo-bar');
