@@ -3,16 +3,7 @@
 var myHomeFreshDesignMode = Shopify.designMode || false;
 if(myHomeFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {
-    window.onload = function() {
-      my_home();
-      // hide_banner variant define in promo-bar.liquid
-      hide_banner.style.marginTop = 0 + 'px';
-      hide_banner.style.transition = "all .5s";
-    }
-
-    window.onresize = function() {
-      my_home();
-    }
+    my_home();
   },true);
 }
 
