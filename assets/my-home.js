@@ -24,7 +24,7 @@ function my_home() {
   let header_zx = document.getElementById('shopify-section-header');
   //   let footer_top = document.getElementById('shopify-section-footer-top');
   let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-  let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+//   let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
   let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
   let main = document.getElementById('MainContent');
   let sticky = document.getElementsByClassName('my_footer_sticky');
@@ -54,7 +54,8 @@ function my_home() {
     }
     else if(document.body.clientWidth >= 1024) {
       let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
-
+      let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+      
       main.style.zIndex = 899;
       main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
       my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
