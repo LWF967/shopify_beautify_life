@@ -4,13 +4,12 @@ var myHomeFreshDesignMode = Shopify.designMode || false;
 if(myHomeFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {
     my_home();
-    my_home();
+    alert(document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight);
   },true);
 }
 
 window.onload = function() {
   my_home();
-  alert(document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight);
   // hide_banner variant define in promo-bar.liquid
   hide_banner.style.marginTop = 0 + 'px';
   hide_banner.style.transition = "all .5s";
