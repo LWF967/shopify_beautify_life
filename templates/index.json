@@ -69,7 +69,7 @@
           "type": "article",
           "settings": {
             "article": "tt1\/tt1",
-            "width": "50%",
+            "width": "100%",
             "alignment": "center",
             "cover_image": "large",
             "show_author": false,
@@ -529,6 +529,7 @@
         "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
         "layout": "image_first",
         "height": "adapt",
+        "image_with_text_bk_color": "#FFFFFF",
         "color_scheme": "background-1",
         "image_with_text_margin_top": "",
         "image_with_text_margin_bottom": ""
@@ -870,6 +871,7 @@
       ],
       "settings": {
         "newsletter_bk_color": "#f3f3f3",
+        "color_scheme": "gradient",
         "full_width": true,
         "button_design": "1",
         "newsletter_input_color": "#ababab",
