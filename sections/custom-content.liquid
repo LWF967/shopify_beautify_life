@@ -267,7 +267,7 @@
                       {%- endstyle -%}
 
                       <div id="{{ img_wrapper_id }}" class="article__grid-image-wrapper article__grid-image-wrapper--{{ cover_image }} article-image-wrapper js">
-                   <div class="article__grid-image-container" style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100}}%;">
+                   <div class="article__grid-image-container">
                                <img
 
                                   srcset="{%- if img_url.width >= 165 -%}{{ img_url | img_url: '165x' }} 165w,{%- endif -%}
