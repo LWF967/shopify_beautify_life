@@ -634,6 +634,13 @@
   }
 </style>
 
+<script>
+  let asfafsdf = document.getElementsByClassName('product-media-modal media-modal')[0];
+  asfafsdf.onclick = function() {
+    console.log(asfafsdf);
+  }
+</script>
+
 {% javascript %}
   if (!customElements.get('product-modal')) {
     customElements.define('product-modal', class ProductModal extends ModalDialog {
