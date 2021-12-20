@@ -198,7 +198,7 @@
       {
         "type": "checkbox",
         "id": "color_page_background_color",
-        "default": false,
+        "default": true,
         "label": "Global-page background"
       },
       {
