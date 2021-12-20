@@ -9,6 +9,8 @@ if(myHomeFreshDesignMode){
 window.onload = function() {
   my_home();
   aaaaaa();
+  hide_banner.style.marginTop = 0 + 'px';
+  hide_banner.style.transition = "all .5s";
 }
 window.onresize = function() {
   my_home();
