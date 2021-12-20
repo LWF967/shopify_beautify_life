@@ -436,7 +436,10 @@ a.product__text {
 }
 
 .product__media-icon {
-  background-color: rgb(var(--color-background));
+  
+/*   lzxchange  */
+/*   background-color: rgb(var(--color-background)); */
+  background-color: #fff;
   border-radius: 50%;
   border: 0.1rem solid rgba(var(--color-foreground), 0.1);
   color: rgb(var(--color-foreground));
