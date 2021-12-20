@@ -30,33 +30,35 @@ function my_home() {
     
   // footer sticky
   if(sticky.length > 0) {
-    window.onresize = function() {console.log('screen change');}
-    if(document.body.clientWidth < 1024) {
-      main.style.marginBottom = 0 + "px";
-      my_footer_sticky.style.opacity = 1;
-      footer_bottom.style.position = 'static';
-      console.log("less 1024");
-    }
-    else if(document.body.clientWidth >= 1024) {
-      let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+    window.onresize = function() {console.log('screen change');my_screen_change();}
+    function my_screen_change() {
+      if(document.body.clientWidth < 1024) {
+        main.style.marginBottom = 0 + "px";
+        my_footer_sticky.style.opacity = 1;
+        footer_bottom.style.position = 'static';
+        console.log("less 1024");
+      }
+      else if(document.body.clientWidth >= 1024) {
+        let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
 
-      main.style.zIndex = 899;
-      main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + 60 + "px";
-      my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
-      my_footer_sticky.style.opacity = 1;
-      promo_bar.style.zIndex = 898;
-      top_bar.style.zIndex = 899;
-      header_zx.style.zIndex = 898;
-      footer_bottom.style.position = 'fixed';
-      footer_bottom.style.bottom = 0;
-      footer_bottom.style.width = '100%';
+        main.style.zIndex = 899;
+        main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + 60 + "px";
+        my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
+        my_footer_sticky.style.opacity = 1;
+        promo_bar.style.zIndex = 898;
+        top_bar.style.zIndex = 899;
+        header_zx.style.zIndex = 898;
+        footer_bottom.style.position = 'fixed';
+        footer_bottom.style.bottom = 0;
+        footer_bottom.style.width = '100%';
 
-//       console.log("top:"+my_footer_sticky_height); 
-//       console.log("bottom:"+footer_bottom_height);
-//       console.log("footer:"+my_footer_sticky_height+footer_bottom_height); 
-//       console.log("main:"+main.style.marginBottom); 
-      console.log("===================");        
-      console.log("more 1024");
+  //       console.log("top:"+my_footer_sticky_height); 
+  //       console.log("bottom:"+footer_bottom_height);
+  //       console.log("footer:"+my_footer_sticky_height+footer_bottom_height); 
+  //       console.log("main:"+main.style.marginBottom); 
+        console.log("===================");        
+        console.log("more 1024");
+      }
     }
   }
   else {
