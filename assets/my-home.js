@@ -31,11 +31,7 @@ function my_home() {
   // footer sticky
   if(sticky.length > 0) {      
     if(document.body.clientWidth < 1024) {
-      window.onresize = function() {
-        main.style.marginBottom = 0 + "px";
-        footer_bottom.style.bottom = 0;
-        console.log("size change");
-      }
+      main.style.marginBottom = 0 + "px";
     }
     else if(document.body.clientWidth >= 1024) {
       let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
