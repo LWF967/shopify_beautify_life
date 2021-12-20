@@ -21,7 +21,7 @@
 .header-text >a:not(.cg),.dark_mode_true 
 .header-text>a:not(.cg) { color:{{section.settings.cl_a_tr}}  } 
 {%- else -%}
-{%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}h__top,.h__top.bgbl { background-color: {{ section.settings.bg | color_modify: 'alpha', bg_op }};{% if section.settings.show_border %}border-bottom: 1px solid {{ section.settings.bd_cl }};{% endif %}color:{{section.settings.cl}} } .header-text >.cg,.h__top .nt_currency { color:{{section.settings.cl}}  } .h__top .cr { color:{{section.settings.cl_cr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{section.settings.cl_a}}  } 
+{%- assign bg_op = section.settings.bg_op | divided_by: 100.0 -%}h__top,.h__top.bgbl { background-color: {%-if section.settings.color_scheme =="bg"-%}{{section.settings.bg | color_modify: 'alpha', bg_op}}{%-else-%}{{settings.color_page_background | color_modify: 'alpha', bg_op}}{%-endif-%};{% if section.settings.show_border %}border-bottom: 1px solid {{ section.settings.bd_cl }};{% endif %}color:{{section.settings.cl}} } .header-text >.cg,.h__top .nt_currency { color:{{section.settings.cl}}  } .h__top .cr { color:{{section.settings.cl_cr}}  } .header-text >a:not(.cg),.dark_mode_true .header-text>a:not(.cg) { color:{{section.settings.cl_a}}  } 
 {%- endif -%}
 {%- endstyle -%}
 
