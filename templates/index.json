@@ -34,7 +34,7 @@
           "type": "product",
           "settings": {
             "product": "text4",
-            "width": "50%",
+            "width": "25%",
             "alignment": "center"
           }
         },
@@ -693,7 +693,7 @@
         "163835233452da67c2-1"
       ],
       "settings": {
-        "rich_text_beautify_color": "#FFF",
+        "rich_text_beautify_color": "#ffffff",
         "color_scheme": "rich_text_beautify_color",
         "full_width": false,
         "content_full_width": false,
