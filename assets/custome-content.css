@@ -411,7 +411,9 @@ max-width:30rem;
 .btn--small {
   padding: 8px 10px;
   font-size: calc(((12) / (var(--font-size-base))) * 1em);
-  line-height: 1; }
+  line-height: 1; 
+  max-height: fit-content;  	
+    }
 
 .btn--tertiary {
   background-color: transparent;
