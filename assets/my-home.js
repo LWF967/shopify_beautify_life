@@ -69,7 +69,7 @@ function my_home() {
       console.log("bottom:"+footer_bottom_height);
       console.log("footer:"+my_footer_sticky_height+footer_bottom_height); 
       console.log("main:"+main.style.marginBottom); 
-//       console.log("===================");        
+      console.log("===================");        
 //       console.log("more 1024");
     }
   }
