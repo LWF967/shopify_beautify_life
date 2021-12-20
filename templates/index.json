@@ -646,7 +646,7 @@
       "settings": {
         "product": "text4",
         "featured_bk_color": "#1eec5e",
-        "color_scheme": "featured_bk_color",
+        "color_scheme": "gradient",
         "show_share_buttons": true,
         "hide_variants": false,
         "enable_video_looping": false,
@@ -752,7 +752,6 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
-        "testimonials_bk_color": "#1eec51",
         "background_style": "gradient",
         "button_label": "",
         "button_link": "",
