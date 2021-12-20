@@ -635,10 +635,12 @@
 </style>
 
 <script>
-  let asfafsdf = document.getElementsByClassName('product-media-modal media-modal')[0];
-  asfafsdf.onclick = function() {
-    console.log(asfafsdf);
-  }
+  let asfafsdf = document.getElementsByClassName('product__media-item grid__item slider__slide');
+  for(let i = 0; i < asfafsdf.length; i++) {
+    asfafsdf[i].onclick = function() {
+      console.log(i);
+    }
+}
 </script>
 
 {% javascript %}
