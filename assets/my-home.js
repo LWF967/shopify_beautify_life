@@ -6,18 +6,18 @@ if(myHomeFreshDesignMode){
     my_home();
   },true);
 }
+
 window.onload = function() {
   my_home();
-  aaaaaa();
+  // hide_banner variant define in promo-bar.liquid
   hide_banner.style.marginTop = 0 + 'px';
   hide_banner.style.transition = "all .5s";
 }
+
 window.onresize = function() {
   my_home();
 }
-function aaaaaa() {
-  console.log(123);
-}
+
 function my_home() {
   let promo_bar = document.getElementById('shopify-section-promo-bar');
   let top_bar = document.getElementById('shopify-section-top-bar');
