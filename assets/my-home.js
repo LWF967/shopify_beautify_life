@@ -30,7 +30,7 @@ function my_home() {
     
   // footer sticky
   if(sticky.length > 0) {
-    window.onresize = function() {console.log(12123123123123);}
+    window.onresize = function() {console.log('screen change');}
     if(document.body.clientWidth < 1024) {
       main.style.marginBottom = 0 + "px";
       my_footer_sticky.style.opacity = 1;
@@ -51,10 +51,10 @@ function my_home() {
       footer_bottom.style.bottom = 0;
       footer_bottom.style.width = '100%';
 
-      console.log("top:"+my_footer_sticky_height); 
-      console.log("bottom:"+footer_bottom_height);
-      console.log("footer:"+my_footer_sticky_height+footer_bottom_height); 
-      console.log("main:"+main.style.marginBottom); 
+//       console.log("top:"+my_footer_sticky_height); 
+//       console.log("bottom:"+footer_bottom_height);
+//       console.log("footer:"+my_footer_sticky_height+footer_bottom_height); 
+//       console.log("main:"+main.style.marginBottom); 
       console.log("===================");        
       console.log("more 1024");
     }
