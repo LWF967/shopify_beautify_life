@@ -14,7 +14,7 @@
     "show_search_icon": true,
     "Show_dropdown_arrow": true,
     "header_background_color": "#ffffff",
-    "color_page_background_color": true,
+    "color_page_background_color": false,
     "header_icon_and_text_color": "#0354fa",
     "header_sticky_background_color": "#e2e2e2",
     "header_sticky_icon_and_text_color": "#000000",
