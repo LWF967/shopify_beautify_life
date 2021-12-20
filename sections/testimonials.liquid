@@ -103,7 +103,8 @@
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}"
-     style="{%- if section.settings.testimonials_margin_top != blank -%}margin-top: {{ section.settings.testimonials_margin_top }}px; {%- endif -%}{%- if section.settings.testimonials_margin_bottom != blank -%}margin-bottom:{{ section.settings.testimonials_margin_bottom }}px;{%- endif -%}">
+     style="{%- if section.settings.testimonials_margin_top != blank -%}margin-top: {{ section.settings.testimonials_margin_top }}px; {%- endif -%}{%- if section.settings.testimonials_margin_bottom != blank -%}margin-bottom:{{ section.settings.testimonials_margin_bottom }}px;{%- endif -%}
+            {%-if section.settings.color_scheme =="newsletter_bk_color"-%} background-color:{{section.settings.newsletter_bk_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%}">
   <div class="page-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %} my_testimonials_title my_clear_margin my_section_margin_default">
       <h2 class="title my_font_size_heading_default my_font_weight_default">
@@ -448,6 +449,10 @@
         {
           "value": "secondary",
           "label": "t:sections.multicolumn.settings.background_style.options__3.label"
+        },
+		{
+          "value": "testimonials_bk_color",
+          "label": "Testimonials background"
         },
 		{
           "value": "gradient",
