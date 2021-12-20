@@ -212,12 +212,6 @@
         "label": "Background color",
         "default": "#f9f9f9"
       },
-      {
-        "type": "color",
-        "id": "background_product_color",
-        "label": "Background product color",
-        "default": "#FFF"
-      },
 	{
       "type": "select",
        "id": "color_scheme",
@@ -237,7 +231,30 @@
         ],
       "default": "gradient",
        "label": "Background options"
-     },
+     }, 
+      {
+        "type": "color",
+        "id": "background_product_color",
+        "label": "Background product color",
+        "default": "#FFF"
+      },
+	{
+      "type": "select",
+       "id": "color_schemes",
+       "options": [
+        {
+         "value": "gradient",
+         "label": "Global-page background" 
+        },
+        {
+        "value": "background_product_color",
+       "label": "Background product color"
+        }
+        ],
+      "default": "gradient",
+       "label": "Background options"
+     }, 
+     
       {
         "type": "text",
         "id": "daily_deal_of_the_day_margin_top",
