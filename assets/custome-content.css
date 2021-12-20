@@ -414,13 +414,13 @@ max-width:30rem;
 
 .btn--tertiary {
   background-color: transparent;
-  color: var(--color-foreground);
-  border-color:var(--color-foreground);}
+  color: var(--color-button-secondary-label);
+  border-color:var(--color-button-secondary-label);}
 
   .btn--tertiary:not([disabled]):hover, .btn--tertiary:focus {
     background-color: transparent;
-    color: var(--color-foreground);
-    border-color: var(--color-foreground); }
+    color: var(--color-button-secondary-label);
+    border-color: var(--color-button-secondary-label); }
    
 
 
