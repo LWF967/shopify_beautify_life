@@ -108,7 +108,7 @@
         "sub_title": "Popular this week",
         "collection": "frontpage",
         "products_to_show": 8,
-        "grid": 1,
+        "grid": 2,
         "show_view_all": false,
         "swipe_on_mobile": false,
         "image_ratio": "adapt",
@@ -870,7 +870,6 @@
       ],
       "settings": {
         "newsletter_bk_color": "#f3f3f3",
-        "newsletter_bk_box": true,
         "full_width": true,
         "button_design": "1",
         "newsletter_input_color": "#ababab",
