@@ -667,7 +667,7 @@
 
    
 	// slidesPerView:{{grid}},
-    slidesPerGroup :  {{grid}},
+   
    
     // 如果需要分页器
     pagination: {
@@ -693,17 +693,20 @@
 
     breakpoints: { 
       320: {  //当屏幕宽度大于等于320
+        slidesPerGroup :  2,
     	loopedSlides: 2,
      	slidesPerView:2,
         spaceBetween: 15
       },
       768: {  //当屏幕宽度大于等于768 
-      	loopedSlides: 2,
+      	slidesPerGroup : 3, 
+      	loopedSlides: 3,
  		slidesPerView:3,
         spaceBetween: 15
       },
       1024: {  //当屏幕宽度大于等于1024
       
+      	slidesPerGroup :  {{grid}},
       	loopedSlides: {{grid}},
   		slidesPerView:{{grid}},
         spaceBetween: 30
@@ -768,17 +771,20 @@
   	breakpoints: { 
     
         320: {  //当屏幕宽度大于等于320
+          slidesPerGroup : 2,
           loopedSlides: 2,
           slidesPerView:2,
           spaceBetween: 15
         },
         768: {  //当屏幕宽度大于等于768 
-          loopedSlides: 2,
+          slidesPerGroup : 3,
+          loopedSlides: 3,
           slidesPerView:3,
           spaceBetween: 15
         },
         1024: {  //当屏幕宽度大于等于1024
-
+          slidesPerGroup : swiperBeautifyWrapperGrid,
+		  loopedSlides: swiperBeautifyWrapperGrid,
           slidesPerView:swiperBeautifyWrapperGrid,
           spaceBetween: 30
         }
