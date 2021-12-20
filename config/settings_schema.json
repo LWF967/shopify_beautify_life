@@ -196,6 +196,12 @@
         "label": "Background"
       },
       {
+        "type": "checkbox",
+        "id": "color_page_background_color",
+        "default": false,
+        "label": "Global-page background"
+      },
+      {
         "type": "range",
         "id": "header_background_opacity",
         "default": 100,
