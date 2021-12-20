@@ -30,6 +30,7 @@
     "image_overlay_opacity": 10,
     "color_page_borders_and_lines": "#ff0000",
     "colors_page_stickiness": "#d75656",
+    "color_icon": "#b300ff",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
     "page_width": "1600",
@@ -289,6 +290,7 @@
         "settings": {
           "copyrights_layouts": "Two columns",
           "background_color": "#ffffff",
+          "foot_bottom_background_style": "background_color",
           "text_color": "#000000",
           "link_color": "#0031ff",
           "link_hover_color": "#a700ff"
