@@ -262,9 +262,15 @@
       },
       {
         "type": "color",
-        "id": "colors_sub_title_text",
+        "id": "colors_heading_text",
         "default": "#333",
         "label": "Heading color"
+      },
+      {
+        "type": "color",
+        "id": "colors_sub_title_text",
+        "default": "#333",
+        "label": "Sub-text-color"
       },
       {
         "type": "color",
