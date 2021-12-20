@@ -4,7 +4,6 @@ var myHomeFreshDesignMode = Shopify.designMode || false;
 if(myHomeFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {
     my_home();
-    alert(document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight);
   },true);
 }
 
@@ -15,9 +14,9 @@ window.onload = function() {
   hide_banner.style.transition = "all .5s";
 }
 
-window.onresize = function() {
-  my_home();
-}
+// window.onresize = function() {
+//   my_home();
+// }
 
 function my_home() {
   let promo_bar = document.getElementById('shopify-section-promo-bar');
