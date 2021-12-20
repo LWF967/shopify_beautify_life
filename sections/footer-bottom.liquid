@@ -86,7 +86,7 @@
     }
   }
 </style>
-
+<!--  style="{%-if section.settings.foot_bottom_background_style =="background_color"-%} background-color:{{section.settings.background_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%}" -->
 <footer class="footer color-{{ section.settings.color_scheme }} gradient my_footer_bottom_color">
   <div class="footer__content-bottom my_footer_bottom_padding">
     <div class="footer__content-bottom-wrapper page-width">
@@ -227,22 +227,7 @@
       "label": "Background",
       "default": "#FFFFFF"
     },
-	{
-      "type": "select",
-      "id": "foot_bottom_background_style",
-      "options": [
-        {
-          "value": "background_color",
-          "label": "Footer-bottom background"
-        },
-		{
-          "value": "gradient",
-          "label": "Global-page background" 
-        }
-      ],
-      "default": "background_color",
-      "label": "Background options"
-    },
+	
 	{
       "type": "color",
       "id": "text_color",
