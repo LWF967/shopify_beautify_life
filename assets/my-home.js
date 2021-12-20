@@ -35,6 +35,7 @@ function my_home() {
       if(document.body.clientWidth < 1024) {
         main.style.marginBottom = 0 + "px";
         my_footer_sticky.style.opacity = 1;
+        console.log("less 1024");
       }
       else if(document.body.clientWidth >= 1024) {
         let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
@@ -54,6 +55,8 @@ function my_home() {
         console.log("bottom:"+footer_bottom_height);
         console.log("footer:"+my_footer_sticky_height+footer_bottom_height); 
         console.log("main:"+main.style.marginBottom); 
+        console.log("===================");        
+        console.log("more 1024");
       }
     }
   }
