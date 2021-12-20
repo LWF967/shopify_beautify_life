@@ -1,14 +1,11 @@
 // lzx change
 // footer sticky
-var myHomeFreshDesignMode = Shopify.designMode || false;
-if(myHomeFreshDesignMode){
-  document.addEventListener('shopify:section:load',() => {
-    let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-    let aasdas = $(footer_bottom).outerHeight();
-  console.log(aasdas);
-    my_home();
-  },true);
-}
+// var myHomeFreshDesignMode = Shopify.designMode || false;
+// if(myHomeFreshDesignMode){
+//   document.addEventListener('shopify:section:load',() => {
+//     my_home();
+//   },true);
+// }
 
 window.onload = function() {
   my_home();
