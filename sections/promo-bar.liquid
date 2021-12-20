@@ -183,10 +183,14 @@
   hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
   //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-  window.onload = function () {
+//   window.onload = function () {
+//     hide_banner.style.marginTop = 0 + 'px';
+//     hide_banner.style.transition = "all .5s";
+//   }
+  setTimeout(function() {
     hide_banner.style.marginTop = 0 + 'px';
     hide_banner.style.transition = "all .5s";
-  }
+  }, 500);
 </script>
 
 {%- schema -%}
