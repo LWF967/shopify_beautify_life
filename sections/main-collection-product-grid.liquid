@@ -694,12 +694,14 @@
 <script>
   let menuopen = document.getElementsByClassName('menu-opening');
   let main_header = document.getElementById('shopify-section-header');
+  let main_top_bar = document.getElementById('shopify-section-top-bar');
   let filter_and_sort = document.getElementsByClassName('mobile-facets__open-wrapper focus-offset y-center')[0]; 
   filter_and_sort.onclick = function() {
     if(menuopen.length > 0) {
 //       console.log(1);
     } else {
       main_header.style.zIndex = 1;
+      main_top_bar.style.zIndex = 2;
 //       console.log(2);
     }
   }
