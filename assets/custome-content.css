@@ -176,6 +176,7 @@
    touch-action: manipulation;
    text-decoration: none;
    color: var(--color-button-secondary-label);
+   border:1px solid;  
 }    
     
    
