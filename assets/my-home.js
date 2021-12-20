@@ -61,6 +61,8 @@ function my_home() {
   }
   else {
     main.style.marginBottom = 0 + "px";
+          my_footer_sticky.style.opacity = 1;
+
   }
   
 
