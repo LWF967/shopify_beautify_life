@@ -150,13 +150,13 @@
       hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
       //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-//       window.onload = function () {
-    setTimeout(function() {
-      hide_banner.style.marginTop = 0 + 'px';
-      hide_banner.style.transition = "all .5s";
-    }, 2000);
-        
-//       }
+    window.onload = function () {
+      setTimeout(function() {
+        hide_banner.style.marginTop = 0 + 'px';
+        hide_banner.style.transition = "all .5s";
+      }, 2000);
+
+    }
     },true);
   }
   let close = document.getElementsByClassName('show_close')[0];
