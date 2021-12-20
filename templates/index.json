@@ -486,7 +486,7 @@
         "auto_play": true,
         "auto_time": 5,
         "show_button": true,
-        "show_button_visible": "always",
+        "show_button_visible": "only_hover",
         "show_button_style": "style3",
         "show_button_color": "gray",
         "show_button_hover_color": "#ea0606",
@@ -529,8 +529,8 @@
         "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
         "layout": "image_first",
         "height": "adapt",
-        "image_with_text_bk_color": "#ffffff",
-        "color_scheme": "background-1",
+        "image_with_text_bk_color": "#dd2323",
+        "color_scheme": "image_with_text_bk_color",
         "image_with_text_margin_top": "",
         "image_with_text_margin_bottom": ""
       }
@@ -646,7 +646,7 @@
       "settings": {
         "product": "text4",
         "featured_bk_color": "#1eec5e",
-        "color_scheme": "gradient",
+        "color_scheme": "featured_bk_color",
         "show_share_buttons": true,
         "hide_variants": false,
         "enable_video_looping": false,
@@ -694,7 +694,7 @@
       ],
       "settings": {
         "rich_text_beautify_color": "#ffffff",
-        "color_scheme": "rich_text_beautify_color",
+        "color_scheme": "gradient",
         "full_width": false,
         "content_full_width": false,
         "heading_size": "large",
@@ -752,6 +752,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
+        "testimonials_bk_color": "#1eec51",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
