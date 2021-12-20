@@ -667,7 +667,7 @@
         "background_color": "#c46666",
         "color_scheme": "background_color",
         "background_product_color": "#ffffff",
-        "color_schemes": "gradient",
+        "color_schemes": "background_product_color",
         "daily_deal_of_the_day_margin_top": "",
         "daily_deal_of_the_day_margin_bottom": ""
       }
