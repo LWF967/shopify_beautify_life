@@ -8,9 +8,13 @@ if(myHomeFreshDesignMode){
 }
 window.onload = function() {
   my_home();
+  aaaaaa();
 }
 window.onresize = function() {
   my_home();
+}
+function aaaaaa() {
+  console.log(123);
 }
 function my_home() {
   let promo_bar = document.getElementById('shopify-section-promo-bar');
