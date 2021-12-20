@@ -3,15 +3,13 @@
 var myHomeFreshDesignMode = Shopify.designMode || false;
 if(myHomeFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {
-    window.onresize = function () {
-      my_home();
-    }
+    my_home();
   },true);
 }
 my_home();
-// window.onresize = function () {
-//   my_home();
-// }
+window.onresize = function () {
+  my_home();
+}
 function my_home() {
   let promo_bar = document.getElementById('shopify-section-promo-bar');
   let top_bar = document.getElementById('shopify-section-top-bar');
