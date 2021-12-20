@@ -634,20 +634,6 @@
   }
 </style>
 
-<script>
-  let asfafsdf = document.getElementsByClassName('product__media-item grid__item slider__slide');
-  for(let i = 0; i < asfafsdf.length; i++) {
-    asfafsdf[i].onclick = function() {
-      console.log(i);
-    }
-  let asdsdasxzx = document.getElementsByClassName('swiper-slide');
-    for(let i = 0; i < asdsdasxzx.length; i++) {
-      asdsdasxzx[i].onclick = function() {
-        console.log(i);
-      }
-}
-</script>
-
 {% javascript %}
   if (!customElements.get('product-modal')) {
     customElements.define('product-modal', class ProductModal extends ModalDialog {
