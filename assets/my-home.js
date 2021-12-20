@@ -2,9 +2,9 @@
 // footer sticky
 // var myHomeFreshDesignMode = Shopify.designMode || false;
 // if(myHomeFreshDesignMode){
-//   document.addEventListener('shopify:section:load',() => {
-//     my_home();
-//   },true);
+  document.addEventListener('shopify:section:load',() => {
+    my_home();
+  },true);
 // }
 
 window.onload = function() {
