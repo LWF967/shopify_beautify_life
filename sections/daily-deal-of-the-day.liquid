@@ -58,7 +58,7 @@
     </div>
   </div>
   <div class="right daily-right">
-    <div class="daily-product-box" style="background-color: {{setting.background_product_color}};">
+    <div class="daily-product-box" style="{%-if section.settings.color_schemes=="background_product_color"-%} background-color:{{section.settings.background_product_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%};>
       
        {%- if section.settings.log_image != null -%}
        <div class="daily-product  " style="overflow:hidden;">
