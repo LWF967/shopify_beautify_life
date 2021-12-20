@@ -1,7 +1,46 @@
 
 
 
-  
+ /*================ Flex item alignment ================*/
+.align--top-middle {
+  text-align: center; }
+
+.align--top-right {
+  text-align: right; }
+
+.align--middle-left {
+  -ms-flex-item-align: center;
+  -webkit-align-self: center;
+  align-self: center; }
+
+.align--center {
+  -ms-flex-item-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+  text-align: center; }
+
+.align--middle-right {
+  -ms-flex-item-align: center;
+  -webkit-align-self: center;
+  align-self: center;
+  text-align: right; }
+
+.align--bottom-left {
+  -ms-flex-item-align: flex-end;
+  -webkit-align-self: flex-end;
+  align-self: flex-end; }
+
+.align--bottom-middle {
+  -ms-flex-item-align: flex-end;
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  text-align: center; }
+
+.align--bottom-right {
+  -ms-flex-item-align: flex-end;
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+  text-align: right; }
 
   
 
