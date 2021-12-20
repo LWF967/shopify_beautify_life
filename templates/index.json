@@ -693,7 +693,8 @@
         "163835233452da67c2-1"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "rich_text_beautify_color": "#FFF",
+        "color_scheme": "rich_text_beautify_color",
         "full_width": false,
         "content_full_width": false,
         "heading_size": "large",
