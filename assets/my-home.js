@@ -3,7 +3,8 @@
 var myHomeFreshDesignMode = Shopify.designMode || false;
 if(myHomeFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {
-    console.log(123);
+    let aasdas = $(footer_bottom).outerHeight();
+  console.log(aasdas);
     my_home();
   },true);
 }
@@ -39,8 +40,7 @@ function my_home() {
   let my_header_sticky = document.getElementsByClassName('my_header_sticky');
   let my_backtop = document.getElementById('my_backtop');
   
-  let aasdas = $(footer_bottom).outerHeight();
-  console.log(aasdas);
+  
 
   // footer sticky
   if(sticky.length > 0) {
