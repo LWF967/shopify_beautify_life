@@ -36,6 +36,7 @@ function my_home() {
     if(document.body.clientWidth < 1024) {
       main.style.marginBottom = 0 + "px";
       my_footer_sticky.style.opacity = 1;
+      my_footer_sticky.style.zIndex = 1;
       footer_bottom.style.position = 'static';
       my_footer_sticky.style.marginBottom = 0;
       console.log("less 1024");
@@ -47,6 +48,7 @@ function my_home() {
       main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
       my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
       my_footer_sticky.style.opacity = 1;
+      my_footer_sticky.style.zIndex = 1;
       promo_bar.style.zIndex = 898;
       top_bar.style.zIndex = 899;
       header_zx.style.zIndex = 898;
