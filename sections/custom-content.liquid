@@ -288,7 +288,7 @@
                                   {%- if img_url.width >= 3000 -%}{{ img_url | img_url: '3000x' }} 3000w{%- endif -%}"  
                                   src="{{ img_url | img_url: '1500x' }}"
                                   sizes="
-                                  (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: columns }}px,
+                                  (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
                                   (min-width: 750px) {% if section.blocks.size > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
                                   calc(100vw - 3rem)"
                                   alt="{{ block.settings.collection.title | escape }}"
