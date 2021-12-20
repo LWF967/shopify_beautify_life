@@ -37,6 +37,7 @@ function my_home() {
       main.style.marginBottom = 0 + "px";
       my_footer_sticky.style.opacity = 1;
       footer_bottom.style.position = 'static';
+      footer_bottom.style.marginBottom = 0;
       console.log("less 1024");
     }
     else if(document.body.clientWidth >= 1024) {
