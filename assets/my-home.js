@@ -33,6 +33,7 @@ function my_home() {
     if(document.body.clientWidth < 1024) {
       window.onresize = function() {
         main.style.marginBottom = 0 + "px";
+        footer_bottom.style.bottom = 0;
         console.log("size change");
       }
     }
