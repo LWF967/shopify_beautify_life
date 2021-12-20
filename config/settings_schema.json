@@ -567,6 +567,16 @@
         "id": "colors_page_stickiness",
         "default": "#EA0606",
         "label": "Stickiness header popup"
+      },
+      {
+        "type": "header",
+        "content": "Icon"
+      },
+      {
+        "type": "color",
+        "id": "color_icon",
+        "label": "Icon color",
+        "default": "#E4E4E4"
       }
     ]
   },
