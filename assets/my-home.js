@@ -27,7 +27,9 @@ function my_home() {
   let my_header_sticky = document.getElementsByClassName('my_header_sticky');
   let my_backtop = document.getElementById('my_backtop');
 
-      window.onresize = function() {
+  window.onresize = function() {
+    console.log("change");
+  }
   // footer sticky
   if(sticky.length > 0) {      
     if(document.body.clientWidth < 1024) {
