@@ -3,7 +3,10 @@
 var myHomeFreshDesignMode = Shopify.designMode || false;
 if(myHomeFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {
-    my_home();
+    window.onload = function() {
+      my_home();
+    console.log(1);
+    }
   },true);
 }
 
