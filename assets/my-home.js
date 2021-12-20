@@ -1,6 +1,5 @@
 // lzx change
 // footer sticky
-    window.onresize = function() {console.log('screen change');
 var myHomeFreshDesignMode = Shopify.designMode || false;
 if(myHomeFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {  
@@ -61,8 +60,6 @@ function my_home() {
   }
   else {
     main.style.marginBottom = 0 + "px";
-          my_footer_sticky.style.opacity = 1;
-
   }
   
 
@@ -129,4 +126,4 @@ function my_home() {
       my_backtop.style.cursor = "default";
     }
   }
-}}
+}
