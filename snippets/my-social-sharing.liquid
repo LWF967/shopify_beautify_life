@@ -89,7 +89,7 @@
     display:inline-block;
     width: 14px;
     height: 14px;
-    color: {{ settings.colors_body_text }};
+    color: {{ settings.color_icon }};
     background: transparent; 
     transition: all .3s;
   }
@@ -99,7 +99,7 @@
     display: block;
     top: -30px;
     padding: 2px 5px;
-    background: #000;
+    background: {{ settings.color_icon }};
     color: white;
     white-space: nowrap;
     font-size: 10px;
@@ -127,6 +127,7 @@
     left: calc(50% - 5px);
     border-width: 5px;
     border-style: solid;
+    border-color: {{ settings.color_icon }};
     opacity: 0;
     transform: translateY(5px);
     pointer-events: none;
