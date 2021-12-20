@@ -64,7 +64,8 @@ function my_home() {
   }
   else {
     main.style.marginBottom = 0 + "px";
-    footer_bottom.style.marginBottom = 0;
+//     footer_bottom.style.marginBottom = 0;
+    my_footer_sticky.style.marginBottom = 0;
   }
 
 
