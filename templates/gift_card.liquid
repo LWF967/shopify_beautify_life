@@ -108,7 +108,7 @@
       {%- endif -%}
     </header>
 
-    <main class="gift-card">
+    <main class="gift-card" style="background: {{settings.color_page_background}}">
       <div class="gift-card__image-wrapper">
         <img src="{{ 'gift-card/card.svg' | shopify_asset_url }}" alt="" class="gift-card__image" height="{{ 570 | divided_by: 1.5 }}" width="570" loading="lazy">
       </div>
