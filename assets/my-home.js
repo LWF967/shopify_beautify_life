@@ -34,8 +34,8 @@ if(myHomeFreshDesignMode){
 //         }
         
 
-        main.style.zIndex = 899;
-        main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
+//         main.style.zIndex = 899;
+//         main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
         my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
         my_footer_sticky.style.opacity = 1;
         my_footer_sticky.style.zIndex = 1;
