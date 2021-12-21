@@ -50,7 +50,7 @@ function my_home() {
     }
     else if(document.body.clientWidth >= 1024) {
       let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
-      let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+      let footer_bottom_height = document.getElementsByClassName('footer__content-bottom my_footer_bottom_padding')[0].scrollHeight;
       
       main.style.zIndex = 899;
       main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
