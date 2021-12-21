@@ -1,8 +1,12 @@
 // lzx change
 // footer sticky
-var myHomeFreshDesignMode = Shopify.designMode || false;
-if(myHomeFreshDesignMode){
-  document.addEventListener('shopify:section:load',() => {
+
+
+// var myHomeFreshDesignMode = Shopify.designMode || false;
+// if(myHomeFreshDesignMode){
+//   document.addEventListener('shopify:section:load',() => {
+                            
+                            
 //     let promo_bar = document.getElementById('shopify-section-promo-bar');
 //     let top_bar = document.getElementById('shopify-section-top-bar');
 //     let header_zx = document.getElementById('shopify-section-header');
@@ -63,12 +67,19 @@ if(myHomeFreshDesignMode){
 //       main.style.marginBottom = 0;
 //       footer_bottom.style.position = 'static';
 //     }
-    my_home();
-  },true);
-}
+
+// my_home();
+//   },true);
+// }
 
 window.onload = function() {
   my_home();
+  var myHomeFreshDesignMode = Shopify.designMode || false;
+  if(myHomeFreshDesignMode){
+    document.addEventListener('shopify:section:load',() => {
+        my_home();
+    },true);
+  }
   // hide_banner variant define in promo-bar.liquid
   hide_banner.style.marginTop = 0 + 'px';
   hide_banner.style.transition = "all .5s";
