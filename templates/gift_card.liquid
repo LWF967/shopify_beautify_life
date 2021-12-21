@@ -81,7 +81,7 @@
     {{ 'template-giftcard.css' | asset_url | stylesheet_tag }}
   </head>
 
-  <body class="gradient">
+  <body class="gradient" style="background: {{settings.color_page_background}}">
     <header class="gift-card__title">
       <span class="h2">{{ shop.name }}</span>
       <h1 class="gift-card__heading" style="color:var(--font-page-heading);">{{ 'gift_cards.issued.subtext' | t }}</h1>
@@ -108,7 +108,7 @@
       {%- endif -%}
     </header>
 
-    <main class="gift-card" style="background: {{settings.color_page_background}}">
+    <main class="gift-card" >
       <div class="gift-card__image-wrapper">
         <img src="{{ 'gift-card/card.svg' | shopify_asset_url }}" alt="" class="gift-card__image" height="{{ 570 | divided_by: 1.5 }}" width="570" loading="lazy">
       </div>
