@@ -375,7 +375,7 @@
 
                     {%- if article.comments != blank and article.comments_count > 0 -%}
                       <li>
-                        <a href="{{ article.url }}#comments" class="article__comment-count btn btn--tertiary btn--small">
+                        <a href="{{ article.url }}#comments" class="article__comment-count btn btn--tertiary btn--small" >
                           {{ 'blogs.comments.comments_with_count' | t: count: article.comments_count }}
                         </a>
                       </li>
