@@ -654,8 +654,8 @@
           </summary>
           <div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
             <div class="modal-overlay"></div>
-<!--             style="background:{%- if settings.color_scheme=="gradient"-%}{{settings.color_page_background}}{%-else-%} {{settings.header_background_color }};{%-endif-%}" -->
-            <div class="search-modal__content" tabindex="-1" >
+<!--             style="background:{%- if settings.color_scheme=="gradient"-%}{{settings.color_page_background}}{%-else-%} {{settings.header_opacity_bk_color}};{%-endif-%}" -->
+            <div class="search-modal__content" tabindex="-1" style="background:{%- if section.settings.color_scheme=="gradient"-%}{{settings.color_page_background}}{%-else-%} {{section.settings.header_opacity_bk_color}};{%-endif-%}">
               {%- if settings.predictive_search_enabled -%}
                 <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
               {%- endif -%} 
@@ -953,7 +953,29 @@
       "id": "menu",
       "default": "main-menu",
       "label": "t:sections.header.settings.menu.label"
-    }
+    },
+     {
+      "type": "color",
+      "id": "header_opacity_bk_color",
+      "label": "Background",
+      "default": "#d75656"
+     },
+     {
+        "type": "select",
+       "id": "color_scheme",
+      "options": [
+        {
+       "value": "gradient",
+       "label": "Global-page background" 
+        },
+       {
+        "value": "header_opacity_bk_color",
+        "label": "Header_opacity background"
+         }
+       ],
+     "default": "gradient",
+       "label": "Background options"
+      }
   ]
 }
 {% endschema %}
