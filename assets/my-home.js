@@ -50,7 +50,7 @@ if(myHomeFreshDesignMode){
         console.log("top:"+my_footer_sticky_height); 
         console.log("bottom:"+footer_bottom_height);
         console.log("main:"+main.style.marginBottom); 
-        console.log("===================");        
+        console.log("+++++++++++++++");        
       }
     }
     else {
