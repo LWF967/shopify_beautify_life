@@ -14,13 +14,13 @@ if(myHomeFreshDesignMode){
     let sticky = document.getElementsByClassName('my_footer_sticky');
 
     // header fixed layout 
-    let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
-    let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
-    let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
-    let header = document.getElementsByClassName('header')[0];
-    let content = document.getElementsByClassName('content')[0];
-    let my_header_sticky = document.getElementsByClassName('my_header_sticky');
-    let my_backtop = document.getElementById('my_backtop');
+//     let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
+//     let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
+//     let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
+//     let header = document.getElementsByClassName('header')[0];
+//     let content = document.getElementsByClassName('content')[0];
+//     let my_header_sticky = document.getElementsByClassName('my_header_sticky');
+//     let my_backtop = document.getElementById('my_backtop');
 
     // footer sticky
     if(sticky.length > 0) {
@@ -29,8 +29,8 @@ if(myHomeFreshDesignMode){
         my_footer_sticky.style.opacity = 1;
         my_footer_sticky.style.zIndex = 1;
         my_footer_sticky.style.marginBottom = 0;
-        footer_bottom.style.position = 'inherit';
-        footer_bottom.style.margin = '0 0';
+        footer_bottom.style.position = 'static';
+//         footer_bottom.style.margin = '0 0';
       }
       else if(document.body.clientWidth >= 1024) {
         let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
@@ -56,8 +56,8 @@ if(myHomeFreshDesignMode){
     }
     else {
       main.style.marginBottom = 0;
-      footer_bottom.style.position = 'inherit';
-      footer_bottom.style.margin = '0 0';
+      footer_bottom.style.position = 'static';
+//       footer_bottom.style.margin = '0 0';
     }
   },true);
 }
