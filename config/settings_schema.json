@@ -190,16 +190,26 @@
         "content": "Header Color"
       },
       {
-        "type": "checkbox",
-        "id": "color_page_background_color",
-        "default": false,
-        "label": "Global-page background"
-      },
-      {
         "type": "color",
         "id": "header_background_color",
         "default": "#FFFFFF",
         "label": "Background"
+      },
+      {
+        "type": "select",
+        "id": "color_scheme",
+        "options": [
+          {
+            "value": "gradient",
+            "label": "Global-page background"
+          },
+          {
+            "value": "color_page_background_color",
+            "label": "Header-page background"
+          }
+        ],
+        "default": "gradient",
+        "label": "Background options"
       },
       {
         "type": "range",
@@ -221,16 +231,26 @@
         "content": "Header Sticky Color"
       },
       {
-        "type": "checkbox",
-        "id": "color_page_background_colors",
-        "default": false,
-        "label": "Global-page background"
-      },
-      {
         "type": "color",
         "id": "header_sticky_background_color",
         "default": "#FFFFFF",
         "label": "Background"
+      },
+      {
+        "type": "select",
+        "id": "color_schemes",
+        "options": [
+          {
+            "value": "gradients",
+            "label": "Global-page background"
+          },
+          {
+            "value": "color_page_background_colors",
+            "label": "Header-sticky-page background"
+          }
+        ],
+        "default": "gradients",
+        "label": "Background options"
       },
       {
         "type": "range",
