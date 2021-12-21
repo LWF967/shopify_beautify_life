@@ -87,7 +87,9 @@
           "logo_width": 50,
           "header_height": 60,
           "header_text_height_font_size": 14,
-          "menu": "main-menu"
+          "menu": "main-menu",
+          "header_opacity_bk_color": "#d75656",
+          "color_scheme": "header_opacity_bk_color"
         }
       },
       "footer": {
@@ -296,6 +298,7 @@
         "settings": {
           "copyrights_layouts": "Two columns",
           "background_color": "#d94f4f",
+          "foot_bottom_background_style": "background_color",
           "text_color": "#ffffff",
           "link_color": "#ff0000",
           "link_hover_color": "#a700ff"
