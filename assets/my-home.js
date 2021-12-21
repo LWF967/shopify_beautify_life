@@ -28,8 +28,9 @@ if(myHomeFreshDesignMode){
         main.style.marginBottom = 0;
         my_footer_sticky.style.opacity = 1;
         my_footer_sticky.style.zIndex = 1;
-        footer_bottom.style.position = 'inherit';
         my_footer_sticky.style.marginBottom = 0;
+        footer_bottom.style.position = 'inherit';
+        footer_bottom.style.margin = '0 0';
       }
       else if(document.body.clientWidth >= 1024) {
         let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
