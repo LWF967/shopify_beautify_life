@@ -118,8 +118,10 @@ function my_home() {
       let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
       console.log("box:"+footer_bottom_svg_box_height);
       
-//         let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
-//         console.log(footer_bottom_svg_height);
+        let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
+        console.log(footer_bottom_svg_height);
+      console.log("row:"+footer_bottom_svg_box_height/footer_bottom_svg_height);
+
 //               let footer_bottom_layout_center = document.getElementsByClassName('my_footer_bottom_layout_center');
 //         if(footer_bottom_layout_center.length > 0) {
 //           footer_bottom_height -= footer_bottom_svg_height;
