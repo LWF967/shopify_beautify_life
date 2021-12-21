@@ -97,17 +97,14 @@ if(myHomeFreshDesignMode){
 
       let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
       let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
-      console.log("box 原始:"+footer_bottom_svg_box_height);
-      console.log("svg 原始:"+footer_bottom_svg_height);
+      console.log("box 更新:"+footer_bottom_svg_box_height);
+      console.log("svg 更新:"+footer_bottom_svg_height);
 
-      //       let row = footer_bottom_svg_box_height/footer_bottom_svg_height;
-      //       console.log("row:"+row);
-
-      //               let footer_bottom_layout_center = document.getElementsByClassName('my_footer_bottom_layout_center');
-      //         if(footer_bottom_layout_center.length > 0) {
-      //           footer_bottom_height -= footer_bottom_svg_height;
-      //           console.log(footer_bottom_height);
-      //         }
+      let footer_bottom_layout_center = document.getElementsByClassName('my_footer_bottom_layout_center');
+      if(footer_bottom_layout_center.length > 0) {
+        footer_bottom_height -= footer_bottom_svg_height;
+        console.log(footer_bottom_height);
+      }
 
 
       main.style.zIndex = 899;
