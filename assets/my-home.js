@@ -26,10 +26,10 @@ if(myHomeFreshDesignMode){
         let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
         let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
         let footer_bottom_layout_center = document.getElementsByClassName('my_footer_bottom_layout_center');
-        if(footer_bottom_layout_center.length > 0) {
-          footer_bottom_height -= 33;
-          console.log(footer_bottom_height);
-        }
+//         if(footer_bottom_layout_center.length > 0) {
+//           footer_bottom_height -= 33;
+//           console.log(footer_bottom_height);
+//         }
         
 
         main.style.zIndex = 899;
