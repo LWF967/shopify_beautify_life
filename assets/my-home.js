@@ -1,11 +1,11 @@
 // lzx change
 // footer sticky
-// var myHomeFreshDesignMode = Shopify.designMode || false;
-// if(myHomeFreshDesignMode){
-//   document.addEventListener('shopify:section:load',() => {
-//     my_home();
-//   },true);
-// }
+var myHomeFreshDesignMode = Shopify.designMode || false;
+if(myHomeFreshDesignMode){
+  document.addEventListener('shopify:section:load',() => {
+    my_home();
+  },true);
+}
 
 window.onload = function() {
   my_home();
@@ -37,8 +37,6 @@ function my_home() {
   let content = document.getElementsByClassName('content')[0];
   let my_header_sticky = document.getElementsByClassName('my_header_sticky');
   let my_backtop = document.getElementById('my_backtop');
-  
-  
 
   // footer sticky
   if(sticky.length > 0) {
@@ -75,7 +73,6 @@ function my_home() {
     main.style.marginBottom = 0 + "px";
     footer_bottom.style.position = 'static';
   }
-
 
   // backtop 
   function gotoTop() {
