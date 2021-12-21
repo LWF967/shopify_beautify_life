@@ -10,16 +10,16 @@ if(myHomeFreshDesignMode){
     let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
     //   let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
     let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
-//     let main = document.getElementById('MainContent');
+    let main = document.getElementById('MainContent');
     let sticky = document.getElementsByClassName('my_footer_sticky');
 
     // footer sticky
     if(sticky.length > 0) {
       if(document.body.clientWidth < 1024) {
-//         main.style.marginBottom = 0;
-//         my_footer_sticky.style.opacity = 1;
-//         my_footer_sticky.style.zIndex = 1;
-//         my_footer_sticky.style.marginBottom = 0;
+        main.style.marginBottom = 0;
+        my_footer_sticky.style.opacity = 1;
+        my_footer_sticky.style.zIndex = 1;
+        my_footer_sticky.style.marginBottom = 0;
         footer_bottom.style.position = 'static';
       }
       else if(document.body.clientWidth >= 1024) {
@@ -34,8 +34,8 @@ if(myHomeFreshDesignMode){
 //         }
         
 
-//         main.style.zIndex = 899;
-//         main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
+        main.style.zIndex = 899;
+        main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
         my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
         my_footer_sticky.style.opacity = 1;
         my_footer_sticky.style.zIndex = 1;
@@ -59,18 +59,18 @@ if(myHomeFreshDesignMode){
   },true);
 }
 
-// window.onload = function() {
-// //   var myHomeFreshDesignMode = Shopify.designMode || false;
-// //   if(myHomeFreshDesignMode){
-// //     document.addEventListener('shopify:section:load',() => {
-// //       my_home();
-// //     },true);
-// //   }
-//   my_home();
-//   // hide_banner variant define in promo-bar.liquid
-//   hide_banner.style.marginTop = 0 + 'px';
-//   hide_banner.style.transition = "all .5s";
-// }
+window.onload = function() {
+//   var myHomeFreshDesignMode = Shopify.designMode || false;
+//   if(myHomeFreshDesignMode){
+//     document.addEventListener('shopify:section:load',() => {
+//       my_home();
+//     },true);
+//   }
+  my_home();
+  // hide_banner variant define in promo-bar.liquid
+  hide_banner.style.marginTop = 0 + 'px';
+  hide_banner.style.transition = "all .5s";
+}
 
 window.onresize = function() {
   my_home();
