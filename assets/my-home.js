@@ -28,12 +28,12 @@ if(myHomeFreshDesignMode){
         main.style.marginBottom = 0;
         my_footer_sticky.style.opacity = 1;
         my_footer_sticky.style.zIndex = 1;
-        footer_bottom.style.position = 'static';
+//         footer_bottom.style.position = 'static';
         my_footer_sticky.style.marginBottom = 0;
       }
       else if(document.body.clientWidth >= 1024) {
         let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
-        let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight + 33;
+        let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
 
         main.style.zIndex = 899;
         main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
@@ -55,7 +55,7 @@ if(myHomeFreshDesignMode){
     }
     else {
       main.style.marginBottom = 0;
-      footer_bottom.style.position = 'static';
+//       footer_bottom.style.position = 'static';
     }
   },true);
 }
