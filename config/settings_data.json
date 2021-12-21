@@ -143,6 +143,7 @@
           "promo_bar_fontsize": 12,
           "promo_bar_cl": "#ff7474",
           "promo_bar_bg": "#000000",
+          "color_scheme": "gradient",
           "promo_bar_bg_op": 100,
           "promo_bar_show_close": true,
           "promo_bar_show_icon": false,
@@ -292,9 +293,9 @@
         ],
         "settings": {
           "copyrights_layouts": "Two columns",
-          "background_color": "#e91717",
-          "text_color": "#000000",
-          "link_color": "#0031ff",
+          "background_color": "#000000",
+          "text_color": "#ffffff",
+          "link_color": "#ff0000",
           "link_hover_color": "#a700ff"
         }
       }
