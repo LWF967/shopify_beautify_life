@@ -116,11 +116,11 @@ function my_home() {
       
         let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
         console.log(footer_bottom_svg_height);
-              let footer_bottom_layout_center = document.getElementsByClassName('my_footer_bottom_layout_center');
-        if(footer_bottom_layout_center.length > 0) {
-          footer_bottom_height -= footer_bottom_svg_height;
-          console.log(footer_bottom_height);
-        }
+//               let footer_bottom_layout_center = document.getElementsByClassName('my_footer_bottom_layout_center');
+//         if(footer_bottom_layout_center.length > 0) {
+//           footer_bottom_height -= footer_bottom_svg_height;
+//           console.log(footer_bottom_height);
+//         }
       
       
       main.style.zIndex = 899;
