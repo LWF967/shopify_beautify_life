@@ -247,7 +247,7 @@
 
 {%- style -%}
 .my_footer_a_hover { text-decoration: none; display: inline-block; transition: all .3s; } .my_footer_a_hover:hover { color: {{ section.settings.hover_link_color }} !important; }
-.my_footer_bgcolor { background:  {{ section.settings.background_color }}; }
+.my_footer_bgcolor { background:  {%-if section.settings.foot_top_background_style =="background_color"-%}{{section.settings.background_color}}{%-else-%}{{settings.color_page_background}}{%-endif-%} }
 
 .my_footer_heading { color: {{ section.settings.heading_color }}; font-size: 18px; margin-bottom: 30px; margin-top: 0; font-weight: 700; }
 .my_footer_item_width { flex: 0 0 {{ section.blocks.settings.container_width }}; max-width: {{ section.blocks.settings.container_width }}; }
@@ -340,7 +340,7 @@
 <footer class="footer color-{{ section.settings.color_scheme }} gradient {% if section.settings.sticky_footer %}my_footer_sticky{% endif %}" style="background-color:{{settings.color_page_background}}" >
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
   <div class="my_footer_bgcolor my_footer_margin_top {% if section.settings.border_footer %}my_footer_border{% endif %}" >
-    <div class="my_footer_top_padding page-width my_footer_bgcolor my_footer_mobile_flex" style="{%-if section.settings.foot_top_background_style =="background_color"-%} background-color:{{section.settings.background_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%}">
+    <div class="my_footer_top_padding page-width my_footer_bgcolor my_footer_mobile_flex" >
       {%- if section.blocks.size > 0 -%}
         {%- liquid
           if section.blocks.size == 9
