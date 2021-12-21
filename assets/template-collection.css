@@ -671,7 +671,9 @@ a.active-facets__button.focused .active-facets__button-inner,
   padding-bottom: 0.5rem;
   display: flex;
   align-items: center;
-  color: rgba(var(--color-link), var(--alpha-link));
+/*   color: rgba(var(--color-link), var(--alpha-link)); */
+  /* lzx change */
+  color: rgb(var(--color-link));
 }
 
 .mobile-facets__open:hover {
