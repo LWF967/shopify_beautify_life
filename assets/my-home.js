@@ -214,8 +214,12 @@ function my_home() {
         content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
       } else if(content.style.position == 'relative') {
         //         if(document.body.clientWidth > 990) {
-        top_bar.style.zIndex = 899;
-        header_zx.style.zIndex = 898;
+        
+        
+//         top_bar.style.zIndex = 899;
+//         header_zx.style.zIndex = 898;
+        
+        
         //         } else if (document.body.clientWidth < 990) {
         //           top_bar.style.zIndex = 1;
         //           header_zx.style.zIndex = 0;
