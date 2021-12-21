@@ -243,14 +243,19 @@ function my_home() {
       let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
       let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
       
-      let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
-      let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
-      console.log("box 原始:"+footer_bottom_svg_box_height);
-      console.log("svg 原始:"+footer_bottom_svg_height);
+      let footer_bottom_svg = document.getElementsByClassName('dib bot_footer_svg');
+      if(footer_bottom_svg.length > 0) {
+        let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
+        let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
+        console.log("box 原始:"+footer_bottom_svg_box_height);
+        console.log("svg 原始:"+footer_bottom_svg_height);
+      }
       
-      let footer_bottom_image_box_height = document.getElementsByClassName('dib')[0].scrollHeight;
-      console.log("image 原始:"+footer_bottom_image_box_height);
-
+      let footer_bottom_image = document.getElementsByClassName('dib');
+      if(footer_bottom_image.length > 0) {
+        let footer_bottom_image_box_height = document.getElementsByClassName('dib')[0].scrollHeight;
+        console.log("image 原始:"+footer_bottom_image_box_height);
+      }
 
 //       let row = footer_bottom_svg_box_height/footer_bottom_svg_height;
 //       console.log("row:"+row);
