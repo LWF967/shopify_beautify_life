@@ -665,7 +665,7 @@
                       type="search"
                       name="q"
                       value=""
-                      style="border-radius: 4px;padding-left: 22px;height: 39px;"
+                      style="border-radius: 4px;padding-left: 22px;height: 39px; background-color:{{settings.color_page_background| color_modify: 'alpha', 0}}"
                       placeholder="{{ 'general.search.search' | t }}"
                       {%- if settings.predictive_search_enabled -%}
                         role="combobox"
