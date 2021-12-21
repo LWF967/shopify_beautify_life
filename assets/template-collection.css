@@ -817,7 +817,10 @@ details.menu-opening .mobile-facets__close svg {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: rgb(var(--color-background));
+/*   background-color: rgb(var(--color-background)); */
+/* lzx change */
+  background-color: #fff;
+/* end */
   z-index: 3;
   transform: translateX(100%);
   visibility: hidden;
