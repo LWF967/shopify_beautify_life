@@ -704,7 +704,7 @@ a.active-facets__button.focused .active-facets__button-inner,
 .mobile-facets__open circle {
 /*   stroke: rgba(var(--color-link), var(--alpha-link)); */
 /* lzx change */
-  stroke: rgb(var(--color-foreground));
+  stroke: var(--color-foreground);
 }
 
 .mobile-facets__close {
