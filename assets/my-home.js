@@ -247,6 +247,10 @@ function my_home() {
       let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
       console.log("box 原始:"+footer_bottom_svg_box_height);
       console.log("svg 原始:"+footer_bottom_svg_height);
+      
+      let footer_bottom_image_box_height = document.getElementsByClassName('dib')[0].scrollHeight;
+      console.log("image 原始:"+footer_bottom_image_box_height);
+
 
 //       let row = footer_bottom_svg_box_height/footer_bottom_svg_height;
 //       console.log("row:"+row);
