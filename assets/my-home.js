@@ -4,7 +4,6 @@ var myHomeFreshDesignMode = Shopify.designMode || false;
 if(myHomeFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {
     my_home();
-    console.log(123);
   },true);
 }
 
