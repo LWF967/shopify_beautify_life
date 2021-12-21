@@ -1,7 +1,7 @@
 // lzx change
 // footer sticky
-var myHomeFreshDesignMode = Shopify.designMode || false;
-if(myHomeFreshDesignMode){
+var myHomeFreshDesignMode1231 = Shopify.designMode || false;
+if(myHomeFreshDesignMode1231){
   document.addEventListener('shopify:section:load',() => {
     let promo_bar = document.getElementById('shopify-section-promo-bar');
     let top_bar = document.getElementById('shopify-section-top-bar');
