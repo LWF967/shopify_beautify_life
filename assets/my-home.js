@@ -103,7 +103,6 @@ window.onload = function() {
           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight + footer_bottom_svg_height;
 
 
-           $('html,body').outheight
           console.log("box 更新:"+footer_bottom_svg_box_height);
           console.log("svg 更新:"+footer_bottom_svg_height);
           console.log("相除 更新"+footer_bottom_svg_box_height/footer_bottom_svg_height);
