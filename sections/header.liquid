@@ -280,11 +280,11 @@
 .my_header_font_size { font-size: {{ section.settings.header_text_height_font_size }}px; }
 .my_header_img_left { height: {{ section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | ceil | plus: 29 }}px; }
 
-.my_header_background_color { background: {%- if settings.color_page_background_color-%}{{settings.color_page_background}}{%-else-%} {{settings.header_background_color }};{%-endif-%} }
-.my_header_background_opacity { background: {%- if settings.color_page_background_color-%}{{settings.color_page_background  | color_modify: 'alpha', my_header_background_opacity }}{%-else-%}{{ settings.header_background_color | color_modify: 'alpha', my_header_background_opacity }};{%-endif-%} }
+.my_header_background_color { background: {%- if settings.color_scheme=="gradient"-%}{{settings.color_page_background}}{%-else-%} {{settings.header_background_color }};{%-endif-%} }
+.my_header_background_opacity { background: {%- if settings.color_scheme=="gradient"-%}{{settings.color_page_background  | color_modify: 'alpha', my_header_background_opacity }}{%-else-%}{{ settings.header_background_color | color_modify: 'alpha', my_header_background_opacity }};{%-endif-%} }
 
 .my_header_icon_text_color, .my_header_icons_margin svg, .my_header_icons_margin .my_cart { color: {{ settings.header_icon_and_text_color }} !important; }
-.my_header_sticky_settings { background: {%- if settings.color_page_background_colors-%}{{settings.color_page_background  | color_modify: 'alpha', my_header_sticky_background_opacity }}{%-else-%}{{ settings.header_sticky_background_color | color_modify: 'alpha', my_header_sticky_background_opacity }};{%-endif-%} }
+.my_header_sticky_settings { background: {%- if settings.color_scheme=="gradient"-%}{{settings.color_page_background  | color_modify: 'alpha', my_header_sticky_background_opacity }}{%-else-%}{{ settings.header_sticky_background_color | color_modify: 'alpha', my_header_sticky_background_opacity }};{%-endif-%} }
 .my_header_sticky_settings .my_header_icon_text_color,.my_header_sticky_settings .my_header_icons_margin svg,.my_header_sticky_settings .my_header_icons_margin .my_cart { color: {{ settings.header_sticky_icon_and_text_color }} !important; }
 {%- endstyle -%}
 
