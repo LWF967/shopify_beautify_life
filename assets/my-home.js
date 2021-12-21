@@ -47,7 +47,7 @@ if(myHomeFreshDesignMode){
         footer_bottom.style.width = '100%';
 
         console.log("top:"+my_footer_sticky_height); 
-        console.log("bottom:"+footer_bottom_height);
+        console.log("bottom:"+footer_bottom_height,'ss',footer_bottom_height2);
         console.log("main:"+main.style.marginBottom); 
         console.log("+++++++++++++++");        
       }
