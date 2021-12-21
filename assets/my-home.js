@@ -94,6 +94,12 @@ window.onload = function() {
 
 window.onresize = function() {
   my_home();
+  var myHomeFreshDesignMode = Shopify.designMode || false;
+  if(myHomeFreshDesignMode){
+    document.addEventListener('shopify:section:load',() => {
+      my_home();
+    },true);
+  }
 }
 
 function my_home() {
