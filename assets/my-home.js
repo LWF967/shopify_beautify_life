@@ -216,8 +216,8 @@ function my_home() {
         //         if(document.body.clientWidth > 990) {
         
         
-//         top_bar.style.zIndex = 899;
-//         header_zx.style.zIndex = 898;
+        top_bar.style.zIndex = 899;
+        header_zx.style.zIndex = 898;
         
         
         //         } else if (document.body.clientWidth < 990) {
