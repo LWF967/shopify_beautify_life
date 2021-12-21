@@ -190,12 +190,6 @@
         "content": "Header Color"
       },
       {
-        "type": "checkbox",
-        "id": "color_page_background_color",
-        "default": false,
-        "label": "Global-page background"
-      },
-      {
         "type": "color",
         "id": "header_background_color",
         "default": "#FFFFFF",
