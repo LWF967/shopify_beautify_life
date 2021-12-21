@@ -28,9 +28,11 @@ if(myHomeFreshDesignMode){
         let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
         let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight + footer_bottom_svg_height;
 
-        console.log("box:"+footer_bottom_svg_box_height);
-        console.log("svg:"+footer_bottom_svg_height);
-        console.log("chuyi"+footer_bottom_svg_box_height/footer_bottom_svg_height);
+        
+         $('html,body').outheight
+        console.log("box 更新:"+footer_bottom_svg_box_height);
+        console.log("svg 更新:"+footer_bottom_svg_height);
+        console.log("相除 更新"+footer_bottom_svg_box_height/footer_bottom_svg_height);
       
         let footer_bottom_layout_center = document.getElementsByClassName('my_footer_bottom_layout_center');
         if(footer_bottom_layout_center.length > 0) {
@@ -110,8 +112,8 @@ function my_home() {
       
       let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
       let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
-      console.log("box nnn:"+footer_bottom_svg_box_height);
-      console.log("svg nnn:"+footer_bottom_svg_height);
+      console.log("box 原始:"+footer_bottom_svg_box_height);
+      console.log("svg 原始:"+footer_bottom_svg_height);
 
 //       let row = footer_bottom_svg_box_height/footer_bottom_svg_height;
 //       console.log("row:"+row);
