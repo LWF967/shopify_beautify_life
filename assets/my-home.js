@@ -1,11 +1,11 @@
 // lzx change
 // footer sticky
-var myHomeFreshDesignMode = Shopify.designMode || false;
-if(myHomeFreshDesignMode){
+// var myHomeFreshDesignMode = Shopify.designMode || false;
+// if(myHomeFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {
     my_home();
   },true);
-}
+// }
 
 window.onload = function() {
   my_home();
