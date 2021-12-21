@@ -131,7 +131,8 @@
       "main-password-footer": {
         "type": "main-password-footer",
         "settings": {
-          "color_scheme": "background-1"
+          "password_footer_bk_color": "#fff",
+          "color_scheme": "password_footer_bk_color"
         }
       },
       "promo-bar": {
