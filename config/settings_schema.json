@@ -190,6 +190,12 @@
         "content": "Header Color"
       },
       {
+        "type": "checkbox",
+        "id": "color_page_background_color",
+        "default": false,
+        "label": "Global-page background"
+      },
+      {
         "type": "color",
         "id": "header_background_color",
         "default": "#FFFFFF",
@@ -213,6 +219,12 @@
       {
         "type": "header",
         "content": "Header Sticky Color"
+      },
+      {
+        "type": "checkbox",
+        "id": "color_page_background_colors",
+        "default": false,
+        "label": "Global-page background"
       },
       {
         "type": "color",
