@@ -25,7 +25,7 @@ if(myHomeFreshDesignMode){
       else if(document.body.clientWidth >= 1024) {
         let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
         let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
-        let footer_bottom_height2 = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].offsetHeight;
+//         let footer_bottom_height2 = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].offsetHeight;
       
         let footer_bottom_layout_center = document.getElementsByClassName('my_footer_bottom_layout_center');
 //         if(footer_bottom_layout_center.length > 0) {
@@ -47,7 +47,7 @@ if(myHomeFreshDesignMode){
         footer_bottom.style.width = '100%';
 
         console.log("top:"+my_footer_sticky_height); 
-        console.log("bottom:"+footer_bottom_height,'ss',footer_bottom_height2);
+        console.log("bottom:"+footer_bottom_height);
         console.log("main:"+main.style.marginBottom); 
         console.log("+++++++++++++++");        
       }
@@ -108,7 +108,7 @@ function my_home() {
     else if(document.body.clientWidth >= 1024) {
       let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
       let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
-      let footer_bottom_height2 = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].offsetHeight;
+//       let footer_bottom_height2 = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].offsetHeight;
       
       main.style.zIndex = 899;
       main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
@@ -123,7 +123,7 @@ function my_home() {
       footer_bottom.style.width = '100%';
 
       console.log("top:"+my_footer_sticky_height); 
-      console.log("bottom:"+footer_bottom_height+'ss'+footer_bottom_height2);
+      console.log("bottom:"+footer_bottom_height);
       console.log("main:"+main.style.marginBottom); 
       console.log("===================");        
     }
