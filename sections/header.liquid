@@ -654,7 +654,7 @@
           </summary>
           <div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search' | t }}">
             <div class="modal-overlay"></div>
-            <div class="search-modal__content" tabindex="-1">
+            <div class="search-modal__content" tabindex="-1" style="background:{%- if settings.color_scheme=="gradient"-%}{{settings.color_page_background}}{%-else-%} {{settings.header_background_color }};{%-endif-%}">
               {%- if settings.predictive_search_enabled -%}
                 <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
               {%- endif -%} 
