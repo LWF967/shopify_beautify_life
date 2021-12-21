@@ -59,18 +59,18 @@ if(myHomeFreshDesignMode){
   },true);
 }
 
-window.onload = function() {
-//   var myHomeFreshDesignMode = Shopify.designMode || false;
-//   if(myHomeFreshDesignMode){
-//     document.addEventListener('shopify:section:load',() => {
-//       my_home();
-//     },true);
-//   }
-  my_home();
-  // hide_banner variant define in promo-bar.liquid
-  hide_banner.style.marginTop = 0 + 'px';
-  hide_banner.style.transition = "all .5s";
-}
+// window.onload = function() {
+// //   var myHomeFreshDesignMode = Shopify.designMode || false;
+// //   if(myHomeFreshDesignMode){
+// //     document.addEventListener('shopify:section:load',() => {
+// //       my_home();
+// //     },true);
+// //   }
+//   my_home();
+//   // hide_banner variant define in promo-bar.liquid
+//   hide_banner.style.marginTop = 0 + 'px';
+//   hide_banner.style.transition = "all .5s";
+// }
 
 window.onresize = function() {
   my_home();
