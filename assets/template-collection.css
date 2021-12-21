@@ -672,19 +672,21 @@ a.active-facets__button.focused .active-facets__button-inner,
   display: flex;
   align-items: center;
 /*   color: rgba(var(--color-link), var(--alpha-link)); */
-  /* lzx change */
+/* lzx change */
   color: var(--color-foreground);
 }
 
 .mobile-facets__open:hover {
-  /* lzx change */
+/* lzx change */
 /*   color: rgb(var(--color-link)); */
   color: var(--color-foreground);
 }
 
 .mobile-facets__open:hover line,
 .mobile-facets__open:hover circle {
-  stroke: rgb(var(--color-link));
+/* lzx change */
+/*   stroke: rgb(var(--color-link)); */
+  color: var(--color-foreground);
 }
 
 .mobile-facets__open-label {
