@@ -111,6 +111,13 @@ function my_home() {
       let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
 //       let footer_bottom_height2 = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].offsetHeight;
       
+      
+      
+      
+              let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
+        console.log(footer_bottom_svg_height);
+      
+      
       main.style.zIndex = 899;
       main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
       my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
