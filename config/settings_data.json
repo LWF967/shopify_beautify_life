@@ -283,8 +283,7 @@
           "46b8ba71-433b-4b1d-af31-675da9061dac": {
             "type": "payment",
             "settings": {
-              "source_img": "Image",
-              "trust_image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+              "source_img": "SVG",
               "svg_height": 41,
               "svg_list": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa"
             }
