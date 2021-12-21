@@ -29,7 +29,8 @@ if(myHomeFreshDesignMode){
         let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight + footer_bottom_svg_height;
 
         console.log("box:"+footer_bottom_svg_box_height);
-        console.log("svg:"+footer_bottom_svg_height);
+        console.log("svg:"+footer_bottom_svg_height)
+        console.log("chuyi"+footer_bottom_svg_box_height/footer_bottom_svg_height);
       
         let footer_bottom_layout_center = document.getElementsByClassName('my_footer_bottom_layout_center');
         if(footer_bottom_layout_center.length > 0) {
