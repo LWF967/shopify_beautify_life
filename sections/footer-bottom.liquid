@@ -15,7 +15,7 @@
 <noscript>{{ 'disclosure.css' | asset_url | stylesheet_tag }}</noscript>
 
 {%- style -%}
-.my_footer_bottom_color { background: {{ section.settings.background_color }}; }
+.my_footer_bottom_color { background: {%-if section.settings.foot_bottom_background_style =="background_color"-%}{{section.settings.background_color}}{%-else-%}{{settings.color_page_background}}{%-endif-%} }
 .copyright__content { color: {{ section.settings.text_color }}; }
 .copyright__content a { color: {{ section.settings.link_color }}; text-decoration: none; cursor: pointer; transition: all .3s; } 
 .copyright__content a:hover { color: {{ section.settings.link_hover_color }}; text-decoration: none; }
@@ -225,6 +225,22 @@
       "id": "background_color",
       "label": "Background",
       "default": "#FFFFFF"
+    },
+	{
+      "type": "select",
+      "id": "foot_bottom_background_style",
+      "options": [
+        {
+          "value": "background_color",
+          "label": "Footer-bottom background"
+        },
+		{
+          "value": "gradient",
+          "label": "Global-page background" 
+        }
+      ],
+      "default": "background_color",
+      "label": "Background options"
     },
 	{
       "type": "color",
