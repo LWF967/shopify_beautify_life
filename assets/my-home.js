@@ -151,9 +151,7 @@ window.onload = function() {
   }
 
 window.onresize = function() {
-//   my_home();
-        let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-  console.log(hide_banner_height);
+  my_home();
 }
 
 function my_home() {
