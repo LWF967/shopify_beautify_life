@@ -1020,12 +1020,11 @@
   
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
     if(isopenasdas == true) {
-      console.log(memem);
       console.log(memem.hasAttribute('open'));
       headerre.style.zIndex = 897;
     } else if(isopenasdas == false) {
-      console.log(memem);
       console.log(memem.hasAttribute('open'));
+      headerre.style.zIndex = 900;
     }
   });
   
