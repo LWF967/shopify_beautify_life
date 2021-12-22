@@ -47,12 +47,20 @@
             "collection": "",
             "title": "New supply this week"
           }
+        },
+        "8bbb6bb9-a119-4100-b5b2-6d9bdd7f25ae": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
         }
       },
       "block_order": [
         "1640164708d7cdae2a-0",
         "1640164708d7cdae2a-1",
-        "1640164708d7cdae2a-2"
+        "1640164708d7cdae2a-2",
+        "8bbb6bb9-a119-4100-b5b2-6d9bdd7f25ae"
       ],
       "settings": {
         "title": "NEW RELEASES",
@@ -71,11 +79,152 @@
         "collection_list_beautify_margin_top": "",
         "collection_list_beautify_margin_bottom": ""
       }
+    },
+    "16401647781a74fec1": {
+      "type": "custom-content",
+      "blocks": {
+        "1640164778844e26e2-0": {
+          "type": "text",
+          "settings": {
+            "title": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left"
+          }
+        },
+        "1640164778844e26e2-1": {
+          "type": "image",
+          "settings": {
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "d570d3a4-04ac-4df1-9a60-f93dcd6b2247": {
+          "type": "link_list",
+          "settings": {
+            "menu": "main-menu",
+            "width": "25%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1640164778844e26e2-0",
+        "1640164778844e26e2-1",
+        "d570d3a4-04ac-4df1-9a60-f93dcd6b2247"
+      ],
+      "settings": {
+        "title": "Custom content",
+        "custom_content_margin_top": "",
+        "custom_content_margin_bottom": ""
+      }
+    },
+    "1640164891d7083ec1": {
+      "type": "banner-Beautify",
+      "blocks": {
+        "1640164891378b9af9-0": {
+          "type": "img_top",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "image2": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image3": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "1640164891378b9af9-1": {
+          "type": "img_top",
+          "settings": {
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "1640164891378b9af9-2": {
+          "type": "img_top",
+          "settings": {
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "4362d00d-422f-4230-826f-d560e0854296": {
+          "type": "banner_third",
+          "settings": {
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
+        "901bc7d9-60b1-4114-8428-dc4dc1f3e097": {
+          "type": "banner_third",
+          "settings": {
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
+        "62ac3788-f31d-4da6-b307-14674cf65a68": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        }
+      },
+      "block_order": [
+        "1640164891378b9af9-0",
+        "1640164891378b9af9-1",
+        "1640164891378b9af9-2",
+        "4362d00d-422f-4230-826f-d560e0854296",
+        "901bc7d9-60b1-4114-8428-dc4dc1f3e097",
+        "62ac3788-f31d-4da6-b307-14674cf65a68"
+      ],
+      "settings": {
+        "title": "BANNER",
+        "sub_title": "Popular this week",
+        "font_top": 30,
+        "color_top": "#fff",
+        "grid": 3,
+        "show_view_all": false,
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "banner_beautify_margin_top": "",
+        "banner_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
     "main",
     "16401521292b16ca63",
-    "1640164708158d974f"
+    "1640164708158d974f",
+    "16401647781a74fec1",
+    "1640164891d7083ec1"
   ]
 }
