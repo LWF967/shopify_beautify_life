@@ -1019,11 +1019,11 @@
   let isopenasdas = memem.hasAttribute('open');
   
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
-    if(isopenasdas == true) {
-      console.log(memem.hasAttribute('open'));
+    if(memem.hasAttribute('open') == true) {
+//       console.log(memem.hasAttribute('open'));
       headerre.style.zIndex = 897;
-    } else if(isopenasdas == false) {
-      console.log(memem.hasAttribute('open'));
+    } else if(memem.hasAttribute('open') == false) {
+//       console.log(memem.hasAttribute('open'));
       headerre.style.zIndex = 900;
     }
   });
