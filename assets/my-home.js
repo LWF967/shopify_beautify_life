@@ -152,8 +152,6 @@ window.onload = function() {
 
 window.onresize = function() {
   my_home();
-      console.log(hide_banner_height);
-
 }
 
 function my_home() {
