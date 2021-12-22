@@ -296,13 +296,13 @@
         "type": "color",
         "id": "colors_heading_text",
         "default": "#333",
-        "label": "Heading color"
+        "label": "Section Heading"
       },
       {
         "type": "color",
         "id": "colors_sub_title_text",
         "default": "#333",
-        "label": "Sub-text-color"
+        "label": "Sub text"
       },
       {
         "type": "color",
@@ -320,7 +320,7 @@
         "type": "color",
         "id": "colors_page_heading",
         "default": "#EA0606",
-        "label": "colors_page_heading"
+        "label": "Page Heading"
       },
       {
         "type": "header",
