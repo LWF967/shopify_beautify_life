@@ -156,7 +156,6 @@ ul class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--
             {%- when true -%}
 
             {%- for article in section.settings.blog.articles limit: 3 -%}
-<!--               {%- if settings.color_schemes=="gradients"-%}{{settings.color_page_background  | color_modify: 'alpha', my_header_sticky_background_opacity }}{%-else-%}{{ settings.header_sticky_background_color | color_modify: 'alpha', my_header_sticky_background_opacity  }};{%-endif-%} -->
               <li class="blog__post grid__item article slider__slide slider__slide--full-width 1 swiper-slide" style="background:{{settings.color_image_overlay | color_modify: 'alpha', image_overlay_opacity}}">
                 {% render 'article-card-beautify', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_title: section.settings.show_title,show_short_content: section.settings.show_short_content,show_date: section.settings.show_date, show_author: section.settings.show_author %}
               </li>
