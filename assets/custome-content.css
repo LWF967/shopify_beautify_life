@@ -258,14 +258,14 @@ padding:0;
 }
 
 /* lzx change start */
-@media screen (min-width: 750px) and (max-width: 990px) {
+@media screen and (min-width: 750px) and (max-width: 990px) {
   .collection-grid-item__title-wrapper > .h3{
     font-size: 2.4rem;
     font-weight: 600;  
   }
 }
 
-@media screen (min-width: 0px) and (max-width: 750px) {
+@media screen and (min-width: 0px) and (max-width: 750px) {
   .collection-grid-item__title-wrapper > .h3{
     font-size: 2rem;
     font-weight: 600;  
