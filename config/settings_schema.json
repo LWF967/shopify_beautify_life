@@ -208,7 +208,7 @@
             "label": "Header-page background"
           }
         ],
-        "default": "gradient",
+        "default": "color_page_background_color",
         "label": "Background options"
       },
       {
