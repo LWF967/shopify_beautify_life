@@ -554,9 +554,16 @@
 
   .daily-product{
     width: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
-    height: {{ 1 | divided_by: highest_ratio | times: 100 }}%;
+    height: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
   }
 
+  @media screen and (min-width: 1025px) {
+    .daily-product{
+    width: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
+    height: {{ 1 | divided_by: highest_ratio | times: 100 }}%;
+  }
+  }
+  
   .left,.right{
     height: 100%;
     width:50%;
