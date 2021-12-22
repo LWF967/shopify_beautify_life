@@ -30,7 +30,7 @@
     "color_image_overlay": "#534b52",
     "image_overlay_opacity": 10,
     "color_page_borders_and_lines": "#ff0000",
-    "color_page_background": "#ffffff",
+    "color_page_background": "#bbf4f4",
     "colors_page_stickiness": "#d75656",
     "color_icon": "#b300ff",
     "type_header_font": "assistant_n4",
@@ -87,9 +87,7 @@
           "logo_width": 50,
           "header_height": 60,
           "header_text_height_font_size": 14,
-          "menu": "main-menu",
-          "header_opacity_bk_color": "#d75656",
-          "color_scheme": "header_opacity_bk_color"
+          "menu": "main-menu"
         }
       },
       "footer": {
