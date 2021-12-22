@@ -3,7 +3,7 @@
 
 
 {{'swiper-bundle.min.css'| asset_url |stylesheet_tag}}
-
+{% assign image_overlay_opacity = settings.image_overlay_opacity | divided_by: 100.0 %}
 <style>
   .swiper {
     width: 100%;
@@ -135,7 +135,8 @@
           endfor
         -%}
         {%- for block in section.blocks -%}
-          <li class="testimonials-li multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %} swiper-slide" {{ block.shopify_attributes }}>
+          <li class="testimonials-li multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %} swiper-slide" {{ block.shopify_attributes }}
+              style="background:{{settings.color_image_overlay | color_modify: 'alpha', image_overlay_opacity}}">
             <div class="">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
