@@ -67,7 +67,7 @@
   }
   
   .my_featured_blog_ul .blog__post.grid__item.article.slider__slide {
-
+/*     padding: 0 1.5rem 3rem; */
     padding: 0 0 3rem;
   }
   
@@ -91,9 +91,28 @@
     }
     
     .my_featured_blog_ul .blog__post.grid__item.article.slider__slide {
+/*       padding: 0 1.5rem 1.5rem; */
       padding: 0 0 1.5rem;
     }
+    
+/*     .my_featured_blog_ul .blog__post.grid__item.article.slider__slide:last-child {
+      padding: 0 0 1.5rem 1.5rem;
+    } */
   } 
+  
+/*   @media screen and (max-width: 750px) {
+    .slider-mobile-gutter .my_featured_blog_ul {
+      margin-left: -1rem;
+      margin-right: -1.5rem;
+    }
+    .my_featured_blog_ul .blog__post.grid__item.article.slider__slide:first-child {
+      padding-left: 25px;
+    }
+  } 
+  
+  .my_featured_blog_clear_margin {
+    margin: 0 0 !important;
+  } */
 </style>
 <!-- class="blog spaced-section" -->
 <div class="spaced-section{% if section.settings.featured_blog_bk_color %} background-secondary{% endif %}{% if section.settings.heading == blank %} no-heading{% endif %}"  style="{%- if section.settings.featured_blog_margin_top != blank -%}margin-top: {{ section.settings.featured_blog_margin_top }}px; {%- endif -%}{%- if section.settings.featured_blog_margin_bottom != blank -%}margin-bottom:{{ section.settings.featured_blog_margin_bottom }}px;{%- endif -%};
@@ -137,7 +156,7 @@ ul class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--
             {%- when true -%}
 
             {%- for article in section.settings.blog.articles limit: 3 -%}
-              <li class="blog__post grid__item article slider__slide slider__slide--full-width 1 swiper-slide">
+              <li class="blog__post grid__item article slider__slide slider__slide--full-width 1 swiper-slide" style="background-color:#00f">
                 {% render 'article-card-beautify', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_title: section.settings.show_title,show_short_content: section.settings.show_short_content,show_date: section.settings.show_date, show_author: section.settings.show_author %}
               </li>
             {%- endfor -%}
