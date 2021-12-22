@@ -14,7 +14,7 @@
     margin-bottom: 0px;
   }
   
-  .list--inline.custom__linklist .custom__linklist-item .custom__linklist-link {
+  .my_custom_content_menu_a {
     font-weight: 700;
     color: var(--font-title-color);
   }
@@ -196,7 +196,7 @@
               <ul class="list--inline custom__linklist" style="padding: 0 0;">
                 {%- for link in linklists[custom_linklist].links -%}
                   <li class="custom__linklist-item">
-                    <a href="{{ link.url }}" class="custom__linklist-link">
+                    <a href="{{ link.url }}" class="custom__linklist-link my_custom_content_menu_a">
                       {{ link.title | escape }}
                     </a>
                   </li>
