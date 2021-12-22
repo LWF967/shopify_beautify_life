@@ -16,15 +16,7 @@
 
 {{ 'jquery.3.5.1.min.js' | asset_url | script_tag }}
 
-    
-    {% comment %}
-{{ 'lazysizes.js' | asset_url | script_tag }}
-{{ 'lazysizes.min.js' | asset_url | script_tag }}
- 
-<script src="{{ 'lazysizes.js' | asset_url }}" ></script>   
-<script src="{{ 'lazysizes.min.js' | asset_url }}" ></script>   
-    
-    {% endcomment %}
+
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
     {%- endif -%}
@@ -152,7 +144,7 @@
       {%- endif -%}
     {% endstyle %}
     
-{% include 'css-variables' %} 
+	{% include 'css-variables' %} 
     {{ 'base.css' | asset_url | stylesheet_tag }}
 	{{'custome-content.css'| asset_url |stylesheet_tag}}
 
