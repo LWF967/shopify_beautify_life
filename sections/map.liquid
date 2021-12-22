@@ -8,7 +8,7 @@
 {%- if section.settings.api_key != blank and section.settings.map_address -%}
   {%- assign display_map = true -%}
 {%- endif -%}
-{% assign image_overlay_opacity = settings.image_overlay_opacity | divided_by: 100.0 %}
+
 <style>
   {% if bg_image.src != blank %}
   #MapSection--{{ section.id }} .map-section__image {
@@ -44,7 +44,7 @@
      style="{%- if section.settings.map_margin_top != blank -%}margin-top: {{ section.settings.map_margin_top }}px; {%- endif -%}{%- if section.settings.map_margin_bottom != blank -%}margin-bottom:{{ section.settings.map_margin_bottom }}px;{%- endif -%}">
   <div class="page-width map-section__wrapper">
     <div class="map-section__content-wrapper">
-      <div class="map-section__content"style="background:{{settings.color_image_overlay | color_modify: 'alpha', image_overlay_opacity}}">
+      <div class="map-section__content">
         <h2 class="visually-hidden visually-hidden--static">{{ 'sections.map.section_heading' | t }}</h2>
         {% if section.settings.heading != blank %}
           <h3 class="h4 my_font_size_heading_default my_font_weight_default my_map_heading_margin">{{ section.settings.heading | escape }}</h3>
