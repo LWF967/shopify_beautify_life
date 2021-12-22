@@ -31,7 +31,7 @@
         	<product-form class="product-form buy_button_box" >
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                  <div class="product-form__buttons {% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}my_main_product_product_form_button{% endif %}">
+                  <div class="product-form__buttons day-deal-product-form {% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}my_main_product_product_form_button{% endif %}">
            
                     <div class="button my_clear_padding " >
 
@@ -872,7 +872,10 @@
   box-shadow: 0 0 0 0.2rem rgba(var(--color-button), var(--alpha-button-border));
 }
   
+  .day-deal-product-form button.shopify-payment-button__more-options._2ogcW-Q9I-rgsSkNbRiJzA.shopify-payment-button__button--hidden{
   
+  display:none;
+  }
   
   
   .my_clear_padding .shopify-cleanslate > button.shopify-payment-button__button--hidden {
