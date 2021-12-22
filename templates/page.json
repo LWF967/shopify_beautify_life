@@ -240,6 +240,66 @@
         "featured_colection_margin_top": "",
         "featured_colection_margin_bottom": ""
       }
+    },
+    "16401651000e1c525c": {
+      "type": "slideshow-beautify-2",
+      "blocks": {
+        "4b4d0b7d-8752-4213-8121-6445bb7beae3": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "a16c3168-cc40-4df3-a894-085aac06f90a": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "49408511-3bc9-4cd7-b29b-de3ece2c8689": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "4b4d0b7d-8752-4213-8121-6445bb7beae3",
+        "a16c3168-cc40-4df3-a894-085aac06f90a",
+        "49408511-3bc9-4cd7-b29b-de3ece2c8689"
+      ],
+      "settings": {
+        "se_height": "adapt",
+        "text_size": "medium",
+        "loop": true,
+        "auto_play": true,
+        "auto_time": 3,
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "",
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "slideshow_beautify_margin_top": "",
+        "slideshow_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -248,6 +308,7 @@
     "1640164708158d974f",
     "16401647781a74fec1",
     "1640164891d7083ec1",
-    "16401649020844b29c"
+    "16401649020844b29c",
+    "16401651000e1c525c"
   ]
 }

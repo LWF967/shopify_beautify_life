@@ -145,7 +145,6 @@
           "promo_bar_fontsize": 12,
           "promo_bar_cl": "#ff7474",
           "promo_bar_bg": "#000000",
-          "color_scheme": "promo_bar_bg",
           "promo_bar_bg_op": 100,
           "promo_bar_show_close": true,
           "promo_bar_show_icon": false,
