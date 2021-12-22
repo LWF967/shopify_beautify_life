@@ -46,7 +46,7 @@
          {%- else -%}
            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
          {%- endif -%}
-          <div class="nt_promotion_html pa t__0 l__0 tc pe_none 11122" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{block.settings.color}}">
+          <div class="nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size" style="font-weight:600; color:{{block.settings.color}}">
             {{block.settings.header_top}}
           </div>
         </div>
@@ -77,7 +77,7 @@
                           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                         {%- endif -%}
                       </div>
-                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top1}}</div>
+                      <div class="nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size" style="font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top1}}</div>
                      </a>   
                   	</div>
                     <div class="swiper-slide 2">
@@ -89,7 +89,7 @@
                             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                           {%- endif -%}
                         </div>
-                        <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top2}}</div>
+                        <div class="nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size" style="font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top2}}</div>
                       </a> 
                   	</div>
                     <div class="swiper-slide 3">
@@ -108,7 +108,7 @@
                             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                           {%- endif -%}
                         </div>
-                        <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top3}}</div>
+                        <div class="nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size" style="font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top3}}</div>
                       </a> 
                   	</div>
                  </div>
@@ -167,6 +167,10 @@
   
   .my_banner_beautify_ul_margin li {
     padding: 0 1.5rem 3rem;
+  }
+  
+  .my_banner_beautify_font_size {
+    font-size: {{section.settings.font_top}}px;
   }
   
   @media screen and (max-width: 750px) {
