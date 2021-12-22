@@ -1014,7 +1014,12 @@
 
 <script>
   let memem = document.querySelector("#ProductModal-{{ section.id }}");
-  memem.onclick = function () {
-    console.log(1);
+  
+  let isopenasdas = memem.hasAttribute('open');
+  if(isopenasdas) {
+    console.log(123123);
+  } else {
+    console.log("close");
   }
+  
 </script>
