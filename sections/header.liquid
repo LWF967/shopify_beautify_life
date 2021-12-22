@@ -818,6 +818,7 @@
 
       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         requestAnimationFrame(this.hide.bind(this));
+        document.querySelector(".modal__content").style.backgroundColor="#00f";
       } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
         if (!this.preventReveal) {
           requestAnimationFrame(this.reveal.bind(this));
