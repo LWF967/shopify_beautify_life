@@ -1019,14 +1019,13 @@
   let isopenasdas = memem.hasAttribute('open');
   
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
-    console.log("DOM监听成功");
-    if(!isopenasdas) {
+    if(isopenasdas == true) {
       console.log(memem);
-      console.log(123123);
+      console.log("true");
       headerre.style.zIndex = 897;
-    } else {
+    } else if(isopenasdas == false) {
       console.log(memem);
-      console.log("close");
+      console.log("false");
     }
   });
   
