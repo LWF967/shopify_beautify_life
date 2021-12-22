@@ -9,11 +9,7 @@
 .close_left { border-bottom: 2px solid {{ section.settings.promo_bar_cl_btn }}; } .close_right { border-bottom: 2px solid {{ section.settings.promo_bar_cl_btn }}; }
 {%- endstyle -%}
 
-<style>
-  #hide_banner {
-  	transition: all 1s;
-  }
-  
+<style> 
   .my_promo_flex {
     display: flex;
     justify-content: space-around;
@@ -89,7 +85,7 @@
   }
 </style>
 
-<div id="hide_banner" style="height:auto;margin-top:-{{ section.settings.promo_bar_height }}px;{%- if settings.promo_bar == false and settings.promo_bar_home_page_only -%}display: none;{%- elsif settings.promo_bar == false and settings.promo_bar_home_page_only == false -%}display: none;{%- elsif settings.promo_bar and settings.promo_bar_home_page_only and request.page_type != 'index' -%}display: none;{%- endif -%}" data-mheight='{{ section.settings.promo_bar_height }}'>
+<div id="hide_banner" style="height:auto;{%- if settings.promo_bar == false and settings.promo_bar_home_page_only -%}display: none;{%- elsif settings.promo_bar == false and settings.promo_bar_home_page_only == false -%}display: none;{%- elsif settings.promo_bar and settings.promo_bar_home_page_only and request.page_type != 'index' -%}display: none;{%- endif -%}" data-mheight>
   <div class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.promo_bar_show_icon}} my_promo_flex"
        data-date='{{section.settings.promo_bar_date}}'>
     {%- if section.settings.promo_bar_link != blank -%}<a href="{{ section.settings.promo_bar_link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>{%- endif -%}
@@ -125,6 +121,44 @@
 </div>
 
 <script>
+  var myPromoFreshDesignMode = Shopify.designMode || false;
+  if(myPromoFreshDesignMode){
+    document.addEventListener('shopify:section:load',() => {  
+      let close = document.getElementsByClassName('show_close')[0];
+      let my_center = document.getElementsByClassName('my_center')[0];
+      let hide_banner = document.getElementById('hide_banner');  
+      let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+      let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+      close.onclick = function () {
+        if(hide_banner_height > hide_banner.dataset.mheight) {
+          hide_banner.dataset.mheight = hide_banner_height;
+        }
+        hide_banner.style.marginTop = -hide_banner_height + 'px';
+        hide_banner.style.transition = "all .5s";
+      }
+
+      if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+        close.onclick = function () {
+          if(hide_banner_height > hide_banner.dataset.mheight) {
+            hide_banner.dataset.mheight = hide_banner_height;
+          }
+          hide_banner.style.marginTop = -hide_banner_height + 'px';
+          hide_banner.style.transition = "all .5s";
+        }
+      }
+      hide_banner.dataset.mheight = hide_banner_height + 1;
+      hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+
+      //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+//       window.onload = function () {
+    setTimeout(function() {
+      hide_banner.style.marginTop = 0 + 'px';
+      hide_banner.style.transition = "all .5s";
+    }, 500);
+        
+//       }
+    },true);
+  }
   let close = document.getElementsByClassName('show_close')[0];
   let my_center = document.getElementsByClassName('my_center')[0];
   let hide_banner = document.getElementById('hide_banner');  
@@ -136,7 +170,7 @@
     }
     hide_banner.style.marginTop = -hide_banner_height + 'px';
   }
-  
+
   if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
     close.onclick = function () {
       if(hide_banner_height > hide_banner.dataset.mheight) {
@@ -145,12 +179,14 @@
       hide_banner.style.marginTop = -hide_banner_height + 'px';
     }
   }
-  
-//     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+  hide_banner.dataset.mheight = hide_banner_height + 1;
+  hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+
+  //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
   window.onload = function () {
     hide_banner.style.marginTop = 0 + 'px';
+    hide_banner.style.transition = "all .5s";
   }
-
 </script>
 
 {%- schema -%}
