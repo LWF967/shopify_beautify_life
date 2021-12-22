@@ -302,7 +302,7 @@
 
 .my_header_icon_text_color, .my_header_icons_margin svg, .my_header_icons_margin .my_cart { color: {{ settings.header_icon_and_text_color }} !important; }
 .my_header_sticky_settings { background: {%- if settings.color_schemes=="gradients"-%}{{settings.color_page_background  | color_modify: 'alpha', my_header_sticky_background_opacity }}{%-else-%}{{ settings.header_sticky_background_color | color_modify: 'alpha', my_header_sticky_background_opacity }};{%-endif-%} }
-.my_header_sticky_settings .icon.icon-hamburger,.my_header_sticky_settings .icon.icon-close,.my_header_sticky_settings .my_header_icon_text_color,.my_header_sticky_settings .my_header_icons_margin svg,.my_header_sticky_settings .my_header_icons_margin .my_cart { color: {{ settings.header_sticky_icon_and_text_color }} !important; }
+.my_header_sticky_settings .icon.icon-hamburger,.my_header_sticky_settings .icon.icon-hamburger .icon.icon-close,.my_header_sticky_settings .my_header_icon_text_color,.my_header_sticky_settings .my_header_icons_margin svg,.my_header_sticky_settings .my_header_icons_margin .my_cart { color: {{ settings.header_sticky_icon_and_text_color }} !important; }
 {%- endstyle -%}
 
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
@@ -699,7 +699,7 @@
                         spellcheck="false" 
                       {%- endif -%}
                     >
-                    <label class="field__label my_header_search_label" style="left: 22px;color:{{settings.header_icon_and_text_color}}" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
+                    <label class="field__label my_header_search_label" style="left: 22px;" for="Search-In-Modal">{{ 'general.search.search' | t }}</label>
                     <input type="hidden" name="options[prefix]" value="last">
                     <button class="search__button field__button" style="height: 38px;" aria-label="{{ 'general.search.search' | t }}">
                       <svg class="icon icon-search" aria-hidden="true" focusable="false" role="presentation">
