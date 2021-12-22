@@ -1021,5 +1021,10 @@
   } else {
     console.log("close");
   }
+  $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
+
+    　　　　console.log("DOM监听成功");  
+
+　　　　});
   
 </script>
