@@ -1,6 +1,6 @@
 {%- style -%}
 {%- assign promo_bar_bg_op = section.settings.promo_bar_bg_op | divided_by: 100.0 -%}
-.h__banner { background-color: {{ section.settings.promo_bar_bg | color_modify: 'alpha', promo_bar_bg_op }};min-height:{{section.settings.promo_bar_height}}px;font-size:{{section.settings.promo_bar_fontsize}}px;}.h_banner_wrap {color:{{section.settings.promo_bar_cl}} }.h_banner_close,.h_banner_close:hover,.h_banner_close:focus {color:{{section.settings.promo_bar_cl_btn}} !important }.h_banner_close:after, .h_banner_close:before {background-color:{{section.settings.promo_bar_cl_btn}} }
+.h__banner { background-color: {%-if section.settings.color_scheme =="promo_bar_bg"-%}{{section.settings.promo_bar_bg| color_modify: 'alpha', promo_bar_bg_op}}{%-else-%}{{settings.color_page_background | color_modify: 'alpha', promo_bar_bg_op}}{%-endif-%};min-height:{{section.settings.promo_bar_height}}px;font-size:{{section.settings.promo_bar_fontsize}}px;}.h_banner_wrap {color:{{section.settings.promo_bar_cl}} }.h_banner_close,.h_banner_close:hover,.h_banner_close:focus {color:{{section.settings.promo_bar_cl_btn}} !important }.h_banner_close:after, .h_banner_close:before {background-color:{{section.settings.promo_bar_cl_btn}} }
 .my_a:hover { color: {{ section.settings.promo_bar_cl_btn | color_darken: 10 }} !important; transition: all .3s; }
 .my_a:hover .i_left { transform: rotate(45deg);border-bottom: 1px solid {{ section.settings.promo_bar_cl_btn | color_darken: 10 }} !important; transition: all .3s; } .my_a:hover .i_right { transform: rotate(-45deg);border-bottom: 1px solid {{ section.settings.promo_bar_promo_bar_cl_btn | color_darken: 10 }} !important; transition: all .3s; }
 .my_a:hover .close_left { border-bottom: 2px solid {{ section.settings.promo_bar_cl_btn | color_darken: 10 }} !important; transition: all .3s; } .my_a:hover .close_right { border-bottom: 2px solid {{ section.settings.promo_bar_cl_btn | color_darken: 10 }} !important; transition: all .3s; }
@@ -150,13 +150,16 @@
       hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
       //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-//       window.onload = function () {
-    setTimeout(function() {
-      hide_banner.style.marginTop = 0 + 'px';
-      hide_banner.style.transition = "all .5s";
-    }, 500);
-        
-//       }
+//     window.onload = function () {
+//       setTimeout(function() {
+        hide_banner.style.marginTop = 0 + 'px';
+        hide_banner.style.transition = "all .5s";
+//       }, 500);
+// 	consol.log(123123);
+//     }
+    
+      console.log(hide_banner_height);
+
     },true);
   }
   let close = document.getElementsByClassName('show_close')[0];
@@ -181,12 +184,25 @@
   }
   hide_banner.dataset.mheight = hide_banner_height + 1;
   hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+  
 
   //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-  window.onload = function () {
-    hide_banner.style.marginTop = 0 + 'px';
-    hide_banner.style.transition = "all .5s";
-  }
+//   window.onload = function () {
+//     hide_banner.style.marginTop = 0 + 'px';
+//     hide_banner.style.transition = "all .5s";
+//   }
+//     setTimeout(function() {
+  
+  
+//   window.onload = function () {
+// 	console.log(123124133);
+//     hide_banner.style.marginTop = 0 + 'px';
+//     hide_banner.style.transition = "all .5s";
+//   }
+  
+  
+  
+//     }, 500);
 </script>
 
 {%- schema -%}
@@ -236,6 +252,22 @@
         "id": "promo_bar_bg",
         "label": "Background Color",
         "default": "#E21F4A"
+      },
+        {
+        "type": "select",
+       "id": "color_scheme",
+      "options": [
+        {
+       "value": "gradient",
+       "label": "Global-page background" 
+        },
+       {
+        "value": "promo_bar_bg",
+        "label": "Promo_bar_bg background"
+         }
+       ],
+     "default": "gradient",
+       "label": "Background options"
       },
       {
         "type": "range",
