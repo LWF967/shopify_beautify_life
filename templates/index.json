@@ -368,7 +368,7 @@
       "settings": {
         "title": "BANNERasdas",
         "sub_title": "Popular this week",
-        "font_top": 30,
+        "font_top": 12,
         "color_top": "#ffffff",
         "grid": 2,
         "show_view_all": false,
