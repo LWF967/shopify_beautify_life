@@ -1015,15 +1015,12 @@
 <script>
   let memem = document.querySelector("#ProductModal-{{ section.id }}");
   let headerre = document.getElementById('shopify-section-header');
-  
   let isopenasdas = memem.hasAttribute('open');
   
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
     if(memem.hasAttribute('open') == true) {
-//       console.log(memem.hasAttribute('open'));
       headerre.style.zIndex = 897;
     } else if(memem.hasAttribute('open') == false) {
-//       console.log(memem.hasAttribute('open'));
       headerre.style.zIndex = 900;
     }
   });
