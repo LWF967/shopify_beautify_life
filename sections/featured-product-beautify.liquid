@@ -1016,15 +1016,15 @@
   let memem = document.querySelector("#ProductModal-{{ section.id }}");
   
   let isopenasdas = memem.hasAttribute('open');
-  if(isopenasdas) {
-    console.log(123123);
-  } else {
-    console.log("close");
-  }
+
+  
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
-
-    　　　　console.log("DOM监听成功");  
-
-　　　　});
+    console.log("DOM监听成功");
+    if(isopenasdas) {
+      console.log(123123);
+    } else {
+      console.log("close");
+    }
+  });
   
 </script>
