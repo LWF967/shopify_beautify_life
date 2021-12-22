@@ -46,7 +46,7 @@
 
 				{%- assign block = se_blocks | where: "type", 'slideshow_img2' | first -%}
              	{%- assign ratio = block.settings.image.aspect_ratio |default:1.7777777777777777 -%}
-				{%- assign img_h = block.settings.image.height | default:300 -%}				
+				{%- assign img_h = block.settings.image.height  -%}				
 
 				.feature-artworks{ max-height: 790px;min-height:300px}
      			.slideshow_content{ max-height: 790px;min-height:300px}
@@ -72,7 +72,7 @@
 
 		{%- for block in se_blocks -%} {%- assign bid = block.id -%}{%- assign btype = block.type -%}
 		{%- if se_height == 'adapt' -%}
-          		{%- assign img_h = block.settings.image.height | default:300 -%}	
+          		{%- assign img_h = block.settings.image.height  -%}	
        			.feature-artworks{ max-height: 790px;min-height:300px}
      			.slideshow_content{ max-height: 790px;min-height:300px}
 
