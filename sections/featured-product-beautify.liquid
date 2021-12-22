@@ -1014,6 +1014,7 @@
 
 <script>
   let memem = document.querySelector("#ProductModal-{{ section.id }}");
+  let headerre = document.getElementById('#shopify-section-header');
   
   let isopenasdas = memem.hasAttribute('open');
 
@@ -1022,6 +1023,7 @@
     console.log("DOM监听成功");
     if(!isopenasdas) {
       console.log(123123);
+      headerre.style.zIndex = 897;
     } else {
       console.log("close");
     }
