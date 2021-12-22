@@ -554,7 +554,7 @@
 
   .daily-product{
     width: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
-    height: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
+    height: 100%;
    background-color: white;
   }
 
@@ -565,19 +565,14 @@
   }
   }
   
-  @media screen and (min-width: 1224px) {
+  @media screen and (max-width: 1224px) {
     .daily-product{
     width: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
     height: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
   }
   }
   
-  @media screen and (min-width: 1324px) {
-    .daily-product{
-    width: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
-    height: 100%;
-  }
-  }
+
   
   .left,.right{
     height: 100%;
