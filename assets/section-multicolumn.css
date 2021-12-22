@@ -181,8 +181,8 @@
   .grid--2-col-tablet .multicolumn-list__item {
     /* lzx change start */
     /* margin-top: 1rem; */
-    /* lzx change start */
-    margin-top: 1.5rem;
+    margin-top: 3rem;
+    /* lzx change end */
     max-width: 50%;
   }
 
