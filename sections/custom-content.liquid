@@ -13,6 +13,11 @@
   .my_custom_content_clear_margin_bottom {
     margin-bottom: 0px;
   }
+  
+  .list--inline.custom__linklist .custom__linklist-item .custom__linklist-link {
+    font-weight: 700;
+    color: var(--font-title-color);
+  }
 </style>
 
 <div class="page-width spaced-section" style="{%- if section.settings.custom_content_margin_top != blank -%}margin-top: {{ section.settings.custom_content_margin_top }}px; {%- endif -%}{%- if section.settings.custom_content_margin_bottom != blank -%}margin-bottom:{{ section.settings.custom_content_margin_bottom }}px;{%- endif -%}">
