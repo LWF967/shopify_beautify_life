@@ -179,7 +179,10 @@
   }
 
   .grid--2-col-tablet .multicolumn-list__item {
-    margin-top: 1rem;
+    /* lzx change start */
+    /* margin-top: 1rem; */
+    /* lzx change start */
+    margin-top: 1.5rem;
     max-width: 50%;
   }
 
