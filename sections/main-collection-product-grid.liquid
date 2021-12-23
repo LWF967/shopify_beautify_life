@@ -80,7 +80,11 @@
     stroke:{{settings.colors_heading_warn_text}}
     }
     .mobile-facets__clear {color:{{settings.colors_heading_warn_text}};}
-  .mobile-facets__clear-wrapper:hover .mobile-facets__clear{color:{{settings.colors_heading_warn_text}};text-decoration: underline}
+  
+    .mobile-facets__clear-wrapper .mobile-facets__clear {color:{{settings.colors_heading_warn_text}};text-underline-offset: 0.3rem;
+    text-decoration-thickness: 0.1rem !important;
+    transition: text-decoration-thickness ease .1s;text-decoration: underline}
+.mobile-facets__clear-wrapper:hover .mobile-facets__clear {color:{{settings.colors_heading_warn_text}};text-decoration-thickness:0.2rem !important;text-decoration: underline}
     .button{color:{{settings.colors_heading_warn_text}};}
     .collection-filters{padding:0 1.5rem !important}
   }
