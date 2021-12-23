@@ -72,7 +72,7 @@
                <div style="width:100%;height:auto;"> {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}  </div>
           {%- endif -%} 
                
-               <div class="slideshow_text_box_{{section.id}}  {{ block.settings.text_alignment }}"> 
+               <div class="slideshow_text_box_{{section.id}}  {{ block.settings.text_alignment }}"  data-swiper-parallax="0" data-swiper-parallax-opacity="0.5" > 
                  <h1 class="my_font_weight_default my_slideshow_beautify_heading_margin
                             {% if section.settings.text_size == 'medium' %}my_slideshow_beautify_heading_text_size_medium
                             {% elsif section.settings.text_size == 'large' %}my_slideshow_beautify_heading_text_size_large
