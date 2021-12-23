@@ -260,68 +260,7 @@
     overflow: inherit;
   }
   
-  .opa-0{
-  	opacity:0;
-  }
-  
- .opa-1{
-  	opacity:1;
-  }
-  
-  .banner-beautify-imgbox{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow: hidden;  
-    max-height: 400px;           	
 
-  }
-  
-  .grid1.grid--uniform.my_banner_beautify_ul_margin {
-    margin: 0 -1.5rem;
-  }
-  
-  .my_banner_beautify_ul_margin li {
-    padding: 0 1.5rem 3rem;
-  }
-  
-  .my_banner_beautify_font_size {
-    font-size: {{section.settings.font_top}}px;
-  }
-  
-  @media screen and (max-width: 750px) {
-    .banner-beautify-imgbox{
-      height: 200px; 
-    }
-    
-    .my_banner_beautify_ul_margin li {
-      padding: 0 1.5rem 1.5rem;
-    }
-  }
-
-  @media screen and (min-width: 990px) {
-    .banner-beautify-imgbox{
-     height: 300px; 
-    }    
-  }
-  
-  @media screen and (max-width: 990px) {
-    .banner-beautify-imgbox{
-      height: 200px; 
-    } 
-    
-    .my_banner_beautify_banner_third a {
-      margin: 0.75rem 0;
-    }
-
-    .my_banner_beautify_banner_third a:first-child {
-      margin: 0 0 0.75rem;
-    }
-
-    .my_banner_beautify_banner_third a:last-child {
-      margin: 0.75rem 0 1.5rem;
-    }
-  }
   
   @media screen and (min-width: 750px) and (max-width: 990px) {
     .grid1.grid--uniform.my_banner_beautify_ul_margin {
@@ -337,81 +276,7 @@
 
 
   
-  .swiper-pagination-{{section.id}}.swiper-pagination-hidden {
-    opacity: 0
-  }
-/*   定义轮播点 */
-  
-  
-  {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
-    .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-    background:#4e4e4e;
-	border: 1.5px solid rgb(189 188 188 / 28%);
 
-  	}
-
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-      background:black;
-    
-    }
-  {% elsif section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'light' %}
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-
-    background:#4e4e4e;
-	border: 1.5px solid rgb(189 188 188 / 28%);
-  	}
-
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-      background:white;
-    
-    }
-  {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'dark' %}
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-	border: 1px solid #323232;
-    background:white;
-  	}
-
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-      background:black;
-
-    }
-  {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light'%}
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-	border: 1px solid #323232;
-    background:#adadad;
-  	}
-
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-      background:white;
-
-    }
-  {% endif %}	
-
-  .swiper-pagination-{{section.id}} {
-  	width: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 20px;
-    z-index: 100;
-    cursor: pointer;
-    padding: 0px;
-    margin: 0;
-  }
-  
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-    float:left;
-    width:16px;
-    height:16px;
-    text-align: center;
-    line-height: 16px;
-    font-size: 10px;
-    border-radius: 50%;
-    text-align: center;
-    transition:all 1.5s;
-    margin: 0 14px;
-    list-style-type: none;
-  }
 </style>
 
 
