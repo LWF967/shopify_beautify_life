@@ -7,13 +7,13 @@
     {% when 'adapt' %}
       {%- assign grid_item_width = 'medium-up--one-half' -%}
     {% when 'x-small' %}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
+
     {% when 'small' %}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
+
     {% when 'medium' %}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
+
   	{% when 'large' %}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-sixth' -%}
+
 	{% when 'x-large' %}
   {% endcase %}
 
@@ -57,6 +57,44 @@
 {%- endstyle -%}
 
 <style>
+  
+  
+.section--adapt,
+.section-fixed-width__image {
+  max-height: 100vh; }
+  @media only screen and (min-width: 750px) {
+    .section--adapt,
+    .section-fixed-width__image {
+      max-height: 80vh; } }
+
+.section--x-small {
+  height: 94px; }
+
+.section--small {
+  height: 225px; }
+
+.section--medium {
+  height: 357px; }
+
+.section--large {
+  height: 488px; }
+
+.section--x-large {
+  height: 582px; }
+
+@media only screen and (min-width: 750px) {
+  .section--x-small {
+    height: 125px; }
+  .section--small {
+    height: 300px; }
+  .section--medium {
+    height: 475px; }
+  .section--large {
+    height: 650px; }
+  .section--x-large {
+    height: 775px; } }
+
+  
   .my_image_with_text_overlay_button {
     min-height: 40px;
   }
