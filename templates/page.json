@@ -300,6 +300,91 @@
         "slideshow_beautify_margin_top": "",
         "slideshow_beautify_margin_bottom": ""
       }
+    },
+    "1640222429a849b220": {
+      "type": "image-banner",
+      "blocks": {
+        "1640222429914815db-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "medium"
+          }
+        },
+        "1640222429914815db-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1640222429914815db-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1640222429914815db-0",
+        "1640222429914815db-1",
+        "1640222429914815db-2"
+      ],
+      "settings": {
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1640222452684de293": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "1640222452c7d03fa4-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "1640222452c7d03fa4-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1640222452c7d03fa4-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false
+          }
+        }
+      },
+      "block_order": [
+        "1640222452c7d03fa4-0",
+        "1640222452c7d03fa4-1",
+        "1640222452c7d03fa4-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "text_size": "medium",
+        "image_overlay_opacity": 0,
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "image_with_text_overlay_margin_top": "",
+        "image_with_text_overlay_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -309,6 +394,8 @@
     "16401647781a74fec1",
     "1640164891d7083ec1",
     "16401649020844b29c",
-    "16401651000e1c525c"
+    "16401651000e1c525c",
+    "1640222429a849b220",
+    "1640222452684de293"
   ]
 }
