@@ -23,6 +23,47 @@
   {%- endstyle -%}
 {%- endif -%}
 
+
+
+
+.hero--adapt,
+.hero-fixed-width__image {
+  max-height: 100vh; }
+  @media only screen and (min-width: 750px) {
+    .hero--adapt,
+    .hero-fixed-width__image {
+      max-height: 80vh; } }
+
+.hero--x-small {
+  height: 94px; }
+
+.hero--small {
+  height: 225px; }
+
+.hero--medium {
+  height: 357px; }
+
+.hero--large {
+  height: 488px; }
+
+.hero--x-large {
+  height: 582px; }
+
+@media only screen and (min-width: 750px) {
+  .hero--x-small {
+    height: 125px; }
+  .hero--small {
+    height: 300px; }
+  .hero--medium {
+    height: 475px; }
+  .hero--large {
+    height: 650px; }
+  .hero--x-large {
+    height: 775px; } }
+
+
+
+
 {%- style -%}
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
