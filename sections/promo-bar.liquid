@@ -172,30 +172,33 @@
       },true);
     }
   }
-  refresh_promo();
-  let close = document.getElementsByClassName('show_close')[0];
-  let my_center = document.getElementsByClassName('my_center')[0];
-  let hide_banner = document.getElementById('hide_banner');  
-  let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-  let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
-  close.onclick = function () {
-    if(hide_banner_height > hide_banner.dataset.mheight) {
-      hide_banner.dataset.mheight = hide_banner_height;
-    }
-    hide_banner.style.marginTop = -hide_banner_height + 'px';
-  }
-
-  if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+  
+  function asdsad() {
+    refresh_promo();
+    let close = document.getElementsByClassName('show_close')[0];
+    let my_center = document.getElementsByClassName('my_center')[0];
+    let hide_banner = document.getElementById('hide_banner');  
+    let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+    let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
     close.onclick = function () {
       if(hide_banner_height > hide_banner.dataset.mheight) {
         hide_banner.dataset.mheight = hide_banner_height;
       }
       hide_banner.style.marginTop = -hide_banner_height + 'px';
     }
+
+    if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+      close.onclick = function () {
+        if(hide_banner_height > hide_banner.dataset.mheight) {
+          hide_banner.dataset.mheight = hide_banner_height;
+        }
+        hide_banner.style.marginTop = -hide_banner_height + 'px';
+      }
+    }
+    hide_banner.dataset.mheight = hide_banner_height + 1;
+    hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
   }
-  hide_banner.dataset.mheight = hide_banner_height + 1;
-  hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-  
+  asdsad();
   // promo close cookie ddl
   
   let cookiepromo = document.getElementById('promo_bar_date');
@@ -217,7 +220,6 @@
   setCookie("close_ddl","close_ddl");
   
   let cookiedate = document.cookie.indexOf("close_ddl=");
-  console.log(document.cookie);
   if(cookiedate == -1) {
     console.log("日期是0 则不关闭刷新机制");
     
