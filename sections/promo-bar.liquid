@@ -226,7 +226,7 @@
     var exp = new Date(); 
     exp.setTime(exp.getTime() + Days*24*60*60*1000);
     document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
-    console.log("time: "+ getLocalTime(exp.setTime(exp.getTime() + Days*24*60*60*1000)));
+    console.log("time: "+ (exp.setTime(exp.getTime() + Days*24*60*60*1000)));
     console.log("day:"+Days);
   }
   setCookie("close_ddl","close_ddl");
