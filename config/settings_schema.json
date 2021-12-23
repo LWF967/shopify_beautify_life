@@ -323,6 +323,12 @@
         "label": "Page Heading"
       },
       {
+        "type": "color",
+        "id": "colors_heading_warn_text",
+        "default": "#f00",
+        "label": "Select Heading"
+      },
+      {
         "type": "header",
         "content": "Label color"
       },
