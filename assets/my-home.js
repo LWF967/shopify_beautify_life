@@ -152,9 +152,6 @@ window.onload = function() {
 
 window.onresize = function() {
   my_home();
-  if (document.body.clientWidth < 1024) {
-      console.log(21312313212321313);
-    }
 }
 
 function my_home() {
