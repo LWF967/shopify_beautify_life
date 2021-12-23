@@ -183,9 +183,19 @@
   hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
   //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-      $("#hide_banner").bind('DOMSubtreeModified', function() {  
-		console.log("promo change");
-      });
+
+
+  var targetNode = $('#hide_banner')[0];//content监听的元素id
+  //options：监听的属性
+  var options = { attributes: true, childList: true,subtree:true,attributeOldValue:true };
+  //回调事件
+  function callback(mutationsList, observer) {
+    console.log(mutationsList);
+    console.log(observer);
+    console.log(111111111);
+  }
+  var mutationObserver = new MutationObserver(callback);
+  mutationObserver.observe(targetNode, options);
 </script>
 
 {%- schema -%}
