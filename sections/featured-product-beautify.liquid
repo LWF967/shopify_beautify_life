@@ -1015,7 +1015,7 @@
 <script>
   let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");
   let featured_product_header = document.getElementById('shopify-section-header');
-  
+  console.log(featured_product_ProductModal);
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
     if(featured_product_ProductModal.hasAttribute('open') == true) {
       featured_product_header.style.zIndex = 897;
