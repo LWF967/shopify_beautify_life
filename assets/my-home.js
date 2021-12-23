@@ -153,7 +153,13 @@ window.onload = function() {
 window.onresize = function() {
   my_home();
 //   promo_bar_change();
-  ddddl();
+      let cookiedate = document.cookie.indexOf("close_ddl=");
+    if(cookiedate == -1) {
+      console.log("日期是0 则不关闭刷新机制");
+      promo_bar_fun();
+    } else {
+      console.log("日期不是0 则关闭刷新机制"); 
+    }
 }
 
 function my_home() {
