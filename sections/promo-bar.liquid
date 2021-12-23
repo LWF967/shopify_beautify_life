@@ -155,10 +155,6 @@
       hide_banner.style.marginTop = 0 + 'px';
       hide_banner.style.transition = "all .5s";
     }, 500);
-    
-    $("#hide_banner").bind('DOMSubtreeModified', function() {  
-		console.log("promo change");
-      });
         
 //       }
     },true);
@@ -187,6 +183,9 @@
   hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
   //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+      $("#hide_banner").bind('DOMSubtreeModified', function() {  
+		console.log("promo change");
+      });
 </script>
 
 {%- schema -%}
