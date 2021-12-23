@@ -83,7 +83,7 @@ $(window).resize(function(){
 });
 
 // window.onresize = function() {
-  
+//       my_home();
 //   promo_bar_change();
 // //   ddddl();
 // }
