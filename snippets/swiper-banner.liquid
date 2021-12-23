@@ -9,15 +9,9 @@
             class="
               lz_op_ef
               w__100
-              {%
-              if
-              block.settings.url1
-              ==
-              blank
-              %}
-              pe_none{%
-              endif
-              %}
+              {%  if block.settings.url1 == blank %}
+              pe_none
+				{%endif%}
             "
           >
             <div class="banner-beautify-imgbox">
