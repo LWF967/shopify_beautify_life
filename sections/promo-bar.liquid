@@ -121,13 +121,13 @@
 </div>
 
 <script>
+  let close = document.getElementsByClassName('show_close')[0];
+  let my_center = document.getElementsByClassName('my_center')[0];
+  let hide_banner = document.getElementById('hide_banner');  
+  let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+  let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
   function promo_bar_change() {
     console.log("切换屏幕");
-    let close = document.getElementsByClassName('show_close')[0];
-    let my_center = document.getElementsByClassName('my_center')[0];
-    let hide_banner = document.getElementById('hide_banner');  
-    let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-    let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
     close.onclick = function () {
       if(hide_banner_height > hide_banner.dataset.mheight) {
         hide_banner.dataset.mheight = hide_banner_height;
@@ -156,14 +156,14 @@
     }, 500);
   }
   
-  let refresh_promo = function() {
+  let cookiepromo = document.getElementById('promo_bar_date');
+  let ddl = cookiepromo.getAttribute('data-date');
+  
+  function refresh_promo() {
     var myPromoFreshDesignMode = Shopify.designMode || false;
     if(myPromoFreshDesignMode){
       document.addEventListener('shopify:section:load',() => {  
 		promo_bar_change();
-
-      let cookiepromo = document.getElementById('promo_bar_date');
-      let ddl = cookiepromo.getAttribute('data-date');
         if(ddl > 0) {
           console.log("close");
         } else {
@@ -173,11 +173,11 @@
     }
   }
   refresh_promo();
-  let close = document.getElementsByClassName('show_close')[0];
-  let my_center = document.getElementsByClassName('my_center')[0];
-  let hide_banner = document.getElementById('hide_banner');  
-  let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-  let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+//   let close = document.getElementsByClassName('show_close')[0];
+//   let my_center = document.getElementsByClassName('my_center')[0];
+//   let hide_banner = document.getElementById('hide_banner');  
+//   let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+//   let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
   close.onclick = function () {
     if(hide_banner_height > hide_banner.dataset.mheight) {
       hide_banner.dataset.mheight = hide_banner_height;
@@ -222,9 +222,6 @@
 //   } else {
 //     console.log("日期不是0 则关闭刷新机制"); 
 //   }
-  
-
-  //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
 </script>
 
