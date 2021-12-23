@@ -10,10 +10,6 @@
 {%- endstyle -%}
 
 <style> 
-/*   #hide_banner {
-    transition: all .5s;
-  } */
-  
   .my_promo_flex {
     display: flex;
     justify-content: space-around;
@@ -150,16 +146,16 @@
           hide_banner.style.transition = "all .5s";
         }
       }
-//       hide_banner.dataset.mheight = hide_banner_height + 1;
+      hide_banner.dataset.mheight = hide_banner_height + 1;
 //       hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px'; 
 
       //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 //     window.onload = function () {
-      setTimeout(function() {
+//       setTimeout(function() {
         hide_banner.style.marginTop = 0 + 'px';
         hide_banner.style.transition = "all .5s";
-        console.log(123);
-      }, 500);
+//       }, 500);
+// 	consol.log(123123);
 //     }
     
       console.log(hide_banner_height);
@@ -187,15 +183,25 @@
       hide_banner.style.marginTop = -hide_banner_height + 'px';
     }
   }
-//   hide_banner.dataset.mheight = hide_banner_height + 1;
+  hide_banner.dataset.mheight = hide_banner_height + 1;
   hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
   //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-
+//   window.onload = function () {
+//     hide_banner.style.marginTop = 0 + 'px';
+//     hide_banner.style.transition = "all .5s";
+//   }
+//     setTimeout(function() {
   
-   $("#shopify-section-promo-bar").bind('DOMSubtreeModified', function() {  
-		console.log(123124133);
-
-  });
+  
+//   window.onload = function () {
+// 	console.log(123124133);
+//     hide_banner.style.marginTop = 0 + 'px';
+//     hide_banner.style.transition = "all .5s";
+//   }
+  
+  
+  
+//     }, 500);
 </script>
 
 {%- schema -%}

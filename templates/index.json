@@ -576,6 +576,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
+        "image_alignment": "center center",
+        "hero_size": "medium",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
@@ -925,54 +927,6 @@
         "daily_deal_of_the_day_margin_top": "",
         "daily_deal_of_the_day_margin_bottom": ""
       }
-    },
-    "16401652876f1fdd56": {
-      "type": "slideshow-beautify-2",
-      "blocks": {
-        "1246f93d-461c-4416-8d35-98e2cd4188f8": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image_alignment": "center center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
-        },
-        "c7ef8233-a165-46ee-8a41-2a3af28b6a86": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image_alignment": "center center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1246f93d-461c-4416-8d35-98e2cd4188f8",
-        "c7ef8233-a165-46ee-8a41-2a3af28b6a86"
-      ],
-      "settings": {
-        "se_height": "adapt",
-        "text_size": "medium",
-        "loop": true,
-        "auto_play": true,
-        "auto_time": 3,
-        "show_button": true,
-        "show_button_visible": "always",
-        "show_button_style": "style1",
-        "show_button_color": "white",
-        "show_button_hover_color": "",
-        "show_page_Dot": false,
-        "page_dot_style": "style_1",
-        "page_dot_color": "dark",
-        "slideshow_beautify_margin_top": "",
-        "slideshow_beautify_margin_bottom": ""
-      }
     }
   },
   "order": [
@@ -994,7 +948,6 @@
     "1638771575eb761fd8",
     "163817972763d6e808",
     "163816995034a6b1f9",
-    "163955974651c1a9fc",
-    "16401652876f1fdd56"
+    "163955974651c1a9fc"
   ]
 }

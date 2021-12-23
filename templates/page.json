@@ -375,6 +375,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+        "image_alignment": "center center",
+        "hero_size": "medium",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
