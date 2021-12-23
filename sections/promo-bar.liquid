@@ -202,10 +202,11 @@
   hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
   //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+  let cookiepromo = document.getElementById('promo_bar_date');
+  let ddl = cookiepromo.getAttribute('data-date');
   
   $("#promo_bar_date").bind('DOMSubtreeModified', function() {  
-    let cookiepromo = document.getElementById('promo_bar_date');
-    let ddl = cookiepromo.getAttribute('data-date');
+
     if(ddl > 0) {
       console.log("close");
     } else {
