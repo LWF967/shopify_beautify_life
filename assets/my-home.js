@@ -55,7 +55,7 @@ window.onload = function() {
           footer_bottom.style.width = '100%';
 
 //           console.log("top:"+my_footer_sticky_height); 
-//           console.log("bottom:"+footer_bottom_height);
+          console.log("bottom:"+footer_bottom_height);
 //           console.log("main:"+main.style.marginBottom); 
 //           console.log("+++++++++++++++");        
         }
@@ -230,7 +230,7 @@ function my_home() {
       footer_bottom.style.width = '100%';
 
 //       console.log("top:"+my_footer_sticky_height); 
-//       console.log("bottom:"+footer_bottom_height);
+      console.log("无刷新bottom:"+footer_bottom_height);
 //       console.log("main:"+main.style.marginBottom); 
 //       console.log("===================");        
     }
