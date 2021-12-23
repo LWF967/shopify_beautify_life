@@ -160,6 +160,10 @@
         hide_banner.style.transition = "all .5s";
         console.log(123);
       }, 500);
+    
+    $("#hide_banner").bind('DOMSubtreeModified', function() {  
+		console.log(213123);
+  });
 
 // 	consol.log(123123);
 //     }
