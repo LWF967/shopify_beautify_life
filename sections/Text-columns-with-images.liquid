@@ -9,7 +9,7 @@
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 {% assign image_overlay_opacity = settings.image_overlay_opacity | divided_by: 100.0 %}
 {%-style-%}
-.text-image{padding:5px 0px}
+.text-images{padding:5px 0px;background:{{settings.color_image_overlay | color_modify: 'alpha', image_overlay_opacity}}}
 {%-endstyle-%}
 <style>
   .Text_columns_with_images_title {
@@ -180,7 +180,7 @@
         {%- for block in section.blocks -%}
           <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}
               >
-            <div class=""  style="background:{{settings.color_image_overlay | color_modify: 'alpha', image_overlay_opacity}}">
+            <div class="text-images"  >
               
               {% if block.settings.show_image == true %}
                 {%- if block.settings.image != blank -%}
