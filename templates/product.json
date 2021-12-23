@@ -176,6 +176,7 @@
     },
     "16395524088ec92f0f": {
       "type": "daily-deal-of-the-day",
+      "disabled": true,
       "settings": {
         "product": "text4",
         "heading_text": "Daily Deal Of The Day",
