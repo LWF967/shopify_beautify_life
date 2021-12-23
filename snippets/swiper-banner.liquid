@@ -46,7 +46,8 @@
             </div>
           </a>
         </div>
-        {%- elsif image2 != blank -%}
+        {%- endif -%}
+        {%- if image2 != blank -%}
         <div class="swiper-slide 2">
           <a
             href="{{ block.settings.url2 }}"
@@ -96,7 +97,8 @@
             </div>
           </a>
         </div>
-        {%- elsif image3 != blank -%}
+        {%- endif -%}
+        {%- if image3 != blank -%}
         <div class="swiper-slide 3">
           <a
             href="{{ block.settings.url3 }}"
@@ -146,7 +148,8 @@
             </div>
           </a>
         </div>
-        {%- elsif image1 == blank and image2 == blank and image3 == blank -%}
+        {%- endif -%}
+        {%- if image1 == blank and image2 == blank and image3 == blank -%}
          <div class="swiper-slide 4">
           <a
             href="#"
