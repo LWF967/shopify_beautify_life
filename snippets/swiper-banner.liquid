@@ -146,6 +146,40 @@
             </div>
           </a>
         </div>
+        {%- elsif image1 == blank and image2 == blank and image3 == blank -%}
+         <div class="swiper-slide 4">
+          <a
+            href="#"
+            target="#"
+            class="
+              lz_op_ef
+              w__100
+              {%  if block.settings.url1 == blank %}
+              pe_none
+				{%endif%}
+            "
+          >
+            <div class="banner-beautify-imgbox">
+   
+              {{ "image" | placeholder_svg_tag: "placeholder-svg" }}
+
+            </div>
+            <div
+              class="
+                nt_promotion_html
+                pa
+                t__0
+                l__0
+                tc
+                pe_none
+                my_banner_beautify_font_size
+              "
+              style="font-weight:600; color:{{ section.settings.color_top }}"
+            >
+              heading
+            </div>
+          </a>
+        </div>
         {%- endif -%}
       </div>
       <!-- 如果需要分页器 -->
