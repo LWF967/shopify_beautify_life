@@ -591,8 +591,7 @@ a.active-facets__button.focused .active-facets__button-inner,
   z-index: 101;
   /* lzx change start */
 /*     background-color: rgba(var(--color-foreground), 0.5); */
-  background-color: var(--color-image-overlay);
-  opacity: var(--opacity-image-overlay);
+  background-color: var(--color-image-overlay-rgb);
 /*   lzx change end */
   pointer-events: none;
 }
