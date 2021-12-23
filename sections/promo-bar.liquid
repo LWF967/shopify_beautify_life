@@ -230,10 +230,29 @@
 //     }
 //   }
 
-  Cookies.set('name', 'value', {
-    expires: ddl,
-  });
+  //获取cookie项的cookie值
+  function getCookie(cName) {
+    if (document.cookie.length > 0) {
+      var cStart = document.cookie.indexOf(cName + "=");
+      if (cStart != -1) {
+        cStart = cStart + cName.length + 1;
+        var cEnd = document.cookie.indexOf(";", cStart);
+        if (cEnd == -1) cEnd = document.cookie.length;
+        return document.cookie.substring(cStart, cEnd);
+      }
+    }
+    return "";
+  }
+
+  //设置cookie
+  function setCookie(cName, value, expiredays) {
+    var exdate = new Date();
+    exdate.setDate(exdate.getDate() + expiredays);
+    document.cookie = cName + "=" + value + ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString());
+  }
   
+  setCookie("ddl", "ddl", ddl);
+  console.log(getCookie("ddl"));
 </script>
 
 {%- schema -%}
