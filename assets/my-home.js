@@ -153,7 +153,7 @@ window.onload = function() {
 window.onresize = function() {
   my_home();
 //   promo_bar_change();
-  ddddl();
+//   ddddl();
 }
 
 function my_home() {
