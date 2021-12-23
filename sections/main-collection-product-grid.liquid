@@ -424,7 +424,7 @@
                           <div class="select" >
                             <select name="sort_by" class="select__select" id="SortBy-mobile" aria-describedby="a11y-refresh-page-message" style="background-color:transparent">
                               {%- for option in collection.sort_options -%}
-                                <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %} style="background-color:{{settings.colors_page_stickiness}}">{{ option.name | escape }}</option>
+                                <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %} style="background-color:{{settings.color_page_background}}">{{ option.name | escape }}</option>
                               {%- endfor -%}
                             </select>
                             {% render 'icon-caret' %}
