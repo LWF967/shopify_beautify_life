@@ -1013,14 +1013,14 @@
 {% endschema %}
 
 <script>
-//   let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");
-//   let featured_product_header = document.getElementById('shopify-section-header');
+  let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");
+  let featured_product_header = document.getElementById('shopify-section-header');
   
-//   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
-//     if(featured_product_ProductModal.hasAttribute('open') == true) {
-//       featured_product_header.style.zIndex = 897;
-//     } else if(featured_product_ProductModal.hasAttribute('open') == false) {
-//       featured_product_header.style.zIndex = 900;
-//     }
-//   });
+  $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
+    if(featured_product_ProductModal.hasAttribute('open') == true) {
+      featured_product_header.style.zIndex = 897;
+    } else if(featured_product_ProductModal.hasAttribute('open') == false) {
+      featured_product_header.style.zIndex = 900;
+    }
+  });
 </script>
