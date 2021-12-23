@@ -366,6 +366,7 @@
                             <span class="field-currency">{{ cart.currency.symbol }}</span>
                             <div class="field">
                               <input class="field__input"
+                                style="box-shadow: 0 0 0 0.1rem {{settings.colors_body_text}};background-color:transparent"
                                 name="{{ filter.min_value.param_name }}"
                                 id="Mobile-Filter-{{ filter.label | escape }}-GTE"
                                 {%- if filter.min_value.value -%}
@@ -384,6 +385,7 @@
                             <span class="field-currency">{{ cart.currency.symbol }}</span>
                             <div class="field">
                               <input class="field__input"
+                                style="box-shadow: 0 0 0 0.1rem {{settings.colors_body_text}};background-color:transparent"
                                 name="{{ filter.max_value.param_name }}"
                                 id="Mobile-Filter-{{ filter.label | escape }}-LTE"
                                 {%- if filter.max_value.value -%}
