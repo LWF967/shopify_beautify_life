@@ -122,7 +122,7 @@
 
 <script>
   
-  let asfafas = function() {
+  let refreshpromo = function() {
     var myPromoFreshDesignMode = Shopify.designMode || false;
     if(myPromoFreshDesignMode){
       document.addEventListener('shopify:section:load',() => {  
@@ -177,7 +177,7 @@
       },true);
     }
   }
-  asfafas();
+  refreshpromo();
   let close = document.getElementsByClassName('show_close')[0];
   let my_center = document.getElementsByClassName('my_center')[0];
   let hide_banner = document.getElementById('hide_banner');  
@@ -220,7 +220,7 @@
   function promo_bar_change() {
     if (document.body.clientWidth < 1024) {
       console.log("切换屏幕");
-      asfafas();
+      refreshpromo();
     }
   }
 
