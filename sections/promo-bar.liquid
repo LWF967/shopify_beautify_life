@@ -213,10 +213,12 @@
   var mutationObserver = new MutationObserver(callback);
   mutationObserver.observe(targetNode, options);
   
-  
-  if (document.body.clientWidth < 1024) {
-    console.log(21312313212321313);
+  if(hide_banner) {
+    console.log(1);
   }
+//    (document.body.clientWidth < 1024) {
+//     console.log(21312313212321313);
+//   }
 </script>
 
 {%- schema -%}
