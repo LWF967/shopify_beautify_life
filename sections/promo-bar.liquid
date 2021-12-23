@@ -204,7 +204,12 @@
   //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
   let cookiepromo = document.getElementsByClassName('my_promo_flex')[0];
-  console.log(cookiepromo.getAttribute('data-date'));
+  let ddl = cookiepromo.getAttribute('data-date');
+  if(ddl > 0) {
+    console.log("close");
+  } else {
+    console.log("open");
+  }
   
   function promo_bar_change() {
     console.log("切换屏幕");
