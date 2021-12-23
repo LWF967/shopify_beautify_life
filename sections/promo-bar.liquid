@@ -216,23 +216,14 @@
   function promo_bar_change() {
     if (document.body.clientWidth < 1024) {
       console.log(21312313212321313);
-        var myPromoFreshDesignMode = Shopify.designMode || false;
-  if(myPromoFreshDesignMode){
-    document.addEventListener('shopify:section:load',() => {  
-      let close = document.getElementsByClassName('show_close')[0];
-      let my_center = document.getElementsByClassName('my_center')[0];
-      let hide_banner = document.getElementById('hide_banner');  
-      let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-      let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
-      close.onclick = function () {
-        if(hide_banner_height > hide_banner.dataset.mheight) {
-          hide_banner.dataset.mheight = hide_banner_height;
-        }
-        hide_banner.style.marginTop = -hide_banner_height + 'px';
-        hide_banner.style.transition = "all .5s";
-      }
-
-      if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+      var myPromoFreshDesignMode = Shopify.designMode || false;
+      if(myPromoFreshDesignMode){
+        document.addEventListener('shopify:section:load',() => {  
+                                  let close = document.getElementsByClassName('show_close')[0];
+        let my_center = document.getElementsByClassName('my_center')[0];
+        let hide_banner = document.getElementById('hide_banner');  
+        let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+        let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
         close.onclick = function () {
           if(hide_banner_height > hide_banner.dataset.mheight) {
             hide_banner.dataset.mheight = hide_banner_height;
@@ -240,35 +231,25 @@
           hide_banner.style.marginTop = -hide_banner_height + 'px';
           hide_banner.style.transition = "all .5s";
         }
-      }
-      hide_banner.dataset.mheight = hide_banner_height + 1;
-      hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
-      //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-//       window.onload = function () {
-    
-    
-    var targetNode = $('#hide_banner')[0];//content监听的元素id
-    //options：监听的属性
-    var options = { attributes: true, childList: true,subtree:true,attributeOldValue:true };
-    //回调事件
-    function callback(mutationsList, observer) {
-      console.log(mutationsList);
-      console.log(observer);
-      console.log(222222);
-      console.log(mutationsList.length);
+        if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+          close.onclick = function () {
+            if(hide_banner_height > hide_banner.dataset.mheight) {
+              hide_banner.dataset.mheight = hide_banner_height;
+            }
+            hide_banner.style.marginTop = -hide_banner_height + 'px';
+            hide_banner.style.transition = "all .5s";
+          }
+        }
+        hide_banner.dataset.mheight = hide_banner_height + 1;
+        hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+
+        setTimeout(function() {
+          hide_banner.style.marginTop = 0 + 'px';
+          hide_banner.style.transition = "all .5s";
+        }, 500);
+      },true);
     }
-    var mutationObserver = new MutationObserver(callback);
-    mutationObserver.observe(targetNode, options);
-    
-    setTimeout(function() {
-      hide_banner.style.marginTop = 0 + 'px';
-      hide_banner.style.transition = "all .5s";
-    }, 500);
-        
-//       }
-    },true);
-  }
   }
 
 </script>
