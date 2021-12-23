@@ -300,14 +300,6 @@
         "slideshow_beautify_margin_top": "",
         "slideshow_beautify_margin_bottom": ""
       }
-    },
-    "16402220060faca7be": {
-      "type": "contact-form",
-      "settings": {
-        "heading": "Contact form",
-        "contact_form_margin_top": "",
-        "contact_form_margin_bottom": ""
-      }
     }
   },
   "order": [
@@ -317,7 +309,6 @@
     "16401647781a74fec1",
     "1640164891d7083ec1",
     "16401649020844b29c",
-    "16401651000e1c525c",
-    "16402220060faca7be"
+    "16401651000e1c525c"
   ]
 }
