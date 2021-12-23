@@ -143,27 +143,10 @@
   let cookiedate = document.cookie.indexOf("close_ddl=");
   if(cookiedate == -1) {
     console.log("日期是0 则不关闭刷新机制");
-    refresh_promo();
-    close.onclick = function () {
-      if(hide_banner_height > hide_banner.dataset.mheight) {
-        hide_banner.dataset.mheight = hide_banner_height;
-      }
-      hide_banner.style.marginTop = -hide_banner_height + 'px';
-    }
-
-    if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
-      close.onclick = function () {
-        if(hide_banner_height > hide_banner.dataset.mheight) {
-          hide_banner.dataset.mheight = hide_banner_height;
-        }
-        hide_banner.style.marginTop = -hide_banner_height + 'px';
-      }
-    }
-    hide_banner.dataset.mheight = hide_banner_height + 1;
-    hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+    
   } else {
     console.log("日期不是0 则关闭刷新机制");
-
+    
   }
   
   let close = document.getElementsByClassName('show_close')[0];

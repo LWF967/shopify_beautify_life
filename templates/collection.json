@@ -184,7 +184,7 @@
           "type": "img_top",
           "settings": {
             "image1": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "image2": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "image2": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
             "header_top1": "Head1",
             "header_top2": "Head2",
             "header_top3": "Head3",
@@ -266,7 +266,7 @@
           "settings": {
             "header_top": "Head",
             "url": "",
-            "color": "#fff",
+            "color": "#ffffff",
             "w": 140,
             "h": 3,
             "open_link": "_blank"
@@ -283,7 +283,7 @@
         "title": "BANNER",
         "sub_title": "Popular this week",
         "font_top": 30,
-        "color_top": "#fff",
+        "color_top": "#ffffff",
         "grid": 3,
         "show_view_all": false,
         "show_page_Dot": false,
