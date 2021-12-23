@@ -152,6 +152,7 @@ window.onload = function() {
 
 window.onresize = function() {
   my_home();
+  promo_bar_change();
 }
 
 function my_home() {

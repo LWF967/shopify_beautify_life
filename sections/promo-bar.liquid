@@ -212,6 +212,29 @@
   }
   var mutationObserver = new MutationObserver(callback);
   mutationObserver.observe(targetNode, options);
+  
+  function promo_bar_change() {
+    if (document.body.clientWidth < 1024) {
+      console.log(21312313212321313);
+      close.onclick = function () {
+        if(hide_banner_height > hide_banner.dataset.mheight) {
+          hide_banner.dataset.mheight = hide_banner_height;
+        }
+        hide_banner.style.marginTop = -hide_banner_height + 'px';
+      }
+
+      if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+        close.onclick = function () {
+          if(hide_banner_height > hide_banner.dataset.mheight) {
+            hide_banner.dataset.mheight = hide_banner_height;
+          }
+          hide_banner.style.marginTop = -hide_banner_height + 'px';
+        }
+      }
+      hide_banner.dataset.mheight = hide_banner_height + 1;
+      hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+    }
+  }
 
 </script>
 
