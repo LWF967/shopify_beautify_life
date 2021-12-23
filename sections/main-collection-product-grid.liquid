@@ -26,8 +26,10 @@
 .active-facets__button--light .button--tertiary{box-shadow: 0 0 0 0.1rem {{settings.colors_body_text}};color:{{settings.colors_body_text}}}
 .active-facets__button--light .button--tertiary:hover{box-shadow: 0 0 0 0.2rem {{settings.colors_body_text}};color:{{settings.colors_body_text}}}
 
-.active-facets__button-remove  span{color:{{settings.colors_heading_warn_text}};text-decoration-thickness:0.1rem}
-.active-facets__button-remove:hover span{color:{{settings.colors_heading_warn_text}};text-decoration-thickness:0.2rem}
+.active-facets__button-remove  span{color:{{settings.colors_heading_warn_text}};text-underline-offset: 0.3rem;
+    text-decoration-thickness: 0.1rem;
+    transition: text-decoration-thickness ease .1s}
+.active-facets__button-remove:hover span{color:{{settings.colors_heading_warn_text}};text-decoration-thickness: 0.2rem}
 
 
 {%-endstyle-%}
