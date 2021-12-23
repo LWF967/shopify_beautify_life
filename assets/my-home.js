@@ -150,10 +150,10 @@ window.onload = function() {
     },true);
   }
 
-window.onresize = function() {
-  my_home();
-  promo_bar_change();
-}
+// window.onresize = function() {
+//   my_home();
+//   promo_bar_change();
+// }
 
 function my_home() {
   let promo_bar = document.getElementById('shopify-section-promo-bar');
