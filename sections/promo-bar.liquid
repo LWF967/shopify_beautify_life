@@ -154,6 +154,17 @@
         //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
   //       window.onload = function () {
       console.log("刷新机制");
+      let cookiepromo = document.getElementById('promo_bar_date');
+      let ddl = cookiepromo.getAttribute('data-date');
+
+//       $("#promo_bar_date").bind('DOMSubtreeModified', function() {  
+
+        if(ddl > 0) {
+          console.log("close");
+        } else {
+          console.log("open");
+        }
+//       });
 
   //     var targetNode = $('#hide_banner')[0];//content监听的元素id
   //     //options：监听的属性
@@ -202,17 +213,6 @@
   hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
   //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-  let cookiepromo = document.getElementById('promo_bar_date');
-  let ddl = cookiepromo.getAttribute('data-date');
-  
-  $("#promo_bar_date").bind('DOMSubtreeModified', function() {  
-
-    if(ddl > 0) {
-      console.log("close");
-    } else {
-      console.log("open");
-    }
-  });
   
   function promo_bar_change() {
     console.log("切换屏幕");
