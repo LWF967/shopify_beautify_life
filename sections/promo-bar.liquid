@@ -162,6 +162,8 @@
       document.addEventListener('shopify:section:load',() => {  
 		promo_bar_change();
 
+      
+      let ddl = cookiepromo.getAttribute('data-date');
         if(ddl > 0) {
           console.log("close");
         } else {
