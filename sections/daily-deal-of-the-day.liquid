@@ -7,7 +7,7 @@
           endif          
         -%}
 
-<div class="contatin spaced-section" style="background-color:{{setting.background_color}}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}"> 
+<div class="contatin spaced-section" style="{%-if section.settings.color_scheme =="background_color"-%} background-color:{{section.settings.background_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}"> 
   <div class="left ">
     <div class="felx_box h_45">
       <div class="f5 felx_box" style=" font: bold {{section.settings.heading_font_size}}px 'Droid Sans', Arial, sans-serif; line-height:{{setting.heading_font_size}}px !important; height:100%; color:{{section.settings.color_top}};">{{section.settings.heading_text | truncate: 25 ,"" }}</div>
@@ -31,7 +31,7 @@
         	<product-form class="product-form buy_button_box" >
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                  <div class="product-form__buttons {% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}my_main_product_product_form_button{% endif %}">
+                  <div class="product-form__buttons day-deal-product-form {% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}my_main_product_product_form_button{% endif %}">
            
                     <div class="button my_clear_padding " >
 
@@ -41,7 +41,7 @@
                                 
                   </div>
                 {%- endform -%}
-       			 <a class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default my_clear_padding" style="margin-left:4rem;" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default">Detail</button></a>
+       			 <a class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default my_clear_padding" style="margin-left:4rem;" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default" style="padding:8px 15px">Detail</button></a>
              
         
               </product-form>
@@ -58,7 +58,7 @@
     </div>
   </div>
   <div class="right daily-right">
-    <div class="daily-product-box" style="background-color: {{setting.background_product_color}};">
+    <div class="daily-product-box" style="{%-if section.settings.color_schemes=="background_product_color"-%} background-color:{{section.settings.background_product_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%};">
       
        {%- if section.settings.log_image != null -%}
        <div class="daily-product  " style="overflow:hidden;">
@@ -111,7 +111,7 @@
     	{%- for media in product.media -%}
         
               
-              <div class="  swiper-slide  product__media-item"  >
+              <div class="swiper-slide product__media-item" style="background-color: transparent;">
             {%- liquid
              assign media = product.selected_or_first_available_variant.featured_media 
            
@@ -212,12 +212,44 @@
         "label": "Background color",
         "default": "#f9f9f9"
       },
+	{
+      "type": "select",
+       "id": "color_scheme",
+       "options": [
+        {
+         "value": "gradient",
+         "label": "Global-page background" 
+        },
+        {
+        "value": "background_color",
+       "label": "Background color"
+        }
+        ],
+      "default": "gradient",
+       "label": "Background options"
+     }, 
       {
         "type": "color",
         "id": "background_product_color",
         "label": "Background product color",
         "default": "#FFF"
       },
+	{
+      "type": "select",
+       "id": "color_schemes",
+       "options": [
+        {
+         "value": "gradient",
+         "label": "Global-page background" 
+        },
+        {
+        "value": "background_product_color",
+       "label": "Background product color"
+        }
+        ],
+      "default": "gradient",
+       "label": "Background options"
+     }, 
      
       {
         "type": "text",
@@ -522,9 +554,33 @@
 
   .daily-product{
     width: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
-    height: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
+    height: 100%;
+   background-color: white;
   }
 
+  @media screen and (min-width: 1024px) {
+    .daily-product{
+    width: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
+    height: 50%;
+  }
+  }
+  
+  @media screen and (min-width: 1224px) {
+    .daily-product{
+    width: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
+    height: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
+  }
+  }
+  
+  
+    @media screen and (min-width: 1420px) {
+    .daily-product{
+    width: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
+    height: {{ 1 | divided_by: highest_ratio | times: 110 }}%;
+  }
+  }
+
+  
   .left,.right{
     height: 100%;
     width:50%;
@@ -726,7 +782,7 @@
   
   
   
-    @media screen and (width: 1024px) {
+    @media screen and (max-width: 1024px) {
     .felx_box{
       flex-direction: column;
     }
@@ -809,6 +865,13 @@
     }
   }  
   
+  .shopify-payment-button__button--unbranded{
+  
+   background-color: var(--color-button);
+  
+  }
+  
+  
   
   .shopify-payment-button__button--unbranded:hover,
   .shopify-payment-button__button--unbranded:hover:not([disabled]) {
@@ -816,7 +879,10 @@
   box-shadow: 0 0 0 0.2rem rgba(var(--color-button), var(--alpha-button-border));
 }
   
+  .day-deal-product-form button.shopify-payment-button__more-options._2ogcW-Q9I-rgsSkNbRiJzA.shopify-payment-button__button--hidden{
   
+  display:none;
+  }
   
   
   .my_clear_padding .shopify-cleanslate > button.shopify-payment-button__button--hidden {
@@ -847,6 +913,10 @@
     margin: 0 0 25px;
   }
   
+  .my_deal_swiper-{{section.id}} .swiper-slide.product__media-item .deferred-media.media {
+    background-color: transparent;
+  }
+  
   @media screen and (max-width: 750px) {
     .my_daily_deal_of_the_day_product_title_margin {
       margin: 15px 0 0;
@@ -862,7 +932,12 @@
   }
 
   
-    
+  .swiper-slide.product__media-item  img{
+  
+   height:auto;
+   width:100%;
+
+  }
   
 </style>
 
