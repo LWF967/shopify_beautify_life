@@ -151,7 +151,9 @@
 
       //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 //       window.onload = function () {
-    var targetNode = $('#hide_banner')[0];//content监听的元素id
+    
+    
+    var targetNode = document.body.clientWidth;//content监听的元素id
     //options：监听的属性
     var options = { attributes: true, childList: true,subtree:true,attributeOldValue:true };
     //回调事件
