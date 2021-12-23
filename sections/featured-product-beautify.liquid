@@ -1013,15 +1013,14 @@
 {% endschema %}
 
 <script>
-  let memem = document.querySelector("#ProductModal-{{ section.id }}");
-  let headerre = document.getElementById('shopify-section-header');
-  let isopenasdas = memem.hasAttribute('open');
+  let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");
+  let featured_product_header = document.getElementById('shopify-section-header');
   
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
-    if(memem.hasAttribute('open') == true) {
-      headerre.style.zIndex = 897;
-    } else if(memem.hasAttribute('open') == false) {
-      headerre.style.zIndex = 900;
+    if(featured_product_ProductModal.hasAttribute('open') == true) {
+      featured_product_header.style.zIndex = 897;
+    } else if(featured_product_ProductModal.hasAttribute('open') == false) {
+      featured_product_header.style.zIndex = 900;
     }
   });
 </script>
