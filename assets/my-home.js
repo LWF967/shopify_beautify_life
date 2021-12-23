@@ -141,8 +141,6 @@ window.onload = function() {
   // hide_banner variant define in promo-bar.liquid
   hide_banner.style.marginTop = 0 + 'px';
   hide_banner.style.transition = "all .5s";
-  ddddl();
-
 }
 //   my_home();
   var myHomeFreshDesignMode = Shopify.designMode || false;
