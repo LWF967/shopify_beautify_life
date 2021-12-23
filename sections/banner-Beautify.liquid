@@ -64,11 +64,9 @@
               assign image2 = block.settings.image2
               assign image3 = block.settings.image3
         -%}
-      <p>{{block.id}}</p>
-      <p>{{section.id}}</p>
          <li class="grid__item__beautify {{ grid_item_width }}">
     	   <div class=" pr" style="overflow: hidden;" >
-               <div class="swiper-container1 ">
+               <div class="swiper-container1 swiper-container-{{block.id}}">
                  <div class="swiper-wrapper ">
                     <div class="swiper-slide 1">
                      <a href="{{ block.settings.url1 }}" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url1 == blank %} pe_none{% endif %}">
@@ -326,7 +324,7 @@
   	
 
  
-   let swiper = new Swiper ('.swiper-container1', {
+   let swiper = new Swiper ('.swiper-container-{{block.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, // 循环模式选项 
 
@@ -374,7 +372,7 @@
   })
  
 document.addEventListener('shopify:section:load',()=>{  
-	let swiper = new Swiper ('.swiper-container1', {
+	let swiper = new Swiper ('.swiper-container-{{block.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: true, // 循环模式选项 
 
