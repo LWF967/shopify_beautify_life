@@ -146,7 +146,7 @@ window.onload = function() {
   var myHomeFreshDesignMode = Shopify.designMode || false;
   if(myHomeFreshDesignMode){
     document.addEventListener('shopify:section:load',() => {
-        my_home();
+      my_home();
     },true);
   }
 
