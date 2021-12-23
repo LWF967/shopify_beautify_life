@@ -307,6 +307,8 @@
 
 .my_header_background_opacity .my_header_search_label{color:{{ settings.header_icon_and_text_color }}}
 .my_header_background_opacity .field__input{color:{{ settings.header_icon_and_text_color }};box-shadow: 0 0 0 0.1rem {{settings.header_icon_and_text_color}}}
+.my_header_background_opacity .field__input:hover{color:{{ settings.header_icon_and_text_color }};box-shadow: 0 0 0 0.2rem {{settings.header_icon_and_text_color}}}
+
 .my_header_background_opacity .my_header_icons_margin svg{color:{{ settings.header_icon_and_text_color }}}
 .my_header_background_opacity .icon-hamburger,.my_header_background_opacity .icon-close{color:{{ settings.header_icon_and_text_color }}}
 .my_header_background_opacity .my_predictive_search{color:{{ settings.header_icon_and_text_color }};border-color:{{ settings.header_icon_and_text_color }};background: {%- if settings.color_scheme=="gradient"-%}{{settings.color_page_background  | color_modify: 'alpha', my_header_background_opacity }}{%-else-%}{{ settings.header_background_color | color_modify: 'alpha', my_header_background_opacity }};{%-endif-%}} 
