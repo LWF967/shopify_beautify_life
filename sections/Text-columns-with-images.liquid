@@ -8,6 +8,9 @@
 <script src="{{'swiper-bundle.min.js'| asset_url }} "></script>
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 {% assign image_overlay_opacity = settings.image_overlay_opacity | divided_by: 100.0 %}
+{%-style-%}
+.text-image{padding:5px 0px}
+{%-endstyle-%}
 <style>
   .Text_columns_with_images_title {
   	text-align: center;
