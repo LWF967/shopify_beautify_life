@@ -156,25 +156,44 @@ window.onresize = function() {
 //   ddddl();
 }
 
-function my_home() {
-  let promo_bar = document.getElementById('shopify-section-promo-bar');
-  let top_bar = document.getElementById('shopify-section-top-bar');
-  let header_zx = document.getElementById('shopify-section-header');
-  //   let footer_top = document.getElementById('shopify-section-footer-top');
-  let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+let promo_bar = document.getElementById('shopify-section-promo-bar');
+let top_bar = document.getElementById('shopify-section-top-bar');
+let header_zx = document.getElementById('shopify-section-header');
+//   let footer_top = document.getElementById('shopify-section-footer-top');
+let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 //   let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
-  let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
-  let main = document.getElementById('MainContent');
-  let sticky = document.getElementsByClassName('my_footer_sticky');
+let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
+let main = document.getElementById('MainContent');
+let sticky = document.getElementsByClassName('my_footer_sticky');
 
-  // header fixed layout 
-  let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
-  let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
-  let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
-  let header = document.getElementsByClassName('header')[0];
-  let content = document.getElementsByClassName('content')[0];
-  let my_header_sticky = document.getElementsByClassName('my_header_sticky');
-  let my_backtop = document.getElementById('my_backtop');
+// header fixed layout 
+let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
+let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
+let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
+let header = document.getElementsByClassName('header')[0];
+let content = document.getElementsByClassName('content')[0];
+let my_header_sticky = document.getElementsByClassName('my_header_sticky');
+let my_backtop = document.getElementById('my_backtop');
+
+function my_home() {
+//   let promo_bar = document.getElementById('shopify-section-promo-bar');
+//   let top_bar = document.getElementById('shopify-section-top-bar');
+//   let header_zx = document.getElementById('shopify-section-header');
+//   //   let footer_top = document.getElementById('shopify-section-footer-top');
+//   let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+// //   let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+//   let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
+//   let main = document.getElementById('MainContent');
+//   let sticky = document.getElementsByClassName('my_footer_sticky');
+
+//   // header fixed layout 
+//   let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
+//   let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
+//   let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
+//   let header = document.getElementsByClassName('header')[0];
+//   let content = document.getElementsByClassName('content')[0];
+//   let my_header_sticky = document.getElementsByClassName('my_header_sticky');
+//   let my_backtop = document.getElementById('my_backtop');
 
   // footer sticky
   if(sticky.length > 0) {
