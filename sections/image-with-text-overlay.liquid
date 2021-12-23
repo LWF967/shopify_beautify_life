@@ -56,7 +56,7 @@
      style="{%- if section.settings.image_with_text_overlay_margin_top != blank -%}margin-top: {{ section.settings.image_with_text_overlay_margin_top }}px; {%- endif -%}{%- if section.settings.image_with_text_overlay_margin_bottom != blank -%}margin-bottom:{{ section.settings.image_with_text_overlay_margin_bottom }}px;{%- endif -%}">
   {%- if section.settings.image != blank -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
-      <img
+      <img style="object-position: {{section.settings.image_alignment}};"
         srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | img_url: '375x' }} 375w,{%- endif -%}
           {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | img_url: '750x' }} 750w,{%- endif -%}
           {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | img_url: '1100x' }} 1100w,{%- endif -%}
