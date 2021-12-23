@@ -609,9 +609,9 @@ a.active-facets__button.focused .active-facets__button-inner,
 
 .mobile-facets__inner {
   /* lzx change start */
-  /*   background-color: rgb(var(--color-background)); */
-  background-color: var(--color-image-overlay);
-  opacity: var(--opacity-image-overlay);
+    background-color: rgb(var(--color-background));
+/*   background-color: var(--color-image-overlay); */
+/*   opacity: var(--opacity-image-overlay); */
   /* lzx change end */
   width: calc(100% - 5rem);
   margin-left: auto;
