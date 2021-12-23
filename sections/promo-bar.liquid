@@ -229,16 +229,6 @@
 //       console.log("2日期不是0 则关闭刷新机制"); 
 //     }
 //   }
-
-  
-  function setCookie(name, value, days) { //设置cookie
-    var d = new Date();
-    d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
-    var expires = "expires=" + d.toUTCString();
-    document.cookie = name + "=" + value + "; " + expires;
-  }
-  
-  setCookie('ddltest', 'ddltextvalue', ddl);
 </script>
 
 {%- schema -%}
