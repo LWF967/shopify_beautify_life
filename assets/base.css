@@ -1972,9 +1972,11 @@ details[open] .modal-overlay {
 details[open] .modal-overlay::after {
   position: absolute;
   content: '';
-/*   background-color: rgb(var(--color-foreground), 0.5); */
+  /* lzx change start */
+  /*   background-color: rgb(var(--color-foreground), 0.5); */
   background-color: var(--color-image-overlay);
   opacity: var(--opacity-image-overlay);
+  /* lzx change end */
   top: 100%;
   left: 0;
   right: 0;
