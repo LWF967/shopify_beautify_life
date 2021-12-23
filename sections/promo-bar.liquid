@@ -237,7 +237,6 @@
       hide_banner.style.marginTop = -hide_banner_height + 'px';
       hide_banner.style.transition = "all .5s";
     }
-    hide_banner.style.display = 'none';
 
     if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
       close.onclick = function () {
@@ -247,7 +246,6 @@
         hide_banner.style.marginTop = -hide_banner_height + 'px';
         hide_banner.style.transition = "all .5s";
       }
-      hide_banner.style.display = 'none';
     }
     hide_banner.dataset.mheight = hide_banner_height + 1;
     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
