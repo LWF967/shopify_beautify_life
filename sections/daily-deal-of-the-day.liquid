@@ -7,7 +7,7 @@
           endif          
         -%}
 
-<div class="contatin spaced-section" style="{%-if section.settings.color_scheme =="background_color"-%} background-color:{{section.settings.background_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}"> 
+<div class="contatin spaced-section" style="background-color:{{setting.background_color}}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}"> 
   <div class="left ">
     <div class="felx_box h_45">
       <div class="f5 felx_box" style=" font: bold {{section.settings.heading_font_size}}px 'Droid Sans', Arial, sans-serif; line-height:{{setting.heading_font_size}}px !important; height:100%; color:{{section.settings.color_top}};">{{section.settings.heading_text | truncate: 25 ,"" }}</div>
@@ -41,7 +41,7 @@
                                 
                   </div>
                 {%- endform -%}
-       			 <a class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default my_clear_padding" style="margin-left:4rem;" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default" style="padding:8px 15px">Detail</button></a>
+       			 <a class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default my_clear_padding" style="margin-left:4rem;" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default">Detail</button></a>
              
         
               </product-form>
@@ -58,7 +58,7 @@
     </div>
   </div>
   <div class="right daily-right">
-    <div class="daily-product-box" style="{%-if section.settings.color_schemes=="background_product_color"-%} background-color:{{section.settings.background_product_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%};">
+    <div class="daily-product-box" style="background-color: {{setting.background_product_color}};">
       
        {%- if section.settings.log_image != null -%}
        <div class="daily-product  " style="overflow:hidden;">
@@ -111,7 +111,7 @@
     	{%- for media in product.media -%}
         
               
-              <div class="swiper-slide product__media-item" style="background-color: blue;">
+              <div class="  swiper-slide  product__media-item"  >
             {%- liquid
              assign media = product.selected_or_first_available_variant.featured_media 
            
@@ -212,44 +212,12 @@
         "label": "Background color",
         "default": "#f9f9f9"
       },
-	{
-      "type": "select",
-       "id": "color_scheme",
-       "options": [
-        {
-         "value": "gradient",
-         "label": "Global-page background" 
-        },
-        {
-        "value": "background_color",
-       "label": "Background color"
-        }
-        ],
-      "default": "gradient",
-       "label": "Background options"
-     }, 
       {
         "type": "color",
         "id": "background_product_color",
         "label": "Background product color",
         "default": "#FFF"
       },
-	{
-      "type": "select",
-       "id": "color_schemes",
-       "options": [
-        {
-         "value": "gradient",
-         "label": "Global-page background" 
-        },
-        {
-        "value": "background_product_color",
-       "label": "Background product color"
-        }
-        ],
-      "default": "gradient",
-       "label": "Background options"
-     }, 
      
       {
         "type": "text",
