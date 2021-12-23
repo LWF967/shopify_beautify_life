@@ -177,8 +177,38 @@
 
 <style>
 
+ 
+/*   swiper盒子 */
   
+  .banner-beautify-imgbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;  
+    max-height: 400px;           	
+
+  }
+    
+  @media screen and (max-width: 750px) {
+    .banner-beautify-imgbox{
+      height: 200px; 
+    }
+    
+
+  }
+
+  @media screen and (min-width: 990px) {
+    .banner-beautify-imgbox{
+     height: 300px; 
+    }    
+  }
   
+  @media screen and (max-width: 990px) {
+    .banner-beautify-imgbox{
+      height: 200px; 
+    } 
+
+  }
   
   
   
