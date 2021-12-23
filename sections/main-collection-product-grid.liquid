@@ -241,9 +241,9 @@
                   <label class="collection-filters__label caption-large" for="SortBy">{{ 'sections.collection_template.sort_by_label' | t }}</label>
                   <div class="select">
                     {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
-                    <select name="sort_by" class="collection-filters__sort select__select caption-large" id="SortBy" aria-describedby="a11y-refresh-page-message"   style="background-color:{{settings.color_page_background}}">
+                    <select name="sort_by" class="collection-filters__sort select__select caption-large" id="SortBy" aria-describedby="a11y-refresh-page-message"   style="background-color:{{settings.color_page_background}};">
                       {%- for option in collection.sort_options -%}
-                        <option  value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %} style="background-color:{{settings.color_page_background}}">{{ option.name | escape }}</option>
+                        <option  value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %} style="background-color:{{settings.color_page_background}};border:1px solid red">{{ option.name | escape }}</option>
                       {%- endfor -%}
                     </select>
                     {% render 'icon-caret' %}
