@@ -213,10 +213,10 @@
   function setCookie(name,value) {
     var Days = ddl;
     var exp = new Date(); 
-    exp.setTime(exp.getTime() + Days*60*1000); //*24*60
-    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+    var save_exp = exp.setTime(exp.getTime() + Days*60*1000); //*24*60
+    document.cookie = name + "="+ escape (value) + ";expires=" + save_exp.toGMTString();
     console.log("day:"+Days);
-    console.log("time: "+ getLocalTime(exp.setTime(exp.getTime())));
+    console.log("time: "+ getLocalTime(save_exp));
   }
   setCookie("close_ddl","close_ddl");
   
