@@ -309,7 +309,7 @@
 .my_header_background_opacity .field__input{color:{{ settings.header_icon_and_text_color }};box-shadow: 0 0 0 0.1rem {{settings.header_icon_and_text_color}}}
 .my_header_background_opacity .my_header_icons_margin svg{color:{{ settings.header_icon_and_text_color }}}
 .my_header_background_opacity .my_predictive_search{color:{{ settings.header_icon_and_text_color }};border-color:{{ settings.header_icon_and_text_color }};background: {%- if settings.color_scheme=="gradient"-%}{{settings.color_page_background  | color_modify: 'alpha', my_header_background_opacity }}{%-else-%}{{ settings.header_background_color | color_modify: 'alpha', my_header_background_opacity }};{%-endif-%}} 
-
+.my_header_background_opacity .menu-drawer__navigation{background: {%- if settings.color_scheme=="gradient"-%}{{settings.color_page_background  | color_modify: 'alpha', my_header_background_opacity }}{%-else-%}{{ settings.header_background_color | color_modify: 'alpha', my_header_background_opacity }};{%-endif-%}}
 
 .my_header_icon_text_color,  .my_header_icons_margin .my_cart ,.my_header_icon_text_color .header__submenu.list-menu.list-menu--disclosure.caption-large.motion-reduce.my_header_menu{ color: {{ settings.header_icon_and_text_color }} !important; }
 .my_header_sticky_settings,.my_header_sticky_settings .header__submenu.list-menu.list-menu--disclosure.caption-large.motion-reduce.my_header_menu,.my_header_sticky_settings .modal__content { background: {%- if settings.color_schemes=="gradients"-%}{{settings.color_page_background  | color_modify: 'alpha', my_header_sticky_background_opacity }}{%-else-%}{{ settings.header_sticky_background_color | color_modify: 'alpha', my_header_sticky_background_opacity }};{%-endif-%} }
@@ -346,7 +346,7 @@
       <header-drawer data-breakpoint="tablet" id="header_drawer">
         <details class="menu-drawer-container">
           <summary class="header__icon header__icon--menu header__icon--summary link link--text focus-inset" aria-label="{{ 'sections.header.menu' | t }}">
-            <span style="color: {{ settings.header_icon_and_text_color }};">
+            <span>
               {% render 'icon-hamburger' %}
               {% render 'icon-close' %}
             </span>
