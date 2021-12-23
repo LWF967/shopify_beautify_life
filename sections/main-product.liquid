@@ -1294,7 +1294,7 @@
 <script>
   let main_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");
   let main_product_header = document.getElementById('shopify-section-header');
-  console.log(main_product_ProductModal.getAttribute("id"));
+//   console.log(main_product_ProductModal.getAttribute("id"));
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
     if(main_product_ProductModal.hasAttribute('open') == true) {
       main_product_header.style.zIndex = 897;
