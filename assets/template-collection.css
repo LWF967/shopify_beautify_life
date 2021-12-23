@@ -590,7 +590,6 @@ a.active-facets__button.focused .active-facets__button-inner,
 /*   z-index: 100; */
   z-index: 101;
   /* lzx change start */
-/*     background-color: rgba(var(--color-foreground), 0.5); */
   background-color: rgba(var(--color-image-overlay-rgb),var(--opacity-image-overlay));
 /*   lzx change end */
   pointer-events: none;
