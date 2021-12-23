@@ -205,31 +205,35 @@
   let cookiepromo = document.getElementById('promo_bar_date');
   let ddl = cookiepromo.getAttribute('data-date');
   
-  //日期转换
-  function getLocalTime(nS) {     
-    return new Date(parseInt(nS)).toLocaleString().replace(/:\d{1,2}$/,' ');     
-  }
+//   //日期转换
+//   function getLocalTime(nS) {     
+//     return new Date(parseInt(nS)).toLocaleString().replace(/:\d{1,2}$/,' ');     
+//   }
 
-  function setCookie(name,value) {
-    var Days = ddl;
-    var exp = new Date(); 
-    exp.setTime(exp.getTime() + Days*60*1000); //*24*60
-    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
-    console.log("day:"+Days);
-    console.log("time: "+ getLocalTime(exp.setTime(exp.getTime())));
-  }
-  setCookie("close_ddl","close_ddl");
+//   function setCookie(name,value) {
+//     var Days = ddl;
+//     var exp = new Date(); 
+//     exp.setTime(exp.getTime() + Days*60*1000); //*24*60
+//     document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+//     console.log("day:"+Days);
+//     console.log("time: "+ getLocalTime(exp.setTime(exp.getTime())));
+//   }
+//   setCookie("close_ddl","close_ddl");
   
-  function ddddl() {
-    let cookiedate = document.cookie.indexOf("close_ddl=");
-    if(cookiedate == -1) {
-      console.log("1日期是0 则不关闭刷新机制");
-      promo_bar_fun();
-    } else {
-      console.log("2日期不是0 则关闭刷新机制"); 
-    }
-  }
+//   function ddddl() {
+//     let cookiedate = document.cookie.indexOf("close_ddl=");
+//     if(cookiedate == -1) {
+//       console.log("1日期是0 则不关闭刷新机制");
+//       promo_bar_fun();
+//     } else {
+//       console.log("2日期不是0 则关闭刷新机制"); 
+//     }
+//   }
 
+  Cookies.set('name', 'value', {
+    expires: ddl,
+  });
+  
 </script>
 
 {%- schema -%}
