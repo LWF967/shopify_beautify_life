@@ -156,7 +156,7 @@
     }, 500);
   }
   
-  let refresh_promo = function() {
+  function refresh_promo() {
     var myPromoFreshDesignMode = Shopify.designMode || false;
     if(myPromoFreshDesignMode){
       document.addEventListener('shopify:section:load',() => {  
