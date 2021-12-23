@@ -241,7 +241,7 @@
                   <label class="collection-filters__label caption-large" for="SortBy">{{ 'sections.collection_template.sort_by_label' | t }}</label>
                   <div class="select">
                     {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
-                    <select name="sort_by" class="collection-filters__sort select__select caption-large" id="SortBy" aria-describedby="a11y-refresh-page-message"   style="background-color:{{settings.color_page_background}};">
+                    <select name="sort_by" class="collection-filters__sort select__select caption-large" id="SortBy" aria-describedby="a11y-refresh-page-message"   style="background-color:transparent;">
                       {%- for option in collection.sort_options -%}
                         <option  value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %} style="background-color:{{settings.color_page_background}};">{{ option.name | escape }}</option>
                       {%- endfor -%}
@@ -420,7 +420,7 @@
                         <div class="mobile-facets__sort">
                           <label for="SortBy-mobile">{{ 'sections.collection_template.sort_by_label' | t }}</label>
                           <div class="select" >
-                            <select name="sort_by" class="select__select" id="SortBy-mobile" aria-describedby="a11y-refresh-page-message" style="background-color:{{settings.colors_page_stickiness}}">
+                            <select name="sort_by" class="select__select" id="SortBy-mobile" aria-describedby="a11y-refresh-page-message" style="background-color:transparent">
                               {%- for option in collection.sort_options -%}
                                 <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %} style="background-color:{{settings.colors_page_stickiness}}">{{ option.name | escape }}</option>
                               {%- endfor -%}
