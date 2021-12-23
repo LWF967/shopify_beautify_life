@@ -78,7 +78,7 @@
                           {% render 'icon-caret' %}
                         </div>
                       </summary>
-                      <div class="facets__display" style="background-color:{{settings.color_page_background}};">
+                      <div class="facets__display" style="background-color:{{settings.color_page_background}};border:1px solid {{settings.colors_body_text}}">
                         <div class="facets__header">
                           <span class="facets__selected no-js-hidden">{{ 'sections.collection_template.filters_selected' | t: count: filter.active_values.size }}</span>
                           <facet-remove>
@@ -141,7 +141,7 @@
                           {% render 'icon-caret' %}
                         </div>
                       </summary>
-                      <div class="facets__display" style="background-color:{{settings.colors_page_stickiness}}">
+                      <div class="facets__display" style="background-color:{{settings.colors_page_stickiness}};border:1px solid {{settings.colors_body_text}}">
                         <div class="facets__header">
                           {%- assign max_price_amount = filter.range_max | money | strip_html | escape -%}
                           <span class="facets__selected">{{ "sections.collection_template.max_price" | t: price: max_price_amount }}</span>
