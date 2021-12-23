@@ -274,4 +274,10 @@
 //     }
 //   });
   console.log($('.my_footer_bottom_color').height());
+  var designMode123 = Shopify.designMode || false;
+  if(designMode123){
+    document.addEventListener('shopify:section:load',()=>{  
+      console.log($('.my_footer_bottom_color').height());
+    },true);
+  }
 </script>
