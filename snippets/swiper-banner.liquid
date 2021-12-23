@@ -2,6 +2,7 @@
   <div class="pr" style="overflow: hidden">
     <div class="swiper-container1 swiper-banner-beautify-{{ block.id }}">
       <div class="swiper-wrapper">
+        {%- if image1 != blank -%}
         <div class="swiper-slide 1">
           <a
             href="{{ block.settings.url1 }}"
@@ -45,6 +46,7 @@
             </div>
           </a>
         </div>
+        {%- elsif image2 != blank -%}
         <div class="swiper-slide 2">
           <a
             href="{{ block.settings.url2 }}"
@@ -94,6 +96,7 @@
             </div>
           </a>
         </div>
+        {%- elsif image3 != blank -%}
         <div class="swiper-slide 3">
           <a
             href="{{ block.settings.url3 }}"
@@ -143,6 +146,7 @@
             </div>
           </a>
         </div>
+        {%- endif -%}
       </div>
       <!-- 如果需要分页器 -->
       <div
