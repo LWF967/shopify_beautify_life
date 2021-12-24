@@ -74,6 +74,8 @@ window.onload = function() {
   hide_banner.style.transition = "all .5s";
 }
 //   my_home();
+          let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
+
   var myHomeFreshDesignMode = Shopify.designMode || false;
   if(myHomeFreshDesignMode){
     document.addEventListener('shopify:section:load',() => {
@@ -88,7 +90,6 @@ window.onload = function() {
       let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
       let main = document.getElementById('MainContent');
       let sticky = document.getElementsByClassName('my_footer_sticky');
-          let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
 
       // footer sticky
       if(sticky.length > 0) {
