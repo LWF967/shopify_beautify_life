@@ -102,10 +102,8 @@ window.onload = function() {
         else if(document.body.clientWidth >= 1024) {
           let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
           
-                        let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
-
-
-//                   let footer_bottom_svg_box_height = document.getElementsByClassName('my_footer_bottom_flex ')[0].scrollHeight;
+//           let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
+          let footer_bottom_svg_box_height = document.getElementsByClassName('my_footer_bottom_flex ')[0].scrollHeight;
           let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
 
@@ -265,10 +263,9 @@ function my_home() {
       
       let footer_bottom_svg = document.getElementsByClassName('dib bot_footer_svg');
       if(footer_bottom_svg.length > 0) {
-        let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
+//         let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
         let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
-//         let footer_bottom_svg_box_height = document.getElementsByClassName('my_footer_bottom_flex ')[0].scrollHeight;
-//         let footer_bottom_svg_box_height = document.getElementsByClassName("my_footer_bottom_flex")[0].style.height;
+        let footer_bottom_svg_box_height = document.getElementsByClassName('my_footer_bottom_flex ')[0].scrollHeight;
         console.log("box 原始:"+footer_bottom_svg_box_height);
 //         console.log("svg 原始:"+footer_bottom_svg_height);
       }
