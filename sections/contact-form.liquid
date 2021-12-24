@@ -1,5 +1,7 @@
 {{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
-
+{%style%}
+.field__label{color:{{settings.colors_fileds_text}}}
+{%endstyle%}
 <div class="contact page-width page-width--narrow spaced-section"
      style="{%- if section.settings.contact_form_margin_top != blank -%}margin-top: {{ section.settings.contact_form_margin_top }}px; {%- endif -%}{%- if section.settings.contact_form_margin_bottom != blank -%}margin-bottom:{{ section.settings.contact_form_margin_bottom }}px;{%- endif -%}">
   <h2 class="title">{{ section.settings.heading | escape }}</h2>
