@@ -123,8 +123,8 @@ window.onload = function() {
 
 
           main.style.zIndex = 897;
-          main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
-          my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
+//           main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
+//           my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
           my_footer_sticky.style.opacity = 1;
           my_footer_sticky.style.zIndex = 1;
           promo_bar.style.zIndex = 898;
@@ -289,8 +289,8 @@ function my_home() {
       
       
       main.style.zIndex = 897;
-      main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
-      my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
+//       main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
+//       my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
       my_footer_sticky.style.opacity = 1;
       my_footer_sticky.style.zIndex = 1;
       promo_bar.style.zIndex = 898;
