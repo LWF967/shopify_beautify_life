@@ -89,7 +89,7 @@ window.onload = function() {
       mutations.forEach(function(mutation){
       
     	 console.log(mutation.type,'111');
-      
+      	 let abcd = 123;
       });
     
     });
@@ -101,9 +101,8 @@ window.onload = function() {
     // 随后,你还可以停止观察
 //     observer.disconnect();
                               
-                              
-                              
-                              
+    console.log(abcd);
+    
                               
 //       my_home();
                               
