@@ -108,7 +108,7 @@ window.onload = function() {
           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
 
 
-//           console.log("box 更新:"+footer_bottom_svg_box_height);
+          console.log("box 更新:"+footer_bottom_svg_box_height);
 //           console.log("svg 更新:"+footer_bottom_svg_height);
 //           console.log("相除 更新"+footer_bottom_svg_box_height/footer_bottom_svg_height);
 
@@ -132,7 +132,7 @@ window.onload = function() {
           footer_bottom.style.width = '100%';
 
 //           console.log("top:"+my_footer_sticky_height); 
-          console.log("bottom:"+footer_bottom_height);
+//           console.log("bottom:"+footer_bottom_height);
 //           console.log("main:"+main.style.marginBottom); 
 //           console.log("+++++++++++++++");        
         }
@@ -263,7 +263,7 @@ function my_home() {
       if(footer_bottom_svg.length > 0) {
         let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
         let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
-//         console.log("box 原始:"+footer_bottom_svg_box_height);
+        console.log("box 原始:"+footer_bottom_svg_box_height);
 //         console.log("svg 原始:"+footer_bottom_svg_height);
       }
       
@@ -296,7 +296,7 @@ function my_home() {
       footer_bottom.style.width = '100%';
 
 //       console.log("top:"+my_footer_sticky_height); 
-      console.log("无刷新bottom:"+footer_bottom_height);
+//       console.log("无刷新bottom:"+footer_bottom_height);
 //       console.log("main:"+main.style.marginBottom); 
 //       console.log("===================");        
     }

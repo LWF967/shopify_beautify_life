@@ -36,7 +36,7 @@
       </div>
     {%- endif -%}
   </a>
-  <div class="article-card__info my_article_card_info">
+  <div class="article-card__info my_article_card_info" style="background:{{settings.color_image_overlay | color_modify: 'alpha', image_overlay_opacity}};padding:0px 10px">
     <header class="article-card__header">
       <h2 class="article-card__title my_font_weight_default my_article_card_title" id="Article-{{ article.id }}">
         {{ article.title | escape }}
