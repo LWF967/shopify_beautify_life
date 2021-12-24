@@ -45,7 +45,30 @@
   var timebb = new timedeal();
   
 
+ var designMode = Shopify.designMode || false;
+   if(designMode){
+   
+   
 
+   document.addEventListener('shopify:section:load',()=>{  
+
+	 timebb = new timedeal();
+     
+     
+
+    
+     
+	},true);
+
+
+    document.addEventListener('shopify:section:unload',()=>{  
+
+    timebb = null;
+	},true);
+ 
+
+ }
+  
 
 
 </script>
