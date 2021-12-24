@@ -108,10 +108,10 @@ window.onload = function() {
           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
 		  let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
           let jqsvgheight = $('.bot_footer_svg img').innerHeight();
-          
+          let jqallheight = jqheight + jqsvgheight;
 //           let footer_bottom_svg_box_height = document.getElementsByClassName("my_footer_bottom_flex")[0].scrollHeight;
 		  console.log("刷新后的bottom");
-          console.log(jqheight+jqsvgheight);
+          console.log(jqallheight);
 //           console.log("svg 更新:"+footer_bottom_svg_height);
 //           console.log("相除 更新"+footer_bottom_svg_box_height/footer_bottom_svg_height);
 
