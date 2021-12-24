@@ -11,12 +11,16 @@
   <div class="left ">
     <div class="felx_box h_45">
       <div class="f5 felx_box" style=" font: bold {{section.settings.heading_font_size}}px 'Droid Sans', Arial, sans-serif; line-height:{{setting.heading_font_size}}px !important; height:100%; color:{{section.settings.color_top}};">{{section.settings.heading_text | truncate: 25 ,"" }}</div>
+	  {% comment %}
       <div class="timebox timebox-{{section.id}} f4"    data-endtime="{{setting.countdown_time}}"  >
         <div class="day_time day_time-{{section.id}} f1 time-div"></div>
         <div class="hour_time hour_time-{{section.id}} f1 time-div"></div>
         <div class="minutes_time minutes_time-{{section.id}} f1 time-div"></div>
         <div class="second_time second_time-{{section.id}} f1  time-div"></div>
       </div>
+      {% endcomment %}
+   
+	{% render 'daily-deal-time',section:section  %}
     </div>
 
     <div class="h_55">
