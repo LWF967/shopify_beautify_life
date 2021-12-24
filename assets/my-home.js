@@ -109,8 +109,10 @@ window.onload = function() {
 		  let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
           let jqsvgheight = $('.bot_footer_svg img').innerHeight();
           let jqallheight = jqheight + jqsvgheight;
+          let jqsvgbox = $('.dib.bot_footer_svg').height();
 //           let footer_bottom_svg_box_height = document.getElementsByClassName("my_footer_bottom_flex")[0].scrollHeight;
 		  console.log("刷新后的bottom");
+          console.log(jqsvgbox);
           console.log(jqallheight);
 //           console.log("svg 更新:"+footer_bottom_svg_height);
 //           console.log("相除 更新"+footer_bottom_svg_box_height/footer_bottom_svg_height);
