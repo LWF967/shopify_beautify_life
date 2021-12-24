@@ -11,7 +11,7 @@
     Usage:
     {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
 {% endcomment %}
-
+{% assign image_overlay_opacity = settings.image_overlay_opacity | divided_by: 100.0 %}
 <article class="article-card my_article_card_flex card-wrapper{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
   <a href="{{ article.url }}" class="article-content motion-reduce">
     {%- if show_image == true and article.image -%}
