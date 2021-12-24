@@ -79,8 +79,8 @@ window.onload = function() {
   if(myHomeFreshDesignMode){
     document.addEventListener('shopify:section:load',() => {
                               
-     
-     var abcd;
+  	var abcd;   
+  
                               
      var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];               
     // 创建观察者对象
@@ -92,7 +92,7 @@ window.onload = function() {
     	 console.log(mutation.type,'111');
 //       	 let abcd = 123;
       });
-    	 abcd = 123;
+    	 return abcd =123;
     });
     
     // 配置观察选项:
@@ -102,8 +102,8 @@ window.onload = function() {
     // 随后,你还可以停止观察
 //     observer.disconnect();
                               
+
     console.log(abcd);
-    
                               
 //       my_home();
                               
