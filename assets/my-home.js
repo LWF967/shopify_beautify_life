@@ -80,6 +80,7 @@ window.onload = function() {
     document.addEventListener('shopify:section:load',() => {
                               
      
+     var abcd;
                               
      var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];               
     // 创建观察者对象
@@ -91,7 +92,7 @@ window.onload = function() {
     	 console.log(mutation.type,'111');
 //       	 let abcd = 123;
       });
-    	let abcd = 123;
+    	 abcd = 123;
     });
     
     // 配置观察选项:
