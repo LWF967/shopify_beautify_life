@@ -254,7 +254,7 @@
           "0e03fff2-5f48-4c58-ab83-ce5e1b70e304"
         ],
         "settings": {
-          "sticky_footer": true,
+          "sticky_footer": false,
           "accordions_options_on_mobile": true,
           "border_footer": true,
           "border_color": "#ff0000",
@@ -282,10 +282,10 @@
           "46b8ba71-433b-4b1d-af31-675da9061dac": {
             "type": "payment",
             "settings": {
-              "source_img": "Image",
+              "source_img": "SVG",
               "trust_image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-              "svg_height": 41,
-              "svg_list": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa"
+              "svg_height": 20,
+              "svg_list": ""
             }
           }
         },
