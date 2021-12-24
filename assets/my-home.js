@@ -132,6 +132,7 @@ function my_header_and_totop() {
       }
       if(content.style.position == 'fixed') {
         //         if(document.body.clientWidth > 990) {
+        promo_bar.style.zIndex = 900;
         top_bar.style.zIndex = 901;
         header_zx.style.zIndex = 900;
         //         } else if (document.body.clientWidth < 990) {
@@ -149,7 +150,7 @@ function my_header_and_totop() {
       } else if(content.style.position == 'relative') {
         //         if(document.body.clientWidth > 990) {
 
-
+        promo_bar.style.zIndex = 898;
         top_bar.style.zIndex = 899;
         header_zx.style.zIndex = 898;
 
