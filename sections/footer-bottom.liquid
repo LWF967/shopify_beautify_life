@@ -273,12 +273,12 @@
 //       featured_product_header.style.zIndex = 900;
 //     }
 //   });
-  
+      let footer_h = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+    let footer_content = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
   var designMode123 = Shopify.designMode || false;
   if(designMode123){
     document.addEventListener('shopify:section:load',()=>{
-    let footer_h = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
-    let footer_content = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+
       if(document.body.clientWidth > 1024) {
 //         footer_content.style.height = footer_h + "px";
       	console.log("更新"+footer_h);
