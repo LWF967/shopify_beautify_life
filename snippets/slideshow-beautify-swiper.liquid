@@ -83,7 +83,7 @@
                  
                  <div class="button {% if block.settings.slider_button_text != blank and block.settings.slider_button_link != blank %} banner__buttons--multiple{% endif %} my_slideshow_beautify_btn_margin" >
                    {%- if block.settings.slider_button_text != blank -%}
-                   <a{% if block.settings.slider_button_link != blank %} href="{{ block.settings.slider_button_link }}"{% endif %} class="button  button--primary"{% if block.settings.slider_button_link == blank %} aria-disabled="true"{% endif %}>{{ block.settings.slider_button_text | escape }}</a>
+                   <a{% if block.settings.slider_button_link != blank %} href="{{ block.settings.slider_button_link }}"{% endif %} class="button  button--primary my_button_text"{% if block.settings.slider_button_link == blank %} aria-disabled="true"{% endif %}>{{ block.settings.slider_button_text | escape }}</a>
                    {%- endif -%}
                  </div>
                </div>
