@@ -78,6 +78,33 @@ window.onload = function() {
   var myHomeFreshDesignMode = Shopify.designMode || false;
   if(myHomeFreshDesignMode){
     document.addEventListener('shopify:section:load',() => {
+                              
+     
+                              
+     var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];               
+    // 创建观察者对象
+    
+    var observer = new MutationObserver(function(mutations){
+     
+      mutations.forEach(function(mutation){
+      
+    	 console.log(mutation.type);
+      
+      });
+    
+    });
+    
+    // 配置观察选项:
+    var config = { attributes: true, childList: true, characterData: true ,subtree : true };
+    // 传入目标节点和观察选项
+    observer.observe(target, config); 
+    // 随后,你还可以停止观察
+//     observer.disconnect();
+                              
+                              
+                              
+                              
+                              
 //       my_home();
                               
       let promo_bar = document.getElementById('shopify-section-promo-bar');
@@ -105,7 +132,7 @@ window.onload = function() {
 //           let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
 //           let footer_bottom_svg_box_height = document.getElementsByClassName('my_footer_bottom_flex ')[0].scrollHeight;
           let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
-          let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+//           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
 		  let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
           let jqsvgheight = $('.bot_footer_svg img').innerHeight();
           let jqallheight = jqheight + jqsvgheight;
