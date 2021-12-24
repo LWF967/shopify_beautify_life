@@ -9,9 +9,177 @@
         "main_blog_margin_top": "",
         "main_blog_margin_bottom": ""
       }
+    },
+    "164030807767fb4534": {
+      "type": "banner-Beautify",
+      "blocks": {
+        "164030807677af02df-0": {
+          "type": "img_top",
+          "settings": {
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "164030807677af02df-1": {
+          "type": "img_top",
+          "settings": {
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "164030807677af02df-2": {
+          "type": "img_top",
+          "settings": {
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        }
+      },
+      "block_order": [
+        "164030807677af02df-0",
+        "164030807677af02df-1",
+        "164030807677af02df-2"
+      ],
+      "settings": {
+        "title": "BANNER",
+        "sub_title": "Popular this week",
+        "font_top": 30,
+        "color_top": "#fff",
+        "grid": 3,
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "banner_beautify_margin_top": "",
+        "banner_beautify_margin_bottom": ""
+      }
+    },
+    "1640308083ec988162": {
+      "type": "collection-list-Beautify",
+      "blocks": {
+        "16403080838a081534-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "16403080838a081534-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        },
+        "16403080838a081534-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
+        }
+      },
+      "block_order": [
+        "16403080838a081534-0",
+        "16403080838a081534-1",
+        "16403080838a081534-2"
+      ],
+      "settings": {
+        "title": "NEW RELEASES",
+        "sub_title": "New supply this week",
+        "grid": 3,
+        "slide_loop": false,
+        "show_view_all": false,
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "",
+        "collection_list_beautify_margin_top": "",
+        "collection_list_beautify_margin_bottom": ""
+      }
+    },
+    "16403081303d4f2d25": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "TRENDING",
+        "sub_title": "Popular this week",
+        "collection": "",
+        "products_to_show": 4,
+        "grid": 3,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "use_eq_height": false,
+        "image_ratio1": "ratio_nt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "featured_colection_margin_top": "",
+        "featured_colection_margin_bottom": ""
+      }
+    },
+    "1640308141f5a732f6": {
+      "type": "slideshow-beautify-2",
+      "blocks": {
+        "356af3bc-e4f3-4d64-af32-f9c9a13d17fb": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "356af3bc-e4f3-4d64-af32-f9c9a13d17fb"
+      ],
+      "settings": {
+        "se_height": "adapt",
+        "text_size": "medium",
+        "loop": true,
+        "auto_play": true,
+        "auto_time": 3,
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "",
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "slideshow_beautify_margin_top": "",
+        "slideshow_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "164030807767fb4534",
+    "1640308083ec988162",
+    "16403081303d4f2d25",
+    "1640308141f5a732f6"
   ]
 }
