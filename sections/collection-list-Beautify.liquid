@@ -26,7 +26,7 @@
   {% endif %}
   
     {% if section.settings.show_view_all %}
-    <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
+    <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}" style="margin-top: 30px;">
     	<a href="{{ routes.collections_url }}" class="button my_button_font_size_default my_font_weight_default my_button_text">{{ 'sections.collection_list.view_all' | t }}</a>
   	</div>
     {% endif %}
