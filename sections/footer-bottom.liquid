@@ -67,7 +67,7 @@
   
   .bot_footer_svg img {
     padding: 2.5px;
-/*     height: {{ block.settings.svg_height }}px; */
+    height: 41px;
   }
 
   
@@ -129,7 +129,7 @@
           {%- elsif block.settings.source_img == 'SVG' and block.settings.svg_list -%}
           {%- assign arr = block.settings.svg_list | remove: ' ' | split: "," -%}
 <!--           <style>.bot_footer_svg img {padding: 2.5px;height: {{ block.settings.svg_height }}px;}</style> -->
-          <div class="dib bot_footer_svg">{%- for img in arr -%}<img class="lazyload" style="height: {{ block.settings.svg_height }}px;" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="{{ img | payment_type_img_url }}" alt="{{img | replace:'_',' '}}" />{%- endfor -%}</div>
+          <div class="dib bot_footer_svg">{%- for img in arr -%}<img class="lazyload"  src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="{{ img | payment_type_img_url }}" alt="{{img | replace:'_',' '}}" />{%- endfor -%}</div>
           {%- endif -%}
           {%- endfor -%}
         </div>
