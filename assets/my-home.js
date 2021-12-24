@@ -16,7 +16,7 @@ window.onload = function() {
     let promo_bar = document.getElementById('shopify-section-promo-bar');
     let top_bar = document.getElementById('shopify-section-top-bar');
     let header_zx = document.getElementById('shopify-section-header');
-    let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+//     let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
     let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
     let main = document.getElementById('MainContent');
     let sticky = document.getElementsByClassName('my_footer_sticky');
@@ -25,7 +25,7 @@ window.onload = function() {
     // 创建观察者对象
     
     var observer = new MutationObserver(function(){
-     
+
       // footer sticky
       if(sticky.length > 0) {
         if(document.body.clientWidth < 1024) {
@@ -34,13 +34,13 @@ window.onload = function() {
           my_footer_sticky.style.opacity = 1;
           my_footer_sticky.style.zIndex = 1;
           my_footer_sticky.style.marginBottom = 0;
-          footer_bottom.style.position = 'static';
+          target.style.position = 'static';
         }
         else if(document.body.clientWidth >= 1024) {
           let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
           let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 
-          let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
+//           let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
 		  let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
 
@@ -53,14 +53,14 @@ window.onload = function() {
           promo_bar.style.zIndex = 898;
           top_bar.style.zIndex = 899;
           header_zx.style.zIndex = 898;
-          footer_bottom.style.position = 'fixed';
-          footer_bottom.style.bottom = 0;
-          footer_bottom.style.width = '100%';    
+          target.style.position = 'fixed';
+          target.style.bottom = 0;
+          target.style.width = '100%';    
         }
       }
       else {
         main.style.marginBottom = 0;
-        footer_bottom.style.position = 'static';
+        target.style.position = 'static';
       }
 
     });
@@ -194,7 +194,7 @@ function my_home() {
       let footer_bottom_svg = document.getElementsByClassName('dib bot_footer_svg');
       if(footer_bottom_svg.length > 0) {
 //         let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
-        let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
+//         let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
 //         let footer_bottom_svg_box_height = document.getElementsByClassName('my_footer_bottom_flex ')[0].scrollHeight;
         console.log("box 原始:"+footer_bottom_height);
 //         console.log("svg 原始:"+footer_bottom_svg_height);
@@ -267,7 +267,7 @@ if(myHomeFreshDesignMode){
           let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
           let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 
-          let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
+//           let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
 		  let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
 
