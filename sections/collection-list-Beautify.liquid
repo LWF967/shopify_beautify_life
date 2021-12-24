@@ -26,20 +26,9 @@
   {% endif %}
   
     {% if section.settings.show_view_all %}
-  <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
-    
-    {% if section.settings.show_page_Dot %}
-   	
-<!--     - render 'slider-pog'- -->
-    
-      
-    
-    {% else %}
-      <a href="{{ routes.collections_url }}" class="button my_button_font_size_default my_font_weight_default my_button_text">{{ 'sections.collection_list.view_all' | t }}</a>
-    {% endif %}
-    
-    </div>
-  
+    <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
+    	<a href="{{ routes.collections_url }}" class="button my_button_font_size_default my_font_weight_default my_button_text">{{ 'sections.collection_list.view_all' | t }}</a>
+  	</div>
     {% endif %}
 </div>
 
