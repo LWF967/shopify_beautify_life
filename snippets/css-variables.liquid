@@ -23,6 +23,8 @@
     --color-image-overlay: {{ settings.color_image_overlay }};
     --color-image-overlay-rgb: {{ settings.color_image_overlay | color_to_rgb | remove: 'rgb(' | remove: 'rgba(' | remove: ')' | remove: ', 0.0' }};
 
+    --color-button-text: {{ settings.colors_Primary_labels }};
+
     {%- assign image_overlay_opacity = settings.image_overlay_opacity | divided_by: 100.00 -%}
     --opacity-image-overlay: {{ image_overlay_opacity }};
 
