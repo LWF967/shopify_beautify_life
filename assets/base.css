@@ -1730,10 +1730,13 @@ input[type='checkbox'] {
   letter-spacing: 0.1rem;
 }
   
+#shopify-section-promo-bar {
+  z-index: 102;
+}
   
-  #shopify-section-top-bar {
-    z-index: 102;
-  }
+#shopify-section-top-bar {
+  z-index: 102;
+}
 /* section-header */
 #shopify-section-header {
   z-index: 101;
