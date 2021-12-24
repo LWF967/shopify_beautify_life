@@ -126,7 +126,7 @@
   });
   
   function promo_bar_change() {
-    console.log("promo切换屏幕");
+//     console.log("promo切换屏幕");
     let close = document.getElementsByClassName('show_close')[0];
     let my_center = document.getElementsByClassName('my_center')[0];
     let hide_banner = document.getElementById('hide_banner');  
@@ -152,7 +152,7 @@
     hide_banner.dataset.mheight = hide_banner_height + 1;
     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
-    console.log("刷新机制");
+//     console.log("刷新机制");
 
     setTimeout(function() {
       hide_banner.style.marginTop = 0 + 'px';
@@ -169,9 +169,9 @@
       let cookiepromo = document.getElementById('promo_bar_date');
       let ddl = cookiepromo.getAttribute('data-date');
         if(ddl > 0) {
-          console.log("close");
+//           console.log("close");
         } else {
-          console.log("open");
+//           console.log("open");
         }
       },true);
     }
