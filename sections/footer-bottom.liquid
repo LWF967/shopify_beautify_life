@@ -273,8 +273,9 @@
 //       featured_product_header.style.zIndex = 900;
 //     }
 //   });
-      let footer_h = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
-    let footer_content = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+      
+  let footer_content = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+  let footer_h = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].offsetHeight;
   var designMode123 = Shopify.designMode || false;
   if(designMode123){
     document.addEventListener('shopify:section:load',()=>{
