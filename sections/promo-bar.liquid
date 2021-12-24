@@ -164,6 +164,7 @@
     var myPromoFreshDesignMode = Shopify.designMode || false;
     if(myPromoFreshDesignMode){
       document.addEventListener('shopify:section:load',() => {  
+//                 注释后 自己不能刷新
 // 		promo_bar_change();
 
       let cookiepromo = document.getElementById('promo_bar_date');
