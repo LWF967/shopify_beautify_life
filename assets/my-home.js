@@ -88,7 +88,7 @@ window.onload = function() {
      
       mutations.forEach(function(mutation){
       
-    	 console.log(mutation.type);
+    	 console.log(mutation.type,'111');
       
       });
     
