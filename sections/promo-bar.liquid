@@ -126,11 +126,12 @@
   let hide_banner = document.getElementById('hide_banner');  
   let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
   let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
-  
+  hide_banner.style.transition = "all .5s";
   close.onclick = function () {
     if(hide_banner_height > hide_banner.dataset.mheight) {
       hide_banner.dataset.mheight = hide_banner_height;
     }
+    
     hide_banner.style.height = 0 + 'px';
   }
 
