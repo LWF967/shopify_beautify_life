@@ -949,10 +949,10 @@
   
   
   
-  
+  const timedeal = 'timedeal-{{section.id}}';
   
     
-  var timedeal-{{section.id}} =  function abc(){
+   timedeal =  function abc(){
 	var set_time_box = document.getElementsByClassName('timebox-{{section.id}}')[0];
 /*  	var set_time_day = set_time_box.getElementsByClassName('day_time-{{section.id}}')[0];
     var set_time_hour = set_time_box.getElementsByClassName('hour_time-{{section.id}}')[0];
@@ -991,7 +991,7 @@
   
   }
   
-  var timebb = new timedeal-{{section.id}}();
+  var timebb = new timedeal();
   
 
 
@@ -1030,7 +1030,7 @@
 
    document.addEventListener('shopify:section:load',()=>{  
 
-	 timebb = new timedeal-{{section.id}}();
+	 timebb = new timedeal();
      
      
      const deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
