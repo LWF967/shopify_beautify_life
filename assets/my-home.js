@@ -224,6 +224,77 @@ window.onload = function() {
     observer.observe(target, config); 
     // 随后,你还可以停止观察
 //     observer.disconnect();
+    
+    
+    
+    var target1 = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];               
+    // 创建观察者对象
+    
+    var observer1 = new MutationObserver(function(){
+     
+ 		      // footer sticky
+      if(sticky.length > 0) {
+        if(document.body.clientWidth < 1024) {
+          main.style.marginBottom = 0;
+          my_footer_sticky.style.opacity = 1;
+          my_footer_sticky.style.zIndex = 1;
+          my_footer_sticky.style.marginBottom = 0;
+          footer_bottom.style.position = 'static';
+        }
+        else if(document.body.clientWidth >= 1024) {
+          let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+          let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+
+//           let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
+//           let footer_bottom_svg_box_height = document.getElementsByClassName('my_footer_bottom_flex ')[0].scrollHeight;
+          let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
+          let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+		  let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
+//           let jqsvgheight = $('.bot_footer_svg img').innerHeight();
+//           let jqallheight = jqheight;
+//           let jqsvgbox = $('.dib.bot_footer_svg').height();
+//           let footer_bottom_svg_box_height = document.getElementsByClassName("my_footer_bottom_flex")[0].scrollHeight;
+// 		  console.log("刷新后的bottom");
+//           console.log(jqsvgbox);
+//           console.log(jqallheight);
+//           console.log("svg 更新:"+footer_bottom_svg_height);
+//           console.log("相除 更新"+footer_bottom_svg_box_height/footer_bottom_svg_height);
+
+//           let footer_bottom_layout_center = document.getElementsByClassName('my_footer_bottom_layout_center');
+//           if(footer_bottom_layout_center.length > 0) {
+//             footer_bottom_height -= footer_bottom_svg_height;
+// //             console.log(footer_bottom_height);
+//           }
+
+
+          main.style.zIndex = 897;
+          main.style.marginBottom = my_footer_sticky_height + jqheight + "px";
+          my_footer_sticky.style.marginBottom = jqheight + "px";
+          my_footer_sticky.style.opacity = 1;
+          my_footer_sticky.style.zIndex = 1;
+          promo_bar.style.zIndex = 898;
+          top_bar.style.zIndex = 899;
+          header_zx.style.zIndex = 898;
+          footer_bottom.style.position = 'fixed';
+          footer_bottom.style.bottom = 0;
+          footer_bottom.style.width = '100%';    
+        }
+      }
+      else {
+        main.style.marginBottom = 0;
+        footer_bottom.style.position = 'static';
+      }
+
+    });
+    
+    // 配置观察选项:
+    var config1 = { attributes: true, childList: true, characterData: true ,subtree : true };
+    // 传入目标节点和观察选项
+    observer1.observe(target1, config1); 
+    // 随后,你还可以停止观察
+//     observer.disconnect();
+    
+    
     },true);
   }
   
