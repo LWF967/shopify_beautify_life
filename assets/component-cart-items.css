@@ -106,7 +106,10 @@
 
 cart-remove-button .button {
   box-shadow: none;
-  color: rgba(var(--color-base-text), 0.75);
+/*   lzx change start  */
+/*   color: rgba(var(--color-base-text), 0.75); */
+/*   lzx change end */
+  color: var(--color-button-text);
   min-width: 4.5rem;
   min-height: 4.5rem;
   padding: 0;
