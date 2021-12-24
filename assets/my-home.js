@@ -89,9 +89,9 @@ window.onload = function() {
       mutations.forEach(function(mutation){
       
     	 console.log(mutation.type,'111');
-      	 let abcd = 123;
+//       	 let abcd = 123;
       });
-    
+    	let abcd = 123;
     });
     
     // 配置观察选项:
