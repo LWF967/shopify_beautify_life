@@ -121,11 +121,27 @@
 </div>
 
 <script>
-  $(window).resize(function(){
+//   $(window).resize(function(){
 //     if(document.body.clientWidth > 0) {
-      promo_bar_change();
+//       promo_bar_change();
 //     }
-  });
+//   });
+  
+  
+    var target =  document.body;              
+    // 创建观察者对象
+    
+    var observer = new MutationObserver(function(mutations){
+      console.log(mutations.type);
+    });
+    
+    // 配置观察选项:
+    var config = { attributes: true, childList: true, characterData: true ,subtree : true };
+    // 传入目标节点和观察选项
+    observer.observe(target, config); 
+    // 随后,你还可以停止观察
+//     observer.disconnect();
+  
   console.log(window.screen.width);
   function promo_bar_change() {
     console.log("promo切换屏幕");
