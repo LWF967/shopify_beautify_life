@@ -2271,6 +2271,7 @@ a{
   
 .my_button_font_size_default {
   font-size: 13px;
+  color: {{ settings.colors_Primary_labels }};
 }
   
 .my_font_weight_default {
