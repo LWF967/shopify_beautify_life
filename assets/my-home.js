@@ -191,16 +191,14 @@ window.onload = function() {
 //           console.log("svg 更新:"+footer_bottom_svg_height);
 //           console.log("相除 更新"+footer_bottom_svg_box_height/footer_bottom_svg_height);
 
-          let footer_bottom_layout_center = document.getElementsByClassName('my_footer_bottom_layout_center');
-          if(footer_bottom_layout_center.length > 0) {
-            footer_bottom_height -= footer_bottom_svg_height;
-//             console.log(footer_bottom_height);
-          }
+//           let footer_bottom_layout_center = document.getElementsByClassName('my_footer_bottom_layout_center');
+//           if(footer_bottom_layout_center.length > 0) {
+//             footer_bottom_height -= footer_bottom_svg_height;
+// //             console.log(footer_bottom_height);
+//           }
 
 
           main.style.zIndex = 897;
-//           main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
-//           my_footer_sticky.style.marginBottom = footer_bottom_height + "px";
           main.style.marginBottom = my_footer_sticky_height + jqheight + "px";
           my_footer_sticky.style.marginBottom = jqheight + "px";
           my_footer_sticky.style.opacity = 1;
@@ -210,12 +208,7 @@ window.onload = function() {
           header_zx.style.zIndex = 898;
           footer_bottom.style.position = 'fixed';
           footer_bottom.style.bottom = 0;
-          footer_bottom.style.width = '100%';
-
-//           console.log("top:"+my_footer_sticky_height); 
-//           console.log("bottom:"+footer_bottom_height);
-//           console.log("main:"+main.style.marginBottom); 
-//           console.log("+++++++++++++++");        
+          footer_bottom.style.width = '100%';    
         }
       }
       else {
