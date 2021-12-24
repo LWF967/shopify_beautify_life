@@ -266,5 +266,19 @@
 {% endschema %}
 
 <script>
+      
+//   let footer_content = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+  var designMode123 = Shopify.designMode || false;
+  if(designMode123){
+    document.addEventListener('shopify:section:change',()=>{
+//         let footer_h = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].offsetHeight;
 
+//       if(document.body.clientWidth > 1024) {
+
+//         footer_content.style.height = footer_h + "px";
+      	console.log("更新"+footer_h);
+//         console.log(footer_content.style.height);
+//       }
+    },true);
+  }
 </script>
