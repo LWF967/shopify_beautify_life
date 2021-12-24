@@ -285,6 +285,10 @@
     main1.style.marginBottom = my_footer_sticky_height1 + footer_bottom_height1 + "px";
     my_footer_sticky1.style.marginBottom = footer_bottom_height1 + "px";
     console.log(footer_h);
+    console.log(main1);
+    console.log(my_footer_sticky1);
+    console.log(footer_bottom_height1);
+
   }
 
   var designMode123 = Shopify.designMode || false;
@@ -293,7 +297,10 @@
       if(document.body.clientWidth > 1024) {
         main1.style.marginBottom = my_footer_sticky_height1 + footer_bottom_height1 + "px";
         my_footer_sticky1.style.marginBottom = footer_bottom_height1 + "px";
-      	console.log(footer_h);
+      	console.log("更新"+footer_h);
+        console.log("更新"+main1);
+        console.log("更新"+my_footer_sticky1);
+        console.log("更新"+footer_bottom_height1);
       }
     },true);
   }
