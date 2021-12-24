@@ -270,7 +270,7 @@
 //   let footer_content = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
   var designMode123 = Shopify.designMode || false;
   if(designMode123){
-    document.addEventListener('shopify:section:load',()=>{
+    document.addEventListener('shopify:section:unload',()=>{
 //         let footer_h = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].offsetHeight;
 
 //       if(document.body.clientWidth > 1024) {
