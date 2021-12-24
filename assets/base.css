@@ -1729,11 +1729,7 @@ input[type='checkbox'] {
   margin: 0;
   letter-spacing: 0.1rem;
 }
-  
-#shopify-section-promo-bar {
-  z-index: 102;
-}
-  
+
 #shopify-section-top-bar {
   z-index: 102;
 }
