@@ -112,6 +112,7 @@ window.onload = function() {
 //           let footer_bottom_svg_box_height = document.getElementsByClassName("my_footer_bottom_flex")[0].scrollHeight;
 
           console.log("box 更新:"+jqheight);
+          console.log(jqsvgheight);
 //           console.log("svg 更新:"+footer_bottom_svg_height);
 //           console.log("相除 更新"+footer_bottom_svg_box_height/footer_bottom_svg_height);
 
