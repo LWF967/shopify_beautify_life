@@ -106,11 +106,11 @@ window.onload = function() {
 //           let footer_bottom_svg_box_height = document.getElementsByClassName('my_footer_bottom_flex ')[0].scrollHeight;
           let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
-
+		  let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
           
 //           let footer_bottom_svg_box_height = document.getElementsByClassName("my_footer_bottom_flex")[0].scrollHeight;
 
-          console.log("box 更新:"+footer_bottom_height);
+          console.log("box 更新:"+jqheight);
 //           console.log("svg 更新:"+footer_bottom_svg_height);
 //           console.log("相除 更新"+footer_bottom_svg_box_height/footer_bottom_svg_height);
 
