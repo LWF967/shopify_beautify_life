@@ -74,10 +74,11 @@ window.onload = function() {
   hide_banner.style.transition = "all .5s";
 }
 //   my_home();
-          let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
 
   var myHomeFreshDesignMode = Shopify.designMode || false;
   if(myHomeFreshDesignMode){
+              let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
+
     document.addEventListener('shopify:section:load',() => {
 //       my_home();
                               
