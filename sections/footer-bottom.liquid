@@ -273,11 +273,13 @@
 //       featured_product_header.style.zIndex = 900;
 //     }
 //   });
-  let footer_bottom_svg_box_height = document.getElementsByClassName('my_footer_bottom_flex')[0].scrollHeight;
+  let svg_box = document.getElementsByClassName('my_footer_bottom_flex')[0];
+  let svg_box_height = document.getElementsByClassName('my_footer_bottom_flex')[0].scrollHeight;
   var designMode123 = Shopify.designMode || false;
   if(designMode123){
-    document.addEventListener('shopify:section:load',()=>{  
-      console.log("footerbottom:"+footer_bottom_svg_box_height);
+    document.addEventListener('shopify:section:load',()=>{
+      svg_box.style.height = svg_box_height + "px";
+      console.log("footerbottom:"+svg_box_height);
     },true);
   }
 </script>
