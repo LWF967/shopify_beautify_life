@@ -276,13 +276,14 @@
   let svg_box = document.getElementsByClassName('my_footer_bottom_flex')[0];
   let svg_box_height = document.getElementsByClassName('my_footer_bottom_flex')[0].scrollHeight;
   
-        svg_box.style.height = svg_box_height + "px";
 
   var designMode123 = Shopify.designMode || false;
   if(designMode123){
     document.addEventListener('shopify:section:load',()=>{
-      svg_box.style.height = svg_box_height + "px";
-      console.log("footerbottom:"+svg_box_height);
+      if(document.body.clientWidth > 1024) {
+        svg_box.style.height = svg_box_height + "px";
+        console.log("footerbottom:"+svg_box_height);
+      }
     },true);
   }
 </script>
