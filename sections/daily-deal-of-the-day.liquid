@@ -1027,7 +1027,7 @@
 	 timebb = new timedeal();
      
      
-     const deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
+      deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
   	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
       slidesPerView: 1,
       followFinger : false,
@@ -1055,6 +1055,7 @@
     document.addEventListener('shopify:section:unload',()=>{  
 
     timebb = null;
+    deal_swiper123 = null;
 	},true);
  
 
