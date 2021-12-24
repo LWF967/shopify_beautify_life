@@ -110,9 +110,8 @@ window.onload = function() {
           let jqsvgheight = $('.bot_footer_svg img').innerHeight();
           
 //           let footer_bottom_svg_box_height = document.getElementsByClassName("my_footer_bottom_flex")[0].scrollHeight;
-
-          console.log(jqheight);
-          console.log(jqsvgheight);
+		  console.log("刷新后的bottom");
+          console.log(jqheight+jqsvgheight);
 //           console.log("svg 更新:"+footer_bottom_svg_height);
 //           console.log("相除 更新"+footer_bottom_svg_box_height/footer_bottom_svg_height);
 
