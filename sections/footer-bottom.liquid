@@ -275,6 +275,9 @@
 //   });
   let svg_box = document.getElementsByClassName('my_footer_bottom_flex')[0];
   let svg_box_height = document.getElementsByClassName('my_footer_bottom_flex')[0].scrollHeight;
+  
+        svg_box.style.height = svg_box_height + "px";
+
   var designMode123 = Shopify.designMode || false;
   if(designMode123){
     document.addEventListener('shopify:section:load',()=>{
