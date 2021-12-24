@@ -16,8 +16,8 @@
     var set_time_minutes = document.getElementsByClassName('minutes_time-{{section.id}}')[0];
   	var set_time_second = document.getElementsByClassName('second_time-{{section.id}}')[0];
   	
-  	var endT = set_time_box.dataset.endtime;
-
+  	var endT = document.getElementsByClassName('timebox-{{section.id}}')[0].dataset.endtime;
+							
   	var end_time = new Date(endT); 	
   
   function cctime(){
