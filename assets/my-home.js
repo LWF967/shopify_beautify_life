@@ -2,8 +2,8 @@
 // footer sticky
 window.onload = function() {
   my_home();
-  var myHomeFreshDesignMode = Shopify.designMode || false;
-  if(myHomeFreshDesignMode){
+  var myHomeFreshDesignModeonload = Shopify.designMode || false;
+  if(myHomeFreshDesignModeonload){
     document.addEventListener('shopify:section:load',() => {
       let promo_bar = document.getElementById('shopify-section-promo-bar');
       let top_bar = document.getElementById('shopify-section-top-bar');
@@ -77,7 +77,7 @@ window.onload = function() {
   var myHomeFreshDesignMode = Shopify.designMode || false;
   if(myHomeFreshDesignMode){
     document.addEventListener('shopify:section:load',() => {
-      my_home();
+//       my_home();
     },true);
   }
   
