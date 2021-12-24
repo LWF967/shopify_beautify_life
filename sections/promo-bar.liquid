@@ -122,7 +122,9 @@
 
 <script>
   $(window).resize(function(){
-    promo_bar_change();
+    if(document.body.clientWidth > 0) {
+      promo_bar_change();
+    }
   });
   
   function promo_bar_change() {
