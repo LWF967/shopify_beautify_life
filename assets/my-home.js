@@ -79,7 +79,7 @@ if(myFooterbottomFreshDesignMode){
         main.style.marginBottom = 0;
         target.style.position = 'static';
       }
-    }, 500);
+    }), 500);
 
     // 配置观察选项:
     var config = { attributes: true, childList: true, characterData: true ,subtree : true };
