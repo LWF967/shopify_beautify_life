@@ -33,13 +33,14 @@ if(myFooterbottomFreshDesignMode){
 //           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
           let jq_footer_top_height = $('.footer.color-.gradient.my_footer_sticky').height();
           let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
-
+		  let jq_main_margin_bottom = parseInt(jq_footer_top_height+jqheight);
+          
           promo_bar.style.zIndex = 898;
           top_bar.style.zIndex = 899;
           header_zx.style.zIndex = 898;
           
           main.style.zIndex = 897;
-          main.style.marginBottom = jq_footer_top_height + jqheight + "px";
+          main.style.marginBottom = jq_main_margin_bottom + "px";
           my_footer_sticky.style.marginBottom = jqheight + "px";
           my_footer_sticky.style.opacity = 1;
           my_footer_sticky.style.zIndex = 1;
@@ -225,12 +226,14 @@ if(myHomeFreshDesignMode){
         let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
         let jq_footer_top_height = $('.footer.color-.gradient.my_footer_sticky').height();
         let jq_footer_bottom_height = $('.footer.color-.gradient.my_footer_bottom_color').height();
+        let jq_main_margin_bottom = parseInt(jq_footer_top_height+jqheight);
+        
         promo_bar.style.zIndex = 898;
         top_bar.style.zIndex = 899;
         header_zx.style.zIndex = 898;
         
         main.style.zIndex = 897;
-        main.style.marginBottom = jq_footer_top_height + jq_footer_bottom_height + "px";
+        main.style.marginBottom = jq_main_margin_bottom + "px";
         my_footer_sticky.style.marginBottom = jq_footer_bottom_height + "px";
         my_footer_sticky.style.opacity = 1;
         my_footer_sticky.style.zIndex = 1;
