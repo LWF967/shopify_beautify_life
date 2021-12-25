@@ -32,8 +32,6 @@
         else if(document.body.clientWidth >= 1024) {
           let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
           let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-
-//           let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
 		  let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
 
@@ -160,6 +158,17 @@ function my_header_and_totop() {
 }
 
 function my_home() {
+  let promo_bar = document.getElementById('shopify-section-promo-bar');
+  let top_bar = document.getElementById('shopify-section-top-bar');
+  let header_zx = document.getElementById('shopify-section-header');
+  //   let footer_top = document.getElementById('shopify-section-footer-top');
+  let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+  //   let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+  let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
+  let main = document.getElementById('MainContent');
+  let sticky = document.getElementsByClassName('my_footer_sticky');
+  let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+  let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
   // footer sticky
   if(sticky.length > 0) {
     if(document.body.clientWidth < 1024) {
@@ -171,33 +180,6 @@ function my_home() {
       my_footer_sticky.style.marginBottom = 0;
     }
     else if(document.body.clientWidth >= 1024) {
-      let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
-      let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
-      
-      let footer_bottom_svg = document.getElementsByClassName('dib bot_footer_svg');
-      if(footer_bottom_svg.length > 0) {
-//         let footer_bottom_svg_box_height = document.getElementsByClassName('dib bot_footer_svg')[0].scrollHeight;
-//         let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
-//         let footer_bottom_svg_box_height = document.getElementsByClassName('my_footer_bottom_flex ')[0].scrollHeight;
-        console.log("box 原始:"+footer_bottom_height);
-//         console.log("svg 原始:"+footer_bottom_svg_height);
-      }
-      
-      let footer_bottom_image = document.getElementsByClassName('dib');
-      if(footer_bottom_image.length > 0) {
-        let footer_bottom_image_box_height = document.getElementsByClassName('dib')[0].scrollHeight;
-//         console.log("image 原始:"+footer_bottom_image_box_height);
-      }
-
-//       let row = footer_bottom_svg_box_height/footer_bottom_svg_height;
-//       console.log("row:"+row);
-
-//               let footer_bottom_layout_center = document.getElementsByClassName('my_footer_bottom_layout_center');
-//         if(footer_bottom_layout_center.length > 0) {
-//           footer_bottom_height -= footer_bottom_svg_height;
-//           console.log(footer_bottom_height);
-//         }
-      
 //       promo_bar.style.zIndex = 2;
       main.style.zIndex = 897;
       main.style.marginBottom = my_footer_sticky_height + footer_bottom_height + "px";
@@ -209,12 +191,7 @@ function my_home() {
       header_zx.style.zIndex = 898;
       footer_bottom.style.position = 'fixed';
       footer_bottom.style.bottom = 0;
-      footer_bottom.style.width = '100%';
-
-//       console.log("top:"+my_footer_sticky_height); 
-//       console.log("无刷新bottom:"+footer_bottom_height);
-//       console.log("main:"+main.style.marginBottom); 
-//       console.log("===================");        
+      footer_bottom.style.width = '100%';     
     }
   }
   else {
@@ -263,8 +240,6 @@ if(myHomeFreshDesignMode){
         else if(document.body.clientWidth >= 1024) {
           let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
           let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-
-//           let footer_bottom_svg_height = document.querySelectorAll(".bot_footer_svg img")[0].scrollHeight;
           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
 		  let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
 
