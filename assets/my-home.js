@@ -30,6 +30,7 @@ if(myFooterbottomFreshDesignMode){
 //           let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 //           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
           let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
+          let my_footer_sticky_tt = document.getElementsByClassName('footer color- gradient')[0];
 
           main.style.zIndex = 897;
           main.style.marginBottom = my_footer_sticky_height + jqheight + "px";
@@ -37,6 +38,10 @@ if(myFooterbottomFreshDesignMode){
             my_footer_sticky.style.marginBottom = jqheight + "px";
             my_footer_sticky.style.opacity = 1;
             my_footer_sticky.style.zIndex = 1;
+          } else {
+            my_footer_sticky_tt.style.marginBottom = jqheight + "px";
+            my_footer_sticky_tt.style.opacity = 1;
+            my_footer_sticky_tt.style.zIndex = 1;
           }
           promo_bar.style.zIndex = 898;
           top_bar.style.zIndex = 899;
