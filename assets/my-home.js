@@ -1,7 +1,7 @@
 // lzx change
 // footer sticky
 window.onload = function() {
-//   my_home();
+  my_home();
   // hide_banner variant define in promo-bar.liquid
   hide_banner.style.marginTop = 0 + 'px';
   hide_banner.style.transition = "all .5s";
@@ -78,7 +78,6 @@ window.onload = function() {
 $(window).resize(function(){
 //   my_home();
 });
-//   my_home();
 // window.onresize = function() {
 //       my_home();
 //   promo_bar_change();
@@ -240,6 +239,8 @@ function my_home() {
     footer_bottom.style.position = 'static';
   }
 }
+  my_home();
+
 
 // var myHomeFreshDesignMode = Shopify.designMode || false;
 // if(myHomeFreshDesignMode){
