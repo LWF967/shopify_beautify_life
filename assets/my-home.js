@@ -1,6 +1,6 @@
 // lzx change
-var myHomeFreshDesignMode = Shopify.designMode || false;
-if(myHomeFreshDesignMode){
+var myFooterbottomFreshDesignMode = Shopify.designMode || false;
+if(myFooterbottomFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {
     let promo_bar = document.getElementById('shopify-section-promo-bar');
     let top_bar = document.getElementById('shopify-section-top-bar');
