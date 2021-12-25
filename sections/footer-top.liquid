@@ -1099,10 +1099,10 @@
   }
   accordion();
 
-var myFootertopFreshDesignMode = Shopify.designMode || false;
-if(myFootertopFreshDesignMode){
-  document.addEventListener('shopify:section:load',() => {
-    accordion();              
-  },true);
-}
+  var myFootertopFreshDesignMode = Shopify.designMode || false;
+  if(myFootertopFreshDesignMode){
+    document.addEventListener('shopify:section:load',() => {
+      accordion();              
+    },true);
+  }
 </script>
