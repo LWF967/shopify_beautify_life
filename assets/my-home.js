@@ -1,18 +1,10 @@
 // lzx change
 // footer sticky
-window.onload = function() {
-  my_home();
-  // hide_banner variant define in promo-bar.liquid
-  hide_banner.style.marginTop = 0 + 'px';
-  hide_banner.style.transition = "all .5s";
-}
-//   my_home();
 
   var myHomeFreshDesignMode = Shopify.designMode || false;
   if(myHomeFreshDesignMode){
     document.addEventListener('shopify:section:load',() => {
-                              
-//       my_home();                        
+                                                     
     let promo_bar = document.getElementById('shopify-section-promo-bar');
     let top_bar = document.getElementById('shopify-section-top-bar');
     let header_zx = document.getElementById('shopify-section-header');
@@ -75,9 +67,9 @@ window.onload = function() {
     },true);
   }
   
-$(window).resize(function(){
+// $(window).resize(function(){
 //   my_home();
-});
+// });
 // window.onresize = function() {
 //       my_home();
 //   promo_bar_change();
@@ -103,7 +95,7 @@ let content = document.getElementsByClassName('content')[0];
 let my_header_sticky = document.getElementsByClassName('my_header_sticky');
 let my_backtop = document.getElementById('my_backtop');
 
-my_header_and_totop();
+
 
 function my_header_and_totop() {
   // backtop 
@@ -239,8 +231,16 @@ function my_home() {
     footer_bottom.style.position = 'static';
   }
 }
-  my_home();
+my_header_and_totop();
+my_home();
 
+
+window.onload = function() {
+  my_home();
+  // hide_banner variant define in promo-bar.liquid
+  hide_banner.style.marginTop = 0 + 'px';
+  hide_banner.style.transition = "all .5s";
+}
 
 // var myHomeFreshDesignMode = Shopify.designMode || false;
 // if(myHomeFreshDesignMode){
