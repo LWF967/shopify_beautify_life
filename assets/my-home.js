@@ -78,7 +78,7 @@ window.onload = function() {
 $(window).resize(function(){
 //   my_home();
 });
-  my_home();
+//   my_home();
 // window.onresize = function() {
 //       my_home();
 //   promo_bar_change();
