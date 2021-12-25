@@ -36,8 +36,8 @@ if(myFooterbottomFreshDesignMode){
 
     // 创建观察者对象
 
-//     var observer = new MutationObserver(function(){
-          var observer = new MutationObserver(debounce(function () {
+    var observer = new MutationObserver(function(){
+//           var observer = new MutationObserver(debounce(function () {
 
       // footer sticky
       if(sticky.length > 0) {
@@ -79,7 +79,7 @@ if(myFooterbottomFreshDesignMode){
         main.style.marginBottom = 0;
         target.style.position = 'static';
       }
-    }, 500);
+    });
 
     // 配置观察选项:
     var config = { attributes: true, childList: true, characterData: true ,subtree : true };
