@@ -1,69 +1,68 @@
 // lzx change
 // footer sticky
+var myHomeFreshDesignMode = Shopify.designMode || false;
+if(myHomeFreshDesignMode){
+  document.addEventListener('shopify:section:load',() => {
 
-  var myHomeFreshDesignMode = Shopify.designMode || false;
-  if(myHomeFreshDesignMode){
-    document.addEventListener('shopify:section:load',() => {
-                                                     
-    let promo_bar = document.getElementById('shopify-section-promo-bar');
-    let top_bar = document.getElementById('shopify-section-top-bar');
-    let header_zx = document.getElementById('shopify-section-header');
-//     let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-    let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
-    let main = document.getElementById('MainContent');
-    let sticky = document.getElementsByClassName('my_footer_sticky');
-    
-   	var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-    
-    // 创建观察者对象
-    
-    var observer = new MutationObserver(function(){
+                            let promo_bar = document.getElementById('shopify-section-promo-bar');
+  let top_bar = document.getElementById('shopify-section-top-bar');
+  let header_zx = document.getElementById('shopify-section-header');
+  //     let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+  let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
+  let main = document.getElementById('MainContent');
+  let sticky = document.getElementsByClassName('my_footer_sticky');
 
-      // footer sticky
-      if(sticky.length > 0) {
-        if(document.body.clientWidth < 1024) {
-//           promo_bar.style.zIndex = 2;
-          main.style.marginBottom = 0;
-          my_footer_sticky.style.opacity = 1;
-          my_footer_sticky.style.zIndex = 1;
-          my_footer_sticky.style.marginBottom = 0;
-          target.style.position = 'static';
-        }
-        else if(document.body.clientWidth >= 1024) {
-          let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
-          let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-          let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
-		  let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
+  var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 
-//           promo_bar.style.zIndex = 2;
-          main.style.zIndex = 897;
-          main.style.marginBottom = my_footer_sticky_height + jqheight + "px";
-          my_footer_sticky.style.marginBottom = jqheight + "px";
-          my_footer_sticky.style.opacity = 1;
-          my_footer_sticky.style.zIndex = 1;
-          promo_bar.style.zIndex = 898;
-          top_bar.style.zIndex = 899;
-          header_zx.style.zIndex = 898;
-          target.style.position = 'fixed';
-          target.style.bottom = 0;
-          target.style.width = '100%';    
-        }
-      }
-      else {
+  // 创建观察者对象
+
+  var observer = new MutationObserver(function(){
+
+    // footer sticky
+    if(sticky.length > 0) {
+      if(document.body.clientWidth < 1024) {
+        //           promo_bar.style.zIndex = 2;
         main.style.marginBottom = 0;
+        my_footer_sticky.style.opacity = 1;
+        my_footer_sticky.style.zIndex = 1;
+        my_footer_sticky.style.marginBottom = 0;
         target.style.position = 'static';
       }
+      else if(document.body.clientWidth >= 1024) {
+        let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+        let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+        let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+        let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
 
-    });
-    
-    // 配置观察选项:
-    var config = { attributes: true, childList: true, characterData: true ,subtree : true };
-    // 传入目标节点和观察选项
-    observer.observe(target, config); 
-    // 随后,你还可以停止观察
-//     observer.disconnect();
-    },true);
-  }
+        //           promo_bar.style.zIndex = 2;
+        main.style.zIndex = 897;
+        main.style.marginBottom = my_footer_sticky_height + jqheight + "px";
+        my_footer_sticky.style.marginBottom = jqheight + "px";
+        my_footer_sticky.style.opacity = 1;
+        my_footer_sticky.style.zIndex = 1;
+        promo_bar.style.zIndex = 898;
+        top_bar.style.zIndex = 899;
+        header_zx.style.zIndex = 898;
+        target.style.position = 'fixed';
+        target.style.bottom = 0;
+        target.style.width = '100%';    
+      }
+    }
+    else {
+      main.style.marginBottom = 0;
+      target.style.position = 'static';
+    }
+
+  });
+
+  // 配置观察选项:
+  var config = { attributes: true, childList: true, characterData: true ,subtree : true };
+  // 传入目标节点和观察选项
+  observer.observe(target, config); 
+  // 随后,你还可以停止观察
+  //     observer.disconnect();
+},true);
+}
 
 let promo_bar = document.getElementById('shopify-section-promo-bar');
 let top_bar = document.getElementById('shopify-section-top-bar');
@@ -108,34 +107,20 @@ function my_header_and_totop() {
         content.style.position = 'relative';
       }
       if(content.style.position == 'fixed') {
-        //         if(document.body.clientWidth > 990) {
         promo_bar.style.zIndex = 900;
         top_bar.style.zIndex = 901;
         header_zx.style.zIndex = 900;
-        //         } else if (document.body.clientWidth < 990) {
-        //           top_bar.style.zIndex = 1;
-        //           header_zx.style.zIndex = 0;
-        //         }
+        
         content.classList.add('my_header_sticky_settings');
         header.classList.add('my_header_sticky_settings');
         content.style.transition = 'transform .3s';
-        // content.style.top = -(content.scrollHeight) + 'px';
         content.style.top = "-" + (header_wrapper.style.height);
-        // content.style.transform = 'translateY(' + (content.scrollHeight) + 'px)';
-        // content.style.transform = 'translate3d(0,' + content.scrollHeight + 'px, 0)';
         content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
       } else if(content.style.position == 'relative') {
-        //         if(document.body.clientWidth > 990) {
-
         promo_bar.style.zIndex = 898;
         top_bar.style.zIndex = 899;
         header_zx.style.zIndex = 898;
-
-
-        //         } else if (document.body.clientWidth < 990) {
-        //           top_bar.style.zIndex = 1;
-        //           header_zx.style.zIndex = 0;
-        //         }
+        
         content.classList.remove('my_header_sticky_settings');
         header.classList.remove('my_header_sticky_settings');
         content.style.top = 0 + 'px';
@@ -161,9 +146,7 @@ function my_home() {
   let promo_bar = document.getElementById('shopify-section-promo-bar');
   let top_bar = document.getElementById('shopify-section-top-bar');
   let header_zx = document.getElementById('shopify-section-header');
-  //   let footer_top = document.getElementById('shopify-section-footer-top');
   let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-  //   let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
   let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
   let main = document.getElementById('MainContent');
   let sticky = document.getElementsByClassName('my_footer_sticky');
