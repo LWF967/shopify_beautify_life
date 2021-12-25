@@ -226,7 +226,7 @@ if(myHomeFreshDesignMode){
         let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
         let jq_footer_top_height = $('.footer.color-.gradient.my_footer_sticky').height();
         let jq_footer_bottom_height = $('.footer.color-.gradient.my_footer_bottom_color').height();
-        let jq_main_margin_bottom = parseInt(jq_footer_top_height+jqheight);
+        let jq_main_margin_bottom = parseInt(jq_footer_top_height+jq_footer_bottom_height);
         
         promo_bar.style.zIndex = 898;
         top_bar.style.zIndex = 899;
