@@ -67,9 +67,9 @@
     },true);
   }
   
-// $(window).resize(function(){
-//   my_home();
-// });
+$(window).resize(function(){
+  my_home();
+});
 // window.onresize = function() {
 //       my_home();
 //   promo_bar_change();
