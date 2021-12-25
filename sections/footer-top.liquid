@@ -1059,41 +1059,44 @@
 {% endschema %}
 
 <script>
+  function accordion() {
     {% comment %} // footertop移动端手风琴 {% endcomment %}
     var footer_mobile_show = document.getElementsByClassName('my_footer_mobile_show');
-	var footer_h2 = document.getElementsByClassName('my_footer_heading my_footer_mobile_heading');
-  
-    for (let i = 0; i < footer_mobile_show.length; i++) {
-        footer_mobile_show[i].onclick = function () {
-            var yuansu = footer_h2[i].nextElementSibling;
-			var img = footer_h2[i].nextElementSibling.firstElementChild;
-            
-            if (yuansu.style.height) {
-              {% comment %} // 高度有值 {% endcomment %}
-              this.children[0].style.transform = 'rotate(0deg)';
-              this.children[0].style.opacity = '1';
-              this.children[1].style.transform = 'rotate(90deg)';
-              yuansu.style.height = null;
-              if(img.tagName == 'IMG') {
-                img.style.opacity = '0';
-              }
-            } else {
-             if (img.tagName == 'IMG') {
-                var firstload = document.getElementsByClassName('footer-block__details-content rte my_footer_p')[i].firstElementChild.scrollHeight;
-				{% comment %} // 监听图片是否加载完成 解决第一次刷新高度显示有误 {% endcomment %}
-                img.onload = function(){ 
-                  yuansu.style.height = yuansu.scrollHeight + "px";
-                }
-                img.style.opacity = '1';
-              }
-              {% comment %} // 高度为0 {% endcomment %}
-              this.children[0].style.transform = 'rotate(180deg)';
-              this.children[0].style.opacity = '0';
-              this.children[1].style.transform = 'rotate(360deg)';
-              yuansu.style.height = yuansu.scrollHeight + "px";
+    var footer_h2 = document.getElementsByClassName('my_footer_heading my_footer_mobile_heading');
 
+    for (let i = 0; i < footer_mobile_show.length; i++) {
+      footer_mobile_show[i].onclick = function () {
+        var yuansu = footer_h2[i].nextElementSibling;
+        var img = footer_h2[i].nextElementSibling.firstElementChild;
+
+        if (yuansu.style.height) {
+          {% comment %} // 高度有值 {% endcomment %}
+          this.children[0].style.transform = 'rotate(0deg)';
+          this.children[0].style.opacity = '1';
+          this.children[1].style.transform = 'rotate(90deg)';
+          yuansu.style.height = null;
+          if(img.tagName == 'IMG') {
+            img.style.opacity = '0';
+          }
+        } else {
+          if (img.tagName == 'IMG') {
+            var firstload = document.getElementsByClassName('footer-block__details-content rte my_footer_p')[i].firstElementChild.scrollHeight;
+            {% comment %} // 监听图片是否加载完成 解决第一次刷新高度显示有误 {% endcomment %}
+            img.onload = function(){ 
+              yuansu.style.height = yuansu.scrollHeight + "px";
             }
+            img.style.opacity = '1';
+          }
+          {% comment %} // 高度为0 {% endcomment %}
+          this.children[0].style.transform = 'rotate(180deg)';
+          this.children[0].style.opacity = '0';
+          this.children[1].style.transform = 'rotate(360deg)';
+          yuansu.style.height = yuansu.scrollHeight + "px";
+
         }
+      }
     }
+  }
+  accordion();
 
 </script>
