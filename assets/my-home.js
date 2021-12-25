@@ -1,4 +1,24 @@
 // lzx change
+/**
+ * 防抖函数，非立即执行
+ * @param {*} func 回调函数  必传
+ * @param {*} wait 等待时长 默认500ms 可不传
+ * arguments  是js存函数参数的地方
+ */
+function debounce(func, wait = 500) {
+  let timeOut
+  return function () {
+    let content = this
+    let arg = arguments
+    if (timeOut) {
+      clearTimeout(timeOut)
+    }
+    timeOut = setTimeout(() => {
+      func.apply(content, arg)
+    }, wait)
+  }
+}
+
 var myFooterbottomFreshDesignMode = Shopify.designMode || false;
 if(myFooterbottomFreshDesignMode){
   document.addEventListener('shopify:section:load',debounce(function () {
