@@ -1,4 +1,5 @@
 // lzx change
+let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
 var myFooterbottomFreshDesignMode = Shopify.designMode || false;
 if(myFooterbottomFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {
@@ -9,7 +10,6 @@ if(myFooterbottomFreshDesignMode){
     let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
     let main = document.getElementById('MainContent');
     let sticky = document.getElementsByClassName('my_footer_sticky');
-  let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
   
     var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 
