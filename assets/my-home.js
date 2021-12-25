@@ -36,52 +36,50 @@ if(myFooterbottomFreshDesignMode){
 
     // 创建观察者对象
 
-    var observer = new MutationObserver(function(){
-//           var observer = new MutationObserver(debounce(function () {
+//     var observer = new MutationObserver(function(){
+          var observer = new MutationObserver(debounce(function () {
 
-      debounce(function () {
-        // footer sticky
-        if(sticky.length > 0) {
-          if(document.body.clientWidth < 1024) {
-            main.style.marginBottom = 0;
-            my_footer_sticky.style.opacity = 1;
-            my_footer_sticky.style.zIndex = 1;
-            my_footer_sticky.style.marginBottom = 0;
-            target.style.position = 'static';
-          }
-          else if(document.body.clientWidth >= 1024) {
-            let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
-
-  //           let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
-  //           let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-  //           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
-            let jq_footer_top_height = $('.footer.color-.gradient.my_footer_sticky').height();
-            let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
-            let jq_main_margin_bottom = parseInt(jq_footer_top_height+jqheight);
-
-            promo_bar.style.zIndex = 898;
-            top_bar.style.zIndex = 899;
-            header_zx.style.zIndex = 898;
-
-            main.style.zIndex = 897;
-            main.style.marginBottom = jq_main_margin_bottom + "px";
-            my_footer_sticky.style.marginBottom = jqheight + "px";
-            my_footer_sticky.style.opacity = 1;
-            my_footer_sticky.style.zIndex = 1;
-            target.style.position = 'fixed';
-            target.style.bottom = 0;
-            target.style.width = '100%';    
-            console.log(jq_footer_top_height);
-            console.log(jqheight);
-            console.log(main.style.marginBottom);
-          }
-        }
-        else {
+      // footer sticky
+      if(sticky.length > 0) {
+        if(document.body.clientWidth < 1024) {
           main.style.marginBottom = 0;
+          my_footer_sticky.style.opacity = 1;
+          my_footer_sticky.style.zIndex = 1;
+          my_footer_sticky.style.marginBottom = 0;
           target.style.position = 'static';
         }
-      }, 1000)
-    });
+        else if(document.body.clientWidth >= 1024) {
+          let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
+
+          //           let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+          //           let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+          //           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+          let jq_footer_top_height = $('.footer.color-.gradient.my_footer_sticky').height();
+          let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
+          let jq_main_margin_bottom = parseInt(jq_footer_top_height+jqheight);
+
+          promo_bar.style.zIndex = 898;
+          top_bar.style.zIndex = 899;
+          header_zx.style.zIndex = 898;
+
+          main.style.zIndex = 897;
+          main.style.marginBottom = jq_main_margin_bottom + "px";
+          my_footer_sticky.style.marginBottom = jqheight + "px";
+          my_footer_sticky.style.opacity = 1;
+          my_footer_sticky.style.zIndex = 1;
+          target.style.position = 'fixed';
+          target.style.bottom = 0;
+          target.style.width = '100%';    
+          console.log(jq_footer_top_height);
+          console.log(jqheight);
+          console.log(main.style.marginBottom);
+        }
+      }
+      else {
+        main.style.marginBottom = 0;
+        target.style.position = 'static';
+      }
+    }, 500);
 
     // 配置观察选项:
     var config = { attributes: true, childList: true, characterData: true ,subtree : true };
