@@ -5,16 +5,17 @@ if(myFooterbottomFreshDesignMode){
     let promo_bar = document.getElementById('shopify-section-promo-bar');
     let top_bar = document.getElementById('shopify-section-top-bar');
     let header_zx = document.getElementById('shopify-section-header');
+    //     let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
     let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
     let main = document.getElementById('MainContent');
     let sticky = document.getElementsByClassName('my_footer_sticky');
-    let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
-    let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
-  
+
     var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-  
+
     // 创建观察者对象
+
     var observer = new MutationObserver(function(){
+      
       // footer sticky
       if(sticky.length > 0) {
         if(document.body.clientWidth < 1024) {
@@ -25,10 +26,10 @@ if(myFooterbottomFreshDesignMode){
           target.style.position = 'static';
         }
         else if(document.body.clientWidth >= 1024) {
-//           let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
-// //           let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-// //           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
-//           let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
+          let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+//           let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+//           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+          let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
 
           main.style.zIndex = 897;
           main.style.marginBottom = my_footer_sticky_height + jqheight + "px";
