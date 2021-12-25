@@ -1,5 +1,4 @@
 // lzx change
-let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
 var myFooterbottomFreshDesignMode = Shopify.designMode || false;
 if(myFooterbottomFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {
@@ -7,10 +6,10 @@ if(myFooterbottomFreshDesignMode){
     let top_bar = document.getElementById('shopify-section-top-bar');
     let header_zx = document.getElementById('shopify-section-header');
     //     let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-    let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
+//     let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
     let main = document.getElementById('MainContent');
     let sticky = document.getElementsByClassName('my_footer_sticky');
-  
+
     var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 
     // 创建观察者对象
@@ -27,7 +26,9 @@ if(myFooterbottomFreshDesignMode){
           target.style.position = 'static';
         }
         else if(document.body.clientWidth >= 1024) {
-//           let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+              let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
+
+          let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
 //           let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 //           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
           let jq_footer_top_height = $('.footer.color-.gradient.my_footer_sticky').height();
