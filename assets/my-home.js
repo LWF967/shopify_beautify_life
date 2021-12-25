@@ -9,7 +9,8 @@ if(myFooterbottomFreshDesignMode){
     let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
     let main = document.getElementById('MainContent');
     let sticky = document.getElementsByClassName('my_footer_sticky');
-
+  let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+  
     var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 
     // 创建观察者对象
@@ -26,7 +27,7 @@ if(myFooterbottomFreshDesignMode){
           target.style.position = 'static';
         }
         else if(document.body.clientWidth >= 1024) {
-          let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+//           let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
 //           let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 //           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
           let jq_footer_top_height = $('.footer.color-.gradient.my_footer_sticky').height();
