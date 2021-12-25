@@ -66,15 +66,6 @@
 //     observer.disconnect();
     },true);
   }
-  
-$(window).resize(function(){
-  my_home();
-});
-// window.onresize = function() {
-//       my_home();
-//   promo_bar_change();
-// //   ddddl();
-// }
 
 let promo_bar = document.getElementById('shopify-section-promo-bar');
 let top_bar = document.getElementById('shopify-section-top-bar');
@@ -241,6 +232,10 @@ window.onload = function() {
   hide_banner.style.marginTop = 0 + 'px';
   hide_banner.style.transition = "all .5s";
 }
+
+$(window).resize(function(){
+  my_home();
+});
 
 var myHomeFreshDesignMode = Shopify.designMode || false;
 if(myHomeFreshDesignMode){
