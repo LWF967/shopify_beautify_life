@@ -70,9 +70,10 @@ if(myFooterbottomFreshDesignMode){
           target.style.position = 'fixed';
           target.style.bottom = 0;
           target.style.width = '100%';    
-          console.log(jq_footer_top_height);
-          console.log(jqheight);
-          console.log(main.style.marginBottom);
+//           console.log(jq_footer_top_height);
+//           console.log(jqheight);
+//           console.log(main.style.marginBottom);
+          console.log(1);
         }
       }
       else {
