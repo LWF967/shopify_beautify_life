@@ -21,7 +21,8 @@ window.onload = function() {
     let main = document.getElementById('MainContent');
     let sticky = document.getElementsByClassName('my_footer_sticky');
     
-   	var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];               
+   	var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+    
     // 创建观察者对象
     
     var observer = new MutationObserver(function(){
@@ -75,9 +76,9 @@ window.onload = function() {
   }
   
 $(window).resize(function(){
-  my_home();
+//   my_home();
 });
-
+  my_home();
 // window.onresize = function() {
 //       my_home();
 //   promo_bar_change();
