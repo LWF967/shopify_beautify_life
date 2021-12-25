@@ -33,9 +33,11 @@ if(myFooterbottomFreshDesignMode){
 
           main.style.zIndex = 897;
           main.style.marginBottom = my_footer_sticky_height + jqheight + "px";
-          my_footer_sticky.style.marginBottom = jqheight + "px";
-          my_footer_sticky.style.opacity = 1;
-          my_footer_sticky.style.zIndex = 1;
+          if(my_footer_sticky) {
+            my_footer_sticky.style.marginBottom = jqheight + "px";
+            my_footer_sticky.style.opacity = 1;
+            my_footer_sticky.style.zIndex = 1;
+          }
           promo_bar.style.zIndex = 898;
           top_bar.style.zIndex = 899;
           header_zx.style.zIndex = 898;
