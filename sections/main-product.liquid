@@ -82,26 +82,26 @@
     object-fit: cover;
   }
 
-  .swiper-button-prev.featured_product_beautify_prev:after,
-  .swiper-button-next.featured_product_beautify_next:after {
+  .swiper-button-prev.main_product_prev:after,
+  .swiper-button-next.main_product_next:after {
     color: #000;
     width: 10px;
     height: 20px;
     font-size: 20px;
   }
 
-  .swiper-button-next.featured_product_beautify_next {
+  .swiper-button-next.main_product_next {
     right: -5px;
   }
 
-  .swiper-button-prev.featured_product_beautify_prev {
+  .swiper-button-prev.main_product_prev {
     left: -5px;
   }
   
-  .swiper-button-prev.featured_product_beautify_prev.swiper-button-disabled:empty,
-  .swiper-button-next.featured_product_beautify_next.swiper-button-disabled:empty,
-  .swiper-button-prev.featured_product_beautify_prev:empty,
-  .swiper-button-next.featured_product_beautify_next:empty {
+  .swiper-button-prev.main_product_prev.swiper-button-disabled:empty,
+  .swiper-button-next.main_product_next.swiper-button-disabled:empty,
+  .swiper-button-prev.main_product_prev:empty,
+  .swiper-button-next.main_product_next:empty {
     display: flex;
   }
   
@@ -429,8 +429,8 @@
                 {%- endfor -%}
               </div>
             </div>
-            <div class="swiper-button-prev featured_product_beautify_prev"></div>
-            <div class="swiper-button-next featured_product_beautify_next"></div>
+            <div class="swiper-button-prev main_product_prev"></div>
+            <div class="swiper-button-next main_product_next"></div>
           </div>
         </ul>
         {%- elsif media_count > 1 -%}
@@ -920,8 +920,8 @@
           clickable: true,
       },
       navigation: {
-          nextEl: '.swiper-button-next.featured_product_beautify_next',
-          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+          nextEl: '.swiper-button-next.main_product_next',
+          prevEl: '.swiper-button-prev.main_product_prev',
       },
       breakpoints: {
         0: {  //当屏幕宽度大于等于0 
