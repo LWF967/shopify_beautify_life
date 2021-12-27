@@ -228,9 +228,9 @@
       for(let i = 0; i < deferred_media.length; i++) {
         console.log(deferred_media[i]);
         $(deferred_media[i]).bind('DOMSubtreeModified', function() {  
-          if(deferred_media.hasAttribute('loaded') == true) {
+          if(deferred_media[i].hasAttribute('loaded') == true) {
             console.log(1);
-          } else if(deferred_media.hasAttribute('loaded') == false) {
+          } else if(deferred_media[i].hasAttribute('loaded') == false) {
             console.log(2);
           }
         });
