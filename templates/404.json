@@ -187,7 +187,7 @@
             "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
             "header_top": "Head",
             "url": "",
-            "color": "#fff",
+            "color": "#ffffff",
             "w": 140,
             "h": 3,
             "open_link": "_blank"
@@ -199,7 +199,7 @@
             "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
             "header_top": "Head",
             "url": "",
-            "color": "#fff",
+            "color": "#ffffff",
             "w": 140,
             "h": 3,
             "open_link": "_blank"
@@ -211,7 +211,7 @@
             "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
             "header_top": "Head",
             "url": "",
-            "color": "#fff",
+            "color": "#ffffff",
             "w": 140,
             "h": 3,
             "open_link": "_blank"
@@ -271,13 +271,84 @@
         "title": "BANNER",
         "sub_title": "Popular this week",
         "font_top": 30,
-        "color_top": "#fff",
+        "color_top": "#ffffff",
         "grid": 3,
         "show_page_Dot": false,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
         "banner_beautify_margin_top": "",
         "banner_beautify_margin_bottom": ""
+      }
+    },
+    "1640601473105805c7": {
+      "type": "blog-page-post-beautify",
+      "settings": {
+        "heading": "Blog posts",
+        "head_text": "The most exciting news",
+        "image_ratio1": "ratio_nt",
+        "blog": "",
+        "post_limit": 3,
+        "show_image": true,
+        "show_title": true,
+        "show_short_content": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false,
+        "show_view_all": true,
+        "blog_page_beautify_margin_top": "",
+        "blog_page_beautify_margin_bottom": ""
+      }
+    },
+    "1640601732d7d54913": {
+      "type": "Gallery",
+      "blocks": {
+        "1640601732f791d1af-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "align_text": "left",
+            "img_link": "",
+            "caption_head": "Image"
+          }
+        },
+        "1640601732f791d1af-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
+            "align_text": "left",
+            "img_link": "",
+            "caption_head": "Image"
+          }
+        },
+        "1640601732f791d1af-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
+            "align_text": "left",
+            "img_link": "",
+            "caption_head": "Image"
+          }
+        },
+        "c94b2730-7ced-4904-be62-1bb2ce631e78": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "align_text": "left",
+            "img_link": "",
+            "caption_head": "Image"
+          }
+        }
+      },
+      "block_order": [
+        "1640601732f791d1af-0",
+        "1640601732f791d1af-1",
+        "1640601732f791d1af-2",
+        "c94b2730-7ced-4904-be62-1bb2ce631e78"
+      ],
+      "settings": {
+        "section_height": "small",
+        "gallery_margin_top": "",
+        "gallery_margin_bottom": ""
       }
     }
   },
@@ -287,6 +358,8 @@
     "1640600102a11861c0",
     "1640600477542bd646",
     "164060066736099efc",
-    "16406011713301a25e"
+    "16406011713301a25e",
+    "1640601473105805c7",
+    "1640601732d7d54913"
   ]
 }
