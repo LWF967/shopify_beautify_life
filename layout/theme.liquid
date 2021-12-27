@@ -223,15 +223,18 @@
     
     <a id="my_backtop" style="{% if settings.show_back_to_top == 'Disable' %}display: none;{% endif %}{% if settings.back_to_top_style == 'Style 2' %}border: 2px solid #fff; box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .2);{% endif %} {% if settings.button_style == 'Round' %}border-radius: 4px;{% endif %}"></a>
     
-<!--     <script>
-      let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
-      let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
-      let aaac = $('.my_footer_sticky').height();
-            console.log("test:"+aaac);
-      console.log("top:"+my_footer_sticky_height);
-      console.log("bottom:"+footer_bottom_height);
+    <script>
+    let deferred_media = document.querySelector(".deferred-media.media");                                                 
 
-    </script> -->
+    $(".deferred-media.media").bind('DOMSubtreeModified', function() {  
+      if(deferred_media.hasAttribute('loaded') == true) {
+		console.log(1);
+      } else if(deferred_media.hasAttribute('loaded') == false) {
+		console.log(2);
+      }
+    });
+
+    </script>
     
     
     {% if settings.enable_prevent_copying %}
