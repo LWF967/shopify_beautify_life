@@ -224,18 +224,18 @@
     <a id="my_backtop" style="{% if settings.show_back_to_top == 'Disable' %}display: none;{% endif %}{% if settings.back_to_top_style == 'Style 2' %}border: 2px solid #fff; box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .2);{% endif %} {% if settings.button_style == 'Round' %}border-radius: 4px;{% endif %}"></a>
     
     <script>
-    let deferred_media = document.querySelectorAll(".deferred-media.media");  
-    let deferred_media_play_svg = document.querySelectorAll(".deferred-media.media .deferred-media__poster-button.motion-reduce");  
-      console.log(deferred_media_play_svg);
-      for(let i = 0; i < deferred_media.length; i++) {
-        console.log(deferred_media[i]);
-        $(deferred_media[i]).bind('DOMSubtreeModified', function() {  
-          if(deferred_media[i].hasAttribute('loaded') == true) {
-            console.log("开始播放");
-            deferred_media_play_svg[i].style.display = "none";
-          }
-        });
-      }
+//     let deferred_media = document.querySelectorAll(".deferred-media.media");  
+//     let deferred_media_play_svg = document.querySelectorAll(".deferred-media.media .deferred-media__poster-button.motion-reduce");  
+//       console.log(deferred_media_play_svg);
+//       for(let i = 0; i < deferred_media.length; i++) {
+//         console.log(deferred_media[i]);
+//         $(deferred_media[i]).bind('DOMSubtreeModified', function() {  
+//           if(deferred_media[i].hasAttribute('loaded') == true) {
+//             console.log("开始播放");
+//             deferred_media_play_svg[i].style.display = "none";
+//           }
+//         });
+//       }
 
     </script>
     
