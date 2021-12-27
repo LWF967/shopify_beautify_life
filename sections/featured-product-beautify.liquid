@@ -302,9 +302,8 @@
               background-color: {{ settings.color_page_background }};
             }
           </style>
-          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list">
-            {% render 'swiper-featured-product-beautify',section:section %}
-          </ul>
+
+          {% render 'swiper-featured-product-beautify',section:section %}
         {%- elsif media_count > 1 -%}
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul my_featured_product_beautify_noswiper" role="list" style="display:flex;">
             {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
