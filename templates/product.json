@@ -83,6 +83,83 @@
         "main_product_margin_bottom": ""
       }
     },
+    "164058780552841e46": {
+      "type": "featured-product-beautify",
+      "blocks": {
+        "164058780527a24112-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "164058780527a24112-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "164058780527a24112-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "164058780527a24112-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "164058780527a24112-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "164058780527a24112-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "164058780527a24112-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "164058780527a24112-7": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "164058780527a24112-8": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "164058780527a24112-0",
+        "164058780527a24112-1",
+        "164058780527a24112-2",
+        "164058780527a24112-3",
+        "164058780527a24112-4",
+        "164058780527a24112-5",
+        "164058780527a24112-6",
+        "164058780527a24112-7",
+        "164058780527a24112-8"
+      ],
+      "settings": {
+        "product": "1",
+        "featured_bk_color": "#1eec5e",
+        "color_scheme": "gradient",
+        "show_share_buttons": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "featured_product_beautify_margin_top": "",
+        "featured_product_beautify_margin_bottom": ""
+      }
+    },
     "16393856137f137526": {
       "type": "featured-product-beautify",
       "blocks": {
@@ -259,92 +336,15 @@
         "daily_deal_of_the_day_margin_top": "",
         "daily_deal_of_the_day_margin_bottom": ""
       }
-    },
-    "164058780552841e46": {
-      "type": "featured-product-beautify",
-      "blocks": {
-        "164058780527a24112-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "164058780527a24112-1": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "164058780527a24112-2": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "164058780527a24112-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "164058780527a24112-4": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "dropdown"
-          }
-        },
-        "164058780527a24112-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "164058780527a24112-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "164058780527a24112-7": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "164058780527a24112-8": {
-          "type": "share",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "164058780527a24112-0",
-        "164058780527a24112-1",
-        "164058780527a24112-2",
-        "164058780527a24112-3",
-        "164058780527a24112-4",
-        "164058780527a24112-5",
-        "164058780527a24112-6",
-        "164058780527a24112-7",
-        "164058780527a24112-8"
-      ],
-      "settings": {
-        "product": "1",
-        "featured_bk_color": "#1eec5e",
-        "color_scheme": "gradient",
-        "show_share_buttons": false,
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "featured_product_beautify_margin_top": "",
-        "featured_product_beautify_margin_bottom": ""
-      }
     }
   },
   "order": [
     "main",
+    "164058780552841e46",
     "16393856137f137526",
     "product-recommendations",
     "16395524088ec92f0f",
     "16399909164ab9b41a",
-    "16402389942326788e",
-    "164058780552841e46"
+    "16402389942326788e"
   ]
 }
