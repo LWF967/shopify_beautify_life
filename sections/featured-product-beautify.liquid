@@ -302,7 +302,8 @@
               border: none;
             }
           </style>
-          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list">
+        {% render 'swiper-featured-product', section:section %}
+<!--           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list">
             <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
               <div class="swiper my_swiper_detail_featured_product_beautify">
                 <div class="swiper-wrapper my_swiper_div">
@@ -327,7 +328,7 @@
               <div class="swiper-button-prev featured_product_beautify_prev"></div>
               <div class="swiper-button-next featured_product_beautify_next"></div>
             </div>
-          </ul>
+          </ul> -->
         {%- elsif media_count > 1 -%}
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul my_featured_product_beautify_noswiper" role="list" style="display:flex;">
             {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
