@@ -107,12 +107,39 @@
             "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
             "title": "New supply this week"
           }
+        },
+        "72af0db8-cbf7-400d-ab71-860af34f5b09": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "title": "New supply this week"
+          }
+        },
+        "9c1fc90a-4d99-49fd-908a-0daae3e2912c": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/01.png",
+            "title": "New supply this week"
+          }
+        },
+        "487164ce-218c-4697-ab8f-0c8e95e22c16": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+            "title": "New supply this week"
+          }
         }
       },
       "block_order": [
         "1640600477b639d56b-0",
         "1640600477b639d56b-1",
-        "1640600477b639d56b-2"
+        "1640600477b639d56b-2",
+        "72af0db8-cbf7-400d-ab71-860af34f5b09",
+        "9c1fc90a-4d99-49fd-908a-0daae3e2912c",
+        "487164ce-218c-4697-ab8f-0c8e95e22c16"
       ],
       "settings": {
         "title": "NEW RELEASES",
