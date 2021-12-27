@@ -120,6 +120,7 @@
         "164059118166ce82da-0": {
           "type": "slideshow_img2",
           "settings": {
+            "image": "shopify:\/\/shop_images\/a-wet-bridge-covered-in-fog.jpg",
             "image_alignment": "center center",
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
@@ -131,6 +132,7 @@
         "164059118166ce82da-1": {
           "type": "slideshow_img2",
           "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
             "image_alignment": "center center",
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
@@ -159,7 +161,7 @@
       "settings": {
         "se_height": "adapt",
         "text_size": "medium",
-        "loop": true,
+        "loop": false,
         "auto_play": true,
         "auto_time": 3,
         "show_button": true,
