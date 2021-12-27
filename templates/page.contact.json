@@ -1,17 +1,101 @@
 {
   "sections": {
     "main": {
-      "type": "main-page"
+      "type": "main-page",
+      "settings": {
+        "main_page_margin_top": "",
+        "main_page_margin_bottom": ""
+      }
     },
     "form": {
       "type": "contact-form",
       "settings": {
-        "heading": ""
+        "heading": "",
+        "contact_form_margin_top": "",
+        "contact_form_margin_bottom": ""
+      }
+    },
+    "16405849725ac0aa50": {
+      "type": "featured-product-beautify",
+      "blocks": {
+        "1640584972274c08db-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "1640584972274c08db-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "1640584972274c08db-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "1640584972274c08db-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "1640584972274c08db-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "1640584972274c08db-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "1640584972274c08db-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "1640584972274c08db-7": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "1640584972274c08db-8": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1640584972274c08db-0",
+        "1640584972274c08db-1",
+        "1640584972274c08db-2",
+        "1640584972274c08db-3",
+        "1640584972274c08db-4",
+        "1640584972274c08db-5",
+        "1640584972274c08db-6",
+        "1640584972274c08db-7",
+        "1640584972274c08db-8"
+      ],
+      "settings": {
+        "product": "lol6",
+        "featured_bk_color": "#1eec5e",
+        "color_scheme": "gradient",
+        "show_share_buttons": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "featured_product_beautify_margin_top": "",
+        "featured_product_beautify_margin_bottom": ""
       }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "16405849725ac0aa50"
   ]
 }
