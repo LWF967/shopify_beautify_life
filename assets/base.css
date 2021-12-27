@@ -1049,6 +1049,13 @@ deferred-media {
   display: block;
 }
 
+ 
+	
+img{
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+ }  
 /* component-button */
 /* Button - default */
 
