@@ -83,7 +83,7 @@
 
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
-  function my_swiper_listen() {
+  (function my_swiper_listen() {
     var swiper = new Swiper(".my_swiper_{{ section.id }}", {
         slidesPerView: 4,
         spaceBetween: 10,
@@ -107,7 +107,7 @@
             }
         }
     });
-  }();
+  })();
   document.addEventListener('shopify:section:load', () => {
     var swiper = new Swiper(".my_swiper_{{ section.id }}", {
         slidesPerView: 4,
