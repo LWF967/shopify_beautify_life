@@ -201,7 +201,68 @@
         "show_button_style": "style1",
         "show_button_color": "white",
         "show_button_hover_color": "#F29BAE",
-        "show_page_Dot": false,
+        "show_page_Dot": true,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "slideshow_beautify_margin_top": "",
+        "slideshow_beautify_margin_bottom": ""
+      }
+    },
+    "16405934195dc71376": {
+      "type": "slideshow-beautify-2",
+      "blocks": {
+        "16405934194c964c81-0": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a-wet-bridge-covered-in-fog.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "16405934194c964c81-1": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "282e2887-50f3-45a8-b3b7-6eba3ff1ebb1": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16405934194c964c81-0",
+        "16405934194c964c81-1",
+        "282e2887-50f3-45a8-b3b7-6eba3ff1ebb1"
+      ],
+      "settings": {
+        "se_height": "adapt",
+        "text_size": "medium",
+        "loop": true,
+        "auto_play": true,
+        "auto_time": 3,
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "#F29BAE",
+        "show_page_Dot": true,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
         "slideshow_beautify_margin_top": "",
@@ -214,6 +275,7 @@
     "16405891966e9877a5",
     "1640591181c24f55f9",
     "16405914658c580881",
-    "1640593411b1f37ff1"
+    "1640593411b1f37ff1",
+    "16405934195dc71376"
   ]
 }
