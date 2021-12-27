@@ -232,7 +232,7 @@
         $(deferred_media[i]).bind('DOMSubtreeModified', function() {  
           if(deferred_media[i].hasAttribute('loaded') == true) {
             console.log(1);
-            deferred_media_play_svg.style.display = "none";
+            deferred_media_play_svg[i].style.display = "none";
           }
         });
       }
