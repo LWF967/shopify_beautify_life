@@ -91,7 +91,7 @@
         "show_button_visible": "always",
         "show_button_style": "style1",
         "show_button_color": "white",
-        "show_button_hover_color": "#F29BAE",
+        "show_button_hover_color": "#f29bae",
         "show_page_Dot": true,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
@@ -139,8 +139,69 @@
         "show_button_visible": "always",
         "show_button_style": "style1",
         "show_button_color": "white",
-        "show_button_hover_color": "#F29BAE",
+        "show_button_hover_color": "#f29bae",
         "show_page_Dot": true,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "slideshow_beautify_margin_top": "",
+        "slideshow_beautify_margin_bottom": ""
+      }
+    },
+    "1640593411b1f37ff1": {
+      "type": "slideshow-beautify-2",
+      "blocks": {
+        "1640593411ad510176-0": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "1640593411ad510176-1": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "f201ed2b-ea26-4d58-a579-bbdade32b5a2": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a-wet-bridge-covered-in-fog.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1640593411ad510176-0",
+        "1640593411ad510176-1",
+        "f201ed2b-ea26-4d58-a579-bbdade32b5a2"
+      ],
+      "settings": {
+        "se_height": "adapt",
+        "text_size": "medium",
+        "loop": true,
+        "auto_play": true,
+        "auto_time": 3,
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "#F29BAE",
+        "show_page_Dot": false,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
         "slideshow_beautify_margin_top": "",
@@ -152,6 +213,7 @@
     "main",
     "16405891966e9877a5",
     "1640591181c24f55f9",
-    "16405914658c580881"
+    "16405914658c580881",
+    "1640593411b1f37ff1"
   ]
 }
