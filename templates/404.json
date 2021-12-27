@@ -118,6 +118,7 @@
         },
         "9c1fc90a-4d99-49fd-908a-0daae3e2912c": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/01.png",
@@ -126,6 +127,7 @@
         },
         "487164ce-218c-4697-ab8f-0c8e95e22c16": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
@@ -443,6 +445,7 @@
         "1640602268894975e7-2"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
         "layout": "image_first",
         "height": "adapt",
         "image_with_text_bk_color": "#FFFFFF",
