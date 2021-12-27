@@ -350,6 +350,69 @@
         "gallery_margin_top": "",
         "gallery_margin_bottom": ""
       }
+    },
+    "16406017350d444248": {
+      "type": "slideshow-beautify-2",
+      "blocks": {
+        "16406017350813c19b-0": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "16406017350813c19b-1": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "57fd37ef-b6f4-4d12-93ae-49ef77953832": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a-wet-bridge-covered-in-fog.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16406017350813c19b-0",
+        "16406017350813c19b-1",
+        "57fd37ef-b6f4-4d12-93ae-49ef77953832"
+      ],
+      "settings": {
+        "se_height": "adapt",
+        "text_size": "medium",
+        "loop": true,
+        "auto_play": true,
+        "auto_time": 3,
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "#F29BAE",
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "slideshow_beautify_margin_top": "",
+        "slideshow_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -360,6 +423,7 @@
     "164060066736099efc",
     "16406011713301a25e",
     "1640601473105805c7",
-    "1640601732d7d54913"
+    "1640601732d7d54913",
+    "16406017350d444248"
   ]
 }
