@@ -997,7 +997,7 @@ summary::-webkit-details-marker {
 }
 
 .media > *:not(.zoom):not(.deferred-media__poster-button):not(.placeholder-svg-blog-post):not(.deferred-media__poster),
-.media model-viewer {
+.media model-viewer { /*:not(.placeholder-svg-blog-post):not(.deferred-media__poster)*/
   display: block;
   max-width: 100%;
   position: absolute;
@@ -1006,8 +1006,8 @@ summary::-webkit-details-marker {
   height: 100%;
   width: 100%;
 }
-
   
+/* lzx change start */
 .deferred-media__poster{
   max-width: 100%;
   position: absolute;
@@ -1015,7 +1015,8 @@ summary::-webkit-details-marker {
   left: 0;
   height: 100%;
   width: 100%;
-}  
+}
+/* lzx change end */
   
 .media > img {
   object-fit: cover;
