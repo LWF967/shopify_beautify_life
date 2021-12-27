@@ -46,26 +46,26 @@
     object-fit: cover;
   }
 
-  .swiper-button-prev.featured_product_beautify_prev:after,
-  .swiper-button-next.featured_product_beautify_next:after {
+  .swiper-button-prev.button_prev_{{ section.id }}:after,
+  .swiper-button-next.button_next_{{ section.id }}:after {
     color: #000;
     width: 10px;
     height: 20px;
     font-size: 20px;
   }
 
-  .swiper-button-next.featured_product_beautify_next {
+  .swiper-button-next.button_next_{{ section.id }} {
     right: -5px;
   }
 
-  .swiper-button-prev.featured_product_beautify_prev {
+  .swiper-button-prev.button_prev_{{ section.id }} {
     left: -5px;
   }
   
-  .swiper-button-prev.featured_product_beautify_prev.swiper-button-disabled:empty,
-  .swiper-button-next.featured_product_beautify_next.swiper-button-disabled:empty,
-  .swiper-button-prev.featured_product_beautify_prev:empty,
-  .swiper-button-next.featured_product_beautify_next:empty {
+  .swiper-button-prev.button_prev_{{ section.id }}.swiper-button-disabled:empty,
+  .swiper-button-next.button_next_{{ section.id }}.swiper-button-disabled:empty,
+  .swiper-button-prev.button_prev_{{ section.id }}:empty,
+  .swiper-button-next.button_next_{{ section.id }}:empty {
     display: flex;
   }
   
@@ -252,15 +252,15 @@
         {%- endfor -%}
       </div>
     </div>
-    <div class="swiper-button-prev featured_product_beautify_prev"></div>
-    <div class="swiper-button-next featured_product_beautify_next"></div>
+    <div class="swiper-button-prev button_prev_{{ section.id }}"></div>
+    <div class="swiper-button-next button_next_{{ section.id }}"></div>
   </div>
 </ul>
 
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
 
-  var swiper = new Swiper(".my_swiper_detail_featured_product_beautify", {
+  var swiper = new Swiper(".my_swiper_{{ section.id }}", {
       slidesPerView: 4,
       spaceBetween: 10,
       pagination: {
@@ -268,8 +268,8 @@
           clickable: true,
       },
       navigation: {
-          nextEl: '.swiper-button-next.featured_product_beautify_next',
-          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+          nextEl: '.swiper-button-next.button_next_{{ section.id }}',
+          prevEl: '.swiper-button-prev.button_prev_{{ section.id }}',
       },
       breakpoints: {
         0: {  //当屏幕宽度大于等于0 
