@@ -224,7 +224,7 @@ window.onload = function() {
 }
 
 $(window).resize(function(){
-//   my_home();
+  my_home();
 //   console.log(window.screen.width);
 });
 
