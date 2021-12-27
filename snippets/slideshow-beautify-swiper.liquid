@@ -69,7 +69,7 @@
 
           {%- else -%}
 
-               <div style="width:100%;height:auto;"> {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}  </div>
+               <div style="width:100%;height:auto;max-height:790px;"> {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}  </div>
           {%- endif -%} 
                
                <div class="slideshow_text_box_{{section.id}}  {{ block.settings.text_alignment }}"    > 
