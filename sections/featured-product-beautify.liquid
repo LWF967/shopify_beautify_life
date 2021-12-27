@@ -1023,21 +1023,9 @@
 
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
     if(featured_product_ProductModal.hasAttribute('open') == true) {
-//       featured_product_promo_bar.style.zIndex = 896;
-//       featured_product_top_bar.style.zIndex = 897;
-//       featured_product_header.style.zIndex = 896;
-    featured_product_header.style.visibility = "hidden";
-//       console.log("{{ section.id }}");
-//                         console.log(vis);
-
-//       console.log("---");
+      featured_product_header.style.visibility = "hidden";
     } else if(featured_product_ProductModal.hasAttribute('open') == false) {
-//       featured_product_promo_bar.style.zIndex = 900;
-//       featured_product_top_bar.style.zIndex = 901;
-//       featured_product_header.style.zIndex = 900;
-          featured_product_header.style.visibility = "visible";
-//       console.log("{{ section.id }}");
-//       console.log("===");
+      featured_product_header.style.visibility = "visible";
     }
   });
 </script>
