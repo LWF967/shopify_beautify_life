@@ -770,6 +770,27 @@
 
 </script>
 
+<script type="module">
+  let featured_product_promo_bar = document.getElementById('shopify-section-promo-bar');
+  let featured_product_top_bar = document.getElementById('shopify-section-top-bar');
+  let featured_product_header = document.getElementById('shopify-section-header');
+  let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");
+
+  $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
+    if(featured_product_ProductModal.hasAttribute('open') == true) {
+      featured_product_promo_bar.style.zIndex = 896;
+      featured_product_top_bar.style.zIndex = 897;
+      featured_product_header.style.zIndex = 896;
+      console.log(1);
+    } else if(featured_product_ProductModal.hasAttribute('open') == false) {
+      featured_product_promo_bar.style.zIndex = 900;
+      featured_product_top_bar.style.zIndex = 901;
+      featured_product_header.style.zIndex = 900;
+      console.log(2);
+    }
+  });
+</script>
+
 {% schema %}
 {
   "name": "featured-product-beautify",
@@ -1011,24 +1032,3 @@
   ]
 }
 {% endschema %}
-
-<script>
-  let featured_product_promo_bar = document.getElementById('shopify-section-promo-bar');
-  let featured_product_top_bar = document.getElementById('shopify-section-top-bar');
-  let featured_product_header = document.getElementById('shopify-section-header');
-  let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");
-
-  $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
-    if(featured_product_ProductModal.hasAttribute('open') == true) {
-      featured_product_promo_bar.style.zIndex = 896;
-      featured_product_top_bar.style.zIndex = 897;
-      featured_product_header.style.zIndex = 896;
-      console.log(1);
-    } else if(featured_product_ProductModal.hasAttribute('open') == false) {
-      featured_product_promo_bar.style.zIndex = 900;
-      featured_product_top_bar.style.zIndex = 901;
-      featured_product_header.style.zIndex = 900;
-      console.log(2);
-    }
-  });
-</script>
