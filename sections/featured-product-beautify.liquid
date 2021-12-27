@@ -303,7 +303,7 @@
           </style>
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list">
             <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
-              <div class="swiper my_swiper_detai12">
+              <div class="swiper my_swiper_detail_featured_product_beautify">
                 <div class="swiper-wrapper my_swiper_div">
                   {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
                   {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -502,7 +502,7 @@
                         <button
                           type="submit"
                           name="add"
-                          class="product-form__submit button button--full-width my_featured_product_beautify_add my_font_weight_default {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                          class="product-form__submit button button--full-width my_featured_product_beautify_add my_font_weight_default my_button_text {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                         {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                         >
                             {%- if product.selected_or_first_available_variant.available -%}
@@ -743,7 +743,7 @@
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
 
   
-  var swiper12 = new Swiper(".my_swiper_detai12", {
+  var swiper12 = new Swiper(".my_swiper_detail_featured_product_beautify", {
       slidesPerView: 4,
       spaceBetween: 10,
       pagination: {
@@ -1014,12 +1014,17 @@
 
 <script>
   let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");
+  let featured_product_promo_bar = document.getElementById('shopify-section-promo-bar');
+  let featured_product_top_bar = document.getElementById('shopify-section-top-bar');
   let featured_product_header = document.getElementById('shopify-section-header');
-//   console.log(featured_product_ProductModal.getAttribute("id"));
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
     if(featured_product_ProductModal.hasAttribute('open') == true) {
-      featured_product_header.style.zIndex = 897;
+      featured_product_promo_bar.style.zIndex = 896;
+      featured_product_top_bar.style.zIndex = 897;
+      featured_product_header.style.zIndex = 896;
     } else if(featured_product_ProductModal.hasAttribute('open') == false) {
+      featured_product_promo_bar.style.zIndex = 900;
+      featured_product_top_bar.style.zIndex = 901;
       featured_product_header.style.zIndex = 900;
     }
   });
