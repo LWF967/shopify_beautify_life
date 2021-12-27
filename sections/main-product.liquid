@@ -29,7 +29,7 @@
     margin-bottom: 10px;
   }
   
-  .my_featured_product_beautify_ul {
+  .my_main_product_ul {
     width: 100%;
     margin-left: 0;
   }
@@ -47,7 +47,7 @@
     padding: 15px 0 0 10px;
   }
   
-  .my_featured_product_beautify_ul li:last-child {
+  .my_main_product_ul li:last-child {
     margin-right: 0 !important;
   }
   
@@ -105,7 +105,7 @@
     display: flex;
   }
   
-  .my_featured_product_beautify_ul li modal-opener {
+  .my_main_product_ul li modal-opener {
     width: 100%;
   }
   
@@ -121,15 +121,15 @@
     display: block;
   }
   
-  .my_featured_product_beautify_ul li deferred-media {
+  .my_main_product_ul li deferred-media {
     display: none;
   }
   
-  .my_featured_product_beautify_ul li modal-opener {
+  .my_main_product_ul li modal-opener {
     display: block !important;
   }
   
-  .my_featured_product_beautify_ul .my_featured_product_beautify_media {
+  .my_main_product_ul .my_featured_product_beautify_media {
     display: none !important;
   }
   
@@ -407,7 +407,7 @@
             width: 100%;
           }
         </style>
-        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul my_main_product_ul_nomargin" role="list">
+        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_main_product_ul my_main_product_ul_nomargin" role="list">
           <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
             <div class="swiper my_swiper_detail">
               <div class="swiper-wrapper my_swiper_div">
@@ -434,7 +434,7 @@
           </div>
         </ul>
         {%- elsif media_count > 1 -%}
-        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul my_main_product_ul_nomargin my_featured_product_beautify_noswiper" role="list" style="display:flex; margin: 0 0;">
+        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_main_product_ul my_main_product_ul_nomargin my_featured_product_beautify_noswiper" role="list" style="display:flex; margin: 0 0;">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
           {%- assign media = product.selected_or_first_available_variant.featured_media -%}
