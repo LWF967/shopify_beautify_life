@@ -86,6 +86,7 @@
     },
     "164058780552841e46": {
       "type": "featured-product-beautify",
+      "disabled": true,
       "blocks": {
         "164058780527a24112-0": {
           "type": "text",
@@ -163,6 +164,7 @@
     },
     "16393856137f137526": {
       "type": "featured-product-beautify",
+      "disabled": true,
       "blocks": {
         "16393856134bed661a-0": {
           "type": "text",
