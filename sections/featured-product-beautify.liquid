@@ -1015,7 +1015,7 @@
 <script>
   let featured_product_promo_bar = document.getElementById('shopify-section-promo-bar');
   let featured_product_top_bar = document.getElementById('shopify-section-top-bar');
-  let main_product_header = document.getElementById('shopify-section-header');
+  let featured_product_header = document.getElementById('shopify-section-header');
   let featured_product_header_hidden = document.getElementById('my_header_sticky_visible');
   let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");                                                 
 
@@ -1023,12 +1023,12 @@
     if(featured_product_ProductModal.hasAttribute('open') == true) {
       featured_product_promo_bar.style.display = "none";
       featured_product_top_bar.style.display = "none";
-      main_product_header.style.display = "none";
+      featured_product_header.style.visibility = "hidden";
       featured_product_header_hidden.style.visibility = "hidden";
     } else if(featured_product_ProductModal.hasAttribute('open') == false) {
       featured_product_promo_bar.style.display = "block";
       featured_product_top_bar.style.display = "block";
-      main_product_header.style.display = "block";
+      featured_product_header.style.visibility = "visible";
       featured_product_header_hidden.style.visibility = "visible";
     }
   });
