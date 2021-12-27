@@ -225,7 +225,7 @@ window.onload = function() {
 
 $(window).resize(function(){
   my_home();
-  console.log(window.screen.width);
+//   console.log(window.screen.width);
 });
 
 var myHomeFreshDesignMode = Shopify.designMode || false;
