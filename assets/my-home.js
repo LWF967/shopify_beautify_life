@@ -5,7 +5,7 @@
  * @param {*} wait 等待时长 默认500ms 可不传
  * arguments  是js存函数参数的地方
  */
-function debounce(func, wait = 500) {
+function my_home_debounce(func, wait = 500) {
   let timeOut
   return function () {
     let content = this
@@ -37,7 +37,7 @@ if(myFooterbottomFreshDesignMode){
     // 创建观察者对象
 
 //     var observer = new MutationObserver(function(){
-          var observer = new MutationObserver(debounce(function () {
+          var observer = new MutationObserver(my_home_debounce(function () {
 
       // footer sticky
       if(sticky.length > 0) {
