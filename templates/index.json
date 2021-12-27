@@ -830,6 +830,25 @@
         "map_margin_top": "",
         "map_margin_bottom": ""
       }
+    },
+    "16406016320d4be631": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "head_text": "The most exciting news",
+        "blog": "",
+        "post_limit": 3,
+        "show_image": true,
+        "show_title": true,
+        "show_short_content": true,
+        "show_date": true,
+        "show_author": false,
+        "featured_blog_bk_color": "#1eec5e",
+        "color_scheme": "gradient",
+        "show_view_all": true,
+        "featured_blog_margin_top": "",
+        "featured_blog_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -849,6 +868,7 @@
     "1635996418e080b5d8",
     "1638771575eb761fd8",
     "163817972763d6e808",
-    "163816995034a6b1f9"
+    "163816995034a6b1f9",
+    "16406016320d4be631"
   ]
 }
