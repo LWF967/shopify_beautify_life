@@ -177,6 +177,108 @@
         "featured_blog_margin_top": "",
         "featured_blog_margin_bottom": ""
       }
+    },
+    "16406011713301a25e": {
+      "type": "banner-Beautify",
+      "blocks": {
+        "e25192e3-79ea-4a70-8876-c770360004ff": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
+        "b7664845-394c-4ca7-a0c2-43dd43c95902": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
+        "8733ac3f-a435-4f85-8898-7c6c99aaa745": {
+          "type": "banner_third",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        },
+        "1640601171611e85d2-0": {
+          "type": "img_top",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "image2": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
+            "image3": "shopify:\/\/shop_images\/a-wet-bridge-covered-in-fog.jpg",
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "1640601171611e85d2-1": {
+          "type": "img_top",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "1640601171611e85d2-2": {
+          "type": "img_top",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        }
+      },
+      "block_order": [
+        "e25192e3-79ea-4a70-8876-c770360004ff",
+        "b7664845-394c-4ca7-a0c2-43dd43c95902",
+        "8733ac3f-a435-4f85-8898-7c6c99aaa745",
+        "1640601171611e85d2-0",
+        "1640601171611e85d2-1",
+        "1640601171611e85d2-2"
+      ],
+      "settings": {
+        "title": "BANNER",
+        "sub_title": "Popular this week",
+        "font_top": 30,
+        "color_top": "#fff",
+        "grid": 3,
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "banner_beautify_margin_top": "",
+        "banner_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -184,6 +286,7 @@
     "164059981571d13b20",
     "1640600102a11861c0",
     "1640600477542bd646",
-    "164060066736099efc"
+    "164060066736099efc",
+    "16406011713301a25e"
   ]
 }

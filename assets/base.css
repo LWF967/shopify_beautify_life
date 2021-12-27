@@ -1007,6 +1007,18 @@ summary::-webkit-details-marker {
   width: 100%;
 }
 
+  
+  .deferred-media__poster{
+  
+    max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  
+  }  
+  
 .media > img {
   object-fit: cover;
   object-position: center center;
