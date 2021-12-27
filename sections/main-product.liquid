@@ -1299,7 +1299,7 @@
   let main_product_promo_bar = document.getElementById('shopify-section-promo-bar');
   let main_product_top_bar = document.getElementById('shopify-section-top-bar');
   let main_product_header = document.getElementById('shopify-section-header');
-//   console.log(main_product_ProductModal.getAttribute("id"));
+
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
     if(main_product_ProductModal.hasAttribute('open') == true) {
       main_product_promo_bar.style.zIndex = 896;
