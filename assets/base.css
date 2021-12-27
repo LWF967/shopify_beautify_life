@@ -984,7 +984,10 @@ summary::-webkit-details-marker {
 /* component-media */
 .media {
   display: block;
+/* lzx change start */
+/*   background-color: var(--color-foreground); */
   background-color: transparent;
+/* lzx change end */
   position: relative;
   overflow: hidden;
 }
