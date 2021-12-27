@@ -5,7 +5,9 @@
 
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 
-<div class="collection-list-wrapper page-width{% if section.settings.swipe_on_mobile == true %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}">
+<div class="collection-list-wrapper page-width{% if section.settings.swipe_on_mobile == true %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}"     
+     style="{%- if section.settings.collection_list_margin_top != blank -%}margin-top: {{ section.settings.collection_list_margin_top }}px; {%- endif -%}{%- if section.settings.collection_list_margin_bottom != blank -%}margin-bottom:{{ section.settings.collection_list_margin_bottom }}px;{%- endif -%}"
+     >
   <div class="my_font_weight_default my_clear_margin my_section_margin_default">
     <h2 class="collection-list-title">{{ section.settings.title | escape }}</h2>
 
@@ -195,7 +197,20 @@
       "id": "show_view_all",
       "default": false,
       "label": "t:sections.collection-list.settings.show_view_all.label"
+    },
+	{
+      "type": "text",
+      "id": "collection_list_margin_top",
+      "label": "Margin top",
+      "info": "t:sections.margintip.settings.margin_tip.label"
+    },
+    {
+      "type": "text",
+      "id": "collection_list_margin_bottom",
+      "label": "Margin bottom",
+      "info": "t:sections.margintip.settings.margin_tip.label"
     }
+	
   ],
   "blocks": [
     {
