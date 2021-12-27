@@ -996,7 +996,7 @@ summary::-webkit-details-marker {
   background-color: transparent;
 }
 
-.media > *:not(.zoom):not(.deferred-media__poster-button),
+.media > *:not(.zoom):not(.deferred-media__poster-button):not(.placeholder-svg-blog-post),
 .media model-viewer {
   display: block;
   max-width: 100%;
