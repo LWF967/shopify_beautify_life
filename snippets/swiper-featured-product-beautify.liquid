@@ -1,6 +1,6 @@
 <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list">
   <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
-    <div class="swiper my_swiper_detail_featured_product_beautify_{{section.id}}">
+    <div class="swiper my_swiper_{{section.id}}">
       <div class="swiper-wrapper my_swiper_div">
         {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
         {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -28,7 +28,7 @@
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
 
-  var swiper = new Swiper(".my_swiper_detail_featured_product_beautify_{{section.id}}", {
+  var swiper = new Swiper(".my_swiper_{{section.id}}", {
       slidesPerView: 4,
       spaceBetween: 10,
       navigation: {
