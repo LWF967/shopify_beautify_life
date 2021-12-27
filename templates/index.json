@@ -869,25 +869,6 @@
         "daily_deal_of_the_day_margin_top": "",
         "daily_deal_of_the_day_margin_bottom": ""
       }
-    },
-    "1640572131918b6194": {
-      "type": "blog-page-post-beautify",
-      "settings": {
-        "heading": "Blog posts",
-        "head_text": "The most exciting news",
-        "image_ratio1": "ratio_nt",
-        "blog": "",
-        "post_limit": 3,
-        "show_image": true,
-        "show_title": true,
-        "show_short_content": true,
-        "show_date": true,
-        "show_author": false,
-        "soft_background": false,
-        "show_view_all": true,
-        "blog_page_beautify_margin_top": "",
-        "blog_page_beautify_margin_bottom": ""
-      }
     }
   },
   "order": [
@@ -909,7 +890,6 @@
     "163817972763d6e808",
     "163816995034a6b1f9",
     "163955974651c1a9fc",
-    "1640331188213ce83d",
-    "1640572131918b6194"
+    "1640331188213ce83d"
   ]
 }
