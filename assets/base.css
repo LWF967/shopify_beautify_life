@@ -996,10 +996,10 @@ summary::-webkit-details-marker {
   background-color: transparent;
 }
 
-.media > *:not(.zoom):not(.deferred-media__poster-button):not(.placeholder-svg-blog-post),
+.media > *:not(.zoom):not(.deferred-media__poster-button):not(.placeholder-svg-blog-post):not(.deferred-media__poster),
 .media model-viewer {
   display: block;
-  max-width: 100%; /*:not(.placeholder-svg-blog-post):not(.deferred-media__poster)*/
+  max-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -1007,7 +1007,7 @@ summary::-webkit-details-marker {
   width: 100%;
 }
 
-/*   
+  
 .deferred-media__poster{
   max-width: 100%;
   position: absolute;
@@ -1015,7 +1015,7 @@ summary::-webkit-details-marker {
   left: 0;
   height: 100%;
   width: 100%;
-}   */
+}  
   
 .media > img {
   object-fit: cover;
