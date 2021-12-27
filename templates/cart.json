@@ -171,6 +171,55 @@
         "testimonials_margin_top": "",
         "testimonials_margin_bottom": ""
       }
+    },
+    "1640576630c3fc2f02": {
+      "type": "Text-columns-with-images",
+      "blocks": {
+        "1640576630efafc28b-0": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        },
+        "1640576630efafc28b-1": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/a-wet-bridge-covered-in-fog.jpg",
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        },
+        "1640576630efafc28b-2": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1640576630efafc28b-0",
+        "1640576630efafc28b-1",
+        "1640576630efafc28b-2"
+      ],
+      "settings": {
+        "Text_columns_with_images_heading": "Text column with images",
+        "Text_columns_with_images_Text_alignment": "Left",
+        "text_columns_with_images_margin_top": "",
+        "text_columns_with_images_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -178,6 +227,7 @@
     "cart-footer",
     "1640572662da77b018",
     "16405726780bef7dfc",
-    "1640575692dea2adb6"
+    "1640575692dea2adb6",
+    "1640576630c3fc2f02"
   ]
 }
