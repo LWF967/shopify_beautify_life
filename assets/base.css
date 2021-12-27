@@ -984,7 +984,7 @@ summary::-webkit-details-marker {
 /* component-media */
 .media {
   display: block;
-  background-color: var(--color-foreground);
+  background-color: transparent;
   position: relative;
   overflow: hidden;
 }
