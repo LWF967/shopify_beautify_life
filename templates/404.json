@@ -457,7 +457,8 @@
     "1640602975ed57d384": {
       "type": "daily-deal-of-the-day",
       "settings": {
-        "product": "",
+        "product": "text4",
+        "log_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
         "heading_text": "Daily Deal Of The Day",
         "heading_font_size": 32,
         "color_top": "#888",
