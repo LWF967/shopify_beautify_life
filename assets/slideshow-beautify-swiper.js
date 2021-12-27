@@ -1,5 +1,5 @@
 
-<script type="module">
+
 
  console.log('轮播swiper');
  
@@ -278,6 +278,3 @@ function debounce(func, wait = 500) {
     );
 
     
-
-
-</script>
