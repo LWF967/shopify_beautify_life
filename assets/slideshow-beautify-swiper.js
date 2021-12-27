@@ -1,6 +1,4 @@
 
-<script type="module">
-
  console.log('轮播swiper');
  
  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
@@ -278,6 +276,3 @@ function debounce(func, wait = 500) {
     );
 
     
-
-
-</script>
