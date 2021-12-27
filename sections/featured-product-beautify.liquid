@@ -576,7 +576,7 @@
               {%- endif -%}
             {%- endcase -%}
           {%- endfor -%}
-        {%- if request.page_type == 'index' -%}
+        {%- if request.page_type != 'product' -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow my_featured_product_beautify_details my_font_weight_default">
             {{ 'products.product.view_full_details' | t }}
             {% render 'icon-arrow' %}
