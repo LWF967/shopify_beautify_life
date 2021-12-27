@@ -1013,11 +1013,11 @@
 {% endschema %}
 
 <script>
-  let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");
   let featured_product_promo_bar = document.getElementById('shopify-section-promo-bar');
   let featured_product_top_bar = document.getElementById('shopify-section-top-bar');
   let featured_product_header = document.getElementById('shopify-section-header');
-  
+  let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");
+
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
     if(featured_product_ProductModal.hasAttribute('open') == true) {
       featured_product_promo_bar.style.zIndex = 896;
