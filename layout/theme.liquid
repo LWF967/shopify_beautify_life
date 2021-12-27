@@ -225,7 +225,7 @@
     
     <script>
     let deferred_media = document.querySelector(".deferred-media.media");                                                 
-
+	console.log(deferred_media);
     $(".deferred-media.media").bind('DOMSubtreeModified', function() {  
       if(deferred_media.hasAttribute('loaded') == true) {
 		console.log(1);
