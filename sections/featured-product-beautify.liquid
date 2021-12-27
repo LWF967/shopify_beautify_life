@@ -1024,12 +1024,12 @@
       featured_product_promo_bar.style.display = "none";
       featured_product_top_bar.style.display = "none";
       main_product_header.style.display = "none";
-      featured_product_header_hidden.style.display = "none";
+      featured_product_header_hidden.style.visibility = "hidden";
     } else if(featured_product_ProductModal.hasAttribute('open') == false) {
       featured_product_promo_bar.style.display = "block";
       featured_product_top_bar.style.display = "block";
       main_product_header.style.display = "block";
-      featured_product_header_hidden.style.display = "block";
+      featured_product_header_hidden.style.visibility = "visible";
     }
   });
 </script>
