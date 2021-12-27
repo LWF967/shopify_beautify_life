@@ -37,83 +37,6 @@
         "featured_colection_margin_bottom": ""
       }
     },
-    "16405892017d1561f6": {
-      "type": "featured-product-beautify",
-      "blocks": {
-        "1640589201accb2367-0": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "1640589201accb2367-1": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "1640589201accb2367-2": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "1640589201accb2367-3": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "1640589201accb2367-4": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "dropdown"
-          }
-        },
-        "1640589201accb2367-5": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "1640589201accb2367-6": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "1640589201accb2367-7": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "1640589201accb2367-8": {
-          "type": "share",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "1640589201accb2367-0",
-        "1640589201accb2367-1",
-        "1640589201accb2367-2",
-        "1640589201accb2367-3",
-        "1640589201accb2367-4",
-        "1640589201accb2367-5",
-        "1640589201accb2367-6",
-        "1640589201accb2367-7",
-        "1640589201accb2367-8"
-      ],
-      "settings": {
-        "product": "text4",
-        "featured_bk_color": "#1eec5e",
-        "color_scheme": "gradient",
-        "show_share_buttons": false,
-        "hide_variants": false,
-        "enable_video_looping": false,
-        "featured_product_beautify_margin_top": "",
-        "featured_product_beautify_margin_bottom": ""
-      }
-    },
     "1640591181c24f55f9": {
       "type": "slideshow-beautify-2",
       "blocks": {
@@ -169,7 +92,55 @@
         "show_button_style": "style1",
         "show_button_color": "white",
         "show_button_hover_color": "#F29BAE",
-        "show_page_Dot": false,
+        "show_page_Dot": true,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "slideshow_beautify_margin_top": "",
+        "slideshow_beautify_margin_bottom": ""
+      }
+    },
+    "16405914658c580881": {
+      "type": "slideshow-beautify-2",
+      "blocks": {
+        "1640591465da69e53b-0": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "1640591465da69e53b-1": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1640591465da69e53b-0",
+        "1640591465da69e53b-1"
+      ],
+      "settings": {
+        "se_height": "adapt",
+        "text_size": "medium",
+        "loop": true,
+        "auto_play": true,
+        "auto_time": 3,
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "#F29BAE",
+        "show_page_Dot": true,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
         "slideshow_beautify_margin_top": "",
@@ -180,7 +151,7 @@
   "order": [
     "main",
     "16405891966e9877a5",
-    "16405892017d1561f6",
-    "1640591181c24f55f9"
+    "1640591181c24f55f9",
+    "16405914658c580881"
   ]
 }
