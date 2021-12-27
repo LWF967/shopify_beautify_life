@@ -231,7 +231,7 @@
         console.log(deferred_media[i]);
         $(deferred_media[i]).bind('DOMSubtreeModified', function() {  
           if(deferred_media[i].hasAttribute('loaded') == true) {
-            console.log(1);
+            console.log("开始播放");
             deferred_media_play_svg[i].style.display = "none";
           }
         });
