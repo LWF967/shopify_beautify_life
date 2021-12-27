@@ -8,7 +8,7 @@
 <div class="collection-list-wrapper page-width{% if section.settings.swipe_on_mobile == true %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}"     
      style="{%- if section.settings.collection_list_margin_top != blank -%}margin-top: {{ section.settings.collection_list_margin_top }}px; {%- endif -%}{%- if section.settings.collection_list_margin_bottom != blank -%}margin-bottom:{{ section.settings.collection_list_margin_bottom }}px;{%- endif -%}"
      >
-  <div class="my_font_weight_default my_clear_margin my_section_margin_default">
+  <div style="text-align:center;">
     <h2 class="collection-list-title my_font_weight_default my_clear_margin my_section_margin_default">{{ section.settings.title | escape }}</h2>
 
     {%- if section.settings.show_view_all and section.settings.swipe_on_mobile -%}
