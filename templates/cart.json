@@ -150,24 +150,16 @@
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "testimonials_author_text": "Author"
           }
-        },
-        "5b9f4e53-250b-4c35-a420-a7e53c55dfd9": {
-          "type": "column",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "testimonials_author_text": "Author"
-          }
         }
       },
       "block_order": [
         "16405754750051cb35-0",
         "16405754750051cb35-1",
-        "16405754750051cb35-2",
-        "5b9f4e53-250b-4c35-a420-a7e53c55dfd9"
+        "16405754750051cb35-2"
       ],
       "settings": {
         "title": "testimonials",
-        "swipe": true,
+        "swipe": false,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
         "image_width": "full",
