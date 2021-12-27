@@ -36,7 +36,7 @@
     margin-right: 0 !important;
   }
   
-/*   .swiper {
+  .swiper {
     width: 100%;
     height: 100%;
   }
@@ -88,7 +88,7 @@
   .swiper-button-prev.featured_product_beautify_prev:empty,
   .swiper-button-next.featured_product_beautify_next:empty {
     display: flex;
-  } */
+  }
   
   .my_featured_product_beautify_ul li modal-opener {
     width: 100%;
@@ -295,16 +295,38 @@
         </div>
         
         {%- assign media_count = product.media | size -%}
-        {{media_count}}
         {%- if media_count > 4 -%}
           <style>
             .deferred-media.media.no-js-hidden.my_featured_product_beautify_media {
               width: 100%;
-              border: none;
             }
           </style>
-
-        {% render 'swiper-featured-product-beautify',section:section %}
+          <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list">
+            <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
+              <div class="swiper my_swiper_detail_featured_product_beautify">
+                <div class="swiper-wrapper my_swiper_div">
+                  {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
+                  {%- if product.selected_or_first_available_variant.featured_media != null -%}
+                  {%- assign media = product.selected_or_first_available_variant.featured_media -%}
+                  <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" 
+                      data-media-id="{{ section.id }}-{{ media.id }}">
+                    {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+                  </li>
+                  {%- endif -%}
+                  {%- for media in product.media -%}
+                  {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+                  <li class="swiper-slide" 
+                      data-media-id="{{ section.id }}-{{ media.id }}">
+                    {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
+                  </li>
+                  {%- endunless -%}
+                  {%- endfor -%}
+                </div>
+              </div>
+              <div class="swiper-button-prev featured_product_beautify_prev"></div>
+              <div class="swiper-button-next featured_product_beautify_next"></div>
+            </div>
+          </ul>
         {%- elsif media_count > 1 -%}
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul my_featured_product_beautify_noswiper" role="list" style="display:flex;">
             {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
@@ -717,6 +739,37 @@
   });
 </script>
 
+<script type="module">
+  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+
+  
+  var swiper = new Swiper(".my_swiper_detail_featured_product_beautify", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next.featured_product_beautify_next',
+          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+      },
+      breakpoints: {
+        0: {  //当屏幕宽度大于等于0 
+          slidesPerView: 2,
+        },
+        750: {  //当屏幕宽度大于等于750 
+          slidesPerView: 2,
+        },
+        990: {  //当屏幕宽度大于等于990
+          slidesPerView: 4,
+		}
+      }
+  });
+  
+
+</script>
+
 {% schema %}
 {
   "name": "featured-product-beautify",
@@ -962,7 +1015,7 @@
 <script>
   let featured_product_promo_bar = document.getElementById('shopify-section-promo-bar');
   let featured_product_top_bar = document.getElementById('shopify-section-top-bar');
-  let featured_product_header = document.getElementById('shopify-section-header');
+  let main_product_header = document.getElementById('shopify-section-header');
   let featured_product_header_hidden = document.getElementById('my_header_sticky_visible');
   let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");                                                 
 
@@ -970,12 +1023,12 @@
     if(featured_product_ProductModal.hasAttribute('open') == true) {
       featured_product_promo_bar.style.display = "none";
       featured_product_top_bar.style.display = "none";
-      featured_product_header.style.visibility = "hidden";
+      main_product_header.style.display = "none";
       featured_product_header_hidden.style.visibility = "hidden";
     } else if(featured_product_ProductModal.hasAttribute('open') == false) {
       featured_product_promo_bar.style.display = "block";
       featured_product_top_bar.style.display = "block";
-      featured_product_header.style.visibility = "visible";
+      main_product_header.style.display = "block";
       featured_product_header_hidden.style.visibility = "visible";
     }
   });
