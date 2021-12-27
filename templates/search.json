@@ -113,11 +113,72 @@
         "featured_product_beautify_margin_top": "",
         "featured_product_beautify_margin_bottom": ""
       }
+    },
+    "1640591181c24f55f9": {
+      "type": "slideshow-beautify-2",
+      "blocks": {
+        "164059118166ce82da-0": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "164059118166ce82da-1": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "509bac08-5d61-4a87-b6fe-4f3adc8d282c": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "164059118166ce82da-0",
+        "164059118166ce82da-1",
+        "509bac08-5d61-4a87-b6fe-4f3adc8d282c"
+      ],
+      "settings": {
+        "se_height": "adapt",
+        "text_size": "medium",
+        "loop": true,
+        "auto_play": true,
+        "auto_time": 3,
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "#F29BAE",
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "slideshow_beautify_margin_top": "",
+        "slideshow_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
     "main",
     "16405891966e9877a5",
-    "16405892017d1561f6"
+    "16405892017d1561f6",
+    "1640591181c24f55f9"
   ]
 }
