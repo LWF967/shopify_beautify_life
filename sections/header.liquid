@@ -351,6 +351,9 @@
                      {% endif %}
                    {% else %} height: {{my_header_height}}px; 
                    {% endif %}
+                 {% endif %}
+                 {% if section.settings.logo != blank %}
+                 	height: {{ section.settings.header_height }}px;
                  {% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet" id="header_drawer">
