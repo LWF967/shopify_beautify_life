@@ -232,36 +232,6 @@ $(window).resize(function(){
 //   console.log(window.screen.width);
 });
 
-var myHeaderFreshDesignMode = Shopify.designMode || false;
-if(myHeaderFreshDesignMode){
-  document.addEventListener('shopify:section:load',() => {                
-    var targetheader =  document.getElementById('my_header_sticky_visible');
-
-    // 创建观察者对象
-
-//     var observer = new MutationObserver(function(){
-    var observerheader = new MutationObserver(my_home_debounce(function () {
-      let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
-      let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
-      let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
-      let header = document.getElementsByClassName('header')[0];
-      let content = document.getElementsByClassName('content')[0];
-      let my_header_sticky = document.getElementsByClassName('my_header_sticky');
-      let my_backtop = document.getElementById('my_backtop');
-      my_header_and_totop();
- 	  console.log("header listen");
-    }, 500));
-
-    // 配置观察选项:
-    var config = { attributes: true, childList: true, characterData: true ,subtree : true };
-    // 传入目标节点和观察选项
-    observerheader.observe(targetheader, config); 
-    // 随后,你还可以停止观察
-    //     observer.disconnect();
-  },true);
-}
-
-
 var myHomeFreshDesignMode = Shopify.designMode || false;
 if(myHomeFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {                
