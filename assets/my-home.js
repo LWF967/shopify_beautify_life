@@ -165,6 +165,7 @@ function my_header_and_totop() {
     $(window).scroll(() => {
       console.log("刷新scroll");
       header_scroll();
+	  console.log(1);
     });
   },true);
 }
