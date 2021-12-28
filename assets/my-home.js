@@ -121,7 +121,7 @@ function my_header_and_totop() {
   gotoTop();
   //获取页面顶部的距离
   window.onscroll = function () {
-    document.addEventListener('shopify:section:load',() => {
+//     document.addEventListener('shopify:section:load',() => {
       let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
       if(my_header_sticky.length > 0) {
@@ -169,8 +169,8 @@ function my_header_and_totop() {
         my_backtop.style.visibility = 'hidden';
         my_backtop.style.cursor = "default";
       }
-    }
-  },true);
+    },true);
+  }
 }
 
 function my_home() {
