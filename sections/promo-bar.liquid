@@ -159,7 +159,7 @@
     if(myPromoFreshDesignMode){      
       document.addEventListener('shopify:section:load',() => {  
 //      注释后 自己不能刷新
-// 		promo_bar_change();
+		promo_bar_change();
       },true);
     }
   }
@@ -187,7 +187,7 @@
       }
     }
     hide_banner.dataset.mheight = hide_banner_height + 1;
-    hide_banner.style.marginTop = -hide_banner_height + 'px';
+    hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
   }
   promo_bar_fun();
 </script>
