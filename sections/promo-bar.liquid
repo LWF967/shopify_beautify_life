@@ -139,7 +139,7 @@
     });
     
     // 配置观察选项:
-    var config = { attributes: true, childList: true, characterData: true ,subtree : true };
+    var config = { subtree : true, attributes: true, childList: true, characterData: true };
     // 传入目标节点和观察选项
     observer.observe(target, config); 
     // 随后,你还可以停止观察
