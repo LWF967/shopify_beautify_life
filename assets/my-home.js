@@ -236,7 +236,7 @@ var myHomeFreshDesignMode = Shopify.designMode || false;
 if(myHomeFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {    
              
-    my_header_and_totop();
+//     my_header_and_totop();
                             
     let promo_bar = document.getElementById('shopify-section-promo-bar');
     let top_bar = document.getElementById('shopify-section-top-bar');
