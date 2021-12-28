@@ -185,14 +185,17 @@
     if(myPromoFreshDesignMode){
       document.addEventListener('shopify:section:load',() => {  
 //      注释后 自己不能刷新
-		promo_bar_change();
+// 		promo_bar_change();
       
         var target =  document.getElementById('hide_banner');              
         // 创建观察者对象
 
         var observer = new MutationObserver(function(mutations){
           console.log("进入promo观察");
-          promo_bar_change();
+//           mutations.forEach(function(mutation){
+//             console.log(mutation.type);
+//           });
+          		promo_bar_change();
 
         });
 
@@ -200,8 +203,6 @@
         var config = { attributes: true, childList: true, characterData: true ,subtree : true };
         // 传入目标节点和观察选项
         observer.observe(target, config);
-          // 随后,你还可以停止观察
-        observer.disconnect();
       
       },true);
     }
