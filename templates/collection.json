@@ -189,7 +189,7 @@
             "header_top2": "Head2",
             "header_top3": "Head3",
             "url1": "",
-            "url2": "",
+            "url2": "shopify:\/\/blogs\/技术分享",
             "url3": "",
             "open_link": "_blank"
           }
@@ -358,11 +358,11 @@
         "1640586244a733b936-8"
       ],
       "settings": {
-        "product": "lol-more",
+        "product": "text4",
         "featured_bk_color": "#1eec5e",
         "color_scheme": "gradient",
         "show_share_buttons": false,
-        "hide_variants": false,
+        "hide_variants": true,
         "enable_video_looping": false,
         "featured_product_beautify_margin_top": "",
         "featured_product_beautify_margin_bottom": ""
