@@ -241,6 +241,13 @@ if(myHeaderFreshDesignMode){
 
 //     var observer = new MutationObserver(function(){
     var observerheader = new MutationObserver(my_home_debounce(function () {
+      let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
+      let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
+      let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
+      let header = document.getElementsByClassName('header')[0];
+      let content = document.getElementsByClassName('content')[0];
+      let my_header_sticky = document.getElementsByClassName('my_header_sticky');
+      let my_backtop = document.getElementById('my_backtop');
       my_header_and_totop();
  	  console.log("header listen");
     }, 500));
