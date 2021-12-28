@@ -141,7 +141,7 @@
         "settings": {
           "promo_bar_link": "",
           "promo_bar_textarea": "Today deal sale off <strong>70%<\/strong> <strong>On All<\/strong> Hurry Up <i class=\"las la-arrow-right\"><\/i>",
-          "promo_bar_height": 87,
+          "promo_bar_height": 41,
           "promo_bar_fontsize": 12,
           "promo_bar_cl": "#ff7474",
           "promo_bar_bg": "#000000",
