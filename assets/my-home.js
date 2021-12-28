@@ -124,6 +124,7 @@ function my_header_and_totop() {
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
     if(my_header_sticky.length > 0) {
+      console.log("进来");
       if(toTop >= all_header_height) {
         content.style.position = 'fixed';
         content.style.width = '100%';
@@ -231,8 +232,8 @@ $(window).resize(function(){
 var myHomeFreshDesignMode = Shopify.designMode || false;
 if(myHomeFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {    
-                            my_header_and_totop();
-  console.log(1);
+                            
+                            
     let promo_bar = document.getElementById('shopify-section-promo-bar');
     let top_bar = document.getElementById('shopify-section-top-bar');
     let header_zx = document.getElementById('shopify-section-header');
