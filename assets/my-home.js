@@ -95,15 +95,22 @@ let main = document.getElementById('MainContent');
 let sticky = document.getElementsByClassName('my_footer_sticky');
 
 // header fixed layout 
-let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
+// let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
+// let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
+// let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
+// let header = document.getElementsByClassName('header')[0];
+// let content = document.getElementsByClassName('content')[0];
+// let my_header_sticky = document.getElementsByClassName('my_header_sticky');
+// let my_backtop = document.getElementById('my_backtop');
+
+function my_header_and_totop() {
+  let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
 let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
 let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
 let header = document.getElementsByClassName('header')[0];
 let content = document.getElementsByClassName('content')[0];
 let my_header_sticky = document.getElementsByClassName('my_header_sticky');
 let my_backtop = document.getElementById('my_backtop');
-
-function my_header_and_totop() {
   // backtop 
   function gotoTop() {
     $("#my_backtop").click(
@@ -159,67 +166,65 @@ function my_header_and_totop() {
     }
   }
   $(window).scroll(() => {
-      header_scroll();
+      my_header_and_totop();
     });
   document.addEventListener('shopify:section:load',() => {  
     $(window).scroll(() => {
       console.log("刷新scroll");
-//       header_scroll();
-  
-  
-  let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
-  let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
-  let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
-  let header = document.getElementsByClassName('header')[0];
-  let content = document.getElementsByClassName('content')[0];
-  let my_header_sticky = document.getElementsByClassName('my_header_sticky');
-  let my_backtop = document.getElementById('my_backtop');
+      my_header_and_totop();
 
-  let toTop = document.documentElement.scrollTop || document.body.scrollTop;
+//       let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
+//       let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
+//       let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
+//       let header = document.getElementsByClassName('header')[0];
+//       let content = document.getElementsByClassName('content')[0];
+//       let my_header_sticky = document.getElementsByClassName('my_header_sticky');
+//       let my_backtop = document.getElementById('my_backtop');
 
-  if(my_header_sticky.length > 0) {
-    if(toTop >= all_header_height) {
-      content.style.position = 'fixed';
-      content.style.width = '100%';
-      header_wrapper.style.height = header_wrapper_height + 'px';
-    } else {
-      content.style.position = 'relative';
-    }
-    if(content.style.position == 'fixed') {
-      promo_bar.style.zIndex = 900;
-      top_bar.style.zIndex = 901;
-      header_zx.style.zIndex = 900;
+//       let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-      content.classList.add('my_header_sticky_settings');
-      header.classList.add('my_header_sticky_settings');
-      content.style.transition = 'transform .3s';
-      content.style.top = "-" + (header_wrapper.style.height);
-      content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
-    } else if(content.style.position == 'relative') {
-      promo_bar.style.zIndex = 898;
-      top_bar.style.zIndex = 899;
-      header_zx.style.zIndex = 898;
+//       if(my_header_sticky.length > 0) {
+//         if(toTop >= all_header_height) {
+//           content.style.position = 'fixed';
+//           content.style.width = '100%';
+//           header_wrapper.style.height = header_wrapper_height + 'px';
+//         } else {
+//           content.style.position = 'relative';
+//         }
+//         if(content.style.position == 'fixed') {
+//           promo_bar.style.zIndex = 900;
+//           top_bar.style.zIndex = 901;
+//           header_zx.style.zIndex = 900;
 
-      content.classList.remove('my_header_sticky_settings');
-      header.classList.remove('my_header_sticky_settings');
-      content.style.top = 0 + 'px';
-      content.style.transform = 'none';
-      content.style.transition = 'none';
-    }
-  }
+//           content.classList.add('my_header_sticky_settings');
+//           header.classList.add('my_header_sticky_settings');
+//           content.style.transition = 'transform .3s';
+//           content.style.top = "-" + (header_wrapper.style.height);
+//           content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
+//         } else if(content.style.position == 'relative') {
+//           promo_bar.style.zIndex = 898;
+//           top_bar.style.zIndex = 899;
+//           header_zx.style.zIndex = 898;
 
-  // backtop 
-  if(toTop >= all_header_height) {
-    my_backtop.style.opacity = 1;
-    my_backtop.style.visibility = 'visible';
-    my_backtop.style.cursor = "pointer";
-  } else {
-    my_backtop.style.opacity = 0;
-    my_backtop.style.visibility = 'hidden';
-    my_backtop.style.cursor = "default";
-  }
-  
-  
+//           content.classList.remove('my_header_sticky_settings');
+//           header.classList.remove('my_header_sticky_settings');
+//           content.style.top = 0 + 'px';
+//           content.style.transform = 'none';
+//           content.style.transition = 'none';
+//         }
+//       }
+
+//       // backtop 
+//       if(toTop >= all_header_height) {
+//         my_backtop.style.opacity = 1;
+//         my_backtop.style.visibility = 'visible';
+//         my_backtop.style.cursor = "pointer";
+//       } else {
+//         my_backtop.style.opacity = 0;
+//         my_backtop.style.visibility = 'hidden';
+//         my_backtop.style.cursor = "default";
+//       }
+
     });
   },true);
 }
