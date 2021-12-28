@@ -178,9 +178,7 @@ function my_header_and_totop() {
     $(window).scroll(() => {
       console.log("刷新scroll");
 
-      console.log("sxpro"+$(promo_bar).height());
-      console.log("sxtop"+$(top_bar).height());
-      console.log("sxheader"+$(header_zx).height());
+
 
 
       let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
@@ -191,6 +189,9 @@ function my_header_and_totop() {
       let my_header_sticky = document.getElementsByClassName('my_header_sticky');
       let my_backtop = document.getElementById('my_backtop');
 
+      console.log("sxpro"+$(promo_bar).height());
+      console.log("sxtop"+$(top_bar).height());
+      console.log("sxheader"+$(header_zx).height());
 
 	  console.log(all_header_height);
 // 	  header_scroll();
