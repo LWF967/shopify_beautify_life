@@ -232,7 +232,7 @@ function my_header_and_totop() {
           content.style.position = 'relative';
         }
         if(content.style.position == 'fixed') {
-          console.log("进来fix");
+          console.log("sx进来fix");
 
           promo_bar.style.zIndex = 900;
           top_bar.style.zIndex = 901;
@@ -244,7 +244,7 @@ function my_header_and_totop() {
           content.style.top = "-" + (header_wrapper.style.height);
           content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
         } else if(content.style.position == 'relative') {
-          console.log("进来relative");
+          console.log("sx进来relative");
 
           promo_bar.style.zIndex = 898;
           top_bar.style.zIndex = 899;
