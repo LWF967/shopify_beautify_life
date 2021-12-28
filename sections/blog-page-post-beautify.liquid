@@ -257,12 +257,28 @@
       "default": false,
       "label": "t:sections.featured-blog.settings.show_author.label"
     },
-    {
-      "type": "checkbox",
+	{
+      "type": "color",
       "id": "soft_background",
-      "default": false,
-      "label": "t:sections.featured-blog.settings.soft_background.label"
-    },
+      "label": "Background",
+      "default": "#f3f3f3"
+     },
+	{
+        "type": "select",
+       "id": "color_scheme",
+      "options": [
+        {
+       "value": "gradient",
+       "label": "Global-page background" 
+        },
+       {
+        "value": "soft_background",
+        "label": "Blog-page background"
+         }
+       ],
+     "default": "gradient",
+       "label": "Background options"
+      },
     {
       "type": "checkbox",
       "id": "show_view_all",
