@@ -235,7 +235,7 @@ $(window).resize(function(){
 var myHeaderFreshDesignMode = Shopify.designMode || false;
 if(myHeaderFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {                
-    var target =  document.getElementById('my_header_sticky_visible')[0];
+    var target =  document.getElementById('my_header_sticky_visible');
 
     // 创建观察者对象
 
