@@ -778,7 +778,7 @@
       "settings": {
         "heading": "Blog posts",
         "head_text": "The most exciting news",
-        "image_ratio1": "ratio_nt",
+        "image_ratio1": "ratio8_5",
         "blog": "tt1",
         "post_limit": 3,
         "show_image": true,
@@ -786,7 +786,8 @@
         "show_short_content": true,
         "show_date": true,
         "show_author": false,
-        "soft_background": false,
+        "blog_soft_background": "#f3f3f3",
+        "color_scheme": "gradient",
         "show_view_all": true,
         "blog_page_beautify_margin_top": "",
         "blog_page_beautify_margin_bottom": ""
