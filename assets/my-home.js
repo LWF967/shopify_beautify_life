@@ -215,7 +215,7 @@ function my_home() {
     footer_bottom.style.position = 'static';
   }
 }
-// my_header_and_totop();
+my_header_and_totop();
 my_home();
 
 
