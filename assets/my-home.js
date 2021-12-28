@@ -50,10 +50,6 @@ if(myFooterbottomFreshDesignMode){
         }
         else if(document.body.clientWidth >= 1024) {
           let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
-
-          //           let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
-          //           let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-          //           let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
           let jq_footer_top_height = $('.footer.color-.gradient.my_footer_sticky').height();
           let jqheight = $('.footer.color-.gradient.my_footer_bottom_color').height();
           let jq_main_margin_bottom = parseInt(jq_footer_top_height+jqheight);
@@ -70,9 +66,6 @@ if(myFooterbottomFreshDesignMode){
           target.style.position = 'fixed';
           target.style.bottom = 0;
           target.style.width = '100%';    
-//           console.log(jq_footer_top_height);
-//           console.log(jqheight);
-//           console.log(main.style.marginBottom);
           console.log(1);
         }
       }
@@ -200,10 +193,6 @@ function my_home() {
       footer_bottom.style.position = 'fixed';
       footer_bottom.style.bottom = 0;
       footer_bottom.style.width = '100%';
-      
-//       console.log(my_footer_sticky_height);
-//       console.log(footer_bottom_height);
-//       console.log(main.style.marginBottom);
     }
   }
   else {
@@ -217,7 +206,6 @@ my_home();
 
 window.onload = function() {
   my_home();
-//   console.log("onload");
   // hide_banner variant define in promo-bar.liquid
   hide_banner.style.marginTop = 0 + 'px';
   hide_banner.style.transition = "all .5s";
@@ -225,7 +213,6 @@ window.onload = function() {
 
 $(window).resize(function(){
   my_home();
-//   console.log(window.screen.width);
 });
 
 var myHomeFreshDesignMode = Shopify.designMode || false;
