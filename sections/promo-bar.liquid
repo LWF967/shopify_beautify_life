@@ -146,7 +146,7 @@
 //     observer.disconnect();
   
   function promo_bar_change() {
-    console.log("promo切换屏幕");
+    console.log("执行promobarchange");
     let close = document.getElementsByClassName('show_close')[0];
     let my_center = document.getElementsByClassName('my_center')[0];
     let hide_banner = document.getElementById('hide_banner');  
@@ -201,6 +201,8 @@
         var config = { attributes: true, childList: true, characterData: true ,subtree : true };
         // 传入目标节点和观察选项
         observer.observe(target, config);
+          // 随后,你还可以停止观察
+        observer.disconnect();
       
       },true);
     }
