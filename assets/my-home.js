@@ -95,22 +95,15 @@ let main = document.getElementById('MainContent');
 let sticky = document.getElementsByClassName('my_footer_sticky');
 
 // header fixed layout 
-// let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
-// let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
-// let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
-// let header = document.getElementsByClassName('header')[0];
-// let content = document.getElementsByClassName('content')[0];
-// let my_header_sticky = document.getElementsByClassName('my_header_sticky');
-// let my_backtop = document.getElementById('my_backtop');
+let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
+let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
+let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
+let header = document.getElementsByClassName('header')[0];
+let content = document.getElementsByClassName('content')[0];
+let my_header_sticky = document.getElementsByClassName('my_header_sticky');
+let my_backtop = document.getElementById('my_backtop');
 
 function my_header_and_totop() {
-  let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
-  let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
-  let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
-  let header = document.getElementsByClassName('header')[0];
-  let content = document.getElementsByClassName('content')[0];
-  let my_header_sticky = document.getElementsByClassName('my_header_sticky');
-  let my_backtop = document.getElementById('my_backtop');
   // backtop 
   function gotoTop() {
     $("#my_backtop").click(
@@ -171,6 +164,15 @@ function my_header_and_totop() {
   document.addEventListener('shopify:section:load',() => {  
     $(window).scroll(() => {
       console.log("刷新scroll");
+
+  let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
+  let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
+  let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
+  let header = document.getElementsByClassName('header')[0];
+  let content = document.getElementsByClassName('content')[0];
+  let my_header_sticky = document.getElementsByClassName('my_header_sticky');
+  let my_backtop = document.getElementById('my_backtop');
+
 	  header_scroll();
 
 //       let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
