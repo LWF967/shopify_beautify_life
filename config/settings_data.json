@@ -295,7 +295,7 @@
         ],
         "settings": {
           "copyrights_layouts": "Two columns",
-          "background_color": "#000000",
+          "background_color": "#bfbfbf",
           "foot_bottom_background_style": "background_color",
           "text_color": "#ffffff",
           "link_color": "#ff0000",
