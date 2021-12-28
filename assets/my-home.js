@@ -65,8 +65,7 @@ if(myFooterbottomFreshDesignMode){
           my_footer_sticky.style.zIndex = 1;
           target.style.position = 'fixed';
           target.style.bottom = 0;
-          target.style.width = '100%';    
-          console.log(1);
+          target.style.width = '100%';
         }
       }
       else {
@@ -115,8 +114,8 @@ function my_header_and_totop() {
   //获取页面顶部的距离
   function header_scroll() {
     let promo_bar = document.getElementById('hide_banner');
-let top_bar = document.getElementById('shopify-section-top-bar');
-let header_zx = document.getElementById('shopify-section-header');
+    let top_bar = document.getElementById('shopify-section-top-bar');
+    let header_zx = document.getElementById('shopify-section-header');
     
     let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
     let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
@@ -125,12 +124,7 @@ let header_zx = document.getElementById('shopify-section-header');
     let content = document.getElementsByClassName('content')[0];
     let my_header_sticky = document.getElementsByClassName('my_header_sticky');
     let my_backtop = document.getElementById('my_backtop');
-    
-    console.log("pro"+$(promo_bar).height());
-    console.log("top"+$(top_bar).height());
-    console.log("header"+$(header_zx).height());
 
-    
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
     if(my_header_sticky.length > 0) {
@@ -181,11 +175,9 @@ let header_zx = document.getElementById('shopify-section-header');
   document.addEventListener('shopify:section:load',() => {  
     $(window).scroll(() => {
       console.log("刷新scroll");
-
-
-let promo_bar = document.getElementById('hide_banner');
-let top_bar = document.getElementById('shopify-section-top-bar');
-let header_zx = document.getElementById('shopify-section-header');
+      let promo_bar = document.getElementById('hide_banner');
+      let top_bar = document.getElementById('shopify-section-top-bar');
+      let header_zx = document.getElementById('shopify-section-header');
 
       let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
       let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
@@ -194,13 +186,6 @@ let header_zx = document.getElementById('shopify-section-header');
       let content = document.getElementsByClassName('content')[0];
       let my_header_sticky = document.getElementsByClassName('my_header_sticky');
       let my_backtop = document.getElementById('my_backtop');
-
-      console.log("sxpro"+$(promo_bar).height());
-      console.log("sxtop"+$(top_bar).height());
-      console.log("sxheader"+$(header_zx).height());
-
-	  console.log(all_header_height);
-// 	  header_scroll();
 
       let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
