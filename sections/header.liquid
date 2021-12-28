@@ -338,7 +338,16 @@
                    {% elsif section.settings.logo_aligment == 'centered' and my_img_height_centered > my_header_height %} my_auto_height 
                    {% endif %}
                  {% endif %}my_header_background_color my_header_background_opacity"
-          style="{% if settings.full_width == false %} max-width: 95%;{% endif %}{% if section.settings.logo_svg != blank %}{% if image_height > my_header_height %}{% if section.settings.logo_aligment == 'left' %} height: {{image_height}}px; {% elsif section.settings.logo_aligment == 'centered' %} height: {{image_height_center}}px;{% endif %}{% else %} height: {{my_header_height}}px; {% endif %}{% endif %}">
+          style="{% if settings.full_width == false %} max-width: 95%;{% endif %}
+                 {% if section.settings.logo_svg != blank %}
+                   {% if image_height > my_header_height %}
+                     {% if section.settings.logo_aligment == 'left' %} height: {{image_height}}px; 
+                     {% elsif section.settings.logo_aligment == 'centered' %} height: {{image_height_center}}px;
+                     {% endif %}{% else %} height: {{my_header_height}}px; 
+                   {% else %}
+                      my_auto_height
+                   {% endif %}
+                 {% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet" id="header_drawer">
         <details class="menu-drawer-container">
