@@ -132,7 +132,10 @@
     // 创建观察者对象
     
     var observer = new MutationObserver(function(mutations){
-//       console.log(mutations);
+      console.log("进入promo观察");
+      mutations.forEach(function(mutation){
+        console.log(mutation.type);
+      });
     });
     
     // 配置观察选项:
