@@ -235,12 +235,12 @@ $(window).resize(function(){
 var myHeaderFreshDesignMode = Shopify.designMode || false;
 if(myHeaderFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {                
-    var target =  document.getElementById('my_header_sticky_visible');
+    var targetheader =  document.getElementById('my_header_sticky_visible');
 
     // 创建观察者对象
 
 //     var observer = new MutationObserver(function(){
-    var observer = new MutationObserver(my_home_debounce(function () {
+    var observerheader = new MutationObserver(my_home_debounce(function () {
       my_header_and_totop();
  	  console.log("header listen");
     }, 500));
@@ -248,7 +248,7 @@ if(myHeaderFreshDesignMode){
     // 配置观察选项:
     var config = { attributes: true, childList: true, characterData: true ,subtree : true };
     // 传入目标节点和观察选项
-    observer.observe(target, config); 
+    observerheader.observe(targetheader, config); 
     // 随后,你还可以停止观察
     //     observer.disconnect();
   },true);
