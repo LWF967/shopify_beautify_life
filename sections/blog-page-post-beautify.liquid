@@ -26,7 +26,7 @@
   <div class="page-width-desktop">
     <div class="title-wrapper-with-link{% if section.settings.heading == blank %} title-wrapper-with-link--no-heading{% endif %} title-wrapper--self-padded-tablet-down">
       <h2 class="blog__title my_font_weight_default my_between_title_and_text_margin my_font_size_heading_default">{{ section.settings.heading | escape }}</h2>
-      <p style="color:var(--font-sub-text-color);margin: 0 0"> {{section.settings.head_text |escape }}</p>
+      <p class="my_font_size_content_default " style="color:var(--font-sub-text-color);margin: 0 0"> {{section.settings.head_text |escape }}</p>
 
       {%- if section.settings.blog != blank and section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
         <a href="{{ section.settings.blog.url }}"
