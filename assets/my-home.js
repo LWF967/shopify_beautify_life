@@ -272,5 +272,7 @@ if(myHomeFreshDesignMode){
       main.style.marginBottom = 0;
       footer_bottom.style.position = 'static';
     }
+  
+  my_header_and_totop();
   },true);
 }
