@@ -188,8 +188,8 @@ function my_header_and_totop() {
             content.style.transition = 'transform .3s';
             content.style.top = "-" + (header_wrapper.style.height);
             content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
-            console.log("top"+content.style.top);
-            console.log("position"+content.style.position);
+            console.log("sxtop"+content.style.top);
+            console.log("sxposition"+content.style.position);
           } else if(content.style.position == 'relative') {
             promo_bar.style.zIndex = 898;
             top_bar.style.zIndex = 899;
@@ -200,8 +200,8 @@ function my_header_and_totop() {
             content.style.top = 0 + 'px';
             content.style.transform = 'none';
             content.style.transition = 'none';
-            console.log("top"+content.style.top);
-            console.log("position"+content.style.position);
+            console.log("sxtop"+content.style.top);
+            console.log("sxposition"+content.style.position);
           }
         }
 
