@@ -174,7 +174,6 @@ function my_header_and_totop() {
     });
   document.addEventListener('shopify:section:load',() => {  
     $(window).scroll(() => {
-      console.log("刷新scroll");
       let promo_bar = document.getElementById('hide_banner');
       let top_bar = document.getElementById('shopify-section-top-bar');
       let header_zx = document.getElementById('shopify-section-header');
