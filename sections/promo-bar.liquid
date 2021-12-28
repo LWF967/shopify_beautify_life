@@ -180,6 +180,8 @@
     observerpromo.observe(targetpromo, configpromo); 
     // 随后,你还可以停止观察
 //     observer.disconnect();
+    const changes = mutationObserver.takeRecords();
+console.log(changes);
   }
   
   function promo_bar_fun() {

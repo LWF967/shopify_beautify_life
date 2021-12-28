@@ -140,7 +140,7 @@
     {%- liquid
      if section.settings.show_view_all  
      	assign blog_number = 3  
-     else assign blog_number = section.settings.blog.articles limit: section.settings.post_limit 
+     else assign blog_number = section.settings.post_limit 
      endif   
     -%}    
    <div class="page-width">
