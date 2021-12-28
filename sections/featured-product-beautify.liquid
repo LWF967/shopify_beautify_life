@@ -352,7 +352,7 @@
                 {{- block.settings.text -}}
               </p>
             {%- when 'title' -%}
-              <h2 class="h1 product__title my_featured_product_beautify_title my_font_weight_default" {{ block.shopify_attributes }}>
+              <h2 class="h1 product__title my_featured_product_beautify_title my_font_weight_default my_font_size_heading_default" {{ block.shopify_attributes }}>
                 {%- if product.title != blank -%}
                   {{ product.title | escape }}
                 {%- else -%}
