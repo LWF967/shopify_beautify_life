@@ -159,10 +159,10 @@
     var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
     // 选择目标节点
 
-    var target = document.querySelector('#hide_banner');
+    var targetpromo = document.querySelector('#hide_banner');
                                         
     // 创建观察者对象
-    var observer = new MutationObserver(function(mutations){
+    var observerpromo = new MutationObserver(function(mutations){
       mutations.forEach(function(mutation){
         console.log(mutation.type);
       });
@@ -176,9 +176,9 @@
     });
 
     // 配置观察选项:
-    var config = { attributes: true, childList: true, characterData: true ,subtree : true };
+    var configpromo = { attributes: true, childList: true, characterData: true ,subtree : true };
     // 传入目标节点和观察选项
-    observer.observe(target, config); 
+    observerpromo.observe(targetpromo, configpromo); 
     // 随后,你还可以停止观察
 //     observer.disconnect();
   }
