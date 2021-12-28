@@ -162,17 +162,14 @@
     var targetpromo = document.querySelector('#hide_banner');
                                         
     // 创建观察者对象
-    var observerpromo = new MutationObserver(function(mutations){
-      mutations.forEach(function(mutation){
-        console.log(mutation.type);
-      });
+    var observerpromo = new MutationObserver(function(){
       var myPromoFreshDesignMode = Shopify.designMode || false;
       if(myPromoFreshDesignMode){      
         document.addEventListener('shopify:section:load',() => {  
           //      注释后 自己不能刷新
           promo_bar_change();
-      },true);
-    }
+        },true);
+      }
     });
 
     // 配置观察选项:
