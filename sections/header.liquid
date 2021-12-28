@@ -223,25 +223,9 @@
     line-height: 1.1;
   }
   
-/*   .my_cart_count_bubble {
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    background: {{ settings.header_count_color }};
-    text-align: center;
-    line-height: 15px;
-    border-radius: 100%;
-    font-size: 9px;
-    bottom: 20px;
-    left: 10px;
+  .my_header_margin_left_clear {
+    margin-left: 0;
   }
-  {%- if cart.item_count < 100 -%}
-    .my_cart_count_bubble::after {
-      content: "{{ cart.item_count }}";
-      display: inline-block;
-      color: {{ settings.header_count_text_color }};
-    }            
-  {%- endif -%} */
   
   .my_header_drawer_li_style li {
     border-bottom: 1px solid rgba(0,0,0,.1);
@@ -627,7 +611,7 @@
         <h1 class="header__heading text1 my_header_img_align my_header_img_centered">
       {%- endif -%}
     {%- endif -%}
-        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset my_header_font_size">
+        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset my_header_font_size my_header_margin_left_clear">
           {%- if section.settings.logo_svg != blank -%}
              <img class="header__heading-logo my_header_heading_logo my_svg"
                   src="{{ section.settings.logo_svg | file_url }}" 
