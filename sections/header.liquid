@@ -361,7 +361,7 @@
                  {% if section.settings.logo_svg != blank %}
                    {% if section.settings.logo_aligment == 'left' %}
                      {% if image_height > my_header_height %}height: {{image_height}}px; font-size:10px;
-                     {% else %} height: auto; font-size:10px;
+                     {% else %} height: {{my_header_height}} px; font-size:10px;
                      {% endif %}
                    {% elsif section.settings.logo_aligment == 'centered' %} 
                      {% if image_height_center > my_header_height  %}height: {{image_height_center}}px; font-size:11px;
