@@ -19,9 +19,7 @@
       <div class="article-card__image-wrapper my_article_card_beautify_card_item">
         <div class="article-card__image media media--landscape {{section.settings.image_ratio1}} my_article_card_beautify_background">
           <img
-            srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
-              {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
-              {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
+            srcset="
               {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
               {%- if article.image.src.width >= 1000 -%}{{ article.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
               {%- if article.image.src.width >= 1500 -%}{{ article.image.src | img_url: '1500x' }} 1500w,{%- endif -%}"
