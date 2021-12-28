@@ -1115,14 +1115,16 @@ function debounce(func, wait = 500) {
       } else {
 
 
-        $('.swiper-container-{{section.id}}').mouseover(debounce(function () {
+        $('.swiper-container-{{section.id}}').mouseover(debounce(function (event) {
         	console.log('222');
           swiperBeautifySlideshow.autoplay.stop();
+          event.stopPropagation();
         }))
 
-        $('.swiper-container-{{section.id}}').mouseout(debounce(function () {
+        $('.swiper-container-{{section.id}}').mouseout(debounce(function (event) {
         console.log('333');
           swiperBeautifySlideshow.autoplay.start();
+          event.stopPropagation();
         }))
 
 
