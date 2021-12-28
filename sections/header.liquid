@@ -342,7 +342,7 @@
                  {% if section.settings.logo_svg != blank %}
                    {% if image_height > my_header_height %}
                      {% if section.settings.logo_aligment == 'left' %} height: {{image_height}}px; 
-                     {% elsif section.settings.logo_aligment == 'centered' %} height: auto;
+                     {% elsif section.settings.logo_aligment == 'centered' %} height: {{image_height_center}}px;
                      {% endif %}
                    {% else %} height: {{my_header_height}}px; 
                    {% endif %}
