@@ -178,12 +178,13 @@ function my_header_and_totop() {
             promo_bar.style.zIndex = 900;
             top_bar.style.zIndex = 901;
             header_zx.style.zIndex = 900;
-			console.log("你为什么进得来 加载不到样式啊！我草")
+
             content.classList.add('my_header_sticky_settings');
             header.classList.add('my_header_sticky_settings');
             content.style.transition = 'transform .3s';
             content.style.top = "-" + (header_wrapper.style.height);
             content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
+            console.log(content.style);
           } else if(content.style.position == 'relative') {
             promo_bar.style.zIndex = 898;
             top_bar.style.zIndex = 899;
