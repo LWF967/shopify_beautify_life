@@ -183,7 +183,8 @@
   function refresh_promo() {
     var myPromoFreshDesignMode = Shopify.designMode || false;
     if(myPromoFreshDesignMode){
-      document.addEventListener('shopify:section:load',() => {  
+              var target111 =  document.getElementById('hide_banner');              
+      target111.addEventListener('shopify:section:load',() => {  
 //      注释后 自己不能刷新
 // 		promo_bar_change();
       
