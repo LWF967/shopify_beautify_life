@@ -113,10 +113,10 @@ function my_header_and_totop() {
   };
   gotoTop();
   //获取页面顶部的距离
-  $(window).scroll(
-      let toTop = document.documentElement.scrollTop || document.body.scrollTop;
+  $(window).scroll(function() {
+    let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-      if(my_header_sticky.length > 0) {
+    if(my_header_sticky.length > 0) {
       if(toTop >= all_header_height) {
         content.style.position = 'fixed';
         content.style.width = '100%';
@@ -157,7 +157,7 @@ function my_header_and_totop() {
       my_backtop.style.visibility = 'hidden';
       my_backtop.style.cursor = "default";
     }
-  );
+  });
 }
 
 function my_home() {
