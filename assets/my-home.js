@@ -165,12 +165,15 @@ function my_header_and_totop() {
       my_backtop.style.cursor = "default";
     }
   }
+}
+
   $(window).scroll(() => {
       my_header_and_totop();
     });
   document.addEventListener('shopify:section:load',() => {  
     $(window).scroll(() => {
       console.log("刷新scroll");
+      my_header_and_totop();
 
 //       let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
 //       let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
@@ -226,7 +229,6 @@ function my_header_and_totop() {
 
     });
   },true);
-}
 
 function my_home() {
   let promo_bar = document.getElementById('shopify-section-promo-bar');
