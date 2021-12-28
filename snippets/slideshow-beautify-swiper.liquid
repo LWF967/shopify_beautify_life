@@ -944,7 +944,7 @@ var swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swipe
 
    parallax : true,
   // 如果需要分页器
-  
+  preventClicks : false,
   touchRatio : 0.5,//触摸变慢
 
   {% unless section.settings.show_page_Dot %}
@@ -1005,6 +1005,8 @@ document.addEventListener('shopify:section:load', () => {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: swiperLoop, // 循环模式选项 
 	 parallax : true,
+     
+     preventClicks : false,
     // 如果需要分页器
 	touchRatio : 0.7,//触摸变慢
 
