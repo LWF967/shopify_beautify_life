@@ -232,49 +232,72 @@ $(window).resize(function(){
 //   console.log(window.screen.width);
 });
 
-// var myHomeFreshDesignMode = Shopify.designMode || false;
-// if(myHomeFreshDesignMode){
-//   document.addEventListener('shopify:section:load',() => {                
-//     let promo_bar = document.getElementById('shopify-section-promo-bar');
-//     let top_bar = document.getElementById('shopify-section-top-bar');
-//     let header_zx = document.getElementById('shopify-section-header');
-//     let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-//     let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
-//     let main = document.getElementById('MainContent');
-//     let sticky = document.getElementsByClassName('my_footer_sticky');
+var myHeaderFreshDesignMode = Shopify.designMode || false;
+if(myHeaderFreshDesignMode){
+  document.addEventListener('shopify:section:load',() => {                
+    var target =  document.getElementById('my_header_sticky_visible')[0];
 
-//     if(sticky.length > 0) {
-//       if(document.body.clientWidth < 1024) {
-//         main.style.marginBottom = 0;
-//         my_footer_sticky.style.opacity = 1;
-//         my_footer_sticky.style.zIndex = 1;
-//         my_footer_sticky.style.marginBottom = 0;
-//         footer_bottom.style.position = 'static';
-//       }
-//       else if(document.body.clientWidth >= 1024) {
-//         let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
-//         let jq_footer_top_height = $('.footer.color-.gradient.my_footer_sticky').height();
-//         let jq_footer_bottom_height = $('.footer.color-.gradient.my_footer_bottom_color').height();
-//         let jq_main_margin_bottom = parseInt(jq_footer_top_height+jq_footer_bottom_height);
+    // 创建观察者对象
+
+//     var observer = new MutationObserver(function(){
+    var observer = new MutationObserver(my_home_debounce(function () {
+      my_header_and_totop();
+ 	  console.log("header listen");
+    }, 500));
+
+    // 配置观察选项:
+    var config = { attributes: true, childList: true, characterData: true ,subtree : true };
+    // 传入目标节点和观察选项
+    observer.observe(target, config); 
+    // 随后,你还可以停止观察
+    //     observer.disconnect();
+  },true);
+}
+
+
+var myHomeFreshDesignMode = Shopify.designMode || false;
+if(myHomeFreshDesignMode){
+  document.addEventListener('shopify:section:load',() => {                
+    let promo_bar = document.getElementById('shopify-section-promo-bar');
+    let top_bar = document.getElementById('shopify-section-top-bar');
+    let header_zx = document.getElementById('shopify-section-header');
+    let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
+    let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
+    let main = document.getElementById('MainContent');
+    let sticky = document.getElementsByClassName('my_footer_sticky');
+
+    if(sticky.length > 0) {
+      if(document.body.clientWidth < 1024) {
+        main.style.marginBottom = 0;
+        my_footer_sticky.style.opacity = 1;
+        my_footer_sticky.style.zIndex = 1;
+        my_footer_sticky.style.marginBottom = 0;
+        footer_bottom.style.position = 'static';
+      }
+      else if(document.body.clientWidth >= 1024) {
+        let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+        let jq_footer_top_height = $('.footer.color-.gradient.my_footer_sticky').height();
+        let jq_footer_bottom_height = $('.footer.color-.gradient.my_footer_bottom_color').height();
+        let jq_main_margin_bottom = parseInt(jq_footer_top_height+jq_footer_bottom_height);
         
-//         promo_bar.style.zIndex = 898;
-//         top_bar.style.zIndex = 899;
-//         header_zx.style.zIndex = 898;
+        promo_bar.style.zIndex = 898;
+        top_bar.style.zIndex = 899;
+        header_zx.style.zIndex = 898;
         
-//         main.style.zIndex = 897;
-//         main.style.marginBottom = jq_main_margin_bottom + "px";
-//         my_footer_sticky.style.marginBottom = jq_footer_bottom_height + "px";
-//         my_footer_sticky.style.opacity = 1;
-//         my_footer_sticky.style.zIndex = 1;
-// ;
-//         footer_bottom.style.position = 'fixed';
-//         footer_bottom.style.bottom = 0;
-//         footer_bottom.style.width = '100%';    
-//       }
-//     }
-//     else {
-//       main.style.marginBottom = 0;
-//       footer_bottom.style.position = 'static';
-//     }
-//   },true);
-// }
+        main.style.zIndex = 897;
+        main.style.marginBottom = jq_main_margin_bottom + "px";
+        my_footer_sticky.style.marginBottom = jq_footer_bottom_height + "px";
+        my_footer_sticky.style.opacity = 1;
+        my_footer_sticky.style.zIndex = 1;
+;
+        footer_bottom.style.position = 'fixed';
+        footer_bottom.style.bottom = 0;
+        footer_bottom.style.width = '100%';    
+      }
+    }
+    else {
+      main.style.marginBottom = 0;
+      footer_bottom.style.position = 'static';
+    }
+  },true);
+}
