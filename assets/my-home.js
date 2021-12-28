@@ -95,7 +95,7 @@ let main = document.getElementById('MainContent');
 let sticky = document.getElementsByClassName('my_footer_sticky');
 
 // header fixed layout 
-let all_header_height = promo_bar.scrollHeight + top_bar.scrollHeight + header_zx.scrollHeight;
+let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
 let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
 let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
 let header = document.getElementsByClassName('header')[0];
