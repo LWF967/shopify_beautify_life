@@ -516,6 +516,53 @@
         "testimonials_margin_top": "",
         "testimonials_margin_bottom": ""
       }
+    },
+    "16406551188589ed71": {
+      "type": "Text-columns-with-images",
+      "blocks": {
+        "16406551186ea8e2b9-0": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        },
+        "16406551186ea8e2b9-1": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        },
+        "16406551186ea8e2b9-2": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16406551186ea8e2b9-0",
+        "16406551186ea8e2b9-1",
+        "16406551186ea8e2b9-2"
+      ],
+      "settings": {
+        "Text_columns_with_images_heading": "Text column with images",
+        "Text_columns_with_images_Text_alignment": "Left",
+        "text_columns_with_images_margin_top": "",
+        "text_columns_with_images_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -530,6 +577,7 @@
     "16406017350d444248",
     "1640602268ae7be648",
     "1640602975ed57d384",
-    "1640655072cf7c1918"
+    "1640655072cf7c1918",
+    "16406551188589ed71"
   ]
 }
