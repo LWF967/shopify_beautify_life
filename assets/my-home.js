@@ -163,6 +163,7 @@ function my_header_and_totop() {
     });
   document.addEventListener('shopify:section:load',() => {  
     $(window).scroll(() => {
+      console.log("刷新scroll");
       header_scroll();
     });
   },true);
