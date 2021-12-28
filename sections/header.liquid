@@ -365,7 +365,7 @@
                      {% endif %}
                    {% elsif section.settings.logo_aligment == 'centered' %} 
                      {% if image_height_center > my_header_height  %}height: {{image_height_center}}px; font-size:11px;
-                     {% else %} height: auto; font-size:11px;
+                     {% else %} height: {{my_header_height}} px; font-size:11px;
                      {% endif %}
                    {% endif %}
                  {% endif %}">
