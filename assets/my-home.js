@@ -84,7 +84,7 @@ if(myFooterbottomFreshDesignMode){
   },true);
 }
 
-let promo_bar = document.getElementById('shopify-section-promo-bar');
+let promo_bar = document.getElementById('hide_banner');
 let top_bar = document.getElementById('shopify-section-top-bar');
 let header_zx = document.getElementById('shopify-section-header');
 //   let footer_top = document.getElementById('shopify-section-footer-top');
