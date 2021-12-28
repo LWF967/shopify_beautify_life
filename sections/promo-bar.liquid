@@ -195,39 +195,7 @@
 //           mutations.forEach(function(mutation){
 //             console.log(mutation.type);
 //           });
-          let close = document.getElementsByClassName('show_close')[0];
-          let my_center = document.getElementsByClassName('my_center')[0];
-          let hide_banner = document.getElementById('hide_banner');  
-          let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-          let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
-          close.onclick = function () {
-            if(hide_banner_height > hide_banner.dataset.mheight) {
-              hide_banner.dataset.mheight = hide_banner_height;
-            }
-            hide_banner.style.marginTop = -hide_banner_height + 'px';
-            hide_banner.style.transition = "all .5s";
-          }
-
-          if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
-            close.onclick = function () {
-              if(hide_banner_height > hide_banner.dataset.mheight) {
-                hide_banner.dataset.mheight = hide_banner_height;
-              }
-              hide_banner.style.marginTop = -hide_banner_height + 'px';
-              hide_banner.style.transition = "all .5s";
-            }
-          }
-          hide_banner.dataset.mheight = hide_banner_height + 1;
-//           hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-                    hide_banner.style.marginTop = -hide_banner_height + 'px';
-
-
-          //     console.log("刷新机制");
-
-          setTimeout(function() {
-            hide_banner.style.marginTop = 0 + 'px';
-            hide_banner.style.transition = "all .5s";
-          }, 500);
+          		promo_bar_change();
 
         });
 
