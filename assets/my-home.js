@@ -146,6 +146,8 @@ function my_header_and_totop() {
         content.style.top = 0 + 'px';
         content.style.transform = 'none';
         content.style.transition = 'none';
+        console.log("top"+content.style.top);
+        console.log("position"+content.style.position);
       }
     }
 
@@ -198,6 +200,8 @@ function my_header_and_totop() {
             content.style.top = 0 + 'px';
             content.style.transform = 'none';
             content.style.transition = 'none';
+            console.log("top"+content.style.top);
+            console.log("position"+content.style.position);
           }
         }
 
