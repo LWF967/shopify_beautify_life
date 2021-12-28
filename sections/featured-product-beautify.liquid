@@ -308,7 +308,7 @@
           </style>
         {% render 'swiper-featured-product', section:section, product:product %}
         {%- elsif media_count > 1 -%}
-        <div class="page-width">
+       
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul my_featured_product_beautify_noswiper" role="list" style="display:flex;">
             {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
             {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -325,7 +325,7 @@
             {%- endunless -%}
             {%- endfor -%}
           </ul>
-        </div>
+
         {%- endif -%}
 
         {%- if first_3d_model -%}
