@@ -223,6 +223,26 @@
     line-height: 1.1;
   }
   
+/*   .my_cart_count_bubble {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: {{ settings.header_count_color }};
+    text-align: center;
+    line-height: 15px;
+    border-radius: 100%;
+    font-size: 9px;
+    bottom: 20px;
+    left: 10px;
+  }
+  {%- if cart.item_count < 100 -%}
+    .my_cart_count_bubble::after {
+      content: "{{ cart.item_count }}";
+      display: inline-block;
+      color: {{ settings.header_count_text_color }};
+    }            
+  {%- endif -%} */
+  
   .my_header_drawer_li_style li {
     border-bottom: 1px solid rgba(0,0,0,.1);
   }
@@ -295,7 +315,7 @@
 .my_header_background_opacity .motion-reduce{background: {%- if settings.color_scheme=="gradient"-%}{{settings.color_page_background  | color_modify: 'alpha', my_header_background_opacity }}{%-else-%}{{ settings.header_background_color | color_modify: 'alpha', my_header_background_opacity }};{%-endif-%}border-color:{{settings.header_icon_and_text_color|color_modify: 'alpha', 0.35}} ;color:{{settings.header_icon_and_text_color}}}
 .my_header_background_opacity .my_header_icons_margin .my_header_search_for .icon-arrow{color:{{settings.colors_heading_warn_text}}}
 
-.my_header_icon_text_color, .my_header_icons_margin .my_cart ,.my_header_icon_text_color .header__submenu.list-menu.list-menu--disclosure.caption-large.motion-reduce.my_header_menu{ color: {{ settings.header_icon_and_text_color }} !important; }
+.my_header_icon_text_color,  .my_header_icons_margin .my_cart ,.my_header_icon_text_color .header__submenu.list-menu.list-menu--disclosure.caption-large.motion-reduce.my_header_menu{ color: {{ settings.header_icon_and_text_color }} !important; }
 .my_header_sticky_settings,.my_header_sticky_settings .header__submenu.list-menu.list-menu--disclosure.caption-large.motion-reduce.my_header_menu,.my_header_sticky_settings .modal__content { background: {%- if settings.color_schemes=="gradients"-%}{{settings.color_page_background  | color_modify: 'alpha', my_header_sticky_background_opacity }}{%-else-%}{{ settings.header_sticky_background_color | color_modify: 'alpha', my_header_sticky_background_opacity }};{%-endif-%} }
 .my_header_sticky_settings .icon.icon-hamburger,.my_header_sticky_settings .my_header_icon_text_color,.my_header_sticky_settings .my_header_icons_margin .my_cart,.my_header_sticky_settings .header__submenu.list-menu.list-menu--disclosure.caption-large.motion-reduce.my_header_menu { color: {{ settings.header_sticky_icon_and_text_color }} !important; }
 
@@ -305,8 +325,8 @@
 .my_header_sticky_settings .field__input{color:{{ settings.header_sticky_icon_and_text_color }};box-shadow: 0 0 0 0.1rem {{settings.header_sticky_icon_and_text_color}}}
 .my_header_sticky_settings .field__input:hover{color:{{ settings.header_sticky_icon_and_text_color }};box-shadow: 0 0 0 0.2rem {{settings.header_sticky_icon_and_text_color}}}
 
-.my_header_sticky_settings .my_header_icons_margin  svg{color:{{ settings.header_sticky_icon_and_text_color }};}
-.my_header_sticky_settings .icon.icon-close{color:{{ settings.header_sticky_icon_and_text_color }}!important;}
+.my_header_sticky_settings  .my_header_icons_margin  svg{color:{{ settings.header_sticky_icon_and_text_color }};}
+.my_header_sticky_settings  .icon.icon-close{color:{{ settings.header_sticky_icon_and_text_color }}!important;}
 .my_header_sticky_settings .icon-hamburger,.my_header_sticky_settings .icon-close{color:{{ settings.header_sticky_icon_and_text_color }}}
 .my_header_sticky_settings .motion-reduce{background: {%- if settings.color_scheme=="gradients"-%}{{settings.color_page_background  | color_modify: 'alpha', my_header_sticky_background_opacity }}{%-else-%}{{ settings.header_sticky_background_color | color_modify: 'alpha', my_header_sticky_background_opacity }};{%-endif-%};border-color:{{settings.header_sticky_icon_and_text_color |color_modify: 'alpha', 0.35}}}
 .my_header_sticky_settings .motion-reduce .link--text {color:{{settings.header_sticky_icon_and_text_color}}}
@@ -328,33 +348,10 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}{% if settings.sticky_header %} my_header_sticky {% endif %}">
-<div id="my_header_sticky_visible" class="content my_header_background_color my_header_background_opacity" style="border-bottom: 1px solid {{settings.color_page_borders_and_lines}};">
-  <header data-svg-height="{{image_height}}" data-header-height="{{ section.settings.header_height }}"
-          class="header header--{{ section.settings.logo_position }} page-width 
-                 {% if section.settings.menu != blank %} header--has-menu {% endif %} my_header  
-                 {% if section.settings.logo_svg != blank %} my_auto_height 
-                 {% elsif section.settings.logo != blank %}
-                   {% if section.settings.logo_aligment == 'left' and my_img_height_left > my_header_height %} my_header_img_left 
-                   {% elsif section.settings.logo_aligment == 'centered' and my_img_height_centered > my_header_height %} my_auto_height 
-                   {% endif %}
-                 {% endif %}my_header_background_color my_header_background_opacity"
-          style="{% if settings.full_width == false %} max-width: 95%;{% endif %}
-                 {% if section.settings.logo_svg != blank %}
-                   {% if image_height > my_header_height %}
-                     {% if section.settings.logo_aligment == 'left' %} height: {{image_height}}px; 
-                     {% elsif section.settings.logo_aligment == 'centered' %}
-                        {% if image_height_center > my_header_height %}
-                           height: {{image_height_center}}px;
-                        {% else %}
-                           height: {{my_header_height}}px;
-                        {% endif %}
-                     {% endif %}
-                   {% else %} height: {{my_header_height}}px; 
-                   {% endif %}
-                 {% endif %}
-                 {% if section.settings.logo_svg == blank and section.settings.logo != blank %}
-                 	height: {{ section.settings.header_height }}px;
-                 {% endif %}">
+<div class="content my_header_background_color my_header_background_opacity" style="border-bottom: 1px solid {{settings.color_page_borders_and_lines}};">
+  <header data-svg-height="" data-header-height="{{ section.settings.header_height }}"
+          class="header header--{{ section.settings.logo_position }} page-width {% if section.settings.menu != blank %} header--has-menu {% endif %} my_header my_header_height {% if section.settings.logo_svg != blank %} my_auto_height {% elsif section.settings.logo != blank %}{% if section.settings.logo_aligment == 'left' and my_img_height_left > my_header_height %} my_header_img_left {% elsif section.settings.logo_aligment == 'centered' and my_img_height_centered > my_header_height %} my_auto_height {% endif %}{% endif %}my_header_background_color my_header_background_opacity"
+          style="{% if settings.full_width == false %} max-width: 95%;{% endif %}{% if section.settings.logo_svg != blank %}{% if image_height > my_header_height %}{% if section.settings.logo_aligment == 'left' %} height: {{image_height}}px; {% elsif section.settings.logo_aligment == 'centered' %} height: {{image_height_center}}px;{% endif %}{% else %} height: {{my_header_height}}px; {% endif %}{% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet" id="header_drawer">
         <details class="menu-drawer-container">
