@@ -128,21 +128,21 @@
 //   });
   
   
-//     var target =  document.getElementById('hide_banner');              
-//     // 创建观察者对象
+    var target =  document.getElementById('hide_banner');              
+    // 创建观察者对象
     
-//     var observer = new MutationObserver(function(mutations){
-//       console.log("进入promo观察");
-//       mutations.forEach(function(mutation){
-//         console.log(mutation.type);
-//       });
-//     });
+    var observer = new MutationObserver(function(mutations){
+      console.log("进入promo观察");
+      mutations.forEach(function(mutation){
+        console.log(mutation.type);
+      });
+    });
     
-//     // 配置观察选项:
-//     var config = { attributes: true, childList: true, characterData: true ,subtree : true };
-//     // 传入目标节点和观察选项
-//     observer.observe(target, config);
-    // 随后,你还可以停止观察
+    // 配置观察选项:
+    var config = { attributes: true, childList: true, characterData: true ,subtree : true };
+    // 传入目标节点和观察选项
+    observer.observe(target, config);
+    随后,你还可以停止观察
 //     observer.disconnect();
   
   function promo_bar_change() {
@@ -186,8 +186,6 @@
       document.addEventListener('shopify:section:load',() => {  
 //      注释后 自己不能刷新
 		promo_bar_change();
-      
-      
       },true);
     }
   }
