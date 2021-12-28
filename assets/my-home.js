@@ -84,9 +84,9 @@ if(myFooterbottomFreshDesignMode){
   },true);
 }
 
-let promo_bar = document.getElementById('hide_banner');
-let top_bar = document.getElementById('shopify-section-top-bar');
-let header_zx = document.getElementById('shopify-section-header');
+// let promo_bar = document.getElementById('hide_banner');
+// let top_bar = document.getElementById('shopify-section-top-bar');
+// let header_zx = document.getElementById('shopify-section-header');
 //   let footer_top = document.getElementById('shopify-section-footer-top');
 let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 //   let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
@@ -114,6 +114,10 @@ function my_header_and_totop() {
   gotoTop();
   //获取页面顶部的距离
   function header_scroll() {
+    let promo_bar = document.getElementById('hide_banner');
+let top_bar = document.getElementById('shopify-section-top-bar');
+let header_zx = document.getElementById('shopify-section-header');
+    
     let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
     let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
     let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
@@ -179,7 +183,9 @@ function my_header_and_totop() {
       console.log("刷新scroll");
 
 
-
+let promo_bar = document.getElementById('hide_banner');
+let top_bar = document.getElementById('shopify-section-top-bar');
+let header_zx = document.getElementById('shopify-section-header');
 
       let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
       let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
