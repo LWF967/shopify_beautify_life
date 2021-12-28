@@ -80,7 +80,7 @@
           {%- endcase -%}
         </div>
       </div>
-      <div class="swiper_pagination_blogs"></div>
+      <div class="swiper_pagination_blog"></div>
     </ul>
         {%- if posts_exceed_limit -%}
           <div class="slider-buttons no-js-hidden{% if section.settings.post_limit < 3 %} medium-hide{% endif %}{% if section.settings.post_limit < 2 %} small-hide{% endif %}">
@@ -133,7 +133,10 @@
           el: ".swiper_pagination_blogs",
           clickable: true,
       },
-     
+      navigation: {
+          nextEl: '.swiper-button-next.featured_product_beautify_nexts',
+          prevEl: '.swiper-button-prev.featured_product_beautify_prevs',
+      },
       breakpoints: {
         0: {  //当屏幕宽度大于等于0 
           slidesPerView: 1,
@@ -165,7 +168,10 @@
           el: ".swiper_pagination_blogs",
           clickable: true,
       },
-     
+      navigation: {
+          nextEl: '.swiper-button-next.featured_product_beautify_nexts',
+          prevEl: '.swiper-button-prev.featured_product_beautify_prevs',
+      },
       breakpoints: {
         0: {  //当屏幕宽度大于等于0 
           slidesPerView: 1,
