@@ -103,9 +103,9 @@ let content = document.getElementsByClassName('content')[0];
 let my_header_sticky = document.getElementsByClassName('my_header_sticky');
 let my_backtop = document.getElementById('my_backtop');
 
-console.log("promo_bar"+promo_bar.scrollHeight);
-console.log("top_bar"+top_bar.scrollHeight);
-console.log("header_zx"+header_zx.scrollHeight);
+console.log("promo_bar"+$(promo_bar).height());
+console.log("top_bar"+$(top_bar).height());
+console.log("header_zx"+$(header_zx).height());
 
 function my_header_and_totop() {
   // backtop 
