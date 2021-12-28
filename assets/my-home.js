@@ -113,7 +113,7 @@ function my_header_and_totop() {
   };
   gotoTop();
   //获取页面顶部的距离
-  $(window).scroll(function() {
+  function header_scroll() {
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
     if(my_header_sticky.length > 0) {
@@ -157,7 +157,8 @@ function my_header_and_totop() {
       my_backtop.style.visibility = 'hidden';
       my_backtop.style.cursor = "default";
     }
-  });
+  }
+  $(window).scroll(header_scroll());
 }
 
 function my_home() {
