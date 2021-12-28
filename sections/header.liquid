@@ -371,11 +371,11 @@
                  {% else %}
                    {% if section.settings.logo_aligment == 'left' %}
                      {% if my_img_height_left > my_header_height %}height: {{my_img_height_left}}px; font-size:10px;
-                     {% else %} height: {{my_header_height}} px; font-size:10px;
+                     {% else %} height: {{my_header_height}} px; font-size:11px;
                      {% endif %}
                    {% elsif section.settings.logo_aligment == 'centered' %} 
-                     {% if my_img_height_centered > my_header_height  %}height: {{my_img_height_centered}}px; font-size:11px;
-                     {% else %} height: {{my_header_height}} px; font-size:11px;
+                     {% if my_img_height_centered > my_header_height  %}height: {{my_img_height_centered}}px; font-size:12px;
+                     {% else %} height: {{my_header_height}} px; font-size:13px;
                      {% endif %}
                    {% endif %}
                  {% endif %}">
