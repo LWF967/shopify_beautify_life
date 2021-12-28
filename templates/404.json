@@ -294,7 +294,7 @@
         "show_title": true,
         "show_short_content": true,
         "show_date": true,
-        "show_author": false,
+        "show_author": true,
         "soft_background": false,
         "show_view_all": true,
         "blog_page_beautify_margin_top": "",
@@ -613,7 +613,7 @@
         "newsletter_input_color": "#797979",
         "newsletter_border_color": "#797979",
         "newsletter_button_color": "#000000",
-        "newsletter_button_text_color": "#FFFFFF",
+        "newsletter_button_text_color": "#ffffff",
         "newsletter_margin_top": "",
         "newsletter_margin_bottom": "12"
       }
