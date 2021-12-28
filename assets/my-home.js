@@ -159,8 +159,13 @@ function my_header_and_totop() {
     }
   }
   $(window).scroll(() => {
-    header_scroll();
-  });
+      header_scroll();
+    });
+  document.addEventListener('shopify:section:load',() => {  
+    $(window).scroll(() => {
+      header_scroll();
+    });
+  },true);
 }
 
 function my_home() {
