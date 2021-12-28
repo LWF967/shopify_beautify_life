@@ -121,7 +121,6 @@ function my_header_and_totop() {
   gotoTop();
   //获取页面顶部的距离
   window.onscroll = function () {
-    
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
     if(my_header_sticky.length > 0) {
@@ -169,8 +168,9 @@ function my_header_and_totop() {
       my_backtop.style.visibility = 'hidden';
       my_backtop.style.cursor = "default";
     }
-    
-    document.addEventListener('shopify:section:load',() => {
+  }
+  document.addEventListener('shopify:section:load',() => {
+    window.onscroll = function () {
       let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
       if(my_header_sticky.length > 0) {
@@ -182,7 +182,7 @@ function my_header_and_totop() {
           content.style.position = 'relative';
         }
         if(content.style.position == 'fixed') {
-                console.log("shuaxin进来fix");
+                console.log("进来fix");
 
           promo_bar.style.zIndex = 900;
           top_bar.style.zIndex = 901;
@@ -194,7 +194,7 @@ function my_header_and_totop() {
           content.style.top = "-" + (header_wrapper.style.height);
           content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
         } else if(content.style.position == 'relative') {
-                        console.log("shuaxin进来relative");
+                        console.log("进来relative");
 
           promo_bar.style.zIndex = 898;
           top_bar.style.zIndex = 899;
@@ -218,8 +218,8 @@ function my_header_and_totop() {
         my_backtop.style.visibility = 'hidden';
         my_backtop.style.cursor = "default";
       }
-    },true);
-  }
+    }
+  },true);
 }
 
 function my_home() {
