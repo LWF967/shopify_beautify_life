@@ -145,7 +145,7 @@ input, textarea {
 }
   
 .background-secondary {
-  background-color: var(--color-foreground);
+  background-color: transparent;
   padding: 4rem 0 5rem;
 }
 
