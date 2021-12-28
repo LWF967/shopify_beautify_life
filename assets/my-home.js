@@ -122,9 +122,9 @@ function my_header_and_totop() {
     let my_header_sticky = document.getElementsByClassName('my_header_sticky');
     let my_backtop = document.getElementById('my_backtop');
     
-    console.log($(promo_bar).height());
-    console.log($(top_bar).height());
-    console.log($(header_zx).height());
+    console.log("pro"+$(promo_bar).height());
+    console.log("top"+$(top_bar).height());
+    console.log("header"+$(header_zx).height());
 
     
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -177,6 +177,11 @@ function my_header_and_totop() {
   document.addEventListener('shopify:section:load',() => {  
     $(window).scroll(() => {
       console.log("刷新scroll");
+
+      console.log("sxpro"+$(promo_bar).height());
+      console.log("sxtop"+$(top_bar).height());
+      console.log("sxheader"+$(header_zx).height());
+
 
       let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
       let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
