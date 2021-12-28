@@ -158,9 +158,9 @@ function my_header_and_totop() {
       my_backtop.style.cursor = "default";
     }
   }
-//   $(window).scroll(() => {
-//       header_scroll();
-//     });
+  $(window).scroll(() => {
+      header_scroll();
+    });
   document.addEventListener('shopify:section:load',() => {  
     $(window).scroll(() => {
       console.log("刷新scroll");
