@@ -352,7 +352,7 @@
                    {% else %} height: {{my_header_height}}px; 
                    {% endif %}
                  {% endif %}
-                 {% if section.settings.logo != blank %}
+                 {% if section.settings.logo_svg == blank and section.settings.logo != blank %}
                  	height: {{ section.settings.header_height }}px;
                  {% endif %}">
     {%- if section.settings.menu != blank -%}
