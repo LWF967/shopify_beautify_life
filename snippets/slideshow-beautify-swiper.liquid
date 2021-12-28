@@ -962,7 +962,7 @@ var swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swipe
   {% endunless %}
 
 
-
+  preventClicks:false, 
   effect: 'fade',
   observer: true,
   observeParents: true,
@@ -1022,7 +1022,7 @@ document.addEventListener('shopify:section:load', () => {
     },
     {% endunless %}
 
-
+	preventClicks:false, 
 
     effect: 'fade',
     observer: true,
