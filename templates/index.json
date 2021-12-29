@@ -831,6 +831,7 @@
     },
     "1636093631994b741b": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "head_text": "The most exciting news",
