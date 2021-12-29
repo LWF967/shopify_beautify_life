@@ -17,7 +17,23 @@
   margin:5px 0 0 0 ;
   }
 </style>
-<div class="swiper my_swiper_blogs{{ section.id }}">
+
+{%- liquid
+      if section.settings.post_limit <= section.settings.blog.articles_count
+        assign posts_exceed_limit = true
+      endif
+    -%}
+    
+    
+   {%- liquid
+     if section.settings.show_view_all  and section.settings.post_limit <= section.settings.blog.articles_count
+     	assign blog_number =   section.settings.post_limit 
+     elsif section.settings.show_view_all =='false' and section.settings.post_limit <= section.settings.blog.articles_count
+     	assign blog_number = section.settings.blog.post_limit
+     else assign blog_number = section.settings.blog.articles_count
+     endif    -%} 
+
+		<div class="swiper my_swiper_blogs{{ section.id }}">
         <div class="swiper-wrapper">
           {%- case section.settings.show_view_all -%}
           {%- when true -%}
