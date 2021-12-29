@@ -30,7 +30,7 @@
      position: relative;
   }
  
-  .blog-swiper-pagination-page.swiper-pagination{
+  .blog-swiper-pagination-page.swiper-pagination{{ section.id }}{
     position: absolute;
     left: 0;
     bottom: -15px;
@@ -38,7 +38,7 @@
     align-items: center;
     justify-content: center;
   }
-  .my_blog_viewAll{
+  .my_blog_viewAll{{ section.id }}{
   margin:20px 0 0 0 ;
   }
 </style>
@@ -107,7 +107,7 @@
       
       </div>
        <!-- 如果需要分页器 -->
-      <div class="blog-swiper-pagination-page swiper-pagination"></div>
+      <div class="blog-swiper-pagination-page swiper-pagination{{ section.id }}"></div>
     </ul>
         </div>
        
@@ -146,7 +146,7 @@
       slidesPerView: 3,
       spaceBetween: 30,
       pagination: {
-          el: ".blog-swiper-pagination-page.swiper-pagination",
+          el: ".blog-swiper-pagination-page.swiper-pagination{{ section.id }}",
           clickable: true,
       },
       navigation: {
@@ -181,7 +181,7 @@
       slidesPerView: 3,
       spaceBetween: 30,
       pagination: {
-          el: ".blog-swiper-pagination-page.swiper-pagination",
+          el: ".blog-swiper-pagination-page.swiper-pagination{{ section.id }}",
           clickable: true,
       },
       navigation: {
