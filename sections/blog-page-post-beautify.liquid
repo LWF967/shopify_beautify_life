@@ -23,7 +23,7 @@
 
 <div class="blog{% if section.settings.blog_soft_background %} background-secondary{% endif %} {% if section.settings.heading == blank %} no-heading{% endif %}"
      style="{%- if section.settings.blog_page_beautify_margin_top != blank -%}margin-top: {{ section.settings.blog_page_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.blog_page_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.blog_page_beautify_margin_bottom }}px;{%- endif -%}{%-if section.settings.color_scheme =="soft_background"-%} background-color:{{section.settings.blog_soft_background}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%}">
-  <div class="page-width-desktop">
+  <div class="page-width">
     <div class="title-wrapper-with-link{% if section.settings.heading == blank %} title-wrapper-with-link--no-heading{% endif %} title-wrapper--self-padded-tablet-down">
       <h2 class="blog__title my_font_weight_default my_between_title_and_text_margin my_font_size_heading_default">{{ section.settings.heading | escape }}</h2>
       <p class="my_font_size_content_default " style="color:var(--font-sub-text-color);margin: 0 0"> {{section.settings.head_text |escape }}</p>
@@ -58,12 +58,9 @@
          <ul id="Slider-{{ section.id }}"
         class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--3-col-desktop{% if posts_exceed_limit %} 1 blog__posts--{{ section.settings.post_limit }}-items{% else %} 2 blog__posts--{{ section.settings.blog.articles_count }}-items{% endif %} my_featured_blog_ul"
         role="list"
-       
         >
        {% render 'blog-my-swiper-list', section:section %}
     </ul>
-        </div>
-       
 
       {%- if section.settings.show_view_all  -%}
     	{%- if section.settings.post_limit >3 -%}
