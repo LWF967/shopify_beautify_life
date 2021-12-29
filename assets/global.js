@@ -569,6 +569,7 @@ class SliderComponent extends HTMLElement {
 
 customElements.define('slider-component', SliderComponent);
 
+
 class VariantSelects extends HTMLElement {
   constructor() {
     super();

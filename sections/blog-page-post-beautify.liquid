@@ -26,9 +26,7 @@
    .blog-swiper-pagination-page.swiper-pagination{{ section.id }} .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background:#000;
   }
-  .blog__posts.articles-wrapper{
-     position: relative;
-  }
+
  
   .blog-swiper-pagination-page{
     position: absolute;
@@ -81,6 +79,7 @@
          <ul id="Slider-{{ section.id }}"
         class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--3-col-desktop{% if posts_exceed_limit %} 1 blog__posts--{{ section.settings.post_limit }}-items{% else %} 2 blog__posts--{{ section.settings.blog.articles_count }}-items{% endif %} my_featured_blog_ul"
         role="list"
+        style="position: relative;"
         >
       <div class="swiper my_swiper_blogs{{ section.id }}">
         <div class="swiper-wrapper">
