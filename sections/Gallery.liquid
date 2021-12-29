@@ -14,7 +14,7 @@
       {%- case block.type -%}
         {%- when 'image' -%}
 		
-              {% include 'image-grid-item-beautify', block: block %}
+              {% include 'image-grid-item-beautify', block: block ,section:section%}
 
          {%- endcase -%}
     {%- endfor -%}
