@@ -922,19 +922,6 @@
         "newsletter_margin_bottom": ""
       }
     },
-    "163816995034a6b1f9": {
-      "type": "map",
-      "settings": {
-        "heading": "Our store",
-        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
-        "map_address": "301 Front St W, Toronto",
-        "button_text": "Get directions",
-        "show_pin": true,
-        "background_image_position": "center center",
-        "map_margin_top": "",
-        "map_margin_bottom": ""
-      }
-    },
     "1636093631994b741b": {
       "type": "featured-blog",
       "settings": {
@@ -947,6 +934,25 @@
         "show_short_content": true,
         "show_date": true,
         "show_author": true,
+        "featured_blog_bk_color": "#1eec5e",
+        "color_scheme": "gradient",
+        "show_view_all": true,
+        "featured_blog_margin_top": "",
+        "featured_blog_margin_bottom": ""
+      }
+    },
+    "1640780945c68f9271": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "head_text": "The most exciting news",
+        "blog": "新闻",
+        "post_limit": 5,
+        "show_image": true,
+        "show_title": true,
+        "show_short_content": true,
+        "show_date": true,
+        "show_author": false,
         "featured_blog_bk_color": "#1eec5e",
         "color_scheme": "gradient",
         "show_view_all": true,
@@ -993,8 +999,8 @@
     "1635996418e080b5d8",
     "1638771575eb761fd8",
     "163817972763d6e808",
-    "163816995034a6b1f9",
     "1636093631994b741b",
+    "1640780945c68f9271",
     "16406626061a01c04f"
   ]
 }
