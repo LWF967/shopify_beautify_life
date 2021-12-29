@@ -10,7 +10,8 @@
     
       document.addEventListener(
         'shopify:section:load',
-        this._onSectionLoad.bind(this)
+        this._onSectionLoad.bind(this),
+        console.log('进来定义方法了');
       );
       document.addEventListener(
         'shopify:section:unload',
