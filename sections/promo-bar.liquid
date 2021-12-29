@@ -175,7 +175,7 @@
         var configsee = { attributes: true, childList: true, characterData: true ,subtree : true };
         // 传入目标节点和观察选项
         observersee.observe(targetsee, configsee); 
-
+        // 随后,你还可以停止观察
         observersee.disconnect();
       
       },true);
