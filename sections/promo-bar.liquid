@@ -154,39 +154,53 @@
     }, 500);
   }
     
-//   function refresh_promo() { 
-    var myPromoFreshDesignMode = Shopify.designMode || false;
-    if(myPromoFreshDesignMode){      
-      document.addEventListener('shopify:section:load',() => {  
-        // 注释后 自己不能刷新
-//         promo_bar_change();
-       
-        var targetsee =  document.getElementById('hide_banner');
-        // 创建观察者对象
-        var observersee = new MutationObserver(function(){
-          console.log("变化1");
-          promo_bar_change();
-
-        });
-
-        // 配置观察选项:
-        var configsee = { attributes: true, childList: true, characterData: true ,subtree : true };
-        // 传入目标节点和观察选项
-        observersee.observe(targetsee, configsee); 
-        // 随后,你还可以停止观察
-//         observersee.disconnect();
-      
-      },true);
+  /**
+ * 防抖函数，非立即执行
+ * @param {*} func 回调函数  必传
+ * @param {*} wait 等待时长 默认500ms 可不传
+ * arguments  是js存函数参数的地方
+ */
+function my_promo_debounce(func, wait = 500) {
+  let timeOut
+  return function () {
+    let content = this
+    let arg = arguments
+    if (timeOut) {
+      clearTimeout(timeOut)
     }
-    
-//     var myPromoFreshDesignMode = Shopify.designMode || false;
-//     if(myPromoFreshDesignMode){      
-//       document.addEventListener('shopify:section:load',() => {  
-// // 注释后 自己不能刷新
-//         promo_bar_change();
-//       },true);
-//     }
-//   }
+    timeOut = setTimeout(() => {
+      func.apply(content, arg)
+    }, wait)
+  }
+}
+  
+  
+  
+//   function refresh_promo() { 
+  var myPromoFreshDesignMode = Shopify.designMode || false;
+  if(myPromoFreshDesignMode){      
+    document.addEventListener('shopify:section:load',() => {  
+                              // 注释后 自己不能刷新
+                              //         promo_bar_change();
+
+    var targetsee =  document.getElementById('hide_banner');
+    // 创建观察者对象
+    var observersee = new MutationObserver(my_promo_debounce(function(){
+      console.log("变化1");
+      promo_bar_change();
+
+    }, 500));
+
+    // 配置观察选项:
+    var configsee = { attributes: true, childList: true, characterData: true ,subtree : true };
+    // 传入目标节点和观察选项
+    observersee.observe(targetsee, configsee); 
+    // 随后,你还可以停止观察
+    //         observersee.disconnect();
+
+  },true);
+  }
+ 
   
   function promo_bar_fun() { 
 //     refresh_promo();
