@@ -26,7 +26,8 @@
     "colors_sale_price": "#e667d3",
     "colors_page_heading": "#117946",
     "colors_primary_buttons": "#ce6023",
-    "color_image_overlay_text": "#fff",
+    "colors_Primary_labels": "#e92a2a",
+    "color_image_overlay_text": "#e72121",
     "color_image_overlay": "#534b52",
     "image_overlay_opacity": 10,
     "color_page_borders_and_lines": "#ff0000",
@@ -132,7 +133,7 @@
       "main-password-footer": {
         "type": "main-password-footer",
         "settings": {
-          "password_footer_bk_color": "#fff",
+          "password_footer_bk_color": "#ffffff",
           "color_scheme": "password_footer_bk_color"
         }
       },
