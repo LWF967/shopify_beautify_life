@@ -205,7 +205,7 @@
   </div>
 
 
-<script type="module">
+<script >
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
   var swiper = new Swiper(".my_swiper_blog", {
@@ -231,45 +231,34 @@
       }
   });
   
-  
-  
-     var designMode = Shopify.designMode || false;
-   if(designMode){
-   
-   document.addEventListener('shopify:section:load',()=>{  
-   
-	
- var swiper = new Swiper(".my_swiper_blog", {
-      //slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-          el: ".swiper_pagination_blog",
-          clickable: true,
-      },
-      breakpoints: {
-        0: {  //当屏幕宽度大于等于0 
-          slidesPerView: 1,
-          spaceBetween: 15,
-        },
-        750: {  //当屏幕宽度大于等于750 
-          slidesPerView: 2,
-          spaceBetween: 15,
-        },
-        990: {  //当屏幕宽度大于等于990
-          slidesPerView: 3,
-          spaceBetween: 30,
-		}
-      }
+  var designMode = Shopify.designMode || false;
+  if(designMode){
+    document.addEventListener('shopify:section:load',() => {  
+     var swiper = new Swiper(".my_swiper_blog", {
+          //slidesPerView: 3,
+       spaceBetween: 30,
+       pagination: {
+           el: ".swiper_pagination_blog",
+       	   clickable: true,
+          },
+          breakpoints: {
+            0: {  //当屏幕宽度大于等于0 
+              slidesPerView: 1,
+              spaceBetween: 15,
+            },
+            750: {  //当屏幕宽度大于等于750 
+              slidesPerView: 2,
+              spaceBetween: 15,
+            },
+            990: {  //当屏幕宽度大于等于990
+              slidesPerView: 3,
+              spaceBetween: 30,
+            }
+          }
   });
-  
-    
-     
-	},true);
-  
 
+	},true);
  }
-  
-  
 </script>
 
 {% schema %}
