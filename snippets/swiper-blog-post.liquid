@@ -85,17 +85,17 @@
 
     {%- endcase -%}
   </div>
-  <div class="swiper_pagination_blog_{{section.id}}"></div>
+  <div class="swiper_pagination_blog"></div>
 </div>
 
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
-  var swiper = new Swiper(".my_swiper_blog", {
+  var swiper = new Swiper(".my_swiper_blog_{{section.id}}", {
       //slidesPerView: 3,
       spaceBetween: 30,
       pagination: {
-          el: ".swiper_pagination_blog_{{section.id}}",
+          el: ".swiper_pagination_blog",
           clickable: true,
       },
       breakpoints: {
@@ -121,7 +121,7 @@
        //slidesPerView: 3,
        spaceBetween: 30,
        pagination: {
-           el: ".swiper_pagination_blog_{{section.id}}",
+           el: ".swiper_pagination_blog",
        	   clickable: true,
           },
           breakpoints: {
