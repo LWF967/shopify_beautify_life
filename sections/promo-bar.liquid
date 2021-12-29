@@ -160,10 +160,12 @@
       document.addEventListener('shopify:section:load',() => {  
 // 注释后 自己不能刷新
         let aaaa = 1;
-        if(aaaa != 1) {
+        if(aaaa == 1) {
           promo_bar_change();
+          aaaa = 2;
         } else {
-          console.log(1);
+          aaaa = 1;
+          console.log(123);
         }
       },true);
     }
