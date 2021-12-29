@@ -154,8 +154,7 @@
     }, 500);
   }
     
-  function refresh_promo() {
-    
+  function refresh_promo() { 
     var myPromoFreshDesignMode = Shopify.designMode || false;
     if(myPromoFreshDesignMode){      
       document.addEventListener('shopify:section:load',() => {  
@@ -163,10 +162,10 @@
 //         promo_bar_change();
        
         var targetsee =  document.getElementById('hide_banner');
-
+          console.log("变化");
         // 创建观察者对象
         var observersee = new MutationObserver(function(){
-          console.log("变化");
+          console.log("变化1");
           promo_bar_change();
 
         });
@@ -180,16 +179,6 @@
       
       },true);
     }
-
-
-    
-    
-    
-    
-    
-
-    
-    
     
 //     var myPromoFreshDesignMode = Shopify.designMode || false;
 //     if(myPromoFreshDesignMode){      
