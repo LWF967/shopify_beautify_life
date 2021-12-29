@@ -151,13 +151,13 @@
 
 
         
-document.addEventListener('DOMContentLoaded', function() {
-  var sections = new theme.Sections();
+// document.addEventListener('DOMContentLoaded', function() {
+//   var sections = new theme.Sections();
 
-  sections.register('slideshow-section');
-
- 
- 
+//   sections.register('slideshow-section');
 
  
-});
+ 
+
+ 
+// });
