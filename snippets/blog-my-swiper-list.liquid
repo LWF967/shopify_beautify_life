@@ -1,10 +1,10 @@
 <style>
  .page-width-desktop .title-wrapper-with-link{align-items:center}
-   .blog-swiper-pagination-page.swiper-pagination{{ section.id }} .swiper-pagination-bullet {
+   .blog-swiper-pagination-page.swiper-pagination_{{ section.id }} .swiper-pagination-bullet {
     transition: all 1.5s;
     border: 1.5px solid #000;
 }
-   .blog-swiper-pagination-page.swiper-pagination{{ section.id }} .swiper-pagination-bullet.swiper-pagination-bullet-active {
+   .blog-swiper-pagination-page.swiper-pagination_{{ section.id }} .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background:#000;
   }
 
@@ -33,7 +33,7 @@
      else assign blog_number = section.settings.blog.articles_count
      endif    -%} 
 
-		<div class="swiper my_swiper_blogs{{ section.id }}">
+		<div class="swiper my_swiper_blogs_{{ section.id }}">
         <div class="swiper-wrapper">
           {%- case section.settings.show_view_all -%}
           {%- when true -%}
@@ -59,7 +59,7 @@
       
       </div>
        <!-- 如果需要分页器 -->
-      <div class="blog-swiper-pagination-page swiper-pagination{{ section.id }}" style="
+      <div class="blog-swiper-pagination-page swiper-pagination_{{ section.id }}" style="
     display: flex;
     align-items: center;
     justify-content: center;"></div>
@@ -67,11 +67,11 @@
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
-  var swiper = new Swiper(".my_swiper_blogs{{ section.id }}", {
+  var swiper = new Swiper(".my_swiper_blogs_{{ section.id }}", {
       slidesPerView: 3,
       spaceBetween: 30,
       pagination: {
-          el: ".blog-swiper-pagination-page.swiper-pagination{{ section.id }}",
+          el: ".blog-swiper-pagination-page.swiper-pagination_{{ section.id }}",
           clickable: true,
       },
       navigation: {
@@ -102,11 +102,11 @@
    document.addEventListener('shopify:section:load',()=>{  
    
 	
- var swiper = new Swiper(".my_swiper_blogs{{ section.id }}", {
+ var swiper = new Swiper(".my_swiper_blogs_{{ section.id }}", {
       slidesPerView: 3,
       spaceBetween: 30,
       pagination: {
-          el: ".blog-swiper-pagination-page.swiper-pagination{{ section.id }}",
+          el: ".blog-swiper-pagination-page.swiper-pagination_{{ section.id }}",
           clickable: true,
       },
       navigation: {
