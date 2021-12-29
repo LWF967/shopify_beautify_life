@@ -231,7 +231,7 @@
     var Days = cookietime;
     var exp = new Date(); 
     exp.setTime(exp.getTime() + Days*24*60*60*1000);
-    console.log(exp.setTime(exp.getTime() + Days*24*60*60*1000));
+    console.log(exp.getTime());
     document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
   }
   // 获取cookie
