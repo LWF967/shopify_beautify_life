@@ -831,6 +831,7 @@
     },
     "1636093631994b741b": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "head_text": "The most exciting news",
@@ -870,7 +871,6 @@
     },
     "164077229256487888": {
       "type": "blog-page-post-beautify",
-      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "head_text": "The most exciting news",
