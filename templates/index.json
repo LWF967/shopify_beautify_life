@@ -659,7 +659,7 @@
       ],
       "settings": {
         "title": "testimonials",
-        "swipe": false,
+        "swipe": true,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
         "image_width": "full",
