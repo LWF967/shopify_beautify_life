@@ -875,7 +875,7 @@
         "head_text": "The most exciting news",
         "image_ratio1": "ratio2_1",
         "blog": "新闻",
-        "post_limit": 3,
+        "post_limit": 7,
         "show_image": true,
         "show_title": true,
         "show_short_content": true,
