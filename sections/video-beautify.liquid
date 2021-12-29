@@ -1,6 +1,9 @@
 {{ 'video-section.css' | asset_url | stylesheet_tag }}
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
+
+
+
 <div class="video-section{% unless section.settings.full_width %} page-width{% endunless %}"
      style="{%- if section.settings.video_beautify_margin_top != blank -%}margin-top: {{ section.settings.video_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.video_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.video_beautify_margin_bottom }}px;{%- endif -%}">
   <noscript>
