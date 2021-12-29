@@ -1,4 +1,4 @@
-<div class="swiper my_swiper_testimonials_{{section.id}}">
+<div class="swiper my_swiper_testimonials my_swiper_testimonials_{{section.id}}">
   <div class="swiper-wrapper">
     {%- liquid
           assign highest_ratio = 0
@@ -60,18 +60,18 @@
   </div>
 </div>
 {% if section.blocks.size > 3 and section.settings.swipe %}
-<div class="swiper_pagination_testimonials_{{section.id}}"></div>
+<div class="swiper_pagination_testimonials swiper_pagination_testimonials_{{section.id}}"></div>
 {% endif %}
 
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
-  var swiper = new Swiper(".my_swiper_testimonials_{{section.id}}", {
+  var swiper = new Swiper(".my_swiper_testimonials.my_swiper_testimonials_{{section.id}}", {
       slidesPerView: 3,
       spaceBetween: 30,
       allowTouchMove: true,
       pagination: {
-          el: ".swiper_pagination_testimonials_{{section.id}}",
+          el: ".swiper_pagination_testimonials.swiper_pagination_testimonials_{{section.id}}",
           clickable: true,
       },
       breakpoints: {
@@ -94,12 +94,12 @@
    if(designMode){
    
    document.addEventListener('shopify:section:load',()=>{  
-     var swiper = new Swiper(".my_swiper_testimonials_{{section.id}}", {
+     var swiper = new Swiper(".my_swiper_testimonials.my_swiper_testimonials_{{section.id}}", {
         slidesPerView: 3,
         spaceBetween: 30,
         allowTouchMove: true,
         pagination: {
-            el: ".swiper_pagination_testimonials_{{section.id}}",
+            el: ".swiper_pagination_testimonials.swiper_pagination_testimonials_{{section.id}}",
             clickable: true,
         },
         breakpoints: {
