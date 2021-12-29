@@ -100,6 +100,30 @@
 
 
 <style>
+  
+  {%- case section.settings.video_height -%}
+      {%- when 'small' -%}
+          .video-section__media {
+              position: relative;
+              padding-bottom: 47.5%;
+          }
+
+      {%- when 'medium' -%}
+          .video-section__media {
+              position: relative;
+              padding-bottom: 56.25%;
+          }
+
+      {%- when 'large' -%}
+          .video-section__media {
+              position: relative;
+              padding-bottom: 79.5%;
+          }
+
+  {%- endcase -%}
+
+  
+  
   .video__overlay{
     display: block !important;
   }
