@@ -162,21 +162,21 @@
         // 注释后 自己不能刷新
 //         promo_bar_change();
        
-        var target =  document.getElementById('hide_banner');
+        var targetsee =  document.getElementById('hide_banner');
 
         // 创建观察者对象
-        var observer = new MutationObserver(function(){
+        var observersee = new MutationObserver(function(){
           console.log("变化");
           promo_bar_change();
 
         });
 
         // 配置观察选项:
-        var config = { attributes: true, childList: true, characterData: true ,subtree : true };
+        var configsee = { attributes: true, childList: true, characterData: true ,subtree : true };
         // 传入目标节点和观察选项
-        observer.observe(target, config); 
+        observersee.observe(targetsee, configsee); 
 
-        observer.disconnect();
+        observersee.disconnect();
       
       },true);
     }
