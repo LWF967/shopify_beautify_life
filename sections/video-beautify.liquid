@@ -2,13 +2,10 @@
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 
 
-
-
 <div class="video-section{% unless section.settings.full_width %} page-width{% endunless %}"
      style="{%- if section.settings.video_beautify_margin_top != blank -%}margin-top: {{ section.settings.video_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.video_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.video_beautify_margin_bottom }}px;{%- endif -%}">
   <noscript>
     <div class="video-section__media"
-      {% if section.settings.cover_image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
     >
       <a href="{{ section.settings.video_url }}" class="video-section__poster media media--transparent media--landscape{% if section.settings.cover_image == blank %} video-section__placeholder{% endif %}">
         {%- if section.settings.cover_image != blank and  section.settings.show_overlay == true -%}
