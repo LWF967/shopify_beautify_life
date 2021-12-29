@@ -147,4 +147,27 @@
     });
     
     window.slate = window.slate || {};
+
+
+
         
+document.addEventListener('DOMContentLoaded', function() {
+  var sections = new theme.Sections();
+
+  sections.register('slideshow-section');
+
+ 
+  // When the theme loads, lazysizes might load images before the "lazyloaded"
+  // event listener has been attached. When this happens, the following function
+  // hides the loading placeholders.
+  function onLoadHideLazysizesAnimation() {
+    var alreadyLazyloaded = document.querySelectorAll('.lazyloaded');
+    alreadyLazyloaded.forEach(function(image) {
+      removeImageLoadingAnimation(image);
+    });
+  }
+
+  onLoadHideLazysizesAnimation();
+
+ 
+});
