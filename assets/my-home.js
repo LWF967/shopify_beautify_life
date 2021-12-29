@@ -37,7 +37,7 @@ if(myFooterbottomFreshDesignMode){
     // 创建观察者对象
 
 //     var observer = new MutationObserver(function(){
-    var observer = new MutationObserver(my_home_debounce(function () {
+    var observer = new MutationObserver(my_home_debounce(function (mutations) {
             mutations.forEach(function(mutation){
 
               console.log(mutation.type);
