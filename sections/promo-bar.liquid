@@ -154,28 +154,6 @@
     }, 500);
   }
     
-  /**
- * 防抖函数，非立即执行
- * @param {*} func 回调函数  必传
- * @param {*} wait 等待时长 默认500ms 可不传
- * arguments  是js存函数参数的地方
- */
-function my_promo_debounce(func, wait = 500) {
-  let timeOut
-  return function () {
-    let content = this
-    let arg = arguments
-    if (timeOut) {
-      clearTimeout(timeOut)
-    }
-    timeOut = setTimeout(() => {
-      func.apply(content, arg)
-    }, wait)
-  }
-}
-  
-  
-  
 //   function refresh_promo() { 
   var myPromoFreshDesignMode = Shopify.designMode || false;
   if(myPromoFreshDesignMode){      
@@ -185,11 +163,11 @@ function my_promo_debounce(func, wait = 500) {
 
     var targetsee =  document.getElementById('hide_banner');
     // 创建观察者对象
-    var observersee = new MutationObserver(my_promo_debounce(function(){
+    var observersee = new MutationObserver(function(){
       console.log("变化1");
       promo_bar_change();
 
-    }, 500));
+    });
 
     // 配置观察选项:
     var configsee = { attributes: true, childList: true, characterData: true ,subtree : true };
