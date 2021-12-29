@@ -30,16 +30,16 @@
     object-fit: cover;
   }
 
-  .swiper_pagination_blog {
+  .swiper_pagination_blog.swiper_pagination_blog_{{section.id}} {
     display: flex;
     justify-content: center;
   }
 
-  .swiper_pagination_blog .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  .swiper_pagination_blog.swiper_pagination_blog_{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #000;
   }
 
-  .swiper_pagination_blog .swiper-pagination-bullet {
+  .swiper_pagination_blog.swiper_pagination_blog_{{section.id}} .swiper-pagination-bullet {
     transition: all 1.5s;
     border: 1.5px solid #000;
   }
