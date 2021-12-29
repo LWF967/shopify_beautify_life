@@ -55,6 +55,7 @@
       },
     
       _onSectionLoad: function(evt) {
+        console.log('进来section了',evt)
         var container = document.querySelector(
           '[data-section-id="' + evt.detail.sectionId + '"]'
         );
