@@ -123,7 +123,7 @@
         id="Slider-{{ section.id }}"
         role="list"
       >
-        <!--         style="flex-wrap: nowrap;transition: all 1.5s ease 0s;" -->
+        {% comment %}
         <div class="swiper my_swiper_testimonials">
           <div class="swiper-wrapper">
         {%- liquid
@@ -149,7 +149,6 @@
                               margin:0 auto;
                               height: 100px;
                               border-radius: 50%;"
-                   
                     {% endif %}>
                     <img
                       srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | img_url: '275x' }} 275w,{%- endif -%}
@@ -189,6 +188,7 @@
         {% if section.blocks.size > 3 and section.settings.swipe %}
         <div class="swiper_pagination_testimonials"></div>
         {% endif %}
+        {% endcomment %}
       </ul>
 	
       {%-  if section.settings.swipe == true and  section.blocks.size > 3 -%}
@@ -292,48 +292,39 @@
       }
   });
   
-  
    var designMode = Shopify.designMode || false;
    if(designMode){
    
    document.addEventListener('shopify:section:load',()=>{  
-   
-	
-   var swiper = new Swiper(".my_swiper_testimonials", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      allowTouchMove: true,
-      pagination: {
-          el: ".swiper_pagination_testimonials",
-          clickable: true,
-      },
-      navigation: {
-          nextEl: '.swiper-button-next.featured_product_beautify_next',
-          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
-      },
-      breakpoints: {
-        0: {  //当屏幕宽度大于等于0 
-          slidesPerView: 1,
-          spaceBetween: 15,
+     var swiper = new Swiper(".my_swiper_testimonials", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        allowTouchMove: true,
+        pagination: {
+            el: ".swiper_pagination_testimonials",
+            clickable: true,
         },
-        750: {  //当屏幕宽度大于等于750 
-          slidesPerView: 3,
-          spaceBetween: 15,
+        navigation: {
+            nextEl: '.swiper-button-next.featured_product_beautify_next',
+            prevEl: '.swiper-button-prev.featured_product_beautify_prev',
         },
-        990: {  //当屏幕宽度大于等于990
-          slidesPerView: 3,
-          spaceBetween: 30,
-		}
-      }
-  });
-    
-     
+        breakpoints: {
+          0: {  //当屏幕宽度大于等于0 
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          750: {  //当屏幕宽度大于等于750 
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          990: {  //当屏幕宽度大于等于990
+            slidesPerView: 3,
+            spaceBetween: 30,
+          }
+        }
+      });
 	},true);
-  
-
  }
-  
-  
   
 </script>
 
