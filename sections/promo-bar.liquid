@@ -155,34 +155,34 @@
   }
     
 //   function refresh_promo() { 
-  var myPromoFreshDesignMode = Shopify.designMode || false;
-  if(myPromoFreshDesignMode){      
-    document.addEventListener('shopify:section:load',() => {  
-                              // 注释后 自己不能刷新
-                              //         promo_bar_change();
+//   var myPromoFreshDesignMode = Shopify.designMode || false;
+//   if(myPromoFreshDesignMode){      
+//     document.addEventListener('shopify:section:load',() => {  
+//                               // 注释后 自己不能刷新
+//                               //         promo_bar_change();
 
-      var target = document.getElementById('hide_banner');
-    console.log("shuaxin");
-      // 创建观察者对象
-      var observer = new MutationObserver(function(mutations){
+//       var target = document.getElementById('hide_banner');
+//     console.log("shuaxin");
+//       // 创建观察者对象
+//       var observer = new MutationObserver(function(mutations){
 
-        mutations.forEach(function(mutation){
+//         mutations.forEach(function(mutation){
 
-          console.log(mutation.type);
+//           console.log(mutation.type);
 
-        });
+//         });
 
-      });
+//       });
 
-      // 配置观察选项:
-      var config = { attributes: true, childList: true, characterData: true ,subtree : true, attributeFilter: ['height'] };
-      // 传入目标节点和观察选项
-      observer.observe(target, config); 
-      // 随后,你还可以停止观察
-//               observer.disconnect();
+//       // 配置观察选项:
+//       var config = { attributes: true, childList: true, characterData: true ,subtree : true, attributeFilter: ['height'] };
+//       // 传入目标节点和观察选项
+//       observer.observe(target, config); 
+//       // 随后,你还可以停止观察
+// //               observer.disconnect();
 
-    },true);
-  }
+//     },true);
+//   }
   
 //     var myPromoFreshDesignMode = Shopify.designMode || false;
 //   if(myPromoFreshDesignMode){      
@@ -194,7 +194,7 @@
 
 //     },true);
 //   }
- 
+//   }
   
   function promo_bar_fun() { 
 //     refresh_promo();
