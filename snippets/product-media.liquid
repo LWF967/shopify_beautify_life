@@ -28,7 +28,7 @@
     width="1100"
     height="{{ 1100 | divided_by: media.preview_image.aspect_ratio | ceil }}"
     data-media-id="{{ media.id }}"
-    {% if variant_image %}class="product__media-item--variant"{% endif %}
+    {% if variant_image %}class="product__media-item--variant"{%else%}class="aaa"{% endif %}
   >
 {%- else -%}
   {%- if media.media_type == 'model' -%}
