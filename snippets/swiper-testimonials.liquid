@@ -95,12 +95,12 @@
    if(designMode){
    
    document.addEventListener('shopify:section:load',()=>{  
-     var swiper = new Swiper(".my_swiper_testimonials", {
+     var swiper = new Swiper(".my_swiper_testimonials_{{section.id}}", {
         slidesPerView: 3,
         spaceBetween: 30,
         allowTouchMove: true,
         pagination: {
-            el: ".swiper_pagination_testimonials",
+            el: ".swiper_pagination_testimonials_{{section.id}}",
             clickable: true,
         },
         breakpoints: {
