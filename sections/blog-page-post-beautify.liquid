@@ -60,36 +60,7 @@
         role="list"
        
         >
-      <div class="swiper my_swiper_blogs{{ section.id }}">
-        <div class="swiper-wrapper">
-          {%- case section.settings.show_view_all -%}
-          {%- when true -%}
-
-          {%- for article in section.settings.blog.articles limit: blog_number -%}
-          <li class="blog__post grid__item article slider__slide slider__slide--full-width 1 swiper-slide" style="background:transparent;">
-            {% render 'article-card-beautify', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_title: section.settings.show_title,show_short_content: section.settings.show_short_content,show_date: section.settings.show_date, show_author: section.settings.show_author %}
-          </li>
-          {%- endfor -%}
-
-          {%- when false -%}
-
-
-          {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
-          <li class="blog__post grid__item article slider__slide slider__slide--full-width 2 swiper-slide" style="background:transparent;">
-            {% render 'article-card-beautify', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_title: section.settings.show_title,show_short_content: section.settings.show_short_content,show_date: section.settings.show_date, show_author: section.settings.show_author %}
-          </li>
-          {%- endfor -%}
-
-          {%- endcase -%}
-        </div>
-       
-      
-      </div>
-       <!-- 如果需要分页器 -->
-      <div class="blog-swiper-pagination-page swiper-pagination{{ section.id }}" style="
-    display: flex;
-    align-items: center;
-    justify-content: center;"></div>
+       {% render 'blog-my-swiper-list', section:section %}
     </ul>
         </div>
        
@@ -121,80 +92,6 @@
   </div>
 </div>
 
-<script type="module">
-  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
-  
-  var swiper = new Swiper(".my_swiper_blogs{{ section.id }}", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-          el: ".blog-swiper-pagination-page.swiper-pagination{{ section.id }}",
-          clickable: true,
-      },
-      navigation: {
-          nextEl: '.swiper-button-next.featured_product_beautify_nexts',
-          prevEl: '.swiper-button-prev.featured_product_beautify_prevs',
-      },
-      breakpoints: {
-        0: {  //当屏幕宽度大于等于0 
-          slidesPerView: 1,
-          spaceBetween: 15,
-        },
-        750: {  //当屏幕宽度大于等于750 
-          slidesPerView: 2,
-          spaceBetween: 15,
-        },
-        990: {  //当屏幕宽度大于等于990
-          slidesPerView: 3,
-          spaceBetween: 30,
-		}
-      }
-  });
-  
-  
-  
-     var designMode = Shopify.designMode || false;
-   if(designMode){
-   
-   document.addEventListener('shopify:section:load',()=>{  
-   
-	
- var swiper = new Swiper(".my_swiper_blogs{{ section.id }}", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-          el: ".blog-swiper-pagination-page.swiper-pagination{{ section.id }}",
-          clickable: true,
-      },
-      navigation: {
-          nextEl: '.swiper-button-next.featured_product_beautify_nexts',
-          prevEl: '.swiper-button-prev.featured_product_beautify_prevs',
-      },
-      breakpoints: {
-        0: {  //当屏幕宽度大于等于0 
-          slidesPerView: 1,
-          spaceBetween: 15,
-        },
-        750: {  //当屏幕宽度大于等于750 
-          slidesPerView: 2,
-          spaceBetween: 15,
-        },
-        990: {  //当屏幕宽度大于等于990
-          slidesPerView: 3,
-          spaceBetween: 30,
-		}
-      }
-  });
-  
-    
-     
-	},true);
-  
-
- }
-  
-  
-</script>
 
 
 {% schema %}
