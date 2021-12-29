@@ -931,7 +931,7 @@
  let swiperLoop = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.loop;	
 	(swiperLoop == "false") ? swiperLoop=false : swiperLoop=true;
 // console.log(swiperAutoPlay,'',swiperTime)
-
+ let slideshowbox = document.getElementById('shopify-section-{{section.id}}');
 
 
 console.log(swiperLoop,'dddd');
@@ -992,10 +992,10 @@ var swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swipe
   	{% endif %}
 
 document.addEventListener('shopify:section:load', () => {
-
-
- let  swiperAutoPlay = document.getElementsByClassName(' swiper-wrapper-{{section.id}}')[0].dataset.autoplay;
- let swiperTime = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.autotime;	 
+	console.log(this,'cccc');
+	if(slideshowbox){ }
+  let  swiperAutoPlay = document.getElementsByClassName(' swiper-wrapper-{{section.id}}')[0].dataset.autoplay;
+  let swiperTime = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.autotime;	 
   let swiperLoop = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.loop;	
 	(swiperLoop == "false") ? swiperLoop=false : swiperLoop=true;
 
