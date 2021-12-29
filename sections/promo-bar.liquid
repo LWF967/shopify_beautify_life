@@ -165,6 +165,11 @@
         document.addEventListener('shopify:section:load',() => {  
           // 注释后 自己不能刷新
           promo_bar_change();
+          $("#hide_banner").bind('DOMSubtreeModified', function() {  
+    if(target.hasAttribute('data-mheight') == true) {
+      console.log("listen");
+    }
+  });
         },true);
       }
     });
@@ -182,11 +187,7 @@
     
     
     
-  $("#hide_banner").bind('DOMSubtreeModified', function() {  
-    if(target.hasAttribute('data-mheight') == true) {
-      console.log("listen");
-    }
-  });
+
     
     
     
