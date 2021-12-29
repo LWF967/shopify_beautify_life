@@ -85,6 +85,8 @@
 
     {%- endcase -%}
   </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
   <div class="swiper_pagination_blog"></div>
 </div>
 
@@ -97,6 +99,10 @@
       pagination: {
           el: ".swiper_pagination_blog",
           clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
       breakpoints: {
         0: {  //当屏幕宽度大于等于0 
