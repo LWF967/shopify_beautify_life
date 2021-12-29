@@ -100,7 +100,7 @@
       </slider-component>
 
       {%- if section.settings.show_view_all  -%}
-    	{%- if section.settings.post_limit >3 -%}
+    	{%- if section.settings.post_limit < section.settings.blog.articles_count-%}
         <div class="blog__view-all center small-hide medium-hide">
           <a href="{{ section.settings.blog.url }}" class="blog__button button">
             {{ 'sections.featured_blog.view_all' | t }}
