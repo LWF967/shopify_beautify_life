@@ -573,7 +573,6 @@
         <button id="ModalClose-{{ section.id }}" type="button" class="product-media-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
 
         <div class="product-media-modal__content" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
-          <div>1123131</div>
           {%- liquid
             if product.selected_or_first_available_variant.featured_media != null
               assign media = product.selected_or_first_available_variant.featured_media
