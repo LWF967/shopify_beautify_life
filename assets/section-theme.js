@@ -1,4 +1,5 @@
-    //这是定义theme 对象与theme。section 对象 并 定义监听方法
+console.log('进来了');   
+//这是定义theme 对象与theme。section 对象 并 定义监听方法
     window.theme = window.theme || {};
     
     theme.Sections = function Sections() {
