@@ -119,7 +119,7 @@
         "products_to_show": 8,
         "grid": 4,
         "show_view_all": false,
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "image_ratio": "adapt",
         "use_eq_height": true,
         "image_ratio1": "ratio_nt",
