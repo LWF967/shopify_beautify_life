@@ -619,6 +619,53 @@
         "rich_text_beautify_margin_bottom": ""
       }
     },
+    "1640779459ad2f49fb": {
+      "type": "testimonials",
+      "blocks": {
+        "1640779459d88e6f3d-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
+        },
+        "1640779459d88e6f3d-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
+        },
+        "1640779459d88e6f3d-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a-wet-bridge-covered-in-fog.jpg",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
+        }
+      },
+      "block_order": [
+        "1640779459d88e6f3d-0",
+        "1640779459d88e6f3d-1",
+        "1640779459d88e6f3d-2"
+      ],
+      "settings": {
+        "title": "testimonials",
+        "swipe": true,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "button_label": "Button label",
+        "button_link": "",
+        "testimonials_margin_top": "",
+        "testimonials_margin_bottom": ""
+      }
+    },
     "16405757564f68cc1d": {
       "type": "testimonials",
       "blocks": {
@@ -886,6 +933,7 @@
     "1640677918927d5968",
     "163454604067313d0f",
     "163835233482a21c91",
+    "1640779459ad2f49fb",
     "16405757564f68cc1d",
     "1635996418e080b5d8",
     "1638771575eb761fd8",
