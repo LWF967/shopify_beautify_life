@@ -19,12 +19,13 @@
     padding: 0 15px;
   }
   .blog__posts.articles-wrapper .my_font_size_heading_default{align-items:center}
+  .page-width .my-title-wrapper-with-link{align-items:center}
 </style>
 
 <div class="blog{% if section.settings.blog_soft_background %} background-secondary{% endif %} {% if section.settings.heading == blank %} no-heading{% endif %}"
      style="{%- if section.settings.blog_page_beautify_margin_top != blank -%}margin-top: {{ section.settings.blog_page_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.blog_page_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.blog_page_beautify_margin_bottom }}px;{%- endif -%}{%-if section.settings.color_scheme =="soft_background"-%} background-color:{{section.settings.blog_soft_background}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%}">
   <div class="page-width">
-    <div class="title-wrapper-with-link{% if section.settings.heading == blank %} title-wrapper-with-link--no-heading{% endif %} title-wrapper--self-padded-tablet-down">
+    <div class="title-wrapper-with-link{% if section.settings.heading == blank %} title-wrapper-with-link--no-heading{% endif %} title-wrapper--self-padded-tablet-down my-title-wrapper-with-link">
       <h2 class="blog__title my_font_weight_default my_between_title_and_text_margin my_font_size_heading_default">{{ section.settings.heading | escape }}</h2>
       <p class="my_font_size_content_default " style="color:var(--font-sub-text-color);margin: 0 0"> {{section.settings.head_text |escape }}</p>
 
