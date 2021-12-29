@@ -38,6 +38,9 @@
     align-items: center;
     justify-content: center;
   }
+  .my_blog_viewAll{
+  margin:20px 0 0 0 ;
+  }
 </style>
 
 <div class="blog{% if section.settings.blog_soft_background %} background-secondary{% endif %} {% if section.settings.heading == blank %} no-heading{% endif %}"
@@ -111,7 +114,7 @@
 
       {%- if section.settings.show_view_all  -%}
     	{%- if section.settings.post_limit >3 -%}
-        <div class="blog__view-all center small-hide medium-hide">
+        <div class="blog__view-all center small-hide medium-hide my_blog_viewAll">
           <a href="{{ section.settings.blog.url }}" class="blog__button button">
             {{ 'sections.featured_blog.view_all' | t }}
           </a>
