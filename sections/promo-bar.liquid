@@ -183,7 +183,9 @@
     
     
   $("#hide_banner").bind('DOMSubtreeModified', function() {  
-	
+    if($("#hide_banner").hasAttribute('data-mheight') == true) {
+      console.log("listen");
+    }
   });
     
     
