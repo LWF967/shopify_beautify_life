@@ -121,7 +121,6 @@
 </div>
 
 <script>
-  let dda;
   function promo_bar_change() {
     console.log("执行promobarchange");
     let close = document.getElementsByClassName('show_close')[0];
@@ -146,7 +145,6 @@
         hide_banner.style.transition = "all .5s";
       }
     }
-    dda = hide_banner_height;
     hide_banner.dataset.mheight = hide_banner_height;
     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
@@ -156,8 +154,10 @@
     }, 500);
   }
   
-  console.log(dda);
-  
+  let adad = document.getElementById('hide_banner').dataset.mheight;
+  adad = document.getElementById('hide_banner').scrollHeight;
+  console.log(adad);
+    
   function refresh_promo() {
     var myPromoFreshDesignMode = Shopify.designMode || false;
     if(myPromoFreshDesignMode){      
