@@ -1,0 +1,132 @@
+
+<div class="swiper my_swiper_testimonials">
+  <div class="swiper-wrapper">
+    {%- liquid
+          assign highest_ratio = 0
+          for block in section.blocks
+            if block.settings.image.aspect_ratio > highest_ratio
+              assign highest_ratio = block.settings.image.aspect_ratio
+            endif
+          endfor
+        -%}
+    {%- for block in section.blocks -%}
+    <li class="testimonials-li multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %} swiper-slide" {{ block.shopify_attributes }}
+        style="background:{{settings.color_image_overlay | color_modify: 'alpha', image_overlay_opacity}}">
+      <div class="">
+        {%- if block.settings.image != blank -%}
+        {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
+        {% assign spaced_image = true %}
+        {% endif %}
+        <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}" style="padding-top: 0;">
+          <div class="media media--transparent media--{{ section.settings.image_ratio }}"
+               {% if section.settings.image_ratio == 'adapt' %}
+               style="width: 100px;
+                      margin:0 auto;
+                      height: 100px;
+                      border-radius: 50%;"
+               {% endif %}>
+            <img
+                 srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | img_url: '275x' }} 275w,{%- endif -%}
+                         {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
+                         {%- if block.settings.image.width >= 710 -%}{{ block.settings.image | img_url: '710x' }} 710w,{%- endif -%}
+                         {%- if block.settings.image.width >= 1420 -%}{{ block.settings.image | img_url: '1420x' }} 1420w,{%- endif -%}"
+                 src="{{ block.settings.image | img_url: '550x' }}"
+                 sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                        (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %},
+                        calc(100vw - 30px)"
+                 alt="{{ block.settings.image.alt }}"
+                 height="{{ block.settings.image.height }}"
+                 width="{{ block.settings.image.width }}"
+                 loading="lazy"
+                 >
+          </div>
+        </div>
+        {%- endif -%}
+        <div class="multicolumn-card__info">
+          {%- if block.settings.title != blank -%}
+          <h3>{{ block.settings.title | escape }}</h3>
+          {%- endif -%}
+          {%- if block.settings.text != blank -%}
+          <div class="rte my_testimonials_font_size">{{ block.settings.text }}</div>
+          {%- endif -%}
+
+          {%- if block.settings.testimonials_author_text != blank -%}
+          <div class="tc my_font_size_content_default" style="margin-top: 18px;">{{block.settings.testimonials_author_text}}</div>	 
+          {% endif %}
+
+        </div>            
+      </div>
+    </li>
+    {%- endfor -%}
+  </div>
+</div>
+{% if section.blocks.size > 3 and section.settings.swipe %}
+<div class="swiper_pagination_testimonials"></div>
+{% endif %}
+
+<script type="module">
+  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+  
+  var swiper = new Swiper(".my_swiper_testimonials", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      allowTouchMove: true,
+      pagination: {
+          el: ".swiper_pagination_testimonials",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next.featured_product_beautify_next',
+          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+      },
+      breakpoints: {
+        0: {  //当屏幕宽度大于等于0 
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        750: {  //当屏幕宽度大于等于750 
+          slidesPerView: 3,
+          spaceBetween: 15,
+        },
+        990: {  //当屏幕宽度大于等于990
+          slidesPerView: 3,
+          spaceBetween: 30,
+		}
+      }
+  });
+  
+   var designMode = Shopify.designMode || false;
+   if(designMode){
+   
+   document.addEventListener('shopify:section:load',()=>{  
+     var swiper = new Swiper(".my_swiper_testimonials", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        allowTouchMove: true,
+        pagination: {
+            el: ".swiper_pagination_testimonials",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next.featured_product_beautify_next',
+            prevEl: '.swiper-button-prev.featured_product_beautify_prev',
+        },
+        breakpoints: {
+          0: {  //当屏幕宽度大于等于0 
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          750: {  //当屏幕宽度大于等于750 
+            slidesPerView: 3,
+            spaceBetween: 15,
+          },
+          990: {  //当屏幕宽度大于等于990
+            slidesPerView: 3,
+            spaceBetween: 30,
+          }
+        }
+      });
+	},true);
+ }
+  
+</script>
