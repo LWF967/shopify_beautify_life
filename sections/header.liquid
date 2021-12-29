@@ -332,7 +332,7 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}{% if settings.sticky_header %} my_header_sticky {% endif %}">
-<div class="content my_header_background_color my_header_background_opacity" style="border-bottom: 1px solid {{settings.color_page_borders_and_lines}};">
+<div id="my_header_sticky_visible" class="content my_header_background_color my_header_background_opacity" style="border-bottom: 1px solid {{settings.color_page_borders_and_lines}};">
   <header class="header header--{{ section.settings.logo_position }} page-width {% if section.settings.menu != blank %} header--has-menu {% endif %} my_header my_header_height 
                  {% if section.settings.logo_svg != blank %} my_auto_height 
                  {% elsif section.settings.logo != blank %}
