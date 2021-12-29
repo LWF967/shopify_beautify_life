@@ -13,7 +13,6 @@
       variant_image: true
     %}
 {% endcomment %}
-111
 {%- if media.media_type == 'image' -%}
   <img
     srcset="{%- if media.preview_image.width >= 550 -%}{{ media.preview_image | img_url: '550x' }} 550w,{%- endif -%}
