@@ -37,8 +37,12 @@ if(myFooterbottomFreshDesignMode){
     // 创建观察者对象
 
 //     var observer = new MutationObserver(function(){
-          var observer = new MutationObserver(my_home_debounce(function () {
-             console.log("my_footer_bottom_color");
+    var observer = new MutationObserver(my_home_debounce(function () {
+            mutations.forEach(function(mutation){
+
+              console.log(mutation.type);
+
+            });
       // footer sticky
       if(sticky.length > 0) {
         if(document.body.clientWidth < 1024) {
