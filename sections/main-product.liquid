@@ -804,6 +804,7 @@
 </section>
 
 {% javascript %}
+  if (!customElements.get('product-modal')) {
   class ProductModal extends ModalDialog {
     constructor() {
       super();
@@ -839,6 +840,7 @@
   }
 
   customElements.define('product-modal', ProductModal);
+}
 {% endjavascript %}
 
 <script>
