@@ -38,7 +38,7 @@ if(myFooterbottomFreshDesignMode){
 
 //     var observer = new MutationObserver(function(){
           var observer = new MutationObserver(my_home_debounce(function () {
-
+             console.log("my_footer_bottom_color");
       // footer sticky
       if(sticky.length > 0) {
         if(document.body.clientWidth < 1024) {
