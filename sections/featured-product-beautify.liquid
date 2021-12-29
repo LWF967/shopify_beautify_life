@@ -975,20 +975,22 @@
       //featured_product_promo_bar.style.display = "none";
       //featured_product_top_bar.style.display = "none";
       //featured_product_header.style.display = "none";
-      if(featured_product_header_hidden) {console.log(1)} else {console.log(2)};
-      featured_product_promo_bar.style.visibility = "hidden";
-      featured_product_top_bar.style.visibility = "hidden";
-      featured_product_header.style.visibility = "hidden";
-      featured_product_header_hidden.style.visibility = "hidden";
+      if(featured_product_header_hidden) {
+        featured_product_promo_bar.style.visibility = "hidden";
+        featured_product_top_bar.style.visibility = "hidden";
+        featured_product_header.style.visibility = "hidden";
+        featured_product_header_hidden.style.visibility = "hidden";
+      }
     } else if(featured_product_ProductModal.hasAttribute('open') == false) {
       //featured_product_promo_bar.style.display = "block";
       //featured_product_top_bar.style.display = "block";
       //featured_product_header.style.display = "block";
-      
-      featured_product_promo_bar.style.visibility = "visible";
-      featured_product_top_bar.style.visibility = "visible";
-      featured_product_header.style.visibility = "visible";
-      featured_product_header_hidden.style.visibility = "visible";
+      if(featured_product_header_hidden) {
+        featured_product_promo_bar.style.visibility = "visible";
+        featured_product_top_bar.style.visibility = "visible";
+        featured_product_header.style.visibility = "visible";
+        featured_product_header_hidden.style.visibility = "visible";
+      }
     }
   });
 </script>
