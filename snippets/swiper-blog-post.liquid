@@ -1,3 +1,53 @@
+<style>
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper_pagination_blog {
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper_pagination_blog .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #000;
+  }
+
+  .swiper_pagination_blog .swiper-pagination-bullet {
+    transition: all 1.5s;
+    border: 1.5px solid #000;
+  }
+
+  .my_swiper_blog li {
+    text-align: left;
+  }
+</style>
 <div class="swiper my_swiper_blog">
   <div class="swiper-wrapper">
     {%- case section.settings.show_view_all -%}
