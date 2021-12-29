@@ -1,5 +1,5 @@
 
-<div class="swiper my_swiper_testimonials">
+<div class="swiper my_swiper_testimonials_{{section.id}}">
   <div class="swiper-wrapper">
     {%- liquid
           assign highest_ratio = 0
@@ -61,23 +61,19 @@
   </div>
 </div>
 {% if section.blocks.size > 3 and section.settings.swipe %}
-<div class="swiper_pagination_testimonials"></div>
+<div class="swiper_pagination_testimonials_{{section.id}}"></div>
 {% endif %}
 
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
-  var swiper = new Swiper(".my_swiper_testimonials", {
+  var swiper = new Swiper(".my_swiper_testimonials_{{section.id}}", {
       slidesPerView: 3,
       spaceBetween: 30,
       allowTouchMove: true,
       pagination: {
-          el: ".swiper_pagination_testimonials",
+          el: ".swiper_pagination_testimonials_{{section.id}}",
           clickable: true,
-      },
-      navigation: {
-          nextEl: '.swiper-button-next.featured_product_beautify_next',
-          prevEl: '.swiper-button-prev.featured_product_beautify_prev',
       },
       breakpoints: {
         0: {  //当屏幕宽度大于等于0 
@@ -106,10 +102,6 @@
         pagination: {
             el: ".swiper_pagination_testimonials",
             clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next.featured_product_beautify_next',
-            prevEl: '.swiper-button-prev.featured_product_beautify_prev',
         },
         breakpoints: {
           0: {  //当屏幕宽度大于等于0 
