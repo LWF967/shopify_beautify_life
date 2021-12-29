@@ -993,7 +993,7 @@ var swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swipe
 
 document.addEventListener('shopify:section:load', () => {
 	console.log(this,'cccc');
-	if(slideshowbox){ }
+	if(slideshowbox){ console.log(slideshowbox,'dddd')}
   let  swiperAutoPlay = document.getElementsByClassName(' swiper-wrapper-{{section.id}}')[0].dataset.autoplay;
   let swiperTime = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.autotime;	 
   let swiperLoop = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.loop;	
