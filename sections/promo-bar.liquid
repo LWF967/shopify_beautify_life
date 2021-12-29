@@ -154,14 +154,16 @@
     }, 500);
   }
   
-  console.log(hide_banner.dataset.mheight);
-  
+  let nofreshheight = hide_banner.dataset.mheight;
+  console.log(nofreshheight);
+
   function refresh_promo() {
     var myPromoFreshDesignMode = Shopify.designMode || false;
     if(myPromoFreshDesignMode){      
       document.addEventListener('shopify:section:load',() => {  
 // 注释后 自己不能刷新
         promo_bar_change();
+        console.log(nofreshheight);
       },true);
     }
   }
