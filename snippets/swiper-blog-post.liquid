@@ -63,7 +63,7 @@
      else assign blog_number = section.settings.blog.articles_count
      endif    -%}    
 
-<div class="swiper my_swiper_blog">
+<div class="swiper my_swiper_blog_{{section.id}}">
   <div class="swiper-wrapper">
     {%- case section.settings.show_view_all -%}
     {%- when true -%}
@@ -85,7 +85,7 @@
 
     {%- endcase -%}
   </div>
-  <div class="swiper_pagination_blog"></div>
+  <div class="swiper_pagination_blog_{{section.id}}"></div>
 </div>
 
 <script type="module">
@@ -95,7 +95,7 @@
       //slidesPerView: 3,
       spaceBetween: 30,
       pagination: {
-          el: ".swiper_pagination_blog",
+          el: ".swiper_pagination_blog_{{section.id}}",
           clickable: true,
       },
       breakpoints: {
@@ -117,11 +117,11 @@
   var designMode = Shopify.designMode || false;
   if(designMode){
     document.addEventListener('shopify:section:load',() => {  
-     var swiper = new Swiper(".my_swiper_blog", {
+     var swiper = new Swiper(".my_swiper_blog_{{section.id}}", {
        //slidesPerView: 3,
        spaceBetween: 30,
        pagination: {
-           el: ".swiper_pagination_blog",
+           el: ".swiper_pagination_blog_{{section.id}}",
        	   clickable: true,
           },
           breakpoints: {
