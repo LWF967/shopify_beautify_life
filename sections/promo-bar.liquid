@@ -164,7 +164,11 @@
       document.addEventListener('shopify:section:load',() => {  
 // 注释后 自己不能刷新
         promo_bar_change();
-        console.log(nofreshheight);
+      console.log("adad"+adad);
+      console.log("zdy"+document.getElementById('hide_banner').scrollHeight);
+      if(adad != document.getElementById('hide_banner').scrollHeight) {
+        console.log(123);
+      }
       },true);
     }
   }
