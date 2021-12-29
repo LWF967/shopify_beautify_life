@@ -5,9 +5,9 @@
 
       {% liquid
         assign focus_card_left = false
-        if section.settings.desktop_layout == 'left' and forloop.first
+        if section.settings.align_text == 'left' and forloop.first
           assign focus_card_left = true
-        elsif section.settings.desktop_layout == 'right' and forloop.last
+        elsif section.settings.align_text == 'right' and forloop.last
           assign focus_card_right = true
         endif
       %}
