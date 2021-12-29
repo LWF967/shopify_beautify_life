@@ -149,6 +149,7 @@
         class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--3-col-desktop{% if posts_exceed_limit %} 1 blog__posts--{{ section.settings.post_limit }}-items{% else %} 2 blog__posts--{{ section.settings.blog.articles_count }}-items{% endif %} my_featured_blog_ul"
         role="list"
         >
+      {% render 'swiper-blog-post', section:section %}
       {% comment %}
       <div class="swiper my_swiper_blog">
         <div class="swiper-wrapper">
@@ -203,64 +204,6 @@
       </div>
     {%- endif -%}
   </div>
-
-
-<script >
-  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
-  
-  var swiper = new Swiper(".my_swiper_blog", {
-      //slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-          el: ".swiper_pagination_blog",
-          clickable: true,
-      },
-      breakpoints: {
-        0: {  //当屏幕宽度大于等于0 
-          slidesPerView: 1,
-          spaceBetween: 15,
-        },
-        750: {  //当屏幕宽度大于等于750 
-          slidesPerView: 2,
-          spaceBetween: 15,
-        },
-        990: {  //当屏幕宽度大于等于990
-          slidesPerView: 3,
-          spaceBetween: 30,
-		}
-      }
-  });
-  
-  var designMode = Shopify.designMode || false;
-  if(designMode){
-    document.addEventListener('shopify:section:load',() => {  
-     var swiper = new Swiper(".my_swiper_blog", {
-          //slidesPerView: 3,
-       spaceBetween: 30,
-       pagination: {
-           el: ".swiper_pagination_blog",
-       	   clickable: true,
-          },
-          breakpoints: {
-            0: {  //当屏幕宽度大于等于0 
-              slidesPerView: 1,
-              spaceBetween: 15,
-            },
-            750: {  //当屏幕宽度大于等于750 
-              slidesPerView: 2,
-              spaceBetween: 15,
-            },
-            990: {  //当屏幕宽度大于等于990
-              slidesPerView: 3,
-              spaceBetween: 30,
-            }
-          }
-  });
-
-	},true);
- }
-</script>
-
 {% schema %}
 {
   "name": "t:sections.featured-blog.name",
