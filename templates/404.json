@@ -732,6 +732,83 @@
         "slideshow_beautify_margin_top": "",
         "slideshow_beautify_margin_bottom": ""
       }
+    },
+    "16407589929d29db20": {
+      "type": "featured-product-beautify",
+      "blocks": {
+        "16407589922b4e15c4-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "16407589922b4e15c4-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "16407589922b4e15c4-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "16407589922b4e15c4-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "16407589922b4e15c4-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "16407589922b4e15c4-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "16407589922b4e15c4-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "16407589922b4e15c4-7": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "16407589922b4e15c4-8": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16407589922b4e15c4-0",
+        "16407589922b4e15c4-1",
+        "16407589922b4e15c4-2",
+        "16407589922b4e15c4-3",
+        "16407589922b4e15c4-4",
+        "16407589922b4e15c4-5",
+        "16407589922b4e15c4-6",
+        "16407589922b4e15c4-7",
+        "16407589922b4e15c4-8"
+      ],
+      "settings": {
+        "product": "lol-more",
+        "featured_bk_color": "#1eec5e",
+        "color_scheme": "gradient",
+        "show_share_buttons": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "featured_product_beautify_margin_top": "",
+        "featured_product_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -752,6 +829,7 @@
     "1640655346146a3b0a",
     "16406553795b4e8376",
     "164065538436e0e071",
-    "164068663759079c9b"
+    "164068663759079c9b",
+    "16407589929d29db20"
   ]
 }
