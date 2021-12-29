@@ -154,7 +154,7 @@
     }, 500);
   }
     
-  function refresh_promo() { 
+//   function refresh_promo() { 
     var myPromoFreshDesignMode = Shopify.designMode || false;
     if(myPromoFreshDesignMode){      
       document.addEventListener('shopify:section:load',() => {  
@@ -187,10 +187,10 @@
 //         promo_bar_change();
 //       },true);
 //     }
-  }
+//   }
   
   function promo_bar_fun() { 
-    refresh_promo();
+//     refresh_promo();
     let close = document.getElementsByClassName('show_close')[0];
     let my_center = document.getElementsByClassName('my_center')[0];
     let hide_banner = document.getElementById('hide_banner');  
