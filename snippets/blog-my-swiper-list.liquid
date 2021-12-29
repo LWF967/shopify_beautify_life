@@ -96,7 +96,7 @@
   
   
   
-     let designMode = Shopify.designMode?true:false;
+     let designMode = Shopify.designMode || false;
    if(designMode){
    console.log("我的123");
    document.addEventListener('shopify:section:load',()=>{  
