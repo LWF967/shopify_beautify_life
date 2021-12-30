@@ -68,7 +68,7 @@
       "settings": {
         "se_height": "adapt",
         "text_size": "medium",
-        "loop": false,
+        "loop": true,
         "auto_play": true,
         "auto_time": 3,
         "show_button": true,
@@ -157,11 +157,26 @@
         "slideshow_beautify_margin_top": "",
         "slideshow_beautify_margin_bottom": ""
       }
+    },
+    "164085829207cb864a": {
+      "type": "slideshow",
+      "settings": {
+        "image_alignment": "center center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "show_overlay": false,
+        "style": "image_with_play",
+        "video_height": "medium",
+        "heading": "Video",
+        "text_size": "medium",
+        "video_beautify_margin_top": "",
+        "video_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
     "main",
     "16408262193e0f25d1",
-    "16408262248e9a3b69"
+    "16408262248e9a3b69",
+    "164085829207cb864a"
   ]
 }

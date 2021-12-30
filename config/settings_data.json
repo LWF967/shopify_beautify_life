@@ -85,7 +85,7 @@
           "logo_aligment": "left",
           "logo_svg": "woman-poses-in-dark-room.jpg",
           "logo": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
-          "logo_width": 65,
+          "logo_width": 50,
           "header_height": 60,
           "header_text_height_font_size": 14,
           "menu": "main-menu"
@@ -151,7 +151,7 @@
           "promo_bar_show_icon": false,
           "promo_bar_txt_btn": "close",
           "promo_bar_cl_btn": "#ef1c1c",
-          "promo_bar_date": 3
+          "promo_bar_date": 1
         }
       },
       "top-bar": {
