@@ -293,9 +293,9 @@ window.onload = function() {
 
 //   } else {
 //     console.log(getCookie("无"));
-//     let promo_bar = document.getElementById('hide_banner');
-//     hide_banner.style.marginTop = 0 + 'px';
-//     hide_banner.style.transition = "margin-top .5s";
+    let promo_bar = document.getElementById('hide_banner');
+    hide_banner.style.marginTop = 0 + 'px';
+    hide_banner.style.transition = "margin-top .5s";
 //   }
 
 }
