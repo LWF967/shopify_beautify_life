@@ -282,12 +282,12 @@ my_header_and_totop();
 my_home();
 
 
-window.onload = function() {
-  my_home();
-  // hide_banner variant define in promo-bar.liquid
-//   hide_banner.style.marginTop = 0 + 'px';
-//   hide_banner.style.transition = "margin-top .5s";
-}
+// window.onload = function() {
+//   my_home();
+//   // hide_banner variant define in promo-bar.liquid
+// //   hide_banner.style.marginTop = 0 + 'px';
+// //   hide_banner.style.transition = "margin-top .5s";
+// }
 
 $(window).resize(function(){
   my_home();
