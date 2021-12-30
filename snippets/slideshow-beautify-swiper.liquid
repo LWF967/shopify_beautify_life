@@ -1022,7 +1022,7 @@ var swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swipe
 		swiperBeautifySlideshow.autoplay.stop();
   	{% endif %}
 
-document.addEventListener('shopify:section:load', debounce（() => {
+document.addEventListener('shopify:section:load', debounce(() => {
 	console.log(this,'load');
     
     
@@ -1100,7 +1100,7 @@ document.addEventListener('shopify:section:load', debounce（() => {
 	}
 
 
-}，1000）, true)
+}，1000), true)
 
 
 
