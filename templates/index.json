@@ -483,6 +483,55 @@
         "slideshow_beautify_margin_bottom": ""
       }
     },
+    "16408361954ffa06e3": {
+      "type": "slideshow-beautify-2",
+      "blocks": {
+        "1640836195dbe5071a-0": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "1640836195dbe5071a-1": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1640836195dbe5071a-0",
+        "1640836195dbe5071a-1"
+      ],
+      "settings": {
+        "se_height": "adapt",
+        "text_size": "medium",
+        "loop": true,
+        "auto_play": true,
+        "auto_time": 3,
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "#F29BAE",
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "slideshow_beautify_margin_top": "",
+        "slideshow_beautify_margin_bottom": ""
+      }
+    },
     "1638254471485c2b3b": {
       "type": "image-with-text",
       "blocks": {
@@ -947,6 +996,7 @@
     "163608389212513e57",
     "1638178308a7590918",
     "16340032987fd8fd82",
+    "16408361954ffa06e3",
     "1638254471485c2b3b",
     "1638344641035ba32e",
     "1640677918927d5968",
