@@ -129,7 +129,7 @@
   function setCookie(name,value) {
     var Days = cookietime;
     var exp = new Date(); 
-    exp.setTime(exp.getTime() + Days*30*1000); //Days*24*60*60*1000
+    exp.setTime(exp.getTime() + Days*60*1000); //Days*24*60*60*1000
     console.log(exp.getTime()); // 获取定时后的时间
     document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
   }
@@ -148,6 +148,12 @@
   }
       
 
+  function onloadtodo() {
+    let hide_banner = document.getElementById('hide_banner');  
+    hide_banner.style.marginTop = 0 + 'px';
+    hide_banner.style.transition = "margin-top .5s";
+  }
+  
   var myPromoFreshDesignMode2 = Shopify.designMode || false;
   if(myPromoFreshDesignMode2){      
 	  console.log("进入promo后台");
@@ -186,9 +192,10 @@
     console.log("我是判断有无lzx1");
     if(getCookie("lzx1")) {
     console.log(getCookie("lzx1"));
+      
     } else {
         console.log(getCookie("无"));
-
+		onloadtodo();
     }
   }
   
