@@ -148,9 +148,7 @@
   
   		  </div>
 
-          <!-- 如果需要滚动条 -->
-          <div class="swiper-scrollbar-{{section.id}}">
-  
+       
            
 
    		  </div>
@@ -663,31 +661,20 @@
    var swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: swiperBeautifyWrapperLoop, 
-    // 循环模式选项 
 
-   
-	// slidesPerView:{{grid}},
-   
-   
-    // 如果需要分页器
+
     pagination: {
       el: '.swiper-pagination-{{section.id}}',
       clickable :true
     },
-    
-    // 如果需要前进后退按钮
+
     navigation: {
       nextEl: '.swiper-button-next-{{section.id}}',
       prevEl: '.swiper-button-prev-{{section.id}}',
     },
     
     
-    // 如果需要滚动条
-  /*  scrollbar: {
-      el: '.swiper-scrollbar-{{section.id}}',
-    }, */
-    
-    //控制间距bereakpoint
+
     
     spaceBetween: 40,
 
@@ -733,34 +720,23 @@
 	(swiperBeautifyWrapperLoop == "false") ? swiperBeautifyWrapperLoop=false : swiperBeautifyWrapperLoop=true;
 
     var swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
-    direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+    direction: 'horizontal',
     loop: swiperBeautifyWrapperLoop, 
-    // 循环模式选项 
-
 	
 	slidesPerGroup :  swiperBeautifyWrapperGrid,
      loopedSlides: swiperBeautifyWrapperGrid,
      
-    // 如果需要分页器
     pagination: {
       el: '.swiper-pagination-{{section.id}}',
       clickable :true
     },
     
-    // 如果需要前进后退按钮
     navigation: {
       nextEl: '.swiper-button-next-{{section.id}}',
       prevEl: '.swiper-button-prev-{{section.id}}',
     },
     
-    
-    // 如果需要滚动条
-  /*  scrollbar: {
-      el: '.swiper-scrollbar-{{section.id}}',
-    }, */
-    
-    //控制间距bereakpoint
-    
+
     spaceBetween: 40,
 
   	breakpoints: { 
