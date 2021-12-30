@@ -152,10 +152,36 @@
             "slider_button_text": "title name",
             "slider_button_link": ""
           }
+        },
+        "ddae58fb-a797-4f9c-bd68-c46bd6f6635c": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "6bf7b984-fabd-4b51-9543-873917fc0264": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
         }
       },
       "block_order": [
-        "3be5e370-c572-4049-b84e-c7913cb92c0d"
+        "3be5e370-c572-4049-b84e-c7913cb92c0d",
+        "ddae58fb-a797-4f9c-bd68-c46bd6f6635c",
+        "6bf7b984-fabd-4b51-9543-873917fc0264"
       ],
       "settings": {
         "se_height": "adapt",
