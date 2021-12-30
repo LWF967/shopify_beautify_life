@@ -294,50 +294,50 @@ window.onload = function() {
 //   } else {
 //     console.log(getCookie("无"));
   
-  var DesignMode = Shopify.designMode || false;
-  if(DesignMode){
-    let promo_bar = document.getElementById('hide_banner');
-    hide_banner.style.marginTop = 0 + 'px';
-    hide_banner.style.transition = "margin-top .5s";
-  } else {
-    if(getCookie("lzx1")) {
-      let close = document.getElementsByClassName('show_close')[0];
-      let my_center = document.getElementsByClassName('my_center')[0];
-      let hide_banner = document.getElementById('hide_banner');  
-      let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-      let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
-      close.onclick = function () {
-        if(hide_banner_height > hide_banner.dataset.mheight) {
-          hide_banner.dataset.mheight = hide_banner_height;
-        }
-        hide_banner.style.marginTop = -hide_banner_height + 'px';
-        hide_banner.style.transition = "margin-top .5s";
-//                   setCookie("lzx1",cookietime);
-      }
+//   var DesignMode = Shopify.designMode || false;
+//   if(DesignMode){
+//     let promo_bar = document.getElementById('hide_banner');
+//     hide_banner.style.marginTop = 0 + 'px';
+//     hide_banner.style.transition = "margin-top .5s";
+//   } else {
+//     if(getCookie("lzx1")) {
+//       let close = document.getElementsByClassName('show_close')[0];
+//       let my_center = document.getElementsByClassName('my_center')[0];
+//       let hide_banner = document.getElementById('hide_banner');  
+//       let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+//       let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+//       close.onclick = function () {
+//         if(hide_banner_height > hide_banner.dataset.mheight) {
+//           hide_banner.dataset.mheight = hide_banner_height;
+//         }
+//         hide_banner.style.marginTop = -hide_banner_height + 'px';
+//         hide_banner.style.transition = "margin-top .5s";
+// //                   setCookie("lzx1",cookietime);
+//       }
 
-      if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
-        close.onclick = function () {
-          if(hide_banner_height > hide_banner.dataset.mheight) {
-            hide_banner.dataset.mheight = hide_banner_height;
-          }
-          hide_banner.style.marginTop = -hide_banner_height + 'px';
-          hide_banner.style.transition = "margin-top .5s";
-//                             setCookie("lzx1",cookietime);
-        }
-      }
-      hide_banner.dataset.mheight = hide_banner_height;
-      hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+//       if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+//         close.onclick = function () {
+//           if(hide_banner_height > hide_banner.dataset.mheight) {
+//             hide_banner.dataset.mheight = hide_banner_height;
+//           }
+//           hide_banner.style.marginTop = -hide_banner_height + 'px';
+//           hide_banner.style.transition = "margin-top .5s";
+// //                             setCookie("lzx1",cookietime);
+//         }
+//       }
+//       hide_banner.dataset.mheight = hide_banner_height;
+//       hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
-      setTimeout(function() {
-        hide_banner.style.marginTop = 0 + 'px';
-        hide_banner.style.transition = "margin-top .5s";
-      }, 500);
-    } else {
-      let promo_bar = document.getElementById('hide_banner');
-      hide_banner.style.marginTop = 0 + 'px';
-      hide_banner.style.transition = "margin-top .5s";
-    }
-  }
+//       setTimeout(function() {
+//         hide_banner.style.marginTop = 0 + 'px';
+//         hide_banner.style.transition = "margin-top .5s";
+//       }, 500);
+//     } else {
+//       let promo_bar = document.getElementById('hide_banner');
+//       hide_banner.style.marginTop = 0 + 'px';
+//       hide_banner.style.transition = "margin-top .5s";
+//     }
+//   }
 //   }
 
 }
