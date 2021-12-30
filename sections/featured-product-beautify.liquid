@@ -972,6 +972,7 @@
 
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
     if(featured_product_ProductModal.hasAttribute('open') == true) {
+    console.log("open");
       if(featured_product_header_hidden) {
         featured_product_promo_bar.style.visibility = "hidden";
         featured_product_top_bar.style.visibility = "hidden";
@@ -979,6 +980,7 @@
         featured_product_header_hidden.style.visibility = "hidden";
       }
     } else if(featured_product_ProductModal.hasAttribute('open') == false) {
+        console.log("close");
       if(featured_product_header_hidden) {
         featured_product_promo_bar.style.visibility = "visible";
         featured_product_top_bar.style.visibility = "visible";
