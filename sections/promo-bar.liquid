@@ -131,7 +131,7 @@
     var Days = cookietime;
     var exp = new Date(); 
     exp.setTime(exp.getTime() + Days*30*1000); //Days*24*60*60*1000
-    console.log(exp.getTime()); // 获取定时后的时间
+//     console.log(exp.getTime()); // 获取定时后的时间
     document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString() + ";path=" + "/";
   }
   // 获取cookie
@@ -150,11 +150,11 @@
   
   var myPromoFreshDesignMode2 = Shopify.designMode || false;
   if(myPromoFreshDesignMode2){      
-    console.log("进入promo后台");
+//     console.log("进入promo后台");
     promo_bar_change();
 
   } else {
-    console.log("无进入promo后台");
+//     console.log("无进入promo后台");
     if(getCookie("ddl")){
       let hide_banner = document.getElementById('hide_banner'); 
       let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
@@ -165,7 +165,7 @@
   }
   
   function promo_bar_change() {
-    console.log("执行promobarchange");
+//     console.log("执行promobarchange");
     let close = document.getElementsByClassName('show_close')[0];
     let my_center = document.getElementsByClassName('my_center')[0];
     let hide_banner = document.getElementById('hide_banner');  
@@ -206,7 +206,7 @@
   }
   
   function promo_bar_fun() {   
-    console.log("进入promobarfun");
+//     console.log("进入promobarfun");
     let close = document.getElementsByClassName('show_close')[0];
     let my_center = document.getElementsByClassName('my_center')[0];
     let hide_banner = document.getElementById('hide_banner');  
