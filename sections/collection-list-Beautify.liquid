@@ -67,11 +67,6 @@
     background:blue;
     color:#fff;
   }
-  
-/*   .my_collection_list_beautify_title_font_size {
-  	font-weight: 700;
-    font-size: 24px;
-  } */
 
 </style>
 
@@ -79,223 +74,225 @@
 
 {% schema %}
 {
-  "name": {
+	"name": {
 
-    "en": "Collection slider"
-  },
-  "tag": "section",
-  "class": "index-section",
-  "max_blocks": 8,
-  "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": {
-   
-        "en": "Heading"
-      },
-      "default": {
+		"en": "Collection slider"
+	},
+	"tag": "section",
+	"class": "index-section",
+	"max_blocks": 8,
+	"settings": [{
+			"type": "text",
+			"id": "title",
+			"label": {
 
-        "en": "NEW RELEASES"
-      }
-    },
- 	{
-      "type": "text",
-      "id": "sub_title",
-      "label": {
-   
-        "en": "Sub text"
-      },
-      "default": {
+				"en": "Heading"
+			},
+			"default": {
 
-        "en": "New supply this week"
-      }
-    },
-    {
-      "type": "range",
-      "id": "grid",
-      "label": {
- 
-        "en": "Collections per row"
-      },
-      "min": 2,
-      "max": 6,
-      "step": 1,
-      "default": 3,
-	  "info":"Please click save to view the result"	
-    },
-	{
-      "type": "checkbox",
-      "id": "slide_loop",
-      "default": false,
-      "label": "Use loop?",
-	  "info":"At the end of cells, wrap-around to the other end for infinite scrolling."
-    },
-	{
-      "type": "checkbox",
-      "id": "show_view_all",
-      "default": false,
-      "label": "t:sections.collection-list.settings.show_view_all.label"
-    },
-	{
-      "type": "checkbox",
-      "id": "show_page_Dot",
-      "default": false,
-      "label": "Show Page Dot"
-    },
-    {
-      "type":"select",
-      "id":"page_dot_style",
-      "label":"Style",
-      "default":"style_1",
-      "options":[{"value":"style_1","label":"Style 1"},{"value":"style_2","label":"Style 2"}]
-    },
-    {
-      "type":"select",
-      "id":"page_dot_color",
-      "label":"Color",
-      "default":"dark",
-      "options":[{"value":"dark","label":"Dark"},{"value":"light","label":"Light"}]
-    },
-    {
-      "type": "checkbox",
-      "id": "show_button",
-      "label": "Show Prev Next Button",
-      "default": true
-    },
-    {
-      "type": "select",
-      "id": "show_button_visible",
-      "label": "Visible",
-      "default": "always",
-      "options": [
-        {
-          "value": "only_hover",
-          "label": "Only hover"
-        },
-        {
-          "value": "always",
-          "label": "Always"
-        }
-      ]
-    },
-    {
-      "type": "select",
-      "id": "show_button_style",
-      "label": "Style",
-      "default": "style1",
-      "options": [
-        {
-          "value": "style1",
-          "label": "Style1"
-        },
-        {
-          "value": "style2",
-          "label": "Style2"
-        },
-        {
-          "value": "style3",
-          "label": "Style3"
-        }
-      ]
-    },
-    {
-      "type": "select",
-      "id": "show_button_color",
-      "label": "Color",
-      "default": "white",
-      "options": [
-        {
-          "value": "transparent",
-          "label": "Transparent"
-        },
-        {
-          "value": "white",
-          "label": "White"
-        },
-        {
-          "value": "gray",
-          "label": "Gray"
-        }
-      ]
-    },
-    {
-      "type": "color",
-      "id": "show_button_hover_color",
-      "label": "Hover"
-    },
-    {
-      "type": "text",
-      "id": "collection_list_beautify_margin_top",
-      "label": "Margin top",
-	  "info": "t:sections.margintip.settings.margin_tip.label"
-    },
-    {
-      "type": "text",
-      "id": "collection_list_beautify_margin_bottom",
-      "label": "Margin bottom",
-	  "info": "t:sections.margintip.settings.margin_tip.label"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "featured_collection",
-      "name": {
-
-        "en": "Collection"
-      },
-      "settings": [
-        {
-          "label": {
-
-            "en": "Collection"
-          },
-          "id": "collection",
-          "type": "collection"
-        },
+				"en": "NEW RELEASES"
+			}
+		},
 		{
-           "type": "image_picker",
-           "id": "image",
-           "label": "Image"
-      	 },
+			"type": "text",
+			"id": "sub_title",
+			"label": {
+
+				"en": "Sub text"
+			},
+			"default": {
+
+				"en": "New supply this week"
+			}
+		},
 		{
-          "type": "text",
-          "id": "title",
-          "label": {
+			"type": "range",
+			"id": "grid",
+			"label": {
 
-            "en": "Title block(optional)"
-          },
-          "default": {
+				"en": "Collections per row"
+			},
+			"min": 2,
+			"max": 6,
+			"step": 1,
+			"default": 3,
+			"info": "Please click save to view the result"
+		},
+		{
+			"type": "checkbox",
+			"id": "slide_loop",
+			"default": false,
+			"label": "Use loop?",
+			"info": "At the end of cells, wrap-around to the other end for infinite scrolling."
+		},
+		{
+			"type": "checkbox",
+			"id": "show_view_all",
+			"default": false,
+			"label": "t:sections.collection-list.settings.show_view_all.label"
+		},
+		{
+			"type": "checkbox",
+			"id": "show_page_Dot",
+			"default": false,
+			"label": "Show Page Dot"
+		},
+		{
+			"type": "select",
+			"id": "page_dot_style",
+			"label": "Style",
+			"default": "style_1",
+			"options": [{
+				"value": "style_1",
+				"label": "Style 1"
+			}, {
+				"value": "style_2",
+				"label": "Style 2"
+			}]
+		},
+		{
+			"type": "select",
+			"id": "page_dot_color",
+			"label": "Color",
+			"default": "dark",
+			"options": [{
+				"value": "dark",
+				"label": "Dark"
+			}, {
+				"value": "light",
+				"label": "Light"
+			}]
+		},
+		{
+			"type": "checkbox",
+			"id": "show_button",
+			"label": "Show Prev Next Button",
+			"default": true
+		},
+		{
+			"type": "select",
+			"id": "show_button_visible",
+			"label": "Visible",
+			"default": "always",
+			"options": [{
+					"value": "only_hover",
+					"label": "Only hover"
+				},
+				{
+					"value": "always",
+					"label": "Always"
+				}
+			]
+		},
+		{
+			"type": "select",
+			"id": "show_button_style",
+			"label": "Style",
+			"default": "style1",
+			"options": [{
+					"value": "style1",
+					"label": "Style1"
+				},
+				{
+					"value": "style2",
+					"label": "Style2"
+				},
+				{
+					"value": "style3",
+					"label": "Style3"
+				}
+			]
+		},
+		{
+			"type": "select",
+			"id": "show_button_color",
+			"label": "Color",
+			"default": "white",
+			"options": [{
+					"value": "transparent",
+					"label": "Transparent"
+				},
+				{
+					"value": "white",
+					"label": "White"
+				},
+				{
+					"value": "gray",
+					"label": "Gray"
+				}
+			]
+		},
+		{
+			"type": "color",
+			"id": "show_button_hover_color",
+			"label": "Hover"
+		},
+		{
+			"type": "text",
+			"id": "collection_list_beautify_margin_top",
+			"label": "Margin top",
+			"info": "t:sections.margintip.settings.margin_tip.label"
+		},
+		{
+			"type": "text",
+			"id": "collection_list_beautify_margin_bottom",
+			"label": "Margin bottom",
+			"info": "t:sections.margintip.settings.margin_tip.label"
+		}
+	],
+	"blocks": [{
+		"type": "featured_collection",
+		"name": {
 
-            "en": "New supply this week"
-          },
-		 "info":"Leave empty to use 'collection title'title. Enter key 'hide_title' to hide title"
-    	}
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": {
+			"en": "Collection"
+		},
+		"settings": [{
+				"label": {
 
-        "en": "collection slider"
-      },
-      "category": {
+					"en": "Collection"
+				},
+				"id": "collection",
+				"type": "collection"
+			},
+			{
+				"type": "image_picker",
+				"id": "image",
+				"label": "Image"
+			},
+			{
+				"type": "text",
+				"id": "title",
+				"label": {
 
-        "en": "Collection"
-      },
-      "blocks": [
-        {
-          "type": "featured_collection"
-        },
-        {
-          "type": "featured_collection"
-        },
-        {
-          "type": "featured_collection"
-        }
-      ]
-    }
-  ]
+					"en": "Title block(optional)"
+				},
+				"default": {
+
+					"en": "New supply this week"
+				},
+				"info": "Leave empty to use 'collection title'title. Enter key 'hide_title' to hide title"
+			}
+		]
+	}],
+	"presets": [{
+		"name": {
+
+			"en": "collection slider"
+		},
+		"category": {
+
+			"en": "Collection"
+		},
+		"blocks": [{
+				"type": "featured_collection"
+			},
+			{
+				"type": "featured_collection"
+			},
+			{
+				"type": "featured_collection"
+			}
+		]
+	}]
 }
 {% endschema %}
