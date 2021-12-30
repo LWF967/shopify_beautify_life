@@ -1,801 +1,601 @@
 
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 <div class="my_swiper_outside_content">
-    <div class="swiper-container-{{section.id}} list-beautify-render" style="overflow: hidden;position:relative;">
-        <div class="swiper-wrapper " data-grid="{{grid}}" data-loop="{{slide_loop}}"
-            style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
-            {% for block in section.blocks limit: section.blocks.size %}
-            <div class="swiper-slide " {{ block.shopify_attributes }}>
-                {%- liquid
-                assign collection_title = block.settings.title
-                assign collection = collections[block.settings.collection]
-                assign collection_img = block.settings.image
-                assign image = collection_img
-                -%}
-                <div class="collection-grid-item my_collection_grid_item">
-                    <a href="{% if collection.products == empty %}#{% else %}{{ collection.url }}{% endif %}"
-                        class="collection-grid-item__link">
-                        {% unless collection_img == blank %}
-                        <div class="collection-grid-item__overlay box ratio-container lazyload js" data-bgset="{%- if image != blank -%}
-                                      {% if image.width > 180 %}{{ image | img_url: '180x' }} 180w {{ 180 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 360 %}{{ image | img_url: '360x' }} 360w {{ 360 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 540 %}{{ image | img_url: '540x' }} 540w {{ 540 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 720 %}{{ image | img_url: '720x' }} 720w {{ 720 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 900 %}{{ image | img_url: '900x' }} 900w {{ 900 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 1080 %}{{ image | img_url: '1080x' }} 1080w {{ 1080 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 1296 %}{{ image | img_url: '1296x' }} 1296w {{ 1296 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 1512 %}{{ image | img_url: '1512x' }} 1512w {{ 1512 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 1728 %}{{ image | img_url: '1728x' }} 1728w {{ 1728 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 1950 %}{{ image | img_url: '1950x' }} 1950w {{ 1950 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 2100 %}{{ image | img_url: '2100x' }} 2100w {{ 2100 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 2260 %}{{ image | img_url: '2260x' }} 2260w {{ 2260 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 2450 %}{{ image | img_url: '2450x' }} 2450w {{ 2450 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 2700 %}{{ image | img_url: '2700x' }} 2700w {{ 2700 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 3000 %}{{ image | img_url: '3000x' }} 3000w {{ 3000 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 3350 %}{{ image | img_url: '3350x' }} 3350w {{ 3350 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 3750 %}{{ image | img_url: '3750x' }} 3750w {{ 3750 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {% if image.width > 4100 %}{{ image | img_url: '4100x' }} 4100w {{ 4100 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                      {{ image | img_url: 'master' }} {{ image.width }}w {{ image.height }}h
-                                  {%- endif -%}" data-sizes="auto" data-parent-fit="cover"
-                            data-image-loading-animation>
-                        </div>
-                        <noscript>
-                            <div class="collection-grid-item__overlay"
-                                style="background-image: url('{{ collection_img | img_url: '1024x1024' }}')"></div>
-                        </noscript>
-                        {% else %}
-                        {% if collection == empty %}
-                        <div class="collection-grid-item__overlay">
-                            {% capture current %}{% cycle 1, 2, 3 %}{% endcapture %}
-                            {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
-                        </div>
-                        {% else %}
-                        <div class="collection-grid-item__overlay"
-                            style="background-image: url('{{ collection_img | img_url: '1024x1024' }}')"></div>
-                        {% endif %}
-                        {% endunless %}
+<div class="swiper-container-{{section.id}} list-beautify-render" style="overflow: hidden;position:relative;">
+    
+    {% comment %}
+    <ul id="grid-ul-beautify-box" class="swiper-wrapper grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
 
-                        <div class="collection-grid-item__title-wrapper">
-                            <div class="collection-grid-item__title my_collection_grid_item_title h3">
-                                {% if collection.title == blank %}
-                                <!--            'homepage.onboarding.collection_title' | t  -->
-                                {{collection_title}}
+  
+      {% for block in section.blocks limit: section.blocks.size %}
+        <li id="grid__item__beautify-{{section.id}}" class="swiper-slide grid__item__beautify "  {{ block.shopify_attributes }}>
+          {%- liquid 
+             assign   collection_title = block.settings.title
+             assign   collection = collections[block.settings.collection] 
+		     assign   collection_img = block.settings.image   		
+          -%}
+          
+          {% include 'collection-grid-item-beautify', collection: collection , collection_title:collection_title,collection_img:collection_img %}
+        </li>
+      {% endfor %}
+        
 
-                                {% else %}
-                                <!--   获取collection的名字         collection.title  -->
-                                {{collection_title}}
-                                {% endif %}
-                            </div>
-                        </div>
-                    </a>
+
+    </ul>
+    {%endcomment%}
+  
+
+  
+    	  <div  class="swiper-wrapper " data-grid="{{grid}}" data-loop="{{slide_loop}}"  style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
+
+  
+      {% for block in section.blocks limit: section.blocks.size %}
+        <div class="swiper-slide " {{ block.shopify_attributes }}>
+          {%- liquid 
+             assign   collection_title = block.settings.title
+             assign   collection = collections[block.settings.collection] 
+		     assign   collection_img = block.settings.image
+             assign   image = collection_img
+          -%}
+          
+          <div class="collection-grid-item my_collection_grid_item">
+            <a href="{% if collection.products == empty %}#{% else %}{{ collection.url }}{% endif %}" class="collection-grid-item__link">
+              {% unless collection_img == blank %}
+                <div class="collection-grid-item__overlay box ratio-container lazyload js"
+                  data-bgset="{%- if image != blank -%}
+                                  {% if image.width > 180 %}{{ image | img_url: '180x' }} 180w {{ 180 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 360 %}{{ image | img_url: '360x' }} 360w {{ 360 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 540 %}{{ image | img_url: '540x' }} 540w {{ 540 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 720 %}{{ image | img_url: '720x' }} 720w {{ 720 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 900 %}{{ image | img_url: '900x' }} 900w {{ 900 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 1080 %}{{ image | img_url: '1080x' }} 1080w {{ 1080 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 1296 %}{{ image | img_url: '1296x' }} 1296w {{ 1296 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 1512 %}{{ image | img_url: '1512x' }} 1512w {{ 1512 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 1728 %}{{ image | img_url: '1728x' }} 1728w {{ 1728 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 1950 %}{{ image | img_url: '1950x' }} 1950w {{ 1950 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 2100 %}{{ image | img_url: '2100x' }} 2100w {{ 2100 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 2260 %}{{ image | img_url: '2260x' }} 2260w {{ 2260 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 2450 %}{{ image | img_url: '2450x' }} 2450w {{ 2450 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 2700 %}{{ image | img_url: '2700x' }} 2700w {{ 2700 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 3000 %}{{ image | img_url: '3000x' }} 3000w {{ 3000 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 3350 %}{{ image | img_url: '3350x' }} 3350w {{ 3350 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 3750 %}{{ image | img_url: '3750x' }} 3750w {{ 3750 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {% if image.width > 4100 %}{{ image | img_url: '4100x' }} 4100w {{ 4100 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                                  {{ image | img_url: 'master' }} {{ image.width }}w {{ image.height }}h
+                              {%- endif -%}"
+                  data-sizes="auto"
+                  data-parent-fit="cover"
+                  data-image-loading-animation>
                 </div>
-            </div>
-            {% endfor %}
-        </div>
-        <!-- 如果需要导航按钮 -->
-        <div class="swiper-button-prev-{{section.id}}
-                          bk_{{section.settings.show_button_color}}
-                          {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% else %}  dn  {% endif%} 
-                          leftbtn leftbtn-{{section.id}} list_button_{{ section.settings.show_button_style }}
-                          ">
+                <noscript>
+                  <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_img | img_url: '1024x1024' }}')"></div>
+                </noscript>
+              {% else %}
+                {% if collection == empty %}
+                  <div class="collection-grid-item__overlay">
+                    {% capture current %}{% cycle 1, 2, 3 %}{% endcapture %}
+                    {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                  </div>
+                {% else %}
+                  <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_img | img_url: '1024x1024' }}')"></div>
+                {% endif %}
+              {% endunless %}
 
-            <p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
-                <svg style="position: absolute;top: 50%;left: 50%;transform: translate(-62.5%,-50%);" aria-hidden="true"
-                    focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="icon-chevron-down-left" d="M4 4.5L7 1.5" stroke="currentColor" stroke-width="0.75"
-                        stroke-linecap="square"></path>
-                    <path class="icon-chevron-down-right" d="M4 4.5L7 7.5" stroke="currentColor" stroke-width="0.75"
-                        stroke-linecap="square"></path>
-                </svg>
-            </p>
-        </div>
+              <div class="collection-grid-item__title-wrapper">
+                <div class="collection-grid-item__title my_collection_grid_item_title h3">
+                  {% if collection.title == blank %}
+          <!--            'homepage.onboarding.collection_title' | t  -->
+                    {{collection_title}}
 
-        <div class="swiper-button-next-{{section.id}}   
-                          bk_{{section.settings.show_button_color}} 
-                          {% if section.settings.show_button %}icon-changebtn_{{section.id}} {% else %} dn  {% endif%} 
-                          rightbtn  rightbtn-{{section.id}}  list_button_{{ section.settings.show_button_style }}">
-            <p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
-                <svg style="position: absolute;top: 50%;left: 50%;transform: translate(-25%,-50%)" aria-hidden="true"
-                    focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path class="icon-chevron-down-left" d="M4 4.5L1 7.5" stroke="currentColor" stroke-width="0.75"
-                        stroke-linecap="square"></path>
-                    <path class="icon-chevron-down-right" d="M4 4.5L1 1.5" stroke="currentColor" stroke-width="0.75"
-                        stroke-linecap="square"></path>
-                </svg>
-            </p>
+                  {% else %}
+          <!--   获取collection的名字         collection.title  -->
+                 {{collection_title}}
+                  {% endif %}
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          
+          
         </div>
+      {% endfor %}
+        
+
+
     </div>
-    {%- if section.settings.show_page_Dot-%}
-    <!-- 如果需要分页器 -->
-    <div class="swiper-pagination-{{section.id}}" style="bottom: 0;"></div>
-    {%- endif -%}
+    
+    
+  
+  
+          <!-- 如果需要导航按钮 -->
+          <div class="swiper-button-prev-{{section.id}}
+                      bk_{{section.settings.show_button_color}}
+                      {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% else %}  dn  {% endif%} 
+                      leftbtn leftbtn-{{section.id}} list_button_{{ section.settings.show_button_style }}
+                      
+                      
+                      ">
+            
+             <p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
+                <svg style="position: absolute;top: 50%;left: 50%;transform: translate(-62.5%,-50%);" aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="icon-chevron-down-left" d="M4 4.5L7 1.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
+                    <path class="icon-chevron-down-right" d="M4 4.5L7 7.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
+                </svg>
+             </p>
+  
+  
+  
+  		  </div>
+  
+  
+  
+          <div class="swiper-button-next-{{section.id}}   
+                      bk_{{section.settings.show_button_color}} 
+                      {% if section.settings.show_button %}icon-changebtn_{{section.id}} {% else %} dn  {% endif%} 
+                      rightbtn  rightbtn-{{section.id}}  list_button_{{ section.settings.show_button_style }}">
+  
+               <p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
+                  <svg style="position: absolute;top: 50%;left: 50%;transform: translate(-25%,-50%)" aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="icon-chevron-down-left" d="M4 4.5L1 7.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
+                    <path class="icon-chevron-down-right" d="M4 4.5L1 1.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
+                  </svg>
+              </p>
+
+
+  
+  		  </div>
+
+    
+  </div>
+    	{%- if section.settings.show_page_Dot-%}
+        <!-- 如果需要分页器 -->
+          <div class="swiper-pagination-{{section.id}}" style="bottom: 0;"></div>
+		{%- endif -%}
 </div>
+
 
 <style>
     .my_swiper_outside_content {
-        padding-bottom: 31px;
-        position: relative;
+      padding-bottom: 31px;
+      position: relative;
     }
 
-    .swiper-pagination- {
-            {
-            section.id
-        }
-    }
+      .swiper-pagination-{{section.id}}.swiper-pagination-hidden {
+          opacity: 0
+      }
 
-    .swiper-pagination-hidden {
-        opacity: 0
-    }
+  .swiper-button-next-{{section.id}},
+      .swiper-button-prev-{{section.id}} {
+          position: absolute;
+          top: 50%;
+          width: calc(var(--swiper-navigation-size)/ 44 * 27);
+          height: var(--swiper-navigation-size);
+          margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+          z-index: 10;
+          cursor: pointer;
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          color: var(--swiper-navigation-color, var(--swiper-theme-color))
+      }
 
-    .swiper-button-next- {
-            {
-            section.id
-        }
-    }
+      .swiper-button-next-{{section.id}}.swiper-button-disabled,
+      .swiper-button-prev-{{section.id}}.swiper-button-disabled {
+          opacity: .35;
+          cursor: auto;
+          pointer-events: none
+      }
 
-    ,
-    .swiper-button-prev- {
-            {
-            section.id
-        }
-    }
+      .swiper-button-next-{{section.id}}:after,
+      .swiper-button-prev-{{section.id}}:after {
+          font-family: swiper-icons;
+          font-size: var(--swiper-navigation-size);
+          text-transform: none !important;
+          letter-spacing: 0;
+          text-transform: none;
+          font-variant: initial;
+          line-height: 1
+      }
 
-        {
-        position: absolute;
-        top: 50%;
-        width: calc(var(--swiper-navigation-size)/ 44 * 27);
-        height: var(--swiper-navigation-size);
-        margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-        z-index: 10;
-        cursor: pointer;
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        color: var(--swiper-navigation-color, var(--swiper-theme-color))
-    }
+      .swiper-button-prev-{{section.id}},
+      .swiper-rtl .swiper-button-next-{{section.id}} {
+          left: 10px;
+          right: auto
+      }
 
-    .swiper-button-next- {
-            {
-            section.id
-        }
-    }
 
-    .swiper-button-disabled,
-    .swiper-button-prev- {
-            {
-            section.id
-        }
-    }
 
-    .swiper-button-disabled {
-        opacity: .35;
-        cursor: auto;
-        pointer-events: none
-    }
+      .swiper-button-next-{{section.id}},
+      .swiper-rtl .swiper-button-prev-{{section.id}} {
+          right: 10px;
+          left: auto
+      }
 
-    .swiper-button-next- {
-            {
-            section.id
-        }
-    }
 
-    :after,
-    .swiper-button-prev- {
-            {
-            section.id
-        }
-    }
 
-    :after {
-        font-family: swiper-icons;
-        font-size: var(--swiper-navigation-size);
-        text-transform: none !important;
-        letter-spacing: 0;
-        text-transform: none;
-        font-variant: initial;
-        line-height: 1
-    }
+      .swiper-button-lock {
+          display: none
+      }
 
-    .swiper-button-prev- {
-            {
-            section.id
-        }
-    }
 
-    ,
-    .swiper-rtl .swiper-button-next- {
-            {
-            section.id
-        }
-    }
 
-        {
-        left: 10px;
-        right: auto
-    }
+    .swiper-pagination-bullet{
 
-    .swiper-button-next- {
-            {
-            section.id
-        }
-    }
-
-    ,
-    .swiper-rtl .swiper-button-prev- {
-            {
-            section.id
-        }
-    }
-
-        {
-        right: 10px;
-        left: auto
-    }
-
-    .swiper-button-lock {
-        display: none
-    }
-
-    .swiper-pagination-bullet {
-
-        width: 16px !important;
-        height: 16px !important;
+    width:16px !important;
+    height:16px !important;
 
     }
 
 
-    .btn-link {
-        text-decoration: underline;
+    .btn-link{
+    	text-decoration:underline;
+    }
+    .big-box{
+    	width:100%;
+      overflow:hidden;
+      box-sizing:border-box;
+    }
+    .product-box{
+      transform:translate(0);
+    	width:100%;
+      display: -webkit-box;
+      position:relative;
     }
 
-    .big-box {
-        width: 100%;
-        overflow: hidden;
-        box-sizing: border-box;
+    .productitem--image-link{height:185px;position:relative;}
+    .productitem--image{position:absolute;top:50%;}
+    .productitem--image img{max-height:185px}
+    .productitem{
+    	padding:.6875rem;
+      border:none;
+      box-shadow:none;
     }
-
-    .product-box {
-        transform: translate(0);
-        width: 100%;
-        display: -webkit-box;
-        position: relative;
+    .productitem--title{
+    	overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
-
-    .productitem--image-link {
-        height: 185px;
-        position: relative;
+    .productitem--price{
+    	display:flex;
+      align-items:center;
     }
-
-    .productitem--image {
-        position: absolute;
-        top: 50%;
+    .productitem--actions{
+    	width:100%;
+      margin:0;
+      flex-wrap:nowrap;
+      align-items:stretch;
+      right:0;
+      bottom:0;
     }
+    .slideshow_content{
+      width:100%;
 
-    .productitem--image img {
-        max-height: 185px
-    }
-
-    .productitem {
-        padding: .6875rem;
-        border: none;
-        box-shadow: none;
-    }
-
-    .productitem--title {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
-
-    .productitem--price {
-        display: flex;
-        align-items: center;
-    }
-
-    .productitem--actions {
-        width: 100%;
-        margin: 0;
-        flex-wrap: nowrap;
-        align-items: stretch;
-        right: 0;
-        bottom: 0;
-    }
-
-    .slideshow_content {
-        width: 100%;
-
-        position: relative;
+    	position:relative;
 
     }
 
-    .slideshow_content- {
-            {
-            section.id
-        }
+    .slideshow_content-{{section.id}} img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .product_self-link{
+    	display:block;
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
     }
-
-    .product_self-link {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+    .artworks-box{
+      width:100%;
+      height:190px;
+      margin: 0 auto 10px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
     }
-
-    .artworks-box {
-        width: 100%;
-        height: 190px;
-        margin: 0 auto 10px;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-    }
-
-    .artworks-box img {
-        width: 100%;
+    .artworks-box img{
+    	width:100%;
 
     }
-
-    .slideshow_content p {
-        margin: 0 !important;
+    .slideshow_content p{
+      margin:0 !important;
+    }
+    .icon-changebtn_{{section.id}}{
+    	width:40px;
+      height:40px;
+      text-align:center;
+      cursor:pointer;
+      background-color:rgba(255,255,255,.5);
+      color:rgb(183,183,183);
     }
 
-    .icon-changebtn_ {
-            {
-            section.id
-        }
+
+
+
+      @media (any-hover: hover){
+
+
+    {%- if section.settings.show_button_color =='transparent' -%}
+
+    .icon-changebtn_{{section.id}}:hover{
+      background-color: transparent !important;
+      border:none;
     }
 
-        {
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        cursor: pointer;
-        background-color: rgba(255, 255, 255, .5);
-        color: rgb(183, 183, 183);
+
+    {%- else -%}
+     .icon-changebtn_{{section.id}}:hover{
+      background-color: {{ section.settings.show_button_hover_color }} !important;
+
+
+
+
+
     }
 
-    @media (any-hover: hover) {
+
+    {%- endif -%}
 
 
-            {
-            %- if section.settings.show_button_color=='transparent'-%
-        }
+   }
 
-        .icon-changebtn_ {
-                {
-                section.id
-            }
-        }
 
-        :hover {
-            background-color: transparent !important;
-            border: none;
-        }
 
-            {
-            %- else -%
-        }
-
-        .icon-changebtn_ {
-                {
-                section.id
-            }
-        }
-
-        :hover {
-            background-color: {
-                    {
-                    section.settings.show_button_hover_color
-                }
-            }
-
-             !important;
-
-        }
-
-            {
-            %- endif -%
-        }
+   .bk_transparent{
+      background-color: transparent;
+      color: black;
+      border: 1px solid black;
     }
 
-    .bk_transparent {
-        background-color: transparent;
-        color: black;
-        border: 1px solid black;
+    .bk_white{
+      background-color: white;
+      color: black;
+      border: 1px solid #1111;
     }
 
-    .bk_white {
-        background-color: white;
-        color: black;
-        border: 1px solid #1111;
+    .bk_gray{
+      background-color: gray;
+      color: white;
+      border: none;
     }
 
-    .bk_gray {
-        background-color: gray;
-        color: white;
-        border: none;
+    .list_button_style1{
+      border-radius:50%;
     }
 
-    .list_button_style1 {
-        border-radius: 50%;
+    .list_button_style2{
+      border-radius:0;
     }
 
-    .list_button_style2 {
-        border-radius: 0;
+    .leftbtn.list_button_style3{
+      left:15px;
     }
 
-    .leftbtn.list_button_style3 {
-        left: 15px;
+    .rightbtn.list_button_style3{
+      right:15px;
     }
 
-    .rightbtn.list_button_style3 {
-        right: 15px;
-    }
-
-    .list_button_style3 {
-        border-radius: 0;
-        transform: translateY(-50%) rotate(45deg) !important;
+    .list_button_style3{
+  	border-radius: 0;
+      transform:translateY(-50%) rotate(45deg) !important;
     }
 
     .list_button_style3 p svg:nth-child(1) {
-        transform: translate(-62.5%, -50%) rotate(318deg) !important;
+      transform: translate(-62.5%,-50%) rotate(318deg) !important;
     }
 
     .rightbtn.list_button_style3 p svg:nth-child(1) {
-        transform: translate(-27%, -78%) rotate(318deg) !important;
+      transform: translate(-27%,-78%) rotate(318deg) !important;
     }
 
-    @media (any-hover: hover) {
-
-        .list_button_style1:hover,
-        .list_button_style2:hover,
-        .list_button_style3:hover {
-            color: rgb(255, 255, 255);
-        }
+    @media (any-hover: hover){
+    .list_button_style1:hover,.list_button_style2:hover,.list_button_style3:hover{
+      color:rgb(255,255,255);
+    }
     }
 
-    .dn {
-        display: none;
+
+    .dn{
+      display: none;
     }
 
-    .leftbtn {
-        position: absolute;
-        margin: 0 0;
-        top: 50%;
-        left: 5px;
-        transform: translateY(-50%);
-        z-index: 2;
+    .leftbtn{
+    	position: absolute;
+      margin: 0 0;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+    .rightbtn{
+    	position: absolute;
+      margin: 0 0;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      z-index: 2;
     }
 
-    .rightbtn {
-        position: absolute;
-        margin: 0 0;
-        top: 50%;
-        right: 5px;
-        transform: translateY(-50%);
-        z-index: 2;
-    }
+    .icon-changebtn_{{section.id}} {
 
-    .icon-changebtn_ {
-            {
-            section.id
-        }
-    }
-
-        {
-        display: block;
+    display:block;
 
     }
 
-        {
-        % if section.settings.show_button_visible !='always'%
-    }
 
-    .icon-changebtn_ {
-            {
-            section.id
-        }
-    }
+    {% if section.settings.show_button_visible != 'always' %}
 
-        {
-        -webkit-transform: translateY(-50%) scale(0);
-        transform: translateY(-50%) scale(0);
-        opacity: 0;
-        transition: .2s ease-in-out
-    }
 
-    @media (any-hover: hover) {
-        .swiper-container- {
-                {
-                section.id
-            }
-        }
 
-        :hover .icon-changebtn_ {
-                {
-                section.id
-            }
-        }
-
-            {
-
-            -webkit-transform: translateY(-50%) scale(1);
-            transform: translateY(-50%) scale(1);
-            opacity: 1;
-        }
-    }
-
-        {
-        % endif %
-    }
-
-    @media screen and (max-width: 750px) {
-        .icon-changebtn_ {
-                {
-                section.id
-            }
-        }
-
-            {
-            display: block;
-            opacity: 1;
-        }
-
-            {
-            %- if section.settings.show_button_color=='transparent'-%
-        }
-
-        .icon-changebtn_ {
-                {
-                section.id
-            }
-        }
-
-        :active {
-            background-color: transparent !important;
-
-            border: none;
-        }
-
-            {
-            %- else -%
-        }
-
-        .icon-changebtn_ {
-                {
-                section.id
-            }
-        }
-
-        :active {
-            background-color: {
-                    {
-                    section.settings.show_button_hover_color
-                }
-            }
-
-             !important;
-            border:none;
-        }
-
-            {
-            %- endif -%
-        }
-    }
-
-    @media screen and (max-width: 990px) {
-        .icon-changebtn_ {
-                {
-                section.id
-            }
-        }
-
-            {
-
-            display: block;
-            opacity: 1;
-        }
-
-            {
-            %- if section.settings.show_button_color=='transparent'-%
-        }
-
-        .icon-changebtn_ {
-                {
-                section.id
-            }
-        }
-
-        :active {
-            background-color: transparent !important;
-
-            border: none;
-        }
-
-            {
-            %- else -%
-        }
-
-        .icon-changebtn_ {
-                {
-                section.id
-            }
-        }
-
-        :active {
-            background-color: {
-                    {
-                    section.settings.show_button_hover_color
-                }
-            }
-
-             !important;
-            /*   	box-shadow: 0px 0px 8px 1px #e3e3e3; */
-            border:none;
-        }
-
-            {
-            %- endif -%
-        }
+    .icon-changebtn_{{section.id}} {
+    	-webkit-transform:translateY(-50%) scale(0) ;
+  	transform: translateY(-50%) scale(0) ;
+   	opacity: 0;
+      transition: .2s ease-in-out
 
     }
 
-    /*   定义轮播点 */
+      @media (any-hover: hover){
+      .swiper-container-{{section.id}}:hover .icon-changebtn_{{section.id}}{
+
+        -webkit-transform:translateY(-50%) scale(1);
+        transform:translateY(-50%) scale(1);
+        opacity: 1;
+
+      }
+      }
+    {% endif %}
 
 
-        {
-        % if section.settings.page_dot_style=='style_1'and section.settings.page_dot_color=='dark'%
+
+     @media screen and (max-width: 750px) {
+
+
+
+
+      .icon-changebtn_{{section.id}} {
+        display:block;
+        opacity:1;
+      }
+
+     {%- if section.settings.show_button_color =='transparent' -%}
+
+    .icon-changebtn_{{section.id}}:active{
+      background-color: transparent !important;
+
+      border:none;
     }
 
-    .swiper-pagination- {
-            {
-            section.id
-        }
+
+    {%- else -%}
+     .icon-changebtn_{{section.id}}:active{
+      background-color: {{ section.settings.show_button_hover_color }} !important;
+      border:none;
     }
 
-    .swiper-pagination-bullet {
-        background: #4e4e4e;
-        border: 1.5px solid rgb(189 188 188 / 28%);
+
+    {%- endif -%}
+
+
+
+     }
+
+       @media screen and (max-width: 990px) {
+
+
+
+
+      .icon-changebtn_{{section.id}} {
+
+        display:block;
+        opacity:1;
+      }
+
+       {%- if section.settings.show_button_color =='transparent' -%}
+
+    .icon-changebtn_{{section.id}}:active{
+      background-color: transparent !important;
+
+      border:none;
     }
 
-    .swiper-pagination- {
-            {
-            section.id
-        }
+
+    {%- else -%}
+     .icon-changebtn_{{section.id}}:active{
+      background-color: {{ section.settings.show_button_hover_color }} !important;
+  /*   	box-shadow: 0px 0px 8px 1px #e3e3e3; */
+      border:none;
     }
 
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background: black;
-    }
 
-        {
-        % elsif section.settings.page_dot_style=='style_1'and section.settings.page_dot_color=='light'%
-    }
+    {%- endif -%}
 
-    .swiper-pagination- {
-            {
-            section.id
-        }
-    }
 
-    .swiper-pagination-bullet {
-        background: #4e4e4e;
-        border: 1.5px solid rgb(189 188 188 / 28%);
-    }
+     }
 
-    .swiper-pagination- {
-            {
-            section.id
-        }
-    }
 
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background: white;
-    }
+  /*   定义轮播点 */
 
-        {
-        % elsif section.settings.page_dot_style=='style_2'and section.settings.page_dot_color=='dark'%
-    }
 
-    .swiper-pagination- {
-            {
-            section.id
-        }
-    }
+    {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
+      .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
+      background:#4e4e4e;
+  	border: 1.5px solid rgb(189 188 188 / 28%);
 
-    .swiper-pagination-bullet {
-        border: 1px solid #323232;
-        background: white;
-    }
+    	}
 
-    .swiper-pagination- {
-            {
-            section.id
-        }
-    }
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background:black;
 
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background: black;
-    }
+      }
+    {% elsif section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'light' %}
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
 
-        {
-        % elsif section.settings.page_dot_style=='style_2'and section.settings.page_dot_color=='light'%
-    }
+      background:#4e4e4e;
+  	border: 1.5px solid rgb(189 188 188 / 28%);
+    	}
 
-    .swiper-pagination- {
-            {
-            section.id
-        }
-    }
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background:white;
 
-    .swiper-pagination-bullet {
-        border: 1px solid #323232;
-        background: #adadad;
-    }
+      }
+    {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'dark' %}
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
+  	border: 1px solid #323232;
+      background:white;
+    	}
 
-    .swiper-pagination- {
-            {
-            section.id
-        }
-    }
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background:black;
 
-    .swiper-pagination-bullet.swiper-pagination-bullet-active {
-        background: white;
-    }
+      }
+    {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light'%}
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
+  	border: 1px solid #323232;
+      background:#adadad;
+    	}
 
-        {
-        % endif %
-    }
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background:white;
 
-    .swiper-pagination- {
-            {
-            section.id
-        }
-    }
+      }
+    {% endif %}
 
-        {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        bottom: 20px;
-        z-index: 100;
-        cursor: pointer;
-        padding: 0px;
-        margin: 0;
+
+    .swiper-pagination-{{section.id}} {
+
+    	width: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 20px;
+      z-index: 100;
+      cursor: pointer;
+      padding: 0px;
+      margin: 0;
 
     }
 
-    .swiper-pagination- {
-            {
-            section.id
-        }
-    }
 
-    .swiper-pagination-bullet {
-        float: left;
-        width: 16px;
-        height: 16px;
-        text-align: center;
-        line-height: 16px;
-        font-size: 10px;
-        border-radius: 50%;
-        text-align: center;
-        transition: all 1.5s;
-        margin: 0 14px;
-        list-style-type: none;
+    .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
+
+      float:left;
+      width:16px;
+      height:16px;
+      text-align: center;
+      line-height: 16px;
+      font-size: 10px;
+      border-radius: 50%;
+      text-align: center;
+      transition:all 1.5s;
+      margin: 0 14px;
+      list-style-type: none;
     }
 </style>
+
 <script type="module">
 
 
