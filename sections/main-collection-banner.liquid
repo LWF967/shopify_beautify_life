@@ -20,12 +20,11 @@
         {{- collection.title | escape -}}
       </h1>
       <h4 class="my_collection_hero_des" style="color:rgba(var(--color-foreground),.75)">{{- collection.description -}}</h4>
-      {%- if section.settings.show_collection_description -%}
-        <div class="collection-hero__description rte">{{ collection.description }}</div>
-      {%- endif -%}
+
     </div>
 
     {%- if section.settings.show_collection_image and collection.image -%}
+    56132
       <div class="collection-hero__image-container media">
         <img
           srcset="{%- if collection.image.width >= 165 -%}{{ collection.image | img_url: '165x' }} 165w,{%- endif -%}
@@ -55,12 +54,7 @@
       "type": "paragraph",
       "content": "t:sections.main-collection-banner.settings.paragraph.content"
     },
-    {
-      "type": "checkbox",
-      "id": "show_collection_description",
-      "default": false,
-      "label": "t:sections.main-collection-banner.settings.show_collection_description.label"
-    },
+
     {
       "type": "checkbox",
       "id": "show_collection_image",
