@@ -167,13 +167,15 @@
     console.log("无进入promo后台");
     console.log("我是判断有无cookie lzx1");
     if(getCookie("lzx1")) {
-    console.log(getCookie("lzx1"));
-          console.log(getCookie("lzx2"));
+      promo_bar_change();
+
+      console.log(getCookie("lzx1"));
+      console.log(getCookie("lzx2"));
       console.log(getCookie("lzx1") == getCookie("lzx2"));
     } else {
-        console.log(getCookie("无"));
-// 		onloadtodo();
-          promo_bar_change();
+      console.log(getCookie("无"));
+      // 		onloadtodo();
+      promo_bar_change();
 
     }
   }
