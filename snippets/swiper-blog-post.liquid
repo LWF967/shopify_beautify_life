@@ -47,6 +47,9 @@
   .my_swiper_blog .swiper-wrapper li {
     text-align: left;
   }
+   .my_blog_viewAll{
+  margin:5px 0 0 0 ;
+  }
 </style>
 
     {%- liquid
@@ -85,7 +88,7 @@
 
     {%- endcase -%}
   </div>
-  <div class="swiper_pagination_blog swiper_pagination_blog_{{section.id}}"></div>
+  <div class="swiper_pagination_blog swiper_pagination_blog_{{section.id}} my_blog_viewAll"></div>
 </div>
 
 <script type="module">
