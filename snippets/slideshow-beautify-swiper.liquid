@@ -1078,11 +1078,10 @@ document.addEventListener('shopify:section:load', () => {
 
 
 document.addEventListener('shopify:section:unload', () => {
-	console.log(this,'cccc');
+
 // console.log('baibai',swiperTime);
 
-   swiperBeautifySlideshow = 'null';
-
+	swiperBeautifySlideshow.destroy(false); 
 
 
 }, true)
