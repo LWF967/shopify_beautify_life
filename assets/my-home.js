@@ -312,7 +312,7 @@ window.onload = function() {
         }
         hide_banner.style.marginTop = -hide_banner_height + 'px';
         hide_banner.style.transition = "margin-top .5s";
-                  setCookie("lzx1",cookietime);
+//                   setCookie("lzx1",cookietime);
       }
 
       if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
@@ -322,7 +322,7 @@ window.onload = function() {
           }
           hide_banner.style.marginTop = -hide_banner_height + 'px';
           hide_banner.style.transition = "margin-top .5s";
-                            setCookie("lzx1",cookietime);
+//                             setCookie("lzx1",cookietime);
         }
       }
       hide_banner.dataset.mheight = hide_banner_height;
