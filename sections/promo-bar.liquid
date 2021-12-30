@@ -274,6 +274,34 @@
   var myPromoFreshDesignMode2 = Shopify.designMode || false;
   if(myPromoFreshDesignMode2){      
 	  console.log("进入promo后台");
+    
+    
+    let test = document.getElementById('promo_bar_date');
+//         test.addEventListener('click', () => {
+//             console.log(1);
+//             test.setAttribute('data-date', 1);
+//         })
+
+        var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;//浏览器兼容
+        var config = { attributes: true, childList: true }//配置对象
+        $("#box").each(function () {
+            var _this = $(this);
+            var observer = new MutationObserver(function (mutations) {//构造函数回调
+                mutations.forEach(function (record) {
+                    if (record.type == "attributes") {//监听属性
+                        //do any code
+                        console.log("属性变化");
+                    }
+                    if (record.type == 'childList') {//监听结构发生变化
+                        //do any code
+                        console.log("结构变化");
+                    }
+                });
+            });
+            observer.observe(_this[0], config);
+        });
+  
+  
   }
   
   
