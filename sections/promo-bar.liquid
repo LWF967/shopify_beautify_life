@@ -171,15 +171,19 @@
         console.log("不加载");
         let hide_banner = document.getElementById('hide_banner'); 
         let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-
         hide_banner.style.marginTop = -hide_banner_height + 'px';
       } else {
         promo_bar_fun();
       }
     } else {
-      console.log(getCookie("无"));
-      promo_bar_change();
-
+      if(getCookie("lzx2")) {
+        console.log("不加载");
+        let hide_banner = document.getElementById('hide_banner'); 
+        let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+        hide_banner.style.marginTop = -hide_banner_height + 'px';
+      } else {
+        promo_bar_change();
+      }
     }
   }
   
