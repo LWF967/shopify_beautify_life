@@ -152,6 +152,38 @@
   if(myPromoFreshDesignMode2){      
 	  console.log("进入promo后台");
     setCookie("lzx1",cookietime);
+    let close = document.getElementsByClassName('show_close')[0];
+    let my_center = document.getElementsByClassName('my_center')[0];
+    let hide_banner = document.getElementById('hide_banner');  
+    let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+    let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+    close.onclick = function () {
+      if(hide_banner_height > hide_banner.dataset.mheight) {
+        hide_banner.dataset.mheight = hide_banner_height;
+      }
+      hide_banner.style.marginTop = -hide_banner_height + 'px';
+//                         setCookie("lzx1",cookietime);
+
+    }
+
+    if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+      close.onclick = function () {
+        if(hide_banner_height > hide_banner.dataset.mheight) {
+          hide_banner.dataset.mheight = hide_banner_height;
+        }
+        hide_banner.style.marginTop = -hide_banner_height + 'px';
+//                           setCookie("lzx1",cookietime);
+
+      }
+    }
+    hide_banner.dataset.mheight = hide_banner_height;
+    hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+    
+    
+  } else {
+      promo_bar_fun();
+		  console.log("无进入promo后台");
+
   }
   
   function promo_bar_change() {
@@ -189,14 +221,6 @@
     }, 500);
   }
     
-//   function refresh_promo() { 
-//   var myPromoFreshDesignMode = Shopify.designMode || false;
-//   if(myPromoFreshDesignMode){      
-//     document.addEventListener('shopify:section:load',() => {  
-//                               // 注释后 自己不能刷新
-//                               //         promo_bar_change();
-  
-  
   var myPromoFreshDesignMode = Shopify.designMode || false;
   if(myPromoFreshDesignMode){      
     document.addEventListener('shopify:section:load',() => {  
@@ -205,11 +229,7 @@
     },true);
   }
   
-//   }
-  
-  function promo_bar_fun() { 
-//     refresh_promo();
-    
+  function promo_bar_fun() {   
     console.log("进入promobarfun");
     let close = document.getElementsByClassName('show_close')[0];
     let my_center = document.getElementsByClassName('my_center')[0];
@@ -238,7 +258,7 @@
     hide_banner.dataset.mheight = hide_banner_height;
     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
   }
-  promo_bar_fun();
+//   promo_bar_fun();
 //       promo_bar_change();
 
   
