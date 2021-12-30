@@ -154,7 +154,7 @@
 
   } else {
     console.log("无进入promo后台");
-    if(getCookie("lzx2")){
+    if(getCookie("ddl")){
       let hide_banner = document.getElementById('hide_banner'); 
       let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
       hide_banner.style.marginTop = -hide_banner_height + 'px';
@@ -216,7 +216,7 @@
         hide_banner.dataset.mheight = hide_banner_height;
       }
       hide_banner.style.marginTop = -hide_banner_height + 'px';
-                        setCookie("lzx2",cookietime);
+                        setCookie("ddl",cookietime);
 
     }
 
@@ -226,7 +226,7 @@
           hide_banner.dataset.mheight = hide_banner_height;
         }
         hide_banner.style.marginTop = -hide_banner_height + 'px';
-                          setCookie("lzx2",cookietime);
+                          setCookie("ddl",cookietime);
 
       }
     }
