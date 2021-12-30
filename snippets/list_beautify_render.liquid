@@ -155,599 +155,586 @@
 </div>
 
 
-
-
 <style>
-  .my_swiper_outside_content {
-    padding-bottom: 31px;
-    position: relative;
-  }
-
-    .swiper-pagination-{{section.id}}.swiper-pagination-hidden {
-        opacity: 0
-    }
-  
-  
-  
-  
-.swiper-button-next-{{section.id}},
-    .swiper-button-prev-{{section.id}} {
-        position: absolute;
-        top: 50%;
-        width: calc(var(--swiper-navigation-size)/ 44 * 27);
-        height: var(--swiper-navigation-size);
-        margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-        z-index: 10;
-        cursor: pointer;
-        display: flex !important;
-        align-items: center;
-        justify-content: center;
-        color: var(--swiper-navigation-color, var(--swiper-theme-color))
+    .my_swiper_outside_content {
+      padding-bottom: 31px;
+      position: relative;
     }
 
-    .swiper-button-next-{{section.id}}.swiper-button-disabled,
-    .swiper-button-prev-{{section.id}}.swiper-button-disabled {
-        opacity: .35;
-        cursor: auto;
-        pointer-events: none
-    }
-
-    .swiper-button-next-{{section.id}}:after,
-    .swiper-button-prev-{{section.id}}:after {
-        font-family: swiper-icons;
-        font-size: var(--swiper-navigation-size);
-        text-transform: none !important;
-        letter-spacing: 0;
-        text-transform: none;
-        font-variant: initial;
-        line-height: 1
-    }
-
-    .swiper-button-prev-{{section.id}},
-    .swiper-rtl .swiper-button-next-{{section.id}} {
-        left: 10px;
-        right: auto
-    }
+      .swiper-pagination-{{section.id}}.swiper-pagination-hidden {
+          opacity: 0
+      }
 
 
 
-    .swiper-button-next-{{section.id}},
-    .swiper-rtl .swiper-button-prev-{{section.id}} {
-        right: 10px;
-        left: auto
-    }
+
+  .swiper-button-next-{{section.id}},
+      .swiper-button-prev-{{section.id}} {
+          position: absolute;
+          top: 50%;
+          width: calc(var(--swiper-navigation-size)/ 44 * 27);
+          height: var(--swiper-navigation-size);
+          margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+          z-index: 10;
+          cursor: pointer;
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          color: var(--swiper-navigation-color, var(--swiper-theme-color))
+      }
+
+      .swiper-button-next-{{section.id}}.swiper-button-disabled,
+      .swiper-button-prev-{{section.id}}.swiper-button-disabled {
+          opacity: .35;
+          cursor: auto;
+          pointer-events: none
+      }
+
+      .swiper-button-next-{{section.id}}:after,
+      .swiper-button-prev-{{section.id}}:after {
+          font-family: swiper-icons;
+          font-size: var(--swiper-navigation-size);
+          text-transform: none !important;
+          letter-spacing: 0;
+          text-transform: none;
+          font-variant: initial;
+          line-height: 1
+      }
+
+      .swiper-button-prev-{{section.id}},
+      .swiper-rtl .swiper-button-next-{{section.id}} {
+          left: 10px;
+          right: auto
+      }
 
 
 
-    .swiper-button-lock {
-        display: none
-    }
+      .swiper-button-next-{{section.id}},
+      .swiper-rtl .swiper-button-prev-{{section.id}} {
+          right: 10px;
+          left: auto
+      }
 
 
-  
-  .swiper-pagination-bullet{
-    
-  width:16px !important;
-  height:16px !important;  
-  
-  }
 
-  
-  
-  
-
-  
-    
-  
-  .btn-link{
-  	text-decoration:underline;
-  }
-  .big-box{
-  	width:100%;
-    overflow:hidden;
-    box-sizing:border-box;
-  }
-  .product-box{
-    transform:translate(0);
-  	width:100%;
-    display: -webkit-box;
-    position:relative;
-  }
-
-  .productitem--image-link{height:185px;position:relative;}
-  .productitem--image{position:absolute;top:50%;}
-  .productitem--image img{max-height:185px}
-  .productitem{
-  	padding:.6875rem;
-    border:none;
-    box-shadow:none;
-  }
-  .productitem--title{
-  	overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-  .productitem--price{
-  	display:flex;
-    align-items:center;
-  }
-  .productitem--actions{
-  	width:100%;
-    margin:0;
-    flex-wrap:nowrap;
-    align-items:stretch;
-    right:0;
-    bottom:0;
-  }
-  .slideshow_content{
-    width:100%;
-
-  	position:relative;
-
-  }
-  
-  .slideshow_content-{{section.id}} img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .product_self-link{
-  	display:block;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-  }
-  .artworks-box{
-    width:100%;
-    height:190px;
-    margin: 0 auto 10px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-  .artworks-box img{
-  	width:100%;
-    
-  }
-  .slideshow_content p{
-    margin:0 !important;
-  }
-  .icon-changebtn_{{section.id}}{
-  	width:40px;
-    height:40px;
-    text-align:center;
-    cursor:pointer;
-    background-color:rgba(255,255,255,.5);
-    color:rgb(183,183,183);
-  }
-
-  
-
-  
-    @media (any-hover: hover){
-    
-    
-  {%- if section.settings.show_button_color =='transparent' -%}
-
-  .icon-changebtn_{{section.id}}:hover{
-    background-color: transparent !important;
-    border:none;
-  }
-
-  
-  {%- else -%}
-   .icon-changebtn_{{section.id}}:hover{
-    background-color: {{ section.settings.show_button_hover_color }} !important;
+      .swiper-button-lock {
+          display: none
+      }
 
 
-    
 
-  
-  }
-  
-  
-  {%- endif -%}
-    
-	
- }
-  
-  
+    .swiper-pagination-bullet{
 
- .bk_transparent{
-    background-color: transparent;
-    color: black;
-    border: 1px solid black;
-  }
-
-  .bk_white{
-    background-color: white;
-    color: black;
-    border: 1px solid #1111;
-  }
-
-  .bk_gray{
-    background-color: gray;
-    color: white;  
-    border: none;
-  }
-
-  .list_button_style1{
-    border-radius:50%;
-  }
-
-  .list_button_style2{
-    border-radius:0;
-  }
-
-  .leftbtn.list_button_style3{
-    left:15px;
-  }
-
-  .rightbtn.list_button_style3{
-    right:15px;
-  }
-  
-  .list_button_style3{
-	border-radius: 0;
-    transform:translateY(-50%) rotate(45deg) !important;
-  }
- 
-  .list_button_style3 p svg:nth-child(1) {
-    transform: translate(-62.5%,-50%) rotate(318deg) !important;
-  }
-  
-  .rightbtn.list_button_style3 p svg:nth-child(1) {
-    transform: translate(-27%,-78%) rotate(318deg) !important;
-  }
-  
-  @media (any-hover: hover){
-  .list_button_style1:hover,.list_button_style2:hover,.list_button_style3:hover{
-    color:rgb(255,255,255);
-  }
-  }
-  
-  
-  .dn{
-    display: none;
-  }
-  
-  .leftbtn{
-  	position: absolute;
-    margin: 0 0;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    z-index: 2;
-  }
-  .rightbtn{
-  	position: absolute;
-    margin: 0 0;
-    top: 50%;
-    right: 5px;
-    transform: translateY(-50%);
-    z-index: 2;    
-  }
-  
-  .icon-changebtn_{{section.id}} {
-  
-  display:block;
- 
-  }
-  
-  
-  {% if section.settings.show_button_visible != 'always' %} 
-
-  
-
-  .icon-changebtn_{{section.id}} {
-  	-webkit-transform:translateY(-50%) scale(0) ;
-	transform: translateY(-50%) scale(0) ;
- 	opacity: 0;
-    transition: .2s ease-in-out
-  
-  }
-  
-    @media (any-hover: hover){
-    .swiper-container-{{section.id}}:hover .icon-changebtn_{{section.id}}{
-        
-      -webkit-transform:translateY(-50%) scale(1); 
-      transform:translateY(-50%) scale(1); 
-      opacity: 1;
+    width:16px !important;
+    height:16px !important;
 
     }
+
+
+
+
+
+
+
+
+    .btn-link{
+    	text-decoration:underline;
     }
-  {% endif %}
-  
-  
-  
-   @media screen and (max-width: 750px) {
-
-
-    
-    
-    .icon-changebtn_{{section.id}} {
-      display:block;
-      opacity:1;
+    .big-box{
+    	width:100%;
+      overflow:hidden;
+      box-sizing:border-box;
     }
-     
-   {%- if section.settings.show_button_color =='transparent' -%}
+    .product-box{
+      transform:translate(0);
+    	width:100%;
+      display: -webkit-box;
+      position:relative;
+    }
 
-  .icon-changebtn_{{section.id}}:active{
-    background-color: transparent !important;
+    .productitem--image-link{height:185px;position:relative;}
+    .productitem--image{position:absolute;top:50%;}
+    .productitem--image img{max-height:185px}
+    .productitem{
+    	padding:.6875rem;
+      border:none;
+      box-shadow:none;
+    }
+    .productitem--title{
+    	overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .productitem--price{
+    	display:flex;
+      align-items:center;
+    }
+    .productitem--actions{
+    	width:100%;
+      margin:0;
+      flex-wrap:nowrap;
+      align-items:stretch;
+      right:0;
+      bottom:0;
+    }
+    .slideshow_content{
+      width:100%;
 
-    border:none;
-  }
+    	position:relative;
 
-  
-  {%- else -%}
-   .icon-changebtn_{{section.id}}:active{
-    background-color: {{ section.settings.show_button_hover_color }} !important;
-    border:none;
-  }
-  
-  
-  {%- endif -%}
-    
+    }
+
+    .slideshow_content-{{section.id}} img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .product_self-link{
+    	display:block;
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+    }
+    .artworks-box{
+      width:100%;
+      height:190px;
+      margin: 0 auto 10px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+    .artworks-box img{
+    	width:100%;
+
+    }
+    .slideshow_content p{
+      margin:0 !important;
+    }
+    .icon-changebtn_{{section.id}}{
+    	width:40px;
+      height:40px;
+      text-align:center;
+      cursor:pointer;
+      background-color:rgba(255,255,255,.5);
+      color:rgb(183,183,183);
+    }
+
+
+
+
+      @media (any-hover: hover){
+
+
+    {%- if section.settings.show_button_color =='transparent' -%}
+
+    .icon-changebtn_{{section.id}}:hover{
+      background-color: transparent !important;
+      border:none;
+    }
+
+
+    {%- else -%}
+     .icon-changebtn_{{section.id}}:hover{
+      background-color: {{ section.settings.show_button_hover_color }} !important;
+
+
+
+
+
+    }
+
+
+    {%- endif -%}
 
 
    }
-  
-     @media screen and (max-width: 990px) {
 
 
-    
-    
+
+   .bk_transparent{
+      background-color: transparent;
+      color: black;
+      border: 1px solid black;
+    }
+
+    .bk_white{
+      background-color: white;
+      color: black;
+      border: 1px solid #1111;
+    }
+
+    .bk_gray{
+      background-color: gray;
+      color: white;
+      border: none;
+    }
+
+    .list_button_style1{
+      border-radius:50%;
+    }
+
+    .list_button_style2{
+      border-radius:0;
+    }
+
+    .leftbtn.list_button_style3{
+      left:15px;
+    }
+
+    .rightbtn.list_button_style3{
+      right:15px;
+    }
+
+    .list_button_style3{
+  	border-radius: 0;
+      transform:translateY(-50%) rotate(45deg) !important;
+    }
+
+    .list_button_style3 p svg:nth-child(1) {
+      transform: translate(-62.5%,-50%) rotate(318deg) !important;
+    }
+
+    .rightbtn.list_button_style3 p svg:nth-child(1) {
+      transform: translate(-27%,-78%) rotate(318deg) !important;
+    }
+
+    @media (any-hover: hover){
+    .list_button_style1:hover,.list_button_style2:hover,.list_button_style3:hover{
+      color:rgb(255,255,255);
+    }
+    }
+
+
+    .dn{
+      display: none;
+    }
+
+    .leftbtn{
+    	position: absolute;
+      margin: 0 0;
+      top: 50%;
+      left: 5px;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+    .rightbtn{
+    	position: absolute;
+      margin: 0 0;
+      top: 50%;
+      right: 5px;
+      transform: translateY(-50%);
+      z-index: 2;
+    }
+
     .icon-changebtn_{{section.id}} {
 
-      display:block;
-      opacity:1;
+    display:block;
+
     }
+
+
+    {% if section.settings.show_button_visible != 'always' %}
+
+
+
+    .icon-changebtn_{{section.id}} {
+    	-webkit-transform:translateY(-50%) scale(0) ;
+  	transform: translateY(-50%) scale(0) ;
+   	opacity: 0;
+      transition: .2s ease-in-out
+
+    }
+
+      @media (any-hover: hover){
+      .swiper-container-{{section.id}}:hover .icon-changebtn_{{section.id}}{
+
+        -webkit-transform:translateY(-50%) scale(1);
+        transform:translateY(-50%) scale(1);
+        opacity: 1;
+
+      }
+      }
+    {% endif %}
+
+
+
+     @media screen and (max-width: 750px) {
+
+
+
+
+      .icon-changebtn_{{section.id}} {
+        display:block;
+        opacity:1;
+      }
 
      {%- if section.settings.show_button_color =='transparent' -%}
 
-  .icon-changebtn_{{section.id}}:active{
-    background-color: transparent !important;
+    .icon-changebtn_{{section.id}}:active{
+      background-color: transparent !important;
 
-    border:none;
-  }
+      border:none;
+    }
 
-  
-  {%- else -%}
-   .icon-changebtn_{{section.id}}:active{
-    background-color: {{ section.settings.show_button_hover_color }} !important;
-/*   	box-shadow: 0px 0px 8px 1px #e3e3e3; */
-    border:none;
-  }
-  
-  
-  {%- endif -%}
-    
 
-   }
-  
-  
-/*   定义轮播点 */
-  
-  
-  {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
+    {%- else -%}
+     .icon-changebtn_{{section.id}}:active{
+      background-color: {{ section.settings.show_button_hover_color }} !important;
+      border:none;
+    }
+
+
+    {%- endif -%}
+
+
+
+     }
+
+       @media screen and (max-width: 990px) {
+
+
+
+
+      .icon-changebtn_{{section.id}} {
+
+        display:block;
+        opacity:1;
+      }
+
+       {%- if section.settings.show_button_color =='transparent' -%}
+
+    .icon-changebtn_{{section.id}}:active{
+      background-color: transparent !important;
+
+      border:none;
+    }
+
+
+    {%- else -%}
+     .icon-changebtn_{{section.id}}:active{
+      background-color: {{ section.settings.show_button_hover_color }} !important;
+  /*   	box-shadow: 0px 0px 8px 1px #e3e3e3; */
+      border:none;
+    }
+
+
+    {%- endif -%}
+
+
+     }
+
+
+  /*   定义轮播点 */
+
+
+    {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
+      .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
+      background:#4e4e4e;
+  	border: 1.5px solid rgb(189 188 188 / 28%);
+
+    	}
+
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background:black;
+
+      }
+    {% elsif section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'light' %}
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
+
+      background:#4e4e4e;
+  	border: 1.5px solid rgb(189 188 188 / 28%);
+    	}
+
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background:white;
+
+      }
+    {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'dark' %}
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
+  	border: 1px solid #323232;
+      background:white;
+    	}
+
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background:black;
+
+      }
+    {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light'%}
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
+  	border: 1px solid #323232;
+      background:#adadad;
+    	}
+
+  	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        background:white;
+
+      }
+    {% endif %}
+
+
+    .swiper-pagination-{{section.id}} {
+
+    	width: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 20px;
+      z-index: 100;
+      cursor: pointer;
+      padding: 0px;
+      margin: 0;
+
+    }
+
+
     .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-    background:#4e4e4e;
-	border: 1.5px solid rgb(189 188 188 / 28%);
 
-  	}
-
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-      background:black;
-    
+      float:left;
+      width:16px;
+      height:16px;
+      text-align: center;
+      line-height: 16px;
+      font-size: 10px;
+      border-radius: 50%;
+      text-align: center;
+      transition:all 1.5s;
+      margin: 0 14px;
+      list-style-type: none;
     }
-  {% elsif section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'light' %}
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-
-    background:#4e4e4e;
-	border: 1.5px solid rgb(189 188 188 / 28%);
-  	}
-
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-      background:white;
-    
-    }
-  {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'dark' %}
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-	border: 1px solid #323232;
-    background:white;
-  	}
-
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-      background:black;
-
-    }
-  {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light'%}
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-	border: 1px solid #323232;
-    background:#adadad;
-  	}
-
-	.swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-      background:white;
-
-    }
-  {% endif %}	
-  
-  
-  .swiper-pagination-{{section.id}} {
-  
-  	width: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 20px;
-    z-index: 100;
-    cursor: pointer;
-    padding: 0px;
-    margin: 0;
-
-  }
-  
-  
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-	
-    float:left;
-    width:16px;
-    height:16px;
-    text-align: center;
-    line-height: 16px;
-    font-size: 10px;
-    border-radius: 50%;
-    text-align: center;
-    transition:all 1.5s;
-    margin: 0 14px;
-    list-style-type: none;
-  }
-  
-  
-  
-
 </style>
-
-
-
 
 <script type="module">
 
 
 
-  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
-  
-
-
- 
-
-
- var swiperBeautifyContainer = document.getElementsByClassName('swiper-container-{{section.id}} list-beautify-render')[0];
-    var swiperBeautifyWrapperGrid = parseInt(swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid);
-    var swiperBeautifyWrapperLoop = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.loop;
-    (swiperBeautifyWrapperLoop == "false") ? swiperBeautifyWrapperLoop=false : swiperBeautifyWrapperLoop=true;
-    
-   var swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
-    direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-    loop: swiperBeautifyWrapperLoop, 
-
-
-   
-    pagination: {
-      el: '.swiper-pagination-{{section.id}}',
-      clickable :true
-    },
-    
-
-    navigation: {
-      nextEl: '.swiper-button-next-{{section.id}}',
-      prevEl: '.swiper-button-prev-{{section.id}}',
-    },
-    
-    
-
-    
-    spaceBetween: 40,
-
-    breakpoints: { 
-      320: {  //当屏幕宽度大于等于320
-        slidesPerGroup :  2,
-    	loopedSlides: 2,
-     	slidesPerView:2,
-        spaceBetween: 15
-      },
-      768: {  //当屏幕宽度大于等于768 
-      	slidesPerGroup : 3, 
-      	loopedSlides: 3,
- 		slidesPerView:3,
-        spaceBetween: 15
-      },
-      1024: {  //当屏幕宽度大于等于1024
-      
-      	slidesPerGroup :  {{grid}},
-      	loopedSlides: {{grid}},
-  		slidesPerView:{{grid}},
-        spaceBetween: 30
-      }
-    },
+   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
 
 
 
-    
-    
-  })    
-
-   
 
 
-	
-  
-  
-       document.addEventListener('shopify:section:load',throttle(()=>{
-   
-    var swiperBeautifyContainer = document.getElementsByClassName('swiper-container-{{section.id}} list-beautify-render')[0];
-    var swiperBeautifyWrapperGrid = parseInt(swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid);
-    var swiperBeautifyWrapperLoop = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.loop;
-	(swiperBeautifyWrapperLoop == "false") ? swiperBeautifyWrapperLoop=false : swiperBeautifyWrapperLoop=true;
+
+  var swiperBeautifyContainer = document.getElementsByClassName('swiper-container-{{section.id}} list-beautify-render')[0];
+     var swiperBeautifyWrapperGrid = parseInt(swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid);
+     var swiperBeautifyWrapperLoop = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.loop;
+     (swiperBeautifyWrapperLoop == "false") ? swiperBeautifyWrapperLoop=false : swiperBeautifyWrapperLoop=true;
 
     var swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
-    direction: 'horizontal',
-    loop: swiperBeautifyWrapperLoop, 
-	
-	slidesPerGroup :  swiperBeautifyWrapperGrid,
-     loopedSlides: swiperBeautifyWrapperGrid,
-
-    pagination: {
-      el: '.swiper-pagination-{{section.id}}',
-      clickable :true
-    },
-
-    navigation: {
-      nextEl: '.swiper-button-next-{{section.id}}',
-      prevEl: '.swiper-button-prev-{{section.id}}',
-    },
-    
-    
-  
-    
-    spaceBetween: 40,
-
-  	breakpoints: { 
-    
-        320: {  //当屏幕宽度大于等于320 定于滚动组与显示组
-          slidesPerGroup : 2,
-          loopedSlides: 2,
-          slidesPerView:2,
-          spaceBetween: 15
-        },
-        768: {  //当屏幕宽度大于等于768 定于滚动组与显示组
-          slidesPerGroup : 3,
-          loopedSlides: 3,
-          slidesPerView:3,
-          spaceBetween: 15
-        },
-        1024: {  //当屏幕宽度大于等于1024 定于滚动组与显示组
-          slidesPerGroup : swiperBeautifyWrapperGrid,
-		  loopedSlides: swiperBeautifyWrapperGrid,
-          slidesPerView:swiperBeautifyWrapperGrid,
-          spaceBetween: 30
-        }
-      },
-	
+     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+     loop: swiperBeautifyWrapperLoop,
 
 
 
-    
-    
-  })    
+     pagination: {
+       el: '.swiper-pagination-{{section.id}}',
+       clickable :true
+     },
 
-  
-  },2000),true)
 
-  
+     navigation: {
+       nextEl: '.swiper-button-next-{{section.id}}',
+       prevEl: '.swiper-button-prev-{{section.id}}',
+     },
 
-    
+
+
+
+     spaceBetween: 40,
+
+     breakpoints: {
+       320: {  //当屏幕宽度大于等于320
+         slidesPerGroup :  2,
+     	loopedSlides: 2,
+      	slidesPerView:2,
+         spaceBetween: 15
+       },
+       768: {  //当屏幕宽度大于等于768
+       	slidesPerGroup : 3,
+       	loopedSlides: 3,
+  		slidesPerView:3,
+         spaceBetween: 15
+       },
+       1024: {  //当屏幕宽度大于等于1024
+
+       	slidesPerGroup :  {{grid}},
+       	loopedSlides: {{grid}},
+   		slidesPerView:{{grid}},
+         spaceBetween: 30
+       }
+     },
+
+
+
+
+
+   })
+
+
+
+
+
+
+
+        document.addEventListener('shopify:section:load',throttle(()=>{
+
+     var swiperBeautifyContainer = document.getElementsByClassName('swiper-container-{{section.id}} list-beautify-render')[0];
+     var swiperBeautifyWrapperGrid = parseInt(swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid);
+     var swiperBeautifyWrapperLoop = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.loop;
+  (swiperBeautifyWrapperLoop == "false") ? swiperBeautifyWrapperLoop=false : swiperBeautifyWrapperLoop=true;
+
+     var swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
+     direction: 'horizontal',
+     loop: swiperBeautifyWrapperLoop,
+
+  slidesPerGroup :  swiperBeautifyWrapperGrid,
+      loopedSlides: swiperBeautifyWrapperGrid,
+
+     pagination: {
+       el: '.swiper-pagination-{{section.id}}',
+       clickable :true
+     },
+
+     navigation: {
+       nextEl: '.swiper-button-next-{{section.id}}',
+       prevEl: '.swiper-button-prev-{{section.id}}',
+     },
+
+
+
+
+     spaceBetween: 40,
+
+   	breakpoints: {
+
+         320: {  //当屏幕宽度大于等于320 定于滚动组与显示组
+           slidesPerGroup : 2,
+           loopedSlides: 2,
+           slidesPerView:2,
+           spaceBetween: 15
+         },
+         768: {  //当屏幕宽度大于等于768 定于滚动组与显示组
+           slidesPerGroup : 3,
+           loopedSlides: 3,
+           slidesPerView:3,
+           spaceBetween: 15
+         },
+         1024: {  //当屏幕宽度大于等于1024 定于滚动组与显示组
+           slidesPerGroup : swiperBeautifyWrapperGrid,
+  	  loopedSlides: swiperBeautifyWrapperGrid,
+           slidesPerView:swiperBeautifyWrapperGrid,
+           spaceBetween: 30
+         }
+       },
+
+
+
+
+
+
+   })
+
+
+   },2000),true)
 </script>
