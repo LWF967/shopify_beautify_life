@@ -729,7 +729,7 @@
 	
   
   
-       document.addEventListener('shopify:section:load',throttle(()=>{
+       document.addEventListener('shopify:section:load',()=>{
    
     var swiperBeautifyContainer = document.getElementsByClassName('swiper-container-{{section.id}} list-beautify-render')[0];
     var swiperBeautifyWrapperGrid = parseInt(swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.grid);
@@ -786,7 +786,7 @@
   })    
 
   
-  },2000),true)
+  },true)
 
   
 
