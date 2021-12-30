@@ -1306,15 +1306,23 @@
 
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
     if(main_product_ProductModal.hasAttribute('open') == true) {
+      //main_product_promo_bar.style.display = "none";
+      //main_product_top_bar.style.display = "none";
+      //main_product_header.style.display = "none";
+      
       main_product_promo_bar.style.visibility = "hidden";
       main_product_top_bar.style.visibility = "hidden";
       main_product_header.style.visibility = "hidden";
       main_product_header_hidden.style.visibility = "hidden";
     } else if(main_product_ProductModal.hasAttribute('open') == false) {
+      //main_product_promo_bar.style.display = "block";
+      //main_product_top_bar.style.display = "block";
+      //main_product_header.style.display = "block";
+      
       main_product_promo_bar.style.visibility = "visible";
       main_product_top_bar.style.visibility = "visible";
       main_product_header.style.visibility = "visible";
-      main_product_header_hidden.style.visibility = "visible";  
+      main_product_header_hidden.style.visibility = "visible";
     }
   });
 </script>
