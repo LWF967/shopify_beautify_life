@@ -157,34 +157,35 @@
   var myPromoFreshDesignMode2 = Shopify.designMode || false;
   if(myPromoFreshDesignMode2){      
 	  console.log("进入promo后台");
-    setCookie("lzx1",cookietime);
+//     setCookie("lzx1",cookietime);
     promo_bar_change();
     
     
     
   } else {
-//       promo_bar_fun();
+      promo_bar_fun();
     console.log("无进入promo后台");
     console.log("我是判断有无cookie lzx1");
-    if(getCookie("lzx1")) {
-      if(getCookie("lzx2")) {
-        console.log("不加载");
-        let hide_banner = document.getElementById('hide_banner'); 
-        let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-        hide_banner.style.marginTop = -hide_banner_height + 'px';
-      } else {
-        promo_bar_fun();
-      }
-    } else {
-      if(getCookie("lzx2")) {
-        console.log("不加载");
-        let hide_banner = document.getElementById('hide_banner'); 
-        let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-        hide_banner.style.marginTop = -hide_banner_height + 'px';
-      } else {
-        promo_bar_change();
-      }
-    }
+//     if(getCookie("lzx1")) {
+//       if(getCookie("lzx2")) {
+//         console.log("不加载");
+//         let hide_banner = document.getElementById('hide_banner'); 
+//         let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+//         hide_banner.style.marginTop = -hide_banner_height + 'px';
+//       } else {
+//         promo_bar_fun();
+//       }
+//     } else {
+//       if(getCookie("lzx2")) {
+//         console.log("不加载");
+//         let hide_banner = document.getElementById('hide_banner'); 
+//         let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+//         hide_banner.style.marginTop = -hide_banner_height + 'px';
+//       } else {
+//         promo_bar_change();
+//       }
+//     }
+    
   }
   
   function promo_bar_change() {
@@ -200,7 +201,6 @@
       }
       hide_banner.style.marginTop = -hide_banner_height + 'px';
       hide_banner.style.transition = "margin-top .5s";
-//           setCookie("lzx2",cookietime);
     }
 
     if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
@@ -210,7 +210,6 @@
         }
         hide_banner.style.marginTop = -hide_banner_height + 'px';
         hide_banner.style.transition = "margin-top .5s";
-//                   setCookie("lzx2",cookietime);
       }
     }
     hide_banner.dataset.mheight = hide_banner_height;
@@ -242,7 +241,7 @@
         hide_banner.dataset.mheight = hide_banner_height;
       }
       hide_banner.style.marginTop = -hide_banner_height + 'px';
-                        setCookie("lzx2",cookietime+"lzx2");
+//                         setCookie("lzx2",cookietime+"lzx2");
 
     }
 
@@ -252,7 +251,7 @@
           hide_banner.dataset.mheight = hide_banner_height;
         }
         hide_banner.style.marginTop = -hide_banner_height + 'px';
-                          setCookie("lzx2",cookietime+"lzx2");
+//                           setCookie("lzx2",cookietime+"lzx2");
 
       }
     }
@@ -263,49 +262,6 @@
       hide_banner.style.transition = "margin-top .5s";
     }, 500);
   }
-//   promo_bar_fun();
-//       promo_bar_change();
-
-  
-//   var myPromoFreshDesignMode1 = Shopify.designMode || false;
-//   if(myPromoFreshDesignMode1){      
-//     document.addEventListener('shopify:section:load',() => {  
-
-//       var targetee = document.getElementById('promo_bar_date');
-//       console.log("shuaxin");
-//       // 创建观察者对象
-//       var observeree = new MutationObserver(function(mutations){
-//         mutations.forEach(function(mutation){
-//           console.log(mutation.type);
-//         });
-//       });
-//       // 配置观察选项:
-//       var configee = { attributes: true, childList: true, characterData: true ,subtree : true, attributeFilter: ['data-date'] };
-//       // 传入目标节点和观察选项
-//       observeree.observe(targetee, configee); 
-//       // 随后,你还可以停止观察
-//       // observer.disconnect();
-//     },true);
-//   }
-  
-//           var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;//浏览器兼容
-//         var config = { attributes: true, childList: true }//配置对象
-//         $("#promo_bar_date").each(function () {
-//             var _this = $(this);
-//             var observer = new MutationObserver(function (mutations) {//构造函数回调
-//                 mutations.forEach(function (record) {
-//                     if (record.type == "attributes") {//监听属性
-//                         //do any code
-//                         console.log("属性变化");
-//                     }
-//                     if (record.type == 'childList') {//监听结构发生变化
-//                         //do any code
-//                         console.log("结构变化");
-//                     }
-//                 });
-//             });
-//             observer.observe(_this[0], config);
-//         });
   
   
 </script>
