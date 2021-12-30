@@ -25,6 +25,7 @@
         "1640826219be843b7f-1": {
           "type": "slideshow_img2",
           "settings": {
+            "image": "shopify:\/\/shop_images\/a-wet-bridge-covered-in-fog.jpg",
             "image_alignment": "center center",
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
@@ -36,28 +37,7 @@
         "724a391c-7e0d-4044-a4d0-577f467f1181": {
           "type": "slideshow_img2",
           "settings": {
-            "image_alignment": "center center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
-        },
-        "d4c319d9-38c7-4416-8665-fa0fc49c27c3": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image_alignment": "center center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
-        },
-        "99384b3a-a158-4e76-8722-f3d32159568b": {
-          "type": "slideshow_img2",
-          "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
             "image_alignment": "center center",
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
@@ -70,9 +50,7 @@
       "block_order": [
         "1640826219be843b7f-0",
         "1640826219be843b7f-1",
-        "724a391c-7e0d-4044-a4d0-577f467f1181",
-        "d4c319d9-38c7-4416-8665-fa0fc49c27c3",
-        "99384b3a-a158-4e76-8722-f3d32159568b"
+        "724a391c-7e0d-4044-a4d0-577f467f1181"
       ],
       "settings": {
         "se_height": "adapt",
@@ -117,11 +95,24 @@
             "slider_button_text": "title name",
             "slider_button_link": ""
           }
+        },
+        "ff5f19af-5759-4294-9fda-c8fa235fcc09": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
         }
       },
       "block_order": [
         "16408262241aad4759-0",
-        "16408262241aad4759-1"
+        "16408262241aad4759-1",
+        "ff5f19af-5759-4294-9fda-c8fa235fcc09"
       ],
       "settings": {
         "se_height": "adapt",
