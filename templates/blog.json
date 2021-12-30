@@ -101,7 +101,7 @@
       "settings": {
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
-        "grid": 3,
+        "grid": 2,
         "slide_loop": false,
         "show_view_all": false,
         "show_page_Dot": false,
@@ -121,7 +121,7 @@
       "settings": {
         "title": "TRENDING",
         "sub_title": "Popular this week",
-        "collection": "",
+        "collection": "frontpage",
         "products_to_show": 4,
         "grid": 3,
         "show_view_all": true,

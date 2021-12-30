@@ -68,7 +68,7 @@
       "settings": {
         "se_height": "adapt",
         "text_size": "medium",
-        "loop": true,
+        "loop": false,
         "auto_play": true,
         "auto_time": 3,
         "show_button": true,
