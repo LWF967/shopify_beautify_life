@@ -172,6 +172,9 @@
       console.log("lzx1"+getCookie("lzx1"));
       console.log("lzx2"+getCookie("lzx2"));
       console.log(getCookie("lzx1") == getCookie("lzx2"));
+      if(getCookie("lzx1") != getCookie("lzx2")) {
+        console.log("不加载");
+      }
     } else {
       console.log(getCookie("无"));
       // 		onloadtodo();
