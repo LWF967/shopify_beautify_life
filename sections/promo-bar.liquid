@@ -154,40 +154,40 @@
     setCookie("lzx1",cookietime);
   }
   
-  function promo_bar_change() {
-    console.log("执行promobarchange");
-    let close = document.getElementsByClassName('show_close')[0];
-    let my_center = document.getElementsByClassName('my_center')[0];
-    let hide_banner = document.getElementById('hide_banner');  
-    let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-    let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
-    close.onclick = function () {
-      if(hide_banner_height > hide_banner.dataset.mheight) {
-        hide_banner.dataset.mheight = hide_banner_height;
-      }
-      hide_banner.style.marginTop = -hide_banner_height + 'px';
-      hide_banner.style.transition = "margin-top .5s";
-//           setCookie("lzx2",cookietime);
-    }
+//   function promo_bar_change() {
+//     console.log("执行promobarchange");
+//     let close = document.getElementsByClassName('show_close')[0];
+//     let my_center = document.getElementsByClassName('my_center')[0];
+//     let hide_banner = document.getElementById('hide_banner');  
+//     let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+//     let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+//     close.onclick = function () {
+//       if(hide_banner_height > hide_banner.dataset.mheight) {
+//         hide_banner.dataset.mheight = hide_banner_height;
+//       }
+//       hide_banner.style.marginTop = -hide_banner_height + 'px';
+//       hide_banner.style.transition = "margin-top .5s";
+// //           setCookie("lzx2",cookietime);
+//     }
 
-    if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
-      close.onclick = function () {
-        if(hide_banner_height > hide_banner.dataset.mheight) {
-          hide_banner.dataset.mheight = hide_banner_height;
-        }
-        hide_banner.style.marginTop = -hide_banner_height + 'px';
-        hide_banner.style.transition = "margin-top .5s";
-//                   setCookie("lzx2",cookietime);
-      }
-    }
-    hide_banner.dataset.mheight = hide_banner_height;
-    hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+//     if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+//       close.onclick = function () {
+//         if(hide_banner_height > hide_banner.dataset.mheight) {
+//           hide_banner.dataset.mheight = hide_banner_height;
+//         }
+//         hide_banner.style.marginTop = -hide_banner_height + 'px';
+//         hide_banner.style.transition = "margin-top .5s";
+// //                   setCookie("lzx2",cookietime);
+//       }
+//     }
+//     hide_banner.dataset.mheight = hide_banner_height;
+//     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
-    setTimeout(function() {
-      hide_banner.style.marginTop = 0 + 'px';
-      hide_banner.style.transition = "margin-top .5s";
-    }, 500);
-  }
+//     setTimeout(function() {
+//       hide_banner.style.marginTop = 0 + 'px';
+//       hide_banner.style.transition = "margin-top .5s";
+//     }, 500);
+//   }
     
 //   function refresh_promo() { 
 //   var myPromoFreshDesignMode = Shopify.designMode || false;
@@ -195,29 +195,7 @@
 //     document.addEventListener('shopify:section:load',() => {  
 //                               // 注释后 自己不能刷新
 //                               //         promo_bar_change();
-
-//       var target = document.getElementById('hide_banner');
-//     console.log("shuaxin");
-//       // 创建观察者对象
-//       var observer = new MutationObserver(function(mutations){
-
-//         mutations.forEach(function(mutation){
-
-//           console.log(mutation.type);
-
-//         });
-
-//       });
-
-//       // 配置观察选项:
-//       var config = { attributes: true, childList: true, characterData: true ,subtree : true, attributeFilter: ['height'] };
-//       // 传入目标节点和观察选项
-//       observer.observe(target, config); 
-//       // 随后,你还可以停止观察
-// //               observer.disconnect();
-
-//     },true);
-//   }
+  
   
 //   var myPromoFreshDesignMode = Shopify.designMode || false;
 //   if(myPromoFreshDesignMode){      
