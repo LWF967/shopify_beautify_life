@@ -23,7 +23,7 @@
 
     </div>
 	
-    {%- if section.settings.show_collection_image  -%}
+<!--     {%- if section.settings.show_collection_image  -%}
    12313
       <div class="collection-hero__image-container media">
         <img
@@ -42,6 +42,13 @@
         >
       </div>
     {%- endif -%}
+    {
+      "type": "checkbox",
+      "id": "show_collection_image",
+      "default": false,
+      "label": "t:sections.main-collection-banner.settings.show_collection_image.label",
+      "info": "t:sections.main-collection-banner.settings.show_collection_image.info"
+    }, -->
   </div>
 </div>
 
@@ -55,13 +62,7 @@
       "content": "t:sections.main-collection-banner.settings.paragraph.content"
     },
 
-    {
-      "type": "checkbox",
-      "id": "show_collection_image",
-      "default": false,
-      "label": "t:sections.main-collection-banner.settings.show_collection_image.label",
-      "info": "t:sections.main-collection-banner.settings.show_collection_image.info"
-    },
+    
     {
       "type": "text",
       "id": "main_collection_banner_margin_top",
