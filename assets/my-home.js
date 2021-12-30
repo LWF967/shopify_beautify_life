@@ -286,16 +286,17 @@ window.onload = function() {
   my_home();
   // hide_banner variant define in promo-bar.liquid
 //   promo_bar_fun();
-  if(getCookie("lzx1")) {
-    console.log(getCookie("lzx1"));
-    console.log("home+lzx");
+  
+//   if(getCookie("lzx1")) {
+//     console.log(getCookie("lzx1"));
+//     console.log("home+lzx");
 
-  } else {
-    console.log(getCookie("无"));
-    let promo_bar = document.getElementById('hide_banner');
-    hide_banner.style.marginTop = 0 + 'px';
-    hide_banner.style.transition = "margin-top .5s";
-  }
+//   } else {
+//     console.log(getCookie("无"));
+//     let promo_bar = document.getElementById('hide_banner');
+//     hide_banner.style.marginTop = 0 + 'px';
+//     hide_banner.style.transition = "margin-top .5s";
+//   }
 
 }
 
