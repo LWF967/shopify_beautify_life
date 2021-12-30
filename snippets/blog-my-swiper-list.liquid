@@ -68,7 +68,32 @@
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   
  
-  
+   var swiper = new Swiper(".my_swiper_blogs_{{ section.id }}", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+          el: ".blog-swiper-pagination-page.swiper-pagination_{{ section.id }}",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next.featured_product_beautify_nexts',
+          prevEl: '.swiper-button-prev.featured_product_beautify_prevs',
+      },
+      breakpoints: {
+        0: {  //当屏幕宽度大于等于0 
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        750: {  //当屏幕宽度大于等于750 
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        990: {  //当屏幕宽度大于等于990
+          slidesPerView: 3,
+          spaceBetween: 30,
+		}
+      }
+  });
   
   
      let designMode = Shopify.designMode || false;
@@ -110,33 +135,6 @@
 	},true);
   
 
- }else{
- var swiper = new Swiper(".my_swiper_blogs_{{ section.id }}", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      pagination: {
-          el: ".blog-swiper-pagination-page.swiper-pagination_{{ section.id }}",
-          clickable: true,
-      },
-      navigation: {
-          nextEl: '.swiper-button-next.featured_product_beautify_nexts',
-          prevEl: '.swiper-button-prev.featured_product_beautify_prevs',
-      },
-      breakpoints: {
-        0: {  //当屏幕宽度大于等于0 
-          slidesPerView: 1,
-          spaceBetween: 15,
-        },
-        750: {  //当屏幕宽度大于等于750 
-          slidesPerView: 2,
-          spaceBetween: 15,
-        },
-        990: {  //当屏幕宽度大于等于990
-          slidesPerView: 3,
-          spaceBetween: 30,
-		}
-      }
-  });
  }
   
   

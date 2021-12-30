@@ -152,6 +152,32 @@
   if(myPromoFreshDesignMode2){      
 	  console.log("进入promo后台");
     setCookie("lzx1",cookietime);
+    let close = document.getElementsByClassName('show_close')[0];
+    let my_center = document.getElementsByClassName('my_center')[0];
+    let hide_banner = document.getElementById('hide_banner');  
+    let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+    let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+    close.onclick = function () {
+      if(hide_banner_height > hide_banner.dataset.mheight) {
+        hide_banner.dataset.mheight = hide_banner_height;
+      }
+      hide_banner.style.marginTop = -hide_banner_height + 'px';
+//       setCookie("lzx1",cookietime);
+
+    }
+
+    if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+      close.onclick = function () {
+        if(hide_banner_height > hide_banner.dataset.mheight) {
+          hide_banner.dataset.mheight = hide_banner_height;
+        }
+        hide_banner.style.marginTop = -hide_banner_height + 'px';
+//         setCookie("lzx1",cookietime);
+
+      }
+    }
+    hide_banner.dataset.mheight = hide_banner_height;
+    hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
   }
   
   function promo_bar_change() {
