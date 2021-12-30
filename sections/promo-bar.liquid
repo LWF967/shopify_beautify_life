@@ -197,19 +197,19 @@
 //                               //         promo_bar_change();
   
   
-//   var myPromoFreshDesignMode = Shopify.designMode || false;
-//   if(myPromoFreshDesignMode){      
-//     document.addEventListener('shopify:section:load',() => {  
-//       // 注释后 自己不能刷新
-//       promo_bar_change();
-//     },true);
-//   }
+  var myPromoFreshDesignMode = Shopify.designMode || false;
+  if(myPromoFreshDesignMode){      
+    document.addEventListener('shopify:section:load',() => {  
+      // 注释后 自己不能刷新
+      promo_bar_change();
+    },true);
+  }
   
 //   }
   
   function promo_bar_fun() { 
 //     refresh_promo();
-    promo_bar_change();
+    
     console.log("进入promobarfun");
     let close = document.getElementsByClassName('show_close')[0];
     let my_center = document.getElementsByClassName('my_center')[0];
