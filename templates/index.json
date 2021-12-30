@@ -158,12 +158,21 @@
             "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
             "title": "New supply this week"
           }
+        },
+        "d05bedb7-3dcd-4ccf-954a-4cb972fdc3f8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
+            "title": "New supply this week"
+          }
         }
       },
       "block_order": [
         "1639620369bd20c112-0",
         "1639620369bd20c112-1",
-        "1639620369bd20c112-2"
+        "1639620369bd20c112-2",
+        "d05bedb7-3dcd-4ccf-954a-4cb972fdc3f8"
       ],
       "settings": {
         "title": "NEW RELEASES",
@@ -179,6 +188,66 @@
         "show_button_style": "style1",
         "show_button_color": "white",
         "show_button_hover_color": "#80d425",
+        "collection_list_beautify_margin_top": "",
+        "collection_list_beautify_margin_bottom": ""
+      }
+    },
+    "1640825657c4354559": {
+      "type": "collection-list-Beautify",
+      "blocks": {
+        "1640825657c2c18b3b-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "title": "New supply this week"
+          }
+        },
+        "1640825657c2c18b3b-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "title": "New supply this week"
+          }
+        },
+        "1640825657c2c18b3b-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
+            "title": "New supply this week"
+          }
+        },
+        "b1f26fb3-8403-400e-b5d6-82b3d97ea4d8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "title": "New supply this week"
+          }
+        }
+      },
+      "block_order": [
+        "1640825657c2c18b3b-0",
+        "1640825657c2c18b3b-1",
+        "1640825657c2c18b3b-2",
+        "b1f26fb3-8403-400e-b5d6-82b3d97ea4d8"
+      ],
+      "settings": {
+        "title": "NEW RELEASES",
+        "sub_title": "New supply this week",
+        "grid": 3,
+        "slide_loop": false,
+        "show_view_all": false,
+        "show_page_Dot": true,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "",
         "collection_list_beautify_margin_top": "",
         "collection_list_beautify_margin_bottom": ""
       }
@@ -336,6 +405,56 @@
         "section_height": "small",
         "gallery_margin_top": "",
         "gallery_margin_bottom": ""
+      }
+    },
+    "164082566186eea038": {
+      "type": "slideshow-beautify-2",
+      "blocks": {
+        "16408256614e3b38bc-0": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "16408256614e3b38bc-1": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16408256614e3b38bc-0",
+        "16408256614e3b38bc-1"
+      ],
+      "settings": {
+        "se_height": "adapt",
+        "text_size": "medium",
+        "loop": true,
+        "auto_play": true,
+        "auto_time": 3,
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "#F29BAE",
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "slideshow_beautify_margin_top": "",
+        "slideshow_beautify_margin_bottom": ""
       }
     },
     "16340032987fd8fd82": {
@@ -684,62 +803,6 @@
         "testimonials_margin_bottom": ""
       }
     },
-    "16407808127f42ab15": {
-      "type": "testimonials",
-      "blocks": {
-        "16407808121305775a-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/a-wet-bridge-covered-in-fog.jpg",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "testimonials_author_text": "Author"
-          }
-        },
-        "16407808121305775a-1": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "testimonials_author_text": "Author"
-          }
-        },
-        "16407808121305775a-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "testimonials_author_text": "Author"
-          }
-        },
-        "046ed0dd-6e15-4dd7-8cb0-2d4be59ca0fd": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "testimonials_author_text": "Author"
-          }
-        }
-      },
-      "block_order": [
-        "16407808121305775a-0",
-        "16407808121305775a-1",
-        "16407808121305775a-2",
-        "046ed0dd-6e15-4dd7-8cb0-2d4be59ca0fd"
-      ],
-      "settings": {
-        "title": "testimonials",
-        "swipe": true,
-        "page_dot_style": "style_1",
-        "page_dot_color": "dark",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "button_label": "Button label",
-        "button_link": "",
-        "testimonials_margin_top": "",
-        "testimonials_margin_bottom": ""
-      }
-    },
     "1635996418e080b5d8": {
       "type": "Text-columns-with-images",
       "blocks": {
@@ -885,25 +948,6 @@
         "featured_blog_margin_bottom": ""
       }
     },
-    "164082489089a2a69c": {
-      "type": "featured-blog",
-      "settings": {
-        "heading": "Blog posts",
-        "head_text": "The most exciting news",
-        "blog": "新闻",
-        "post_limit": 4,
-        "show_image": true,
-        "show_title": true,
-        "show_short_content": true,
-        "show_date": true,
-        "show_author": false,
-        "featured_blog_bk_color": "#1eec5e",
-        "color_scheme": "gradient",
-        "show_view_all": true,
-        "featured_blog_margin_top": "",
-        "featured_blog_margin_bottom": ""
-      }
-    },
     "16406626061a01c04f": {
       "type": "blog-page-post-beautify",
       "settings": {
@@ -924,7 +968,7 @@
         "blog_page_beautify_margin_bottom": ""
       }
     },
-    "16407814058687df38": {
+    "164082498807173007": {
       "type": "blog-page-post-beautify",
       "settings": {
         "heading": "Blog posts",
@@ -949,8 +993,10 @@
     "16377430666a59b35c",
     "1635832448db75c5e7",
     "16396203697a4ba826",
+    "1640825657c4354559",
     "163608389212513e57",
     "1638178308a7590918",
+    "164082566186eea038",
     "16340032987fd8fd82",
     "1638254471485c2b3b",
     "1638344641035ba32e",
@@ -958,13 +1004,11 @@
     "163454604067313d0f",
     "163835233482a21c91",
     "1640779459ad2f49fb",
-    "16407808127f42ab15",
     "1635996418e080b5d8",
     "1638771575eb761fd8",
     "163817972763d6e808",
     "1636093631994b741b",
-    "164082489089a2a69c",
     "16406626061a01c04f",
-    "16407814058687df38"
+    "164082498807173007"
   ]
 }
