@@ -127,7 +127,7 @@
 //   console.log(cookietime);
   // 设置cookie
   
-  function setCookie(name,value, path) {
+  function setCookie(name,value) {
     var Days = cookietime;
     var exp = new Date(); 
     exp.setTime(exp.getTime() + Days*30*1000); //Days*24*60*60*1000
@@ -217,7 +217,7 @@
         hide_banner.dataset.mheight = hide_banner_height;
       }
       hide_banner.style.marginTop = -hide_banner_height + 'px';
-                        setCookie("ddl",cookietime, "", "", "/");
+                        setCookie("ddl",cookietime);
 
     }
 
@@ -227,7 +227,7 @@
           hide_banner.dataset.mheight = hide_banner_height;
         }
         hide_banner.style.marginTop = -hide_banner_height + 'px';
-                          setCookie("ddl",cookietime, "", "", "/");
+                          setCookie("ddl",cookietime);
 
       }
     }

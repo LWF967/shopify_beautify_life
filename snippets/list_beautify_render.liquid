@@ -38,8 +38,6 @@
              assign   image = collection_img
           -%}
           
-<!--           % include 'collection-grid-item-beautify', collection: collection , collection_title:collection_title,collection_img:collection_img % -->
-          
           <div class="collection-grid-item my_collection_grid_item">
             <a href="{% if collection.products == empty %}#{% else %}{{ collection.url }}{% endif %}" class="collection-grid-item__link">
               {% unless collection_img == blank %}
