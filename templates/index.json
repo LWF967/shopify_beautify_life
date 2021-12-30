@@ -967,14 +967,14 @@
         "blog_page_beautify_margin_bottom": ""
       }
     },
-    "164082498807173007": {
+    "16408362028600dc26": {
       "type": "blog-page-post-beautify",
       "settings": {
         "heading": "Blog posts",
         "head_text": "The most exciting news",
         "image_ratio1": "ratio_nt",
         "blog": "新闻",
-        "post_limit": 5,
+        "post_limit": 4,
         "show_image": true,
         "show_title": true,
         "show_short_content": true,
@@ -1008,6 +1008,6 @@
     "163817972763d6e808",
     "1636093631994b741b",
     "16406626061a01c04f",
-    "164082498807173007"
+    "16408362028600dc26"
   ]
 }
