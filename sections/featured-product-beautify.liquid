@@ -968,7 +968,10 @@
   let featured_product_top_bar = document.getElementById('shopify-section-top-bar');
   let featured_product_header = document.getElementById('shopify-section-header');
   let featured_product_header_hidden = document.getElementById('my_header_sticky_visible');
-  let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");                                                 
+  let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");    
+  
+  let awdasd = document.getElementById('shopify-section-header');
+  console.log(awdasd);
 
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
     if(featured_product_ProductModal.hasAttribute('open') == true) {
