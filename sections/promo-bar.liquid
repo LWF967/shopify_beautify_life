@@ -124,14 +124,15 @@
   //cookie
   let ddl = document.getElementById('promo_bar_date');  
   let cookietime = ddl.dataset.date;
-  console.log(cookietime);
+//   console.log(cookietime);
   // 设置cookie
-  function setCookie(name,value) {
+  
+  function setCookie(name,value, path) {
     var Days = cookietime;
     var exp = new Date(); 
     exp.setTime(exp.getTime() + Days*30*1000); //Days*24*60*60*1000
     console.log(exp.getTime()); // 获取定时后的时间
-    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString() + ";path=" + "/";
   }
   // 获取cookie
   function getCookie(name) {
