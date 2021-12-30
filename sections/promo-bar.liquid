@@ -168,7 +168,7 @@
     console.log("我是判断有无cookie lzx1");
     if(getCookie("lzx1")) {
     console.log(getCookie("lzx1"));
-      
+      console.log(getCookie("lzx1") == getCookie("lzx2"));
     } else {
         console.log(getCookie("无"));
 // 		onloadtodo();
@@ -232,7 +232,7 @@
         hide_banner.dataset.mheight = hide_banner_height;
       }
       hide_banner.style.marginTop = -hide_banner_height + 'px';
-                        setCookie("lzx1",cookietime);
+                        setCookie("lzx2",cookietime);
 
     }
 
@@ -242,7 +242,7 @@
           hide_banner.dataset.mheight = hide_banner_height;
         }
         hide_banner.style.marginTop = -hide_banner_height + 'px';
-                          setCookie("lzx1",cookietime);
+                          setCookie("lzx2",cookietime);
 
       }
     }
