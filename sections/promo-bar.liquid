@@ -175,7 +175,9 @@
       if(getCookie("lzx2")) {
         console.log("不加载");
         let hide_banner = document.getElementById('hide_banner'); 
-        hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+        let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+
+        hide_banner.style.marginTop = -hide_banner_height + 'px';
 //         hide_banner.style.display = "none";
       } else {
         promo_bar_fun();
