@@ -293,9 +293,19 @@ window.onload = function() {
 
 //   } else {
 //     console.log(getCookie("无"));
+  
+  var DesignMode = Shopify.designMode || false;
+  if(DesignMode){
     let promo_bar = document.getElementById('hide_banner');
     hide_banner.style.marginTop = 0 + 'px';
     hide_banner.style.transition = "margin-top .5s";
+  } else {
+    if(!getCookie("lzx1")) {
+      let promo_bar = document.getElementById('hide_banner');
+      hide_banner.style.marginTop = 0 + 'px';
+      hide_banner.style.transition = "margin-top .5s";
+    }
+  }
 //   }
 
 }
