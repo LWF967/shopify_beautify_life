@@ -23,9 +23,155 @@
 
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
-  }
+  "name": "slideshowtext",
+  "tag": "section",
+  "class": "spaced-section--full-width",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "cover_image",
+      "label": "t:sections.video.settings.cover_image.label",
+	  "info":"Always shown on mobile devices"
+    },
+    {
+      "type": "select",
+      "id": "image_alignment",
+      "options": [
+        {
+          "value": "top left",
+          "label": "Top left"
+        },
+        {
+          "value": "top center",
+          "label": "Top center"
+        },
+        {
+          "value": "top right",
+          "label": "Top right"
+        },
+        {
+          "value": "center left",
+          "label": "Middle left"
+        },
+        {
+          "value": "center center",
+          "label": "Middle center"
+        },
+        {
+          "value": "center right",
+          "label": "Middle right"
+        },
+        {
+          "value": "bottom left",
+          "label": "Bottom left"
+        },
+        {
+          "value": "bottom center",
+          "label": "Bottom center"
+        },	
+        {
+          "value": "bottom right",
+          "label": "Bottom right"
+        }
+      ],
+      "default": "center center",
+      "label": "Image alignment"
+    },  
+    {
+      "type": "video_url",
+      "id": "video_url",
+      "accept": [
+        "youtube",
+        "vimeo"
+      ],
+      "default": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+      "label": "t:sections.video.settings.video_url.label",
+      "placeholder": "t:sections.video.settings.video_url.placeholder",
+      "info": "t:sections.video.settings.video_url.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay",
+      "label": "Show overlay",
+      "default": false
+    },
+	{
+      "type": "select",
+      "id": "style",
+      "options": [
+        {
+          "value": "image_with_play",
+          "label": "Image with play button"
+        },
+        {
+          "value": "background_video",
+          "label": "Background video"
+        }
+      ],
+      "default": "image_with_play",
+      "label": "Style"
+    },
+    {
+    "type": "select",
+    "id": "video_height",
+    "options": [
+      {
+      	"value": "small",
+      	"label": "Small"
+      },
+      {
+      	"value": "medium",
+      	"label": "Medium"
+      },
+      {
+      	"value":"large",
+      	"label":"Large"
+      }
+    ],
+    "default": "medium",
+    "label": "Video height"
+    },
+	{
+      "type": "text",
+      "id": "heading",
+      "default": "Video",
+      "label": "t:sections.video.settings.heading.label"
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "options": [
+        {
+        "value": "large",
+        "label": "Large"
+        },
+        {
+        "value": "medium",
+        "label": "Medium"
+        }
+      ],
+      "default": "medium",
+      "label": "Text size"
+    },
+    {
+      "type": "text",
+      "id": "video_beautify_margin_top",
+      "label": "Margin top",
+      "info": "t:sections.margintip.settings.margin_tip.label"
+    },
+    {
+      "type": "text",
+      "id": "video_beautify_margin_bottom",
+      "label": "Margin bottom",
+      "info": "t:sections.margintip.settings.margin_tip.label"
+    }
+  ],
+  "presets": [
+    {
+      "name": "slideshow-text"
+    }
+  ]
+}
 {% endschema %}
 
 {% stylesheet %}
