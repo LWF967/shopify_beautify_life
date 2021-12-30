@@ -160,11 +160,9 @@
       padding-bottom: 31px;
       position: relative;
     }
-
       .swiper-pagination-{{section.id}}.swiper-pagination-hidden {
           opacity: 0
       }
-
   .swiper-button-next-{{section.id}},
       .swiper-button-prev-{{section.id}} {
           position: absolute;
@@ -211,23 +209,14 @@
           right: 10px;
           left: auto
       }
-
-
-
       .swiper-button-lock {
           display: none
       }
-
-
-
     .swiper-pagination-bullet{
 
     width:16px !important;
     height:16px !important;
-
     }
-
-
     .btn-link{
     	text-decoration:underline;
     }
@@ -312,9 +301,6 @@
       color:rgb(183,183,183);
     }
 
-
-
-
       @media (any-hover: hover){
 
 
@@ -325,17 +311,10 @@
       border:none;
     }
 
-
     {%- else -%}
      .icon-changebtn_{{section.id}}:hover{
       background-color: {{ section.settings.show_button_hover_color }} !important;
-
-
-
-
-
     }
-
 
     {%- endif -%}
 
