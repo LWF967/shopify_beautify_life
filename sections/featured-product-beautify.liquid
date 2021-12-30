@@ -969,16 +969,32 @@
   let featured_product_header = document.getElementById('shopify-section-header');
   let featured_product_header_hidden = document.getElementById('my_header_sticky_visible');
   let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");    
-  
-  let awdasd = document.getElementById('shopify-section-header');
+
+  var myPromoFreshDesignMode = Shopify.designMode || false;
+  if(myPromoFreshDesignMode){      
+    document.addEventListener('shopify:section:load',() => {  
+      $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
+        if(featured_product_ProductModal.hasAttribute('open') == true) {
+          if(featured_product_header_hidden) {
+            featured_product_promo_bar.style.visibility = "hidden";
+            featured_product_top_bar.style.visibility = "hidden";
+            featured_product_header.style.visibility = "hidden";
+            featured_product_header_hidden.style.visibility = "hidden";
+          }
+        } else if(featured_product_ProductModal.hasAttribute('open') == false) {
+          if(featured_product_header_hidden) {
+            featured_product_promo_bar.style.visibility = "visible";
+            featured_product_top_bar.style.visibility = "visible";
+            featured_product_header.style.visibility = "visible";
+            featured_product_header_hidden.style.visibility = "visible";
+          }
+        }
+      });
+    },true);
+  }
 
   $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
     if(featured_product_ProductModal.hasAttribute('open') == true) {
-      //featured_product_promo_bar.style.display = "none";
-      //featured_product_top_bar.style.display = "none";
-      //featured_product_header.style.display = "none";
-        console.log(awdasd);
-
       if(featured_product_header_hidden) {
         featured_product_promo_bar.style.visibility = "hidden";
         featured_product_top_bar.style.visibility = "hidden";
@@ -986,9 +1002,6 @@
         featured_product_header_hidden.style.visibility = "hidden";
       }
     } else if(featured_product_ProductModal.hasAttribute('open') == false) {
-      //featured_product_promo_bar.style.display = "block";
-      //featured_product_top_bar.style.display = "block";
-      //featured_product_header.style.display = "block";
       if(featured_product_header_hidden) {
         featured_product_promo_bar.style.visibility = "visible";
         featured_product_top_bar.style.visibility = "visible";
