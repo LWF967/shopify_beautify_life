@@ -184,13 +184,14 @@
 //     },true);
 //   }
   
-  var myPromoFreshDesignMode = Shopify.designMode || false;
-  if(myPromoFreshDesignMode){      
-    document.addEventListener('shopify:section:load',() => {  
-      // 注释后 自己不能刷新
-      promo_bar_change();
-    },true);
-  }
+//   var myPromoFreshDesignMode = Shopify.designMode || false;
+//   if(myPromoFreshDesignMode){      
+//     document.addEventListener('shopify:section:load',() => {  
+//       // 注释后 自己不能刷新
+//       promo_bar_change();
+//     },true);
+//   }
+  
 //   }
   
   function promo_bar_fun() { 
@@ -222,26 +223,26 @@
   promo_bar_fun();
   
   
-  var myPromoFreshDesignMode1 = Shopify.designMode || false;
-  if(myPromoFreshDesignMode1){      
-    document.addEventListener('shopify:section:load',() => {  
+//   var myPromoFreshDesignMode1 = Shopify.designMode || false;
+//   if(myPromoFreshDesignMode1){      
+//     document.addEventListener('shopify:section:load',() => {  
 
-      var targetee = document.getElementById('promo_bar_date');
-      console.log("shuaxin");
-      // 创建观察者对象
-      var observeree = new MutationObserver(function(mutations){
-        mutations.forEach(function(mutation){
-          console.log(mutation.type);
-        });
-      });
-      // 配置观察选项:
-      var configee = { attributes: true, childList: true, characterData: true ,subtree : true, attributeFilter: ['data-date'] };
-      // 传入目标节点和观察选项
-      observeree.observe(targetee, configee); 
-      // 随后,你还可以停止观察
-      // observer.disconnect();
-    },true);
-  }
+//       var targetee = document.getElementById('promo_bar_date');
+//       console.log("shuaxin");
+//       // 创建观察者对象
+//       var observeree = new MutationObserver(function(mutations){
+//         mutations.forEach(function(mutation){
+//           console.log(mutation.type);
+//         });
+//       });
+//       // 配置观察选项:
+//       var configee = { attributes: true, childList: true, characterData: true ,subtree : true, attributeFilter: ['data-date'] };
+//       // 传入目标节点和观察选项
+//       observeree.observe(targetee, configee); 
+//       // 随后,你还可以停止观察
+//       // observer.disconnect();
+//     },true);
+//   }
   
   //cookie
   let ddl = document.getElementById('promo_bar_date');  
