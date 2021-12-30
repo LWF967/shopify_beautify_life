@@ -269,11 +269,12 @@
     var cval=getCookie(name);
     if(cval!=null) document.cookie= name + "="+cval+";expires="+exp.toGMTString();
   }
-      setCookie("lzx1",cookietime);
+      
 
   var myPromoFreshDesignMode2 = Shopify.designMode || false;
   if(myPromoFreshDesignMode2){      
 	  console.log("进入promo后台");
+    setCookie("lzx1",cookietime);
   }
   
           var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;//浏览器兼容
