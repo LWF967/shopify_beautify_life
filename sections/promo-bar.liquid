@@ -269,7 +269,12 @@
     if(cval!=null) document.cookie= name + "="+cval+";expires="+exp.toGMTString();
   }
 
-  setCookie("lzx1",cookietime);
+  var myPromoFreshDesignMode2 = Shopify.designMode || false;
+  if(myPromoFreshDesignMode2){      
+      setCookie("lzx1",cookietime);
+	  console.log("进入promo后台");
+  }
+  
   
 </script>
 
