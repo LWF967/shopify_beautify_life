@@ -17,7 +17,20 @@
     font-weight: 700;
     color: var(--font-title-color);
   }
+    .my_article_card_beautify_btn {
+      background: #fff;
+      border: 1px solid #000;
+      min-height: 30px;
+      height: 30px;
+      padding: 0 15px;
+      color:{{settings.colors_secondary_labels_and_borders}};
+      border-color:{{settings.colors_secondary_labels_and_borders}};
+      background:transparent;
+    }
 </style>
+
+                 
+                 
 
 <div class="page-width spaced-section" style="{%- if section.settings.custom_content_margin_top != blank -%}margin-top: {{ section.settings.custom_content_margin_top }}px; {%- endif -%}{%- if section.settings.custom_content_margin_bottom != blank -%}margin-bottom:{{ section.settings.custom_content_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
@@ -103,13 +116,8 @@
           
           {{ 'video-section.css' | asset_url | stylesheet_tag }}
 		      
-                     
            		<div class="video-section">
-             
-             
-                  <deferred-media class="video-section__media deferred-media no-js-hidden" data-media-id="{{ block.settings.video_url.id }}"
-                   
-                  >
+                  <deferred-media class="video-section__media deferred-media no-js-hidden" data-media-id="{{ block.settings.video_url.id }}">
                     <button
                       id="Deferred-Poster-Modal-{{ block.settings.video_url.id }}"
                       class="video-section__poster media deferred-media__poster media--landscape"
@@ -151,17 +159,9 @@
                         <iframe src="https://player.vimeo.com/video/{{ block.settings.video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
                       {%- endif -%}
                     </template>
-                    
-                                     	
-                    
                   </deferred-media>
                 </div> 
-          
-          
-          
-          
-          
-          
+ 
             {% when 'product' %}
               {%- assign product = all_products[block.settings.product] -%}
               {% if product.title.size > 0 %}
@@ -286,10 +286,7 @@
                                   loading="lazy"
                                   class="motion-reduce"
                                 >
-                          
-                          
-                          
-                        </div>
+                  </div>
                       </div>
 
                       <noscript>
@@ -363,29 +360,16 @@
                     </div>
                   {%- endif -%}
 
-                  <style>
-                   .my_article_card_beautify_btn {
-                    background: #fff;
-                    border: 1px solid #000;
-                    min-height: 30px;
-                    height: 30px;
-                    padding: 0 15px;
-                    color:{{settings.colors_secondary_labels_and_borders}};
-                    border-color:{{settings.colors_secondary_labels_and_borders}};
-                    background:transparent;
-                  }
-                  </style>
+                  
                   <ul class="list--inline article__meta-buttons">
                     <li>
-                      
-                      
+                     
                       <a href="{{ article.url }}">
                         <div class="button my_small_button_font_size_default my_article_card_beautify_btn">
                          {{ 'blogs.article.read_more' | t }}
                         </div>
                       </a>
-                      
-              
+            
                     </li>
 
                     {%- if article.comments != blank and article.comments_count > 0 -%}

@@ -34,11 +34,11 @@ if(myFooterbottomFreshDesignMode){
 
 //     var observer = new MutationObserver(function(){
     var observer = new MutationObserver(my_home_debounce(function (mutations) {
-            mutations.forEach(function(mutation){
+//             mutations.forEach(function(mutation){
 
-              console.log(mutation.type);
+//               console.log(mutation.type);
 
-            });
+//             });
       // footer sticky
       if(sticky.length > 0) {
         if(document.body.clientWidth < 1024) {
