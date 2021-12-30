@@ -942,6 +942,11 @@ var swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swipe
   direction: 'horizontal', // 垂直切换选项  horizontal  vertical
   loop: swiperLoop, // 循环模式选项 
 
+  on:{
+    beforeDestroy: function(){
+      alert('你销毁了Swiper;');
+    },
+	
    parallax : true,
   // 如果需要分页器
   preventClicks : false,
