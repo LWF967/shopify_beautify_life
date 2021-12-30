@@ -45,12 +45,25 @@
             "slider_button_text": "title name",
             "slider_button_link": ""
           }
+        },
+        "089d94de-d824-4219-b2f4-bc4569f8637a": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/a-wet-bridge-covered-in-fog.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
         }
       },
       "block_order": [
         "1640826219be843b7f-0",
         "1640826219be843b7f-1",
-        "724a391c-7e0d-4044-a4d0-577f467f1181"
+        "724a391c-7e0d-4044-a4d0-577f467f1181",
+        "089d94de-d824-4219-b2f4-bc4569f8637a"
       ],
       "settings": {
         "se_height": "adapt",
@@ -107,12 +120,25 @@
             "slider_button_text": "title name",
             "slider_button_link": ""
           }
+        },
+        "c5b5f4c6-895a-4778-b007-c04a0a50d7e4": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
         }
       },
       "block_order": [
         "16408262241aad4759-0",
         "16408262241aad4759-1",
-        "ff5f19af-5759-4294-9fda-c8fa235fcc09"
+        "ff5f19af-5759-4294-9fda-c8fa235fcc09",
+        "c5b5f4c6-895a-4778-b007-c04a0a50d7e4"
       ],
       "settings": {
         "se_height": "adapt",
