@@ -996,27 +996,7 @@ document.addEventListener('shopify:section:load', () => {
     
     
     
-    
-    var targetslide =  document.getElementById('shopify-section-{{section.id}}');
-    // 创建观察者对象
-    
-    var observer1 = new MutationObserver(function(mutations){
-     
-      mutations.forEach(function(mutation){
-      
-    	 console.log(mutation.type);
-      
-      });
-    
-    });
-    
-    // 配置观察选项:
-    var config1 = { attributes: true, childList: true, characterData: true ,subtree : true };
-    // 传入目标节点和观察选项
-    observer1.observe(targetslide, config1); 
-    // 随后,你还可以停止观察
-    //observer.disconnect();
-    
+ 
     
     
 	if(slideshowbox){ console.log(slideshowbox,'dddd')
