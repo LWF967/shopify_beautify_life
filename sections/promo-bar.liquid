@@ -156,14 +156,14 @@
     
     
   } else {
-      promo_bar_fun();
     console.log("无进入promo后台");
     if(getCookie("lzx2")){
       let hide_banner = document.getElementById('hide_banner'); 
       let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
       hide_banner.style.marginTop = -hide_banner_height + 'px';
     } else {
-      promo_bar_change();
+            promo_bar_fun();
+
       console.log(123);
     }
 //     if(getCookie("lzx1")) {
