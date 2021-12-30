@@ -249,8 +249,7 @@
                     {%- assign number_of_articles = blog.articles_count | default: 0 -%}
                     <a href="{{ blog.url | default: '#' }}"
                         class="blog-card__comment-count btn btn--tertiary btn--small"
-                        aria-label="{{ 'blogs.article.article_with_count' | t: count: number_of_articles }}: {{ blog.title }}">{{
-                        'blogs.article.article_with_count' | t: count: number_of_articles }}</a>
+                        aria-label="{{ 'blogs.article.article_with_count' | t: count: number_of_articles }}: {{ blog.title }}">{{'blogs.article.article_with_count' | t: count: number_of_articles }}</a>
                     {%- endif -%}
                 </div>
                 {%- when 'article' -%}
