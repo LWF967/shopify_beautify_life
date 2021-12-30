@@ -1159,13 +1159,13 @@ function debounce(func, wait = 500) {
 
           swiperBeautifySlideshow.autoplay.stop();
           event.stopPropagation();
-        }))
+        },500))
 
         $('.swiper-container-{{section.id}}').mouseout(debounce(function (event) {
 
           swiperBeautifySlideshow.autoplay.start();
           event.stopPropagation();
-        }))
+        },500))
 
 
 
