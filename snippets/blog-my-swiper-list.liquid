@@ -99,7 +99,7 @@
      let designMode = Shopify.designMode || false;
    if(designMode){
  
-   document.addEventListener('shopify:section:load',()=>{  
+   document.addEventListener('load','shopify:section:onload',()=>{  
      console.log("我的123");
    
 	
