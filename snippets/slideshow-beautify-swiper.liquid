@@ -944,7 +944,7 @@ var swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swipe
 
   on:{
     beforeDestroy: function(){
-      alert('你销毁了Swiper;');
+      console.log('destory');
     },
 	
    parallax : true,
@@ -1016,7 +1016,11 @@ document.addEventListener('shopify:section:load', () => {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: swiperLoop, // 循环模式选项 
 	parallax : true,
-     
+    
+    on:{
+    beforeDestroy: function(){
+      console.log('destory');
+    },
     preventClicks : false,
     // 如果需要分页器
 	touchRatio : 0.7,//触摸变慢
