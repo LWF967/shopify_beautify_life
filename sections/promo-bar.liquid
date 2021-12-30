@@ -146,13 +146,6 @@
     var cval=getCookie(name);
     if(cval!=null) document.cookie= name + "="+cval+";expires="+exp.toGMTString();
   }
-      
-
-  function onloadtodo() {
-    let hide_banner = document.getElementById('hide_banner');  
-    hide_banner.style.marginTop = 0 + 'px';
-    hide_banner.style.transition = "margin-top .5s";
-  }
   
   var myPromoFreshDesignMode2 = Shopify.designMode || false;
   if(myPromoFreshDesignMode2){      
@@ -165,7 +158,6 @@
   } else {
       promo_bar_fun();
     console.log("无进入promo后台");
-    console.log("我是判断有无cookie lzx1");
     if(getCookie("lzx2")){
       let hide_banner = document.getElementById('hide_banner'); 
       let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
