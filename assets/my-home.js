@@ -287,6 +287,7 @@ window.onload = function() {
   // hide_banner variant define in promo-bar.liquid
   if(getCookie("lzx1")) {
     console.log(getCookie("lzx1"));
+    console.log("home+lzx");
 
   } else {
     console.log(getCookie("无"));
