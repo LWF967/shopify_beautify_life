@@ -276,7 +276,12 @@
 	  console.log("进入promo后台");
 
 
-        var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;//浏览器兼容
+
+  
+  
+  }
+  
+          var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;//浏览器兼容
         var config = { attributes: true, childList: true }//配置对象
         $("#promo_bar_date").each(function () {
             var _this = $(this);
@@ -294,9 +299,6 @@
             });
             observer.observe(_this[0], config);
         });
-  
-  
-  }
   
   
 </script>
