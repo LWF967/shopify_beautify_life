@@ -22,9 +22,9 @@
       <h4 class="my_collection_hero_des" style="color:rgba(var(--color-foreground),.75)">{{- collection.description -}}</h4>
 
     </div>
-
-    {%- if section.settings.show_collection_image and collection.image -%}
-    56132
+	
+    {%- if section.settings.show_collection_image  -%}
+   12313
       <div class="collection-hero__image-container media">
         <img
           srcset="{%- if collection.image.width >= 165 -%}{{ collection.image | img_url: '165x' }} 165w,{%- endif -%}
