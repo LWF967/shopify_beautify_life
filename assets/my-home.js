@@ -285,8 +285,8 @@ my_home();
 window.onload = function() {
   my_home();
   // hide_banner variant define in promo-bar.liquid
-  hide_banner.style.marginTop = 0 + 'px';
-  hide_banner.style.transition = "margin-top .5s";
+//   hide_banner.style.marginTop = 0 + 'px';
+//   hide_banner.style.transition = "margin-top .5s";
 }
 
 $(window).resize(function(){
