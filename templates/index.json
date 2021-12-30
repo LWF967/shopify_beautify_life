@@ -439,7 +439,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
-            "align_text": "left",
+            "align_text": "center",
             "img_link": "shopify:\/\/blogs\/新闻\/new-start4",
             "caption_head": "Image"
           }
@@ -448,7 +448,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-            "align_text": "left",
+            "align_text": "center",
             "img_link": "",
             "caption_head": "Image"
           }
@@ -457,7 +457,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "align_text": "left",
+            "align_text": "center",
             "img_link": "",
             "caption_head": "Image"
           }
@@ -466,7 +466,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
-            "align_text": "left",
+            "align_text": "center",
             "img_link": "",
             "caption_head": "Image"
           }
