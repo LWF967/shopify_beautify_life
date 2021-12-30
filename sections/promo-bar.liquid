@@ -274,17 +274,11 @@
   var myPromoFreshDesignMode2 = Shopify.designMode || false;
   if(myPromoFreshDesignMode2){      
 	  console.log("进入promo后台");
-    
-    
-    let test = document.getElementById('promo_bar_date');
-//         test.addEventListener('click', () => {
-//             console.log(1);
-//             test.setAttribute('data-date', 1);
-//         })
+
 
         var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;//浏览器兼容
         var config = { attributes: true, childList: true }//配置对象
-        $("#box").each(function () {
+        $("#promo_bar_date").each(function () {
             var _this = $(this);
             var observer = new MutationObserver(function (mutations) {//构造函数回调
                 mutations.forEach(function (record) {
