@@ -9,6 +9,9 @@
   
   </div>
   
+  {% comment %}
+  	button
+  {% endcomment %}
  {%- if section.blocks.size > 1 -%}
     <div class="slideshow__controls slider-buttons no-js-hidden">
       <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}" aria-controls="Slider-{{ section.id }}">{% render 'icon-caret' %}</button>
