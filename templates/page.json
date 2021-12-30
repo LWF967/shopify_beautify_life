@@ -32,11 +32,47 @@
             "slider_button_text": "title name",
             "slider_button_link": ""
           }
+        },
+        "724a391c-7e0d-4044-a4d0-577f467f1181": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "d4c319d9-38c7-4416-8665-fa0fc49c27c3": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "99384b3a-a158-4e76-8722-f3d32159568b": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
         }
       },
       "block_order": [
         "1640826219be843b7f-0",
-        "1640826219be843b7f-1"
+        "1640826219be843b7f-1",
+        "724a391c-7e0d-4044-a4d0-577f467f1181",
+        "d4c319d9-38c7-4416-8665-fa0fc49c27c3",
+        "99384b3a-a158-4e76-8722-f3d32159568b"
       ],
       "settings": {
         "se_height": "adapt",
@@ -48,8 +84,8 @@
         "show_button_visible": "always",
         "show_button_style": "style1",
         "show_button_color": "white",
-        "show_button_hover_color": "#F29BAE",
-        "show_page_Dot": false,
+        "show_button_hover_color": "#f29bae",
+        "show_page_Dot": true,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
         "slideshow_beautify_margin_top": "",
@@ -97,8 +133,8 @@
         "show_button_visible": "always",
         "show_button_style": "style1",
         "show_button_color": "white",
-        "show_button_hover_color": "#F29BAE",
-        "show_page_Dot": false,
+        "show_button_hover_color": "#f29bae",
+        "show_page_Dot": true,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
         "slideshow_beautify_margin_top": "",
