@@ -954,7 +954,7 @@
 
 
  
-var swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{section.id}}', {
+let swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{section.id}}', {
   direction: 'horizontal', // 垂直切换选项  horizontal  vertical
   loop: swiperLoop, // 循环模式选项 
 
@@ -1028,7 +1028,7 @@ document.addEventListener('shopify:section:load', throttle(() => {
 
 // console.log('baibai',swiperTime);
 
-  var swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{section.id}}', {
+   swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{section.id}}', {
     direction: 'horizontal', // 垂直切换选项  horizontal  vertical
     loop: swiperLoop, // 循环模式选项 
 	parallax : true,
