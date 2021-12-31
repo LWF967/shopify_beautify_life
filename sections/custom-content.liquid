@@ -1,7 +1,3 @@
-
-<!-- {'custome-content.css'| asset_url |stylesheet_tag  -->
-<!-- { 'component-deferred-media.css' | asset_url | stylesheet_tag  -->
-
 <style>
   .my_custom_content_title_font_size {
     font-size: 28px;
@@ -17,27 +13,24 @@
     font-weight: 700;
     color: var(--font-title-color);
   }
+  
   .my_article_card_beautify_btn {
     background: #fff;
     border: 1px solid #000;
     min-height: 30px;
     height: 30px;
     padding: 0 15px;
-    color:{{settings.colors_secondary_labels_and_borders}};
-    border-color:{{settings.colors_secondary_labels_and_borders}};
-    background:transparent;
+    color: {{ settings.colors_secondary_labels_and_borders }};
+    border-color: {{ settings.colors_secondary_labels_and_borders }};
+    background: transparent;
   }
 </style>
-
-                 
-                 
 
 <div class="page-width spaced-section"
     style="{%- if section.settings.custom_content_margin_top != blank -%}margin-top: {{ section.settings.custom_content_margin_top }}px; {%- endif -%}{%- if section.settings.custom_content_margin_bottom != blank -%}margin-bottom:{{ section.settings.custom_content_margin_bottom }}px;{%- endif -%}">
     {% if section.settings.title != blank %}
     <div class="text-center">
-        <h4 class="h2 my_font_weight_default my_clear_margin my_section_margin_default my_font_size_heading_default">{{
-            section.settings.title | escape }}</h4>
+        <h4 class="h2 my_font_weight_default my_clear_margin my_section_margin_default my_font_size_heading_default">{{ section.settings.title | escape }}</h4>
     </div>
     {% endif %}
 
@@ -79,8 +72,7 @@
         %}
 
         {% unless block.settings.image == blank %}
-        {% include 'image-style', image: block.settings.image, height: max_height, wrapper_id: img_wrapper_id, img_id:
-        img_id %}
+        {% include 'image-style', image: block.settings.image, height: max_height, wrapper_id: img_wrapper_id, img_id: img_id %}
         {% endunless %}
         {% endif %}
 
@@ -92,7 +84,7 @@
                 {% when 'image' %}
                 {% if block.settings.image != blank %}
                 {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                <div style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100}}%;"
+                <div style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"
                     data-image-loading-animation>
                     <img id="{{ img_id }}" class="custom__image lazyload js" data-src="{{ img_url }}"
                         data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
@@ -101,8 +93,7 @@
                 </div>
                 <noscript>
                     {% capture image_size %}{{ max_height }}x{% endcapture %}
-                    {{ block.settings.image | img_url: image_size, scale: 2, crop: 'top' | img_tag:
-                    block.settings.image.alt, 'custom__image' }}
+                    {{ block.settings.image | img_url: image_size, scale: 2, crop: 'top' | img_tag: block.settings.image.alt, 'custom__image' }}
                 </noscript>
                 {% else %}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -110,8 +101,7 @@
                 {% when 'text' %}
                 <div class="medium-up--text-{{ block.settings.align_text }}">
                     {% if block.settings.title != blank %}
-                    <h4 class="h3 my_custom_content_title_font_size my_font_weight_default">{{ block.settings.title |
-                        escape }}</h4>
+                    <h4 class="h3 my_custom_content_title_font_size my_font_weight_default">{{ block.settings.title | escape }}</h4>
                     {% endif %}
                     {% if block.settings.text != blank %}
                     <div class="rte-setting rte my_font_size_content_default">{{ block.settings.text }}</div>
@@ -180,8 +170,7 @@
                             {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
                             {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
                         </div>
-                        <div class="h4 grid-view-item__title" style="color:var(--font-title-color);font-weight: 700;">{{
-                            'homepage.onboarding.product_title' | t }}</div>
+                        <div class="h4 grid-view-item__title" style="color:var(--font-title-color);font-weight: 700;">{{ 'homepage.onboarding.product_title' | t }}</div>
                         <div class="grid-view-item__meta" style="color:var(--color-foreground);">
                             {{ 0000 | money }}
                         </div>
@@ -250,7 +239,7 @@
                     {%- assign number_of_articles = blog.articles_count | default: 0 -%}
                     <a href="{{ blog.url | default: '#' }}"
                         class="blog-card__comment-count btn btn--tertiary btn--small"
-                        aria-label="{{ 'blogs.article.article_with_count' | t: count: number_of_articles }}: {{ blog.title }}">{{'blogs.article.article_with_count' | t: count: number_of_articles }}</a>
+                        aria-label="{{ 'blogs.article.article_with_count' | t: count: number_of_articles }}: {{ blog.title }}">{{ 'blogs.article.article_with_count' | t: count: number_of_articles }}</a>
                     {%- endif -%}
                 </div>
                 {%- when 'article' -%}
@@ -354,7 +343,7 @@
                         <ul class="list--inline" aria-label="{{ 'blogs.article.tags' | t }}">
                             {%- for tag in article.tags -%}
                             <li>
-                                <!-- <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="article__grid-tag">{{ tag }}</a> -->
+                                <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="article__grid-tag">{{ tag }}</a>
                             </li>
                             {%- endfor -%}
                         </ul>
@@ -460,13 +449,13 @@
       "type": "text",
       "id": "custom_content_margin_top",
       "label": "Margin top",
-	  "info": "t:sections.margintip.settings.margin_tip.label"
+	  "info": "t:sections.margintip.settings.margin_top_tip.label"
     },
     {
       "type": "text",
       "id": "custom_content_margin_bottom",
       "label": "Margin bottom",
-	  "info": "t:sections.margintip.settings.margin_tip.label"
+	  "info": "t:sections.margintip.settings.margin_bottom_tip.label"
     }
   ],
   "blocks": [
