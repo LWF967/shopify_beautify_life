@@ -1,31 +1,30 @@
-
 <div class="collection-grid-item" style="">
   <a href="{% if block.settings.img_link == empty %}#{% else %}{{ block.settings.img_link }}{% endif %}" class="collection-grid-item__link gallery-list" >
-     {%- if block.settings.image != blank -%}
-      <div class="collection-grid-item__overlay box ratio-container lazyload js"
-        data-bgset="{% include 'bgset', image: block.settings.image %}"
-        data-sizes="auto"
-        data-parent-fit="cover"
-        data-image-loading-animation>
-      </div>
-      <noscript>
-        <div class="collection-grid-item__overlay" style="background-image: url('{{ block.settings.image | img_url: '1024x1024' }}')"></div>
-      </noscript>
+    {%- if block.settings.image != blank -%}
+    <div class="collection-grid-item__overlay box ratio-container lazyload js"
+         data-bgset="{% include 'bgset', image: block.settings.image %}"
+         data-sizes="auto"
+         data-parent-fit="cover"
+         data-image-loading-animation>
+    </div>
+    <noscript>
+      <div class="collection-grid-item__overlay" style="background-image: url('{{ block.settings.image | img_url: '1024x1024' }}')"></div>
+    </noscript>
     {% else %}
-      {% if block.settings.image == empty %}
-        <div class="collection-grid-item__overlay">
-          {% capture current %}{% cycle 1, 2, 3 %}{% endcapture %}
-          {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
-        </div>
-      {% else %}
-        <div class="collection-grid-item__overlay" style="background-image: url('{{ block.settings.image | img_url: '1024x1024' }}')"></div>
-      {% endif %}
+    {% if block.settings.image == empty %}
+    <div class="collection-grid-item__overlay">
+      {% capture current %}{% cycle 1, 2, 3 %}{% endcapture %}
+      {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+    </div>
+    {% else %}
+    <div class="collection-grid-item__overlay" style="background-image: url('{{ block.settings.image | img_url: '1024x1024' }}')"></div>
+    {% endif %}
     {% endif %}
 
     <div class="collection-grid-item__title-wrapper">
       <div class="collection-grid-item__title h3" style="text-align:{{block.settings.align_text}}">
 
-       {{block.settings.caption_head}}
+        {{block.settings.caption_head}}
 
       </div>
     </div>
