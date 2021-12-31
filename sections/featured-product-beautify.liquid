@@ -964,7 +964,7 @@
 {% endschema %}
 
 <script type="module">
-  function dfun() {
+  function featuredProductZindexFun() {
     let featured_product_promo_bar = document.getElementById('shopify-section-promo-bar');
     let featured_product_top_bar = document.getElementById('shopify-section-top-bar');
     let featured_product_header = document.getElementById('shopify-section-header');
@@ -989,12 +989,12 @@
       }
     });
   }
-  dfun();
+  featuredProductZindexFun();
   
   var myFooterbottomFreshDesignMode = Shopify.designMode || false;
   if(myFooterbottomFreshDesignMode){
     document.addEventListener('shopify:section:load',() => {
-      dfun();
+      featuredProductZindexFun();
     },true);
   }
 </script>
