@@ -184,7 +184,6 @@
     cursor: auto;
     pointer-events: none
   }
-
   .swiper-button-next-{{section.id}}:after,
   .swiper-button-prev-{{section.id}}:after {
     font-family: swiper-icons;
@@ -201,8 +200,6 @@
     left: 10px;
     right: auto
   }
-
-
 
   .swiper-button-next-{{section.id}},
   .swiper-rtl .swiper-button-prev-{{section.id}} {
@@ -259,7 +256,6 @@
   }
   .slideshow_content{
     width:100%;
-
     position:relative;
 
   }
@@ -302,8 +298,6 @@
   }
 
   @media (any-hover: hover){
-
-
     {%- if section.settings.show_button_color =='transparent' -%}
 
     .icon-changebtn_{{section.id}}:hover{
@@ -320,8 +314,6 @@
 
 
   }
-
-
 
   .bk_transparent{
     background-color: transparent;
@@ -376,7 +368,6 @@
     }
   }
 
-
   .dn{
     display: none;
   }
@@ -404,10 +395,7 @@
 
   }
 
-
   {% if section.settings.show_button_visible != 'always' %}
-
-
 
   .icon-changebtn_{{section.id}} {
     -webkit-transform:translateY(-50%) scale(0) ;
@@ -419,22 +407,13 @@
 
   @media (any-hover: hover){
     .swiper-container-{{section.id}}:hover .icon-changebtn_{{section.id}}{
-
       -webkit-transform:translateY(-50%) scale(1);
       transform:translateY(-50%) scale(1);
       opacity: 1;
-
     }
   }
   {% endif %}
-
-
-
   @media screen and (max-width: 750px) {
-
-
-
-
     .icon-changebtn_{{section.id}} {
       display:block;
       opacity:1;
@@ -447,7 +426,6 @@
 
       border:none;
     }
-
 
     {%- else -%}
     .icon-changebtn_{{section.id}}:active{
@@ -455,18 +433,11 @@
       border:none;
     }
 
-
     {%- endif -%}
-
-
 
   }
 
   @media screen and (max-width: 990px) {
-
-
-
-
     .icon-changebtn_{{section.id}} {
 
       display:block;
@@ -480,19 +451,13 @@
 
       border:none;
     }
-
-
     {%- else -%}
     .icon-changebtn_{{section.id}}:active{
       background-color: {{ section.settings.show_button_hover_color }} !important;
       /*   	box-shadow: 0px 0px 8px 1px #e3e3e3; */
       border:none;
     }
-
-
     {%- endif -%}
-
-
   }
 
 
