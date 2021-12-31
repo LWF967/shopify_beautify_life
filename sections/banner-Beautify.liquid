@@ -30,7 +30,7 @@
     {%- for block in section.blocks -%}  
     {%- case block.type -%}
     {%- when 'banner_third' -%} {%- assign image = block.settings.image -%}
-    <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class=" flex_center {% if block.settings.url == blank %} pe_none{% endif %}"
+    <a href="{{ block.settings.url }}" target="{{ block.settings.open_link }}" class=" flex_center {% if block.settings.url == blank %} pe_none{% endif %}"
        style="background-image:url({{ image | img_url:'540x' }})"> 
       <div>
         {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
@@ -38,8 +38,8 @@
         {%- else -%}
         {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
-        <div class="nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size" style="font-weight:600; color:{{block.settings.color}}">
-          {{block.settings.header_top}}
+        <div class="nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size" style="font-weight:600; color:{{ block.settings.color }}">
+          {{ block.settings.header_top }}
         </div>
       </div>
     </a>
@@ -73,24 +73,26 @@
   .my_banner_beautify_collection_grid_clear_margin {
     margin-bottom: 0;
     overflow: inherit;
-  }  
+  } 
+  
   .grid1.grid--uniform.my_banner_beautify_ul_margin {
     margin: 0 -1.5rem;
-  }  
+  }
+  
   .my_banner_beautify_ul_margin li {
     padding: 0 1.5rem 3rem;
   }
+  
   .my_banner_beautify_font_size {
-    font-size: {{section.settings.font_top}}px;
+    font-size: {{ section.settings.font_top }}px;
   }
 
   @media screen and (max-width: 750px) {
-
-
-  .my_banner_beautify_ul_margin li {
-      padding: 0 1.5rem 1.5rem;
-  }
+    .my_banner_beautify_ul_margin li {
+        padding: 0 1.5rem 1.5rem;
+    }
   } 
+  
   @media screen and (max-width: 990px) {   
     .my_banner_beautify_banner_third a {
       margin: 0.75rem 0;
@@ -99,6 +101,7 @@
     .my_banner_beautify_banner_third a:first-child {
       margin: 0 0 0.75rem;
     }
+    
     .my_banner_beautify_banner_third a:last-child {
       margin: 0.75rem 0 1.5rem;
     }
@@ -113,7 +116,6 @@
       padding: 0 0.75rem 1.5rem;
     }
   }
-
 </style>
 
 
@@ -212,184 +214,164 @@
     }
   ],
   "blocks": [
-
     {
       "type": "img_top",
       "name": {
-
         "en": "IMG BOTTOM"
       },
       "settings": [
-
-       {
-         "type": "image_picker",
-         "id": "image1",
-         "label": "Image1"
-       },
-	   {
-         "type": "image_picker",
-         "id": "image2",
-         "label": "Image2"
-       },
-	   {
-         "type": "image_picker",
-         "id": "image3",
-         "label": "Image3"
-       },
-		
-      {
-        "type": "text",
-        "id": "header_top1",
-        "label": {
-
-        "en": "Header1"
-      },
-        "default": {
-
-        "en": "Head1"
-       }
-      },
-	  {
-        "type": "text",
-        "id": "header_top2",
-        "label": {
-
-        "en": "Header2"
-      },
-        "default": {
-
-        "en": "Head2"
-       }
-      },
-
-	 {
-        "type": "text",
-        "id": "header_top3",
-        "label": {
-
-        "en": "Header3"
-      },
-        "default": {
-
-        "en": "Head3"
-       }
-      },
-
-
-       {
-        "label": "Image link1 ",
-        "id": "url1",
-        "type": "url"
-      },
-	  {
-        "label": "Image link2 ",
-        "id": "url2",
-        "type": "url"
-      },
-	 {
-        "label": "Image link3 ",
-        "id": "url3",
-        "type": "url"
-      },
-
-      {
-        "type": "select",
-        "id": "open_link",
-        "options": [
-          {
-            "value": "_self",
-            "label": "Current window (_self)"
-          },
          {
-            "value": "_blank",
-            "label": "New window (_blank)"
+           "type": "image_picker",
+           "id": "image1",
+           "label": "Image1"
+         },
+         {
+           "type": "image_picker",
+           "id": "image2",
+           "label": "Image2"
+         },
+         {
+           "type": "image_picker",
+           "id": "image3",
+           "label": "Image3"
+         },
+         {
+           "type": "text",
+           "id": "header_top1",
+           "label": {
+             "en": "Header1"
+         },
+           "default": {
+             "en": "Head1"
+           }
+        },
+        {
+          "type": "text",
+          "id": "header_top2",
+          "label": {
+            "en": "Header2"
+          },
+          "default": {
+            "en": "Head2"
           }
-        ],
-        "label": "Open link in",
-        "default": "_blank"
-      }
-
+        },
+       {
+          "type": "text",
+          "id": "header_top3",
+          "label": {
+            "en": "Header3"
+          },
+          "default": {
+            "en": "Head3"
+          }
+        },
+        {
+          "label": "Image link1 ",
+          "id": "url1",
+          "type": "url"
+        },
+        {
+          "label": "Image link2 ",
+          "id": "url2",
+          "type": "url"
+        },
+        {
+          "label": "Image link3 ",
+          "id": "url3",
+          "type": "url"
+        },
+        {
+          "type": "select",
+          "id": "open_link",
+          "options": [
+            {
+              "value": "_self",
+              "label": "Current window (_self)"
+            },
+            {
+              "value": "_blank",
+              "label": "New window (_blank)"
+            }
+          ],
+          "label": "Open link in",
+          "default": "_blank"
+        }
       ]
     },
-
 	{
       "type": "banner_third",
       "name": "IMG TOP",
       "limit": 3,
       "settings": [
 		{
-         "type": "image_picker",
-         "id": "image",
-         "label": "Image"
-       },
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
 		{
-        "type": "text",
-        "id": "header_top",
-        "label": {
-
-        "en": "Header"
-      },
-        "default": {
-
-        "en": "Head"
-       }
-      },
-    {
-        "label": "Image link ",
-        "id": "url",
-        "type": "url"
-      },
-          {
-            "type": "color",
-            "id": "color",
-            "label": "Color",
-            "default": "#fff"
+          "type": "text",
+          "id": "header_top",
+          "label": {
+            "en": "Header"
           },
-          {
-            "type": "range",
-            "id": "w",
-            "min": 50,
-            "max": 150,
-            "step": 10,
-            "label": "Width",
-            "default": 140
-          },
-          {
-            "type": "range",
-            "id": "h",
-            "min": 1,
-            "max": 5,
-            "step": 0.5,
-            "label": "Height",
-            "default": 3
-          },
-		  {
-        "type": "select",
-        "id": "open_link",
-        "options": [
-          {
-            "value": "_self",
-            "label": "Current window (_self)"
-          },
-         {
-            "value": "_blank",
-            "label": "New window (_blank)"
+          "default": {
+            "en": "Head"
           }
-        ],
-        "label": "Open link in",
-        "default": "_blank"
-      }
-        ]
-      }
+        },
+        {
+          "label": "Image link ",
+          "id": "url",
+          "type": "url"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Color",
+          "default": "#fff"
+        },
+        {
+          "type": "range",
+          "id": "w",
+          "min": 50,
+          "max": 150,
+          "step": 10,
+          "label": "Width",
+          "default": 140
+        },
+        {
+          "type": "range",
+          "id": "h",
+          "min": 1,
+          "max": 5,
+          "step": 0.5,
+          "label": "Height",
+          "default": 3
+        },
+		{
+          "type": "select",
+          "id": "open_link",
+          "options": [
+            {
+              "value": "_self",
+              "label": "Current window (_self)"
+            },
+            {
+              "value": "_blank",
+              "label": "New window (_blank)"
+            }
+          ],
+          "label": "Open link in",
+          "default": "_blank"
+        }
+      ]
+    }
   ],
   "presets": [
     {
       "name": {
-
         "en": "Banner"
       },
       "category": {
-
         "en": "Collection"
       },
       "blocks": [
@@ -409,38 +391,34 @@
 {% endschema %}
 
 <style>
-  
-  .banner_third{
+  .banner_third {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    overflow:hidden;
-    max-height:68px;
+    overflow: hidden;
+    max-height: 68px;
     margin: 0 -1.5rem 3rem;
   }
 
-  .flex_center{
-    position:relative;
-    height:100px;
-    width:100%;
+  .flex_center {
+    position: relative;
+    height: 100px;
+    width: 100%;
     text-align: center;
     flex-grow: 1;
     margin: 1rem 1.5rem;
-    /*     margin: 0 1.5rem 3rem; */
     overflow: hidden;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
   }	
-
-  .w__100{
-
-    width:100%;
+  
+  .w__100 {
+    width: 100%;
   }
 
-  img{
-
+  img {
     height: auto;
     max-width: 100%;
     vertical-align: middle;
@@ -454,14 +432,15 @@
   .tc {
     text-align: center;
   }
-  .pr{
-
+  
+  .pr {
     position:relative;
   }
-  .pa{
-
+  
+  .pa {
     position:absolute;
   }
+  
   .nt_promotion_html {
     top: 50%;
     width: 100%;
@@ -475,12 +454,9 @@
     padding: 10px;
   }
 
-
-
   .tc_md {
     text-align: center;
   }
-
 
   .pe_none {
     pointer-events: none;
@@ -495,28 +471,18 @@
     list-style: none;
   }
 
-
-
-
   .grid__item__beautify {
     padding:3rem 1.5rem 0 1.5rem;
-    /*   padding-top: 3rem; */
     max-width: 100%;
     flex-grow: 1;
     flex-shrink: 0;
   }
-
-
 
   .grid__item__beautify {
-
     max-width: 100%;
     flex-grow: 1;
     flex-shrink: 0;
   }
-
-
-
 
   @media screen and (min-width: 750px) {
     .grid1 {
@@ -526,26 +492,25 @@
 
   @media screen and (max-width: 750px) {
     .grid__item__beautify {
-      width:100%;
+      width: 100%;
       max-width: 100%;
       flex-grow: 1;
       flex-shrink: 0;
     }
 
-    .banner_third{
-
+    .banner_third {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      overflow:hidden;
+      overflow: hidden;
       max-height: max-content;
     }
 
-    .flex_center{
-      position:relative;
-      height:100px;
-      width:100%;
+    .flex_center {
+      position: relative;
+      height: 100px;
+      width: 100%;
       text-align: center;
       flex-grow: 1;
       padding: 0;
@@ -554,7 +519,6 @@
       background-size: 100%;
       background-repeat: no-repeat;
     }	
-
 
     .grid1 {
       display: flex;
@@ -565,7 +529,6 @@
       list-style: none;
       flex-direction: column;
     }  
-
   }
 
   @media screen and (max-width: 990px) {
@@ -574,11 +537,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      overflow:hidden;
+      overflow: hidden;
       max-height: max-content;
       margin: 0 0;
     }
   }
 </style>
-
-
