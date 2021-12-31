@@ -1,26 +1,24 @@
-      <div class="timebox timebox-{{section.id}} f4"    data-endtime="{{section.settings.countdown_time}}"  >
-        <div class="day_time day_time-{{section.id}} f1 time-div"></div>
-        <div class="hour_time hour_time-{{section.id}} f1 time-div"></div>
-        <div class="minutes_time minutes_time-{{section.id}} f1 time-div"></div>
-        <div class="second_time second_time-{{section.id}} f1  time-div"></div>
-      </div>
+<div class="timebox timebox-{{section.id}} f4"    data-endtime="{{section.settings.countdown_time}}"  >
+  <div class="day_time day_time-{{section.id}} f1 time-div"></div>
+  <div class="hour_time hour_time-{{section.id}} f1 time-div"></div>
+  <div class="minutes_time minutes_time-{{section.id}} f1 time-div"></div>
+  <div class="second_time second_time-{{section.id}} f1  time-div"></div>
+</div>
 
 
 <script type="module">
-
-    
   const timedeal =  function abc(){
 	var set_time_box = document.getElementsByClassName('timebox-{{section.id}}')[0];
   	var set_time_day = document.getElementsByClassName('day_time-{{section.id}}')[0];
     var set_time_hour = document.getElementsByClassName('hour_time-{{section.id}}')[0];
     var set_time_minutes = document.getElementsByClassName('minutes_time-{{section.id}}')[0];
   	var set_time_second = document.getElementsByClassName('second_time-{{section.id}}')[0];
-  	
+
   	var endT = document.getElementsByClassName('timebox-{{section.id}}')[0].dataset.endtime;
     //console.log(endT);
 	//var endT = {{section.settings.countdown_time}};						
   	var end_time = new Date(endT); 	
-  
+
   function cctime(){
     var now_time = new Date(); 
     var count_time = parseInt((end_time.getTime() - now_time.getTime())/1000);
@@ -39,47 +37,22 @@
     }
   };
   var a = setInterval(cctime,1000);
-  
-  
   }
-  
   var timebb = new timedeal();
-  
-
  var designMode = Shopify.designMode || false;
    if(designMode){
-   
-   
     document.getElementById('shopify-section-{{section.id}}').addEventListener('shopify:section:load',()=>{  
-
 	//console.log('22222');
-     
-    	 
-	
-    
-     
 	},true);
-   
 
    document.addEventListener('shopify:section:load',()=>{  
-
 	 timebb = new timedeal();
-     
-     
-
-    
-     
 	},true);
-
 
     document.addEventListener('shopify:section:unload',()=>{  
 
     timebb = null;
 	},true);
- 
-
  }
-  
-
 
 </script>
