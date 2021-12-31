@@ -161,15 +161,15 @@
      style="{%- if section.settings.text_columns_with_images_margin_top != blank -%}margin-top: {{ section.settings.text_columns_with_images_margin_top }}px; {%- endif -%}{%- if section.settings.text_columns_with_images_margin_bottom != blank -%}margin-bottom:{{ section.settings.text_columns_with_images_margin_bottom }}px;{%- endif -%}">
   <div class="page-width">
     {% if section.settings.Text_columns_with_images_heading == blank %}
-      <h2 class="Text_columns_with_images_title my_font_weight_default my_clear_margin my_section_margin_default">Text columns with images</h2>
+    <h2 class="Text_columns_with_images_title my_font_weight_default my_clear_margin my_section_margin_default">Text columns with images</h2>
     {% else %}
-      <h2 class="Text_columns_with_images_title my_font_weight_default my_clear_margin my_section_margin_default">{{ section.settings.Text_columns_with_images_heading }}</h2>
+    <h2 class="Text_columns_with_images_title my_font_weight_default my_clear_margin my_section_margin_default">{{ section.settings.Text_columns_with_images_heading }}</h2>
     {% endif %}
     <slider-component class="slider-mobile-gutter">
       <ul class="multicolumn-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %} my_text_ul_li_margin my_clear_margin"
-        id="Slider-{{ section.id }}"
-        role="list"
-      >
+          id="Slider-{{ section.id }}"
+          role="list"
+          >
         {%- liquid
           assign highest_ratio = 0
           for block in section.blocks
@@ -179,73 +179,73 @@
           endfor
         -%}
         {%- for block in section.blocks -%}
-          <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}
-              >
-            <div class="text-images"  >
-              
-              {% if block.settings.show_image == true %}
-                {%- if block.settings.image != blank -%}
-                  <div class="my_text_columns_with_images_image">
-                  	<img src="{{ block.settings.image | img_url: '550x' }}" loading="lazy">
-                  </div>
-                {%- endif -%}
-              {% endif %}
+        <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}
+            >
+          <div class="text-images"  >
 
-              <div class="multicolumn-card__info my_text_content_padding">
-                {% if section.settings.Text_columns_with_images_Text_alignment == "Left" %}
-                  {%- if block.settings.title != blank -%}
-                    <h3 class="add_title my_text_columns_with_images_left my_text_columns_with_images_title_margin">{{ block.settings.title | escape }}</h3>
-                  {%- endif -%}
-                  {%- if block.settings.text != blank -%}
-                    <div class="rte my_text_columns_with_images_left my_text_content_margin_top my_font_size_content_default">{{ block.settings.text }}</div>
-                  {%- endif -%}
-                  {% if block.settings.button_label == blank or block.settings.button_link == blank %}
-                    <a class="button my_text_column_with_images_button_margin_top my_text_columns_with_images_button hide_my_text_columns_with_images_button my_button_font_size_default"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
-                      {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
-                    </a>
-                    {% else %}
-                    <a class="button my_text_column_with_images_button_margin_top my_text_columns_with_images_button my_small_button_font_size_default"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
-                       {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
-                    </a>
-                  {% endif %}
-                {% elsif section.settings.Text_columns_with_images_Text_alignment == "Centered" %}
-                  {%- if block.settings.title != blank -%}
-                    <h3 class="add_title my_text_columns_with_images_center">{{ block.settings.title | escape }}</h3>
-                  {%- endif -%}
-                  {%- if block.settings.text != blank -%}
-                    <div class="rte my_text_columns_with_images_center my_text_content_margin_top">{{ block.settings.text }}</div>
-                  {%- endif -%}
-                  {% if block.settings.button_label == blank or block.settings.button_link == blank %}
-                    <div class="my_text_columns_with_images_div">
-                	  <a class="button my_text_column_with_images_button_margin_top my_text_columns_with_images_button hide_my_text_columns_with_images_button my_button_font_size_default"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
-                       {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
-                      </a>
-                	</div>
-                    {% else %}
-                	<div class="my_text_columns_with_images_div">
-                	  <a class="button my_text_column_with_images_button_margin_top my_text_columns_with_images_button my_small_button_font_size_default"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
-                       {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
-                      </a>
-                	</div>
-                  {% endif %}
-                {% endif %}
-              </div>            
+            {% if block.settings.show_image == true %}
+            {%- if block.settings.image != blank -%}
+            <div class="my_text_columns_with_images_image">
+              <img src="{{ block.settings.image | img_url: '550x' }}" loading="lazy">
             </div>
-          </li>
+            {%- endif -%}
+            {% endif %}
+
+            <div class="multicolumn-card__info my_text_content_padding">
+              {% if section.settings.Text_columns_with_images_Text_alignment == "Left" %}
+              {%- if block.settings.title != blank -%}
+              <h3 class="add_title my_text_columns_with_images_left my_text_columns_with_images_title_margin">{{ block.settings.title | escape }}</h3>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+              <div class="rte my_text_columns_with_images_left my_text_content_margin_top my_font_size_content_default">{{ block.settings.text }}</div>
+              {%- endif -%}
+              {% if block.settings.button_label == blank or block.settings.button_link == blank %}
+              <a class="button my_text_column_with_images_button_margin_top my_text_columns_with_images_button hide_my_text_columns_with_images_button my_button_font_size_default"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
+              </a>
+              {% else %}
+              <a class="button my_text_column_with_images_button_margin_top my_text_columns_with_images_button my_small_button_font_size_default"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
+              </a>
+              {% endif %}
+              {% elsif section.settings.Text_columns_with_images_Text_alignment == "Centered" %}
+              {%- if block.settings.title != blank -%}
+              <h3 class="add_title my_text_columns_with_images_center">{{ block.settings.title | escape }}</h3>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+              <div class="rte my_text_columns_with_images_center my_text_content_margin_top">{{ block.settings.text }}</div>
+              {%- endif -%}
+              {% if block.settings.button_label == blank or block.settings.button_link == blank %}
+              <div class="my_text_columns_with_images_div">
+                <a class="button my_text_column_with_images_button_margin_top my_text_columns_with_images_button hide_my_text_columns_with_images_button my_button_font_size_default"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                  {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
+                </a>
+              </div>
+              {% else %}
+              <div class="my_text_columns_with_images_div">
+                <a class="button my_text_column_with_images_button_margin_top my_text_columns_with_images_button my_small_button_font_size_default"{% if block.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ block.settings.button_link }}"{% endif %}>
+                  {% if block.settings.button_label == blank %} {{ "button" | capitalize }} {% else %}  {{ block.settings.button_label }} {%- endif -%}
+                </a>
+              </div>
+              {% endif %}
+              {% endif %}
+            </div>            
+          </div>
+        </li>
         {%- endfor -%}
       </ul>
 
       {%- if section.settings.swipe_on_mobile -%}
-        <div class="slider-buttons no-js-hidden medium-hide{% if section.blocks.size < 2 %} small-hide{% endif %}">
-          <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-          <div class="slider-counter caption">
-            <span class="slider-counter--current">1</span>
-            <span aria-hidden="true"> / </span>
-            <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
-            <span class="slider-counter--total">{{ section.blocks.size }}</span>
-          </div>
-          <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
+      <div class="slider-buttons no-js-hidden medium-hide{% if section.blocks.size < 2 %} small-hide{% endif %}">
+        <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
+        <div class="slider-counter caption">
+          <span class="slider-counter--current">1</span>
+          <span aria-hidden="true"> / </span>
+          <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
+          <span class="slider-counter--total">{{ section.blocks.size }}</span>
         </div>
+        <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
+      </div>
       {%- endif -%}
     </slider-component>
   </div>
