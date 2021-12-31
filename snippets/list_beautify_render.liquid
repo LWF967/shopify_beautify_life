@@ -358,9 +358,7 @@
   }
 
   .icon-changebtn_{{section.id}} {
-
     display:block;
-
   }
 
   {% if section.settings.show_button_visible != 'always' %}
@@ -370,7 +368,6 @@
     transform: translateY(-50%) scale(0) ;
     opacity: 0;
     transition: .2s ease-in-out
-
   }
 
   @media (any-hover: hover){
@@ -400,9 +397,7 @@
       background-color: {{ section.settings.show_button_hover_color }} !important;
       border:none;
     }
-
     {%- endif -%}
-
   }
 
   @media screen and (max-width: 990px) {
@@ -428,9 +423,7 @@
     {%- endif -%}
   }
 
-
   /*   定义轮播点 */
-
 
   {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
@@ -472,7 +465,6 @@
 
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
     background:white;
-
   }
   {% endif %}
 
@@ -488,7 +480,6 @@
     cursor: pointer;
     padding: 0px;
     margin: 0;
-
   }
 
 
