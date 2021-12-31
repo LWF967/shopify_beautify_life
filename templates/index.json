@@ -90,6 +90,17 @@
             "width": "25%",
             "alignment": "center"
           }
+        },
+        "19531471-74f2-485e-9663-f1a700fb9a8f": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "width": "50%",
+            "alignment": "center",
+            "cover_image": "large",
+            "show_author": false,
+            "show_date": true
+          }
         }
       },
       "block_order": [
@@ -102,7 +113,8 @@
         "0b2b237b-a953-4647-9b9c-8e5171fdafe2",
         "db6cea1e-1b0d-4a31-b68a-ee4b229aa0f8",
         "ca1dcff2-7b3b-4ad0-b5d0-594ac240396c",
-        "c23c8983-a729-4bcf-9a3d-61af1d843c51"
+        "c23c8983-a729-4bcf-9a3d-61af1d843c51",
+        "19531471-74f2-485e-9663-f1a700fb9a8f"
       ],
       "settings": {
         "title": "CUSTOM CONTENT",
