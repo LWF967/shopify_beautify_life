@@ -178,27 +178,63 @@
             "image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
             "title": "New supply this week"
           }
+        },
+        "62575024-86a9-44da-b2db-3fac998366b8": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
+            "title": "New supply this week"
+          }
+        },
+        "158c9717-a5a6-49b4-8db5-370c44eb00dd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/rack-of-womens-clothing.jpg",
+            "title": "New supply this week"
+          }
+        },
+        "6b4e4e5c-9a17-4de1-bee1-61c270641370": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
+            "title": "New supply this week"
+          }
+        },
+        "5ba6a834-ec22-4af4-aa21-b55a0f21718e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "title": "New supply this week"
+          }
         }
       },
       "block_order": [
         "1639620369bd20c112-0",
         "1639620369bd20c112-1",
         "1639620369bd20c112-2",
-        "d05bedb7-3dcd-4ccf-954a-4cb972fdc3f8"
+        "d05bedb7-3dcd-4ccf-954a-4cb972fdc3f8",
+        "62575024-86a9-44da-b2db-3fac998366b8",
+        "158c9717-a5a6-49b4-8db5-370c44eb00dd",
+        "6b4e4e5c-9a17-4de1-bee1-61c270641370",
+        "5ba6a834-ec22-4af4-aa21-b55a0f21718e"
       ],
       "settings": {
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
-        "grid": 3,
-        "slide_loop": true,
+        "grid": 6,
+        "slide_loop": false,
         "show_view_all": true,
         "show_page_Dot": true,
-        "page_dot_style": "style_1",
-        "page_dot_color": "dark",
+        "page_dot_style": "style_2",
+        "page_dot_color": "light",
         "show_button": true,
         "show_button_visible": "always",
-        "show_button_style": "style1",
-        "show_button_color": "white",
+        "show_button_style": "style3",
+        "show_button_color": "transparent",
         "show_button_hover_color": "#80d425",
         "collection_list_beautify_margin_top": "",
         "collection_list_beautify_margin_bottom": ""
