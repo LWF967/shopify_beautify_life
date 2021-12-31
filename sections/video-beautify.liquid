@@ -6,128 +6,120 @@
      style="{%- if section.settings.video_beautify_margin_top != blank -%}margin-top: {{ section.settings.video_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.video_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.video_beautify_margin_bottom }}px;{%- endif -%}">
   <noscript>
     <div class="video-section__media"
-    >
+         >
       <a href="{{ section.settings.video_url }}" class="video-section__poster media media--transparent media--landscape{% if section.settings.cover_image == blank %} video-section__placeholder{% endif %}">
         {%- if section.settings.cover_image != blank and  section.settings.show_overlay == true -%}
-          <img
-            srcset="{%- if section.settings.cover_image.width >= 375 -%}{{ section.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 750 -%}{{ section.settings.cover_image | img_url: '750x' }} 750w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 1100 -%}{{ section.settings.cover_image | img_url: '1100x' }} 1100w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 1500 -%}{{ section.settings.cover_image | img_url: '1500x' }} 1500w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 1780 -%}{{ section.settings.cover_image | img_url: '1780x' }} 1780w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 2000 -%}{{ section.settings.cover_image | img_url: '2000x' }} 2000w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 3000 -%}{{ section.settings.cover_image | img_url: '3000x' }} 3000w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 3840 -%}{{ section.settings.cover_image | img_url: '3840x' }} 3840w,{%- endif -%}"
-            src="{{ section.settings.cover_image | img_url: '1920x' }}"
-            sizes="{% if section.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}"
-            alt="{{ 'sections.video.load_video' | t: description: section.settings.description | escape }}"
-            loading="lazy"
-            width="{{ section.settings.cover_image.width }}"
-            height="{{ section.settings.cover_image.height }}"
-          >
+        <img
+             srcset="{%- if section.settings.cover_image.width >= 375 -%}{{ section.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
+                     {%- if section.settings.cover_image.width >= 750 -%}{{ section.settings.cover_image | img_url: '750x' }} 750w,{%- endif -%}
+                     {%- if section.settings.cover_image.width >= 1100 -%}{{ section.settings.cover_image | img_url: '1100x' }} 1100w,{%- endif -%}
+                     {%- if section.settings.cover_image.width >= 1500 -%}{{ section.settings.cover_image | img_url: '1500x' }} 1500w,{%- endif -%}
+                     {%- if section.settings.cover_image.width >= 1780 -%}{{ section.settings.cover_image | img_url: '1780x' }} 1780w,{%- endif -%}
+                     {%- if section.settings.cover_image.width >= 2000 -%}{{ section.settings.cover_image | img_url: '2000x' }} 2000w,{%- endif -%}
+                     {%- if section.settings.cover_image.width >= 3000 -%}{{ section.settings.cover_image | img_url: '3000x' }} 3000w,{%- endif -%}
+                     {%- if section.settings.cover_image.width >= 3840 -%}{{ section.settings.cover_image | img_url: '3840x' }} 3840w,{%- endif -%}"
+             src="{{ section.settings.cover_image | img_url: '1920x' }}"
+             sizes="{% if section.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}"
+             alt="{{ 'sections.video.load_video' | t: description: section.settings.description | escape }}"
+             loading="lazy"
+             width="{{ section.settings.cover_image.width }}"
+             height="{{ section.settings.cover_image.height }}"
+             >
         {%- else -%}
-          {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+        {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
         {%- endif -%}
       </a>
     </div>
   </noscript>
   <deferred-media class="video-section__media deferred-media no-js-hidden" data-media-id="{{ section.settings.video_url.id }}"
-    {% if section.settings.cover_image != blank   and  section.settings.show_overlay == true %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
-  >
-    
+                  {% if section.settings.cover_image != blank   and  section.settings.show_overlay == true %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
+                  >
+
     {%- if section.settings.show_overlay -%}<div class="video__overlay"></div>{%- endif -%}
     <button
-      id="Deferred-Poster-Modal-{{ section.settings.video_url.id }}"
-      class="video-section__poster media deferred-media__poster media--landscape"
-      type="button"
-    	
-    >
+            id="Deferred-Poster-Modal-{{ section.settings.video_url.id }}"
+            class="video-section__poster media deferred-media__poster media--landscape"
+            type="button" >
       {%- if section.settings.cover_image != blank  and  section.settings.show_overlay == true and section.settings.style == 'image_with_play'-%}
-        <img
-          srcset="{%- if section.settings.cover_image.width >= 375 -%}{{ section.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
-            {%- if section.settings.cover_image.width >= 750 -%}{{ section.settings.cover_image | img_url: '750x' }} 750w,{%- endif -%}
-            {%- if section.settings.cover_image.width >= 1100 -%}{{ section.settings.cover_image | img_url: '1100x' }} 1100w,{%- endif -%}
-            {%- if section.settings.cover_image.width >= 1500 -%}{{ section.settings.cover_image | img_url: '1500x' }} 1500w,{%- endif -%}
-            {%- if section.settings.cover_image.width >= 1780 -%}{{ section.settings.cover_image | img_url: '1780x' }} 1780w,{%- endif -%}
-            {%- if section.settings.cover_image.width >= 2000 -%}{{ section.settings.cover_image | img_url: '2000x' }} 2000w,{%- endif -%}
-            {%- if section.settings.cover_image.width >= 3000 -%}{{ section.settings.cover_image | img_url: '3000x' }} 3000w,{%- endif -%}
-            {%- if section.settings.cover_image.width >= 3840 -%}{{ section.settings.cover_image | img_url: '3840x' }} 3840w,{%- endif -%}"
-          src="{{ section.settings.cover_image | img_url: '1920x' }}"
-          sizes="{% if section.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}"
-          alt="{{ 'sections.video.load_video' | t: description: section.settings.description | escape }}"
-          loading="lazy"
-          width="{{ section.settings.cover_image.width }}"
-          height="{{ section.settings.cover_image.height }}"
-        >
+      <img
+           srcset="{%- if section.settings.cover_image.width >= 375 -%}{{ section.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
+                   {%- if section.settings.cover_image.width >= 750 -%}{{ section.settings.cover_image | img_url: '750x' }} 750w,{%- endif -%}
+                   {%- if section.settings.cover_image.width >= 1100 -%}{{ section.settings.cover_image | img_url: '1100x' }} 1100w,{%- endif -%}
+                   {%- if section.settings.cover_image.width >= 1500 -%}{{ section.settings.cover_image | img_url: '1500x' }} 1500w,{%- endif -%}
+                   {%- if section.settings.cover_image.width >= 1780 -%}{{ section.settings.cover_image | img_url: '1780x' }} 1780w,{%- endif -%}
+                   {%- if section.settings.cover_image.width >= 2000 -%}{{ section.settings.cover_image | img_url: '2000x' }} 2000w,{%- endif -%}
+                   {%- if section.settings.cover_image.width >= 3000 -%}{{ section.settings.cover_image | img_url: '3000x' }} 3000w,{%- endif -%}
+                   {%- if section.settings.cover_image.width >= 3840 -%}{{ section.settings.cover_image | img_url: '3840x' }} 3840w,{%- endif -%}"
+           src="{{ section.settings.cover_image | img_url: '1920x' }}"
+           sizes="{% if section.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}"
+           alt="{{ 'sections.video.load_video' | t: description: section.settings.description | escape }}"
+           loading="lazy"
+           width="{{ section.settings.cover_image.width }}"
+           height="{{ section.settings.cover_image.height }}"
+           >
       {%- else -%}
-        {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+      {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
       {%- endif -%}
       <div class="my_video_text">
-      <span class="title my_font_weight_default my_video_align_center my_video_font_size">{{ section.settings.heading }}</span>
-      <span class="deferred-media__poster-button motion-reduce">
-        {%- render 'icon-play' -%}
-      </span>
+        <span class="title my_font_weight_default my_video_align_center my_video_font_size">{{ section.settings.heading }}</span>
+        <span class="deferred-media__poster-button motion-reduce">
+          {%- render 'icon-play' -%}
+        </span>
       </div>
     </button>
     {%- if section.settings.cover_image != blank  and  section.settings.show_overlay == true and section.settings.style == 'image_with_play'-%}   
     <div 
-      data-bgset="{% include 'bgset', image: section.settings.cover_image %}"
-      data-sizes="auto"
-      data-parent-fit="contain"
-      style="
-             background-image: url({{ section.settings.cover_image |image_url }});
-             background-position: {{ section.settings.image_alignment }};
-             border: none;
-             cursor: pointer;
-             margin: 0;
-             padding: 0;
-             height: 100%;
-             width: 100%; 
-             position:absolute;
-             display:block;
-             " 
-   ></div>
+         data-bgset="{% include 'bgset', image: section.settings.cover_image %}"
+         data-sizes="auto"
+         data-parent-fit="contain"
+         style="
+                background-image: url({{ section.settings.cover_image |image_url }});
+                background-position: {{ section.settings.image_alignment }};
+                border: none;
+                cursor: pointer;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%; 
+                position:absolute;
+                display:block;
+                " 
+         ></div>
     {%- endif -%}
     <template>
       {%- if section.settings.video_url.type == 'youtube' -%}
-        <iframe src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1?rel=0&amp;autoplay=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+      <iframe src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?enablejsapi=1?rel=0&amp;autoplay=1" class="js-youtube" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
       {%- else -%}
-        <iframe src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
+      <iframe src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}" class="js-vimeo" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.description | escape }}"></iframe>
       {%- endif -%}
     </template>
   </deferred-media>
 </div>
 
-
 <style>
-  
   {%- case section.settings.video_height -%}
-      {%- when 'small' -%}
-          .video-section__media {
-              position: relative;
-              padding-bottom: 47.5%;
-          }
+  {%- when 'small' -%}
+  .video-section__media {
+    position: relative;
+    padding-bottom: 47.5%;
+  }
 
-      {%- when 'medium' -%}
-          .video-section__media {
-              position: relative;
-              padding-bottom: 56.25%;
-          }
+  {%- when 'medium' -%}
+  .video-section__media {
+    position: relative;
+    padding-bottom: 56.25%;
+  }
 
-      {%- when 'large' -%}
-          .video-section__media {
-              position: relative;
-              padding-bottom: 79.5%;
-          }
+  {%- when 'large' -%}
+  .video-section__media {
+    position: relative;
+    padding-bottom: 79.5%;
+  }
 
   {%- endcase -%}
-
-  
-  
   .video__overlay{
     display: block !important;
   }
-  
   .video__overlay::before {
     content: '';
     position: absolute;
@@ -137,14 +129,14 @@
     left: 0;
     background-color: black;
     opacity: var(--opacity-image-overlay);
-  }
-  
+      }
+
   .my_video_align_center {
     text-align: center;
     color: white;
     margin: 0 0 30px;
   }
-  
+
   @media screen and (max-width: 990px) {
     .my_video_align_center {
       text-align: center;
@@ -152,45 +144,45 @@
       margin: 0 0 5px;
     }
   }
-  
-  {%- if section.settings.heading != blank -%}
-    .video-section__poster.media.deferred-media__poster.media--landscape .my_video_text {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%,-50%);
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
 
-    .video-section__poster.media.deferred-media__poster.media--landscape .my_video_text .deferred-media__poster-button.motion-reduce {
-      background-color: var(--color-button);
-      border: 0.1rem solid rgba(var(--color-foreground),.1);
-      border-radius: 50%;
-      color: var(--color-button-label);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 6.2rem;
-      width: 6.2rem;
-      position: static;
-      left: 0;
-      top: 0;
-      transform: none;
-      transition: transform var(--duration-short) ease,color var(--duration-short) ease;
-      z-index: 1;
-    }
+  {%- if section.settings.heading != blank -%}
+  .video-section__poster.media.deferred-media__poster.media--landscape .my_video_text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-section__poster.media.deferred-media__poster.media--landscape .my_video_text .deferred-media__poster-button.motion-reduce {
+    background-color: var(--color-button);
+    border: 0.1rem solid rgba(var(--color-foreground),.1);
+    border-radius: 50%;
+    color: var(--color-button-label);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.2rem;
+    width: 6.2rem;
+    position: static;
+    left: 0;
+    top: 0;
+    transform: none;
+    transition: transform var(--duration-short) ease,color var(--duration-short) ease;
+    z-index: 1;
+   }
   {%- endif -%}
   .my_video_font_size {
     {%- if section.settings.text_size == 'medium' -%}
-      font-size: 24px;
+    font-size: 24px;
     {%- elsif section.settings.text_size == 'large' -%}
-      font-size: 30px;
+    font-size: 30px;
     {%- endif -%}
   }
 </style>
