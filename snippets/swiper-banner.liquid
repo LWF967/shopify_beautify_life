@@ -204,11 +204,7 @@
   </div>
 </li>
 <script type="module">
-
-
       import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
-
-
 
      let swiper = new Swiper ('.swiper-banner-beautify-{{block.id}}', {
       direction: 'horizontal', // 垂直切换选项  horizontal  vertical
@@ -216,10 +212,9 @@
 
       // 如果需要分页器
 
-
       {% unless section.settings.show_page_Dot %}
 
-           pagination: {
+       pagination: {
         el: '.swiper-pagination-{{section.id}}',
         clickable :true,
         hideOnClick :true,
@@ -232,8 +227,6 @@
       },
     {% endunless %}
 
-
-
       effect : 'fade',
       observer : true,
       observeParents : true,
@@ -243,7 +236,6 @@
       stopOnLastSlide: false,
       disableOnInteraction: false,
       },
-
 
       // 如果需要前进后退按钮
       navigation: {
@@ -263,10 +255,7 @@
       loop: true, // 循环模式选项
 
       // 如果需要分页器
-
-
       {% unless section.settings.show_page_Dot %}
-
          pagination: {
         el: '.swiper-pagination-{{section.id}}',
         clickable :true,
@@ -280,8 +269,6 @@
       },
     {% endunless %}
 
-
-
       effect : 'fade',
       observer : true,
       observeParents : true,
@@ -291,7 +278,6 @@
       stopOnLastSlide: false,
       disableOnInteraction: false,
       },
-
 
       // 如果需要前进后退按钮
       navigation: {
@@ -306,10 +292,9 @@
     })
   },false);
 
-
-      document.addEventListener('shopify:section:unload',()=>{
+	document.addEventListener('shopify:section:unload',()=>{
       swiper =  'null';
-      },false);
+     },false);
 </script>
 
 <style>
