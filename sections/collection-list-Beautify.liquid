@@ -34,12 +34,10 @@
 
 
 <style>
-
   ol#collection_list_pog{
     width: 100%;
     display: flex;
     justify-content: center;
-/*     position: absolute; */
     bottom: 10%;
     z-index: 100;
     cursor: pointer;
@@ -47,49 +45,43 @@
     margin: 0;
   }
   
-  
   ol#collection_list_pog li{
-    float:left;
-    background:green;
-    width:11px;
-    height:11px;
+    float: left;
+    background: green;
+    width: 11px;
+    height: 11px;
     text-align: center;
     line-height: 11px;
     font-size: 10px;
     border-radius: 50%;
     text-align: center;
-    transition:all 1.5s;
+    transition: all 1.5s;
     margin: 0 5px;
     list-style-type: none;
   }
   
   ol#collection_list_pog li.active{
-    background:blue;
-    color:#fff;
+    background: blue;
+    color: #fff;
   }
-
 </style>
-
-
 
 {% schema %}
 {
 	"name": {
-
 		"en": "Collection slider"
 	},
 	"tag": "section",
 	"class": "index-section",
 	"max_blocks": 8,
-	"settings": [{
+	"settings": [
+		{
 			"type": "text",
 			"id": "title",
 			"label": {
-
 				"en": "Heading"
 			},
 			"default": {
-
 				"en": "NEW RELEASES"
 			}
 		},
@@ -97,11 +89,9 @@
 			"type": "text",
 			"id": "sub_title",
 			"label": {
-
 				"en": "Sub text"
 			},
 			"default": {
-
 				"en": "New supply this week"
 			}
 		},
@@ -109,7 +99,6 @@
 			"type": "range",
 			"id": "grid",
 			"label": {
-
 				"en": "Collections per row"
 			},
 			"min": 2,
@@ -142,26 +131,32 @@
 			"id": "page_dot_style",
 			"label": "Style",
 			"default": "style_1",
-			"options": [{
-				"value": "style_1",
-				"label": "Style 1"
-			}, {
-				"value": "style_2",
-				"label": "Style 2"
-			}]
+			"options": [
+                {
+                    "value": "style_1",
+                    "label": "Style 1"
+                }, 
+                {
+                    "value": "style_2",
+                    "label": "Style 2"
+                }
+			]
 		},
 		{
 			"type": "select",
 			"id": "page_dot_color",
 			"label": "Color",
 			"default": "dark",
-			"options": [{
-				"value": "dark",
-				"label": "Dark"
-			}, {
-				"value": "light",
-				"label": "Light"
-			}]
+			"options": [
+                {
+                    "value": "dark",
+                    "label": "Dark"
+                }, 
+                {
+                    "value": "light",
+                    "label": "Light"
+                }
+			]
 		},
 		{
 			"type": "checkbox",
@@ -174,7 +169,8 @@
 			"id": "show_button_visible",
 			"label": "Visible",
 			"default": "always",
-			"options": [{
+			"options": [
+				{
 					"value": "only_hover",
 					"label": "Only hover"
 				},
@@ -189,7 +185,8 @@
 			"id": "show_button_style",
 			"label": "Style",
 			"default": "style1",
-			"options": [{
+			"options": [
+				{
 					"value": "style1",
 					"label": "Style1"
 				},
@@ -208,7 +205,8 @@
 			"id": "show_button_color",
 			"label": "Color",
 			"default": "white",
-			"options": [{
+			"options": [
+				{
 					"value": "transparent",
 					"label": "Transparent"
 				},
@@ -240,59 +238,60 @@
 			"info": "t:sections.margintip.settings.margin_bottom_tip.label"
 		}
 	],
-	"blocks": [{
-		"type": "featured_collection",
-		"name": {
+	"blocks": [
+      {
+          "type": "featured_collection",
+          "name": {
 
-			"en": "Collection"
-		},
-		"settings": [{
-				"label": {
-
-					"en": "Collection"
-				},
-				"id": "collection",
-				"type": "collection"
-			},
-			{
-				"type": "image_picker",
-				"id": "image",
-				"label": "Image"
-			},
-			{
-				"type": "text",
-				"id": "title",
-				"label": {
-
-					"en": "Title block(optional)"
-				},
-				"default": {
-
-					"en": "New supply this week"
-				},
-				"info": "Leave empty to use 'collection title'title. Enter key 'hide_title' to hide title"
-			}
-		]
-	}],
-	"presets": [{
-		"name": {
-
-			"en": "collection slider"
-		},
-		"category": {
-
-			"en": "Collection"
-		},
-		"blocks": [{
-				"type": "featured_collection"
-			},
-			{
-				"type": "featured_collection"
-			},
-			{
-				"type": "featured_collection"
-			}
-		]
-	}]
+              "en": "Collection"
+          },
+          "settings": [
+              {
+                  "label": {
+                      "en": "Collection"
+                  },
+                  "id": "collection",
+                  "type": "collection"
+              },
+              {
+                  "type": "image_picker",
+                  "id": "image",
+                  "label": "Image"
+              },
+              {
+                  "type": "text",
+                  "id": "title",
+                  "label": {
+                      "en": "Title block(optional)"
+                  },
+                  "default": {
+                      "en": "New supply this week"
+                  },
+                  "info": "Leave empty to use 'collection title'title. Enter key 'hide_title' to hide title"
+              }
+          ]
+      }
+	],
+	"presets": [
+		{
+          "name": {
+              "en": "collection slider"
+          },
+          "category": {
+              "en": "Collection"
+          },
+          "blocks": [
+			  {
+                  "type": "featured_collection"
+              },
+              {
+                  "type": "featured_collection"
+              },
+              {
+                  "type": "featured_collection"
+              }
+			]
+		}
+	]
 }
 {% endschema %}
