@@ -22,45 +22,35 @@
 </div>
 
 <style>
-  
-    .gallery-box{
-  
-  	display:flex;
+  .gallery-box{
+    display:flex;
     overflow:hidden;
-      
-      
     {% case section.settings.section_height  %}
-  
+
     {% when 'extra_small'%}
-        max-height: calc(380px * 0.4);
+    max-height: calc(380px * 0.4);
     {% when 'small'%}
-        max-height: calc(380px * 0.8);
+    max-height: calc(380px * 0.8);
     {% when 'medium'%}
-        max-height: calc(380px * 1);
+    max-height: calc(380px * 1);
     {% when 'large'%}
-        max-height: calc(380px * 1.2);
+    max-height: calc(380px * 1.2);
     {% when 'extra_large'%}
-        max-height: calc(380px * 1.6);
+    max-height: calc(380px * 1.6);
 
     {% endcase %}
 
-  	}  
-  
-  	 
+  }  
+
+
   @media screen and (max-width: 750px) {
-
-  
-	.gallery-box{
-    display: flex;
-    max-height: 100%;
-    overflow: hidden;
-    flex-direction: column;
-	}
-  
+    .gallery-box{
+      display: flex;
+      max-height: 100%;
+      overflow: hidden;
+      flex-direction: column;
+    }
   }
-
-  
- 
   
 </style>
 
