@@ -203,6 +203,67 @@
         "aabec07c-4917-462a-ae48-09bc3d9f0658"
       ],
       "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "1640920256f230ad2a": {
+      "type": "slideshow-text2",
+      "blocks": {
+        "1640920256e9eddd60-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "heading": "Image slide",
+            "heading_size": "medium",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "1640920256e9eddd60-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
+            "heading": "Image slide",
+            "heading_size": "medium",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1640920256e9eddd60-0",
+        "1640920256e9eddd60-1"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
       }
     }
   },
@@ -210,6 +271,7 @@
     "main",
     "16408262193e0f25d1",
     "16408262248e9a3b69",
-    "164085829207cb864a"
+    "164085829207cb864a",
+    "1640920256f230ad2a"
   ]
 }
