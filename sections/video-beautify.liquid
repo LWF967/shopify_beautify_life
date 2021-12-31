@@ -33,7 +33,6 @@
   <deferred-media class="video-section__media deferred-media no-js-hidden" data-media-id="{{ section.settings.video_url.id }}"
                   {% if section.settings.cover_image != blank   and  section.settings.show_overlay == true %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
                   >
-
     {%- if section.settings.show_overlay -%}<div class="video__overlay"></div>{%- endif -%}
     <button
             id="Deferred-Poster-Modal-{{ section.settings.video_url.id }}"
