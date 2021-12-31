@@ -181,7 +181,6 @@
           {{ block.settings.button_label_1 | escape }}
         </a>
         {%- endif -%}
-
       </div>
       {%- endcase -%}
       {%- endfor -%}
@@ -220,7 +219,6 @@
       }
       ]
     },
-	
 	{
       "type": "select",
       "id": "section_size",
@@ -253,7 +251,6 @@
       }
      ]
     },
-	
     {
       "type": "select",
       "id": "desktop_text_box_position",
@@ -341,12 +338,12 @@
       "name": "t:sections.image-banner.blocks.heading.name",
       "limit": 1,
       "settings": [
-      {
-      "type": "text",
-      "id": "heading",
-      "default": "Image banner",
-      "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
-      }
+        {
+        "type": "text",
+        "id": "heading",
+        "default": "Image banner",
+        "label": "t:sections.image-banner.blocks.heading.settings.heading.label"
+        }
       ]
     },
     {
@@ -354,12 +351,12 @@
       "name": "t:sections.image-banner.blocks.text.name",
       "limit": 1,
       "settings": [
-      {
-      "type": "text",
-      "id": "text",
-      "default": "Give customers details about the banner image(s) or content on the template.",
-      "label": "t:sections.image-banner.blocks.text.settings.text.label"
-      }
+        {
+        "type": "text",
+        "id": "text",
+        "default": "Give customers details about the banner image(s) or content on the template.",
+        "label": "t:sections.image-banner.blocks.text.settings.text.label"
+        }
       ]
     },
     {
@@ -367,24 +364,24 @@
       "name": "t:sections.image-banner.blocks.buttons.name",
       "limit": 1,
       "settings": [
-      {
-      "type": "text",
-      "id": "button_label_1",
-      "default": "Button label",
-      "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
-      "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
-      },
-      {
-      "type": "url",
-      "id": "button_link_1",
-      "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
-      },
-      {
-      "type": "checkbox",
-      "id": "button_style_secondary_1",
-      "default": false,
-      "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
-      }
+        {
+          "type": "text",
+          "id": "button_label_1",
+          "default": "Button label",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
+          "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
+        },
+        {
+          "type": "url",
+          "id": "button_link_1",
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_link_1.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "button_style_secondary_1",
+          "default": false,
+          "label": "t:sections.image-banner.blocks.buttons.settings.button_style_secondary_1.label"
+        }
       ]
     }
   ],
