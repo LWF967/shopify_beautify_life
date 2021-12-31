@@ -4,11 +4,8 @@
       	  assign product = setting.product 
           if product.images[0].aspect_ratio > highest_ratio
             assign highest_ratio = product.images[0].aspect_ratio
-          endif          
-        -%}
-
-
-
+          endif 
+          -%}
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
@@ -16,7 +13,7 @@
   <div class="left ">
     <div class="felx_box h_45">
       <div class="f5 felx_box" style=" font: bold {{section.settings.heading_font_size}}px 'Droid Sans', Arial, sans-serif; line-height:{{setting.heading_font_size}}px !important; height:100%; color:{{section.settings.color_top}};">{{section.settings.heading_text | truncate: 25 ,"" }}</div>
-	  {% comment %}
+      {% comment %}
       <div class="timebox timebox-{{section.id}} f4"    data-endtime="{{setting.countdown_time}}"  >
         <div class="day_time day_time-{{section.id}} f1 time-div"></div>
         <div class="hour_time hour_time-{{section.id}} f1 time-div"></div>
@@ -24,139 +21,110 @@
         <div class="second_time second_time-{{section.id}} f1  time-div"></div>
       </div>
       {% endcomment %}
-   
-	{% render 'daily-deal-time',section:section  %}
+
+      {% render 'daily-deal-time',section:section  %}
     </div>
 
     <div class="h_55">
       <p class="my_daily_deal_of_the_day_product_title_margin" style="font-weight:600;font-size: 18px;">{{ product.title }}</p>
       <p class="my_font_size_content_default my_daily_deal_of_the_day_product_desc_margin">{{product.description}}</p>
       <div class="my_daily_deal_of_the_day_product_price_margin">
-      {% render 'price', product: product, price_class: '' %}
-        
+        {% render 'price', product: product, price_class: '' %}
       </div>
-     
-      
       {% if product.available %}
-      
-        	<product-form class="product-form buy_button_box" >
-                {%- form 'product', product,class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                  <div class="product-form__buttons day-deal-product-form {% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}my_main_product_product_form_button{% endif %}">
-           
-                    <div class="button my_clear_padding " >
+      <product-form class="product-form buy_button_box" >
+        {%- form 'product', product,class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+        <div class="product-form__buttons day-deal-product-form {% if section.settings.main_product_mediasize == 'Small' or section.settings.main_product_mediasize == 'Extra large' %}my_main_product_product_form_button{% endif %}">
+          <div class="button my_clear_padding " >
+            {{ form | payment_button }}
+          </div>
 
-                      {{ form | payment_button }}
-             		
-                    </div>
-                                
-                  </div>
-                {%- endform -%}
-       			 <a class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default my_daily_deal_of_the_day_button_box_shadow my_clear_padding" style="margin-left:4rem;" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default" style="padding:8px 15px">Detail</button></a>
-                     
-            </product-form>
-      
-      
-      		  {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
-                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                {{ form | payment_terms }}
-              {%- endform -%}
-      	
-        {% else %}
-      
-        <a  href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default my_daily_deal_of_the_day_button_box_shadow">Sold Out</button></a>
+        </div>
+        {%- endform -%}
+        <a class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default my_daily_deal_of_the_day_button_box_shadow my_clear_padding" style="margin-left:4rem;" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default" style="padding:8px 15px">Detail</button></a>
+      </product-form>
+      {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
+      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+      {{ form | payment_terms }}
+      {%- endform -%}
+      {% else %}
+
+      <a  href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default my_daily_deal_of_the_day_button_box_shadow">Sold Out</button></a>
       {% endif %}
-      
-      
-        
-      
-      
-      
     </div>
   </div>
   <div class="right daily-right">
     <div class="daily-product-box" style="{%-if section.settings.color_schemes=="background_product_color"-%} background-color:{{section.settings.background_product_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%};">
-      
-       {%- if section.settings.log_image != null -%}
-       <div class="daily-product  " style="overflow:hidden;">
-         <div class="product__media-item">			
-           	 <img
-                srcset="{%- if section.settings.log_image.width >= 550 -%}{{ section.settings.log_image | img_url: '550x' }} 550w,{%- endif -%}
-                        {%- if section.settings.log_image.width >= 1100 -%}{{ section.settings.log_image | img_url: '1100x' }} 1100w,{%- endif -%}
-                        {%- if section.settings.log_image.width >= 1680 -%}{{ section.settings.log_image | img_url: '1680x' }} 1680w,{%- endif -%}
-                        {%- if section.settings.log_image.width >= 2048 -%}{{ section.settings.log_image | img_url: '2048x' }} 2048w,{%- endif -%}
-                        {%- if section.settings.log_image.width >= 4096 -%}{{ section.settings.log_image | img_url: '4096x' }} 4096w{%- endif -%}"
-                sizes="(min-width: 750px) calc(100vw - 12rem), 100vw"
-                src="{{ section.settings.log_image | img_url :'x750'}}"
-                alt="{{ media.alt | escape }}"
-                loading="lazy"
-                width="1100"
-                height="{{ 1100 | divided_by: section.settings.log_image.aspect_ratio | ceil }}"
-                data-media-id="{{ section.settings.log_image.id }}"
-                {% if variant_image %}class="product__media-item--variant"{% endif %}
-              >           
-         </div>
-       </div>
-       {%- else -%}
-   		 <div class="daily-product  " style="overflow:hidden;">
-          {%- if product.selected_or_first_available_variant.featured_media != null -%}
-            {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-            <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-              {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
-            </div>
-          {%- endif -%}
-          {%- liquid
+
+      {%- if section.settings.log_image != null -%}
+      <div class="daily-product  " style="overflow:hidden;">
+        <div class="product__media-item">			
+          <img
+               srcset="{%- if section.settings.log_image.width >= 550 -%}{{ section.settings.log_image | img_url: '550x' }} 550w,{%- endif -%}
+                       {%- if section.settings.log_image.width >= 1100 -%}{{ section.settings.log_image | img_url: '1100x' }} 1100w,{%- endif -%}
+                       {%- if section.settings.log_image.width >= 1680 -%}{{ section.settings.log_image | img_url: '1680x' }} 1680w,{%- endif -%}
+                       {%- if section.settings.log_image.width >= 2048 -%}{{ section.settings.log_image | img_url: '2048x' }} 2048w,{%- endif -%}
+                       {%- if section.settings.log_image.width >= 4096 -%}{{ section.settings.log_image | img_url: '4096x' }} 4096w{%- endif -%}"
+               sizes="(min-width: 750px) calc(100vw - 12rem), 100vw"
+               src="{{ section.settings.log_image | img_url :'x750'}}"
+               alt="{{ media.alt | escape }}"
+               loading="lazy"
+               width="1100"
+               height="{{ 1100 | divided_by: section.settings.log_image.aspect_ratio | ceil }}"
+               data-media-id="{{ section.settings.log_image.id }}"
+               {% if variant_image %}class="product__media-item--variant"{% endif %}
+               >           
+        </div>
+      </div>
+      {%- else -%}
+      <div class="daily-product  " style="overflow:hidden;">
+        {%- if product.selected_or_first_available_variant.featured_media != null -%}
+        {%- assign media = product.selected_or_first_available_variant.featured_media -%}
+        <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
+          {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
+        </div>
+        {%- endif -%}
+        {%- liquid
             assign media_to_render = product.featured_media.id
             for variant in product.variants
               assign media_to_render = media_to_render | append: variant.featured_media.id | append: ' '
             endfor
           -%}
-           {% comment %}
-           
-          {%- for media in product.media -%}
-            {%- if media_to_render contains media.id and media.id != product.selected_or_first_available_variant.featured_media.id -%}
-              <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}  123">
-                {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
-              </div>
-            {%- endif -%}
-          {%- endfor -%}
-           
-           {% endcomment %}
-          
-          <div class=" my_deal_swiper-{{section.id}} "  style="overflow:hidden; height:100%;" > 
-          	<div class=" swiper-wrapper " >
-    	{%- for media in product.media -%}
-        
-              
-              <div class="swiper-slide product__media-item" style="background-color: transparent;">
-            {%- liquid
+        {% comment %}
+
+        {%- for media in product.media -%}
+        {%- if media_to_render contains media.id and media.id != product.selected_or_first_available_variant.featured_media.id -%}
+        <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}  123">
+          {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false %}
+        </div>
+        {%- endif -%}
+        {%- endfor -%}
+
+        {% endcomment %}
+
+        <div class=" my_deal_swiper-{{section.id}} "  style="overflow:hidden; height:100%;" > 
+          <div class=" swiper-wrapper " >
+            {%- for media in product.media -%}
+            <div class="swiper-slide product__media-item" style="background-color: transparent;">
+              {%- liquid
              assign media = product.selected_or_first_available_variant.featured_media 
-           
+
                  render 'product-media',media: media, loop: false, variant_image: true, meida_width: true
             -%}
-              </div>
-              
-         
-          {%- endfor -%}
-           </div>
-<!--              <div class="swiper-button-prev del_featured_product_beautify_prev-{{section.id}}"></div>
-            <div class="swiper-button-next del_featured_product_beautify_next-{{section.id}}"></div> -->
+            </div>
+            {%- endfor -%}
+          </div>
+          <!--              <div class="swiper-button-prev del_featured_product_beautify_prev-{{section.id}}"></div>
+                             <div class="swiper-button-next del_featured_product_beautify_next-{{section.id}}"></div> -->
 
-           <div class="swiper-pagination-{{section.id}}"></div>
-     	  </div>
-           
+          <div class="swiper-pagination-{{section.id}}"></div>
         </div>
+      </div>
       {%- endif -%}
-      
     </div>
-    	
-    	
   </div>
 </div>
-
-
-
-
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
