@@ -39,185 +39,178 @@ endif -%}
 
 {%- if blog.template_suffix != 'portfolio' -%}
 
-  <div class="container mt__60 mb__60">
-    <div class="row nt_single_blog">
-      <div class="col-md-{{class_main}} col-xs-12">
-      
-        
-        {%- liquid
+<div class="container mt__60 mb__60">
+  <div class="row nt_single_blog">
+    <div class="col-md-{{class_main}} col-xs-12">
+      {%- liquid
    assign number_of_comments = article.comments_count
    assign article_id = article.id -%}
-<div class="container container_cat cat_{{section.settings.ptf_layout}} mt__60 mb__60">
-	{%- for block in section.blocks -%}
-	  {%- case block.type -%}
-	   {%- when 'content' -%}
-			<div class="post-content mt__50 inl_cnt_js"><article id="post-{{article.id}}" class="post-{{article.id}} post type-post">{{ article.content }}</article></div>
-		{%- when 'infos' -%}
-		     {%- if block.settings.cat or block.settings.author or block.settings.tags -%}
-		        <div class="row portfolio-meta mt__40 tc">
-		        	{%- if block.settings.cat -%}
-		        	<div class="col-md-4 col-12">
-		        	   <span class="cd mb__5 tu ls__2 db f__mont fwb">{{ 'blogs.portfolio.category' | t }}</span>
-		        	   <a href="{{blog.url}}">{{blog.title}}</a>
-		        	</div>
-		        	{%- endif -%}
-		        	{%- if block.settings.author -%}
-		        	<div class="col-md-4 col-12">
-		        	   <span class="cd mb__5 tu ls__2 db f__mont fwb">{{ 'blogs.portfolio.author' | t }}</span>
-		        	   <span class="cd">{{ article.author | replace_first: 'ad clnt', 'admin' | capitalize }}</span>
-		        	</div>
-		        	{%- endif -%}
-		        	{%- if block.settings.tags and article.tags.size > 0 -%}
-		        	<div class="col-md-4 col-12">
-		        	   <span class="cd mb__5 tu ls__2 db f__mont fwb">{{ 'blogs.portfolio.tags' | t }}</span>
-		        	   {%- for tag in article.tags %}<a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag | capitalize }}</a>{% unless forloop.last %}, {% endunless %}{% endfor -%}
-		        	</div>
-		        	{%- endif -%}
-		        </div>
-		     {%- endif -%}
-		{%- when 'social' -%} 
-
-			<div class="social-share tc mt__60 social_des_{{block.settings.des}}">{%- render 'social-sharing',class_tooltip:'ttip_nt tooltip_top',follow_social:block.settings.follow,nt_tooltip:block.settings.tooltip -%}</div>
-	   {%- when 'nav' -%}
-	   
-	      <div class="blog-navigation mt__60 fs__40 tc">
-	      	{%- if blog.previous_article %}<a href="{{blog.previous_article.url}}" class="pl__30 pr__30 cd chp ttip_nt tooltip_top_right"><i class="pegk pe-7s-angle-left"></i><span class="tt_txt">{{blog.previous_article.title}}</span></a>{% else %}<a href="{{blog.url}}" class="pl__30 pr__30 cd op__0"><i class="pegk pe-7s-angle-left"></i></a>{% endif -%}
-	      	<a href="{{blog.url}}" class="pl__30 pr__30 cd chp ttip_nt tooltip_top"><i class="pegk pe-7s-keypad"></i><span class="tt_txt">{{'blogs.article.back_to' | t:title:blog.title}}</span></a>
-	      	{%- if blog.next_article %}<a href="{{blog.next_article.url}}" class="pl__30 pr__30 cd chp ttip_nt tooltip_top_left"><i class="pegk pe-7s-angle-right"></i><span class="tt_txt">{{blog.next_article.title}}</span></a>{% else %}<a href="{{blog.url}}" class="pl__30 pr__30 cd op__0"><i class="pegk pe-7s-angle-right"></i></a>{% endif -%}
-	      </div>
-		{%- when 'related' -%}{% if blog.articles_count < 2 %}{% continue %}{% endif -%}
-			<div class="post-related mt__50">
-			   <h4 class="mg__0 mb__30 tu{% if block.settings.t_center %} tc fwb{% endif %}">{{block.settings.title}}</h4>
-	         
-	         {%- assign sett_equal = block.settings.use_eq_height -%}
-			   <div class="nt_slider row {{block.settings.image_size}} {{block.settings.image_ratio}} position_{{block.settings.image_position}}{% if sett_equal %} equal_nt{% endif %} js_carousel nt_slider prev_next_{{block.settings.btn_color}} btn_owl_{{block.settings.btn_owl}} dot_owl_{{block.settings.dot_owl}} dot_color_{{block.settings.dot_color}} btn_vi_{{block.settings.btn_vi}}" data-flickity='{"imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{block.settings.loop}},"prevNextButtons": {{block.settings.button}},"percentPosition": 1,"pageDots": {{block.settings.dot}}, "autoPlay" : {{ block.settings.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{block.settings.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>
-			   	{%- assign date = block.settings.date -%}
-			   	{%- assign index = 0 -%}
-	            {%- assign limit = block.settings.limit -%}
-					{%- assign col = block.settings.col_pr -%}
-					{%- assign col_tb = block.settings.col_pr_tb -%} 
-					{%- assign col_mb = ' pr_animated_done' | prepend:block.settings.col_pr_mb -%}
-
-			   	{%- for art in blog.articles -%}
-			   	{%- if art.id == article_id -%}{% continue %}{% endif -%}
-			   	{%- assign index = index |plus:1 -%}{%- assign image = art.image -%}
-	                  <div class="post-{{article.id}} portfolio-item ptf_nt_loop col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} mb__30">
-	                    {%- if image -%}
-	                      <a href="{{art.url}}" class="mask db pr chp"><div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% if sett_equal == false %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endif %}></div></a>
-	                      <div class="pa tc ts__03 portfolio-title">
-	                          <h4 class="fs__14 tu mg__0"><a class="cd chp" href="{{art.url}}">{{art.title}}</a></h4>
-	                          {%- if art.tags.size > 0 -%}<span class="nt_filter_block">
-	                            {%- for tag in art.tags limit:5 -%}
-	                              <a class="cd chp" href="{{ blogs[blog.handle].url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-	                            {%- endfor -%}
-	                          </span>{%- endif -%}
-	                      </div>
-	                    {%- else -%}                      
-	                      <div class="tc portfolio-title">
-	                          <h4 class="fs__14 tu mg__0"><a class="cd chp" href="{{art.url}}">{{art.title}}</a></h4>
-	                          {%- if art.tags.size > 0 -%}<span class="nt_filter_block">
-	                            {%- for tag in art.tags limit:5 -%}
-	                              <a class="cd chp" href="{{ blogs[blog.handle].url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
-	                            {%- endfor -%}
-	                          </span>{%- endif -%}
-	                      </div>
-	                    {%- endif -%}
-	                  </div>
-			   	{%- if index == limit -%}{% break %}{% endif -%}
-					{%- endfor -%}
-			   </div>
-			</div>
-		{%- when 'comments' -%}{% unless blog.comments_enabled? %}{% continue %}{% endunless -%}
-		   <div class="mt__40 comments_block">
-			  {%- if number_of_comments > 0 -%}
-			    <hr>
-			    <h2 class="mg__0 h3 fs__16 mb__30 tu fs__24">{{ 'blogs.comments.comments_title_html' | t: count: number_of_comments,title:article.title }}</h2>
-			    {%- paginate article.comments by 5 -%}
-	         {%- comment -%}
-	           #comments is required, it is used as an anchor link by Shopify.
-	         {%- endcomment -%}
-			    <div id="comments" class="row">
-
-	            {%- if comment.status == 'pending' and none -%}
-		             {%- comment -%}
-		               If a comment was just submitted with no blank field, show it.
-		             {%- endcomment -%}
-	               <div id="{{ comment.id }}" class="comment col-12 mb__30">{%- render 'comment', comment:comment -%}</div>
-	            {%- endif -%}
-	            {%- for comment in article.comments -%}
-			         <div id="{{ comment.id }}" class="comment col-12 mb__30">{%- render 'comment', comment:comment -%}</div>
-	            {%- endfor -%}
-			    	{%- if paginate.pages > 1 -%}
-			    	<div class="col-12 mt__60">{%- render 'pagination', paginate: paginate -%}</div>
-			    	{%- endif -%}
-			    </div>
-			    
-			    {%- endpaginate -%}
-			  {%- endif -%}
-
-			  <hr>
-	        
-	        {%- form 'new_comment', article -%}{%- assign formId = 'CommentForm' -%}
-		      <h2 class="mg__0 h3 fs__16 mb__5 tu">{{ 'blogs.comments.title' | t }}</h2>
-		      <p class="comment-notes mb__30">{{ 'blogs.comments.comments_note_html' | t }}</p>
-
-		      {%- assign post_message = 'blogs.comments.success' -%}
-		      {%- if blog.moderated? and comment.status == 'pending' -%}
-		        {%- assign post_message = 'blogs.comments.success_moderated' -%}
-		      {%- elsif comment.status == 'unapproved' or comment.status == 'spam' -%}
-		        {%- assign post_message = 'blogs.comments.unapproved' -%}
-		      {%- endif -%}
-		      {%- render 'form-status', form: form, form_id: formId, success_message: post_message -%}
-
-				 <div class="row">
-				  	<div class="col-12 col-md-6 mb__25">
-	                <label for="{{ formId }}-author">{{ 'blogs.comments.name' | t }} <span class="required">*</span></label>
-	                <input type="text" name="comment[author]" id="{{ formId }}-author" class="input-full{% if form.errors contains 'author' %} input--error{% endif %}" value="{{ form.author | default:customer.name }}"{% if form.errors contains 'author' %} aria-invalid="true" aria-describedby="{{ formId}}-author-error"{% endif %}>
-	                {% if form.errors contains 'author' %}
-	                  <span id="{{ formId}}-author-error" class="input-error-message">
-	                    <i class="facl facl-attention cr mr__5"></i>
-	                    <span>{{ 'blogs.comments.name' | t }} {{ form.errors.messages['author'] }}.</span>
-	                  </span>
-	                {% endif %}
-				  	</div>
-				  	<div class="col-12 col-md-6 mb__25">
-	                <label for="{{ formId }}-email">{{ 'blogs.comments.email' | t }} <span class="required">*</span></label>
-	                <input type="email" name="comment[email]" id="{{ formId }}-email" class="input-full{% if form.errors contains 'email' %} input--error{% endif %}" value="{{ form.email | default:customer.email }}" autocorrect="off" autocapitalize="off" {% if form.errors contains 'email' %} aria-invalid="true" aria-describedby="{{ formId}}-email-error"{% endif %}>
-	                {% if form.errors contains 'email' %}
-	                  <span id="{{ formId}}-email-error" class="input-error-message">
-	                    <i class="facl facl-attention cr mr__5"></i>
-	                    <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
-	                  </span>
-	                {% endif %}
-				  	</div>
-				  	<div class="col-12 mb__25">
-	                <label for="{{ formId }}-body">{{ 'blogs.comments.message' | t }} <span class="required">*</span></label>
-	                <textarea cols="45" rows="8" name="comment[body]" id="{{ formId }}-body" class="input-full{% if form.errors contains 'body' %} input--error{% endif %}"{% if form.errors contains 'body' %} aria-invalid="true" aria-describedby="{{ formId}}-body-error"{% endif %}>{{ form.body }}</textarea>
-	                {% if form.errors contains 'body' %}
-	                  <span id="{{ formId}}-body-error" class="input-error-message">
-	                    <i class="facl facl-attention cr mr__5"></i>
-	                    <span>{{ 'blogs.comments.message' | t }} {{ form.errors.messages['body'] }}.</span>
-	                  </span>
-	                {% endif %}
-				  	</div>
-				 </div>
-
-	         {%- if blog.moderated? %}<p class="fine-print f__libre">{{ 'blogs.comments.moderated' | t }}</p>{% endif -%}
-	         <input type="submit" class="button" value="{{ 'blogs.comments.post' | t }}">
-			  {%- endform -%}
-			</div>
-		{%- else -%}{{block.settings.html}}
-	   {%- endcase -%}
-	{%- endfor -%}
-
-	
+      <div class="container container_cat cat_{{section.settings.ptf_layout}} mt__60 mb__60">
+        {%- for block in section.blocks -%}
+        {%- case block.type -%}
+        {%- when 'content' -%}
+        <div class="post-content mt__50 inl_cnt_js"><article id="post-{{article.id}}" class="post-{{article.id}} post type-post">{{ article.content }}</article></div>
+        {%- when 'infos' -%}
+        {%- if block.settings.cat or block.settings.author or block.settings.tags -%}
+        <div class="row portfolio-meta mt__40 tc">
+          {%- if block.settings.cat -%}
+          <div class="col-md-4 col-12">
+            <span class="cd mb__5 tu ls__2 db f__mont fwb">{{ 'blogs.portfolio.category' | t }}</span>
+            <a href="{{blog.url}}">{{blog.title}}</a>
+          </div>
+          {%- endif -%}
+          {%- if block.settings.author -%}
+          <div class="col-md-4 col-12">
+            <span class="cd mb__5 tu ls__2 db f__mont fwb">{{ 'blogs.portfolio.author' | t }}</span>
+            <span class="cd">{{ article.author | replace_first: 'ad clnt', 'admin' | capitalize }}</span>
+          </div>
+          {%- endif -%}
+          {%- if block.settings.tags and article.tags.size > 0 -%}
+          <div class="col-md-4 col-12">
+            <span class="cd mb__5 tu ls__2 db f__mont fwb">{{ 'blogs.portfolio.tags' | t }}</span>
+            {%- for tag in article.tags %}<a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag | capitalize }}</a>{% unless forloop.last %}, {% endunless %}{% endfor -%}
+          </div>
+          {%- endif -%}
         </div>
-        
-      
+        {%- endif -%}
+        {%- when 'social' -%} 
+
+        <div class="social-share tc mt__60 social_des_{{block.settings.des}}">{%- render 'social-sharing',class_tooltip:'ttip_nt tooltip_top',follow_social:block.settings.follow,nt_tooltip:block.settings.tooltip -%}</div>
+        {%- when 'nav' -%}
+
+        <div class="blog-navigation mt__60 fs__40 tc">
+          {%- if blog.previous_article %}<a href="{{blog.previous_article.url}}" class="pl__30 pr__30 cd chp ttip_nt tooltip_top_right"><i class="pegk pe-7s-angle-left"></i><span class="tt_txt">{{blog.previous_article.title}}</span></a>{% else %}<a href="{{blog.url}}" class="pl__30 pr__30 cd op__0"><i class="pegk pe-7s-angle-left"></i></a>{% endif -%}
+          <a href="{{blog.url}}" class="pl__30 pr__30 cd chp ttip_nt tooltip_top"><i class="pegk pe-7s-keypad"></i><span class="tt_txt">{{'blogs.article.back_to' | t:title:blog.title}}</span></a>
+          {%- if blog.next_article %}<a href="{{blog.next_article.url}}" class="pl__30 pr__30 cd chp ttip_nt tooltip_top_left"><i class="pegk pe-7s-angle-right"></i><span class="tt_txt">{{blog.next_article.title}}</span></a>{% else %}<a href="{{blog.url}}" class="pl__30 pr__30 cd op__0"><i class="pegk pe-7s-angle-right"></i></a>{% endif -%}
+        </div>
+        {%- when 'related' -%}{% if blog.articles_count < 2 %}{% continue %}{% endif -%}
+        <div class="post-related mt__50">
+          <h4 class="mg__0 mb__30 tu{% if block.settings.t_center %} tc fwb{% endif %}">{{block.settings.title}}</h4>
+
+          {%- assign sett_equal = block.settings.use_eq_height -%}
+          <div class="nt_slider row {{block.settings.image_size}} {{block.settings.image_ratio}} position_{{block.settings.image_position}}{% if sett_equal %} equal_nt{% endif %} js_carousel nt_slider prev_next_{{block.settings.btn_color}} btn_owl_{{block.settings.btn_owl}} dot_owl_{{block.settings.dot_owl}} dot_color_{{block.settings.dot_color}} btn_vi_{{block.settings.btn_vi}}" data-flickity='{"imagesLoaded": 0,"adaptiveHeight": 1, "contain": 1, "groupCells": "100%", "dragThreshold" : 5, "cellAlign": "left","wrapAround": {{block.settings.loop}},"prevNextButtons": {{block.settings.button}},"percentPosition": 1,"pageDots": {{block.settings.dot}}, "autoPlay" : {{ block.settings.au_time | times: 1000 }}, "pauseAutoPlayOnHover" : {{block.settings.au_hover}}, "rightToLeft": {{settings.use_rtl}} }'>
+            {%- assign date = block.settings.date -%}
+            {%- assign index = 0 -%}
+            {%- assign limit = block.settings.limit -%}
+            {%- assign col = block.settings.col_pr -%}
+            {%- assign col_tb = block.settings.col_pr_tb -%} 
+            {%- assign col_mb = ' pr_animated_done' | prepend:block.settings.col_pr_mb -%}
+
+            {%- for art in blog.articles -%}
+            {%- if art.id == article_id -%}{% continue %}{% endif -%}
+            {%- assign index = index |plus:1 -%}{%- assign image = art.image -%}
+            <div class="post-{{article.id}} portfolio-item ptf_nt_loop col-lg-{{col}} col-md-{{col_tb}} col-{{col_mb}} mb__30">
+              {%- if image -%}
+              <a href="{{art.url}}" class="mask db pr chp"><div class="lazyload nt_bg_lz pr_lazy_img" data-bgset="{{ image | img_url: '1x1' }}" data-ratio="{{image.aspect_ratio}}" data-sizes="auto"{% if sett_equal == false %} style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%;"{% endif %}></div></a>
+              <div class="pa tc ts__03 portfolio-title">
+                <h4 class="fs__14 tu mg__0"><a class="cd chp" href="{{art.url}}">{{art.title}}</a></h4>
+                {%- if art.tags.size > 0 -%}<span class="nt_filter_block">
+                {%- for tag in art.tags limit:5 -%}
+                <a class="cd chp" href="{{ blogs[blog.handle].url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+                {%- endfor -%}
+                </span>{%- endif -%}
+              </div>
+              {%- else -%}                      
+              <div class="tc portfolio-title">
+                <h4 class="fs__14 tu mg__0"><a class="cd chp" href="{{art.url}}">{{art.title}}</a></h4>
+                {%- if art.tags.size > 0 -%}<span class="nt_filter_block">
+                {%- for tag in art.tags limit:5 -%}
+                <a class="cd chp" href="{{ blogs[blog.handle].url }}/tagged/{{ tag | handle }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+                {%- endfor -%}
+                </span>{%- endif -%}
+              </div>
+              {%- endif -%}
+            </div>
+            {%- if index == limit -%}{% break %}{% endif -%}
+            {%- endfor -%}
+          </div>
+        </div>
+        {%- when 'comments' -%}{% unless blog.comments_enabled? %}{% continue %}{% endunless -%}
+        <div class="mt__40 comments_block">
+          {%- if number_of_comments > 0 -%}
+          <hr>
+          <h2 class="mg__0 h3 fs__16 mb__30 tu fs__24">{{ 'blogs.comments.comments_title_html' | t: count: number_of_comments,title:article.title }}</h2>
+          {%- paginate article.comments by 5 -%}
+          {%- comment -%}
+          #comments is required, it is used as an anchor link by Shopify.
+          {%- endcomment -%}
+          <div id="comments" class="row">
+
+            {%- if comment.status == 'pending' and none -%}
+            {%- comment -%}
+            If a comment was just submitted with no blank field, show it.
+            {%- endcomment -%}
+            <div id="{{ comment.id }}" class="comment col-12 mb__30">{%- render 'comment', comment:comment -%}</div>
+            {%- endif -%}
+            {%- for comment in article.comments -%}
+            <div id="{{ comment.id }}" class="comment col-12 mb__30">{%- render 'comment', comment:comment -%}</div>
+            {%- endfor -%}
+            {%- if paginate.pages > 1 -%}
+            <div class="col-12 mt__60">{%- render 'pagination', paginate: paginate -%}</div>
+            {%- endif -%}
+          </div>
+
+          {%- endpaginate -%}
+          {%- endif -%}
+
+          <hr>
+
+          {%- form 'new_comment', article -%}{%- assign formId = 'CommentForm' -%}
+          <h2 class="mg__0 h3 fs__16 mb__5 tu">{{ 'blogs.comments.title' | t }}</h2>
+          <p class="comment-notes mb__30">{{ 'blogs.comments.comments_note_html' | t }}</p>
+
+          {%- assign post_message = 'blogs.comments.success' -%}
+          {%- if blog.moderated? and comment.status == 'pending' -%}
+          {%- assign post_message = 'blogs.comments.success_moderated' -%}
+          {%- elsif comment.status == 'unapproved' or comment.status == 'spam' -%}
+          {%- assign post_message = 'blogs.comments.unapproved' -%}
+          {%- endif -%}
+          {%- render 'form-status', form: form, form_id: formId, success_message: post_message -%}
+
+          <div class="row">
+            <div class="col-12 col-md-6 mb__25">
+              <label for="{{ formId }}-author">{{ 'blogs.comments.name' | t }} <span class="required">*</span></label>
+              <input type="text" name="comment[author]" id="{{ formId }}-author" class="input-full{% if form.errors contains 'author' %} input--error{% endif %}" value="{{ form.author | default:customer.name }}"{% if form.errors contains 'author' %} aria-invalid="true" aria-describedby="{{ formId}}-author-error"{% endif %}>
+              {% if form.errors contains 'author' %}
+              <span id="{{ formId}}-author-error" class="input-error-message">
+                <i class="facl facl-attention cr mr__5"></i>
+                <span>{{ 'blogs.comments.name' | t }} {{ form.errors.messages['author'] }}.</span>
+              </span>
+              {% endif %}
+            </div>
+            <div class="col-12 col-md-6 mb__25">
+              <label for="{{ formId }}-email">{{ 'blogs.comments.email' | t }} <span class="required">*</span></label>
+              <input type="email" name="comment[email]" id="{{ formId }}-email" class="input-full{% if form.errors contains 'email' %} input--error{% endif %}" value="{{ form.email | default:customer.email }}" autocorrect="off" autocapitalize="off" {% if form.errors contains 'email' %} aria-invalid="true" aria-describedby="{{ formId}}-email-error"{% endif %}>
+              {% if form.errors contains 'email' %}
+              <span id="{{ formId}}-email-error" class="input-error-message">
+                <i class="facl facl-attention cr mr__5"></i>
+                <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+              </span>
+              {% endif %}
+            </div>
+            <div class="col-12 mb__25">
+              <label for="{{ formId }}-body">{{ 'blogs.comments.message' | t }} <span class="required">*</span></label>
+              <textarea cols="45" rows="8" name="comment[body]" id="{{ formId }}-body" class="input-full{% if form.errors contains 'body' %} input--error{% endif %}"{% if form.errors contains 'body' %} aria-invalid="true" aria-describedby="{{ formId}}-body-error"{% endif %}>{{ form.body }}</textarea>
+              {% if form.errors contains 'body' %}
+              <span id="{{ formId}}-body-error" class="input-error-message">
+                <i class="facl facl-attention cr mr__5"></i>
+                <span>{{ 'blogs.comments.message' | t }} {{ form.errors.messages['body'] }}.</span>
+              </span>
+              {% endif %}
+            </div>
+          </div>
+
+          {%- if blog.moderated? %}<p class="fine-print f__libre">{{ 'blogs.comments.moderated' | t }}</p>{% endif -%}
+          <input type="submit" class="button" value="{{ 'blogs.comments.post' | t }}">
+          {%- endform -%}
+        </div>
+        {%- else -%}{{block.settings.html}}
+        {%- endcase -%}
+        {%- endfor -%}
       </div>
-      
     </div>
   </div>
+</div>
 <style>
 	#shopify-section-article-template>div:first-child,#comments >.comment:last-child {margin: 0}
 	#shopify-section-article-template>div:last-of-type {margin-bottom: 60px}
