@@ -8,6 +8,14 @@
     Usage:
     {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
 {% endcomment %}
+<style>
+  .card-information__text.h5.my_product_card_beautify_title {
+    display: inline;
+    padding-right: 0;
+    font-size: 16px;
+    font-weight: 700;
+  }
+</style>
 <div class="grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card">
 <!--   <a class="grid-view-item__link grid-view-item__image-container full-width-link" href="{{ product.url }}">
     <span class="visually-hidden">{{ product.title }}</span>
