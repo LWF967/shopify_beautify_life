@@ -291,7 +291,7 @@
         "show_button_visible": "always",
         "show_button_style": "style1",
         "show_button_color": "white",
-        "show_button_hover_color": "#333",
+        "show_button_hover_color": "#333333",
         "collection_list_beautify_margin_top": "",
         "collection_list_beautify_margin_bottom": ""
       }
@@ -773,7 +773,7 @@
       ],
       "settings": {
         "rich_text_beautify_color": "#ffffff",
-        "color_scheme": "gradient",
+        "color_scheme": "rich_text_beautify_color",
         "full_width": false,
         "content_full_width": false,
         "heading_size": "large",
