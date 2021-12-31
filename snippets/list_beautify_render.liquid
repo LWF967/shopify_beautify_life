@@ -286,16 +286,16 @@
   }
 
   @media (any-hover: hover){
-/*     %- if section.settings.show_button_color =='transparent' -%}
-    .icon-changebtn_{section.id}}:hover {
+    {%- if section.settings.show_button_color =='transparent' -%}
+    .icon-changebtn_{{section.id}}:hover {
       background-color: transparent !important;
       border: none;
     }
-    %- else -%} */
+    {%- else -%}
     .icon-changebtn_{{section.id}}:hover {
       background-color: {{ section.settings.show_button_hover_color }} !important;
     }
-/*     %- endif -%} */
+    {%- endif -%}
   }
 
   .bk_transparent {
