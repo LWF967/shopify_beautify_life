@@ -78,9 +78,9 @@
         "countdown_time": "2021\/12\/23",
         "time_font_size": 32,
         "background_color": "#f9f9f9",
-        "color_scheme": "gradient",
+        "color_scheme": "background_color",
         "background_product_color": "#ffffff",
-        "color_schemes": "gradient",
+        "color_schemes": "background_product_color",
         "daily_deal_of_the_day_margin_top": "",
         "daily_deal_of_the_day_margin_bottom": ""
       }
