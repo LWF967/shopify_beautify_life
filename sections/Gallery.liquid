@@ -2,7 +2,6 @@
      style="{%- if section.settings.gallery_margin_top != blank -%}margin-top: {{ section.settings.gallery_margin_top }}px; {%- endif -%}{%- if section.settings.gallery_margin_bottom != blank -%}margin-bottom:{{ section.settings.gallery_margin_bottom }}px;{%- endif -%}">
   <div class="gallery-box" >
     {%- for block in section.blocks -%}
-
       {% liquid
         assign focus_card_left = false
         if section.settings.align_text == 'left' and forloop.first
@@ -13,9 +12,7 @@
       %}
       {%- case block.type -%}
         {%- when 'image' -%}
-		
               {% include 'image-grid-item-beautify', block: block %}
-
          {%- endcase -%}
     {%- endfor -%}
   </div>
@@ -23,10 +20,9 @@
 
 <style>
   .gallery-box{
-    display:flex;
-    overflow:hidden;
+    display: flex;
+    overflow: hidden;
     {% case section.settings.section_height  %}
-
     {% when 'extra_small'%}
     max-height: calc(380px * 0.4);
     {% when 'small'%}
@@ -37,7 +33,6 @@
     max-height: calc(380px * 1.2);
     {% when 'extra_large'%}
     max-height: calc(380px * 1.6);
-
     {% endcase %}
   }  
 
@@ -111,7 +106,6 @@
           "type": "select",
           "id": "align_text",
           "label": {
-        
             "en": "Position"
           },
           "default": "left",
@@ -119,21 +113,18 @@
             {
               "value": "left",
               "label": {
-
                 "en": "Left"
               }
             },
             {
               "value": "center",
               "label": {
-     
                 "en": "Centered"
               }
             },
             {
               "value": "right",
               "label": {
-
                 "en": "Right"
               }
             }
@@ -151,11 +142,9 @@
           "type": "text",
           "id": "caption_head",
           "label": {
-
             "en": "Caption"
           },
           "default": {
-
             "en": "Image"
           }
         }
