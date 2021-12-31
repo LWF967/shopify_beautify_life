@@ -287,7 +287,7 @@
         "show_page_Dot": false,
         "page_dot_style": "style_1",
         "page_dot_color": "dark",
-        "show_button": true,
+        "show_button": false,
         "show_button_visible": "always",
         "show_button_style": "style1",
         "show_button_color": "white",
