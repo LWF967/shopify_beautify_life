@@ -7,9 +7,9 @@
 {%- endstyle -%}
 
 <style>
-    {% case section.settings.section_size %}
-    {% when 'adapt' %}
-  	  @media screen and (max-width: 749px) {
+  {% case section.settings.section_size %}
+  {% when 'adapt' %}
+  @media screen and (max-width: 749px) {
     #Banner-{{ section.id }}::before,
     #Banner-{{ section.id }} .banner__media::before,
     #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
@@ -27,101 +27,97 @@
       display: block;
     }
   }
-  	
-    {% when 'x-small' %}
-    
-    @media screen and (min-width: 750px) {
+  {% when 'x-small' %}
+
+  @media screen and (min-width: 750px) {
     .banner {
-    min-height: 32.5rem;
+      min-height: 32.5rem;
     }
-    }
-    {% when 'small' %}
-    
-    @media screen and (min-width: 750px) {
+  }
+  {% when 'small' %}
+
+  @media screen and (min-width: 750px) {
     .banner {
-    min-height: 40rem;
+      min-height: 40rem;
     }
-    }
-    {% when 'medium' %}
-    
-    @media screen and (min-width: 750px) {
+  }
+  {% when 'medium' %}
+
+  @media screen and (min-width: 750px) {
     .banner {
-    min-height: 47.5rem;
+      min-height: 47.5rem;
     }
-    }
-    {% when 'large' %}
-    
-    @media screen and (min-width: 750px) {
+  }
+  {% when 'large' %}
+
+  @media screen and (min-width: 750px) {
     .banner {
-    min-height: 65rem;
+      min-height: 65rem;
     }
-    }
-    {% when 'x-large' %}
-    
-    @media screen and (min-width: 750px) {
+  }
+  {% when 'x-large' %}
+
+  @media screen and (min-width: 750px) {
     .banner {
-    min-height: 72rem;
+      min-height: 72rem;
     }
-    }
-    {% endcase %}
-  
-  
-  
-  
-.section--adapt,
-.section-fixed-width__image {
-  max-height: 100vh; }
+  }
+  {% endcase %}
+
+  .section--adapt,
+  .section-fixed-width__image {
+    max-height: 100vh; }
   @media only screen and (min-width: 750px) {
     .section--adapt,
     .section-fixed-width__image {
       max-height: 80vh; } }
 
-.section--x-small {
-  height: 94px; }
-
-.section--small {
-  height: 225px; }
-
-.section--medium {
-  height: 357px; }
-
-.section--large {
-  height: 488px; }
-
-.section--x-large {
-  height: 582px; }
-
-@media only screen and (min-width: 750px) {
   .section--x-small {
-    height: 125px; }
-  .section--small {
-    height: 300px; }
-  .section--medium {
-    height: 475px; }
-  .section--large {
-    height: 650px; }
-  .section--x-large {
-    height: 775px; } }
+    height: 94px; }
 
-  
+  .section--small {
+    height: 225px; }
+
+  .section--medium {
+    height: 357px; }
+
+  .section--large {
+    height: 488px; }
+
+  .section--x-large {
+    height: 582px; }
+
+  @media only screen and (min-width: 750px) {
+    .section--x-small {
+      height: 125px; }
+    .section--small {
+      height: 300px; }
+    .section--medium {
+      height: 475px; }
+    .section--large {
+      height: 650px; }
+    .section--x-large {
+      height: 775px; } }
+
+
   .my_image_with_text_overlay_button {
     min-height: 40px;
   }
-  
+
   .banner__text.my_image_with_overlay_text_margin {
     margin-top: 15px;
     {% if section.settings.text_size == 'large' %}
-      font-size: 23px;
+    font-size: 23px;
     {% elsif section.settings.text_size == 'medium'  %}
-      font-size: 19px;
+    font-size: 19px;
     {% endif %}
   }
-  
+
   .my_image_with_overlay_heading {
     {% if section.settings.text_size == 'large' %}
-      font-size: 65px;
+    font-size: 65px;
     {% elsif section.settings.text_size == 'medium'  %}
-      font-size: 35px;
+    font-size: 35px;
     {% endif %}
   }
 </style>
