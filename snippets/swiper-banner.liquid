@@ -7,13 +7,7 @@
           <a
              href="{{ block.settings.url1 }}"
              target="{{ block.settings.open_link }}"
-             class="
-                    lz_op_ef
-                    w__100
-                    {%  if block.settings.url1 == blank %}
-                    pe_none
-                    {%endif%}
-                    "
+             class=" lz_op_ef w__100 {%  if block.settings.url1 == blank %} pe_none{%endif%} "
              >
             <div class="banner-beautify-imgbox">
               {%- if image1 != blank -%} {% assign img_url1 = image1 | img_url:'1x1' | replace: '_1x1.', '_{width}x.' -%}
@@ -31,16 +25,7 @@
               {%- endif -%}
             </div>
             <div
-                 class="
-                        nt_promotion_html
-                        pa
-                        t__0
-                        l__0
-                        tc
-                        pe_none
-                        my_banner_beautify_font_size
-                        "
-                 style="font-weight:600; color:{{ section.settings.color_top }}"
+                 class=" nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size" style="font-weight:600; color:{{ section.settings.color_top }}"
                  >
               {{ block.settings.header_top1 }}
             </div>
@@ -52,16 +37,7 @@
           <a
              href="{{ block.settings.url2 }}"
              target="{{ block.settings.open_link }}"
-             class="
-                    lz_op_ef
-                    w__100
-                    {% if
-                    block.settings.url2
-                    ==
-                    blank
-                    %}
-                    pe_none{% endif %}
-                    "
+             class=" lz_op_ef w__100 {% if block.settings.url2  == blank %} pe_none{% endif %}"
              >
             <div class="banner-beautify-imgbox">
               {%- if image2 != blank -%} {% assign img_url2 = image2 | img_url:'1x1' | replace: '_1x1.', '_{width}x.' -%}
@@ -78,16 +54,7 @@
               {{ "image" | placeholder_svg_tag: "placeholder-svg" }}
               {%- endif -%}
             </div>
-            <div
-                 class="
-                        nt_promotion_html
-                        pa
-                        t__0
-                        l__0
-                        tc
-                        pe_none
-                        my_banner_beautify_font_size
-                        "
+            <div class="nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size"
                  style="font-weight:600; color:{{ section.settings.color_top }}"
                  >
               {{ block.settings.header_top2 }}
@@ -100,20 +67,7 @@
           <a
              href="{{ block.settings.url3 }}"
              target="{{ block.settings.open_link }}"
-             class="
-                    lz_op_ef
-                    w__100
-                    {%
-              if
-                    block.settings.url3
-                    ==
-                    blank
-                    %}
-                    pe_none{%
-              endif
-                    %}
-                    "
-             >
+             class="lz_op_ef w__100 {% if block.settings.url3 == blank %} pe_none{% endif %} ">
             <div class="banner-beautify-imgbox">
               {%- if image3 != blank -%} {% assign img_url3 = image3 | img_url:'1x1' | replace: '_1x1.', '_{width}x.' -%}
               <img
@@ -130,15 +84,7 @@
               {%- endif -%}
             </div>
             <div
-                 class="
-                        nt_promotion_html
-                        pa
-                        t__0
-                        l__0
-                        tc
-                        pe_none
-                        my_banner_beautify_font_size
-                        "
+                 class=" nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size "
                  style="font-weight:600; color:{{ section.settings.color_top }}"
                  >
               {{ block.settings.header_top3 }}
@@ -151,29 +97,14 @@
           <a
              href="#"
              target="#"
-             class="
-                    lz_op_ef
-                    w__100
-                    {%  if block.settings.url1 == blank %}
-                    pe_none
-                    {%endif%}
-                    "
+             class=" lz_op_ef w__100 {%  if block.settings.url1 == blank %} pe_none {%endif%} "
              >
             <div class="banner-beautify-imgbox">
 
               {{ "image" | placeholder_svg_tag: "placeholder-svg" }}
 
             </div>
-            <div
-                 class="
-                        nt_promotion_html
-                        pa
-                        t__0
-                        l__0
-                        tc
-                        pe_none
-                        my_banner_beautify_font_size
-                        "
+            <div class=" nt_promotion_html  pa t__0 l__0 tc pe_none my_banner_beautify_font_size "
                  style="font-weight:600; color:{{ section.settings.color_top }}"
                  >
               heading
@@ -183,15 +114,7 @@
         {%- endif -%}
       </div>
       <!-- 如果需要分页器 -->
-      <div class="  swiper-pagination-{{
-          section.id
-                  }} 	{% unless section.settings.show_page_Dot %} 
-                  opa-0
-
-                  {% else %}  
-                  opa-1
-                  {% endunless %} "
-           ></div>
+      <div class="swiper-pagination-{{ section.id }} {% unless section.settings.show_page_Dot %}  opa-0 {% else %}   opa-1{% endunless %} "></div>
       <!-- 如果需要导航按钮 -->
       <!--                 <div class="swiper-button-prev"></div>
 <div class="swiper-button-next"></div> -->
