@@ -1,67 +1,66 @@
-
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 
 <div class="page-width spaced-section"
      style="{%- if section.settings.banner_beautify_margin_top != blank -%}margin-top: {{ section.settings.banner_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.banner_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.banner_beautify_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
-    <div class="section-header text-center my_section_margin_default">
-      <h1 class="my_font_size_heading_default my_font_weight_default my_between_title_and_text_margin">{{ section.settings.title | escape }}</h1>
-      <p class="my_font_size_content_default" style="color:var(--font-sub-text-color);"> {{ section.settings.sub_title | escape }} </p>
-    </div>
+  <div class="section-header text-center my_section_margin_default">
+    <h1 class="my_font_size_heading_default my_font_weight_default my_between_title_and_text_margin">{{ section.settings.title | escape }}</h1>
+    <p class="my_font_size_content_default" style="color:var(--font-sub-text-color);"> {{ section.settings.sub_title | escape }} </p>
+  </div>
   {% endif %}
 
   {% case section.settings.grid %}
-    {% when 2 %}
-      {%- assign grid_item_width = 'medium-up--one-half' -%}
-    {% when 3 %}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
-    {% when 4 %}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
-    {% when 5 %}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
-  	{% when 6 %}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-sixth' -%}
+  {% when 2 %}
+  {%- assign grid_item_width = 'medium-up--one-half' -%}
+  {% when 3 %}
+  {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
+  {% when 4 %}
+  {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
+  {% when 5 %}
+  {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
+  {% when 6 %}
+  {%- assign grid_item_width = 'small--one-half medium-up--one-sixth' -%}
   {% endcase %}
 
   {% if section.blocks.size == 0 %}
-    {% include 'no-blocks' %}
+  {% include 'no-blocks' %}
   {% endif %}
-  
-  <div class="banner_third pr my_banner_beautify_banner_third"> 
-  {%- for block in section.blocks -%}  
-     {%- case block.type -%}
-       {%- when 'banner_third' -%} {%- assign image = block.settings.image -%}
-       <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class=" flex_center {% if block.settings.url == blank %} pe_none{% endif %}"
-          style="background-image:url({{ image | img_url:'540x' }})"> 
-        <div>
-         {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
-         {%- else -%}
-           {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-         {%- endif -%}
-          <div class="nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size" style="font-weight:600; color:{{block.settings.color}}">
-            {{block.settings.header_top}}
-          </div>
+  <div class="banner_third pr my_banner_beautify_banner_third"> 
+    {%- for block in section.blocks -%}  
+    {%- case block.type -%}
+    {%- when 'banner_third' -%} {%- assign image = block.settings.image -%}
+    <a href="{{ block.settings.url }}" target="{{block.settings.open_link}}" class=" flex_center {% if block.settings.url == blank %} pe_none{% endif %}"
+       style="background-image:url({{ image | img_url:'540x' }})"> 
+      <div>
+        {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+        {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+        <div class="nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size" style="font-weight:600; color:{{block.settings.color}}">
+          {{block.settings.header_top}}
         </div>
-       </a>
+      </div>
+    </a>
     {%- endcase -%}
-  {%- endfor -%}
+    {%- endfor -%}
   </div>
   <div class="collection-grid my_banner_beautify_collection_grid_clear_margin">
     <ul class="grid1 grid--uniform my_banner_beautify_ul_margin">
       {%- for block in section.blocks -%} 
-        {%- case block.type -%}
-        {%- when 'img_top' -%} 
-        {%- liquid 
+      {%- case block.type -%}
+      {%- when 'img_top' -%} 
+      {%- liquid 
               assign image1 = block.settings.image1
               assign image2 = block.settings.image2
               assign image3 = block.settings.image3
         -%}
       {% render 'swiper-banner' ,section:section, image1:image1 ,image2:image2 , image3:image3, grid_item_width:grid_item_width , block:block %}
-      
-      	{%- endcase -%}
-  	 {%- endfor -%}
-  	</ul>
+
+      {%- endcase -%}
+      {%- endfor -%}
+    </ul>
   </div>
 </div>
 
