@@ -1,5 +1,5 @@
 .image-with-text {
-/*   margin-top: 5rem; */
+  /*   margin-top: 5rem; */
   margin-top: 5.5rem;
 }
 
@@ -17,7 +17,7 @@
 
 @media screen and (min-width: 750px) {
   .image-with-text {
-/*     margin-bottom: 5rem; */
+    /*     margin-bottom: 5rem; */
     margin-bottom: 0;
   }
 }
@@ -62,9 +62,9 @@
 
 .image-with-text__media--placeholder {
   background-color: rgba(var(--color-foreground), 0.04);
-  position: relative;
-  overflow: hidden;
-}
+    position: relative;
+    overflow: hidden;
+    }
 
 .image-with-text__media--placeholder.image-with-text__media--adapt {
   height: 20rem;
