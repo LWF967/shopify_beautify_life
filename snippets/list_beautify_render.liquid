@@ -1,157 +1,125 @@
 
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 <div class="my_swiper_outside_content">
-<div class="swiper-container-{{section.id}} list-beautify-render" style="overflow: hidden;position:relative;">
-    
+  <div class="swiper-container-{{section.id}} list-beautify-render" style="overflow: hidden;position:relative;">
     {% comment %}
     <ul id="grid-ul-beautify-box" class="swiper-wrapper grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
-
-  
       {% for block in section.blocks limit: section.blocks.size %}
-        <li id="grid__item__beautify-{{section.id}}" class="swiper-slide grid__item__beautify "  {{ block.shopify_attributes }}>
-          {%- liquid 
+      <li id="grid__item__beautify-{{section.id}}" class="swiper-slide grid__item__beautify "  {{ block.shopify_attributes }}>
+        {%- liquid 
              assign   collection_title = block.settings.title
              assign   collection = collections[block.settings.collection] 
 		     assign   collection_img = block.settings.image   		
           -%}
-          
-          {% include 'collection-grid-item-beautify', collection: collection , collection_title:collection_title,collection_img:collection_img %}
-        </li>
+        {% include 'collection-grid-item-beautify', collection: collection , collection_title:collection_title,collection_img:collection_img %}
+      </li>
       {% endfor %}
-        
-
-
     </ul>
     {%endcomment%}
-  
 
-  
-    	  <div  class="swiper-wrapper " data-grid="{{grid}}" data-loop="{{slide_loop}}"  style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
+    <div  class="swiper-wrapper " data-grid="{{grid}}" data-loop="{{slide_loop}}"  style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
 
-  
       {% for block in section.blocks limit: section.blocks.size %}
-        <div class="swiper-slide " {{ block.shopify_attributes }}>
-          {%- liquid 
+      <div class="swiper-slide " {{ block.shopify_attributes }}>
+        {%- liquid 
              assign   collection_title = block.settings.title
              assign   collection = collections[block.settings.collection] 
 		     assign   collection_img = block.settings.image
              assign   image = collection_img
           -%}
-          
-          <div class="collection-grid-item my_collection_grid_item">
-            <a href="{% if collection.products == empty %}#{% else %}{{ collection.url }}{% endif %}" class="collection-grid-item__link">
-              {% unless collection_img == blank %}
-                <div class="collection-grid-item__overlay box ratio-container lazyload js"
-                  data-bgset="{%- if image != blank -%}
-                                  {% if image.width > 180 %}{{ image | img_url: '180x' }} 180w {{ 180 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 360 %}{{ image | img_url: '360x' }} 360w {{ 360 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 540 %}{{ image | img_url: '540x' }} 540w {{ 540 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 720 %}{{ image | img_url: '720x' }} 720w {{ 720 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 900 %}{{ image | img_url: '900x' }} 900w {{ 900 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 1080 %}{{ image | img_url: '1080x' }} 1080w {{ 1080 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 1296 %}{{ image | img_url: '1296x' }} 1296w {{ 1296 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 1512 %}{{ image | img_url: '1512x' }} 1512w {{ 1512 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 1728 %}{{ image | img_url: '1728x' }} 1728w {{ 1728 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 1950 %}{{ image | img_url: '1950x' }} 1950w {{ 1950 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 2100 %}{{ image | img_url: '2100x' }} 2100w {{ 2100 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 2260 %}{{ image | img_url: '2260x' }} 2260w {{ 2260 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 2450 %}{{ image | img_url: '2450x' }} 2450w {{ 2450 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 2700 %}{{ image | img_url: '2700x' }} 2700w {{ 2700 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 3000 %}{{ image | img_url: '3000x' }} 3000w {{ 3000 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 3350 %}{{ image | img_url: '3350x' }} 3350w {{ 3350 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 3750 %}{{ image | img_url: '3750x' }} 3750w {{ 3750 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {% if image.width > 4100 %}{{ image | img_url: '4100x' }} 4100w {{ 4100 | divided_by: image.aspect_ratio | round }}h,{% endif %}
-                                  {{ image | img_url: 'master' }} {{ image.width }}w {{ image.height }}h
-                              {%- endif -%}"
-                  data-sizes="auto"
-                  data-parent-fit="cover"
-                  data-image-loading-animation>
-                </div>
-                <noscript>
-                  <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_img | img_url: '1024x1024' }}')"></div>
-                </noscript>
-              {% else %}
-                {% if collection == empty %}
-                  <div class="collection-grid-item__overlay">
-                    {% capture current %}{% cycle 1, 2, 3 %}{% endcapture %}
-                    {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
-                  </div>
+        <div class="collection-grid-item my_collection_grid_item">
+          <a href="{% if collection.products == empty %}#{% else %}{{ collection.url }}{% endif %}" class="collection-grid-item__link">
+            {% unless collection_img == blank %}
+            <div class="collection-grid-item__overlay box ratio-container lazyload js"
+                 data-bgset="{%- if image != blank -%}
+                             {% if image.width > 180 %}{{ image | img_url: '180x' }} 180w {{ 180 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 360 %}{{ image | img_url: '360x' }} 360w {{ 360 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 540 %}{{ image | img_url: '540x' }} 540w {{ 540 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 720 %}{{ image | img_url: '720x' }} 720w {{ 720 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 900 %}{{ image | img_url: '900x' }} 900w {{ 900 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 1080 %}{{ image | img_url: '1080x' }} 1080w {{ 1080 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 1296 %}{{ image | img_url: '1296x' }} 1296w {{ 1296 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 1512 %}{{ image | img_url: '1512x' }} 1512w {{ 1512 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 1728 %}{{ image | img_url: '1728x' }} 1728w {{ 1728 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 1950 %}{{ image | img_url: '1950x' }} 1950w {{ 1950 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 2100 %}{{ image | img_url: '2100x' }} 2100w {{ 2100 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 2260 %}{{ image | img_url: '2260x' }} 2260w {{ 2260 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 2450 %}{{ image | img_url: '2450x' }} 2450w {{ 2450 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 2700 %}{{ image | img_url: '2700x' }} 2700w {{ 2700 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 3000 %}{{ image | img_url: '3000x' }} 3000w {{ 3000 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 3350 %}{{ image | img_url: '3350x' }} 3350w {{ 3350 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 3750 %}{{ image | img_url: '3750x' }} 3750w {{ 3750 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {% if image.width > 4100 %}{{ image | img_url: '4100x' }} 4100w {{ 4100 | divided_by: image.aspect_ratio | round }}h,{% endif %}
+                             {{ image | img_url: 'master' }} {{ image.width }}w {{ image.height }}h
+                             {%- endif -%}"
+                 data-sizes="auto"
+                 data-parent-fit="cover"
+                 data-image-loading-animation>
+            </div>
+            <noscript>
+              <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_img | img_url: '1024x1024' }}')"></div>
+            </noscript>
+            {% else %}
+            {% if collection == empty %}
+            <div class="collection-grid-item__overlay">
+              {% capture current %}{% cycle 1, 2, 3 %}{% endcapture %}
+              {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+            </div>
+            {% else %}
+            <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_img | img_url: '1024x1024' }}')"></div>
+            {% endif %}
+            {% endunless %}
+
+            <div class="collection-grid-item__title-wrapper">
+              <div class="collection-grid-item__title my_collection_grid_item_title h3">
+                {% if collection.title == blank %}
+                <!--            'homepage.onboarding.collection_title' | t  -->
+                {{collection_title}}
+
                 {% else %}
-                  <div class="collection-grid-item__overlay" style="background-image: url('{{ collection_img | img_url: '1024x1024' }}')"></div>
+                <!--   获取collection的名字         collection.title  -->
+                {{collection_title}}
                 {% endif %}
-              {% endunless %}
-
-              <div class="collection-grid-item__title-wrapper">
-                <div class="collection-grid-item__title my_collection_grid_item_title h3">
-                  {% if collection.title == blank %}
-          <!--            'homepage.onboarding.collection_title' | t  -->
-                    {{collection_title}}
-
-                  {% else %}
-          <!--   获取collection的名字         collection.title  -->
-                 {{collection_title}}
-                  {% endif %}
-                </div>
               </div>
-            </a>
-          </div>
-          
-          
-          
+            </div>
+          </a>
         </div>
+      </div>
       {% endfor %}
-        
+    </div>
 
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev-{{section.id}}
+                bk_{{section.settings.show_button_color}}
+                {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% else %}  dn  {% endif%} 
+                leftbtn leftbtn-{{section.id}} list_button_{{ section.settings.show_button_style }}
+                ">
+
+      <p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
+        <svg style="position: absolute;top: 50%;left: 50%;transform: translate(-62.5%,-50%);" aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="icon-chevron-down-left" d="M4 4.5L7 1.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
+          <path class="icon-chevron-down-right" d="M4 4.5L7 7.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
+        </svg>
+      </p>
 
     </div>
-    
-    
-  
-  
-          <!-- 如果需要导航按钮 -->
-          <div class="swiper-button-prev-{{section.id}}
-                      bk_{{section.settings.show_button_color}}
-                      {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% else %}  dn  {% endif%} 
-                      leftbtn leftbtn-{{section.id}} list_button_{{ section.settings.show_button_style }}
-                      
-                      
-                      ">
-            
-             <p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
-                <svg style="position: absolute;top: 50%;left: 50%;transform: translate(-62.5%,-50%);" aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="icon-chevron-down-left" d="M4 4.5L7 1.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
-                    <path class="icon-chevron-down-right" d="M4 4.5L7 7.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
-                </svg>
-             </p>
-  
-  
-  
-  		  </div>
-  
-  
-  
-          <div class="swiper-button-next-{{section.id}}   
-                      bk_{{section.settings.show_button_color}} 
-                      {% if section.settings.show_button %}icon-changebtn_{{section.id}} {% else %} dn  {% endif%} 
-                      rightbtn  rightbtn-{{section.id}}  list_button_{{ section.settings.show_button_style }}">
-  
-               <p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
-                  <svg style="position: absolute;top: 50%;left: 50%;transform: translate(-25%,-50%)" aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path class="icon-chevron-down-left" d="M4 4.5L1 7.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
-                    <path class="icon-chevron-down-right" d="M4 4.5L1 1.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
-                  </svg>
-              </p>
+    <div class="swiper-button-next-{{section.id}}   
+                bk_{{section.settings.show_button_color}} 
+                {% if section.settings.show_button %}icon-changebtn_{{section.id}} {% else %} dn  {% endif%} 
+                rightbtn  rightbtn-{{section.id}}  list_button_{{ section.settings.show_button_style }}">
 
-
-  
-  		  </div>
-
-    
+      <p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
+        <svg style="position: absolute;top: 50%;left: 50%;transform: translate(-25%,-50%)" aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="icon-chevron-down-left" d="M4 4.5L1 7.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
+          <path class="icon-chevron-down-right" d="M4 4.5L1 1.5" stroke="currentColor" stroke-width="0.75" stroke-linecap="square"></path>
+        </svg>
+      </p>
+    </div>
   </div>
-    	{%- if section.settings.show_page_Dot-%}
-        <!-- 如果需要分页器 -->
-          <div class="swiper-pagination-{{section.id}}" style="bottom: 0;"></div>
-		{%- endif -%}
+  {%- if section.settings.show_page_Dot-%}
+  <!-- 如果需要分页器 -->
+  <div class="swiper-pagination-{{section.id}}" style="bottom: 0;"></div>
+  {%- endif -%}
 </div>
 
 
