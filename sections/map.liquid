@@ -24,11 +24,11 @@
   .my_map_heading_margin {
     margin: 0 0 20px;
   }
-  
+
   .my_rte_setting_p_style p {
     margin: 0 0 20px;
   }
-  
+
   .my_map_getdirection {
     border: 1px solid #000;
   }
@@ -37,8 +37,8 @@
 
 <div id="MapSection--{{ section.id }}"
      class="spaced-section map-section
-           {% if display_map %}map-section--display-map{% endif %}
-           {% if onboarding == true %}map-section--onboarding{% endif %}"
+            {% if display_map %}map-section--display-map{% endif %}
+            {% if onboarding == true %}map-section--onboarding{% endif %}"
      data-section-id="{{ section.id }}"
      data-section-type="map"
      style="{%- if section.settings.map_margin_top != blank -%}margin-top: {{ section.settings.map_margin_top }}px; {%- endif -%}{%- if section.settings.map_margin_bottom != blank -%}margin-bottom:{{ section.settings.map_margin_bottom }}px;{%- endif -%}">
@@ -47,58 +47,56 @@
       <div class="map-section__content">
         <h2 class="visually-hidden visually-hidden--static">{{ 'sections.map.section_heading' | t }}</h2>
         {% if section.settings.heading != blank %}
-          <h3 class="h4 my_font_size_heading_default my_font_weight_default my_map_heading_margin">{{ section.settings.heading | escape }}</h3>
+        <h3 class="h4 my_font_size_heading_default my_font_weight_default my_map_heading_margin">{{ section.settings.heading | escape }}</h3>
         {% endif %}
         {% if section.settings.address != blank %}
-          <div class="rte-setting my_rte_setting_p_style">{{ section.settings.address }}</div>
-          {% if section.settings.map_address != blank and section.settings.button_text != blank %}
-            <p style="margin:0; box-sizing:content-box;">
-              <a href="https://maps.google.com?daddr={{ section.settings.map_address | escape }}"
-                 class="btn btn--secondary btn--small map_section__directions-btn my_map_getdirection"
-                 target="_blank"
-                 rel="noopener"
-                 aria-describedby="a11y-new-window-external-message"
-              >
-                {% if section.settings.show_pin %}{% include 'icon-pin' %}{% endif %}
-                <span class="my_font_size_content_default">{{ section.settings.button_text | escape }}</span>
-              </a>
-            </p>
-          {% endif %}
+        <div class="rte-setting my_rte_setting_p_style">{{ section.settings.address }}</div>
+        {% if section.settings.map_address != blank and section.settings.button_text != blank %}
+        <p style="margin:0; box-sizing:content-box;">
+          <a href="https://maps.google.com?daddr={{ section.settings.map_address | escape }}"
+             class="btn btn--secondary btn--small map_section__directions-btn my_map_getdirection"
+             target="_blank"
+             rel="noopener"
+             aria-describedby="a11y-new-window-external-message"
+             >
+            {% if section.settings.show_pin %}{% include 'icon-pin' %}{% endif %}
+            <span class="my_font_size_content_default">{{ section.settings.button_text | escape }}</span>
+          </a>
+        </p>
+        {% endif %}
         {% endif %}
       </div>
     </div>
     <div class="map-section__background-wrapper">
       {% if bg_image != blank %}
-        <div class="map-section__image lazyload js"
-             data-bgset="{% include 'bgset', image: bg_image %}"
-             data-sizes="auto"
-             data-parent-fit="cover"
-             data-image-loading-animation>
-        </div>
-        <noscript>
-          <div class="map-section__image" style="background-image: url({{ bg_image | img_url: 'x800', crop: 'top' }});"></div>
-        </noscript>
+      <div class="map-section__image lazyload js"
+           data-bgset="{% include 'bgset', image: bg_image %}"
+           data-sizes="auto"
+           data-parent-fit="cover"
+           data-image-loading-animation>
+      </div>
+      <noscript>
+        <div class="map-section__image" style="background-image: url({{ bg_image | img_url: 'x800', crop: 'top' }});"></div>
+      </noscript>
       {% elsif onboarding == true %}
-        <div class="placeholder-background">
-          {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
-        </div>
+      <div class="placeholder-background">
+        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+      </div>
       {% endif %}
       {% if display_map %}
-        <div class="map-section__container"
-             id="Map-{{ section.id }}"
-             data-map
-             data-address-setting="{{ section.settings.map_address | escape }}"
-             data-api-key="{{ section.settings.api_key }}">
-        </div>
-        <div class="map-section__overlay" data-map-overlay></div>
+      <div class="map-section__container"
+           id="Map-{{ section.id }}"
+           data-map
+           data-address-setting="{{ section.settings.map_address | escape }}"
+           data-api-key="{{ section.settings.api_key }}">
+      </div>
+      <div class="map-section__overlay" data-map-overlay></div>
       {% endif %}
     </div>
   </div>
 </div>
 
 <style>
-
-
 .map-section {
   position: relative;
   width: 100%;
