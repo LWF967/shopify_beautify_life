@@ -12,7 +12,7 @@
             <div class="banner-beautify-imgbox">
               {%- if image1 != blank -%} {% assign img_url1 = image1 | img_url:'1x1' | replace: '_1x1.', '_{width}x.' -%}
               <img
-                   src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+                   src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{ image1.width }}%20{{ image1.height }}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
                    data-src="{{ img_url1 }}"
                    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                    data-sizes="auto"
@@ -69,7 +69,7 @@
             <div class="banner-beautify-imgbox">
               {%- if image3 != blank -%} {% assign img_url3 = image3 | img_url:'1x1' | replace: '_1x1.', '_{width}x.' -%}
               <img
-                   src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+                   src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{ image1.width }}%20{{ image1.height }}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
                    data-src="{{ img_url3 }}"
                    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                    data-sizes="auto"
@@ -95,7 +95,7 @@
           <a
              href="#"
              target="#"
-             class=" lz_op_ef w__100 {%  if block.settings.url1 == blank %} pe_none {%endif%} "
+             class=" lz_op_ef w__100 {% if block.settings.url1 == blank %} pe_none {%endif%} "
              >
             <div class="banner-beautify-imgbox">
 
@@ -112,7 +112,7 @@
         {%- endif -%}
       </div>
       <!-- 如果需要分页器 -->
-      <div class="swiper-pagination-{{ section.id }} {% unless section.settings.show_page_Dot %}  opa-0 {% else %}   opa-1{% endunless %} "></div>
+      <div class="swiper-pagination-{{ section.id }} {% unless section.settings.show_page_Dot %} opa-0 {% else %} opa-1{% endunless %}"></div>
       <!-- 如果需要导航按钮 -->
       <!--                 <div class="swiper-button-prev"></div>
 <div class="swiper-button-next"></div> -->
@@ -217,37 +217,39 @@
 
 <style>
   /*   swiper盒子 */
-  .banner-beautify-imgbox{
+  .banner-beautify-imgbox {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: hidden;
     max-height: 400px;
   }
+  
   @media screen and (max-width: 750px) {
-    .banner-beautify-imgbox{
+    .banner-beautify-imgbox {
       height: 200px;
     }
   }
 
   @media screen and (min-width: 990px) {
-    .banner-beautify-imgbox{
+    .banner-beautify-imgbox {
       height: 300px;
     }
   }
 
   @media screen and (max-width: 990px) {
-    .banner-beautify-imgbox{
+    .banner-beautify-imgbox {
       height: 200px;
     }
   }
+  
   /*   定义轮播点 */
-
   .opa-0{
-    opacity:0;
+    opacity: 0;
   }
+  
   .opa-1{
-    opacity:1;
+    opacity: 1;
   }
 
   .swiper-pagination-{{section.id}}.swiper-pagination-hidden {
@@ -255,45 +257,43 @@
   }
 
   {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-    background:#4e4e4e;
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
+    background: #4e4e4e;
     border: 1.5px solid rgb(189 188 188 / 28%);
 
   }
 
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-    background:black;
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: black;
 
   }
   {% elsif section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'light' %}
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-
-    background:#4e4e4e;
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
+    background: #4e4e4e;
     border: 1.5px solid rgb(189 188 188 / 28%);
   }
 
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-    background:white;
-
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: white;
   }
   {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'dark' %}
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
     border: 1px solid #323232;
-    background:white;
+    background: white;
   }
 
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-    background:black;
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: black;
 
   }
   {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light'%}
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
     border: 1px solid #323232;
-    background:#adadad;
+    background: #adadad;
   }
 
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-    background:white;
+    background: white;
 
   }
   {% endif %}
@@ -310,16 +310,16 @@
     margin: 0;
   }
 
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-    float:left;
-    width:16px;
-    height:16px;
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
+    float: left;
+    width: 16px;
+    height: 16px;
     text-align: center;
     line-height: 16px;
     font-size: 10px;
     border-radius: 50%;
     text-align: center;
-    transition:all 1.5s;
+    transition: all 1.5s;
     margin: 0 14px;
     list-style-type: none;
   }
