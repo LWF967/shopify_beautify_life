@@ -1,12 +1,9 @@
 
 {% comment %}
-
-  
  	render 'slideshow-beautify-swiper': 这是swiper轮播图
 	render 'slideshow-beautify' ： 这是还没适应后台刷新机制
 
 {% endcomment %}
-
 
 {% assign customerId = customer.id %}
 
@@ -16,27 +13,16 @@
 
 {%- assign image = section.blocks.settings.image %}
 
-
-
 <section data-section-id="{{ section.id }}" data-section-type="slideshow-section" class="spaced-section nt_se_{{sid}} se_height_{{ se_height }}"  style="overflow: hidden;padding:0;{%- if section.settings.slideshow_beautify_margin_top != blank -%}margin-top: {{ section.settings.slideshow_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.slideshow_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.slideshow_beautify_margin_bottom }}px;{%- endif -%}">
-
 {% render 'slideshow-beautify-swiper',section:section,loop:section.settings.loop %}
-
 </section>
-
-
-
-
  {%- style -%}
 
  {% assign color_primary = section.settings.show_button_hover_color %}
 
  {% assign bk_btn=section.settings.show_button_color %}
 
-
   {%- endstyle -%}
-
-
 
  {%- if section.blocks.size > 0 %}
      {%- style -%}
@@ -91,19 +77,10 @@
      			.slideshow_content{ max-height: 400px;min-height:200px } 
 
 				}
-
-
-
-
-
         {%- endif -%}
   		{%- endfor -%}
-
      {%- endstyle -%}
   {%- endif -%}
-
-
-
 
 <script>
 
@@ -117,13 +94,10 @@
 //         console.log(img.height,' ',a );
 //         console.log(img.width,'',a);
 //       }
-
   
 //    }
 
-
 </script>
-
 {% schema %}
   {
     "name": "Slideshow Beautify2",
@@ -163,7 +137,6 @@
           }
         ]
       },
-     
       {
         "type": "checkbox",
         "id": "loop",
@@ -343,8 +316,6 @@
           }
         ]
       },
-
-
 		{
         "type": "select",
         "id": "text_alignment",
@@ -389,7 +360,6 @@
           }
         ]
       },
-
 		{
 			"type":"text",
 			"id":"slider_heading_text",
@@ -413,11 +383,8 @@
           "id": "slider_button_link",
           "label": "Button link"
         }
-
 	]
-
 	}
-       
 	],
 	"presets": [
 		{
