@@ -3,10 +3,7 @@
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
-
-
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
-
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -218,40 +215,14 @@
   }
   
   @media screen and (max-width: 750px) {
-/*     .h1.product__title.my_featured_product_beautify_title {
-      font-size: 36px;
-      margin-bottom: 30px;
-    }
-    .no-js-hidden.my_featured_product_beautify_price {
-      margin: 10px 0 30px;
-    } 
-    .form__label.my_featured_product_beautify_size {
-      font-size: 15px;
-      margin-bottom: 5px;
-    }
-    .select__select.my_featured_product_beautify_select {
-      font-size: 14px;
-      padding-left: 16px;
-      height: 44px;
-    }*/
     .no-js-hidden.my_featured_product_beautify_variant-selects {
       margin: 10px 0;
     }
-/*     .product-form__input.product-form__quantity.my_featured_product_beautify_quantity {
-      margin: 10px 0 15px;
-    } */
+    
     .my_featured_product_beautify_add {
       font-size: 13px;
       min-height: 44px;
     }
-/*     .product__description.rte.my_featured_product_beautify_description {
-      margin: 50px 0 35px;
-    } 
-    .link.product__view-details.animate-arrow.my_featured_product_beautify_details {
-      font-size: 16px;
-      font-weight: 700;
-      margin: 50px 0 0;
-    }*/
   }
 </style>
 
@@ -269,7 +240,7 @@
 
 <section class="spaced-section {% if section.settings.color_scheme =="featured_bk_color" %} background-secondary{% endif %}"
          style="{%- if section.settings.featured_product_beautify_margin_top != blank -%}margin-top: {{ section.settings.featured_product_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.featured_product_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.featured_product_beautify_margin_bottom }}px;{%- endif -%} 
-               {%-if section.settings.color_scheme =="featured_bk_color"-%} background-color:{{section.settings.featured_bk_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%}">
+               {%-if section.settings.color_scheme =="featured_bk_color"-%} background-color:{{ section.settings.featured_bk_color }}{%-else-%} background-color:{{ settings.color_page_background }}{%-endif-%}">
   <div class="page-width">
     <div class="featured-product product grid grid--1-col my_featured_product_clear_margin_bottom {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
@@ -308,7 +279,6 @@
           </style>
         {% render 'swiper-featured-product', section:section, product:product %}
         {%- elsif media_count > 1 -%}
-       
           <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul my_featured_product_beautify_noswiper" role="list" style="display:flex;">
             {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
             {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -325,7 +295,6 @@
             {%- endunless -%}
             {%- endfor -%}
           </ul>
-
         {%- endif -%}
 
         {%- if first_3d_model -%}
@@ -336,8 +305,7 @@
             data-shopify-xr
             data-shopify-model3d-id="{{ first_3d_model.id }}"
             data-shopify-title="{{ product.title | escape }}"
-            data-shopify-xr-hidden
-          >
+            data-shopify-xr-hidden>
             {% render 'icon-3d-model' %}
             {{ 'products.product.xr_button' | t }}
           </button>
@@ -528,7 +496,6 @@
             {%- when 'share' -%}
 
             {% if section.settings.show_share_buttons %}
-<!--              include 'social-share-beautify'%} -->
           	  {% include 'my-social-sharing'%}
             {% endif %}
           
@@ -600,7 +567,7 @@
 </section>
 
 <style>
-  .btn--small{
+  .btn--small {
     padding: 8px 10px;
     font-size: calc(((12) / (var(--font-size-base))) * 1em);
     line-height: 1;
@@ -860,12 +827,12 @@
       "id": "product",
       "label": "t:sections.featured-product.settings.product.label"
     },
-     {
+    {
       "type": "color",
       "id": "featured_bk_color",
       "label": "Background",
       "default": "#1eec5e"
-     },
+    },
 	{
       "type": "select",
        "id": "color_scheme",
