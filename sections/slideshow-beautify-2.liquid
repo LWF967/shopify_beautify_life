@@ -28,7 +28,6 @@
      {%- style -%}
       {%- if se_height == 'adapt_f' -%}
 
-
       {%- assign block = se_blocks | where: "type", 'slideshow_img2' | first -%}
       {%- assign ratio = block.settings.image.aspect_ratio |default:1.7777777777777777 -%}
       {%- assign img_h = block.settings.image.height  -%}				
@@ -36,16 +35,12 @@
       .feature-artworks{ max-height: 790px;min-height:300px}
       .slideshow_content{ max-height: 790px;min-height:300px}
 
-
       .feature-artworks{ height: {{img_h}}px}
       .slideshow_content{ height: {{img_h}}px}
-
 
       @media screen and (max-width: 750px) {  
-
       .feature-artworks{ height: {{img_h}}px}
       .slideshow_content{ height: {{img_h}}px}
-
       }
       @media screen and (max-width: 990px) {  
 
