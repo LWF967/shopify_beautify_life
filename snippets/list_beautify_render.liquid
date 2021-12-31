@@ -284,11 +284,38 @@
     background-color: rgba(255,255,255,.5);
     color: rgb(183,183,183);
   }
+  
+  
+  
+  {% if section.settings.show_button_visible == 'always' %} 
+  .feature-artworks-{{section.id}}  .icon-changebtn_{{section.id}} {
+    display: block;
+    opacity: 1;
+  }
+  {% else %}
+  .icon-changebtn_{{section.id}} {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    display: block;
+    transition: .2s ease-in-out
+  }
+
+  @media (any-hover: hover){
+    .feature-artworks-{{section.id}}:hover .icon-changebtn_{{section.id}}{
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  {% endif %}
+
+  
 
   @media (any-hover: hover){
     {%- if section.settings.show_button_color =='transparent' -%}
     .icon-changebtn_{{section.id}}:hover {
-      background-color: transparent !important;
+      background-color: {{ section.settings.show_button_hover_color }} !important;
       border: none;
     }
     {%- else -%}
