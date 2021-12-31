@@ -9,19 +9,10 @@
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
-<div class="contatin spaced-section" style="{%-if section.settings.color_scheme =="background_color"-%} background-color:{{section.settings.background_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}"> 
+<div class="contatin spaced-section" style="{%- if section.settings.color_scheme =="background_color" -%} background-color:{{section.settings.background_color}}{%-else-%} background-color:{{ settings.color_page_background }}{%-endif-%}; {%- if section.settings.daily_deal_of_the_day_margin_top != blank -%}margin-top: {{ section.settings.daily_deal_of_the_day_margin_top }}px; {%- endif -%}{%- if section.settings.daily_deal_of_the_day_margin_bottom != blank -%}margin-bottom:{{ section.settings.daily_deal_of_the_day_margin_bottom }}px;{%- endif -%}"> 
   <div class="left ">
     <div class="felx_box h_45">
-      <div class="f5 felx_box" style=" font: bold {{section.settings.heading_font_size}}px 'Droid Sans', Arial, sans-serif; line-height:{{setting.heading_font_size}}px !important; height:100%; color:{{section.settings.color_top}};">{{section.settings.heading_text | truncate: 25 ,"" }}</div>
-      {% comment %}
-      <div class="timebox timebox-{{section.id}} f4"    data-endtime="{{setting.countdown_time}}"  >
-        <div class="day_time day_time-{{section.id}} f1 time-div"></div>
-        <div class="hour_time hour_time-{{section.id}} f1 time-div"></div>
-        <div class="minutes_time minutes_time-{{section.id}} f1 time-div"></div>
-        <div class="second_time second_time-{{section.id}} f1  time-div"></div>
-      </div>
-      {% endcomment %}
-
+      <div class="f5 felx_box" style=" font: bold {{ section.settings.heading_font_size }}px 'Droid Sans', Arial, sans-serif; line-height:{{ setting.heading_font_size }}px !important; height:100%; color:{{ section.settings.color_top }};">{{section.settings.heading_text | truncate: 25 ,"" }}</div>
       {% render 'daily-deal-time',section:section  %}
     </div>
 
@@ -115,9 +106,6 @@
             </div>
             {%- endfor -%}
           </div>
-          <!--              <div class="swiper-button-prev del_featured_product_beautify_prev-{{section.id}}"></div>
-                             <div class="swiper-button-next del_featured_product_beautify_next-{{section.id}}"></div> -->
-
           <div class="swiper-pagination-{{section.id}}"></div>
         </div>
       </div>
@@ -194,10 +182,6 @@
   }
 </script>
 
-
-
-
-
 {% schema %}
   {
     "name": "daily-deal-of-the-day",
@@ -263,45 +247,44 @@
         "label": "Background color",
         "default": "#f9f9f9"
       },
-	{
-      "type": "select",
-       "id": "color_scheme",
-       "options": [
-        {
-         "value": "gradient",
-         "label": "Global-page background" 
-        },
-        {
-        "value": "background_color",
-       "label": "Background color"
-        }
-        ],
-      "default": "gradient",
-       "label": "Background options"
-     }, 
+      {
+        "type": "select",
+         "id": "color_scheme",
+         "options": [
+          {
+           "value": "gradient",
+           "label": "Global-page background" 
+          },
+          {
+          "value": "background_color",
+         "label": "Background color"
+          }
+          ],
+        "default": "gradient",
+         "label": "Background options"
+       }, 
       {
         "type": "color",
         "id": "background_product_color",
         "label": "Background product color",
         "default": "#FFF"
       },
-	{
-      "type": "select",
-       "id": "color_schemes",
-       "options": [
-        {
-         "value": "gradient",
-         "label": "Global-page background" 
-        },
-        {
-        "value": "background_product_color",
-       "label": "Background product color"
-        }
-        ],
-      "default": "gradient",
-       "label": "Background options"
-     }, 
-     
+      {
+        "type": "select",
+         "id": "color_schemes",
+         "options": [
+          {
+           "value": "gradient",
+           "label": "Global-page background" 
+          },
+          {
+          "value": "background_product_color",
+         "label": "Background product color"
+          }
+          ],
+        "default": "gradient",
+         "label": "Background options"
+       }, 
       {
         "type": "text",
         "id": "daily_deal_of_the_day_margin_top",
@@ -323,21 +306,16 @@
   }
 {% endschema %}
 
-
-
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
-
-
-
 
 <style>
   /*   定义轮播点 */
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-    background:#4e4e4e;
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
+    background: #4e4e4e;
     border: 1.5px solid rgb(189 188 188 / 28%);
   }
 
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background:black;
   }
 
@@ -353,10 +331,10 @@
     margin: 0;
   }
 
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-    float:left;
-    width:16px;
-    height:16px;
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
+    float: left;
+    width: 16px;
+    height: 16px;
     text-align: center;
     line-height: 16px;
     font-size: 10px;
@@ -371,40 +349,32 @@
     text-transform: capitalize;
   }
 
-  .tt1.ls-is-cached.lazyload{
+  .tt1.ls-is-cached.lazyload {
     animation: mymove 5s infinite;
     animation-delay: -2s;
   }
 
-  @keyframes mymove
-  {
-    0%{transform: scale(0.5);
-      /*  transition: 0.5s; */
+  @keyframes mymove {
+    0%{
+      transform: scale(0.5);
     }
 
     25%{
       transform: scale(0.75);
-      /*  transition: 0.5s; */
     }
 
     50%{
       transform: scale(1);
-      /*  transition: 0.5s; */
     }
   }
-  /* 
-  .my_deal_swiper-{{section.id}}{
-  width: 600px;
-  height: 300px;
-  } */
 
   .buy_button_box{
     display: flex !important;  
     align-items: center; 
-    padding-bottom:2%;
+    padding-bottom: 2%;
   }
 
-  .timebox{
+  .timebox {
     width: 100%;
     max-height: 100px;            
     color: white;
@@ -415,7 +385,7 @@
     line-height: 150px;
   }
 
-  .timebox{
+  .timebox {
     display: flex;	
     flex-wrap: nowrap;
     flex-direction: row;
@@ -423,19 +393,19 @@
     justify-content: center;
   }
 
-  .f1{
+  .f1 {
     flex: 1;
   }
 
-  .f5{
+  .f5 {
     flex: 5;
   }
 
-  .f4{
+  .f4 {
     flex: 4;
   }
 
-  .time-div{
+  .time-div {
     position: relative;
     font: bold {{section.settings.time_font_size}}px 'Droid Sans', Arial, sans-serif;
     text-align: center;
@@ -453,7 +423,7 @@
     display: inline-block;
   }
 
-  .time-div:after{
+  .time-div:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -464,17 +434,16 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  .white-button{
+  .white-button {
     background-color: transparent;
     color: {{ settings.colors_secondary_labels_and_borders }};
   }
 
-
-  .black-button{
+  .black-button {
     background-color: black;
     color: white;
   }
-  .contatin{
+  .contatin {
     width: 100%;
     display: flex;
     align-items: center;
@@ -493,12 +462,13 @@
   .my_daily_deal_of_the_day_button_box_shadow:not([disabled]):hover {
     box-shadow: 0 0 0 0.2rem {{ settings.colors_secondary_labels_and_borders }};
   }
+  
   .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: transparent;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -513,13 +483,6 @@
     align-items: center;
   }
 
-  /*   .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  }
-  */
   .swiper-button-prev.featured_product_beautify_prev:after,
   .swiper-button-next.featured_product_beautify_next:after {
     color: #000;
@@ -544,7 +507,7 @@
   }
 
   @media (max-width: 750px) {
-    .contatin{
+    .contatin {
       width: 100%;
       display: flex;
       align-items: center;
@@ -553,14 +516,14 @@
     }
   }
 
-  .daily-right{
+  .daily-right {
     display: flex;
     align-items: center;
     height: 100%;
     justify-content: center;
   }
 
-  .daily-product-box{
+  .daily-product-box {
     transform: skew(323deg);
     display: flex;
     align-items: center;
@@ -569,77 +532,72 @@
     width: 100%;
   }
 
-  .daily-product{
-    /*   max-height:390px;
-    height:95%;   */
+  .daily-product {
     transform: skew(37deg);
   }
 
-  .daily-product{
+  .daily-product {
     width: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
     height: 100%;
     background-color: transparent;
   }
 
   @media screen and (min-width: 1024px) {
-    .daily-product{
+    .daily-product {
       width: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
       height: 50%;
     }
   }
 
   @media screen and (min-width: 1224px) {
-    .daily-product{
+    .daily-product {
       width: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
       height: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
     }
   }
 
-
   @media screen and (min-width: 1420px) {
-    .daily-product{
+    .daily-product {
       width: {{ 1 | divided_by: highest_ratio | times: 88 }}%;
       height: {{ 1 | divided_by: highest_ratio | times: 110 }}%;
     }
   }
 
-
-  .left,.right{
+  .left,.right {
     height: 100%;
     width:50%;
     flex: 1;
   }
 
-  .h_55{
+  .h_55 {
     height: 55%;
   }
 
-  .h_45{
+  .h_45 {
     height: 45%;
   }
 
-  .pd_2{
+  .pd_2 {
     margin: 2rem;
   }
 
-  .mr_4{
+  .mr_4 {
     margin-right: 4%;
   }
 
-  .left{
+  .left {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     text-align: left;
-    /*     padding-bottom: 20px; */
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
 
-  .clock1{
+  .clock1 {
     text-align: center;
   }
 
-  .felx_box{
+  .felx_box {
     display: flex;
     align-items: center;  
   }
@@ -703,9 +661,8 @@
     }
   }
 
-
   @media screen and (max-width: 750px) {
-    .felx_box{
+    .felx_box {
       flex-direction: column;
     }
 
@@ -713,23 +670,23 @@
       flex-direction: column-reverse;
     }
 
-    .daily-product{
+    .daily-product {
       transform: skew(0deg) !important;
     } 
 
-    .daily-product-box{
+    .daily-product-box {
       transform: skew(0deg) !important;
     } 
 
-    .timebox{
+    .timebox {
       font-size: inherit;
     }
 
-    .contatin{
+    .contatin {
       height: auto;
     }
 
-    .daily-right{
+    .daily-right {
       width: 100%;
     }
 
@@ -737,12 +694,12 @@
       display: none;
     }
 
-    .daily-product{
+    .daily-product {
       width: {{ 1 | divided_by: highest_ratio | times: 120 }}%;
       height: {{ 1 | divided_by: highest_ratio | times: 120 }}%;
     }
 
-    .left{
+    .left {
       width: 100%;
       margin-left: 0%;
       text-align: left;
@@ -759,7 +716,7 @@
 
 
   @media screen and (max-width: 768px) {
-    .felx_box{
+    .felx_box {
       flex-direction: column;
     }
 
@@ -767,23 +724,23 @@
       flex-direction: column-reverse;
     }
 
-    .daily-product{
+    .daily-product {
       transform: skew(0deg) !important;
     } 
 
-    .daily-product-box{
+    .daily-product-box {
       transform: skew(0deg) !important;
     } 
 
-    .timebox{
+    .timebox {
       font-size: inherit;
     }
 
-    .contatin{
+    .contatin {
       height: auto;
     }
 
-    .daily-right{
+    .daily-right {
       width: 100%;
     }
 
@@ -791,22 +748,20 @@
       display: none;
     }
 
-    .daily-product{
+    .daily-product {
       width: {{ 1 | divided_by: highest_ratio | times: 120 }}%;
       height: {{ 1 | divided_by: highest_ratio | times: 120 }}%;
     }
 
-    .left{
+    .left {
       width: 100%;
       margin-left: 0%;
       text-align: left;
     }
   }
 
-
-
   @media screen and (max-width: 1024px) {
-    .felx_box{
+    .felx_box {
       flex-direction: column;
     }
 
@@ -814,23 +769,23 @@
       flex-direction: column-reverse;
     }
 
-    .daily-product{
+    .daily-product {
       transform: skew(0deg) !important;
     } 
 
-    .daily-product-box{
+    .daily-product-box {
       transform: skew(0deg) !important;
     } 
 
-    .timebox{
+    .timebox {
       font-size: inherit;
     }
 
-    .contatin{
+    .contatin {
       height: auto;
     }
 
-    .daily-right{
+    .daily-right {
       width: 100%;
     }
 
@@ -838,12 +793,12 @@
       display: none;
     }
 
-    .daily-product{
+    .daily-product {
       width: 100%;
-      height:100%;
+      height: 100%;
     }
 
-    .left{
+    .left {
       width: 100%;
       margin-left: 0%;
       text-align: left;
@@ -852,15 +807,15 @@
 
 
   @media screen and (max-width: 990px) {
-    .timebox{
+    .timebox {
       font-size: inherit;
     }
 
-    .contatin{
+    .contatin {
       height: auto;
     }
 
-    .felx_box{
+    .felx_box {
       flex-direction: column;
     }
 
@@ -868,41 +823,38 @@
       flex-direction: column-reverse;
     }
 
-    .daily-right{
-      width:100%;
+    .daily-right {
+      width: 100%;
     }
 
     .product__modal-opener:not(.product__modal-opener--image) {
       display: none;
     }
 
-    .daily-product{
-      /*       width:{{ 1 | divided_by: highest_ratio | times: 120 }}%; */
+    .daily-product {
       width: 100%;
     }
 
-    .left{
+    .left {
       width: 100%;
       margin-left: 0%;
       text-align: left;
     }
   }  
 
-  .shopify-payment-button__button--unbranded{
+  .shopify-payment-button__button--unbranded {
     background-color: var(--color-button);
-      }
+  }
 
   .shopify-payment-button__button--unbranded:hover,
   .shopify-payment-button__button--unbranded:hover:not([disabled]) {
     background-color: var(--color-button);
-      box-shadow: 0 0 0 0.2rem rgba(var(--color-button), var(--alpha-button-border));
-        }
-
-  .day-deal-product-form button.shopify-payment-button__more-options._2ogcW-Q9I-rgsSkNbRiJzA.shopify-payment-button__button--hidden{
-
-    display:none;
+    box-shadow: 0 0 0 0.2rem rgba(var(--color-button), var(--alpha-button-border));
   }
 
+  .day-deal-product-form button.shopify-payment-button__more-options._2ogcW-Q9I-rgsSkNbRiJzA.shopify-payment-button__button--hidden {
+    display:none;
+  }
 
   .my_clear_padding .shopify-cleanslate > button.shopify-payment-button__button--hidden {
     display: none;
@@ -950,10 +902,9 @@
     }
   }
 
-  .swiper-slide.product__media-item  img{
-    height:auto;
-    width:100%;
-
+  .swiper-slide.product__media-item  img {
+    height: auto;
+    width: 100%;
   }
   
 </style>
@@ -965,10 +916,10 @@
       slidesPerView: 1,
       followFinger : false,
       autoplay: {
-      delay: 4000,
-      stopOnLastSlide: false,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
+        delay: 4000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
       loop: true,
     
@@ -977,7 +928,6 @@
         el: '.swiper-pagination-{{section.id}}',
         clickable :false,
       },
-      
   });
 
    var designMode = Shopify.designMode || false;
@@ -988,10 +938,10 @@
       slidesPerView: 1,
       followFinger : false,
       autoplay: {
-      delay: 4000,
-      stopOnLastSlide: false,
-      disableOnInteraction: false,
-      pauseOnMouseEnter: true,
+        delay: 4000,
+        stopOnLastSlide: false,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
       loop: true,
     
@@ -1007,8 +957,6 @@
 
     deal_swiper123 = null;
 	},true);
-
  }
-  
 </script>
 
