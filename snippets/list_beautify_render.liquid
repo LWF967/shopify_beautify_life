@@ -314,6 +314,11 @@
 
   @media (any-hover: hover){
     {%- if section.settings.show_button_color =='transparent' -%}
+    .icon-changebtn_{{section.id}} {
+      background-color: transparent !important;
+      border: none;
+    }
+    
     .icon-changebtn_{{section.id}}:hover {
       background-color: {{ section.settings.show_button_hover_color }} !important;
       border: none;
