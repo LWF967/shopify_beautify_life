@@ -17,27 +17,24 @@
     font-weight: 700;
     color: var(--font-title-color);
   }
+  
   .my_article_card_beautify_btn {
     background: #fff;
     border: 1px solid #000;
     min-height: 30px;
     height: 30px;
     padding: 0 15px;
-    color:{{settings.colors_secondary_labels_and_borders}};
-    border-color:{{settings.colors_secondary_labels_and_borders}};
-    background:transparent;
+    color: {{ settings.colors_secondary_labels_and_borders }};
+    border-color: {{ settings.colors_secondary_labels_and_borders }};
+    background: transparent;
   }
 </style>
-
-                 
-                 
 
 <div class="page-width spaced-section"
      style="{%- if section.settings.custom_content_margin_top != blank -%}margin-top: {{ section.settings.custom_content_margin_top }}px; {%- endif -%}{%- if section.settings.custom_content_margin_bottom != blank -%}margin-bottom:{{ section.settings.custom_content_margin_bottom }}px;{%- endif -%}">
   {% if section.settings.title != blank %}
   <div class="text-center">
-    <h4 class="h2 my_font_weight_default my_clear_margin my_section_margin_default my_font_size_heading_default">{{
-            section.settings.title | escape }}</h4>
+    <h4 class="h2 my_font_weight_default my_clear_margin my_section_margin_default my_font_size_heading_default">{{ section.settings.title | escape }}</h4>
   </div>
   {% endif %}
 
@@ -75,8 +72,7 @@
 
     {% if block.type == 'image' %}
     {% capture img_id %}CustomImage--{{ forloop.index }}-{{ block.settings.image.id }}{% endcapture %}
-    {% capture img_wrapper_id %}CustomImageWrapper--{{ forloop.index }}-{{ block.settings.image.id }}{% endcapture
-        %}
+    {% capture img_wrapper_id %}CustomImageWrapper--{{ forloop.index }}-{{ block.settings.image.id }}{% endcapture %}
 
     {% unless block.settings.image == blank %}
     {% include 'image-style', image: block.settings.image, height: max_height, wrapper_id: img_wrapper_id, img_id:
@@ -86,7 +82,7 @@
 
     <div class="custom__item custom__item--{{ block.type }} custom__item--{{ block.id }} {{ block_width_mobile }} {{ block_width }}{% if block.settings.alignment %} align--{{ block.settings.alignment }}{% endif %}"
          {{ block.shopify_attributes }}>
-      <div class="custom__item-inner custom__item-inner--{{ block.type }}" {% if block.type=='image' %}
+      <div class="custom__item-inner custom__item-inner--{{ block.type }}" {% if block.type == 'image' %}
            id="{{ img_wrapper_id }}" {% endif %}>
         {% case block.type %}
         {% when 'image' %}
@@ -101,8 +97,7 @@
         </div>
         <noscript>
           {% capture image_size %}{{ max_height }}x{% endcapture %}
-          {{ block.settings.image | img_url: image_size, scale: 2, crop: 'top' | img_tag:
-                    block.settings.image.alt, 'custom__image' }}
+          {{ block.settings.image | img_url: image_size, scale: 2, crop: 'top' | img_tag: block.settings.image.alt, 'custom__image' }}
         </noscript>
         {% else %}
         {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -110,15 +105,13 @@
         {% when 'text' %}
         <div class="medium-up--text-{{ block.settings.align_text }}">
           {% if block.settings.title != blank %}
-          <h4 class="h3 my_custom_content_title_font_size my_font_weight_default">{{ block.settings.title |
-                        escape }}</h4>
+          <h4 class="h3 my_custom_content_title_font_size my_font_weight_default">{{ block.settings.title | escape }}</h4>
           {% endif %}
           {% if block.settings.text != blank %}
           <div class="rte-setting rte my_font_size_content_default">{{ block.settings.text }}</div>
           {% endif %}
         </div>
         {% when 'video' %}
-
 
         {{ 'video-section.css' | asset_url | stylesheet_tag }}
 
@@ -180,8 +173,7 @@
               {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
               {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
             </div>
-            <div class="h4 grid-view-item__title" style="color:var(--font-title-color);font-weight: 700;">{{
-                            'homepage.onboarding.product_title' | t }}</div>
+            <div class="h4 grid-view-item__title" style="color:var(--font-title-color);font-weight: 700;">{{ 'homepage.onboarding.product_title' | t }}</div>
             <div class="grid-view-item__meta" style="color:var(--color-foreground);">
               {{ 0000 | money }}
             </div>
@@ -265,14 +257,13 @@
             {%- capture img_wrapper_id -%}ArticleImageWrapper-{{ article.image.id }}{%- endcapture -%}
             {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
-            {% render 'image-style', image: article.image, height: 600, wrapper_id: img_wrapper_id, img_id:
-                        img_id %}
+            {% render 'image-style', image: article.image, height: 600, wrapper_id: img_wrapper_id, img_id: img_id %}
 
             {%- style -%}
             #Article-{{ article.image.id }} .article__link:not([disabled]):hover
             .article__grid-image-wrapper::before,
             #Article-{{ article.image.id }} .article__link:focus .article__grid-image-wrapper::before {
-            padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;
+              padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;
             }
             {%- endstyle -%}
 
