@@ -96,20 +96,20 @@
             prevEl: '.swiper-button-prev.button_prev_{{ section.id }}',
         },
         breakpoints: {
-            0: {  //当屏幕宽度大于等于0 
+            0: {  //screen width > 0 
                 slidesPerView: 2,
             },
-            750: {  //当屏幕宽度大于等于750 
+            750: {  //screen width > 750 
                 slidesPerView: 2,
             },
-            990: {  //当屏幕宽度大于等于990
+            990: {  //screen width > 990
                 slidesPerView: 4,
             }
         }
     });
   }
   my_swiper_listen();
-  // 刷新
+
   document.addEventListener('shopify:section:load', () => {
     my_swiper_listen();
   }, true)
