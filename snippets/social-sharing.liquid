@@ -1,7 +1,5 @@
 <!-- /snippets/social-sharing.liquid -->
 <ul class="social-sharing">
-
-
     <li>
       <a target="_blank" href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}" class="btn btn--small btn--share share-facebook">
         {% include 'icon-facebook' %} 				
@@ -9,9 +7,6 @@
         <span class="visually-hidden">{{ 'general.social.alt_text.share_on_facebook' | t }}</span>
       </a>
     </li>
-
-
-
     <li>
       <a target="_blank" href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}" class="btn btn--small btn--share share-twitter">
         {% include 'icon-twitter' %}
@@ -19,9 +14,6 @@
         <span class="visually-hidden">{{ 'general.social.alt_text.share_on_twitter' | t }}</span>
       </a>
     </li>
-
-
-
     <li>
       <a target="_blank" href="//pinterest.com/pin/create/button/?url={{ shop.url | append: share_permalink }}&amp;media={{ share_image | img_url: '1024x1024' }}&amp;description={{ share_title | url_param_escape }}" class="btn btn--small btn--share share-pinterest">
         {% include 'icon-pinterest' %}
@@ -29,6 +21,4 @@
         <span class="visually-hidden">{{ 'general.social.alt_text.share_on_pinterest' | t }}</span>
       </a>
     </li>
-
-
 </ul>
