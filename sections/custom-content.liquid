@@ -263,7 +263,7 @@
             #Article-{{ article.image.id }} .article__link:not([disabled]):hover
             .article__grid-image-wrapper::before,
             #Article-{{ article.image.id }} .article__link:focus .article__grid-image-wrapper::before {
-              padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;
+            padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;
             }
             {%- endstyle -%}
 
