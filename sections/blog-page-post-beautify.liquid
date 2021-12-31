@@ -65,8 +65,6 @@
      else assign blog_number = section.settings.blog.articles_count
      endif    -%}  
 <!--     blog_number::{{blog_number}} -->
-    
-
          <ul id="Slider-{{ section.id }}"
         class="blog__posts articles-wrapper grid grid--peek grid--2-col-tablet grid--3-col-desktop{% if posts_exceed_limit %} 1 blog__posts--{{ section.settings.post_limit }}-items{% else %} 2 blog__posts--{{ section.settings.blog.articles_count }}-items{% endif %} my_featured_blog_ul {% if section.settings.blog.articles_count < 3 %} my_featured_blog_ul_margin_right {% endif %}"
         role="list"
