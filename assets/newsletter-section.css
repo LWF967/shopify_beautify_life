@@ -27,9 +27,9 @@
 }
 
 /* .newsletter__wrapper > * + * {
-  margin-top: 2rem;
+margin-top: 2rem;
 }
- */
+*/
 
 .newsletter__wrapper > .newsletter__subheading.rte{
   margin-top: 2rem;
