@@ -263,12 +263,20 @@
             "collection": "",
             "title": "New supply this week"
           }
+        },
+        "b5fa6972-2da2-43f8-b941-9ba70048310a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "title": "New supply this week"
+          }
         }
       },
       "block_order": [
         "164093705039bd24b9-0",
         "164093705039bd24b9-1",
-        "164093705039bd24b9-2"
+        "164093705039bd24b9-2",
+        "b5fa6972-2da2-43f8-b941-9ba70048310a"
       ],
       "settings": {
         "title": "NEW RELEASES",
