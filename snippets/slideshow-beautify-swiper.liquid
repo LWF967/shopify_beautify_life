@@ -846,7 +846,11 @@
 		swiperBeautifySlideshow.autoplay.stop();
   	{% endif %}
 
-    document.addEventListener('shopify:section:load', throttle(() => {
+    document.addEventListener('shopify:section:load', throttle((event) => {
+    
+    
+    //const tt222 = event.target.classList.contains('slideshow__slide');
+    	console.log(event);
         console.log(this,'load');
 
         if(slideshowbox){ console.log(slideshowbox,'dddd')
