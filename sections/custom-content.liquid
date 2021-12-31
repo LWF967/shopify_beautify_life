@@ -217,7 +217,7 @@
                       <a href="{{ blog.url | default: '#' }}" class="blog-card__link">
                         <div class="blog-card__overlay box ratio-container js lazyload" data-bgset="{% include 'bgset', image: img %}" data-sizes="auto" data-parent-fit="cover" data-image-loading-animation></div>
                         <noscript>
-                          <div class="blog-card__overlay" style="background-image: url('{{ img | img_url: '1024x1024' }}');padding-bottom: 50%;background-repeat: no-repeat;"></div>
+                          <div class="blog-card__overlay" style="background-image: url('{{ img | img_url: '1024x1024' }}');display:block;padding-bottom: 50%;background-repeat: no-repeat;"></div>
                         </noscript>
 
                         <div class="blog-card__title-wrapper">
