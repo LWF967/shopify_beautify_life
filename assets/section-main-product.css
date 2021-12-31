@@ -277,7 +277,7 @@ a.product__text {
   background: transparent;
   color: rgb(var(--color-background));
   padding: 1rem 1.6rem 0 0.6rem;
-  border: none;
+/*   border: none; */
 }
 
 .product .price--sold-out .price__badge-sale {
