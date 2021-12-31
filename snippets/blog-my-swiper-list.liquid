@@ -27,33 +27,31 @@
      else assign blog_number = section.settings.blog.articles_count
      endif    -%} 
 
-		<div class="swiper my_swiper_blogs_{{ section.id }}">
-        <div class="swiper-wrapper">
-          {%- case section.settings.show_view_all -%}
-          {%- when true -%}
+<div class="swiper my_swiper_blogs_{{ section.id }}">
+  <div class="swiper-wrapper">
+    {%- case section.settings.show_view_all -%}
+    {%- when true -%}
 
-          {%- for article in section.settings.blog.articles limit: blog_number -%}
-          <li class="blog__post grid__item article slider__slide slider__slide--full-width 1 swiper-slide" style="background:transparent;">
-            {% render 'article-card-beautify', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_title: section.settings.show_title,show_short_content: section.settings.show_short_content,show_date: section.settings.show_date, show_author: section.settings.show_author %}
-          </li>
-          {%- endfor -%}
+    {%- for article in section.settings.blog.articles limit: blog_number -%}
+    <li class="blog__post grid__item article slider__slide slider__slide--full-width 1 swiper-slide" style="background:transparent;">
+      {% render 'article-card-beautify', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_title: section.settings.show_title,show_short_content: section.settings.show_short_content,show_date: section.settings.show_date, show_author: section.settings.show_author %}
+    </li>
+    {%- endfor -%}
 
-          {%- when false -%}
+    {%- when false -%}
 
+    {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
+    <li class="blog__post grid__item article slider__slide slider__slide--full-width 2 swiper-slide" style="background:transparent;">
+      {% render 'article-card-beautify', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_title: section.settings.show_title,show_short_content: section.settings.show_short_content,show_date: section.settings.show_date, show_author: section.settings.show_author %}
+    </li>
+    {%- endfor -%}
 
-          {%- for article in section.settings.blog.articles limit: section.settings.post_limit -%}
-          <li class="blog__post grid__item article slider__slide slider__slide--full-width 2 swiper-slide" style="background:transparent;">
-            {% render 'article-card-beautify', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_title: section.settings.show_title,show_short_content: section.settings.show_short_content,show_date: section.settings.show_date, show_author: section.settings.show_author %}
-          </li>
-          {%- endfor -%}
+    {%- endcase -%}
+  </div>
 
-          {%- endcase -%}
-        </div>
-       
-      
-      </div>
-       <!-- 如果需要分页器 -->
-      <div class="blog-swiper-pagination-page swiper-pagination_{{ section.id }}" style="display: flex;align-items: center;justify-content: center;"></div>
+</div>
+<!-- 如果需要分页器 -->
+<div class="blog-swiper-pagination-page swiper-pagination_{{ section.id }}" style="display: flex;align-items: center;justify-content: center;"></div>
 
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
