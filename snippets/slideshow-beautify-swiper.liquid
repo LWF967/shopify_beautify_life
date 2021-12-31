@@ -859,18 +859,12 @@
       let swiperLoop = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.loop;	
         (swiperLoop == "false") ? swiperLoop=false : swiperLoop=true;
 
-    // console.log('baibai',swiperTime);
-
        swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{section.id}}', {
         direction: 'horizontal', // 垂直切换选项  horizontal  vertical
         loop: swiperLoop, // 循环模式选项 
         parallax : true,
 
-        on:{
-        beforeDestroy: function(){
-          console.log('destory');
-        },
-        },
+     
         preventClicks : false,
         // 如果需要分页器
         touchRatio : 0.7,//触摸变慢
