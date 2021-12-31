@@ -1,11 +1,11 @@
-
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+
 <div class="my_swiper_outside_content">
   <div class="swiper-container-{{section.id}} list-beautify-render" style="overflow: hidden;position:relative;">
     {% comment %}
     <ul id="grid-ul-beautify-box" class="swiper-wrapper grid grid--uniform" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
       {% for block in section.blocks limit: section.blocks.size %}
-      <li id="grid__item__beautify-{{section.id}}" class="swiper-slide grid__item__beautify "  {{ block.shopify_attributes }}>
+      <li id="grid__item__beautify-{{section.id}}" class="swiper-slide grid__item__beautify"{{ block.shopify_attributes }}>
         {%- liquid 
              assign   collection_title = block.settings.title
              assign   collection = collections[block.settings.collection] 
@@ -15,7 +15,7 @@
       </li>
       {% endfor %}
     </ul>
-    {%endcomment%}
+    {% endcomment %}
 
     <div  class="swiper-wrapper " data-grid="{{grid}}" data-loop="{{slide_loop}}"  style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%}">
 
