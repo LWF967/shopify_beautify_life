@@ -30,7 +30,6 @@
   }
 
   .product__info-wrapper {
-/*     padding-left: 5rem; */
     padding-left: 3.5rem;
   }
 
@@ -57,7 +56,6 @@
 .shopify-payment-button__button {
   border-radius: 0;
   font-family: inherit;
-/*   min-height: 4.6rem; */
   min-height: 4.4rem;
 }
 
@@ -117,7 +115,6 @@
   flex: 0 0 100%;
   padding: 0;
   margin: 0 0 1.2rem 0;
-/*   max-width: 37rem; */
   max-width:100%;
   min-width: fit-content;
   border: none;
@@ -195,7 +192,6 @@ fieldset.product-form__input .form__label {
 }
 
 .product-form__input .select {
-/*   max-width: 25rem; */
   max-width:100%;
 }
 
@@ -277,7 +273,6 @@ a.product__text {
   background: transparent;
   color: rgb(var(--color-background));
   padding: 1rem 1.6rem 0 0.6rem;
-/*   border: none; */
 }
 
 .product .price--sold-out .price__badge-sale {
@@ -436,9 +431,6 @@ a.product__text {
 }
 
 .product__media-icon {
-  
-/*   lzxchange  */
-/*   background-color: rgb(var(--color-background)); */
   background-color: #fff;
   border-radius: 50%;
   border: 0.1rem solid rgba(var(--color-foreground), 0.1);
@@ -453,7 +445,7 @@ a.product__text {
   top: 1.5rem;
   z-index: 1;
   transition: color var(--duration-short) ease,
-    opacity var(--duration-short) ease;
+  opacity var(--duration-short) ease;
 }
 
 .product__media-video .product__media-icon {
@@ -506,8 +498,6 @@ a.product__text {
 }
 
 .product-media-modal {
-/*   lzxchange  */
-/*   background-color: rgb(var(--color-background)); */
   background-color: #fff;
   height: 100%;
   position: fixed;
@@ -522,7 +512,6 @@ a.product__text {
 .product-media-modal[open] {
   visibility: visible;
   opacity: 1;
-/*   z-index: 101; */
   z-index: 102;
 }
 
@@ -558,7 +547,6 @@ a.product__text {
   
   .product__modal-opener:not(.product__modal-opener--image) {
     display: none;
-/*     display: block; */
   }
 
   .product__media-list .deferred-media {
