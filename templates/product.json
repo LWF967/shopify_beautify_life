@@ -90,7 +90,7 @@
           "type": "text",
           "settings": {
             "text": "{{ section.settings.product.vendor }}",
-            "text_style": "uppercase"
+            "text_style": "subtitle"
           }
         },
         "1640763307a57b0f2d-1": {
@@ -150,12 +150,12 @@
         "1640763307a57b0f2d-8"
       ],
       "settings": {
-        "product": "lol-more",
+        "product": "text4",
         "featured_bk_color": "#1eec5e",
         "color_scheme": "gradient",
-        "show_share_buttons": false,
-        "hide_variants": false,
-        "enable_video_looping": false,
+        "show_share_buttons": true,
+        "hide_variants": true,
+        "enable_video_looping": true,
         "featured_product_beautify_margin_top": "",
         "featured_product_beautify_margin_bottom": ""
       }
