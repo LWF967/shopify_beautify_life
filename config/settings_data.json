@@ -107,11 +107,19 @@
               "heading": "Heading",
               "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
             }
+          },
+          "fa59937e-d75f-429e-9cdc-abfe3475e5ec": {
+            "type": "image",
+            "settings": {
+              "image_width": 100,
+              "alignment": "center"
+            }
           }
         },
         "block_order": [
           "footer-0",
-          "footer-1"
+          "footer-1",
+          "fa59937e-d75f-429e-9cdc-abfe3475e5ec"
         ],
         "settings": {
           "color_scheme": "background-1",
@@ -120,7 +128,7 @@
           "show_social": false,
           "enable_country_selector": true,
           "enable_language_selector": true,
-          "payment_enable": false
+          "payment_enable": true
         }
       },
       "main-password-header": {
