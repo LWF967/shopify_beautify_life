@@ -5,7 +5,6 @@
 .collection-hero__inner {
   display: flex;
   flex-direction: column; 
-/*   margin-bottom: 2rem;  */
 }
 
 .collection-hero--with-image .collection-hero__inner {
@@ -40,19 +39,16 @@
 }
 
 .collection-hero__title {
-/*   margin: 5rem 0 0; */
   margin: 0 0;
   text-align:center;
 }
 
-/* lzx change start */
 @media screen and (max-width: 990px) {
   .collection-hero__title {
     margin: 0 0;
     text-align:center;
   }
 }
-/* lzx change end */
 
 .collection-hero__title + .collection-hero__description {
   margin-top: 1.5rem;
