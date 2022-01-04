@@ -813,7 +813,7 @@
 
     document.addEventListener('shopify:section:load', throttle((event) => {
     
-        if(slideshowbox){ console.log(slideshowbox,'dddd')
+        if(slideshowbox){ //console.log(slideshowbox,'dddd')
       let  swiperAutoPlay = document.getElementsByClassName(' swiper-wrapper-{{section.id}}')[0].dataset.autoplay;
       let swiperTime = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.autotime;	 
       let swiperLoop = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.loop;	
