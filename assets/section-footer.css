@@ -308,7 +308,7 @@
 }
 
 .localization-form__select {
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.55);
+  box-shadow: 0 0 0 0.1rem var(--color-foreground-rgba);
   position: relative;
   margin-bottom: 1.5rem;
   border: 0;
