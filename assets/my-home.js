@@ -106,6 +106,10 @@ let sticky = document.getElementsByClassName('my_footer_sticky');
 // let my_header_sticky = document.getElementsByClassName('my_header_sticky');
 // let my_backtop = document.getElementById('my_backtop');
 
+    let drawer = document.getElementsByTagName('details-disclosure');
+console.log(drawer.length);
+    
+
 function my_header_and_totop() {
   // backtop 
   function gotoTop() {
@@ -130,9 +134,7 @@ function my_header_and_totop() {
     let my_backtop = document.getElementById('my_backtop');
     
     
-    let drawer = document.getElementsByTagName('details-disclosure');
-console.log(drawer.length);
-    
+
     
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
