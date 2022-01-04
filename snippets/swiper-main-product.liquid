@@ -1,6 +1,62 @@
+<style>
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-button-prev.main_product_prev_{{section.id}}:after,
+  .swiper-button-next.main_product_next_{{section.id}}:after {
+    color: #000;
+    width: 10px;
+    height: 20px;
+    font-size: 20px;
+  }
+
+  .swiper-button-next.main_product_next_{{section.id}} {
+    right: -5px;
+  }
+
+  .swiper-button-prev.main_product_prev_{{section.id}} {
+    left: -5px;
+  }
+  
+  .swiper-button-prev.main_product_prev_{{section.id}}.swiper-button-disabled:empty,
+  .swiper-button-next.main_product_next_{{section.id}}.swiper-button-disabled:empty,
+  .swiper-button-prev.main_product_prev_{{section.id}}:empty,
+  .swiper-button-next.main_product_next_{{section.id}}:empty {
+    display: flex;
+  }
+</style>
+
 <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_main_product_ul my_main_product_ul_nomargin" role="list">
   <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
-    <div class="swiper my_swiper_detail">
+    <div class="swiper my_swiper_detail_{{section.id}}">
       <div class="swiper-wrapper my_swiper_div">
         {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
         {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -20,7 +76,35 @@
         {%- endfor -%}
       </div>
     </div>
-    <div class="swiper-button-prev main_product_prev"></div>
-    <div class="swiper-button-next main_product_next"></div>
+    <div class="swiper-button-prev main_product_prev_{{section.id}}"></div>
+    <div class="swiper-button-next main_product_next_{{section.id}}"></div>
   </div>
 </ul>
+
+<script type="module">
+  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+  
+  var swiper = new Swiper(".my_swiper_detail_{{section.id}}", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next.main_product_next_{{section.id}}',
+          prevEl: '.swiper-button-prev.main_product_prev_{{section.id}}',
+      },
+      breakpoints: {
+        0: {  //当屏幕宽度大于等于0 
+          slidesPerView: 2,
+        },
+        750: {  //当屏幕宽度大于等于750 
+          slidesPerView: 2,
+        },
+        990: {  //当屏幕宽度大于等于990
+          slidesPerView: 4,
+		}
+      }
+  });
+</script>

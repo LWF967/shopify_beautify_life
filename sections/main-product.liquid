@@ -910,35 +910,6 @@
   }
 </script>
 
-
-<script type="module">
-  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
-  
-  var swiper = new Swiper(".my_swiper_detail", {
-      slidesPerView: 4,
-      spaceBetween: 10,
-      pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-      },
-      navigation: {
-          nextEl: '.swiper-button-next.main_product_next',
-          prevEl: '.swiper-button-prev.main_product_prev',
-      },
-      breakpoints: {
-        0: {  //当屏幕宽度大于等于0 
-          slidesPerView: 2,
-        },
-        750: {  //当屏幕宽度大于等于750 
-          slidesPerView: 2,
-        },
-        990: {  //当屏幕宽度大于等于990
-          slidesPerView: 4,
-		}
-      }
-  });
-</script>
-
 {% schema %}
 {
   "name": "t:sections.main-product.name",
