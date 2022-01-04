@@ -703,7 +703,7 @@
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
               {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
-
+				1313
               <pickup-availability class="product__pickup-availabilities no-js-hidden"
                 {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %} available{% endif %}
                 data-base-url="{{ shop.url }}{{ routes.root_url }}"
