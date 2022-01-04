@@ -1,4 +1,3 @@
-// lzx change
 /**
  * 防抖函数，非立即执行
  * @param {*} func 回调函数  必传
@@ -25,12 +24,8 @@ if(myFooterbottomFreshDesignMode){
     let promo_bar = document.getElementById('shopify-section-promo-bar');
     let top_bar = document.getElementById('shopify-section-top-bar');
     let header_zx = document.getElementById('shopify-section-header');
-    //     let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-//     let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
     let main = document.getElementById('MainContent');
     let sticky = document.getElementsByClassName('my_footer_sticky');
-
-  
 
     var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 
@@ -87,29 +82,14 @@ if(myFooterbottomFreshDesignMode){
   },true);
 }
 
-// let promo_bar = document.getElementById('hide_banner');
-// let top_bar = document.getElementById('shopify-section-top-bar');
-// let header_zx = document.getElementById('shopify-section-header');
-//   let footer_top = document.getElementById('shopify-section-footer-top');
 let footer_bottom = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
-//   let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
 let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
 let main = document.getElementById('MainContent');
 let sticky = document.getElementsByClassName('my_footer_sticky');
 
-// header fixed layout 
-// let all_header_height = $(promo_bar).height() + $(top_bar).height() + $(header_zx).height();
-// let header_wrapper = document.getElementsByClassName('header-wrapper')[0];
-// let header_wrapper_height = document.getElementsByClassName('header-wrapper')[0].scrollHeight;
-// let header = document.getElementsByClassName('header')[0];
-// let content = document.getElementsByClassName('content')[0];
-// let my_header_sticky = document.getElementsByClassName('my_header_sticky');
-// let my_backtop = document.getElementById('my_backtop');
-
-let drawer = document.querySelectorAll('details-disclosure details');
-console.log(drawer);
+// let drawer = document.querySelectorAll('details-disclosure details');
+// console.log(drawer);
     
-
 function my_header_and_totop() {
   // backtop 
   function gotoTop() {
@@ -156,11 +136,11 @@ function my_header_and_totop() {
         content.style.transition = 'transform .3s';
         content.style.top = "-" + (header_wrapper.style.height);
         content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
-        for(let i = 0; i < drawer.length; i++) {
-          if(drawer[i].hasAttribute('open') == true) {
-            drawer[i].removeAttribute('open');
-          }
-        }
+//         for(let i = 0; i < drawer.length; i++) {
+//           if(drawer[i].hasAttribute('open') == true) {
+//             drawer[i].removeAttribute('open');
+//           }
+//         }
       } else if(content.style.position == 'relative') {
         promo_bar.style.zIndex = 898;
         top_bar.style.zIndex = 899;
