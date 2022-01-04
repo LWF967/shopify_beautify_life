@@ -1,14 +1,11 @@
 .pagination-wrapper {
-/*   margin-top: 4rem; */
   margin-top: 0;
-/*   margin-bottom: 7rem; */
   margin-bottom: 0;
 }
 
 @media screen and (min-width: 990px) {
   .pagination-wrapper {
     margin-top: 5rem;
-/*     margin-bottom: 10rem; */
     margin-bottom: 0;
   }
 }
