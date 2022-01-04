@@ -14,18 +14,15 @@
 
 @media screen and (min-width: 750px) {
   .multicolumn.no-heading:not(.background-secondary) {
-/*     margin-top: 6rem; */
     margin-top: 5.5rem;
   }
 }
 
-/* lzx change start */
 @media screen and (max-width: 990px) {
   .multicolumn.no-heading:not(.background-secondary) {
     margin-top: 3.5rem;
   }
 }
-/* lzx change end */
 
 .multicolumn.background-secondary .title-wrapper-with-link {
   margin-top: 0;
@@ -62,13 +59,11 @@
   }
 }
 
-/* lzx change start */
 @media screen and (min-width: 750px) {
   .multicolumn .button.my_text_column_with_images_button_margin_top {
     margin-top: 2rem;
   }
 }
-/* lzx change end */
 
 .multicolumn-list {
   margin-bottom: 0;
@@ -99,17 +94,14 @@
 }
 
 .multicolumn:not(.background-secondary) {
-/*   margin: 5rem 0; */
   margin: 5.5rem 0 0 0;
 }
 
-/* lzx change start */
 @media screen and (max-width: 990px) {
   .multicolumn:not(.background-secondary) {
     margin: 3.5rem 0 0 0;
   }
 }
-/* lzx change end */
 
 .multicolumn-list h3,
 .multicolumn-list p {
@@ -118,8 +110,6 @@
 
 .multicolumn-card-spacing {
   padding-top: 2.5rem;
-/*   margin-left: 2.5rem;
-  margin-right: 2.5rem; */
   margin-left: 0;
   margin-right: 0;
 }
@@ -179,10 +169,7 @@
   }
 
   .grid--2-col-tablet .multicolumn-list__item {
-    /* lzx change start */
-    /* margin-top: 1rem; */
     margin-top: 3rem;
-    /* lzx change end */
     max-width: 50%;
   }
 
@@ -212,7 +199,6 @@
 }
 
 .multicolumn-card__info {
-/*   padding: 2.5rem 2.5rem; */
   padding: 2rem 1rem 0;
 }
 
