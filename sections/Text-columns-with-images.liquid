@@ -1,15 +1,13 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 
-
 {{'swiper-bundle.min.css'| asset_url |stylesheet_tag}}
 
-    
 <script src="{{'swiper-bundle.min.js'| asset_url }} "></script>
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 {% assign image_overlay_opacity = settings.image_overlay_opacity | divided_by: 100.0 %}
 {%-style-%}
-.text-images{padding-bottom:5px;background:{{settings.color_image_overlay | color_modify: 'alpha', image_overlay_opacity}}}
+.text-images { padding-bottom:5px;background: {{ settings.color_image_overlay | color_modify: 'alpha', image_overlay_opacity }} }
 {%-endstyle-%}
 <style>
   .Text_columns_with_images_title {
@@ -33,7 +31,6 @@
   .my_text_columns_with_images_image img {
     padding: 0 30px; 
     height: auto;
-    /*     width:100%; */
     max-height: 30rem;
   }
 
@@ -90,10 +87,6 @@
       text-align: center;
       font-size: 24px;
     }
-
-    /*     .my_text_columns_margin {
-    margin-top: 0 !important;
-  } */
 
     .my_text_columns_with_images_center {
       text-align: center;
@@ -179,9 +172,8 @@
           endfor
         -%}
         {%- for block in section.blocks -%}
-        <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}
-            >
-          <div class="text-images"  >
+        <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
+          <div class="text-images">
 
             {% if block.settings.show_image == true %}
             {%- if block.settings.image != blank -%}
