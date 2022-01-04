@@ -347,6 +347,9 @@
   {{ 'Next product' | link_to: collection.next_product.url, collection.next_product.title }}
   {% endif %}
   
+  {{ page_image | image_url: width: 300 }}123
+  
+  
   <div class="my_main_product_bread">   
     <div class="my_main_product_bread_item">
       <a href="{{ routes.root_url }}" class="my_main_product_bread_item_Home my_font_weight_default">Home</a>
