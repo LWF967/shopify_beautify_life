@@ -1,39 +1,23 @@
 /* Color custom properties */
 
-
-
 :root{
-
-	--font-size-base: 12px;
-     
-
+  --font-size-base: 12px;
 }
-
 
 .color-beautify-overlay-1{
-	--color-foreground:white !imporatnt;
-	--color-background:transparent;
-      
-    color: white;
-
+  --color-foreground:white !imporatnt;
+  --color-background:transparent;
+  color: white;
 }
-  
-  .color-beautify-overlay-1 .button{
-  
-  	opacity:1 !important;
-  
-  }
+ 
+.color-beautify-overlay-1 .button{
+  opacity:1 !important;
+}
   
 .color-beautify-overlay-1 button{
-
-
   --color-button: black;
   --color-button-text: var(--color-background);
-
-
 }
-
-
 
 /* base */
 
@@ -108,10 +92,6 @@ html.no-js .no-js-hidden {
   }
 }
 
-/* .spaced-section:last-child {
-  margin-bottom: 5rem;
-} */
-
 .spaced-section--full-width + .spaced-section--full-width {
   margin-top: 0;
 }
@@ -137,7 +117,6 @@ body,
 /*   鼠標插入光標顔色 */
 body {
   caret-color:transparent;
-/*   font-size: 14px; */
 }  
 
 input, textarea {
@@ -167,7 +146,6 @@ input, textarea {
 
 .rte-width {
   max-width: 82rem;
-/*   margin: 0 auto 2rem; */
 }
 
 .list-unstyled {
@@ -590,7 +568,6 @@ summary::-webkit-details-marker {
 }
 
 .disclosure-has-popup[open] > summary + * {
-/*   z-index: 100; */
   z-index: 101;
 }
 
@@ -785,14 +762,11 @@ summary::-webkit-details-marker {
 .grid {
   display: flex;
   flex-wrap: wrap;
-/*   margin-bottom: 2rem; */
-/*   margin-left: -0.5rem; */
   margin: 0 -0.75rem 0;
   padding: 0;
   list-style: none;
 }
 
-/* lzx change start */
 .my_grid {
   display: flex;
   flex-wrap: wrap;
@@ -801,25 +775,20 @@ summary::-webkit-details-marker {
   padding: 0;
   list-style: none;
 }
-/* lzx change end */
 
 @media screen and (min-width: 750px) {
   .grid {
-/*     margin-left: -1rem; */
     margin-left: -1.5rem;
     margin-right: -1.5rem;
   }
 }
   
-/* lzx change start */
 @media screen and (max-width: 990px) {
   .grid {
-/*     margin-left: -1rem; */
     margin-left: -0.75rem;
     margin-right: -0.75rem;
   }
 }
-/* lzx change end */
   
 .grid__item {
   padding-left: 0.5rem;
@@ -984,10 +953,7 @@ summary::-webkit-details-marker {
 /* component-media */
 .media {
   display: block;
-/* lzx change start */
-/*   background-color: var(--color-foreground); */
   background-color: transparent;
-/* lzx change end */
   position: relative;
   overflow: hidden;
 }
@@ -1007,7 +973,6 @@ summary::-webkit-details-marker {
   width: 100%;
 }
   
-/* lzx change start */
 .deferred-media__poster{
   max-width: 100%;
   position: absolute;
@@ -1016,7 +981,6 @@ summary::-webkit-details-marker {
   height: 100%;
   width: 100%;
 }
-/* lzx change end */
   
 .media > img {
   object-fit: cover;
@@ -1677,23 +1641,6 @@ input[type='checkbox'] {
   display: none;
 }
 
-/* .cart-count-bubble {
-  position: absolute;
-  background-color: rgb(var(--color-button));
-  color: rgb(var(--color-button-text));
-  height: 1.7rem;
-  width: 1.7rem;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.9rem;
-  bottom: 0.8rem;
-  left: 2.2rem;
-  line-height: 1.1;
-} */
-  
-/* zx change */
 .cart-count-bubble {
   position: absolute;
   background-color: #797979;
@@ -1754,6 +1701,7 @@ input[type='checkbox'] {
 #shopify-section-top-bar {
   z-index: 102;
 }
+
 /* section-header */
 #shopify-section-header {
   z-index: 101;
@@ -1992,11 +1940,8 @@ details[open] .modal-overlay {
 details[open] .modal-overlay::after {
   position: absolute;
   content: '';
-  /* lzx change start */
-  /*   background-color: rgb(var(--color-foreground), 0.5); */
   background-color: var(--color-image-overlay);
   opacity: var(--opacity-image-overlay);
-  /* lzx change end */
   top: 100%;
   left: 0;
   right: 0;
@@ -2050,8 +1995,6 @@ details[open] .modal-overlay::after {
 
   .search-modal__close-button {
     position: initial;
-/*     margin-left: 0.5rem; */
-    /*lzx change*/
     margin-left: 1.5rem;
   }
 }
@@ -2062,7 +2005,6 @@ details[open] .modal-overlay::after {
   position: absolute;
   opacity: 1;
   transform: scale(1);
-/*   transition: transform 150ms ease, opacity 150ms ease; */
 }
 
 details:not([open]) > .header__icon--menu .icon-close,
@@ -2245,7 +2187,6 @@ a{
   text-decoration:none;
 }
   
-/* lee backtop css */
 #my_backtop {
   position: fixed;
   display: block;
