@@ -72,10 +72,6 @@
   top: 0;
   left: 0; }
 
-
-
-
-
 .custom-content {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -94,16 +90,10 @@
   width: auto;
   margin-bottom: -30px;
   margin-left: -30px; }
-/*   @media only screen and (max-width: 749px) {
-    .custom-content {
-      margin-bottom: -22px;
-      margin-left: -22px; } } */
-/* lzx change start */
   @media only screen and (max-width: 990px) {
     .custom-content {
       margin-bottom: -15px;
       margin-left: -15px; } }
-/* lzx change end */
 
 .custom__item {
   -webkit-flex: 0 0 auto;
@@ -128,8 +118,6 @@
       -moz-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
       flex: 0 0 auto;
-/*       padding-left: 22px; lzx change
-      margin-bottom: 22px; */ 
       padding-left: 15px;
       margin-bottom: 15px; }
       .custom__item.small--one-half {
@@ -257,7 +245,6 @@ padding:0;
   font-weight: 600;  
 }
 
-/* lzx change start */
 @media screen and (min-width: 750px) and (max-width: 990px) {
   .collection-grid-item__title-wrapper > .h3{
     font-size: 2.4rem;
@@ -271,7 +258,6 @@ padding:0;
     font-weight: 600;  
   }
 }
-/* lzx change end */
 
 .collection-grid {
   margin-bottom: -22px;
@@ -286,7 +272,6 @@ padding:0;
     .collection-grid-item {
       margin-bottom: 30px; } }
 
-/* lzx change prev_btn, next_btn in Carousel align center --start-- */
 .my_collection_grid_item {
   position: relative;
   width: 100%;
@@ -295,7 +280,6 @@ padding:0;
   @media only screen and (min-width: 750px) {
     .my_collection_grid_item {
       margin-bottom: 0px; } }
-/* lzx change prev_btn, next_btn in Carousel align center --end-- */
 
 .collection-grid-item__title {
   color: var(--color-overlay-title-text) !important;
@@ -314,7 +298,6 @@ padding:0;
     .collection-grid-item__title {
       padding: 0 15px; } }
 
-/* lzx change font in Carousel align center --start-- */
 .my_collection_grid_item_title {
   color: var(--color-overlay-title-text) !important;
   position: absolute;
@@ -331,7 +314,6 @@ padding:0;
   @media only screen and (min-width: 750px) {
     .my_collection_grid_item_title {
       padding: 0 0px; } }
-/* lzx change font in Carousel align center --end-- */
 
 .collection-grid-item__link {
   position: absolute;
@@ -401,16 +383,11 @@ max-width:30rem;
   -moz-appearance: none;
   appearance: none;
   display: inline-block;
-/*   width: 30rem; */
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
-/*   border: 1px solid transparent;
-  border-radius: 2px; */
   padding: 8px 15px;
-/*   background-color: var(--color-foreground); */
-/*   color: rgba(255,255,255,1); */
   color: var(--color-button-text);
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
@@ -418,7 +395,6 @@ max-width:30rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   white-space: normal;
-/*   font-size: calc(((var(--font-size-base) - 2) / (var(--font-size-base))) * 1em); */
   font-size: 13px; }
 
 
