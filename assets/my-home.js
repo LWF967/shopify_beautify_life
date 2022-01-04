@@ -128,7 +128,12 @@ function my_header_and_totop() {
     let content = document.getElementsByClassName('content')[0];
     let my_header_sticky = document.getElementsByClassName('my_header_sticky');
     let my_backtop = document.getElementById('my_backtop');
-
+    
+    
+    let drawer = document.getElementsByName('details-disclosure');
+console.log(drawer.length);
+    
+    
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
     if(my_header_sticky.length > 0) {
