@@ -50,8 +50,6 @@
 
 .article-content {
   width: 100%;
-/*   height: 100%; */
-/*   display: flex; */
   flex-direction: column;
   text-decoration: none;
   color: inherit;
@@ -69,10 +67,6 @@
 .article-content img {
   transition: transform var(--duration-default) ease;
 }
-
-/* .article-content:hover img {
-  transform: scale(1.07);
-} */
 
 .article-card__image-wrapper > a {
   display: block;
