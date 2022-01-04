@@ -83,12 +83,12 @@ if (!customElements.get('pickup-availability-drawer')) {
       }
     }
 
-//     hide() {
-//       this.removeAttribute('open');
-//       document.body.removeEventListener('click', this.onBodyClick);
-//       document.body.classList.remove('overflow-hidden');
-//       removeTrapFocus(this.focusElement);
-//     }
+    hide() {
+      this.removeAttribute('open');
+      document.body.removeEventListener('click', this.onBodyClick);
+      document.body.classList.remove('overflow-hidden');
+      removeTrapFocus(this.focusElement);
+    }
 
     show(focusElement) {
       this.focusElement = focusElement;
