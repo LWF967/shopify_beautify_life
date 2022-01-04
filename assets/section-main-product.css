@@ -207,7 +207,7 @@ fieldset.product-form__input .form__label {
   --alpha-button-background: 1;
 }
 
-.product-form__submit[disabled] + .shopify-payment-button {
+.product-form__submit[disabled] + .button {
   display: none;
 }
 
