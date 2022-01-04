@@ -135,8 +135,7 @@
       </div>
       {%- endif -%}
       <div>
-      {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
-        {{ localization.available_countries }}
+      {%- if localization.available_countries.size > 1 -%}
           <noscript>
             {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
               <div class="localization-form__select">
