@@ -303,21 +303,21 @@
 
                   <td class="cart-item__totals right small-hide">
                     <div class="cart-item__price-wrapper">
-                      {%- if item.original_line_price == item.final_line_price -%}
+                      {%- if item.original_line_price != item.final_line_price -%}
                         <dl class="cart-item__discounted-prices">
                           <dt class="visually-hidden">
                             {{ 'products.product.price.regular_price' | t }}
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end my_cart_price_font_size">
-                              {{ item.original_line_price | divided_by: item.quantity | money }}
+                              {{ item.original_line_price | money }}
                             </s>
                           </dd>
                           <dt class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end my_cart_price_font_size">
-                            {{ item.final_line_price | divided_by: item.quantity | money }}
+                            {{ item.final_line_price | money }}
                           </dd>
                         </dl>
                       {%- else -%}
