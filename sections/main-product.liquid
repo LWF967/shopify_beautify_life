@@ -323,6 +323,15 @@
 </style>
 
 
+{%- liquid 
+    assign pid = product.id
+    assign hd_up = 'group-' |append:pid
+    assign nav_up = linklists[hd_up].links | where:'type','product_link'
+    assign nav_up_size = nav_up.size
+-%}
+
+
+
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
