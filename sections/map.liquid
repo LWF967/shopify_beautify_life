@@ -57,8 +57,7 @@
              class="btn btn--secondary btn--small map_section__directions-btn my_map_getdirection"
              target="_blank"
              rel="noopener"
-             aria-describedby="a11y-new-window-external-message"
-             >
+             aria-describedby="a11y-new-window-external-message">
             {% if section.settings.show_pin %}{% include 'icon-pin' %}{% endif %}
             <span class="my_font_size_content_default">{{ section.settings.button_text | escape }}</span>
           </a>
@@ -226,9 +225,11 @@
     -ms-align-content: center;
     align-content: center; 
   }
+  
   .map-section__content > * {
     width: 100%; 
   }
+  
   @media only screen and (min-width: 750px) {
     .map-section__content {
       background-color: white;
@@ -261,6 +262,7 @@
     height: 55vh;
     left: 0; 
   }
+  
   @media only screen and (min-width: 750px) {
     .map-section__container {
       position: absolute;
@@ -313,9 +315,11 @@
       position: absolute; 
     } 
   }
+  
   .map-section--display-map .map-section__image {
     display: none !important; 
   }
+  
   .map-section--load-error .map-section__image {
     display: block !important; 
   }
@@ -323,9 +327,8 @@
   .btn--secondary {
     background-color: transparent;
     color: rgba(var(--color-foreground),.75);
-      border-color: black;
+    border-color: black;
   }
-
 </style>
 {% schema %}
 {
