@@ -246,10 +246,12 @@ function my_home() {
   let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
   let main = document.getElementById('MainContent');
   let sticky = document.getElementsByClassName('my_footer_sticky');
-  let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
-  let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
+//   let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+//   let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
   // footer sticky
   if(sticky.length > 0) {
+    let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
+    let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
     if(document.body.clientWidth < 1024) {
       promo_bar.style.zIndex = 2;
       main.style.marginBottom = 0 + "px";
@@ -284,62 +286,6 @@ my_home();
 
 window.onload = function() {
   my_home();
-  // hide_banner variant define in promo-bar.liquid
-//   promo_bar_fun();
-  
-//   if(getCookie("lzx1")) {
-//     console.log(getCookie("lzx1"));
-//     console.log("home+lzx");
-
-//   } else {
-//     console.log(getCookie("无"));
-  
-//   var DesignMode = Shopify.designMode || false;
-//   if(DesignMode){
-//     let promo_bar = document.getElementById('hide_banner');
-//     hide_banner.style.marginTop = 0 + 'px';
-//     hide_banner.style.transition = "margin-top .5s";
-//   } else {
-//     if(getCookie("lzx1")) {
-//       let close = document.getElementsByClassName('show_close')[0];
-//       let my_center = document.getElementsByClassName('my_center')[0];
-//       let hide_banner = document.getElementById('hide_banner');  
-//       let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-//       let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
-//       close.onclick = function () {
-//         if(hide_banner_height > hide_banner.dataset.mheight) {
-//           hide_banner.dataset.mheight = hide_banner_height;
-//         }
-//         hide_banner.style.marginTop = -hide_banner_height + 'px';
-//         hide_banner.style.transition = "margin-top .5s";
-// //                   setCookie("lzx1",cookietime);
-//       }
-
-//       if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
-//         close.onclick = function () {
-//           if(hide_banner_height > hide_banner.dataset.mheight) {
-//             hide_banner.dataset.mheight = hide_banner_height;
-//           }
-//           hide_banner.style.marginTop = -hide_banner_height + 'px';
-//           hide_banner.style.transition = "margin-top .5s";
-// //                             setCookie("lzx1",cookietime);
-//         }
-//       }
-//       hide_banner.dataset.mheight = hide_banner_height;
-//       hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-
-//       setTimeout(function() {
-//         hide_banner.style.marginTop = 0 + 'px';
-//         hide_banner.style.transition = "margin-top .5s";
-//       }, 500);
-//     } else {
-//       let promo_bar = document.getElementById('hide_banner');
-//       hide_banner.style.marginTop = 0 + 'px';
-//       hide_banner.style.transition = "margin-top .5s";
-//     }
-//   }
-//   }
-
 }
 
 $(window).resize(function(){
