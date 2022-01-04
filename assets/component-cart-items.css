@@ -11,7 +11,6 @@
   font-weight: normal;
 }
 
-/* lzx change start */
 @media screen and (min-width: 750px) {
   .cart-items th {
     text-align: left;
@@ -20,7 +19,6 @@
     font-weight: normal;
   }
 }
-/* lzx change end */
 
 .cart-item__quantity {
   display: flex;
@@ -106,9 +104,6 @@
 
 cart-remove-button .button {
   box-shadow: none;
-/*   lzx change start  */
-/*   color: rgba(var(--color-base-text), 0.75); */
-/*   lzx change end */
   color: var(--color-button-text);
   min-width: 4.5rem;
   min-height: 4.5rem;

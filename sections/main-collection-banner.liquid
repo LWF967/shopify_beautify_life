@@ -19,6 +19,10 @@
         {{- collection.title | escape -}}
       </h1>
       <h4 class="my_collection_hero_des" style="color:rgba(var(--color-foreground),.75)">{{- collection.description -}}</h4>
+      
+      {% if collection.image %}
+        {{ collection.image | image_url: width: 2048 | image_tag }}
+      {% endif %}
     </div>
 
 
