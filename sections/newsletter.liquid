@@ -6,7 +6,7 @@
     font-size: 24px;
     font-weight: 700;
   }
-  /*   style="background-color:{{settings.color_page_background| color_modify: 'alpha', 0}}" */
+
   .my_newsletter_button_style {
     position: absolute;
     top: 0;
@@ -82,9 +82,7 @@
 
 <div class="newsletter center spaced-section{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif %}"
      style="{%- if section.settings.newsletter_margin_top != blank -%}margin-top: {{ section.settings.newsletter_margin_top }}px; {%- endif -%}{%- if section.settings.newsletter_margin_bottom != blank -%}margin-bottom:{{ section.settings.newsletter_margin_bottom }}px;{%- endif -%}">
-  <!--   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient my_newsletter_padding" {%- if section.settings.newsletter_bk_box-%} style="background-color:{{ section.settings.newsletter_bk_color }}" {%- endif -%}> -->
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient my_newsletter_padding"  style="{%-if section.settings.color_scheme =="newsletter_bk_color"-%} background-color:{{section.settings.newsletter_bk_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%}">
-
     {%- for block in section.blocks -%}
     {%- case block.type -%}
     {%- when '@app' -%}
@@ -142,11 +140,6 @@
   </div>
 </div>
 
-<style>
-  .newsletter__wrapper .newsletter-form__field-wrapper{
-/*     background-color:white; */
-  }
-</style>
 {% schema %}
 {
   "name": "newsletter",
