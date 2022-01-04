@@ -4,8 +4,7 @@
 <div class="video-section{% unless section.settings.full_width %} page-width{% endunless %}"
      style="{%- if section.settings.video_beautify_margin_top != blank -%}margin-top: {{ section.settings.video_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.video_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.video_beautify_margin_bottom }}px;{%- endif -%}">
   <noscript>
-    <div class="video-section__media"
-         >
+    <div class="video-section__media">
       <a href="{{ section.settings.video_url }}" class="video-section__poster media media--transparent media--landscape{% if section.settings.cover_image == blank %} video-section__placeholder{% endif %}">
         {%- if section.settings.cover_image != blank and  section.settings.show_overlay == true -%}
         <img
@@ -22,8 +21,7 @@
              alt="{{ 'sections.video.load_video' | t: description: section.settings.description | escape }}"
              loading="lazy"
              width="{{ section.settings.cover_image.width }}"
-             height="{{ section.settings.cover_image.height }}"
-             >
+             height="{{ section.settings.cover_image.height }}">
         {%- else -%}
         {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
         {%- endif -%}
@@ -31,13 +29,12 @@
     </div>
   </noscript>
   <deferred-media class="video-section__media deferred-media no-js-hidden" data-media-id="{{ section.settings.video_url.id }}"
-                  {% if section.settings.cover_image != blank   and  section.settings.show_overlay == true %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
-                  >
+                  {% if section.settings.cover_image != blank   and  section.settings.show_overlay == true %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}>
     {%- if section.settings.show_overlay -%}<div class="video__overlay"></div>{%- endif -%}
     <button
             id="Deferred-Poster-Modal-{{ section.settings.video_url.id }}"
             class="video-section__poster media deferred-media__poster media--landscape"
-            type="button" >
+            type="button">
       {%- if section.settings.cover_image != blank  and  section.settings.show_overlay == true and section.settings.style == 'image_with_play'-%}
       <img
            srcset="{%- if section.settings.cover_image.width >= 375 -%}{{ section.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
@@ -113,11 +110,12 @@
     position: relative;
     padding-bottom: 79.5%;
   }
-
   {%- endcase -%}
+  
   .video__overlay{
     display: block !important;
   }
+  
   .video__overlay::before {
     content: '';
     position: absolute;
@@ -127,7 +125,7 @@
     left: 0;
     background-color: black;
     opacity: var(--opacity-image-overlay);
-      }
+  }
 
   .my_video_align_center {
     text-align: center;
@@ -176,6 +174,7 @@
     z-index: 1;
    }
   {%- endif -%}
+  
   .my_video_font_size {
     {%- if section.settings.text_size == 'medium' -%}
     font-size: 24px;
