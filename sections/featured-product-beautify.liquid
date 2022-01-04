@@ -214,6 +214,21 @@
     margin-bottom: 0;
   }
   
+  .btn--small {
+    padding: 8px 10px;
+    font-size: calc(((12) / (var(--font-size-base))) * 1em);
+    line-height: 1;
+    max-weight: 20px;
+    max-height: 20px;    
+  }
+
+  .btn--share .icon {
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+  
   @media screen and (max-width: 750px) {
     .no-js-hidden.my_featured_product_beautify_variant-selects {
       margin: 10px 0;
@@ -566,23 +581,6 @@
   </div>
 </section>
 
-<style>
-  .btn--small {
-    padding: 8px 10px;
-    font-size: calc(((12) / (var(--font-size-base))) * 1em);
-    line-height: 1;
-    max-weight: 20px;
-    max-height: 20px;    
-  }
-  
-  .btn--share .icon {
-    vertical-align: middle;
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
-  }
-</style>
-
 {% javascript %}
   if (!customElements.get('product-modal')) {
     customElements.define('product-modal', class ProductModal extends ModalDialog {
@@ -620,6 +618,7 @@
     });
   }
 {% endjavascript %}
+
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 {%- if first_3d_model -%}
   <script type="application/json" id="ProductJSON-{{ product.id }}">
