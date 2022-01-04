@@ -373,6 +373,7 @@
                         </span>
                       {%- endif -%}
 
+                      {%comment %}
                       {%- if item.variant.available and item.unit_price_measurement -%}
                         <div class="unit-price caption">
                           <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
@@ -385,6 +386,8 @@
                           {{ item.variant.unit_price_measurement.reference_unit }}
                         </div>
                       {%- endif -%}
+                      {% endcomment %}
+                      
                     </div>
                   </td>
 
