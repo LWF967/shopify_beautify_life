@@ -18,7 +18,7 @@
 
     <div class="h_55">
       <p class="my_daily_deal_of_the_day_product_title_margin" style="font-weight:600;font-size: 18px;">{{ product.title }}</p>
-      <p class="my_font_size_content_default my_daily_deal_of_the_day_product_desc_margin">{{product.description}}</p>
+      <p class="my_font_size_content_default my_daily_deal_of_the_day_product_desc_margin">{{ product.description }}</p>
       <div class="my_daily_deal_of_the_day_product_price_margin">
         {% render 'price', product: product, price_class: '' %}
       </div>
@@ -69,7 +69,7 @@
         </div>
       </div>
       {%- else -%}
-      <div class="daily-product  " style="overflow:hidden;">
+      <div class="daily-product" style="overflow:hidden;">
         {%- if product.selected_or_first_available_variant.featured_media != null -%}
         {%- assign media = product.selected_or_first_available_variant.featured_media -%}
         <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
@@ -94,7 +94,7 @@
 
         {% endcomment %}
 
-        <div class=" my_deal_swiper-{{section.id}} "  style="overflow:hidden; height:100%;" > 
+        <div class=" my_deal_swiper-{{section.id}} " style="overflow:hidden; height:100%;" > 
           <div class=" swiper-wrapper " >
             {%- for media in product.media -%}
             <div class="swiper-slide product__media-item" style="background-color: transparent;">
@@ -316,7 +316,7 @@
   }
 
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background:black;
+    background: black;
   }
 
   .swiper-pagination-{{section.id}} {
@@ -565,7 +565,7 @@
 
   .left,.right {
     height: 100%;
-    width:50%;
+    width: 50%;
     flex: 1;
   }
 
@@ -714,7 +714,6 @@
     } 
   }
 
-
   @media screen and (max-width: 768px) {
     .felx_box {
       flex-direction: column;
@@ -853,7 +852,7 @@
   }
 
   .day-deal-product-form button.shopify-payment-button__more-options._2ogcW-Q9I-rgsSkNbRiJzA.shopify-payment-button__button--hidden {
-    display:none;
+    display: none;
   }
 
   .my_clear_padding .shopify-cleanslate > button.shopify-payment-button__button--hidden {
