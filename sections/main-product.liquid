@@ -51,7 +51,7 @@
     margin-right: 0 !important;
   }
   
-/*   .swiper {
+  .swiper {
     width: 100%;
     height: 100%;
   }
@@ -103,7 +103,7 @@
   .swiper-button-prev.main_product_prev:empty,
   .swiper-button-next.main_product_next:empty {
     display: flex;
-  } */
+  }
   
   .my_main_product_ul li modal-opener {
     width: 100%;
@@ -297,6 +297,10 @@
       margin: 0 0 !important;
     }
     
+/*     .my_main_product_product_media_list modal-opener {
+      display: none;
+    } */
+    
     .my_main_product_product_media_list .my_main_product_product_media_item {
       width: 100% !important;
     }
@@ -404,8 +408,6 @@
             border: none;
 		  }
         </style>
-        {% render 'swiper-main-product', section:section, product:product %}
-        {% comment %}
         <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_main_product_ul my_main_product_ul_nomargin" role="list">
           <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
             <div class="swiper my_swiper_detail">
@@ -432,7 +434,6 @@
             <div class="swiper-button-next main_product_next"></div>
           </div>
         </ul>
-        {% endcomment %}
         {%- elsif media_count > 1 -%}
         <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_main_product_ul my_main_product_ul_nomargin my_featured_product_beautify_noswiper" role="list" style="display:flex; margin: 0 0;">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
@@ -704,7 +705,7 @@
               {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
 				
               <pickup-availability class="product__pickup-availabilities no-js-hidden"
-                {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %} available{% endif %}
+                {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size == 0 %} available{% endif %}
                 data-base-url="{{ shop.url }}{{ routes.root_url }}"
                 data-variant-id="{{ product.selected_or_first_available_variant.id }}"
                 data-has-only-default-variant="{{ product.has_only_default_variant }}">
@@ -908,6 +909,35 @@
       {%- endfor -%}
     ]
   }
+</script>
+
+
+<script type="module">
+  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+  
+  var swiper = new Swiper(".my_swiper_detail", {
+      slidesPerView: 4,
+      spaceBetween: 10,
+      pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next.main_product_next',
+          prevEl: '.swiper-button-prev.main_product_prev',
+      },
+      breakpoints: {
+        0: {  //当屏幕宽度大于等于0 
+          slidesPerView: 2,
+        },
+        750: {  //当屏幕宽度大于等于750 
+          slidesPerView: 2,
+        },
+        990: {  //当屏幕宽度大于等于990
+          slidesPerView: 4,
+		}
+      }
+  });
 </script>
 
 {% schema %}
