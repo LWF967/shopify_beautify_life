@@ -688,6 +688,43 @@
   });
 </script>
 
+
+<script type="module">
+  function featuredProductZindexFun() {
+    let featured_product_promo_bar = document.getElementById('shopify-section-promo-bar');
+    let featured_product_top_bar = document.getElementById('shopify-section-top-bar');
+    let featured_product_header = document.getElementById('shopify-section-header');
+    let featured_product_header_hidden = document.getElementById('my_header_sticky_visible');
+    let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");                                                 
+
+    $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
+      if(featured_product_ProductModal.hasAttribute('open') == true) {
+        if(featured_product_header_hidden) {
+          featured_product_promo_bar.style.visibility = "hidden";
+          featured_product_top_bar.style.visibility = "hidden";
+          featured_product_header.style.visibility = "hidden";
+          featured_product_header_hidden.style.visibility = "hidden";
+        }
+      } else if(featured_product_ProductModal.hasAttribute('open') == false) {
+        if(featured_product_header_hidden) {
+          featured_product_promo_bar.style.visibility = "visible";
+          featured_product_top_bar.style.visibility = "visible";
+          featured_product_header.style.visibility = "visible";
+          featured_product_header_hidden.style.visibility = "visible";
+        }
+      }
+    });
+  }
+  featuredProductZindexFun();
+  
+  var myfeaturedProductZindexFunFreshDesignMode = Shopify.designMode || false;
+  if(myfeaturedProductZindexFunFreshDesignMode){
+    document.addEventListener('shopify:section:load',() => {
+      featuredProductZindexFun();
+    },true);
+  }
+</script>
+
 {% schema %}
 {
   "name": "featured-product-beautify",
@@ -929,39 +966,3 @@
   ]
 }
 {% endschema %}
-
-<script type="module">
-  function featuredProductZindexFun() {
-    let featured_product_promo_bar = document.getElementById('shopify-section-promo-bar');
-    let featured_product_top_bar = document.getElementById('shopify-section-top-bar');
-    let featured_product_header = document.getElementById('shopify-section-header');
-    let featured_product_header_hidden = document.getElementById('my_header_sticky_visible');
-    let featured_product_ProductModal = document.querySelector("#ProductModal-{{ section.id }}");                                                 
-
-    $("#ProductModal-{{ section.id }}").bind('DOMSubtreeModified', function() {  
-      if(featured_product_ProductModal.hasAttribute('open') == true) {
-        if(featured_product_header_hidden) {
-          featured_product_promo_bar.style.visibility = "hidden";
-          featured_product_top_bar.style.visibility = "hidden";
-          featured_product_header.style.visibility = "hidden";
-          featured_product_header_hidden.style.visibility = "hidden";
-        }
-      } else if(featured_product_ProductModal.hasAttribute('open') == false) {
-        if(featured_product_header_hidden) {
-          featured_product_promo_bar.style.visibility = "visible";
-          featured_product_top_bar.style.visibility = "visible";
-          featured_product_header.style.visibility = "visible";
-          featured_product_header_hidden.style.visibility = "visible";
-        }
-      }
-    });
-  }
-  featuredProductZindexFun();
-  
-  var myfeaturedProductZindexFunFreshDesignMode = Shopify.designMode || false;
-  if(myfeaturedProductZindexFunFreshDesignMode){
-    document.addEventListener('shopify:section:load',() => {
-      featuredProductZindexFun();
-    },true);
-  }
-</script>
