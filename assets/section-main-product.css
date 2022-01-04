@@ -165,7 +165,7 @@ fieldset.product-form__input .form__label {
 }
 
 .product-form__input input[type='radio']:checked + label {
-  background-color: var(--color-label-sale);
+  background-color: var(--color-foreground);
   color: white;
   border-color: var(--color-label-sale);
 }
