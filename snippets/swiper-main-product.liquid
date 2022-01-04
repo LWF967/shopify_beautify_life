@@ -83,28 +83,34 @@
 
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+  function my_main_swiper_listen() {
+    var swiper = new Swiper(".my_swiper_detail_{{section.id}}", {
+        slidesPerView: 4,
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next.main_product_next_{{section.id}}',
+            prevEl: '.swiper-button-prev.main_product_prev_{{section.id}}',
+        },
+        breakpoints: {
+          0: {  //当屏幕宽度大于等于0 
+            slidesPerView: 2,
+          },
+          750: {  //当屏幕宽度大于等于750 
+            slidesPerView: 2,
+          },
+          990: {  //当屏幕宽度大于等于990
+            slidesPerView: 4,
+          }
+        }
+    });
+  }
+  my_main_swiper_listen();
   
-  var swiper = new Swiper(".my_swiper_detail_{{section.id}}", {
-      slidesPerView: 4,
-      spaceBetween: 10,
-      pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-      },
-      navigation: {
-          nextEl: '.swiper-button-next.main_product_next_{{section.id}}',
-          prevEl: '.swiper-button-prev.main_product_prev_{{section.id}}',
-      },
-      breakpoints: {
-        0: {  //当屏幕宽度大于等于0 
-          slidesPerView: 2,
-        },
-        750: {  //当屏幕宽度大于等于750 
-          slidesPerView: 2,
-        },
-        990: {  //当屏幕宽度大于等于990
-          slidesPerView: 4,
-		}
-      }
-  });
+  document.addEventListener('shopify:section:load', () => {
+    my_main_swiper_listen();
+  }, true)
 </script>
