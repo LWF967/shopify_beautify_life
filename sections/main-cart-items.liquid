@@ -324,6 +324,9 @@
                         <span class="price price--end my_cart_price_font_size">
                           {{ item.original_price | money }}
                         </span>
+                      <span>
+                      	{{item.variant.compare_at_price |money }}
+                      </span>
                       {%- endif -%}
 
                       {%- if item.variant.available and item.unit_price_measurement -%}
