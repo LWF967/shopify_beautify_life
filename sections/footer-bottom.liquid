@@ -105,7 +105,6 @@
           
           <div>
             {%- if localization.available_countries.size > 1 -%}
-            {{ localization.available_countries }}
             <noscript>
               {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
               <div class="localization-form__select">
@@ -172,7 +171,6 @@
           
           <div>
             {%- if localization.available_countries.size > 1 -%}
-            {{ localization.available_countries }}
             <noscript>
               {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
               <div class="localization-form__select">
