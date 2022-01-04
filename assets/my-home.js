@@ -130,7 +130,7 @@ function my_header_and_totop() {
     let my_backtop = document.getElementById('my_backtop');
     
     
-    let drawer = document.getElementsByName('details-disclosure');
+    let drawer = document.getElementsByTagName('details-disclosure');
 console.log(drawer.length);
     
     
