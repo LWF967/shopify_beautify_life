@@ -19,7 +19,6 @@
   .blog-articles > *:nth-child(4),
   .blog-articles > *:last-child:nth-child(2),
   .blog-articles > *:last-child:nth-child(5) {
-/*     grid-column: span 2; */
     text-align: center;
   }
 }
