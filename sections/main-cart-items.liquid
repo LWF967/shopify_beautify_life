@@ -323,6 +323,7 @@
                       {%- else -%}
                         <span class="price price--end my_cart_price_font_size">
                           {{ item.original_line_price | divided_by: item.quantity | money }}
+                          {{ item.unit_price | money }}
                         </span>
                       {%- endif -%}
 
