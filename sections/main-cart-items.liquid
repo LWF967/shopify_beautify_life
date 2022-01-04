@@ -310,14 +310,14 @@
                           </dt>
                           <dd>
                             <s class="cart-item__old-price price price--end my_cart_price_font_size">
-                              {{ item.original_line_price | money }}
+                              {{ item.original_line_price | divided_by: item.quantity | money }}
                             </s>
                           </dd>
                           <dt class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
                           <dd class="price price--end my_cart_price_font_size">
-                            {{ item.final_line_price | money }}
+                            {{ item.final_line_price | divided_by: item.quantity | money }}
                           </dd>
                         </dl>
                       {%- else -%}
