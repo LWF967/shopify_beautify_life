@@ -70,8 +70,6 @@
 
 .collection-product-count__text {
   font-size: 1.4rem;
-/*   line-height: 1.5;
-  margin: 0; */
 }
 
 .collection-product-count__text.loading {
@@ -243,7 +241,6 @@
   display: block;
   color: rgba(var(--color-foreground), 0.85);
   font-size: 1.4rem;
-/*   margin: -1.5rem 2rem 0 0; */
 }
 
 .facets__reset {
@@ -257,8 +254,6 @@
 .facets__summary {
   color: rgba(var(--color-foreground), 0.75);
   font-size: 1.4rem;
-/*   margin-bottom: 1.5rem; */
-/*   padding: 0 1.75rem 0 0; */
   padding: 0 3rem 0 0;
   
 }
@@ -587,11 +582,8 @@ a.active-facets__button.focused .active-facets__button-inner,
   left: 0;
   right: 0;
   bottom: 0;
-/*   z-index: 100; */
   z-index: 101;
-  /* lzx change start */
   background-color: rgba(var(--color-image-overlay-rgb),var(--opacity-image-overlay));
-/*   lzx change end */
   pointer-events: none;
 }
 
@@ -673,21 +665,15 @@ a.active-facets__button.focused .active-facets__button-inner,
   padding-bottom: 0.5rem;
   display: flex;
   align-items: center;
-/*   color: rgba(var(--color-link), var(--alpha-link)); */
-/* lzx change */
   color: var(--color-foreground);
 }
 
 .mobile-facets__open:hover {
-/* lzx change */
-/*   color: rgb(var(--color-link)); */
   color: var(--color-foreground);
 }
 
 .mobile-facets__open:hover line,
 .mobile-facets__open:hover circle {
-/* lzx change */
-/*   stroke: rgb(var(--color-link)); */
   color: var(--color-foreground);
 }
 
@@ -710,8 +696,6 @@ a.active-facets__button.focused .active-facets__button-inner,
 
 .mobile-facets__open line,
 .mobile-facets__open circle {
-/*   stroke: rgba(var(--color-link), var(--alpha-link)); */
-/* lzx change */
   stroke: var(--color-foreground);
 }
 
@@ -724,7 +708,6 @@ a.active-facets__button.focused .active-facets__button-inner,
   right: 1rem;
   width: 4.4rem;
   height: 4.4rem;
-/*   z-index: 101; */
   z-index: 102;
   opacity: 0;
   transition: opacity var(--duration-short) ease;
@@ -819,10 +802,7 @@ details.menu-opening .mobile-facets__close svg {
   width: 100%;
   bottom: 0;
   left: 0;
-/*   background-color: rgb(var(--color-background)); */
-/* lzx change */
   background-color: #fff;
-/* end */
   z-index: 3;
   transform: translateX(100%);
   visibility: hidden;
