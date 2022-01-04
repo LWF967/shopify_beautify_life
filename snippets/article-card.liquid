@@ -30,8 +30,7 @@
             width="{{ article.image.width }}"
             height="{{ article.image.height }}"
             loading="lazy"
-            class="motion-reduce"
-          >
+            class="motion-reduce">
         </div>
       </div>
     {%- endif -%}
@@ -63,10 +62,6 @@
       {%- else -%}
       {{ article.content | strip_html | truncate: 30 }}
       {%- endif -%}
-
-
-
-
     </p>
     {%- endif -%}
     <div class="article-card__footer">
@@ -126,7 +121,6 @@
   
   .my_article_card_btn {
     background: #fff;
-/*     color: #000;*/
     border: 1px solid #000; 
     color:{{settings.colors_secondary_labels_and_borders}};
     border-color:{{settings.colors_secondary_labels_and_borders}};
