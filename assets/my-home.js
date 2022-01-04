@@ -106,7 +106,7 @@ let sticky = document.getElementsByClassName('my_footer_sticky');
 // let my_header_sticky = document.getElementsByClassName('my_header_sticky');
 // let my_backtop = document.getElementById('my_backtop');
 
-    let drawer = document.getElementsByTagName('details-disclosure');
+    let drawer = document.querySelectorAll('details-disclosure details');
 console.log(drawer.length);
     
 
