@@ -53,7 +53,7 @@
       {%- else -%}
       <div style="width:100%;height:auto;"> {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}  </div>
       {%- endif -%} 
-      <div class="slideshow_text_box_{{section.id}}  {{ block.settings.text_alignment }}"    > 
+      <div class="slideshow_text_box_{{section.id}}  {{ block.settings.text_alignment }}"> 
         <h1 class="my_font_weight_default my_slideshow_beautify_heading_margin
                    {% if section.settings.text_size == 'medium' %}my_slideshow_beautify_heading_text_size_medium
                    {% elsif section.settings.text_size == 'large' %}my_slideshow_beautify_heading_text_size_large
@@ -64,7 +64,7 @@
 
         <div class="button {% if block.settings.slider_button_text != blank and block.settings.slider_button_link != blank %} banner__buttons--multiple{% endif %} my_slideshow_beautify_btn_margin" >
           {%- if block.settings.slider_button_text != blank -%}
-          <a{% if block.settings.slider_button_link != blank %} href="{{ block.settings.slider_button_link }}"{% endif %} class="button  button--primary my_font_weight_default my_button_font_size_default my_button_text"{% if block.settings.slider_button_link == blank %} aria-disabled="true"{% endif %}>{{ block.settings.slider_button_text | escape }}</a>
+          <a {% if block.settings.slider_button_link != blank %} href="{{ block.settings.slider_button_link }}"{% endif %} class="button  button--primary my_font_weight_default my_button_font_size_default my_button_text"{% if block.settings.slider_button_link == blank %} aria-disabled="true"{% endif %}>{{ block.settings.slider_button_text | escape }}</a>
           {%- endif -%}
         </div>
       </div>
@@ -92,29 +92,28 @@
   }
 
   /*   定义轮播点 */
-
   {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
-    background:#4e4e4e;
+    background: #4e4e4e;
     border: 1.5px solid rgb(189 188 188 / 28%);
   }
 
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background:black;
+    background: black;
   }
   {% elsif section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'light' %}
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
-    background:#4e4e4e;
+    background: #4e4e4e;
     border: 1.5px solid rgb(189 188 188 / 28%);
   }
 
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background:white;
+    background: white;
   }
   {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'dark' %}
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
     border: 1px solid #323232;
-    background:white;
+    background: white;
   }
 
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -123,7 +122,7 @@
   {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light'%}
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
     border: 1px solid #323232;
-    background:#adadad;
+    background: #adadad;
   }
 
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -142,35 +141,36 @@
     padding: 0px;
     margin: 0;
   }
+  
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
-    float:left;
-    width:16px;
-    height:16px;
+    float: left;
+    width: 16px;
+    height: 16px;
     text-align: center;
     line-height: 16px;
     font-size: 10px;
     border-radius: 50%;
     text-align: center;
-    transition:all 1.5s;
+    transition: all 1.5s;
     margin: 0 14px;
     list-style-type: none;
   }
+  
   /*    定义按钮 */
-
   .swiper-button-next-{{section.id}},
   .swiper-button-prev-{{section.id}} {
     position: absolute;
     top: 50%;
     width: calc(var(--swiper-navigation-size)/ 44 * 27);
-      height: var(--swiper-navigation-size);
-        margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
-          z-index: 10;
-          cursor: pointer;
-          display: flex !important;
-          align-items: center;
-          justify-content: center;
-          color: var(--swiper-navigation-color, var(--swiper-theme-color))
-            }
+	height: var(--swiper-navigation-size);
+	margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+	z-index: 10;
+	cursor: pointer;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	color: var(--swiper-navigation-color, var(--swiper-theme-color))
+  }
 
   .swiper-button-next-{{section.id}}.swiper-button-disabled,
   .swiper-button-prev-{{section.id}}.swiper-button-disabled {
@@ -330,6 +330,7 @@
     overflow: hidden;
     box-sizing: border-box;
   }
+  
   .product-box {
     transform: translate(0);
     width: 100%;
@@ -349,7 +350,7 @@
   }
 
   .productitem--image img {
-    max-height: 185px
+    max-height: 185px;
   }
 
   .productitem {
@@ -478,7 +479,6 @@
     border-radius: 0;
     transform: rotate(45deg) !important;
   }
-
 
   .button_style3 p svg:nth-child(1) {
     transform: translate(-62.5%,-50%) rotate(318deg) !important;
@@ -702,7 +702,6 @@
       text-align: center;
       top: 50%;
       left: 50%;
-
     }
 
     .middle_right {
@@ -734,13 +733,14 @@
     .productitem--actions{
       display: none;
     }
-
   }
+  
   @media screen and (min-width:541px) and (max-width:768px) {
     .productgrid--item {
       width: 23.5%;
     }
   }
+  
   @media screen and (max-width:540px) {
     .productgrid--item {
       width: 48%;
@@ -935,7 +935,7 @@
   window.addEventListener("resize", debounce(function(){
  	ScreenSizeChange()
 	})
-    );
+  );
 
 </script>
 
