@@ -157,7 +157,7 @@ function my_header_and_totop() {
         content.style.top = "-" + (header_wrapper.style.height);
         content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
         if(drawer.hasAttribute('open') == true) {
-          console.log("asd");
+          drawer.removeAttribute('open');
         }
       } else if(content.style.position == 'relative') {
         promo_bar.style.zIndex = 898;
