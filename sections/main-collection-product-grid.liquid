@@ -43,18 +43,20 @@
     padding: 0 15px 5rem;
   }
 
+  /* lzx change start */
   .shopify-payment-button__button--hidden {
     display: none;
   }
 
   .shopify-payment-button__button--unbranded {
     background-color: var(--color-button);
-    box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
-    color: rgb(var(--color-button-text));
-    font-size: 1.4rem;
-    line-height: 1.2;
-    letter-spacing: 0.07rem;
-  }
+      box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
+        color: rgb(var(--color-button-text));
+          font-size: 1.4rem;
+          line-height: 1.2;
+          letter-spacing: 0.07rem;
+          }
+  /* lzx change end */
 
   @media screen and (max-width: 750px) {
     .my_collection_filters_margin {
@@ -593,19 +595,16 @@
 </div>
 
 <style>
-  #CollectionProductCountDesktop {
+  #CollectionProductCountDesktop{
     font-style: oblique;
   }
-  
-  #main-collection-filters {
-    border-top: 1px solid {{settings.color_page_borders_and_lines}};
-    border-bottom: 1px solid {{settings.color_page_borders_and_lines}};  
+  #main-collection-filters{
+    border-top:1px solid {{settings.color_page_borders_and_lines}};
+    border-bottom:1px solid {{settings.color_page_borders_and_lines}};  
   }
-  
   .collection-filters {
-    padding: 0 5rem;
+    padding:0 5rem;
   } 
-  
   summary.mobile-facets__open-wrapper.y-center 
   {
     display: inline-flex;
@@ -710,13 +709,13 @@
       "type": "text",
       "id": "main_collection_product_grid_margin_top",
       "label": "Margin top",
-      "info": "t:sections.margintip.settings.margin_top_tip.label"
+      "info": "t:sections.margintip.settings.margin_tip.label"
     },
     {
       "type": "text",
       "id": "main_collection_product_grid_margin_bottom",
       "label": "Margin bottom",
-      "info": "t:sections.margintip.settings.margin_bottom_tip.label"
+      "info": "t:sections.margintip.settings.margin_tip.label"
     }
   ]
 }
@@ -731,11 +730,12 @@
   let filter_and_sort = document.getElementsByClassName('mobile-facets__open-wrapper focus-offset y-center')[0]; 
   filter_and_sort.onclick = function() {
     if(menuopen.length > 0) {
-      
+      //       console.log(1);
     } else {
       main_promobar.style.zIndex = 2;
       main_header.style.zIndex = 2;
       main_top_bar.style.zIndex = 3;
+      //       console.log(2);
     }
   }
   
