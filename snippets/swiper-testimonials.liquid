@@ -41,16 +41,16 @@
 
   {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
   .swiper_pagination_testimonials.swiper_pagination_testimonials_{{section.id}} .swiper-pagination-bullet {
-    background:#4e4e4e;
+    background: #4e4e4e;
     border: 1.5px solid rgb(189 188 188 / 28%);
   }
 
   .swiper_pagination_testimonials.swiper_pagination_testimonials_{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background:black;
+    background: black;
   }
   {% elsif section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'light' %}
   .swiper_pagination_testimonials.swiper_pagination_testimonials_{{section.id}} .swiper-pagination-bullet {
-    background:#4e4e4e;
+    background: #4e4e4e;
     border: 1.5px solid rgb(189 188 188 / 28%);
   }
 
@@ -60,20 +60,20 @@
   {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'dark' %}
   .swiper_pagination_testimonials.swiper_pagination_testimonials_{{section.id}} .swiper-pagination-bullet {
     border: 1px solid #323232;
-    background:white;
+    background: white;
   }
 
   .swiper_pagination_testimonials.swiper_pagination_testimonials_{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background:black;
+    background: black;
   }
   {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light'%}
   .swiper_pagination_testimonials.swiper_pagination_testimonials_{{section.id}} .swiper-pagination-bullet {
     border: 1px solid #323232;
-    background:#adadad;
+    background: #adadad;
   }
 
   .swiper_pagination_testimonials.swiper_pagination_testimonials_{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background:white;
+    background: white;
   }
   {% endif %}	
 </style>
@@ -116,8 +116,7 @@
                  alt="{{ block.settings.image.alt }}"
                  height="{{ block.settings.image.height }}"
                  width="{{ block.settings.image.width }}"
-                 loading="lazy"
-                 >
+                 loading="lazy" >
           </div>
         </div>
         {%- endif -%}
@@ -132,7 +131,6 @@
           {%- if block.settings.testimonials_author_text != blank -%}
           <div class="tc my_font_size_content_default" style="margin-top: 18px;">{{block.settings.testimonials_author_text}}</div>	 
           {% endif %}
-
         </div>            
       </div>
     </li>
