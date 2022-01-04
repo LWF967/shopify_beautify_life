@@ -22,73 +22,50 @@
 
   {%- endstyle -%}
 
- {%- if section.blocks.size > 0 %}
-     {%- style -%}
+  {%- if section.blocks.size > 0 %}
+    {%- style -%}
       {%- if se_height == 'adapt_f' -%}
 
       {%- assign block = se_blocks | where: "type", 'slideshow_img2' | first -%}
       {%- assign ratio = block.settings.image.aspect_ratio |default:1.7777777777777777 -%}
       {%- assign img_h = block.settings.image.height  -%}				
-
-      .feature-artworks{ max-height: 790px;min-height:300px}
-      .slideshow_content{ max-height: 790px;min-height:300px}
-
-      .feature-artworks{ height: {{img_h}}px}
-      .slideshow_content{ height: {{img_h}}px}
+      .feature-artworks{ max-height: 790px;min-height:300px; }
+      .slideshow_content{ max-height: 790px;min-height:300px; }
+      .feature-artworks{ height: {{img_h}}px; }
+      .slideshow_content{ height: {{img_h}}px; }
 
       @media screen and (max-width: 750px) {  
-      .feature-artworks{ height: {{img_h}}px}
-      .slideshow_content{ height: {{img_h}}px}
+        .feature-artworks{ height: {{img_h}}px; }
+        .slideshow_content{ height: {{img_h}}px; }
       }
+
       @media screen and (max-width: 990px) {  
-
-      .feature-artworks{ height: {{img_h}}px}
-      .slideshow_content{ height: {{img_h}}px}
-
+        .feature-artworks{ height: {{img_h}}px; }
+        .slideshow_content{ height: {{img_h}}px; }
       }
       {%- endif -%}
 
       {%- for block in se_blocks -%} {%- assign bid = block.id -%}{%- assign btype = block.type -%}
       {%- if se_height == 'adapt' -%}
       {%- assign img_h = block.settings.image.height  -%}	
-      .feature-artworks{ max-height: 790px;min-height:300px}
-      .slideshow_content{ max-height: 790px;min-height:300px}
-
-      .feature_box_{{section.id}}{ height: {{img_h}}px}
-      .slideshow_box_{{section.id}}{ height: {{img_h}}px}
+      .feature-artworks{ max-height: 790px;min-height:300px; }
+      .slideshow_content{ max-height: 790px;min-height:300px; }
+      .feature_box_{{section.id}}{ height: {{img_h}}px; }
+      .slideshow_box_{{section.id}}{ height: {{img_h}}px; }
 
       @media screen and (max-width: 750px) {  
-
-      .feature-artworks{ max-height: 350px;min-height:200px }
-      .slideshow_content{ max-height: 350px;min-height:200px } 
-
+        .feature-artworks{ max-height: 350px;min-height:200px; }
+        .slideshow_content{ max-height: 350px;min-height:200px; } 
       }
+
       @media screen and (max-width: 990px) {  
-
-      .feature-artworks{ max-height:400px;min-height:200px }
-      .slideshow_content{ max-height: 400px;min-height:200px } 
-
+        .feature-artworks{ max-height:400px;min-height:200px; }
+        .slideshow_content{ max-height: 400px;min-height:200px; } 
       }
       {%- endif -%}
       {%- endfor -%}
-     {%- endstyle -%}
+    {%- endstyle -%}
   {%- endif -%}
-<script>
-
-//   这是为了测试图片大小 ，后续轮播图切换 
-  
-//   let a = 0;   
-//   for(var i=0;i<document.getElementsByClassName('slideshow_content').length;i++){
-//   		a+=1;
-//       let img=document.getElementsByClassName('slideshow_content')[a].querySelector('img')
-//       img.onload = function(){
-//         console.log(img.height,' ',a );
-//         console.log(img.width,'',a);
-//       }
-  
-//    }
-
-</script>
 {% schema %}
   {
     "name": "Slideshow Beautify2",
