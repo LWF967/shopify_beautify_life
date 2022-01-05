@@ -136,7 +136,7 @@ function my_header_and_totop() {
         header.classList.add('my_header_sticky_settings');
         content.style.transition = 'transform .3s';
         content.style.top = "-" + (header_wrapper.style.height);
-        content.style.transform = 'translate3d(0,' + header.style.height + ', 0)';
+        content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
 //         for(let i = 0; i < drawer.length; i++) {
 //           if(drawer[i].hasAttribute('open') == true) {
 //             drawer[i].removeAttribute('open');
