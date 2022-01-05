@@ -693,6 +693,7 @@
                 data-variant-id="{{ product.selected_or_first_available_variant.id }}"
                 data-has-only-default-variant="{{ product.has_only_default_variant }}">
                 111
+                <template>
                  
                   <pickup-availability-preview class="pickup-availability-preview">
                     {% render 'icon-unavailable' %}
@@ -701,6 +702,7 @@
                       <button class="pickup-availability-button link link--text underlined-link">{{ 'products.product.pickup_availability.refresh' | t }}</button>
                     </div>
                   </pickup-availability-preview>
+                </template>
               </pickup-availability>
             </div>
 
