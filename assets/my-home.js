@@ -135,11 +135,6 @@ function my_header_and_totop() {
         content.style.transition = 'transform .3s';
         content.style.top = "-" + (header_wrapper.style.height);
         content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
-//         for(let i = 0; i < drawer.length; i++) {
-//           if(drawer[i].hasAttribute('open') == true) {
-//             drawer[i].removeAttribute('open');
-//           }
-//         }
       } else if(content.style.position == 'relative') {
         promo_bar.style.zIndex = 898;
         top_bar.style.zIndex = 899;
