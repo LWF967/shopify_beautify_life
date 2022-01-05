@@ -126,6 +126,8 @@ function my_header_and_totop() {
 //         header_wrapper.style.color = "red";
       } else {
         content.style.position = 'relative';
+                header_wrapper.style.height = header_wrapper_height + 'px';
+
       }
       if(content.style.position == 'fixed') {
         promo_bar.style.zIndex = 900;
