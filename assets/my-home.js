@@ -116,7 +116,9 @@ function my_header_and_totop() {
 //     let vish = document.getElementById('my_header_sticky_visible').scrollHeight;
 //     let vis = document.getElementById('my_header_sticky_visible');
 
-	console.log(all_header_height);
+	console.log($(promo_bar).height());
+    console.log($(top_bar).height());
+    console.log($(header_zx).height());
     
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
