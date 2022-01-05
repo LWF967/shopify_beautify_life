@@ -387,6 +387,7 @@
 		{% endcomment %}
         
         <div class="product__media-list my_main_product_product_media_list">
+          {{  product.featured_image }}
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
           {%- assign media = product.selected_or_first_available_variant.featured_media -%}
           <div class="product__media-item my_main_product_product_media_item" data-media-id="{{ section.id }}-{{ media.id }}">
