@@ -276,6 +276,7 @@ my_home();
 
 window.onload = function() {
   my_home();
+  my_header_and_totop();
 }
 
 $(window).resize(function(){
