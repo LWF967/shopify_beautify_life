@@ -137,7 +137,7 @@ function my_header_and_totop() {
         content.style.transition = 'transform .3s';
         content.style.top = "-" + (all_header_height+promo_bar.dataset.mheight) + "px";
         content.style.transform = 'translate3d(0,' + header.style.height + ', 0)';
-        	console.log(promo_bar.dataset.mheight);
+//         	console.log(promo_bar.dataset.mheight);
         
       } else if(content.style.position == 'relative') {
         promo_bar.style.zIndex = 898;
@@ -150,7 +150,7 @@ function my_header_and_totop() {
         content.style.transform = 'none';
         content.style.transition = 'none';
         
-        	console.log(promo_bar.dataset.mheight);
+//         	console.log(promo_bar.dataset.mheight);
       }
     }
 
