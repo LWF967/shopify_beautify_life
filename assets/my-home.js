@@ -113,7 +113,7 @@ function my_header_and_totop() {
     let my_header_sticky = document.getElementsByClassName('my_header_sticky');
     let my_backtop = document.getElementById('my_backtop');
     
-    let vish = document.getElementById('my_header_sticky_visible').height();
+    let vish = document.getElementById('my_header_sticky_visible').scrollHeight;
     let vis = document.getElementById('my_header_sticky_visible');
 
 
