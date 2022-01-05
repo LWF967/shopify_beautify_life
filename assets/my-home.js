@@ -138,8 +138,6 @@ function my_header_and_totop() {
         content.style.top = "-" + (all_header_height) + "px";
         content.style.transform = 'translate3d(0,' + header.style.height + ', 0)';
         	console.log(promo_bar.dataset.mheight);
-    console.log($(top_bar).height());
-    console.log($(header_zx).height());
         
       } else if(content.style.position == 'relative') {
         promo_bar.style.zIndex = 898;
@@ -153,8 +151,6 @@ function my_header_and_totop() {
         content.style.transition = 'none';
         
         	console.log(promo_bar.dataset.mheight);
-    console.log($(top_bar).height());
-    console.log($(header_zx).height());
       }
     }
 
