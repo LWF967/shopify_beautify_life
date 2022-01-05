@@ -113,8 +113,8 @@ function my_header_and_totop() {
     let my_header_sticky = document.getElementsByClassName('my_header_sticky');
     let my_backtop = document.getElementById('my_backtop');
     
-    let vish = document.getElementById('my_header_sticky_visible').scrollHeight;
-    let vis = document.getElementById('my_header_sticky_visible');
+//     let vish = document.getElementById('my_header_sticky_visible').scrollHeight;
+//     let vis = document.getElementById('my_header_sticky_visible');
 
 
     
@@ -125,7 +125,7 @@ function my_header_and_totop() {
         content.style.position = 'fixed';
         content.style.width = '100%';
 //         header_wrapper.style.height = header_wrapper_height + 'px';
-        vis.style.height = vish + 'px';
+//         vis.style.height = vish + 'px';
       } else {
         content.style.position = 'relative';
       }
