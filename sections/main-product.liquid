@@ -692,7 +692,7 @@
                 data-base-url="{{ shop.url }}{{ routes.root_url }}"
                 data-variant-id="{{ product.selected_or_first_available_variant.id }}"
                 data-has-only-default-variant="{{ product.has_only_default_variant }}">
-<!--                 <template> -->
+                <template>
                   <pickup-availability-preview class="pickup-availability-preview">
                     {% render 'icon-unavailable' %}
                     <div class="pickup-availability-info">
@@ -700,7 +700,7 @@
                       <button class="pickup-availability-button link link--text underlined-link">{{ 'products.product.pickup_availability.refresh' | t }}</button>
                     </div>
                   </pickup-availability-preview>
-<!--                 </template> -->
+                </template>
               </pickup-availability>
             </div>
 
