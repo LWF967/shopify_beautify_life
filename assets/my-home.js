@@ -122,8 +122,8 @@ function my_header_and_totop() {
       if(toTop >= all_header_height) {
         content.style.position = 'fixed';
         content.style.width = '100%';
-        header_wrapper.style.height = header_wrapper_height + 'px';
-        header_wrapper.style.color = "red";
+//         header_wrapper.style.height = header_wrapper_height + 'px';
+//         header_wrapper.style.color = "red";
       } else {
         content.style.position = 'relative';
       }
