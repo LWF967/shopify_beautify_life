@@ -115,10 +115,6 @@ function my_header_and_totop() {
     
 //     let vish = document.getElementById('my_header_sticky_visible').scrollHeight;
 //     let vis = document.getElementById('my_header_sticky_visible');
-
-	console.log(promo_bar.dataset.mheight);
-    console.log($(top_bar).height());
-    console.log($(header_zx).height());
     
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -141,6 +137,10 @@ function my_header_and_totop() {
         content.style.transition = 'transform .3s';
         content.style.top = "-" + (all_header_height) + "px";
         content.style.transform = 'translate3d(0,' + header.style.height + ', 0)';
+        	console.log(promo_bar.dataset.mheight);
+    console.log($(top_bar).height());
+    console.log($(header_zx).height());
+        
       } else if(content.style.position == 'relative') {
         promo_bar.style.zIndex = 898;
         top_bar.style.zIndex = 899;
@@ -151,6 +151,10 @@ function my_header_and_totop() {
         content.style.top = 0 + 'px';
         content.style.transform = 'none';
         content.style.transition = 'none';
+        
+        	console.log(promo_bar.dataset.mheight);
+    console.log($(top_bar).height());
+    console.log($(header_zx).height());
       }
     }
 
