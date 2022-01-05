@@ -123,6 +123,7 @@ function my_header_and_totop() {
         content.style.position = 'fixed';
         content.style.width = '100%';
         header_wrapper.style.height = header_wrapper_height + 'px';
+        header_wrapper.style.color = "red";
       } else {
         content.style.position = 'relative';
       }
