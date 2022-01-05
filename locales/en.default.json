@@ -114,6 +114,10 @@
   },
   "blogs": {
     "article": {
+      "comments": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
+      },
       "blog": "Blog",
       "view_all": "View more",
       "view_all_blogs": "View all blogs",
@@ -124,6 +128,15 @@
       "read_more_title": "Read more: {{ title }}",
       "back_to_blog": "Back to {{ title }}",
       "tags": "Tags",
+      "moderated": "Please note, comments need to be approved before they are published.",
+      "comment_form_title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Comment",
+      "post": "Post comment",
+      "share": "Share this article",
+      "success": "Your comment was posted successfully! Thank you!",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
       "article_with_count": {
         "one": "{{ count }} article",
         "other": "{{ count }} articles"
