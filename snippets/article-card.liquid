@@ -60,7 +60,7 @@
       {%- if article.excerpt.size > 0 -%}
       {{ article.excerpt | strip_html | truncate: 30 }}
       {%- else -%}
-      {{ article.content | strip_html | truncate: 30 }}
+      {{ article.excerpt_or_content | strip_html | truncate: 30 }}
       {%- endif -%}
     </p>
     {%- endif -%}
