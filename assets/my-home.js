@@ -112,6 +112,9 @@ function my_header_and_totop() {
     let content = document.getElementsByClassName('content')[0];
     let my_header_sticky = document.getElementsByClassName('my_header_sticky');
     let my_backtop = document.getElementById('my_backtop');
+    
+    let vish = document.getElementById('my_header_sticky_visible').height();
+    let vis = document.getElementById('my_header_sticky_visible');
 
 
     
@@ -121,7 +124,8 @@ function my_header_and_totop() {
       if(toTop >= all_header_height) {
         content.style.position = 'fixed';
         content.style.width = '100%';
-        header_wrapper.style.height = header_wrapper_height + 'px';
+//         header_wrapper.style.height = header_wrapper_height + 'px';
+        vis.style.height = vish + 'px';
       } else {
         content.style.position = 'relative';
       }
@@ -135,6 +139,11 @@ function my_header_and_totop() {
         content.style.transition = 'transform .3s';
         content.style.top = "-" + (header_wrapper.style.height);
         content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
+//         for(let i = 0; i < drawer.length; i++) {
+//           if(drawer[i].hasAttribute('open') == true) {
+//             drawer[i].removeAttribute('open');
+//           }
+//         }
       } else if(content.style.position == 'relative') {
         promo_bar.style.zIndex = 898;
         top_bar.style.zIndex = 899;
