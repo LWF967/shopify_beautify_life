@@ -125,13 +125,10 @@ function my_header_and_totop() {
       if(toTop >= all_header_height) {
         content.style.position = 'fixed';
         content.style.width = '100%';
-        header_wrapper.style.height = header.style.height + 'px';
-        console.log(header.style.height);
+        header_wrapper.style.height = header.style.height;
 //         vis.style.height = vish + 'px';
       } else {
         content.style.position = 'relative';
-        header_wrapper.style.height = header.style.height + 'px';
-                console.log("123123123==="+header.style.height);
       }
       if(content.style.position == 'fixed') {
         promo_bar.style.zIndex = 900;
