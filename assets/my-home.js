@@ -112,7 +112,6 @@ function my_header_and_totop() {
     let content = document.getElementsByClassName('content')[0];
     let my_header_sticky = document.getElementsByClassName('my_header_sticky');
     let my_backtop = document.getElementById('my_backtop');
-    
 
     
 //     let vish = document.getElementById('my_header_sticky_visible').scrollHeight;
@@ -130,6 +129,7 @@ function my_header_and_totop() {
 //         vis.style.height = vish + 'px';
       } else {
         content.style.position = 'relative';
+        header_wrapper.style.height = header.style.height + 'px';
       }
       if(content.style.position == 'fixed') {
         promo_bar.style.zIndex = 900;
