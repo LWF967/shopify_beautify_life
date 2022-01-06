@@ -34,7 +34,6 @@
 
 <div class="card-wrapper">
   <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
-    <!--     <div class="card card--product  {% if product_card_product.featured_media == nil %} card--text-only card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}" tabindex="-1"> -->    
     <div class="card card--product  {% if product_card_product.featured_media == nil %} card--outline card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}" tabindex="-1">
       <div class="card__inner">
         {%- if product_card_product.featured_media -%}
@@ -146,8 +145,6 @@
 
           </div>
         </div>
-
-        <!--           <div class="card__content"><h2 class="card__text h3">{{ product_card_product.title }}</h2></div> -->
         {%- endif -%}
 
         <div class="card__badge">
@@ -221,11 +218,9 @@
 .media.media--transparent.ratio_nt  {padding-bottom: 127.7777778%}
 .media.media--transparent.ratio2_3  {padding-bottom: 150%;}
   
-
-  .card-wrapper:hover .list_test::before{
-    /*     z-index:1; */
+  .card-wrapper:hover .list_test::before {
     opacity: var(--hover-overlay-opacity);
-      }
+  }
 
   .list_test:focus {
     opacity: 1; 
