@@ -114,11 +114,6 @@ function my_header_and_totop() {
     let my_backtop = document.getElementById('my_backtop');
 
     
-//     let vish = document.getElementById('my_header_sticky_visible').scrollHeight;
-//     let vis = document.getElementById('my_header_sticky_visible');
-
-
-    
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
     if(my_header_sticky.length > 0) {
@@ -126,7 +121,6 @@ function my_header_and_totop() {
         content.style.position = 'fixed';
         content.style.width = '100%';
         header_wrapper.style.height = header.style.height;
-//         vis.style.height = vish + 'px';
       } else {
         content.style.position = 'relative';
       }
