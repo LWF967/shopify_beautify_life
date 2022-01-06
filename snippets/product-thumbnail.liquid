@@ -71,7 +71,7 @@
 </noscript>
 
 <modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" data-modal="#ProductModal-{{ modal_id }}" >
-  {%- if width_value == '100%' %} {{ width_value }}123 {%- else -%} 1{{ width_value }} {%- endif -%}
+  {%- if width_value == '100%' -%} {{ width_value }}123 {%- elsif width_value == 'inherit' -%} 1{{ width_value }} {%- endif -%}
   <span class="product__media-icon motion-reduce my_product_thumbnail_mobile_hidden" aria-hidden="true">
     {%- liquid
       case media.media_type
