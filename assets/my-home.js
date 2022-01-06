@@ -113,7 +113,6 @@ function my_header_and_totop() {
     let my_header_sticky = document.getElementsByClassName('my_header_sticky');
     let my_backtop = document.getElementById('my_backtop');
     
-        let contentHeight = document.getElementsByClassName('content')[0].scrollHeight;
 
     
 //     let vish = document.getElementById('my_header_sticky_visible').scrollHeight;
@@ -127,7 +126,7 @@ function my_header_and_totop() {
       if(toTop >= all_header_height) {
         content.style.position = 'fixed';
         content.style.width = '100%';
-        header_wrapper.style.height = 123 + 'px';
+        header_wrapper.style.height = header.style.height + 'px';
 //         vis.style.height = vish + 'px';
       } else {
         content.style.position = 'relative';
