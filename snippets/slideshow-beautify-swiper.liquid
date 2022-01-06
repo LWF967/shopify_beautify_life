@@ -23,7 +23,7 @@
     </p>
   </div>
 
-  <div  class="  swiper-wrapper  swiper-wrapper-{{section.id}} "  data-autoplay="{{section.settings.auto_play}}" data-loop="{{loop}}" data-autotime="{{section.settings.auto_time}}" >
+  <div  class="swiper-wrapper  swiper-wrapper-{{section.id}} "  data-autoplay="{{section.settings.auto_play}}" data-loop="{{loop}}" data-autotime="{{section.settings.auto_time}}" >
     {% for block in section.blocks %}
     {%- case block.type -%}
     {%- when 'slideshow_img2' -%} {%- assign image = block.settings.image -%}
@@ -87,7 +87,7 @@
     opacity: 0
   }
 
-  /*   定义轮播点 */
+  /* define Carousel point */
   {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
     background: #4e4e4e;
@@ -152,7 +152,7 @@
     list-style-type: none;
   }
   
-  /*    定义按钮 */
+  /* define button */
   .swiper-button-next-{{section.id}},
   .swiper-button-prev-{{section.id}} {
     position: absolute;
