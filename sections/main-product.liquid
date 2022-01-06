@@ -51,60 +51,6 @@
     margin-right: 0 !important;
   }
   
-/*   .swiper {
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: transparent;
-
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .swiper-button-prev.main_product_prev:after,
-  .swiper-button-next.main_product_next:after {
-    color: #000;
-    width: 10px;
-    height: 20px;
-    font-size: 20px;
-  }
-
-  .swiper-button-next.main_product_next {
-    right: -5px;
-  }
-
-  .swiper-button-prev.main_product_prev {
-    left: -5px;
-  }
-  
-  .swiper-button-prev.main_product_prev.swiper-button-disabled:empty,
-  .swiper-button-next.main_product_next.swiper-button-disabled:empty,
-  .swiper-button-prev.main_product_prev:empty,
-  .swiper-button-next.main_product_next:empty {
-    display: flex;
-  } */
-  
   .my_main_product_ul li modal-opener {
     width: 100%;
   }
@@ -331,8 +277,6 @@
 -%}
 
 
-
-
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
   {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
@@ -366,25 +310,6 @@
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
         </a>
-		
-		{% comment %}
-        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
-          {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-          {%- if product.selected_or_first_available_variant.featured_media != null -%}
-            {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-            <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-              {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-            </li>
-          {%- endif -%}
-          {%- for media in product.media -%}
-            {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-              <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
-                {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
-              </li>
-            {%- endunless -%}
-          {%- endfor -%}
-        </ul>
-		{% endcomment %}
         
         <div class="product__media-list my_main_product_product_media_list">
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -435,19 +360,6 @@
           {%- endfor -%}
         </ul>
         {%- endif -%}
-        
-        {% comment %}
-        <div class="slider-buttons no-js-hidden{% if product.media.size < 2 %} small-hide{% endif %}">
-          <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-          <div class="slider-counter caption">
-            <span class="slider-counter--current">1</span>
-            <span aria-hidden="true"> / </span>
-            <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
-            <span class="slider-counter--total">{% if section.settings.hide_variants %}{{ product.media.size | minus: variant_images.size | plus: 1 }}{% else %}{{ product.media.size }}{% endif %}</span>
-          </div>
-          <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
-        </div>
-        {% endcomment %}
     </div>
       {%- if first_3d_model -%}
         <button
