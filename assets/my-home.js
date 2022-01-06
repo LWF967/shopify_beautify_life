@@ -128,6 +128,7 @@ function my_header_and_totop() {
 //         vis.style.height = vish + 'px';
       } else {
         content.style.position = 'relative';
+        header_wrapper.style.height = header_wrapper_height + 'px';
       }
       if(content.style.position == 'fixed') {
         promo_bar.style.zIndex = 900;
@@ -190,7 +191,6 @@ function my_header_and_totop() {
           header_wrapper.style.height = header_wrapper_height + 'px';
         } else {
           content.style.position = 'relative';
-          header_wrapper.style.height = header_wrapper_height + 'px';
         }
         if(content.style.position == 'fixed') {
           promo_bar.style.zIndex = 900;
@@ -207,6 +207,7 @@ function my_header_and_totop() {
           top_bar.style.zIndex = 899;
           header_zx.style.zIndex = 898;
 
+          
           content.classList.remove('my_header_sticky_settings');
           header.classList.remove('my_header_sticky_settings');
           content.style.top = 0 + 'px';
