@@ -103,7 +103,7 @@
           <small class="copyright__content my_footer_bottom_copyright_font_size">{{ section.blocks.settings.copyrights_text }}</small>
           {%- endfor -%}
           
-          
+          <!-- country -->
           <div>
             {%- if localization.available_countries.size > 1 -%}
             <noscript>
@@ -147,9 +147,52 @@
             </localization-form>
             {%- endif -%}
           </div>
+          <!-- language -->
+          <div>
+            {%- if localization.available_languages.size > 1 -%}
+            <noscript>
+              {%- form 'localization', id: 'FooterLanguageFormNoScript', class: 'localization-form' -%}
+              <div class="localization-form__select">
+                <h2 class="visually-hidden" id="FooterLanguageLabelNoScript">{{ 'localization.language_label' | t }}</h2>
+                <select class="localization-selector link" name="locale_code" aria-labelledby="FooterLanguageLabelNoScript">
+                  {%- for language in localization.available_languages -%}
+                  <option value="{{ language.iso_code }}" lang="{{ language.iso_code }}" {%- if language.iso_code == localization.language.iso_code %} selected{% endif %}>
+                      {{ language.endonym_name | capitalize }}
+                          </option>
+                  {%- endfor -%}
+                </select>
+                {% render 'icon-caret' %}
+              </div>
+              <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
+              {%- endform -%}
+            </noscript>
+
+            <localization-form>
+              {%- form 'localization', id: 'FooterLanguageForm', class: 'localization-form' -%}
+              <div class="no-js-hidden">
+                <h2 class="caption-large text-body" id="FooterLanguageLabel">{{ 'localization.language_label' | t }}</h2>
+                <div class="disclosure">
+                  <button type="button" class="disclosure__button localization-form__select localization-selector link link--text caption-large" aria-expanded="false" aria-controls="FooterLanguageList" aria-describedby="FooterLanguageLabel">
+                    {{ localization.language.endonym_name | capitalize }}
+                    {% render 'icon-caret' %}
+                  </button>
+                  <ul id="FooterLanguageList" role="list" class="disclosure__list list-unstyled" hidden>
+                    {%- for language in localization.available_languages -%}
+                    <li class="disclosure__item" tabindex="-1">
+                      <a class="link link--text disclosure__link caption-large{% if language.iso_code == localization.language.iso_code %} disclosure__link--active{% endif %} focus-inset" href="#" hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}"{% if language.iso_code == localization.language.iso_code %} aria-current="true"{% endif %} data-value="{{ language.iso_code }}">
+                        {{ language.endonym_name | capitalize }}
+                      </a>
+                    </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+                <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
+              </div>
+              {%- endform -%}
+            </localization-form>
+            {%- endif -%}
+          </div>
           
-          
-        </div>
         <div class="my_footer_bottom_item_flex my_footer_svg my_footer_bottom_item_centered"> 
           {%- for block in section.blocks -%}
           {%- assign image = block.settings.trust_image -%}
@@ -169,7 +212,7 @@
           <small class="copyright__content my_footer_bottom_copyright_font_size">{{ block.settings.copyrights_text }}</small>
           {%- endfor -%}
           
-          
+          <!-- country -->
           <div>
             {%- if localization.available_countries.size > 1 -%}
             <noscript>
@@ -208,6 +251,52 @@
                   </ul>
                 </div>
                 <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
+              </div>
+              {%- endform -%}
+            </localization-form>
+            {%- endif -%}
+          </div>
+          
+          <!-- language -->
+          <div>
+            {%- if localization.available_languages.size > 1 -%}
+            <noscript>
+              {%- form 'localization', id: 'FooterLanguageFormNoScript', class: 'localization-form' -%}
+              <div class="localization-form__select">
+                <h2 class="visually-hidden" id="FooterLanguageLabelNoScript">{{ 'localization.language_label' | t }}</h2>
+                <select class="localization-selector link" name="locale_code" aria-labelledby="FooterLanguageLabelNoScript">
+                  {%- for language in localization.available_languages -%}
+                  <option value="{{ language.iso_code }}" lang="{{ language.iso_code }}" {%- if language.iso_code == localization.language.iso_code %} selected{% endif %}>
+                      {{ language.endonym_name | capitalize }}
+                          </option>
+                  {%- endfor -%}
+                </select>
+                {% render 'icon-caret' %}
+              </div>
+              <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
+              {%- endform -%}
+            </noscript>
+
+            <localization-form>
+              {%- form 'localization', id: 'FooterLanguageForm', class: 'localization-form' -%}
+              <div class="no-js-hidden">
+                <h2 class="caption-large text-body" id="FooterLanguageLabel">{{ 'localization.language_label' | t }}</h2>
+                <div class="disclosure">
+                  <button type="button" class="disclosure__button localization-form__select localization-selector link link--text caption-large" aria-expanded="false" aria-controls="FooterLanguageList" aria-describedby="FooterLanguageLabel">
+                    {{ localization.language.endonym_name | capitalize }}
+                    {% render 'icon-caret' %}
+                  </button>
+                  <ul id="FooterLanguageList" role="list" class="disclosure__list list-unstyled" hidden>
+                    {%- for language in localization.available_languages -%}
+                    <li class="disclosure__item" tabindex="-1">
+                      <a class="link link--text disclosure__link caption-large{% if language.iso_code == localization.language.iso_code %} disclosure__link--active{% endif %} focus-inset" href="#" hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}"{% if language.iso_code == localization.language.iso_code %} aria-current="true"{% endif %} data-value="{{ language.iso_code }}">
+                        {{ language.endonym_name | capitalize }}
+                      </a>
+                    </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+                <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
               </div>
               {%- endform -%}
             </localization-form>
