@@ -339,7 +339,7 @@ noscript .localization-form__select {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  color: rgb(var(--color-foreground));
+  color: var(--color-foreground);
   width: 100%;
   padding-right: 4rem;
   padding-bottom: 1.5rem;
@@ -490,7 +490,7 @@ noscript .localization-selector.link {
 
 .footer .disclosure__link {
   padding: 0.95rem 3.5rem 0.95rem 2rem;
-  color: var(--color-foreground-dark-rgba);
+  color: var(--color-foreground-rgba);
 }
 
 .footer .disclosure__link:hover {
