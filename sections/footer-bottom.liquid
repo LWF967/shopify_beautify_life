@@ -131,7 +131,7 @@
                     {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
                     {% render 'icon-caret' %}
                   </button>
-                  <ul id="FooterCountryList" style="background-color: #fff;" role="list" class="disclosure__list list-unstyled" hidden>
+                  <ul id="FooterCountryList" style="background-color: #fff; border; 1px solid var(--color-form-border);" role="list" class="disclosure__list list-unstyled" hidden>
                     {%- for country in localization.available_countries -%}
                     <li class="disclosure__item" tabindex="-1">
                       <a class="link link--text disclosure__link caption-large{% if country.iso_code == localization.country.iso_code %} disclosure__link--active{% endif %} focus-inset" href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
@@ -197,7 +197,7 @@
                     {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
                     {% render 'icon-caret' %}
                   </button>
-                  <ul id="FooterCountryList" style="background-color: #fff;" role="list" class="disclosure__list list-unstyled" hidden>
+                  <ul id="FooterCountryList" style="background-color: #fff;border; 1px solid var(--color-form-border);" role="list" class="disclosure__list list-unstyled" hidden>
                     {%- for country in localization.available_countries -%}
                     <li class="disclosure__item" tabindex="-1">
                       <a class="link link--text disclosure__link caption-large{% if country.iso_code == localization.country.iso_code %} disclosure__link--active{% endif %} focus-inset" href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
