@@ -1,11 +1,10 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
   <style>
-  .customer h2{
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 15px;
+  .my_customer h1 ,.my_customer h2{
+    font-family:var(--font-heading-family);
   }
+  
   .my_account h1{
     display: flex;
     align-items: center;
@@ -14,17 +13,22 @@
     font-weight: 700;
     margin-bottom: 55px;
   }
-  .customer .my_order_history table ,.customer .my_order_history table td,.customer .my_order_history table th{
+  .my_customer h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .my_customer .my_order_history table ,.my_customer .my_order_history table td,.my_customer .my_order_history table th{
     border: 1px solid #ddd;
     vertical-align: middle;
   }
-  .customer .my_order_history table{
+  .my_customer .my_order_history table{
     border-collapse: collapse;
   }
-  .customer .my_order_history table td{
+  .my_customer .my_order_history table td{
     border-width: 0 1px 1px 0;
   }
-  .customer .my_order_history table th{
+  .my_customer .my_order_history table th{
     border-width: 0 1px 1px 0;
   }
   
@@ -38,17 +42,17 @@
     
 }
 @media screen and (min-width:990px) {
-  .customer.account .my_order_history{
+  .my_customer.account .my_order_history{
     padding-right: 12rem !important;
   }
 }
 @media screen and (min-width: 750px){
-  .customer th , .customer td{
+  .my_customer th , .my_customer td{
     padding-left: 10px;
   }
 }
   </style>
-<div class="customer account">
+<div class="customer account my_customer">
   <div class="my_account">
     <h1>{{ 'customer.account.title' | t }}</h1>
     <!-- <a href="{{ routes.account_logout_url }}">
