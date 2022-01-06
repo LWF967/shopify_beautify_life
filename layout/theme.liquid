@@ -12,7 +12,7 @@
 {{ 'lazysizes.js' | asset_url | script_tag }}
 {{ 'lazysizes.min.js' | asset_url | script_tag }}
 
-{{ 'jquery.3.5.1.js?enable_js_minification=1' | asset_url | script_tag }}
+{{ 'jquery.3.5.1.js' | asset_url | script_tag }}
 
 {{ 'tool-libraries.js' | asset_url | script_tag }}
     
@@ -270,6 +270,6 @@
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    <script src="{{ 'my-home.js?enable_js_minification=1' | asset_url }}"></script>
+    <script src="{{ 'my-home.js' | asset_url }}"></script>
   </body>
 </html>
