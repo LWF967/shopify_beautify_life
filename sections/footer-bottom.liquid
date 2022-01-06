@@ -104,7 +104,7 @@
           {%- endfor -%}
           
           <!-- country -->
-          <div>
+          <div style="display: flex;">
             {%- if localization.available_countries.size > 1 -%}
             <noscript>
               {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
@@ -146,10 +146,8 @@
               {%- endform -%}
             </localization-form>
             {%- endif -%}
-          </div>
-          <!-- language -->
-          <div>
-<!--             %- if localization.available_languages.size > 1 -%} -->
+            
+            <!-- language -->
             <noscript>
               {%- form 'localization', id: 'FooterLanguageFormNoScript', class: 'localization-form' -%}
               <div class="localization-form__select">
@@ -190,7 +188,6 @@
               </div>
               {%- endform -%}
             </localization-form>
-<!--             %- endif -%} -->
           </div>
           
         <div class="my_footer_bottom_item_flex my_footer_svg my_footer_bottom_item_centered"> 
@@ -213,7 +210,7 @@
           {%- endfor -%}
           
           <!-- country -->
-          <div>
+          <div style="display: flex;">
             {%- if localization.available_countries.size > 1 -%}
             <noscript>
               {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
@@ -255,11 +252,8 @@
               {%- endform -%}
             </localization-form>
             {%- endif -%}
-          </div>
-          
-          <!-- language -->
-          <div>
-<!--             %- if localization.available_languages.size > 1 -%} -->
+            
+            <!-- language -->
             <noscript>
               {%- form 'localization', id: 'FooterLanguageFormNoScript', class: 'localization-form' -%}
               <div class="localization-form__select">
@@ -300,7 +294,6 @@
               </div>
               {%- endform -%}
             </localization-form>
-<!--             %- endif -%} -->
           </div>
           
           
