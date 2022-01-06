@@ -373,7 +373,7 @@
   
   /* Account/Order */
   :is(.account, .order) {
-    margin: 6rem auto 9rem;
+    margin: 6rem auto 1rem;
     max-width: var(--page-width);
     padding: 0 2rem;
   }
