@@ -121,6 +121,14 @@
     font-size: 14px;
   }  
     
+  .my_cart_item_display {
+    display: flex;
+    justify-content: end;
+  }  
+  
+  .my_main_cart_old_price {
+    text-decoration: line-through;
+  }
   @media screen and (min-width: 0px) and (max-width: 749px) {
     .my_cart_item__quantity {
       justify-content: start;
@@ -302,7 +310,7 @@
                   </td>
 
                   <td class="cart-item__totals right small-hide">
-                    <div class="cart-item__price-wrapper">
+                    <div class="cart-item__price-wrapper my_cart_item_display">
                       {%- if item.original_line_price != item.final_line_price -%}
                         <dl class="cart-item__discounted-prices">
                           <dt class="visually-hidden">
@@ -321,7 +329,7 @@
                           </dd>
                         </dl>
                       {%- else -%}
-                        <span class="my_old_price my_cart_price_font_size"> 
+                        <span class="my_main_cart_old_price my_cart_price_font_size"> 
                           {{ item.variant.compare_at_price |money }}
                         </span>
                         <span class="price price--end my_cart_price_font_size">
