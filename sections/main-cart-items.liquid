@@ -321,12 +321,12 @@
                           </dd>
                         </dl>
                       {%- else -%}
+                        <span class="my_old_price"> 
+                          {{ item.variant.compare_at_price |money }}
+                        </span>
                         <span class="price price--end my_cart_price_font_size">
                           {{ item.original_price | money }}
                         </span>
-                      <span class="12312312"> 
-                      	{{item.variant.compare_at_price |money }}
-                      </span>
                       {%- endif -%}
 
                       {%- if item.variant.available and item.unit_price_measurement -%}
