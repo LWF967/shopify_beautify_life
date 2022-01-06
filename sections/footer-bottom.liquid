@@ -102,7 +102,7 @@
           {%- for block in section.blocks -%}
           <small class="copyright__content my_footer_bottom_copyright_font_size">{{ section.blocks.settings.copyrights_text }}</small>
           {%- endfor -%}
-
+          
           <!-- country -->
           <div style="display: flex;">
             {%- if localization.available_countries.size > 1 -%}
@@ -146,7 +146,7 @@
               {%- endform -%}
             </localization-form>
             {%- endif -%}
-
+            
             <!-- language -->
             <noscript>
               {%- form 'localization', id: 'FooterLanguageFormNoScript', class: 'localization-form' -%}
@@ -189,126 +189,125 @@
               {%- endform -%}
             </localization-form>
           </div>
-
-          <div class="my_footer_bottom_item_flex my_footer_svg my_footer_bottom_item_centered"> 
-            {%- for block in section.blocks -%}
-            {%- assign image = block.settings.trust_image -%}
-            {%- if block.settings.source_img == 'Image' and image -%}
-            <div class="dib"><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{image | img_url:'master'}}" alt="{{image.alt}}"></div>
-            {%- elsif block.settings.source_img == 'SVG' and block.settings.svg_list -%}
-            {%- assign arr = block.settings.svg_list | remove: ' ' | split: "," -%}
-            <div class="dib bot_footer_svg">{%- for img in arr -%}<img class="lazyload" style="height: {{ block.settings.svg_height }}px;" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="{{ img | payment_type_img_url }}" alt="{{img | replace:'_',' '}}" />{%- endfor -%}</div>
-            {%- endif -%}
-            {%- endfor -%}
-          </div>
+          
+        <div class="my_footer_bottom_item_flex my_footer_svg my_footer_bottom_item_centered"> 
+          {%- for block in section.blocks -%}
+          {%- assign image = block.settings.trust_image -%}
+          {%- if block.settings.source_img == 'Image' and image -%}
+          <div class="dib"><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{image | img_url:'master'}}" alt="{{image.alt}}"></div>
+          {%- elsif block.settings.source_img == 'SVG' and block.settings.svg_list -%}
+          {%- assign arr = block.settings.svg_list | remove: ' ' | split: "," -%}
+          <div class="dib bot_footer_svg">{%- for img in arr -%}<img class="lazyload" style="height: {{ block.settings.svg_height }}px;" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="{{ img | payment_type_img_url }}" alt="{{img | replace:'_',' '}}" />{%- endfor -%}</div>
+          {%- endif -%}
+          {%- endfor -%}
         </div>
-        {%- else -%}
-        <div class="footer__column footer__column--info my_footer_bottom_flex my_footer_bottom_layout_nocenter"> 
-          <div class="footer__copyright caption my_footer_copyright my_footer_bottom_item_flex my_footer_bottom_item_nocentered my_footer_bottom_item_nocentered_padding">
-            {%- for block in section.blocks -%}
-            <small class="copyright__content my_footer_bottom_copyright_font_size">{{ block.settings.copyrights_text }}</small>
-            {%- endfor -%}
-
-            <!-- country -->
-            <div style="display: flex;">
-              {%- if localization.available_countries.size > 1 -%}
-              <noscript>
-                {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
-                <div class="localization-form__select">
-                  <h2 class="visually-hidden" id="FooterCountryLabelNoScript">{{ 'localization.country_label' | t }}</h2>
-                  <select class="localization-selector link" name="country_code" aria-labelledby="FooterCountryLabelNoScript">
-                    {%- for country in localization.available_countries -%}
-                    <option value="{{ country.iso_code }}" {%- if country.iso_code == localization.country.iso_code %} selected{% endif %}>
+      </div>
+      {%- else -%}
+      <div class="footer__column footer__column--info my_footer_bottom_flex my_footer_bottom_layout_nocenter"> 
+        <div class="footer__copyright caption my_footer_copyright my_footer_bottom_item_flex my_footer_bottom_item_nocentered my_footer_bottom_item_nocentered_padding">
+          {%- for block in section.blocks -%}
+          <small class="copyright__content my_footer_bottom_copyright_font_size">{{ block.settings.copyrights_text }}</small>
+          {%- endfor -%}
+          
+          <!-- country -->
+          <div style="display: flex;">
+            {%- if localization.available_countries.size > 1 -%}
+            <noscript>
+              {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
+              <div class="localization-form__select">
+                <h2 class="visually-hidden" id="FooterCountryLabelNoScript">{{ 'localization.country_label' | t }}</h2>
+                <select class="localization-selector link" name="country_code" aria-labelledby="FooterCountryLabelNoScript">
+                  {%- for country in localization.available_countries -%}
+                  <option value="{{ country.iso_code }}" {%- if country.iso_code == localization.country.iso_code %} selected{% endif %}>
                         {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
-                            </option>
+                          </option>
+                  {%- endfor -%}
+                </select>
+                {% render 'icon-caret' %}
+              </div>
+              <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
+              {%- endform -%}
+            </noscript>
+            <localization-form>
+              {%- form 'localization', id: 'FooterCountryForm', class: 'localization-form' -%}
+              <div class="no-js-hidden">
+                <h2 class="caption-large text-body" id="FooterCountryLabel">{{ 'localization.country_label' | t }}</h2>
+                <div class="disclosure">
+                  <button type="button" class="disclosure__button localization-form__select localization-selector link link--text caption-large" style="background-color: #fff;" aria-expanded="false" aria-controls="FooterCountryList" aria-describedby="FooterCountryLabel">
+                    {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
+                    {% render 'icon-caret' %}
+                  </button>
+                  <ul id="FooterCountryList" style="background-color: #fff;border: 1px solid var(--color-form-border);" role="list" class="disclosure__list list-unstyled" hidden>
+                    {%- for country in localization.available_countries -%}
+                    <li class="disclosure__item" tabindex="-1">
+                      <a class="link link--text disclosure__link caption-large{% if country.iso_code == localization.country.iso_code %} disclosure__link--active{% endif %} focus-inset" href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
+                        {{ country.name }} <span class="localization-form__currency">({{ country.currency.iso_code }} {{ country.currency.symbol }})</span>
+                      </a>
+                    </li>
                     {%- endfor -%}
-                  </select>
-                  {% render 'icon-caret' %}
+                  </ul>
                 </div>
-                <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
-                {%- endform -%}
-              </noscript>
-              <localization-form>
-                {%- form 'localization', id: 'FooterCountryForm', class: 'localization-form' -%}
-                <div class="no-js-hidden">
-                  <h2 class="caption-large text-body" id="FooterCountryLabel">{{ 'localization.country_label' | t }}</h2>
-                  <div class="disclosure">
-                    <button type="button" class="disclosure__button localization-form__select localization-selector link link--text caption-large" style="background-color: #fff;" aria-expanded="false" aria-controls="FooterCountryList" aria-describedby="FooterCountryLabel">
-                      {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
-                      {% render 'icon-caret' %}
-                    </button>
-                    <ul id="FooterCountryList" style="background-color: #fff;border: 1px solid var(--color-form-border);" role="list" class="disclosure__list list-unstyled" hidden>
-                      {%- for country in localization.available_countries -%}
-                      <li class="disclosure__item" tabindex="-1">
-                        <a class="link link--text disclosure__link caption-large{% if country.iso_code == localization.country.iso_code %} disclosure__link--active{% endif %} focus-inset" href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
-                          {{ country.name }} <span class="localization-form__currency">({{ country.currency.iso_code }} {{ country.currency.symbol }})</span>
-                        </a>
-                      </li>
-                      {%- endfor -%}
-                    </ul>
-                  </div>
-                  <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
-                </div>
-                {%- endform -%}
-              </localization-form>
-              {%- endif -%}
-
-              <!-- language -->
-              <noscript>
-                {%- form 'localization', id: 'FooterLanguageFormNoScript', class: 'localization-form' -%}
-                <div class="localization-form__select">
-                  <h2 class="visually-hidden" id="FooterLanguageLabelNoScript">{{ 'localization.language_label' | t }}</h2>
-                  <select class="localization-selector link" name="locale_code" aria-labelledby="FooterLanguageLabelNoScript">
-                    {%- for language in localization.available_languages -%}
-                    <option value="{{ language.iso_code }}" lang="{{ language.iso_code }}" {%- if language.iso_code == localization.language.iso_code %} selected{% endif %}>
-                      {{ language.endonym_name | capitalize }}
-                            </option>
-                    {%- endfor -%}
-                  </select>
-                  {% render 'icon-caret' %}
-                </div>
-                <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
-                {%- endform -%}
-              </noscript>
-
-              <localization-form>
-                {%- form 'localization', id: 'FooterLanguageForm', class: 'localization-form' -%}
-                <div class="no-js-hidden">
-                  <h2 class="caption-large text-body" id="FooterLanguageLabel">{{ 'localization.language_label' | t }}</h2>
-                  <div class="disclosure">
-                    <button type="button" class="disclosure__button localization-form__select localization-selector link link--text caption-large" style="background-color: #fff;" aria-expanded="false" aria-controls="FooterLanguageList" aria-describedby="FooterLanguageLabel">
-                      {{ localization.language.endonym_name | capitalize }}
-                      {% render 'icon-caret' %}
-                    </button>
-                    <ul id="FooterLanguageList" style="background-color: #fff; border: 1px solid var(--color-form-border);" role="list" class="disclosure__list list-unstyled" hidden>
-                      {%- for language in localization.available_languages -%}
-                      <li class="disclosure__item" tabindex="-1">
-                        <a class="link link--text disclosure__link caption-large{% if language.iso_code == localization.language.iso_code %} disclosure__link--active{% endif %} focus-inset" href="#" hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}"{% if language.iso_code == localization.language.iso_code %} aria-current="true"{% endif %} data-value="{{ language.iso_code }}">
-                          {{ language.endonym_name | capitalize }}
-                        </a>
-                      </li>
-                      {%- endfor -%}
-                    </ul>
-                  </div>
-                  <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
-                </div>
-                {%- endform -%}
-              </localization-form>
-            </div>
-
-
-          </div>
-          <div class="my_footer_bottom_item_flex my_footer_svg my_footer_bottom_item_nocentered"> 
-            {%- for block in section.blocks -%}
-            {%- assign image = block.settings.trust_image -%}
-            {%- if block.settings.source_img == 'Image' and image -%}
-            <div class="dib"><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{image | img_url:'master'}}" alt="{{image.alt}}"></div>
-            {%- elsif block.settings.source_img == 'SVG' and block.settings.svg_list -%}
-            {%- assign arr = block.settings.svg_list | remove: ' ' | split: "," -%}
-            <div class="dib bot_footer_svg">{%- for img in arr -%}<img class="lazyload" style="height: {{ block.settings.svg_height }}px;" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="{{ img | payment_type_img_url }}" alt="{{img | replace:'_',' '}}" />{%- endfor -%}</div>
+                <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
+              </div>
+              {%- endform -%}
+            </localization-form>
             {%- endif -%}
-            {%- endfor -%}
+            
+            <!-- language -->
+            <noscript>
+              {%- form 'localization', id: 'FooterLanguageFormNoScript', class: 'localization-form' -%}
+              <div class="localization-form__select">
+                <h2 class="visually-hidden" id="FooterLanguageLabelNoScript">{{ 'localization.language_label' | t }}</h2>
+                <select class="localization-selector link" name="locale_code" aria-labelledby="FooterLanguageLabelNoScript">
+                  {%- for language in localization.available_languages -%}
+                  <option value="{{ language.iso_code }}" lang="{{ language.iso_code }}" {%- if language.iso_code == localization.language.iso_code %} selected{% endif %}>
+                      {{ language.endonym_name | capitalize }}
+                          </option>
+                  {%- endfor -%}
+                </select>
+                {% render 'icon-caret' %}
+              </div>
+              <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
+              {%- endform -%}
+            </noscript>
+
+            <localization-form>
+              {%- form 'localization', id: 'FooterLanguageForm', class: 'localization-form' -%}
+              <div class="no-js-hidden">
+                <h2 class="caption-large text-body" id="FooterLanguageLabel">{{ 'localization.language_label' | t }}</h2>
+                <div class="disclosure">
+                  <button type="button" class="disclosure__button localization-form__select localization-selector link link--text caption-large" style="background-color: #fff;" aria-expanded="false" aria-controls="FooterLanguageList" aria-describedby="FooterLanguageLabel">
+                    {{ localization.language.endonym_name | capitalize }}
+                    {% render 'icon-caret' %}
+                  </button>
+                  <ul id="FooterLanguageList" style="background-color: #fff; border: 1px solid var(--color-form-border);" role="list" class="disclosure__list list-unstyled" hidden>
+                    {%- for language in localization.available_languages -%}
+                    <li class="disclosure__item" tabindex="-1">
+                      <a class="link link--text disclosure__link caption-large{% if language.iso_code == localization.language.iso_code %} disclosure__link--active{% endif %} focus-inset" href="#" hreflang="{{ language.iso_code }}" lang="{{ language.iso_code }}"{% if language.iso_code == localization.language.iso_code %} aria-current="true"{% endif %} data-value="{{ language.iso_code }}">
+                        {{ language.endonym_name | capitalize }}
+                      </a>
+                    </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+                <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}">
+              </div>
+              {%- endform -%}
+            </localization-form>
           </div>
+          
+          
+        </div>
+        <div class="my_footer_bottom_item_flex my_footer_svg my_footer_bottom_item_nocentered"> 
+          {%- for block in section.blocks -%}
+          {%- assign image = block.settings.trust_image -%}
+          {%- if block.settings.source_img == 'Image' and image -%}
+          <div class="dib"><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="{{image | img_url:'master'}}" alt="{{image.alt}}"></div>
+          {%- elsif block.settings.source_img == 'SVG' and block.settings.svg_list -%}
+          {%- assign arr = block.settings.svg_list | remove: ' ' | split: "," -%}
+          <div class="dib bot_footer_svg">{%- for img in arr -%}<img class="lazyload" style="height: {{ block.settings.svg_height }}px;" src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" data-src="{{ img | payment_type_img_url }}" alt="{{img | replace:'_',' '}}" />{%- endfor -%}</div>
+          {%- endif -%}
+          {%- endfor -%}
         </div>
       </div>
       {%- endif -%}
