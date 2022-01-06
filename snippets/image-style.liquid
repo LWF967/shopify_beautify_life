@@ -5,7 +5,7 @@
     {% assign maximum_height = height %}
   {% endif -%}
 
-  {%- assign maximum_width = maximum_height | times: image.aspect_ratio -%}
+  {%- assign maximum_width = maximum_height | times: image.aspect_ratio | plus: 200 -%}
 
   #{{ img_id }} {
     max-width: {{ maximum_width }}px;
@@ -13,6 +13,6 @@
   }
 
   #{{ wrapper_id }} {
-/*     max-width: {{ maximum_width }}px; */
+    max-width: {{ maximum_width }}px;
   }
 </style>
