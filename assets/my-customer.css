@@ -993,7 +993,7 @@
   textarea,
   button,
   select {
-    font-family: "Avenir Next", sans-serif;
+    font-family:var(--font-heading-family);
     font-style: normal;
     font-weight: 400;
     font-size: 1.6rem;
