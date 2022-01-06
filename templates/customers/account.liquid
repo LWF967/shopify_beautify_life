@@ -1,13 +1,18 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
   <style>
+  .my_account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
    .log-out a {
     display: inline-flex;
     align-items: center;
 }
   </style>
 <div class="customer account">
-  <div>
+  <div class="my_account">
     <h1>{{ 'customer.account.title' | t }}</h1>
     <!-- <a href="{{ routes.account_logout_url }}">
       <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" fill="none" viewBox="0 0 18 19">
