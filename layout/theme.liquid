@@ -12,7 +12,8 @@
 {{ 'lazysizes.js' | asset_url | script_tag }}
 {{ 'lazysizes.min.js' | asset_url | script_tag }}
 
-{{ 'jquery.3.5.1.js' | asset_url | script_tag }}
+<!--  'jquery.3.5.1.js' | asset_url | script_tag }} -->
+    <script src="{{ 'jquery.3.5.1.js' | asset_url }}" defer="defer"></script>
 
 {{ 'tool-libraries.js' | asset_url | script_tag }}
     
