@@ -34,16 +34,16 @@
     margin-left: 0;
   }
   
-  .my_featured_product_beautify_noswiper li {
+  .my_main_product_noswiper li {
     flex: 1;
     padding: 15px 0 0 10px !important;
   }
   
-  .my_featured_product_beautify_noswiper li:first-child {
+  .my_main_product_noswiper li:first-child {
     padding: 15px 0 0 0 !important;
   }
   
-  .my_featured_product_beautify_noswiper li:last-child {
+  .my_main_product_noswiper li:last-child {
     padding: 15px 0 0 10px;
   }
   
@@ -347,7 +347,7 @@
         </style>
         {% render 'swiper-main-product', section:section, product:product %}
         {%- elsif media_count > 1 -%}
-        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_main_product_ul my_main_product_ul_nomargin my_featured_product_beautify_noswiper" role="list" style="display:flex; margin: 0 0;">
+        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_main_product_ul my_main_product_ul_nomargin my_main_product_noswiper" role="list" style="display:flex; margin: 0 0;">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
           {%- assign media = product.selected_or_first_available_variant.featured_media -%}
