@@ -117,8 +117,8 @@ function my_header_and_totop() {
     
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-    let a = $(document.getElementsByClassName('my_header_sticky_visible')[0]).height();
-    console.log(a);
+    let a = $(document.getElementsByClassName('content')[0]).height();
+    console.log(a+1);
     if(my_header_sticky.length > 0) {
       if(toTop >= all_header_height) {
         content.style.position = 'fixed';
