@@ -401,7 +401,8 @@ a.product__text {
   }
 
   .product-media-modal__content > .product__media-item--variant.product__media-item--variant {
-    display: none;
+/*     display: none; */
+    display: block;
   }
 
   .product-media-modal__content > .product__media-item--variant:first-child {
