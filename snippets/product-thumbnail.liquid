@@ -70,9 +70,7 @@
   {%- endif -%}
 </noscript>
 {%- assign width_value = width_value -%}
-<modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" data-modal="#ProductModal-{{ modal_id }}" >
-  {{ width_value }}1
-  {%- if width_value == '100%' -%} {{ width_value }}123 {%- elsif width_value == 'inherit' -%} 1{{ width_value }} {%- endif -%}
+<modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" {%- if width_value == 'inherit' -%}style="width: inherit;"{%- endif -%} data-modal="#ProductModal-{{ modal_id }}" >
   <span class="product__media-icon motion-reduce my_product_thumbnail_mobile_hidden" aria-hidden="true">
     {%- liquid
       case media.media_type
