@@ -229,7 +229,7 @@
     margin-right: 4px;
   }
   
-  .product__media-item:not(:first-child) {
+  .my_featured_product_beautify_product_media_list .product__media-item:not(:first-child) {
     display: none;
   }
   
@@ -266,7 +266,7 @@
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
         </a>
-        <div class="product__media-list">
+        <div class="product__media-list my_featured_product_beautify_product_media_list">
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
             <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
