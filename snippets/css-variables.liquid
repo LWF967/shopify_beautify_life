@@ -19,6 +19,8 @@
  	
 	--color-foreground-rgba:{{ settings.colors_body_text | color_modify: 'alpha', 0.45 }};
 
+    --color-foreground-dark-rgba:{{ settings.colors_body_text | color_modify: 'alpha', 0.75 }};
+
     --color-overlay-title-text: {{ settings.color_image_overlay_text }};
     --color-image-overlay: {{ settings.color_image_overlay }};
     --color-image-overlay-rgb: {{ settings.color_image_overlay | color_to_rgb | remove: 'rgb(' | remove: 'rgba(' | remove: ')' | remove: ', 0.0' }};
