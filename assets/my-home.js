@@ -127,7 +127,7 @@ function my_header_and_totop() {
       if(toTop >= all_header_height) {
         content.style.position = 'fixed';
         content.style.width = '100%';
-        header_wrapper.style.height = contentHeight + 'px';
+        header_wrapper.style.height = 123 + 'px';
 //         vis.style.height = vish + 'px';
       } else {
         content.style.position = 'relative';
