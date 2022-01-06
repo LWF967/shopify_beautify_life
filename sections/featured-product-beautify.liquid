@@ -229,10 +229,6 @@
     margin-right: 4px;
   }
   
-  .my_featured_product_beautify_product_media_list .product__media-item:not(:first-child) {
-    display: none;
-  }
-  
   @media screen and (max-width: 750px) {
     .no-js-hidden.my_featured_product_beautify_variant-selects {
       margin: 10px 0;
@@ -266,7 +262,7 @@
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
         </a>
-        <div class="product__media-list my_featured_product_beautify_product_media_list">
+        <div class="product__media-list">
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
             <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
@@ -730,7 +726,7 @@
 
 {% schema %}
 {
-  "name": "featured-product-beautify",
+  "name": "Featured product",
   "tag": "section",
   "class": "featured-product-section spaced-section spaced-section--full-width",
   "blocks": [
