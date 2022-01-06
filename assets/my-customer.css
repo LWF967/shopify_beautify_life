@@ -2323,7 +2323,7 @@
   
   .page-width {
     zoom: 1;
-    max-width: 980px;
+    max-width: 100%;
     padding: 0 20px;
     margin: 0 auto; }
     .page-width::after {
