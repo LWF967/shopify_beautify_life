@@ -70,7 +70,7 @@
   {%- endif -%}
 </noscript>
 
-<modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" style="{{ width_value }}" data-modal="#ProductModal-{{ modal_id }}" >
+<modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" {{ width_value }} data-modal="#ProductModal-{{ modal_id }}" >
   <span class="product__media-icon motion-reduce my_product_thumbnail_mobile_hidden" aria-hidden="true">
     {%- liquid
       case media.media_type
