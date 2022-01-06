@@ -20,7 +20,7 @@
    
 }
 @media screen and (min-width:990px) {
-  .customer.account .my_account{
+  .customer.account .my_order_history{
     padding-right: 12rem;
   }
 }
@@ -38,7 +38,7 @@
 
  
   <div>
-    <div class="order_history">
+    <div class="my_order_history">
       <h2>{{ 'customer.orders.title' | t }}</h2>
 
       {% paginate customer.orders by 20 %}
