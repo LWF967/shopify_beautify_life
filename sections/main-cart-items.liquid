@@ -330,7 +330,9 @@
                         </dl>
                       {%- else -%}
                         <span class="price my_main_cart_old_price my_cart_price_font_size"> 
-                          {{ item.variant.compare_at_price |money }}
+                          {%- if item.variant.compare_at_price != blank -%}
+                            {{ item.variant.compare_at_price | money }}
+                          {%- endif -%}
                         </span>
                         <span class="price price--end my_cart_price_font_size">
                           {{ item.original_price | money }}
