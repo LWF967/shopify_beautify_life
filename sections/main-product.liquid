@@ -204,6 +204,10 @@
     font-style: var(--font-body-style);
   }
   
+  .product__media-item.my_main_product_product_media_item:not(:first-child) {
+    display: none;
+  }
+  
   @media screen and (max-width: 750px) {
     .h1.product__title.my_featured_product_beautify_title {
       font-size: 36px;
@@ -265,10 +269,6 @@
     .product__media-icon.motion-reduce.my_product_thumbnail_mobile_hidden {
       display: none;
     }
-  }
-  
-  .product__media-item.my_main_product_product_media_item:not(:first-child) {
-	display: none;
   }
 </style>
 
