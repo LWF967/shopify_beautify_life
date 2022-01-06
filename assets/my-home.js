@@ -117,8 +117,8 @@ function my_header_and_totop() {
     
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
-    let a = $(document.getElementsByClassName('content')[0]).height();
-    console.log(a+1);
+    let a = $(document.getElementsByClassName('content')[0]).height()+1;
+    console.log(a);
     if(my_header_sticky.length > 0) {
       if(toTop >= all_header_height) {
         content.style.position = 'fixed';
@@ -135,7 +135,7 @@ function my_header_and_totop() {
         content.classList.add('my_header_sticky_settings');
         header.classList.add('my_header_sticky_settings');
         content.style.transition = 'transform .3s';
-        content.style.top = "-" + (header_wrapper.style.height) ;
+        content.style.top = "-" + (a) ;
         content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
       } else if(content.style.position == 'relative') {
         promo_bar.style.zIndex = 898;
