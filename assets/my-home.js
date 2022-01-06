@@ -113,7 +113,7 @@ function my_header_and_totop() {
     let my_header_sticky = document.getElementsByClassName('my_header_sticky');
     let my_backtop = document.getElementById('my_backtop');
 
-    console.log(header.style.height);
+        let conten1t = document.getElementsByClassName('content')[0].scrollHeight;
     
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -133,7 +133,7 @@ function my_header_and_totop() {
         content.classList.add('my_header_sticky_settings');
         header.classList.add('my_header_sticky_settings');
         content.style.transition = 'transform .3s';
-        content.style.top = "-" + (header.style.height) ;
+        content.style.top = "-" + (conten1t) ;
         content.style.transform = 'translate3d(0,' + header_wrapper.style.height + ', 0)';
       } else if(content.style.position == 'relative') {
         promo_bar.style.zIndex = 898;
