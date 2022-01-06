@@ -199,9 +199,9 @@
         "settings": {
           "height": 20,
           "fontsize": 14,
-          "cl": "#bc5252",
-          "cl_a": "#ff0000",
-          "cl_cr": "#21d63c",
+          "cl": "#b24e4e",
+          "cl_a": "#dd0000",
+          "cl_cr": "#147f24",
           "bg": "#f2f2f2",
           "color_scheme": "bg",
           "bg_op": 100,
