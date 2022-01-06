@@ -522,3 +522,32 @@
   .addresses form > div:nth-of-type(7) + div[id] {
     margin-top: 1.5rem;
   }
+  /* Login */
+.login a {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  
+  .login a[href='#recover'] {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .login .field + a {
+    margin-top: 1rem;
+  }
+  
+  .login p {
+    margin: 1.5rem 0;
+  }
+  
+  .login h3 {
+    margin-top: 1.5rem;
+    text-align: left;
+    font-size: 1.6rem;
+  }
+  
+  #customer_login_guest button {
+    margin-top: 0;
+  }
