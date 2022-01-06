@@ -1,5 +1,11 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
+  <style>
+   .log-out a {
+    display: inline-flex;
+    align-items: center;
+}
+  </style>
 <div class="customer account">
   <div>
     <h1>{{ 'customer.account.title' | t }}</h1>
