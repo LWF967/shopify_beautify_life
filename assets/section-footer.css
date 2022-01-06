@@ -490,7 +490,7 @@ noscript .localization-selector.link {
 
 .footer .disclosure__link {
   padding: 0.95rem 3.5rem 0.95rem 2rem;
-  color: var(--color-foreground-rgba);
+  color: var(--color-foreground-dark-rgba);
 }
 
 .footer .disclosure__link:hover {
