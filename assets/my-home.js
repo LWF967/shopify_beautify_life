@@ -113,6 +113,7 @@ function my_header_and_totop() {
     let my_header_sticky = document.getElementsByClassName('my_header_sticky');
     let my_backtop = document.getElementById('my_backtop');
 
+    console.log(header.style.height);
     
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
