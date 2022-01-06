@@ -1,6 +1,10 @@
 {{ 'customer.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
   <style>
+  .customer h2{
+    font-size: 30px;
+    font-weight: 700;
+  }
   .my_account h1{
     display: flex;
     align-items: center;
@@ -27,7 +31,7 @@
 
  
   <div>
-    <div>
+    <div class="order_history">
       <h2>{{ 'customer.orders.title' | t }}</h2>
 
       {% paginate customer.orders by 20 %}
