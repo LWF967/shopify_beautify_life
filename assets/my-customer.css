@@ -2274,7 +2274,7 @@
     .supports-no-svg .icon {
       display: none; }
   
-  svg.icon:not(.icon--full-color) circle,
+  /* svg.icon:not(.icon--full-color) circle,
   svg.icon:not(.icon--full-color) ellipse,
   svg.icon:not(.icon--full-color) g,
   svg.icon:not(.icon--full-color) line,
@@ -2291,7 +2291,7 @@
   symbol.icon:not(.icon--full-color) polyline,
   symbol.icon:not(.icon--full-color) rect {
     fill: inherit;
-    stroke: inherit; }
+    stroke: inherit; } */
   
   /*============================================================================
     A generic way to visually hide content while
