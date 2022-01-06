@@ -128,7 +128,6 @@ function my_header_and_totop() {
 //         vis.style.height = vish + 'px';
       } else {
         content.style.position = 'relative';
-        header_wrapper.style.height = header_wrapper_height + 'px';
       }
       if(content.style.position == 'fixed') {
         promo_bar.style.zIndex = 900;
