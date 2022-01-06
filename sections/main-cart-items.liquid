@@ -129,7 +129,9 @@
   
   .my_main_cart_old_price {
     text-decoration: line-through;
+    color: var(--color-foreground-rgba);
   }
+    
   @media screen and (min-width: 0px) and (max-width: 749px) {
     .my_cart_item__quantity {
       justify-content: start;
@@ -335,7 +337,7 @@
                             {{ item.variant.compare_at_price | money }}
                           {%- endif -%}
                         </span>
-                        <span class="price price--end my_cart_price_font_size" style="margin-left: 1rem;">
+                        <span class="price price--end my_cart_price_font_size" style="margin-left: 1rem;color: {{settings.colors_sale_price}};">
                           {{ item.original_price | money }}
                         </span>
                       {%- endif -%}
