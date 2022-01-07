@@ -241,7 +241,8 @@
     },
     "404": {
       "title": "找不到页面",
-      "subtext": "404"
+      "subtext": "404",
+      "info_text": "您请求的页面不存在"
     }
   },
   "sections": {
