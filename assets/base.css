@@ -81,9 +81,11 @@ html.no-js .no-js-hidden {
 .element-margin {
   margin-top: 5rem;
 }
-
+.spaced-section:nth-child(1){
+  margin-top: 30px;
+}
 .spaced-section {
-  margin: 3rem 0;
+  margin-bottom: 3rem;
 }
   
 @media screen and (max-width: 990px) {
