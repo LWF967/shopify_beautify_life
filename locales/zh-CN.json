@@ -394,5 +394,20 @@
       "copy_code_success": "已成功复制代码",
       "print_gift_card": "打印"
     }
+  },
+  "homepage": {
+    "general": {
+      "title": "主页",
+      "home_link": "首页"
+    },
+    "onboarding": {
+      "product_title": "您的产品名称",
+      "product_description": "此区域用于描述您产品的详细信息。 告诉客户您产品的外观、感觉和风格。 添加有关颜色、使用的材料、尺寸和制造地点的详细信息。",
+      "collection_title": "您的收藏名称",
+      "blog_title": "你的帖子标题",
+      "blog_excerpt": "您的商店尚未发布任何博客文章。 博客可用于谈论您想与客户分享的新产品发布、技巧或其他新闻。 您可以查看 Shopify 的电子商务博客，为您自己的商店和博客获取灵感和建议。",
+      "blog_author": "作者姓名",
+      "no_content": "此部分当前不包含任何内容。 使用侧边栏向此部分添加内容。"
+    }
   }
 }
