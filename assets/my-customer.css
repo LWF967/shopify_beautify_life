@@ -1,5 +1,5 @@
 .customer:not(.account):not(.order) {
-    margin: 6rem auto 9rem;
+    margin: 0rem auto 9rem;
     max-width: 33.4rem;
     padding: 0 1.5rem;
     text-align: center;
@@ -523,35 +523,35 @@
   .addresses form > div:nth-of-type(7) + div[id] {
     margin-top: 1.5rem;
   }
-  .customers-activate-account {
-    min-height: 50vh; }
-  
-  @media only screen and (min-width: 750px) {
-    .customers-activate-account__container {
-      margin: 20vh 0; } }
-  
-  /*================ Addresses ================*/
-  #AddressNewForm {
-    margin-bottom: 60px; }
-    .new-address--hidden #AddressNewForm {
-      display: none; }
-  
-  .new-address-open {
+.customers-activate-account {
+  min-height: 50vh; }
+
+@media only screen and (min-width: 750px) {
+  .customers-activate-account__container {
+    margin: 20vh 0; } }
+
+/*================ Addresses ================*/
+#AddressNewForm {
+  margin-bottom: 60px; }
+  .new-address--hidden #AddressNewForm {
     display: none; }
-    .new-address--hidden .new-address-open {
-      display: inline-block; }
+
+.new-address-open {
+  display: none; }
+  .new-address--hidden .new-address-open {
+    display: inline-block; }
+
+.current-addresses {
+  margin-bottom: 60px; }
+  .current-addresses .current-addresses__item {
+    padding-bottom: 40px; }
+
+.edit-address {
+  display: none; }
+
+.edit-address--show {
+  display: block; }
   
-  .current-addresses {
-    margin-bottom: 60px; }
-    .current-addresses .current-addresses__item {
-      padding-bottom: 40px; }
-  
-  .edit-address {
-    display: none; }
-  
-  .edit-address--show {
-    display: block; }
-    
   /* Login */
 .login a {
     display: block;
