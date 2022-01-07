@@ -66,7 +66,7 @@
     {%- endif -%}
     <div class="article-card__footer">
       {%- if article.comments_count > 0 and blog.comments_enabled? -%}
-      <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
+      <span style="display: block;">{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
       {%- endif -%}
       <a href="{{ article.url }}">
         <div class="button my_small_button_font_size_default my_article_card_btn" style="background-color:transparent">
