@@ -139,8 +139,8 @@
     <button>
       {{ 'customer.register.submit' | t }}
     </button>
-    <a href="#login">
-      {{ 'customer.login_page.cancel' | t }}
+    <a href="{{ routes.account_login_url }}">
+      {{ 'customer.login_page.login' | t }}
     </a>
   {%- endform -%}
 </div>
