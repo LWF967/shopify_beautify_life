@@ -79,7 +79,7 @@
         "ca1dcff2-7b3b-4ad0-b5d0-594ac240396c": {
           "type": "html",
           "settings": {
-            "code": "HTML",
+            "code": "Custom HTML",
             "width": "100%"
           }
         },
@@ -130,7 +130,7 @@
         "collection": "frontpage",
         "products_to_show": 8,
         "grid": 4,
-        "show_view_all": false,
+        "show_view_all": true,
         "swipe_on_mobile": true,
         "image_ratio": "adapt",
         "use_eq_height": true,
