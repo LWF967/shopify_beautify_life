@@ -422,6 +422,7 @@
     float: right; }
 
 /* Addresses */
+/* Addresses */
 .addresses li > button {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -522,6 +523,35 @@
   .addresses form > div:nth-of-type(7) + div[id] {
     margin-top: 1.5rem;
   }
+  .customers-activate-account {
+    min-height: 50vh; }
+  
+  @media only screen and (min-width: 750px) {
+    .customers-activate-account__container {
+      margin: 20vh 0; } }
+  
+  /*================ Addresses ================*/
+  #AddressNewForm {
+    margin-bottom: 60px; }
+    .new-address--hidden #AddressNewForm {
+      display: none; }
+  
+  .new-address-open {
+    display: none; }
+    .new-address--hidden .new-address-open {
+      display: inline-block; }
+  
+  .current-addresses {
+    margin-bottom: 60px; }
+    .current-addresses .current-addresses__item {
+      padding-bottom: 40px; }
+  
+  .edit-address {
+    display: none; }
+  
+  .edit-address--show {
+    display: block; }
+    
   /* Login */
 .login a {
     display: block;
