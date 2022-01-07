@@ -46,8 +46,8 @@
     },
     "social": {
       "alt_text": {
-        "share_on_facebook": "在 Facebook 上共享",
-        "share_on_twitter": "在 Twitter 上发推文",
+        "share_on_facebook": "分享到Facebook",
+        "share_on_twitter": "在Twitter上发推文",
         "share_on_pinterest": "固定在 Pinterest 上"
       },
       "links": {
