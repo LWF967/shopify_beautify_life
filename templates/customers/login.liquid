@@ -111,6 +111,7 @@
           autocomplete="email"
           autocorrect="off"
           autocapitalize="off"
+          pattern="^\d{11}$" oninvalid="setCustomValidity('请输入11位数字')"
           {% if form.errors contains 'form' %}
             aria-invalid="true"
           {% endif %}
