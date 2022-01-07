@@ -1,5 +1,9 @@
 {{ 'my-customer.css' | asset_url | stylesheet_tag }}
-
+<style>
+  .my_login{
+    margin-top:12rem;
+  }
+</style>
 <div class="customer login">
   <h1 id="recover" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
@@ -52,7 +56,7 @@
     {%- endform -%}
   </div>
 
-  <h1 id="login" tabindex="-1">
+  <h1 id="login" tabindex="-1" class="my_login">
     {{ 'customer.login_page.title' | t }}
   </h1>
   <div>
