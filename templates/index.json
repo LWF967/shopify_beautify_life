@@ -978,10 +978,10 @@
       "settings": {
         "heading": "Blog posts",
         "head_text": "The most exciting news",
-        "blog": "tt1",
+        "blog": "新闻",
         "post_limit": 4,
         "show_image": true,
-        "show_title": true,
+        "show_title": false,
         "show_short_content": true,
         "show_date": true,
         "show_author": true,
