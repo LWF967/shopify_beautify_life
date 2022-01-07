@@ -22,6 +22,8 @@
     min-height: 4.4rem;
   }
 </style>
+<!-- pattern="^\d{11}$" oninvalid="setCustomValidity('Pleace include an @ Incorrect email, please adjust it')" -->
+
 <div class="customer login my_login">
   <h1 id="recover" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
@@ -30,7 +32,6 @@
     <p>
       {{ 'customer.recover_password.subtext' | t }}
     </p>
-    <!-- pattern="^\d{11}$" oninvalid="setCustomValidity('Pleace include an @ Incorrect email, please adjust it')" -->
 
     {%- form 'recover_customer_password' -%}
       {% assign recover_success = form.posted_successfully? %}
