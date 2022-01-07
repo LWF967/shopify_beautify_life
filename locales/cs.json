@@ -220,9 +220,7 @@
       "title": "Výsledky hledání",
       "results_with_count": {
         "one": "Pro dotaz {{ terms }} byl nalezen {{ count }} výsledek",
-        "other": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}",
-        "few": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}",
-        "many": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}"
+        "other": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}"
       },
       "page": "Stránka",
       "products": "Produkty",
@@ -254,9 +252,7 @@
       "menu": "Nabídka",
       "cart_count": {
         "one": "{{ count }} položka",
-        "other": "{{ count }} polož.",
-        "few": "{{ count }} polož.",
-        "many": "{{ count }} polož."
+        "other": "{{ count }} polož."
       }
     },
     "cart": {
@@ -339,6 +335,21 @@
     },
     "video": {
       "load_video": "Načíst video: {{ description }}"
+    },
+    "map": {
+      "address_error": "Chyba při vyhledávání této adresy",
+      "address_no_results": "Žádné výsledky pro tuto adresu",
+      "address_query_limit_html": "Překročili jste limit využití Google API. Zvažte upgrade na <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">prémiové Plán<\/a>.",
+      "auth_error_html": "Při ověřování vašeho účtu Map Google došlo k problému.",
+      "section_heading": "Umístění"
+    },
+    "slideshow": {
+      "next_slide": "Další snímek",
+      "previous_slide": "Předchozí snímek",
+      "pause_slideshow": "Pozastavit prezentaci",
+      "rotate_slideshow": "Přehrát prezentaci",
+      "load_slide": "Načíst snímek {{ slide_number }}",
+      "navigation_instructions": "K procházení prezentace použijte šipky doleva\/doprava nebo přejeďte prstem doleva\/doprava, pokud používáte mobilní zařízení"
     }
   },
   "localization": {
