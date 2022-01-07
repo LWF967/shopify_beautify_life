@@ -33,7 +33,7 @@
 
         </div>
         {%- endform -%}
-        <a class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default my_daily_deal_of_the_day_button_box_shadow my_clear_padding" style="margin-left:4rem;" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default" style="padding:8px 15px">Detail</button></a>
+        <a class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default my_daily_deal_of_the_day_button_box_shadow my_clear_padding" style="margin-left:4rem;" href=" {{product.url}}"><button class="button white-button font-cap my_daily_deal_of_the_day_button_font_size my_font_weight_default" style="padding:8px 15px">{{ 'date_formats.detail_text' | t }}</button></a>
       </product-form>
       {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
       <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
