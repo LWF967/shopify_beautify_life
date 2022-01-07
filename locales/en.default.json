@@ -282,7 +282,8 @@
       }
     },
     "footer": {
-      "payment": "Payment methods"
+      "payment": "Payment methods",
+      "social_placeholder": "Follow us on social media!"
     },
     "featured_blog": {
       "view_all": "VIEW ALL",
