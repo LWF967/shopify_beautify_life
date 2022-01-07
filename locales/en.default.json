@@ -124,7 +124,7 @@
       "all_topics": "All topics",
       "by_author": "By {{ author }}",
       "posted_in": "Posted in",
-      "read_more": "Continue Reading",
+      "read_more": "Read more",
       "read_more_title": "Read more: {{ title }}",
       "back_to_blog": "Back to {{ title }}",
       "tags": "Tags",
