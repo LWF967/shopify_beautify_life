@@ -100,7 +100,7 @@
         <div class="footer__column footer__column--info my_footer_bottom_flex my_footer_bottom_layout_center"> 
           <div class="footer__copyright caption my_footer_copyright my_footer_bottom_item_flex my_footer_bottom_item_centered my_footer_bottom_item_centered_padding">
             {%- for block in section.blocks -%}
-            <small class="copyright__content my_footer_bottom_copyright_font_size">{{ block.settings.copyrights_text }}</small>
+            <small class="copyright__content my_footer_bottom_copyright_font_size">{{ block.settings.copyrights_text | t }}</small>
             {%- endfor -%}
 
             <!-- country -->
