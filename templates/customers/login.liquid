@@ -111,6 +111,11 @@
           autocomplete="email"
           autocorrect="off"
           autocapitalize="off"
+          {% if form.errors %}
+          aria-invalid="true"
+          aria-describedby="RecoverEmail-email-error"
+          autofocus
+        {% endif %}
           {% if form.errors contains 'form' %}
             aria-invalid="true"
           {% endif %}
