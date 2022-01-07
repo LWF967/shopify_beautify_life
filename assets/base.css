@@ -83,12 +83,12 @@ html.no-js .no-js-hidden {
 }
 
 .spaced-section {
-  margin-top: 5.5rem;
+  margin-bottom: 3rem;
 }
   
 @media screen and (max-width: 990px) {
   .spaced-section {
-    margin-top: 3.5rem;
+    margin-bottom: 3rem;
   }
 }
 
