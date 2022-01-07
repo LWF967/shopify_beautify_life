@@ -476,7 +476,8 @@
   },
   "homepage": {
     "general": {
-      "title": "Homepage"
+      "title": "Homepage",
+      "home_link": "Home"
     },
     "onboarding": {
       "product_title": "Your product's name",
