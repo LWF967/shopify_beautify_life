@@ -143,9 +143,10 @@
     <button>
       {{ 'customer.register.submit' | t }}
     </button>
-
-    <a class="to_login" href="{{ routes.account_login_url }}">
+    <div  class="to_login">
+    <a href="{{ routes.account_login_url }}">
       Sign in
     </a>
+  </div>
   {%- endform -%}
 </div>
