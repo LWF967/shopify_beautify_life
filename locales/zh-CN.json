@@ -115,23 +115,52 @@
   },
   "blogs": {
     "article": {
-      "blog": "博客",
-      "read_more_title": "阅读详细内容：{{ title }}",
-      "read_more": "阅读详细内容",
       "comments": {
         "one": "{{ count }} 条评论",
         "other": "{{ count }} 条评论"
       },
+      "blog": "博客",
+      "view_all": "查看更多",
+      "view_all_blogs": "查看所有博客",
+      "all_topics": "所有主题",
+      "by_author": "出自 {{ author }}",
+      "posted_in": "发表于",
+      "read_more": "阅读详细内容",
+      "read_more_title": "阅读详细内容：{{ title }}",
+      "back_to_blog": "回到 {{ title }}",
+      "tags": "标签",
       "moderated": "请注意，评论必须在发布之前获得批准。",
       "comment_form_title": "发表评论",
       "name": "名称",
       "email": "电子邮件",
       "message": "评论",
       "post": "发布评论",
-      "back_to_blog": "返回博客",
       "share": "分享此文章",
       "success": "您的评论已成功发布！谢谢！",
-      "success_moderated": "您的评论已成功发布。由于我们的博客要经过审核，我们会在稍后将其发布。"
+      "success_moderated": "您的评论已成功发布。由于我们的博客要经过审核，我们会在稍后将其发布。",
+      "article_with_count": {
+        "one": "{{ count }} 篇文章",
+        "other": "{{ count }} 篇文章"
+      },
+      "by": "By",
+      "on": "on",
+      "in": "In",
+      "back_to": "回到 {{title}}"
+    },
+    "comments": {
+      "title": "发表评论",
+      "name": "姓名",
+      "email": "电子邮件",
+      "message": "消息",
+      "post": "发表评论",
+      "moderated": "请注意，评论必须在发表前获得批准",
+      "success_moderated": "您的评论已成功发布。由于我们的博客要经过审核，我们会在稍后将其发布。",
+      "success": "您的评论已成功发布！谢谢！",
+      "unapproved": "所提供的电子邮件地址未被批准发表评论。",
+      "comments_with_count": {
+        "one": "{{ count }} 条评论",
+        "other": "{{ count }} 条评论"
+      }
     }
   },
   "onboarding": {
