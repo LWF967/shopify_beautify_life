@@ -81,7 +81,7 @@ html.no-js .no-js-hidden {
 .element-margin {
   margin-top: 5rem;
 }
-.content-for-layout .spaced-section:only-child{
+.spaced-section:first-child{
   margin-top: 3rem;
 }
 .spaced-section {
