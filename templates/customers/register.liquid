@@ -1,6 +1,12 @@
 {{ 'my-customer.css' | asset_url | stylesheet_tag }}
-
-<div class="customer register">
+<style>
+  .my_register{
+    margin:120px 0 55px 0;
+    font-size: 36px;
+    font-weight: 700;
+  }
+</style>
+<div class="customer register my_register">
   <svg style="display: none">
     <symbol id="icon-error" viewBox="0 0 13 13">
       <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
