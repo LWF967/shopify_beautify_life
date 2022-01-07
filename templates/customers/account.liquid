@@ -57,7 +57,7 @@
     transition: all .3s;
     text-decoration: none;
 }
-.log-out a:hover { 
+.log-out a:hover , .my_details a:hover { 
   color: #56cfe1 
 }
  
@@ -180,7 +180,7 @@
       {% endpaginate %}
     </div>
 
-    <div>
+    <div class="my_details">
       <h2>{{ 'customer.account.details' | t }}</h2>
 
       {{ customer.default_address | format_address }}
