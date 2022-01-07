@@ -54,6 +54,11 @@
   .log-out a {
     display: inline-flex;
     align-items: center;
+    transition: all .3s;
+    text-decoration: none;
+}
+.log-out a:hover { 
+  color: {{ section.settings.hover_link_color }} 
 }
  
 @media screen and (min-width:990px) {
