@@ -1,6 +1,6 @@
 {{ 'my-customer.css' | asset_url | stylesheet_tag }}
 <style>
-  .my_login_h1{
+  .my_login h1{
     margin:12px 0 5.5px 0;
     font-size: 36px;
     font-weight: 700;
@@ -61,7 +61,7 @@
     {%- endform -%}
   </div>
 
-  <h1 id="login" tabindex="-1" class="my_login_h1">
+  <h1 id="login" tabindex="-1" >
     {{ 'customer.login_page.title' | t }}
   </h1>
   <div>
