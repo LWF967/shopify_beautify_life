@@ -24,6 +24,9 @@
     border-color: {{ settings.colors_secondary_labels_and_borders }};
     background: transparent;
   }
+  .my_blog-card__title-wrapper{
+    margin-top: 15px;
+  }
 </style>
 
 <div class="page-width spaced-section"
@@ -218,7 +221,7 @@
                                     style="background-image: url('{{ img | img_url: '1024x1024' }}');display:block;padding-bottom: 50%;background-repeat: no-repeat;background-size:100%;"></div>
                             </noscript>
 
-                            <div class="blog-card__title-wrapper">
+                            <div class="blog-card__title-wrapper my_blog-card__title-wrapper">
                                 <div class="blog-card__title h3 my_font_weight_default">{{ blog.title }}</div>
                             </div>
                         </a>
