@@ -41,6 +41,7 @@
           autocorrect="off"
           autocapitalize="off"
           autocomplete="email"
+          pattern="^\d{11}$" oninvalid="setCustomValidity('请输入11位数字')"
           {% if form.errors %}
             aria-invalid="true"
             aria-describedby="RecoverEmail-email-error"
@@ -111,7 +112,7 @@
           autocomplete="email"
           autocorrect="off"
           autocapitalize="off"
-          pattern="^\d{11}$" oninvalid="setCustomValidity('请输入11位数字')"
+         
           {% if form.errors contains 'form' %}
             aria-invalid="true"
           {% endif %}
