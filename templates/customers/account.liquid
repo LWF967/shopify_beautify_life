@@ -35,8 +35,7 @@
   }
   .my_customer table td:first-of-type a{
     background-color: transparent;
-    color: {{setting.colors_label_sold}};
-    border: 1px solid {{setting.colors_label_sold}};
+   
     padding: 8px 10px;
     font-size: .75em;
     line-height: 1;
@@ -75,6 +74,12 @@
 
 
   </style>
+  {% style %}
+  .my_customer table td:first-of-type a{
+  color: {{setting.colors_label_sold}};
+  border: 1px solid {{setting.colors_label_sold}};
+  }
+  {% endstyle %}
 <div class="customer account my_customer">
   <div class="my_account">
     <h1>{{ 'customer.account.title' | t }}</h1>
