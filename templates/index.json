@@ -462,7 +462,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "Image with text overlay",
             "slider_sub_text": "Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.",
-            "slider_button_text": "title namenghnjh",
+            "slider_button_text": "Title name",
             "slider_button_link": ""
           }
         },
@@ -474,7 +474,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
+            "slider_button_text": "Title name",
             "slider_button_link": ""
           }
         },
@@ -486,7 +486,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
+            "slider_button_text": "Title name",
             "slider_button_link": ""
           }
         },
@@ -498,7 +498,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
+            "slider_button_text": "Title name",
             "slider_button_link": ""
           }
         }
@@ -538,7 +538,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
+            "slider_button_text": "Title name",
             "slider_button_link": ""
           }
         },
@@ -549,7 +549,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
+            "slider_button_text": "Title name",
             "slider_button_link": ""
           }
         }
@@ -582,7 +582,7 @@
         "16382544719fc01cce-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with textsdsd"
+            "heading": "Image with text"
           }
         },
         "16382544719fc01cce-1": {
@@ -594,7 +594,7 @@
         "16382544719fc01cce-2": {
           "type": "button",
           "settings": {
-            "button_text": "VIEW ALLasdasd",
+            "button_text": "VIEW ALL",
             "button_link": "shopify:\/\/collections\/all"
           }
         }
