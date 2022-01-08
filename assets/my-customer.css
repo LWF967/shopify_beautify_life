@@ -227,9 +227,7 @@
   
   /* mobile table overrides */
   @media screen and (max-width: 749px) {
-    .my_order_details_table {
-      padding-right: 0px;
-    }
+    
     .customer thead,
     .customer th,
     .customer tfoot td:first-of-type {
