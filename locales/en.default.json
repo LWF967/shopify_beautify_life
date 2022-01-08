@@ -86,12 +86,13 @@
     }
   },
   "date_formats": {
-    "month_year": "%B %Y"
+    "month_year": "%B %Y",
+    "detail_text": "Detail"
   },
   "newsletter": {
     "label": "Email",
     "success": "Thanks for subscribing",
-    "button_label": "Subscribe"
+    "button_label": "SUBSCRIBE"
   },
   "accessibility": {
     "skip_to_text": "Skip to content",
@@ -281,7 +282,8 @@
       }
     },
     "footer": {
-      "payment": "Payment methods"
+      "payment": "Payment methods",
+      "social_placeholder": "Follow us on social media!"
     },
     "featured_blog": {
       "view_all": "VIEW ALL",
@@ -475,7 +477,8 @@
   },
   "homepage": {
     "general": {
-      "title": "Homepage"
+      "title": "Homepage",
+      "home_link": "Home"
     },
     "onboarding": {
       "product_title": "Your product's name",
