@@ -701,7 +701,7 @@
   }
   
   li[data-address] {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   
   .addresses [aria-expanded='false'] ~ div[id] {
