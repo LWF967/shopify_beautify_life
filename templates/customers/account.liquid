@@ -18,12 +18,7 @@
     font-weight: 700;
     margin-bottom: 15px;
   }
-  .my_customer .my_order_history table ,.my_customer .my_order_history table td,.my_customer .my_order_history table th{
-    border: 1px solid #ddd;
-    vertical-align: middle;
-    font-size: 16px;
-    font-family: var(--font-body-family);
-  }
+ 
   .my_customer .my_order_history table{
     border-collapse: collapse;
   }
@@ -77,6 +72,12 @@
   .my_customer table td:first-of-type a{
   color: {{settings.colors_label_sold}};
   border: 1px solid {{settings.colors_label_sold}};
+  }
+  .my_customer .my_order_history table ,.my_customer .my_order_history table td,.my_customer .my_order_history table th{
+    border: 1px solid {{settings.colors_label_sold}};
+    vertical-align: middle;
+    font-size: 16px;
+    font-family: var(--font-body-family);
   }
   {% endstyle %}
 <div class="customer account my_customer">
