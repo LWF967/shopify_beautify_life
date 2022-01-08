@@ -468,6 +468,7 @@
       "remaining_html": "остава: {{ balance }}",
       "add_to_apple_wallet": "Добавяне към Apple Wallet",
       "qr_image_alt": "QR код – сканирайте го, за да използвате ваучера за подарък",
+      "redeem_html": "Използвайте този код при плащане, за да осребрите картата си {{ value }} за подарък",
       "copy_code": "копирай кода",
       "expired": "Изтекъл",
       "copy_code_success": "Кодът е копиран успешно",
