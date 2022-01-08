@@ -13,11 +13,13 @@
   font-size: 16px;
   min-height: 44px;
 }
-.my_addresses ul li button:hover{
-  text-decoration-thickness: 0.2rem;
-}
+
 </style>
 {% style %}
+.my_addresses ul li EditFormButton_{{ address.id }}:hover{
+  text-decoration-thickness: 0.2rem;
+}
+
 .my_addresses ul li button{
 min-height: 44px;
 color: {{settings.colors_label_sold}};
