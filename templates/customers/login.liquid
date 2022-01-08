@@ -72,7 +72,7 @@
         {{ 'customer.login_page.submit' | t }}
       </button>
 
-      <a href="#login">
+      <a href="#login" class="my_cancel">
         {{ 'customer.login_page.cancel' | t }}
       </a>
     {%- endform -%}
@@ -186,6 +186,12 @@
     e.stopPropagation();
     my_recover_password.style.display = "block";
     my_login_from.style.display = "none";
-
+  })
+  // cancel
+  var my_cancel = document.querySelector(".my_cancel")
+  my_cancel.addEventListener('click',function(e){
+    e.stopPropagation();
+    my_recover_password.style.display = "none";
+    my_login_from.style.display = "block";
   })
 </script>
