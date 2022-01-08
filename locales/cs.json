@@ -220,9 +220,7 @@
       "title": "Výsledky hledání",
       "results_with_count": {
         "one": "Pro dotaz {{ terms }} byl nalezen {{ count }} výsledek",
-        "other": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}",
-        "few": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}",
-        "many": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}"
+        "other": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}"
       },
       "page": "Stránka",
       "products": "Produkty",
@@ -320,21 +318,15 @@
       "use_fewer_filters_html": "Můžete použít méně filtrů nebo <a class=\"{{ class }}\" href=\"{{ link }}\">vymazat vše<\/a>.",
       "product_count": {
         "one": "{{ product_count }} z {{ count }} produktu",
-        "other": "{{ product_count }} z {{ count }} produktů",
-        "few": "{{ product_count }} z {{ count }} produktů",
-        "many": "{{ product_count }} z {{ count }} produktů"
+        "other": "{{ product_count }} z {{ count }} produktů"
       },
       "filters_selected": {
         "one": "Vybráno: {{ count }}",
-        "other": "Vybráno: {{ count }}",
-        "few": "Vybráno: {{ count }}",
-        "many": "Vybráno: {{ count }}"
+        "other": "Vybráno: {{ count }}"
       },
       "product_count_simple": {
         "one": "Počet produktů: {{ count }}",
-        "other": "Počet produktů: {{ count }}",
-        "few": "Počet produktů: {{ count }}",
-        "many": "Počet produktů: {{ count }}"
+        "other": "Počet produktů: {{ count }}"
       }
     },
     "video": {
