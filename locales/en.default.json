@@ -81,19 +81,17 @@
     "share": {
       "close": "Close share",
       "copy_to_clipboard": "Copy link",
-      "share": "Share",
       "share_url": "Link",
       "success_message": "Link copied to clipboard"
     }
   },
   "date_formats": {
-    "month_year": "%B %Y",
-    "detail_text": "Detail"
+    "month_year": "%B %Y"
   },
   "newsletter": {
     "label": "Email",
     "success": "Thanks for subscribing",
-    "button_label": "SUBSCRIBE"
+    "button_label": "Subscribe"
   },
   "accessibility": {
     "skip_to_text": "Skip to content",
@@ -283,8 +281,7 @@
       }
     },
     "footer": {
-      "payment": "Payment methods",
-      "social_placeholder": "Follow us on social media!"
+      "payment": "Payment methods"
     },
     "featured_blog": {
       "view_all": "VIEW ALL",
@@ -478,8 +475,7 @@
   },
   "homepage": {
     "general": {
-      "title": "Homepage",
-      "home_link": "Home"
+      "title": "Homepage"
     },
     "onboarding": {
       "product_title": "Your product's name",

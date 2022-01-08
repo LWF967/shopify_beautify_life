@@ -79,7 +79,7 @@
         "ca1dcff2-7b3b-4ad0-b5d0-594ac240396c": {
           "type": "html",
           "settings": {
-            "code": "Custom HTML",
+            "code": "HTML",
             "width": "100%"
           }
         },
@@ -130,7 +130,7 @@
         "collection": "frontpage",
         "products_to_show": 8,
         "grid": 4,
-        "show_view_all": true,
+        "show_view_all": false,
         "swipe_on_mobile": true,
         "image_ratio": "adapt",
         "use_eq_height": true,
@@ -462,7 +462,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "Image with text overlay",
             "slider_sub_text": "Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.",
-            "slider_button_text": "Title name",
+            "slider_button_text": "title namenghnjh",
             "slider_button_link": ""
           }
         },
@@ -474,7 +474,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "Title name",
+            "slider_button_text": "title name",
             "slider_button_link": ""
           }
         },
@@ -486,7 +486,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "Title name",
+            "slider_button_text": "title name",
             "slider_button_link": ""
           }
         },
@@ -498,7 +498,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "Title name",
+            "slider_button_text": "title name",
             "slider_button_link": ""
           }
         }
@@ -538,7 +538,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "Title name",
+            "slider_button_text": "title name",
             "slider_button_link": ""
           }
         },
@@ -549,7 +549,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "Title name",
+            "slider_button_text": "title name",
             "slider_button_link": ""
           }
         }
@@ -582,7 +582,7 @@
         "16382544719fc01cce-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text"
+            "heading": "Image with textsdsd"
           }
         },
         "16382544719fc01cce-1": {
@@ -594,7 +594,7 @@
         "16382544719fc01cce-2": {
           "type": "button",
           "settings": {
-            "button_text": "VIEW ALL",
+            "button_text": "VIEW ALLasdasd",
             "button_link": "shopify:\/\/collections\/all"
           }
         }
@@ -978,10 +978,10 @@
       "settings": {
         "heading": "Blog posts",
         "head_text": "The most exciting news",
-        "blog": "新闻",
+        "blog": "tt1",
         "post_limit": 4,
         "show_image": true,
-        "show_title": false,
+        "show_title": true,
         "show_short_content": true,
         "show_date": true,
         "show_author": true,
@@ -992,36 +992,44 @@
         "featured_blog_margin_bottom": ""
       }
     },
-    "1641538911b6e340f1": {
-      "type": "map",
-      "settings": {
-        "heading": "Our store",
-        "address": "<p>123 Fake St.<br>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm<\/p>",
-        "map_address": "301 Front St W, Toronto",
-        "button_text": "Get directions",
-        "show_pin": true,
-        "background_image_position": "center center",
-        "map_margin_top": "",
-        "map_margin_bottom": ""
-      }
-    },
-    "1641555701c01ed303": {
-      "type": "featured-blog",
+    "16406626061a01c04f": {
+      "type": "blog-page-post-beautify",
       "settings": {
         "heading": "Blog posts",
         "head_text": "The most exciting news",
+        "image_ratio1": "ratio16_9",
         "blog": "新闻",
-        "post_limit": 3,
+        "post_limit": 5,
         "show_image": true,
         "show_title": true,
         "show_short_content": true,
         "show_date": true,
         "show_author": false,
-        "featured_blog_bk_color": "#1eec5e",
+        "blog_soft_background": "#f3f3f3",
         "color_scheme": "gradient",
         "show_view_all": true,
-        "featured_blog_margin_top": "",
-        "featured_blog_margin_bottom": ""
+        "blog_page_beautify_margin_top": "",
+        "blog_page_beautify_margin_bottom": ""
+      }
+    },
+    "16408449389c8daf61": {
+      "type": "blog-page-post-beautify",
+      "settings": {
+        "heading": "Blog posts",
+        "head_text": "The most exciting news",
+        "image_ratio1": "ratio_nt",
+        "blog": "新闻",
+        "post_limit": 6,
+        "show_image": true,
+        "show_title": true,
+        "show_short_content": true,
+        "show_date": true,
+        "show_author": false,
+        "blog_soft_background": "#f3f3f3",
+        "color_scheme": "gradient",
+        "show_view_all": true,
+        "blog_page_beautify_margin_top": "",
+        "blog_page_beautify_margin_bottom": ""
       }
     }
   },
@@ -1044,7 +1052,7 @@
     "1638771575eb761fd8",
     "163817972763d6e808",
     "1636093631994b741b",
-    "1641538911b6e340f1",
-    "1641555701c01ed303"
+    "16406626061a01c04f",
+    "16408449389c8daf61"
   ]
 }
