@@ -13,8 +13,6 @@
   font-size: 16px;
   min-height: 44px;
 }
-</style>
-{% style %}
 .my_addresses ul li button{
   min-height: 44px;
   cursor: pointer;
@@ -36,9 +34,10 @@
   -webkit-appearance: none;
   appearance: none;
 }
-.my_addresses ul li button:hover{
-  text-decoration-thickness: 0.2rem;
-}
+</style>
+{% style %}
+
+
 {% endstyle %}
 {%- paginate customer.addresses by 5 -%}
   <div class="customer addresses my_addresses my_customer " data-customer-addresses>
