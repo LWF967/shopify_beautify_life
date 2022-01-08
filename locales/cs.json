@@ -3,7 +3,6 @@
     "password_page": {
       "login_form_heading": "Zadejte heslo, abyste mohli vstoupit do obchodu:",
       "login_password_button": "Vstoupit pomocí hesla",
-      "login_password_button_1": "ZADEJTE POMOCÍ HESLA",
       "login_form_password_label": "Heslo",
       "login_form_password_placeholder": "Vaše heslo",
       "login_form_error": "Heslo není správné!",
@@ -11,39 +10,6 @@
       "modal": "Modální okno hesla",
       "admin_link_html": "Jste majitelem obchodu? <a href=\"\/admin\" class=\"link underlined-link\">Přihlaste se zde<\/a>",
       "powered_by_shopify_html": "Obchod bude využívat platformu {{ shopify }}"
-    },
-    "nt_tooltip": {
-      "login_to_wishlist": "Přihlaste se pro použití seznamu přání",
-      "add_to_wishlist": "Přidat do seznamu přání",
-      "remove_wishlist": "Odstranit seznam přání",
-      "browse_wishlist": "Procházet seznam přání",
-      "compare": "Porovnat",
-      "added_text_compare": "Porovnat produkty",
-      "quick_view": "Rychlé zobrazení",
-      "select_options": "Vybrat možnosti",
-      "read_more": "Přečíst více",
-      "view": "Zobrazit produkty",
-      "add_to_cart": "Přidat do košíku",
-      "share_fb": "Sdílet na Facebooku",
-      "share_tw": "Sdílet na Twitteru",
-      "share_em": "Sdílet e-mailem",
-      "share_pr": "Sdílet na Pinterestu",
-      "share_tu": "Sdílet na Tumblr",
-      "share_tl": "Sdílet na telegramu",
-      "share_wa": "Sdílet na WhatsApp",
-      "follow_fb": "Sledovat na Facebooku",
-      "follow_tw": "Sledovat na Twitteru",
-      "follow_it": "Sledovat na Instagramu",
-      "follow_dr": "Sledovat Dribbble",
-      "follow_ld": "Sledovat na Linkedinu",
-      "follow_pr": "Sledovat na Pinterestu",
-      "follow_tu": "Sledovat na Tumblr",
-      "follow_yt": "Sledovat na YouTube",
-      "follow_bh": "Sledovat na Behance",
-      "follow_sc": "Sledovat na Soundcloud",
-      "follow_tt": "Sledovat na Tiktoku",
-      "follow_sn": "Sledovat na Snapchat",
-      "follow_vi": "Sledovat na Vimeo"
     },
     "social": {
       "alt_text": {
@@ -71,8 +37,7 @@
       "previous": "Předchozí stránka"
     },
     "search": {
-      "search": "HLEDAT NAŠE STRÁNKY",
-      "search_label": "Hledat"
+      "search": "Hledání"
     },
     "cart": {
       "view": "Zobrazit košík ({{ count }})",
@@ -87,8 +52,7 @@
     }
   },
   "date_formats": {
-    "month_year": "%B %Y",
-    "detail_text": "Detail"
+    "month_year": "%B %Y"
   },
   "newsletter": {
     "label": "E-mail",
@@ -116,51 +80,24 @@
   },
   "blogs": {
     "article": {
-      "comments": {
-        "one": "{{ count }} komentář",
-        "other": "{{ count }} komentářů"
-      },
       "blog": "Blog",
-      "view_all": "Zobrazit více",
-      "view_all_blogs": "Zobrazit všechny blogy",
-      "all_topics": "Všechna témata",
-      "by_author": "Od {{ autora }}",
-      "posted_in": "Zveřejněno v",
-      "read_more": "Pokračovat ve čtení",
-      "read_more_title": "Přečíst více: {{ title }}",
-      "back_to_blog": "Zpět na {{ title }}",
-      "tags": "tags",
+      "read_more_title": "Přečtěte si více: {{ title }}",
+      "read_more": "Přečtěte si více",
       "moderated": "Upozorňujeme, že komentáře musí být před zveřejněním schváleny.",
-      "comment_form_title": "Zanechat komentář",
-      "name": "Jméno",
+      "comment_form_title": "Napište komentář",
+      "name": "Název",
       "email": "E-mail",
       "message": "Komentář",
-      "post": "Přidat komentář",
-      "share": "Sdílet tento článek",
-      "success": "Váš komentář byl úspěšně odeslán! Děkujeme!",
-      "success_moderated": "Váš komentář byl úspěšně odeslán. Za chvíli jej zveřejníme, protože náš blog je moderován.",
-      "article_with_count": {
-        "one": "{{ count }} článek",
-        "other": "{{ count }} článků"
-      },
-      "by": "Od",
-      "on": "on",
-      "in": "In",
-      "back_to": "Zpět na {{title}}"
-    },
-    "comments": {
-      "title": "Zanechat komentář",
-      "name": "Jméno",
-      "email": "E-mail",
-      "message": "Zpráva",
-      "post": "Přidat komentář",
-      "moderated": "Upozorňujeme, že komentáře musí být před zveřejněním schváleny",
-      "success_moderated": "Váš komentář byl úspěšně odeslán. Za chvíli jej zveřejníme, protože náš blog je moderován.",
-      "success": "Váš komentář byl úspěšně odeslán! Děkujeme!",
-      "unapproved": "Zadaná e-mailová adresa není schválena pro přidávání komentářů.",
-      "comments_with_count": {
+      "post": "Zveřejnit komentář",
+      "back_to_blog": "Zpět na blog",
+      "share": "Nasdílet tento článek",
+      "success": "Váš komentář byl úspěšně publikován! Děkujeme!",
+      "success_moderated": "Váš komentář byl úspěšně publikován. Zveřejníme jej až za chvíli, protože náš blog je moderován.",
+      "comments": {
         "one": "{{ count }} komentář",
-        "other": "{{ count }} komentářů"
+        "other": "Počet komentářů: {{ count }}",
+        "few": "Počet komentářů: {{ count }}",
+        "many": "Počet komentářů: {{ count }}"
       }
     }
   },
@@ -220,7 +157,9 @@
       "title": "Výsledky hledání",
       "results_with_count": {
         "one": "Pro dotaz {{ terms }} byl nalezen {{ count }} výsledek",
-        "other": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}"
+        "other": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}",
+        "few": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}",
+        "many": "Pro dotaz {{ terms }} byl nalezen tento počet výsledků: {{ count }}"
       },
       "page": "Stránka",
       "products": "Produkty",
@@ -242,8 +181,7 @@
     },
     "404": {
       "title": "Stránka nebyla nalezena",
-      "subtext": "404",
-      "info_text": "Požadovaná stránka neexistuje"
+      "subtext": "404"
     }
   },
   "sections": {
@@ -252,7 +190,9 @@
       "menu": "Nabídka",
       "cart_count": {
         "one": "{{ count }} položka",
-        "other": "{{ count }} polož."
+        "other": "{{ count }} polož.",
+        "few": "{{ count }} polož.",
+        "many": "{{ count }} polož."
       }
     },
     "cart": {
@@ -316,34 +256,25 @@
       "use_fewer_filters_html": "Můžete použít méně filtrů nebo <a class=\"{{ class }}\" href=\"{{ link }}\">vymazat vše<\/a>.",
       "product_count": {
         "one": "{{ product_count }} z {{ count }} produktu",
-        "other": "{{ product_count }} z {{ count }} produktů"
+        "other": "{{ product_count }} z {{ count }} produktů",
+        "few": "{{ product_count }} z {{ count }} produktů",
+        "many": "{{ product_count }} z {{ count }} produktů"
       },
       "filters_selected": {
         "one": "Vybráno: {{ count }}",
-        "other": "Vybráno: {{ count }}"
+        "other": "Vybráno: {{ count }}",
+        "few": "Vybráno: {{ count }}",
+        "many": "Vybráno: {{ count }}"
       },
       "product_count_simple": {
         "one": "Počet produktů: {{ count }}",
-        "other": "Počet produktů: {{ count }}"
+        "other": "Počet produktů: {{ count }}",
+        "few": "Počet produktů: {{ count }}",
+        "many": "Počet produktů: {{ count }}"
       }
     },
     "video": {
       "load_video": "Načíst video: {{ description }}"
-    },
-    "map": {
-      "address_error": "Chyba při vyhledávání této adresy",
-      "address_no_results": "Žádné výsledky pro tuto adresu",
-      "address_query_limit_html": "Překročili jste limit využití Google API. Zvažte upgrade na <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">prémiové Plán<\/a>.",
-      "auth_error_html": "Při ověřování vašeho účtu Map Google došlo k problému.",
-      "section_heading": "Umístění"
-    },
-    "slideshow": {
-      "next_slide": "Další snímek",
-      "previous_slide": "Předchozí snímek",
-      "pause_slideshow": "Pozastavit prezentaci",
-      "rotate_slideshow": "Přehrát prezentaci",
-      "load_slide": "Načíst snímek {{ slide_number }}",
-      "navigation_instructions": "K procházení prezentace použijte šipky doleva\/doprava nebo přejeďte prstem doleva\/doprava, pokud používáte mobilní zařízení"
     }
   },
   "localization": {
@@ -469,26 +400,10 @@
       "remaining_html": "Zbývající částka: {{ balance }}",
       "add_to_apple_wallet": "Přidat do Apple Wallet",
       "qr_image_alt": "QR kód: po naskenování můžete uplatnit svou dárkovou kartu",
-      "redeem_html": "Použijte tento kód při placení k uplatnění {{ value }} dárkové karty",
       "copy_code": "Kopírovat kód",
       "expired": "Platnost vypršela",
       "copy_code_success": "Kód byl úspěšně zkopírován",
       "print_gift_card": "Vytisknout"
-    }
-  },
-  "homepage": {
-    "general": {
-      "title": "Domovská stránka",
-      "home_link": "Domů"
-    },
-    "onboarding": {
-      "product_title": "Název vašeho produktu",
-      "product_description": "Tato oblast se používá k popisu podrobností o vašem produktu. Sdělte zákazníkům vzhled, dojem a styl vašeho produktu. Přidejte podrobnosti o barvě, použitých materiálech, velikosti a místě, kde byl vyroben.",
-      "collection_title": "Název vaší sbírky",
-      "blog_title": "Název vašeho příspěvku",
-      "blog_excerpt": "Váš obchod dosud nezveřejnil žádné blogové příspěvky. Blog lze použít k hovoření o uvedení nových produktů na trh, tipech nebo jiných novinkách, které chcete sdílet se svými zákazníky. Inspiraci najdete na blogu elektronického obchodu Shopify a rady pro váš vlastní obchod a blog.",
-      "blog_author": "Jméno autora",
-      "no_content": "Tato sekce aktuálně nezahrnuje žádný obsah. Přidejte obsah do této sekce pomocí postranního panelu."
     }
   }
 }
