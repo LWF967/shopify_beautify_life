@@ -2,15 +2,8 @@
 
 <script src="{{ 'customer.js' | asset_url }}" defer></script>
 
-<style>
-.my_addresses h1 {
-  font-size: 36px;
-  margin:120px 0 55px 0;
-  font-weight: 700;
-}
-</style>
 {%- paginate customer.addresses by 5 -%}
-  <div class="customer addresses my_addresses my_customer" data-customer-addresses>
+  <div class="customer addresses" data-customer-addresses>
     <svg style="display: none">
       <symbol id="icon-caret" viewBox="0 0 10 6">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
@@ -26,11 +19,9 @@
         type="button"
         aria-expanded="false"
         aria-controls="AddAddress"
-        
       >
         {{ 'customer.addresses.add_new' | t }}
       </button>
-      
       <div id="AddAddress">
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
