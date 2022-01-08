@@ -38,7 +38,11 @@
   .customer h2.form__message {
     font-size: 1.8rem;
   }
-  
+  @media screen and (max-width: 750px) {
+  .my_customer h1{
+    font-size: 30px;
+  }
+  }
   @media only screen and (min-width: 750px) {
     .customer h2.form__message {
       font-size: 2.2rem;
