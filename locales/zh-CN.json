@@ -71,7 +71,8 @@
       "previous": "上一页"
     },
     "search": {
-      "search": "搜索"
+      "search": "搜索我们的网站",
+      "search_label": "搜索"
     },
     "cart": {
       "view": "查看我的购物车 ({{ count }})",
