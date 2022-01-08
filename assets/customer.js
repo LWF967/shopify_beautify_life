@@ -15,7 +15,7 @@ const attributes = {
 class CustomerAddresses {
   constructor() {
     this.elements = this._getElements();
-    if (Object.keys(this.elements).length === 0) return;
+    // if (Object.keys(this.elements).length === 0) return;
     this._setupCountries();
     this._setupEventListeners();
   }
