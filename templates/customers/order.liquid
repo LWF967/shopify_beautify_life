@@ -1,4 +1,9 @@
 {{ 'my-customer.css' | asset_url | stylesheet_tag }}
+{% style %}
+.my_order_details_table th, .my_order_details_table td{
+  border: 1px solid {{settings.colors_label_sold}};
+ }
+{% endstyle %}
 <style>
   .my_customer,.my_customer h1 , .my_customer h2 ,.my_customer a {
     font-family:var(--font-heading-family);
@@ -16,11 +21,7 @@
   }
  
 </style>
-{% style %}
-.my_order_details_table th, .my_order_details_table td{
-  border: 1px solid {{settings.colors_label_sold}};
- }
-{% endstyle %}
+
 <div class="customer order my_order my_customer">
   <svg style="display:none">
     <symbol id="icon-discount" viewBox="0 0 12 12">
