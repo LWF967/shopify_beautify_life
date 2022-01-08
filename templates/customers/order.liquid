@@ -16,6 +16,11 @@
   }
  
 </style>
+{% style %}
+.my_order_details_table{
+  border: 1px solid {{settings.colors_label_sold}};
+ }
+{% endstyle %}
 <div class="customer order my_order my_customer">
   <svg style="display:none">
     <symbol id="icon-discount" viewBox="0 0 12 12">
@@ -28,7 +33,7 @@
   </div>
 
   <div>
-    <div>
+    <div class="my_order_details_table">
       <h2>{{ 'customer.order.title' | t: name: order.name }}</h2>
       {%- assign order_date = order.created_at | time_tag: format: "date_at_time" -%}
       <p>{{ 'customer.order.date_html' | t: date: order_date }}</p>
