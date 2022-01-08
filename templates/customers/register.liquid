@@ -100,6 +100,7 @@
         autocapitalize="off"
         autocomplete="email"
         aria-required="true"
+        pattern="^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$"
         {% if form.errors contains 'email' %}
           aria-invalid="true"
           aria-describedby="RegisterForm-email-error"
