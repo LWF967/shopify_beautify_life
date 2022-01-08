@@ -267,9 +267,14 @@
 {%- endpaginate -%}
 
 <script>
+
   window.onload = () => {
     typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
   }
+  
+
+</script>
+<script>
   const selectors = {
   customerAddresses: '[data-customer-addresses]',
   addressCountrySelect: '[data-address-country-select]',
@@ -361,5 +366,4 @@ class CustomerAddresses {
     }
   }
 }
-
 </script>
