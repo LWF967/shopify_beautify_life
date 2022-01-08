@@ -3,6 +3,7 @@
     "password_page": {
       "login_form_heading": "Zadejte heslo, abyste mohli vstoupit do obchodu:",
       "login_password_button": "Vstoupit pomocí hesla",
+      "login_password_button_1": "ZADEJTE POMOCÍ HESLA",
       "login_form_password_label": "Heslo",
       "login_form_password_placeholder": "Vaše heslo",
       "login_form_error": "Heslo není správné!",
@@ -10,6 +11,39 @@
       "modal": "Modální okno hesla",
       "admin_link_html": "Jste majitelem obchodu? <a href=\"\/admin\" class=\"link underlined-link\">Přihlaste se zde<\/a>",
       "powered_by_shopify_html": "Obchod bude využívat platformu {{ shopify }}"
+    },
+    "nt_tooltip": {
+      "login_to_wishlist": "Přihlaste se pro použití seznamu přání",
+      "add_to_wishlist": "Přidat do seznamu přání",
+      "remove_wishlist": "Odstranit seznam přání",
+      "browse_wishlist": "Procházet seznam přání",
+      "compare": "Porovnat",
+      "added_text_compare": "Porovnat produkty",
+      "quick_view": "Rychlé zobrazení",
+      "select_options": "Vybrat možnosti",
+      "read_more": "Přečíst více",
+      "view": "Zobrazit produkty",
+      "add_to_cart": "Přidat do košíku",
+      "share_fb": "Sdílet na Facebooku",
+      "share_tw": "Sdílet na Twitteru",
+      "share_em": "Sdílet e-mailem",
+      "share_pr": "Sdílet na Pinterestu",
+      "share_tu": "Sdílet na Tumblr",
+      "share_tl": "Sdílet na telegramu",
+      "share_wa": "Sdílet na WhatsApp",
+      "follow_fb": "Sledovat na Facebooku",
+      "follow_tw": "Sledovat na Twitteru",
+      "follow_it": "Sledovat na Instagramu",
+      "follow_dr": "Sledovat Dribbble",
+      "follow_ld": "Sledovat na Linkedinu",
+      "follow_pr": "Sledovat na Pinterestu",
+      "follow_tu": "Sledovat na Tumblr",
+      "follow_yt": "Sledovat na YouTube",
+      "follow_bh": "Sledovat na Behance",
+      "follow_sc": "Sledovat na Soundcloud",
+      "follow_tt": "Sledovat na Tiktoku",
+      "follow_sn": "Sledovat na Snapchat",
+      "follow_vi": "Sledovat na Vimeo"
     },
     "social": {
       "alt_text": {
@@ -37,7 +71,8 @@
       "previous": "Předchozí stránka"
     },
     "search": {
-      "search": "Hledání"
+      "search": "HLEDAT NAŠE STRÁNKY",
+      "search_label": "Hledat"
     },
     "cart": {
       "view": "Zobrazit košík ({{ count }})",
@@ -404,6 +439,21 @@
       "expired": "Platnost vypršela",
       "copy_code_success": "Kód byl úspěšně zkopírován",
       "print_gift_card": "Vytisknout"
+    }
+  },
+  "homepage": {
+    "general": {
+      "title": "Domovská stránka",
+      "home_link": "Domů"
+    },
+    "onboarding": {
+      "product_title": "Název vašeho produktu",
+      "product_description": "Tato oblast se používá k popisu podrobností o vašem produktu. Sdělte zákazníkům vzhled, dojem a styl vašeho produktu. Přidejte podrobnosti o barvě, použitých materiálech, velikosti a místě, kde byl vyroben.",
+      "collection_title": "Název vaší sbírky",
+      "blog_title": "Název vašeho příspěvku",
+      "blog_excerpt": "Váš obchod dosud nezveřejnil žádné blogové příspěvky. Blog lze použít k hovoření o uvedení nových produktů na trh, tipech nebo jiných novinkách, které chcete sdílet se svými zákazníky. Inspiraci najdete na blogu elektronického obchodu Shopify a rady pro váš vlastní obchod a blog.",
+      "blog_author": "Jméno autora",
+      "no_content": "Tato sekce aktuálně nezahrnuje žádný obsah. Přidejte obsah do této sekce pomocí postranního panelu."
     }
   }
 }
