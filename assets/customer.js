@@ -65,6 +65,7 @@ class CustomerAddresses {
       attributes.expanded,
       (target.getAttribute(attributes.expanded) === 'false').toString()
     );
+    console.log(123);
   }
 
   _handleAddEditButtonClick = ({ currentTarget }) => {
