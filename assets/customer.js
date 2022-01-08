@@ -19,6 +19,7 @@ class CustomerAddresses {
     this._setupCountries();
     this._setupEventListeners();
   }
+
   _getElements() {
     const container = document.querySelector(selectors.customerAddresses);
     return container ? {
@@ -64,7 +65,6 @@ class CustomerAddresses {
       attributes.expanded,
       (target.getAttribute(attributes.expanded) === 'false').toString()
     );
-   
   }
 
   _handleAddEditButtonClick = ({ currentTarget }) => {
@@ -77,7 +77,6 @@ class CustomerAddresses {
         .closest(selectors.addressContainer)
         .querySelector(`[${attributes.expanded}]`)
     )
-    console.log(123)
   }
 
   _handleDeleteButtonClick = ({ currentTarget }) => {
