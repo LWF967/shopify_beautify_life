@@ -19,7 +19,7 @@ class CustomerAddresses {
     this._setupCountries();
     this._setupEventListeners();
   }
-  super()
+  super();
 
   _getElements() {
     const container = document.querySelector(selectors.customerAddresses);
