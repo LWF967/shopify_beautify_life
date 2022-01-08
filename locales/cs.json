@@ -116,24 +116,51 @@
   },
   "blogs": {
     "article": {
-      "blog": "Blog",
-      "read_more_title": "Přečtěte si více: {{ title }}",
-      "read_more": "Přečtěte si více",
-      "moderated": "Upozorňujeme, že komentáře musí být před zveřejněním schváleny.",
-      "comment_form_title": "Napište komentář",
-      "name": "Název",
-      "email": "E-mail",
-      "message": "Komentář",
-      "post": "Zveřejnit komentář",
-      "back_to_blog": "Zpět na blog",
-      "share": "Nasdílet tento článek",
-      "success": "Váš komentář byl úspěšně publikován! Děkujeme!",
-      "success_moderated": "Váš komentář byl úspěšně publikován. Zveřejníme jej až za chvíli, protože náš blog je moderován.",
       "comments": {
         "one": "{{ count }} komentář",
-        "other": "Počet komentářů: {{ count }}",
-        "few": "Počet komentářů: {{ count }}",
-        "many": "Počet komentářů: {{ count }}"
+        "other": "{{ count }} komentářů"
+      },
+      "blog": "Blog",
+      "view_all": "Zobrazit více",
+      "view_all_blogs": "Zobrazit všechny blogy",
+      "all_topics": "Všechna témata",
+      "by_author": "Od {{ author }}",
+      "posted_in": "Zveřejněno v",
+      "read_more": "Pokračovat ve čtení",
+      "read_more_title": "Přečíst více: {{ title }}",
+      "back_to_blog": "Zpět na {{ title }}",
+      "tags": "tags",
+      "moderated": "Upozorňujeme, že komentáře musí být před zveřejněním schváleny.",
+      "comment_form_title": "Zanechat komentář",
+      "name": "Jméno",
+      "email": "Email",
+      "message": "Komentář",
+      "post": "Přidat komentář",
+      "share": "Sdílet tento článek",
+      "success": "Váš komentář byl úspěšně odeslán! Děkujeme!",
+      "success_moderated": "Váš komentář byl úspěšně odeslán. Za chvíli jej zveřejníme, protože náš blog je moderován.",
+      "article_with_count": {
+        "one": "{{ count }} článek",
+        "other": "{{ count }} článků"
+      },
+      "by": "Od",
+      "on": "on",
+      "in": "In",
+      "back_to": "Zpět na {{title}}"
+    },
+    "comments": {
+      "title": "Zanechat komentář",
+      "name": "Jméno",
+      "email": "Email",
+      "message": "Zpráva",
+      "post": "Přidat komentář",
+      "moderated": "Upozorňujeme, že komentáře musí být před zveřejněním schváleny",
+      "success_moderated": "Váš komentář byl úspěšně odeslán. Za chvíli jej zveřejníme, protože náš blog je moderován.",
+      "success": "Váš komentář byl úspěšně odeslán! Děkujeme!",
+      "unapproved": "Zadaná e-mailová adresa není schválena pro přidávání komentářů.",
+      "comments_with_count": {
+        "one": "{{ count }} komentář",
+        "other": "{{ count }} komentářů"
       }
     }
   },
