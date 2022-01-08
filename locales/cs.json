@@ -252,9 +252,7 @@
       "menu": "Nabídka",
       "cart_count": {
         "one": "{{ count }} položka",
-        "other": "{{ count }} polož.",
-        "few": "{{ count }} polož.",
-        "many": "{{ count }} polož."
+        "other": "{{ count }} polož."
       }
     },
     "cart": {
