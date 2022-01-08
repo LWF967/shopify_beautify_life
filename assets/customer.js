@@ -1,7 +1,7 @@
 const selectors = {
   customerAddresses: '[data-customer-addresses]',
   addressCountrySelect: '[data-address-country-select]',
-  addressContainer: 'data-address',
+  addressContainer: '[data-address]',
   toggleAddressButton: 'button[aria-expanded]',
   cancelAddressButton: 'button[type="reset"]',
   deleteAddressButton: 'button[data-confirm-message]'
