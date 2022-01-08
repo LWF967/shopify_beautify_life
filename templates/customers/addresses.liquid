@@ -16,9 +16,25 @@
 </style>
 {% style %}
 .my_addresses ul li button{
-min-height: 44px;
-color: {{settings.colors_label_sold}};
-border: 1px solid {{settings.colors_label_sold}};
+  min-height: 44px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font: inherit;
+  padding: 0.9rem 3rem 1.1rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0;
+  background-color: var(--color-button);
+  box-shadow: 0 0 0 0.1rem rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
+  min-width: 12rem;
+  min-height: 4.5rem;
+  transition: box-shadow var(--duration-short) ease;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .my_addresses ul li button:hover{
   text-decoration-thickness: 0.2rem;
