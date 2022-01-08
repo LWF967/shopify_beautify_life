@@ -14,7 +14,6 @@
   min-height: 44px;
 }
 .my_addresses ul li button{
-  
   cursor: pointer;
   display: inline-flex;
   justify-content: center;
@@ -35,11 +34,17 @@
   appearance: none;
   font-size: 16px;
 }
+.customer.my_addresses .field input{
+    height: 4.4rem;
+    font-size: 14px;
+    background: transparent !important;
+  }
+.customer.my_addresses .field label{
+    font-size: 14px;
+    left: 1.2rem;
+  }
 </style>
-{% style %}
 
-
-{% endstyle %}
 {%- paginate customer.addresses by 5 -%}
   <div class="customer addresses my_addresses my_customer " data-customer-addresses>
     <svg style="display: none">
