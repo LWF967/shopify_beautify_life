@@ -19,6 +19,7 @@ class CustomerAddresses {
     this._setupCountries();
     this._setupEventListeners();
   }
+  super()
 
   _getElements() {
     const container = document.querySelector(selectors.customerAddresses);
@@ -59,6 +60,7 @@ class CustomerAddresses {
       element.addEventListener('click', this._handleDeleteButtonClick);
     });
   }
+  
 
   _toggleExpanded(target) {
     target.setAttribute(
