@@ -24,7 +24,7 @@
   }
  
 </style>
-<!-- pattern="^\d{11}$" oninvalid="setCustomValidity('Pleace include an @ Incorrect email, please adjust it')" -->
+<!-- pattern="^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$" oninvalid="setCustomValidity('Pleace include an @ Incorrect email, please adjust it')" -->
 
 <div class="customer login my_login my_customer">
   <div class="my_recover_password">
@@ -117,7 +117,7 @@
           autocomplete="email"
           autocorrect="off"
           autocapitalize="off"
-         
+          pattern="^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$"
           {% if form.errors contains 'form' %}
             aria-invalid="true"
           {% endif %}
