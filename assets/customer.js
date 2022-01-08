@@ -22,6 +22,7 @@ class CustomerAddresses {
 
   _getElements() {
     const container = document.querySelector(selectors.customerAddresses);
+    console.log(container);
     return container ? {
       container,
       addressContainer: container.querySelector(selectors.addressContainer),
