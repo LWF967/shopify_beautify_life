@@ -87,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%B %Y"
+    "month_year": "%B %Y",
+    "detail_text": "Detail"
   },
   "newsletter": {
     "label": "E-mail",
@@ -435,6 +436,7 @@
       "remaining_html": "Zbývající částka: {{ balance }}",
       "add_to_apple_wallet": "Přidat do Apple Wallet",
       "qr_image_alt": "QR kód: po naskenování můžete uplatnit svou dárkovou kartu",
+      "redeem_html": "Použijte tento kód při placení k uplatnění {{ value }} dárkové karty",
       "copy_code": "Kopírovat kód",
       "expired": "Platnost vypršela",
       "copy_code_success": "Kód byl úspěšně zkopírován",
