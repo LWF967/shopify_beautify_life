@@ -228,7 +228,7 @@
   /* mobile table overrides */
   @media screen and (max-width: 749px) {
     .my_order_details_table {
-      padding-right: 30px !important;
+      padding-right: 0px;
     }
     .customer thead,
     .customer th,
