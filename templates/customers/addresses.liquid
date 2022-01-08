@@ -11,10 +11,16 @@
 .my_addresses .add_address{
   margin-top: 30px;
 }
-.my_addresses ul li button{
-  border: 1px solid red;
+.my_addresses ul li button:hover{
+  text-decoration-thickness: 0.2rem;
 }
 </style>
+{% style %}
+.my_addresses ul li button{
+color: {{settings.colors_label_sold}};
+border: 1px solid {{settings.colors_label_sold}};
+}
+{% endstyle %}
 {%- paginate customer.addresses by 5 -%}
   <div class="customer addresses my_addresses my_customer " data-customer-addresses>
     <svg style="display: none">
