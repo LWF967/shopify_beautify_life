@@ -78,6 +78,7 @@
     {%- endform -%}
   </div>
 </div>
+<div class="my_login_from">
   <h1 id="login" tabindex="-1" >
     {{ 'customer.login_page.title' | t }}
   </h1>
@@ -159,6 +160,7 @@
       
     {%- endform -%}
   </div>
+
   
   {%- if shop.checkout.guest_login -%}
     <div>
@@ -173,12 +175,13 @@
     </div>
   {%- endif -%}
 </div>
+</div>
 <script >
   var my_recover_password = document.querySelector(".my_recover_password")
   var my_forgot_password = document.querySelector(".my_forgot_password")
   my_recover_password.style.display = "none";
   console.log(my_recover_password);
-  my_recover_password.addEventListener('click',function(e){
+  my_forgot_password.addEventListener('click',function(e){
     e.stopPropagation();
     console.log(1131);
   })
