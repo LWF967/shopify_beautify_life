@@ -244,7 +244,8 @@
     },
     "404": {
       "title": "Stránka nebyla nalezena",
-      "subtext": "404"
+      "subtext": "404",
+      "info_text": "Požadovaná stránka neexistuje"
     }
   },
   "sections": {
