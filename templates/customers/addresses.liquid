@@ -272,12 +272,12 @@
     typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
     
   }
-  var flag =false;
+  let flag;
  var a =  document.querySelector(".aad")
  console.log(a);
  a.addEventListener('click',function(e){
    e.stopPropagation();
-   if(flag){
+   if(!flag){
    a.setAttribute('aria-expanded',true)
    }else{
     a.setAttribute('aria-expanded',false)
