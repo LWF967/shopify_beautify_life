@@ -1,6 +1,6 @@
 {{ 'aa.css' | asset_url | stylesheet_tag }}
 
-<script src="{{ 'customer.js' | asset_url }}" defer></script>
+
 
 {%- paginate customer.addresses by 5 -%}
   <div class="customer addresses" data-customer-addresses>
@@ -256,7 +256,7 @@
     {%- endif -%}
   </div>
 {%- endpaginate -%}
-
+<script src="{{ 'customer.js' | asset_url }}" defer></script>
 <script>
   window.onload = () => {
     typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
