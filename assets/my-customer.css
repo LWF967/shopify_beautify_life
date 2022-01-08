@@ -4,7 +4,12 @@
     padding: 0 1.5rem;
     text-align: center;
   }
-  
+
+  @media screen and (max-width: 750px) {
+  .my_customer h1{
+    font-size: 30px !important;
+  }
+  }
   @media screen and (min-width: 750px) {
     .customer:not(.account):not(.order) {
       max-width: 47.8rem;
@@ -20,7 +25,7 @@
   }
   
   .customer ul {
-    line-height: 1.6;
+    line-height: calc(1 + 0.6 / var(--font-body-scale));
     padding-left: 4.4rem;
     text-align: left;
     margin-bottom: 4rem;
@@ -36,16 +41,12 @@
   }
   
   .customer h2.form__message {
-    font-size: 1.8rem;
+    font-size: calc(var(--font-heading-scale) * 1.8rem);
   }
-  @media screen and (max-width: 750px) {
-  .my_customer h1{
-    font-size: 30px !important;
-  }
-  }
+  
   @media only screen and (min-width: 750px) {
     .customer h2.form__message {
-      font-size: 2.2rem;
+      font-size: calc(var(--font-heading-scale) * 2.2rem);
     }
   }
   
@@ -72,6 +73,13 @@
     .customer table {
       border: none;
       box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.08);
+    }
+  }
+  
+  @media screen and (forced-colors: active) {
+    .customer table {
+      border-top: 0.1rem solid transparent;
+      border-bottom: 0.1rem solid transparent;
     }
   }
   
@@ -160,6 +168,12 @@
     }
   }
   
+  @media screen and (forced-colors: active) {
+    .customer tbody tr {
+      border-top: 0.1rem solid transparent;
+    }
+  }
+  
   .customer tfoot td:first-of-type,
   .customer tfoot td {
     padding-top: 0.6rem;
@@ -204,6 +218,13 @@
     background: rgba(var(--color-foreground), 0.08);
   }
   
+  @media screen and (forced-colors: active) {
+    .customer thead::after,
+    .customer tfoot::before {
+      background: CanvasText;
+    }
+  }
+  
   /* mobile table overrides */
   @media screen and (max-width: 749px) {
     .customer thead,
@@ -240,27 +261,6 @@
     }
   }
   
-.activate button[name='decline'],
-.addresses li > button,
-.addresses form button[type] {
-  background-color: transparent;
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-link));
-  color: rgb(var(--color-link));
-}
-
-.activate button[name='decline']:hover,
-.addresses li > button:hover,
-.addresses form button[type]:hover {
-  box-shadow: 0 0 0 0.2rem rgb(var(--color-link));
-}
-
-@media only screen and (min-width: 750px) {
-  .activate button[name='decline'] {
-    margin-top: inherit;
-    margin-left: 1rem;
-  }
-}
-
   /* Pagination */
   .customer .pagination {
     margin-top: 5rem;
@@ -326,10 +326,87 @@
     transform: translateX(-50%);
     background-color: currentColor;
   }
-
-/*================ Account ================*/
-/* Account/Order */
-:is(.account, .order) {
+  
+  /* Login */
+  .login a {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+  }
+  
+  .login a[href='#recover'] {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .login .field + a {
+    margin-top: 1rem;
+  }
+  
+  .login p {
+    margin: 1.5rem 0;
+  }
+  
+  .login h3 {
+    margin-top: 1.5rem;
+    text-align: left;
+    font-size: calc(var(--font-heading-scale) * 1.6rem);
+  }
+  
+  #customer_login_guest button {
+    margin-top: 0;
+  }
+  
+  #recover,
+  #recover + div {
+    display: none;
+  }
+  
+  #recover:target {
+    display: block;
+  }
+  
+  #recover:target + div {
+    display: block;
+  }
+  
+  #recover:target ~ #login,
+  #recover:target ~ #login + div {
+    display: none;
+  }
+  
+  #recover,
+  #login {
+    scroll-margin-top: 20rem;
+  }
+  
+  #recover {
+    margin-bottom: 0;
+  }
+  
+  .activate button[name='decline'],
+  .addresses li > button,
+  .addresses form button[type] {
+    background-color: transparent;
+    box-shadow: 0 0 0 0.1rem rgb(var(--color-link));
+    color: rgb(var(--color-link));
+  }
+  
+  .activate button[name='decline']:hover,
+  .addresses li > button:hover,
+  .addresses form button[type]:hover {
+    box-shadow: 0 0 0 0.2rem rgb(var(--color-link));
+  }
+  
+  @media only screen and (min-width: 750px) {
+    .activate button[name='decline'] {
+      margin-top: inherit;
+      margin-left: 1rem;
+    }
+  }
+  
+  /* Account/Order */
+  :is(.account, .order) {
     margin: 6rem auto 9rem;
     max-width: var(--page-width);
     padding: 0 2rem;
@@ -412,22 +489,175 @@
     padding: 1.1rem 1.5rem;
     text-decoration: none;
     box-shadow: 0 0 0 0.1rem rgba(var(--color-link), 0.2);
+    border: 0.1rem solid transparent;
     font-size: 1.2rem;
   }
   
   .account table td:first-of-type a:hover {
     box-shadow: 0 0 0 0.2rem rgba(var(--color-link), 0.2);
   }
-.account-summary {
-    margin-top: 60px;
-    margin-bottom: 60px; }
   
-  .account-details {
-    float: right; }
-
-/* Addresses */
-/* Addresses */
-.addresses li > button {
+  .order td:first-of-type {
+    align-items: initial;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .order thead th:nth-last-child(-n + 3),
+    .order td:nth-last-child(-n + 3) {
+      text-align: right;
+    }
+  }
+  
+  .order tfoot tr:last-of-type td,
+  .order tfoot tr:last-of-type th {
+    font-size: 2.2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .order tfoot tr:last-of-type td,
+    .order tfoot tr:last-of-type th {
+      padding-bottom: 2.4rem;
+    }
+  }
+  
+  .order tfoot tr:last-of-type td:before {
+    font-size: 2.2rem;
+  }
+  
+  .order table p,
+  .order > div:nth-of-type(2) > div:first-of-type h2,
+  .order > div:nth-of-type(2) > div:last-of-type h2 + p {
+    margin-bottom: 0;
+  }
+  
+  .order > div:nth-of-type(2) > div:first-of-type h2 ~ p {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+  }
+  
+  .order > div:nth-of-type(2) > div:first-of-type h2 ~ p:last-of-type {
+    margin-bottom: 3rem;
+  }
+  
+  .order .item-props {
+    font-size: 1.4rem;
+    margin-top: 0.05px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .order .item-props > span {
+    word-break: break-all;
+    line-height: calc(1 + 0.2 / var(--font-body-scale));
+  }
+  
+  .order .fulfillment {
+    width: fit-content;
+    border: 0.01rem solid rgba(var(--color-foreground), 0.2);
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    text-align: left;
+  }
+  
+  .order .fulfillment a {
+    margin: 0.7rem 0;
+  }
+  
+  .order .fulfillment span {
+    display: block;
+  }
+  
+  .order .cart-discount {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .order td .cart-discount {
+      display: none;
+    }
+  }
+  
+  .order tbody ul {
+    list-style: none;
+    font-size: 1.2rem;
+    text-align: right;
+    padding-left: 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .order tbody ul {
+      text-align: left;
+    }
+  }
+  
+  .order table a {
+    line-height: calc(1 + 0.3 / var(--font-body-scale));
+  }
+  
+  .order tbody tr:first-of-type td:first-of-type > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .order tbody tr:first-of-type td:first-of-type > div {
+      align-items: flex-start;
+    }
+  }
+  
+  .order .properties {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+  
+  .order .properties span {
+    display: block;
+    line-height: calc(1 + 0.2 / var(--font-body-scale));
+  }
+  
+  .order svg {
+    width: 1.1rem;
+    color: rgb(var(--color-base-accent-2));
+    margin-right: 0.5rem;
+  }
+  
+  .order dl {
+    margin: 0;
+  }
+  
+  .order dd {
+    margin-left: 0;
+    line-height: calc(1 + 0.3 / var(--font-body-scale));
+  }
+  
+  .order dd s {
+    color: rgba(var(--color-foreground), 0.7);
+  }
+  
+  .order .unit-price {
+    font-size: 1.1rem;
+    letter-spacing: 0.07rem;
+    line-height: calc(1 + 0.2 / var(--font-body-scale));
+    margin-top: 0.2rem;
+    text-transform: uppercase;
+    color: rgba(var(--color-foreground), 0.7);
+  }
+  
+  .order .regular-price {
+    font-size: 1.3rem;
+  }
+  
+  /* Addresses */
+  .addresses li > button {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
@@ -488,13 +718,13 @@
   
   li[data-address] > h2 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: calc(var(--font-heading-scale) * 1.8rem);
     margin-bottom: 0;
   }
   
   @media only screen and (min-width: 750px) {
     li[data-address] > h2 {
-      font-size: 2.2rem;
+      font-size: calc(var(--font-heading-scale) * 2.2rem);
     }
   }
   
@@ -526,62 +756,4 @@
   .addresses form > div:nth-of-type(7),
   .addresses form > div:nth-of-type(7) + div[id] {
     margin-top: 1.5rem;
-  }
-.customers-activate-account {
-  min-height: 50vh; }
-
-@media only screen and (min-width: 750px) {
-  .customers-activate-account__container {
-    margin: 20vh 0; } }
-
-/*================ Addresses ================*/
-#AddressNewForm {
-  margin-bottom: 60px; }
-  .new-address--hidden #AddressNewForm {
-    display: none; }
-
-.new-address-open {
-  display: none; }
-  .new-address--hidden .new-address-open {
-    display: inline-block; }
-
-.current-addresses {
-  margin-bottom: 60px; }
-  .current-addresses .current-addresses__item {
-    padding-bottom: 40px; }
-
-.edit-address {
-  display: none; }
-
-.edit-address--show {
-  display: block; }
-  
-  /* Login */
-.login a {
-    display: block;
-    margin: 0 auto;
-    width: fit-content;
-  }
-  
-  .login a[href='#recover'] {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  .login .field + a {
-    margin-top: 1rem;
-  }
-  
-  .login p {
-    margin: 1.5rem 0;
-  }
-  
-  .login h3 {
-    margin-top: 1.5rem;
-    text-align: left;
-    font-size: 1.6rem;
-  }
-  
-  #customer_login_guest button {
-    margin-top: 0;
   }
