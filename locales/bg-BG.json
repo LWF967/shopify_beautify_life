@@ -3,6 +3,7 @@
     "password_page": {
       "login_form_heading": "Влизане в магазина с парола:",
       "login_password_button": "Влизане с парола",
+      "login_password_button_1": "ВЪВЕДЕТЕ С ПАРОЛА",
       "login_form_password_label": "Парола",
       "login_form_password_placeholder": "Вашата парола",
       "login_form_error": "Неправилна парола.",
@@ -10,6 +11,39 @@
       "modal": "Тип парола",
       "admin_link_html": "Вие ли сте собственикът на магазина? <a href=\"\/admin\" class=\"link underlined-link\">Влезте тук<\/a>",
       "powered_by_shopify_html": "Този магазин ще се поддържа от {{ shopify }}"
+    },
+    "nt_tooltip": {
+      "login_to_wishlist": "Влезтеза да използвате списък с желания",
+      "add_to_wishlist": "Добавяне към списък с желания",
+      "remove_wishlist": "Премахване на списък с желания",
+      "browse_wishlist": "Преглед на списък с желания",
+      "compare": "Сравни",
+      "added_text_compare": "Сравнете продукти",
+      "quick_view": "Бърз преглед",
+      "select_options": "Изберете опции",
+      "read_more": "Прочетете повече",
+      "view": "Преглед на продукти",
+      "add_to_cart": "Добавяне в количката",
+      "share_fb": "Споделяне във Facebook",
+      "share_tw": "Споделяне в Twitter",
+      "share_em": "Споделяне по имейл",
+      "share_pr": "Споделяне в Pinterest",
+      "share_tu": "Споделяне в Tumblr",
+      "share_tl": "Споделяне в Telegram",
+      "share_wa": "Споделяне в WhatsApp",
+      "follow_fb": "Следвайте във Facebook",
+      "follow_tw": "Следвайте в Twitter",
+      "follow_it": "Следвайте в Instagram",
+      "follow_dr": "Следвайте на Dribbble",
+      "follow_ld": "Следвайте в Linkedin",
+      "follow_pr": "Следвайте в Pinterest",
+      "follow_tu": "Следвайте в Tumblr",
+      "follow_yt": "Следвайте в YouTube",
+      "follow_bh": "Следвайте в Behance",
+      "follow_sc": "Следвайте в Soundcloud",
+      "follow_tt": "Следвайте в Tiktok",
+      "follow_sn": "Следвайте в Snapchat",
+      "follow_vi": "Следвайте във Vimeo"
     },
     "social": {
       "alt_text": {
@@ -37,7 +71,8 @@
       "previous": "Предишна страница"
     },
     "search": {
-      "search": "Търсене"
+      "search": "ТЪРСЕТЕ НАШИЯ САЙТ",
+      "search_label": "Търсене"
     },
     "cart": {
       "view": "Покажи количката ми ({{ count }})",
@@ -263,6 +298,21 @@
     },
     "video": {
       "load_video": "Зареждане на видео: {{ description }}"
+    },
+    "map": {
+      "address_error": "Грешка при търсене на този адрес",
+      "address_no_results": "Няма резултати за този адрес",
+      "address_query_limit_html": "Превишили сте ограничението за използване на API на Google. Помислете за надграждане до <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">премиум План<\/a>.",
+      "auth_error_html": "Имаше проблем при удостоверяването на вашия акаунт в Google Карти.",
+      "section_heading": "Местоположение"
+    },
+    "slideshow": {
+      "next_slide": "Следващ слайд",
+      "previous_slide": "Предишен слайд",
+      "pause_slideshow": "Пауза на слайдшоуто",
+      "rotate_slideshow": "Пускане на слайдшоу",
+      "load_slide": "Зареждане на слайд {{ slide_number }}",
+      "navigation_instructions": "Използвайте стрелките наляво\/надясно, за да навигирате в слайдшоуто или плъзнете наляво\/надясно, ако използвате мобилно устройство"
     }
   },
   "localization": {
