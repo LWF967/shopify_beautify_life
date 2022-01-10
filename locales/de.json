@@ -71,7 +71,8 @@
       "previous": "Vorherige Seite"
     },
     "search": {
-      "search": "Suchen"
+      "search": "SUCHE UNSERE SEITE",
+      "search_label": "Suchen"
     },
     "cart": {
       "view": "Meinen Warenkorb ({{ count }}) anzeigen",
@@ -86,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%B %Y"
+    "month_year": "%B %Y",
+    "detail_text": "Detail"
   },
   "newsletter": {
     "label": "E-Mail",
@@ -114,23 +116,52 @@
   },
   "blogs": {
     "article": {
-      "blog": "Blog",
-      "read_more_title": "Weiterlesen: {{ title }}",
-      "read_more": "Weiterlesen",
       "comments": {
         "one": "{{ count }} Kommentar",
         "other": "{{ count }} Kommentare"
       },
-      "moderated": "Bitte beachte, dass Kommentare vor der Veröffentlichung freigegeben werden müssen.",
-      "comment_form_title": "Hinterlasse einen Kommentar",
+      "blog": "Blog",
+      "view_all": "Mehr anzeigen",
+      "view_all_blogs": "Alle Blogs anzeigen",
+      "all_topics": "Alle Themen",
+      "by_author": "Von {{ author }}",
+      "posted_in": "Gepostet in",
+      "read_more": "Weiterlesen",
+      "read_more_title": "Weiterlesen: {{ title }}",
+      "back_to_blog": "Zurück zu {{ title }}",
+      "Tags": "Tags",
+      "moderiert": "Bitte beachten Sie, dass Kommentare vor der Veröffentlichung freigegeben werden müssen.",
+      "comment_form_title": "Kommentar hinterlassen",
       "name": "Name",
-      "email": "E-Mail",
+      "email": "Email",
       "message": "Kommentar",
       "post": "Kommentar posten",
-      "back_to_blog": "Zurück zum Blog",
-      "share": "Diesen Artikel teilen",
-      "success": "Dein Kommentar wurde erfolgreich gepostet! Vielen Dank!",
-      "success_moderated": "Dein Kommentar wurde erfolgreich gepostet. Da unser Blog moderiert wird, werden wir ihn erst kurze Zeit später veröffentlichen."
+      "share": "Teilen Sie diesen Artikel",
+      "success": "Ihr Kommentar wurde erfolgreich gepostet! Vielen Dank!",
+      "success_moderated": "Ihr Kommentar wurde erfolgreich gepostet. Wir werden ihn in Kürze veröffentlichen, da unser Blog moderiert wird.",
+      "article_with_count": {
+        "one": "{{ count }} Artikel",
+        "other": "{{ count }} Artikel"
+      },
+      "by": "von",
+      "on": "an",
+      "in": "In",
+      "back_to": "Zurück zu {{title}}"
+    },
+    "comments": {
+      "title": "Hinterlasse einen Kommentar",
+      "name": "Name",
+      "email": "Email",
+      "message": "Nachricht",
+      "post": "Kommentar posten",
+      "moderated": "Bitte beachten Sie, dass Kommentare vor der Veröffentlichung freigegeben werden müssen",
+      "success_moderated": "Ihr Kommentar wurde erfolgreich gepostet. Wir werden ihn in Kürze veröffentlichen, da unser Blog moderiert wird.",
+      "success": "Ihr Kommentar wurde erfolgreich gepostet! Vielen Dank!",
+      "unapproved": "Die angegebene E-Mail-Adresse ist nicht zum Posten von Kommentaren freigegeben.",
+      "comments_with_count": {
+        "one": "{{ count }} Kommentar",
+        "other": "{{ count }} Kommentare"
+      }
     }
   },
   "onboarding": {
@@ -211,7 +242,8 @@
     },
     "404": {
       "title": "Seite nicht gefunden",
-      "subtext": "404"
+      "subtext": "404",
+      "info_text": "Die angeforderte Seite existiert nicht"
     }
   },
   "sections": {
@@ -297,6 +329,21 @@
     },
     "video": {
       "load_video": "Video laden: {{ description }}"
+    },
+    "map": {
+      "address_error": "Error looking up that address",
+      "address_no_results": "No results for that address",
+      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\"> Premium Plan < \/ a>. ",
+      "auth_error_html": "There was a problem authenticating your Google Maps account.",
+      "section_heading": "Location"
+    },
+    "slideshow": {
+      "next_slide": "Next slide",
+      "previous_slide": "Previous slide",
+      "pause_slideshow": "Pause slideshow",
+      "rotate_slideshow": "Play slideshow",
+      "load_slide": "Load slide {{slide_number}}",
+      "navigation_instructions": "Use left  \/ right arrows to navigate the slideshow or swipe left  \/ right if using a mobile device"
     }
   },
   "localization": {
@@ -422,10 +469,26 @@
       "remaining_html": "{{ balance }} verbleibend",
       "add_to_apple_wallet": "Zu Apple Wallet hinzufügen",
       "qr_image_alt": "QR-Code – Scannen, um Geschenkgutschein einzulösen",
+      "redeem_html": "Verwenden Sie diesen Code an der Kasse, um Ihre {{ value }} Geschenkkarte einzulösen",
       "copy_code": "Code kopieren",
       "expired": "Abgelaufen",
       "copy_code_success": "Code erfolgreich kopiert",
       "print_gift_card": "Drucken"
+    }
+  },
+  "homepage": {
+    "general": {
+      "title": "Startseite",
+      "home_link": "Zuhause"
+    },
+    "onboarding": {
+      "product_title": "Name Ihres Produkts",
+      "product_description": "Dieser Bereich wird verwendet, um die Details Ihres Produkts zu beschreiben. Informieren Sie die Kunden über das Aussehen, die Haptik und den Stil Ihres Produkts. Fügen Sie Details zu Farbe, verwendeten Materialien, Größen und Herstellungsort hinzu.",
+      "collection_title": "Name Ihrer Sammlung",
+      "blog_title": "Der Titel Ihres Beitrags",
+      "blog_excerpt": "Ihr Shop hat noch keine Blog-Beiträge veröffentlicht. Ein Blog kann verwendet werden, um über neue Produkteinführungen, Tipps oder andere Neuigkeiten zu sprechen, die Sie mit Ihren Kunden teilen möchten. Inspiration finden Sie im E-Commerce-Blog von Shopify und Ratschläge für deinen eigenen Shop und Blog.",
+      "blog_author": "Autorenname",
+      "no_content": "Dieser Abschnitt enthält derzeit keine Inhalte. Fügen Sie diesem Abschnitt mithilfe der Seitenleiste Inhalte hinzu."
     }
   }
 }
