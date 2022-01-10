@@ -133,7 +133,7 @@
       "moderiert": "Bitte beachten Sie, dass Kommentare vor der Veröffentlichung freigegeben werden müssen.",
       "comment_form_title": "Kommentar hinterlassen",
       "name": "Name",
-      "email": "Email",
+      "email": "E-mail",
       "message": "Kommentar",
       "post": "Kommentar posten",
       "share": "Teilen Sie diesen Artikel",
@@ -151,7 +151,7 @@
     "comments": {
       "title": "Hinterlasse einen Kommentar",
       "name": "Name",
-      "email": "Email",
+      "email": "E-mail",
       "message": "Nachricht",
       "post": "Kommentar posten",
       "moderated": "Bitte beachten Sie, dass Kommentare vor der Veröffentlichung freigegeben werden müssen",
