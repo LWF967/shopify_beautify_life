@@ -201,8 +201,11 @@
                   class="field__input"
                   autocomplete="name"
                   value="{{ form.author }}"
-                  aria-required="false"
-                 
+                  aria-required="true"
+                  {% if form.errors contains 'author' %}
+                    aria-invalid="true"
+                    aria-describedby="CommentForm-author-error"
+                  {% endif %}
                   placeholder="{{ 'blogs.article.name' | t }}"
                 >
                 <label class="field__label" for="CommentForm-author">{{ 'blogs.article.name' | t }} <span aria-hidden="true">*</span></label>
