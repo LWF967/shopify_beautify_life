@@ -87,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%B %Y"
+    "month_year": "%B %Y",
+    "detail_text": "Rincian"
   },
   "newsletter": {
     "label": "Email",
