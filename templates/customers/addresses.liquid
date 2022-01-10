@@ -103,7 +103,7 @@
    
 
     <div data-address>
-      <div class="my_addresses_acount">
+     
       <a href="{{ routes.account_url }}">
         {{ 'customer.account.return' | t }}
       </a>
@@ -116,7 +116,6 @@
       >
         {{ 'customer.addresses.add_new' | t }}
       </button>
-    </div>
       <div id="AddAddress">
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
