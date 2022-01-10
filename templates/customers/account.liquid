@@ -2,11 +2,11 @@
   <script src="{{ 'vendor/qrcode.js' | shopify_asset_url }}" defer></script>
   {% style %}
   .my_customer table td:first-of-type a{
-  color: {{settings.colors_label_sold}};
-  border: 1px solid {{settings.colors_label_sold}};
+  color: {{settings.colors_body_text}};
+  border: 1px solid {{settings.colors_body_text}};
   }
   .my_customer .my_order_history table ,.my_customer .my_order_history table td,.my_customer .my_order_history table th{
-    border: 1px solid {{settings.colors_label_sold}};
+    border: 1px solid {{settings.colors_body_text}};
     vertical-align: middle;
     font-size: 16px;
     font-family: var(--font-body-family);
