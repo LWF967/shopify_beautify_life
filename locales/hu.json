@@ -133,7 +133,7 @@
       "moderated": "Kérjük, vegye figyelembe, hogy a megjegyzéseket jóvá kell hagyni a közzétételük előtt.",
       "comment_form_title": "Hagyjon megjegyzést",
       "name": "Név",
-      "email": "Email",
+      "email": "E-mail-cím",
       "message": "Megjegyzés",
       "post": "Hozzászólás közzététele",
       "share": "Cikk megosztása",
@@ -151,7 +151,7 @@
     "comments": {
       "title": "Hagyjon megjegyzést",
       "name": "Név",
-      "email": "Email",
+      "email": "E-mail-cím",
       "message": "Üzenet",
       "post": "Hozzászólás közzététele",
       "moderated": "Kérjük, vegye figyelembe, hogy a megjegyzéseket jóvá kell hagyni a közzétételük előtt",
