@@ -3,6 +3,7 @@
     "password_page": {
       "login_form_heading": "Siirry kauppaan käyttämällä salasanaa:",
       "login_password_button": "Siirry sisään käyttämällä salasanaa",
+      "login_password_button_1": "ANNA KÄYTTÄMÄLLÄ SALASANA",
       "login_form_password_label": "Salasana",
       "login_form_password_placeholder": "Salasanasi",
       "login_form_error": "Väärä salasana!",
@@ -10,6 +11,39 @@
       "modal": "Salasanaikkuna",
       "admin_link_html": "Oletko kaupan omistaja? <a href=\"\/admin\" class=\"link underlined-link\">Kirjaudu sisään tästä<\/a>",
       "powered_by_shopify_html": "Tämän kaupan alustana on {{ shopify }}"
+    },
+    "nt_tooltip": {
+      "login_to_wishlist": "Kirjaudu sisään käyttääksesi toivelistaa",
+      "add_to_wishlist": "Lisää toivelistaan",
+      "remove_wishlist": "Poista toivelista",
+      "browse_wishlist": "Selaa toivelistaa",
+      "compare": "Vertaa",
+      "added_text_compare": "Vertaa tuotteita",
+      "quick_view": "Pikanäkymä",
+      "select_options": "Valitse asetukset",
+      "read_more": "Lue lisää",
+      "view": "Näytä tuotteet",
+      "add_to_cart": "Lisää ostoskoriin",
+      "share_fb": "Jaa Facebookissa",
+      "share_tw": "Jaa Twitterissä",
+      "share_em": "Jaa sähköpostissa",
+      "share_pr": "Jaa Pinterestissä",
+      "share_tu": "Jaa Tumblrissa",
+      "share_tl": "Jaa Telegramissa",
+      "share_wa": "Jaa WhatsAppissa",
+      "follow_fb": "Seuraa Facebookissa",
+      "follow_tw": "Seuraa Twitterissä",
+      "follow_it": "Seuraa Instagramissa",
+      "follow_dr": "Seuraa Dribbbleä",
+      "follow_ld": "Seuraa Linkedinissä",
+      "follow_pr": "Seuraa Pinterestissä",
+      "follow_tu": "Seuraa Tumblrissa",
+      "follow_yt": "Seuraa YouTubessa",
+      "follow_bh": "Seuraa Behancessa",
+      "follow_sc": "Seuraa Soundcloudissa",
+      "follow_tt": "Seuraa Tiktokissa",
+      "follow_sn": "Seuraa Snapchatissa",
+      "follow_vi": "Seuraa Vimeossa"
     },
     "social": {
       "alt_text": {
@@ -37,7 +71,8 @@
       "previous": "Edellinen sivu"
     },
     "search": {
-      "search": "Hae"
+      "search": "HAE SIVUSTOStamme",
+      "search_label": "Haku"
     },
     "cart": {
       "view": "Näytä ostoskori ({{ count }})",
@@ -52,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%B %Y"
+    "month_year": "%B %Y",
+    "detail_text": "Yksityiskohta"
   },
   "newsletter": {
     "label": "Sähköposti",
@@ -80,23 +116,52 @@
   },
   "blogs": {
     "article": {
-      "blog": "Blogi",
-      "read_more_title": "Lue lisää: {{ title }}",
-      "read_more": "Lue lisää",
       "comments": {
         "one": "{{ count }} kommentti",
         "other": "{{ count }} kommenttia"
       },
-      "moderated": "Huomaa, että kommenttien täytyy olla hyväksytty ennen niiden julkaisemista.",
-      "comment_form_title": "Kirjoita kommentti",
+      "blog": "Blogi",
+      "view_all": "Näytä lisää",
+      "view_all_blogs": "Näytä kaikki blogit",
+      "all_topics": "Kaikki aiheet",
+      "by_author": "Kirjoittaja {{ author }}",
+      "posted_in": "Lähetetty",
+      "read_more": "Jatka lukemista",
+      "read_more_title": "Lue lisää: {{ title }}",
+      "back_to_blog": "Takaisin {{ title }}",
+      "tags": "Tunnisteet",
+      "moderated": "Huomaa, että kommentit on hyväksyttävä ennen kuin ne julkaistaan.",
+      "comment_form_title": "Jätä kommentti",
       "name": "Nimi",
       "email": "Sähköposti",
-      "message": "Kommentti",
-      "post": "Julkaise kommentti",
-      "back_to_blog": "Takaisin blogiin",
+      "message": "Kommentoi",
+      "post": "Lähetä kommentti",
       "share": "Jaa tämä artikkeli",
-      "success": "Kommenttisi julkaiseminen onnistui! Kiitos!",
-      "success_moderated": "Kommenttisi julkaiseminen onnistui. Julkaisemme sen jonkin ajan kuluttua, kun blogimme on tarkastettu."
+      "success": "Kommenttisi lähetettiin onnistuneesti! Kiitos!",
+      "success_moderated": "Kommenttisi lähetys onnistui. Julkaisemme sen hetken kuluttua, koska blogiamme valvotaan.",
+      "article_with_count": {
+        "one": "{{ count }} artikkeli",
+        "other": "{{ count }} artikkelia"
+      },
+      "by": "Tekijä",
+      "on": "on",
+      "in": "Sisään",
+      "back_to": "Takaisin {{title}}"
+    },
+    "comments": {
+      "title": "Jätä kommentti",
+      "name": "Nimi",
+      "email": "Sähköposti",
+      "message": "Viesti",
+      "post": "Lähetä kommentti",
+      "moderated": "Huomaa, kommentit on hyväksyttävä ennen kuin ne julkaistaan",
+      "success_moderated": "Kommenttisi lähetys onnistui. Julkaisemme sen hetken kuluttua, koska blogiamme valvotaan.",
+      "success": "Kommenttisi lähetettiin onnistuneesti! Kiitos!",
+      "unapproved": "Annettua sähköpostiosoitetta ei ole hyväksytty kommenttien lähettämiseen.",
+      "comments_with_count": {
+        "one": "{{ count }} kommentti",
+        "other": "{{ count }} kommenttia"
+      }
     }
   },
   "onboarding": {
@@ -177,7 +242,8 @@
     },
     "404": {
       "title": "Sivua ei löytynyt",
-      "subtext": "404"
+      "subtext": "404",
+      "info_text": "Pyytämääsi sivua ei ole olemassa"
     }
   },
   "sections": {
@@ -263,6 +329,21 @@
     },
     "video": {
       "load_video": "Lataa video: {{ description }}"
+    },
+    "map": {
+      "address_error": "Virhe etsiessä tätä osoitetta",
+      "address_no_results": "Ei tuloksia tälle osoitteelle",
+      "address_query_limit_html": "Olet ylittänyt Google-sovellusliittymän käyttörajan. Harkitse päivittämistä <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium-versioon Suunnitelma<\/a>.",
+      "auth_error_html": "Google Maps -tilisi todentamisessa oli ongelma.",
+      "section_heading": "Sijainti"
+    },
+    "slideshow": {
+      "next_slide": "Seuraava dia",
+      "previous_slide": "Edellinen dia",
+      "pause_slideshow": "Keskeytä diaesitys",
+      "rotate_slideshow": "Toista diaesitys",
+      "load_slide": "Lataa dia {{ slide_number }}",
+      "navigation_instructions": "Käytä vasenta\/oikeaa nuolta navigoidaksesi diaesityksessä tai pyyhkäise vasemmalle\/oikealle, jos käytät mobiililaitetta"
     }
   },
   "localization": {
@@ -388,6 +469,7 @@
       "remaining_html": "Jäljellä {{ balance }}",
       "add_to_apple_wallet": "Lisää Apple Walletiin",
       "qr_image_alt": "QR-koodi – lunasta lahjakortti skannaamalla",
+      "redeem_html": "Käytä tätä koodia kassalla lunastaaksesi {{ value }} lahjakorttisi",
       "copy_code": "Kopioi koodi",
       "expired": "Vanhentunut",
       "copy_code_success": "Koodin kopioiminen onnistui",
