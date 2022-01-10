@@ -71,7 +71,8 @@
       "previous": "Prethodna stranica"
     },
     "search": {
-      "search": "Traži"
+      "search": "TRAŽI NAŠU STRANICU",
+      "search_label": "Traži"
     },
     "cart": {
       "view": "Prikaži moju košaricu ({{ count }})",
