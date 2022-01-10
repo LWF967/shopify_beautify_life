@@ -241,11 +241,7 @@
           </div>
           <div class="field">
             <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}"
-            aria-required="true"
-            {% if form.errors contains 'phone' %}
-              aria-invalid="true"
-              aria-describedby="CommentForm-phone-error"
-            {% endif %}
+            {% if form.errors contains 'phone' %} aria-invalid="true" aria-describedby="{{ formId}}-body-error"{% endif %}>
             >
             <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
           </div>
