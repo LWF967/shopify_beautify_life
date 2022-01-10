@@ -86,9 +86,11 @@
   justify-content: start;
   align-items:flex-start ;
 }
-.my_addresses .my_addresses_acount button{
+.my_addresses .my_addAddress_from h2{
+  font-size: 30px;
+  font-weight: 700;
   margin-left: 0;
-  padding-left: 0;
+  padding-bottom: 0;
 }
 </style>
 
@@ -116,7 +118,7 @@
       >
         {{ 'customer.addresses.add_new' | t }}
       </button>
-      <div id="AddAddress">
+      <div id="AddAddress" class="my_addAddress_from">
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
           <div class="field">
