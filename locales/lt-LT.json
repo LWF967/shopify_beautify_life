@@ -469,10 +469,26 @@
       "remaining_html": "Liko {{ balance }}",
       "add_to_apple_wallet": "Pridėti prie „Apple Wallet“",
       "qr_image_alt": "QR kodas — nuskaitykite ir panaudokite dovanų kortelę",
+      "redeem_html": "Naudokite šį kodą atsiskaitydami, kad išpirktumėte dovanų kortelę {{ value }}",
       "copy_code": "Kopijuoti kodą",
       "expired": "Nebegalioja",
       "copy_code_success": "Kodą pavyko nukopijuoti",
       "print_gift_card": "Spausdinti"
+    }
+  },
+  "homepage": {
+    "general": {
+      "title": "Pagrindinis puslapis",
+      "home_link": "Pagrindinis"
+    },
+    "onboarding": {
+      "product_title": "Jūsų produkto pavadinimas",
+      "product_description": "Ši sritis naudojama išsamiai produkto informacijai apibūdinti. Papasakokite klientams apie produkto išvaizdą, pojūtį ir stilių. Pridėkite išsamios informacijos apie spalvą, naudojamas medžiagas, dydį ir gaminimo vietą.",
+      "collection_title": "Jūsų kolekcijos pavadinimas",
+      "blog_title": "Jūsų įrašo pavadinimas",
+      "blog_excerpt": "Jūsų parduotuvė dar nepaskelbė jokių tinklaraščio įrašų. Tinklaraštis gali būti naudojamas kalbėti apie naujų produktų pristatymus, patarimus ar kitas naujienas, kuriomis norite pasidalinti su savo klientais. Įkvėpimo galite rasti Shopify el. prekybos tinklaraštyje ir patarimai jūsų parduotuvei ir tinklaraščiui.",
+      "blog_author": "Autoriaus vardas",
+      "no_content": "Šiuo metu šioje skiltyje nėra jokio turinio. Pridėkite turinį prie šios skilties naudodami šoninę juostą."
     }
   }
 }
