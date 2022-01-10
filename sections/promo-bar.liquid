@@ -124,14 +124,11 @@
   //cookie
   let ddl = document.getElementById('promo_bar_date');  
   let cookietime = ddl.dataset.date;
-//   console.log(cookietime);
   // 设置cookie
-  
   function setCookie(name,value) {
     var Days = cookietime;
     var exp = new Date(); 
-    exp.setTime(exp.getTime() + Days*30*1000); //Days*24*60*60*1000
-//     console.log(exp.getTime()); // 获取定时后的时间
+    exp.setTime(exp.getTime() + Days*24*60*60*1000);
     document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString() + ";path=" + "/";
   }
   // 获取cookie
@@ -150,11 +147,8 @@
   
   var myPromoFreshDesignMode2 = Shopify.designMode || false;
   if(myPromoFreshDesignMode2){      
-//     console.log("进入promo后台");
     promo_bar_change();
-
   } else {
-//     console.log("无进入promo后台");
     if(getCookie("ddl")){
       let hide_banner = document.getElementById('hide_banner'); 
       let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
@@ -165,7 +159,6 @@
   }
   
   function promo_bar_change() {
-//     console.log("执行promobarchange");
     let close = document.getElementsByClassName('show_close')[0];
     let my_center = document.getElementsByClassName('my_center')[0];
     let hide_banner = document.getElementById('hide_banner');  
@@ -206,7 +199,6 @@
   }
   
   function promo_bar_fun() {   
-//     console.log("进入promobarfun");
     let close = document.getElementsByClassName('show_close')[0];
     let my_center = document.getElementsByClassName('my_center')[0];
     let hide_banner = document.getElementById('hide_banner');  
@@ -217,8 +209,7 @@
         hide_banner.dataset.mheight = hide_banner_height;
       }
       hide_banner.style.marginTop = -hide_banner_height + 'px';
-                        setCookie("ddl",cookietime);
-
+      setCookie("ddl",cookietime);
     }
 
     if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
@@ -227,8 +218,7 @@
           hide_banner.dataset.mheight = hide_banner_height;
         }
         hide_banner.style.marginTop = -hide_banner_height + 'px';
-                          setCookie("ddl",cookietime);
-
+        setCookie("ddl",cookietime);
       }
     }
     hide_banner.dataset.mheight = hide_banner_height;
