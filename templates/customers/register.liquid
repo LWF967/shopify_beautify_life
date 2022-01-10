@@ -159,4 +159,30 @@
   </div>
   {%- endform -%}
 </div>
+<script>
+  $("#RegisterForm-email").bind('blur',function()
+
+{  
+var userMail=$("#RegisterForm-email").val();  
+if(userMail!=""){   
+if(!checkEmail(userMail))
+{    
+emailflag=false;      
+$("#emailspan").css("color","#ff0000");       
+$("#emailspan").html("邮箱格式不正确");   
+}
+else
+{    
+emailflag=true;    
+$("#emailspan").css("color","#43860c");    
+$("#emailspan").html("正确");   
+}  
+}
+ });
+checkEmail ()
+function checkEmail(email){
+var pattern =/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+return pattern.test(email);
+}
+</script>
 
