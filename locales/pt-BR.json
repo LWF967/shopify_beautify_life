@@ -3,6 +3,7 @@
     "password_page": {
       "login_form_heading": "Entre na loja usando a senha:",
       "login_password_button": "Entrar usando a senha",
+      "login_password_button_1": "ENTER USING PASSWORD",
       "login_form_password_label": "Senha",
       "login_form_password_placeholder": "Sua senha",
       "login_form_error": "Senha incorreta.",
@@ -10,6 +11,39 @@
       "modal": "Janela modal de senha",
       "admin_link_html": "Você é o titular da loja? <a href=\"\/admin\" class=\"link underlined-link\">Faça login aqui<\/a>",
       "powered_by_shopify_html": "Esta loja terá a tecnologia da {{ shopify }}"
+    },
+    "nt_tooltip": {
+      "login_to_wishlist": "Login para usar a Lista de Desejos",
+      "add_to_wishlist": "Adicionar a lista de desejos",
+      "remove_wishlist": "Remover lista de desejos",
+      "browse_wishlist": "Procurar lista de desejos",
+      "compare": "Comparar",
+      "added_text_compare": "Comparar produtos",
+      "quick_view": "Visualização Rápida",
+      "select_options": "Selecionar opções",
+      "read_more": "Leia mais",
+      "view": "Ver produtos",
+      "add_to_cart": "Adicionar ao carrinho",
+      "share_fb": "Compartilhar no Facebook",
+      "share_tw": "Compartilhar no Twitter",
+      "share_em": "Compartilhar no e-mail",
+      "share_pr": "Compartilhar no Pinterest",
+      "share_tu": "Compartilhar no Tumblr",
+      "share_tl": "Compartilhar no Telegram",
+      "share_wa": "Compartilhar no WhatsApp",
+      "follow_fb": "Siga no Facebook",
+      "follow_tw": "Siga no Twitter",
+      "follow_it": "Siga no Instagram",
+      "follow_dr": "Siga no Dribbble",
+      "follow_ld": "Siga no Linkedin",
+      "follow_pr": "Siga no Pinterest",
+      "follow_tu": "Siga no Tumblr",
+      "follow_yt": "Siga no YouTube",
+      "follow_bh": "Siga no Behance",
+      "follow_sc": "Siga no Soundcloud",
+      "follow_tt": "Siga no Tiktok",
+      "follow_sn": "Siga no Snapchat",
+      "follow_vi": "Siga no Vimeo"
     },
     "social": {
       "alt_text": {
@@ -37,7 +71,8 @@
       "previous": "Página anterior"
     },
     "search": {
-      "search": "Pesquisar"
+      "search": "PESQUISE NOSSO SITE",
+      "search_label": "Pesquisar"
     },
     "cart": {
       "view": "Ver o carrinho ({{ count }})",
@@ -52,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%B de %Y"
+    "month_year": "%B %Y",
+    "detail_text": "Detalhe"
   },
   "newsletter": {
     "label": "E-mail",
@@ -80,23 +116,52 @@
   },
   "blogs": {
     "article": {
-      "blog": "Blog",
-      "read_more_title": "Saiba mais: {{ title }}",
-      "read_more": "Saiba mais",
       "comments": {
         "one": "{{ count }} comentário",
         "other": "{{ count }} comentários"
       },
-      "moderated": "Os comentários precisam ser aprovados antes da publicação.",
+      "blog": "Blogue",
+      "view_all": "Ver mais",
+      "view_all_blogs": "Ver todos os blogs",
+      "all_topics": "Todos os tópicos",
+      "by_author": "Por {{ author }}",
+      "posted_in": "Enviado em",
+      "read_more": "Continuar lendo",
+      "read_more_title": "Leia mais: {{ title }}",
+      "back_to_blog": "Voltar para {{ title }}",
+      "tags": "Tag",
+      "moderated": "Observe que os comentários precisam ser aprovados antes de serem publicados.",
       "comment_form_title": "Deixe um comentário",
-      "name": "Nome",
+      "name": "nome",
       "email": "E-mail",
       "message": "Comentário",
-      "post": "Publicar comentário",
-      "back_to_blog": "Voltar para o blog",
-      "share": "Compartilhar este artigo",
-      "success": "O comentário foi postado. Obrigado!",
-      "success_moderated": "O comentário foi postado. Nós o publicaremos em breve, pois o blog é moderado."
+      "post": "Postar comentário",
+      "share": "Compartilhe este artigo",
+      "success": "Seu comentário foi postado com sucesso! Obrigado!",
+      "success_moderated": "Seu comentário foi postado com sucesso. Vamos publicá-lo em breve, pois nosso blog é moderado.",
+      "article_with_count": {
+        "one": "{{ count }} artigo",
+        "other": "{{ count }} artigos"
+      },
+      "by": "Por",
+      "on": "ligado",
+      "in": "Em",
+      "back_to": "Voltar para {{title}}"
+    },
+    "comments": {
+      "title": "Deixe um comentário",
+      "name": "nome",
+      "email": "E-mail",
+      "message": "Mensagem",
+      "post": "Postar comentário",
+      "moderated": "Observe que os comentários devem ser aprovados antes de serem publicados",
+      "success_moderated": "Seu comentário foi postado com sucesso. Vamos publicá-lo em breve, pois nosso blog é moderado.",
+      "success": "Seu comentário foi postado com sucesso! Obrigado!",
+      "unapproved": "O endereço de e-mail fornecido não foi aprovado para postagem de comentários.",
+      "comments_with_count": {
+        "one": "{{ count }} comentário",
+        "other": "{{ count }} comentários"
+      }
     }
   },
   "onboarding": {
@@ -177,7 +242,8 @@
     },
     "404": {
       "title": "Página não encontrada",
-      "subtext": "404"
+      "subtext": "404",
+      "info_text": "A página que você solicitou não existe"
     }
   },
   "sections": {
@@ -263,6 +329,21 @@
     },
     "video": {
       "load_video": "Carregar vídeo: {{ description }}"
+    },
+    "map": {
+      "address_error": "Erro procurando esse endereço",
+      "address_no_results": "Nenhum resultado para esse endereço",
+      "address_query_limit_html": "Você excedeu o limite de uso da API do Google. Considere fazer upgrade para um <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plano<\/a>.",
+      "auth_error_html": "Ocorreu um problema ao autenticar sua conta do Google Maps.",
+      "section_heading": "Localização"
+    },
+    "slideshow": {
+      "next_slide": "Próximo slide",
+      "previous_slide": "Slide anterior",
+      "pause_slideshow": "Pausar apresentação de slides",
+      "rotate_slideshow": "Reproduzir apresentação de slides",
+      "load_slide": "Carregar slide {{ slide_number }}",
+      "navigation_instructions": "Use as setas para a esquerda\/direita para navegar na apresentação de slides ou deslize para a esquerda\/direita se estiver usando um dispositivo móvel"
     }
   },
   "localization": {
@@ -388,10 +469,26 @@
       "remaining_html": "{{ balance }} restantes",
       "add_to_apple_wallet": "Adicionar ao app Wallet da Apple",
       "qr_image_alt": "Código QR — faça a leitura para resgatar o cartão-presente",
+      "redeem_html": "Use este código na finalização da compra para resgatar {{ value }} seu vale-presente",
       "copy_code": "Copiar código",
       "expired": "Expirado",
       "copy_code_success": "Código copiado",
       "print_gift_card": "Imprimir"
+    }
+  },
+  "homepage": {
+    "general": {
+      "title": "Página inicial",
+      "home_link": "Início"
+    },
+    "onboarding": {
+      "product_title": "Nome do seu produto",
+      "product_description": "Esta área é usada para descrever os detalhes do seu produto. Informe os clientes sobre a aparência, a sensação e o estilo do seu produto. Adicione detalhes sobre cor, materiais usados, tamanho e onde foi feito.",
+      "collection_title": "O nome da sua coleção",
+      "blog_title": "Título do seu post",
+      "blog_excerpt": "Sua loja ainda não publicou nenhuma postagem no blog. Um blog pode ser usado para falar sobre lançamentos de novos produtos, dicas ou outras notícias que você deseja compartilhar com seus clientes. Você pode conferir o blog de comércio eletrônico da Shopify para se inspirar e conselhos para sua própria loja e blog.",
+      "blog_author": "Nome do autor",
+      "no_content": "Esta seção não inclui nenhum conteúdo no momento. Adicione conteúdo a esta seção usando a barra lateral."
     }
   }
 }
