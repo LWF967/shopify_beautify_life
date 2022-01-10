@@ -49,6 +49,10 @@
   .my_addresses ul ,.my_addresses ul li h2{
     text-align: left;
   }
+  .my_addresses .add_addresses{
+    font-size: 16px;
+    min-height: 44px;
+  }
   @media screen and (min-width: 750px){
 .customer:not(.account):not(.order){
   max-width: 120rem;
@@ -150,7 +154,7 @@
             <label for="address_default_address_new">{{ 'customer.addresses.set_default' | t }}</label>
           </div>
           <div>
-            <button class="add_address">{{ 'customer.addresses.add' | t }}</button>
+            <button class="add_addresses">{{ 'customer.addresses.add' | t }}</button>
             <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
           </div>
         {%- endform -%}
