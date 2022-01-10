@@ -196,34 +196,38 @@
       // 注释后 自己不能刷新
       promo_bar_change();
     
-    
-      // 观察者
-      var target333 =  document.getElementsByClassName('h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_false my_promo_flex')[0];
+    // 选择需要观察变动的节点
+    const targetNode = document.getElementById('promo_bar_date');
 
-      var observer333 = new MutationObserver(function(){
-        console.log("jinru");
-        console.log(target);
-      });
+    // 观察器的配置（需要观察什么变动）
+    const config = { attributes: true, childList: true, subtree: true };
 
-      var config333 = { attributes: true, childList: true, characterData: true ,subtree : true };
-      // 传入目标节点和观察选项
-      observer333.observe(target333, config333); 
-    
-        
+    // 当观察到变动时执行的回调函数
+    const callback = function(mutationsList, observer) {
+      // Use traditional 'for loops' for IE 11
+      for(let mutation of mutationsList) {
+        if (mutation.type === 'childList') {
+          console.log('A child node has been added or removed.');
+        }
+        else if (mutation.type === 'attributes') {
+          console.log('The ' + mutation.attributeName + ' attribute was modified.');
+        }
+      }
+            promo_bar_change();
+
+      
+    };
+
+    // 创建一个观察器实例并传入回调函数
+    const observer = new MutationObserver(callback);
+
+    // 以上述配置开始观察目标节点
+    observer.observe(targetNode, config);
+
+    // 之后，可停止观察
+    observer.disconnect();
     },true);
   }
-  
-      // 观察者
-    var target333 =  document.getElementsByClassName('h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_false my_promo_flex')[0];
-
-    var observer333 = new MutationObserver(function(){
-      console.log("jinru");
-      console.log(target);
-    });
-
-    var config333 = { attributes: true, childList: true, characterData: true ,subtree : true };
-    // 传入目标节点和观察选项
-    observer333.observe(target333, config333); 
   
   function promo_bar_fun() {   
     let close = document.getElementsByClassName('show_close')[0];
