@@ -240,7 +240,7 @@
             <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
           </div>
           <div class="field">
-            <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}"
+            <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" aria-required="true" placeholder="{{ 'customer.addresses.phone' | t }}"
             {% if form.errors contains 'phone' %} aria-invalid="true" aria-describedby="{{ formId}}-body-error"{% endif %}>
             
             <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
