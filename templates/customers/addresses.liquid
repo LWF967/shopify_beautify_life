@@ -167,7 +167,14 @@
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
           <div class="field">
-            <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
+            <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}"
+            
+            {% if form.errors contains 'first_name' %}
+            aria-invalid="true"
+            aria-describedby="CommentForm-author-error"
+          {% endif %}
+            
+            >
             <!-- <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label> -->
             <label class="field__label" for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }} <span aria-hidden="true">*</span></label>
           </div>
