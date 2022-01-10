@@ -130,15 +130,13 @@
       <a href="{{ routes.account_url }}">
         {{ 'customer.account.return' | t }}
       </a>
-      <button
+      <a
       class="add_address"
-        type="button"
         aria-expanded="false"
         aria-controls="AddAddress"
-        
       >
         {{ 'customer.addresses.add_new' | t }}
-      </button>
+    </a>
       <div id="AddAddress" class="my_addAddress_from">
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
@@ -384,19 +382,19 @@
     typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
     
   }
-//   let flag = false;
-//  var toggleButtonAddAddress =  document.querySelector(".add_address")
-// //  console.log(add_address);
-//  toggleButtonAddAddress.addEventListener('click',function(e){
-//    e.stopPropagation();
-//    if(!flag){
-//     toggleButtonAddAddress.setAttribute('aria-expanded',true)
-//    flag = true;
-//    }else{
-//     toggleButtonAddAddress.setAttribute('aria-expanded',false)
-//     flag =false;
-//    }
-//  })
+  let flag = false;
+ var toggleButtonAddAddress =  document.querySelector(".add_address")
+//  console.log(add_address);
+ toggleButtonAddAddress.addEventListener('click',function(e){
+   e.stopPropagation();
+   if(!flag){
+    toggleButtonAddAddress.setAttribute('aria-expanded',true)
+   flag = true;
+   }else{
+    toggleButtonAddAddress.setAttribute('aria-expanded',false)
+    flag =false;
+   }
+ })
 
 //  //cancel
 //  var cancelButton = document.querySelector('button[type="reset"]')
