@@ -86,9 +86,6 @@ let footer_bottom = document.getElementsByClassName('footer color- gradient my_f
 let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
 let main = document.getElementById('MainContent');
 let sticky = document.getElementsByClassName('my_footer_sticky');
-
-// let drawer = document.querySelectorAll('details-disclosure details');
-// console.log(drawer);
     
 function my_header_and_totop() {
   // backtop 
