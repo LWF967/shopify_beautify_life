@@ -169,6 +169,7 @@
           <div class="field">
             <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
             <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
+            <label class="field__label" for="CommentForm-author">{{ 'customer.addresses.first_name' | t }} <span aria-hidden="true">*</span></label>
           </div>
           <div class="field">
             <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="{{ 'customer.addresses.last_name' | t }}">
