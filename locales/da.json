@@ -133,7 +133,7 @@
       "moderated": "Bemærk venligst, kommentarer skal godkendes, før de offentliggøres.",
       "comment_form_title": "Skriv en kommentar",
       "navn": "Navn",
-      "email": "Email",
+      "email": "Mailadresse",
       "message": "Kommenter",
       "post": "Send kommentar",
       "share": "Del denne artikel",
@@ -151,7 +151,7 @@
     "comments": {
       "title": "Skriv en kommentar",
       "navn": "Navn",
-      "email": "E-mail",
+      "email": "Mailadresse",
       "message": "Besked",
       "post": "Send kommentar",
       "moderated": "Bemærk venligst, kommentarer skal godkendes, før de offentliggøres",
