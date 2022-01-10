@@ -197,17 +197,17 @@
       promo_bar_change();
     
     
-    // 观察者
-    var target333 =  document.getElementsByClassName('h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_false my_promo_flex')[0];
+      // 观察者
+      var target333 =  document.getElementsByClassName('h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_false my_promo_flex')[0];
 
-    var observer333 = new MutationObserver(function(){
-      console.log("jinru");
-      console.log(target);
-    });
+      var observer333 = new MutationObserver(function(){
+        console.log("jinru");
+        console.log(target);
+      });
 
-    var config333 = { attributes: true, childList: true, characterData: true ,subtree : true };
-    // 传入目标节点和观察选项
-    observer333.observe(target333, config333); 
+      var config333 = { attributes: true, childList: true, characterData: true ,subtree : true };
+      // 传入目标节点和观察选项
+      observer333.observe(target333, config333); 
     
         
     },true);
