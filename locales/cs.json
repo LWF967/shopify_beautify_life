@@ -329,6 +329,21 @@
     },
     "video": {
       "load_video": "Načíst video: {{ description }}"
+    },
+    "map": {
+      "address_error": "Błąd podczas wyszukiwania tego adresu",
+      "address_no_results": "Brak wyników dla tego adresu",
+      "address_query_limit_html": "Przekroczono limit wykorzystania interfejsu API Google. Rozważ uaktualnienie do <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>.",
+      "auth_error_html": "Wystąpił problem z uwierzytelnianiem Twojego konta Map Google.",
+      "section_heading": "Lokalizacja"
+    },
+    "slideshow": {
+      "next_slide": "Następny slajd",
+      "previous_slide": "Poprzedni slajd",
+      "pause_slideshow": "Wstrzymaj pokaz slajdów",
+      "rotate_slideshow": "Odtwórz pokaz slajdów",
+      "load_slide": "Załaduj slajd {{ slide_number }}",
+      "navigation_instructions": "Użyj strzałek w lewo\/w prawo, aby poruszać się po pokazie slajdów lub przesuń palcem w lewo\/w prawo, jeśli używasz urządzenia mobilnego"
     }
   },
   "localization": {
