@@ -12,6 +12,7 @@
   margin-top: 30px;
   font-size: 16px;
   min-height: 44px;
+  background-color: transparent;
 }
 .my_addresses ul li button{
   cursor: pointer;
@@ -63,7 +64,7 @@
     </a>
 
     <div data-address>
-      <button
+      <a
       class="add_address"
         type="button"
         aria-expanded="false"
@@ -71,7 +72,7 @@
         
       >
         {{ 'customer.addresses.add_new' | t }}
-      </button>
+    </a>
       
       <div id="AddAddress">
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
