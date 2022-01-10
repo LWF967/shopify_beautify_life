@@ -25,7 +25,6 @@
 
 
 <slideshow-component>
-
     <div class="slideshow banner banner--{{ section.settings.slide_height }} grid grid--1-col slider slider--everywhere{% if section.settings.show_text_below %} banner--mobile-bottom{% endif %}{% if section.blocks.first.settings.image == blank %} slideshow--placeholder{% endif %}"
     id="Slider-{{ section.id }}"
     aria-live="polite"
@@ -92,15 +91,6 @@
     {%- endfor -%}
   </div>
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
   {% comment %}
   	button
   {% endcomment %}
@@ -137,17 +127,13 @@
   {%- endif -%}
 </slideshow-component>
 
-
 <style>
-
-
 .slideshow__slide {
     padding: 0;
     position: relative;
     display: flex;
     flex-direction: column;
 }  
-
   
 slideshow-component {
     position: relative;
@@ -158,9 +144,6 @@ slideshow-component .slideshow.banner {
     flex-wrap: nowrap;
     margin: 0;
 }
-
-  
-  
   
 .banner__media {
     height: 100%;
@@ -169,7 +152,6 @@ slideshow-component .slideshow.banner {
     top: 0;
     width: 100%;
 }
-  
   
 .slider-buttons {
     display: flex;
@@ -185,7 +167,6 @@ slideshow-component .slideshow.banner {
 -90deg);
 }  
   
-  
   .slider-buttons>button{
   
   border: none;
@@ -195,12 +176,6 @@ slideshow-component .slideshow.banner {
 .slider-button .icon {
     height: 0.6rem;
 }
-  
-
-  
-  
-  
-  
   
 .slideshow__text.banner__box {
     display: flex;
@@ -544,9 +519,6 @@ slideshow-component .slideshow.banner {
         }
     ]
 } 
-
-
-
 
 {% endschema %}
 
