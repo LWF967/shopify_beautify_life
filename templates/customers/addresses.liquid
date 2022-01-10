@@ -248,7 +248,7 @@
         <li data-address>
           {%- if address == customer.default_address -%}
           
-            <h2>{{ 'customer.addresses.default' | t }}</h2>
+            <h2>{{ 'customer.addresses.default' | t | upcase }}</h2>
           {%- endif -%}
           {{ address | format_address }}
           <button
