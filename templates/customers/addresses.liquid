@@ -87,7 +87,7 @@
   justify-content: start;
   align-items:flex-start ;
 }
-.my_addresses .my_addresses_acount .add_address{
+.my_addresses .my_addresses_acount .add_address , .my_addresses .my_addresses_acount .my_account_return{
   font-size: 16px;
   min-height: 22px;
   margin: 15px 0 ;
@@ -123,7 +123,7 @@
 
     <div data-address class="my_addresses_acount">
      
-      <a href="{{ routes.account_url }}">
+      <a href="{{ routes.account_url }}" class="my_account_return">
         {{ 'customer.account.return' | t }}
       </a>
       <a
