@@ -170,9 +170,11 @@
             <input type="text" id="AddressFirstNameNew"  value="{{ form.first_name }}" autocomplete="given-name"
             aria-required="true"
             {% if form.errors contains 'first_name' %}
-            name="address[first_name]"
+              
               aria-invalid="true"
               aria-describedby="CommentForm-first_name-error"
+              {% else %}
+              name="address[first_name]"
             {% endif %}
             placeholder="{{ 'customer.addresses.first_name' | t }}"
             >
