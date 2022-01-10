@@ -3,6 +3,7 @@
     "password_page": {
       "login_form_heading": "Belépés a webáruházba jelszóval:",
       "login_password_button": "Belépés jelszóval",
+      "login_password_button_1": "ADJA MEG A JELSZÓ HASZNÁLATÁVAL",
       "login_form_password_label": "Jelszó",
       "login_form_password_placeholder": "Saját jelszó",
       "login_form_error": "Téves jelszót írtál be.",
@@ -10,6 +11,39 @@
       "modal": "Jelszómegadási párbeszédpanel",
       "admin_link_html": "Te vagy a webáruház tulajdonosa? <a href=\"\/admin\" class=\"link underlined-link\">Itt tudsz bejelentkezni<\/a>",
       "powered_by_shopify_html": "A bolt szolgáltatója a {{ shopify }}"
+    },
+    "nt_tooltip": {
+      "login_to_wishlist": "Jelentkezzen be a kívánságlista használatához",
+      "add_to_wishlist": "Hozzáadás a kívánságlistához",
+      "remove_wishlist": "Kívánságlista eltávolítása",
+      "browse_wishlist": "Kívánságlista böngészése",
+      "compare": "Összehasonlítás",
+      "added_text_compare": "Termékek összehasonlítása",
+      "quick_view": "Gyors nézet",
+      "select_options": "Opciók kiválasztása",
+      "read_more": "További információ",
+      "view": "Termékek megtekintése",
+      "add_to_cart": "Kosárba helyezés",
+      "share_fb": "Megosztás a Facebookon",
+      "share_tw": "Megosztás a Twitteren",
+      "share_em": "Megosztás e-mailben",
+      "share_pr": "Megosztás a Pinteresten",
+      "share_tu": "Megosztás a Tumblr-en",
+      "share_tl": "Megosztás a táviraton",
+      "share_wa": "Megosztás a WhatsApp-on",
+      "follow_fb": "Követés a Facebookon",
+      "follow_tw": "Követés a Twitteren",
+      "follow_it": "Követés az Instagramon",
+      "follow_dr": "Kövesd a Dribbble-n",
+      "follow_ld": "Követés a Linkedinben",
+      "follow_pr": "Követés a Pinteresten",
+      "follow_tu": "Követés a Tumblr-en",
+      "follow_yt": "Követés a YouTube-on",
+      "follow_bh": "Kövesd a Behance-on",
+      "follow_sc": "Követés a Soundcloudon",
+      "follow_tt": "Kövesd a Tiktokon",
+      "follow_sn": "Követés a Snapchaten",
+      "follow_vi": "Követés a Vimeo-n"
     },
     "social": {
       "alt_text": {
@@ -37,7 +71,8 @@
       "previous": "Előző oldal"
     },
     "search": {
-      "search": "Keresés"
+      "search": "KERESS OLDALUNKON",
+      "search_label": "Keresés"
     },
     "cart": {
       "view": "Kosár megtekintése ({{ count }})",
@@ -52,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%Y. %B"
+    "month_year": "%Y. %B",
+    "detail_text": "Részlet"
   },
   "newsletter": {
     "label": "E-mail-cím",
@@ -80,23 +116,52 @@
   },
   "blogs": {
     "article": {
-      "blog": "Blog",
-      "read_more_title": "Továbbiak: {{ title }}",
-      "read_more": "Továbbiak",
       "comments": {
-        "one": "{{ count }} hozzászólás",
-        "other": "{{ count }} hozzászólás"
+        "one": "{{ count }} megjegyzés",
+        "other": "{{ count }} megjegyzés"
       },
-      "moderated": "Felhívjuk a figyelmedet, hogy a hozzászólásokat jóvá kell hagyni a közzétételük előtt.",
-      "comment_form_title": "Hozzászólás írása",
+      "blog": "Blog",
+      "view_all": "Továbbiak megtekintése",
+      "view_all_blogs": "Összes blog megtekintése",
+      "all_topics": "Minden téma",
+      "by_author": "Szerző: {{ author }}",
+      "posted_in": "Közzétéve",
+      "read_more": "Olvasás folytatása",
+      "read_more_title": "További információ: {{ title }}",
+      "back_to_blog": "Vissza ide: {{ title }}",
+      "tags": "Címkék",
+      "moderated": "Kérjük, vegye figyelembe, hogy a megjegyzéseket jóvá kell hagyni a közzétételük előtt.",
+      "comment_form_title": "Hagyjon megjegyzést",
       "name": "Név",
-      "email": "E-mail-cím",
-      "message": "Hozzászólás",
-      "post": "Hozzászólás elküldése",
-      "back_to_blog": "Vissza a blogba",
+      "email": "Email",
+      "message": "Megjegyzés",
+      "post": "Hozzászólás közzététele",
       "share": "Cikk megosztása",
-      "success": "Elküldtük a hozzászólásodat. Köszönjük!",
-      "success_moderated": "Elküldtük a hozzászólásodat. Blogunkat moderáljuk, ezért egy kis idő múlva tesszük csak közzé a hozzászólást."
+      "success": "Hozzászólása sikeresen elküldve! Köszönjük!",
+      "success_moderated": "Hozzászólásod sikeresen elküldve. Rövid időn belül közzétesszük, mivel a blogunk moderált.",
+      "article_with_count": {
+        "one": "{{ count }} cikk",
+        "other": "{{ count }} cikk"
+      },
+      "by": "Általán",
+      "on": "on",
+      "in": "In",
+      "back_to": "Vissza ide: {{title}}"
+    },
+    "comments": {
+      "title": "Hagyjon megjegyzést",
+      "name": "Név",
+      "email": "Email",
+      "message": "Üzenet",
+      "post": "Hozzászólás közzététele",
+      "moderated": "Kérjük, vegye figyelembe, hogy a megjegyzéseket jóvá kell hagyni a közzétételük előtt",
+      "success_moderated": "Hozzászólásod sikeresen elküldve. Rövid időn belül közzétesszük, mivel a blogunk moderált.",
+      "success": "Hozzászólása sikeresen elküldve! Köszönjük!",
+      "unapproved": "A megadott e-mail-cím nem engedélyezett megjegyzések közzétételére.",
+      "comments_with_count": {
+        "one": "{{ count }} megjegyzés",
+        "other": "{{ count }} megjegyzés"
+      }
     }
   },
   "onboarding": {
@@ -177,7 +242,8 @@
     },
     "404": {
       "title": "Nem találjuk az oldalt",
-      "subtext": "404-es hiba történt."
+      "subtext": "404-es hiba történt.",
+      "info_text": "A kért oldal nem létezik"
     }
   },
   "sections": {
@@ -263,6 +329,21 @@
     },
     "video": {
       "load_video": "Videó betöltése: {{ description }}"
+    },
+    "map": {
+      "address_error": "Hiba a cím keresésekor",
+      "address_no_results": "Nincs eredmény erre a címre",
+      "address_query_limit_html": "Túllépte a Google API használati korlátját. Fontolja meg a <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">prémiumra való frissítést Terv<\/a>.",
+      "auth_error_html": "Hiba történt a Google Térkép-fiók hitelesítése során.",
+      "section_heading": "Hely"
+    },
+    "slideshow": {
+      "next_slide": "Következő dia",
+      "previous_slide": "Előző dia",
+      "pause_slideshow": "Diavetítés szüneteltetése",
+      "rotate_slideshow": "Diavetítés lejátszása",
+      "load_slide": "Dia betöltése {{ slide_number }}",
+      "navigation_instructions": "Használja a balra\/jobbra nyilakat a diavetítésben való navigáláshoz, vagy csúsztassa balra\/jobbra, ha mobileszközt használ"
     }
   },
   "localization": {
@@ -388,10 +469,26 @@
       "remaining_html": "Egyenleg: {{ balance }}",
       "add_to_apple_wallet": "Hozzáadás az Apple Wallethoz",
       "qr_image_alt": "Ezt a QR-kódot beszkennelve beválthatod az ajándékkártyát.",
+      "redeem_html": "Használja ezt a kódot a pénztárnál az {{ value }} ajándékutalvány beváltásához",
       "copy_code": "Kód másolása",
       "expired": "Lejárt",
       "copy_code_success": "Sikeres volt a kód másolása",
       "print_gift_card": "Nyomtatás"
+    }
+  },
+  "homepage": {
+    "general": {
+      "title": "Kezdőlap",
+      "home_link": "Otthon"
+    },
+    "onboarding": {
+      "product_title": "Termékének neve",
+      "product_description": "Ez a terület a termék részleteinek leírására szolgál. Mondja el az ügyfeleknek a termék megjelenését, hangulatát és stílusát. Adjon meg részleteket a színről, a felhasznált anyagokról, a méretről és a gyártás helyéről.",
+      "collection_title": "A gyűjtemény neve",
+      "blog_title": "A bejegyzés címe",
+      "blog_excerpt": "Az üzleted még nem tett közzé blogbejegyzéseket. A blogon új termékbemutatókról, tippekről vagy egyéb hírekről beszélhetsz, amelyeket meg szeretnél osztani ügyfeleiddel. Inspirációért tekintsd meg a Shopify e-kereskedelmi blogját. és tanácsokat a saját üzletéhez és blogjához.",
+      "blog_author": "Szerző neve",
+      "no_content": "Ez a szakasz jelenleg nem tartalmaz tartalmat. Adjon hozzá tartalmat ehhez az oldalsávhoz."
     }
   }
 }
