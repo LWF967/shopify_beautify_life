@@ -166,17 +166,10 @@
       <div id="AddAddress" class="my_addAddress_from">
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
-          <div class="field field--with-error">
-            <input type="text" id="AddressFirstNameNew" name="address[first_name]"  value="{{ form.first_name }}" autocomplete="given-name"
-            aria-required="true"
-            {% if form.errors contains 'first_name' %}
-              aria-invalid="true"
-              aria-describedby="CommentForm-first_name-error"
-            {% endif %}
-            placeholder="{{ 'customer.addresses.first_name' | t }}"
-            >
-            <!-- <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label> -->
-            <label class="field__label" for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }} <span aria-hidden="true">*</span></label>
+          <div class="field">
+            <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
+            <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
+            <!-- <label class="field__label" for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }} <span aria-hidden="true">*</span></label> -->
           </div>
           <div class="field">
             <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="{{ 'customer.addresses.last_name' | t }}">
@@ -195,13 +188,7 @@
             <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
           </div>
           <div class="field">
-            <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2"
-            aria-required="true"
-            {% if form.errors contains 'city' %}
-              aria-invalid="true"
-              aria-describedby="CommentForm-city-error"
-            {% endif %}
-            placeholder="{{ 'customer.addresses.city' | t }}">
+            <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
             <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
           </div>
           <div>
@@ -240,9 +227,7 @@
             <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
           </div>
           <div class="field">
-            <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" aria-required="true" placeholder="{{ 'customer.addresses.phone' | t }}"
-            {% if form.errors contains 'phone' %} aria-invalid="true" aria-describedby="{{ formId}}-body-error"{% endif %}>
-            
+            <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
             <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
           </div>
           <div>
@@ -290,15 +275,7 @@
             <h2 class="my_edit_address">{{ 'customer.addresses.edit_address' | t }}</h2>
             {%- form 'customer_address', address -%}
               <div class="field">
-                <input type="text" 
-                id="AddressFirstName_{{ form.id }}" 
-                name="address[first_name]" 
-                value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}" 
-                {% if form.errors contains 'first_name' %}
-                aria-invalid="true"
-                aria-describedby="CommentForm-author-error"
-              {% endif %}
-                >
+                <input type="text" id="AddressFirstName_{{ form.id }}" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
                 <label for="AddressFirstName_{{ form.id }}">{{ 'customer.addresses.first_name' | t }}</label>
               </div>
               <div class="field">
@@ -446,4 +423,14 @@
    }
  })
 
+//  //cancel
+//  var cancelButton = document.querySelector('button[type="reset"]')
+//  console.log(cancelButton);
+//  cancelButton.addEventListener('click',function(e){
+//    e.stopPropagation();
+//     toggleButtonAddAddress.setAttribute('aria-expanded',false)
+//     flag =false;
+//  })
+//  var editButton = document.getElementById('EditFormButton_{{ address.id}}')
+//  console.log(editButton);
 </script>
