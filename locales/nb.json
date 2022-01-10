@@ -3,6 +3,7 @@
     "password_page": {
       "login_form_heading": "Gå inn i butikken ved hjelp av passord:",
       "login_password_button": "Gå inn ved hjelp av passord",
+      "login_password_button_1": "SKRIV INN MED PASSORD",
       "login_form_password_label": "Passord",
       "login_form_password_placeholder": "Passordet ditt",
       "login_form_error": "Feil passord!",
@@ -10,6 +11,39 @@
       "modal": "Passordmodal",
       "admin_link_html": "Er du butikkeieren? <a href=\"\/admin\" class=\"link underlined-link\">Logg inn her<\/a>",
       "powered_by_shopify_html": "Denne butikken vil bli drevet av {{ shopify }}"
+    },
+    "nt_tooltip": {
+      "login_to_wishlist": "Logg på for å bruke ønskeliste",
+      "add_to_wishlist": "Legg til i ønskeliste",
+      "remove_wishlist": "Fjern ønskeliste",
+      "browse_wishlist": "Bla gjennom ønskelisten",
+      "compare": "Sammenlign",
+      "added_text_compare": "Sammenlign produkter",
+      "quick_view": "Hurtigvisning",
+      "select_options": "Velg alternativer",
+      "read_more": "Les mer",
+      "view": "Se produkter",
+      "add_to_cart": "Legg i handlekurv",
+      "share_fb": "Del på Facebook",
+      "share_tw": "Del på Twitter",
+      "share_em": "Del på e-post",
+      "share_pr": "Del på Pinterest",
+      "share_tu": "Del på Tumblr",
+      "share_tl": "Del på Telegram",
+      "share_wa": "Del på WhatsApp",
+      "follow_fb": "Følg på Facebook",
+      "follow_tw": "Følg på Twitter",
+      "follow_it": "Følg på Instagram",
+      "follow_dr": "Følg på Dribbble",
+      "follow_ld": "Følg på Linkedin",
+      "follow_pr": "Følg på Pinterest",
+      "follow_tu": "Følg på Tumblr",
+      "follow_yt": "Følg på YouTube",
+      "follow_bh": "Følg på Behance",
+      "follow_sc": "Følg på Soundcloud",
+      "follow_tt": "Følg på Tiktok",
+      "follow_sn": "Følg på Snapchat",
+      "follow_vi": "Følg på Vimeo"
     },
     "social": {
       "alt_text": {
@@ -37,7 +71,8 @@
       "previous": "Forrige side"
     },
     "search": {
-      "search": "Søk"
+      "search": "SEARCH OUR SITE",
+      "search_label": "Search"
     },
     "cart": {
       "view": "Vis handlekurven ({{ count }})",
@@ -52,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%B %Y"
+    "month_year": "%B %Y",
+    "detail_text": "Detalj"
   },
   "newsletter": {
     "label": "E-post",
@@ -80,23 +116,52 @@
   },
   "blogs": {
     "article": {
-      "blog": "Blogg",
-      "read_more_title": "Les mer: {{ title }}",
-      "read_more": "Les mer",
       "comments": {
         "one": "{{ count }} kommentar",
         "other": "{{ count }} kommentarer"
       },
-      "moderated": "Merk at kommentarer må godkjennes før de publiseres.",
+      "blog": "Blogg",
+      "view_all": "Se mer",
+      "view_all_blogs": "Se alle blogger",
+      "all_topics": "Alle emner",
+      "by_author": "Av {{ author }}",
+      "posted_in": "Lagt inn",
+      "read_more": "Fortsett å lese",
+      "read_more_title": "Les mer: {{ title }}",
+      "back_to_blog": "Tilbake til {{ title }}",
+      "tags": "Tags",
+      "moderated": "Vær oppmerksom på at kommentarer må godkjennes før de publiseres.",
       "comment_form_title": "Legg igjen en kommentar",
       "name": "Navn",
       "email": "E-post",
       "message": "Kommentar",
-      "post": "Del en kommentar",
-      "back_to_blog": "Tilbake til bloggen",
+      "post": "Legg inn kommentar",
       "share": "Del denne artikkelen",
-      "success": "Kommentaren din ble delt! Takk!",
-      "success_moderated": "Kommentaren din ble delt. Vi publiserer den om en liten stund, siden bloggen din er moderert."
+      "success": "Kommentaren din ble lagt ut! Takk!",
+      "success_moderated": "Kommentaren din ble lagt ut. Vi vil publisere den om en liten stund, ettersom bloggen vår er moderert.",
+      "article_with_count": {
+        "one": "{{ count }} artikkel",
+        "other": "{{ count }} artikler"
+      },
+      "by": "Av",
+      "on": "på",
+      "in": "I",
+      "back_to": "Tilbake til {{title}}"
+    },
+    "comments": {
+      "title": "Legg igjen en kommentar",
+      "name": "Navn",
+      "email": "E-post",
+      "message": "Kommentar",
+      "post": "Legg inn kommentar",
+      "moderated": "Vær oppmerksom på at kommentarer må godkjennes før de publiseres",
+      "success_moderated": "Kommentaren din ble lagt ut. Vi vil publisere den om en liten stund, ettersom bloggen vår er moderert.",
+      "success": "Kommentaren din ble lagt ut! Takk!",
+      "unapproved": "E-postadressen som er oppgitt er ikke godkjent for å legge inn kommentarer.",
+      "comments_with_count": {
+        "one": "{{ count }} kommentar",
+        "other": "{{ count }} kommentarer"
+      }
     }
   },
   "onboarding": {
@@ -177,7 +242,8 @@
     },
     "404": {
       "title": "Siden finnes ikke",
-      "subtext": "404"
+      "subtext": "404",
+      "info_text": "Siden du ba om finnes ikke"
     }
   },
   "sections": {
