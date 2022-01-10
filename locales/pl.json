@@ -3,6 +3,7 @@
     "password_page": {
       "login_form_heading": "Wejdź do sklepu, wpisując hasło:",
       "login_password_button": "Wejdź, wpisując hasło",
+      "login_password_button_1": "WPROWADŹ UŻYWAJĄC HASŁA",
       "login_form_password_label": "Hasło",
       "login_form_password_placeholder": "Twoje hasło",
       "login_form_error": "Nieprawidłowe hasło!",
@@ -10,6 +11,39 @@
       "modal": "Okno modalne hasła",
       "admin_link_html": "Czy jesteś właścicielem sklepu? <a href=\"\/admin\" class=\"link underlined-link\">Zaloguj się tutaj<\/a>",
       "powered_by_shopify_html": "Ten sklep będzie obsługiwany przez {{ shopify }}"
+    },
+    "nt_tooltip": {
+      "login_to_wishlist": "Zaloguj się, aby korzystać z listy życzeń",
+      "add_to_wishlist": "Dodaj do listy życzeń",
+      "remove_wishlist": "Usuń listę życzeń",
+      "browse_wishlist": "Przeglądaj listę życzeń",
+      "compare": "Porównaj",
+      "added_text_compare": "Porównaj produkty",
+      "quick_view": "Szybki podgląd",
+      "select_options": "Wybierz opcje",
+      "read_more": "Czytaj więcej",
+      "view": "Wyświetl produkty",
+      "add_to_cart": "Dodaj do koszyka",
+      "share_fb": "Udostępnij na Facebooku",
+      "share_tw": "Udostępnij na Twitterze",
+      "share_em": "Udostępnij na e-mail",
+      "share_pr": "Udostępnij na Pintereście",
+      "share_tu": "Udostępnij na Tumblrze",
+      "share_tl": "Udostępnij na Telegramie",
+      "share_wa": "Udostępnij na WhatsApp",
+      "follow_fb": "Obserwuj na Facebooku",
+      "follow_tw": "Obserwuj na Twitterze",
+      "follow_it": "Obserwuj na Instagramie",
+      "follow_dr": "Obserwuj na dryblingiem",
+      "follow_ld": "Obserwuj na Linkedin",
+      "follow_pr": "Obserwuj na Pintereście",
+      "follow_tu": "Obserwuj na Tumblrze",
+      "follow_yt": "Obserwuj na YouTube",
+      "follow_bh": "Obserwuj na Behance",
+      "follow_sc": "Obserwuj na Soundcloud",
+      "follow_tt": "Obserwuj na Tiktok",
+      "follow_sn": "Obserwuj na Snapchacie",
+      "follow_vi": "Obserwuj na Vimeo"
     },
     "social": {
       "alt_text": {
@@ -37,7 +71,8 @@
       "previous": "Poprzednia strona"
     },
     "search": {
-      "search": "Szukaj"
+      "search": "SZUKAJ NASZEJ WITRYNIE",
+      "search_label": "Szukaj"
     },
     "cart": {
       "view": "Pokaż koszyk ({{ count }})",
@@ -52,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%B %Y"
+    "month_year": "%B %Y",
+    "detail_text": "Szczegóły"
   },
   "newsletter": {
     "label": "E-mail",
@@ -80,24 +116,51 @@
   },
   "blogs": {
     "article": {
-      "blog": "Blog",
-      "read_more_title": "Czytaj więcej: {{ title }}",
-      "read_more": "Czytaj więcej",
-      "moderated": "Pamiętaj, że komentarze muszą zostać zatwierdzone przed ich opublikowaniem.",
-      "comment_form_title": "Zostaw komentarz",
-      "name": "Nazwa",
-      "email": "E-mail",
-      "message": "Komentarz",
-      "post": "Opublikuj komentarz",
-      "back_to_blog": "Powrót do blogu",
-      "share": "Udostępnij ten artykuł",
-      "success": "Twój komentarz został opublikowany pomyślnie! Dziękujemy!",
-      "success_moderated": "Twój komentarz został opublikowany pomyślnie. Opublikujemy go za chwilę, ponieważ nasz blog jest moderowany.",
       "comments": {
         "one": "{{ count }} komentarz",
-        "other": "{{ count }} komentarze(-y)",
-        "few": "{{ count }} komentarze(-y)",
-        "many": "{{ count }} komentarze(-y)"
+        "other": "{{ count }} komentarzy"
+      },
+      "blog": "Blog",
+      "view_all": "View more",
+      "view_all_blogs": "View all blogs",
+      "all_topics": "All topics",
+      "by_author": "By {{ author }}",
+      "posted_in": "Posted in",
+      "read_more": "Continue Reading",
+      "read_more_title": "Read more: {{ title }}",
+      "back_to_blog": "Back to {{ title }}",
+      "tags": "Tags",
+      "moderated": "Please note, comments need to be approved before they are published.",
+      "comment_form_title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Comment",
+      "post": "Post comment",
+      "share": "Share this article",
+      "success": "Your comment was posted successfully! Thank you!",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "article_with_count": {
+        "one": "{{ count }} article",
+        "other": "{{ count }} articles"
+      },
+      "by": "By",
+      "on": "on",
+      "in": "In",
+      "back_to": "Back to {{title}}"
+    },
+    "comments": {
+      "title": "Leave a comment",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "post": "Post comment",
+      "moderated": "Please note, comments must be approved before they are published",
+      "success_moderated": "Your comment was posted successfully. We will publish it in a little while, as our blog is moderated.",
+      "success": "Your comment was posted successfully! Thank you!",
+      "unapproved": "The email address provided is not approved for posting comments.",
+      "comments_with_count": {
+        "one": "{{ count }} comment",
+        "other": "{{ count }} comments"
       }
     }
   },
