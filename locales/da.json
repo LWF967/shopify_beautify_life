@@ -116,23 +116,52 @@
   },
   "blogs": {
     "article": {
-      "blog": "Blog",
-      "read_more_title": "Læs mere: {{ title }}",
-      "read_more": "Læs mere",
       "comments": {
         "one": "{{ count }} kommentar",
         "other": "{{ count }} kommentarer"
       },
-      "moderated": "Bemærk, at kommentarer skal godkendes, før de bliver offentliggjort.",
-      "comment_form_title": "Indsend en kommentar",
-      "name": "Navn",
-      "email": "Mailadresse",
-      "message": "Kommentar",
-      "post": "Skriv kommentar",
-      "back_to_blog": "Tilbage til blog",
+      "blog": "Blog",
+      "view_all": "Se mere",
+      "view_all_blogs": "Se alle blogs",
+      "all_topics": "Alle emner",
+      "by_author": "Af {{ forfatter }}",
+      "posted_in": "Sendt i",
+      "read_more": "Fortsæt med at læse",
+      "read_more_title": "Læs mere: {{ title }}",
+      "back_to_blog": "Tilbage til {{ title }}",
+      "tags": "Tags",
+      "moderated": "Bemærk venligst, kommentarer skal godkendes, før de offentliggøres.",
+      "comment_form_title": "Skriv en kommentar",
+      "navn": "Navn",
+      "email": "Email",
+      "message": "Kommenter",
+      "post": "Send kommentar",
       "share": "Del denne artikel",
-      "success": "Din kommentar er blevet offentliggjort! Tak!",
-      "success_moderated": "Din kommentar er blevet offentliggjort. Den bliver offentliggjort om lidt, da vores blog er under opsyn."
+      "success": "Din kommentar blev sendt med succes! Tak!",
+      "success_moderated": "Din kommentar blev sendt. Vi offentliggør den om lidt, da vores blog er modereret.",
+      "article_with_count": {
+        "one": "{{ count }} artikel",
+        "other": "{{ count }} artikler"
+      },
+      "by": "Af",
+      "on": "on",
+      "in": "I",
+      "back_to": "Tilbage til {{title}}"
+    },
+    "comments": {
+      "title": "Skriv en kommentar",
+      "navn": "Navn",
+      "email": "E-mail",
+      "message": "Besked",
+      "post": "Send kommentar",
+      "moderated": "Bemærk venligst, kommentarer skal godkendes, før de offentliggøres",
+      "success_moderated": "Din kommentar blev sendt. Vi offentliggør den om lidt, da vores blog er modereret.",
+      "success": "Din kommentar blev sendt! Tak!",
+      "unapproved": "Den angivne e-mailadresse er ikke godkendt til at skrive kommentarer.",
+      "comments_with_count": {
+        "one": "{{ count }} kommentar",
+        "other": "{{ count }} kommentarer"
+      }
     }
   },
   "onboarding": {
@@ -213,7 +242,8 @@
     },
     "404": {
       "title": "Siden blev ikke fundet",
-      "subtext": "404"
+      "subtext": "404",
+      "info_text": "Siden du anmodede om findes ikke"
     }
   },
   "sections": {
@@ -299,6 +329,21 @@
     },
     "video": {
       "load_video": "Indlæs video: {{ description }}"
+    },
+    "map": {
+      "address_error": "Fejl ved at finde den adresse",
+      "address_no_results": "Ingen resultater for den adresse",
+      "address_query_limit_html": "Du har overskredet Google API-brugsgrænsen. Overvej at opgradere til en <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>.",
+      "auth_error_html": "Der opstod et problem med at godkende din Google Maps-konto.",
+      "section_heading": "Placering"
+    },
+    "slideshow": {
+      "next_slide": "Næste dias",
+      "previous_slide": "Forrige dias",
+      "pause_slideshow": "Sæt diasshow på pause",
+      "rotate_slideshow": "Afspil diasshow",
+      "load_slide": "Indlæs dias {{ slide_number }}",
+      "navigation_instructions": "Brug venstre\/højre pile til at navigere i diasshowet eller stryg til venstre\/højre, hvis du bruger en mobilenhed"
     }
   },
   "localization": {
@@ -424,10 +469,26 @@
       "remaining_html": "Der resterer {{ balance }}",
       "add_to_apple_wallet": "Føj til Apple Wallet",
       "qr_image_alt": "QR-kode – scan for at indløse gavekort",
+      "redeem_html": "Brug denne kode ved kassen til at indløse dit {{ value }} gavekort",
       "copy_code": "Kopiér kode",
       "expired": "Udløbet",
       "copy_code_success": "Koden er blevet kopieret",
       "print_gift_card": "Udskriv"
+    }
+  },
+  "homepage": {
+    "general": {
+      "title": "Hjemmeside",
+      "home_link": "Hjem"
+    },
+    "onboarding": {
+      "product_title": "Dit produkts navn",
+      "product_description": "Dette område bruges til at beskrive dit produkts detaljer. Fortæl kunderne om dit produkts udseende, fornemmelse og stil. Tilføj detaljer om farve, anvendte materialer, størrelse og hvor det er fremstillet.",
+      "collection_title": "Din samlings navn",
+      "blog_title": "Dit indlægs titel",
+      "blog_excerpt": "Din butik har ikke udgivet nogen blogindlæg endnu. En blog kan bruges til at tale om nye produktlanceringer, tips eller andre nyheder, du vil dele med dine kunder. Du kan tjekke Shopifys e-handelsblog for inspiration og råd til din egen butik og blog.",
+      "blog_author": "Forfatterens navn",
+      "no_content": "Denne sektion indeholder i øjeblikket ikke noget indhold. Føj indhold til denne sektion ved hjælp af sidebjælken."
     }
   }
 }
