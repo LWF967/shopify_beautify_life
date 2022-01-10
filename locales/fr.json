@@ -3,6 +3,7 @@
     "password_page": {
       "login_form_heading": "Accéder à la boutique à l'aide d'un mot de passe :",
       "login_password_button": "Saisir avec un mot de passe",
+      "login_password_button_1": "ENTRER EN UTILISANT LE MOT DE PASSE",
       "login_form_password_label": "Mot de passe",
       "login_form_password_placeholder": "Votre mot de passe",
       "login_form_error": "Mot de passe incorrect !",
@@ -10,6 +11,39 @@
       "modal": "Mot de passe modal",
       "admin_link_html": "La boutique vous appartient-elle ? <a href=\"\/admin\" class=\"link underlined-link\">Se connecter ici<\/a>",
       "powered_by_shopify_html": "Cette boutique sera propulsée par {{ shopify }}"
+    },
+    "nt_tooltip": {
+      "login_to_wishlist": "Connectez-vous pour utiliser la liste de souhaits",
+      "add_to_wishlist": "Ajouter à la liste de souhaits",
+      "remove_wishlist": "Supprimer la liste de souhaits",
+      "browse_wishlist": "Parcourir la liste de souhaits",
+      "compare": "Comparer",
+      "add_text_compare": "Comparer les produits",
+      "quick_view": "Vue rapide",
+      "select_options": "Sélectionner les options",
+      "read_more": "Lire la suite",
+      "view": "Voir les produits",
+      "add_to_cart": "Ajouter au panier",
+      "share_fb": "Partager sur Facebook",
+      "share_tw": "Partager sur Twitter",
+      "share_em": "Partager par e-mail",
+      "share_pr": "Partager sur Pinterest",
+      "share_tu": "Partager sur Tumblr",
+      "share_tl": "Partager sur Telegram",
+      "share_wa": "Partager sur WhatsApp",
+      "follow_fb": "Suivre sur Facebook",
+      "follow_tw": "Suivre sur Twitter",
+      "follow_it": "Suivre sur Instagram",
+      "follow_dr": "Suivre Dribbble",
+      "follow_ld": "Suivre Linkedin",
+      "follow_pr": "Suivre sur Pinterest",
+      "follow_tu": "Suivre sur Tumblr",
+      "follow_yt": "Suivre sur YouTube",
+      "follow_bh": "Suivre Behance",
+      "follow_sc": "Suivre sur Soundcloud",
+      "follow_tt": "Suivre Tiktok",
+      "follow_sn": "Suivre sur Snapchat",
+      "follow_vi": "Suivre sur Vimeo"
     },
     "social": {
       "alt_text": {
@@ -37,7 +71,8 @@
       "previous": "Page précédente"
     },
     "search": {
-      "search": "Recherche"
+      "search": "RECHERCHE SUR NOTRE SITE",
+      "search_label": "Rechercher"
     },
     "cart": {
       "view": "Afficher mon panier ({{ count }})",
@@ -52,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%b %Y"
+    "month_year": "%b %Y",
+    "detail_text": "Détail"
   },
   "newsletter": {
     "label": "E-mail",
@@ -80,23 +116,52 @@
   },
   "blogs": {
     "article": {
-      "blog": "Blog",
-      "read_more_title": "Lire la suite : {{ title }}",
-      "read_more": "Lire la suite",
       "comments": {
-        "one": "{{ count }} commentaire",
-        "other": "{{ count }} commentaires"
+        "one": "{{ count }} commentaire",
+        "other": "{{ count }} commentaires"
       },
+      "blog": "Blog",
+      "view_all": "Voir plus",
+      "view_all_blogs": "Afficher tous les blogs",
+      "all_topics": "Tous les sujets",
+      "by_author": "Par {{ author }}",
+      "posted_in": "Publié dans",
+      "read_more": "Continuer la lecture",
+      "read_more_title": "Lire la suite : {{ title }}",
+      "back_to_blog": "Retour à {{ title }}",
+      "tags": "Tags",
       "moderated": "Veuillez noter que les commentaires doivent être approuvés avant d'être publiés.",
       "comment_form_title": "Laisser un commentaire",
-      "name": "Nom",
-      "email": "E-mail",
+      "name": "nom",
+      "email": "Email",
       "message": "Commentaire",
-      "post": "Publier le commentaire",
-      "back_to_blog": "Retour au blog",
+      "post": "Poster un commentaire",
       "share": "Partager cet article",
-      "success": "Votre commentaire a bien été publié ! Merci !",
-      "success_moderated": "Votre commentaire a bien été publié. Nous le publierons sous peu, conformément au processus de modération de notre blog."
+      "success": "Votre commentaire a été posté avec succès ! Merci !",
+      "success_moderated": "Votre commentaire a été posté avec succès. Nous le publierons dans quelques temps, car notre blog est modéré.",
+      "article_with_count": {
+        "one": "{{ count }} article",
+        "other": "{{ count }} articles"
+      },
+      "by": "Par",
+      "on": "on",
+      "in": "Dans",
+      "back_to": "Retour à {{title}}"
+    },
+    "comments": {
+      "title": "Laisser un commentaire",
+      "name": "nom",
+      "email": "Email",
+      "message": "Message",
+      "post": "Poster un commentaire",
+      "moderated": "Veuillez noter que les commentaires doivent être approuvés avant d'être publiés",
+      "success_moderated": "Votre commentaire a été posté avec succès. Nous le publierons dans quelques temps, car notre blog est modéré.",
+      "success": "Votre commentaire a été posté avec succès ! Merci !",
+      "unapproved": "L'adresse e-mail fournie n'est pas approuvée pour la publication de commentaires.",
+      "comments_with_count": {
+        "one": "{{ count }} commentaire",
+        "other": "{{ count }} commentaires"
+      }
     }
   },
   "onboarding": {
@@ -177,7 +242,8 @@
     },
     "404": {
       "title": "Page non trouvée",
-      "subtext": "404"
+      "subtext": "404",
+      "info_text": "La page que vous avez demandée n'existe pas"
     }
   },
   "sections": {
@@ -263,6 +329,21 @@
     },
     "video": {
       "load_video": "Charger la vidéo : {{ description }}"
+    },
+    "map": {
+      "address_error": "Erreur lors de la recherche de cette adresse",
+      "address_no_results": "Aucun résultat pour cette adresse",
+      "address_query_limit_html": "Vous avez dépassé la limite d'utilisation de l'API Google. Envisagez de passer à un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Planifier<\/a>.",
+      "auth_error_html": "Un problème est survenu lors de l'authentification de votre compte Google Maps.",
+      "section_heading": "Emplacement"
+    },
+    "slideshow": {
+      "next_slide": "Diapositive suivante",
+      "previous_slide": "Diapositive précédente",
+      "pause_slideshow": "Suspendre le diaporama",
+      "rotate_slideshow": "Lire le diaporama",
+      "load_slide": "Charger la diapositive {{ slide_number }}",
+      "navigation_instructions": "Utilisez les flèches gauche\/droite pour naviguer dans le diaporama ou balayez vers la gauche\/droite si vous utilisez un appareil mobile"
     }
   },
   "localization": {
@@ -388,10 +469,26 @@
       "remaining_html": "Reste {{ balance }}",
       "add_to_apple_wallet": "Ajouter à Apple Wallet",
       "qr_image_alt": "Code QR : scannez-le pour utiliser votre carte-cadeau",
+      "redeem_html": "Utilisez ce code à la caisse pour échanger votre {{ value }} carte-cadeau",
       "copy_code": "Copier le code",
       "expired": "Expiré",
       "copy_code_success": "Le code a bien été copié",
       "print_gift_card": "Imprimer"
+    }
+  },
+  "homepage": {
+    "general": {
+      "title": "Page d'accueil",
+      "home_link": "Accueil"
+    },
+    "onboarding": {
+      "product_title": "Le nom de votre produit",
+      "product_description": "Cette zone est utilisée pour décrire les détails de votre produit. Informez les clients de l'apparence, de la sensation et du style de votre produit. Ajoutez des détails sur la couleur, les matériaux utilisés, la taille et l'endroit où il a été fabriqué.",
+      "collection_title": "Le nom de votre collection",
+      "blog_title": "Le titre de votre article",
+      "blog_excerpt": "Votre boutique n'a pas encore publié d'articles de blog. Un blog peut être utilisé pour parler de lancements de nouveaux produits, de conseils ou d'autres nouvelles que vous souhaitez partager avec vos clients. Vous pouvez consulter le blog de commerce électronique de Shopify pour vous inspirer et des conseils pour votre propre magasin et blog.",
+      "blog_author": "Nom de l'auteur",
+      "no_content": "Cette section n'inclut actuellement aucun contenu. Ajoutez du contenu à cette section à l'aide de la barre latérale."
     }
   }
 }
