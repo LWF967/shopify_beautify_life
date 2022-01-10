@@ -169,9 +169,9 @@
           <div class="field field--with-error">
             <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name"
             {% if form.errors contains 'first_name' %}
-                    aria-invalid="true"
-                    aria-describedby="CommentForm-first_name-error"
-                  {% endif %}
+              aria-invalid="true"
+              aria-describedby="CommentForm-first_name-error"
+            {% endif %}
             placeholder="{{ 'customer.addresses.first_name' | t }}"
             >
             <!-- <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label> -->
