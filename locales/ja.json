@@ -116,23 +116,52 @@
   },
   "blogs": {
     "article": {
-      "blog": "ブログ",
-      "read_more_title": "続きを読む: {{ title }}",
-      "read_more": "続きを読む",
       "comments": {
-        "one": "{{ count }}件のコメント",
-        "other": "{{ count }}件のコメント"
+        "one": "{{ count }} コメント",
+        "other": "{{ count }} コメント"
       },
-      "moderated": "コメントは公開前に承認される必要があることにご注意ください。",
+      "blog": "ブログ",
+      "view_all": "もっと見る",
+      "view_all_blogs": "すべてのブログを表示",
+      "all_topics": "すべてのトピック",
+      "by_author": "By {{ author }}",
+      "posted_in": "投稿済み",
+      "read_more": "続きを読む",
+      "read_more_title": "続きを読む: {{ title }}",
+      "back_to_blog": "に戻る {{ title }}",
+      "tags": "タグ",
+      "moderated": "コメントは公開する前に承認する必要があることに注意してください。",
       "comment_form_title": "コメントを残す",
       "name": "名前",
       "email": "メール",
       "message": "コメント",
-      "post": "コメントを投稿する",
-      "back_to_blog": "ブログに戻る",
-      "share": "この記事を共有する",
-      "success": "コメントが投稿されました。ありがとうございます。",
-      "success_moderated": "コメントが投稿されました。ブログが管理されているため、しばらくしてから公開されます。"
+      "post": "コメントを投稿",
+      "share": "この記事を共有",
+      "success": "コメントは正常に投稿されました！ありがとうございます！",
+      "success_moderated": "コメントは正常に投稿されました。ブログがモデレートされているため、しばらくしてから公開します。",
+      "article_with_count": {
+        "one": "{{ count }} 記事",
+        "other": "{{ count }} 記事"
+      },
+      "by": "By",
+      "on": "オン",
+      "in": "In",
+      "back_to": "に戻る {{title}}"
+    },
+    "comments": {
+      "title": "コメントを残す",
+      "name": "名前",
+      "email": "メール",
+      "message": "メッセージ",
+      "post": "コメントを投稿",
+      "moderated": "コメントは公開する前に承認する必要があることに注意してください",
+      "success_moderated": "コメントは正常に投稿されました。ブログがモデレートされているため、しばらくしてから公開します。",
+      "success": "コメントは正常に投稿されました！ありがとうございます！",
+      "unapproved": "提供されたメールアドレスはコメントの投稿を承認されていません。",
+      "comments_with_count": {
+        "one": "{{ count }} コメント",
+        "other": "{{ count }} コメント"
+      }
     }
   },
   "onboarding": {
@@ -213,7 +242,8 @@
     },
     "404": {
       "title": "ページが見つかりません",
-      "subtext": "404"
+      "subtext": "404",
+      "info_text": "リクエストしたページは存在しません"
     }
   },
   "sections": {
@@ -299,6 +329,21 @@
     },
     "video": {
       "load_video": "動画を読み込む: {{ description }}"
+    },
+    "map": {
+      "address_error": "そのアドレスの検索中にエラーが発生しました",
+      "address_no_results": "そのアドレスの結果はありません",
+      "address_query_limit_html": "GoogleAPIの使用制限を超えました。<a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\"> Premiumへのアップグレードを検討してください 計画<\/ a>。 ",
+      "auth_error_html": "Googleマップアカウントの認証に問題がありました。",
+      "section_heading": "場所"
+    },
+    "slideshow": {
+      "next_slide": "次のスライド",
+      "previous_slide": "前のスライド",
+      "pause_slideshow": "スライドショーを一時停止",
+      "rotate_slideshow": "スライドショーを再生",
+      "load_slide": "ロードスライド {{ slide_number }}",
+      "navigation_instructions": "スライドショーをナビゲートするには左\/右矢印を使用するか、モバイルデバイスを使用している場合は左\/右にスワイプします"
     }
   },
   "localization": {
@@ -424,6 +469,7 @@
       "remaining_html": "残高: {{ balance }}",
       "add_to_apple_wallet": "Apple Walletに追加する",
       "qr_image_alt": "QRコード: スキャンしてギフトカードにクーポンを使う",
+      "redeem_html": "チェックアウト時にこのコードを使用して {{ value }} ギフトカードを利用してください",
       "copy_code": "コードをコピーする",
       "expired": "期限切れ",
       "copy_code_success": "コードは正常にコピーされました",
