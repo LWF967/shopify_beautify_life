@@ -71,7 +71,8 @@
       "previous": "前のページ"
     },
     "search": {
-      "search": "検索"
+      "search": "私たちのサイトを検索",
+      "search_label": "検索"
     },
     "cart": {
       "view": "カートを見る ({{ count }})",
@@ -86,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%Y年%-m月%"
+    "month_year": "%Y年%-m月%",
+    "detail_text": "詳細"
   },
   "newsletter": {
     "label": "メール",
