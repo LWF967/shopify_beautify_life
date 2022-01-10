@@ -200,7 +200,7 @@
                   id="CommentForm-author"
                   class="field__input"
                   autocomplete="name"
-                  value=""
+                  value="{{ form.author }}"
                   aria-required="true"
                   {% if form.errors contains 'author' %}
                     aria-invalid="true"
