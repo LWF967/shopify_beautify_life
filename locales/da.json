@@ -3,6 +3,7 @@
     "password_page": {
       "login_form_heading": "Brug adgangskode for at få adgang til butikken:",
       "login_password_button": "Brug adgangskode for at få adgang",
+      "login_password_button_1": "INDGIV VED HJÆLP AF PASSWORD",
       "login_form_password_label": "Adgangskode",
       "login_form_password_placeholder": "Din adgangskode",
       "login_form_error": "Forkert adgangskode!",
@@ -10,6 +11,39 @@
       "modal": "Adgangskodemodus",
       "admin_link_html": "Er du butiksejeren? <a href=\"\/admin\" class=\"link underlined-link\">Log ind her<\/a>",
       "powered_by_shopify_html": "Denne butik vil blive drevet af {{ shopify }}"
+    },
+    "nt_tooltip": {
+      "login_to_wishlist": "Log på for at bruge ønskeliste",
+      "add_to_wishlist": "Tilføj til ønskeseddel",
+      "remove_wishlist": "Fjern ønskeseddel",
+      "browse_wishlist": "Gennemse ønskeliste",
+      "compare": "Sammenlign",
+      "added_text_compare": "Sammenlign produkter",
+      "quick_view": "Hurtig visning",
+      "select_options": "Vælg muligheder",
+      "read_more": "Læs mere",
+      "view": "Se produkter",
+      "add_to_cart": "Tilføj til kurv",
+      "share_fb": "Del på Facebook",
+      "share_tw": "Del på Twitter",
+      "share_em": "Del på e-mail",
+      "share_pr": "Del på Pinterest",
+      "share_tu": "Del på Tumblr",
+      "share_tl": "Del på Telegram",
+      "share_wa": "Del på WhatsApp",
+      "follow_fb": "Følg på Facebook",
+      "follow_tw": "Følg på Twitter",
+      "follow_it": "Følg på Instagram",
+      "follow_dr": "Følg på Dribbble",
+      "follow_ld": "Følg på Linkedin",
+      "follow_pr": "Følg på Pinterest",
+      "follow_tu": "Følg på Tumblr",
+      "follow_yt": "Følg på YouTube",
+      "follow_bh": "Følg på Behance",
+      "follow_sc": "Følg på Soundcloud",
+      "follow_tt": "Følg på Tiktok",
+      "follow_sn": "Følg på Snapchat",
+      "follow_vi": "Følg på Vimeo"
     },
     "social": {
       "alt_text": {
@@ -37,7 +71,8 @@
       "previous": "Forrige side"
     },
     "search": {
-      "search": "Søg"
+      "search": "SØG VORES SIDE",
+      "search_label": "Søg"
     },
     "cart": {
       "view": "Se min indkøbskurv ({{ count }})",
@@ -52,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%B %Y"
+    "month_year": "%B %Y",
+    "detail_text": "Detaljer"
   },
   "newsletter": {
     "label": "Mail",
