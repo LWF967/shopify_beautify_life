@@ -116,23 +116,52 @@
   },
   "blogs": {
     "article": {
-      "blog": "Blog",
-      "read_more_title": "Baca selengkapnya: {{ title }}",
-      "read_more": "Baca selengkapnya",
       "comments": {
         "one": "{{ count }} komentar",
         "other": "{{ count }} komentar"
       },
-      "moderated": "Ingat, komentar perlu disetujui sebelum dipublikasikan.",
-      "comment_form_title": "Tulis komentar",
+      "blog": "Blog",
+      "view_all": "Lihat lebih banyak",
+      "view_all_blogs": "Lihat semua blog",
+      "all_topics": "Semua topik",
+      "by_author": "Oleh {{ author }}",
+      "posted_in": "Diposting di",
+      "read_more": "Lanjutkan Membaca",
+      "read_more_title": "Baca selengkapnya: {{ title }}",
+      "back_to_blog": "Kembali ke {{ title }}",
+      "tags": "Tag",
+      "moderated": "Harap diperhatikan, komentar harus disetujui sebelum dipublikasikan.",
+      "comment_form_title": "Tinggalkan komentar",
       "name": "Nama",
       "email": "Email",
       "message": "Komentar",
-      "post": "Posting komentar",
-      "back_to_blog": "Kembali ke blog",
+      "post": "Poskan komentar",
       "share": "Bagikan artikel ini",
       "success": "Komentar Anda berhasil diposting! Terima kasih!",
-      "success_moderated": "Komentar Anda berhasil diposting. Kami akan memublikasikannya sebentar lagi, blog kami sedang dimoderasi."
+      "success_moderated": "Komentar Anda berhasil diposting. Kami akan menerbitkannya sebentar lagi, karena blog kami dimoderasi.",
+      "article_with_count": {
+        "one": "{{ count }} artikel",
+        "other": "{{ count }} artikel"
+      },
+      "by": "oleh",
+      "on": "pada",
+      "in": "Dalam",
+      "back_to": "Kembali ke {{title}}"
+    },
+    "comments": {
+      "title": "Tinggalkan komentar",
+      "name": "Nama",
+      "email": "Email",
+      "message": "Pesan",
+      "post": "Poskan komentar",
+      "moderated": "Harap diperhatikan, komentar harus disetujui sebelum dipublikasikan",
+      "success_moderated": "Komentar Anda berhasil diposting. Kami akan menerbitkannya sebentar lagi, karena blog kami dimoderasi.",
+      "success": "Komentar Anda berhasil diposting! Terima kasih!",
+      "unapproved": "Alamat email yang diberikan tidak disetujui untuk mengirim komentar.",
+      "comments_with_count": {
+        "one": "{{ count }} komentar",
+        "other": "{{ count }} komentar"
+      }
     }
   },
   "onboarding": {
@@ -213,7 +242,8 @@
     },
     "404": {
       "title": "Halaman tidak ditemukan",
-      "subtext": "404"
+      "subtext": "404",
+      "info_text": "Halaman yang Anda minta tidak ada"
     }
   },
   "sections": {
@@ -299,6 +329,21 @@
     },
     "video": {
       "load_video": "Muat video: {{ description }}"
+    },
+    "map": {
+      "address_error": "Kesalahan mencari alamat itu",
+      "address_no_results": "Tidak ada hasil untuk alamat itu",
+      "address_query_limit_html": "Anda telah melampaui batas penggunaan Google API. Pertimbangkan untuk meningkatkan ke <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Rencana<\/\/a>.",
+      "auth_error_html": "Ada masalah saat mengautentikasi akun Google Maps Anda.",
+      "section_heading": "Lokasi"
+    },
+    "slideshow": {
+      "next_slide": "Slide berikutnya",
+      "previous_slide": "Slide sebelumnya",
+      "pause_slideshow": "Jeda tayangan slide",
+      "rotate_slideshow": "Putar tayangan slide",
+      "load_slide": "Muat slide {{ slide_number }}",
+      "navigation_instructions": "Gunakan panah kiri\/kanan untuk menavigasi tayangan slide atau geser ke kiri\/kanan jika menggunakan perangkat seluler"
     }
   },
   "localization": {
@@ -424,10 +469,26 @@
       "remaining_html": "Sisa {{ balance }}",
       "add_to_apple_wallet": "Tambahkan ke Apple Wallet",
       "qr_image_alt": "Kode QR — pindai untuk menukarkan voucher",
+      "redeem_html": "Gunakan kode ini saat checkout untuk menukarkan kartu {{ value }} hadiah Anda",
       "copy_code": "Salin kode",
       "expired": "Kedaluwarsa",
       "copy_code_success": "Kode berhasil disalin",
       "print_gift_card": "Cetak"
+    }
+  },
+  "homepage": {
+    "general": {
+      "title": "Beranda",
+      "home_link": "Beranda"
+    },
+    "onboarding": {
+      "product_title": "Nama produk Anda",
+      "product_description": "Area ini digunakan untuk mendeskripsikan detail produk Anda. Beri tahu pelanggan tentang tampilan, nuansa, dan gaya produk Anda. Tambahkan detail warna, bahan yang digunakan, ukuran, dan tempat pembuatannya.",
+      "collection_title": "Nama koleksi Anda",
+      "blog_title": "Judul postingan Anda",
+      "blog_excerpt": "Toko Anda belum menerbitkan entri blog apa pun. Sebuah blog dapat digunakan untuk membicarakan peluncuran produk baru, kiat, atau berita lain yang ingin Anda bagikan dengan pelanggan Anda. Anda dapat melihat blog e-niaga Shopify untuk mendapatkan inspirasi dan saran untuk toko dan blog Anda sendiri.",
+      "blog_author": "Nama penulis",
+      "no_content": "Bagian ini saat ini tidak menyertakan konten apa pun. Tambahkan konten ke bagian ini menggunakan bilah sisi."
     }
   }
 }
