@@ -3,6 +3,7 @@
     "password_page": {
       "login_form_heading": "Entrar a la tienda usando contraseña:",
       "login_password_button": "Entrar usando contraseña",
+      "login_password_button_1": "ENTRAR USANDO CONTRASEÑA",
       "login_form_password_label": "Contraseña",
       "login_form_password_placeholder": "Tu contraseña",
       "login_form_error": "Contraseña incorrecta",
@@ -10,6 +11,39 @@
       "modal": "Modal de contraseña",
       "admin_link_html": "¿Eres el propietario de la tienda? <a href=\"\/admin\" class=\"link underlined-link\">Inicia sesión aquí<\/a>",
       "powered_by_shopify_html": "Esta tienda contará con tecnología Shopify {{ shopify }}"
+    },
+    "nt_tooltip": {
+      "login_to_wishlist": "Iniciar sesión para usar la lista de deseos",
+      "add_to_wishlist": "Agregar a la lista de deseos",
+      "remove_wishlist": "Eliminar lista de deseos",
+      "browse_wishlist": "Buscar lista de deseos",
+      "comparar": "Comparar",
+      "added_text_compare": "Comparar productos",
+      "quick_view": "Vista Rápida",
+      "select_options": "Seleccionar opciones",
+      "read_more": "Leer más",
+      "ver": "Ver productos",
+      "add_to_cart": "Agregar al carrito",
+      "share_fb": "Compartir en Facebook",
+      "share_tw": "Compartir en Twitter",
+      "share_em": "Compartir en el correo electrónico",
+      "share_pr": "Compartir en Pinterest",
+      "share_tu": "Compartir en Tumblr",
+      "share_tl": "Compartir en Telegram",
+      "share_wa": "Compartir en WhatsApp",
+      "follow_fb": "Seguir en Facebook",
+      "follow_tw": "Seguir en Twitter",
+      "follow_it": "Seguir en Instagram",
+      "follow_dr": "Seguir en Dribbble",
+      "follow_ld": "Seguir en Linkedin",
+      "follow_pr": "Seguir en Pinterest",
+      "follow_tu": "Seguir en Tumblr",
+      "follow_yt": "Seguir en YouTube",
+      "follow_bh": "Seguir en Behance",
+      "follow_sc": "Seguir en Soundcloud",
+      "follow_tt": "Seguir en Tiktok",
+      "follow_sn": "Seguir en Snapchat",
+      "follow_vi": "Seguir en Vimeo"
     },
     "social": {
       "alt_text": {
@@ -37,7 +71,8 @@
       "previous": "Pagina anterior"
     },
     "search": {
-      "search": "Búsqueda"
+      "search": "BUSCAR EN NUESTRO SITIO",
+      "search_label": "Buscar"
     },
     "cart": {
       "view": "Ver mi carrito ({{ count }})",
@@ -52,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%B %Y"
+    "month_year": "%B %Y",
+    "detail_text": "Detalle"
   },
   "newsletter": {
     "label": "Correo electrónico",
@@ -80,23 +116,52 @@
   },
   "blogs": {
     "article": {
-      "blog": "Blog",
-      "read_more_title": "Más información: {{ title }}",
-      "read_more": "Más información",
       "comments": {
         "one": "{{ count }} comentario",
         "other": "{{ count }} comentarios"
       },
-      "moderated": "Ten en cuenta que los comentarios deben aprobarse antes de que se publiquen.",
+      "blog": "Blog",
+      "view_all": "Ver más",
+      "view_all_blogs": "Ver todos los blogs",
+      "all_topics": "Todos los temas",
+      "by_author": "Por {{ author }}",
+      "posted_in": "Publicado en",
+      "read_more": "Continuar leyendo",
+      "read_more_title": "Leer más: {{ title }}",
+      "back_to_blog": "Volver a {{ title }}",
+      "tags": "Etiquetas",
+      "moderated": "Tenga en cuenta que los comentarios deben aprobarse antes de que se publiquen.",
       "comment_form_title": "Deja un comentario",
-      "name": "Nombre",
+      "name": "nombre",
       "email": "Correo electrónico",
       "message": "Comentario",
       "post": "Publicar comentario",
-      "back_to_blog": "Regresar al blog",
-      "share": "Compartir este artículo",
-      "success": "Tu comentario se publicó correctamente. ¡Gracias!",
-      "success_moderated": "Tu comentario se publicó correctamente. Lo publicaremos en breve, cuando se modere nuestro blog."
+      "share": "Comparte este artículo",
+      "success": "¡Tu comentario se publicó con éxito! ¡Gracias!",
+      "success_moderated": "Tu comentario se publicó con éxito. Lo publicaremos en un momento, ya que nuestro blog está moderado.",
+      "article_with_count": {
+        "one": "{{ count }} artículo",
+        "other": "{{ count }} artículos"
+      },
+      "by": "por",
+      "on": "encendido",
+      "in": "In",
+      "back_to": "Volver a {{title}}"
+    },
+    "comments": {
+      "title": "Deja un comentario",
+      "name": "nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "post": "Publicar comentario",
+      "moderated": "Tenga en cuenta que los comentarios deben aprobarse antes de que se publiquen",
+      "success_moderated": "Tu comentario se publicó con éxito. Lo publicaremos en un momento, ya que nuestro blog está moderado.",
+      "success": "¡Tu comentario se publicó con éxito! ¡Gracias!",
+      "unapproved": "La dirección de correo electrónico proporcionada no está aprobada para publicar comentarios.",
+      "comments_with_count": {
+        "one": "{{ count }} comentario",
+        "other": "{{ count }} comentarios"
+      }
     }
   },
   "onboarding": {
@@ -177,7 +242,8 @@
     },
     "404": {
       "title": "Página no encontrada",
-      "subtext": "404"
+      "subtext": "404",
+      "info_text": "La página que solicitaste no existe"
     }
   },
   "sections": {
@@ -263,6 +329,21 @@
     },
     "video": {
       "load_video": "Cargar video: {{ description }}"
+    },
+    "map": {
+      "address_error": "Error al buscar esa dirección",
+      "address_no_results": "No hay resultados para esa dirección",
+      "address_query_limit_html": "Ha excedido el límite de uso de la API de Google. Considere actualizar a un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Planea<\/a>.",
+      "auth_error_html": "Hubo un problema al autenticar tu cuenta de Google Maps.",
+      "section_heading": "Ubicación"
+    },
+    "slideshow": {
+      "next_slide": "Siguiente diapositiva",
+      "previous_slide": "Diapositiva anterior",
+      "pause_slideshow": "Pausar presentación de diapositivas",
+      "rotate_slideshow": "Reproducir presentación de diapositivas",
+      "load_slide": "Cargar diapositiva {{ slide_number }}",
+      "navigation_instructions": "Use las flechas izquierda\/derecha para navegar por la presentación de diapositivas o deslícese hacia la izquierda\/derecha si usa un dispositivo móvil"
     }
   },
   "localization": {
@@ -388,10 +469,26 @@
       "remaining_html": "Saldo {{ balance }}",
       "add_to_apple_wallet": "Agregar a Apple Wallet",
       "qr_image_alt": "Código QR: escanea para canjear la tarjeta de regalo",
+      "redeem_html": "Use este código al finalizar la compra para canjear su tarjeta {{ value }} de regalo",
       "copy_code": "Copiar código",
       "expired": "Vencido",
       "copy_code_success": "El código se copió correctamente",
       "print_gift_card": "Imprimir"
+    }
+  },
+  "homepage": {
+    "general": {
+      "title": "Página de inicio",
+      "home_link": "Inicio"
+    },
+    "onboarding": {
+      "product_title": "El nombre de su producto",
+      "product_description": "Esta área se utiliza para describir los detalles de su producto. Informe a los clientes sobre la apariencia, el estilo y el estilo de su producto. Agregue detalles sobre el color, los materiales utilizados, el tamaño y dónde se fabricó.",
+      "collection_title": "Nombre de tu colección",
+      "blog_title": "Título de tu publicación",
+      "blog_excerpt": "Tu tienda aún no ha publicado ninguna publicación de blog. Se puede usar un blog para hablar sobre lanzamientos de nuevos productos, consejos u otras noticias que quieras compartir con tus clientes. Puedes consultar el blog de comercio electrónico de Shopify para inspirarte. y consejos para tu propia tienda y blog.",
+      "blog_author": "Nombre del autor",
+      "no_content": "Esta sección actualmente no incluye ningún contenido. Agregue contenido a esta sección usando la barra lateral."
     }
   }
 }
