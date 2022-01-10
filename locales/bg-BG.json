@@ -24,17 +24,17 @@
       "read_more": "Прочетете повече",
       "view": "Преглед на продукти",
       "add_to_cart": "Добавяне в количката",
-      "share_fb": "Споделяне във Facebook",
+      "share_fb": "Споделяне в Facebook",
       "share_tw": "Споделяне в Twitter",
-      "share_em": "Споделяне по имейл",
+      "share_em": "Споделяне в имейл",
       "share_pr": "Споделяне в Pinterest",
       "share_tu": "Споделяне в Tumblr",
       "share_tl": "Споделяне в Telegram",
       "share_wa": "Споделяне в WhatsApp",
-      "follow_fb": "Следвайте във Facebook",
+      "follow_fb": "Следвайте в Facebook",
       "follow_tw": "Следвайте в Twitter",
       "follow_it": "Следвайте в Instagram",
-      "follow_dr": "Следвайте на Dribbble",
+      "follow_dr": "Следвайте в Dribbble",
       "follow_ld": "Следвайте в Linkedin",
       "follow_pr": "Следвайте в Pinterest",
       "follow_tu": "Следвайте в Tumblr",
@@ -43,7 +43,7 @@
       "follow_sc": "Следвайте в Soundcloud",
       "follow_tt": "Следвайте в Tiktok",
       "follow_sn": "Следвайте в Snapchat",
-      "follow_vi": "Следвайте във Vimeo"
+      "follow_vi": "Следвайте в Vimeo"
     },
     "social": {
       "alt_text": {
