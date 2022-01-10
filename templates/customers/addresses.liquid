@@ -43,6 +43,11 @@
     font-size: 14px;
     left: 1.2rem;
   }
+  @media screen and (min-width: 750px){
+.customer:not(.account):not(.order){
+  max-width: 120rem;
+}
+}
 </style>
 
 {%- paginate customer.addresses by 5 -%}
