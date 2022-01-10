@@ -252,7 +252,7 @@
     .customer td:first-of-type {
       display: flex;
       align-items: center;
-      border-width: 1px 1px 1px 1px;
+      border-width: 0px 1px 1px 1px;
     }
   
     .customer tr {
