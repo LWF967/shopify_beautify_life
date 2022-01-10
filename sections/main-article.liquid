@@ -209,7 +209,11 @@
                   placeholder="{{ 'blogs.article.name' | t }}"
                 >
                 <label class="field__label" for="CommentForm-author">{{ 'blogs.article.name' | t }} <span aria-hidden="true">*</span></label>
-               
+                {%- if form.errors contains 'author' -%}
+                  <small id="CommentForm-author-error">
+                    <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.name' | t }} {{ form.errors.messages['author'] }}.</span>
+                  </small>
+                {%- endif -%}
               </div>
               <div class="field field--with-error">
                 <input
