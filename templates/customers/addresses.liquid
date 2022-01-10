@@ -79,6 +79,9 @@
   max-width: 120rem;
 }
 }
+.my_addresses .my_addresses_acount{
+  display: flex;
+}
 </style>
 
 {%- paginate customer.addresses by 5 -%}
@@ -89,11 +92,13 @@
       </symbol>
     </svg>
     <h1>{{ 'customer.addresses.title' | t }}</h1>
-    <a href="{{ routes.account_url }}">
-      {{ 'customer.account.return' | t }}
-    </a>
+   
 
     <div data-address>
+      <div class="my_addresses_acount">
+      <a href="{{ routes.account_url }}">
+        {{ 'customer.account.return' | t }}
+      </a>
       <button
       class="add_address"
         type="button"
@@ -103,7 +108,7 @@
       >
         {{ 'customer.addresses.add_new' | t }}
       </button>
-      
+    </div>
       <div id="AddAddress">
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
