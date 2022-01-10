@@ -3,42 +3,42 @@
 <script src="{{ 'customer.js' | asset_url }}" defer></script>
 
 <style>
-.my_addresses h1 {
-  font-size: 36px;
-  margin:120px 0 55px 0;
-  font-weight: 700;
-}
+  .my_addresses h1 {
+    font-size: 36px;
+    margin:120px 0 55px 0;
+    font-weight: 700;
+  }
 
 
-.my_addresses ul li button{
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  font: inherit;
-  padding: 0.9rem 1rem 1.1rem;
-  text-decoration: none;
-  border: 0;
-  border-radius: 0;
-  background-color: var(--color-button);
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-button));
-  color: rgb(var(--color-button-text));
-  min-width: 10rem;
-  min-height: 44px;
-  transition: box-shadow var(--duration-short) ease;
-  -webkit-appearance: none;
-  appearance: none;
-  font-size: 16px;
-  font-weight: 600;
-}
+  .my_addresses ul li button{
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font: inherit;
+    padding: 0.9rem 1rem 1.1rem;
+    text-decoration: none;
+    border: 0;
+    border-radius: 0;
+    background-color: var(--color-button);
+    box-shadow: 0 0 0 0.1rem rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+    min-width: 10rem;
+    min-height: 44px;
+    transition: box-shadow var(--duration-short) ease;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-.customer.my_addresses .field input{
+  .customer.my_addresses .field input{
     height: 4.4rem;
     font-size: 14px;
     background: transparent !important;
   }
-.customer.my_addresses .field label{
+  .customer.my_addresses .field label{
     font-size: 14px;
     left: 1.2rem;
   }
@@ -57,7 +57,7 @@
     text-align: left;
     margin-top: 0;
   }
- .my_addresses ul li .my_edit_address{
+  .my_addresses ul li .my_edit_address{
     font-size: 30px;
   }
   .my_addresses .add_addresses{
@@ -80,47 +80,48 @@
     margin-left: 0;
   }
   @media screen and (min-width: 750px){
-.customer.my_addresses{
-  max-width: 120rem;
-}
-}
-.my_addresses .my_addresses_acount{
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: start;
-  align-items:flex-start ;
-}
-.my_addresses .my_addresses_acount .add_address , 
-.my_addresses .my_addresses_acount .my_account_return{
-  font-size: 16px;
-  min-height: 22px;
-  margin: 15px 0 ;
-  padding-left: 0;
-  text-decoration: underline;
-}
-.my_addresses .my_addresses_acount .add_address:hover ,
- .my_addresses .my_addresses_acount .my_account_return:hover{
-  text-decoration-thickness: 0.2rem;
-}
-.my_addresses .my_addresses_acount .my_account_return{
-  margin: 0;
-}
-.my_addresses .my_addAddress_from h2{
-  font-size: 30px;
-  font-weight: 700;
-  padding-bottom: 0;
-  margin:0 0 30px 0;
-}
-.my_addresses .my_address_hr{
-  margin: 5.5rem 0 2.5rem 0;
-}
-@media screen and (max-width: 750px){
+  .customer.my_addresses{
+    max-width: 120rem !important;
+    padding: 0 55px !important;
+  }
+  }
+  .my_addresses .my_addresses_acount{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: start;
+    align-items:flex-start ;
+  }
+  .my_addresses .my_addresses_acount .add_address , 
+  .my_addresses .my_addresses_acount .my_account_return{
+    font-size: 16px;
+    min-height: 22px;
+    margin: 15px 0 ;
+    padding-left: 0;
+    text-decoration: underline;
+  }
+  .my_addresses .my_addresses_acount .add_address:hover ,
+  .my_addresses .my_addresses_acount .my_account_return:hover{
+    text-decoration-thickness: 0.2rem;
+  }
+  .my_addresses .my_addresses_acount .my_account_return{
+    margin: 0;
+  }
+  .my_addresses .my_addAddress_from h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 0;
+    margin:0 0 30px 0;
+  }
   .my_addresses .my_address_hr{
-  margin: 3rem 0 0 0;
-}
-}
-.my_addresses .my_address_update{
+   margin: 5.5rem 0 2.5rem 0;
+  }
+  @media screen and (max-width: 750px){
+  .my_addresses .my_address_hr{
+    margin: 3rem 0 0 0;
+  }
+  }
+  .my_addresses .my_address_update{
     font-size: 16px;
     min-height: 44px;
     margin-top: 30px;
