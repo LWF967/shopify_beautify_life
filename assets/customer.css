@@ -2363,7 +2363,9 @@ table {
   margin-top: 80px; }
 
 .shopify-challenge__button {
-  margin-top: 40px !important; }
+  margin-top: 40px !important; 
+  font-weight: 600;
+}
 
 /*================ Links & Buttons ================*/
 a[href^="tel"] {
