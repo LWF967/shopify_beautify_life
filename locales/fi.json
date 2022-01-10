@@ -475,5 +475,20 @@
       "copy_code_success": "Koodin kopioiminen onnistui",
       "print_gift_card": "Tulosta"
     }
+  },
+  "homepage": {
+    "general": {
+      "title": "Kotisivu",
+      "home_link": "Koti"
+    },
+    "onboarding": {
+      "product_title": "Tuotteesi nimi",
+      "product_description": "Tätä aluetta käytetään tuotteesi yksityiskohtien kuvaamiseen. Kerro asiakkaille tuotteesi ulkonäöstä, tuntumasta ja tyylistä. Lisää tietoja väristä, käytetyistä materiaaleista, koosta ja valmistuspaikasta.",
+      "collection_title": "Kokoelmasi nimi",
+      "blog_title": "Viestisi otsikko",
+      "blog_excerpt": "Liikkeesi ei ole vielä julkaissut blogikirjoituksia. Blogissa voidaan puhua uusien tuotteiden lanseerauksista, vinkeistä tai muista uutisista, jotka haluat jakaa asiakkaidesi kanssa. Voit katsoa inspiraatiota Shopifyn verkkokauppablogista ja neuvoja omaan kauppaasi ja blogiisi.",
+      "blog_author": "Tekijän nimi",
+      "no_content": "Tämä osio ei tällä hetkellä sisällä sisältöä. Lisää sisältöä tähän osioon käyttämällä sivupalkkia."
+    }
   }
 }
