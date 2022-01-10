@@ -5,7 +5,9 @@
     padding: 0;
     text-align: center;
   }
-
+  .shopify-challenge__button {
+    font-weight: 600;
+  }
   @media screen and (max-width: 750px) {
   .my_customer h1{
     font-size: 30px !important;
