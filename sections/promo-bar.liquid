@@ -195,6 +195,21 @@
     document.addEventListener('shopify:section:load',() => {  
       // 注释后 自己不能刷新
       promo_bar_change();
+    
+    
+    // 观察者
+    var target =  document.getElementsByClassName('h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_false my_promo_flex')[0];
+
+    var observer = new MutationObserver(function(){
+      console.log("jinru");
+      console.log(target);
+    });
+
+    var config = { attributes: true, childList: true, characterData: true ,subtree : true };
+    // 传入目标节点和观察选项
+    observer.observe(target, config); 
+    
+        
     },true);
   }
   
