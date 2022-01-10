@@ -36,7 +36,7 @@
   font-size: 16px;
   min-height: 44px;
   background-color: transparent;
-  text-decoration: underline;
+  border-bottom: 1px solid ;
   font-weight: 600;
 }
 .customer.my_addresses .field input{
@@ -55,13 +55,7 @@
     text-align: left;
    
   }
-  .my_addresses .add_addresses{
-    font-size: 16px;
-    min-height: 44px;
-    margin-top: 30px;
-    padding:10px;
-    font-weight: 600;
-  }
+  
   .my_addresses .add_addresses_reset{
     font-size: 16px;
     min-height: 44px;
@@ -79,7 +73,16 @@
 }
 }
 </style>
-
+{% style %}
+.my_addresses .add_addresses{
+  font-size: 16px;
+  min-height: 44px;
+  margin-top: 30px;
+  padding:10px;
+  font-weight: 600;
+  border-bottom: 1px solid  {{settings.colors_body_text}};
+}
+{% endstyle %}
 {%- paginate customer.addresses by 5 -%}
   <div class="customer addresses my_addresses my_customer " data-customer-addresses>
     <svg style="display: none">
