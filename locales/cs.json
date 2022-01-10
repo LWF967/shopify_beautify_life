@@ -133,7 +133,7 @@
       "moderated": "Upozorňujeme, že komentáře musí být před zveřejněním schváleny.",
       "comment_form_title": "Zanechat komentář",
       "name": "Jméno",
-      "email": "Email",
+      "email": "E-mail",
       "message": "Komentář",
       "post": "Přidat komentář",
       "share": "Sdílet tento článek",
@@ -151,7 +151,7 @@
     "comments": {
       "title": "Zanechat komentář",
       "name": "Jméno",
-      "email": "Email",
+      "email": "E-mail",
       "message": "Zpráva",
       "post": "Přidat komentář",
       "moderated": "Upozorňujeme, že komentáře musí být před zveřejněním schváleny",
