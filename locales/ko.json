@@ -71,7 +71,8 @@
       "previous": "이전 페이지"
     },
     "search": {
-      "search": "검색"
+      "search": "저희 사이트 검색",
+      "search_label": "검색"
     },
     "cart": {
       "view": "내 카트 보기({{ count }}개)",
@@ -86,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%B %Y"
+    "month_year": "%B %Y",
+    "detail_text": "세부 사항"
   },
   "newsletter": {
     "label": "이메일",
@@ -114,23 +116,52 @@
   },
   "blogs": {
     "article": {
-      "blog": "블로그",
-      "read_more_title": "자세히 읽기 : {{ title }}",
-      "read_more": "자세한 내용 확인",
       "comments": {
-        "one": "댓글 {{ count }}개",
-        "other": "댓글 {{ count }}개"
+        "one": "{{ count }} 개 댓글",
+        "other": "{{ count }} 개의 댓글"
       },
-      "moderated": "댓글 게시 전에는 반드시 승인이 필요합니다.",
-      "comment_form_title": "댓글 남기기",
+      "blog": "블로그",
+      "view_all": "더 보기",
+      "view_all_blogs": "모든 블로그 보기",
+      "all_topics": "모든 주제",
+      "by_author": "작성 {{ author }}",
+      "posted_in": "게시된 위치",
+      "read_more": "계속 읽기",
+      "read_more_title": "더 읽기: {{ title }}",
+      "back_to_blog": "으로 돌아가기 {{ title }}",
+      "tags": "태그",
+      "moderated": "댓글은 게시되기 전에 승인을 받아야 합니다.",
+      "comment_form_title": "댓글을 남겨주세요",
       "name": "이름",
       "email": "이메일",
       "message": "댓글",
-      "post": "댓글 달기",
-      "back_to_blog": "블로그로 돌아가기",
-      "share": "이 문서 공유하기",
-      "success": "댓글이 성공적으로 게시되었습니다. 감사합니다!",
-      "success_moderated": "댓글이 성공적으로 게시되었습니다. 블로그를 조정 중이므로 잠시 후에 게시됩니다."
+      "post": "댓글 게시",
+      "share": "이 기사 공유",
+      "success": "댓글이 성공적으로 게시되었습니다! 감사합니다!",
+      "success_moderated": "댓글이 성공적으로 게시되었습니다. 블로그가 검토 중이므로 잠시 후 게시하겠습니다.",
+      "article_with_count": {
+        "one": "{{ count }} 개 기사",
+        "other": "{{ count }} 개의 기사"
+      },
+      "by": "에 의해",
+      "on": "켜기",
+      "in": "안",
+      "back_to": "으로 돌아가기 {{title}}"
+    },
+    "comments": {
+      "title": "댓글을 남겨주세요",
+      "name": "이름",
+      "email": "이메일",
+      "message": "메시지",
+      "post": "댓글 게시",
+      "moderated": "댓글은 게시되기 전에 승인되어야 합니다.",
+      "success_moderated": "댓글이 성공적으로 게시되었습니다. 블로그가 검토 중이므로 잠시 후 게시하겠습니다.",
+      "success": "댓글이 성공적으로 게시되었습니다! 감사합니다!",
+      "unapproved": "제공된 이메일 주소는 댓글 게시가 승인되지 않았습니다.",
+      "comments_with_count": {
+        "one": "{{ count }} 개 댓글",
+        "other": "{{ count }} 개의 댓글"
+      }
     }
   },
   "onboarding": {
