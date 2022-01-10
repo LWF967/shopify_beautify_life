@@ -133,7 +133,7 @@
       "moderated": "Napominjemo, komentare je potrebno odobriti prije objave.",
       "comment_form_title": "Ostavite komentar",
       "name": "ime",
-      "email": "Email",
+      "email": "Adresa e-pošte",
       "message": "Komentar",
       "post": "Objavi komentar",
       "share": "Podijelite ovaj članak",
@@ -151,7 +151,7 @@
     "comments": {
       "title": "Ostavite komentar",
       "name": "ime",
-      "email": "Email",
+      "email": "Adresa e-pošte",
       "message": "Poruka",
       "post": "Objavi komentar",
       "moderated": "Please note, comments must be approved before they are published",
