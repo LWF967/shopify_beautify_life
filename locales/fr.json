@@ -133,7 +133,7 @@
       "moderated": "Veuillez noter que les commentaires doivent être approuvés avant d'être publiés.",
       "comment_form_title": "Laisser un commentaire",
       "name": "nom",
-      "email": "Email",
+      "email": "E-mail",
       "message": "Commentaire",
       "post": "Poster un commentaire",
       "share": "Partager cet article",
@@ -151,7 +151,7 @@
     "comments": {
       "title": "Laisser un commentaire",
       "name": "nom",
-      "email": "Email",
+      "email": "E-mail",
       "message": "Message",
       "post": "Poster un commentaire",
       "moderated": "Veuillez noter que les commentaires doivent être approuvés avant d'être publiés",
