@@ -329,6 +329,21 @@
     },
     "video": {
       "load_video": "Carica il video: {{ description }}"
+    },
+    "map": {
+      "address_error": "Errore nella ricerca di quell'indirizzo",
+      "address_no_results": "Nessun risultato per quell'indirizzo",
+      "address_query_limit_html": "Hai superato il limite di utilizzo dell'API di Google. Considera l'upgrade a un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Piano<\/a>.",
+      "auth_error_html": "Si è verificato un problema durante l'autenticazione del tuo account Google Maps.",
+      "section_heading": "Posizione"
+    },
+    "slideshow": {
+      "next_slide": "Diapositiva successiva",
+      "previous_slide": "Diapositiva precedente",
+      "pause_slideshow": "Metti in pausa la presentazione",
+      "rotate_slideshow": "Riproduci presentazione",
+      "load_slide": "Carica diapositiva {{ slide_number }}",
+      "navigation_instructions": "Usa le frecce sinistra\/destra per navigare nella presentazione o scorri verso sinistra\/destra se utilizzi un dispositivo mobile"
     }
   },
   "localization": {
@@ -454,10 +469,26 @@
       "remaining_html": "Saldo residuo: {{ balance }}",
       "add_to_apple_wallet": "Aggiungi a Apple Wallet",
       "qr_image_alt": "Codice QR — scansiona per riscattare il buono regalo",
+      "redeem_html": "Utilizza questo codice al momento del pagamento per riscattare la tua {{ value }} carta regalo",
       "copy_code": "Copia codice",
       "expired": "Scaduto",
       "copy_code_success": "Codice copiato correttamente",
       "print_gift_card": "Stampa"
+    }
+  },
+  "homepage": {
+    "general": {
+      "title": "Pagina iniziale",
+      "home_link": "Casa"
+    },
+    "onboarding": {
+      "product_title": "Nome del tuo prodotto",
+      "product_description": "Quest'area viene utilizzata per descrivere i dettagli del tuo prodotto. Comunica ai clienti l'aspetto, la sensazione e lo stile del tuo prodotto. Aggiungi dettagli su colore, materiali utilizzati, dimensioni e dove è stato realizzato.",
+      "collection_title": "Nome della tua collezione",
+      "blog_title": "Titolo del tuo post",
+      "blog_excerpt": "Il tuo negozio non ha ancora pubblicato alcun post sul blog. Un blog può essere utilizzato per parlare di lanci di nuovi prodotti, suggerimenti o altre notizie che desideri condividere con i tuoi clienti. Puoi consultare il blog di e-commerce di Shopify per trovare ispirazione e consigli per il tuo negozio e blog.",
+      "blog_author": "Nome dell'autore",
+      "no_content": "Questa sezione al momento non include alcun contenuto. Aggiungi contenuto a questa sezione utilizzando la barra laterale."
     }
   }
 }
