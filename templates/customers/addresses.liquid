@@ -201,7 +201,7 @@
       {%- for address in customer.addresses -%}
         <li data-address>
           {%- if address == customer.default_address -%}
-          <hr>
+          
             <h2>{{ 'customer.addresses.default' | t }}</h2>
           {%- endif -%}
           {{ address | format_address }}
@@ -306,6 +306,7 @@
               <div>
                 <button>{{ 'customer.addresses.update' | t }}</button>
                 <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
+                <hr>
               </div>
             {%- endform -%}
           </div>
