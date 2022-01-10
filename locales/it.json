@@ -3,6 +3,7 @@
     "password_page": {
       "login_form_heading": "Accedi al negozio utilizzando la password:",
       "login_password_button": "Accedi utilizzando la password",
+      "login_password_button_1": "ENTRA CON PASSWORD",
       "login_form_password_label": "Password",
       "login_form_password_placeholder": "La tua password",
       "login_form_error": "Password errata!",
@@ -10,6 +11,39 @@
       "modal": "Modale per password",
       "admin_link_html": "Sei il proprietario del negozio? <a href=\"\/admin\" class=\"link underlined-link\">Accedi qui<\/a>",
       "powered_by_shopify_html": "Questo negozio sarà ospitato su {{ shopify }}"
+    },
+    "nt_tooltip": {
+      "login_to_wishlist": "Accedi per usare la Wishlist",
+      "add_to_wishlist": "Aggiungi alla lista dei desideri",
+      "remove_wishlist": "Rimuovi la lista dei desideri",
+      "browse_wishlist": "Sfoglia la lista dei desideri",
+      "compare": "Confronta",
+      "added_text_compare": "Confronta prodotti",
+      "quick_view": "Vista rapida",
+      "select_options": "Seleziona opzioni",
+      "read_more": "Leggi di più",
+      "view": "Visualizza prodotti",
+      "add_to_cart": "Aggiungi al carrello",
+      "share_fb": "Condividi su Facebook",
+      "share_tw": "Condividi su Twitter",
+      "share_em": "Condividi su e-mail",
+      "share_pr": "Condividi su Pinterest",
+      "share_tu": "Condividi su Tumblr",
+      "share_tl": "Condividi su Telegram",
+      "share_wa": "Condividi su WhatsApp",
+      "follow_fb": "Segui su Facebook",
+      "follow_tw": "Segui su Twitter",
+      "follow_it": "Segui su Instagram",
+      "follow_dr": "Segui su Dribbble",
+      "follow_ld": "Segui su Linkedin",
+      "follow_pr": "Segui su Pinterest",
+      "follow_tu": "Segui su Tumblr",
+      "follow_yt": "Segui su YouTube",
+      "follow_bh": "Segui su Behance",
+      "follow_sc": "Segui su Soundcloud",
+      "follow_tt": "Segui su Tiktok",
+      "follow_sn": "Segui su Snapchat",
+      "follow_vi": "Segui su Vimeo"
     },
     "social": {
       "alt_text": {
@@ -37,7 +71,8 @@
       "previous": "Pagina precedente"
     },
     "search": {
-      "search": "Cerca"
+      "search": "CERCA NEL NOSTRO SITO",
+      "search_label": "Cerca"
     },
     "cart": {
       "view": "Visualizza carrello ({{ count }})",
@@ -52,7 +87,8 @@
     }
   },
   "date_formats": {
-    "month_year": "%B %Y"
+    "month_year": "%B %Y",
+    "detail_text": "Dettaglio"
   },
   "newsletter": {
     "label": "Indirizzo email",
@@ -80,23 +116,52 @@
   },
   "blogs": {
     "article": {
-      "blog": "Blog",
-      "read_more_title": "Leggi di più: {{ title }}",
-      "read_more": "Leggi di più",
       "comments": {
         "one": "{{ count }} commento",
         "other": "{{ count }} commenti"
       },
-      "moderated": "Si prega di notare che, prima di essere pubblicati, i commenti devono essere approvati.",
+      "blog": "Blog",
+      "view_all": "Visualizza altro",
+      "view_all_blogs": "Visualizza tutti i blog",
+      "all_topics": "Tutti gli argomenti",
+      "by_author": "Di {{ author }}",
+      "posted_in": "Pubblicato in",
+      "read_more": "Continua a leggere",
+      "read_more_title": "Leggi di più: {{ title }}",
+      "back_to_blog": "Torna a {{ title }}",
+      "tags": "Tag",
+      "moderated": "Nota, i commenti devono essere approvati prima di essere pubblicati.",
       "comment_form_title": "Lascia un commento",
       "name": "Nome",
-      "email": "Indirizzo email",
-      "message": "Commenta",
+      "email": "Email",
+      "message": "Commento",
       "post": "Pubblica commento",
-      "back_to_blog": "Torna al blog",
       "share": "Condividi questo articolo",
-      "success": "Il tuo commento è stato pubblicato! Grazie!",
-      "success_moderated": "Il tuo commento è stato pubblicato. Lo pubblicheremo fra poco, il nostro blog è soggetto a moderazione."
+      "success": "Il tuo commento è stato pubblicato con successo! Grazie!",
+      "success_moderated": "Il tuo commento è stato pubblicato con successo. Lo pubblicheremo tra poco, poiché il nostro blog è moderato.",
+      "article_with_count": {
+        "one": "{{ count }} articolo",
+        "other": "{{ count }} articoli"
+      },
+      "by": "ciao",
+      "on": "acceso",
+      "in": "In",
+      "back_to": "Torna a {{title}}"
+    },
+    "comments": {
+      "title": "Lascia un commento",
+      "name": "Nome",
+      "email": "Email",
+      "message": "Messaggio",
+      "post": "Pubblica commento",
+      "moderated": "Nota, i commenti devono essere approvati prima di essere pubblicati",
+      "success_moderated": "Il tuo commento è stato pubblicato con successo. Lo pubblicheremo tra poco, poiché il nostro blog è moderato.",
+      "success": "Il tuo commento è stato pubblicato con successo! Grazie!",
+      "unapproved": "L'indirizzo email fornito non è approvato per la pubblicazione di commenti.",
+      "comments_with_count": {
+        "one": "{{ count }} commento",
+        "other": "{{ count }} commenti"
+      }
     }
   },
   "onboarding": {
@@ -177,7 +242,8 @@
     },
     "404": {
       "title": "Pagina non trovata",
-      "subtext": "404"
+      "subtext": "404",
+      "info_text": "La pagina che hai richiesto non esiste"
     }
   },
   "sections": {
