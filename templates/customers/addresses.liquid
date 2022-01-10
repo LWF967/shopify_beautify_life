@@ -200,7 +200,7 @@
                 data-default="{{ form.country }}"
                 autocomplete="country"
               >
-                {{ all_country_option_tags }}
+                {{ all_country_option_tags | upcase  }}
               </select>
               <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
                 <use href="#icon-caret" />
