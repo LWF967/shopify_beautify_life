@@ -101,7 +101,7 @@
           "type": "blog",
           "settings": {
             "blog": "新闻",
-            "cover_image": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
+            "cover_image": "shopify:\/\/shop_images\/small-business-interior.jpg",
             "image_size": "medium",
             "description": "<p>Description of your blog.<\/p>",
             "show_number_articles": true,
@@ -671,7 +671,6 @@
         "page_dot_color": "light",
         "image_width": "full",
         "image_ratio": "adapt",
-        "column_alignment": "left",
         "button_label": "Button",
         "button_link": "",
         "testimonials_margin_top": "",
