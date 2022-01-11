@@ -152,7 +152,6 @@
     list-style-type: none;
   }
   
-  /* define button */
   .swiper-button-next-{{section.id}},
   .swiper-button-prev-{{section.id}} {
     position: absolute;
@@ -754,18 +753,18 @@
      let slideshowbox = document.getElementById('shopify-section-{{section.id}}');
 
     let swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{section.id}}', {
-      direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-      loop: swiperLoop, // 循环模式选项 
+      direction: 'horizontal', 
+      loop: swiperLoop, 
 
       on:{
         beforeDestroy: function(){
-          //console.log('destory');
+          
         },
         },
        parallax : true,
-      // 如果需要分页器
+     
       preventClicks : false,
-      touchRatio : 0.5,//触摸变慢
+      touchRatio : 0.5,
 
       {% unless section.settings.show_page_Dot %}
 
@@ -794,7 +793,7 @@
         },
       {% endif %}
 
-      // 如果需要前进后退按钮
+     
       navigation: {
         nextEl: '.swiper-button-next-{{section.id}}',
         prevEl: '.swiper-button-prev-{{section.id}}',
@@ -809,20 +808,20 @@
 
     document.addEventListener('shopify:section:load', throttle((event) => {
     
-        if(slideshowbox){ //console.log(slideshowbox,'dddd')
+        if(slideshowbox){ 
       let  swiperAutoPlay = document.getElementsByClassName(' swiper-wrapper-{{section.id}}')[0].dataset.autoplay;
       let swiperTime = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.autotime;	 
       let swiperLoop = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.loop;	
         (swiperLoop == "false") ? swiperLoop=false : swiperLoop=true;
 
        swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{section.id}}', {
-        direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-        loop: swiperLoop, // 循环模式选项 
+        direction: 'horizontal', 
+        loop: swiperLoop, 
         parallax : true,
      
         preventClicks : false,
-        // 如果需要分页器
-        touchRatio : 0.7,//触摸变慢
+       
+        touchRatio : 0.7,
 
         {% unless section.settings.show_page_Dot %}
         pagination: {
@@ -849,7 +848,7 @@
         },
       {% endif %}
 
-        // 如果需要前进后退按钮
+      
         navigation: {
           nextEl: '.swiper-button-next-{{section.id}}',
           prevEl: '.swiper-button-prev-{{section.id}}',
