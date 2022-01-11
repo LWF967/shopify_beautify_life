@@ -25,6 +25,22 @@
       },
       {
         "type": "select",
+        "id": "button_style",
+        "options": [
+          {
+            "value": "Default",
+            "label": "Default"
+          },
+          {
+            "value": "Round",
+            "label": "Round"
+          }
+        ],
+        "default": "Default",
+        "label": "Button style"
+      },
+      {
+        "type": "select",
         "id": "show_back_to_top",
         "options": [
           {
@@ -62,22 +78,6 @@
         ],
         "default": "Style 2",
         "label": "Back To Top Style"
-      },
-      {
-        "type": "select",
-        "id": "button_style",
-        "options": [
-          {
-            "value": "Default",
-            "label": "Default"
-          },
-          {
-            "value": "Round",
-            "label": "Round"
-          }
-        ],
-        "default": "Default",
-        "label": "Button style"
       },
       {
         "type": "checkbox",
