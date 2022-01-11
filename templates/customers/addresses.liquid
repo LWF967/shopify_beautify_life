@@ -168,11 +168,10 @@
           <div class="field">
             <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}" >
             <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }} <span aria-hidden="true">*</span></label>
-<!--             <label class="field__label" for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }} <span aria-hidden="true">*</span></label> -->
           </div>
           <div class="field">
             <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="{{ 'customer.addresses.last_name' | t }}">
-            <label for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }}</label>
+            <label for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }} <span aria-hidden="true">*</span></label>
           </div>
           <div class="field">
             <input type="text" id="AddressCompanyNew" name="address[company]" value="{{ form.company }}" autocomplete="organization" placeholder="{{ 'customer.addresses.company' | t }}">
@@ -188,10 +187,10 @@
           </div>
           <div class="field">
             <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
-            <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
+            <label for="AddressCityNew">{{ 'customer.addresses.city' | t }} <span aria-hidden="true">*</span></label>
           </div>
           <div>
-            <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
+            <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }} <span aria-hidden="true">*</span></label>
             <div class="select">
               <select
                 id="AddressCountryNew"
@@ -223,11 +222,11 @@
           </div>
           <div class="field">
             <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
-            <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
+            <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }} <span aria-hidden="true">*</span></label>
           </div>
           <div class="field">
             <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
-            <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
+            <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }} <span aria-hidden="true">*</span></label>
           </div>
           <div>
             {{ form.set_as_default_checkbox }}
