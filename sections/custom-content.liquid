@@ -220,7 +220,8 @@
                             <img class="blog-card__overlay box ratio-container js lazyload"
                                 data-bgset="{% include 'bgset', image: img %}" data-sizes="auto" data-parent-fit="cover"
                                  data-src="{{ img | img_url: '1024x1024' }}"
-                                data-image-loading-animation>
+                                data-image-loading-animation
+                                 style="background-image:none;">
                             <noscript>
                                 <img class="blog-card__overlay lazyload" data-src="{{ img | img_url: '1024x1024' }}">
                             </noscript>
