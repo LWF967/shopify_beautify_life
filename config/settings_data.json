@@ -1,8 +1,8 @@
 {
   "current": {
+    "button_style": "Round",
     "show_back_to_top": "Desktop+Mobile",
     "back_to_top_style": "Style 2",
-    "button_style": "Round",
     "enable_prevent_copying": false,
     "enable_catalog_mode": false,
     "ratio_custom_1": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
