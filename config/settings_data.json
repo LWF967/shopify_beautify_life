@@ -35,7 +35,7 @@
     "color_image_overlay": "#f4fafa",
     "image_overlay_opacity": 10,
     "color_page_borders_and_lines": "#e6e0e0",
-    "color_page_background": "#f1f1f1",
+    "color_page_background": "#ffffff",
     "colors_page_stickiness": "#d75656",
     "color_icon": "#000000",
     "type_header_font": "assistant_n4",
