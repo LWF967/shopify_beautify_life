@@ -176,6 +176,7 @@
           {% for error in form.errors %}
           {{ error }}
           {% endfor %}
+          {{ form.errors.size }}
           
           {%- for field in form.errors -%}
           <li>
