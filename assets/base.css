@@ -355,9 +355,9 @@ table:not([class]) th {
 }
 
 @media screen and (max-width: 749px) {
-  /* .small-hide {
+  .small-hide {
     display: none !important;
-  } */
+  }
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
