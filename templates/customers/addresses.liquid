@@ -173,22 +173,17 @@
           </h3>
         </div>
         <ul class="form-status-list caption-large">
-          {% for error in form.errors %}
-          {{ error }}
-          {% endfor %}
-          {{ form.errors.size }}
-          
           {%- for field in form.errors -%}
           <li>
             <a href="#Address{{ field }}" class="link">
               {%- if form.errors.translated_fields[field] contains 'author' -%}
-              {{ 'blogs.article.name' | t }}
+              {{ 'blogs.article.name' | t }}1
               {%- elsif form.errors.translated_fields[field] contains 'body'-%}
-              {{ 'blogs.article.message' | t }}
+              {{ 'blogs.article.message' | t }}2
               {%- else -%}
-              {{ form.errors.translated_fields[field] }}
+              {{ form.errors.translated_fields[field] }}3
               {%- endif -%}
-              {{ form.errors.messages[field] }}
+              {{ form.errors.messages[field] }}4
             </a>
           </li>
           {%- endfor -%}
