@@ -152,14 +152,14 @@
           "promo_bar_link": "",
           "promo_bar_textarea": "Today deal sale off <strong>70%<\/strong> <strong>On All<\/strong> Hurry Up <i class=\"las la-arrow-right\"><\/i>",
           "promo_bar_height": 41,
-          "promo_bar_fontsize": 12,
-          "promo_bar_cl": "#ff7474",
+          "promo_bar_fontsize": 14,
+          "promo_bar_cl": "#ffffff",
           "promo_bar_bg": "#000000",
           "promo_bar_bg_op": 100,
           "promo_bar_show_close": true,
           "promo_bar_show_icon": false,
           "promo_bar_txt_btn": "close",
-          "promo_bar_cl_btn": "#ef1c1c",
+          "promo_bar_cl_btn": "#dab1b1",
           "promo_bar_date": 0
         }
       },
