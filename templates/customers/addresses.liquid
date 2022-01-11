@@ -183,7 +183,7 @@
                     {%- elsif form.errors.translated_fields[field] contains 'LastNameNew'-%}
                       {{ 'customer.addresses.last_name' | t }}
                     {%- elsif form.errors.translated_fields[field] contains 'CountryNew'-%}
-                      {{ customer_address.country }}
+                      {{ customer_address.country }}123
                     {%- elsif form.errors.translated_fields[field] contains 'CityNew'-%}
                       {{ 'customer.addresses.city' | t }}
                     {%- elsif form.errors.translated_fields[field] contains 'ZipNew'-%}
