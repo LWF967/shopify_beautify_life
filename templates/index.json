@@ -830,26 +830,33 @@
         "16418947706350450c-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         },
         "16418947706350450c-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "orange"
           }
         },
         "16418947706350450c-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "pitaya"
+          }
+        },
+        "c9be99ee-6899-4d19-be27-6b16c0f98e74": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "blank_text"
           }
         }
       },
       "block_order": [
         "16418947706350450c-0",
         "16418947706350450c-1",
-        "16418947706350450c-2"
+        "16418947706350450c-2",
+        "c9be99ee-6899-4d19-be27-6b16c0f98e74"
       ],
       "settings": {
         "title": "Collections",
