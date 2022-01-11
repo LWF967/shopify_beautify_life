@@ -309,7 +309,6 @@
 {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 
 <style>
-  /*   定义轮播点 */
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
     background: #4e4e4e;
     border: 1.5px solid rgb(189 188 188 / 28%);
@@ -910,7 +909,7 @@
 <script type="module">
   import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
   var deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
-  	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+  	  direction: 'horizontal', 
       slidesPerView: 1,
       followFinger : false,
       autoplay: {
@@ -921,7 +920,6 @@
       },
       loop: true,
     
-   // 如果需要分页器
       pagination: {
         el: '.swiper-pagination-{{section.id}}',
         clickable :false,
@@ -932,7 +930,7 @@
    if(designMode){
    document.addEventListener('shopify:section:load',throttle(()=>{  
       deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
-  	  direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+  	  direction: 'horizontal', 
       slidesPerView: 1,
       followFinger : false,
       autoplay: {
@@ -943,7 +941,7 @@
       },
       loop: true,
     
-   // 如果需要分页器
+  
       pagination: {
         el: '.swiper-pagination-{{section.id}}',
         clickable :false,
