@@ -173,7 +173,10 @@
           </h3>
         </div>
         <ul class="form-status-list caption-large">
-                    {{ form.errors }}
+          {% for error in form.errors %}
+          {{ error }}
+          {% endfor %}
+          
           {%- for field in form.errors -%}
           <li>
             <a href="#Address{{ field }}" class="link">
