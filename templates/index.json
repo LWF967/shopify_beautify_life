@@ -1,5 +1,81 @@
 {
   "sections": {
+    "16340032987fd8fd82": {
+      "type": "slideshow-beautify-2",
+      "blocks": {
+        "4e0a0993-6e2f-4ec2-94f4-a6dc94886799": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
+            "image_alignment": "bottom right",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "Image with text overlay",
+            "slider_sub_text": "Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.",
+            "slider_button_text": "Button",
+            "slider_button_link": ""
+          }
+        },
+        "d98aad89-0e6d-4788-95a8-22f4eb463027": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
+            "image_alignment": "middle_center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "Heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "cf520457-a362-42f7-a043-5e28a8ffc74d": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "56d064e8-838e-4960-8f92-bec0c45e56d9": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
+            "image_alignment": "middle_center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "4e0a0993-6e2f-4ec2-94f4-a6dc94886799",
+        "d98aad89-0e6d-4788-95a8-22f4eb463027",
+        "cf520457-a362-42f7-a043-5e28a8ffc74d",
+        "56d064e8-838e-4960-8f92-bec0c45e56d9"
+      ],
+      "settings": {
+        "se_height": "adapt_f",
+        "text_size": "medium",
+        "loop": false,
+        "auto_play": true,
+        "auto_time": 5,
+        "show_button": true,
+        "show_button_visible": "only_hover",
+        "show_button_style": "style3",
+        "show_button_color": "white",
+        "show_button_hover_color": "#9ae1da",
+        "show_page_Dot": true,
+        "page_dot_style": "style_1",
+        "page_dot_color": "light",
+        "slideshow_beautify_margin_top": "",
+        "slideshow_beautify_margin_bottom": ""
+      }
+    },
     "16377430666a59b35c": {
       "type": "custom-content",
       "blocks": {
@@ -184,8 +260,8 @@
         "show_button": true,
         "show_button_visible": "always",
         "show_button_style": "style3",
-        "show_button_color": "transparent",
-        "show_button_hover_color": "#80d425",
+        "show_button_color": "white",
+        "show_button_hover_color": "#9ae1da",
         "collection_list_beautify_margin_top": "",
         "collection_list_beautify_margin_bottom": ""
       }
@@ -330,82 +406,6 @@
         "section_height": "small",
         "gallery_margin_top": "",
         "gallery_margin_bottom": ""
-      }
-    },
-    "16340032987fd8fd82": {
-      "type": "slideshow-beautify-2",
-      "blocks": {
-        "4e0a0993-6e2f-4ec2-94f4-a6dc94886799": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
-            "image_alignment": "bottom right",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "Image with text overlay",
-            "slider_sub_text": "Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.",
-            "slider_button_text": "title namenghnjh",
-            "slider_button_link": ""
-          }
-        },
-        "d98aad89-0e6d-4788-95a8-22f4eb463027": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "image_alignment": "middle_center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "Heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
-        },
-        "cf520457-a362-42f7-a043-5e28a8ffc74d": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-            "image_alignment": "center center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
-        },
-        "56d064e8-838e-4960-8f92-bec0c45e56d9": {
-          "type": "slideshow_img2",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
-            "image_alignment": "middle_center",
-            "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
-            "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
-            "slider_button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "4e0a0993-6e2f-4ec2-94f4-a6dc94886799",
-        "d98aad89-0e6d-4788-95a8-22f4eb463027",
-        "cf520457-a362-42f7-a043-5e28a8ffc74d",
-        "56d064e8-838e-4960-8f92-bec0c45e56d9"
-      ],
-      "settings": {
-        "se_height": "adapt_f",
-        "text_size": "medium",
-        "loop": false,
-        "auto_play": true,
-        "auto_time": 5,
-        "show_button": true,
-        "show_button_visible": "only_hover",
-        "show_button_style": "style3",
-        "show_button_color": "gray",
-        "show_button_hover_color": "#06eacb",
-        "show_page_Dot": true,
-        "page_dot_style": "style_1",
-        "page_dot_color": "light",
-        "slideshow_beautify_margin_top": "",
-        "slideshow_beautify_margin_bottom": ""
       }
     },
     "1638254471485c2b3b": {
@@ -864,12 +864,12 @@
     }
   },
   "order": [
+    "16340032987fd8fd82",
     "16377430666a59b35c",
     "1635832448db75c5e7",
     "16396203697a4ba826",
     "163608389212513e57",
     "1638178308a7590918",
-    "16340032987fd8fd82",
     "1638254471485c2b3b",
     "1638344641035ba32e",
     "1640677918927d5968",
