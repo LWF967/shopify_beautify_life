@@ -122,10 +122,8 @@
       import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
 
      let swiper = new Swiper ('.swiper-banner-beautify-{{block.id}}', {
-      direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-      loop: true, // 循环模式选项
-
-      // 如果需要分页器
+      direction: 'horizontal', 
+      loop: true, 
 
       {% unless section.settings.show_page_Dot %}
 
@@ -152,24 +150,21 @@
       disableOnInteraction: false,
       },
 
-      // 如果需要前进后退按钮
+     
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
 
-      // 如果需要滚动条
-    /*  scrollbar: {
-        el: '.swiper-scrollbar',
-      }, */
+    
     })
 
   document.addEventListener('shopify:section:load',()=>{
       let swiper = new Swiper ('.swiper-banner-beautify-{{block.id}}', {
-      direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-      loop: true, // 循环模式选项
+      direction: 'horizontal', 
+      loop: true, 
 
-      // 如果需要分页器
+     
       {% unless section.settings.show_page_Dot %}
          pagination: {
         el: '.swiper-pagination-{{section.id}}',
@@ -194,16 +189,13 @@
       disableOnInteraction: false,
       },
 
-      // 如果需要前进后退按钮
+      
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
 
-      // 如果需要滚动条
-    /*  scrollbar: {
-        el: '.swiper-scrollbar',
-      }, */
+     
     })
   },false);
 
@@ -213,7 +205,7 @@
 </script>
 
 <style>
-  /*  swiper box */
+ 
   .banner-beautify-imgbox {
     display: flex;
     flex-direction: row;
@@ -240,7 +232,7 @@
     }
   }
   
-  /* define Carousel point */
+
   .opa-0{
     opacity: 0;
   }
