@@ -28,10 +28,7 @@
     margin-left: -1.2rem;
   }
   
-  .icon.icon-hamburger,
-  .icon.icon-close {
-/*     color: {{ settings.header_icon_and_text_color }}; */
-  }
+ 
 
   @media screen and (min-width: 990px) {
     header-drawer {
@@ -78,7 +75,6 @@
     }
   }
   
-  /*lzx_style*/
   @font-face {
   font-family: 'iconfont';
   src: url('//at.alicdn.com/t/font_2903696_p8b4e67fhg.woff2?t=1635837134306') format('woff2'),
@@ -141,9 +137,7 @@
   	height: auto;
   }
   
-/*   .my_icon_color {
-    color: red;
-  } */
+
   
   .my_header_icon {
   	position: relative;
@@ -239,11 +233,7 @@
     right: 1.5rem;
   }
   
-  .header__submenu.list-menu.list-menu--disclosure.caption-large.motion-reduce.my_header_menu {
-/*     background-color: var(--folor-header-sticky); */
-/*       border:0.5px solid {{ settings.header_icon_and_text_color }}; */
-/*        background-color: {%- if settings.header_background_color -%} {{settings.header_background_color }}{%-elsif settings.header_sticky_background_color-%}{{settings.header_sticky_background_color}}{%-else-%}{{settings.color_page_background}};{%-endif-%}; */
-  }
+
   
   .header__submenu.list-menu.list-menu--disclosure.caption-large.motion-reduce.my_header_menu li a {
     text-decoration: none;
@@ -271,9 +261,7 @@
       margin-right: 12px;
     }
     
-    /* .my_header_account {
-      display: none !important;
-    } */
+  
   }
 </style>
 
@@ -703,7 +691,6 @@
           </summary>
           <div class="search-modal modal__content" role="dialog" aria-modal="true" aria-label="{{ 'general.search.search_label' | t }}" >
             <div class="modal-overlay"></div>
-<!--             style="background:{%- if settings.color_scheme=="gradient"-%}{{settings.color_page_background}}{%-else-%} {{settings.header_opacity_bk_color}};{%-endif-%}" -->
             <div class="search-modal__content" tabindex="-1" >
               {%- if settings.predictive_search_enabled -%}
                 <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
