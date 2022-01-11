@@ -178,14 +178,20 @@
               {%- for field in form.errors -%}
                 <li>
                   <a href="#CommentForm-{{ field }}" class="link">
-                    {%- if form.errors.translated_fields[field] contains 'author' -%}
-                      {{ 'blogs.article.name' | t }}1111
-                    {%- elsif form.errors.translated_fields[field] contains 'body'-%}
-                     {{ 'blogs.article.message' | t }}2222
+                    {%- if form.errors.translated_fields[field] contains 'first_name' -%}
+                      1111
+                    {%- elsif form.errors.translated_fields[field] contains 'last_name'-%}
+                      2222
+                    {%- elsif form.errors.translated_fields[field] contains 'country'-%}
+                      3333
+                    {%- elsif form.errors.translated_fields[field] contains 'zip'-%}
+                      4444
+                    {%- elsif form.errors.translated_fields[field] contains 'phone'-%}
+                      5555
                     {%- else -%}
                       {{ form.errors.translated_fields[field] }}
                     {%- endif -%}
-                    {{ form.errors.messages[field] }}3333
+                    {{ form.errors.messages[field] }}7777
                   </a>
                 </li>
               {%- endfor -%}
