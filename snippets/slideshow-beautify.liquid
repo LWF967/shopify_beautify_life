@@ -2,7 +2,6 @@
      data-section-id="{{ section.id }}" data-section-type="slideshow-section"  data-slider>
 
  
-    <!--    左箭头    -->
       <div class=" bk_{{section.settings.show_button_color}} {% if section.settings.show_button  %}icon-changebtn_{{section.id}}  {% else %}  dn  {% endif%} leftbtn leftbtn-{{section.id}}   button_{{ section.settings.show_button_style }}">
       	<p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
             <svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,7 +10,6 @@
             </svg>
         </p>
       </div>
-<!--    右箭头    -->
       <div class="  bk_{{section.settings.show_button_color}} {% if section.settings.show_button %}icon-changebtn_{{section.id}} {% else %} dn  {% endif%} rightbtn  rightbtn-{{section.id}}  button_{{ section.settings.show_button_style }} ">
       	<p class="navmenu-icon navmenu-icon-depth-1 openbtn" data-navmenu-trigger="" style="height:14px;">
           	<svg aria-hidden="true" focusable="false" role="presentation" width="20" height="16" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,9 +95,6 @@
                                              {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light'%}
                                              
                                     		 {% endif %}	
-                                             
-                                             
-                                             
                                              ">
 
     </ol>
@@ -107,9 +102,7 @@
   </div>
 
 
-
 {% assign img_position = section.blocks | where: "type", "slideshow_img2" %}
-
 
 <style>
   .my_slideshow_beautify_heading_text_size_medium {
@@ -214,10 +207,8 @@
   	width: 100%;
   }
   .feature-artworks{
-/*   	max-width: 73.225rem; */
     max-width: 100%;
     margin: 0 auto;
-/*     padding: 20px .9375rem 40px; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -530,22 +521,13 @@
     list-style-type: none;
   }
   
-
-  
-  
   @media screen and (max-width: 750px) {
-
-
-    
     
     .icon-changebtn_{{section.id}} {
 
       display:block;
       opacity:1;
     }
-
-
-
 
     .slideshow_text_box_{{section.id}}{
 
@@ -614,23 +596,14 @@
     bottom: 20%;
     right: 25%;
   }
-    
-    
-    
 	}
 
 @media screen and (max-width: 990px) {
 
-
-  
   .icon-changebtn_{{section.id}} {
-  
   display:block;
   opacity:1;
-    
   }
-  
-  
 
   .slideshow_text_box_{{section.id}}{
   
@@ -731,15 +704,7 @@
 
 <script type="module">
 
-
-
-	
-
-
   let slideshow_beautify_lunbo = (function () {
-  
-  
-
   
   console.time("test");
   
@@ -757,20 +722,11 @@
 
     var diffwidth = parseInt(contentbox.scrollWidth / itemLength)
 
-    //     如果页面一开始刷新，获取的width会有偏差值
-
     var diff = diffwidth > 1903 ? diffwidth - 17 : diffwidth
-//     测试页面宽度
-//     console.log(diff, 'diff')
-//     console.log(itemlist[0].clientWidth, 'itemwidth')
-//     console.log(itemlist[0].offsetWidth, 'off')
-//     console.log(document.body.clientWidth, 'body')
+
     var btnbox = document.querySelectorAll('.productitem--actions')
     var index = 1
 
-    //获取轮播点
-    
-    
 
     var list_text =  document.getElementById('slide_pog-{{section.id}}');
 
@@ -795,13 +751,11 @@
       }
     }
 
-    // var x = diff_box/itemLength;
 
     function moveTransition (index) {
       index = list_text.querySelector('.active').index + 1
 
       if (index < itemLength ) {
-        //           index =  list_text.querySelector('.active').index+1;
         contentbox.style.transform =
           'translate(' + -parseInt(itemlist[index].index * diff) + 'px' + ')'
 
@@ -833,12 +787,9 @@
  	 let time_gui ;
   	 time_gui = (autop == 'true') ? setInterval(autoPlay, time * 1000) : 'false';
      
-     // console.log(time_gui,'第一次');
-	 	
     function autoPlay () {
 
 		moveTransition(index);
-        // console.log('走了');  
       
     }
 
@@ -852,7 +803,6 @@
        	let _this = this;
         e.stopPropagation();
         clearInterval(time_gui);
-           //  console.log(time_gui,"ss");
       },100),
       false
     )
@@ -889,14 +839,11 @@
 
     rightbtn.addEventListener('click', debounce(function () {
       index = list_text.querySelector('.active').index + 1;
-//       清定时防止按
 	  clearInterval(time_gui);
       if (index < itemLength) {
-        //           index =  list_text.querySelector('.active').index+1;
         contentbox.style.transform =
           'translate(' + -itemlist[index].index * diff + 'px' + ')'
 
-        // 	console.log( itemlist[index].index*diff ,'R1');
         for (var j = 0; j < list.length; j++) {
           list[j].className = ''
         }
@@ -906,7 +853,6 @@
         contentbox.style.transform =
           'translate(' + -itemlist[index].index * diff + 'px' + ')'
 
-        // 	console.log( itemlist[index].index*diff ,'R2');
         for (var j = 0; j < list.length; j++) {
           list[j].className = ''
         }
@@ -933,7 +879,6 @@
         contentbox.style.transform =
           'translate(' + -itemlist[index].index * diff + 'px' + ')'
 
-        //   console.log('进来了');
 
         for (var j = 0; j < list.length; j++) {
           list[j].className = ''
@@ -949,11 +894,6 @@
 
  // 初始化，根据方法实际情况可选择
   const slide_beautify = new  slideshow_beautify_lunbo();
-  
-  
-  
-  
-  
   
     var theme = {
       breakpoints: {
@@ -1048,12 +988,6 @@ theme.Sections = function Sections() {
   );
 };
 
-
-
-
-console.log('2');
-
-  
  
  //这是定义section对象 并构建create方法
  
@@ -1062,15 +996,9 @@ theme.Sections.prototype = Object.assign({}, theme.Sections.prototype, {
     var id = container.getAttribute('data-section-id');
     var type = container.getAttribute('data-section-type');
 
-
-	
     constructor = constructor || this.constructors[type];
 
-
-	console.log(constructor,'这是取出来内容的constructor');
-
     if (typeof constructor === 'undefined') {
-     console.log('看看进来constructor没');
       return;
     }
 
@@ -1084,8 +1012,6 @@ theme.Sections.prototype = Object.assign({}, theme.Sections.prototype, {
   },
 
   _onSectionLoad: function(evt) {
-    console.log(this,'this自己的轮播');
-    console.log(evt,'evt自己的轮播');
     var container = document.querySelector(
       '[data-section-id="' + evt.detail.sectionId + '"]'
     );
@@ -1181,10 +1107,6 @@ window.slate = window.slate || {};
 
 
 
-console.log('3');
-
-
-
  /**
      * 观察器实例的回调函数
      * 每次DOM变动后调用，多个连续的DOM变化会合并为一次调用，在最后一次变动执行完毕后调用
@@ -1196,7 +1118,6 @@ console.log('3');
        // console.log(observer);
     
     };
-
 
 	var oDiv = document.getElementById('SlideshowWrapper-{{ section.id }}');
 
@@ -1219,13 +1140,8 @@ console.log('3');
         characterDataOldValue: false,           // 观察characterData变化时，是否记录变化前的值
     })
 
-console.log('4');
-
-
  var designMode = Shopify.designMode || false;
    if(designMode){
-   
-   console.log('进入后台了');
    
  
  
