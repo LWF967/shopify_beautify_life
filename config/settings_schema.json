@@ -250,7 +250,7 @@
           }
         ],
         "default": "gradients",
-        "label": "Header background options"
+        "label": "Header sticky background options"
       },
       {
         "type": "range",
