@@ -46,7 +46,7 @@
           "type": "product",
           "settings": {
             "product": "text4",
-            "width": "25%",
+            "width": "50%",
             "alignment": "center"
           }
         },
@@ -56,51 +56,6 @@
             "collection": "frontpage",
             "width": "50%"
           }
-        },
-        "0b2b237b-a953-4647-9b9c-8e5171fdafe2": {
-          "type": "article",
-          "settings": {
-            "article": "tt1\/tt1",
-            "width": "100%",
-            "alignment": "center",
-            "cover_image": "large",
-            "show_author": false,
-            "show_date": true
-          }
-        },
-        "db6cea1e-1b0d-4a31-b68a-ee4b229aa0f8": {
-          "type": "link_list",
-          "settings": {
-            "menu": "main-menu",
-            "width": "25%",
-            "alignment": "center"
-          }
-        },
-        "ca1dcff2-7b3b-4ad0-b5d0-594ac240396c": {
-          "type": "html",
-          "settings": {
-            "code": "HTML",
-            "width": "100%"
-          }
-        },
-        "c23c8983-a729-4bcf-9a3d-61af1d843c51": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "width": "25%",
-            "alignment": "center"
-          }
-        },
-        "19531471-74f2-485e-9663-f1a700fb9a8f": {
-          "type": "article",
-          "settings": {
-            "article": "tt1\/tt1",
-            "width": "50%",
-            "alignment": "center",
-            "cover_image": "large",
-            "show_author": false,
-            "show_date": true
-          }
         }
       },
       "block_order": [
@@ -109,12 +64,7 @@
         "1959a0a0-d475-4859-867c-834e6fce1148",
         "84d1665e-ef72-464e-a3bf-6386c91cb71b",
         "dc741816-4fa7-4c29-92e0-1acfda8d8706",
-        "8ee73a9d-057a-4e5c-a828-f1606dd4e959",
-        "0b2b237b-a953-4647-9b9c-8e5171fdafe2",
-        "db6cea1e-1b0d-4a31-b68a-ee4b229aa0f8",
-        "ca1dcff2-7b3b-4ad0-b5d0-594ac240396c",
-        "c23c8983-a729-4bcf-9a3d-61af1d843c51",
-        "19531471-74f2-485e-9663-f1a700fb9a8f"
+        "8ee73a9d-057a-4e5c-a828-f1606dd4e959"
       ],
       "settings": {
         "title": "CUSTOM CONTENT",
@@ -129,7 +79,7 @@
         "sub_title": "Popular this week",
         "collection": "frontpage",
         "products_to_show": 8,
-        "grid": 6,
+        "grid": 2,
         "show_view_all": true,
         "swipe_on_mobile": true,
         "image_ratio": "adapt",
@@ -472,7 +422,7 @@
             "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
             "image_alignment": "middle_center",
             "text_alignment": "middle_center",
-            "slider_heading_text": "heading",
+            "slider_heading_text": "Heading",
             "slider_sub_text": "sub text",
             "slider_button_text": "title name",
             "slider_button_link": ""
