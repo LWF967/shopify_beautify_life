@@ -180,17 +180,17 @@
               #Address{{ field }}
                 <li>
                   <a href="#Address{{ field }}" class="link">
-                    {%- if form.errors.translated_fields[field] contains 'first_name' -%}
+                    {%- if form.errors.translated_fields[field] contains 'FirstNameNew' -%}
                       {{ 'customer.addresses.first_name' | t }}
-                    {%- elsif form.errors.translated_fields[field] contains 'last_name'-%}
+                    {%- elsif form.errors.translated_fields[field] contains 'LastNameNew'-%}
                       {{ 'customer.addresses.last_name' | t }}
-                    {%- elsif form.errors.translated_fields[field] contains 'company'-%}
+                    {%- elsif form.errors.translated_fields[field] contains 'CountryNew'-%}
                       {{ customer_address.country }}123
-                    {%- elsif form.errors.translated_fields[field] contains 'city'-%}
+                    {%- elsif form.errors.translated_fields[field] contains 'CityNew'-%}
                       {{ 'customer.addresses.city' | t }}
-                    {%- elsif form.errors.translated_fields[field] contains 'zip'-%}
+                    {%- elsif form.errors.translated_fields[field] contains 'ZipNew'-%}
                       {{ 'customer.addresses.zip' | t }}
-                    {%- elsif form.errors.translated_fields[field] contains 'phone'-%}
+                    {%- elsif form.errors.translated_fields[field] contains 'PhoneNew'-%}
                       {{ 'customer.addresses.phone' | t }}
                     {%- else -%}
                       {{ form.errors.translated_fields[field] }}312
