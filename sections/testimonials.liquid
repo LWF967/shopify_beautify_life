@@ -24,7 +24,7 @@
   <div class="page-width">
     <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %} my_testimonials_title my_clear_margin my_section_margin_default">
       <h2 class="title my_font_size_heading_default my_font_weight_default">
-        {{ section.settings.title | upcase }}
+        {{ section.settings.title | escape }}
       </h2>
       {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
       <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
