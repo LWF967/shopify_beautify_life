@@ -168,7 +168,7 @@
           <div class="field">
             <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}" >
             <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
-            <!-- <label class="field__label" for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }} <span aria-hidden="true">*</span></label> -->
+            <label class="field__label" for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }} <span aria-hidden="true">*</span></label>
           </div>
           <div class="field">
             <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="{{ 'customer.addresses.last_name' | t }}">
@@ -238,42 +238,6 @@
             <button class="add_addresses_reset" type="reset">{{ 'customer.addresses.cancel' | t }}</button>
             <hr class="my_address_hr">
           </div>
-                
-        {% comment %}
-
-            <div class="form__message" role="alert">
-              <h3 class="form-status caption-large" tabindex="-1" autofocus>
-                {% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}
-              </h3>
-            </div>
-            <ul class="form-status-list caption-large">
-              {%- for field in form.errors -%}
-                <li>
-                  <a href="#CommentForm-{{ field }}" class="link">
-                    {%- if form.errors.translated_fields[field] contains 'author' -%}
-                      {{ 'blogs.article.name' | t }}
-                    {%- elsif form.errors.translated_fields[field] contains 'body'-%}
-                     {{ 'blogs.article.message' | t }}
-                    {%- else -%}
-                      {{ form.errors.translated_fields[field] }}
-                    {%- endif -%}
-                    {{ form.errors.messages[field] }}
-                  </a>
-                </li>
-              {%- endfor -%}
-            </ul>
-        {% endcomment %}
-          {%- if form.posted_successfully? -%}
-                {% comment %}
-            <div class="form-status-list form__message" role="status">
-              <h3 class="form-status" tabindex="-1" autofocus>{% render 'icon-success' %} {{ post_message | t }}</h3>
-            </div>
-                {% endcomment %}
-			<div>success</div>
-          {%- else -%}
-			<div>wrong</div>
-          {%- endif -%}
-        
         {%- endform -%}
       </div>
     </div>
