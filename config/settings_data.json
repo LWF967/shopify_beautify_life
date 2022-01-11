@@ -276,8 +276,8 @@
           "foot_top_background_style": "background_color",
           "heading_color": "#000000",
           "text_color": "#000000",
-          "link_color": "#f00",
-          "hover_link_color": "#66fff0",
+          "link_color": "#ff0000",
+          "hover_link_color": "#9ae1da",
           "newsletter_input_color": "#868686",
           "newsletter_border_color": "#000000",
           "newsletter_button_color": "#000000",
@@ -297,8 +297,7 @@
             "type": "payment",
             "settings": {
               "source_img": "SVG",
-              "trust_image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-              "svg_height": 20,
+              "svg_height": 29,
               "svg_list": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa"
             }
           }
