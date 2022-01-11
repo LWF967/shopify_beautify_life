@@ -1051,7 +1051,7 @@
       "settings": {
         "heading": "Blog posts",
         "head_text": "The most exciting news",
-        "blog": "",
+        "blog": "新闻",
         "post_limit": 3,
         "show_image": true,
         "show_title": true,
