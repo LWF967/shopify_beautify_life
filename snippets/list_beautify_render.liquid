@@ -463,7 +463,7 @@
     {%- endif -%}
   }
   
-  /*   定义轮播点 */
+  
   {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
     background: #4e4e4e;
@@ -537,7 +537,7 @@
        var swiperBeautifyWrapperLoop = swiperBeautifyContainer.getElementsByClassName('swiper-wrapper')[0].dataset.loop;
        (swiperBeautifyWrapperLoop == "false") ? swiperBeautifyWrapperLoop=false : swiperBeautifyWrapperLoop=true;
       var swiperListBeautify = new Swiper ('.swiper-container-{{section.id}}', {
-       direction: 'horizontal', // 垂直切换选项  horizontal  vertical
+       direction: 'horizontal', 
        loop: swiperBeautifyWrapperLoop,
 
        pagination: {
@@ -552,19 +552,19 @@
        spaceBetween: 40,
 
        breakpoints: {
-         320: {  //当屏幕宽度大于等于320
+         320: {  
            slidesPerGroup :  2,
           loopedSlides: 2,
           slidesPerView:2,
            spaceBetween: 15
          },
-         768: {  //当屏幕宽度大于等于768
+         768: {  
           slidesPerGroup : 3,
           loopedSlides: 3,
           slidesPerView:3,
            spaceBetween: 15
          },
-         1024: {  //当屏幕宽度大于等于1024
+         1024: { 
 
           slidesPerGroup :  {{grid}},
           loopedSlides: {{grid}},
@@ -600,19 +600,19 @@
        spaceBetween: 40,
 
       breakpoints: {
-           320: {  //当屏幕宽度大于等于320 定于滚动组与显示组
+           320: {  
              slidesPerGroup : 2,
              loopedSlides: 2,
              slidesPerView:2,
              spaceBetween: 15
            },
-           768: {  //当屏幕宽度大于等于768 定于滚动组与显示组
+           768: {  
              slidesPerGroup : 3,
              loopedSlides: 3,
              slidesPerView:3,
              spaceBetween: 15
            },
-           1024: {  //当屏幕宽度大于等于1024 定于滚动组与显示组
+           1024: { 
              slidesPerGroup : swiperBeautifyWrapperGrid,
         loopedSlides: swiperBeautifyWrapperGrid,
              slidesPerView:swiperBeautifyWrapperGrid,
