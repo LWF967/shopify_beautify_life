@@ -33,7 +33,7 @@
     "color_page_borders_and_lines": "#ff0000",
     "color_page_background": "#f1f1f1",
     "colors_page_stickiness": "#d75656",
-    "color_icon": "#b300ff",
+    "color_icon": "#000000",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
     "page_width": "1600",
@@ -199,14 +199,14 @@
         "settings": {
           "height": 20,
           "fontsize": 14,
-          "cl": "#b24e4e",
+          "cl": "#000000",
           "cl_a": "#dd0000",
-          "cl_cr": "#147f24",
-          "bg": "#f2f2f2",
+          "cl_cr": "#000000",
+          "bg": "#ffffff",
           "color_scheme": "bg",
           "bg_op": 100,
-          "show_border": false,
-          "bd_cl": "#e43333"
+          "show_border": true,
+          "bd_cl": "#e6e0e0"
         }
       },
       "footer-top": {
