@@ -1011,6 +1011,60 @@
         "blog_page_beautify_margin_top": "",
         "blog_page_beautify_margin_bottom": ""
       }
+    },
+    "1641880743a79ed888": {
+      "type": "slideshow",
+      "blocks": {
+        "1641880743e54922a3-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mofa_8fb17415-777c-43c0-90ec-8e56a5fa5bf1.jpg",
+            "heading": "Image slide",
+            "heading_size": "medium",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "1641880743e54922a3-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mofa_7f57b272-963b-4c40-9640-7026367c6919.jpg",
+            "heading": "Image slide",
+            "heading_size": "medium",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1641880743e54922a3-0",
+        "1641880743e54922a3-1"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
     }
   },
   "order": [
@@ -1032,6 +1086,7 @@
     "1638771575eb761fd8",
     "163817972763d6e808",
     "1636093631994b741b",
-    "16416049952e3f8604"
+    "16416049952e3f8604",
+    "1641880743a79ed888"
   ]
 }
