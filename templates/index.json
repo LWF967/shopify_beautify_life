@@ -807,7 +807,7 @@
       ],
       "settings": {
         "newsletter_bk_color": "#e6e0e0",
-        "color_scheme": "gradient",
+        "color_scheme": "newsletter_bk_color",
         "full_width": true,
         "button_design": "3",
         "newsletter_input_color": "#ababab",
