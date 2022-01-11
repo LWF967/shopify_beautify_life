@@ -185,7 +185,7 @@
                       {{ 'customer.addresses.last_name' | t }}
                     {%- elsif form.errors.translated_fields[field] contains 'CountryNew'-%}
                       {{ customer_address.country }}123
-                    {%- elsif form.errors.translated_fields[field] contains 'coountry'-%}
+                    {%- elsif form.errors.translated_fields[field] contains field -%}
                       {{ 'customer.addresses.city' | t }}312213213213
                     {%- elsif form.errors.translated_fields[field] contains 'ZipNew'-%}
                       {{ 'customer.addresses.zip' | t }}
