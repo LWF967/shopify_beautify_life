@@ -164,9 +164,9 @@
         {{ 'customer.addresses.add_new' | t }}
     </a>
       <div id="AddAddress" class="my_addAddress_from">
+        <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
-                <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
-
+        
         
         {%- if form.errors -%}
             <div class="form__message" role="alert">
