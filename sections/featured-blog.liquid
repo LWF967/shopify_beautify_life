@@ -54,7 +54,7 @@
  {%-if section.settings.color_scheme =="featured_blog_bk_color"-%} background-color:{{section.settings.featured_blog_bk_color}}{%-else-%} background-color:{{settings.color_page_background}}{%-endif-%}">
   <div class="page-width">
     <div class="title-wrapper-with-link{% if section.settings.heading == blank %} title-wrapper-with-link--no-heading{% endif %} title-wrapper--self-padded-tablet-down my_featured_blog_title my_clear_margin my_section_margin_default">
-      <h2 class="blog__title my_font_weight_default my_between_title_and_text_margin my_font_size_heading_default">{{ section.settings.heading | upcase }}</h2>
+      <h2 class="blog__title my_font_weight_default my_between_title_and_text_margin my_font_size_heading_default">{{ section.settings.heading | escape  }}</h2>
       <p class="my_font_size_content_default my_clear_margin" style="color:var(--font-sub-text-color);"> {{section.settings.head_text |escape }}</p>
 
       {%- if section.settings.blog != blank and section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
