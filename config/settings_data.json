@@ -286,7 +286,7 @@
           "ed055013-d46a-4d42-a26d-8ab6ad2e9c61": {
             "type": "copyright",
             "settings": {
-              "copyrights_text": "© 2021, giraffly2 Powered by Shopify <a href=\"#\">this is a link<\/a>"
+              "copyrights_text": "© 2021, giraffly2 Powered by Shopify <a href=\"#\">This is a link<\/a>"
             }
           },
           "46b8ba71-433b-4b1d-af31-675da9061dac": {
@@ -307,9 +307,9 @@
           "copyrights_layouts": "Two columns",
           "background_color": "#ffffff",
           "foot_bottom_background_style": "background_color",
-          "text_color": "#ffffff",
+          "text_color": "#000000",
           "link_color": "#ff0000",
-          "link_hover_color": "#a700ff"
+          "link_hover_color": "#9ae1da"
         }
       }
     },
