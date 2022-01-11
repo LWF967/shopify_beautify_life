@@ -174,8 +174,9 @@
         </div>
         <ul class="form-status-list caption-large">
           {%- for field in form.errors -%}
+          {{ form.errors.size }}
           <li>
-            <a href="#CommentForm-{{ field }}" class="link">
+            <a href="#Address{{ field }}" class="link">
               {%- if form.errors.translated_fields[field] contains 'author' -%}
               {{ 'blogs.article.name' | t }}
               {%- elsif form.errors.translated_fields[field] contains 'body'-%}
