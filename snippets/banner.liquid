@@ -1,21 +1,16 @@
   <div class="swiper-container js_carousel">
                 <div class="swiper-wrapper js_carousel">
-                  
                     <div class="swiper-slide 1">
-                  
                      <a href="{{ block.settings.url1 }}" target="{{block.settings.open_link}}" class="lz_op_ef w__100 {% if block.settings.url1 == blank %} pe_none{% endif %}">
 
                     <div class="banner-beautify-imgbox">
                     {%- if image1 != blank -%}  {% assign img_url1 = image1 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                          <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url1  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image1.alt}}" style="max-width:{{image1.width}}px;object-fit: cover; ">
-
                       {%- else -%}
-
                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                     {%- endif -%}
                     </div>
                       <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top1}}</div>
-
                      </a>   
                   
                   	</div>
@@ -26,16 +21,13 @@
                     <div class="banner-beautify-imgbox">
                     {%- if image2 != blank -%}  {% assign img_url2 = image2 | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
                          <img src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E" data-src="{{ img_url2  }}" data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" data-sizes="auto" class="lazyload lz_op_ef w__100" alt="{{image1.alt}}" style="max-width:{{image1.width}}px;object-fit: cover; ">
-
                       {%- else -%}
 
                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                     {%- endif -%}
                     </div>
                       <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top2}}</div>
-
                      </a> 
-                  
                   	</div>
                   
                     <div class="swiper-slide 3">
@@ -50,9 +42,7 @@
                     {%- endif -%}
                     </div>
                       <div class="nt_promotion_html pa t__0 l__0 tc pe_none" style="font-size:{{section.settings.font_top}}px; font-weight:600; color:{{section.settings.color_top}}">{{block.settings.header_top3}}</div>
-
                      </a> 
-                  	
                   	</div>
                 </div>
                 <div class=" swiper-pagination-{{section.id}}   {% unless section.settings.show_page_Dot %} opa-0{% else %}  opa-1{% endunless %}" ></div>
