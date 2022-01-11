@@ -58,12 +58,12 @@
         "show_view_all": true,
         "show_page_Dot": true,
         "page_dot_style": "style_1",
-        "page_dot_color": "dark",
+        "page_dot_color": "light",
         "show_button": true,
         "show_button_visible": "always",
         "show_button_style": "style1",
         "show_button_color": "white",
-        "show_button_hover_color": "",
+        "show_button_hover_color": "#9ae1da",
         "collection_list_beautify_margin_top": "",
         "collection_list_beautify_margin_bottom": ""
       }
