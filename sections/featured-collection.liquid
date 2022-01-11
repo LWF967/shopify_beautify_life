@@ -21,9 +21,11 @@
   <div class="title-wrapper-with-link{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}{% if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 %} title-wrapper--self-padded-tablet-down{% endif %} my_clear_margin my_featured_collection_title my_section_margin_default my_featured_collection_mobile_align">
     <h2 class="title text-center{% if section.settings.title == blank %} title--no-heading{% endif %} my_font_weight_default my_between_title_and_text_margin my_font_size_heading_default">{{ section.settings.title | escape }}</h2>
     <p class="text-center my_font_size_content_default my_clear_margin" style="color:var(--font-sub-text-color);"> {{ section.settings.sub_title | escape }} </p>
+    {% comment %}
     {%- if section.settings.show_view_all and section.settings.swipe_on_mobile and more_in_collection -%}
       <a href="{{ section.settings.collection.url }}" class="link underlined-link large-up-hide">{{ 'sections.featured_collection.view_all' | t }}</a>
     {%- endif -%}
+    {% endcomment %}
   </div>
 
   <slider-component class="slider-mobile-gutter">
@@ -82,19 +84,6 @@
         <span class="slider-counter--total">{{ products_to_display }}</span>
       </div>
       <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
-    </div>
-    {%- endif -%}
-    
-    {%- if section.settings.collection.all_products_count > 2 and section.settings.swipe_on_mobile and section.settings.products_to_show > 2 -%}
-    <div class="slider-buttons no-js-hidden{% if section.settings.collection.all_products_count < 4 %} medium-hide{% endif %}{% if section.settings.collection.all_products_count < 3 %} small-hide{% endif %}">
-      <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
-      <div class="slider-counter caption">
-        <span class="slider-counter--current">1</span>
-        <span aria-hidden="true"> / </span>
-        <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
-        <span class="slider-counter--total">{{ products_to_display }}</span>
-      </div>
-      <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'general.slider.next_slide' | t }}">{% render 'icon-caret' %}</button>
     </div>
     {%- endif -%}
   </slider-component>
