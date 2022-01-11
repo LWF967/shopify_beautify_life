@@ -862,7 +862,7 @@
         "title": "Collections",
         "image_ratio": "square",
         "swipe_on_mobile": false,
-        "image_padding": false,
+        "image_padding": true,
         "show_view_all": false,
         "collection_list_margin_top": "",
         "collection_list_margin_bottom": ""
