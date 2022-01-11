@@ -426,7 +426,7 @@
         "16382544719fc01cce-2": {
           "type": "button",
           "settings": {
-            "button_text": "VIEW ALL",
+            "button_text": "View all",
             "button_link": "shopify:\/\/collections\/all"
           }
         }
@@ -464,7 +464,7 @@
         "1638344641deab7755-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "VIEW ALL",
+            "button_label_1": "View all",
             "button_link_1": "",
             "button_style_secondary_1": false
           }
