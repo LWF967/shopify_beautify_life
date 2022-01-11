@@ -8,7 +8,16 @@
 <style>
   .grid__item.my_collection_list_lp {
     padding-left: 0;
+    padding-bottom: 3rem;
   }
+  
+  @media screen and (max-width: 750px) {
+  .grid__item.my_collection_list_lp {
+    padding-left: 0;
+    padding-bottom: 1.5rem;
+  }
+}
+
 </style>
 
 <div class="collection-list-wrapper page-width{% if section.settings.swipe_on_mobile == true %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}"     
