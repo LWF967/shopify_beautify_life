@@ -177,6 +177,7 @@
             <ul class="form-status-list caption-large">
               {%- for field in form.errors -%}
                 <li>
+                  {{ field }}
                   <a href="#Address{{ field }}" class="link">
                     {%- if form.errors.translated_fields[field] contains 'FirstNameNew' -%}
                       {{ 'customer.addresses.first_name' | t }}
@@ -206,11 +207,7 @@
         
         
           <div class="field">
-            <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}"
-                   {% if form.errors contains 'first_name' %}
-                    aria-invalid="true"
-                    aria-describedby="CommentForm-author-error"
-                  {% endif %}>
+            <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}" >
             <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
             <!-- <label class="field__label" for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }} <span aria-hidden="true">*</span></label> -->
           </div>
