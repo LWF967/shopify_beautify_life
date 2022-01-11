@@ -5,6 +5,12 @@
 
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .grid__item.my_collection_list_lp {
+    padding-left: 0;
+  }
+</style>
+
 <div class="collection-list-wrapper page-width{% if section.settings.swipe_on_mobile == true %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %}"     
      style="{%- if section.settings.collection_list_margin_top != blank -%}margin-top: {{ section.settings.collection_list_margin_top }}px; {%- endif -%}{%- if section.settings.collection_list_margin_bottom != blank -%}margin-bottom:{{ section.settings.collection_list_margin_bottom }}px;{%- endif -%}"
      >
@@ -30,7 +36,7 @@
       -%}
 
       {%- for block in section.blocks -%}
-        <li class="collection-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}" {{ block.shopify_attributes }}>
+        <li class="collection-list__item grid__item my_collection_list_lp{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}" {{ block.shopify_attributes }}>
           <a{% if block.settings.collection != blank and block.settings.collection.all_products_count > 0 %} href="{{ block.settings.collection.url }}"{% endif %}
             class="card animate-arrow link{% if block.settings.collection.featured_image != blank %} card--media{% else %}{% if section.settings.image_ratio != 'adapt' %} card--stretch{% endif %}{% endif %}{% unless section.settings.image_padding %} card--light-border{% endunless %}"
           >
