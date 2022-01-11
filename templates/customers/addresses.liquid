@@ -166,6 +166,37 @@
       <div id="AddAddress" class="my_addAddress_from">
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
+        
+        
+        {%- if form.errors -%}
+            <div class="form__message" role="alert">
+              <h3 class="form-status caption-large" tabindex="-1" autofocus>
+                {% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}
+              </h3>
+            </div>
+            <ul class="form-status-list caption-large">
+              {%- for field in form.errors -%}
+                <li>
+                  <a href="#CommentForm-{{ field }}" class="link">
+                    {%- if form.errors.translated_fields[field] contains 'author' -%}
+                      {{ 'blogs.article.name' | t }}1111
+                    {%- elsif form.errors.translated_fields[field] contains 'body'-%}
+                     {{ 'blogs.article.message' | t }}2222
+                    {%- else -%}
+                      {{ form.errors.translated_fields[field] }}
+                    {%- endif -%}
+                    {{ form.errors.messages[field] }}3333
+                  </a>
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- elsif form.posted_successfully? -%}
+            <div class="form-status-list form__message" role="status">
+              <h3 class="form-status" tabindex="-1" autofocus>{% render 'icon-success' %} {{ post_message | t }}</h3>
+            </div>
+          {%- endif -%}
+        
+        
           <div class="field">
             <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
             <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
