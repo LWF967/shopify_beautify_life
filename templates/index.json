@@ -668,11 +668,11 @@
         "title": "testimonials",
         "swipe": true,
         "page_dot_style": "style_1",
-        "page_dot_color": "dark",
+        "page_dot_color": "light",
         "image_width": "full",
         "image_ratio": "adapt",
         "column_alignment": "left",
-        "button_label": "Button label",
+        "button_label": "Button",
         "button_link": "",
         "testimonials_margin_top": "",
         "testimonials_margin_bottom": ""
