@@ -216,7 +216,7 @@
                     {% include 'image-style', image: img, height: 600, wrapper_id: img_wrapper_id, img_id: img_id %}
 
                     <div class="blog-card__image-wrapper blog-card__image-wrapper--{{ block.settings.image_size }}">
-                        <a href="{{ blog.url | default: '#' }}" class="blog-card__link">
+                        <a href="{{ blog.url | default: '#' }}" class="blog-card__link" style="display: inline-block;">
                             <img class="blog-card__overlay box ratio-container js lazyload"
                                  data-bgset="{% include 'bgset', image: img %}" data-sizes="auto" data-parent-fit="cover"
                                  data-src="{{ img | img_url: '1024x1024' }}"
@@ -233,7 +233,7 @@
                     </div>
                     {%- else -%}
                     <div class="blog-card__image-wrapper blog-card__image-wrapper--{{ block.settings.image_size }}">
-                        <a href="{{ blog.url | default: '#' }}" class="blog-card__link">
+                        <a href="{{ blog.url | default: '#' }}" class="blog-card__link" style="display: inline-block;">
                             {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                         </a>
                     </div>
