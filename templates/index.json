@@ -833,7 +833,7 @@
         "show_author": false,
         "blog_soft_background": "#f3f3f3",
         "color_scheme": "gradient",
-        "show_view_all": true,
+        "show_view_all": false,
         "blog_page_beautify_margin_top": "",
         "blog_page_beautify_margin_bottom": ""
       }
