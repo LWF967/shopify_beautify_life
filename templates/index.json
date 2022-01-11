@@ -961,10 +961,10 @@
         "1638179727dc4b7d9c-2"
       ],
       "settings": {
-        "newsletter_bk_color": "#f3f3f3",
+        "newsletter_bk_color": "#e6e0e0",
         "color_scheme": "gradient",
         "full_width": true,
-        "button_design": "1",
+        "button_design": "3",
         "newsletter_input_color": "#ababab",
         "newsletter_border_color": "#000000",
         "newsletter_button_color": "#000000",
