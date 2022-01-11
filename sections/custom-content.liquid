@@ -218,11 +218,12 @@
                     <div class="blog-card__image-wrapper blog-card__image-wrapper--{{ block.settings.image_size }}">
                         <a href="{{ blog.url | default: '#' }}" class="blog-card__link">
                             <img class="blog-card__overlay box ratio-container js lazyload"
-                                data-bgset="{% include 'bgset', image: img %}" data-sizes="auto" data-parent-fit="cover"
+                                 data-bgset="{% include 'bgset', image: img %}" data-sizes="auto" data-parent-fit="cover"
                                  data-src="{{ img | img_url: '1024x1024' }}"
-                                data-image-loading-animation>
+                                 alt="{{ img.alt }}"
+                                 data-image-loading-animation>
                             <noscript>
-                                <img class="blog-card__overlay lazyload" data-src="{{ img | img_url: '1024x1024' }}">
+                                <img class="blog-card__overlay lazyload" data-src="{{ img | img_url: '1024x1024' }}" alt="{{ img.alt }}">
                             </noscript>
 
                             <div class="blog-card__title-wrapper my_blog-card__title-wrapper">
