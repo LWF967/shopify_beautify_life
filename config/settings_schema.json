@@ -209,13 +209,13 @@
           }
         ],
         "default": "color_page_background_color",
-        "label": "Background options"
+        "label": "Header background options"
       },
       {
         "type": "range",
         "id": "header_background_opacity",
         "default": 100,
-        "label": "Background opacity",
+        "label": "Header background opacity",
         "min": 0,
         "max": 100,
         "step": 1
@@ -224,7 +224,7 @@
         "type": "color",
         "id": "header_icon_and_text_color",
         "default": "#6B6B6B",
-        "label": "Header icon & header text"
+        "label": "Header icon & text"
       },
       {
         "type": "header",
@@ -250,13 +250,13 @@
           }
         ],
         "default": "gradients",
-        "label": "Background options"
+        "label": "Header background options"
       },
       {
         "type": "range",
         "id": "header_sticky_background_opacity",
         "default": 100,
-        "label": "Background opacity",
+        "label": "Header sticky background opacity",
         "min": 0,
         "max": 100,
         "step": 1
@@ -265,7 +265,7 @@
         "type": "color",
         "id": "header_sticky_icon_and_text_color",
         "default": "#6B6B6B",
-        "label": "Header sticky icon & header sticky text"
+        "label": "Header sticky icon & sticky text"
       },
       {
         "type": "header",
