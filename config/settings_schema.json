@@ -193,7 +193,7 @@
         "type": "color",
         "id": "header_background_color",
         "default": "#FFFFFF",
-        "label": "Background"
+        "label": "Header background"
       },
       {
         "type": "select",
@@ -224,7 +224,7 @@
         "type": "color",
         "id": "header_icon_and_text_color",
         "default": "#6B6B6B",
-        "label": "Icon & text"
+        "label": "Header icon & header text"
       },
       {
         "type": "header",
@@ -234,7 +234,7 @@
         "type": "color",
         "id": "header_sticky_background_color",
         "default": "#FFFFFF",
-        "label": "Background"
+        "label": "Header sticky background"
       },
       {
         "type": "select",
@@ -265,7 +265,7 @@
         "type": "color",
         "id": "header_sticky_icon_and_text_color",
         "default": "#6B6B6B",
-        "label": "Icon & text"
+        "label": "Header sticky icon & header sticky text"
       },
       {
         "type": "header",
@@ -275,13 +275,13 @@
         "type": "color",
         "id": "header_count_color",
         "default": "#99CCFF",
-        "label": "Background"
+        "label": "Header count"
       },
       {
         "type": "color",
         "id": "header_count_text_color",
         "default": "#FFFFFF",
-        "label": "Text"
+        "label": "Header count text"
       }
     ]
   },
