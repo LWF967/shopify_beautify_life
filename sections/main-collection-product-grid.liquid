@@ -29,27 +29,27 @@
 .active-facets__button-remove:hover {color:{{settings.colors_heading_warn_text}};text-decoration-thickness:0.2rem !important;text-decoration: underline}
 {%-endstyle-%}
 <style>
-  .my_product_grid_ul {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    .my_product_grid_ul {
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
   }
 
-  .my_product_grid_ul li {
-    padding: 0 15px 5rem;
+    .my_product_grid_ul li {
+      padding: 0 15px 5rem;
   }
 
-  .shopify-payment-button__button--hidden {
-    display: none;
+    .shopify-payment-button__button--hidden {
+      display: none;
   }
 
-  .shopify-payment-button__button--unbranded {
-    background-color: var(--color-button);
-    box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
-    color: rgb(var(--color-button-text));
-    font-size: 1.4rem;
-    line-height: 1.2;
-    letter-spacing: 0.07rem;
-  }
+    .shopify-payment-button__button--unbranded {
+      background-color: var(--color-button);
+      box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
+      color: rgb(var(--color-button-text));
+      font-size: 1.4rem;
+      line-height: 1.2;
+      letter-spacing: 0.07rem;
+    }
 
   @media screen and (max-width: 750px) {
     .my_collection_filters_margin {
@@ -740,12 +740,10 @@
   let filter_and_sort = document.getElementsByClassName('mobile-facets__open-wrapper focus-offset y-center')[0]; 
   filter_and_sort.onclick = function() {
     if(menuopen.length > 0) {
-      //       console.log(1);
     } else {
       main_promobar.style.zIndex = 2;
       main_header.style.zIndex = 2;
       main_top_bar.style.zIndex = 3;
-      //       console.log(2);
     }
   }
   
