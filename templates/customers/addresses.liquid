@@ -207,7 +207,7 @@
         
           <div class="field">
             <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}"
-                   {% if form.errors contains 'FirstNameNew' %}
+                   {% if form.errors contains 'first_name' %}
                     aria-invalid="true"
                     aria-describedby="CommentForm-author-error"
                   {% endif %}>
