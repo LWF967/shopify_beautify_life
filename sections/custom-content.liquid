@@ -27,6 +27,9 @@
   .my_blog-card__title-wrapper{
     margin-top: 15px;
   }
+  .grid-view-item__title{
+    font-size: 16px;
+  }
 </style>
 
 <div class="page-width spaced-section"
@@ -129,10 +132,12 @@
                             {%- if block.settings.cover_image.width >= 2000 -%}{{ block.settings.cover_image | img_url: '2000x' }} 2000w,{%- endif -%}
                             {%- if block.settings.cover_image.width >= 3000 -%}{{ block.settings.cover_image | img_url: '3000x' }} 3000w,{%- endif -%}
                             {%- if block.settings.cover_image.width >= 3840 -%}{{ block.settings.cover_image | img_url: '3840x' }} 3840w,{%- endif -%}"
-                                src="{{ block.settings.cover_image | img_url: '1920x' }}"
+                                data-src="{{ block.settings.cover_image | img_url: '1920x' }}"
                                 sizes="{% if block.settings.full_width %}100vw{% else %}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw{% endif %}"
                                 alt="{{ 'sections.video.load_video' | t: description: block.settings.description | escape }}"
-                                loading="lazy" width="{{ block.settings.cover_image.width }}"
+                                loading="lazy"
+                                class="lazyload"
+                                width="{{ block.settings.cover_image.width }}"
                                 height="{{ block.settings.cover_image.height }}">
                             {%- else -%}
                             {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
@@ -279,12 +284,12 @@
                                     {%- if img_url.width >= 1000 -%}{{ img_url | img_url: '1000x' }} 1000w,{%- endif -%}
                                     {%- if img_url.width >= 1500 -%}{{ img_url | img_url: '1500x' }} 1500w,{%- endif -%}
                                     {%- if img_url.width >= 3000 -%}{{ img_url | img_url: '3000x' }} 3000w{%- endif -%}"
-                                    src="{{ article.image | img_url: '1500x' }}" sizes="
+                                    data-src="{{ article.image | img_url: '1500x' }}" sizes="
                                     (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
                                     (min-width: 750px) {% if section.blocks.size > 1 %}calc((100vw - 10rem) / 2){% else %}calc(100vw - 10rem){% endif %},
                                     calc(100vw - 3rem)" alt="{{ block.settings.collection.title | escape }}"
                                     height="{{ img_url.height }}" width="{{ img_url.width }}" loading="lazy"
-                                    class="motion-reduce">
+                                    class="lazyload motion-reduce">
                             </div>
                         </div>
                         <noscript>
@@ -310,10 +315,10 @@
                                       {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
                                       {%- if article.image.src.width >= 1000 -%}{{ article.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
                                       {%- if article.image.src.width >= 1500 -%}{{ article.image.src | img_url: '1500x' }} 1500w,{%- endif -%}"
-                                    src="{{ article.image.src | img_url: '533x' }}"
+                                    data-src="{{ article.image.src | img_url: '533x' }}"
                                     sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
                                     alt="{{ article.image.src.alt | escape }}" width="{{ article.image.width }}"
-                                    height="{{ article.image.height }}" loading="lazy" class="motion-reduce">
+                                    height="{{ article.image.height }}" loading="lazy" class="lazyload motion-reduce">
                             </div>
                         </div>
                         {%- endif -%}
