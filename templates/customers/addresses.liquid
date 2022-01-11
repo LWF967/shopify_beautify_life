@@ -177,6 +177,7 @@
             <ul class="form-status-list caption-large">
               {%- for field in form.errors -%}
               {{ form.errors.translated_fields[field] }}
+              #Address{{ field }}
                 <li>
                   <a href="#Address{{ field }}" class="link">
                     {%- if form.errors.translated_fields[field] contains 'first_name' -%}
