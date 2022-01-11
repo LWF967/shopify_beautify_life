@@ -129,7 +129,7 @@
         "sub_title": "Popular this week",
         "collection": "frontpage",
         "products_to_show": 8,
-        "grid": 2,
+        "grid": 6,
         "show_view_all": true,
         "swipe_on_mobile": true,
         "image_ratio": "adapt",
