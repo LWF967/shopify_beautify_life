@@ -47,7 +47,7 @@
 
     <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
       {%- if section.settings.button_label != blank -%}
-      <a class="button button--primary"{% if section.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
+      <a class="button button--primary my_font_weight_default my_button_font_size_default"{% if section.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
         {{ section.settings.button_label | escape }}
       </a>
       {%- endif-%}
