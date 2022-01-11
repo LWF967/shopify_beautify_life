@@ -211,7 +211,7 @@
 
 @media screen and (min-width: 750px) {
   .card__media-spacer {
-    padding: 3rem 1.5rem 0;
+    padding: 0 1.5rem 0;
   }
 }
 
