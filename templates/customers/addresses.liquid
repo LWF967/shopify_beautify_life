@@ -165,43 +165,13 @@
       <div id="AddAddress" class="my_addAddress_from">
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
-        
-        {%- if form.errors -%}
-        <div class="form__message" role="alert">
-          <h3 class="form-status caption-large" tabindex="-1" autofocus>
-            {% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}
-          </h3>
-        </div>
-        <ul class="form-status-list caption-large">
-          {%- for field in form.errors -%}
-          <li>
-            <a href="#Address{{ field }}" class="link">
-              {%- if form.errors.translated_fields[field] contains 'author' -%}
-              {{ 'blogs.article.name' | t }}1
-              {%- elsif form.errors.translated_fields[field] contains 'body'-%}
-              {{ 'blogs.article.message' | t }}2
-              {%- else -%}
-              {{ form.errors.translated_fields[field] }}3
-              {%- endif -%}
-              {{ form.errors.messages[field] }}4
-            </a>
-          </li>
-          {%- endfor -%}
-        </ul>
-        {%- elsif form.posted_successfully? -%}
-        <div class="form-status-list form__message" role="status">
-          <h3 class="form-status" tabindex="-1" autofocus>{% render 'icon-success' %} {{ post_message | t }}</h3>
-        </div>
-        {%- endif -%}
-        
-        
           <div class="field">
             <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}" >
-            <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }} <span aria-hidden="true">*</span></label>
+            <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
           </div>
           <div class="field">
             <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="{{ 'customer.addresses.last_name' | t }}">
-            <label for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }} <span aria-hidden="true">*</span></label>
+            <label for="AddressLastNameNew">{{ 'customer.addresses.last_name' | t }}</label>
           </div>
           <div class="field">
             <input type="text" id="AddressCompanyNew" name="address[company]" value="{{ form.company }}" autocomplete="organization" placeholder="{{ 'customer.addresses.company' | t }}">
@@ -217,10 +187,10 @@
           </div>
           <div class="field">
             <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
-            <label for="AddressCityNew">{{ 'customer.addresses.city' | t }} <span aria-hidden="true">*</span></label>
+            <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
           </div>
           <div>
-            <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }} <span aria-hidden="true">*</span></label>
+            <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
             <div class="select">
               <select
                 id="AddressCountryNew"
@@ -252,11 +222,11 @@
           </div>
           <div class="field">
             <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
-            <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }} <span aria-hidden="true">*</span></label>
+            <label for="AddressZipNew">{{ 'customer.addresses.zip' | t }}</label>
           </div>
           <div class="field">
             <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
-            <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }} <span aria-hidden="true">*</span></label>
+            <label for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
           </div>
           <div>
             {{ form.set_as_default_checkbox }}
