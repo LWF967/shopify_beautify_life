@@ -164,7 +164,7 @@
         {{ 'customer.addresses.add_new' | t }}
     </a>
       <div id="AddAddress" class="my_addAddress_from">
-        <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
+        <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}   {{ customer_address.country | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
         
         
@@ -186,7 +186,7 @@
                       {{ customer_address.country }}123
                     {%- elsif form.errors.translated_fields[field] contains 'coountry'-%}
                       {{ 'customer.addresses.city' | t }}312213213213
-                    {%- elsif form.errors.translated_fields[field] contains {{ customer_address.country }}-%}
+                    {%- elsif form.errors.translated_fields[field] contains 'ZipNew'-%}
                       {{ 'customer.addresses.zip' | t }}
                     {%- elsif form.errors.translated_fields[field] contains 'PhoneNew'-%}
                       {{ 'customer.addresses.phone' | t }}
