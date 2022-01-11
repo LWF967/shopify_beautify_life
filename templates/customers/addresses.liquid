@@ -165,7 +165,7 @@
       <div id="AddAddress" class="my_addAddress_from">
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
-        
+                
         {% comment %}
 
             <div class="form__message" role="alert">
@@ -202,7 +202,7 @@
           {%- endif -%}
         
         
-        
+        <div>
           <div class="field">
             <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}" >
             <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
@@ -276,6 +276,7 @@
             <button class="add_addresses_reset" type="reset">{{ 'customer.addresses.cancel' | t }}</button>
             <hr class="my_address_hr">
           </div>
+        </div>
         {%- endform -%}
       </div>
     </div>
