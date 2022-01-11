@@ -7,7 +7,12 @@
   .blog-swiper-pagination-page.swiper-pagination_{{ section.id }} .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: #000;
   }
-
+ @media screen and (max-width: 749px)
+  .blog__post.article {
+      width: calc(100% - 3rem);
+      padding-left: 0;
+      padding-right: 0;
+  }
 </style>
 
 {%- liquid
