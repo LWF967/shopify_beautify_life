@@ -389,9 +389,9 @@
                         {%- if block.settings.image != blank -%}
                           {%- assign image_size = block.settings.custom_logo_width | append: 'x' -%}
                            <img
-                               class="my_footer_img"
+                               class="lazyload my_footer_img"
                                srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
-                               src="{{ block.settings.image | img_url: '400x' }}"
+                               data-src="{{ block.settings.image | img_url: '400x' }}"
                                alt="{{ block.settings.image.alt | escape }}"
                                loading="lazy"
                                width="{{ block.settings.custom_logo_width }}"
@@ -601,23 +601,6 @@
                       {%- endfor -%}
                     </ul>
                   {%- endif -%}
-                {%- when 'image' -%}
-                  <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
-                    {%- if block.settings.image != blank -%}
-                      {%- assign image_size = block.settings.image_width | append: 'x' -%}
-                      <img
-                        srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
-                        src="{{ block.settings.image | img_url: '400x' }}"
-                        alt="{{ block.settings.image.alt | escape }}"
-                        loading="lazy"
-                        width=""
-                        height=""
-                        style="max-width: min(100%, {{ block.settings.image_width }}px);"
-                      >
-                    {%- else -%}
-                      {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
-                    {%- endif -%}
-                  </div>
                 {%- endcase -%}
             </div>
           {%- endfor -%}
