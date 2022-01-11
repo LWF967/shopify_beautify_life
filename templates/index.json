@@ -1045,6 +1045,26 @@
         "featured_blog_margin_top": "",
         "featured_blog_margin_bottom": ""
       }
+    },
+    "16418930590c0df00d": {
+      "type": "blog-page-post-beautify",
+      "settings": {
+        "heading": "Blog posts",
+        "head_text": "The most exciting news",
+        "image_ratio1": "ratio_nt",
+        "blog": "新闻",
+        "post_limit": 3,
+        "show_image": true,
+        "show_title": true,
+        "show_short_content": true,
+        "show_date": true,
+        "show_author": false,
+        "blog_soft_background": "#f3f3f3",
+        "color_scheme": "gradient",
+        "show_view_all": true,
+        "blog_page_beautify_margin_top": "",
+        "blog_page_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -1066,6 +1086,7 @@
     "1638771575eb761fd8",
     "163817972763d6e808",
     "1641880743a79ed888",
-    "1641892861217d17f3"
+    "1641892861217d17f3",
+    "16418930590c0df00d"
   ]
 }
