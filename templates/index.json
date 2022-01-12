@@ -274,7 +274,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
             "header_top": "Head",
-            "url": "",
+            "url": "shopify:\/\/collections",
             "color": "#ffffff",
             "w": 140,
             "h": 3,
