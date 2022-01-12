@@ -115,7 +115,7 @@
       "settings": {
         "title": "CUSTOM CONTENT",
         "custom_content_margin_top": "",
-        "custom_content_margin_bottom": "55"
+        "custom_content_margin_bottom": ""
       }
     },
     "1635832448db75c5e7": {
@@ -137,7 +137,7 @@
         "show_vendor": true,
         "show_rating": true,
         "featured_colection_margin_top": "",
-        "featured_colection_margin_bottom": ""
+        "featured_colection_margin_bottom": "25"
       }
     },
     "16396203697a4ba826": {
