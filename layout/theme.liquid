@@ -15,11 +15,11 @@
     <script src="{{ 'tool-libraries.js' | asset_url }}" defer="defer"></script>
 
     {%- if settings.favicon != blank -%}
-      <link rel="icon" type="image/png" rel="preload" href="{{ settings.favicon | img_url: '32x32' }}">
+      <link rel="icon" type="image/png"  href="{{ settings.favicon | img_url: '32x32' }}">
     {%- endif -%}
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
-      <link rel="preconnect" rel="preload" href="https://fonts.shopifycdn.com" crossorigin>
+      <link rel="preconnect"  href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
 
     <title>
