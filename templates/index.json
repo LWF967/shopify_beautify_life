@@ -115,7 +115,7 @@
       "settings": {
         "title": "CUSTOM CONTENT",
         "custom_content_margin_top": "",
-        "custom_content_margin_bottom": ""
+        "custom_content_margin_bottom": "55"
       }
     },
     "1635832448db75c5e7": {
@@ -541,6 +541,7 @@
     },
     "163454604067313d0f": {
       "type": "daily-deal-of-the-day",
+      "disabled": true,
       "settings": {
         "product": "lol6",
         "heading_text": "Daily Deal Of The Day",
