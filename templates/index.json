@@ -11,7 +11,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "Image with text overlay",
             "slider_sub_text": "Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.",
-            "slider_button_text": "Button",
+            "slider_button_text": "",
             "slider_button_link": ""
           }
         },
@@ -59,7 +59,7 @@
         "56d064e8-838e-4960-8f92-bec0c45e56d9"
       ],
       "settings": {
-        "se_height": "adapt_f",
+        "se_height": "adapt",
         "text_size": "medium",
         "loop": false,
         "auto_play": true,
