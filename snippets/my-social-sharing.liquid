@@ -249,7 +249,7 @@
           <a data-no-instant rel="noopener noreferrer nofollow" href="{{ settings[social_link] | escape }}" target="{{target}}" class="{{socials_icon[forloop.index0] | remove:'-play'}} cb {{class_tooltip}} my_a_padding">
             
             {% if socials_icon[forloop.index0] == "twitter" %}
-            twitter
+            <i style="display">twitter</i>
               {% if settings.social_twitter_link != blank %}
                 <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
