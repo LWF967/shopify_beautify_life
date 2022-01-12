@@ -33,6 +33,9 @@
     <a href="{% if block.settings.url == blank %}#{% else %}{{ block.settings.url }}{% endif %}" target="{{ block.settings.open_link }}" class=" flex_center {% if block.settings.url == blank %} pe_none{% endif %}"> 
       <img class="lazyload"
            loading="lazy"
+           data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+           data-sizes="auto"
+           alt="{{ image.alt }}"
            data-src="{{ image | img_url:'540x' }}">
       <div>
         {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
