@@ -54,7 +54,7 @@
   }
 </style>
 
-<ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="swiperlist">
+<ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile my_featured_product_beautify_ul" role="list">
   <div class="box" style="position:relative; width: 100%; margin: 15px auto 0; padding: 0 25px;">
     <div class="swiper my_swiper_{{ section.id }}">
       <div class="swiper-wrapper my_swiper_div">
@@ -62,16 +62,14 @@
         {%- if product.selected_or_first_available_variant.featured_media != null -%}
         {%- assign media = product.selected_or_first_available_variant.featured_media -%}
         <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %} swiper-slide" 
-            data-media-id="{{ section.id }}-{{ media.id }}"
-            role="swiper">
+            data-media-id="{{ section.id }}-{{ media.id }}">
           {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, width_value: 'inherit' %}
         </li>
         {%- endif -%}
         {%- for media in product.media -%}
         {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
         <li class="swiper-slide" 
-            data-media-id="{{ section.id }}-{{ media.id }}"
-            role="swiper">
+            data-media-id="{{ section.id }}-{{ media.id }}">
           {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
         </li>
         {%- endunless -%}
