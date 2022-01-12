@@ -87,7 +87,7 @@
         "1959a0a0-d475-4859-867c-834e6fce1148": {
           "type": "blog",
           "settings": {
-            "blog": "news",
+            "blog": "新闻",
             "cover_image": "shopify:\/\/shop_images\/small-business-interior.jpg",
             "image_size": "medium",
             "description": "<p>Description of your blog.<\/p>",
@@ -336,7 +336,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/iphone-forest-photo.jpg",
             "align_text": "center",
-            "img_link": "shopify:\/\/blogs\/news\/new-start4",
+            "img_link": "shopify:\/\/blogs\/新闻\/new-start4",
             "caption_head": "Image"
           }
         },
@@ -603,6 +603,26 @@
         "testimonials_margin_bottom": ""
       }
     },
+    "16418930590c0df00d": {
+      "type": "blog-page-post-beautify",
+      "settings": {
+        "heading": "Blog posts",
+        "head_text": "The most exciting news",
+        "image_ratio1": "ratio_nt",
+        "blog": "新闻",
+        "post_limit": 5,
+        "show_image": true,
+        "show_title": true,
+        "show_short_content": true,
+        "show_date": true,
+        "show_author": false,
+        "blog_soft_background": "#f3f3f3",
+        "color_scheme": "gradient",
+        "show_view_all": false,
+        "blog_page_beautify_margin_top": "",
+        "blog_page_beautify_margin_bottom": ""
+      }
+    },
     "163817972763d6e808": {
       "type": "newsletter",
       "blocks": {
@@ -641,70 +661,6 @@
         "newsletter_margin_top": "",
         "newsletter_margin_bottom": ""
       }
-    },
-    "16418930590c0df00d": {
-      "type": "blog-page-post-beautify",
-      "settings": {
-        "heading": "Blog posts",
-        "head_text": "The most exciting news",
-        "image_ratio1": "ratio_nt",
-        "blog": "news",
-        "post_limit": 5,
-        "show_image": true,
-        "show_title": true,
-        "show_short_content": true,
-        "show_date": true,
-        "show_author": false,
-        "blog_soft_background": "#f3f3f3",
-        "color_scheme": "gradient",
-        "show_view_all": false,
-        "blog_page_beautify_margin_top": "",
-        "blog_page_beautify_margin_bottom": ""
-      }
-    },
-    "164189477039635029": {
-      "type": "collection-list",
-      "blocks": {
-        "16418947706350450c-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "frontpage"
-          }
-        },
-        "16418947706350450c-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "orange"
-          }
-        },
-        "16418947706350450c-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "pitaya"
-          }
-        },
-        "c9be99ee-6899-4d19-be27-6b16c0f98e74": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "blank_text"
-          }
-        }
-      },
-      "block_order": [
-        "16418947706350450c-0",
-        "16418947706350450c-1",
-        "16418947706350450c-2",
-        "c9be99ee-6899-4d19-be27-6b16c0f98e74"
-      ],
-      "settings": {
-        "title": "Collections",
-        "image_ratio": "square",
-        "swipe_on_mobile": false,
-        "image_padding": true,
-        "show_view_all": false,
-        "collection_list_margin_top": "",
-        "collection_list_margin_bottom": ""
-      }
     }
   },
   "order": [
@@ -719,8 +675,7 @@
     "1640677918927d5968",
     "163454604067313d0f",
     "1640779459ad2f49fb",
-    "163817972763d6e808",
     "16418930590c0df00d",
-    "164189477039635029"
+    "163817972763d6e808"
   ]
 }
