@@ -111,9 +111,12 @@
         </div>
         {%- endif -%}
       </div>
-
+      <!-- 如果需要分页器 -->
       <div class="swiper-pagination-{{ section.id }} {% unless section.settings.show_page_Dot %} opa-0 {% else %} opa-1{% endunless %}"></div>
-      
+      <!-- 如果需要导航按钮 -->
+      <!--                 <div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div> -->
+      <!-- 如果需要滚动条 -->
       <div class="swiper-scrollbar"></div>
     </div>
   </div>
@@ -213,7 +216,7 @@
 </script>
 
 <style>
-  /*   swiper box */
+  /*   swiper盒子 */
   .banner-beautify-imgbox {
     display: flex;
     flex-direction: row;
@@ -240,7 +243,7 @@
     }
   }
   
-  /* define Carousel point */
+  /*   定义轮播点 */
   .opa-0{
     opacity: 0;
   }
@@ -257,10 +260,12 @@
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
     background: #4e4e4e;
     border: 1.5px solid rgb(189 188 188 / 28%);
+
   }
 
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: black;
+
   }
   {% elsif section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'light' %}
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
@@ -281,7 +286,7 @@
     background: black;
 
   }
-  {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light' %}
+  {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light'%}
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
     border: 1px solid #323232;
     background: #adadad;
@@ -289,6 +294,7 @@
 
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
     background: white;
+
   }
   {% endif %}
 
