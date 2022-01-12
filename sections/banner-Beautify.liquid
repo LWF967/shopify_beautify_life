@@ -33,8 +33,8 @@
     <a href="{% if block.settings.url == blank %}#{% else %}{{ block.settings.url }}{% endif %}" 
        target="{{ block.settings.open_link }}" 
        class=" flex_center {% if block.settings.url == blank %} pe_none{% endif %}"
-       {%comment%}style="background-image: url('{{ image | img_url:'540x' }}')"{%endcomment%}> 
-
+       style="background-image: url('{{ image | img_url:'540x' }}')"> 
+      {%comment%}
       <img srcset="{%- if image.width >= 165 -%}{{ image | img_url: '165x' }} 165w,{%- endif -%}
                    {%- if image.width >= 360 -%}{{ image | img_url: '360x' }} 360w,{%- endif -%}
                    {%- if image.width >= 535 -%}{{ image | img_url: '535x' }} 535w,{%- endif -%}
@@ -49,7 +49,7 @@
            width="{{ image.width }}"
            height="{{ image.height }}"
            >
-
+      {%endcomment%}
       <div>
         {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
