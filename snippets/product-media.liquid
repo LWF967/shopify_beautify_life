@@ -41,7 +41,7 @@
                     data-media-id="{{ media.id }}">
       {%- endif -%}
 
-      <button id="Deferred-Poster-Modal-{{ media.id }}" class="deferred-media__poster" type="button">
+      <button id="Deferred-Poster-Modal-{{ media.id }}" class="deferred-media__poster" type="button" aria-label="media or image">
         <span class="deferred-media__poster-button motion-reduce">
           {%- if media.media_type == 'model' -%}
           {%- render 'icon-3d-model' -%}
