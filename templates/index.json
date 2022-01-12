@@ -142,6 +142,7 @@
     },
     "16396203697a4ba826": {
       "type": "collection-list-Beautify",
+      "disabled": true,
       "blocks": {
         "1639620369bd20c112-0": {
           "type": "featured_collection",
@@ -333,7 +334,7 @@
         "163817830804047752-0": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
+            "image": "shopify:\/\/shop_images\/iphone-forest-photo.jpg",
             "align_text": "center",
             "img_link": "shopify:\/\/blogs\/新闻\/new-start4",
             "caption_head": "Image"
@@ -342,7 +343,7 @@
         "163817830804047752-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
+            "image": "shopify:\/\/shop_images\/musician-playing-guitar.jpg",
             "align_text": "center",
             "img_link": "",
             "caption_head": "Image"
@@ -351,7 +352,7 @@
         "163817830804047752-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
+            "image": "shopify:\/\/shop_images\/photographer-child.jpg",
             "align_text": "center",
             "img_link": "",
             "caption_head": "Image"
