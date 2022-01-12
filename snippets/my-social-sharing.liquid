@@ -228,7 +228,7 @@
   
   {% endif %}
   {% if settings.tweet_on_twitter %}
-  <a data-no-instant rel="noopener noreferrer nofollow" href="http://twitter.com/share?text={{ permaTitle }}&amp;url={{ permalinkURL }}" target="{{target}}" class="twitter cb {{class_tooltip}} my_a_padding">twitter
+  <a data-no-instant rel="noopener noreferrer nofollow" href="http://twitter.com/share?text={{ permaTitle }}&amp;url={{ permalinkURL }}" target="{{target}}" class="twitter cb {{class_tooltip}} my_a_padding" style="font:size:0">twitter
     <span class="bubble">{{ 'general.nt_tooltip.share_tw' | t }}</span>
     <span class="ts_style">
       {%- render 'icon-twitter' -%}
@@ -236,7 +236,7 @@
   </a>
   {% endif %}
   {% if settings.pin_on_pinterest %}
-  <a data-no-instant rel="noopener noreferrer nofollow" href="http://pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media=http:{{permaImage}}&amp;description={{ permaTitle }}" target="{{target}}" class="pinterest cb {{class_tooltip}} my_a_padding">pinterest
+  <a data-no-instant rel="noopener noreferrer nofollow" href="http://pinterest.com/pin/create/button/?url={{ permalinkURL }}&amp;media=http:{{permaImage}}&amp;description={{ permaTitle }}" target="{{target}}" class="pinterest cb {{class_tooltip}} my_a_padding" style="font:size:0">pinterest
     <span class="bubble">{{ 'general.nt_tooltip.share_pr' | t }}</span>
     <span class="ts_style">
       {%- render 'icon-pinterest' -%}

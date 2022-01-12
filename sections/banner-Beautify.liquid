@@ -33,7 +33,8 @@
     <a href="{% if block.settings.url == blank %}#{% else %}{{ block.settings.url }}{% endif %}" 
        target="{{ block.settings.open_link }}" 
        class="lazyload flex_center {% if block.settings.url == blank %} pe_none{% endif %}"
-       style="background-image: url('{{ image | img_url:'540x' }}')"> 
+       style="background-image: url('{{ image | img_url:'540x' }}')"
+       loading="lazy"> 
       <div>
         {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
