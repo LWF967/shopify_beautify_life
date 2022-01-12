@@ -87,7 +87,7 @@
         "1959a0a0-d475-4859-867c-834e6fce1148": {
           "type": "blog",
           "settings": {
-            "blog": "新闻",
+            "blog": "news",
             "cover_image": "shopify:\/\/shop_images\/small-business-interior.jpg",
             "image_size": "medium",
             "description": "<p>Description of your blog.<\/p>",
@@ -336,7 +336,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/iphone-forest-photo.jpg",
             "align_text": "center",
-            "img_link": "shopify:\/\/blogs\/新闻\/new-start4",
+            "img_link": "shopify:\/\/blogs\/news\/new-start4",
             "caption_head": "Image"
           }
         },
@@ -648,7 +648,7 @@
         "heading": "Blog posts",
         "head_text": "The most exciting news",
         "image_ratio1": "ratio_nt",
-        "blog": "新闻",
+        "blog": "news",
         "post_limit": 5,
         "show_image": true,
         "show_title": true,
