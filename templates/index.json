@@ -308,9 +308,6 @@
         "163608389212513e57-1": {
           "type": "img_top",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-            "image2": "shopify:\/\/shop_images\/43a634bc8a6348730bc107367f1d4cac.jpg",
-            "image3": "shopify:\/\/shop_images\/small-business-interior.jpg",
             "header_top1": "Head1",
             "header_top2": "Head2",
             "header_top3": "Head3",
@@ -323,9 +320,6 @@
         "163608389212513e57-0": {
           "type": "img_top",
           "settings": {
-            "image1": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
-            "image2": "shopify:\/\/shop_images\/mofa_8fb17415-777c-43c0-90ec-8e56a5fa5bf1.jpg",
-            "image3": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
             "header_top1": "Head1",
             "header_top2": "Head2",
             "header_top3": "Head3",
