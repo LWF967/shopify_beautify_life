@@ -102,22 +102,7 @@
             "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
             "width": "100%",
             "alignment": "top-middle",
-            "cover_image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg"
-          }
-        },
-        "dc741816-4fa7-4c29-92e0-1acfda8d8706": {
-          "type": "product",
-          "settings": {
-            "product": "text4",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
-        "8ee73a9d-057a-4e5c-a828-f1606dd4e959": {
-          "type": "collection",
-          "settings": {
-            "collection": "frontpage",
-            "width": "50%"
+            "cover_image": "shopify:\/\/shop_images\/young-woman-painting.jpg"
           }
         }
       },
@@ -125,9 +110,7 @@
         "1637743066e4c71293-0",
         "1637743066e4c71293-1",
         "1959a0a0-d475-4859-867c-834e6fce1148",
-        "84d1665e-ef72-464e-a3bf-6386c91cb71b",
-        "dc741816-4fa7-4c29-92e0-1acfda8d8706",
-        "8ee73a9d-057a-4e5c-a828-f1606dd4e959"
+        "84d1665e-ef72-464e-a3bf-6386c91cb71b"
       ],
       "settings": {
         "title": "CUSTOM CONTENT",
