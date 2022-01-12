@@ -250,7 +250,7 @@
           <a data-no-instant rel="noopener noreferrer nofollow" href="{{ settings[social_link] | escape }}" target="{{target}}" class="{{socials_icon[forloop.index0] | remove:'-play'}} cb {{class_tooltip}} my_a_padding">
             
             {% if socials_icon[forloop.index0] == "twitter" %}
-            <i style="display:none">twitter</i>
+            <i style="font-size:0">twitter</i>
               {% if settings.social_twitter_link != blank %}
                 <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
@@ -258,7 +258,7 @@
                 </span>
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "facebook" %}
-            <i style="display:none"> facebook</i>
+            <i style="font-size:0"> facebook</i>
               {% if settings.social_facebook_link != blank %}
                 <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
@@ -266,6 +266,7 @@
                 </span>
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "pinterest" %}
+            <i style="font-size:0"> pinterest</i>
               {% if settings.social_pinterest_link != blank %}
                 <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
@@ -273,6 +274,7 @@
                 </span>
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "instagram" %}
+            <i style="font-size:0"> instagram</i>
               {% if settings.social_instagram_link != blank %}
                 <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
@@ -280,6 +282,7 @@
                 </span>
               {% endif %}    
             {% elsif socials_icon[forloop.index0] == "tumblr" %}
+            <i style="font-size:0"> tumblr</i>
               {% if settings.social_tumblr_link != blank %}
                 <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
@@ -287,6 +290,7 @@
                 </span>
               {% endif %} 
             {% elsif socials_icon[forloop.index0] == "snapchat" %}
+            <i style="font-size:0"> snapchat</i>
               {% if settings.social_snapchat_link != blank %}
                 <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
@@ -294,6 +298,7 @@
                 </span>
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "youtube-play" %}
+            <i style="font-size:0"> youtube-play</i>
               {% if settings.social_youtube_link != blank %}
                 <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
@@ -301,6 +306,7 @@
                 </span>
               {% endif %}
             {% elsif socials_icon[forloop.index0] == "vimeo" %}
+            <i style="font-size:0"> vimeo</i>
               {% if settings.social_vimeo_link != blank %}
                 <span class="bubble">{{ socials_txt[forloop.index0] | t }}</span>
                 <span class="ts_style">
