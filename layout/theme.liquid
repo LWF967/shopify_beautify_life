@@ -229,7 +229,6 @@
     
     {% if settings.enable_prevent_copying %}
     <script>
-      document.addEventListener('touchstart', onTouchStart, {passive: true});
       
       {% comment %} // disable_right_click {% endcomment %}
       document.addEventListener("contextmenu", function(event) {var notInput = (event.target || event.srcElement).tagName.toLowerCase() !== "input" && (event.target || event.srcElement).tagName.toLowerCase() !== "textarea";if (notInput && (event.target || event.srcElement).innerText) {event.preventDefault();} });
@@ -247,7 +246,6 @@
     </script>
     {% endif %}
     <script>
-      document.addEventListener('touchstart', onTouchStart, {passive: true});
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',
