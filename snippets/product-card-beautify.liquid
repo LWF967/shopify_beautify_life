@@ -34,6 +34,7 @@
 
 <div class="card-wrapper">
   <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link" style="font-size:0">
+    full-unstyled-link
     <div class="card card--product  {% if product_card_product.featured_media == nil %} card--outline card--soft{% endif %}{% if product_card_product.featured_media != nil and show_image_outline %} card--outline{% endif %}" tabindex="-1">
       <div class="card__inner">
         {%- if product_card_product.featured_media -%}
