@@ -12,7 +12,9 @@
             <div class="banner-beautify-imgbox">
               {%- if image1 != blank -%} {% assign img_url1 = image1 | img_url:'1x1' | replace: '_1x1.', '_{width}x.' -%}
               <img
+                   {%comment%}
                    src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{ image1.width }}%20{{ image1.height }}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+                   {%endcomment%}
                    data-src="{{ img_url1 }}"
                    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                    data-sizes="auto"
@@ -40,7 +42,9 @@
             <div class="banner-beautify-imgbox">
               {%- if image2 != blank -%} {% assign img_url2 = image2 | img_url:'1x1' | replace: '_1x1.', '_{width}x.' -%}
               <img
+                   {%comment%}
                    src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+                   {%endcomment%}
                    data-src="{{ img_url2 }}"
                    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                    data-sizes="auto"
@@ -69,7 +73,9 @@
             <div class="banner-beautify-imgbox">
               {%- if image3 != blank -%} {% assign img_url3 = image3 | img_url:'1x1' | replace: '_1x1.', '_{width}x.' -%}
               <img
+                   {%comment%}
                    src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{ image1.width }}%20{{ image1.height }}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+                   {%endcomment%}
                    data-src="{{ img_url3 }}"
                    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                    data-sizes="auto"
