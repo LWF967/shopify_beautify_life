@@ -1,9 +1,9 @@
 {{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
 <link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
 
-{{'swiper-bundle.min.css'| asset_url |stylesheet_tag}}
+{{ 'swiper-bundle.min.css'| asset_url |stylesheet_tag }}
 
-<script src="{{'swiper-bundle.min.js'| asset_url }} "></script>
+<script src="{{'swiper-bundle.min.js'| asset_url }}" defer="defer"></script>
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 {% assign image_overlay_opacity = settings.image_overlay_opacity | divided_by: 100.0 %}
 {%-style-%}
