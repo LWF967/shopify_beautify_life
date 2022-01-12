@@ -603,94 +603,6 @@
         "testimonials_margin_bottom": ""
       }
     },
-    "1635996418e080b5d8": {
-      "type": "Text-columns-with-images",
-      "blocks": {
-        "1635996418e080b5d8-0": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "Button",
-            "button_link": "shopify:\/\/collections\/frontpage"
-          }
-        },
-        "1635996418e080b5d8-1": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "Button",
-            "button_link": "shopify:\/\/blogs\/新闻"
-          }
-        },
-        "1635996418e080b5d8-2": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "image": "shopify:\/\/shop_images\/01.png",
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "Button",
-            "button_link": "shopify:\/\/collections\/frontpage"
-          }
-        },
-        "ac57a4b1-31ce-47c6-a886-b5cba91b2deb": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "image": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "Button",
-            "button_link": ""
-          }
-        },
-        "7f0a332f-a0c7-4485-9968-a56273dc688f": {
-          "type": "column",
-          "settings": {
-            "show_image": true,
-            "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-            "title": "Add a title or tagline",
-            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
-            "button_label": "Button",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1635996418e080b5d8-0",
-        "1635996418e080b5d8-1",
-        "1635996418e080b5d8-2",
-        "ac57a4b1-31ce-47c6-a886-b5cba91b2deb",
-        "7f0a332f-a0c7-4485-9968-a56273dc688f"
-      ],
-      "settings": {
-        "Text_columns_with_images_heading": "Text column with images",
-        "Text_columns_with_images_Text_alignment": "Left",
-        "text_columns_with_images_margin_top": "",
-        "text_columns_with_images_margin_bottom": ""
-      }
-    },
-    "1638771575eb761fd8": {
-      "type": "video-beautify",
-      "settings": {
-        "cover_image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
-        "image_alignment": "center center",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "show_overlay": true,
-        "style": "image_with_play",
-        "video_height": "large",
-        "heading": "Video",
-        "text_size": "large",
-        "video_beautify_margin_top": "",
-        "video_beautify_margin_bottom": ""
-      }
-    },
     "163817972763d6e808": {
       "type": "newsletter",
       "blocks": {
@@ -807,8 +719,6 @@
     "1640677918927d5968",
     "163454604067313d0f",
     "1640779459ad2f49fb",
-    "1635996418e080b5d8",
-    "1638771575eb761fd8",
     "163817972763d6e808",
     "16418930590c0df00d",
     "164189477039635029"
