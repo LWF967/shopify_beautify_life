@@ -107,7 +107,7 @@
                 {% when 'text' %}
                 <div class="medium-up--text-{{ block.settings.align_text }}">
                     {% if block.settings.title != blank %}
-                    <h4 class="h3 my_custom_content_title_font_size my_font_weight_default" style="background: {{settings.color_page_background}}">{{ block.settings.title | escape }}</h4>
+                    <h3 class="h3 my_custom_content_title_font_size my_font_weight_default" style="background: {{settings.color_page_background}}">{{ block.settings.title | escape }}</h3>
                     {% endif %}
                     {% if block.settings.text != blank %}
                     <div class="rte-setting rte my_font_size_content_default" style="background: {{settings.color_page_background}}">{{ block.settings.text }}</div>
