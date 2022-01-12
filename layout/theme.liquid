@@ -8,6 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="preload" as="style" href="{{ 'base.css' | asset_url }}">
 
     <script src="{{ 'lazysizes.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'lazysizes.min.js' | asset_url }}" defer="defer"></script>
@@ -147,7 +148,6 @@
     
 	{% include 'css-variables' %} 
 <!--      'base.css' | asset_url | stylesheet_tag }} -->
-    <link rel="preload" as="style" href="{{ 'base.css' | asset_url }}">
 	{{ 'custome-content.css'| asset_url | stylesheet_tag }}
 	{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
     {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
