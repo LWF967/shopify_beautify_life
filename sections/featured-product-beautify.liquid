@@ -628,7 +628,7 @@
   <script type="application/json" id="ProductJSON-{{ product.id }}">
     {{ product.media | where: 'media_type', 'model' | json }}
   </script>
-  <script src="{{ 'product-model.js' | asset_url }}" defer></script>
+  <script src="{{ 'product-model.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
 <script type="application/ld+json">
