@@ -273,7 +273,7 @@
           "text_color": "#000000",
           "link_color": "#ec0000",
           "hover_link_color": "#9ae1da",
-          "newsletter_input_color": "#868686",
+          "newsletter_input_color": "#000000",
           "newsletter_border_color": "#000000",
           "newsletter_button_color": "#000000",
           "newsletter_button_text_color": "#ffffff"
