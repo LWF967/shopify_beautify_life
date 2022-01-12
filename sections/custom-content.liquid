@@ -222,12 +222,12 @@
                                  data-bgset="{% include 'bgset', image: img %}" data-sizes="auto" data-parent-fit="cover"
                                  data-src="{{ img | img_url: '1024x1024' }}"
                                  alt="{{ img.alt | escape }}"
-                                 width:"1024"
-                                 height:"1024"
+                                 width="{{ img.width| escape }}"
+                                 height="{{ img.height | escape }}"
                                  data-image-loading-animation>
                             <noscript>
-                                <img class="blog-card__overlay lazyload" data-src="{{ img | img_url: '1024x1024' }}" alt="{{ img.alt | escape }}"  width:"1024"
-                                 height:"1024">
+                                <img class="blog-card__overlay lazyload" data-src="{{ img | img_url: '1024x1024' }}" alt="{{ img.alt | escape }}" width="{{ img.width| escape }}"
+                                 height="{{ img.height | escape }}">
                             </noscript>
 
                             <div class="blog-card__title-wrapper my_blog-card__title-wrapper">
