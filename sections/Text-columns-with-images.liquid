@@ -178,7 +178,7 @@
             {% if block.settings.show_image == true %}
             {%- if block.settings.image != blank -%}
             <div class="my_text_columns_with_images_image">
-              <img src="{{ block.settings.image | img_url: '550x' }}" loading="lazy">
+              <img class="lazyload" data-src="{{ block.settings.image | img_url: '550x' }}" loading="lazy" alt="{{ block.settings.image.alt }}">
             </div>
             {%- endif -%}
             {% endif %}
