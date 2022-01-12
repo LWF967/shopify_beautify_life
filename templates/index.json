@@ -597,7 +597,7 @@
         "page_dot_color": "light",
         "image_width": "full",
         "image_ratio": "adapt",
-        "button_label": "Button",
+        "button_label": "",
         "button_link": "",
         "testimonials_margin_top": "",
         "testimonials_margin_bottom": ""
