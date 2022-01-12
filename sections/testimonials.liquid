@@ -15,7 +15,7 @@
   }
 </style>
     
-<script src="{{'swiper-bundle.min.js'| asset_url }}"></script>
+<script src="{{'swiper-bundle.min.js'| asset_url }}" defer="defer"></script>
 <noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}"
