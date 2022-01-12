@@ -308,6 +308,7 @@
         "163608389212513e57-1": {
           "type": "img_top",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/mofa.jpg",
             "header_top1": "Head1",
             "header_top2": "Head2",
             "header_top3": "Head3",
