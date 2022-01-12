@@ -121,7 +121,7 @@
                 <div class="video-section">
                     <deferred-media class="video-section__media deferred-media no-js-hidden"
                         data-media-id="{{ block.settings.video_url.id }}">
-                        <button id="Deferred-Poster-Modal-{{ block.settings.video_url.id }}"
+                        <button id="Deferred-Poster-Modal-{{ block.settings.video_url.id }}-{{ section.id }}"
                             class="video-section__poster media deferred-media__poster media--landscape" type="button">
                             {%- if block.settings.cover_image != blank -%}
                             <img srcset="{%- if block.settings.cover_image.width >= 375 -%}{{ block.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
