@@ -247,6 +247,7 @@
     </script>
     {% endif %}
     <script>
+      document.addEventListener('touchstart', onTouchStart, {passive: true});
       window.routes = {
         cart_add_url: '{{ routes.cart_add_url }}',
         cart_change_url: '{{ routes.cart_change_url }}',
