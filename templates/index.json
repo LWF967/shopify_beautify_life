@@ -323,6 +323,9 @@
         "163608389212513e57-0": {
           "type": "img_top",
           "settings": {
+            "image1": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "image2": "shopify:\/\/shop_images\/rain-coming-down-window.jpg",
+            "image3": "shopify:\/\/shop_images\/rainbow-hands-heart.jpg",
             "header_top1": "Head1",
             "header_top2": "Head2",
             "header_top3": "Head3",
