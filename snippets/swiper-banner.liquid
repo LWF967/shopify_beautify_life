@@ -5,177 +5,106 @@
         {%- if image1 != blank -%}
         <div class="swiper-slide 1">
           <a
-            href="{{ block.settings.url1 }}"
-            target="{{ block.settings.open_link }}"
-            class="
-              lz_op_ef
-              w__100
-              {%  if block.settings.url1 == blank %}
-              pe_none
-				{%endif%}
-            "
-          >
+             href="{{ block.settings.url1 }}"
+             target="{{ block.settings.open_link }}"
+             class=" lz_op_ef w__100 {%  if block.settings.url1 == blank %} pe_none{%endif%} "
+             >
             <div class="banner-beautify-imgbox">
               {%- if image1 != blank -%} {% assign img_url1 = image1 | img_url:'1x1' | replace: '_1x1.', '_{width}x.' -%}
               <img
-                src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
-                data-src="{{ img_url1 }}"
-                data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-                data-sizes="auto"
-                class="lazyload lz_op_ef w__100"
-                alt="{{ image1.alt }}"
-                style="width: 100%; object-fit: cover"
-              />
+                   src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{ image1.width }}%20{{ image1.height }}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+                   data-src="{{ img_url1 }}"
+                   data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-sizes="auto"
+                   class="lazyload lz_op_ef w__100"
+                   alt="{{ image1.alt }}"
+                   style="width: 100%; object-fit: cover"
+                   />
               {%- else -%}
               {{ "image" | placeholder_svg_tag: "placeholder-svg" }}
               {%- endif -%}
             </div>
-            <div
-              class="
-                nt_promotion_html
-                pa
-                t__0
-                l__0
-                tc
-                pe_none
-                my_banner_beautify_font_size
-              "
-              style="font-weight:600; color:{{ section.settings.color_top }}"
-            >
+            <div class=" nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size" style="font-weight:600; color:{{ section.settings.color_top }}" >
               {{ block.settings.header_top1 }}
             </div>
           </a>
         </div>
-        {%- elsif image2 != blank -%}
+        {%- endif -%}
+        {%- if image2 != blank -%}
         <div class="swiper-slide 2">
           <a
-            href="{{ block.settings.url2 }}"
-            target="{{ block.settings.open_link }}"
-            class="
-              lz_op_ef
-              w__100
-              {%
-              if
-              block.settings.url2
-              ==
-              blank
-              %}
-              pe_none{%
-              endif
-              %}
-            "
-          >
+             href="{{ block.settings.url2 }}"
+             target="{{ block.settings.open_link }}"
+             class=" lz_op_ef w__100 {% if block.settings.url2  == blank %} pe_none{% endif %}"
+             >
             <div class="banner-beautify-imgbox">
               {%- if image2 != blank -%} {% assign img_url2 = image2 | img_url:'1x1' | replace: '_1x1.', '_{width}x.' -%}
               <img
-                src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
-                data-src="{{ img_url2 }}"
-                data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-                data-sizes="auto"
-                class="lazyload lz_op_ef w__100"
-                alt="{{ image1.alt }}"
-                style="width: 100%; object-fit: cover"
-              />
+                   src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+                   data-src="{{ img_url2 }}"
+                   data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-sizes="auto"
+                   class="lazyload lz_op_ef w__100"
+                   alt="{{ image1.alt }}"
+                   style="width: 100%; object-fit: cover"
+                   />
               {%- else -%}
               {{ "image" | placeholder_svg_tag: "placeholder-svg" }}
               {%- endif -%}
             </div>
-            <div
-              class="
-                nt_promotion_html
-                pa
-                t__0
-                l__0
-                tc
-                pe_none
-                my_banner_beautify_font_size
-              "
-              style="font-weight:600; color:{{ section.settings.color_top }}"
-            >
+            <div class="nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size"
+                 style="font-weight:600; color:{{ section.settings.color_top }}"
+                 >
               {{ block.settings.header_top2 }}
             </div>
           </a>
         </div>
-        {%- elsif image3 != blank -%}
+        {%- endif -%}
+        {%- if image3 != blank -%}
         <div class="swiper-slide 3">
           <a
-            href="{{ block.settings.url3 }}"
-            target="{{ block.settings.open_link }}"
-            class="
-              lz_op_ef
-              w__100
-              {%
-              if
-              block.settings.url3
-              ==
-              blank
-              %}
-              pe_none{%
-              endif
-              %}
-            "
-          >
+             href="{{ block.settings.url3 }}"
+             target="{{ block.settings.open_link }}"
+             class="lz_op_ef w__100 {% if block.settings.url3 == blank %} pe_none{% endif %} ">
             <div class="banner-beautify-imgbox">
               {%- if image3 != blank -%} {% assign img_url3 = image3 | img_url:'1x1' | replace: '_1x1.', '_{width}x.' -%}
               <img
-                src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{image1.width}}%20{{image1.height}}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
-                data-src="{{ img_url3 }}"
-                data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-                data-sizes="auto"
-                class="lazyload lz_op_ef w__100"
-                alt="{{ image1.alt }}"
-                style="width: 100%; object-fit: cover"
-              />
+                   src="data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%20{{ image1.width }}%20{{ image1.height }}%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3C%2Fsvg%3E"
+                   data-src="{{ img_url3 }}"
+                   data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-sizes="auto"
+                   class="lazyload lz_op_ef w__100"
+                   alt="{{ image1.alt }}"
+                   style="width: 100%; object-fit: cover"
+                   />
               {%- else -%}
               {{ "image" | placeholder_svg_tag: "placeholder-svg" }}
               {%- endif -%}
             </div>
             <div
-              class="
-                nt_promotion_html
-                pa
-                t__0
-                l__0
-                tc
-                pe_none
-                my_banner_beautify_font_size
-              "
-              style="font-weight:600; color:{{ section.settings.color_top }}"
-            >
+                 class=" nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size "
+                 style="font-weight:600; color:{{ section.settings.color_top }}"
+                 >
               {{ block.settings.header_top3 }}
             </div>
           </a>
         </div>
-        {%- elsif image1 == blank and image2 == blank and image3 == blank -%}
-         <div class="swiper-slide 4">
+        {%- endif -%}
+        {%- if image1 == blank and image2 == blank and image3 == blank -%}
+        <div class="swiper-slide 4">
           <a
-            href="#"
-            target="#"
-            class="
-              lz_op_ef
-              w__100
-              {%  if block.settings.url1 == blank %}
-              pe_none
-				{%endif%}
-            "
-          >
+             href="#"
+             target="#"
+             class=" lz_op_ef w__100 {% if block.settings.url1 == blank %} pe_none {%endif%} "
+             >
             <div class="banner-beautify-imgbox">
-   
+
               {{ "image" | placeholder_svg_tag: "placeholder-svg" }}
 
             </div>
-            <div
-              class="
-                nt_promotion_html
-                pa
-                t__0
-                l__0
-                tc
-                pe_none
-                my_banner_beautify_font_size
-              "
-              style="font-weight:600; color:{{ section.settings.color_top }}"
-            >
+            <div class=" nt_promotion_html  pa t__0 l__0 tc pe_none my_banner_beautify_font_size "
+                 style="font-weight:600; color:{{ section.settings.color_top }}"
+                 >
               heading
             </div>
           </a>
@@ -183,30 +112,17 @@
         {%- endif -%}
       </div>
       <!-- 如果需要分页器 -->
-      <div
-        class="  swiper-pagination-{{
-          section.id
-        }} 	{% unless section.settings.show_page_Dot %} 
-opa-0
-
-{% else %}  
-opa-1
-{% endunless %}  >"
-      ></div>
+      <div class="swiper-pagination-{{ section.id }} {% unless section.settings.show_page_Dot %} opa-0 {% else %} opa-1{% endunless %}"></div>
       <!-- 如果需要导航按钮 -->
       <!--                 <div class="swiper-button-prev"></div>
-         <div class="swiper-button-next"></div> -->
+<div class="swiper-button-next"></div> -->
       <!-- 如果需要滚动条 -->
       <div class="swiper-scrollbar"></div>
     </div>
   </div>
 </li>
 <script type="module">
-
-
       import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
-
-
 
      let swiper = new Swiper ('.swiper-banner-beautify-{{block.id}}', {
       direction: 'horizontal', // 垂直切换选项  horizontal  vertical
@@ -214,10 +130,9 @@ opa-1
 
       // 如果需要分页器
 
-
       {% unless section.settings.show_page_Dot %}
 
-           pagination: {
+       pagination: {
         el: '.swiper-pagination-{{section.id}}',
         clickable :true,
         hideOnClick :true,
@@ -230,8 +145,6 @@ opa-1
       },
     {% endunless %}
 
-
-
       effect : 'fade',
       observer : true,
       observeParents : true,
@@ -241,7 +154,6 @@ opa-1
       stopOnLastSlide: false,
       disableOnInteraction: false,
       },
-
 
       // 如果需要前进后退按钮
       navigation: {
@@ -261,10 +173,7 @@ opa-1
       loop: true, // 循环模式选项
 
       // 如果需要分页器
-
-
       {% unless section.settings.show_page_Dot %}
-
          pagination: {
         el: '.swiper-pagination-{{section.id}}',
         clickable :true,
@@ -278,8 +187,6 @@ opa-1
       },
     {% endunless %}
 
-
-
       effect : 'fade',
       observer : true,
       observeParents : true,
@@ -289,7 +196,6 @@ opa-1
       stopOnLastSlide: false,
       disableOnInteraction: false,
       },
-
 
       // 如果需要前进后退按钮
       navigation: {
@@ -304,136 +210,117 @@ opa-1
     })
   },false);
 
-
-      document.addEventListener('shopify:section:unload',()=>{
+	document.addEventListener('shopify:section:unload',()=>{
       swiper =  'null';
-      },false);
+     },false);
 </script>
 
 <style>
-
-
   /*   swiper盒子 */
-
-  .banner-beautify-imgbox{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  max-height: 400px;
-
+  .banner-beautify-imgbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    max-height: 400px;
   }
-
+  
   @media screen and (max-width: 750px) {
-  .banner-beautify-imgbox{
-  height: 200px;
-  }
-
-
+    .banner-beautify-imgbox {
+      height: 200px;
+    }
   }
 
   @media screen and (min-width: 990px) {
-  .banner-beautify-imgbox{
-  height: 300px;
-  }
+    .banner-beautify-imgbox {
+      height: 300px;
+    }
   }
 
   @media screen and (max-width: 990px) {
-  .banner-beautify-imgbox{
-  height: 200px;
+    .banner-beautify-imgbox {
+      height: 200px;
+    }
   }
-
-  }
-
-
-
-
+  
   /*   定义轮播点 */
-
-
-
   .opa-0{
-  opacity:0;
+    opacity: 0;
   }
-
+  
   .opa-1{
-  opacity:1;
+    opacity: 1;
   }
-
 
   .swiper-pagination-{{section.id}}.swiper-pagination-hidden {
-  opacity: 0
+    opacity: 0
   }
-
-
 
   {% if section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'dark'%}
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-  background:#4e4e4e;
-  border: 1.5px solid rgb(189 188 188 / 28%);
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
+    background: #4e4e4e;
+    border: 1.5px solid rgb(189 188 188 / 28%);
 
   }
 
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-  background:black;
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: black;
 
   }
   {% elsif section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'light' %}
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-
-  background:#4e4e4e;
-  border: 1.5px solid rgb(189 188 188 / 28%);
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
+    background: #4e4e4e;
+    border: 1.5px solid rgb(189 188 188 / 28%);
   }
 
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-  background:white;
-
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: white;
   }
   {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'dark' %}
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-  border: 1px solid #323232;
-  background:white;
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
+    border: 1px solid #323232;
+    background: white;
   }
 
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-  background:black;
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: black;
 
   }
   {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light'%}
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-  border: 1px solid #323232;
-  background:#adadad;
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
+    border: 1px solid #323232;
+    background: #adadad;
   }
 
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
-  background:white;
+    background: white;
 
   }
   {% endif %}
 
   .swiper-pagination-{{section.id}} {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 20px;
-  z-index: 100;
-  cursor: pointer;
-  padding: 0px;
-  margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    z-index: 100;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0;
   }
 
-  .swiper-pagination-{{section.id}} .swiper-pagination-bullet{
-  float:left;
-  width:16px;
-  height:16px;
-  text-align: center;
-  line-height: 16px;
-  font-size: 10px;
-  border-radius: 50%;
-  text-align: center;
-  transition:all 1.5s;
-  margin: 0 14px;
-  list-style-type: none;
+  .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
+    float: left;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 10px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 1.5s;
+    margin: 0 14px;
+    list-style-type: none;
   }
 </style>
