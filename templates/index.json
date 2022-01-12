@@ -557,59 +557,13 @@
         "daily_deal_of_the_day_margin_bottom": ""
       }
     },
-    "163835233482a21c91": {
-      "type": "rich-text-beautify",
-      "blocks": {
-        "163835233452da67c2-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand"
-          }
-        },
-        "163835233452da67c2-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "163835233452da67c2-0",
-        "163835233452da67c2-1"
-      ],
-      "settings": {
-        "rich_text_beautify_color": "#ffffff",
-        "color_scheme": "rich_text_beautify_color",
-        "full_width": false,
-        "content_full_width": false,
-        "heading_size": "large",
-        "rich_text_beautify_margin_top": "",
-        "rich_text_beautify_margin_bottom": ""
-      }
-    },
     "1640779459ad2f49fb": {
       "type": "testimonials",
       "blocks": {
-        "1640779459d88e6f3d-0": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "testimonials_author_text": "Author"
-          }
-        },
         "1640779459d88e6f3d-1": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "testimonials_author_text": "Author"
-          }
-        },
-        "1640779459d88e6f3d-2": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/a-wet-bridge-covered-in-fog.jpg",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "testimonials_author_text": "Author"
           }
@@ -622,24 +576,22 @@
             "testimonials_author_text": "Author"
           }
         },
-        "fc144458-20b5-4a3c-a5d3-330f74758fff": {
+        "1640779459d88e6f3d-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/fall-vegetable-box.jpg",
+            "image": "shopify:\/\/shop_images\/a-wet-bridge-covered-in-fog.jpg",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "testimonials_author_text": "Author"
           }
         }
       },
       "block_order": [
-        "1640779459d88e6f3d-0",
         "1640779459d88e6f3d-1",
-        "1640779459d88e6f3d-2",
         "84c25c01-33e6-4226-987f-c9b0b3157e3e",
-        "fc144458-20b5-4a3c-a5d3-330f74758fff"
+        "1640779459d88e6f3d-2"
       ],
       "settings": {
-        "title": "testimonials",
+        "title": "Testimonials",
         "swipe": true,
         "page_dot_style": "style_1",
         "page_dot_color": "light",
@@ -854,7 +806,6 @@
     "1638344641035ba32e",
     "1640677918927d5968",
     "163454604067313d0f",
-    "163835233482a21c91",
     "1640779459ad2f49fb",
     "1635996418e080b5d8",
     "1638771575eb761fd8",
