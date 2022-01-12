@@ -340,19 +340,19 @@
             "caption_head": "Image"
           }
         },
-        "163817830804047752-1": {
+        "163817830804047752-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/looking-through-the-lens-of-a-film-camera.jpg",
+            "image": "shopify:\/\/shop_images\/photographer-child.jpg",
             "align_text": "center",
             "img_link": "",
             "caption_head": "Image"
           }
         },
-        "163817830804047752-2": {
+        "163817830804047752-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/photographer-child.jpg",
+            "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
             "align_text": "center",
             "img_link": "",
             "caption_head": "Image"
@@ -370,8 +370,8 @@
       },
       "block_order": [
         "163817830804047752-0",
-        "163817830804047752-1",
         "163817830804047752-2",
+        "163817830804047752-1",
         "7abba756-7453-4215-96f1-a1d5f373dbb6"
       ],
       "settings": {
