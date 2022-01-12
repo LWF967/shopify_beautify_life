@@ -410,7 +410,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/musician-playing-guitar.jpg",
-        "layout": "image_first",
+        "layout": "text_first",
         "height": "adapt",
         "image_with_text_bk_color": "#dd2323",
         "color_scheme": "gradient",
@@ -420,6 +420,7 @@
     },
     "1638344641035ba32e": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "blocks": {
         "1638344641deab7755-0": {
           "type": "heading",
@@ -448,7 +449,7 @@
         "1638344641deab7755-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/autumn-photographer-taking-picture.jpg",
+        "image": "shopify:\/\/shop_images\/music-at-the-pantheon.jpg",
         "image_alignment": "center center",
         "section_size": "medium",
         "desktop_text_box_position": "center",
@@ -528,7 +529,7 @@
         "16406779184849d3db-8"
       ],
       "settings": {
-        "product": "1",
+        "product": "orange1",
         "featured_bk_color": "#1eec5e",
         "color_scheme": "gradient",
         "show_share_buttons": true,
