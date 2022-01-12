@@ -52,13 +52,13 @@
 
     {%- if product.featured_media -%}
       <a href="{{ product.url | default: '#' }}" class="my_product_card_beautify_a_hover">
-        <span class="card-information__text h5 my_product_card_beautify_title">
+        <span class="card-information__text h5 my_product_card_beautify_title" style="background: {{settings.color_page_background}}">
           {{ product.title | escape }}
         </span>
       </a>
       {%- else -%}
       <a href="{{ product.url | default: '#' }}" class="my_product_card_beautify_a_hover">
-        <span class="card-information__text h5 my_product_card_beautify_title">
+        <span class="card-information__text h5 my_product_card_beautify_title" style="background: {{settings.color_page_background}}">
           {{ product.title | escape }}
         </span>
       </a>
