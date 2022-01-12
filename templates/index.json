@@ -221,7 +221,7 @@
       "settings": {
         "title": "NEW RELEASES",
         "sub_title": "New supply this week",
-        "grid": 6,
+        "grid": 4,
         "slide_loop": false,
         "show_view_all": false,
         "show_page_Dot": true,
