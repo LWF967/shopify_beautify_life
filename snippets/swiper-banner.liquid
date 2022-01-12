@@ -5,7 +5,7 @@
         {%- if image1 != blank -%}
         <div class="swiper-slide 1">
           <a
-             href="{{ block.settings.url1 }}"
+             href="{%- if block.settings.url1 == blank -%}#{%- else -%}{{ block.settings.url1 }}{%- endif -%}"
              target="{{ block.settings.open_link }}"
              class=" lz_op_ef w__100 {%  if block.settings.url1 == blank %} pe_none{%endif%} "
              >
@@ -33,7 +33,7 @@
         {%- if image2 != blank -%}
         <div class="swiper-slide 2">
           <a
-             href="{{ block.settings.url2 }}"
+             href="{%- if block.settings.url2 == blank -%}#{%- else -%}{{ block.settings.url2 }}{%- endif -%}"
              target="{{ block.settings.open_link }}"
              class=" lz_op_ef w__100 {% if block.settings.url2  == blank %} pe_none{% endif %}"
              >
@@ -45,7 +45,7 @@
                    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                    data-sizes="auto"
                    class="lazyload lz_op_ef w__100"
-                   alt="{{ image1.alt }}"
+                   alt="{{ image2.alt }}"
                    style="width: 100%; object-fit: cover"
                    />
               {%- else -%}
@@ -63,7 +63,7 @@
         {%- if image3 != blank -%}
         <div class="swiper-slide 3">
           <a
-             href="{{ block.settings.url3 }}"
+             href="{%- if block.settings.url3 == blank -%}#{%- else -%}{{ block.settings.url3 }}{%- endif -%}"
              target="{{ block.settings.open_link }}"
              class="lz_op_ef w__100 {% if block.settings.url3 == blank %} pe_none{% endif %} ">
             <div class="banner-beautify-imgbox">
@@ -74,7 +74,7 @@
                    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                    data-sizes="auto"
                    class="lazyload lz_op_ef w__100"
-                   alt="{{ image1.alt }}"
+                   alt="{{ image3.alt }}"
                    style="width: 100%; object-fit: cover"
                    />
               {%- else -%}
@@ -111,12 +111,9 @@
         </div>
         {%- endif -%}
       </div>
-      <!-- 如果需要分页器 -->
+
       <div class="swiper-pagination-{{ section.id }} {% unless section.settings.show_page_Dot %} opa-0 {% else %} opa-1{% endunless %}"></div>
-      <!-- 如果需要导航按钮 -->
-      <!--                 <div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div> -->
-      <!-- 如果需要滚动条 -->
+      
       <div class="swiper-scrollbar"></div>
     </div>
   </div>
@@ -125,10 +122,8 @@
       import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
 
      let swiper = new Swiper ('.swiper-banner-beautify-{{block.id}}', {
-      direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-      loop: true, // 循环模式选项
-
-      // 如果需要分页器
+      direction: 'horizontal', 
+      loop: true, 
 
       {% unless section.settings.show_page_Dot %}
 
@@ -155,24 +150,21 @@
       disableOnInteraction: false,
       },
 
-      // 如果需要前进后退按钮
+     
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
 
-      // 如果需要滚动条
-    /*  scrollbar: {
-        el: '.swiper-scrollbar',
-      }, */
+    
     })
 
   document.addEventListener('shopify:section:load',()=>{
       let swiper = new Swiper ('.swiper-banner-beautify-{{block.id}}', {
-      direction: 'horizontal', // 垂直切换选项  horizontal  vertical
-      loop: true, // 循环模式选项
+      direction: 'horizontal', 
+      loop: true, 
 
-      // 如果需要分页器
+     
       {% unless section.settings.show_page_Dot %}
          pagination: {
         el: '.swiper-pagination-{{section.id}}',
@@ -197,16 +189,13 @@
       disableOnInteraction: false,
       },
 
-      // 如果需要前进后退按钮
+      
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
 
-      // 如果需要滚动条
-    /*  scrollbar: {
-        el: '.swiper-scrollbar',
-      }, */
+     
     })
   },false);
 
@@ -216,7 +205,7 @@
 </script>
 
 <style>
-  /*   swiper盒子 */
+ 
   .banner-beautify-imgbox {
     display: flex;
     flex-direction: row;
@@ -243,7 +232,7 @@
     }
   }
   
-  /*   定义轮播点 */
+
   .opa-0{
     opacity: 0;
   }
@@ -260,12 +249,10 @@
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
     background: #4e4e4e;
     border: 1.5px solid rgb(189 188 188 / 28%);
-
   }
 
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background: black;
-
   }
   {% elsif section.settings.page_dot_style == 'style_1' and section.settings.page_dot_color == 'light' %}
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
@@ -286,7 +273,7 @@
     background: black;
 
   }
-  {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light'%}
+  {% elsif section.settings.page_dot_style == 'style_2' and section.settings.page_dot_color == 'light' %}
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet {
     border: 1px solid #323232;
     background: #adadad;
@@ -294,7 +281,6 @@
 
   .swiper-pagination-{{section.id}} .swiper-pagination-bullet.swiper-pagination-bullet-active{
     background: white;
-
   }
   {% endif %}
 
