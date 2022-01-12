@@ -5,7 +5,7 @@
         {%- if image1 != blank -%}
         <div class="swiper-slide 1">
           <a
-             href="{{ block.settings.url1 }}"
+             href="{%- if block.settings.url1 == blank -%}#{%- else -%}{{ block.settings.url1 }}{%- endif -%}"
              target="{{ block.settings.open_link }}"
              class=" lz_op_ef w__100 {%  if block.settings.url1 == blank %} pe_none{%endif%} "
              >
