@@ -218,13 +218,14 @@
 <div class="nt-social border_{{border_bl}} black_{{black_true}} my_padding">
   {%- unless follow_social -%}  
   {% if settings.share_on_facebook %}
-  <a data-no-instant rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u={{ permalinkURL }}" target="{{target}}" class="facebook cb {{class_tooltip}} my_a_padding">
+  <a data-no-instant rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u={{ permalinkURL }}" target="{{target}}" class="facebook cb {{class_tooltip}} my_a_padding" style="font:size:0">
     facebook
     <span class="bubble">{{ 'general.nt_tooltip.share_fb' | t }}</span>
     <span class="ts_style">
       {%- render 'icon-facebook' -%} 
     </span>
   </a>
+  
   {% endif %}
   {% if settings.tweet_on_twitter %}
   <a data-no-instant rel="noopener noreferrer nofollow" href="http://twitter.com/share?text={{ permaTitle }}&amp;url={{ permalinkURL }}" target="{{target}}" class="twitter cb {{class_tooltip}} my_a_padding">twitter
