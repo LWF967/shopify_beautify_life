@@ -36,8 +36,7 @@
     {% render 'meta-tags' %}
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-   {%comment%}{{ content_for_header }}{%endcomment%}
-      {% include 'optimize' %}
+   {{ content_for_header }}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -270,6 +269,5 @@
     {%- endif -%}
 
     <script src="{{ 'my-home.js' | asset_url }}" defer="defer"></script>
-     {{'ajaxfy.min.js' | asset_url | script_tag }}
   </body>
 </html>
