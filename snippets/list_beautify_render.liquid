@@ -15,7 +15,7 @@
     </ul>
     {% endcomment %}
 
-    <div  class="swiper-wrapper" data-grid="{{grid}}" data-loop="{{slide_loop}}" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%};">
+    <div  class="swiper-wrapper" data-grid="{{grid}}" data-loop="{{slide_loop}}" style="{%- if section.settings.show_page_Dot -%} flex-wrap: nowrap; {%- endif -%};margin-bottom: 30px;">
       {% for block in section.blocks limit: section.blocks.size %}
       <div class="swiper-slide " {{ block.shopify_attributes }}>
         {%- liquid 
@@ -115,7 +115,7 @@
 
 <style>
   .my_swiper_outside_content {
-    padding-bottom: 46px;
+    padding-bottom: 31px;
     position: relative;
   }
   
