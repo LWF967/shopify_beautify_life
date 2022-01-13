@@ -602,8 +602,7 @@
               class="lazyload header__heading-logo my_header_heading_logo"
               width="{{ section.settings.logo.width }}"
               height="{{ section.settings.logo.height }}"
-              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
-            >
+              alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
           {%- else -%}
             <span class="h2 my_header_icon_text_color">{{ shop.name }}</span>
          {%- endif -%}
