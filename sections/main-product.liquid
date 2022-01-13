@@ -119,7 +119,10 @@
   }
   
   .my_main_product_right_content {
-    {% if section.settings.main_product_mediasize == 'Medium' %}
+    {% if section.settings.main_product_mediasize == 'Small' %}
+    max-width: 66.666667% !important;
+    width: 66.666667% !important;
+    {% elsif section.settings.main_product_mediasize == 'Medium' %}
     max-width: 50% !important;
     width: 50% !important;
     {% else %}
