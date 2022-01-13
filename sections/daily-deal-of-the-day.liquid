@@ -904,8 +904,7 @@
   }
 </style>
 
-<script type="module">
-  import Swiper from '{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}'
+<script type="module" src="{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}">
   var deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
   	  direction: 'horizontal', 
       slidesPerView: 1,
