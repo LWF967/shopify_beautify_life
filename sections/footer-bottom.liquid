@@ -311,12 +311,12 @@
               {% assign my_integer = 10 %}
               {% assign my_float = my_integer | times: 1.0 %}
               {% assign svg_aspect_ratio = 16 | divided_by: my_float %}
-              {% assign svg_height = block.settings.svg_height | minus: 5 %}
+              {% assign svg_height = block.settings.svg_height %}
  			  {% assign svg_width = svg_height | times: svg_aspect_ratio %}
               {%- for img in arr -%}
               <img class="lazyload" 
                    width="{{ svg_width }}" 
-                   height="{{ block.settings.svg_height | minus: 5 }}" 
+                   height="{{ block.settings.svg_height }}" 
                    style="height: {{ block.settings.svg_height }}px;" 
                    src="https://cdn.shopify.com/s/assets/payment_icons/generic-dfdcaf09b6731ca14dd7441354c0ad8bc934184eb15ae1fda6a6b9e307675485.svg" 
                    data-src="{{ img | payment_type_img_url }}" 
