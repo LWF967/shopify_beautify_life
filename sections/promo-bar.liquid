@@ -124,20 +124,20 @@
   //cookie
   let ddl = document.getElementById('promo_bar_date');  
   let cookietime = ddl.dataset.date;
-  // 设置cookie
+  // set cookie
   function setCookie(name,value) {
     var Days = cookietime;
     var exp = new Date(); 
     exp.setTime(exp.getTime() + Days*24*60*60*1000);
     document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString() + ";path=" + "/";
   }
-  // 获取cookie
+  // get cookie
   function getCookie(name) {
     var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
     if(arr=document.cookie.match(reg)) return unescape(arr[2]);
     else return null;
   }
-  // 删除cookie
+  // delete cookie
   function delCookie(name) {
     var exp = new Date();
     exp.setTime(exp.getTime() - 1);
@@ -193,7 +193,7 @@
   var myPromoFreshDesignMode = Shopify.designMode || false;
   if(myPromoFreshDesignMode){      
     document.addEventListener('shopify:section:load',() => {  
-      // 注释后 自己不能刷新
+      // self refresh
       promo_bar_change();
     },true);
   }
