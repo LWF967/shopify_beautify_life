@@ -262,6 +262,30 @@ $(window).resize(function(){
   let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
   hide_banner.dataset.mheight = hide_banner_height;
   hide_banner.style.marginTop = 0;
+
+
+
+  let close = document.getElementsByClassName('show_close')[0];
+  close.onclick = function () {
+    if(hide_banner_height > hide_banner.dataset.mheight) {
+      hide_banner.dataset.mheight = hide_banner_height;
+    }
+    hide_banner.style.marginTop = -hide_banner_height + 'px';
+    hide_banner.style.transition = "margin-top .5s";
+    //       hide_banner.style.height = 0;
+
+  }
+
+  if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+    close.onclick = function () {
+      if(hide_banner_height > hide_banner.dataset.mheight) {
+        hide_banner.dataset.mheight = hide_banner_height;
+      }
+      hide_banner.style.marginTop = -hide_banner_height + 'px';
+      hide_banner.style.transition = "margin-top .5s";
+      //         hide_banner.style.height = 0;
+    }
+  }
 });
 
 var myHomeFreshDesignMode = Shopify.designMode || false;
