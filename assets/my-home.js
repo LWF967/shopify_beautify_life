@@ -261,7 +261,7 @@ $(window).resize(function(){
   let hide_banner = document.getElementById('hide_banner');  
   let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
   hide_banner.dataset.mheight = hide_banner_height;
-  hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+  hide_banner.style.marginTop = 0;
 });
 
 var myHomeFreshDesignMode = Shopify.designMode || false;
