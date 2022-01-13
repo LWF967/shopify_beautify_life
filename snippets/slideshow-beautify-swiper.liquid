@@ -30,7 +30,7 @@
     <div class="slideshow_content slideshow_box_{{section.id}}  slideshow_content-{{section.id}}  swiper-slide" style="height: auto;">
       <div class="">{{block.settings.slider_text}}</div>
       {%- if image != blank -%}  {% assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-      <img style="object-position: {{block.settings.image_alignment}};"
+      <amp-img style="object-position: {{block.settings.image_alignment}};"
            srcset="{%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
                    {%- if block.settings.image.width >= 720 -%}{{ block.settings.image | img_url: '720x' }} 720w,{%- endif -%}
                    {%- if block.settings.image.width >= 990 -%}{{ block.settings.image | img_url: '990x' }} 990w,{%- endif -%}
@@ -38,6 +38,7 @@
                    {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
                    {%- if block.settings.image.width >= 2200 -%}{{ block.settings.image | img_url: '2200x' }} 2200w,{%- endif -%}
                    {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | img_url: '3000x' }} 3000w,{%- endif -%}"
+               src="{{ block.settings.image | img_url: '300x' }}"
            data-src="{{ block.settings.image | img_url: '300x' }}"
            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" 
            data-sizes="auto" 
