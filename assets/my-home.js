@@ -258,8 +258,10 @@ window.onload = function() {
 
 $(window).resize(function(){
   my_home();
-        promo_bar_change();
-
+  let hide_banner = document.getElementById('hide_banner');  
+  let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+  hide_banner.dataset.mheight = hide_banner_height;
+  hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 });
 
 var myHomeFreshDesignMode = Shopify.designMode || false;
