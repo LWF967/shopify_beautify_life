@@ -149,7 +149,10 @@
     {% endstyle %}
     
 	{% include 'css-variables' %} 
-    {{ 'base.css' | asset_url | stylesheet_tag }}
+    
+    <link rel="preload" href="base.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="base.css"></noscript>
+    
 	{{ 'custome-content.css'| asset_url | stylesheet_tag }}
 	{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
     {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
