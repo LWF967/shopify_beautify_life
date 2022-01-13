@@ -308,7 +308,7 @@
             {%- elsif block.settings.source_img == 'SVG' and block.settings.svg_list -%}
             {%- assign arr = block.settings.svg_list | remove: ' ' | split: "," -%}
             <div class="dib bot_footer_svg">
-              {{ 19 | divided_by: 12 }}
+              {{ 19 | divided_by: 12 | times: 1.0 }}
               {%- for img in arr -%}
               <img class="lazyload" 
                    width="auto" 
