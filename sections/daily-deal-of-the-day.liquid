@@ -903,8 +903,7 @@
     width: 100%;
   }
 </style>
-<script src="{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}" defer="defer"></script>
-<script type="module">
+<script type="module" src="{{ 'swiper-bundle.esm.browser.min.js' | asset_url }}" defer="defer">
   var deal_swiper123 = new Swiper('.my_deal_swiper-{{section.id}}', {
   	  direction: 'horizontal', 
       slidesPerView: 1,
