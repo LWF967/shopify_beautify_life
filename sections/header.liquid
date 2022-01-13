@@ -589,6 +589,7 @@
              <img srcset="{{ section.settings.logo_svg | file_img_url: image_size }} 1x, {{ section.settings.logo_svg | file_img_url: image_size, scale: 2 }} 2x"
                   class="lazyload header__heading-logo my_header_heading_logo my_svg"
                   data-src="{{ section.settings.logo_svg | file_img_url: image_size }}" 
+                  loading="lazy"
                   alt="{{ section.settings.logo_svg.alt | default: shop.name }}"
                   width="{{ section.settings.logo.width }}"
                   height="{{ section.settings.logo.height}}"
