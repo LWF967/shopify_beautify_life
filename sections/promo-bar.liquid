@@ -193,7 +193,8 @@
       }
     }
     hide_banner.dataset.mheight = hide_banner_height;
-    hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+//     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+    hide_banner.style.height = "auto";
 
     setTimeout(function() {
       hide_banner.style.marginTop = 0 + 'px';
@@ -236,7 +237,7 @@
     }
     hide_banner.dataset.mheight = hide_banner_height;
 //     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-    hide_banner.style.height = 0;
+    hide_banner.style.height = "auto";
     
     setTimeout(function() {
       hide_banner.style.marginTop = 0 + 'px';
