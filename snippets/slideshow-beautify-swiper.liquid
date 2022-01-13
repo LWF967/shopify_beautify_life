@@ -38,7 +38,7 @@
                    {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | img_url: '1500x' }} 1500w,{%- endif -%}
                    {%- if block.settings.image.width >= 2200 -%}{{ block.settings.image | img_url: '2200x' }} 2200w,{%- endif -%}
                    {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | img_url: '3000x' }} 3000w,{%- endif -%}"
-               src="{{ block.settings.image | img_url: '300x' }}"
+           src="{{ block.settings.image | img_url: '300x' }}"
            data-src="{{ block.settings.image | img_url: '300x' }}"
            data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]" 
            data-sizes="auto" 
