@@ -5,7 +5,7 @@
         {%- if image1 != blank -%}
         <div class="swiper-slide 1">
           <a
-             href="{{ block.settings.url1 }}"
+             href="{% if block.settings.url1 == blank %}#{% else %}{{ block.settings.url1 }}{% endif %}"
              target="{{ block.settings.open_link }}"
              class=" lz_op_ef w__100 {%  if block.settings.url1 == blank %} pe_none{%endif%} "
              >
@@ -33,7 +33,7 @@
         {%- if image2 != blank -%}
         <div class="swiper-slide 2">
           <a
-             href="{{ block.settings.url2 }}"
+             href="{% if block.settings.url2 == blank %}#{% else %}{{ block.settings.url2 }}{% endif %}"
              target="{{ block.settings.open_link }}"
              class=" lz_op_ef w__100 {% if block.settings.url2  == blank %} pe_none{% endif %}"
              >
@@ -63,7 +63,7 @@
         {%- if image3 != blank -%}
         <div class="swiper-slide 3">
           <a
-             href="{{ block.settings.url3 }}"
+             href="{% if block.settings.url3 == blank %}#{% else %}{{ block.settings.url3 }}{% endif %}"
              target="{{ block.settings.open_link }}"
              class="lz_op_ef w__100 {% if block.settings.url3 == blank %} pe_none{% endif %} ">
             <div class="banner-beautify-imgbox">
