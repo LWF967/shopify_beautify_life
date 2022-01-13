@@ -239,8 +239,8 @@
                   <td class="cart-item__media my_cart_media_padding my_cart_mobile_padding_top">
                     {% if item.image %}
                       <a href="{{ item.url }}">
-                        <img class="cart-item__image my_cart_img_style"
-                          src="{{ item.image | img_url: '150x' }}"
+                        <img class="lazyload cart-item__image my_cart_img_style"
+                          data-src="{{ item.image | img_url: '150x' }}"
                           alt="{{ item.image.alt | escape }}"
                           loading="lazy"
                           width="100"
