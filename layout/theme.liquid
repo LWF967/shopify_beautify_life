@@ -154,7 +154,7 @@
 	<noscript><link rel="stylesheet" href="{{ 'custome-content.css' | asset_url }}"></noscript>
     
 	{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
-    {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+    {{ 'swiper-bundle.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
