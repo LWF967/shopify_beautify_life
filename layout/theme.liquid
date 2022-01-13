@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
     <script src="{{ 'lazysizes.js' | asset_url }}"></script>
+    {%comment%}
     <script src="{{ 'lazysizes.min.js' | asset_url }}"></script>
+    {%endcomment%}
     <script src="{{ 'jquery.3.5.1.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'tool-libraries.js' | asset_url }}" defer="defer"></script>
 
@@ -36,7 +38,7 @@
     {% render 'meta-tags' %}
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
-   {%comment%}
+    {%comment%}
     {{ content_for_header }}
     {%endcomment%}
       {% include 'optimize' %}
@@ -85,8 +87,6 @@
         --color-base-background-2: {{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};
         --color-base-solid-button-labels: {{ settings.colors_solid_button_labels.red }}, {{ settings.colors_solid_button_labels.green }}, {{ settings.colors_solid_button_labels.blue }};
         --color-base-outline-button-labels: {{ settings.colors_outline_button_labels.red }}, {{ settings.colors_outline_button_labels.green }}, {{ settings.colors_outline_button_labels.blue }};
-<!--         --color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }}; -->
-<!--         --color-base-accent-1: {{ settings.colors_primary_buttons.red }}, {{ settings.colors_primary_buttons.green }}, {{ settings.colors_primary_buttons.blue }}; -->
     	--color-base-accent-1: {{ settings.colors_accent_1 | color_to_rgb | remove: 'rgb(' | remove: 'rgba(' | remove: ')' | remove: ', 0.0'  }};
         --color-base-accent-2: {{ settings.colors_accent_2 | color_to_rgb | remove: 'rgb(' | remove: 'rgba(' | remove: ')' | remove: ', 0.0' }};
         --payment-terms-background-color: {{ settings.colors_background_1 }};
@@ -231,9 +231,6 @@
     
     {% if settings.enable_prevent_copying %}
     <script>
-      
-      document.addEventListener('touchstart', onTouchStart, {passive: true});
-      
       {% comment %} // disable_right_click {% endcomment %}
       document.addEventListener("contextmenu", function(event) {var notInput = (event.target || event.srcElement).tagName.toLowerCase() !== "input" && (event.target || event.srcElement).tagName.toLowerCase() !== "textarea";if (notInput && (event.target || event.srcElement).innerText) {event.preventDefault();} });
       {% comment %} // disable_right_click_img {% endcomment %}
@@ -278,6 +275,5 @@
 
     <script src="{{ 'my-home.js' | asset_url }}" defer="defer"></script>
     <script src="{{'ajaxfy.min.js' | asset_url }}" defer="defer"></script>
-     {%comment%}{{'ajaxfy.min.js' | asset_url | script_tag }}{%endcomment%}
   </body>
 </html>
