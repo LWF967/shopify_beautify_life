@@ -266,6 +266,7 @@ $(window).resize(function(){
 
 
   let close = document.getElementsByClassName('show_close')[0];
+  let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
   close.onclick = function () {
     if(hide_banner_height > hide_banner.dataset.mheight) {
       hide_banner.dataset.mheight = hide_banner_height;
