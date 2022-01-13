@@ -96,62 +96,10 @@
         "product_recommendations_margin_top": "",
         "product_recommendations_margin_bottom": ""
       }
-    },
-    "16399909164ab9b41a": {
-      "type": "collection-list-Beautify",
-      "blocks": {
-        "163999091639f986c6-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/small-business-interior.jpg",
-            "title": "New supply this week"
-          }
-        },
-        "163999091639f986c6-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/a-wet-bridge-covered-in-fog.jpg",
-            "title": "New supply this week"
-          }
-        },
-        "163999091639f986c6-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "",
-            "image": "shopify:\/\/shop_images\/green-and-white-marbled-coloring.jpg",
-            "title": "New supply this week"
-          }
-        }
-      },
-      "block_order": [
-        "163999091639f986c6-0",
-        "163999091639f986c6-1",
-        "163999091639f986c6-2"
-      ],
-      "settings": {
-        "title": "NEW RELEASES",
-        "sub_title": "New supply this week",
-        "grid": 3,
-        "slide_loop": false,
-        "show_view_all": false,
-        "show_page_Dot": false,
-        "page_dot_style": "style_1",
-        "page_dot_color": "dark",
-        "show_button": true,
-        "show_button_visible": "always",
-        "show_button_style": "style1",
-        "show_button_color": "white",
-        "show_button_hover_color": "",
-        "collection_list_beautify_margin_top": "",
-        "collection_list_beautify_margin_bottom": ""
-      }
     }
   },
   "order": [
     "main",
-    "product-recommendations",
-    "16399909164ab9b41a"
+    "product-recommendations"
   ]
 }
