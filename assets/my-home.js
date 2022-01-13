@@ -258,6 +258,8 @@ window.onload = function() {
 
 $(window).resize(function(){
   my_home();
+        promo_bar_change();
+
 });
 
 var myHomeFreshDesignMode = Shopify.designMode || false;
