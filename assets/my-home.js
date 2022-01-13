@@ -29,16 +29,7 @@ if(myFooterbottomFreshDesignMode){
 
     var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 
-    // 创建观察者对象
-
-//     var observer = new MutationObserver(function(){
     var observer = new MutationObserver(my_home_debounce(function (mutations) {
-            mutations.forEach(function(mutation){
-
-              console.log(mutation.type);
-
-            });
-      // footer sticky
       if(sticky.length > 0) {
         if(document.body.clientWidth < 1024) {
           main.style.marginBottom = 0;
@@ -73,12 +64,8 @@ if(myFooterbottomFreshDesignMode){
       }
     }, 500));
 
-    // 配置观察选项:
     var config = { attributes: true, childList: true, characterData: true ,subtree : true };
-    // 传入目标节点和观察选项
     observer.observe(target, config); 
-    // 随后,你还可以停止观察
-    //     observer.disconnect();
   },true);
 }
 
@@ -109,7 +96,6 @@ function my_header_and_totop() {
     let content = document.getElementsByClassName('content')[0];
     let my_header_sticky = document.getElementsByClassName('my_header_sticky');
     let my_backtop = document.getElementById('my_backtop');
-
     
     let toTop = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -230,8 +216,6 @@ function my_home() {
   let my_footer_sticky = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0];
   let main = document.getElementById('MainContent');
   let sticky = document.getElementsByClassName('my_footer_sticky');
-//   let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
-//   let footer_bottom_height = document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0].scrollHeight;
   // footer sticky
   if(sticky.length > 0) {
     let my_footer_sticky_height = document.getElementsByClassName('footer color- gradient my_footer_sticky')[0].scrollHeight;
