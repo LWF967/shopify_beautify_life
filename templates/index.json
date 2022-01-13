@@ -608,6 +608,50 @@
         "testimonials_margin_bottom": ""
       }
     },
+    "164205667678fe7dc3": {
+      "type": "testimonials",
+      "blocks": {
+        "1642056676bfe80259-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shooting-high-8-camera.jpg",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
+        },
+        "1642056676bfe80259-1": {
+          "type": "column",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
+        },
+        "1642056676bfe80259-2": {
+          "type": "column",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "testimonials_author_text": "Author"
+          }
+        }
+      },
+      "block_order": [
+        "1642056676bfe80259-0",
+        "1642056676bfe80259-1",
+        "1642056676bfe80259-2"
+      ],
+      "settings": {
+        "title": "testimonials",
+        "swipe": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "Button label",
+        "button_link": "",
+        "testimonials_margin_top": "",
+        "testimonials_margin_bottom": ""
+      }
+    },
     "16418930590c0df00d": {
       "type": "blog-page-post-beautify",
       "settings": {
@@ -741,6 +785,7 @@
     "1640677918927d5968",
     "163454604067313d0f",
     "1640779459ad2f49fb",
+    "164205667678fe7dc3",
     "16418930590c0df00d",
     "163817972763d6e808",
     "164205653276e134bf"
