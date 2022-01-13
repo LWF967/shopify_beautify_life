@@ -186,8 +186,7 @@
       }
     }
     hide_banner.dataset.mheight = hide_banner_height;
-//     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-    hide_banner.style.height = 0;
+    hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
 
     setTimeout(function() {
       hide_banner.style.marginTop = 0 + 'px';
@@ -232,11 +231,9 @@
       }
     }
     hide_banner.dataset.mheight = hide_banner_height;
-//     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-    hide_banner.style.height = 0;
-    hide_banner.style.transition = "height .5s";
+    hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
     
-        setTimeout(function() {
+    setTimeout(function() {
       hide_banner.style.marginTop = 0 + 'px';
       hide_banner.style.transition = "margin-top .5s";
     }, 500);
