@@ -208,7 +208,6 @@
       {{ "accessibility.skip_to_text" | t }}
     </a>
     {% section 'promo-bar' %}
-    {% comment %} {% section 'announcement-bar' %} {% endcomment %}
     {% section 'top-bar' %}
     {% section 'header' %}
 
@@ -216,10 +215,8 @@
       {{ content_for_layout }}
     </main>
 	
-  	{% comment %} {% section 'footer' %} {% endcomment %}
     {% section 'footer-top' %}
     {% section 'footer-bottom' %}
-    {% comment %} {% section 'footer' %} {% endcomment %}
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
     </ul>
