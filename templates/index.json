@@ -142,7 +142,6 @@
     },
     "16396203697a4ba826": {
       "type": "collection-list-Beautify",
-      "disabled": true,
       "blocks": {
         "1639620369bd20c112-0": {
           "type": "featured_collection",
@@ -239,7 +238,6 @@
     },
     "163608389212513e57": {
       "type": "banner-Beautify",
-      "disabled": true,
       "blocks": {
         "156f1a45-4a68-4f2f-9ae1-8593da6509d7": {
           "type": "banner_third",
@@ -420,7 +418,6 @@
     },
     "1638344641035ba32e": {
       "type": "image-with-text-overlay",
-      "disabled": true,
       "blocks": {
         "1638344641deab7755-0": {
           "type": "heading",
@@ -541,7 +538,6 @@
     },
     "163454604067313d0f": {
       "type": "daily-deal-of-the-day",
-      "disabled": true,
       "settings": {
         "product": "lol6",
         "heading_text": "Daily Deal Of The Day",
