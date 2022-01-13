@@ -310,7 +310,7 @@
             <div class="dib bot_footer_svg">
               {%- for img in arr -%}
               {%- assign imgurl = img | payment_type_img_url -%}
-              {{ imgurl.width }}
+              {{ imgurl.width }}1
               <img class="lazyload" 
                    width="auto" 
                    height="{{ block.settings.svg_height | minus: 5 }}" 
