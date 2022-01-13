@@ -1125,7 +1125,7 @@ jQuery_T4NT( window ).on( "load", function($) {
     };
 
     if (Math.abs(moveVector.x) > nt_settings.dragThreshold) e.preventDefault();
-  }, { passive: false });
+  }, { passive: true });
 })();
 //   var tapArea, startX ;
 //   tapArea = document.querySelectorAll('.flickity-enabled.is-draggable:not(.p-nav)');
