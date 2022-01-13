@@ -312,7 +312,7 @@
               {% assign my_float = my_integer | times: 1.0 %}
               {% assign svg_aspect_ratio = 19 | divided_by: my_float %}
               {% assign svg_height = block.settings.svg_height | minus: 5 %}
- 			  {{ svg_height | plus: svg_aspect_ratio }}
+ 			  {{ svg_height }}
               {%- for img in arr -%}
               <img class="lazyload" 
                    width="auto" 
