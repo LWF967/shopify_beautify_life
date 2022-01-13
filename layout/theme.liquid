@@ -269,6 +269,7 @@
     {%- endif -%}
 
     <script src="{{ 'my-home.js' | asset_url }}" defer="defer"></script>
-     {{'ajaxfy.min.js' | asset_url | script_tag }}
+    <script src="{{'ajaxfy.min.js' | asset_url }}" defer="defer"></script>
+     {%comment%}{{'ajaxfy.min.js' | asset_url | script_tag }}{%endcomment%}
   </body>
 </html>
