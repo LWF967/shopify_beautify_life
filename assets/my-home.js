@@ -71,6 +71,7 @@ if(myFooterbottomFreshDesignMode){
   
 
       // self refresh
+//       promo_bar_change();
 
       // 选择目标节点
       var target11 = document.querySelector('#hide_banner');
@@ -78,7 +79,10 @@ if(myFooterbottomFreshDesignMode){
       // 创建观察者对象
       var observer11 = new MutationObserver(function(mutations){
         // 观察监听的内容
-      promo_bar_change();
+        mutations.forEach(function(mutation){
+          console.log(mutation.type);
+        });
+              promo_bar_change();
 
       });
 
@@ -87,7 +91,7 @@ if(myFooterbottomFreshDesignMode){
       // 传入目标节点和观察选项
       observer11.observe(target11, config11); 
 //       停止观察
-//       observer.disconnect();
+      observer.disconnect();
     
     
   
