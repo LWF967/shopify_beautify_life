@@ -1,6 +1,6 @@
 {{ 'my-customer.css' | asset_url | stylesheet_tag }}
 
-<script src="{{ 'customer.js' | asset_url }}"></script>
+<script src="{{ 'customer.js' | asset_url }}" defer="defer"></script>
 
 <style>
   .my_addresses h1 {
@@ -405,13 +405,8 @@
 {%- endpaginate -%}
 
 <script type="module">
-//  window.onload = () => {
-//    typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
-//    
-//  }
   let flag = false;
  var toggleButtonAddAddress =  document.querySelector(".add_address")
-//  console.log(add_address);
  toggleButtonAddAddress.addEventListener('click',function(e){
    e.stopPropagation();
    if(!flag){
