@@ -199,6 +199,7 @@
 //       hide_banner.style.transition = "height .5s";
     }, 500);
   }
+  promo_bar_change();
   
   var myPromoFreshDesignMode = Shopify.designMode || false;
   if(myPromoFreshDesignMode){  
@@ -210,6 +211,7 @@
     var target1 =  document.getElementById('hide_banner'); 
 
     var observer1 = new MutationObserver(function (mutations) {
+      console.log(1);
       
       let close = document.getElementsByClassName('show_close')[0];
       let my_center = document.getElementsByClassName('my_center')[0];
