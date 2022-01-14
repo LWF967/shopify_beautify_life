@@ -742,6 +742,20 @@
         "video_beautify_margin_top": "",
         "video_beautify_margin_bottom": ""
       }
+    },
+    "1642142295537a3403": {
+      "type": "map",
+      "settings": {
+        "heading": "Our store",
+        "address": "<p>123 Fake St.<br\/>Toronto, Canada<\/p><p>Mon - Fri, 10am - 9pm<br\/>Saturday, 11am - 9pm<br\/>Sunday, 11am - 5pm<\/p>",
+        "map_address": "301 Front St W, Toronto",
+        "button_text": "Get directions",
+        "show_pin": true,
+        "background_image": "shopify:\/\/shop_images\/person-crouches-down-on-a-street-and-paints-a-door-white.jpg",
+        "background_image_position": "center center",
+        "map_margin_top": "",
+        "map_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -759,6 +773,7 @@
     "16418930590c0df00d",
     "163817972763d6e808",
     "164205653276e134bf",
-    "164214219240c38dd1"
+    "164214219240c38dd1",
+    "1642142295537a3403"
   ]
 }
