@@ -300,12 +300,21 @@
             "image": "shopify:\/\/shop_images\/photographer-child.jpg",
             "title": "New supply this week"
           }
+        },
+        "ca7bf821-f1e0-40de-bc6a-1f5ffc522386": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/musical-and-rustic-domestic-objects-inside-a-caravan.jpg",
+            "title": "New supply this week"
+          }
         }
       },
       "block_order": [
         "164215473220161b6e-0",
         "164215473220161b6e-1",
-        "164215473220161b6e-2"
+        "164215473220161b6e-2",
+        "ca7bf821-f1e0-40de-bc6a-1f5ffc522386"
       ],
       "settings": {
         "title": "NEW RELEASES",
