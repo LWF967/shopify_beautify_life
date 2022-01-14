@@ -168,7 +168,6 @@
     let hide_banner = document.getElementById('hide_banner');  
     let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
     let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
-        console.log(1);
     close.onclick = function () {
       if(hide_banner_height > hide_banner.dataset.mheight) {
         hide_banner.dataset.mheight = hide_banner_height;
@@ -196,18 +195,19 @@
     setTimeout(function() {
       hide_banner.style.marginTop = 0 + 'px';
       hide_banner.style.transition = "margin-top .5s";
+      console.log("why");
 //       hide_banner.style.height = hide_banner_height + "px";
 //       hide_banner.style.transition = "height .5s";
     }, 500);
   }
   
-//   var myPromoFreshDesignMode = Shopify.designMode || false;
-//   if(myPromoFreshDesignMode){  
-//     document.addEventListener('shopify:section:load',() => {  
-//       // self refresh
-//       promo_bar_change();
-//     },true);
-//   }
+  var myPromoFreshDesignMode = Shopify.designMode || false;
+  if(myPromoFreshDesignMode){  
+    document.addEventListener('shopify:section:load',() => {  
+      // self refresh
+      promo_bar_change();
+    },true);
+  }
   
   function promo_bar_fun() {   
     let close = document.getElementsByClassName('show_close')[0];
