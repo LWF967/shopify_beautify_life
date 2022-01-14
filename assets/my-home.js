@@ -18,6 +18,153 @@ function my_home_debounce(func, wait = 500) {
   }
 }
 
+
+
+  //cookie
+  let ddl = document.getElementById('promo_bar_date');  
+  let cookietime = ddl.dataset.date;
+  // set cookie
+  function setCookie(name,value) {
+    var Days = cookietime;
+    var exp = new Date(); 
+    exp.setTime(exp.getTime() + Days*24*60*60*1000);
+    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString() + ";path=" + "/";
+  }
+  // get cookie
+  function getCookie(name) {
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg)) return unescape(arr[2]);
+    else return null;
+  }
+  // delete cookie
+  function delCookie(name) {
+    var exp = new Date();
+    exp.setTime(exp.getTime() - 1);
+    var cval=getCookie(name);
+    if(cval!=null) document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+  }
+  
+  var myPromoFreshDesignMode2 = Shopify.designMode || false;
+  if(myPromoFreshDesignMode2){      
+    promo_bar_change();
+  } else {
+    if(getCookie("ddl")){
+      let hide_banner = document.getElementById('hide_banner'); 
+      let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+      hide_banner.style.marginTop = -hide_banner_height + 'px';
+//       hide_banner.style.height = 0;
+    } else {
+      promo_bar_fun();
+    }
+  }
+  
+  function promo_bar_change() {
+    let close = document.getElementsByClassName('show_close')[0];
+    let my_center = document.getElementsByClassName('my_center')[0];
+    let hide_banner = document.getElementById('hide_banner');  
+    let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+    let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+    close.onclick = function () {
+      if(hide_banner_height > hide_banner.dataset.mheight) {
+        hide_banner.dataset.mheight = hide_banner_height;
+      }
+      hide_banner.style.marginTop = -hide_banner_height + 'px';
+      hide_banner.style.transition = "margin-top .5s";
+//       hide_banner.style.height = 0;
+
+    }
+
+    if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+      close.onclick = function () {
+        if(hide_banner_height > hide_banner.dataset.mheight) {
+          hide_banner.dataset.mheight = hide_banner_height;
+        }
+        hide_banner.style.marginTop = -hide_banner_height + 'px';
+        hide_banner.style.transition = "margin-top .5s";
+//         hide_banner.style.height = 0;
+      }
+    }
+    hide_banner.dataset.mheight = hide_banner_height;
+    hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+//     hide_banner.style.height = 0;
+
+    setTimeout(function() {
+      hide_banner.style.marginTop = 0 + 'px';
+      hide_banner.style.transition = "margin-top .5s";
+//       hide_banner.style.height = hide_banner_height + "px";
+//       hide_banner.style.transition = "height .5s";
+    }, 500);
+  }
+
+//   promo_bar_change();
+  
+//   var myPromoFreshDesignMode = Shopify.designMode || false;
+//   if(myPromoFreshDesignMode){ 
+//     document.addEventListener('shopify:section:load',() => {  
+//       // self refresh
+//       promo_bar_change();
+
+//       // 选择目标节点
+//       var target11 = document.querySelector('#hide_banner');
+
+//       // 创建观察者对象
+//       var observer11 = new MutationObserver(function(mutations){
+//         // 观察监听的内容
+//         mutations.forEach(function(mutation){
+//           console.log(mutation.type);
+//         });
+//       });
+
+//       // 配置观察选项:
+//       var config11 = { attributes: true, childList: true, characterData: true ,subtree : true };
+//       // 传入目标节点和观察选项
+//       observer11.observe(target11, config11); 
+//       // 停止观察
+// //       observer.disconnect();
+    
+    
+    
+//     },true);
+//   }
+  
+  function promo_bar_fun() {   
+    let close = document.getElementsByClassName('show_close')[0];
+    let my_center = document.getElementsByClassName('my_center')[0];
+    let hide_banner = document.getElementById('hide_banner');  
+    let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+    let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+    close.onclick = function () {
+      if(hide_banner_height > hide_banner.dataset.mheight) {
+        hide_banner.dataset.mheight = hide_banner_height;
+      }
+      hide_banner.style.marginTop = -hide_banner_height + 'px';
+//       hide_banner.style.height = 0;
+      setCookie("ddl",cookietime);
+    }
+
+    if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+      close.onclick = function () {
+        if(hide_banner_height > hide_banner.dataset.mheight) {
+          hide_banner.dataset.mheight = hide_banner_height;
+        }
+        hide_banner.style.marginTop = -hide_banner_height + 'px';
+//         hide_banner.style.height = 0;
+        setCookie("ddl",cookietime);
+      }
+    }
+    hide_banner.dataset.mheight = hide_banner_height;
+    hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
+//     hide_banner.style.height = 0;
+    
+    setTimeout(function() {
+      hide_banner.style.marginTop = 0 + 'px';
+      hide_banner.style.transition = "margin-top .5s";
+//       hide_banner.style.height = hide_banner_height + "px";
+//       hide_banner.style.transition = "height .5s";
+    }, 500);
+  }
+
+
 var myFooterbottomFreshDesignMode = Shopify.designMode || false;
 if(myFooterbottomFreshDesignMode){
   document.addEventListener('shopify:section:load',() => {
