@@ -66,40 +66,36 @@ if(myFooterbottomFreshDesignMode){
 
     var config = { attributes: true, childList: true, characterData: true ,subtree : true };
     observer.observe(target, config); 
-  
-  
-  
-
-      // self refresh
+  },true);
+}
 
   
-//   promo_bar_change();
+var myPromoFreshDesignMode = Shopify.designMode || false;
+if(myPromoFreshDesignMode){
+  document.addEventListener('shopify:section:load',() => {
+    // self refresh
 
-      // 选择目标节点
-      var target11 = document.querySelector('#hide_banner');
+    // 选择目标节点
+    var target11 = document.querySelector('#hide_banner');
 
-      // 创建观察者对象
-      var observer11 = new MutationObserver(my_home_debounce(function(mutations){
-        // 观察监听的内容
-        mutations.forEach(function(mutation){
-          console.log(mutation.type);
-        });
-          promo_bar_change();
+    // 创建观察者对象
+    var observer11 = new MutationObserver(my_home_debounce(function(mutations){
+      // 观察监听的内容
+      mutations.forEach(function(mutation){
+        console.log(mutation.type);
+      });
+      promo_bar_change();
 
-        
 
-      }, 500));
 
-      // 配置观察选项:
-      var config11 = { attributes: true, childList: true, characterData: true ,subtree : true };
-      // 传入目标节点和观察选项
-      observer11.observe(target11, config11); 
-//       停止观察
-      observer11.disconnect();
-    
-    
-  
-  
+    }, 500));
+
+    // 配置观察选项:
+    var config11 = { attributes: true, childList: true, characterData: true ,subtree : true };
+    // 传入目标节点和观察选项
+    observer11.observe(target11, config11); 
+    //       停止观察
+    observer11.disconnect();               
   },true);
 }
 
