@@ -201,13 +201,13 @@
     }, 500);
   }
   
-  var myPromoFreshDesignMode = Shopify.designMode || false;
-  if(myPromoFreshDesignMode){  
-    document.addEventListener('shopify:section:load',() => {  
-      // self refresh
-      promo_bar_change();
-    },true);
-  }
+//   var myPromoFreshDesignMode = Shopify.designMode || false;
+//   if(myPromoFreshDesignMode){  
+//     document.addEventListener('shopify:section:load',() => {  
+//       // self refresh
+//       promo_bar_change();
+//     },true);
+//   }
   
   function promo_bar_fun() {   
     let close = document.getElementsByClassName('show_close')[0];
