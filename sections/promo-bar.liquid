@@ -299,6 +299,7 @@
 
   var config1 = { attributes: true, childList: true, characterData: true ,subtree : true };
   observer1.observe(target1, config1);
+  observer1.disconnect();
   
   function promo_bar_fun() {   
     let close = document.getElementsByClassName('show_close')[0];
