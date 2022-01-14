@@ -42,6 +42,7 @@
         "a937ada3-5730-4ff4-9c76-dc2e1916aca1": {
           "type": "slideshow_img2",
           "settings": {
+            "image": "shopify:\/\/shop_images\/photographer-child.jpg",
             "image_alignment": "center center",
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
