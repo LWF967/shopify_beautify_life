@@ -94,14 +94,14 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/music-at-the-pantheon.jpg",
             "width": "50%",
-            "alignment": "center"
+            "alignment": "middle-right"
           }
         },
         "ba08ea2f-8944-4891-a281-4717be7cefa7": {
           "type": "product",
           "settings": {
             "product": "text4",
-            "width": "50%",
+            "width": "25%",
             "alignment": "center"
           }
         },
