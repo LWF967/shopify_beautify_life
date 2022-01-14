@@ -1,44 +1,43 @@
 {{ 'my-customer.css' | asset_url | stylesheet_tag }}
 
-<script src="{{ 'customer.js' | asset_url }}" defer></script>
+<script src="{{ 'customer.js' | asset_url }}" defer="defer"></script>
 
 <style>
-.my_addresses h1 {
-  font-size: 36px;
-  margin:120px 0 55px 0;
-  font-weight: 700;
-}
+  .my_addresses h1 {
+    font-size: 36px;
+    margin:120px 0 55px 0;
+    font-weight: 700;
+  }
 
+  .my_addresses ul li button{
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font: inherit;
+    padding: 0.9rem 1rem 1.1rem;
+    text-decoration: none;
+    border: 0;
+    border-radius: 0;
+    background-color: var(--color-button);
+    box-shadow: 0 0 0 0.1rem rgb(var(--color-button));
+    color: var(--color-button-text);
+    min-width: 10rem;
+    min-height: 44px;
+    transition: box-shadow var(--duration-short) ease;
+    -webkit-appearance: none;
+    appearance: none;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-.my_addresses ul li button{
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  font: inherit;
-  padding: 0.9rem 1rem 1.1rem;
-  text-decoration: none;
-  border: 0;
-  border-radius: 0;
-  background-color: var(--color-button);
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-button));
-  color: rgb(var(--color-button-text));
-  min-width: 10rem;
-  min-height: 44px;
-  transition: box-shadow var(--duration-short) ease;
-  -webkit-appearance: none;
-  appearance: none;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.customer.my_addresses .field input{
+  .customer.my_addresses .field input{
     height: 4.4rem;
     font-size: 14px;
     background: transparent !important;
   }
-.customer.my_addresses .field label{
+  .customer.my_addresses .field label{
     font-size: 14px;
     left: 1.2rem;
   }
@@ -57,7 +56,7 @@
     text-align: left;
     margin-top: 0;
   }
- .my_addresses ul li .my_edit_address{
+  .my_addresses ul li .my_edit_address{
     font-size: 30px;
   }
   .my_addresses .add_addresses{
@@ -80,48 +79,48 @@
     margin-left: 0;
   }
   @media screen and (min-width: 750px){
-.customer:not(.account):not(.order){
-  max-width: 120rem;
-  margin: 0px 55px;
-}
-}
-.my_addresses .my_addresses_acount{
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  justify-content: start;
-  align-items:flex-start ;
-}
-.my_addresses .my_addresses_acount .add_address , 
-.my_addresses .my_addresses_acount .my_account_return{
-  font-size: 16px;
-  min-height: 22px;
-  margin: 15px 0 ;
-  padding-left: 0;
-  text-decoration: underline;
-}
-.my_addresses .my_addresses_acount .add_address:hover ,
- .my_addresses .my_addresses_acount .my_account_return:hover{
-  text-decoration-thickness: 0.2rem;
-}
-.my_addresses .my_addresses_acount .my_account_return{
-  margin: 0;
-}
-.my_addresses .my_addAddress_from h2{
-  font-size: 30px;
-  font-weight: 700;
-  padding-bottom: 0;
-  margin:0 0 30px 0;
-}
-.my_addresses .my_address_hr{
-  margin: 5.5rem 0 2.5rem 0;
-}
-@media screen and (max-width: 750px){
+  .customer.my_addresses{
+    max-width: 120rem !important;
+    padding: 0 55px !important;
+  }
+  }
+  .my_addresses .my_addresses_acount{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: start;
+    align-items:flex-start ;
+  }
+  .my_addresses .my_addresses_acount .add_address , 
+  .my_addresses .my_addresses_acount .my_account_return{
+    font-size: 16px;
+    min-height: 22px;
+    margin: 15px 0 ;
+    padding-left: 0;
+    text-decoration: underline;
+  }
+  .my_addresses .my_addresses_acount .add_address:hover ,
+  .my_addresses .my_addresses_acount .my_account_return:hover{
+    text-decoration-thickness: 0.2rem;
+  }
+  .my_addresses .my_addresses_acount .my_account_return{
+    margin: 0;
+  }
+  .my_addresses .my_addAddress_from h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 0;
+    margin:0 0 30px 0;
+  }
   .my_addresses .my_address_hr{
-  margin: 3rem 0 0 0;
-}
-}
-.my_addresses .my_address_update{
+   margin: 5.5rem 0 2.5rem 0;
+  }
+  @media screen and (max-width: 750px){
+  .my_addresses .my_address_hr{
+    margin: 3rem 0 0 0;
+  }
+  }
+  .my_addresses .my_address_update{
     font-size: 16px;
     min-height: 44px;
     margin-top: 30px;
@@ -136,13 +135,14 @@
     display: block;
     text-align: left;
     margin-bottom: 0;
+    font-weight: normal;
   }
 
 
 </style>
 
 {%- paginate customer.addresses by 5 -%}
-  <div class="customer addresses my_addresses my_customer " data-customer-addresses>
+  <div class="customer addresses my_addresses my_customer" data-customer-addresses>
     <svg style="display: none">
       <symbol id="icon-caret" viewBox="0 0 10 6">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
@@ -157,17 +157,16 @@
         {{ 'customer.account.return' | t }}
       </a>
       <a
-      class="add_address"
-        aria-expanded="false"
-        aria-controls="AddAddress"
-      >
+         class="add_address"
+         aria-expanded="false"
+         aria-controls="AddAddress">
         {{ 'customer.addresses.add_new' | t }}
     </a>
       <div id="AddAddress" class="my_addAddress_from">
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
           <div class="field">
-            <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
+            <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}" >
             <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
           </div>
           <div class="field">
@@ -199,7 +198,7 @@
                 data-default="{{ form.country }}"
                 autocomplete="country"
               >
-                {{ all_country_option_tags }}
+                {{ all_country_option_tags  }}
               </select>
               <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
                 <use href="#icon-caret" />
@@ -234,7 +233,7 @@
             <label for="address_default_address_new">{{ 'customer.addresses.set_default' | t }}</label>
           </div>
           <div>
-            <button class="add_addresses">{{ 'customer.addresses.add' | t }}</button>
+            <button class="add_addresses button">{{ 'customer.addresses.add' | t }}</button>
             <button class="add_addresses_reset" type="reset">{{ 'customer.addresses.cancel' | t }}</button>
             <hr class="my_address_hr">
           </div>
@@ -247,10 +246,11 @@
         <li data-address>
           {%- if address == customer.default_address -%}
           
-            <h2>{{ 'customer.addresses.default' | t }}</h2>
+            <h2>{{ 'customer.addresses.default' | t | upcase }}</h2>
           {%- endif -%}
           {{ address | format_address }}
           <button
+          class="button"
           style="height: 44px;"
             type="button"
             id="EditFormButton_{{ address.id }}"
@@ -262,6 +262,7 @@
             {{ 'customer.addresses.edit' | t }}
           </button>
           <button
+          class="button"
           style="height: 44px;"
             type="button"
             aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
@@ -349,7 +350,7 @@
                 </label>
               </div>
               <div>
-                <button class="my_address_update">{{ 'customer.addresses.update' | t }}</button>
+                <button class="my_address_update button">{{ 'customer.addresses.update' | t }}</button>
                 <button type="reset" class="my_address_cancel">{{ 'customer.addresses.cancel' | t }}</button>
                
               </div>
