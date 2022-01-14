@@ -91,7 +91,7 @@ if(myFooterbottomFreshDesignMode){
       // 传入目标节点和观察选项
       observer11.observe(target11, config11); 
 //       停止观察
-      observer.disconnect();
+      observer11.disconnect();
     
     
   
