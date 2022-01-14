@@ -789,6 +789,52 @@
         "map_margin_top": "",
         "map_margin_bottom": ""
       }
+    },
+    "16421530081f6084e2": {
+      "type": "text-columns-with-images",
+      "blocks": {
+        "16421530084f3d47c9-0": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        },
+        "16421530084f3d47c9-1": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        },
+        "16421530084f3d47c9-2": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16421530084f3d47c9-0",
+        "16421530084f3d47c9-1",
+        "16421530084f3d47c9-2"
+      ],
+      "settings": {
+        "Text_columns_with_images_heading": "Text column with images",
+        "Text_columns_with_images_Text_alignment": "Left",
+        "text_columns_with_images_margin_top": "",
+        "text_columns_with_images_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -807,6 +853,7 @@
     "163817972763d6e808",
     "164205653276e134bf",
     "164214219240c38dd1",
-    "1642142295537a3403"
+    "1642142295537a3403",
+    "16421530081f6084e2"
   ]
 }
