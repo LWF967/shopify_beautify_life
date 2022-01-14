@@ -215,6 +215,10 @@
     },true);
   }
   
+      $("#hide_banner").bind('DOMSubtreeModified', function() {  
+	  console.log(222);
+    });
+  
   function promo_bar_fun() {   
     let close = document.getElementsByClassName('show_close')[0];
     let my_center = document.getElementsByClassName('my_center')[0];
