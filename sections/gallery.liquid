@@ -1,0 +1,170 @@
+<div class="page-width spaced-section"
+     style="{%- if section.settings.gallery_margin_top != blank -%}margin-top: {{ section.settings.gallery_margin_top }}px; {%- endif -%}{%- if section.settings.gallery_margin_bottom != blank -%}margin-bottom:{{ section.settings.gallery_margin_bottom }}px;{%- endif -%}">
+  <div class="gallery-box" >
+    {%- for block in section.blocks -%}
+      {% liquid
+        assign focus_card_left = false
+        if section.settings.align_text == 'left' and forloop.first
+          assign focus_card_left = true
+        elsif section.settings.align_text == 'right' and forloop.last
+          assign focus_card_right = true
+        endif
+      %}
+      {%- case block.type -%}
+        {%- when 'image' -%}
+              {% include 'image-grid-item-beautify', block: block %}
+         {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+<style>
+  .gallery-box{
+    display: flex;
+    overflow: hidden;
+    {% case section.settings.section_height  %}
+    {% when 'extra_small'%}
+    max-height: calc(380px * 0.4);
+    {% when 'small'%}
+    max-height: calc(380px * 0.8);
+    {% when 'medium'%}
+    max-height: calc(380px * 1);
+    {% when 'large'%}
+    max-height: calc(380px * 1.2);
+    {% when 'extra_large'%}
+    max-height: calc(380px * 1.6);
+    {% endcase %}
+  }  
+
+  @media screen and (max-width: 750px) {
+    .gallery-box{
+      display: flex;
+      max-height: 100%;
+      overflow: hidden;
+      flex-direction: column;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Gallery",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "section_height",
+      "options": [
+        {
+          "value": "extra_small",
+          "label": "Extra Small"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "extra_large",
+          "label": "Extra Large"
+        }
+      ],
+      "default": "medium",
+      "label": "Section height"
+    },
+    {
+      "type": "text",
+      "id": "gallery_margin_top",
+      "label": "Margin top",
+      "info": "t:sections.margintip.settings.margin_top_tip.label"
+    },
+    {
+      "type": "text",
+      "id": "gallery_margin_bottom",
+      "label": "Margin bottom",
+      "info": "t:sections.margintip.settings.margin_bottom_tip.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.collage.blocks.image.settings.image.label"
+        },
+		{
+          "type": "select",
+          "id": "align_text",
+          "label": {
+            "en": "Position"
+          },
+          "default": "left",
+          "options": [
+            {
+              "value": "left",
+              "label": {
+                "en": "Left"
+              }
+            },
+            {
+              "value": "center",
+              "label": {
+                "en": "Centered"
+              }
+            },
+            {
+              "value": "right",
+              "label": {
+                "en": "Right"
+              }
+            }
+          ]
+        },
+        {
+          "label": "Link ",
+          "id": "img_link",
+          "type": "url",
+          "info":"Opitional"
+        },
+        {
+          "type": "text",
+          "id": "caption_head",
+          "label": {
+            "en": "Caption"
+          },
+          "default": {
+            "en": "Image"
+          }
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Gallery",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
