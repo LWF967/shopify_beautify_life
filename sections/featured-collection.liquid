@@ -81,9 +81,7 @@
         <span class="slider-counter--current">1</span>
         <span aria-hidden="true"> / </span>
         <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
-        {%- assign products_to_displaya = products_to_display | times: 0 -%}
-        <span class="slider-counter--total">{{ products_to_displaya }}</span>
-        <span class="slider-counter--total">{{ products_to_display }}</span>
+        <span class="slider-counter--total">{{ products_to_display }}0</span>
       </div>
       <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
     </div>
