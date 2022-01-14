@@ -206,6 +206,12 @@
       // self refresh
 //       promo_bar_change();
 
+      let close = document.getElementsByClassName('show_close')[0];
+      let my_center = document.getElementsByClassName('my_center')[0];
+      //         let hide_banner = document.getElementById('hide_banner');  
+      let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+      let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+                              
       // 选择目标节点
       var target11 = document.getElementById('hide_banner');
 
@@ -217,11 +223,6 @@
         });
         console.log(111);
         
-        let close = document.getElementsByClassName('show_close')[0];
-        let my_center = document.getElementsByClassName('my_center')[0];
-//         let hide_banner = document.getElementById('hide_banner');  
-        let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-        let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
         close.onclick = function () {
           if(hide_banner_height > target11.dataset.mheight) {
             target11.dataset.mheight = hide_banner_height;
