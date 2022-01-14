@@ -201,9 +201,8 @@
   }
   
   var myPromoFreshDesignMode = Shopify.designMode || false;
-  if(myPromoFreshDesignMode){ 
-    let hide_banner = document.getElementById('hide_banner');  
-    hide_banner.addEventListener('shopify:section:load',() => {  
+  if(myPromoFreshDesignMode){  
+    document.addEventListener('shopify:section:load',() => {  
       // self refresh
       promo_bar_change();
     console.log(1);
