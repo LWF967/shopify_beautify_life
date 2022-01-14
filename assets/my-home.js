@@ -319,7 +319,6 @@ function my_home() {
 my_header_and_totop();
 my_home();
 
-
 window.onload = function() {
   typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
   my_home();
