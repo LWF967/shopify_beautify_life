@@ -1,7 +1,38 @@
 {
   "sections": {
+    "1642153306c1673eff": {
+      "type": "custom-content",
+      "blocks": {
+        "1642153306c93fe320-0": {
+          "type": "text",
+          "settings": {
+            "title": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left"
+          }
+        },
+        "1642153306c93fe320-1": {
+          "type": "image",
+          "settings": {
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1642153306c93fe320-0",
+        "1642153306c93fe320-1"
+      ],
+      "settings": {
+        "title": "Custom content",
+        "custom_content_margin_top": "",
+        "custom_content_margin_bottom": ""
+      }
+    }
   },
   "order": [
-
+    "1642153306c1673eff"
   ]
 }
