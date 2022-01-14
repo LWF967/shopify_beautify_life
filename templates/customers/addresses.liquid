@@ -1,6 +1,6 @@
 {{ 'my-customer.css' | asset_url | stylesheet_tag }}
 
-<script src="{{ 'customer.js' | asset_url }}" defer></script>
+<script src="{{ 'customer.js' | asset_url }}" defer="defer"></script>
 
 <style>
   .my_addresses h1 {
@@ -22,7 +22,7 @@
     border-radius: 0;
     background-color: var(--color-button);
     box-shadow: 0 0 0 0.1rem rgb(var(--color-button));
-    color: rgb(var(--color-button-text));
+    color: var(--color-button-text);
     min-width: 10rem;
     min-height: 44px;
     transition: box-shadow var(--duration-short) ease;
@@ -142,7 +142,7 @@
 </style>
 
 {%- paginate customer.addresses by 5 -%}
-  <div class="customer addresses my_addresses my_customer " data-customer-addresses>
+  <div class="customer addresses my_addresses my_customer" data-customer-addresses>
     <svg style="display: none">
       <symbol id="icon-caret" viewBox="0 0 10 6">
         <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
@@ -157,19 +157,17 @@
         {{ 'customer.account.return' | t }}
       </a>
       <a
-      class="add_address"
-        aria-expanded="false"
-        aria-controls="AddAddress"
-      >
+         class="add_address"
+         aria-expanded="false"
+         aria-controls="AddAddress">
         {{ 'customer.addresses.add_new' | t }}
     </a>
       <div id="AddAddress" class="my_addAddress_from">
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
           <div class="field">
-            <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
+            <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}" >
             <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
-            <!-- <label class="field__label" for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }} <span aria-hidden="true">*</span></label> -->
           </div>
           <div class="field">
             <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="{{ 'customer.addresses.last_name' | t }}">
@@ -235,7 +233,7 @@
             <label for="address_default_address_new">{{ 'customer.addresses.set_default' | t }}</label>
           </div>
           <div>
-            <button class="add_addresses">{{ 'customer.addresses.add' | t }}</button>
+            <button class="add_addresses button">{{ 'customer.addresses.add' | t }}</button>
             <button class="add_addresses_reset" type="reset">{{ 'customer.addresses.cancel' | t }}</button>
             <hr class="my_address_hr">
           </div>
@@ -252,6 +250,7 @@
           {%- endif -%}
           {{ address | format_address }}
           <button
+          class="button"
           style="height: 44px;"
             type="button"
             id="EditFormButton_{{ address.id }}"
@@ -263,6 +262,7 @@
             {{ 'customer.addresses.edit' | t }}
           </button>
           <button
+          class="button"
           style="height: 44px;"
             type="button"
             aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
@@ -350,7 +350,7 @@
                 </label>
               </div>
               <div>
-                <button class="my_address_update">{{ 'customer.addresses.update' | t }}</button>
+                <button class="my_address_update button">{{ 'customer.addresses.update' | t }}</button>
                 <button type="reset" class="my_address_cancel">{{ 'customer.addresses.cancel' | t }}</button>
                
               </div>
