@@ -728,26 +728,19 @@
         "text_columns_with_images_margin_bottom": ""
       }
     },
-    "164214195955bbb789": {
-      "type": "featured-collection",
+    "164214219240c38dd1": {
+      "type": "video-beautify",
       "settings": {
-        "title": "TRENDING",
-        "sub_title": "Popular this week",
-        "collection": "frontpage",
-        "products_to_show": 8,
-        "grid": 3,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "adapt",
-        "use_eq_height": false,
-        "image_ratio1": "ratio_nt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "featured_colection_margin_top": "",
-        "featured_colection_margin_bottom": ""
+        "cover_image": "shopify:\/\/shop_images\/looking-through-the-lens-of-a-film-camera.jpg",
+        "image_alignment": "center center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "show_overlay": true,
+        "style": "image_with_play",
+        "video_height": "medium",
+        "heading": "Video",
+        "text_size": "medium",
+        "video_beautify_margin_top": "",
+        "video_beautify_margin_bottom": ""
       }
     }
   },
@@ -766,6 +759,6 @@
     "16418930590c0df00d",
     "163817972763d6e808",
     "164205653276e134bf",
-    "164214195955bbb789"
+    "164214219240c38dd1"
   ]
 }
