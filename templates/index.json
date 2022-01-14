@@ -600,7 +600,7 @@
         "swipe": true,
         "page_dot_style": "style_1",
         "page_dot_color": "light",
-        "image_width": "full",
+        "image_width": "third",
         "image_ratio": "adapt",
         "button_label": "",
         "button_link": "",
