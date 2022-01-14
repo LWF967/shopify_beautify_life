@@ -727,6 +727,28 @@
         "text_columns_with_images_margin_top": "",
         "text_columns_with_images_margin_bottom": ""
       }
+    },
+    "164214195955bbb789": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "TRENDING",
+        "sub_title": "Popular this week",
+        "collection": "frontpage",
+        "products_to_show": 8,
+        "grid": 3,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "adapt",
+        "use_eq_height": false,
+        "image_ratio1": "ratio_nt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "featured_colection_margin_top": "",
+        "featured_colection_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -743,6 +765,7 @@
     "1640779459ad2f49fb",
     "16418930590c0df00d",
     "163817972763d6e808",
-    "164205653276e134bf"
+    "164205653276e134bf",
+    "164214195955bbb789"
   ]
 }
