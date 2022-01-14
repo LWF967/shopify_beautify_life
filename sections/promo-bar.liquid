@@ -209,7 +209,7 @@
     
     var target1 =  document.getElementById('hide_banner'); 
 
-    var observer1 = new MutationObserver(my_home_debounce(function (mutations) {
+    var observer1 = new MutationObserver(function (mutations) {
       
       let close = document.getElementsByClassName('show_close')[0];
       let my_center = document.getElementsByClassName('my_center')[0];
@@ -247,7 +247,7 @@
         //       hide_banner.style.transition = "height .5s";
       }, 500);
 
-    }, 500));
+    });
 
     var config1 = { attributes: true, childList: true, characterData: true ,subtree : true };
     observer1.observe(target1, config1);
