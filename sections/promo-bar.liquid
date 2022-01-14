@@ -205,21 +205,7 @@
             let aaa = hide_banner.dataset.mheight;
     document.addEventListener('shopify:section:load',() => {  
       // self refresh
-      let hide_banner = document.getElementById('hide_banner');  
-      let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-
-    hide_banner.dataset.mheight = hide_banner_height;
-
-
-    
-      console.log(aaa);
-      console.log(hide_banner.dataset.mheight);
-
-      if (aaa == hide_banner.dataset.mheight) {
-        console.log(aaa);
-      } else {
-        promo_bar_change();
-      }
+      promo_bar_change();
     },true);
   }
   
