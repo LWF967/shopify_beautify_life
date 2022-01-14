@@ -201,31 +201,16 @@
   }
 
   var myPromoFreshDesignMode = Shopify.designMode || false;
-  if(myPromoFreshDesignMode){      
+  if(myPromoFreshDesignMode){ 
+    let aaa = hide_banner.dataset.mheight;
     document.addEventListener('shopify:section:load',() => {  
       // self refresh
       promo_bar_change();
     
-    
-  let hide_banner = document.getElementById('hide_banner');  
-  
-  hide_banner.addEventListener('DOMSubtreeModified', function() {  
-	  console.log(111);
-    });;
-    hide_banner.addEventListener('click', function() {  
-    console.log(555);
-  });
+	  console.log(aaa);
     
     },true);
   }
-  let promo_bar_date = document.getElementById('promo_bar_date');  
-  
-  promo_bar_date.addEventListener('DOMSubtreeModified', function() {  
-    console.log(222);
-  });
-  promo_bar_date.addEventListener('click', function() {  
-    console.log(333);
-  });
   
   function promo_bar_fun() {   
     let close = document.getElementsByClassName('show_close')[0];
