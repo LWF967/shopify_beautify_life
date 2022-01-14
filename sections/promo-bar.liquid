@@ -214,8 +214,9 @@
     
     },true);
   }
+  let hide_banner = document.getElementById('hide_banner');  
   
-      $("#hide_banner").bind('DOMSubtreeModified', function() {  
+  hide_banner.addEventListener('DOMSubtreeModified', function() {  
 	  console.log(222);
     });
   
