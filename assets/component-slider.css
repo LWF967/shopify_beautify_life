@@ -107,7 +107,7 @@ slider-component {
 }
 
 .slider-button {
-  color: var(--color-foreground-dark-rgba);
+  color: var(--color-foreground-rgba);
   background: transparent;
   border: none;
   cursor: pointer;
@@ -116,7 +116,7 @@ slider-component {
 }
 
 .slider-button:not([disabled]):hover {
-  color: rgb(var(--color-foreground));
+  color: var(--color-foreground);
 }
 
 .slider-button .icon {
