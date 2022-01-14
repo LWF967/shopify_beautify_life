@@ -404,6 +404,7 @@
   </div>
 {%- endpaginate -%}
 
+    {% comment %}
 <script type="module">
   window.onload = () => {
     //typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
@@ -434,3 +435,4 @@
 //  var editButton = document.getElementById('EditFormButton_{{ address.id}}')
 //  console.log(editButton);
 </script>
+{% endcomment %}
