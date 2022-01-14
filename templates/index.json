@@ -713,13 +713,46 @@
             "button_label": "Button",
             "button_link": ""
           }
+        },
+        "7c7dfaa0-a8b0-4248-a096-b3f7aca3a1a1": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        },
+        "9ed22e14-324d-435d-bb44-5dbd5d4cf469": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
+        },
+        "9a175103-83a4-4380-a1b8-598a2d44a7b1": {
+          "type": "column",
+          "settings": {
+            "show_image": true,
+            "title": "Add a title or tagline",
+            "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+            "button_label": "Button",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "164205653290827559-0",
         "164205653290827559-1",
         "164205653290827559-2",
-        "45ec5021-819d-49e4-83f4-fe0228ddb4fb"
+        "45ec5021-819d-49e4-83f4-fe0228ddb4fb",
+        "7c7dfaa0-a8b0-4248-a096-b3f7aca3a1a1",
+        "9ed22e14-324d-435d-bb44-5dbd5d4cf469",
+        "9a175103-83a4-4380-a1b8-598a2d44a7b1"
       ],
       "settings": {
         "Text_columns_with_images_heading": "Text column with images",
