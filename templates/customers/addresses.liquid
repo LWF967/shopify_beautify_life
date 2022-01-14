@@ -405,6 +405,9 @@
 {%- endpaginate -%}
 
 <script type="module">
+window.onload = function() {
+  typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
+}
   let flag = false;
  var toggleButtonAddAddress =  document.querySelector(".add_address")
  toggleButtonAddAddress.addEventListener('click',function(e){
