@@ -69,7 +69,7 @@ if(myFooterbottomFreshDesignMode){
   
   
   
-  
+  promo_bar_change();
     var target13 =  document.getElementById('hide_banner');
 
     var observer13 = new MutationObserver(my_home_debounce(function (mutations) {
