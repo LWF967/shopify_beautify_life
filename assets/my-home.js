@@ -323,6 +323,7 @@ my_home();
 window.onload = function() {
   typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
   my_home();
+  console.log("home");
 }
 
 $(window).resize(function(){
