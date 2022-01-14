@@ -30,6 +30,7 @@ if(myFooterbottomFreshDesignMode){
     var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 
     var observer = new MutationObserver(my_home_debounce(function (mutations) {
+      console.log(222);
       if(sticky.length > 0) {
         if(document.body.clientWidth < 1024) {
           main.style.marginBottom = 0;
