@@ -205,6 +205,13 @@
     document.addEventListener('shopify:section:load',() => {  
       // self refresh
       promo_bar_change();
+    
+    
+    $("#hide_banner").bind('DOMSubtreeModified', function() {  
+	  console.log(111);
+    });
+    
+    
     },true);
   }
   
