@@ -65,7 +65,24 @@ if(myFooterbottomFreshDesignMode){
     }, 500));
 
     var config = { attributes: true, childList: true, characterData: true ,subtree : true };
-    observer.observe(target, config); 
+    observer.observe(target, config);
+  
+  
+  
+  
+    var target13 =  document.getElementById('hide_banner');
+
+    var observer13 = new MutationObserver(my_home_debounce(function (mutations) {
+      mutations.forEach(function(mutation){
+        console.log(mutation.type);
+      });
+    }, 500));
+
+    var config13 = { attributes: true, childList: true, characterData: true ,subtree : true };
+    observer13.observe(target13, config13); 
+  
+  
+  
   },true);
 }
 
