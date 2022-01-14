@@ -103,7 +103,7 @@ if(myFooterbottomFreshDesignMode){
         }
       }
       target13.dataset.mheight = hide_banner_height;
-      target13.style.marginTop = -hide_banner.dataset.mheight + 'px';
+      target13.style.marginTop = -target13.dataset.mheight + 'px';
       //     hide_banner.style.height = 0;
 
       setTimeout(function() {
