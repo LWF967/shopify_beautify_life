@@ -321,7 +321,7 @@ my_home();
 
 
 window.onload = function() {
-  typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
+//   typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
   my_home();
 }
 
