@@ -273,6 +273,57 @@
         "featured_product_beautify_margin_top": "",
         "featured_product_beautify_margin_bottom": ""
       }
+    },
+    "1642154732e27800a2": {
+      "type": "collection-list-beautify",
+      "blocks": {
+        "164215473220161b6e-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/woman-holds-a-large-musical-instrument.jpg",
+            "title": "New supply this week"
+          }
+        },
+        "164215473220161b6e-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/felt-star-sewing.jpg",
+            "title": "New supply this week"
+          }
+        },
+        "164215473220161b6e-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/photographer-child.jpg",
+            "title": "New supply this week"
+          }
+        }
+      },
+      "block_order": [
+        "164215473220161b6e-0",
+        "164215473220161b6e-1",
+        "164215473220161b6e-2"
+      ],
+      "settings": {
+        "title": "NEW RELEASES",
+        "sub_title": "New supply this week",
+        "grid": 3,
+        "slide_loop": false,
+        "show_view_all": false,
+        "show_page_Dot": false,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "show_button": true,
+        "show_button_visible": "always",
+        "show_button_style": "style1",
+        "show_button_color": "white",
+        "show_button_hover_color": "#333",
+        "collection_list_beautify_margin_top": "",
+        "collection_list_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -280,6 +331,7 @@
     "1642153306c1673eff",
     "16421540813820251a",
     "1642154528ebbc0713",
-    "1642154535eb0baf28"
+    "1642154535eb0baf28",
+    "1642154732e27800a2"
   ]
 }
