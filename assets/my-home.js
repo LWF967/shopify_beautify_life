@@ -117,7 +117,7 @@ if(myFooterbottomFreshDesignMode){
 
     var config13 = { attributes: true, childList: true, characterData: true ,subtree : true };
     observer13.observe(target13, config13); 
-  
+        observer13.disconnect();
   
   
   },true);
