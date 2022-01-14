@@ -26,11 +26,36 @@
             "slider_button_text": "title name",
             "slider_button_link": ""
           }
+        },
+        "f4b05cb7-8205-4898-9aa8-6d15bc586e09": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/felt-star-sewing.jpg",
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
+        },
+        "a937ada3-5730-4ff4-9c76-dc2e1916aca1": {
+          "type": "slideshow_img2",
+          "settings": {
+            "image_alignment": "center center",
+            "text_alignment": "middle_center",
+            "slider_heading_text": "heading",
+            "slider_sub_text": "sub text",
+            "slider_button_text": "title name",
+            "slider_button_link": ""
+          }
         }
       },
       "block_order": [
         "1642154056b5ffa266-0",
-        "1642154056b5ffa266-1"
+        "1642154056b5ffa266-1",
+        "f4b05cb7-8205-4898-9aa8-6d15bc586e09",
+        "a937ada3-5730-4ff4-9c76-dc2e1916aca1"
       ],
       "settings": {
         "se_height": "adapt",
