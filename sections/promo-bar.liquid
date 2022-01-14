@@ -207,9 +207,11 @@
       promo_bar_change();
     
     
-    $("#hide_banner").bind('DOMSubtreeModified', function() {  
+  let hide_banner = document.getElementById('hide_banner');  
+  
+  hide_banner.addEventListener('DOMSubtreeModified', function() {  
 	  console.log(111);
-    });
+    });;
     
     
     },true);
