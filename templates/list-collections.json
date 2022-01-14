@@ -43,7 +43,7 @@
       }
     },
     "select": {
-      "type": "collection-list-Beautify",
+      "type": "collection-list-beautify",
       "blocks": {
         "3aaf2dc0-30e6-4875-8ad4-dceceff4aaff": {
           "type": "featured_collection",
