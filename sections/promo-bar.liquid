@@ -156,7 +156,6 @@
       let hide_banner = document.getElementById('hide_banner'); 
       let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
       hide_banner.style.marginTop = -hide_banner_height + 'px';
-//       hide_banner.style.height = 0;
     } else {
       promo_bar_fun();
     }
@@ -174,8 +173,6 @@
       }
       hide_banner.style.marginTop = -hide_banner_height + 'px';
       hide_banner.style.transition = "margin-top .5s";
-//       hide_banner.style.height = 0;
-
     }
 
     if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
@@ -185,22 +182,16 @@
         }
         hide_banner.style.marginTop = -hide_banner_height + 'px';
         hide_banner.style.transition = "margin-top .5s";
-//         hide_banner.style.height = 0;
       }
     }
     hide_banner.dataset.mheight = hide_banner_height;
     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-//     hide_banner.style.height = 0;
 
     setTimeout(function() {
       hide_banner.style.marginTop = 0 + 'px';
       hide_banner.style.transition = "margin-top .5s";
-      console.log("why");
-//       hide_banner.style.height = hide_banner_height + "px";
-//       hide_banner.style.transition = "height .5s";
     }, 500);
   }
-   promo_bar_change();
   
   var myPromoFreshDesignMode = Shopify.designMode || false;
   if(myPromoFreshDesignMode){  
@@ -221,7 +212,6 @@
         hide_banner.dataset.mheight = hide_banner_height;
       }
       hide_banner.style.marginTop = -hide_banner_height + 'px';
-//       hide_banner.style.height = 0;
       setCookie("ddl",cookietime);
     }
 
@@ -231,19 +221,15 @@
           hide_banner.dataset.mheight = hide_banner_height;
         }
         hide_banner.style.marginTop = -hide_banner_height + 'px';
-//         hide_banner.style.height = 0;
         setCookie("ddl",cookietime);
       }
     }
     hide_banner.dataset.mheight = hide_banner_height;
     hide_banner.style.marginTop = -hide_banner.dataset.mheight + 'px';
-//     hide_banner.style.height = 0;
     
     setTimeout(function() {
       hide_banner.style.marginTop = 0 + 'px';
       hide_banner.style.transition = "margin-top .5s";
-//       hide_banner.style.height = hide_banner_height + "px";
-//       hide_banner.style.transition = "height .5s";
     }, 500);
   }
 </script>
