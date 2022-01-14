@@ -307,7 +307,7 @@ if(myHomeFreshDesignMode){
   
 
   // 选择目标节点
-  var target11 = document.querySelector('#hide_banner');
+  var target11 = document.getElementById('hide_banner');
 
   // 创建观察者对象
   var observer11 = new MutationObserver(function(mutations){
@@ -316,7 +316,45 @@ if(myHomeFreshDesignMode){
       console.log(mutation.type);
     });
     console.log(111);
-      promo_bar_change();
+    
+    
+    let close = document.getElementsByClassName('show_close')[0];
+    let my_center = document.getElementsByClassName('my_center')[0];
+//     let hide_banner = document.getElementById('hide_banner');  
+    let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+    let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+    close.onclick = function () {
+      if(hide_banner_height > hide_banner.dataset.mheight) {
+        target11.dataset.mheight = hide_banner_height;
+      }
+      target11.style.marginTop = -hide_banner_height + 'px';
+      target11.style.transition = "margin-top .5s";
+//       hide_banner.style.height = 0;
+
+    }
+
+    if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+      close.onclick = function () {
+        if(hide_banner_height > hide_banner.dataset.mheight) {
+          target11.dataset.mheight = hide_banner_height;
+        }
+        target11.style.marginTop = -hide_banner_height + 'px';
+        target11.style.transition = "margin-top .5s";
+//         hide_banner.style.height = 0;
+      }
+    }
+    target11.dataset.mheight = hide_banner_height;
+    target11.style.marginTop = -hide_banner.dataset.mheight + 'px';
+//     hide_banner.style.height = 0;
+
+    setTimeout(function() {
+      target11.style.marginTop = 0 + 'px';
+      target11.style.transition = "margin-top .5s";
+//       hide_banner.style.height = hide_banner_height + "px";
+//       hide_banner.style.transition = "height .5s";
+    }, 500);
+    
+    
 
   });
 
