@@ -205,56 +205,7 @@
     console.log(131);
     document.addEventListener('shopify:section:load',() => {  
       // self refresh
-//       promo_bar_change();
-//     console.log(1);
-    
-    var target1 =  document.getElementById('hide_banner'); 
-
-    var observer1 = new MutationObserver(function (mutations) {
-      console.log(1);
-      
-      let close = document.getElementsByClassName('show_close')[0];
-      let my_center = document.getElementsByClassName('my_center')[0];
-//       let hide_banner = document.getElementById('hide_banner');  
-      let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
-      let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
-      close.onclick = function () {
-        if(hide_banner_height > target1.dataset.mheight) {
-          target1.dataset.mheight = hide_banner_height;
-        }
-        target1.style.marginTop = -hide_banner_height + 'px';
-        target1.style.transition = "margin-top .5s";
-        //       hide_banner.style.height = 0;
-		console.log("click");
-      }
-
-      if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
-        close.onclick = function () {
-          if(hide_banner_height > target1.dataset.mheight) {
-            target1.dataset.mheight = hide_banner_height;
-          }
-          target1.style.marginTop = -hide_banner_height + 'px';
-          target1.style.transition = "margin-top .5s";
-          //         hide_banner.style.height = 0;
-          		console.log("click");
-        }
-      }
-      target1.dataset.mheight = hide_banner_height;
-      target1.style.marginTop = -target1.dataset.mheight + 'px';
-      //     hide_banner.style.height = 0;
-
-      setTimeout(function() {
-        target1.style.marginTop = 0 + 'px';
-        target1.style.transition = "margin-top .5s";
-        //       hide_banner.style.height = hide_banner_height + "px";
-        //       hide_banner.style.transition = "height .5s";
-      }, 500);
-
-    });
-
-    var config1 = { attributes: true, childList: true, characterData: true ,subtree : true };
-    observer1.observe(target1, config1);
-                              
+      promo_bar_change();                              
     },true);
   }
   
