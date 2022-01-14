@@ -83,7 +83,7 @@ if(myFooterbottomFreshDesignMode){
           console.log(mutation.type);
         });
         
-        
+              promo_bar_change();
         
 //             let close = document.getElementsByClassName('show_close')[0];
 //     let my_center = document.getElementsByClassName('my_center')[0];
@@ -129,7 +129,7 @@ if(myFooterbottomFreshDesignMode){
       // 传入目标节点和观察选项
       observer11.observe(target11, config11); 
 //       停止观察
-      observer11.disconnect();
+//       observer11.disconnect();
     
     
   
