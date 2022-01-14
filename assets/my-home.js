@@ -26,7 +26,7 @@ if(myFooterbottomFreshDesignMode){
     let header_zx = document.getElementById('shopify-section-header');
     let main = document.getElementById('MainContent');
     let sticky = document.getElementsByClassName('my_footer_sticky');
-
+console.log("asfas");
     var target =  document.getElementsByClassName('footer color- gradient my_footer_bottom_color')[0];
 
     var observer = new MutationObserver(my_home_debounce(function (mutations) {
