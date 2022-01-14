@@ -3,41 +3,42 @@
 <script src="{{ 'customer.js' | asset_url }}" defer></script>
 
 <style>
-  .my_addresses h1 {
-    font-size: 36px;
-    margin:120px 0 55px 0;
-    font-weight: 700;
-  }
+.my_addresses h1 {
+  font-size: 36px;
+  margin:120px 0 55px 0;
+  font-weight: 700;
+}
 
-  .my_addresses ul li button{
-    cursor: pointer;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    font: inherit;
-    padding: 0.9rem 1rem 1.1rem;
-    text-decoration: none;
-    border: 0;
-    border-radius: 0;
-    background-color: var(--color-button);
-    box-shadow: 0 0 0 0.1rem rgb(var(--color-button));
-    color: rgb(var(--color-button-text));
-    min-width: 10rem;
-    min-height: 44px;
-    transition: box-shadow var(--duration-short) ease;
-    -webkit-appearance: none;
-    appearance: none;
-    font-size: 16px;
-    font-weight: 600;
-  }
 
-  .customer.my_addresses .field input{
+.my_addresses ul li button{
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font: inherit;
+  padding: 0.9rem 1rem 1.1rem;
+  text-decoration: none;
+  border: 0;
+  border-radius: 0;
+  background-color: var(--color-button);
+  box-shadow: 0 0 0 0.1rem rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
+  min-width: 10rem;
+  min-height: 44px;
+  transition: box-shadow var(--duration-short) ease;
+  -webkit-appearance: none;
+  appearance: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.customer.my_addresses .field input{
     height: 4.4rem;
     font-size: 14px;
     background: transparent !important;
   }
-  .customer.my_addresses .field label{
+.customer.my_addresses .field label{
     font-size: 14px;
     left: 1.2rem;
   }
@@ -56,7 +57,7 @@
     text-align: left;
     margin-top: 0;
   }
-  .my_addresses ul li .my_edit_address{
+ .my_addresses ul li .my_edit_address{
     font-size: 30px;
   }
   .my_addresses .add_addresses{
@@ -79,48 +80,48 @@
     margin-left: 0;
   }
   @media screen and (min-width: 750px){
-  .customer.my_addresses{
-    max-width: 120rem !important;
-    padding: 0 55px !important;
-  }
-  }
-  .my_addresses .my_addresses_acount{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: start;
-    align-items:flex-start ;
-  }
-  .my_addresses .my_addresses_acount .add_address , 
-  .my_addresses .my_addresses_acount .my_account_return{
-    font-size: 16px;
-    min-height: 22px;
-    margin: 15px 0 ;
-    padding-left: 0;
-    text-decoration: underline;
-  }
-  .my_addresses .my_addresses_acount .add_address:hover ,
-  .my_addresses .my_addresses_acount .my_account_return:hover{
-    text-decoration-thickness: 0.2rem;
-  }
-  .my_addresses .my_addresses_acount .my_account_return{
-    margin: 0;
-  }
-  .my_addresses .my_addAddress_from h2{
-    font-size: 30px;
-    font-weight: 700;
-    padding-bottom: 0;
-    margin:0 0 30px 0;
-  }
+.customer:not(.account):not(.order){
+  max-width: 120rem;
+  margin: 0px 55px;
+}
+}
+.my_addresses .my_addresses_acount{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: start;
+  align-items:flex-start ;
+}
+.my_addresses .my_addresses_acount .add_address , 
+.my_addresses .my_addresses_acount .my_account_return{
+  font-size: 16px;
+  min-height: 22px;
+  margin: 15px 0 ;
+  padding-left: 0;
+  text-decoration: underline;
+}
+.my_addresses .my_addresses_acount .add_address:hover ,
+ .my_addresses .my_addresses_acount .my_account_return:hover{
+  text-decoration-thickness: 0.2rem;
+}
+.my_addresses .my_addresses_acount .my_account_return{
+  margin: 0;
+}
+.my_addresses .my_addAddress_from h2{
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 0;
+  margin:0 0 30px 0;
+}
+.my_addresses .my_address_hr{
+  margin: 5.5rem 0 2.5rem 0;
+}
+@media screen and (max-width: 750px){
   .my_addresses .my_address_hr{
-   margin: 5.5rem 0 2.5rem 0;
-  }
-  @media screen and (max-width: 750px){
-  .my_addresses .my_address_hr{
-    margin: 3rem 0 0 0;
-  }
-  }
-  .my_addresses .my_address_update{
+  margin: 3rem 0 0 0;
+}
+}
+.my_addresses .my_address_update{
     font-size: 16px;
     min-height: 44px;
     margin-top: 30px;
@@ -135,7 +136,6 @@
     display: block;
     text-align: left;
     margin-bottom: 0;
-    font-weight: normal;
   }
 
 
@@ -165,19 +165,10 @@
     </a>
       <div id="AddAddress" class="my_addAddress_from">
         <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
-        {% if form.posted_successfully? %}
         {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
-          <div class="field field--with-error">
-            <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name"
-            aria-required="true"
-            {% if form.errors contains 'first_name' %}
-              aria-invalid="true"
-              aria-describedby="CommentForm-first_name-error"
-            {% endif %}
-            placeholder="{{ 'customer.addresses.first_name' | t }}"
-            >
-            <!-- <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label> -->
-            <label class="field__label" for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }} <span aria-hidden="true">*</span></label>
+          <div class="field">
+            <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
+            <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
           </div>
           <div class="field">
             <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="{{ 'customer.addresses.last_name' | t }}">
@@ -196,13 +187,7 @@
             <label for="AddressAddress2New">{{ 'customer.addresses.address2' | t }}</label>
           </div>
           <div class="field">
-            <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2"
-            aria-required="true"
-            {% if form.errors contains 'city' %}
-              aria-invalid="true"
-              aria-describedby="CommentForm-city-error"
-            {% endif %}
-            placeholder="{{ 'customer.addresses.city' | t }}">
+            <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
             <label for="AddressCityNew">{{ 'customer.addresses.city' | t }}</label>
           </div>
           <div>
@@ -214,7 +199,7 @@
                 data-default="{{ form.country }}"
                 autocomplete="country"
               >
-                {{ all_country_option_tags  }}
+                {{ all_country_option_tags }}
               </select>
               <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
                 <use href="#icon-caret" />
@@ -254,7 +239,6 @@
             <hr class="my_address_hr">
           </div>
         {%- endform -%}
-        {%- endif -%}
       </div>
     </div>
 
@@ -263,7 +247,7 @@
         <li data-address>
           {%- if address == customer.default_address -%}
           
-            <h2>{{ 'customer.addresses.default' | t | upcase }}</h2>
+            <h2>{{ 'customer.addresses.default' | t }}</h2>
           {%- endif -%}
           {{ address | format_address }}
           <button
@@ -290,15 +274,7 @@
             <h2 class="my_edit_address">{{ 'customer.addresses.edit_address' | t }}</h2>
             {%- form 'customer_address', address -%}
               <div class="field">
-                <input type="text" 
-                id="AddressFirstName_{{ form.id }}" 
-                name="address[first_name]" 
-                value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}" 
-                {% if form.errors contains 'first_name' %}
-                aria-invalid="true"
-                aria-describedby="CommentForm-author-error"
-              {% endif %}
-                >
+                <input type="text" id="AddressFirstName_{{ form.id }}" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
                 <label for="AddressFirstName_{{ form.id }}">{{ 'customer.addresses.first_name' | t }}</label>
               </div>
               <div class="field">
