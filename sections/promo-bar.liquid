@@ -205,15 +205,20 @@
             let aaa = hide_banner.dataset.mheight;
     document.addEventListener('shopify:section:load',() => {  
       // self refresh
-              promo_bar_change();
+      let hide_banner = document.getElementById('hide_banner');  
+      let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
 
-
+      if(hide_banner_height > hide_banner.dataset.mheight) {
+        hide_banner.dataset.mheight = hide_banner_height;
+      }
+    
       console.log(aaa);
       console.log(hide_banner.dataset.mheight);
 
       if (aaa == hide_banner.dataset.mheight) {
-        console.log("---");
         console.log(aaa);
+      } else {
+        promo_bar_change();
       }
     },true);
   }
