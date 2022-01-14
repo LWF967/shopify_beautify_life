@@ -202,10 +202,10 @@
   
   var myPromoFreshDesignMode = Shopify.designMode || false;
   if(myPromoFreshDesignMode){  
-    console.log(131);
     document.addEventListener('shopify:section:load',() => {  
       // self refresh
-      promo_bar_change();                              
+      promo_bar_change();
+    console.log(1)
     },true);
   }
   
