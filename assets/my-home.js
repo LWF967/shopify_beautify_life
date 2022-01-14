@@ -76,6 +76,43 @@ if(myFooterbottomFreshDesignMode){
       mutations.forEach(function(mutation){
         console.log(mutation.type);
       });
+     
+      let close = document.getElementsByClassName('show_close')[0];
+      let my_center = document.getElementsByClassName('my_center')[0];
+//       let hide_banner = document.getElementById('hide_banner');  
+      let hide_banner_height = document.getElementById('hide_banner').scrollHeight;
+      let count = document.getElementsByClassName('row al_center my_center')[0].childElementCount;
+      close.onclick = function () {
+        if(hide_banner_height > target13.dataset.mheight) {
+          target13.dataset.mheight = hide_banner_height;
+        }
+        target13.style.marginTop = -hide_banner_height + 'px';
+        target13.style.transition = "margin-top .5s";
+        //       hide_banner.style.height = 0;
+
+      }
+
+      if(count != document.getElementsByClassName('row al_center my_center')[0].childElementCount) {
+        close.onclick = function () {
+          if(hide_banner_height > target13.dataset.mheight) {
+            target13.dataset.mheight = hide_banner_height;
+          }
+          target13.style.marginTop = -hide_banner_height + 'px';
+          target13.style.transition = "margin-top .5s";
+          //         hide_banner.style.height = 0;
+        }
+      }
+      target13.dataset.mheight = hide_banner_height;
+      target13.style.marginTop = -hide_banner.dataset.mheight + 'px';
+      //     hide_banner.style.height = 0;
+
+      setTimeout(function() {
+        target13.style.marginTop = 0 + 'px';
+        target13.style.transition = "margin-top .5s";
+        //       hide_banner.style.height = hide_banner_height + "px";
+        //       hide_banner.style.transition = "height .5s";
+      }, 500);
+      
     }, 500));
 
     var config13 = { attributes: true, childList: true, characterData: true ,subtree : true };
