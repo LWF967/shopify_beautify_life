@@ -212,13 +212,15 @@
   hide_banner.addEventListener('DOMSubtreeModified', function() {  
 	  console.log(111);
     });;
-    
+    hide_banner.addEventListener('click', function() {  
+    console.log(555);
+  });
     
     },true);
   }
   let promo_bar_date = document.getElementById('promo_bar_date');  
   
-  promo_bar_date.addEventListener('change', function() {  
+  promo_bar_date.addEventListener('DOMSubtreeModified', function() {  
     console.log(222);
   });
   promo_bar_date.addEventListener('click', function() {  
