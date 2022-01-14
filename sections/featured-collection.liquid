@@ -83,6 +83,7 @@
         <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
         {%- assign products_to_displaya = products_to_display | minus: 1 -%}
         <span class="slider-counter--total">{{ products_to_displaya }}</span>
+        <span class="slider-counter--total">{{ products_to_display }}</span>
       </div>
       <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
     </div>
