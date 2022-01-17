@@ -213,6 +213,7 @@
                     show_image_outline: section.settings.show_image_outline,
                     show_rating: section.settings.show_rating
                   %}
+                            {%comment%}
                 {%- when 'article' -%}
                   <a href="{{ item.url }}" class="card-wrapper">
                     <div class="card card--search card--soft{% unless item.image %} card--text-only{% endunless %}">
@@ -264,6 +265,7 @@
                       </div>
                     </div>
                   </a>
+              {%endcomment%}
               {%- endcase -%}
             </li>
           {%- endfor -%}
