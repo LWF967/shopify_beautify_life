@@ -53,7 +53,7 @@
         "page_dot_color": "dark",
         "show_button": true,
         "show_button_visible": "always",
-        "show_button_style": "style1",
+        "show_button_style": "circle",
         "show_button_color": "white",
         "show_button_hover_color": "#333333",
         "collection_list_beautify_margin_top": "",
