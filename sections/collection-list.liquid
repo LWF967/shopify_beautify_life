@@ -126,7 +126,7 @@
     {%- endif -%}
   </slider-component>
 
-  {%- if section.settings.show_view_all and section.settings.swipe_on_mobile and section.blocks.size < collections.size -%}
+  {%- if section.settings.show_view_all and section.blocks.size < collections.size -%}
     <div style="text-align: center">
       <a href="{{ routes.collections_url }}" class="button">{{ 'sections.collection_list.view_all' | t }}</a>
     </div>
