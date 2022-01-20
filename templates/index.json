@@ -396,19 +396,12 @@
           "settings": {
             "collection": ""
           }
-        },
-        "8621e737-3bce-41dd-b3db-069c345b2c9d": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
         }
       },
       "block_order": [
         "1642663281ed528a0f-0",
         "1642663281ed528a0f-1",
-        "1642663281ed528a0f-2",
-        "8621e737-3bce-41dd-b3db-069c345b2c9d"
+        "1642663281ed528a0f-2"
       ],
       "settings": {
         "title": "Collections",
