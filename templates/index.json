@@ -447,6 +447,78 @@
         "collection_list_margin_top": "",
         "collection_list_margin_bottom": ""
       }
+    },
+    "1642692483e67edc91": {
+      "type": "banner-Beautify",
+      "blocks": {
+        "1642692483455514cf-0": {
+          "type": "img_top",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/looking-through-the-lens-of-a-film-camera.jpg",
+            "image2": "shopify:\/\/shop_images\/person-crouches-down-on-a-street-and-paints-a-door-white.jpg",
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "1642692483455514cf-1": {
+          "type": "img_top",
+          "settings": {
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "1642692483455514cf-2": {
+          "type": "img_top",
+          "settings": {
+            "header_top1": "Head1",
+            "header_top2": "Head2",
+            "header_top3": "Head3",
+            "url1": "",
+            "url2": "",
+            "url3": "",
+            "open_link": "_blank"
+          }
+        },
+        "7f2b0b1a-5ff1-45af-a997-783bfeb2d64e": {
+          "type": "banner_third",
+          "settings": {
+            "header_top": "Head",
+            "url": "",
+            "color": "#fff",
+            "w": 140,
+            "h": 3,
+            "open_link": "_blank"
+          }
+        }
+      },
+      "block_order": [
+        "1642692483455514cf-0",
+        "1642692483455514cf-1",
+        "1642692483455514cf-2",
+        "7f2b0b1a-5ff1-45af-a997-783bfeb2d64e"
+      ],
+      "settings": {
+        "title": "BANNER",
+        "sub_title": "Popular this week",
+        "font_top": 34,
+        "color_top": "#fff",
+        "grid": 3,
+        "show_page_Dot": true,
+        "page_dot_style": "style_1",
+        "page_dot_color": "dark",
+        "banner_beautify_margin_top": "",
+        "banner_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -458,6 +530,7 @@
     "1642154535eb0baf28",
     "16421547916bd2500f",
     "16426457698e349ab8",
-    "164266328179f7e744"
+    "164266328179f7e744",
+    "1642692483e67edc91"
   ]
 }
