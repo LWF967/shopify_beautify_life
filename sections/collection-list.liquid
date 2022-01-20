@@ -127,7 +127,6 @@
   </slider-component>
 
   {%- if section.settings.show_view_all and section.blocks.size < collections.size -%}
-    <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
       <a href="{{ routes.collections_url }}" class="button">{{ 'sections.collection_list.view_all' | t }}</a>
     </div>
   {%- endif -%}
