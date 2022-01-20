@@ -26,9 +26,9 @@
   <div style="text-align:center;">
     <h2 class="my_font_weight_default my_clear_margin my_section_margin_default">{{ section.settings.title | escape }}</h2>
 
-    {%- if section.settings.show_view_all and section.settings.swipe_on_mobile -%}
-      <a href="{{ routes.collections_url }}" class="link underlined-link large-up-hide">{{ 'sections.collection_list.view_all' | t }}</a>
-    {%- endif -%}
+<!--     %- if section.settings.show_view_all and section.settings.swipe_on_mobile -%}
+      <a href="{ routes.collections_url }}" class="link underlined-link large-up-hide">{ 'sections.collection_list.view_all' | t }}</a>
+    %- endif -%} -->
   </div>
 
   <slider-component class="slider-mobile-gutter">
@@ -126,7 +126,7 @@
     {%- endif -%}
   </slider-component>
 
-  {%- if section.settings.show_view_all and section.blocks.size < collections.size -%}
+  {%- if section.settings.show_view_all and section.settings.swipe_on_mobile and section.blocks.size < collections.size -%}
     <div style="text-align: center">
       <a href="{{ routes.collections_url }}" class="button">{{ 'sections.collection_list.view_all' | t }}</a>
     </div>
