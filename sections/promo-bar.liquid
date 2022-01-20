@@ -83,9 +83,11 @@
   }
   
   .my_link {
-/*   	width: 100%; */
-    display: block;
-    height: 100%;
+	position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 </style>
 
@@ -114,13 +116,11 @@
           {%- endif -%}
         {%- endif -%}
         {%- endcapture -%}
-        <a {% if section.settings.promo_bar_link != blank %}href="{{ section.settings.promo_bar_link }}"{% else %}href="#"{% endif %} class="pa t__0 l__0 r__0 b__0 z_100 my_link">
+        <a {% if section.settings.promo_bar_link != blank %}href="{{ section.settings.promo_bar_link }}"{% else %}href="#"{% endif %} class="pa t__0 l__0 r__0 b__0 z_100 my_link"> </a>
         <div class="hide_close">{{-cap_btn-}}</div>
 <!--         %- if section.settings.promo_bar_link != blank -%}<a href="{ section.settings.promo_bar_link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>%- endif -%} -->
         <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.promo_bar_textarea }}</div>
         <div class="show_close">{{-cap_btn-}}</div>
-              </a>
-
       </div>
     </div>
   </div>
