@@ -98,18 +98,18 @@
         {%- if section.settings.promo_bar_show_close -%}
           {%- if section.settings.promo_bar_show_icon -%}
           <div class="col-auto">
-            <span data-no-instant rel="nofollow" class="h_banner_close pr pl__10 cw z_index my_a">
+            <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
               <i class="close_left"></i>
               <i class="close_right"></i>
-            </span>
+            </a>
           </div>
           {%- else -%}
           <div class="col-auto">
-            <span data-no-instant rel="nofollow" class="h_banner_close pr pl__10 cw z_index my_a">
+            <a data-no-instant rel="nofollow" href="#" class="h_banner_close pr pl__10 cw z_index my_a">
               <i class="i_left"></i>
               <i class="i_right"></i>
               {{ section.settings.promo_bar_txt_btn }}
-            </span>
+            </a>
           </div>
           {%- endif -%}
         {%- endif -%}
