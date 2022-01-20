@@ -382,19 +382,19 @@
         "1642664302f481699a-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         },
         "1642664302f481699a-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "orange"
           }
         },
         "1642664302f481699a-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         },
         "d5f9d0c3-e0a6-4b67-ae51-87c7eed1499e": {
@@ -418,7 +418,7 @@
         "91c314f0-1184-439d-abf6-ab11b5c47f15": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         }
       },
