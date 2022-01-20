@@ -159,7 +159,7 @@
       "promo-bar": {
         "type": "promo-bar",
         "settings": {
-          "promo_bar_link": "",
+          "promo_bar_link": "shopify:\/\/collections\/all",
           "promo_bar_textarea": "Today deal sale off <strong>70%<\/strong> <strong>On All<\/strong> Hurry Up <i class=\"las la-arrow-right\"><\/i>",
           "promo_bar_height": 41,
           "promo_bar_fontsize": 14,
