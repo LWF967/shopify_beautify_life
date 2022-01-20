@@ -72,7 +72,7 @@
   	transform: rotate(-45deg);
   }
   
-  .hide_close .col-auto a {
+  .hide_close {
     opacity: 0;
     user-select: none;
     cursor: default;
@@ -83,15 +83,15 @@
   }
   
   .my_link {
-/*   	width: 100%; */
+  	width: 100%;
     height: 100%;
   }
 </style>
 
-<a href="{%- if section.settings.promo_bar_link != blank -%}{{ section.settings.promo_bar_link }}{%- else -%}#{%- endif -%}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">
 <div id="hide_banner" style="{%- if settings.promo_bar == false and settings.promo_bar_home_page_only -%}display: none;{%- elsif settings.promo_bar == false and settings.promo_bar_home_page_only == false -%}display: none;{%- elsif settings.promo_bar and settings.promo_bar_home_page_only and request.page_type != 'index' -%}display: none;{%- endif -%}" >
   <div id="promo_bar_date" class="h__banner bgp pt__10 pb__10 fs__14 flex fl_center al_center pr oh show_icon_{{section.settings.promo_bar_show_icon}} my_promo_flex"
        data-date='{{section.settings.promo_bar_date}}'>
+    {%- if section.settings.promo_bar_link != blank -%}<a href="{{ section.settings.promo_bar_link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>{%- endif -%}
     <div class="container my_style" {% if settings.full_width == false %} style="max-width: 1200px;"{% endif %}>
       <div class="row al_center my_center">
         {%- capture cap_btn -%}
@@ -115,15 +115,13 @@
         {%- endif -%}
         {%- endcapture -%}
         <div class="hide_close">{{-cap_btn-}}</div>
-<!--         %- if section.settings.promo_bar_link != blank -%}<a href="{ section.settings.promo_bar_link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>%- endif -%} -->
+        {%- if section.settings.promo_bar_link != blank -%}<a href="{{ section.settings.promo_bar_link }}" class="pa t__0 l__0 r__0 b__0 z_100 my_link">&nbsp;</a>{%- endif -%}
         <div class="col h_banner_wrap tc cw my_title_div">{{ section.settings.promo_bar_textarea }}</div>
         <div class="show_close">{{-cap_btn-}}</div>
       </div>
     </div>
   </div>
 </div>
-</a>
-
 
 <script>
   //cookie
