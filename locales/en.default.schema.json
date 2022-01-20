@@ -438,8 +438,7 @@
           "label": "Add image padding"
         },
         "show_view_all": {
-          "label": "Enable \"View all\" on mobile",
-          "info": " Only work when enable swipe"
+          "label": "Enable \"View all\" button if list includes more collections than shown"
         }
       },
       "blocks": {
