@@ -400,31 +400,31 @@
         "afbebe31-d921-4468-8e98-c1b478940a52": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "frontpage"
           }
         },
         "29ba9919-d1a4-409b-bffd-04305bc8b29a": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "strawberry"
           }
         },
         "567bd3a8-222b-4bee-a335-58c289c5f3c6": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "orange"
           }
         },
         "477100f5-1f6e-4290-8b23-0b00550bc146": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "strawberry"
           }
         },
         "2c2a1491-ffc7-4cd0-b4b4-8e6ecac9b002": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "pitaya"
           }
         }
       },
