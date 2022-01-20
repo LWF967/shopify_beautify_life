@@ -359,8 +359,8 @@
       "settings": {
         "title": "TRENDING",
         "sub_title": "Popular this week",
-        "collection": "pitaya",
-        "products_to_show": 8,
+        "collection": "frontpage",
+        "products_to_show": 4,
         "grid": 3,
         "show_view_all": true,
         "swipe_on_mobile": false,
@@ -376,65 +376,65 @@
         "featured_colection_margin_bottom": ""
       }
     },
-    "16426643020b80a32b": {
+    "164266328179f7e744": {
       "type": "collection-list",
       "blocks": {
-        "1642664302f481699a-0": {
+        "1642663281ed528a0f-0": {
           "type": "featured_collection",
           "settings": {
             "collection": "frontpage"
           }
         },
-        "1642664302f481699a-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "orange"
-          }
-        },
-        "1642664302f481699a-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "frontpage"
-          }
-        },
-        "d5f9d0c3-e0a6-4b67-ae51-87c7eed1499e": {
+        "1642663281ed528a0f-1": {
           "type": "featured_collection",
           "settings": {
             "collection": "pitaya"
           }
         },
-        "27120bca-614b-424a-a38b-4e6b0c333601": {
+        "1642663281ed528a0f-2": {
           "type": "featured_collection",
           "settings": {
             "collection": ""
           }
         },
-        "2f2a7ae2-fe31-45d8-923f-1deed9dd4de6": {
+        "8621e737-3bce-41dd-b3db-069c345b2c9d": {
           "type": "featured_collection",
           "settings": {
             "collection": ""
           }
         },
-        "91c314f0-1184-439d-abf6-ab11b5c47f15": {
+        "49808cd2-3bc4-4c8e-be7c-e699e9beafd7": {
           "type": "featured_collection",
           "settings": {
-            "collection": "frontpage"
+            "collection": ""
+          }
+        },
+        "92dacd44-62e4-4a47-9a3d-e76cc7124d97": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "c5f5ebc7-30c0-41f1-9883-ddfd7cf818c6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
           }
         }
       },
       "block_order": [
-        "1642664302f481699a-0",
-        "1642664302f481699a-1",
-        "1642664302f481699a-2",
-        "d5f9d0c3-e0a6-4b67-ae51-87c7eed1499e",
-        "27120bca-614b-424a-a38b-4e6b0c333601",
-        "2f2a7ae2-fe31-45d8-923f-1deed9dd4de6",
-        "91c314f0-1184-439d-abf6-ab11b5c47f15"
+        "1642663281ed528a0f-0",
+        "1642663281ed528a0f-1",
+        "1642663281ed528a0f-2",
+        "8621e737-3bce-41dd-b3db-069c345b2c9d",
+        "49808cd2-3bc4-4c8e-be7c-e699e9beafd7",
+        "92dacd44-62e4-4a47-9a3d-e76cc7124d97",
+        "c5f5ebc7-30c0-41f1-9883-ddfd7cf818c6"
       ],
       "settings": {
         "title": "Collections",
         "image_ratio": "square",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "image_padding": false,
         "show_view_all": false,
         "collection_list_margin_top": "",
@@ -451,6 +451,6 @@
     "1642154535eb0baf28",
     "16421547916bd2500f",
     "16426457698e349ab8",
-    "16426643020b80a32b"
+    "164266328179f7e744"
   ]
 }
