@@ -359,8 +359,8 @@
       "settings": {
         "title": "TRENDING",
         "sub_title": "Popular this week",
-        "collection": "frontpage",
-        "products_to_show": 4,
+        "collection": "pitaya",
+        "products_to_show": 8,
         "grid": 3,
         "show_view_all": true,
         "swipe_on_mobile": false,
@@ -375,6 +375,71 @@
         "featured_colection_margin_top": "",
         "featured_colection_margin_bottom": ""
       }
+    },
+    "16426643020b80a32b": {
+      "type": "collection-list",
+      "blocks": {
+        "1642664302f481699a-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1642664302f481699a-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "1642664302f481699a-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "d5f9d0c3-e0a6-4b67-ae51-87c7eed1499e": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "27120bca-614b-424a-a38b-4e6b0c333601": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "2f2a7ae2-fe31-45d8-923f-1deed9dd4de6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "91c314f0-1184-439d-abf6-ab11b5c47f15": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1642664302f481699a-0",
+        "1642664302f481699a-1",
+        "1642664302f481699a-2",
+        "d5f9d0c3-e0a6-4b67-ae51-87c7eed1499e",
+        "27120bca-614b-424a-a38b-4e6b0c333601",
+        "2f2a7ae2-fe31-45d8-923f-1deed9dd4de6",
+        "91c314f0-1184-439d-abf6-ab11b5c47f15"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false,
+        "collection_list_margin_top": "",
+        "collection_list_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -385,6 +450,7 @@
     "1642154528ebbc0713",
     "1642154535eb0baf28",
     "16421547916bd2500f",
-    "16426457698e349ab8"
+    "16426457698e349ab8",
+    "16426643020b80a32b"
   ]
 }
