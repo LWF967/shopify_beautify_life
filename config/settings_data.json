@@ -1,7 +1,7 @@
 {
   "current": {
     "button_style": "Default",
-    "show_back_to_top": "Desktop+Mobile",
+    "show_back_to_top": "Disable",
     "back_to_top_style": "Style 2",
     "enable_prevent_copying": true,
     "enable_catalog_mode": false,
