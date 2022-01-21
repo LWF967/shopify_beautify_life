@@ -12,9 +12,9 @@
     top: 0;
     right: 0;
     max-width: 50%;
-    background-color: {{ section.settings.newsletter_button_color }};
-    color: {{ section.settings.newsletter_button_text_color }};
-    border: 1px solid {{ section.settings.newsletter_button_color }};
+    background-color: {{ block.settings.newsletter_button_color }};
+    color: {{ block.settings.newsletter_button_text_color }};
+    border: 1px solid {{ block.settings.newsletter_button_color }};
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -50,17 +50,17 @@
 
   .my_field_input_style {
     height: 44px;
-    color: {{ section.settings.newsletter_input_color }};
-    box-shadow: 0px 0px 1px 1px {{ section.settings.newsletter_border_color }};
+    color: {{ block.settings.newsletter_input_color }};
+    box-shadow: 0px 0px 1px 1px {{ block.settings.newsletter_border_color }};
   }
 
   .my_newsletter_label {
-    color: {{ section.settings.newsletter_input_color }};
+    color: {{ block.settings.newsletter_input_color }};
   }
 
   .my_field_input_style:hover,
   .my_field_input_style:focus {
-    box-shadow: 0 0 0 0.2rem {{ section.settings.newsletter_border_color }};
+    box-shadow: 0 0 0 0.2rem {{ block.settings.newsletter_border_color }};
   }
 
   .my_newsletter_btn_text {
