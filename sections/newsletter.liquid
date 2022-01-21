@@ -2,6 +2,10 @@
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 
 
+
+{% for block in section.blocks %}
+ assign my_img_height_left = {{ block.settings.newsletter_button_color }}
+{% endfor %};
 <style>
   .my_newsletter_heading_font_size {
     font-size: 24px;
