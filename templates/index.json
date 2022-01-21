@@ -597,6 +597,14 @@
         "image_with_text_margin_top": "",
         "image_with_text_margin_bottom": ""
       }
+    },
+    "16427527698c0a57a6": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "contact_form_margin_top": "",
+        "contact_form_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -611,6 +619,7 @@
     "164266328179f7e744",
     "1642692483e67edc91",
     "164274784783176d9d",
-    "16427485532c82e561"
+    "16427485532c82e561",
+    "16427527698c0a57a6"
   ]
 }
