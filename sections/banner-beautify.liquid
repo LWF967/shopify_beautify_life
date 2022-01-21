@@ -39,7 +39,7 @@
         {%- else -%}
         {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
         {%- endif -%}
-        <div class="nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size" style="font-weight:600; color:{{ block.settings.color }}">
+        <div class="nt_promotion_html pa t__0 l__0 tc pe_none my_banner_beautify_font_size" style="font-weight:600; color:{{ section.settings.img_top_color }}">
           {{ block.settings.header_top }}
         </div>
       </div>
@@ -215,8 +215,8 @@
     },
     {
       "type": "color",
-      "id": "color",
-      "label": "Color",
+      "id": "img_top_color",
+      "label": "Image top color",
       "default": "#fff"
     }
   ],
