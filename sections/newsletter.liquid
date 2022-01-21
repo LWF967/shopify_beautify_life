@@ -12,7 +12,7 @@
     top: 0;
     right: 0;
     max-width: 50%;
-    background-color: {{ block.settings.newsletter_button_color }};
+    background-color:{% for block in section.blocks limit:1 %} {{ block.settings.newsletter_button_color }}{% endfor %};
     color: {{ block.settings.newsletter_button_text_color }};
     border: 1px solid {{ block.settings.newsletter_button_color }};
     overflow: hidden;
