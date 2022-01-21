@@ -899,7 +899,7 @@
           }
         },
         "buttons": {
-          "name": "Buttons",
+          "name": "Button",
           "settings": {
             "button_label_1": {
               "label": "Button label",
