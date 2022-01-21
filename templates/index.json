@@ -492,11 +492,9 @@
         "7f2b0b1a-5ff1-45af-a997-783bfeb2d64e": {
           "type": "banner_third",
           "settings": {
+            "image": "shopify:\/\/shop_images\/shooting-high-8-camera.jpg",
             "header_top": "Head",
             "url": "",
-            "color": "#fff",
-            "w": 140,
-            "h": 3,
             "open_link": "_blank"
           }
         }
@@ -510,8 +508,9 @@
       "settings": {
         "title": "BANNER",
         "sub_title": "Popular this week",
+        "img_top_color": "#c62323",
         "font_top": 34,
-        "color_top": "#fff",
+        "color_top": "#ffffff",
         "grid": 3,
         "show_page_Dot": true,
         "page_dot_style": "style_1",
