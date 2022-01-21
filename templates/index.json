@@ -508,8 +508,8 @@
       "settings": {
         "title": "BANNER",
         "sub_title": "Popular this week",
-        "img_top_color": "#c62323",
         "font_top": 34,
+        "img_top_color": "#c62323",
         "color_top": "#ffffff",
         "grid": 3,
         "show_page_Dot": true,
@@ -517,6 +517,49 @@
         "page_dot_color": "dark",
         "banner_beautify_margin_top": "",
         "banner_beautify_margin_bottom": ""
+      }
+    },
+    "164274784783176d9d": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "16427478477fcc777e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "16427478477fcc777e-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "16427478477fcc777e-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false
+          }
+        }
+      },
+      "block_order": [
+        "16427478477fcc777e-0",
+        "16427478477fcc777e-1",
+        "16427478477fcc777e-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/shooting-high-8-camera.jpg",
+        "image_alignment": "center center",
+        "section_size": "medium",
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "text_size": "medium",
+        "image_overlay_opacity": 0,
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "image_with_text_overlay_margin_top": "",
+        "image_with_text_overlay_margin_bottom": ""
       }
     }
   },
@@ -530,6 +573,7 @@
     "16421547916bd2500f",
     "16426457698e349ab8",
     "164266328179f7e744",
-    "1642692483e67edc91"
+    "1642692483e67edc91",
+    "164274784783176d9d"
   ]
 }
