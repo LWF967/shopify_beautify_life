@@ -528,6 +528,12 @@
             "heading": "Image banner"
           }
         },
+        "cd8709cf-8a2e-4548-b65b-fc9b83de804e": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
         "4a83795f-d65e-482a-813d-5c78d1c546b8": {
           "type": "buttons",
           "settings": {
@@ -538,6 +544,7 @@
       },
       "block_order": [
         "e29a42ee-7020-48f6-bb9b-bce66b077700",
+        "cd8709cf-8a2e-4548-b65b-fc9b83de804e",
         "4a83795f-d65e-482a-813d-5c78d1c546b8"
       ],
       "settings": {
