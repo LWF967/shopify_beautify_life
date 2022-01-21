@@ -2,10 +2,6 @@
 {{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
 
 
-
-{% for block in section.blocks %}
- assign my_img_height_left = {{ block.settings.newsletter_button_color }}
-{% endfor %};
 <style>
   .my_newsletter_heading_font_size {
     font-size: 24px;
@@ -17,7 +13,7 @@
     top: 0;
     right: 0;
     max-width: 50%;
-    background-color:assign my_img_height_left;
+    background-color:{% for block in section.blocks %}{{ block.settings.newsletter_button_color }}{% endfor %};
     color:{% for block in section.blocks %} {{ block.settings.newsletter_button_text_color }}{% endfor %};
     border: 1px solid {% for block in section.blocks %}{{ block.settings.newsletter_button_color }}{% endfor %};
     overflow: hidden;
