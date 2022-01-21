@@ -101,7 +101,7 @@
                  id="NewsletterForm--{{ section.id }}"
                  type="email"
                  name="contact[email]"
-                 class="field__input my_field_input_style {% if blocks.settings.button_design == '3' or blocks.settings.button_design == '4' %}my_field_input_radius{% endif %}"
+                 class="field__input my_field_input_style {% if block.settings.button_design == '3' or block.settings.button_design == '4' %}my_field_input_radius{% endif %}"
                  style="background-color:transparent"
                  value="{{ form.email }}"
                  aria-required="true"
@@ -122,7 +122,7 @@
             {{ 'newsletter.label' | t }}
           </label>
 
-          <button type="submit" class="my_newsletter_button_style {% if blocks.settings.button_design == '1' %}my_newsletter_button_style_1{% elsif blocks.settings.button_design == '2' %}my_newsletter_button_style_2{% elsif section.settings.button_design == '3' %}my_newsletter_button_style_3{% elsif section.settings.button_design == '4' %}my_newsletter_button_style_4{% endif %} my_newsletter_mobile_style">
+          <button type="submit" class="my_newsletter_button_style {% if block.settings.button_design == '1' %}my_newsletter_button_style_1{% elsif block.settings.button_design == '2' %}my_newsletter_button_style_2{% elsif section.settings.button_design == '3' %}my_newsletter_button_style_3{% elsif section.settings.button_design == '4' %}my_newsletter_button_style_4{% endif %} my_newsletter_mobile_style">
             <span class="my_newsletter_button_text my_button_font_size_default my_font_weight_default">{{ 'newsletter.button_label' | t }}</span>
           </button>
         </div>
