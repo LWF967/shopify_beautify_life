@@ -603,7 +603,7 @@
       "settings": {
         "heading": "Contact form",
         "contact_form_margin_top": "",
-        "contact_form_margin_bottom": ""
+        "contact_form_margin_bottom": "55"
       }
     }
   },
