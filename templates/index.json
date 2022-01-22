@@ -121,8 +121,8 @@
       "settings": {
         "se_height": "adapt",
         "text_size": "medium",
-        "loop": false,
-        "auto_play": true,
+        "loop": true,
+        "auto_play": false,
         "auto_time": 3,
         "show_button": true,
         "show_button_visible": "always",
@@ -554,7 +554,6 @@
         "show_text_box": true,
         "text_size": "medium",
         "image_overlay_opacity": 0,
-        "stack_images_on_mobile": true,
         "show_text_below": true,
         "image_with_text_overlay_margin_top": "",
         "image_with_text_overlay_margin_bottom": ""
