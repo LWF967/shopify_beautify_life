@@ -59,6 +59,8 @@
     "predictive_search_show_vendor": true,
     "predictive_search_show_price": true,
     "favicon": "shopify:\/\/shop_images\/person-crouches-down-on-a-street-and-paints-a-door-white.jpg",
+    "checkout_header_image": "shopify:\/\/shop_images\/shooting-high-8-camera.jpg",
+    "checkout_logo_image": "shopify:\/\/shop_images\/design-plans-color-swatches.jpg",
     "checkout_accent_color": "#000000",
     "checkout_button_color": "#000000",
     "colors_page_stickiness": "#d75656",
