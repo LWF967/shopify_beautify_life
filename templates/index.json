@@ -366,10 +366,9 @@
         "swipe_on_mobile": true,
         "image_ratio": "adapt",
         "use_eq_height": true,
-        "image_ratio1": "ratio_cus3",
-        "show_secondary_image": true,
-        "add_image_padding": true,
-        "show_image_outline": true,
+        "image_ratio1": "ratio2_1",
+        "show_secondary_image": false,
+        "add_image_padding": false,
         "show_vendor": false,
         "show_rating": false,
         "featured_colection_margin_top": "",
@@ -509,7 +508,7 @@
         "title": "BANNER",
         "sub_title": "Popular this week",
         "font_top": 34,
-        "img_top_color": "#c62323",
+        "img_top_color": "#ffffff",
         "color_top": "#ffffff",
         "grid": 3,
         "show_page_Dot": true,
@@ -672,7 +671,7 @@
             "newsletter_input_color": "#797979",
             "newsletter_border_color": "#797979",
             "newsletter_button_color": "#000000",
-            "newsletter_button_text_color": "#FFFFFF"
+            "newsletter_button_text_color": "#ffffff"
           }
         }
       },
