@@ -13,7 +13,7 @@
     "top_bar": true,
     "top_bar_home_page_only": false,
     "full_width": true,
-    "sticky_header": false,
+    "sticky_header": true,
     "show_search_icon": true,
     "Show_dropdown_arrow": true,
     "header_background_color": "#ffffff",
@@ -259,16 +259,25 @@
               "sub_text": "Subscribe to our newsletter and get 10% off your first purchase",
               "container_width": "5"
             }
+          },
+          "34bd4643-da67-4d6a-a0ec-fca1b36b607f": {
+            "type": "text",
+            "settings": {
+              "heading": "Text",
+              "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>",
+              "container_width": "5"
+            }
           }
         },
         "block_order": [
           "6f145749-18fc-4c73-a255-f2b306f512ed",
           "813890e0-2367-4953-b348-378adfebbfdf",
           "95516c21-286f-4cb0-804a-b154a39441dd",
-          "0e03fff2-5f48-4c58-ab83-ce5e1b70e304"
+          "0e03fff2-5f48-4c58-ab83-ce5e1b70e304",
+          "34bd4643-da67-4d6a-a0ec-fca1b36b607f"
         ],
         "settings": {
-          "sticky_footer": true,
+          "sticky_footer": false,
           "accordions_options_on_mobile": true,
           "border_footer": true,
           "border_color": "#e6e0e0",
