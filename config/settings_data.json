@@ -229,8 +229,8 @@
             "type": "text1",
             "settings": {
               "image": "shopify:\/\/shop_images\/woman-poses-in-dark-room.jpg",
-              "custom_logo_width": 120,
-              "heading": "Get in touch",
+              "custom_logo_width": 98,
+              "heading": "Get i",
               "textarea": "<p><i class=\"my_icon\"><\/i><span class=\"footer_location\">184Main Rd E, St Albans <br>VIC3021, Australia<\/span><\/p><p><i class=\"my_icon\"><\/i><span class=\"footer_email\"> <a href=\"mailto:Giraffly@company.com\">contact@company.com<\/a><\/span><\/p><p><i class=\"my_icon\"><\/i><span class=\"footer_phone\">+1 23456789<\/span><\/p>",
               "container_width": "5"
             }
