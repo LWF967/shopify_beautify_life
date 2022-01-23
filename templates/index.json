@@ -287,7 +287,7 @@
         "16421545345effe0ed-4": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown"
+            "picker_type": "button"
           }
         },
         "16421545345effe0ed-5": {
@@ -324,11 +324,11 @@
         "16421545345effe0ed-8"
       ],
       "settings": {
-        "product": "text6",
-        "featured_bk_color": "#1eec5e",
+        "product": "1",
+        "featured_bk_color": "#ff0000",
         "color_scheme": "gradient",
-        "show_share_buttons": false,
-        "hide_variants": false,
+        "show_share_buttons": true,
+        "hide_variants": true,
         "enable_video_looping": false,
         "featured_product_beautify_margin_top": "",
         "featured_product_beautify_margin_bottom": ""
@@ -339,9 +339,9 @@
       "settings": {
         "heading": "Blog posts",
         "head_text": "The most exciting news",
-        "image_ratio1": "ratio_nt",
+        "image_ratio1": "ratio1_1",
         "blog": "news",
-        "post_limit": 3,
+        "post_limit": 4,
         "show_image": true,
         "show_title": true,
         "show_short_content": true,
@@ -349,7 +349,7 @@
         "show_author": false,
         "blog_soft_background": "#f3f3f3",
         "color_scheme": "gradient",
-        "show_view_all": true,
+        "show_view_all": false,
         "blog_page_beautify_margin_top": "",
         "blog_page_beautify_margin_bottom": ""
       }
