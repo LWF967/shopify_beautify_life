@@ -46,7 +46,7 @@
  object-fit: none;
  object-position: top left;
 }
-.align--top-center .img_fit >  img{
+.align--top-middle .img_fit >  img{
  object-fit: none;
  object-position: top center;
 }
@@ -66,7 +66,7 @@
  object-fit: none;
  object-position: bottom left;
 }
-.align--bottomt-center .img_fit >  img{
+.align--bottomt-middle .img_fit >  img{
  object-fit: none;
  object-position: bottom center;
 }.align--bottom-right .img_fit >  img{
