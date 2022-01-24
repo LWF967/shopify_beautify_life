@@ -70,10 +70,11 @@
  object-fit: none;
  object-position: bottom left;
 }
-.align--bottomt-middle .img_fit > img{
+.align--bottom-middle .img_fit > img{
  object-fit: none;
  object-position: bottom center;
-}.align--bottom-right .img_fit > img{
+}
+.align--bottom-right .img_fit > img{
  object-fit: none;
  object-position: bottom right;
 }
