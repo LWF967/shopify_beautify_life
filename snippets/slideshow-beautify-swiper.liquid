@@ -859,7 +859,11 @@
         {% endif %}
         }
         
-        
+         {% if  section.settings.auto_play == true %}
+            swiperBeautifySlideshow.autoplay.start();
+        {% else %}
+            swiperBeautifySlideshow.autoplay.stop();
+        {% endif %}
 
     },2000), true)
     
