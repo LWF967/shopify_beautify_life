@@ -46,9 +46,13 @@
  object-fit: none;
  object-position: top left;
 }
-.align--top-cente .img_fit >  img{
+.align--top-center .img_fit >  img{
  object-fit: none;
  object-position: top center;
+}
+.align--top-right .img_fit >  img{
+ object-fit: none;
+ object-position: top right;
 }
 .align--middle-left .img_fit >  img{
  object-fit: none;
