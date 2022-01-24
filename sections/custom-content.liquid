@@ -30,6 +30,9 @@
   .grid-view-item__title{
     font-size: 16px;
   }
+  img{
+    visibility: {% for block in section.blocks %}{{block.settings.alignment}}{% endfor %};
+  }
 </style>
 
 <div class="page-width spaced-section"
