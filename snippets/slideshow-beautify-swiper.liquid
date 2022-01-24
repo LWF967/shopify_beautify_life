@@ -799,6 +799,9 @@
     })
 	{% if  section.settings.auto_play == true %}
             swiperBeautifySlideshow.autoplay.start();
+            var mySwiper = new Swiper('.swiper', {
+            autoplay:false,
+          });
         {% else %}
             swiperBeautifySlideshow.autoplay.stop();
         {% endif %}
