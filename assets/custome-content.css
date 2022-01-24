@@ -45,6 +45,29 @@
  object-fit: none;
  object-position: top left;
 }
+.align--top-cente .img_fit > img{
+ object-fit: none;
+ object-position: top center;
+}
+.align--center-left .img_fit > img{
+ object-fit: none;
+ object-position: center left;
+}
+.align--center-right .img_fit > img{
+ object-fit: none;
+ object-position: center right;
+}
+.align--bottom-left .img_fit > img{
+ object-fit: none;
+ object-position: bottom left;
+}
+.align--bottomt-center .img_fit > img{
+ object-fit: none;
+ object-position: bottom center;
+}.align--bottom-right .img_fit > img{
+ object-fit: none;
+ object-position: bottom right;
+}
 
 
   
