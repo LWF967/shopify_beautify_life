@@ -43,7 +43,7 @@
   text-align: right; }
 .align--top-left img{
  object-fit: none;
- object-position: 3px 10%;
+ object-position: top left;
 }
 
 
