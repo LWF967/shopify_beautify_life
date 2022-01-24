@@ -23,7 +23,7 @@
     </p>
   </div>
 
-  <div  class="swiper-wrapper  swiper-wrapper-{{section.id}} "  data-autoplay="{{section.settings.auto_play}}" data-loop="{{loop}}" data-autotime="{{section.settings.auto_time}}" >
+  <div  class="swiper-wrapper  swiper-wrapper-{{section.id}} "  data-autoplay="{{auto_play}}" data-loop="{{loop}}" data-autotime="{{section.settings.auto_time}}" >
     {% for block in section.blocks %}
     {%- case block.type -%}
     {%- when 'slideshow_img2' -%} {%- assign image = block.settings.image -%}
@@ -795,15 +795,13 @@
         nextEl: '.swiper-button-next-{{section.id}}',
         prevEl: '.swiper-button-prev-{{section.id}}',
       }
-      
-      {% if  section.settings.auto_play == true %}
+
+    })
+	{% if  section.settings.auto_play == true %}
 		swiperBeautifySlideshow.autoplay.start();
 	{% else %}
 		swiperBeautifySlideshow.autoplay.stop();
   	{% endif %}
-
-    })
-	
 
     document.addEventListener('shopify:section:load', throttle((event) => {
     
