@@ -798,9 +798,9 @@
 
     })
 	{% if  section.settings.auto_play == true %}
-		swiperBeautifySlideshow.autoplay.start();
+		swiperAutoPlay.autoplay.start();
 	{% else %}
-		swiperBeautifySlideshow.autoplay.stop();
+		swiperAutoPlay.autoplay.stop();
   	{% endif %}
 
     document.addEventListener('shopify:section:load', throttle((event) => {
