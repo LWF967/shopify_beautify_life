@@ -12,7 +12,7 @@
 {%- assign image = section.blocks.settings.image %}
 
 <section data-section-id="{{ section.id }}" data-section-type="slideshow-section" class="spaced-section nt_se_{{sid}} se_height_{{ se_height }}"  style="overflow: hidden;padding:0;{%- if section.settings.slideshow_beautify_margin_top != blank -%}margin-top: {{ section.settings.slideshow_beautify_margin_top }}px; {%- endif -%}{%- if section.settings.slideshow_beautify_margin_bottom != blank -%}margin-bottom:{{ section.settings.slideshow_beautify_margin_bottom }}px;{%- endif -%}">
-{% render 'slideshow-beautify-swiper',section:section,loop:section.settings.loop ,auto_play:section.settings.auto_play%}
+{% render 'slideshow-beautify-swiper',section:section,loop:section.settings.loop %}
 </section>
  {%- style -%}
 
