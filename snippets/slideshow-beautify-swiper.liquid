@@ -859,6 +859,56 @@
         {% endif %}
         }
 
+
+
+  {% if  section.settings.auto_play == true %}
+ 	function ScreenSizeChange(){
+
+// 根据不同端，添加不同响应事件    
+
+      if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+
+        $('.swiper-container-{{section.id}}').unbind('mouseover').unbind('mouseout');
+
+        document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchstart', debounce(function () {
+          swiperBeautifySlideshow.autoplay.stop();
+        }, 500), true)
+
+        document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchmove', debounce(function () {
+
+        }), true)
+
+        document.getElementsByClassName('swiper-container-{{section.id}}')[0].addEventListener('touchend', debounce(function () {
+          swiperBeautifySlideshow.autoplay.start();
+        }, 500), true)
+
+      } else {
+
+        $('.swiper-container-{{section.id}}').mouseover(debounce(function (event) {
+
+          swiperBeautifySlideshow.autoplay.stop();
+          event.stopPropagation();
+        },500))
+
+        $('.swiper-container-{{section.id}}').mouseout(debounce(function (event) {
+
+          swiperBeautifySlideshow.autoplay.start();
+          event.stopPropagation();
+        },500))
+
+      } 
+	}
+   ScreenSizeChange()
+
+  window.addEventListener("resize", debounce(function(){
+ 	ScreenSizeChange()
+	})
+  );
+  
+     {% endif %}
+
+
+
     },2000), true)
 
     document.addEventListener('shopify:section:unload', ()=>{
