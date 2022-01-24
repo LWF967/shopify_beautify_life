@@ -41,9 +41,8 @@
   -webkit-align-self: flex-end;
   align-self: flex-end;
   text-align: right; }
-.align--top-left{
- align-self: start;
- text-align: left;
+.align--top-left img{
+ object-position: top left;
 }
 
   
