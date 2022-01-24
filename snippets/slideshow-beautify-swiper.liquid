@@ -798,9 +798,9 @@
 
     })
 	{% if  section.settings.auto_play == true %}
-		swiperAutoPlay.autoplay.start();
+		swiperBeautifySlideshow.autoplay.start();
 	{% else %}
-		swiperAutoPlay.autoplay.stop();
+		swiperBeautifySlideshow.autoplay.stop();
   	{% endif %}
 
     document.addEventListener('shopify:section:load', throttle((event) => {
@@ -867,7 +867,12 @@
 
     }, true)
 
-
+/**
+ * 防抖函数，非立即执行
+ * @param {*} func 回调函数  必传
+ * @param {*} wait 等待时长 默认500ms 可不传
+ * arguments  是js存函数参数的地方
+ */
     function debounce(func, wait = 500) {
       let timeOut
       return function () {
@@ -882,7 +887,9 @@
       }
     }
  	function ScreenSizeChange(){
- 
+
+// 根据不同端，添加不同响应事件    
+
       if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
         $('.swiper-container-{{section.id}}').unbind('mouseover').unbind('mouseout');
