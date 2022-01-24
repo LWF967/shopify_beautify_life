@@ -844,7 +844,6 @@
           disableOnInteraction: false,
         },
       {% endif %}
-
       
         navigation: {
           nextEl: '.swiper-button-next-{{section.id}}',
@@ -854,30 +853,13 @@
       })
       
       var c=  $('.swiper-wrapper-{{section.id}}').attr('data-autoplay');
-      console.info(c,'22'); 
       if( c == 'true'){
-      
        swiperBeautifySlideshow.autoplay.start();
-            
-      
-      
       }else{
       swiperBeautifySlideshow.autoplay.stop();
-            
-      
       }
-     
-        
-        
         }
-        
-  
-
     },2000), true)
-    
-
-   
-
 
 /**
 
@@ -889,17 +871,6 @@
     }, true)
 
 */
-
-
-
-
-/**
-
- * 防抖函数，非立即执行
- * @param {*} func 回调函数  必传
- * @param {*} wait 等待时长 默认500ms 可不传
- * arguments  是js存函数参数的地方
- */
     function debounce(func, wait = 500) {
       let timeOut
       return function () {
@@ -917,7 +888,6 @@
   {% if  section.settings.auto_play == 'true' %}
  	function ScreenSizeChange(){
 
-// 根据不同端，添加不同响应事件    
 
       if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
@@ -939,12 +909,8 @@
       
  			{% if  section.settings.auto_play == true %}
         $('.swiper-container-{{section.id}}').mouseover(debounce(function (event) {
-
-		
           swiperBeautifySlideshow.autoplay.stop();
           event.stopPropagation();
-          
-          
           
         },500))
 
@@ -953,11 +919,8 @@
           swiperBeautifySlideshow.autoplay.start();
           event.stopPropagation();
           
-          
-          
         },500))
         	{% endif %}
-
       } 
 	}
    ScreenSizeChange()
