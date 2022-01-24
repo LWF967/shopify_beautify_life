@@ -852,7 +852,7 @@
         }
 
       })
-        {% if  section.settings.auto_play == true %}
+        {% if  section.settings.auto_play == 'true' %}
             swiperBeautifySlideshow.autoplay.start();
             console.info('启动了');
         {% else %}
@@ -904,7 +904,7 @@
       }
     }
     
-  {% if  section.settings.auto_play == true %}
+  {% if  section.settings.auto_play == 'true' %}
  	function ScreenSizeChange(){
 
 // 根据不同端，添加不同响应事件    
