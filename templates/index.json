@@ -121,10 +121,10 @@
       "settings": {
         "se_height": "adapt",
         "text_size": "medium",
-        "loop": true,
+        "loop": false,
         "auto_play": false,
         "auto_time": 3,
-        "show_button": false,
+        "show_button": true,
         "show_button_visible": "always",
         "show_button_style": "circle",
         "show_button_color": "white",
