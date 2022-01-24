@@ -795,13 +795,15 @@
         nextEl: '.swiper-button-next-{{section.id}}',
         prevEl: '.swiper-button-prev-{{section.id}}',
       }
-
-    })
-	{% if  section.settings.auto_play == true %}
+      
+      {% if  section.settings.auto_play == true %}
 		swiperBeautifySlideshow.autoplay.start();
 	{% else %}
 		swiperBeautifySlideshow.autoplay.stop();
   	{% endif %}
+
+    })
+	
 
     document.addEventListener('shopify:section:load', throttle((event) => {
     
