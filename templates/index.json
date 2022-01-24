@@ -153,7 +153,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/shooting-high-8-camera.jpg",
-            "width": "50%",
+            "width": "100%",
             "alignment": "center"
           }
         },
@@ -703,7 +703,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/person-crouches-down-on-a-street-and-paints-a-door-white.jpg",
-            "width": "75%",
+            "width": "50%",
             "alignment": "center"
           }
         },
@@ -717,9 +717,9 @@
         "783cbe3a-523f-457c-8754-a5b9b2f10ce0": {
           "type": "article",
           "settings": {
-            "article": "",
-            "width": "50%",
-            "alignment": "center",
+            "article": "tt\/posts-7",
+            "width": "100%",
+            "alignment": "top-middle",
             "cover_image": "large",
             "show_author": false,
             "show_date": true
