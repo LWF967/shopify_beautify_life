@@ -50,11 +50,11 @@
  object-fit: none;
  object-position: top center;
 }
-.align--center-left .img_fit >  img{
+.align--middle-left .img_fit >  img{
  object-fit: none;
  object-position: center left;
 }
-.align--center-right .img_fit >  img{
+.align--middle-right .img_fit >  img{
  object-fit: none;
  object-position: center right;
 }
