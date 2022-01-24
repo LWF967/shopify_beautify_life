@@ -41,7 +41,7 @@
   -webkit-align-self: flex-end;
   align-self: flex-end;
   text-align: right; }
-.align--top-left img{
+.align--top-left .img_fit > img{
  object-fit: cover;
  object-position: top left;
 }
