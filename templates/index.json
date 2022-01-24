@@ -154,7 +154,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/shooting-high-8-camera.jpg",
             "width": "50%",
-            "alignment": "middle-right"
+            "alignment-1": "center"
           }
         },
         "ba08ea2f-8944-4891-a281-4717be7cefa7": {
@@ -162,7 +162,7 @@
           "settings": {
             "product": "text4",
             "width": "50%",
-            "alignment": "top-left"
+            "alignment-3": "center"
           }
         },
         "613f2bea-84de-4782-ab7b-8500bfeddc76": {
@@ -170,7 +170,7 @@
           "settings": {
             "menu": "main-menu",
             "width": "100%",
-            "alignment": "center"
+            "alignment-4": "center"
           }
         },
         "e75de121-9393-432a-8950-98c4c77e4357": {
@@ -178,7 +178,7 @@
           "settings": {
             "article": "tt\/posts-7",
             "width": "50%",
-            "alignment": "center",
+            "alignment-6": "center",
             "cover_image": "large",
             "show_author": false,
             "show_date": true
@@ -685,6 +685,38 @@
         "newsletter_margin_top": "",
         "newsletter_margin_bottom": "12"
       }
+    },
+    "1642992306eb72e7f1": {
+      "type": "custom-content",
+      "blocks": {
+        "1642992306fecd6f05-0": {
+          "type": "text",
+          "settings": {
+            "title": "Talk about your brand",
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "width": "50%",
+            "alignment": "center",
+            "align_text": "left"
+          }
+        },
+        "1642992306fecd6f05-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/person-crouches-down-on-a-street-and-paints-a-door-white.jpg",
+            "width": "50%",
+            "alignment-1": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1642992306fecd6f05-0",
+        "1642992306fecd6f05-1"
+      ],
+      "settings": {
+        "title": "Custom content",
+        "custom_content_margin_top": "",
+        "custom_content_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -702,6 +734,7 @@
     "16427485532c82e561",
     "16427527698c0a57a6",
     "1642754564af97a38c",
-    "1642756980523dd7ef"
+    "1642756980523dd7ef",
+    "1642992306eb72e7f1"
   ]
 }
