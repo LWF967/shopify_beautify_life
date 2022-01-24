@@ -854,9 +854,10 @@
       })
         {% if  section.settings.auto_play == true %}
             swiperBeautifySlideshow.autoplay.start();
-            console.info('进来了');
+            console.info('启动了');
         {% else %}
             swiperBeautifySlideshow.autoplay.stop();
+            console.info('停止了');
         {% endif %}
         }
         
