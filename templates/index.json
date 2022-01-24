@@ -153,24 +153,21 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/shooting-high-8-camera.jpg",
-            "width": "50%",
-            "alignment-1": "center"
+            "width": "50%"
           }
         },
         "ba08ea2f-8944-4891-a281-4717be7cefa7": {
           "type": "product",
           "settings": {
             "product": "text4",
-            "width": "50%",
-            "alignment-3": "center"
+            "width": "50%"
           }
         },
         "613f2bea-84de-4782-ab7b-8500bfeddc76": {
           "type": "link_list",
           "settings": {
             "menu": "main-menu",
-            "width": "100%",
-            "alignment-4": "center"
+            "width": "100%"
           }
         },
         "e75de121-9393-432a-8950-98c4c77e4357": {
@@ -178,7 +175,6 @@
           "settings": {
             "article": "tt\/posts-7",
             "width": "50%",
-            "alignment-6": "center",
             "cover_image": "large",
             "show_author": false,
             "show_date": true
@@ -695,7 +691,7 @@
             "title": "Talk about your brand",
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
             "width": "50%",
-            "alignment": "center",
+            "alignment": "top-middle",
             "align_text": "left"
           }
         },
@@ -703,14 +699,32 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/person-crouches-down-on-a-street-and-paints-a-door-white.jpg",
+            "width": "75%"
+          }
+        },
+        "bcd19f03-7a01-4050-9a9c-ef50e5dac6cc": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage",
+            "width": "50%"
+          }
+        },
+        "783cbe3a-523f-457c-8754-a5b9b2f10ce0": {
+          "type": "article",
+          "settings": {
+            "article": "",
             "width": "50%",
-            "alignment-1": "center"
+            "cover_image": "large",
+            "show_author": false,
+            "show_date": true
           }
         }
       },
       "block_order": [
         "1642992306fecd6f05-0",
-        "1642992306fecd6f05-1"
+        "1642992306fecd6f05-1",
+        "bcd19f03-7a01-4050-9a9c-ef50e5dac6cc",
+        "783cbe3a-523f-457c-8754-a5b9b2f10ce0"
       ],
       "settings": {
         "title": "Custom content",
