@@ -42,34 +42,38 @@
   align-self: flex-end;
   text-align: right; }
 
-.align--top-left .img_fit >  img{
+.align--top-left .img_fit > img{
  object-fit: none;
  object-position: top left;
 }
-.align--top-middle .img_fit >  img{
+.align--top-middle .img_fit > img{
  object-fit: none;
  object-position: top center;
 }
-.align--top-right .img_fit >  img{
+.align--top-right .img_fit > img{
  object-fit: none;
  object-position: top right;
 }
-.align--middle-left .img_fit >  img{
+.align--middle-left .img_fit > img{
  object-fit: none;
  object-position: center left;
 }
-.align--middle-right .img_fit >  img{
+.align--center .img_fit > img{
+ object-fit: none;
+ object-position: center center;
+}
+.align--middle-right .img_fit > img{
  object-fit: none;
  object-position: center right;
 }
-.align--bottom-left .img_fit >  img{
+.align--bottom-left .img_fit > img{
  object-fit: none;
  object-position: bottom left;
 }
-.align--bottomt-middle .img_fit >  img{
+.align--bottomt-middle .img_fit > img{
  object-fit: none;
  object-position: bottom center;
-}.align--bottom-right .img_fit >  img{
+}.align--bottom-right .img_fit > img{
  object-fit: none;
  object-position: bottom right;
 }
