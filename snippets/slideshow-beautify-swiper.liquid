@@ -782,7 +782,7 @@
       observer: true,
       observeParents: true,
       observeSlideChildren: true,
-      {% if section.settings.auto_play == true %}
+      {% if  section.settings.auto_play == true %}
         autoplay: {
           delay: swiperTime * 1000 ,
           stopOnLastSlide: false,
@@ -796,22 +796,22 @@
         prevEl: '.swiper-button-prev-{{section.id}}',
       }
 
-    });
-	{% if section.settings.auto_play == true %}
-		swiperBeautifySlideshow.autoplay.start();
+    })
+	{% if  section.settings.auto_play == true %}
+		swiperAutoPlay.autoplay.start();
 	{% else %}
-		swiperBeautifySlideshow.autoplay.stop();
+		swiperAutoPlay.autoplay.stop();
   	{% endif %}
 
     document.addEventListener('shopify:section:load', throttle((event) => {
     
         if(slideshowbox){ 
-      let  swiperAutoPlay = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.autoplay;
+      let  swiperAutoPlay = document.getElementsByClassName(' swiper-wrapper-{{section.id}}')[0].dataset.autoplay;
       let swiperTime = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.autotime;	 
       let swiperLoop = document.getElementsByClassName('swiper-wrapper-{{section.id}}')[0].dataset.loop;	
         (swiperLoop == "false") ? swiperLoop=false : swiperLoop=true;
 
-      let swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{section.id}}', {
+       swiperBeautifySlideshow = new Swiper('.feature-artworks-{{section.id}}.swiper-container-{{section.id}}', {
         direction: 'horizontal', 
         loop: swiperLoop, 
         parallax : true,
