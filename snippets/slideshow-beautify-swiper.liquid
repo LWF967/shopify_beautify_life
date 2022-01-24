@@ -800,7 +800,7 @@
 	{% if  section.settings.auto_play == true %}
             swiperBeautifySlideshow.autoplay.start();
             var mySwiper = new Swiper('.swiper', {
-            autoplay:false,
+            autoplay:true,
           });
         {% else %}
             swiperBeautifySlideshow.autoplay.stop();
