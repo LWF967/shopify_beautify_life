@@ -45,6 +45,13 @@
  object-fit: cover;
  object-position: top left;
 }
+.banner__media {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
 
   
 
