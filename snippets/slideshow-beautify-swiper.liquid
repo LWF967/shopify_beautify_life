@@ -804,6 +804,9 @@
           });
         {% else %}
             swiperBeautifySlideshow.autoplay.stop();
+             var mySwiper = new Swiper('.swiper', {
+            autoplay:false,
+          });
         {% endif %}
 
     document.addEventListener('shopify:section:load', throttle((event) => {
