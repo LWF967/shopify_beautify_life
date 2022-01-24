@@ -42,6 +42,7 @@
   align-self: flex-end;
   text-align: right; }
 .align--top-left img{
+ object-fit: cover;
  object-position: top left;
 }
 
