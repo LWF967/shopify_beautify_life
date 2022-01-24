@@ -41,18 +41,11 @@
   -webkit-align-self: flex-end;
   align-self: flex-end;
   text-align: right; }
-
-.banner__media {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-}
-.banner__media > img{
+.align--top-left img{
  object-fit: cover;
  object-position: top left;
 }
+
 
   
 
