@@ -852,13 +852,23 @@
         }
 
       })
-        {% if  section.settings.auto_play == 'true' %}
-            swiperBeautifySlideshow.autoplay.start();
+      
+      var c=  $('.swiper-wrapper-{{section.id}}').attr('data-autoplay');
+      console.info(c,'22'); 
+      if( c == 'true'){
+      
+       swiperBeautifySlideshow.autoplay.start();
             console.info('启动了');
-        {% else %}
-            swiperBeautifySlideshow.autoplay.stop();
+      
+      
+      }else{
+      swiperBeautifySlideshow.autoplay.stop();
             console.info('停止了');
-        {% endif %}
+      
+      }
+     
+        
+        
         }
         
   
