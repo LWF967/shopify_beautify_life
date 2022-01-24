@@ -138,7 +138,6 @@
     },
     "1642153306c1673eff": {
       "type": "custom-content",
-      "disabled": true,
       "blocks": {
         "1642153306c93fe320-0": {
           "type": "text",
@@ -686,58 +685,6 @@
         "newsletter_margin_top": "",
         "newsletter_margin_bottom": "12"
       }
-    },
-    "1642992306eb72e7f1": {
-      "type": "custom-content",
-      "blocks": {
-        "1642992306fecd6f05-0": {
-          "type": "text",
-          "settings": {
-            "title": "Talk about your brand",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "width": "50%",
-            "alignment": "top-middle",
-            "align_text": "left"
-          }
-        },
-        "1642992306fecd6f05-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/person-crouches-down-on-a-street-and-paints-a-door-white.jpg",
-            "width": "100%",
-            "alignment": "bottom-middle"
-          }
-        },
-        "bcd19f03-7a01-4050-9a9c-ef50e5dac6cc": {
-          "type": "collection",
-          "settings": {
-            "collection": "frontpage",
-            "width": "50%"
-          }
-        },
-        "783cbe3a-523f-457c-8754-a5b9b2f10ce0": {
-          "type": "article",
-          "settings": {
-            "article": "tt\/posts-7",
-            "width": "100%",
-            "alignment": "top-middle",
-            "cover_image": "large",
-            "show_author": false,
-            "show_date": true
-          }
-        }
-      },
-      "block_order": [
-        "1642992306fecd6f05-0",
-        "1642992306fecd6f05-1",
-        "bcd19f03-7a01-4050-9a9c-ef50e5dac6cc",
-        "783cbe3a-523f-457c-8754-a5b9b2f10ce0"
-      ],
-      "settings": {
-        "title": "Custom content",
-        "custom_content_margin_top": "",
-        "custom_content_margin_bottom": ""
-      }
     }
   },
   "order": [
@@ -755,7 +702,6 @@
     "16427485532c82e561",
     "16427527698c0a57a6",
     "1642754564af97a38c",
-    "1642756980523dd7ef",
-    "1642992306eb72e7f1"
+    "1642756980523dd7ef"
   ]
 }
