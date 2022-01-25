@@ -101,8 +101,8 @@
           "logo_svg": "",
           "logo": "shopify:\/\/shop_images\/logo_300x300_df23fb36-cc05-44a5-a2e1-ebed0350dbc9.png",
           "logo_width": 50,
-          "header_height": 60,
-          "header_text_height_font_size": 14,
+          "header_height": 62,
+          "header_text_height_font_size": 16,
           "menu": "main-menu"
         }
       },
