@@ -91,7 +91,7 @@
                 {% when 'image' %}
                 {% if block.settings.image != blank %}
                 {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                <div  style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"
+                <div class="img_fit" style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;"
                     data-image-loading-animation>
                     <img id="{{ img_id }}" class="custom__image lazyload js" data-src="{{ img_url }}"
                         data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
