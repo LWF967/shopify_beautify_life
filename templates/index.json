@@ -261,8 +261,8 @@
         "title": "TRENDING",
         "sub_title": "Popular this week",
         "collection": "frontpage",
-        "products_to_show": 8,
-        "grid": 4,
+        "products_to_show": 6,
+        "grid": 3,
         "show_view_all": true,
         "swipe_on_mobile": true,
         "image_ratio": "adapt",
@@ -274,78 +274,6 @@
         "show_rating": false,
         "featured_colection_margin_top": "",
         "featured_colection_margin_bottom": ""
-      }
-    },
-    "164266328179f7e744": {
-      "type": "collection-list",
-      "blocks": {
-        "1642663281ed528a0f-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "frontpage"
-          }
-        },
-        "1642663281ed528a0f-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "pitaya"
-          }
-        },
-        "1642663281ed528a0f-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "strawberry"
-          }
-        },
-        "afbebe31-d921-4468-8e98-c1b478940a52": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "frontpage"
-          }
-        },
-        "29ba9919-d1a4-409b-bffd-04305bc8b29a": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "strawberry"
-          }
-        },
-        "567bd3a8-222b-4bee-a335-58c289c5f3c6": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "orange"
-          }
-        },
-        "477100f5-1f6e-4290-8b23-0b00550bc146": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "strawberry"
-          }
-        },
-        "2c2a1491-ffc7-4cd0-b4b4-8e6ecac9b002": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "pitaya"
-          }
-        }
-      },
-      "block_order": [
-        "1642663281ed528a0f-0",
-        "1642663281ed528a0f-1",
-        "1642663281ed528a0f-2",
-        "afbebe31-d921-4468-8e98-c1b478940a52",
-        "29ba9919-d1a4-409b-bffd-04305bc8b29a",
-        "567bd3a8-222b-4bee-a335-58c289c5f3c6",
-        "477100f5-1f6e-4290-8b23-0b00550bc146",
-        "2c2a1491-ffc7-4cd0-b4b4-8e6ecac9b002"
-      ],
-      "settings": {
-        "title": "Collections",
-        "image_ratio": "square",
-        "swipe_on_mobile": true,
-        "image_padding": true,
-        "show_view_all": true,
-        "collection_list_margin_top": "",
-        "collection_list_margin_bottom": ""
       }
     },
     "1642692483e67edc91": {
@@ -526,7 +454,6 @@
     "16427485532c82e561",
     "164310287519f7cf6f",
     "16426457698e349ab8",
-    "164266328179f7e744",
     "1642692483e67edc91",
     "164274784783176d9d",
     "1642756980523dd7ef",
