@@ -3,7 +3,7 @@
     "button_style": "Default",
     "show_back_to_top": "Disable",
     "back_to_top_style": "Style 2",
-    "enable_prevent_copying": false,
+    "enable_prevent_copying": true,
     "enable_catalog_mode": false,
     "ratio_custom_1": "shopify:\/\/shop_images\/person-crouches-down-on-a-street-and-paints-a-door-white.jpg",
     "ratio_custom_2": "shopify:\/\/shop_images\/woman-holds-a-large-musical-instrument.jpg",
