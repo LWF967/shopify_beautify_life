@@ -153,7 +153,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/shooting-high-8-camera.jpg",
-            "width": "100%",
+            "width": "50%",
             "alignment": "bottom-right"
           }
         },
