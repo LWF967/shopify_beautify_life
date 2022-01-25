@@ -277,7 +277,7 @@
         "16421545345effe0ed-4": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "dropdown"
           }
         },
         "16421545345effe0ed-5": {
