@@ -179,56 +179,80 @@
         "collection_list_beautify_margin_bottom": ""
       }
     },
-    "1642153306c1673eff": {
-      "type": "custom-content",
+    "16427485532c82e561": {
+      "type": "image-with-text",
       "blocks": {
-        "1642153306c93fe320-0": {
+        "164274855353f824e2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "164274855353f824e2-1": {
           "type": "text",
           "settings": {
-            "title": "Talk about your brand",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "width": "50%",
-            "alignment": "center",
-            "align_text": "left"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
           }
         },
-        "1642153306c93fe320-1": {
-          "type": "image",
+        "164274855353f824e2-2": {
+          "type": "button",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shooting-high-8-camera.jpg",
-            "width": "50%",
-            "alignment": "bottom-right"
-          }
-        },
-        "249c90f3-421b-47c4-b718-d90dd31470c6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/design-plans-color-swatches.jpg",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
-        "41543bb8-094d-4d00-897b-4f1492151c57": {
-          "type": "text",
-          "settings": {
-            "title": "Talk about your brand",
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-            "width": "50%",
-            "alignment": "center",
-            "align_text": "left"
+            "button_text": "VIEW ALL",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "1642153306c93fe320-0",
-        "1642153306c93fe320-1",
-        "249c90f3-421b-47c4-b718-d90dd31470c6",
-        "41543bb8-094d-4d00-897b-4f1492151c57"
+        "164274855353f824e2-0",
+        "164274855353f824e2-1",
+        "164274855353f824e2-2"
       ],
       "settings": {
-        "title": "Custom content",
-        "custom_content_margin_top": "",
-        "custom_content_margin_bottom": ""
+        "image": "shopify:\/\/shop_images\/young-woman-painting.jpg",
+        "layout": "image_first",
+        "height": "adapt",
+        "image_with_text_bk_color": "#ffffff",
+        "color_scheme": "gradient",
+        "image_with_text_margin_top": "-0",
+        "image_with_text_margin_bottom": "-0"
+      }
+    },
+    "164310287519f7cf6f": {
+      "type": "image-with-text",
+      "blocks": {
+        "1643102875dbbdbbfd-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "1643102875dbbdbbfd-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "1643102875dbbdbbfd-2": {
+          "type": "button",
+          "settings": {
+            "button_text": "VIEW ALL",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1643102875dbbdbbfd-0",
+        "1643102875dbbdbbfd-1",
+        "1643102875dbbdbbfd-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/iphone-forest-photo.jpg",
+        "layout": "text_first",
+        "height": "adapt",
+        "image_with_text_bk_color": "#FFFFFF",
+        "color_scheme": "gradient",
+        "image_with_text_margin_top": "-0",
+        "image_with_text_margin_bottom": ""
       }
     },
     "16421540813820251a": {
@@ -572,82 +596,6 @@
         "image_with_text_overlay_margin_bottom": ""
       }
     },
-    "16427485532c82e561": {
-      "type": "image-with-text",
-      "blocks": {
-        "164274855353f824e2-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text"
-          }
-        },
-        "164274855353f824e2-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "164274855353f824e2-2": {
-          "type": "button",
-          "settings": {
-            "button_text": "VIEW ALL",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "164274855353f824e2-0",
-        "164274855353f824e2-1",
-        "164274855353f824e2-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/young-woman-painting.jpg",
-        "layout": "image_first",
-        "height": "adapt",
-        "image_with_text_bk_color": "#ffffff",
-        "color_scheme": "gradient",
-        "image_with_text_margin_top": "",
-        "image_with_text_margin_bottom": "-0"
-      }
-    },
-    "164310287519f7cf6f": {
-      "type": "image-with-text",
-      "blocks": {
-        "1643102875dbbdbbfd-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text"
-          }
-        },
-        "1643102875dbbdbbfd-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "1643102875dbbdbbfd-2": {
-          "type": "button",
-          "settings": {
-            "button_text": "VIEW ALL",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1643102875dbbdbbfd-0",
-        "1643102875dbbdbbfd-1",
-        "1643102875dbbdbbfd-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/iphone-forest-photo.jpg",
-        "layout": "text_first",
-        "height": "adapt",
-        "image_with_text_bk_color": "#FFFFFF",
-        "color_scheme": "gradient",
-        "image_with_text_margin_top": "-0",
-        "image_with_text_margin_bottom": ""
-      }
-    },
     "1642756980523dd7ef": {
       "type": "newsletter",
       "blocks": {
@@ -711,7 +659,8 @@
     "1642154056ec9298a0",
     "1642754564af97a38c",
     "1642154732e27800a2",
-    "1642153306c1673eff",
+    "16427485532c82e561",
+    "164310287519f7cf6f",
     "16421540813820251a",
     "1642154528ebbc0713",
     "1642154535eb0baf28",
@@ -719,8 +668,6 @@
     "164266328179f7e744",
     "1642692483e67edc91",
     "164274784783176d9d",
-    "16427485532c82e561",
-    "164310287519f7cf6f",
     "1642756980523dd7ef",
     "16421547916bd2500f"
   ]
