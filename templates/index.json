@@ -71,7 +71,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "heading",
             "slider_sub_text": "sub text",
-            "slider_button_text": "title name",
+            "slider_button_text": "",
             "slider_button_link": ""
           }
         },
