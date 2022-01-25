@@ -157,20 +157,20 @@
             "alignment": "bottom-right"
           }
         },
-        "ba08ea2f-8944-4891-a281-4717be7cefa7": {
-          "type": "product",
-          "settings": {
-            "product": "text4",
-            "width": "50%",
-            "alignment": "center"
-          }
-        },
         "613f2bea-84de-4782-ab7b-8500bfeddc76": {
           "type": "link_list",
           "settings": {
             "menu": "main-menu",
             "width": "25%",
             "alignment": "bottom-right"
+          }
+        },
+        "ba08ea2f-8944-4891-a281-4717be7cefa7": {
+          "type": "product",
+          "settings": {
+            "product": "text4",
+            "width": "50%",
+            "alignment": "center"
           }
         },
         "e75de121-9393-432a-8950-98c4c77e4357": {
@@ -199,8 +199,8 @@
       "block_order": [
         "1642153306c93fe320-0",
         "1642153306c93fe320-1",
-        "ba08ea2f-8944-4891-a281-4717be7cefa7",
         "613f2bea-84de-4782-ab7b-8500bfeddc76",
+        "ba08ea2f-8944-4891-a281-4717be7cefa7",
         "e75de121-9393-432a-8950-98c4c77e4357",
         "cb502a8e-3997-4939-bf36-e5d909ffbf26"
       ],
