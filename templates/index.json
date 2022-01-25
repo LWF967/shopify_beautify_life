@@ -329,7 +329,7 @@
       "settings": {
         "heading": "Blog posts",
         "head_text": "The most exciting news",
-        "image_ratio1": "ratio1_1",
+        "image_ratio1": "ratio2_1",
         "blog": "news",
         "post_limit": 4,
         "show_image": true,
