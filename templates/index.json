@@ -324,26 +324,6 @@
         "featured_product_beautify_margin_bottom": ""
       }
     },
-    "16421547916bd2500f": {
-      "type": "blog-page-post-beautify",
-      "settings": {
-        "heading": "Blog posts",
-        "head_text": "The most exciting news",
-        "image_ratio1": "ratio2_1",
-        "blog": "news",
-        "post_limit": 4,
-        "show_image": true,
-        "show_title": true,
-        "show_short_content": true,
-        "show_date": true,
-        "show_author": false,
-        "blog_soft_background": "#f3f3f3",
-        "color_scheme": "gradient",
-        "show_view_all": false,
-        "blog_page_beautify_margin_top": "",
-        "blog_page_beautify_margin_bottom": ""
-      }
-    },
     "16426457698e349ab8": {
       "type": "featured-collection",
       "settings": {
@@ -673,7 +653,27 @@
         "newsletter_bk_color": "#f3f3f3",
         "color_scheme": "gradient",
         "newsletter_margin_top": "",
-        "newsletter_margin_bottom": "12"
+        "newsletter_margin_bottom": ""
+      }
+    },
+    "16421547916bd2500f": {
+      "type": "blog-page-post-beautify",
+      "settings": {
+        "heading": "Blog posts",
+        "head_text": "The most exciting news",
+        "image_ratio1": "ratio2_1",
+        "blog": "news",
+        "post_limit": 4,
+        "show_image": true,
+        "show_title": true,
+        "show_short_content": true,
+        "show_date": true,
+        "show_author": false,
+        "blog_soft_background": "#f3f3f3",
+        "color_scheme": "gradient",
+        "show_view_all": false,
+        "blog_page_beautify_margin_top": "",
+        "blog_page_beautify_margin_bottom": ""
       }
     }
   },
@@ -684,7 +684,6 @@
     "16421540813820251a",
     "1642154528ebbc0713",
     "1642154535eb0baf28",
-    "16421547916bd2500f",
     "16426457698e349ab8",
     "164266328179f7e744",
     "1642692483e67edc91",
@@ -692,6 +691,7 @@
     "16427485532c82e561",
     "16427527698c0a57a6",
     "1642754564af97a38c",
-    "1642756980523dd7ef"
+    "1642756980523dd7ef",
+    "16421547916bd2500f"
   ]
 }
