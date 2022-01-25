@@ -286,7 +286,7 @@
           "foot_top_background_style": "background_color",
           "heading_color": "#000000",
           "text_color": "#000000",
-          "link_color": "#ec0000",
+          "link_color": "#222222",
           "hover_link_color": "#9ae1da",
           "newsletter_input_color": "#000000",
           "newsletter_border_color": "#000000",
