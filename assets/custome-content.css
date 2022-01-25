@@ -42,43 +42,43 @@
   align-self: flex-end;
   text-align: right; }
 
-/* .align--top-left  img{
+.align--top-left .img_fit > img{
  object-fit: cover;
  object-position: top left;
 }
-.align--top-middle  img{
+.align--top-middle .img_fit > img{
  object-fit: cover;
  object-position: top center;
 }
-.align--top-right  img{
+.align--top-right .img_fit > img{
  object-fit: cover;
  object-position: top right;
 }
-.align--middle-left  img{
+.align--middle-left .img_fit > img{
  object-fit: cover;
  object-position: center left;
 }
-.align--center  img{
+.align--center .img_fit > img{
  object-fit: cover;
  object-position: center center;
 }
-.align--middle-right  img{
+.align--middle-right .img_fit > img{
  object-fit: cover;
  object-position: center right;
 }
-.align--bottom-left  img{
+.align--bottom-left .img_fit > img{
  object-fit: cover;
  object-position: bottom left;
 }
-.align--bottom-middle  img{
+.align--bottom-middle .img_fit > img{
  object-fit: cover;
  object-position: bottom center;
 }
-.align--bottom-right  img{
+.align--bottom-right .img_fit > img{
  object-fit: cover;
  object-position: bottom right;
 }
- */
+
 
   
 
