@@ -169,7 +169,7 @@
           "type": "product",
           "settings": {
             "product": "text4",
-            "width": "50%",
+            "width": "75%",
             "alignment": "center"
           }
         },
