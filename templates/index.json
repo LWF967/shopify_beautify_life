@@ -11,7 +11,7 @@
             "text_alignment": "middle_center",
             "slider_heading_text": "NEW. BLUE. <br>JUST. DROPPED",
             "slider_sub_text": "This new color drop is giving us water, giving us air, giving us life — get it before it’s gone",
-            "slider_button_text": "",
+            "slider_button_text": "SHOP NOW",
             "slider_button_link": ""
           }
         },
@@ -60,7 +60,7 @@
       ],
       "settings": {
         "se_height": "adapt",
-        "text_size": "large",
+        "text_size": "medium",
         "loop": true,
         "auto_play": true,
         "auto_time": 3,
