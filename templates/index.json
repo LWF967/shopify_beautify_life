@@ -154,7 +154,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/shooting-high-8-camera.jpg",
             "width": "100%",
-            "alignment": "top-left"
+            "alignment": "bottom-right"
           }
         },
         "ba08ea2f-8944-4891-a281-4717be7cefa7": {
@@ -169,8 +169,8 @@
           "type": "link_list",
           "settings": {
             "menu": "main-menu",
-            "width": "100%",
-            "alignment": "center"
+            "width": "25%",
+            "alignment": "bottom-right"
           }
         },
         "e75de121-9393-432a-8950-98c4c77e4357": {
@@ -178,10 +178,21 @@
           "settings": {
             "article": "tt\/posts-7",
             "width": "50%",
-            "alignment": "center",
-            "cover_image": "large",
+            "alignment": "bottom-middle",
+            "cover_image": "small",
             "show_author": false,
             "show_date": true
+          }
+        },
+        "cb502a8e-3997-4939-bf36-e5d909ffbf26": {
+          "type": "blog",
+          "settings": {
+            "blog": "",
+            "image_size": "medium",
+            "description": "<p>Description of your blog.<\/p>",
+            "show_number_articles": true,
+            "width": "25%",
+            "alignment": "center"
           }
         }
       },
@@ -190,7 +201,8 @@
         "1642153306c93fe320-1",
         "ba08ea2f-8944-4891-a281-4717be7cefa7",
         "613f2bea-84de-4782-ab7b-8500bfeddc76",
-        "e75de121-9393-432a-8950-98c4c77e4357"
+        "e75de121-9393-432a-8950-98c4c77e4357",
+        "cb502a8e-3997-4939-bf36-e5d909ffbf26"
       ],
       "settings": {
         "title": "Custom content",
