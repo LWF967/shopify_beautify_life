@@ -212,7 +212,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/looking-through-the-lens-of-a-film-camera.jpg",
-            "align_text": "left",
+            "align_text": "center",
             "img_link": "",
             "caption_head": "Image"
           }
@@ -221,7 +221,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/shooting-high-8-camera.jpg",
-            "align_text": "left",
+            "align_text": "center",
             "img_link": "",
             "caption_head": "Image"
           }
@@ -230,7 +230,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/woman-holds-a-large-musical-instrument.jpg",
-            "align_text": "left",
+            "align_text": "center",
             "img_link": "",
             "caption_head": "Image"
           }
