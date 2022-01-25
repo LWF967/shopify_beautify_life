@@ -68,10 +68,10 @@
         "show_button_visible": "always",
         "show_button_style": "style1",
         "show_button_color": "white",
-        "show_button_hover_color": "#a1e1c7",
+        "show_button_hover_color": "#000000",
         "show_page_Dot": true,
         "page_dot_style": "style_2",
-        "page_dot_color": "light",
+        "page_dot_color": "dark",
         "slideshow_beautify_margin_top": "",
         "slideshow_beautify_margin_bottom": ""
       }
