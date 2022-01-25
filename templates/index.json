@@ -379,7 +379,7 @@
         "image_ratio": "adapt",
         "use_eq_height": true,
         "image_ratio1": "ratio2_1",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "add_image_padding": false,
         "show_vendor": false,
         "show_rating": false,
