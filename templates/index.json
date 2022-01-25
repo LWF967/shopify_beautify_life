@@ -66,11 +66,11 @@
         "auto_time": 3,
         "show_button": true,
         "show_button_visible": "always",
-        "show_button_style": "circle",
+        "show_button_style": "style1",
         "show_button_color": "white",
         "show_button_hover_color": "#f29bae",
         "show_page_Dot": true,
-        "page_dot_style": "style_2",
+        "page_dot_style": "style_1",
         "page_dot_color": "light",
         "slideshow_beautify_margin_top": "",
         "slideshow_beautify_margin_bottom": ""
