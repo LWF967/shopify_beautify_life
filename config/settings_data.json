@@ -42,7 +42,7 @@
     "image_overlay_opacity": 10,
     "color_page_borders_and_lines": "#e6e0e0",
     "color_page_background": "#ffffff",
-    "color_icon": "#b616e1",
+    "color_icon": "#000000",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
     "page_width": "1600",
