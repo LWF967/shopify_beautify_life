@@ -122,7 +122,7 @@
         "se_height": "adapt",
         "text_size": "medium",
         "loop": true,
-        "auto_play": false,
+        "auto_play": true,
         "auto_time": 3,
         "show_button": true,
         "show_button_visible": "only_hover",
@@ -130,7 +130,7 @@
         "show_button_color": "white",
         "show_button_hover_color": "#f29bae",
         "show_page_Dot": true,
-        "page_dot_style": "style_1",
+        "page_dot_style": "style_2",
         "page_dot_color": "light",
         "slideshow_beautify_margin_top": "",
         "slideshow_beautify_margin_bottom": ""
@@ -602,8 +602,8 @@
       "settings": {
         "layout": "image_first",
         "height": "adapt",
-        "image_with_text_bk_color": "#9b3737",
-        "color_scheme": "image_with_text_bk_color",
+        "image_with_text_bk_color": "#ffffff",
+        "color_scheme": "gradient",
         "image_with_text_margin_top": "",
         "image_with_text_margin_bottom": ""
       }
