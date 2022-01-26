@@ -98,7 +98,7 @@
         "type": "header",
         "settings": {
           "logo_aligment": "left",
-          "logo_svg": "auraro_logo.svg",
+          "logo_svg": "",
           "logo": "shopify:\/\/shop_images\/logo_300x300_df23fb36-cc05-44a5-a2e1-ebed0350dbc9.png",
           "logo_width": 100,
           "header_height": 60,
