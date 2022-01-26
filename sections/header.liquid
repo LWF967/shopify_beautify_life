@@ -330,9 +330,9 @@
                    {% endif %}
                  {% else %}
                    {% if section.settings.logo_aligment == 'left' %}
-                     {% if my_img_height_left > my_header_height %}height: {{my_img_height_left}}px; font-size:10px;{% else %} height: {{my_header_height}}px; font-size:11px;{% endif %}
+                     {% if my_img_height_left > my_header_height %}height: {{my_img_height_left}}px;{% else %} height: {{my_header_height}}px;{% endif %}
                    {% elsif section.settings.logo_aligment == 'centered' %} 
-                     {% if my_img_height_centered > my_header_height  %}height: {{my_img_height_centered}}px; font-size:12px;{% else %} height: {{my_header_height}}px; font-size:13px;{% endif %}
+                     {% if my_img_height_centered > my_header_height  %}height: {{my_img_height_centered}}px;{% else %} height: {{my_header_height}}px;{% endif %}
                    {% endif %}
                  {% endif %}">
     {%- if section.settings.menu != blank -%}
