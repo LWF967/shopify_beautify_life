@@ -59,7 +59,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": true,
     "predictive_search_show_price": true,
-    "favicon": "shopify:\/\/shop_images\/aurora.png",
+    "favicon": "shopify:\/\/shop_images\/person-crouches-down-on-a-street-and-paints-a-door-white.jpg",
     "checkout_header_image": "shopify:\/\/shop_images\/shooting-high-8-camera.jpg",
     "checkout_logo_image": "shopify:\/\/shop_images\/design-plans-color-swatches.jpg",
     "checkout_accent_color": "#000000",
@@ -98,7 +98,7 @@
         "type": "header",
         "settings": {
           "logo_aligment": "left",
-          "logo_svg": "shooting-high-8-camera.jpg",
+          "logo_svg": "auraro_logo.svg",
           "logo": "shopify:\/\/shop_images\/logo_300x300_df23fb36-cc05-44a5-a2e1-ebed0350dbc9.png",
           "logo_width": 100,
           "header_height": 60,
