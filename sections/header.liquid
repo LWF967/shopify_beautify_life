@@ -317,7 +317,7 @@
   {% assign aa = section.settings.logo_svg %}
   {% assign bb = "files/" | append: aa %}
   {{images[bb].aspect_ratio}}22--
-  {{images[aa].aspect_ratio}}33
+  {{images[aa].aspect_ratio}}
   <header class="header header--{{ section.settings.logo_position }} page-width {% if section.settings.menu != blank %} header--has-menu {% endif %} my_header my_header_height 
                  {% if section.settings.logo_svg != blank %} my_auto_height 
                  {% elsif section.settings.logo != blank %}
