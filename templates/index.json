@@ -66,7 +66,7 @@
         "auto_time": 3,
         "show_button": true,
         "show_button_visible": "always",
-        "show_button_style": "style1",
+        "show_button_style": "circle",
         "show_button_color": "white",
         "show_button_hover_color": "#000000",
         "show_page_Dot": true,
