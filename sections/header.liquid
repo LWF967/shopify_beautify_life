@@ -319,7 +319,7 @@
   <span>{{aa}}</span><br />
   {% assign aaa = section.settings.logo | img_url %}
   {% assign bbb = "files/" | append: aa %}
-  <span>{{aaa}}</span><br />
+  <span>{{images[aaa]}}</span><br />
 <!--   <span>{{bb}}</span> -->
   <header class="header header--{{ section.settings.logo_position }} page-width {% if section.settings.menu != blank %} header--has-menu {% endif %} my_header my_header_height 
                  {% if section.settings.logo_svg != blank %} my_auto_height 
