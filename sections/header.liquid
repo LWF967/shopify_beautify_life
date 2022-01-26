@@ -317,7 +317,7 @@
   {% assign aa = section.settings.logo_svg | file_url %}
   {% assign bb = "files/" | append: aa %}
   <span>{{aa}}</span><br />
-  {% assign aaa = section.settings.logo | file_url %}
+  {% assign aaa = section.settings.logo | img_url %}
   {% assign bbb = "files/" | append: aa %}
   <span>{{aaa}}</span><br />
 <!--   <span>{{bb}}</span> -->
