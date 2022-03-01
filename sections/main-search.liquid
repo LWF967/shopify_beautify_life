@@ -202,7 +202,7 @@
           {%- if search.results > 3 -%}
           	{%- assign aaa = 3 -%}
           {%- endif -%}
-          {%- for item in aaa -%}
+          {%- for item in search.results -%}
 <!--             %- if item.object_type == 'product' -%} -->
             <li class="grid__item{% unless item.object_type == 'product' %} grid__item--small{% endunless %}">
               {%- case item.object_type -%}
