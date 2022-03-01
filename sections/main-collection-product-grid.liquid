@@ -578,7 +578,7 @@
       {%- else -%}
         <div class="collection">
           <div class="loading-overlay gradient"></div>
-
+			{{ collection.products_count }}
           <ul id="main-collection-product-grid" data-id="{{ section.id }}" class="
             grid my_grid grid--2-col negative-margin product-grid
             {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
