@@ -585,7 +585,7 @@
               {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
             {% endif %}my_product_grid_ul">
             {{ paginate.page_size }}
-            {%- for product in collection.products -%}
+            {%- for product in collection.products limit:2 -%}
               <li class="grid__item">
                 {% render 'product-card',
                   product_card_product: product,
