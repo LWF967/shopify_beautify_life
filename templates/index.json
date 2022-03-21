@@ -249,7 +249,7 @@
         "image": "shopify:\/\/shop_images\/iphone-forest-photo.jpg",
         "layout": "text_first",
         "height": "adapt",
-        "image_with_text_bk_color": "#FFFFFF",
+        "image_with_text_bk_color": "#ffffff",
         "color_scheme": "gradient",
         "image_with_text_margin_top": "-0",
         "image_with_text_margin_bottom": ""
@@ -374,6 +374,103 @@
         "blog_page_beautify_margin_top": "",
         "blog_page_beautify_margin_bottom": ""
       }
+    },
+    "164782501138839047": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "164782501106a1def9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner"
+          }
+        },
+        "164782501106a1def9-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "164782501106a1def9-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": ""
+          }
+        }
+      },
+      "block_order": [
+        "164782501106a1def9-0",
+        "164782501106a1def9-1",
+        "164782501106a1def9-2"
+      ],
+      "settings": {
+        "image_alignment": "center center",
+        "section_size": "medium",
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "text_size": "medium",
+        "image_overlay_opacity": 0,
+        "show_text_below": true,
+        "image_with_text_overlay_margin_top": "",
+        "image_with_text_overlay_margin_bottom": ""
+      }
+    },
+    "1647825025b589835f": {
+      "type": "rich-text-beautify",
+      "blocks": {
+        "1647825025b3919458-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand"
+          }
+        },
+        "1647825025b3919458-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "1647825025b3919458-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1647825025b3919458-0",
+        "1647825025b3919458-1",
+        "1647825025b3919458-2"
+      ],
+      "settings": {
+        "rich_text_beautify_color": "#FFF",
+        "color_scheme": "gradient",
+        "full_width": true,
+        "content_full_width": true,
+        "heading_size": "medium",
+        "rich_text_beautify_margin_top": "",
+        "rich_text_beautify_margin_bottom": ""
+      }
+    },
+    "16478250378dfb44cd": {
+      "type": "daily-deal-of-the-day",
+      "settings": {
+        "product": "text4",
+        "log_image": "shopify:\/\/shop_images\/1.11.22_SP22_HPHeroRust_1944x.progressive_01ed51aa-34f0-498f-b1cc-3bd4aacd3cad.jpg",
+        "heading_text": "Daily Deal Of The Day",
+        "heading_font_size": 32,
+        "color_top": "#888",
+        "countdown_time": "2021\/12\/01",
+        "time_font_size": 32,
+        "background_color": "#f9f9f9",
+        "color_scheme": "gradient",
+        "background_product_color": "#FFF",
+        "color_schemes": "gradient",
+        "daily_deal_of_the_day_margin_top": "",
+        "daily_deal_of_the_day_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -385,6 +482,9 @@
     "16426457698e349ab8",
     "164274784783176d9d",
     "1642756980523dd7ef",
-    "16421547916bd2500f"
+    "16421547916bd2500f",
+    "164782501138839047",
+    "1647825025b589835f",
+    "16478250378dfb44cd"
   ]
 }
