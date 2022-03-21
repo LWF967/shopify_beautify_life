@@ -458,11 +458,11 @@
       "type": "daily-deal-of-the-day",
       "settings": {
         "product": "text4",
-        "log_image": "shopify:\/\/shop_images\/1.11.22_SP22_HPHeroRust_1944x.progressive_01ed51aa-34f0-498f-b1cc-3bd4aacd3cad.jpg",
+        "log_image": "shopify:\/\/shop_images\/iphone-forest-photo.jpg",
         "heading_text": "Daily Deal Of The Day",
         "heading_font_size": 32,
         "color_top": "#888",
-        "countdown_time": "2021\/12\/01",
+        "countdown_time": "20222\/01",
         "time_font_size": 32,
         "background_color": "#f9f9f9",
         "color_scheme": "gradient",
