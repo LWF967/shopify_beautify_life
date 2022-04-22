@@ -445,7 +445,7 @@
         "1647825025b3919458-2"
       ],
       "settings": {
-        "rich_text_beautify_color": "#FFF",
+        "rich_text_beautify_color": "#ffffff",
         "color_scheme": "gradient",
         "full_width": true,
         "content_full_width": true,
@@ -461,15 +461,29 @@
         "log_image": "shopify:\/\/shop_images\/iphone-forest-photo.jpg",
         "heading_text": "Daily Deal Of The Day",
         "heading_font_size": 32,
-        "color_top": "#888",
+        "color_top": "#888888",
         "countdown_time": "20222\/01",
         "time_font_size": 32,
         "background_color": "#f9f9f9",
         "color_scheme": "gradient",
-        "background_product_color": "#FFF",
+        "background_product_color": "#ffffff",
         "color_schemes": "gradient",
         "daily_deal_of_the_day_margin_top": "",
         "daily_deal_of_the_day_margin_bottom": ""
+      }
+    },
+    "1650626120abd6b15b": {
+      "type": "video-beautify",
+      "settings": {
+        "image_alignment": "center center",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "show_overlay": false,
+        "style": "image_with_play",
+        "video_height": "medium",
+        "heading": "Video",
+        "text_size": "medium",
+        "video_beautify_margin_top": "",
+        "video_beautify_margin_bottom": ""
       }
     }
   },
@@ -485,6 +499,7 @@
     "16421547916bd2500f",
     "164782501138839047",
     "1647825025b589835f",
-    "16478250378dfb44cd"
+    "16478250378dfb44cd",
+    "1650626120abd6b15b"
   ]
 }
