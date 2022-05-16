@@ -12,7 +12,7 @@
             "slider_heading_text": "NEW. BLUE. <br>JUST. DROPPED",
             "slider_sub_text": "This new color drop is giving us water, giving us air, giving us life — get it before it’s gone",
             "slider_button_text": "SHOP NOW",
-            "slider_button_link": ""
+            "slider_button_link": "shopify:\/\/pages\/contact"
           }
         },
         "1642154056b5ffa266-1": {
@@ -485,6 +485,120 @@
         "video_beautify_margin_top": "",
         "video_beautify_margin_bottom": ""
       }
+    },
+    "1652693493e1c91b34": {
+      "type": "collection-list",
+      "blocks": {
+        "16526934939e59b871-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16526934939e59b871-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "16526934939e59b871-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "16526934939e59b871-0",
+        "16526934939e59b871-1",
+        "16526934939e59b871-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false,
+        "collection_list_margin_top": "",
+        "collection_list_margin_bottom": ""
+      }
+    },
+    "1652693505caf7c455": {
+      "type": "featured-product-beautify",
+      "blocks": {
+        "16526935055e201df8-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "16526935055e201df8-1": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "16526935055e201df8-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "16526935055e201df8-3": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "16526935055e201df8-4": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "16526935055e201df8-5": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "16526935055e201df8-6": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "16526935055e201df8-7": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "16526935055e201df8-8": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "16526935055e201df8-0",
+        "16526935055e201df8-1",
+        "16526935055e201df8-2",
+        "16526935055e201df8-3",
+        "16526935055e201df8-4",
+        "16526935055e201df8-5",
+        "16526935055e201df8-6",
+        "16526935055e201df8-7",
+        "16526935055e201df8-8"
+      ],
+      "settings": {
+        "product": "",
+        "featured_bk_color": "#1eec5e",
+        "color_scheme": "gradient",
+        "show_share_buttons": false,
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "featured_product_beautify_margin_top": "",
+        "featured_product_beautify_margin_bottom": ""
+      }
     }
   },
   "order": [
@@ -500,6 +614,8 @@
     "164782501138839047",
     "1647825025b589835f",
     "16478250378dfb44cd",
-    "1650626120abd6b15b"
+    "1650626120abd6b15b",
+    "1652693493e1c91b34",
+    "1652693505caf7c455"
   ]
 }
